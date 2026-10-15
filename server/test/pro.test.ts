@@ -40,3 +40,44 @@ test("search limit cap: free 10, pro 25", () => {
   assert.equal(n("free"), 10);
   assert.equal(n("pro"), 25);
 });
+
+import { MemoryRateLimiter } from "../src/mcp.ts";
+const pingIp = (h: any, ip: string, key?: string) =>
+  h(new Request("http://x/mcp", { method: "POST", headers: { "cf-connecting-ip": ip, ...(key ? { authorization: `Bearer ${key}` } : {}) }, body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "ping" }) }));
+
+test("no limiters bound: no limit (free behavior unchanged)", async () => {
+  const h = createHandler(index, {});
+  for (let i = 0; i < 100; i++) assert.equal((await pingIp(h, "1.1.1.1")).status, 200);
+});
+test("free limiter: per IP, 429 after limit, other IPs unaffected", async () => {
+  const h = createHandler(index, { freeLimiter: new MemoryRateLimiter(3) });
+  for (let i = 0; i < 3; i++) assert.equal((await pingIp(h, "1.1.1.1")).status, 200);
+  const r = await pingIp(h, "1.1.1.1");
+  assert.equal(r.status, 429); assert.equal(r.headers.get("retry-after"), "60");
+  assert.equal((await pingIp(h, "2.2.2.2")).status, 200);
+});
+test("pro limiter: per key, separate from free limit", async () => {
+  const h = createHandler(index, { proEnabled: "true", apiKeys: "k1", freeLimiter: new MemoryRateLimiter(1), proLimiter: new MemoryRateLimiter(5) });
+  assert.equal((await pingIp(h, "1.1.1.1")).status, 200);
+  assert.equal((await pingIp(h, "1.1.1.1")).status, 429);
+  for (let i = 0; i < 5; i++) assert.equal((await pingIp(h, "1.1.1.1", "k1")).status, 200);
+  assert.equal((await pingIp(h, "1.1.1.1", "k1")).status, 429);
+});
+test("limiter window resets; limiter errors fail open", async () => {
+  let t = 0; const l = new MemoryRateLimiter(1, 60_000, () => t);
+  assert.ok((await l.limit({ key: "a" })).success); assert.ok(!(await l.limit({ key: "a" })).success);
+  t = 60_000; assert.ok((await l.limit({ key: "a" })).success);
+  const h = createHandler(index, { freeLimiter: { limit: async () => { throw new Error("x"); } } });
+  assert.equal((await pingIp(h, "1.1.1.1")).status, 200);
+});
+test("usage: pro events carry 8-char key id, free events none, key never logged", async () => {
+  const pts: any[] = []; const logs: string[] = []; const orig = console.log; console.log = (s: string) => logs.push(s);
+  try {
+    const h = createHandler(index, { proEnabled: "true", apiKeys: "secret_pro_key", analytics: { writeDataPoint: (p) => pts.push(p) } });
+    await pingIp(h, "9.9.9.9", "secret_pro_key"); await pingIp(h, "9.9.9.9");
+  } finally { console.log = orig; }
+  const id = (await sha256Hex("secret_pro_key")).slice(0, 8);
+  assert.equal(pts[0].blobs[8], id); assert.equal(pts[1].blobs.length, 8);
+  const all = JSON.stringify(pts) + logs.join("");
+  assert.ok(!all.includes("secret_pro_key")); assert.ok(!all.includes(await sha256Hex("secret_pro_key"))); assert.ok(!all.includes("9.9.9.9"));
+});

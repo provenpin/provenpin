@@ -1,10 +1,10 @@
 // Privacy-safe usage events. Records ONLY: MCP method, tool name, recipe id or search query LENGTH
 // (never the query text), the MCP client's self-reported clientInfo name+version, an internal flag, the tier (free/pro,
-// never the key), whether a versions/lockfile argument was passed (boolean only, never its content), and a timestamp.
+// never the key), for Pro calls only a short key id (first 8 hex chars of the key's SHA-256; not reversible, never the key), whether a versions/lockfile argument was passed (boolean only, never its content), and a timestamp.
 // No IPs, no user agents, no headers, no session ids, no query text.
 export interface UsageEvent {
   ts: string; method: string; tool: string; recipe: string; qlen: number;
-  client: string; client_version: string; internal: boolean; versions_provided: boolean; tier: "free" | "pro";
+  client: string; client_version: string; internal: boolean; versions_provided: boolean; tier: "free" | "pro"; key_id: string;
 }
 export interface AnalyticsSink { writeDataPoint(p: { blobs?: string[]; doubles?: number[]; indexes?: string[] }): void }
 
@@ -25,7 +25,7 @@ export function clientFromSession(id: string | null): { name: string; version: s
   return { name: clean(unb64(p[1])) || "unknown", version: clean(unb64(p[2]), 32) || "unknown" };
 }
 
-export function eventFor(msg: any, client: { name: string; version: string }, internalHeader: boolean, tier: "free" | "pro" = "free"): UsageEvent {
+export function eventFor(msg: any, client: { name: string; version: string }, internalHeader: boolean, tier: "free" | "pro" = "free", keyId = ""): UsageEvent {
   const method = clean(msg?.method, 48) || "invalid";
   const tool = method === "tools/call" ? clean(msg?.params?.name, 48) : "";
   const args = msg?.params?.arguments ?? {};
@@ -36,6 +36,7 @@ export function eventFor(msg: any, client: { name: string; version: string }, in
     client: client.name, client_version: client.version,
     versions_provided: (tool === "get_recipe" || tool === "search_recipes") && args.versions !== undefined && args.versions !== null,
     internal: internalHeader || client.name === INTERNAL_CLIENT, tier,
+    key_id: tier === "pro" ? clean(keyId, 8).replace(/[^0-9a-f]/g, "") : "",
   };
 }
 
@@ -43,7 +44,7 @@ export function record(ev: UsageEvent, sink?: AnalyticsSink) {
   try {
     sink?.writeDataPoint({
       indexes: [ev.client.slice(0, 32)],
-      blobs: [ev.method, ev.tool, ev.recipe, ev.client, ev.client_version, ev.internal ? "internal" : "external", ev.tier, ev.versions_provided ? "versions" : ""],
+      blobs: [ev.method, ev.tool, ev.recipe, ev.client, ev.client_version, ev.internal ? "internal" : "external", ev.tier, ev.versions_provided ? "versions" : "", ...(ev.key_id ? [ev.key_id] : [])],
       doubles: [ev.qlen],
     });
   } catch {}

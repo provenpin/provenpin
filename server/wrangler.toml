@@ -16,6 +16,17 @@ PROVENPIN_REQUIRE_KEY = "false"
 # binding = "PRO_KEYS"
 # id = "<namespace id>"
 
+# Rate limits (optional; absent = no limit). Cloudflare Workers Rate Limiting binding, no extra cost.
+# Free: 60 req/min per IP. Pro: 600 req/min per key id. Uncomment to enable (needs a deploy).
+# [[ratelimits]]
+# name = "FREE_RL"
+# namespace_id = "1001"
+# simple = { limit = 60, period = 60 }
+# [[ratelimits]]
+# name = "PRO_RL"
+# namespace_id = "1002"
+# simple = { limit = 600, period = 60 }
+
 # Privacy-safe usage counts (see src/usage.ts). No IPs, user agents or query text are recorded.
 [[analytics_engine_datasets]]
 binding = "USAGE"

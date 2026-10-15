@@ -10,6 +10,21 @@ const SUPPORTED = ["2025-06-18", "2025-03-26", "2024-11-05"];
 /** Looks up a Pro key by its SHA-256 hex hash (e.g. a Cloudflare KV namespace). Keys are never stored in plain text. */
 export interface KeyStore { get(key: string): Promise<string | null> }
 
+/** Same shape as the Cloudflare Workers Rate Limiting binding (env.X.limit({ key })). */
+export interface RateLimiter { limit(o: { key: string }): Promise<{ success: boolean }> }
+
+/** In-memory fixed-window limiter for local dev/tests. Per-isolate only; not used in production. */
+export class MemoryRateLimiter implements RateLimiter {
+  private hits = new Map<string, { start: number; n: number }>();
+  constructor(private max: number, private windowMs = 60_000, private now = () => Date.now()) {}
+  async limit({ key }: { key: string }) {
+    const t = this.now(); let h = this.hits.get(key);
+    if (!h || t - h.start >= this.windowMs) { h = { start: t, n: 0 }; this.hits.set(key, h); }
+    h.n++;
+    return { success: h.n <= this.max };
+  }
+}
+
 export interface ServerOptions {
   /** Feature flag for Pro keys. Unless "true", every caller is free tier and keys are ignored. */
   proEnabled?: string;
@@ -22,6 +37,9 @@ export interface ServerOptions {
   /** Public receipts feed served at /receipts.json. */
   receipts?: unknown;
   version?: string;
+  /** Optional rate limiters (Cloudflare Workers Rate Limiting binding shape). Absent = no limit. Free keyed by IP, Pro by key id. */
+  freeLimiter?: RateLimiter;
+  proLimiter?: RateLimiter;
   /** Optional Workers Analytics Engine dataset for privacy-safe usage counts. */
   analytics?: AnalyticsSink;
 }
@@ -132,13 +150,23 @@ export async function sha256Hex(s: string) {
 export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
   const keys = new Set((opts.apiKeys ?? "").split(",").map((k) => k.trim()).filter(Boolean));
   const proEnabled = opts.proEnabled === "true";
-  async function tierFor(req: Request): Promise<"free" | "pro"> {
-    if (!proEnabled) return "free";
+  async function tierFor(req: Request): Promise<{ tier: "free" | "pro"; keyId: string }> {
+    const free = { tier: "free" as const, keyId: "" };
+    if (!proEnabled) return free;
     const key = (req.headers.get("authorization")?.match(/^Bearer\s+(\S+)$/i)?.[1] ?? req.headers.get("x-provenpin-key") ?? "").trim();
-    if (!key || key.length > 200) return "free";
-    if (keys.has(key)) return "pro";
-    if (opts.keyStore) { try { const v = await opts.keyStore.get(`key:${await sha256Hex(key)}`); if (v && !v.startsWith("revoked")) return "pro"; } catch {} }
-    return "free";
+    if (!key || key.length > 200) return free;
+    const hash = await sha256Hex(key);
+    const pro = { tier: "pro" as const, keyId: hash.slice(0, 8) };
+    if (keys.has(key)) return pro;
+    if (opts.keyStore) { try { const v = await opts.keyStore.get(`key:${hash}`); if (v && !v.startsWith("revoked")) return pro; } catch {} }
+    return free;
+  }
+  async function allowed(req: Request, tier: "free" | "pro", keyId: string) {
+    const lim = tier === "pro" ? opts.proLimiter : opts.freeLimiter;
+    if (!lim) return true;
+    // IP is used only as the limiter key, in memory at the edge; it is never logged or stored by us.
+    const k = tier === "pro" ? `pro:${keyId}` : `ip:${req.headers.get("cf-connecting-ip") ?? "unknown"}`;
+    try { return (await lim.limit({ key: k })).success; } catch { return true; }
   }
   const version = opts.version ?? "0.1.0";
   return async (req: Request): Promise<Response> => {
@@ -155,7 +183,8 @@ export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
     if (req.method === "GET") return new Response("Method Not Allowed", { status: 405, headers: { ...CORS, allow: "POST" } });
     if (req.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: CORS });
 
-    const tier = await tierFor(req);
+    const { tier, keyId } = await tierFor(req);
+    if (!(await allowed(req, tier, keyId))) return Response.json(err(null, -32029, "Rate limit exceeded, try again in a minute"), { status: 429, headers: { ...CORS, "retry-after": "60", "x-provenpin-tier": tier } });
     if (proEnabled && opts.requireKey === "true" && tier !== "pro") return Response.json(err(null, -32001, "A valid API key is required (Authorization: Bearer <key>)"), { status: 401, headers: CORS });
 
     let body: any;
@@ -166,7 +195,7 @@ export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
     const ci = init?.params?.clientInfo;
     const client = init ? { name: String(ci?.name ?? "unknown"), version: String(ci?.version ?? "unknown") }
       : clientFromSession(req.headers.get("mcp-session-id")) ?? { name: "unknown", version: "unknown" };
-    for (const m of msgs) record(eventFor(m, client, internalHeader, tier), opts.analytics);
+    for (const m of msgs) record(eventFor(m, client, internalHeader, tier, keyId), opts.analytics);
     const out = msgs.map((m) => handleRpc(index, m, tier, version)).filter((x): x is Json => x !== null);
     if (out.length === 0) return new Response(null, { status: 202, headers: CORS });
     const headers: Record<string, string> = { ...CORS, "x-provenpin-tier": tier };
