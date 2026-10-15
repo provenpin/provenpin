@@ -25,6 +25,14 @@ export function stackPins(r) {
   return Object.keys(r.pinned ?? {}).filter((k) => stack.has(norm(k)));
 }
 
+/** Short reason for a break, e.g. an npm peer-dependency conflict with another pinned package. */
+export function breakReason(out) {
+  const m = out.match(/peer (\S+)@"([^"]+)" from (\S+)@(\S+)/);
+  if (/ERESOLVE/.test(out) && m) return `no stable release supports it yet: ${m[3]}@${m[4]} requires ${m[1]} ${m[2]}`;
+  if (/ERESOLVE|ResolutionImpossible|No solution found/.test(out)) return "dependency conflict on install";
+  return null;
+}
+
 /** Rewrites dependency manifests in the temp copy so the given packages use new versions. */
 export function bumpManifest(dir, runtime, bumps) {
   if (runtime === "node") {
@@ -65,6 +73,7 @@ export async function checkRecipe(id, fetchLatest = latest) {
     const passed = setup.code === 0 && test.code === 0 && counts.failed === 0 && counts.passed > 0;
     return { ...base, status: passed ? "passes_on_latest" : "breaks_on_latest", latest: latestVers, bumped: bumps,
       tests: { passed: counts.passed, failed: counts.failed }, setup_failed: setup.code !== 0,
+      ...(passed ? {} : { reason: breakReason(setup.out + test.out) ?? (setup.code !== 0 ? "install failed" : "tests fail on latest"), pinned_kept: true }),
       log_tail: passed ? "" : (setup.code !== 0 ? setup.out : test.out).split("\n").slice(-30).join("\n") };
   } finally { fs.rmSync(work, { recursive: true, force: true }); }
 }

@@ -22,3 +22,13 @@ test("runUrl only for Actions receipts", () => {
   assert.equal(runUrl({ environment: { runner: "github-actions 42" } }), "https://github.com/provenpin/provenpin/actions/runs/42");
   assert.equal(runUrl({ environment: { runner: "local" } }), null);
 });
+import { highestStable, isStable } from "../affected.mjs";
+import { breakReason } from "../staleness.mjs";
+test("only stable releases are picked", () => {
+  for (const v of ["8.0.0-rc.23", "1.0.0-beta.3", "2.0.0a1", "3.1.0rc1", "1.0.0-canary.4", "15.0.0-next.1", "1.0.dev0"]) assert.equal(isStable(v), false, v);
+  assert.equal(highestStable(["7.9.0", "8.0.0-rc.23", "7.10.1", "7.2.0"]), "7.10.1");
+  assert.equal(highestStable(["2.1", "2.10", "2.9rc1"]), "2.10");
+});
+test("peer conflicts are explained", () => {
+  assert.match(breakReason('npm error code ERESOLVE\nnpm error peer graphql@"14 - 16" from graphql-request@7.4.0'), /graphql-request@7.4.0 requires graphql 14 - 16/);
+});

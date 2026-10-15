@@ -99,6 +99,6 @@ jobs:
             echo
             echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
             echo
-            node -e 'const s=require("./index/staleness.json");for(const id of require("fs").readFileSync("staleness-broken.txt","utf8").split("\n").filter(Boolean)){const r=s.recipes[id];console.log("- `"+id+"`: "+Object.entries(r.bumped||{}).map(([k,v])=>k+" "+v).join(", "))}'
+            node -e 'const s=require("./index/staleness.json");for(const id of require("fs").readFileSync("staleness-broken.txt","utf8").split("\n").filter(Boolean)){const r=s.recipes[id];console.log("- `"+id+"`: "+Object.entries(r.bumped||{}).map(([k,v])=>k+" "+v).join(", ")+(r.reason?" ("+r.reason+")":""))}'
           } > body.md
           if [ -n "$num" ]; then gh issue edit "$num" --body-file body.md; else gh issue create --title "$title" --body-file body.md; fi
