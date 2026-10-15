@@ -1,0 +1,27 @@
+{
+  "id": "bidict-two-way-map",
+  "status": "passed",
+  "ran_at": "2026-10-15T21:56:26.667Z",
+  "last_passed_at": "2026-10-15T21:56:26.667Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 296,
+    "test": 1210
+  },
+  "pinned": {
+    "bidict": "0.24.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:a412d8a978528be28a5e450d36e33288ec3164dd9603e0e0d54905fafe91eaa4",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38813530570"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+}

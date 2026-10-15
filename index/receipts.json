@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-15T20:57:52.242Z",
+ "generated_at": "2026-10-15T21:57:17.537Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 325,
+ "count": 341,
  "recipes": [
   {
    "id": "aiofiles-anyio-temp-io",
@@ -17,6 +17,26 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T18:10:06.236Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38783276983",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "aiohttp-pytest-plugin-client",
+   "language": "python",
+   "pinned": {
+    "aiohttp": "3.14.5",
+    "pytest-aiohttp": "1.1.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:28.730Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -229,6 +249,26 @@
    }
   },
   {
+   "id": "arq-fakeredis-job-queue",
+   "language": "python",
+   "pinned": {
+    "arq": "0.28.0",
+    "fakeredis": "2.40.0",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:31.867Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "arrow-time-machine-shift",
    "language": "python",
    "pinned": {
@@ -354,6 +394,24 @@
      "@electric-sql/pglite": "0.5.10"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "authlib-jose-jwt-claims",
+   "language": "python",
+   "pinned": {
+    "authlib": "1.9.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:32.970Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -521,6 +579,24 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T15:57:15.937Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "bidict-two-way-map",
+   "language": "python",
+   "pinned": {
+    "bidict": "0.24.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:26.667Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -1030,6 +1106,26 @@
    }
   },
   {
+   "id": "databases-aiosqlite-queries",
+   "language": "python",
+   "pinned": {
+    "databases": "0.9.0",
+    "aiosqlite": "0.22.1",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:26.044Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "date-fns-tz-scheduling",
    "language": "typescript",
    "pinned": {
@@ -1106,6 +1202,25 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T15:58:20.658Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "deepdiff-pydantic-compare",
+   "language": "python",
+   "pinned": {
+    "deepdiff": "9.1.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:25.491Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -1971,6 +2086,27 @@
    }
   },
   {
+   "id": "fastapi-cashews-memory-cache",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.2",
+    "cashews": "7.6.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:26.797Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "fastapi-dependency-overrides-httpx",
    "language": "python",
    "pinned": {
@@ -2598,6 +2734,24 @@
    }
   },
   {
+   "id": "glom-nested-transform",
+   "language": "python",
+   "pinned": {
+    "glom": "25.12.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:36.435Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "grammy-bot-handle-update",
    "language": "typescript",
    "pinned": {
@@ -3014,6 +3168,24 @@
    }
   },
   {
+   "id": "huey-sqlite-immediate",
+   "language": "python",
+   "pinned": {
+    "huey": "3.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:45.985Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "hypothesis-polyfactory-models",
    "language": "python",
    "pinned": {
@@ -3185,6 +3357,25 @@
      "markupsafe": "3.0.4"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "jmespath-pydantic-filter",
+   "language": "python",
+   "pinned": {
+    "jmespath": "1.1.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:43.750Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -4834,6 +5025,25 @@
    }
   },
   {
+   "id": "piccolo-sqlite-crud",
+   "language": "python",
+   "pinned": {
+    "piccolo": "1.36.0",
+    "aiosqlite": "0.22.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:45.999Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "pillow-piexif-gps",
    "language": "python",
    "pinned": {
@@ -5850,6 +6060,24 @@
    }
   },
   {
+   "id": "sortedcontainers-sorteddict-events",
+   "language": "python",
+   "pinned": {
+    "sortedcontainers": "2.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:48.172Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "sqlalchemy-aiosqlite-session-factory",
    "language": "python",
    "pinned": {
@@ -5985,6 +6213,25 @@
    }
   },
   {
+   "id": "sqlalchemy-orjson-json-column",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "orjson": "3.13.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:52.748Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "sqlalchemy2-pydantic-v2-from-attributes",
    "language": "python",
    "pinned": {
@@ -6081,6 +6328,27 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T16:05:41.889Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "starlette-itsdangerous-sessions",
+   "language": "python",
+   "pinned": {
+    "starlette": "1.8.0",
+    "itsdangerous": "2.2.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:56.631Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -6395,6 +6663,25 @@
    }
   },
   {
+   "id": "tortoise-orm-sqlite-relations",
+   "language": "python",
+   "pinned": {
+    "tortoise-orm": "1.1.9",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:55.284Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "trpc-client-server-superjson",
    "language": "typescript",
    "pinned": {
@@ -6605,6 +6892,25 @@
      "rich": "15.0.0"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "typer-rich-table-export",
+   "language": "python",
+   "pinned": {
+    "typer": "0.27.3",
+    "rich": "15.0.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T21:56:58.533Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38813530570",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {

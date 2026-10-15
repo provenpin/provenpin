@@ -1,0 +1,30 @@
+{
+  "id": "starlette-itsdangerous-sessions",
+  "status": "passed",
+  "ran_at": "2026-10-15T21:56:56.631Z",
+  "last_passed_at": "2026-10-15T21:56:56.631Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 380,
+    "test": 1830
+  },
+  "pinned": {
+    "starlette": "1.8.0",
+    "itsdangerous": "2.2.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+  },
+  "recipe_hash": "sha256:7e69e939c45c266fe3361835b502d72f162e1680e74d73347d73f53a4e74f43e",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38813530570"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.15s\n"
+}

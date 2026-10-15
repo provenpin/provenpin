@@ -1,0 +1,28 @@
+{
+  "id": "typer-rich-table-export",
+  "status": "passed",
+  "ran_at": "2026-10-15T21:56:58.533Z",
+  "last_passed_at": "2026-10-15T21:56:58.533Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 931,
+    "test": 1797
+  },
+  "pinned": {
+    "typer": "0.27.3",
+    "rich": "15.0.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:6574c6bff230b1578415102f3c946145eefc39a886543a711f9869ddba5f4d51",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38813530570"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.43s\n"
+}
