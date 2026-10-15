@@ -1,0 +1,19 @@
+id: jose-jwks-verify
+title: "Verify JWTs against a JWKS with jose (RS256, key rotation) in Vitest"
+summary: "Verify third-party RS256 access tokens (Auth0, Cognito, Clerk style) with jose's JWKS key sets, checking issuer, audience, expiry and key rotation, tested offline with a local JWKS."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [jose, vitest]
+tags: [auth, jwt, jwks, oidc]
+pinned:
+  "jose": "6.2.12"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+files:
+  - package.json
+  - src/verify.ts
+  - test/verify.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

@@ -1,0 +1,27 @@
+id: react-query-testing-library
+title: "TanStack Query + React Testing Library hooks and components (Vitest + jsdom)"
+summary: "Test React components and hooks that use TanStack Query v5 with Testing Library on jsdom: fresh QueryClient per test, retries off, mocked fetchers, mutations with invalidation."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@tanstack/react-query", react, "@testing-library/react", vitest, jsdom]
+tags: [react, data-fetching, testing]
+pinned:
+  "@tanstack/react-query": "5.104.3"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+  "@testing-library/react": "16.3.3"
+  "@testing-library/dom": "10.4.2"
+  "jsdom": "30.1.3"
+  "@types/react": "19.3.0"
+  "@types/react-dom": "19.3.0"
+files:
+  - package.json
+  - vitest.config.ts
+  - src/Todos.tsx
+  - test/Todos.test.tsx
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

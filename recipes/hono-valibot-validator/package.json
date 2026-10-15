@@ -1,0 +1,17 @@
+{
+  "name": "hono-valibot-validator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --reporter=default --reporter=json --outputFile=test-report.json"
+  },
+  "dependencies": {
+    "hono": "4.13.13",
+    "valibot": "1.5.0",
+    "@hono/valibot-validator": "0.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+  }
+}

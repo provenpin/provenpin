@@ -1,0 +1,19 @@
+id: zustand-store-vitest
+title: "Zustand 5 store with persist middleware, tested with Vitest"
+summary: "A typed Zustand 5 vanilla store with actions, derived selectors and persist middleware on a custom storage, tested with Vitest including state reset between tests."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [zustand, vitest]
+tags: [state, react, testing]
+pinned:
+  "zustand": "5.0.15"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+files:
+  - package.json
+  - src/cart.ts
+  - test/cart.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

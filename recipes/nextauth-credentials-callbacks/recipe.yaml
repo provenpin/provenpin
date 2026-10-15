@@ -1,0 +1,22 @@
+id: nextauth-credentials-callbacks
+title: "NextAuth.js v4 credentials provider + JWT/session callbacks (mocked)"
+summary: "NextAuth v4 authOptions for Next.js with a Credentials provider, bcrypt-checked users and role claims flowing through jwt and session callbacks, unit-tested without a server."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [next-auth, next, bcryptjs]
+tags: [auth, nextjs, sessions]
+pinned:
+  "next-auth": "4.24.15"
+  "next": "16.4.1"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "bcryptjs": "3.0.3"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/auth.ts
+  - test/auth.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

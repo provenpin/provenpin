@@ -1,0 +1,16 @@
+{
+  "name": "resend-email-msw",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "resend": "6.33.0"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "msw": "3.0.3"
+  }
+}

@@ -1,0 +1,19 @@
+id: nodemailer-templates-test-transport
+title: "Nodemailer email sending tested with jsonTransport"
+summary: "Send multipart (HTML + text) emails with attachments through Nodemailer, swapping SMTP for jsonTransport in tests so nothing leaves the machine."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [nodemailer]
+tags: [email, smtp, testing]
+pinned:
+  "nodemailer": "10.1.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "@types/nodemailer": "8.0.2"
+files:
+  - package.json
+  - src/mailer.ts
+  - test/mailer.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

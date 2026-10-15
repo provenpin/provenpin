@@ -1,0 +1,19 @@
+{
+  "name": "nextauth-credentials-callbacks",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "next-auth": "4.24.15",
+    "next": "16.4.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "bcryptjs": "3.0.3"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  }
+}

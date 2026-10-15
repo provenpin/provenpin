@@ -1,0 +1,18 @@
+{
+  "name": "trpc-client-server-superjson",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --reporter=default --reporter=json --outputFile=test-report.json"
+  },
+  "dependencies": {
+    "@trpc/server": "11.19.0",
+    "@trpc/client": "11.19.0",
+    "superjson": "2.2.6",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+  }
+}

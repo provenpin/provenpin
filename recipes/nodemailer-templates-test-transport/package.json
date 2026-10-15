@@ -1,0 +1,16 @@
+{
+  "name": "nodemailer-templates-test-transport",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "nodemailer": "10.1.1"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/nodemailer": "8.0.2"
+  }
+}

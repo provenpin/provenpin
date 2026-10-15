@@ -1,0 +1,19 @@
+id: resend-email-msw
+title: "Resend email sending with React-free templates, tested with MSW"
+summary: "Send transactional email with the Resend Node SDK (HTML + text, tags, idempotency), handling API errors, tested offline by intercepting the Resend API with MSW."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [resend, msw]
+tags: [email, mocking, transactional]
+pinned:
+  "resend": "6.33.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "msw": "3.0.3"
+files:
+  - package.json
+  - src/mailer.ts
+  - test/mailer.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

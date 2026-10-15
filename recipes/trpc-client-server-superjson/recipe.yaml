@@ -1,0 +1,23 @@
+id: trpc-client-server-superjson
+title: "tRPC 11 client + server over fetch with superjson (Vitest)"
+summary: "End-to-end typed tRPC 11: fetch adapter server, createTRPCClient with httpBatchLink and superjson transformer for Dates and Maps, tested in-process with Vitest."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@trpc/server", "@trpc/client", superjson, zod, vitest]
+tags: [api, rpc, typescript]
+pinned:
+  "@trpc/server": "11.19.0"
+  "@trpc/client": "11.19.0"
+  "superjson": "2.2.6"
+  "zod": "4.6.7"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+files:
+  - package.json
+  - src/server.ts
+  - src/client.ts
+  - test/trpc.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

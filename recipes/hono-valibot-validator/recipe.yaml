@@ -1,0 +1,21 @@
+id: hono-valibot-validator
+title: "Hono + Valibot request validation (Vitest)"
+summary: "Validate JSON bodies and query strings in Hono with Valibot schemas via @hono/valibot-validator, with custom error responses, tested with Vitest."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [hono, valibot, "@hono/valibot-validator", vitest]
+tags: [validation, api, edge]
+pinned:
+  "hono": "4.13.13"
+  "valibot": "1.5.0"
+  "@hono/valibot-validator": "0.6.1"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

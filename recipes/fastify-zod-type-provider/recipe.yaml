@@ -1,0 +1,20 @@
+id: fastify-zod-type-provider
+title: "Fastify 5 + Zod 4 type provider for typed routes"
+summary: "Use fastify-type-provider-zod so Zod 4 schemas validate requests, serialize responses and type handlers in Fastify 5."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fastify, zod, fastify-type-provider-zod]
+tags: [validation, api, typescript]
+pinned:
+  "fastify": "5.12.7"
+  "zod": "4.6.7"
+  "fastify-type-provider-zod": "7.0.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

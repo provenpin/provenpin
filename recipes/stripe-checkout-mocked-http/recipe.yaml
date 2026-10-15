@@ -1,0 +1,18 @@
+id: stripe-checkout-mocked-http
+title: "Stripe Node SDK Checkout Sessions with a mocked HTTP client"
+summary: "Create Stripe Checkout Sessions with line items, metadata and idempotency keys, tested offline by plugging a fake fetch into Stripe.createFetchHttpClient."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [stripe]
+tags: [payments, checkout, mocking]
+pinned:
+  "stripe": "23.0.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/checkout.ts
+  - test/checkout.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

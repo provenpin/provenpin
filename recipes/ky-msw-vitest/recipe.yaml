@@ -1,0 +1,20 @@
+id: ky-msw-vitest
+title: "ky HTTP client with hooks and retries, tested with MSW + Vitest"
+summary: "A ky 2 API client (prefix option, state-object hooks) with auth hooks, retry on 5xx and typed JSON, tested offline with MSW's Node server in Vitest."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ky, msw, vitest]
+tags: [http-client, mocking, testing]
+pinned:
+  "ky": "2.2.0"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+  "msw": "3.0.3"
+files:
+  - package.json
+  - src/api.ts
+  - test/api.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

@@ -1,0 +1,24 @@
+id: hono-drizzle-sqlite-api
+title: "Hono + Drizzle ORM + SQLite REST API (Vitest)"
+summary: "CRUD REST API in Hono backed by Drizzle ORM on better-sqlite3, with Zod validation, tested with Vitest and app.request()."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [hono, drizzle-orm, better-sqlite3, zod, "@hono/zod-validator", vitest]
+tags: [api, orm, sqlite, crud]
+pinned:
+  "hono": "4.13.13"
+  "drizzle-orm": "0.45.4"
+  "better-sqlite3": "13.0.3"
+  "zod": "4.6.7"
+  "@hono/zod-validator": "0.9.1"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+  "@types/better-sqlite3": "9.6.0"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

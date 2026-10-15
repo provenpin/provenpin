@@ -1,0 +1,19 @@
+id: supabase-js-mocked-fetch
+title: "supabase-js queries and auth tested with a mocked fetch (Vitest)"
+summary: "Use @supabase/supabase-js for table queries and auth in app code, and unit-test it offline by passing a fake fetch to createClient."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@supabase/supabase-js", vitest]
+tags: [database, auth, supabase, mocking]
+pinned:
+  "@supabase/supabase-js": "2.117.3"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+files:
+  - package.json
+  - src/todos.ts
+  - test/todos.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

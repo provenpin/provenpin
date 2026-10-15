@@ -1,0 +1,16 @@
+{
+  "name": "ky-msw-vitest",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --reporter=default --reporter=json --outputFile=test-report.json"
+  },
+  "dependencies": {
+    "ky": "2.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4",
+    "msw": "3.0.3"
+  }
+}

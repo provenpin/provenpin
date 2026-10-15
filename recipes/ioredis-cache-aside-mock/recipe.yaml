@@ -1,0 +1,20 @@
+id: ioredis-cache-aside-mock
+title: "ioredis cache-aside with TTL, tested with ioredis-mock (Vitest)"
+summary: "Cache-aside helper on ioredis with JSON values, TTLs, stampede-safe single flight and invalidation, tested offline with ioredis-mock in Vitest."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ioredis, ioredis-mock, vitest]
+tags: [cache, redis, mocking]
+pinned:
+  "ioredis": "5.11.1"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+  "ioredis-mock": "8.13.1"
+files:
+  - package.json
+  - src/cache.ts
+  - test/cache.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

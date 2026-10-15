@@ -1,0 +1,17 @@
+{
+  "name": "fastify-zod-type-provider",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "fastify": "5.12.7",
+    "zod": "4.6.7",
+    "fastify-type-provider-zod": "7.0.0"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  }
+}

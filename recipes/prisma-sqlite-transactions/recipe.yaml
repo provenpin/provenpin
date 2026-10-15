@@ -1,0 +1,22 @@
+id: prisma-sqlite-transactions
+title: "Prisma 7 + SQLite: nested writes, interactive transactions and unique errors"
+summary: "Prisma Client 7 on SQLite (better-sqlite3 adapter): nested creates, an interactive $transaction that rolls back, and handling P2002 unique-constraint errors."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [prisma, sqlite, better-sqlite3]
+tags: [orm, database, transactions]
+pinned:
+  "@prisma/client": "7.10.0"
+  "@prisma/adapter-better-sqlite3": "7.10.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "prisma": "7.10.0"
+files:
+  - package.json
+  - prisma/schema.prisma
+  - prisma.config.ts
+  - src/bank.ts
+  - test/bank.test.ts
+setup: npm install --no-audit --no-fund && npx prisma db push && npx prisma generate
+test: npm test
