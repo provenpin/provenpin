@@ -1,0 +1,28 @@
+{
+  "id": "anthropic-streaming-mock",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:34:09.010Z",
+  "last_passed_at": "2026-10-15T11:34:09.010Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2357,
+    "test": 375
+  },
+  "pinned": {
+    "@anthropic-ai/sdk": "0.134.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  },
+  "recipe_hash": "sha256:bf56cf22f9506d9fcb04be907102d3a6d4799055df63a1c1e568617f226fccb1",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38728226240"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# Subtest: streams text deltas and builds the final message\nok 1 - streams text deltas and builds the final message\n  ---\n  duration_ms: 26.499054\n  type: 'test'\n  ...\n# Subtest: stream error events reject\nok 2 - stream error events reject\n  ---\n  duration_ms: 1.468128\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 273.611073\n"
+}

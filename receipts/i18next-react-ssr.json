@@ -1,0 +1,31 @@
+{
+  "id": "i18next-react-ssr",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:36:18.547Z",
+  "last_passed_at": "2026-10-15T11:36:18.547Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2236,
+    "test": 1127
+  },
+  "pinned": {
+    "i18next": "26.4.5",
+    "react-i18next": "17.0.16",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  },
+  "recipe_hash": "sha256:bfcd55f43fb6f263faa4c737eaf4eebcd1b260d9250a4b96baf8b815b3bb76f4",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38728226240"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: plurals, context and fallback\nok 1 - plurals, context and fallback\n  ---\n  duration_ms: 509.091677\n  type: 'test'\n  ...\n# Subtest: interpolation escapes HTML\nok 2 - interpolation escapes HTML\n  ---\n  duration_ms: 0.395242\n  type: 'test'\n  ...\n# Subtest: SSR render with per-request instances\nok 3 - SSR render with per-request instances\n  ---\n  duration_ms: 15.31984\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 993.149779\n"
+}

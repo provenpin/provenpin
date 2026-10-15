@@ -1,0 +1,30 @@
+{
+  "id": "papaparse-zod-csv-import",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:37:12.416Z",
+  "last_passed_at": "2026-10-15T11:37:12.416Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1788,
+    "test": 331
+  },
+  "pinned": {
+    "papaparse": "5.7.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/papaparse": "5.5.2"
+  },
+  "recipe_hash": "sha256:dcf9ccf01431f17d6d44a310614608f38608220b2607834bd5d514a3a00d34b0",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38728226240"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid rows parsed, quoted commas kept, BOM and blank lines ignored\nok 1 - valid rows parsed, quoted commas kept, BOM and blank lines ignored\n  ---\n  duration_ms: 3.803684\n  type: 'test'\n  ...\n# Subtest: errors carry spreadsheet row numbers\nok 2 - errors carry spreadsheet row numbers\n  ---\n  duration_ms: 0.505937\n  type: 'test'\n  ...\n# Subtest: round-trips through export\nok 3 - round-trips through export\n  ---\n  duration_ms: 0.823172\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 220.297036\n"
+}

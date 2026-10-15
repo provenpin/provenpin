@@ -1,0 +1,28 @@
+{
+  "id": "jimp-image-resize",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:36:13.438Z",
+  "last_passed_at": "2026-10-15T11:36:13.438Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 4085,
+    "test": 552
+  },
+  "pinned": {
+    "jimp": "1.6.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  },
+  "recipe_hash": "sha256:908cc07def1a550856292c39c8796c92838847676d105282f7485e3c5b4bd876",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38728226240"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: square thumbnail from a wide image\nok 1 - square thumbnail from a wide image\n  ---\n  duration_ms: 61.479363\n  type: 'test'\n  ...\n# Subtest: fit width keeps aspect ratio and outputs jpeg\nok 2 - fit width keeps aspect ratio and outputs jpeg\n  ---\n  duration_ms: 102.281349\n  type: 'test'\n  ...\n# Subtest: does not upscale small images\nok 3 - does not upscale small images\n  ---\n  duration_ms: 15.423435\n  type: 'test'\n  ...\n# Subtest: rejects non-images\nok 4 - rejects non-images\n  ---\n  duration_ms: 0.698357\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 456.559678\n"
+}

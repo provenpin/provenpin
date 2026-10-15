@@ -1,0 +1,29 @@
+{
+  "id": "langchainjs-zod-tools",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:36:32.195Z",
+  "last_passed_at": "2026-10-15T11:36:32.195Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3670,
+    "test": 426
+  },
+  "pinned": {
+    "@langchain/core": "1.2.17",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  },
+  "recipe_hash": "sha256:d4d2ef2e60c8f5f107681d9648969192b06a00d33834ac7830f8b1ae1fa6d29f",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38728226240"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: tool validates and runs directly\nok 1 - tool validates and runs directly\n  ---\n  duration_ms: 4.345066\n  type: 'test'\n  ...\n# Subtest: loop executes tool calls and returns final answer\nok 2 - loop executes tool calls and returns final answer\n  ---\n  duration_ms: 0.601797\n  type: 'test'\n  ...\n# Subtest: bad args are returned to the model as an error\nok 3 - bad args are returned to the model as an error\n  ---\n  duration_ms: 0.383894\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 323.815216\n"
+}

@@ -1,15 +1,15 @@
 {
   "id": "httpx-tenacity-retry",
   "status": "passed",
-  "ran_at": "2026-10-15T11:20:19.653Z",
-  "last_passed_at": "2026-10-15T11:20:19.653Z",
+  "ran_at": "2026-10-15T11:36:09.503Z",
+  "last_passed_at": "2026-10-15T11:36:09.503Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 306,
-    "test": 1496
+    "setup": 470,
+    "test": 1410
   },
   "pinned": {
     "httpx": "0.28.1",
@@ -22,7 +22,7 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38726414138"
+    "runner": "github-actions 38728226240"
   },
   "errors": [],
   "log_tail": "....                                                                     [100%]\n4 passed in 0.12s\n"
