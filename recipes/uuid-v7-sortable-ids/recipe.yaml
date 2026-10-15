@@ -1,0 +1,18 @@
+id: uuid-v7-sortable-ids
+title: "uuid v7 sortable identifiers"
+summary: "Generate time-ordered UUID v7 values with the uuid package, validating version bits and lexicographic sort order offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [uuid]
+tags: [ids, uuid, sortable]
+pinned:
+  "uuid": "14.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/ids.ts
+  - test/ids.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

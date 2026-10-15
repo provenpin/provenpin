@@ -1,0 +1,18 @@
+id: slugify-url-paths
+title: "slugify URL and filesystem path helpers"
+summary: "Build stable URL slugs and unique path segments with slugify, covering custom replacements, lowercase, and collision suffixes offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [slugify]
+tags: [url, seo, strings]
+pinned:
+  "slugify": "1.6.9"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/slugs.ts
+  - test/slugs.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

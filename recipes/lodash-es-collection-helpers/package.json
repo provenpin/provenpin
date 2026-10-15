@@ -1,0 +1,10 @@
+{
+  "name": "lodash-es-collection-helpers",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {"lodash-es":"4.18.1"},
+  "devDependencies": {"@types/node":"26.6.5","tsx":"4.23.15"}
+}

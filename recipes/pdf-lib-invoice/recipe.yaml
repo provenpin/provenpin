@@ -1,0 +1,18 @@
+id: pdf-lib-invoice
+title: "pdf-lib create and read invoice PDF"
+summary: "Build a multi-page invoice PDF with pdf-lib, draw text and rectangles, then reload the bytes and assert page count offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pdf-lib]
+tags: [pdf, documents, invoices]
+pinned:
+  "pdf-lib": "1.17.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/invoice.ts
+  - test/invoice.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,10 @@
+{
+  "name": "temporal-polyfill-dates",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {"@js-temporal/polyfill":"0.5.1"},
+  "devDependencies": {"@types/node":"26.6.5","tsx":"4.23.15"}
+}

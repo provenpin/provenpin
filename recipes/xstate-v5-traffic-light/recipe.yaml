@@ -1,0 +1,18 @@
+id: xstate-v5-traffic-light
+title: "XState v5 traffic light state machine"
+summary: "Model a traffic light with XState v5 createMachine and createActor, covering transitions, guards and context updates offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [xstate]
+tags: [state-machine, fsm, actors]
+pinned:
+  "xstate": "5.33.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/light.ts
+  - test/light.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

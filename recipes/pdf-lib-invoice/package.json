@@ -1,0 +1,10 @@
+{
+  "name": "pdf-lib-invoice",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {"pdf-lib":"1.17.1"},
+  "devDependencies": {"@types/node":"26.6.5","tsx":"4.23.15"}
+}

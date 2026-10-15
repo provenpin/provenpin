@@ -1,0 +1,10 @@
+{
+  "name": "mitt-typed-events",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {"mitt":"3.0.1"},
+  "devDependencies": {"@types/node":"26.6.5","tsx":"4.23.15"}
+}

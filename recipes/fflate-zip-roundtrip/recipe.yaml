@@ -1,0 +1,18 @@
+id: fflate-zip-roundtrip
+title: "fflate zip compress and inflate roundtrip"
+summary: "Zip and unzip multiple files in memory with fflate, covering gzip strings and zip sync helpers offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fflate]
+tags: [zip, compression, gzip]
+pinned:
+  "fflate": "0.8.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/archive.ts
+  - test/archive.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

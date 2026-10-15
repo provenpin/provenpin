@@ -1,0 +1,10 @@
+{
+  "name": "express-validator-supertest",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {"express":"5.3.0","express-validator":"7.3.2"},
+  "devDependencies": {"@types/node":"26.6.5","tsx":"4.23.15","supertest":"7.3.1","@types/supertest":"7.2.1","@types/express":"5.0.6"}
+}

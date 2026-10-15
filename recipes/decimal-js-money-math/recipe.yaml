@@ -1,0 +1,18 @@
+id: decimal-js-money-math
+title: "decimal.js precise money math"
+summary: "Compute currency totals with decimal.js to avoid float drift, covering tax, discounts and fixed two-decimal rounding offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [decimal.js]
+tags: [money, decimal, finance]
+pinned:
+  "decimal.js": "10.6.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/money.ts
+  - test/money.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

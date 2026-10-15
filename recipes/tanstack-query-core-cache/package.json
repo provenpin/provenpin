@@ -1,0 +1,10 @@
+{
+  "name": "tanstack-query-core-cache",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {"@tanstack/query-core":"5.104.3"},
+  "devDependencies": {"@types/node":"26.6.5","tsx":"4.23.15"}
+}

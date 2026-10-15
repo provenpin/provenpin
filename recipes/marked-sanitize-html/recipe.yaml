@@ -1,0 +1,20 @@
+id: marked-sanitize-html
+title: "marked Markdown to sanitized HTML"
+summary: "Render Markdown with marked then strip unsafe tags and attributes with sanitize-html, covering links, code blocks and XSS payloads offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [marked, sanitize-html]
+tags: [markdown, html, xss, sanitization]
+pinned:
+  "marked": "18.1.1"
+  "sanitize-html": "2.18.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "@types/sanitize-html": "2.16.2"
+files:
+  - package.json
+  - src/markdown.ts
+  - test/markdown.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,19 @@
+id: fast-xml-parser-zod
+title: "fast-xml-parser with Zod validation"
+summary: "Parse XML payloads with fast-xml-parser then validate the object shape with Zod, covering attributes, arrays and builder roundtrips offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fast-xml-parser, zod]
+tags: [xml, parsing, validation]
+pinned:
+  "fast-xml-parser": "5.11.2"
+  "zod": "4.6.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/xml.ts
+  - test/xml.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

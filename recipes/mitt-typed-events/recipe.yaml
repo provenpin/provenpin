@@ -1,0 +1,18 @@
+id: mitt-typed-events
+title: "mitt typed event bus"
+summary: "Publish domain events with mitt using a typed event map, covering subscribe, once-style unsubscribe and wildcard handlers offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [mitt]
+tags: [events, pubsub, bus]
+pinned:
+  "mitt": "3.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/bus.ts
+  - test/bus.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

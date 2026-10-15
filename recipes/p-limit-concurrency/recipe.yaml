@@ -1,0 +1,18 @@
+id: p-limit-concurrency
+title: "p-limit concurrent async job pool"
+summary: "Cap parallel async work with p-limit, tracking in-flight count and collecting results in input order offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [p-limit]
+tags: [concurrency, async, queue]
+pinned:
+  "p-limit": "7.3.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/pool.ts
+  - test/pool.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

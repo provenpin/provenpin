@@ -1,0 +1,19 @@
+id: qrcode-png-buffer
+title: "qrcode PNG and data URL helpers"
+summary: "Generate QR codes with the qrcode package as PNG buffers and data URLs, covering error correction levels offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [qrcode]
+tags: [qr, images, barcode]
+pinned:
+  "qrcode": "1.5.4"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "@types/qrcode": "1.5.6"
+files:
+  - package.json
+  - src/qr.ts
+  - test/qr.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

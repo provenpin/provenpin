@@ -1,0 +1,18 @@
+id: handlebars-email-templates
+title: "Handlebars email template helpers"
+summary: "Compile Handlebars email layouts with partials and helpers, covering conditionals, loops and HTML escaping offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [handlebars]
+tags: [templates, email, html]
+pinned:
+  "handlebars": "4.7.10"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/templates.ts
+  - test/templates.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

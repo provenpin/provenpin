@@ -1,0 +1,18 @@
+id: lodash-es-collection-helpers
+title: "lodash-es collection transform helpers"
+summary: "Shape nested data with lodash-es groupBy, keyBy, pick, uniqBy and orderBy for a small reporting pipeline offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [lodash-es]
+tags: [utils, collections, data]
+pinned:
+  "lodash-es": "4.18.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/report.ts
+  - test/report.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

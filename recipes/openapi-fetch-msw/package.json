@@ -1,0 +1,10 @@
+{
+  "name": "openapi-fetch-msw",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {"openapi-fetch":"0.17.0"},
+  "devDependencies": {"@types/node":"26.6.5","tsx":"4.23.15","msw":"3.0.3"}
+}

@@ -1,0 +1,18 @@
+id: temporal-polyfill-dates
+title: "Temporal polyfill PlainDate and Duration"
+summary: "Work with calendar dates using @js-temporal/polyfill Temporal.PlainDate and Duration, covering add, until and timezone-free math offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@js-temporal/polyfill"]
+tags: [dates, temporal, calendar]
+pinned:
+  "@js-temporal/polyfill": "0.5.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/dates.ts
+  - test/dates.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

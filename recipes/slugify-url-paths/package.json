@@ -1,0 +1,10 @@
+{
+  "name": "slugify-url-paths",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {"slugify":"1.6.9"},
+  "devDependencies": {"@types/node":"26.6.5","tsx":"4.23.15"}
+}

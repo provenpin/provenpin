@@ -1,0 +1,18 @@
+id: p-queue-priority
+title: "p-queue priority async task queue"
+summary: "Schedule async tasks with p-queue using concurrency limits and priority ordering, covering pause/start and size helpers offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [p-queue]
+tags: [queue, concurrency, priority, async]
+pinned:
+  "p-queue": "10.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/jobs.ts
+  - test/jobs.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

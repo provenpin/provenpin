@@ -1,0 +1,18 @@
+id: tanstack-query-core-cache
+title: "TanStack Query Core fetch and cache"
+summary: "Drive async data fetching with @tanstack/query-core QueryClient, covering staleTime, cache hits and invalidateQueries without React offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@tanstack/query-core"]
+tags: [cache, async, query, tanstack]
+pinned:
+  "@tanstack/query-core": "5.104.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/client.ts
+  - test/client.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
