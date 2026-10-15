@@ -15,7 +15,7 @@ export interface ServerOptions {
   proEnabled?: string;
   /** Comma-separated valid keys (a Worker secret). A valid Authorization: Bearer key marks the caller as Pro. */
   apiKeys?: string;
-  /** Optional KV namespace with entries "key:<sha256 hex of key>". */
+  /** Optional KV namespace with entries "key:<sha256 hex of key>". A missing entry or a value starting with "revoked" means not Pro. */
   keyStore?: KeyStore;
   /** When "true" (and Pro is enabled), requests without a valid key are rejected (future Pro-only mode). */
   requireKey?: string;
@@ -137,7 +137,7 @@ export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
     const key = (req.headers.get("authorization")?.match(/^Bearer\s+(\S+)$/i)?.[1] ?? req.headers.get("x-provenpin-key") ?? "").trim();
     if (!key || key.length > 200) return "free";
     if (keys.has(key)) return "pro";
-    if (opts.keyStore) { try { if (await opts.keyStore.get(`key:${await sha256Hex(key)}`)) return "pro"; } catch {} }
+    if (opts.keyStore) { try { const v = await opts.keyStore.get(`key:${await sha256Hex(key)}`); if (v && !v.startsWith("revoked")) return "pro"; } catch {} }
     return "free";
   }
   const version = opts.version ?? "0.1.0";
