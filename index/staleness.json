@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "checked_at": "2026-10-15T13:16:08.213Z",
+ "checked_at": "2026-10-15T13:17:34.466Z",
  "recipes": {
   "anthropic-sdk-mocked-tool-use": {
    "id": "anthropic-sdk-mocked-tool-use",
@@ -804,8 +804,8 @@
   },
   "graphql-request-msw": {
    "id": "graphql-request-msw",
-   "checked_at": "2026-10-15T13:15:52.090Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38741169834",
+   "checked_at": "2026-10-15T13:17:12.923Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38741367307",
    "status": "breaks_on_latest",
    "latest": {
     "graphql-request": "7.4.0",
@@ -822,7 +822,7 @@
    "setup_failed": true,
    "reason": "no stable release supports it yet: graphql-request@7.4.0 requires graphql 14 - 16",
    "pinned_kept": true,
-   "log_tail": "npm error code ERESOLVE\nnpm error ERESOLVE unable to resolve dependency tree\nnpm error\nnpm error While resolving: graphql-request-msw@undefined\nnpm error Found: graphql@17.0.2\nnpm error node_modules/graphql\nnpm error   graphql@\"17.0.2\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer graphql@\"14 - 16\" from graphql-request@7.4.0\nnpm error node_modules/graphql-request\nnpm error   graphql-request@\"7.4.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /home/runner/.npm/_logs/2026-10-15T13_15_52_586Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T13_15_52_586Z-debug-0.log\n"
+   "log_tail": "npm error code ERESOLVE\nnpm error ERESOLVE unable to resolve dependency tree\nnpm error\nnpm error While resolving: graphql-request-msw@undefined\nnpm error Found: graphql@17.0.2\nnpm error node_modules/graphql\nnpm error   graphql@\"17.0.2\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer graphql@\"14 - 16\" from graphql-request@7.4.0\nnpm error node_modules/graphql-request\nnpm error   graphql-request@\"7.4.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /home/runner/.npm/_logs/2026-10-15T13_17_13_225Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T13_17_13_225Z-debug-0.log\n"
   },
   "graphql-yoga-schema-context": {
    "id": "graphql-yoga-schema-context",
@@ -970,8 +970,8 @@
   },
   "ioredis-cache-aside-mock": {
    "id": "ioredis-cache-aside-mock",
-   "checked_at": "2026-10-15T13:15:49.113Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38741169834",
+   "checked_at": "2026-10-15T13:17:14.811Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38741367307",
    "status": "breaks_on_latest",
    "latest": {
     "ioredis": "6.0.0",
@@ -988,7 +988,7 @@
    "setup_failed": true,
    "reason": "no stable release supports it yet: @types/ioredis-mock@8.2.8 requires ioredis ^5",
    "pinned_kept": true,
-   "log_tail": "npm error code ERESOLVE\nnpm error ERESOLVE unable to resolve dependency tree\nnpm error\nnpm error While resolving: ioredis-cache-aside-mock@undefined\nnpm error Found: ioredis@6.0.0\nnpm error node_modules/ioredis\nnpm error   ioredis@\"6.0.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer ioredis@\"^5\" from @types/ioredis-mock@8.2.8\nnpm error node_modules/@types/ioredis-mock\nnpm error   peer @types/ioredis-mock@\"^8\" from ioredis-mock@8.13.1\nnpm error   node_modules/ioredis-mock\nnpm error     dev ioredis-mock@\"8.13.1\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /home/runner/.npm/_logs/2026-10-15T13_15_49_449Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T13_15_49_449Z-debug-0.log\n"
+   "log_tail": "npm error code ERESOLVE\nnpm error ERESOLVE unable to resolve dependency tree\nnpm error\nnpm error While resolving: ioredis-cache-aside-mock@undefined\nnpm error Found: ioredis@6.0.0\nnpm error node_modules/ioredis\nnpm error   ioredis@\"6.0.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer ioredis@\"^5\" from @types/ioredis-mock@8.2.8\nnpm error node_modules/@types/ioredis-mock\nnpm error   peer @types/ioredis-mock@\"^8\" from ioredis-mock@8.13.1\nnpm error   node_modules/ioredis-mock\nnpm error     dev ioredis-mock@\"8.13.1\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /home/runner/.npm/_logs/2026-10-15T13_17_15_944Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T13_17_15_944Z-debug-0.log\n"
   },
   "jimp-image-resize": {
    "id": "jimp-image-resize",
@@ -1199,8 +1199,8 @@
   },
   "nestjs-typeorm-sqlite": {
    "id": "nestjs-typeorm-sqlite",
-   "checked_at": "2026-10-15T13:15:47.407Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38741169834",
+   "checked_at": "2026-10-15T13:17:13.185Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38741367307",
    "status": "breaks_on_latest",
    "latest": {
     "@nestjs/core": "12.1.3",
@@ -1216,9 +1216,9 @@
     "failed": 0
    },
    "setup_failed": true,
-   "reason": "no stable release supports it yet: @nestjs/typeorm@12.0.2 requires typeorm ^0.3.0 || ^1.0.0-dev",
+   "reason": "no stable release supports it yet: typeorm@1.1.2 requires better-sqlite3 ^12.0.0",
    "pinned_kept": true,
-   "log_tail": "npm error Found: better-sqlite3@13.0.3\nnpm error node_modules/better-sqlite3\nnpm error   better-sqlite3@\"13.0.3\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peerOptional better-sqlite3@\"^12.0.0\" from typeorm@1.1.2\nnpm error node_modules/typeorm\nnpm error   typeorm@\"1.1.2\" from the root project\nnpm error   peer typeorm@\"^0.3.0 || ^1.0.0-dev\" from @nestjs/typeorm@12.0.2\nnpm error   node_modules/@nestjs/typeorm\nnpm error     @nestjs/typeorm@\"12.0.2\" from the root project\nnpm error\nnpm error Conflicting peer dependency: better-sqlite3@12.11.1\nnpm error node_modules/better-sqlite3\nnpm error   peerOptional better-sqlite3@\"^12.0.0\" from typeorm@1.1.2\nnpm error   node_modules/typeorm\nnpm error     typeorm@\"1.1.2\" from the root project\nnpm error     peer typeorm@\"^0.3.0 || ^1.0.0-dev\" from @nestjs/typeorm@12.0.2\nnpm error     node_modules/@nestjs/typeorm\nnpm error       @nestjs/typeorm@\"12.0.2\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /home/runner/.npm/_logs/2026-10-15T13_15_47_835Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T13_15_47_835Z-debug-0.log\n"
+   "log_tail": "npm error Found: better-sqlite3@13.0.3\nnpm error node_modules/better-sqlite3\nnpm error   better-sqlite3@\"13.0.3\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peerOptional better-sqlite3@\"^12.0.0\" from typeorm@1.1.2\nnpm error node_modules/typeorm\nnpm error   typeorm@\"1.1.2\" from the root project\nnpm error   peer typeorm@\"^0.3.0 || ^1.0.0-dev\" from @nestjs/typeorm@12.0.2\nnpm error   node_modules/@nestjs/typeorm\nnpm error     @nestjs/typeorm@\"12.0.2\" from the root project\nnpm error\nnpm error Conflicting peer dependency: better-sqlite3@12.11.1\nnpm error node_modules/better-sqlite3\nnpm error   peerOptional better-sqlite3@\"^12.0.0\" from typeorm@1.1.2\nnpm error   node_modules/typeorm\nnpm error     typeorm@\"1.1.2\" from the root project\nnpm error     peer typeorm@\"^0.3.0 || ^1.0.0-dev\" from @nestjs/typeorm@12.0.2\nnpm error     node_modules/@nestjs/typeorm\nnpm error       @nestjs/typeorm@\"12.0.2\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /home/runner/.npm/_logs/2026-10-15T13_17_13_668Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T13_17_13_668Z-debug-0.log\n"
   },
   "nextauth-credentials-callbacks": {
    "id": "nextauth-credentials-callbacks",
