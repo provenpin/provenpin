@@ -1,0 +1,28 @@
+{
+  "id": "msgpackr-encode-decode",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:57:05.516Z",
+  "last_passed_at": "2026-10-15T20:57:05.516Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1822,
+    "test": 371
+  },
+  "pinned": {
+    "msgpackr": "2.1.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:857a653d54cc524a270bb023c3149a7b1cd241d1309bbe3381cc4ad18bbf3879",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38805962781"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips nested payload\nok 1 - roundtrips nested payload\n  ---\n  duration_ms: 3.140751\n  type: 'test'\n  ...\n# Subtest: produces compact binary\nok 2 - produces compact binary\n  ---\n  duration_ms: 0.189945\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 220.8531\n"
+}

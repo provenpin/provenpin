@@ -1,0 +1,30 @@
+{
+  "id": "clsx-tailwind-merge-cva",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:56:47.960Z",
+  "last_passed_at": "2026-10-15T20:56:47.960Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2134,
+    "test": 354
+  },
+  "pinned": {
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.7.0",
+    "class-variance-authority": "0.7.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:e3ccdcc2c6dff762af85f23f1f4938e9f84211690c28c632545952b0223349cb",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38805962781"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: twMerge drops conflicting padding\nok 1 - twMerge drops conflicting padding\n  ---\n  duration_ms: 5.848528\n  type: 'test'\n  ...\n# Subtest: cva applies intent and size\nok 2 - cva applies intent and size\n  ---\n  duration_ms: 1.646122\n  type: 'test'\n  ...\n# Subtest: className merges on top of variants\nok 3 - className merges on top of variants\n  ---\n  duration_ms: 0.264385\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 207.636844\n"
+}

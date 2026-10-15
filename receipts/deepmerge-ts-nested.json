@@ -1,0 +1,28 @@
+{
+  "id": "deepmerge-ts-nested",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:56:46.049Z",
+  "last_passed_at": "2026-10-15T20:56:46.049Z",
+  "tests": {
+    "passed": 1,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1549,
+    "test": 379
+  },
+  "pinned": {
+    "deepmerge-ts": "8.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:8cbb71125a4c70c9ed896bfbea8dd3931380cd308e8e5149a7808c2e8891ae04",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38805962781"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: merges nested objects and concatenates arrays\nok 1 - merges nested objects and concatenates arrays\n  ---\n  duration_ms: 4.11592\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 205.473562\n"
+}
