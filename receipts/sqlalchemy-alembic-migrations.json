@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-alembic-migrations",
   "status": "passed",
-  "ran_at": "2026-10-15T09:38:08.799Z",
-  "last_passed_at": "2026-10-15T09:38:08.799Z",
+  "ran_at": "2026-10-15T09:48:34.401Z",
+  "last_passed_at": "2026-10-15T09:48:34.401Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 39,
-    "test": 1755
+    "setup": 260,
+    "test": 4700
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -18,11 +18,11 @@
   },
   "recipe_hash": "sha256:5f931c8414aaae71b1cdeac3a2c7ad69b261a1826e1aba7133898b1555aca680",
   "environment": {
-    "os": "linux 6.12.94+",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.5",
-    "runner": "local"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38715522384"
   },
   "errors": [],
-  "log_tail": "..                                                                       [100%]\n2 passed in 1.22s\n"
+  "log_tail": "..                                                                       [100%]\n2 passed in 3.32s\n"
 }
