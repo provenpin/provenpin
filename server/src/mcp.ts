@@ -6,11 +6,20 @@ import { listStacks, searchRecipes, type RecipeIndex } from "./search.ts";
 export const PROTOCOL_VERSION = "2025-06-18";
 const SUPPORTED = ["2025-06-18", "2025-03-26", "2024-11-05"];
 
+/** Looks up a Pro key by its SHA-256 hex hash (e.g. a Cloudflare KV namespace). Keys are never stored in plain text. */
+export interface KeyStore { get(key: string): Promise<string | null> }
+
 export interface ServerOptions {
-  /** Comma-separated valid keys. When set, a valid x-provenpin-key header marks the caller as Pro. */
+  /** Feature flag for Pro keys. Unless "true", every caller is free tier and keys are ignored. */
+  proEnabled?: string;
+  /** Comma-separated valid keys (a Worker secret). A valid Authorization: Bearer key marks the caller as Pro. */
   apiKeys?: string;
-  /** When "true", requests without a valid key are rejected (future Pro-only mode). */
+  /** Optional KV namespace with entries "key:<sha256 hex of key>". */
+  keyStore?: KeyStore;
+  /** When "true" (and Pro is enabled), requests without a valid key are rejected (future Pro-only mode). */
   requireKey?: string;
+  /** Public receipts feed served at /receipts.json. */
+  receipts?: unknown;
   version?: string;
   /** Optional Workers Analytics Engine dataset for privacy-safe usage counts. */
   analytics?: AnalyticsSink;
@@ -102,8 +111,22 @@ const CORS = {
   "access-control-allow-methods": "GET, POST, OPTIONS",
 };
 
+export async function sha256Hex(s: string) {
+  const d = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+  return Array.from(new Uint8Array(d), (b) => b.toString(16).padStart(2, "0")).join("");
+}
+
 export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
   const keys = new Set((opts.apiKeys ?? "").split(",").map((k) => k.trim()).filter(Boolean));
+  const proEnabled = opts.proEnabled === "true";
+  async function tierFor(req: Request): Promise<"free" | "pro"> {
+    if (!proEnabled) return "free";
+    const key = (req.headers.get("authorization")?.match(/^Bearer\s+(\S+)$/i)?.[1] ?? req.headers.get("x-provenpin-key") ?? "").trim();
+    if (!key || key.length > 200) return "free";
+    if (keys.has(key)) return "pro";
+    if (opts.keyStore) { try { if (await opts.keyStore.get(`key:${await sha256Hex(key)}`)) return "pro"; } catch {} }
+    return "free";
+  }
   const version = opts.version ?? "0.1.0";
   return async (req: Request): Promise<Response> => {
     const url = new URL(req.url);
@@ -111,13 +134,16 @@ export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
     if (url.pathname === "/" || url.pathname === "/health") {
       return Response.json({ name: "ProvenPin MCP", ok: true, recipes: index.recipes.filter((r) => r.receipt.status === "passed").length, index_generated_at: index.generated_at, mcp_endpoint: "/mcp" }, { headers: CORS });
     }
+    if (url.pathname === "/receipts.json" && opts.receipts) {
+      if (req.method !== "GET" && req.method !== "HEAD") return new Response("Method Not Allowed", { status: 405, headers: { ...CORS, allow: "GET" } });
+      return new Response(req.method === "HEAD" ? null : JSON.stringify(opts.receipts), { headers: { ...CORS, "content-type": "application/json; charset=utf-8", "cache-control": "public, max-age=300, s-maxage=3600" } });
+    }
     if (url.pathname !== "/mcp") return new Response("Not found", { status: 404, headers: CORS });
     if (req.method === "GET") return new Response("Method Not Allowed", { status: 405, headers: { ...CORS, allow: "POST" } });
     if (req.method !== "POST") return new Response("Method Not Allowed", { status: 405, headers: CORS });
 
-    const key = req.headers.get("x-provenpin-key") ?? req.headers.get("authorization")?.replace(/^Bearer\s+/i, "") ?? "";
-    const tier = key && keys.has(key) ? "pro" : "free";
-    if (opts.requireKey === "true" && tier !== "pro") return Response.json(err(null, -32001, "A valid x-provenpin-key header is required"), { status: 401, headers: CORS });
+    const tier = await tierFor(req);
+    if (proEnabled && opts.requireKey === "true" && tier !== "pro") return Response.json(err(null, -32001, "A valid API key is required (Authorization: Bearer <key>)"), { status: 401, headers: CORS });
 
     let body: any;
     try { body = await req.json(); } catch { return Response.json(err(null, -32700, "Parse error"), { status: 400, headers: CORS }); }
@@ -127,7 +153,7 @@ export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
     const ci = init?.params?.clientInfo;
     const client = init ? { name: String(ci?.name ?? "unknown"), version: String(ci?.version ?? "unknown") }
       : clientFromSession(req.headers.get("mcp-session-id")) ?? { name: "unknown", version: "unknown" };
-    for (const m of msgs) record(eventFor(m, client, internalHeader), opts.analytics);
+    for (const m of msgs) record(eventFor(m, client, internalHeader, tier), opts.analytics);
     const out = msgs.map((m) => handleRpc(index, m, tier, version)).filter((x): x is Json => x !== null);
     if (out.length === 0) return new Response(null, { status: 202, headers: CORS });
     const headers: Record<string, string> = { ...CORS, "x-provenpin-tier": tier };

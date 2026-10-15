@@ -1,0 +1,104 @@
+name: staleness
+
+# Weekly check: re-test every recipe with its stack libraries bumped to the latest release.
+# Pins are bumped in a temp copy only. Recipes and their last-passed receipts are never changed.
+# Results go to index/staleness.json; recipes that break on latest are listed in one GitHub issue.
+on:
+  schedule:
+    - cron: "23 13 * * 3"   # Wednesdays 13:23 UTC
+  workflow_dispatch:
+    inputs:
+      recipes:
+        description: "Space-separated recipe ids to check (blank = all)"
+        required: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency: { group: staleness, cancel-in-progress: false }
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.pick.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: pick
+        run: |
+          if [ -n "${{ github.event.inputs.recipes }}" ]; then
+            ids=$(printf '%s\n' ${{ github.event.inputs.recipes }} | jq -R . | jq -sc .)
+          else
+            ids=$(ls recipes | jq -R . | jq -sc .)
+          fi
+          echo "matrix=$ids" >> "$GITHUB_OUTPUT"
+
+  check:
+    needs: plan
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        recipe: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.13" }
+      - uses: astral-sh/setup-uv@v6
+      - run: npm ci || npm install
+      - name: Re-test on latest stack versions (temp copy)
+        run: node runner/staleness.mjs ${{ matrix.recipe }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: stale-${{ matrix.recipe }}
+          path: staleness/${{ matrix.recipe }}.json
+
+  publish:
+    needs: check
+    if: always() && needs.check.result != 'skipped'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - uses: actions/download-artifact@v4
+        with: { pattern: stale-*, path: new-staleness, merge-multiple: true }
+      - run: npm ci || npm install
+      - name: Commit index/staleness.json
+        run: |
+          git config user.name "provenpin-bot"
+          git config user.email "bot@users.noreply.github.com"
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            node runner/staleness.mjs --merge new-staleness
+            node runner/build-index.mjs
+            git add index
+            git diff --cached --quiet && exit 0
+            git commit -q -m "staleness: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push origin HEAD:main && exit 0
+            echo "push rejected (attempt $i), retrying"; sleep $((i * 5))
+          done
+          exit 1
+      - name: Open or update the broken-on-latest issue
+        run: |
+          title="Recipes that break on latest library versions"
+          num=$(gh issue list --state open --search "in:title \"$title\"" --json number,title -q ".[] | select(.title==\"$title\") | .number" | head -1)
+          if [ ! -s staleness-broken.txt ]; then
+            [ -n "$num" ] && gh issue comment "$num" --body "All checked recipes pass on latest versions as of $(date -u +%F). Closing." && gh issue close "$num"
+            exit 0
+          fi
+          {
+            echo "The weekly staleness check re-ran these recipes with their stack libraries bumped to the latest release. They failed."
+            echo "The recipes themselves are unchanged and still pass on their pinned versions."
+            echo
+            echo "Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            echo
+            node -e 'const s=require("./index/staleness.json");for(const id of require("fs").readFileSync("staleness-broken.txt","utf8").split("\n").filter(Boolean)){const r=s.recipes[id];console.log("- `"+id+"`: "+Object.entries(r.bumped||{}).map(([k,v])=>k+" "+v).join(", "))}'
+          } > body.md
+          if [ -n "$num" ]; then gh issue edit "$num" --body-file body.md; else gh issue create --title "$title" --body-file body.md; fi

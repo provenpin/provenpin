@@ -1,9 +1,10 @@
 // Privacy-safe usage events. Records ONLY: MCP method, tool name, recipe id or search query LENGTH
-// (never the query text), the MCP client's self-reported clientInfo name+version, an internal flag, and a timestamp.
+// (never the query text), the MCP client's self-reported clientInfo name+version, an internal flag, the tier (free/pro,
+// never the key), and a timestamp.
 // No IPs, no user agents, no headers, no session ids, no query text.
 export interface UsageEvent {
   ts: string; method: string; tool: string; recipe: string; qlen: number;
-  client: string; client_version: string; internal: boolean;
+  client: string; client_version: string; internal: boolean; tier: "free" | "pro";
 }
 export interface AnalyticsSink { writeDataPoint(p: { blobs?: string[]; doubles?: number[]; indexes?: string[] }): void }
 
@@ -24,7 +25,7 @@ export function clientFromSession(id: string | null): { name: string; version: s
   return { name: clean(unb64(p[1])) || "unknown", version: clean(unb64(p[2]), 32) || "unknown" };
 }
 
-export function eventFor(msg: any, client: { name: string; version: string }, internalHeader: boolean): UsageEvent {
+export function eventFor(msg: any, client: { name: string; version: string }, internalHeader: boolean, tier: "free" | "pro" = "free"): UsageEvent {
   const method = clean(msg?.method, 48) || "invalid";
   const tool = method === "tools/call" ? clean(msg?.params?.name, 48) : "";
   const args = msg?.params?.arguments ?? {};
@@ -33,7 +34,7 @@ export function eventFor(msg: any, client: { name: string; version: string }, in
     recipe: tool === "get_recipe" ? clean(args.id, 96) : "",
     qlen: tool === "search_recipes" && typeof args.query === "string" ? args.query.length : 0,
     client: client.name, client_version: client.version,
-    internal: internalHeader || client.name === INTERNAL_CLIENT,
+    internal: internalHeader || client.name === INTERNAL_CLIENT, tier,
   };
 }
 
@@ -41,7 +42,7 @@ export function record(ev: UsageEvent, sink?: AnalyticsSink) {
   try {
     sink?.writeDataPoint({
       indexes: [ev.client.slice(0, 32)],
-      blobs: [ev.method, ev.tool, ev.recipe, ev.client, ev.client_version, ev.internal ? "internal" : "external"],
+      blobs: [ev.method, ev.tool, ev.recipe, ev.client, ev.client_version, ev.internal ? "internal" : "external", ev.tier],
       doubles: [ev.qlen],
     });
   } catch {}

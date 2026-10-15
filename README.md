@@ -78,7 +78,23 @@ Connect a client to the local server, for example in Claude Code:
 claude mcp add --transport http provenpin http://localhost:8787/mcp
 ```
 
-Optional header for the future Pro tier: `x-provenpin-key: <key>` (keys come from the `PROVENPIN_API_KEYS` secret).
+Pro API keys (groundwork, off by default): the free tier needs no key. When `PROVENPIN_PRO_ENABLED` is `"true"`, a valid `Authorization: Bearer <key>` header marks the caller as Pro. Keys come from the `PROVENPIN_API_KEYS` secret or the `PRO_KEYS` KV namespace (entries `key:<sha256 of key>`). Usage events record only the tier (`free` or `pro`), never the key.
+
+## Receipts feed
+
+`https://mcp.provenpin.com/receipts.json` (also `index/receipts.json`, rebuilt with the index) lists every recipe:
+
+| Field | Meaning |
+| --- | --- |
+| `id`, `language` | Recipe id and language |
+| `pinned` | Exact versions the recipe was tested with |
+| `runtime` | Runtime of the last test run, for example `node v22.23.3` |
+| `status` | `passed`, `failed`, `setup_failed`, `invalid`, `stale` (code changed since the last run) or `untested` |
+| `last_passed_at` | When the tests last passed on the pinned versions (UTC) |
+| `run_url` | GitHub Actions run that produced the current receipt |
+| `staleness` | Weekly re-test with stack libraries bumped to latest: `status` (`current`, `passes_on_latest`, `breaks_on_latest`, `error` or `unchecked`), `checked_at`, `latest` versions tried, `run_url` |
+
+The staleness check (`.github/workflows/staleness.yml`) runs weekly in a temp copy. It never edits a recipe or its receipt, and it lists recipes that break on latest in one GitHub issue.
 
 ## Deploy your own
 

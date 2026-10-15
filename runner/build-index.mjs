@@ -22,10 +22,43 @@ export function buildIndex() {
   return { schema_version: 1, generated_at: new Date().toISOString(), count: recipes.length, recipes };
 }
 
+const REPO_URL = process.env.PROVENPIN_REPO_URL ?? "https://github.com/provenpin/provenpin";
+
+/** Run URL from a receipt's runner field ("github-actions <run id>"); null for local runs. */
+export function runUrl(rc) {
+  const m = /^github-actions (\d+)$/.exec(rc?.environment?.runner ?? "");
+  return m ? `${REPO_URL}/actions/runs/${m[1]}` : null;
+}
+
+export function readStaleness() {
+  const p = path.join(ROOT, "index", "staleness.json");
+  return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : { checked_at: null, recipes: {} };
+}
+
+/** Public receipts feed: one small entry per recipe, built from receipts/ and index/staleness.json. */
+export function buildReceipts(idx, staleness = readStaleness()) {
+  return {
+    schema_version: 1, generated_at: idx.generated_at, staleness_checked_at: staleness.checked_at ?? null, count: idx.count,
+    recipes: idx.recipes.map((r) => {
+      const rc = readReceipt(r.id);
+      const st = staleness.recipes?.[r.id];
+      return {
+        id: r.id, language: r.language, pinned: r.pinned,
+        runtime: rc?.environment?.runtime ?? r.runtime,
+        status: r.receipt.status, last_passed_at: r.receipt.last_passed_at ?? null,
+        run_url: rc && r.receipt.status !== "stale" ? runUrl(rc) : null,
+        staleness: st ? { status: st.status, checked_at: st.checked_at, latest: st.latest, run_url: st.run_url ?? null }
+          : { status: "unchecked", checked_at: null, latest: {}, run_url: null },
+      };
+    }),
+  };
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   const idx = buildIndex();
   fs.mkdirSync(path.join(ROOT, "index"), { recursive: true });
   fs.writeFileSync(path.join(ROOT, "index", "index.json"), JSON.stringify(idx));
+  fs.writeFileSync(path.join(ROOT, "index", "receipts.json"), JSON.stringify(buildReceipts(idx), null, 1) + "\n");
   const servable = idx.recipes.filter((r) => r.receipt.status === "passed").length;
   console.log(`index: ${idx.count} recipes, ${servable} passed`);
   const i = process.argv.indexOf("--export");

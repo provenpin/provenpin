@@ -7,7 +7,7 @@ import path from "node:path";
 import { ROOT, listRecipeIds, loadRecipe } from "./lib.mjs";
 
 const cache = new Map();
-async function latest(runtime, pkg) {
+export async function latest(runtime, pkg) {
   const key = `${runtime}:${pkg}`;
   if (!cache.has(key)) cache.set(key, (async () => {
     const url = runtime === "node" ? `https://registry.npmjs.org/${pkg.replace("/", "%2F")}/latest` : `https://pypi.org/pypi/${pkg}/json`;

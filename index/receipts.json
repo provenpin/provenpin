@@ -1,0 +1,3071 @@
+{
+ "schema_version": 1,
+ "generated_at": "2026-10-15T12:58:43.245Z",
+ "staleness_checked_at": null,
+ "count": 149,
+ "recipes": [
+  {
+   "id": "anthropic-sdk-mocked-tool-use",
+   "language": "typescript",
+   "pinned": {
+    "@anthropic-ai/sdk": "0.134.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:15.074Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "anthropic-streaming-mock",
+   "language": "typescript",
+   "pinned": {
+    "@anthropic-ai/sdk": "0.134.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:14.041Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "apscheduler-time-machine-jobs",
+   "language": "python",
+   "pinned": {
+    "apscheduler": "3.11.3",
+    "time-machine": "3.5.1",
+    "pytest": "9.1.1",
+    "tzlocal": "5.4.4"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:51:56.797Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "astro-container-render",
+   "language": "typescript",
+   "pinned": {
+    "astro": "7.3.8",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:19.385Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "attrs-cattrs-structuring",
+   "language": "python",
+   "pinned": {
+    "attrs": "26.1.0",
+    "cattrs": "26.2.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:51:57.450Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "authjs-drizzle-adapter-pglite",
+   "language": "typescript",
+   "pinned": {
+    "@auth/drizzle-adapter": "1.11.3",
+    "@auth/core": "0.41.3",
+    "drizzle-orm": "0.45.4",
+    "@electric-sql/pglite": "0.5.10",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:12.474Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "axios-retry-nock",
+   "language": "typescript",
+   "pinned": {
+    "axios": "1.20.0",
+    "axios-retry": "4.5.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "nock": "15.0.1"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:17.869Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "bcryptjs-jose-sessions",
+   "language": "typescript",
+   "pinned": {
+    "bcryptjs": "3.0.3",
+    "jose": "6.2.12",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:14.086Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "boto3-moto-dynamodb-sqs",
+   "language": "python",
+   "pinned": {
+    "boto3": "1.43.114",
+    "moto": "5.2.4",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:11.202Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "boto3-moto-s3-presigned",
+   "language": "python",
+   "pinned": {
+    "boto3": "1.43.114",
+    "moto": "5.2.4",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:13.126Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "celery-beat-schedule-crontab",
+   "language": "python",
+   "pinned": {
+    "celery": "5.6.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:15.721Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "celery-redis-fakeredis-results",
+   "language": "python",
+   "pinned": {
+    "celery": "5.6.3",
+    "redis": "8.1.0",
+    "fakeredis": "2.40.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:19.025Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "celery-tasks-eager-testing",
+   "language": "python",
+   "pinned": {
+    "celery": "5.6.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:16.223Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "click-pytest-freezegun-scheduler",
+   "language": "python",
+   "pinned": {
+    "click": "8.5.0",
+    "python-dateutil": "2.9.0.post0",
+    "freezegun": "1.5.5",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:24.906Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "csv-parse-stringify-streams",
+   "language": "typescript",
+   "pinned": {
+    "csv-parse": "7.0.3",
+    "csv-stringify": "6.9.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:20.411Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "date-fns-tz-scheduling",
+   "language": "typescript",
+   "pinned": {
+    "date-fns": "4.4.0",
+    "@date-fns/tz": "1.5.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:13.493Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "dateutil-rrule-zoneinfo-time-machine",
+   "language": "python",
+   "pinned": {
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "time-machine": "3.5.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:30.923Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "django-celery-eager-signals",
+   "language": "python",
+   "pinned": {
+    "django": "6.1.2",
+    "celery": "5.6.3",
+    "pytest-django": "4.14.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:29.267Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "django-drf-api",
+   "language": "python",
+   "pinned": {
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "pytest-django": "4.14.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:31.526Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "django-ninja-schema-crud",
+   "language": "python",
+   "pinned": {
+    "django": "6.1.2",
+    "django-ninja": "1.7.1",
+    "pytest-django": "4.14.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:40.207Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "django-pytest-factoryboy",
+   "language": "python",
+   "pinned": {
+    "django": "6.1.2",
+    "factory-boy": "3.3.3",
+    "pytest-django": "4.14.0",
+    "pytest": "9.1.1",
+    "faker": "37.4.0"
+   },
+   "runtime": "python",
+   "status": "untested",
+   "last_passed_at": null,
+   "run_url": null,
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "dom-testing-library-happy-dom",
+   "language": "typescript",
+   "pinned": {
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/user-event": "14.6.8",
+    "happy-dom": "21.0.1"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:30.539Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "drf-django-filter-viewset",
+   "language": "python",
+   "pinned": {
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "django-filter": "26.2.0",
+    "pytest-django": "4.14.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:30.508Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "drf-simplejwt-auth",
+   "language": "python",
+   "pinned": {
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "djangorestframework-simplejwt": "5.5.1",
+    "pytest-django": "4.14.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:52:45.808Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "drizzle-pglite-migrations",
+   "language": "typescript",
+   "pinned": {
+    "drizzle-orm": "0.45.4",
+    "@electric-sql/pglite": "0.5.10",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:32.120Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "drizzle-pglite-postgres",
+   "language": "typescript",
+   "pinned": {
+    "drizzle-orm": "0.45.4",
+    "@electric-sql/pglite": "0.5.10",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:34.197Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "drizzle-sqlite-crud",
+   "language": "typescript",
+   "pinned": {
+    "drizzle-orm": "0.45.4",
+    "better-sqlite3": "12.11.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/better-sqlite3": "9.6.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:19.454Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "drizzle-zod-insert-schemas",
+   "language": "typescript",
+   "pinned": {
+    "drizzle-orm": "0.45.4",
+    "drizzle-zod": "0.8.3",
+    "zod": "4.6.7",
+    "better-sqlite3": "12.11.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/better-sqlite3": "9.6.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:43.285Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "duckdb-polars-analytics",
+   "language": "python",
+   "pinned": {
+    "duckdb": "1.5.6",
+    "polars": "2.0.0",
+    "pyarrow": "26.0.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:01.144Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "exceljs-read-write",
+   "language": "typescript",
+   "pinned": {
+    "exceljs": "4.4.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:51.764Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "express-helmet-rate-limit",
+   "language": "typescript",
+   "pinned": {
+    "express": "5.3.0",
+    "helmet": "8.3.0",
+    "express-rate-limit": "8.7.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/express": "5.0.6"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:49.925Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "express-jwt-auth",
+   "language": "typescript",
+   "pinned": {
+    "express": "5.3.0",
+    "jsonwebtoken": "9.0.3",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/express": "5.0.6",
+    "@types/supertest": "7.2.1",
+    "@types/jsonwebtoken": "9.0.10"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:52.562Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "express-multer-upload",
+   "language": "typescript",
+   "pinned": {
+    "express": "5.3.0",
+    "multer": "2.4.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/express": "5.0.6",
+    "@types/multer": "2.3.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:52:56.876Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "express-passport-jwt",
+   "language": "typescript",
+   "pinned": {
+    "express": "5.3.0",
+    "passport": "0.7.0",
+    "passport-jwt": "4.0.1",
+    "jsonwebtoken": "9.0.3",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/express": "5.0.6",
+    "@types/passport": "1.0.17",
+    "@types/passport-jwt": "4.0.1",
+    "@types/jsonwebtoken": "9.0.10"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:08.433Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "express-pino-http-logging",
+   "language": "typescript",
+   "pinned": {
+    "express": "5.3.0",
+    "pino": "10.4.0",
+    "pino-http": "11.0.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/express": "5.0.6"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:10.475Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "express-session-cookie-e2e",
+   "language": "typescript",
+   "pinned": {
+    "express": "5.3.0",
+    "express-session": "1.19.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "fetch-cookie": "3.2.0",
+    "@types/express": "5.0.6",
+    "@types/express-session": "1.19.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:10.273Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "express-stripe-webhook",
+   "language": "typescript",
+   "pinned": {
+    "express": "5.3.0",
+    "stripe": "23.0.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/express": "5.0.6"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:10.140Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "express-zod-validation",
+   "language": "typescript",
+   "pinned": {
+    "express": "5.3.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/express": "5.0.6",
+    "@types/supertest": "7.2.1"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:11.675Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-argon2-login",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "argon2-cffi": "25.1.0",
+    "httpx": "0.28.1",
+    "python-multipart": "0.0.32",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:23.410Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "sqlalchemy": "2.1.4",
+    "aiosqlite": "0.22.1",
+    "httpx": "0.28.1",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1",
+    "greenlet": "3.2.4"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:16.844Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-httpx-asyncclient-lifespan",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "httpx": "0.28.1",
+    "asgi-lifespan": "2.1.0",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:32.486Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-jinja2-htmx-partials",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "jinja2": "3.1.6",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:35.158Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-jwt-auth",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "pyjwt": "2.15.1",
+    "httpx": "0.28.1",
+    "python-multipart": "0.0.32",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:33.365Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-oauth2-pyjwt-scopes",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "pyjwt": "2.15.1",
+    "pwdlib": "0.3.1",
+    "argon2-cffi": "25.1.0",
+    "python-multipart": "0.0.32",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:45.322Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-pydantic-background-tasks",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "httpx": "0.28.1",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:42.839Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-pydantic-settings-dependency",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "pydantic-settings": "2.16.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:40.989Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-pydantic-v2-models",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "pydantic": "2.14.1",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:41.463Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-slowapi-rate-limit",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "slowapi": "0.1.10",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:45.117Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-sqlalchemy-crud",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "sqlalchemy": "2.1.4",
+    "httpx": "0.28.1",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:48.157Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-stripe-webhook",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "stripe": "16.0.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:52.745Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-websocket-auth",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:53:51.434Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastify-json-schema",
+   "language": "typescript",
+   "pinned": {
+    "fastify": "5.12.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:19.715Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastify-jwt-auth",
+   "language": "typescript",
+   "pinned": {
+    "fastify": "5.12.7",
+    "@fastify/jwt": "10.2.4",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:28.072Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastify-zod-type-provider",
+   "language": "typescript",
+   "pinned": {
+    "fastify": "5.12.7",
+    "zod": "4.6.7",
+    "fastify-type-provider-zod": "7.0.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:30.133Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "flask-jwt-extended-auth",
+   "language": "python",
+   "pinned": {
+    "flask": "3.1.3",
+    "flask-jwt-extended": "4.7.4",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:04.376Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "flask-login-sqlalchemy-sessions",
+   "language": "python",
+   "pinned": {
+    "flask": "3.1.3",
+    "flask-login": "0.6.3",
+    "flask-sqlalchemy": "3.1.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:03.921Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "flask-marshmallow-webargs",
+   "language": "python",
+   "pinned": {
+    "flask": "3.1.3",
+    "webargs": "8.7.1",
+    "marshmallow": "4.3.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:03.629Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "flask-migrate-sqlite",
+   "language": "python",
+   "pinned": {
+    "flask": "3.1.3",
+    "flask-sqlalchemy": "3.1.1",
+    "flask-migrate": "4.1.0",
+    "pytest": "9.1.1",
+    "alembic": "1.16.5",
+    "mako": "1.3.10",
+    "sqlalchemy": "2.0.43",
+    "typing-extensions": "4.15.0",
+    "werkzeug": "3.1.3",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.3",
+    "itsdangerous": "2.2.0",
+    "blinker": "1.9.0",
+    "click": "8.3.0",
+    "iniconfig": "2.1.0",
+    "pluggy": "1.6.0",
+    "pygments": "2.19.2"
+   },
+   "runtime": "python",
+   "status": "untested",
+   "last_passed_at": null,
+   "run_url": null,
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "flask-sqlalchemy-app-factory",
+   "language": "python",
+   "pinned": {
+    "flask": "3.1.3",
+    "flask-sqlalchemy": "3.1.1",
+    "sqlalchemy": "2.1.4",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:15.384Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "flask-wtforms-csrf-validation",
+   "language": "python",
+   "pinned": {
+    "flask": "3.1.3",
+    "flask-wtf": "1.3.0",
+    "wtforms": "3.2.2",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:08.989Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "graphql-request-msw",
+   "language": "typescript",
+   "pinned": {
+    "graphql-request": "7.4.0",
+    "graphql": "16.14.2",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "msw": "3.0.3"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:32.335Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "graphql-yoga-schema-context",
+   "language": "typescript",
+   "pinned": {
+    "graphql-yoga": "5.24.5",
+    "graphql": "17.0.2",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:39.596Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "hono-drizzle-sqlite-api",
+   "language": "typescript",
+   "pinned": {
+    "hono": "4.13.13",
+    "drizzle-orm": "0.45.4",
+    "better-sqlite3": "13.0.3",
+    "zod": "4.6.7",
+    "@hono/zod-validator": "0.9.1",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4",
+    "@types/better-sqlite3": "9.6.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:35.472Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "hono-jwt-auth",
+   "language": "typescript",
+   "pinned": {
+    "hono": "4.13.13",
+    "zod": "4.6.7",
+    "@hono/zod-validator": "0.9.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:35.756Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "hono-valibot-validator",
+   "language": "typescript",
+   "pinned": {
+    "hono": "4.13.13",
+    "valibot": "1.5.0",
+    "@hono/valibot-validator": "0.6.1",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:35.520Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "hono-zod-openapi",
+   "language": "typescript",
+   "pinned": {
+    "hono": "4.13.13",
+    "@hono/zod-openapi": "1.6.3",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:45.271Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "hono-zod-validator",
+   "language": "typescript",
+   "pinned": {
+    "hono": "4.13.13",
+    "zod": "4.6.7",
+    "@hono/zod-validator": "0.9.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:47.356Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "httpx-pydantic-typed-client",
+   "language": "python",
+   "pinned": {
+    "httpx": "0.28.1",
+    "pydantic": "2.14.1",
+    "respx": "0.23.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:36.892Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "httpx-respx-api-client",
+   "language": "python",
+   "pinned": {
+    "httpx": "0.28.1",
+    "respx": "0.23.1",
+    "pydantic": "2.14.1",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:33.683Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "httpx-respx-pagination-oauth",
+   "language": "python",
+   "pinned": {
+    "httpx": "0.28.1",
+    "respx": "0.23.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:38.400Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "httpx-tenacity-retry",
+   "language": "python",
+   "pinned": {
+    "httpx": "0.28.1",
+    "tenacity": "9.2.1",
+    "respx": "0.23.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:42.554Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "i18next-react-ssr",
+   "language": "typescript",
+   "pinned": {
+    "i18next": "26.4.5",
+    "react-i18next": "17.0.16",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:52.523Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "ioredis-cache-aside-mock",
+   "language": "typescript",
+   "pinned": {
+    "ioredis": "5.11.1",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4",
+    "ioredis-mock": "8.13.1"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:53.953Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "jimp-image-resize",
+   "language": "typescript",
+   "pinned": {
+    "jimp": "1.6.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:53:53.156Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "jinja2-markupsafe-email-templates",
+   "language": "python",
+   "pinned": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.4",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:54:48.682Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "jose-jwks-verify",
+   "language": "typescript",
+   "pinned": {
+    "jose": "6.2.12",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:01.283Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "ky-msw-vitest",
+   "language": "typescript",
+   "pinned": {
+    "ky": "2.2.0",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4",
+    "msw": "3.0.3"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:00.248Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "kysely-sqlite-queries",
+   "language": "typescript",
+   "pinned": {
+    "kysely": "0.29.6",
+    "better-sqlite3": "12.11.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/better-sqlite3": "9.6.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:01.087Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "langchain-core-fake-llm-python",
+   "language": "python",
+   "pinned": {
+    "langchain-core": "1.6.10",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:03.296Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "langchain-core-fake-model-chain",
+   "language": "typescript",
+   "pinned": {
+    "@langchain/core": "1.2.17",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:00.921Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "langchain-core-runnable-fallbacks",
+   "language": "python",
+   "pinned": {
+    "langchain-core": "1.6.10",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:03.970Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "langchainjs-zod-tools",
+   "language": "typescript",
+   "pinned": {
+    "@langchain/core": "1.2.17",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:12.567Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "litestar-dto-sqlalchemy",
+   "language": "python",
+   "pinned": {
+    "litestar": "2.24.0",
+    "advanced-alchemy": "1.11.0",
+    "aiosqlite": "0.22.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:07.117Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "litestar-guards-di",
+   "language": "python",
+   "pinned": {
+    "litestar": "2.24.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:09.790Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "loguru-pytest-caplog",
+   "language": "python",
+   "pinned": {
+    "loguru": "0.7.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:09.521Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "luxon-timezones-intervals",
+   "language": "typescript",
+   "pinned": {
+    "luxon": "3.7.2",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/luxon": "3.7.6"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:10.132Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "marshmallow-sqlalchemy-flask-api",
+   "language": "python",
+   "pinned": {
+    "flask": "3.1.3",
+    "flask-sqlalchemy": "3.1.1",
+    "marshmallow-sqlalchemy": "1.5.0",
+    "marshmallow": "3.26.1",
+    "sqlalchemy": "2.0.36",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:10.785Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "msgspec-struct-validation",
+   "language": "python",
+   "pinned": {
+    "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:21.555Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "msw-fetch-api-client",
+   "language": "typescript",
+   "pinned": {
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "msw": "3.0.3"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:19.656Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "nestjs-typeorm-sqlite",
+   "language": "typescript",
+   "pinned": {
+    "@nestjs/core": "12.1.3",
+    "@nestjs/common": "12.1.3",
+    "@nestjs/platform-express": "12.1.3",
+    "@nestjs/typeorm": "12.0.2",
+    "typeorm": "1.1.2",
+    "better-sqlite3": "12.11.1",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@nestjs/testing": "12.1.3",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/express": "5.0.6"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:18.097Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "nextauth-credentials-callbacks",
+   "language": "typescript",
+   "pinned": {
+    "next-auth": "4.24.15",
+    "next": "16.4.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "bcryptjs": "3.0.3",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:19.895Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "nextjs-route-handler-zod",
+   "language": "typescript",
+   "pinned": {
+    "next": "16.4.1",
+    "zod": "4.6.7",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:24.508Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "nextjs-server-action-zod",
+   "language": "typescript",
+   "pinned": {
+    "next": "16.4.1",
+    "zod": "4.6.7",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:24.984Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "nextjs-stripe-webhook",
+   "language": "typescript",
+   "pinned": {
+    "next": "16.4.1",
+    "stripe": "23.0.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:26.058Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "nextjs-supabase-auth-middleware",
+   "language": "typescript",
+   "pinned": {
+    "next": "16.4.1",
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.117.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:27.974Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "nodemailer-templates-test-transport",
+   "language": "typescript",
+   "pinned": {
+    "nodemailer": "10.1.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/nodemailer": "8.0.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:31.131Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "numpy-scipy-optimize-fit",
+   "language": "python",
+   "pinned": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:39.306Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "openai-python-respx-mock",
+   "language": "python",
+   "pinned": {
+    "openai": "3.31.0",
+    "pydantic": "2.14.1",
+    "respx": "0.23.1",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:49.379Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "openai-sdk-mocked-tool-calls",
+   "language": "typescript",
+   "pinned": {
+    "openai": "7.34.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:39.845Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "openai-streaming-mock",
+   "language": "typescript",
+   "pinned": {
+    "openai": "7.34.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:44.866Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "openai-structured-output-respx",
+   "language": "python",
+   "pinned": {
+    "openai": "3.31.0",
+    "respx": "0.23.1",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1",
+    "httpx": "0.28.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:50.535Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pandas-openpyxl-excel-report",
+   "language": "python",
+   "pinned": {
+    "pandas": "3.0.6",
+    "openpyxl": "3.1.5",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:53.390Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pandas-pandera-validation",
+   "language": "python",
+   "pinned": {
+    "pandas": "3.0.6",
+    "pandera": "0.34.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:55:54.818Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pandas-pyarrow-parquet-roundtrip",
+   "language": "python",
+   "pinned": {
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:03.577Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pandas-sqlalchemy-to-sql",
+   "language": "python",
+   "pinned": {
+    "pandas": "3.0.6",
+    "sqlalchemy": "2.1.4",
+    "pytest": "9.1.1",
+    "numpy": "2.3.4",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "typing-extensions": "4.15.0",
+    "iniconfig": "2.1.0",
+    "pluggy": "1.6.0",
+    "pygments": "2.19.2"
+   },
+   "runtime": "python",
+   "status": "untested",
+   "last_passed_at": null,
+   "run_url": null,
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "papaparse-zod-csv-import",
+   "language": "typescript",
+   "pinned": {
+    "papaparse": "5.7.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/papaparse": "5.5.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:48.340Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "polars-pandera-validation",
+   "language": "python",
+   "pinned": {
+    "polars": "2.0.0",
+    "pandera": "0.34.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:06.898Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "polars-pydantic-row-validation",
+   "language": "python",
+   "pinned": {
+    "polars": "2.0.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:07.111Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "prisma-sqlite-adapter",
+   "language": "typescript",
+   "pinned": {
+    "@prisma/client": "7.10.0",
+    "@prisma/adapter-better-sqlite3": "7.10.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "prisma": "7.10.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:47.079Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "prisma-sqlite-transactions",
+   "language": "typescript",
+   "pinned": {
+    "@prisma/client": "7.10.0",
+    "@prisma/adapter-better-sqlite3": "7.10.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "prisma": "7.10.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:51.114Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pydantic-ai-testmodel-tools",
+   "language": "python",
+   "pinned": {
+    "pydantic-ai-slim": "2.56.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:09.588Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pydantic-email-phone-validation",
+   "language": "python",
+   "pinned": {
+    "pydantic": "2.14.1",
+    "email-validator": "2.3.0",
+    "phonenumbers": "9.0.41",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:11.132Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pydantic-settings-config",
+   "language": "python",
+   "pinned": {
+    "pydantic": "2.14.1",
+    "pydantic-settings": "2.16.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:21.891Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pydantic-settings-yaml-secrets",
+   "language": "python",
+   "pinned": {
+    "pydantic-settings": "2.16.0",
+    "pydantic": "2.14.1",
+    "python-dotenv": "1.2.2",
+    "pyyaml": "6.0.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:52.598Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pydantic-v2-discriminated-unions-fastapi",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "pydantic": "2.14.1",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:21.828Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pyjwt-cryptography-rs256",
+   "language": "python",
+   "pinned": {
+    "pyjwt": "2.15.1",
+    "cryptography": "50.0.2",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:27.695Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pytest-asyncio-taskgroup-timeouts",
+   "language": "python",
+   "pinned": {
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:27.248Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pytest-factory-boy-sqlalchemy",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "factory-boy": "3.3.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:25.839Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pytest-hypothesis-pydantic-roundtrip",
+   "language": "python",
+   "pinned": {
+    "hypothesis": "6.169.4",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:36.451Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "python-dotenv-pydantic-settings-env",
+   "language": "python",
+   "pinned": {
+    "python-dotenv": "1.2.4",
+    "pydantic-settings": "2.16.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:38.611Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "react-hook-form-zod-resolver",
+   "language": "typescript",
+   "pinned": {
+    "react-hook-form": "7.90.0",
+    "@hookform/resolvers": "5.9.1",
+    "zod": "4.6.7",
+    "react": "19.3.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:53.411Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "react-query-testing-library",
+   "language": "typescript",
+   "pinned": {
+    "@tanstack/react-query": "5.104.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/dom": "10.4.2",
+    "jsdom": "30.1.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:56.546Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "react-router-loader-action",
+   "language": "typescript",
+   "pinned": {
+    "react-router": "8.4.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:54:57.885Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "requests-cache-sqlite-backend",
+   "language": "python",
+   "pinned": {
+    "requests": "2.34.2",
+    "requests-cache": "1.3.3",
+    "responses": "0.26.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:44.300Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "resend-email-msw",
+   "language": "typescript",
+   "pinned": {
+    "resend": "6.33.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "msw": "3.0.3"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:01.865Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "rq-fakeredis-jobs",
+   "language": "python",
+   "pinned": {
+    "rq": "2.12.0",
+    "fakeredis": "2.40.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:48.997Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sklearn-columntransformer-pipeline",
+   "language": "python",
+   "pinned": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0",
+    "pytest": "9.1.1",
+    "numpy": "2.3.3",
+    "scipy": "1.16.2"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:05.516Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "socketio-rooms-auth",
+   "language": "typescript",
+   "pinned": {
+    "socket.io": "4.8.4",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "socket.io-client": "4.8.4"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:09.699Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sqlalchemy-alembic-autogenerate-check",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "alembic": "1.20.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:59.200Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sqlalchemy-alembic-migrations",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "alembic": "1.20.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:56:59.115Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sqlalchemy-async-aiosqlite",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "aiosqlite": "0.22.1",
+    "greenlet": "3.5.6",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:57:00.877Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sqlalchemy-async-repository-pattern",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "aiosqlite": "0.22.1",
+    "greenlet": "3.2.4",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:14.964Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sqlalchemy-hybrid-events",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:57:17.428Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sqlalchemy2-pydantic-v2-from-attributes",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:57:12.029Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sqlmodel-fastapi-crud",
+   "language": "python",
+   "pinned": {
+    "sqlmodel": "0.0.48",
+    "fastapi": "0.143.1",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:57:16.916Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sqlmodel-relationships-sqlite",
+   "language": "python",
+   "pinned": {
+    "sqlmodel": "0.0.48",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:57:16.578Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "stripe-checkout-mocked-http",
+   "language": "typescript",
+   "pinned": {
+    "stripe": "23.0.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:15.936Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "structlog-fastapi-request-id",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.1",
+    "structlog": "26.1.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:57:16.491Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "supabase-js-mocked-fetch",
+   "language": "typescript",
+   "pinned": {
+    "@supabase/supabase-js": "2.117.3",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:14.476Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sveltekit-form-actions",
+   "language": "typescript",
+   "pinned": {
+    "@sveltejs/kit": "3.1.0",
+    "svelte": "5.57.2",
+    "zod": "4.6.7",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:21.069Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "tenacity-httpx-respx-backoff",
+   "language": "python",
+   "pinned": {
+    "httpx": "0.28.1",
+    "tenacity": "9.2.1",
+    "respx": "0.23.1",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:57:29.192Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "trpc-client-server-superjson",
+   "language": "typescript",
+   "pinned": {
+    "@trpc/server": "11.19.0",
+    "@trpc/client": "11.19.0",
+    "superjson": "2.2.6",
+    "zod": "4.6.7",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:23.249Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "trpc-context-auth-middleware",
+   "language": "typescript",
+   "pinned": {
+    "@trpc/server": "11.19.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:30.228Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "trpc-zod-router",
+   "language": "typescript",
+   "pinned": {
+    "@trpc/server": "11.19.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:31.666Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "typer-cli-testing",
+   "language": "python",
+   "pinned": {
+    "typer": "0.27.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:57:34.515Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "typer-rich-table-cli",
+   "language": "python",
+   "pinned": {
+    "typer": "0.27.3",
+    "rich": "15.0.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T11:57:35.000Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38730348195",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "vue-pinia-testing",
+   "language": "typescript",
+   "pinned": {
+    "vue": "3.5.44",
+    "pinia": "4.1.0",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4",
+    "@pinia/testing": "2.0.2",
+    "@vue/test-utils": "2.5.1",
+    "jsdom": "30.1.3"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:29.396Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "zod-env-dotenv-config",
+   "language": "typescript",
+   "pinned": {
+    "zod": "4.6.7",
+    "dotenv": "18.0.8",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:33.091Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "zustand-store-vitest",
+   "language": "typescript",
+   "pinned": {
+    "zustand": "5.0.15",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T12:55:31.949Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38737894352",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  }
+ ]
+}
