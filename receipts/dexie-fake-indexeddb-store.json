@@ -1,0 +1,29 @@
+{
+  "id": "dexie-fake-indexeddb-store",
+  "status": "passed",
+  "ran_at": "2026-10-15T22:58:10.326Z",
+  "last_passed_at": "2026-10-15T22:58:10.326Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1514,
+    "test": 378
+  },
+  "pinned": {
+    "dexie": "4.4.6",
+    "fake-indexeddb": "6.2.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:e62ab6254654e53bd764dab7400671a8437c0e00290c834ed472902f5fe35ac3",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38820570375"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: bulkAdd inserts rows and equals query filters by index\nok 1 - bulkAdd inserts rows and equals query filters by index\n  ---\n  duration_ms: 20.988557\n  type: 'test'\n  ...\n# Subtest: between query returns an inclusive price range\nok 2 - between query returns an inclusive price range\n  ---\n  duration_ms: 2.742276\n  type: 'test'\n  ...\n# Subtest: compound index query matches category and price together\nok 3 - compound index query matches category and price together\n  ---\n  duration_ms: 2.501923\n  type: 'test'\n  ...\n# Subtest: update modifies matching rows in place\nok 4 - update modifies matching rows in place\n  ---\n  duration_ms: 3.798077\n  type: 'test'\n  ...\n# Subtest: transaction rolls back when it throws\nok 5 - transaction rolls back when it throws\n  ---\n  duration_ms: 4.084607\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 265.452965\n"
+}

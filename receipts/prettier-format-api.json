@@ -1,0 +1,28 @@
+{
+  "id": "prettier-format-api",
+  "status": "passed",
+  "ran_at": "2026-10-15T22:58:28.667Z",
+  "last_passed_at": "2026-10-15T22:58:28.667Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1950,
+    "test": 768
+  },
+  "pinned": {
+    "prettier": "3.9.10",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d5c4670990ac086eedc977bf457f6829b3d1158683acfabc5feec0183e0c7a96",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38820570375"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: formats TypeScript with single quotes and no semicolons\nok 1 - formats TypeScript with single quotes and no semicolons\n  ---\n  duration_ms: 129.890721\n  type: 'test'\n  ...\n# Subtest: respects printWidth for TypeScript\nok 2 - respects printWidth for TypeScript\n  ---\n  duration_ms: 6.481508\n  type: 'test'\n  ...\n# Subtest: is idempotent for TypeScript, JSON and Markdown\nok 3 - is idempotent for TypeScript, JSON and Markdown\n  ---\n  duration_ms: 57.700445\n  type: 'test'\n  ...\n# Subtest: check returns true on formatted output and false otherwise\nok 4 - check returns true on formatted output and false otherwise\n  ---\n  duration_ms: 10.029062\n  type: 'test'\n  ...\n# Subtest: formats JSON and Markdown predictably\nok 5 - formats JSON and Markdown predictably\n  ---\n  duration_ms: 4.081602\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 618.033132\n"
+}

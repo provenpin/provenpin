@@ -1,0 +1,28 @@
+{
+  "id": "ethers-v6-wallet-signing",
+  "status": "passed",
+  "ran_at": "2026-10-15T22:58:08.721Z",
+  "last_passed_at": "2026-10-15T22:58:08.721Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2626,
+    "test": 643
+  },
+  "pinned": {
+    "ethers": "6.17.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:aa78e08e267814a51380af875f239062e9eeebddb4f479c02d6b24f35eedbce4",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38820570375"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: derives a deterministic address from the fixed private key\nok 1 - derives a deterministic address from the fixed private key\n  ---\n  duration_ms: 37.220655\n  type: 'test'\n  ...\n# Subtest: signs and verifies a plain message\nok 2 - signs and verifies a plain message\n  ---\n  duration_ms: 13.378728\n  type: 'test'\n  ...\n# Subtest: signs and verifies EIP-712 typed data\nok 3 - signs and verifies EIP-712 typed data\n  ---\n  duration_ms: 12.64288\n  type: 'test'\n  ...\n# Subtest: encodes and decodes an ERC-20 transfer call\nok 4 - encodes and decodes an ERC-20 transfer call\n  ---\n  duration_ms: 6.32898\n  type: 'test'\n  ...\n# Subtest: parses and formats token units\nok 5 - parses and formats token units\n  ---\n  duration_ms: 0.997006\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 494.72557\n"
+}

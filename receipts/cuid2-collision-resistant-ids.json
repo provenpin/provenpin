@@ -1,0 +1,28 @@
+{
+  "id": "cuid2-collision-resistant-ids",
+  "status": "passed",
+  "ran_at": "2026-10-15T22:58:09.397Z",
+  "last_passed_at": "2026-10-15T22:58:09.397Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1907,
+    "test": 2385
+  },
+  "pinned": {
+    "@paralleldrive/cuid2": "3.3.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:b4e727159d920cdc8e6747923ef5e53607cd8015613282e2bef7e557f1ec2990",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38820570375"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: createId returns a 24-character cuid\nok 1 - createId returns a 24-character cuid\n  ---\n  duration_ms: 10.856623\n  type: 'test'\n  ...\n# Subtest: isCuid accepts generated ids\nok 2 - isCuid accepts generated ids\n  ---\n  duration_ms: 34.274915\n  type: 'test'\n  ...\n# Subtest: isCuid rejects malformed strings\nok 3 - isCuid rejects malformed strings\n  ---\n  duration_ms: 0.152946\n  type: 'test'\n  ...\n# Subtest: init generates ids with a custom length\nok 4 - init generates ids with a custom length\n  ---\n  duration_ms: 6.371103\n  type: 'test'\n  ...\n# Subtest: ids are unique across many generations\nok 5 - ids are unique across many generations\n  ---\n  duration_ms: 1987.678512\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2239.478491\n"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "nunjucks-templates-inheritance",
+  "status": "passed",
+  "ran_at": "2026-10-15T22:58:28.014Z",
+  "last_passed_at": "2026-10-15T22:58:28.014Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1896,
+    "test": 381
+  },
+  "pinned": {
+    "nunjucks": "3.2.4",
+    "@types/nunjucks": "3.2.6",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:2424078d41e907219270d78555f8c5e51aa86b31bd8efa7b24ac50ad9ace3562",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38820570375"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: child template extends the base and overrides its blocks\nok 1 - child template extends the base and overrides its blocks\n  ---\n  duration_ms: 10.414086\n  type: 'test'\n  ...\n# Subtest: macro imported from another template renders with its argument\nok 2 - macro imported from another template renders with its argument\n  ---\n  duration_ms: 3.389915\n  type: 'test'\n  ...\n# Subtest: custom filter runs before autoescape\nok 3 - custom filter runs before autoescape\n  ---\n  duration_ms: 2.660404\n  type: 'test'\n  ...\n# Subtest: autoescape escapes html output by default\nok 4 - autoescape escapes html output by default\n  ---\n  duration_ms: 0.581713\n  type: 'test'\n  ...\n# Subtest: safe filter bypasses autoescaping\nok 5 - safe filter bypasses autoescaping\n  ---\n  duration_ms: 0.504989\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 237.767036\n"
+}

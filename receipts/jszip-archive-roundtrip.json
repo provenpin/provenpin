@@ -1,0 +1,28 @@
+{
+  "id": "jszip-archive-roundtrip",
+  "status": "passed",
+  "ran_at": "2026-10-15T22:58:27.000Z",
+  "last_passed_at": "2026-10-15T22:58:27.000Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1962,
+    "test": 416
+  },
+  "pinned": {
+    "jszip": "3.10.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:f8f381a0b6619e7ed81d34749c0cac041e959d8b39e1daf7be4272e28f3af1cc",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38820570375"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: builds a zip and lists its entries\nok 1 - builds a zip and lists its entries\n  ---\n  duration_ms: 22.643504\n  type: 'test'\n  ...\n# Subtest: reads text and binary contents back\nok 2 - reads text and binary contents back\n  ---\n  duration_ms: 7.148366\n  type: 'test'\n  ...\n# Subtest: preserves contents across a second round-trip\nok 3 - preserves contents across a second round-trip\n  ---\n  duration_ms: 6.477674\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 276.472095\n"
+}

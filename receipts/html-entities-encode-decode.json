@@ -1,0 +1,28 @@
+{
+  "id": "html-entities-encode-decode",
+  "status": "passed",
+  "ran_at": "2026-10-15T22:58:31.093Z",
+  "last_passed_at": "2026-10-15T22:58:31.093Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1346,
+    "test": 272
+  },
+  "pinned": {
+    "html-entities": "2.6.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:83b663246220bcadac22f4a8327fe39226f1c3b309d36771b3f2b261c80af2a0",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38820570375"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: nonAscii mode escapes non-ASCII characters\nok 3 - nonAscii mode escapes non-ASCII characters\n  ---\n  duration_ms: 0.122435\n  type: 'test'\n  ...\n# Subtest: decodes named entities\nok 4 - decodes named entities\n  ---\n  duration_ms: 0.056986\n  type: 'test'\n  ...\n# Subtest: decodes decimal and hexadecimal numeric entities\nok 5 - decodes decimal and hexadecimal numeric entities\n  ---\n  duration_ms: 0.13926\n  type: 'test'\n  ...\n# Subtest: escapes untrusted user content safely\nok 6 - escapes untrusted user content safely\n  ---\n  duration_ms: 0.108804\n  type: 'test'\n  ...\n# Subtest: escapes values for attribute contexts\nok 7 - escapes values for attribute contexts\n  ---\n  duration_ms: 0.061823\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 167.553349\n"
+}
