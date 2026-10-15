@@ -1,0 +1,37 @@
+{
+ "arm": "A",
+ "id": "sqlalchemy-async-aiosqlite",
+ "title": "SQLAlchemy 2 async ORM + aiosqlite with pytest-asyncio",
+ "pinned": {
+  "sqlalchemy": "2.1.4",
+  "aiosqlite": "0.22.1",
+  "greenlet": "3.5.6",
+  "pytest-asyncio": "1.4.0",
+  "pytest": "9.1.1"
+ },
+ "model": "opencode/deepseek-v4.1-flash-free",
+ "ran_at": "2026-10-15T13:02:51.312394-08:00",
+ "model_missing_files": [],
+ "recipe": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "..                                                                       [100%]\n2 passed in 0.78s\n"
+  },
+  "passed": true
+ },
+ "model_result": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "..                                                                       [100%]\n2 passed in 0.75s\n"
+  },
+  "passed": true
+ }
+}

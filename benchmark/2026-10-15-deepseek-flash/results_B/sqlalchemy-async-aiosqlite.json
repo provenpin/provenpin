@@ -1,0 +1,39 @@
+{
+ "arm": "B",
+ "id": "sqlalchemy-async-aiosqlite",
+ "title": "SQLAlchemy 2 async ORM + aiosqlite with pytest-asyncio",
+ "pinned": {
+  "sqlalchemy": "2.1.4",
+  "aiosqlite": "0.22.1",
+  "greenlet": "3.5.6",
+  "pytest-asyncio": "1.4.0",
+  "pytest": "9.1.1"
+ },
+ "model": "opencode/deepseek-v4.1-flash-free",
+ "ran_at": "2026-10-15T12:48:52.577562-08:00",
+ "model_missing_files": [
+  "models.py"
+ ],
+ "recipe": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "..                                                                       [100%]\n2 passed in 0.78s\n"
+  },
+  "passed": true
+ },
+ "model_result": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 2,
+   "tail": "\n==================================== ERRORS ====================================\n____________________ ERROR collecting tests/test_models.py _____________________\nImportError while importing test module '/workspace/provenpin/70-benchmark/work_B/sqlalchemy-async-aiosqlite/model/tests/test_models.py'.\nHint: make sure your test modules/packages have valid Python names.\nTraceback:\n/usr/lib/python3.13/importlib/__init__.py:88: in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\ntests/test_models.py:4: in <module>\n    from models import Author, Book, authors_with_books, make_sessionmaker\nE   ModuleNotFoundError: No module named 'models'\n=========================== short test summary info ============================\nERROR tests/test_models.py\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.50s\n"
+  },
+  "passed": false
+ }
+}

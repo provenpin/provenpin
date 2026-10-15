@@ -1,0 +1,35 @@
+{
+ "arm": "B",
+ "id": "pandas-pyarrow-parquet-roundtrip",
+ "title": "Pandas pyarrow-backed dtypes with partitioned Parquet round trips",
+ "pinned": {
+  "pandas": "3.0.6",
+  "pyarrow": "26.0.0",
+  "pytest": "9.1.1"
+ },
+ "model": "opencode/deepseek-v4.1-flash-free",
+ "ran_at": "2026-10-15T12:52:21.121695-08:00",
+ "model_missing_files": [],
+ "recipe": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "....                                                                     [100%]\n4 passed in 1.24s\n"
+  },
+  "passed": true
+ },
+ "model_result": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 1,
+   "tail": "..FF                                                                     [100%]\n=================================== FAILURES ===================================\n____________________ test_partitioned_roundtrip_keeps_types ____________________\n\ntmp_path = PosixPath('/tmp/pytest-of-box/pytest-81/test_partitioned_roundtrip_kee0')\n\n    def test_partitioned_roundtrip_keeps_types(tmp_path):\n        root = tmp_path / \"ds\"\n        write_partitioned(make_df(), root)\n    \n>       assert (root / \"year=2023\").is_dir() and (root / \"year=2024\").is_dir()\nE       AssertionError: assert (False)\nE        +  where False = is_dir()\nE        +    where is_dir = (PosixPath('/tmp/pytest-of-box/pytest-81/test_partitioned_roundtrip_kee0/ds') / 'year=2023').is_dir\n\ntests/test_roundtrip.py:41: AssertionError\n______________ test_default_hive_read_gives_dictionary_partition _______________\n\ntmp_path = PosixPath('/tmp/pytest-of-box/pytest-81/test_default_hive_read_gives_d0')\n\n    def test_default_hive_read_gives_dictionary_partition(tmp_path):\n        # Gotcha: without an explicit partitioning schema, partition keys come back dictionary-encoded.\n        root = tmp_path / \"ds\"\n        write_partitioned(make_df(), root)\n    \n        table = pq.read_table(str(root))\n>       assert pa.types.is_dictionary(table.schema.field(\"year\").type)\nE       assert False\nE        +  where False = <function is_dictionary at 0x7fedd18b1120>(DataType(int16))\nE        +    where <function is_dictionary at 0x7fedd18b1120> = <module 'pyarrow.types' from '/workspace/provenpin/70-benchmark/work_B/pandas-pyarrow-parquet-roundtrip/model/.venv/lib/python3.13/site-packages/pyarrow/types.py'>.is_dictionary\nE        +      where <module 'pyarrow.types' from '/workspace/provenpin/70-benchmark/work_B/pandas-pyarrow-parquet-roundtrip/model/.venv/lib/python3.13/site-packages/pyarrow/types.py'> = pa.types\nE        +    and   DataType(int16) = pyarrow.Field<year: int16>.type\nE        +      where pyarrow.Field<year: int16> = field('year')\nE        +        where field = id: int64\\nscore: int64\\nname: string\\nyear: int16\\n-- schema metadata --\\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 550.field\nE        +          where id: int64\\nscore: int64\\nname: string\\nyear: int16\\n-- schema metadata --\\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 550 = pyarrow.Table\\nid: int64\\nscore: int64\\nname: string\\nyear: int16\\n----\\nid: [[1,2,3,4]]\\nscore: [[10,null,30,null]]\\nname: [[\"a\",null,\"c\",\"d\"]]\\nyear: [[2023,2023,2024,2024]].schema\n\ntests/test_roundtrip.py:51: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_roundtrip.py::test_partitioned_roundtrip_keeps_types - Asse...\nFAILED tests/test_roundtrip.py::test_default_hive_read_gives_dictionary_partition\n2 failed, 2 passed in 1.32s\n"
+  },
+  "passed": false
+ }
+}

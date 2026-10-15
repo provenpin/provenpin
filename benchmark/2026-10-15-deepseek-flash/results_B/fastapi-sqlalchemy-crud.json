@@ -1,0 +1,37 @@
+{
+ "arm": "B",
+ "id": "fastapi-sqlalchemy-crud",
+ "title": "FastAPI + SQLAlchemy 2 CRUD with dependency-injected sessions",
+ "pinned": {
+  "fastapi": "0.143.1",
+  "sqlalchemy": "2.1.4",
+  "httpx": "0.28.1",
+  "pydantic": "2.14.1",
+  "pytest": "9.1.1"
+ },
+ "model": "opencode/deepseek-v4.1-flash-free",
+ "ran_at": "2026-10-15T12:44:20.709390-08:00",
+ "model_missing_files": [],
+ "recipe": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "..                                                                       [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /workspace/provenpin/70-benchmark/work_B/fastapi-sqlalchemy-crud/recipe/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 1.29s\n"
+  },
+  "passed": true
+ },
+ "model_result": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 1,
+   "tail": "FF                                                                       [100%]\n=================================== FAILURES ===================================\n_____________________________ test_create_and_read _____________________________\n\n    def test_create_and_read():\n        r = client.post(\"/items\", json={\"name\": \"widget\"})\n>       assert r.status_code == 201\nE       assert 200 == 201\nE        +  where 200 = <Response [200 OK]>.status_code\n\ntests/test_main.py:8: AssertionError\n___________________________ test_missing_and_invalid ___________________________\n\n    def test_missing_and_invalid():\n        assert client.get(\"/items/9999\").status_code == 404\n>       assert client.post(\"/items\", json={}).status_code == 422\nE       AssertionError: assert 200 == 422\nE        +  where 200 = <Response [200 OK]>.status_code\nE        +    where <Response [200 OK]> = post('/items', json={})\nE        +      where post = <starlette.testclient.TestClient object at 0x7fd849ff9160>.post\n\ntests/test_main.py:14: AssertionError\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /workspace/provenpin/70-benchmark/work_B/fastapi-sqlalchemy-crud/model/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_main.py::test_create_and_read - assert 200 == 201\nFAILED tests/test_main.py::test_missing_and_invalid - AssertionError: assert ...\n2 failed, 1 warning in 1.48s\n"
+  },
+  "passed": false
+ }
+}

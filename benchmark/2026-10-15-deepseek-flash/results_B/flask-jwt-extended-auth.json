@@ -1,0 +1,35 @@
+{
+ "arm": "B",
+ "id": "flask-jwt-extended-auth",
+ "title": "Flask 3 + Flask-JWT-Extended access and refresh tokens",
+ "pinned": {
+  "flask": "3.1.3",
+  "flask-jwt-extended": "4.7.4",
+  "pytest": "9.1.1"
+ },
+ "model": "opencode/deepseek-v4.1-flash-free",
+ "ran_at": "2026-10-15T12:44:46.317769-08:00",
+ "model_missing_files": [],
+ "recipe": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "...                                                                      [100%]\n3 passed in 0.46s\n"
+  },
+  "passed": true
+ },
+ "model_result": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 1,
+   "tail": " create_app(\"a-long-enough-test-secret-key-123\").test_client()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nconfig = 'a-long-enough-test-secret-key-123'\n\n    def create_app(config=None):\n        app = Flask(__name__)\n    \n        app.config[\"JWT_SECRET_KEY\"] = \"super-secret-key\"\n        app.config[\"JWT_ACCESS_TOKEN_EXPIRES\"] = timedelta(minutes=15)\n        app.config[\"JWT_REFRESH_TOKEN_EXPIRES\"] = timedelta(days=30)\n        if config:\n>           app.config.update(config)\nE           ValueError: dictionary update sequence element #0 has length 1; 2 is required\n\napp.py:37: ValueError\n______________________________ test_refresh_flow _______________________________\n\n    def test_refresh_flow():\n>       c = client()\n            ^^^^^^^^\n\ntests/test_auth.py:13: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_auth.py:4: in client\n    return create_app(\"a-long-enough-test-secret-key-123\").test_client()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nconfig = 'a-long-enough-test-secret-key-123'\n\n    def create_app(config=None):\n        app = Flask(__name__)\n    \n        app.config[\"JWT_SECRET_KEY\"] = \"super-secret-key\"\n        app.config[\"JWT_ACCESS_TOKEN_EXPIRES\"] = timedelta(minutes=15)\n        app.config[\"JWT_REFRESH_TOKEN_EXPIRES\"] = timedelta(days=30)\n        if config:\n>           app.config.update(config)\nE           ValueError: dictionary update sequence element #0 has length 1; 2 is required\n\napp.py:37: ValueError\n_______________________________ test_rejections ________________________________\n\n    def test_rejections():\n>       c = client()\n            ^^^^^^^^\n\ntests/test_auth.py:21: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/test_auth.py:4: in client\n    return create_app(\"a-long-enough-test-secret-key-123\").test_client()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nconfig = 'a-long-enough-test-secret-key-123'\n\n    def create_app(config=None):\n        app = Flask(__name__)\n    \n        app.config[\"JWT_SECRET_KEY\"] = \"super-secret-key\"\n        app.config[\"JWT_ACCESS_TOKEN_EXPIRES\"] = timedelta(minutes=15)\n        app.config[\"JWT_REFRESH_TOKEN_EXPIRES\"] = timedelta(days=30)\n        if config:\n>           app.config.update(config)\nE           ValueError: dictionary update sequence element #0 has length 1; 2 is required\n\napp.py:37: ValueError\n=========================== short test summary info ============================\nFAILED tests/test_auth.py::test_login_and_access - ValueError: dictionary upd...\nFAILED tests/test_auth.py::test_refresh_flow - ValueError: dictionary update ...\nFAILED tests/test_auth.py::test_rejections - ValueError: dictionary update se...\n3 failed in 0.35s\n"
+  },
+  "passed": false
+ }
+}

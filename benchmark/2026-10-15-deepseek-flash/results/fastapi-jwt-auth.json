@@ -1,0 +1,37 @@
+{
+ "arm": "A",
+ "id": "fastapi-jwt-auth",
+ "title": "FastAPI + PyJWT bearer auth",
+ "pinned": {
+  "fastapi": "0.143.1",
+  "pyjwt": "2.15.1",
+  "httpx": "0.28.1",
+  "python-multipart": "0.0.32",
+  "pytest": "9.1.1"
+ },
+ "model": "opencode/deepseek-v4.1-flash-free",
+ "ran_at": "2026-10-15T13:01:33.505280-08:00",
+ "model_missing_files": [],
+ "recipe": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "..                                                                       [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /workspace/provenpin/70-benchmark/work/fastapi-jwt-auth/recipe/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 0.71s\n"
+  },
+  "passed": true
+ },
+ "model_result": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "..                                                                       [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /workspace/provenpin/70-benchmark/work/fastapi-jwt-auth/model/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\ntests/test_auth.py::test_login_and_me\ntests/test_auth.py::test_rejects_bad_and_expired\n  /workspace/provenpin/70-benchmark/work/fastapi-jwt-auth/model/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:149: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.\n    return self._jws.encode(\n\ntests/test_auth.py::test_login_and_me\ntests/test_auth.py::test_rejects_bad_and_expired\n  /workspace/provenpin/70-benchmark/work/fastapi-jwt-auth/model/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:370: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.\n    decoded = self.decode_complete(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 5 warnings in 0.62s\n"
+  },
+  "passed": true
+ }
+}

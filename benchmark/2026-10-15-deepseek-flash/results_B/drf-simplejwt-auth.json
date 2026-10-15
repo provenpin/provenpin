@@ -1,0 +1,37 @@
+{
+ "arm": "B",
+ "id": "drf-simplejwt-auth",
+ "title": "Django REST Framework JWT auth with simplejwt, tested offline",
+ "pinned": {
+  "django": "6.1.2",
+  "djangorestframework": "3.18.3",
+  "djangorestframework-simplejwt": "5.5.1",
+  "pytest-django": "4.14.0",
+  "pytest": "9.1.1"
+ },
+ "model": "opencode/deepseek-v4.1-flash-free",
+ "ran_at": "2026-10-15T12:45:30.465302-08:00",
+ "model_missing_files": [],
+ "recipe": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": ".....                                                                    [100%]\n5 passed in 2.36s\n"
+  },
+  "passed": true
+ },
+ "model_result": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 1,
+   "tail": "user):\n        access = AccessToken(obtain(api)[\"access\"])\n>       assert access[\"role\"] == \"admin\"\n               ^^^^^^^^^^^^^^\n\ntests/test_auth.py:33: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = {'token_type': 'access', 'exp': 1792097435, 'iat': 1792097136, 'jti': '8cb17f25755241c082f661116843647e', 'user_id': '1', 'username': 'ann', 'email': '', 'name': '', 'is_staff': True}\nkey = 'role'\n\n    def __getitem__(self, key: str):\n>       return self.payload[key]\n               ^^^^^^^^^^^^^^^^^\nE       KeyError: 'role'\n\n.venv/lib/python3.13/site-packages/rest_framework_simplejwt/tokens.py:88: KeyError\n______________________ test_protected_view_requires_token ______________________\n\napi = <rest_framework.test.APIClient object at 0x7fef07a1b250>\nuser = <User: ann>\n\n    def test_protected_view_requires_token(api, user):\n        assert api.get(\"/api/me/\").status_code == 401\n        r = api.get(\"/api/me/\", **bearer(obtain(api)[\"access\"]))\n        assert r.status_code == 200\n>       assert r.data == {\"username\": \"ann\", \"role\": \"admin\"}\nE       AssertionError: assert {'message': '... 'user_id': 1} == {'username': ...ole': 'admin'}\nE         \nE         Omitting 1 identical items, use -vv to show\nE         Left contains 3 more items:\nE         {'email': '', 'message': 'authenticated', 'user_id': 1}\nE         Right contains 1 more item:\nE         {'role': 'admin'}\nE         Use -v to get more diff\n\ntests/test_auth.py:45: AssertionError\n------------------------------ Captured log call -------------------------------\nWARNING  django.request:log.py:283 Unauthorized: /api/me/\n_______________________ test_refresh_keeps_custom_claims _______________________\n\napi = <rest_framework.test.APIClient object at 0x7fef076f1940>\nuser = <User: ann>\n\n    def test_refresh_keeps_custom_claims(api, user):\n        refresh = obtain(api)[\"refresh\"]\n        r = api.post(\"/api/token/refresh/\", {\"refresh\": refresh}, format=\"json\")\n        assert r.status_code == 200\n>       assert AccessToken(r.data[\"access\"])[\"role\"] == \"admin\"\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntests/test_auth.py:60: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = {'token_type': 'access', 'exp': 1792097437, 'iat': 1792097137, 'jti': '666408b9649f4649bdb8ad0b855a23ee', 'user_id': '1', 'username': 'ann', 'email': '', 'name': '', 'is_staff': True}\nkey = 'role'\n\n    def __getitem__(self, key: str):\n>       return self.payload[key]\n               ^^^^^^^^^^^^^^^^^\nE       KeyError: 'role'\n\n.venv/lib/python3.13/site-packages/rest_framework_simplejwt/tokens.py:88: KeyError\n=========================== short test summary info ============================\nFAILED tests/test_auth.py::test_obtain_pair_has_custom_claim - KeyError: 'role'\nFAILED tests/test_auth.py::test_protected_view_requires_token - AssertionErro...\nFAILED tests/test_auth.py::test_refresh_keeps_custom_claims - KeyError: 'role'\n3 failed, 2 passed in 2.58s\n"
+  },
+  "passed": false
+ }
+}

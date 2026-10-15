@@ -1,0 +1,36 @@
+{
+ "arm": "A",
+ "id": "httpx-tenacity-retry",
+ "title": "httpx client + tenacity retries with backoff, tested with respx",
+ "pinned": {
+  "httpx": "0.28.1",
+  "tenacity": "9.2.1",
+  "respx": "0.23.1",
+  "pytest": "9.1.1"
+ },
+ "model": "opencode/deepseek-v4.1-flash-free",
+ "ran_at": "2026-10-15T13:03:05.813054-08:00",
+ "model_missing_files": [],
+ "recipe": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "....                                                                     [100%]\n4 passed in 0.05s\n"
+  },
+  "passed": true
+ },
+ "model_result": {
+  "setup": {
+   "code": 0,
+   "tail": ""
+  },
+  "test": {
+   "code": 0,
+   "tail": "....                                                                     [100%]\n4 passed in 0.05s\n"
+  },
+  "passed": true
+ }
+}
