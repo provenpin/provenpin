@@ -1,15 +1,15 @@
 {
   "id": "supabase-js-mocked-fetch",
   "status": "passed",
-  "ran_at": "2026-10-15T12:55:14.476Z",
-  "last_passed_at": "2026-10-15T12:55:14.476Z",
+  "ran_at": "2026-10-15T13:03:51.205Z",
+  "last_passed_at": "2026-10-15T13:03:51.205Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6908,
-    "test": 659
+    "setup": 6024,
+    "test": 436
   },
   "pinned": {
     "@supabase/supabase-js": "2.117.3",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38737894352"
+    "runner": "github-actions 38738622435"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-supabase-js-mocked-fetch-FeCIVi\u001b[39m\n\n \u001b[32m✓\u001b[39m test/todos.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 37\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:55:21\n\u001b[2m   Duration \u001b[22m 225ms\u001b[2m (import 39%, tests 32%, transform 25%, worker 3%)\u001b[22m\n\nJSON report written to /tmp/pp-supabase-js-mocked-fetch-FeCIVi/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-supabase-js-mocked-fetch-3sSrjK\u001b[39m\n\n \u001b[32m✓\u001b[39m test/todos.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 23\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 13:03:57\n\u001b[2m   Duration \u001b[22m 144ms\u001b[2m (import 38%, tests 32%, transform 27%, worker 3%)\u001b[22m\n\nJSON report written to /tmp/pp-supabase-js-mocked-fetch-3sSrjK/test-report.json\n"
 }

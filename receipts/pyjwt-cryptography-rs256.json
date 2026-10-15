@@ -1,15 +1,15 @@
 {
   "id": "pyjwt-cryptography-rs256",
   "status": "passed",
-  "ran_at": "2026-10-15T11:56:27.695Z",
-  "last_passed_at": "2026-10-15T11:56:27.695Z",
+  "ran_at": "2026-10-15T13:02:53.588Z",
+  "last_passed_at": "2026-10-15T13:02:53.588Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 612,
-    "test": 3644
+    "setup": 296,
+    "test": 2324
   },
   "pinned": {
     "pyjwt": "2.15.1",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38730348195"
+    "runner": "github-actions 38738622435"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.00s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.80s\n"
 }

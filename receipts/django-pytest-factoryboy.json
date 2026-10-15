@@ -1,0 +1,30 @@
+{
+  "id": "django-pytest-factoryboy",
+  "status": "passed",
+  "ran_at": "2026-10-15T12:58:05.807Z",
+  "last_passed_at": "2026-10-15T12:58:05.807Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 742,
+    "test": 3748
+  },
+  "pinned": {
+    "django": "6.1.2",
+    "factory-boy": "3.3.3",
+    "pytest-django": "4.14.0",
+    "pytest": "9.1.1",
+    "faker": "37.4.0"
+  },
+  "recipe_hash": "sha256:8fca54a5603b23f318c2e0a9d1fb1dfe1213197800115640fd0649d98333e1fe",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38738622435"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.45s\n"
+}

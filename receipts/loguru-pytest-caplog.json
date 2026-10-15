@@ -1,15 +1,15 @@
 {
   "id": "loguru-pytest-caplog",
   "status": "passed",
-  "ran_at": "2026-10-15T11:55:09.521Z",
-  "last_passed_at": "2026-10-15T11:55:09.521Z",
+  "ran_at": "2026-10-15T13:01:18.421Z",
+  "last_passed_at": "2026-10-15T13:01:18.421Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 221,
-    "test": 1430
+    "setup": 311,
+    "test": 1633
   },
   "pinned": {
     "loguru": "0.7.3",
@@ -20,7 +20,7 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38730348195"
+    "runner": "github-actions 38738622435"
   },
   "errors": [],
   "log_tail": ".....                                                                    [100%]\n5 passed in 0.52s\n"
