@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-15T18:53:40.409Z",
+ "generated_at": "2026-10-15T19:00:07.231Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 277,
+ "count": 280,
  "recipes": [
   {
    "id": "aiofiles-anyio-temp-io",
@@ -767,6 +767,24 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T15:57:51.098Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "cryptography-fernet-multi-key",
+   "language": "python",
+   "pinned": {
+    "cryptography": "50.0.2",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T18:59:48.196Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38790162748",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2681,6 +2699,26 @@
      "respx": "0.23.1"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "hypothesis-polyfactory-models",
+   "language": "python",
+   "pinned": {
+    "hypothesis": "6.169.4",
+    "polyfactory": "3.3.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T18:59:44.711Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38790162748",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -5406,6 +5444,24 @@
      "httpx": "0.28.1"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "structlog-stdlib-json-renderer",
+   "language": "python",
+   "pinned": {
+    "structlog": "26.1.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T18:59:46.227Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38790162748",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
