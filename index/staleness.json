@@ -1,0 +1,1946 @@
+{
+ "schema_version": 1,
+ "checked_at": "2026-10-15T13:06:32.899Z",
+ "recipes": {
+  "anthropic-sdk-mocked-tool-use": {
+   "id": "anthropic-sdk-mocked-tool-use",
+   "checked_at": "2026-10-15T12:59:22.617Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "@anthropic-ai/sdk": "0.134.0",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "anthropic-streaming-mock": {
+   "id": "anthropic-streaming-mock",
+   "checked_at": "2026-10-15T12:59:22.362Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "@anthropic-ai/sdk": "0.134.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "apscheduler-time-machine-jobs": {
+   "id": "apscheduler-time-machine-jobs",
+   "checked_at": "2026-10-15T12:59:21.762Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "apscheduler": "3.11.3",
+    "time-machine": "3.5.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "astro-container-render": {
+   "id": "astro-container-render",
+   "checked_at": "2026-10-15T12:59:25.930Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "astro": "7.3.8",
+    "vitest": "5.0.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "attrs-cattrs-structuring": {
+   "id": "attrs-cattrs-structuring",
+   "checked_at": "2026-10-15T12:59:20.432Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "attrs": "26.1.0",
+    "cattrs": "26.2.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "authjs-drizzle-adapter-pglite": {
+   "id": "authjs-drizzle-adapter-pglite",
+   "checked_at": "2026-10-15T12:59:39.904Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "@auth/drizzle-adapter": "1.11.3",
+    "@auth/core": "0.41.3",
+    "drizzle-orm": "0.45.4",
+    "@electric-sql/pglite": "0.5.10"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "axios-retry-nock": {
+   "id": "axios-retry-nock",
+   "checked_at": "2026-10-15T12:59:32.189Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "axios": "1.20.0",
+    "axios-retry": "4.5.0",
+    "nock": "15.0.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "bcryptjs-jose-sessions": {
+   "id": "bcryptjs-jose-sessions",
+   "checked_at": "2026-10-15T12:59:19.987Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "bcryptjs": "3.0.3",
+    "jose": "6.2.12"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "boto3-moto-dynamodb-sqs": {
+   "id": "boto3-moto-dynamodb-sqs",
+   "checked_at": "2026-10-15T12:59:35.792Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "boto3": "1.43.114",
+    "moto": "5.2.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "boto3-moto-s3-presigned": {
+   "id": "boto3-moto-s3-presigned",
+   "checked_at": "2026-10-15T12:59:35.924Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "boto3": "1.43.114",
+    "moto": "5.2.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "celery-beat-schedule-crontab": {
+   "id": "celery-beat-schedule-crontab",
+   "checked_at": "2026-10-15T12:59:39.154Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "celery": "5.6.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "celery-redis-fakeredis-results": {
+   "id": "celery-redis-fakeredis-results",
+   "checked_at": "2026-10-15T12:59:39.583Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "celery": "5.6.3",
+    "redis": "8.1.0",
+    "fakeredis": "2.40.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "celery-tasks-eager-testing": {
+   "id": "celery-tasks-eager-testing",
+   "checked_at": "2026-10-15T12:59:46.410Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "celery": "5.6.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "click-pytest-freezegun-scheduler": {
+   "id": "click-pytest-freezegun-scheduler",
+   "checked_at": "2026-10-15T12:59:49.345Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "click": "8.5.0",
+    "python-dateutil": "2.9.0.post0",
+    "freezegun": "1.5.5"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "csv-parse-stringify-streams": {
+   "id": "csv-parse-stringify-streams",
+   "checked_at": "2026-10-15T12:59:54.812Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "csv-parse": "7.0.3",
+    "csv-stringify": "6.9.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "date-fns-tz-scheduling": {
+   "id": "date-fns-tz-scheduling",
+   "checked_at": "2026-10-15T12:59:58.971Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "date-fns": "4.4.0",
+    "@date-fns/tz": "1.5.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "dateutil-rrule-zoneinfo-time-machine": {
+   "id": "dateutil-rrule-zoneinfo-time-machine",
+   "checked_at": "2026-10-15T12:59:53.687Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "python-dateutil": "2.9.0.post0",
+    "time-machine": "3.5.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "django-celery-eager-signals": {
+   "id": "django-celery-eager-signals",
+   "checked_at": "2026-10-15T12:59:54.430Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "django": "6.1.2",
+    "celery": "5.6.3",
+    "pytest-django": "4.14.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "django-drf-api": {
+   "id": "django-drf-api",
+   "checked_at": "2026-10-15T13:00:13.180Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "pytest-django": "4.14.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "django-ninja-schema-crud": {
+   "id": "django-ninja-schema-crud",
+   "checked_at": "2026-10-15T13:00:02.253Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "django": "6.1.2",
+    "django-ninja": "1.7.1",
+    "pytest-django": "4.14.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "django-pytest-factoryboy": {
+   "id": "django-pytest-factoryboy",
+   "checked_at": "2026-10-15T13:00:03.104Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "django": "6.1.2",
+    "factory-boy": "3.3.3",
+    "pytest-django": "4.14.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "dom-testing-library-happy-dom": {
+   "id": "dom-testing-library-happy-dom",
+   "checked_at": "2026-10-15T13:00:06.856Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "vitest": "5.0.4",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/user-event": "14.6.8",
+    "happy-dom": "21.0.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "drf-django-filter-viewset": {
+   "id": "drf-django-filter-viewset",
+   "checked_at": "2026-10-15T13:00:10.956Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "passes_on_latest",
+   "latest": {
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "django-filter": "26.2",
+    "pytest-django": "4.14.0"
+   },
+   "bumped": {
+    "django-filter": "26.2"
+   },
+   "tests": {
+    "passed": 5,
+    "failed": 0
+   },
+   "setup_failed": false,
+   "log_tail": ""
+  },
+  "drf-simplejwt-auth": {
+   "id": "drf-simplejwt-auth",
+   "checked_at": "2026-10-15T13:00:11.896Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "djangorestframework-simplejwt": "5.5.1",
+    "pytest-django": "4.14.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "drizzle-pglite-migrations": {
+   "id": "drizzle-pglite-migrations",
+   "checked_at": "2026-10-15T13:00:16.046Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "drizzle-orm": "0.45.4",
+    "@electric-sql/pglite": "0.5.10"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "drizzle-pglite-postgres": {
+   "id": "drizzle-pglite-postgres",
+   "checked_at": "2026-10-15T13:00:15.493Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "drizzle-orm": "0.45.4",
+    "@electric-sql/pglite": "0.5.10"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "drizzle-sqlite-crud": {
+   "id": "drizzle-sqlite-crud",
+   "checked_at": "2026-10-15T13:00:19.646Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "passes_on_latest",
+   "latest": {
+    "drizzle-orm": "0.45.4",
+    "better-sqlite3": "13.0.3"
+   },
+   "bumped": {
+    "better-sqlite3": "13.0.3"
+   },
+   "tests": {
+    "passed": 1,
+    "failed": 0
+   },
+   "setup_failed": false,
+   "log_tail": ""
+  },
+  "drizzle-zod-insert-schemas": {
+   "id": "drizzle-zod-insert-schemas",
+   "checked_at": "2026-10-15T13:00:24.750Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "passes_on_latest",
+   "latest": {
+    "drizzle-orm": "0.45.4",
+    "drizzle-zod": "0.8.3",
+    "zod": "4.6.7",
+    "better-sqlite3": "13.0.3"
+   },
+   "bumped": {
+    "better-sqlite3": "13.0.3"
+   },
+   "tests": {
+    "passed": 2,
+    "failed": 0
+   },
+   "setup_failed": false,
+   "log_tail": ""
+  },
+  "duckdb-polars-analytics": {
+   "id": "duckdb-polars-analytics",
+   "checked_at": "2026-10-15T13:00:23.898Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "duckdb": "1.5.6",
+    "polars": "2.0.0",
+    "pyarrow": "26.0.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "exceljs-read-write": {
+   "id": "exceljs-read-write",
+   "checked_at": "2026-10-15T13:00:26.715Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "exceljs": "4.4.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "express-helmet-rate-limit": {
+   "id": "express-helmet-rate-limit",
+   "checked_at": "2026-10-15T13:00:29.349Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "express": "5.3.0",
+    "helmet": "8.3.0",
+    "express-rate-limit": "8.7.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "express-jwt-auth": {
+   "id": "express-jwt-auth",
+   "checked_at": "2026-10-15T13:00:30.000Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "express": "5.3.0",
+    "jsonwebtoken": "9.0.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "express-multer-upload": {
+   "id": "express-multer-upload",
+   "checked_at": "2026-10-15T13:00:43.382Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "express": "5.3.0",
+    "multer": "2.4.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "express-passport-jwt": {
+   "id": "express-passport-jwt",
+   "checked_at": "2026-10-15T13:00:45.879Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "express": "5.3.0",
+    "passport": "0.7.0",
+    "passport-jwt": "4.0.1",
+    "jsonwebtoken": "9.0.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "express-pino-http-logging": {
+   "id": "express-pino-http-logging",
+   "checked_at": "2026-10-15T13:00:41.185Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "express": "5.3.0",
+    "pino": "10.4.0",
+    "pino-http": "11.0.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "express-session-cookie-e2e": {
+   "id": "express-session-cookie-e2e",
+   "checked_at": "2026-10-15T13:00:41.560Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "express": "5.3.0",
+    "express-session": "1.19.0",
+    "fetch-cookie": "3.2.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "express-stripe-webhook": {
+   "id": "express-stripe-webhook",
+   "checked_at": "2026-10-15T13:00:46.872Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "express": "5.3.0",
+    "stripe": "23.0.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "express-zod-validation": {
+   "id": "express-zod-validation",
+   "checked_at": "2026-10-15T13:00:48.739Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "express": "5.3.0",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-argon2-login": {
+   "id": "fastapi-argon2-login",
+   "checked_at": "2026-10-15T13:00:56.851Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "argon2-cffi": "25.1.0",
+    "httpx": "0.28.1",
+    "python-multipart": "0.0.32"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-async-sqlalchemy-aiosqlite-pytest": {
+   "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
+   "checked_at": "2026-10-15T13:00:56.405Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "sqlalchemy": "2.1.4",
+    "aiosqlite": "0.22.1",
+    "httpx": "0.28.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-httpx-asyncclient-lifespan": {
+   "id": "fastapi-httpx-asyncclient-lifespan",
+   "checked_at": "2026-10-15T13:00:59.554Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "httpx": "0.28.1",
+    "asgi-lifespan": "2.1.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-jinja2-htmx-partials": {
+   "id": "fastapi-jinja2-htmx-partials",
+   "checked_at": "2026-10-15T13:01:03.225Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "jinja2": "3.1.6",
+    "httpx": "0.28.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-jwt-auth": {
+   "id": "fastapi-jwt-auth",
+   "checked_at": "2026-10-15T13:01:03.079Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "pyjwt": "2.15.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-oauth2-pyjwt-scopes": {
+   "id": "fastapi-oauth2-pyjwt-scopes",
+   "checked_at": "2026-10-15T13:01:02.138Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "pyjwt": "2.15.1",
+    "pwdlib": "0.3.1",
+    "argon2-cffi": "25.1.0",
+    "python-multipart": "0.0.32"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-pydantic-background-tasks": {
+   "id": "fastapi-pydantic-background-tasks",
+   "checked_at": "2026-10-15T13:01:05.301Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "pydantic": "2.14.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-pydantic-settings-dependency": {
+   "id": "fastapi-pydantic-settings-dependency",
+   "checked_at": "2026-10-15T13:01:13.207Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "pydantic-settings": "2.16.0",
+    "httpx": "0.28.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-pydantic-v2-models": {
+   "id": "fastapi-pydantic-v2-models",
+   "checked_at": "2026-10-15T13:01:15.398Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "pydantic": "2.14.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-slowapi-rate-limit": {
+   "id": "fastapi-slowapi-rate-limit",
+   "checked_at": "2026-10-15T13:01:15.751Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "slowapi": "0.1.10",
+    "httpx": "0.28.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-sqlalchemy-crud": {
+   "id": "fastapi-sqlalchemy-crud",
+   "checked_at": "2026-10-15T13:01:18.937Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "sqlalchemy": "2.1.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-stripe-webhook": {
+   "id": "fastapi-stripe-webhook",
+   "checked_at": "2026-10-15T13:01:17.283Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "stripe": "16.0.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastapi-websocket-auth": {
+   "id": "fastapi-websocket-auth",
+   "checked_at": "2026-10-15T13:01:22.700Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastify-json-schema": {
+   "id": "fastify-json-schema",
+   "checked_at": "2026-10-15T13:01:26.360Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastify": "5.12.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastify-jwt-auth": {
+   "id": "fastify-jwt-auth",
+   "checked_at": "2026-10-15T13:01:36.040Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastify": "5.12.7",
+    "@fastify/jwt": "10.2.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "fastify-zod-type-provider": {
+   "id": "fastify-zod-type-provider",
+   "checked_at": "2026-10-15T13:01:29.123Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastify": "5.12.7",
+    "zod": "4.6.7",
+    "fastify-type-provider-zod": "7.0.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "flask-jwt-extended-auth": {
+   "id": "flask-jwt-extended-auth",
+   "checked_at": "2026-10-15T13:01:39.521Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "flask": "3.1.3",
+    "flask-jwt-extended": "4.7.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "flask-login-sqlalchemy-sessions": {
+   "id": "flask-login-sqlalchemy-sessions",
+   "checked_at": "2026-10-15T13:01:32.894Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "flask": "3.1.3",
+    "flask-login": "0.6.3",
+    "flask-sqlalchemy": "3.1.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "flask-marshmallow-webargs": {
+   "id": "flask-marshmallow-webargs",
+   "checked_at": "2026-10-15T13:01:35.911Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "flask": "3.1.3",
+    "webargs": "8.7.1",
+    "marshmallow": "4.3.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "flask-migrate-sqlite": {
+   "id": "flask-migrate-sqlite",
+   "checked_at": "2026-10-15T13:01:35.182Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "passes_on_latest",
+   "latest": {
+    "flask": "3.1.3",
+    "flask-sqlalchemy": "3.1.1",
+    "flask-migrate": "4.1.0",
+    "alembic": "1.20.0",
+    "sqlalchemy": "2.1.4"
+   },
+   "bumped": {
+    "alembic": "1.20.0",
+    "sqlalchemy": "2.1.4"
+   },
+   "tests": {
+    "passed": 4,
+    "failed": 0
+   },
+   "setup_failed": false,
+   "log_tail": ""
+  },
+  "flask-sqlalchemy-app-factory": {
+   "id": "flask-sqlalchemy-app-factory",
+   "checked_at": "2026-10-15T13:01:37.556Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "flask": "3.1.3",
+    "flask-sqlalchemy": "3.1.1",
+    "sqlalchemy": "2.1.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "flask-wtforms-csrf-validation": {
+   "id": "flask-wtforms-csrf-validation",
+   "checked_at": "2026-10-15T13:01:48.687Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "flask": "3.1.3",
+    "flask-wtf": "1.3.0",
+    "wtforms": "3.2.2"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "graphql-request-msw": {
+   "id": "graphql-request-msw",
+   "checked_at": "2026-10-15T13:01:52.604Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "breaks_on_latest",
+   "latest": {
+    "graphql-request": "7.4.0",
+    "graphql": "17.0.2",
+    "msw": "3.0.3"
+   },
+   "bumped": {
+    "graphql": "17.0.2"
+   },
+   "tests": {
+    "passed": 0,
+    "failed": 0
+   },
+   "setup_failed": true,
+   "log_tail": "npm error code ERESOLVE\nnpm error ERESOLVE unable to resolve dependency tree\nnpm error\nnpm error While resolving: graphql-request-msw@undefined\nnpm error Found: graphql@17.0.2\nnpm error node_modules/graphql\nnpm error   graphql@\"17.0.2\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer graphql@\"14 - 16\" from graphql-request@7.4.0\nnpm error node_modules/graphql-request\nnpm error   graphql-request@\"7.4.0\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /home/runner/.npm/_logs/2026-10-15T13_01_53_559Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T13_01_53_559Z-debug-0.log\n"
+  },
+  "graphql-yoga-schema-context": {
+   "id": "graphql-yoga-schema-context",
+   "checked_at": "2026-10-15T13:01:54.515Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "graphql-yoga": "5.24.5",
+    "graphql": "17.0.2"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "hono-drizzle-sqlite-api": {
+   "id": "hono-drizzle-sqlite-api",
+   "checked_at": "2026-10-15T13:01:51.830Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "hono": "4.13.13",
+    "drizzle-orm": "0.45.4",
+    "better-sqlite3": "13.0.3",
+    "zod": "4.6.7",
+    "@hono/zod-validator": "0.9.1",
+    "vitest": "5.0.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "hono-jwt-auth": {
+   "id": "hono-jwt-auth",
+   "checked_at": "2026-10-15T13:01:55.153Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "hono": "4.13.13",
+    "zod": "4.6.7",
+    "@hono/zod-validator": "0.9.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "hono-valibot-validator": {
+   "id": "hono-valibot-validator",
+   "checked_at": "2026-10-15T13:01:57.152Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "hono": "4.13.13",
+    "valibot": "1.5.0",
+    "@hono/valibot-validator": "0.6.1",
+    "vitest": "5.0.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "hono-zod-openapi": {
+   "id": "hono-zod-openapi",
+   "checked_at": "2026-10-15T13:01:59.974Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "hono": "4.13.13",
+    "@hono/zod-openapi": "1.6.3",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "hono-zod-validator": {
+   "id": "hono-zod-validator",
+   "checked_at": "2026-10-15T13:02:03.491Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "hono": "4.13.13",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "httpx-pydantic-typed-client": {
+   "id": "httpx-pydantic-typed-client",
+   "checked_at": "2026-10-15T13:02:06.998Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "httpx": "0.28.1",
+    "pydantic": "2.14.1",
+    "respx": "0.23.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "httpx-respx-api-client": {
+   "id": "httpx-respx-api-client",
+   "checked_at": "2026-10-15T13:02:15.186Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "httpx": "0.28.1",
+    "respx": "0.23.1",
+    "pydantic": "2.14.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "httpx-respx-pagination-oauth": {
+   "id": "httpx-respx-pagination-oauth",
+   "checked_at": "2026-10-15T13:02:10.209Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "httpx": "0.28.1",
+    "respx": "0.23.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "httpx-tenacity-retry": {
+   "id": "httpx-tenacity-retry",
+   "checked_at": "2026-10-15T13:02:17.135Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "httpx": "0.28.1",
+    "tenacity": "9.2.1",
+    "respx": "0.23.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "i18next-react-ssr": {
+   "id": "i18next-react-ssr",
+   "checked_at": "2026-10-15T13:02:15.492Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "i18next": "26.4.5",
+    "react-i18next": "17.0.16",
+    "react": "19.3.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "ioredis-cache-aside-mock": {
+   "id": "ioredis-cache-aside-mock",
+   "checked_at": "2026-10-15T13:02:17.022Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "breaks_on_latest",
+   "latest": {
+    "ioredis": "6.0.0",
+    "vitest": "5.0.4",
+    "ioredis-mock": "8.13.1"
+   },
+   "bumped": {
+    "ioredis": "6.0.0"
+   },
+   "tests": {
+    "passed": 0,
+    "failed": 1
+   },
+   "setup_failed": true,
+   "log_tail": "npm error code ERESOLVE\nnpm error ERESOLVE unable to resolve dependency tree\nnpm error\nnpm error While resolving: ioredis-cache-aside-mock@undefined\nnpm error Found: ioredis@6.0.0\nnpm error node_modules/ioredis\nnpm error   ioredis@\"6.0.0\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peer ioredis@\"^5\" from @types/ioredis-mock@8.2.8\nnpm error node_modules/@types/ioredis-mock\nnpm error   peer @types/ioredis-mock@\"^8\" from ioredis-mock@8.13.1\nnpm error   node_modules/ioredis-mock\nnpm error     dev ioredis-mock@\"8.13.1\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /home/runner/.npm/_logs/2026-10-15T13_02_17_460Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T13_02_17_460Z-debug-0.log\n"
+  },
+  "jimp-image-resize": {
+   "id": "jimp-image-resize",
+   "checked_at": "2026-10-15T13:02:22.686Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "jimp": "1.6.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "jinja2-markupsafe-email-templates": {
+   "id": "jinja2-markupsafe-email-templates",
+   "checked_at": "2026-10-15T13:02:20.727Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "jose-jwks-verify": {
+   "id": "jose-jwks-verify",
+   "checked_at": "2026-10-15T13:02:22.562Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "jose": "6.2.12",
+    "vitest": "5.0.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "ky-msw-vitest": {
+   "id": "ky-msw-vitest",
+   "checked_at": "2026-10-15T13:02:29.760Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "ky": "2.2.0",
+    "vitest": "5.0.4",
+    "msw": "3.0.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "kysely-sqlite-queries": {
+   "id": "kysely-sqlite-queries",
+   "checked_at": "2026-10-15T13:02:35.451Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "passes_on_latest",
+   "latest": {
+    "kysely": "0.29.6",
+    "better-sqlite3": "13.0.3"
+   },
+   "bumped": {
+    "better-sqlite3": "13.0.3"
+   },
+   "tests": {
+    "passed": 1,
+    "failed": 0
+   },
+   "setup_failed": false,
+   "log_tail": ""
+  },
+  "langchain-core-fake-llm-python": {
+   "id": "langchain-core-fake-llm-python",
+   "checked_at": "2026-10-15T13:02:33.029Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "langchain-core": "1.6.10",
+    "pydantic": "2.14.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "langchain-core-fake-model-chain": {
+   "id": "langchain-core-fake-model-chain",
+   "checked_at": "2026-10-15T13:02:35.417Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "@langchain/core": "1.2.17",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "langchain-core-runnable-fallbacks": {
+   "id": "langchain-core-runnable-fallbacks",
+   "checked_at": "2026-10-15T13:02:42.287Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "langchain-core": "1.6.10"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "langchainjs-zod-tools": {
+   "id": "langchainjs-zod-tools",
+   "checked_at": "2026-10-15T13:02:35.234Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "@langchain/core": "1.2.17",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "litestar-dto-sqlalchemy": {
+   "id": "litestar-dto-sqlalchemy",
+   "checked_at": "2026-10-15T13:02:47.323Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "litestar": "2.24.0",
+    "advanced-alchemy": "1.11.0",
+    "aiosqlite": "0.22.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "litestar-guards-di": {
+   "id": "litestar-guards-di",
+   "checked_at": "2026-10-15T13:02:46.429Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "litestar": "2.24.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "loguru-pytest-caplog": {
+   "id": "loguru-pytest-caplog",
+   "checked_at": "2026-10-15T13:02:52.194Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "loguru": "0.7.3",
+    "pytest": "9.1.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "luxon-timezones-intervals": {
+   "id": "luxon-timezones-intervals",
+   "checked_at": "2026-10-15T13:02:46.878Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "luxon": "3.7.2"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "marshmallow-sqlalchemy-flask-api": {
+   "id": "marshmallow-sqlalchemy-flask-api",
+   "checked_at": "2026-10-15T13:02:50.711Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "passes_on_latest",
+   "latest": {
+    "flask": "3.1.3",
+    "flask-sqlalchemy": "3.1.1",
+    "marshmallow-sqlalchemy": "1.5.0",
+    "marshmallow": "4.3.1",
+    "sqlalchemy": "2.1.4"
+   },
+   "bumped": {
+    "marshmallow": "4.3.1",
+    "sqlalchemy": "2.1.4"
+   },
+   "tests": {
+    "passed": 5,
+    "failed": 0
+   },
+   "setup_failed": false,
+   "log_tail": ""
+  },
+  "msgspec-struct-validation": {
+   "id": "msgspec-struct-validation",
+   "checked_at": "2026-10-15T13:02:59.654Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "msgspec": "0.22.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "msw-fetch-api-client": {
+   "id": "msw-fetch-api-client",
+   "checked_at": "2026-10-15T13:02:57.376Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "zod": "4.6.7",
+    "msw": "3.0.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "nestjs-typeorm-sqlite": {
+   "id": "nestjs-typeorm-sqlite",
+   "checked_at": "2026-10-15T13:03:04.427Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "breaks_on_latest",
+   "latest": {
+    "@nestjs/core": "12.1.3",
+    "@nestjs/typeorm": "12.0.2",
+    "typeorm": "1.1.2",
+    "better-sqlite3": "13.0.3"
+   },
+   "bumped": {
+    "better-sqlite3": "13.0.3"
+   },
+   "tests": {
+    "passed": 0,
+    "failed": 0
+   },
+   "setup_failed": true,
+   "log_tail": "npm error Found: better-sqlite3@13.0.3\nnpm error node_modules/better-sqlite3\nnpm error   better-sqlite3@\"13.0.3\" from the root project\nnpm error\nnpm error Could not resolve dependency:\nnpm error peerOptional better-sqlite3@\"^12.0.0\" from typeorm@1.1.2\nnpm error node_modules/typeorm\nnpm error   typeorm@\"1.1.2\" from the root project\nnpm error   peer typeorm@\"^0.3.0 || ^1.0.0-dev\" from @nestjs/typeorm@12.0.2\nnpm error   node_modules/@nestjs/typeorm\nnpm error     @nestjs/typeorm@\"12.0.2\" from the root project\nnpm error\nnpm error Conflicting peer dependency: better-sqlite3@12.11.1\nnpm error node_modules/better-sqlite3\nnpm error   peerOptional better-sqlite3@\"^12.0.0\" from typeorm@1.1.2\nnpm error   node_modules/typeorm\nnpm error     typeorm@\"1.1.2\" from the root project\nnpm error     peer typeorm@\"^0.3.0 || ^1.0.0-dev\" from @nestjs/typeorm@12.0.2\nnpm error     node_modules/@nestjs/typeorm\nnpm error       @nestjs/typeorm@\"12.0.2\" from the root project\nnpm error\nnpm error Fix the upstream dependency conflict, or retry\nnpm error this command with --force or --legacy-peer-deps\nnpm error to accept an incorrect (and potentially broken) dependency resolution.\nnpm error\nnpm error\nnpm error For a full report see:\nnpm error /home/runner/.npm/_logs/2026-10-15T13_03_05_377Z-eresolve-report.txt\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T13_03_05_377Z-debug-0.log\n"
+  },
+  "nextauth-credentials-callbacks": {
+   "id": "nextauth-credentials-callbacks",
+   "checked_at": "2026-10-15T13:02:59.559Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "next-auth": "4.24.15",
+    "next": "16.4.1",
+    "bcryptjs": "3.0.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "nextjs-route-handler-zod": {
+   "id": "nextjs-route-handler-zod",
+   "checked_at": "2026-10-15T13:03:05.607Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "next": "16.4.1",
+    "zod": "4.6.7",
+    "react": "19.3.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "nextjs-server-action-zod": {
+   "id": "nextjs-server-action-zod",
+   "checked_at": "2026-10-15T13:03:08.936Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "next": "16.4.1",
+    "zod": "4.6.7",
+    "react": "19.3.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "nextjs-stripe-webhook": {
+   "id": "nextjs-stripe-webhook",
+   "checked_at": "2026-10-15T13:03:14.377Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "stripe": "23.0.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "nextjs-supabase-auth-middleware": {
+   "id": "nextjs-supabase-auth-middleware",
+   "checked_at": "2026-10-15T13:03:15.515Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {},
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "nodemailer-templates-test-transport": {
+   "id": "nodemailer-templates-test-transport",
+   "checked_at": "2026-10-15T13:03:21.692Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "nodemailer": "10.1.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "numpy-scipy-optimize-fit": {
+   "id": "numpy-scipy-optimize-fit",
+   "checked_at": "2026-10-15T13:03:20.762Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "openai-python-respx-mock": {
+   "id": "openai-python-respx-mock",
+   "checked_at": "2026-10-15T13:03:18.851Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "openai": "3.31.0",
+    "pydantic": "2.14.1",
+    "respx": "0.23.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "openai-sdk-mocked-tool-calls": {
+   "id": "openai-sdk-mocked-tool-calls",
+   "checked_at": "2026-10-15T13:03:26.237Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "openai": "7.34.0",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "openai-streaming-mock": {
+   "id": "openai-streaming-mock",
+   "checked_at": "2026-10-15T13:03:30.808Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "openai": "7.34.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "openai-structured-output-respx": {
+   "id": "openai-structured-output-respx",
+   "checked_at": "2026-10-15T13:03:50.415Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "openai": "3.31.0",
+    "respx": "0.23.1",
+    "pydantic": "2.14.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pandas-openpyxl-excel-report": {
+   "id": "pandas-openpyxl-excel-report",
+   "checked_at": "2026-10-15T13:03:26.511Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "pandas": "3.0.6",
+    "openpyxl": "3.1.5"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pandas-pandera-validation": {
+   "id": "pandas-pandera-validation",
+   "checked_at": "2026-10-15T13:03:34.745Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "pandas": "3.0.6",
+    "pandera": "0.34.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pandas-pyarrow-parquet-roundtrip": {
+   "id": "pandas-pyarrow-parquet-roundtrip",
+   "checked_at": "2026-10-15T13:03:33.110Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "pandas": "3.0.6",
+    "pyarrow": "26.0.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pandas-sqlalchemy-to-sql": {
+   "id": "pandas-sqlalchemy-to-sql",
+   "checked_at": "2026-10-15T13:03:35.098Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "pandas": "3.0.6",
+    "sqlalchemy": "2.1.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "papaparse-zod-csv-import": {
+   "id": "papaparse-zod-csv-import",
+   "checked_at": "2026-10-15T13:03:42.234Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "papaparse": "5.7.0",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "polars-pandera-validation": {
+   "id": "polars-pandera-validation",
+   "checked_at": "2026-10-15T13:03:45.542Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "polars": "2.0.0",
+    "pandera": "0.34.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "polars-pydantic-row-validation": {
+   "id": "polars-pydantic-row-validation",
+   "checked_at": "2026-10-15T13:04:26.111Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "polars": "2.0.0",
+    "pydantic": "2.14.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "prisma-sqlite-adapter": {
+   "id": "prisma-sqlite-adapter",
+   "checked_at": "2026-10-15T13:04:45.029Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "breaks_on_latest",
+   "latest": {
+    "prisma": "8.0.0-rc.23"
+   },
+   "bumped": {
+    "prisma": "8.0.0-rc.23"
+   },
+   "tests": {
+    "passed": 0,
+    "failed": 0
+   },
+   "setup_failed": true,
+   "log_tail": "\nadded 363 packages in 1m\n{\"kind\":\"result\",\"envelope\":{\"ok\":false,\"commandId\":\"\",\"error\":{\"code\":\"CLI.UNKNOWN_COMMAND\",\"severity\":\"error\",\"summary\":\"No command registered for `push`, did you mean `update`?\",\"nextActions\":[{\"kind\":\"run-command\",\"label\":\"List every command\",\"command\":\"prisma --help\"}]},\"diagnostics\":[],\"nextActions\":[{\"kind\":\"run-command\",\"label\":\"List every command\",\"command\":\"prisma --help\"}]},\"commandId\":\"\",\"timestamp\":\"2026-10-15T13:05:53.812Z\"}\nnpm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.\n"
+  },
+  "prisma-sqlite-transactions": {
+   "id": "prisma-sqlite-transactions",
+   "checked_at": "2026-10-15T13:04:31.659Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "breaks_on_latest",
+   "latest": {
+    "prisma": "8.0.0-rc.23"
+   },
+   "bumped": {
+    "prisma": "8.0.0-rc.23"
+   },
+   "tests": {
+    "passed": 0,
+    "failed": 0
+   },
+   "setup_failed": true,
+   "log_tail": "\nadded 363 packages in 59s\n{\"kind\":\"result\",\"envelope\":{\"ok\":false,\"commandId\":\"\",\"error\":{\"code\":\"CLI.UNKNOWN_COMMAND\",\"severity\":\"error\",\"summary\":\"No command registered for `push`, did you mean `update`?\",\"nextActions\":[{\"kind\":\"run-command\",\"label\":\"List every command\",\"command\":\"prisma --help\"}]},\"diagnostics\":[],\"nextActions\":[{\"kind\":\"run-command\",\"label\":\"List every command\",\"command\":\"prisma --help\"}]},\"commandId\":\"\",\"timestamp\":\"2026-10-15T13:05:31.617Z\"}\nnpm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.\n"
+  },
+  "pydantic-ai-testmodel-tools": {
+   "id": "pydantic-ai-testmodel-tools",
+   "checked_at": "2026-10-15T13:04:34.784Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {},
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pydantic-email-phone-validation": {
+   "id": "pydantic-email-phone-validation",
+   "checked_at": "2026-10-15T13:04:37.240Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "pydantic": "2.14.1",
+    "email-validator": "2.3.0",
+    "phonenumbers": "9.0.41"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pydantic-settings-config": {
+   "id": "pydantic-settings-config",
+   "checked_at": "2026-10-15T13:04:42.956Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "pydantic": "2.14.1",
+    "pydantic-settings": "2.16.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pydantic-settings-yaml-secrets": {
+   "id": "pydantic-settings-yaml-secrets",
+   "checked_at": "2026-10-15T13:04:42.489Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "pydantic-settings": "2.16.0",
+    "pydantic": "2.14.1",
+    "pyyaml": "6.0.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pydantic-v2-discriminated-unions-fastapi": {
+   "id": "pydantic-v2-discriminated-unions-fastapi",
+   "checked_at": "2026-10-15T13:04:44.500Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "pydantic": "2.14.1",
+    "httpx": "0.28.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pyjwt-cryptography-rs256": {
+   "id": "pyjwt-cryptography-rs256",
+   "checked_at": "2026-10-15T13:04:46.494Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "pyjwt": "2.15.1",
+    "cryptography": "50.0.2"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pytest-asyncio-taskgroup-timeouts": {
+   "id": "pytest-asyncio-taskgroup-timeouts",
+   "checked_at": "2026-10-15T13:04:47.228Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "pytest-asyncio": "1.4.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pytest-factory-boy-sqlalchemy": {
+   "id": "pytest-factory-boy-sqlalchemy",
+   "checked_at": "2026-10-15T13:04:52.597Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "sqlalchemy": "2.1.4",
+    "factory-boy": "3.3.3",
+    "pytest": "9.1.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "pytest-hypothesis-pydantic-roundtrip": {
+   "id": "pytest-hypothesis-pydantic-roundtrip",
+   "checked_at": "2026-10-15T13:04:59.669Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "hypothesis": "6.169.4",
+    "pydantic": "2.14.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "python-dotenv-pydantic-settings-env": {
+   "id": "python-dotenv-pydantic-settings-env",
+   "checked_at": "2026-10-15T13:04:58.666Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "python-dotenv": "1.2.4",
+    "pydantic-settings": "2.16.0",
+    "pydantic": "2.14.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "react-hook-form-zod-resolver": {
+   "id": "react-hook-form-zod-resolver",
+   "checked_at": "2026-10-15T13:04:56.498Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "react-hook-form": "7.90.0",
+    "@hookform/resolvers": "5.9.1",
+    "zod": "4.6.7",
+    "react": "19.3.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "react-query-testing-library": {
+   "id": "react-query-testing-library",
+   "checked_at": "2026-10-15T13:05:01.170Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "@tanstack/react-query": "5.104.3",
+    "react": "19.3.1",
+    "vitest": "5.0.4",
+    "@testing-library/react": "16.3.3",
+    "jsdom": "30.1.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "react-router-loader-action": {
+   "id": "react-router-loader-action",
+   "checked_at": "2026-10-15T13:05:00.061Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "react-router": "8.4.0",
+    "react": "19.3.1",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "requests-cache-sqlite-backend": {
+   "id": "requests-cache-sqlite-backend",
+   "checked_at": "2026-10-15T13:05:11.210Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "requests": "2.34.2",
+    "requests-cache": "1.3.3",
+    "responses": "0.26.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "resend-email-msw": {
+   "id": "resend-email-msw",
+   "checked_at": "2026-10-15T13:05:19.254Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "resend": "6.33.0",
+    "msw": "3.0.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "rq-fakeredis-jobs": {
+   "id": "rq-fakeredis-jobs",
+   "checked_at": "2026-10-15T13:05:13.560Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "rq": "2.12.0",
+    "fakeredis": "2.40.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "sklearn-columntransformer-pipeline": {
+   "id": "sklearn-columntransformer-pipeline",
+   "checked_at": "2026-10-15T13:05:11.867Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "socketio-rooms-auth": {
+   "id": "socketio-rooms-auth",
+   "checked_at": "2026-10-15T13:05:15.839Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "socket.io": "4.8.4",
+    "socket.io-client": "4.8.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "sqlalchemy-alembic-autogenerate-check": {
+   "id": "sqlalchemy-alembic-autogenerate-check",
+   "checked_at": "2026-10-15T13:05:31.076Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "sqlalchemy": "2.1.4",
+    "alembic": "1.20.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "sqlalchemy-alembic-migrations": {
+   "id": "sqlalchemy-alembic-migrations",
+   "checked_at": "2026-10-15T13:05:27.846Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "sqlalchemy": "2.1.4",
+    "alembic": "1.20.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "sqlalchemy-async-aiosqlite": {
+   "id": "sqlalchemy-async-aiosqlite",
+   "checked_at": "2026-10-15T13:05:34.207Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "sqlalchemy": "2.1.4",
+    "aiosqlite": "0.22.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "sqlalchemy-async-repository-pattern": {
+   "id": "sqlalchemy-async-repository-pattern",
+   "checked_at": "2026-10-15T13:05:34.494Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "sqlalchemy": "2.1.4",
+    "aiosqlite": "0.22.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "sqlalchemy-hybrid-events": {
+   "id": "sqlalchemy-hybrid-events",
+   "checked_at": "2026-10-15T13:05:34.389Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "sqlalchemy": "2.1.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "sqlalchemy2-pydantic-v2-from-attributes": {
+   "id": "sqlalchemy2-pydantic-v2-from-attributes",
+   "checked_at": "2026-10-15T13:05:41.851Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "sqlalchemy": "2.1.4",
+    "pydantic": "2.14.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "sqlmodel-fastapi-crud": {
+   "id": "sqlmodel-fastapi-crud",
+   "checked_at": "2026-10-15T13:05:45.800Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "sqlmodel": "0.0.48",
+    "fastapi": "0.143.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "sqlmodel-relationships-sqlite": {
+   "id": "sqlmodel-relationships-sqlite",
+   "checked_at": "2026-10-15T13:05:52.123Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "sqlmodel": "0.0.48"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "stripe-checkout-mocked-http": {
+   "id": "stripe-checkout-mocked-http",
+   "checked_at": "2026-10-15T13:05:47.936Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "stripe": "23.0.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "structlog-fastapi-request-id": {
+   "id": "structlog-fastapi-request-id",
+   "checked_at": "2026-10-15T13:05:48.011Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "fastapi": "0.143.1",
+    "structlog": "26.1.0",
+    "httpx": "0.28.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "supabase-js-mocked-fetch": {
+   "id": "supabase-js-mocked-fetch",
+   "checked_at": "2026-10-15T13:06:02.235Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "passes_on_latest",
+   "latest": {
+    "@supabase/supabase-js": "2.118.0",
+    "vitest": "5.0.4"
+   },
+   "bumped": {
+    "@supabase/supabase-js": "2.118.0"
+   },
+   "tests": {
+    "passed": 4,
+    "failed": 0
+   },
+   "setup_failed": false,
+   "log_tail": ""
+  },
+  "sveltekit-form-actions": {
+   "id": "sveltekit-form-actions",
+   "checked_at": "2026-10-15T13:05:59.126Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "@sveltejs/kit": "3.1.0",
+    "svelte": "5.57.2",
+    "zod": "4.6.7",
+    "vitest": "5.0.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "tenacity-httpx-respx-backoff": {
+   "id": "tenacity-httpx-respx-backoff",
+   "checked_at": "2026-10-15T13:06:00.520Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "httpx": "0.28.1",
+    "tenacity": "9.2.1",
+    "respx": "0.23.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "trpc-client-server-superjson": {
+   "id": "trpc-client-server-superjson",
+   "checked_at": "2026-10-15T13:06:00.896Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "@trpc/server": "11.19.0",
+    "@trpc/client": "11.19.0",
+    "superjson": "2.2.6",
+    "zod": "4.6.7",
+    "vitest": "5.0.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "trpc-context-auth-middleware": {
+   "id": "trpc-context-auth-middleware",
+   "checked_at": "2026-10-15T13:06:05.846Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "@trpc/server": "11.19.0",
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "trpc-zod-router": {
+   "id": "trpc-zod-router",
+   "checked_at": "2026-10-15T13:06:01.547Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "zod": "4.6.7"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "typer-cli-testing": {
+   "id": "typer-cli-testing",
+   "checked_at": "2026-10-15T13:06:11.175Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "typer": "0.27.3"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "typer-rich-table-cli": {
+   "id": "typer-rich-table-cli",
+   "checked_at": "2026-10-15T13:06:12.244Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "typer": "0.27.3",
+    "rich": "15.0.0"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "vue-pinia-testing": {
+   "id": "vue-pinia-testing",
+   "checked_at": "2026-10-15T13:06:17.810Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "vue": "3.5.44",
+    "pinia": "4.1.0",
+    "vitest": "5.0.4",
+    "@pinia/testing": "2.0.2",
+    "@vue/test-utils": "2.5.1"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "zod-env-dotenv-config": {
+   "id": "zod-env-dotenv-config",
+   "checked_at": "2026-10-15T13:06:16.747Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "zod": "4.6.7",
+    "dotenv": "18.0.8"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  },
+  "zustand-store-vitest": {
+   "id": "zustand-store-vitest",
+   "checked_at": "2026-10-15T13:06:19.611Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38738890100",
+   "status": "current",
+   "latest": {
+    "zustand": "5.0.15",
+    "vitest": "5.0.4"
+   },
+   "tests": null,
+   "note": "stack pins already latest"
+  }
+ }
+}
