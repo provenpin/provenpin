@@ -5,3 +5,12 @@ compatibility_date = "2026-10-01"
 # Set Pro keys later with: npx wrangler secret put PROVENPIN_API_KEYS
 [vars]
 PROVENPIN_REQUIRE_KEY = "false"
+
+# Privacy-safe usage counts (see src/usage.ts). No IPs, user agents or query text are recorded.
+[[analytics_engine_datasets]]
+binding = "USAGE"
+dataset = "provenpin_usage"
+
+[observability]
+enabled = true
+head_sampling_rate = 1

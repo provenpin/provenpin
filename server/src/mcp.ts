@@ -1,5 +1,6 @@
 // Minimal stateless MCP server over Streamable HTTP (JSON responses), no SDK needed.
 // Works anywhere with web-standard Request/Response: Cloudflare Workers, Node 20+, Bun, Deno.
+import { clientFromSession, eventFor, makeSessionId, record, type AnalyticsSink } from "./usage.ts";
 import { listStacks, searchRecipes, type RecipeIndex } from "./search.ts";
 
 export const PROTOCOL_VERSION = "2025-06-18";
@@ -11,6 +12,8 @@ export interface ServerOptions {
   /** When "true", requests without a valid key are rejected (future Pro-only mode). */
   requireKey?: string;
   version?: string;
+  /** Optional Workers Analytics Engine dataset for privacy-safe usage counts. */
+  analytics?: AnalyticsSink;
 }
 
 const TOOLS = [
@@ -94,7 +97,8 @@ export function handleRpc(index: RecipeIndex, msg: Json, tier: "free" | "pro", v
 
 const CORS = {
   "access-control-allow-origin": "*",
-  "access-control-allow-headers": "content-type, mcp-protocol-version, mcp-session-id, x-provenpin-key, authorization",
+  "access-control-allow-headers": "content-type, mcp-protocol-version, mcp-session-id, x-provenpin-key, x-provenpin-internal, authorization",
+  "access-control-expose-headers": "mcp-session-id",
   "access-control-allow-methods": "GET, POST, OPTIONS",
 };
 
@@ -118,8 +122,16 @@ export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
     let body: any;
     try { body = await req.json(); } catch { return Response.json(err(null, -32700, "Parse error"), { status: 400, headers: CORS }); }
     const msgs = Array.isArray(body) ? body : [body];
+    const internalHeader = req.headers.get("x-provenpin-internal") === "1";
+    const init = msgs.find((m) => m?.method === "initialize");
+    const ci = init?.params?.clientInfo;
+    const client = init ? { name: String(ci?.name ?? "unknown"), version: String(ci?.version ?? "unknown") }
+      : clientFromSession(req.headers.get("mcp-session-id")) ?? { name: "unknown", version: "unknown" };
+    for (const m of msgs) record(eventFor(m, client, internalHeader), opts.analytics);
     const out = msgs.map((m) => handleRpc(index, m, tier, version)).filter((x): x is Json => x !== null);
     if (out.length === 0) return new Response(null, { status: 202, headers: CORS });
-    return Response.json(Array.isArray(body) ? out : out[0], { headers: { ...CORS, "x-provenpin-tier": tier } });
+    const headers: Record<string, string> = { ...CORS, "x-provenpin-tier": tier };
+    if (init) headers["mcp-session-id"] = makeSessionId(client.name, client.version);
+    return Response.json(Array.isArray(body) ? out : out[0], { headers });
   };
 }

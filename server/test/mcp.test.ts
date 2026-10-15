@@ -66,3 +66,21 @@ test("health endpoint", async () => {
   const res = await handler(new Request("http://x/health"));
   assert.equal((await res.json() as any).recipes, 2);
 });
+
+test("usage events are privacy-safe and carry clientInfo via session id", async () => {
+  const points: any[] = [];
+  const h = createHandler(index, { analytics: { writeDataPoint: (p) => points.push(p) } });
+  const post = (body: unknown, headers: Record<string, string> = {}) =>
+    h(new Request("http://x/mcp", { method: "POST", headers: { "content-type": "application/json", "x-forwarded-for": "1.2.3.4", ...headers }, body: JSON.stringify(body) }));
+  const init = await post({ jsonrpc: "2.0", id: 1, method: "initialize", params: { protocolVersion: "2025-06-18", capabilities: {}, clientInfo: { name: "cursor", version: "1.7" } } });
+  const sid = init.headers.get("mcp-session-id")!;
+  assert.ok(sid.startsWith("pp1."));
+  await post({ jsonrpc: "2.0", id: 2, method: "tools/call", params: { name: "search_recipes", arguments: { query: "secret words here" } } }, { "mcp-session-id": sid });
+  await post({ jsonrpc: "2.0", id: 3, method: "tools/list" }, { "x-provenpin-internal": "1" });
+  assert.equal(points.length, 3);
+  assert.deepEqual(points[1].blobs, ["tools/call", "search_recipes", "", "cursor", "1.7", "external"]);
+  assert.deepEqual(points[1].doubles, [17]);
+  assert.equal(points[2].blobs[5], "internal");
+  const all = JSON.stringify(points);
+  assert.ok(!all.includes("secret") && !all.includes("1.2.3.4"));
+});
