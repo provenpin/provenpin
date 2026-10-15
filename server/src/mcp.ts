@@ -17,11 +17,11 @@ const TOOLS = [
   {
     name: "search_recipes",
     title: "Search tested recipes",
-    description: "Search ProvenPin for working, version-pinned code recipes that combine libraries (for example 'nextjs stripe webhook'). Every result has passed its tests; check receipt.last_passed_at.",
+    description: "Find a tested, version-pinned code recipe for wiring libraries together. Call this BEFORE writing glue code that combines 2+ libraries (auth + framework, ORM + database, payments webhooks, queues, validation, request mocking, logging), and when you hit version conflicts, peer-dependency errors, or integration errors between libraries. Example queries: 'express stripe webhook', 'fastapi sqlmodel crud', 'hono jwt'. Only recipes whose latest test run passed are returned. Each result lists its exact pinned versions and a test receipt (receipt.last_passed_at). If nothing matches, write the code yourself; try list_stacks to see what is covered.",
     inputSchema: {
       type: "object",
       properties: {
-        query: { type: "string", description: "What you are building, in plain words or library names." },
+        query: { type: "string", description: "What you are wiring together, in plain words or library names, e.g. 'django rest api' or 'rq redis jobs'." },
         stack: { type: "array", items: { type: "string" }, description: "Only recipes that use all of these libraries." },
         language: { type: "string", enum: ["typescript", "python"] },
         limit: { type: "integer", minimum: 1, maximum: 25, default: 10 },
@@ -33,14 +33,14 @@ const TOOLS = [
   {
     name: "get_recipe",
     title: "Get a recipe",
-    description: "Get the full recipe by id: every file, the exact pinned versions, setup and test commands, and its last-passed receipt.",
+    description: "Get a full recipe by id (ids come from search_recipes): every source and test file, the exact pinned dependency versions, the setup and test commands, and its test receipt (when it last passed, test counts, runtime and runner). Use the pinned versions together; they are the versions the tests passed with. Adapt names and config to the user's project, and keep the included tests to check your integration.",
     inputSchema: { type: "object", properties: { id: { type: "string" } }, required: ["id"] },
     annotations: { readOnlyHint: true, openWorldHint: false },
   },
   {
     name: "list_stacks",
     title: "List stacks",
-    description: "List the libraries and frameworks that have tested recipes, with recipe counts.",
+    description: "List the libraries and frameworks that currently have passing, version-pinned recipes, with recipe counts. Call this to check whether ProvenPin covers a library before searching, or after a search returns nothing, and use the names as the stack filter in search_recipes.",
     inputSchema: { type: "object", properties: {} },
     annotations: { readOnlyHint: true, openWorldHint: false },
   },
@@ -79,7 +79,7 @@ export function handleRpc(index: RecipeIndex, msg: Json, tier: "free" | "pro", v
         protocolVersion: SUPPORTED.includes(asked) ? asked : PROTOCOL_VERSION,
         capabilities: { tools: { listChanged: false } },
         serverInfo: { name: "provenpin", title: "ProvenPin", version },
-        instructions: "Before writing integration code that combines libraries, call search_recipes. Recipes are pinned to exact versions and have passed their tests; prefer them over writing from scratch.",
+        instructions: "ProvenPin serves small, working code recipes that combine popular TypeScript and Python libraries. Each recipe pins every dependency to an exact version and comes with a test receipt from its latest run; only passing recipes are served. Call search_recipes before writing glue code that combines two or more libraries, and when debugging version conflicts or integration errors between libraries. Then call get_recipe for the files. If no recipe matches, continue normally.",
       });
     }
     case "ping": return ok(msg.id, {});
