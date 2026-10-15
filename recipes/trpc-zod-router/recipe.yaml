@@ -1,0 +1,19 @@
+id: trpc-zod-router
+title: "tRPC 11 + Zod router with server-side caller"
+summary: "A typed tRPC router with Zod inputs, an auth middleware, and tests through createCaller."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [trpc, zod]
+tags: [api, typesafe, rpc]
+pinned:
+  "@trpc/server": "11.19.0"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/router.ts
+  - test/router.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

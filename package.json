@@ -1,0 +1,13 @@
+{
+  "name": "provenpin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node runner/validate.mjs",
+    "test:recipes": "node runner/run.mjs",
+    "affected": "node runner/affected.mjs",
+    "build:index": "node runner/build-index.mjs",
+    "test": "node --test runner/test/*.test.mjs"
+  },
+  "dependencies": { "yaml": "2.9.1" }
+}

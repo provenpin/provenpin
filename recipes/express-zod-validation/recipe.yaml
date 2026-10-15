@@ -1,0 +1,22 @@
+id: express-zod-validation
+title: "Express 5 + Zod 4 request validation"
+summary: "Validate JSON bodies in Express 5 with a reusable Zod middleware that returns 400 with field errors."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [express, zod]
+tags: [validation, api, middleware]
+pinned:
+  "express": "5.3.0"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "supertest": "7.3.1"
+  "@types/express": "5.0.6"
+  "@types/supertest": "7.2.1"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

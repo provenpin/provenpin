@@ -1,0 +1,30 @@
+{
+  "id": "httpx-respx-api-client",
+  "status": "passed",
+  "ran_at": "2026-10-15T09:37:39.066Z",
+  "last_passed_at": "2026-10-15T09:37:39.066Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 45,
+    "test": 1078
+  },
+  "pinned": {
+    "httpx": "0.28.1",
+    "respx": "0.23.1",
+    "pydantic": "2.14.1",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:6b75d04dbdbc7b956f88b7a0f5db56b41f52569526a42d6ee00c2cdebbbb5f8f",
+  "environment": {
+    "os": "linux 6.12.94+",
+    "arch": "x64",
+    "runtime": "Python 3.13.5",
+    "runner": "local"
+  },
+  "errors": [],
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.22s\n"
+}

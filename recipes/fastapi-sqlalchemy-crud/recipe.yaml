@@ -1,0 +1,22 @@
+id: fastapi-sqlalchemy-crud
+title: "FastAPI + SQLAlchemy 2 CRUD with dependency-injected sessions"
+summary: "FastAPI routes backed by SQLAlchemy 2.x typed models, a per-request session dependency, and TestClient tests on SQLite."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, sqlalchemy, sqlite]
+tags: [api, orm, crud]
+pinned:
+  fastapi: "0.143.1"
+  sqlalchemy: "2.1.4"
+  httpx: "0.28.1"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app/__init__.py
+  - app/main.py
+  - tests/test_main.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

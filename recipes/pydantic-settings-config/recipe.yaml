@@ -1,0 +1,19 @@
+id: pydantic-settings-config
+title: "Pydantic Settings typed config from env and .env"
+summary: "Typed app configuration with pydantic-settings: env prefixes, nested settings, secrets and validation errors."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pydantic, pydantic-settings]
+tags: [config, env]
+pinned:
+  pydantic: "2.14.1"
+  pydantic-settings: "2.16.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - settings.py
+  - tests/test_settings.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

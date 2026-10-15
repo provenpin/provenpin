@@ -1,0 +1,21 @@
+id: httpx-respx-api-client
+title: "httpx async API client + respx mocks"
+summary: "A typed async API client on httpx with retries on 5xx and Pydantic parsing, tested offline with respx route mocks."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [httpx, respx, pydantic]
+tags: [http-client, testing, async]
+pinned:
+  httpx: "0.28.1"
+  respx: "0.23.1"
+  pydantic: "2.14.1"
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - client.py
+  - tests/test_client.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

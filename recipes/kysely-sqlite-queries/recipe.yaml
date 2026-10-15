@@ -1,0 +1,20 @@
+id: kysely-sqlite-queries
+title: "Kysely + better-sqlite3 typed queries"
+summary: "Type-safe SQL with Kysely on SQLite, including a schema migration, joins and a transaction."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [kysely, better-sqlite3, sqlite]
+tags: [sql, database, query-builder]
+pinned:
+  "kysely": "0.29.6"
+  "better-sqlite3": "12.11.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "@types/better-sqlite3": "9.6.0"
+files:
+  - package.json
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

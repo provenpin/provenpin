@@ -1,0 +1,23 @@
+id: nextjs-supabase-auth-middleware
+title: "Next.js middleware + Supabase SSR session refresh"
+summary: "Refresh Supabase auth cookies in Next.js middleware with @supabase/ssr and redirect signed-out users away from protected routes."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [nextjs, supabase]
+tags: [auth, middleware, ssr, cookies]
+pinned:
+  "next": "16.4.1"
+  "@supabase/ssr": "0.12.7"
+  "@supabase/supabase-js": "2.117.3"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - lib/supabase/middleware.ts
+  - middleware.ts
+  - test/middleware.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

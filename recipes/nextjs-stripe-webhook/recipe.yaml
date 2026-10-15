@@ -1,0 +1,21 @@
+id: nextjs-stripe-webhook
+title: "Next.js App Router + Stripe webhook handler"
+summary: "A Next.js route handler that verifies Stripe webhook signatures from the raw body and handles checkout.session.completed."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [nextjs, stripe]
+tags: [payments, webhooks, app-router]
+pinned:
+  "next": "16.4.1"
+  "stripe": "23.0.0"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - app/api/stripe/webhook/route.ts
+  - test/webhook.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

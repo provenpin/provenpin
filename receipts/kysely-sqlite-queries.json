@@ -1,0 +1,30 @@
+{
+  "id": "kysely-sqlite-queries",
+  "status": "passed",
+  "ran_at": "2026-10-15T09:37:40.230Z",
+  "last_passed_at": "2026-10-15T09:37:40.230Z",
+  "tests": {
+    "passed": 1,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1256,
+    "test": 448
+  },
+  "pinned": {
+    "kysely": "0.29.6",
+    "better-sqlite3": "12.11.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/better-sqlite3": "9.6.0"
+  },
+  "recipe_hash": "sha256:f6c3c3768075fd6c51d166879f5ef32957b0d81d00ea9a943fc779ba8affaa4f",
+  "environment": {
+    "os": "linux 6.12.94+",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "local"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: transaction insert and join query\nok 1 - transaction insert and join query\n  ---\n  duration_ms: 9.305429\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 299.075243\n"
+}

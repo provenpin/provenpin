@@ -1,0 +1,22 @@
+id: prisma-sqlite-adapter
+title: "Prisma 7 + SQLite via better-sqlite3 adapter"
+summary: "Prisma Client 7 with the better-sqlite3 driver adapter, schema push and relational queries on a local SQLite file."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [prisma, sqlite, better-sqlite3]
+tags: [orm, database]
+pinned:
+  "@prisma/client": "7.10.0"
+  "@prisma/adapter-better-sqlite3": "7.10.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "prisma": "7.10.0"
+files:
+  - package.json
+  - prisma/schema.prisma
+  - prisma.config.ts
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund && npx prisma db push && npx prisma generate
+test: npm test

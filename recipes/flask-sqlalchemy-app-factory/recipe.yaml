@@ -1,0 +1,20 @@
+id: flask-sqlalchemy-app-factory
+title: "Flask 3 app factory + Flask-SQLAlchemy"
+summary: "Flask application factory with Flask-SQLAlchemy 3, a JSON API and pytest fixtures using an in-memory database."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [flask, flask-sqlalchemy, sqlalchemy]
+tags: [api, orm]
+pinned:
+  flask: "3.1.3"
+  flask-sqlalchemy: "3.1.1"
+  sqlalchemy: "2.1.4"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app/__init__.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

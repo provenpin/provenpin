@@ -1,0 +1,18 @@
+id: fastify-json-schema
+title: "Fastify 5 routes with JSON Schema validation"
+summary: "Fastify 5 route validation and response serialization with JSON Schema, tested via app.inject()."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fastify]
+tags: [validation, api]
+pinned:
+  "fastify": "5.12.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

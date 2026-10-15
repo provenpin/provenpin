@@ -1,0 +1,20 @@
+id: drizzle-sqlite-crud
+title: "Drizzle ORM + better-sqlite3 CRUD"
+summary: "Typed schema, migrations-free table creation and CRUD with Drizzle on an in-memory SQLite database."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [drizzle-orm, better-sqlite3, sqlite]
+tags: [orm, database, crud]
+pinned:
+  "drizzle-orm": "0.45.4"
+  "better-sqlite3": "12.11.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "@types/better-sqlite3": "9.6.0"
+files:
+  - package.json
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

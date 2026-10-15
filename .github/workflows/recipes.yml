@@ -1,0 +1,97 @@
+name: recipes
+
+on:
+  workflow_dispatch:
+    inputs:
+      recipes:
+        description: "Space-separated recipe ids to test (blank = all)"
+        required: false
+  schedule:
+    - cron: "17 */6 * * *"   # release check every 6 hours
+    - cron: "41 9 * * 1"     # full re-test every Monday
+  push:
+    branches: [main]
+    paths: ["recipes/**", "runner/**"]
+
+permissions:
+  contents: write
+
+concurrency: { group: recipes, cancel-in-progress: false }
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.pick.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: npm ci || npm install
+      - run: npm run validate
+      - id: pick
+        name: Pick recipes to test
+        run: |
+          if [ -n "${{ github.event.inputs.recipes }}" ]; then
+            ids=$(printf '%s\n' ${{ github.event.inputs.recipes }} | jq -R . | jq -sc .)
+          elif [ "${{ github.event_name }}" = "schedule" ] && [ "${{ github.event.schedule }}" = "17 */6 * * *" ]; then
+            ids=$(node runner/affected.mjs --json)          # only recipes with a newer upstream release
+          elif [ "${{ github.event_name }}" = "push" ]; then
+            ids=$(git diff --name-only HEAD~1 HEAD -- recipes | cut -d/ -f2 | sort -u | jq -R . | jq -sc 'map(select(length>0))')
+            [ "$ids" = "[]" ] && ids=$(ls recipes | jq -R . | jq -sc .)
+          else
+            ids=$(ls recipes | jq -R . | jq -sc .)
+          fi
+          echo "matrix=$ids" >> "$GITHUB_OUTPUT"
+          echo "Testing: $ids"
+
+  test:
+    needs: plan
+    if: needs.plan.outputs.matrix != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        recipe: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.13" }
+      - uses: astral-sh/setup-uv@v6
+      - run: npm ci || npm install
+      - name: Run recipe in isolation
+        run: node runner/run.mjs ${{ matrix.recipe }} || true   # receipt records pass/fail honestly
+      - uses: actions/upload-artifact@v4
+        with:
+          name: receipt-${{ matrix.recipe }}
+          path: receipts/${{ matrix.recipe }}.json
+
+  publish:
+    needs: test
+    if: always() && needs.test.result != 'skipped'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - uses: actions/download-artifact@v4
+        with: { pattern: receipt-*, path: receipts, merge-multiple: true }
+      - run: npm ci || npm install
+      - run: node runner/build-index.mjs
+      - name: Commit receipts and index
+        run: |
+          git config user.name "provenpin-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add receipts index
+          git diff --cached --quiet || git commit -m "receipts: $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
+      - name: Deploy MCP server
+        if: ${{ vars.DEPLOY_ENABLED == 'true' }}
+        working-directory: server
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npm ci || npm install && npx wrangler@4 deploy
