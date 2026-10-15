@@ -1,15 +1,15 @@
 {
   "id": "celery-redis-fakeredis-results",
   "status": "passed",
-  "ran_at": "2026-10-15T11:43:27.624Z",
-  "last_passed_at": "2026-10-15T11:43:27.624Z",
+  "ran_at": "2026-10-15T11:52:19.025Z",
+  "last_passed_at": "2026-10-15T11:52:19.025Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 468,
-    "test": 3828
+    "setup": 289,
+    "test": 3728
   },
   "pinned": {
     "celery": "5.6.3",
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38729275160"
+    "runner": "github-actions 38730348195"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 2.34s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 1.58s\n"
 }

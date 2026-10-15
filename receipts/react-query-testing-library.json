@@ -1,15 +1,15 @@
 {
   "id": "react-query-testing-library",
   "status": "passed",
-  "ran_at": "2026-10-15T11:47:19.178Z",
-  "last_passed_at": "2026-10-15T11:47:19.178Z",
+  "ran_at": "2026-10-15T11:56:40.764Z",
+  "last_passed_at": "2026-10-15T11:56:40.764Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 11229,
-    "test": 1634
+    "setup": 10636,
+    "test": 1584
   },
   "pinned": {
     "@tanstack/react-query": "5.104.3",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38729275160"
+    "runner": "github-actions 38730348195"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-react-query-testing-library-5T1NNq\u001b[39m\n\n \u001b[32m✓\u001b[39m test/Todos.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 216\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 11:47:30\n\u001b[2m   Duration \u001b[22m 1.15s\u001b[2m (environment 61%, tests 21%, import 13%, transform 4%)\u001b[22m\n\nJSON report written to /tmp/pp-react-query-testing-library-5T1NNq/test-report.json\n\u001b[33mBoth esbuild and oxc options were set. oxc options will be used and esbuild options will be ignored.\u001b[39m The following esbuild options were set: `{ jsx: 'automatic' }`\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-react-query-testing-library-teJKhn\u001b[39m\n\n \u001b[32m✓\u001b[39m test/Todos.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 210\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 11:56:51\n\u001b[2m   Duration \u001b[22m 1.13s\u001b[2m (environment 62%, tests 20%, import 13%, transform 4%)\u001b[22m\n\nJSON report written to /tmp/pp-react-query-testing-library-teJKhn/test-report.json\n\u001b[33mBoth esbuild and oxc options were set. oxc options will be used and esbuild options will be ignored.\u001b[39m The following esbuild options were set: `{ jsx: 'automatic' }`\n"
 }

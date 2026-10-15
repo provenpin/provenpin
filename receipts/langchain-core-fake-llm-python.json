@@ -1,15 +1,15 @@
 {
   "id": "langchain-core-fake-llm-python",
   "status": "passed",
-  "ran_at": "2026-10-15T11:45:52.092Z",
-  "last_passed_at": "2026-10-15T11:45:52.092Z",
+  "ran_at": "2026-10-15T11:55:03.296Z",
+  "last_passed_at": "2026-10-15T11:55:03.296Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 451,
-    "test": 5407
+    "setup": 692,
+    "test": 2983
   },
   "pinned": {
     "langchain-core": "1.6.10",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38729275160"
+    "runner": "github-actions 38730348195"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.65s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.59s\n"
 }

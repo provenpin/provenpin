@@ -1,15 +1,15 @@
 {
   "id": "sveltekit-form-actions",
   "status": "passed",
-  "ran_at": "2026-10-15T11:47:56.173Z",
-  "last_passed_at": "2026-10-15T11:47:56.173Z",
+  "ran_at": "2026-10-15T11:57:23.473Z",
+  "last_passed_at": "2026-10-15T11:57:23.473Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 9849,
-    "test": 792
+    "setup": 8974,
+    "test": 603
   },
   "pinned": {
     "@sveltejs/kit": "3.1.0",
@@ -23,8 +23,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38729275160"
+    "runner": "github-actions 38730348195"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-sveltekit-form-actions-JfTSgJ\u001b[39m\n\n \u001b[32m✓\u001b[39m test/actions.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 33\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 11:48:06\n\u001b[2m   Duration \u001b[22m 254ms\u001b[2m (import 43%, transform 31%, tests 23%, worker 3%)\u001b[22m\n\nJSON report written to /tmp/pp-sveltekit-form-actions-JfTSgJ/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-sveltekit-form-actions-kAUyl3\u001b[39m\n\n \u001b[32m✓\u001b[39m test/actions.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 21\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 11:57:32\n\u001b[2m   Duration \u001b[22m 172ms\u001b[2m (import 41%, transform 33%, tests 23%, worker 3%)\u001b[22m\n\nJSON report written to /tmp/pp-sveltekit-form-actions-kAUyl3/test-report.json\n"
 }

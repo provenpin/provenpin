@@ -1,0 +1,29 @@
+{
+  "id": "python-dotenv-pydantic-settings-env",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:56:38.611Z",
+  "last_passed_at": "2026-10-15T11:56:38.611Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 861,
+    "test": 2703
+  },
+  "pinned": {
+    "python-dotenv": "1.2.4",
+    "pydantic-settings": "2.16.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:dae36257c37fd61d0610a89e21554559589f75e776546f6abbd7e479c72a60b0",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38730348195"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 1.29s\n"
+}

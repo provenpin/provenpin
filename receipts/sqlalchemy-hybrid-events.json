@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-hybrid-events",
   "status": "passed",
-  "ran_at": "2026-10-15T11:47:47.649Z",
-  "last_passed_at": "2026-10-15T11:47:47.649Z",
+  "ran_at": "2026-10-15T11:57:17.428Z",
+  "last_passed_at": "2026-10-15T11:57:17.428Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 443,
-    "test": 2609
+    "setup": 247,
+    "test": 4296
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -20,8 +20,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38729275160"
+    "runner": "github-actions 38730348195"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 1.54s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 1.95s\n"
 }

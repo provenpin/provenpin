@@ -1,15 +1,15 @@
 {
   "id": "fastapi-oauth2-pyjwt-scopes",
   "status": "passed",
-  "ran_at": "2026-10-15T11:44:34.012Z",
-  "last_passed_at": "2026-10-15T11:44:34.012Z",
+  "ran_at": "2026-10-15T11:53:45.322Z",
+  "last_passed_at": "2026-10-15T11:53:45.322Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 650,
-    "test": 2136
+    "setup": 466,
+    "test": 4741
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -25,8 +25,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38729275160"
+    "runner": "github-actions 38730348195"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-oauth2-pyjwt-scopes-n8dxVm/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\ntests/test_app.py::test_login_and_read_profile\ntests/test_app.py::test_scopes_are_intersected_at_login\ntests/test_app.py::test_forged_and_expired_tokens_rejected\n  /tmp/pp-fastapi-oauth2-pyjwt-scopes-n8dxVm/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:149: InsecureKeyLengthWarning: The HMAC key is 17 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.\n    return self._jws.encode(\n\ntests/test_app.py::test_login_and_read_profile\ntests/test_app.py::test_scopes_are_intersected_at_login\ntests/test_app.py::test_forged_and_expired_tokens_rejected\n  /tmp/pp-fastapi-oauth2-pyjwt-scopes-n8dxVm/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:370: InsecureKeyLengthWarning: The HMAC key is 17 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.\n    decoded = self.decode_complete(\n\ntests/test_app.py::test_forged_and_expired_tokens_rejected\n  /tmp/pp-fastapi-oauth2-pyjwt-scopes-n8dxVm/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:149: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.\n    return self._jws.encode(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 8 warnings in 1.14s\n"
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-oauth2-pyjwt-scopes-juvT9w/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\ntests/test_app.py::test_login_and_read_profile\ntests/test_app.py::test_scopes_are_intersected_at_login\ntests/test_app.py::test_forged_and_expired_tokens_rejected\n  /tmp/pp-fastapi-oauth2-pyjwt-scopes-juvT9w/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:149: InsecureKeyLengthWarning: The HMAC key is 17 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.\n    return self._jws.encode(\n\ntests/test_app.py::test_login_and_read_profile\ntests/test_app.py::test_scopes_are_intersected_at_login\ntests/test_app.py::test_forged_and_expired_tokens_rejected\n  /tmp/pp-fastapi-oauth2-pyjwt-scopes-juvT9w/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:370: InsecureKeyLengthWarning: The HMAC key is 17 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.\n    decoded = self.decode_complete(\n\ntests/test_app.py::test_forged_and_expired_tokens_rejected\n  /tmp/pp-fastapi-oauth2-pyjwt-scopes-juvT9w/.venv/lib/python3.13/site-packages/jwt/api_jwt.py:149: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.\n    return self._jws.encode(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 8 warnings in 1.36s\n"
 }

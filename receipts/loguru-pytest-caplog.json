@@ -1,0 +1,27 @@
+{
+  "id": "loguru-pytest-caplog",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:55:09.521Z",
+  "last_passed_at": "2026-10-15T11:55:09.521Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 221,
+    "test": 1430
+  },
+  "pinned": {
+    "loguru": "0.7.3",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:157a62f1b0d2c76d9198f87e02cc5850b8d1edff1424cdbd078a9c49bfd1a310",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38730348195"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.52s\n"
+}

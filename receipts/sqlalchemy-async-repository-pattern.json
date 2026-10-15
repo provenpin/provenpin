@@ -1,0 +1,30 @@
+{
+  "id": "sqlalchemy-async-repository-pattern",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:57:07.728Z",
+  "last_passed_at": "2026-10-15T11:57:07.728Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 405,
+    "test": 2121
+  },
+  "pinned": {
+    "sqlalchemy": "2.1.4",
+    "aiosqlite": "0.22.1",
+    "greenlet": "3.2.4",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:34331712212791a6633879f274a94c0a694eafeb42d32b800596b76017a0d43d",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38730348195"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n=============================== warnings summary ===============================\ntests/test_repository.py::test_attributes_readable_after_commit\n  /tmp/pp-sqlalchemy-async-repository-pattern-5WxK9F/.venv/lib/python3.13/site-packages/sqlalchemy/sql/compiler.py:4281: RuntimeWarning: coroutine 'Connection.cursor' was never awaited\n    def bindparam_string(\n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 1 warning in 1.07s\n"
+}

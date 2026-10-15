@@ -1,0 +1,29 @@
+{
+  "id": "flask-marshmallow-webargs",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:54:03.629Z",
+  "last_passed_at": "2026-10-15T11:54:03.629Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 266,
+    "test": 1484
+  },
+  "pinned": {
+    "flask": "3.1.3",
+    "webargs": "8.7.1",
+    "marshmallow": "4.3.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:6002a13d6ee7af14a3fddffcd7d3fddd919e26856823c65373b57fdc7c20fa1e",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38730348195"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.56s\n"
+}

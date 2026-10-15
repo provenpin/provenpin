@@ -1,0 +1,29 @@
+{
+  "id": "pydantic-email-phone-validation",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:56:11.132Z",
+  "last_passed_at": "2026-10-15T11:56:11.132Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 436,
+    "test": 2865
+  },
+  "pinned": {
+    "pydantic": "2.14.1",
+    "email-validator": "2.3.0",
+    "phonenumbers": "9.0.41",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:f7b8219d5d9d32ee6a1e0f2069b922e57ec71a719ec733b5d0f280ca65fbe3f6",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38730348195"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.61s\n"
+}

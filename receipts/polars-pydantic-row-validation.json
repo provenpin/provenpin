@@ -1,0 +1,28 @@
+{
+  "id": "polars-pydantic-row-validation",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:56:07.111Z",
+  "last_passed_at": "2026-10-15T11:56:07.111Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 666,
+    "test": 2181
+  },
+  "pinned": {
+    "polars": "2.0.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:344964fcc5014a885fee68d8040c91afa49d0d476d6ecd5e2cd140a2169fc1e2",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38730348195"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.93s\n"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "pandas-openpyxl-excel-report",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:55:53.390Z",
+  "last_passed_at": "2026-10-15T11:55:53.390Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 507,
+    "test": 2530
+  },
+  "pinned": {
+    "pandas": "3.0.6",
+    "openpyxl": "3.1.5",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:f42d0f14242c08400bb9c54abbd7b7be6937b26325ab95f980e2a63991db0d8f",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38730348195"
+  },
+  "errors": [],
+  "log_tail": "....                                                                     [100%]\n4 passed in 1.80s\n"
+}
