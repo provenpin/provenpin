@@ -1,0 +1,22 @@
+id: drizzle-zod-insert-schemas
+title: "Drizzle ORM + drizzle-zod validated inserts on SQLite"
+summary: "Generate Zod insert and select schemas from Drizzle tables with drizzle-zod, refine them, and validate input before inserting into SQLite."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [drizzle-orm, drizzle-zod, zod, better-sqlite3]
+tags: [orm, validation, sqlite]
+pinned:
+  "drizzle-orm": "0.45.4"
+  "drizzle-zod": "0.8.3"
+  "zod": "4.6.7"
+  "better-sqlite3": "12.11.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "@types/better-sqlite3": "9.6.0"
+files:
+  - package.json
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

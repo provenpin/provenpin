@@ -1,0 +1,19 @@
+id: anthropic-sdk-mocked-tool-use
+title: "Anthropic TypeScript SDK tool use loop, tested with a mocked fetch"
+summary: "Run a Claude tool_use loop with the official Anthropic SDK and Zod-validated tool inputs, tested offline with an injected fetch."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@anthropic-ai/sdk", zod]
+tags: [ai, llm, tool-calling, mocking]
+pinned:
+  "@anthropic-ai/sdk": "0.134.0"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/agent.ts
+  - test/agent.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

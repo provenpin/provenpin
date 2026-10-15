@@ -1,0 +1,20 @@
+id: axios-retry-nock
+title: "Axios + axios-retry with exponential backoff, tested with nock"
+summary: "Configure axios-retry for idempotent requests and 429/5xx responses, tested offline with nock intercepts."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [axios, axios-retry, nock]
+tags: [http-client, retries, mocking]
+pinned:
+  "axios": "1.20.0"
+  "axios-retry": "4.5.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "nock": "15.0.1"
+files:
+  - package.json
+  - src/client.ts
+  - test/client.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,21 @@
+id: openai-python-respx-mock
+title: "OpenAI Python SDK structured outputs, tested with respx"
+summary: "Call the OpenAI Python SDK and validate JSON output with Pydantic, testing success, malformed output and API errors offline by mocking HTTP with respx."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [openai, pydantic, respx]
+tags: [ai, llm, mocking, testing]
+pinned:
+  openai: "3.31.0"
+  pydantic: "2.14.1"
+  respx: "0.23.1"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - extract.py
+  - tests/test_extract.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

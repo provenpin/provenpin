@@ -1,0 +1,19 @@
+id: graphql-yoga-schema-context
+title: "GraphQL Yoga 5 schema, context and errors tested via fetch"
+summary: "Build a GraphQL Yoga server with SDL resolvers, per-request context auth and GraphQLError codes, tested in-process with yoga.fetch."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [graphql-yoga, graphql]
+tags: [graphql, api]
+pinned:
+  "graphql-yoga": "5.24.5"
+  "graphql": "17.0.2"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/yoga.ts
+  - test/yoga.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

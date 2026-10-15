@@ -1,0 +1,19 @@
+id: drizzle-pglite-postgres
+title: "Drizzle ORM + PGlite in-memory Postgres"
+summary: "Real Postgres semantics in tests with no server: Drizzle ORM on PGlite (WASM Postgres) with relations, returning() and transactions."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [drizzle-orm, "@electric-sql/pglite", postgres]
+tags: [orm, database, postgres, testing]
+pinned:
+  "drizzle-orm": "0.45.4"
+  "@electric-sql/pglite": "0.5.10"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

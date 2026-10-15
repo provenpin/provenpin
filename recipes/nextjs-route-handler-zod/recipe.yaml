@@ -1,0 +1,21 @@
+id: nextjs-route-handler-zod
+title: "Next.js 16 App Router route handler + Zod validation"
+summary: "Validate JSON bodies and search params in a Next.js App Router route handler with Zod, returning typed 400s; tested by calling the handler with NextRequest."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [next, zod, react]
+tags: [nextjs, validation, api]
+pinned:
+  "next": "16.4.1"
+  "zod": "4.6.7"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - app/api/todos/route.ts
+  - test/route.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

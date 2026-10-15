@@ -1,0 +1,19 @@
+id: pandas-pandera-validation
+title: "pandas + Pandera DataFrame schema validation"
+summary: "Validate pandas DataFrames with Pandera DataFrameModel schemas: dtypes, coercion, value checks, custom dataframe checks and lazy error reports."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pandas, pandera]
+tags: [data, validation, etl]
+pinned:
+  pandas: "3.0.6"
+  pandera: "0.34.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - schemas.py
+  - tests/test_schemas.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

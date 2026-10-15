@@ -1,0 +1,19 @@
+id: openai-sdk-mocked-tool-calls
+title: "OpenAI Node SDK tool calling + Zod, tested with a mocked fetch"
+summary: "Run an OpenAI chat tool-calling loop with Zod-validated tool arguments, tested offline by injecting a fake fetch into the official SDK."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [openai, zod]
+tags: [ai, llm, tool-calling, mocking]
+pinned:
+  "openai": "7.34.0"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/agent.ts
+  - test/agent.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

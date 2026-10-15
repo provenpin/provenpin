@@ -1,0 +1,20 @@
+id: fastapi-websocket-auth
+title: "FastAPI WebSockets with token auth and broadcast, tested with TestClient"
+summary: "FastAPI WebSocket endpoint that authenticates via query token, rejects with a close code and broadcasts to connected clients; tested with TestClient.websocket_connect."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, starlette]
+tags: [realtime, websockets, auth]
+pinned:
+  fastapi: "0.143.1"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app/__init__.py
+  - app/main.py
+  - tests/test_ws.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,16 @@
+{
+  "name": "langchain-core-fake-model-chain",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@langchain/core": "1.2.17",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  }
+}

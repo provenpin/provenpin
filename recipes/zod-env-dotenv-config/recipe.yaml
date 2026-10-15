@@ -1,0 +1,19 @@
+id: zod-env-dotenv-config
+title: "Zod 4 + dotenv typed environment config"
+summary: "Load .env files with dotenv and validate process.env with Zod 4 at startup: coercion, defaults, enums, URLs and readable errors."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [zod, dotenv]
+tags: [config, env, validation]
+pinned:
+  "zod": "4.6.7"
+  "dotenv": "18.0.8"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/env.ts
+  - test/env.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

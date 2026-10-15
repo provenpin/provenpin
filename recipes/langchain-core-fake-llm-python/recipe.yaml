@@ -1,0 +1,19 @@
+id: langchain-core-fake-llm-python
+title: "LangChain (Python) LCEL chain with structured parsing, tested with a fake chat model"
+summary: "Compose ChatPromptTemplate, a chat model and a Pydantic output parser with LCEL in langchain-core, tested offline using GenericFakeChatModel."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [langchain-core, pydantic]
+tags: [ai, llm, langchain, testing]
+pinned:
+  langchain-core: "1.6.10"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - chain.py
+  - tests/test_chain.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

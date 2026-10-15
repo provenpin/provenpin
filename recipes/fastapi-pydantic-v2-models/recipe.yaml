@@ -1,0 +1,21 @@
+id: fastapi-pydantic-v2-models
+title: "FastAPI + Pydantic v2 validators, discriminated unions and serializers"
+summary: "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, pydantic]
+tags: [validation, api, pydantic-v2]
+pinned:
+  fastapi: "0.143.1"
+  pydantic: "2.14.1"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app/__init__.py
+  - app/main.py
+  - tests/test_orders.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

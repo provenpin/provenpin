@@ -1,0 +1,22 @@
+id: pytest-factory-boy-sqlalchemy
+title: "pytest fixtures + factory_boy with SQLAlchemy 2 sessions"
+summary: "Transactional pytest fixtures that roll back per test, plus factory_boy SQLAlchemy factories with sequences, SubFactory and traits."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pytest, factory-boy, sqlalchemy]
+tags: [testing, fixtures, orm]
+pinned:
+  sqlalchemy: "2.1.4"
+  factory-boy: "3.3.3"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - tests/factories.py
+  - tests/__init__.py
+  - tests/conftest.py
+  - tests/test_factories.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

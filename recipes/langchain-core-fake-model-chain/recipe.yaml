@@ -1,0 +1,19 @@
+id: langchain-core-fake-model-chain
+title: "LangChain.js prompt + model + parser chain tested with a fake chat model"
+summary: "Compose a ChatPromptTemplate, chat model and output parser with LCEL in @langchain/core, tested offline with FakeListChatModel."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@langchain/core", zod]
+tags: [ai, llm, langchain, testing]
+pinned:
+  "@langchain/core": "1.2.17"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/chain.ts
+  - test/chain.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

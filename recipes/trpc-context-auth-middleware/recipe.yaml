@@ -1,0 +1,19 @@
+id: trpc-context-auth-middleware
+title: "tRPC 11 context, auth middleware and createCaller tests"
+summary: "tRPC 11 router with a request context, a protectedProcedure built from middleware, Zod inputs and TRPCError codes, tested with createCaller (no HTTP)."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@trpc/server", zod]
+tags: [api, auth, rpc]
+pinned:
+  "@trpc/server": "11.19.0"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/router.ts
+  - test/router.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
