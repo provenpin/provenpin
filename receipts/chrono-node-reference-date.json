@@ -1,0 +1,28 @@
+{
+  "id": "chrono-node-reference-date",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:08:36.835Z",
+  "last_passed_at": "2026-10-15T20:08:36.835Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3203,
+    "test": 422
+  },
+  "pinned": {
+    "chrono-node": "2.10.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:a3d0360fc682c38d758e39067635d352101a5c55b2de5d547f4207ea55734bc4",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38799498972"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: ranges give start and end\nok 3 - ranges give start and end\n  ---\n  duration_ms: 0.853006\n  type: 'test'\n  ...\n# Subtest: finds dates inside a sentence with position and certainty\nok 4 - finds dates inside a sentence with position and certainty\n  ---\n  duration_ms: 0.471991\n  type: 'test'\n  ...\n# Subtest: UTC offset changes the instant\nok 5 - UTC offset changes the instant\n  ---\n  duration_ms: 0.71593\n  type: 'test'\n  ...\n# Subtest: en.GB reads day before month\nok 6 - en.GB reads day before month\n  ---\n  duration_ms: 2.854543\n  type: 'test'\n  ...\n# Subtest: no date returns empty\nok 7 - no date returns empty\n  ---\n  duration_ms: 0.597761\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 320.477566\n"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "libphonenumber-js-parse-format",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:09:33.627Z",
+  "last_passed_at": "2026-10-15T20:09:33.627Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 69584,
+    "test": 491
+  },
+  "pinned": {
+    "libphonenumber-js": "1.13.15",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:7e91486a26a0cfe8b8a1df4752f2b9f3dfd5bad6fa7b3edab5514e1ca33cd6f5",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38799498972"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: number type from max metadata\nok 3 - number type from max metadata\n  ---\n  duration_ms: 0.951153\n  type: 'test'\n  ...\n# Subtest: extensions are kept\nok 4 - extensions are kept\n  ---\n  duration_ms: 0.432948\n  type: 'test'\n  ...\n# Subtest: invalid numbers are rejected\nok 5 - invalid numbers are rejected\n  ---\n  duration_ms: 1.090472\n  type: 'test'\n  ...\n# Subtest: as-you-type formatting\nok 6 - as-you-type formatting\n  ---\n  duration_ms: 2.218797\n  type: 'test'\n  ...\n# Subtest: finds numbers in free text\nok 7 - finds numbers in free text\n  ---\n  duration_ms: 2.922869\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 337.975356\n"
+}

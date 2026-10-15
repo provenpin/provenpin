@@ -1,0 +1,30 @@
+{
+  "id": "twilio-webhook-signature-express",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:10:13.471Z",
+  "last_passed_at": "2026-10-15T20:10:13.471Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 278148,
+    "test": 860
+  },
+  "pinned": {
+    "twilio": "6.2.0",
+    "express": "5.3.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "supertest": "7.3.1"
+  },
+  "recipe_hash": "sha256:2b8e3e3a5ac3aa9691d369d5b83260ac633825611abc191bc6ed054240103cc8",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38799498972"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: signature helper matches validateRequest\nok 1 - signature helper matches validateRequest\n  ---\n  duration_ms: 1.765882\n  type: 'test'\n  ...\n# Subtest: valid webhook gets TwiML reply\nok 2 - valid webhook gets TwiML reply\n  ---\n  duration_ms: 113.802554\n  type: 'test'\n  ...\n# Subtest: query string is part of the signed URL\nok 3 - query string is part of the signed URL\n  ---\n  duration_ms: 8.000899\n  type: 'test'\n  ...\n# Subtest: tampered params are rejected\nok 4 - tampered params are rejected\n  ---\n  duration_ms: 5.66777\n  type: 'test'\n  ...\n# Subtest: wrong token or missing header is rejected\nok 5 - wrong token or missing header is rejected\n  ---\n  duration_ms: 9.0173\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 690.123315\n"
+}

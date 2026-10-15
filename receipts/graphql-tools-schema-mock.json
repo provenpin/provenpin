@@ -1,0 +1,30 @@
+{
+  "id": "graphql-tools-schema-mock",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:08:40.920Z",
+  "last_passed_at": "2026-10-15T20:08:40.920Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 57929,
+    "test": 583
+  },
+  "pinned": {
+    "@graphql-tools/schema": "10.1.5",
+    "@graphql-tools/mock": "9.1.18",
+    "graphql": "17.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:1defb0c6cf7845d773ffd507fa8049c375a3cc815bc32aee0c0d353705d8fd26",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38799498972"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: mocked query returns shape-correct data\nok 1 - mocked query returns shape-correct data\n  ---\n  duration_ms: 24.140024\n  type: 'test'\n  ...\n# Subtest: mocks are deterministic for a seed\nok 2 - mocks are deterministic for a seed\n  ---\n  duration_ms: 11.151807\n  type: 'test'\n  ...\n# Subtest: store keeps entities consistent across queries\nok 3 - store keeps entities consistent across queries\n  ---\n  duration_ms: 4.629847\n  type: 'test'\n  ...\n# Subtest: mutation writes to the mock store\nok 4 - mutation writes to the mock store\n  ---\n  duration_ms: 4.165945\n  type: 'test'\n  ...\n# Subtest: custom resolver can return null and validation errors still apply\nok 5 - custom resolver can return null and validation errors still apply\n  ---\n  duration_ms: 4.675082\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 436.938518\n"
+}

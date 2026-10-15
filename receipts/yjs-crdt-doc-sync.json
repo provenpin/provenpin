@@ -1,0 +1,28 @@
+{
+  "id": "yjs-crdt-doc-sync",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:11:10.193Z",
+  "last_passed_at": "2026-10-15T20:11:10.193Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2317,
+    "test": 425
+  },
+  "pinned": {
+    "yjs": "13.6.33",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:a3eb41d8acdf6161a7f64cba3b03dbb0f1b1180a7b518cadbcc2f214049e4887",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38799498972"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: concurrent text edits merge identically on both peers\nok 1 - concurrent text edits merge identically on both peers\n  ---\n  duration_ms: 4.887204\n  type: 'test'\n  ...\n# Subtest: concurrent map writes converge to the same winner\nok 2 - concurrent map writes converge to the same winner\n  ---\n  duration_ms: 1.534307\n  type: 'test'\n  ...\n# Subtest: state-vector sync sends only the diff\nok 3 - state-vector sync sends only the diff\n  ---\n  duration_ms: 2.072956\n  type: 'test'\n  ...\n# Subtest: live relay plus undo manager\nok 4 - live relay plus undo manager\n  ---\n  duration_ms: 2.042617\n  type: 'test'\n  ...\n# Subtest: updates can be merged and replayed in any order\nok 5 - updates can be merged and replayed in any order\n  ---\n  duration_ms: 1.485642\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 281.592072\n"
+}

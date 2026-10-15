@@ -1,0 +1,28 @@
+{
+  "id": "fuse-js-weighted-search",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:08:38.682Z",
+  "last_passed_at": "2026-10-15T20:08:38.682Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 50858,
+    "test": 337
+  },
+  "pinned": {
+    "fuse.js": "7.5.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:bfd78de311b13804adabcf9a17c3f023a63117b10ae610fe7ad380f33151cf3a",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38799498972"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: tolerates typos\nok 1 - tolerates typos\n  ---\n  duration_ms: 3.606496\n  type: 'test'\n  ...\n# Subtest: title weight beats brand and tag weight\nok 2 - title weight beats brand and tag weight\n  ---\n  duration_ms: 0.599361\n  type: 'test'\n  ...\n# Subtest: matches array tags\nok 3 - matches array tags\n  ---\n  duration_ms: 1.040016\n  type: 'test'\n  ...\n# Subtest: serialized index round-trips with same results\nok 4 - serialized index round-trips with same results\n  ---\n  duration_ms: 0.750724\n  type: 'test'\n  ...\n# Subtest: unrelated query returns nothing\nok 5 - unrelated query returns nothing\n  ---\n  duration_ms: 0.520804\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 190.419622\n"
+}

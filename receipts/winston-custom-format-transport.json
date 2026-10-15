@@ -1,0 +1,29 @@
+{
+  "id": "winston-custom-format-transport",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:10:29.935Z",
+  "last_passed_at": "2026-10-15T20:10:29.935Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2259,
+    "test": 415
+  },
+  "pinned": {
+    "winston": "3.19.0",
+    "winston-transport": "4.9.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:9974fafd0fd8145bb5bb4bb76d48868ee331fdba7b0fafb9684f82d5b221a3a2",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38799498972"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: redacts secrets\nok 2 - redacts secrets\n  ---\n  duration_ms: 0.497572\n  type: 'test'\n  ...\n# Subtest: filter format drops debug from noisy module only\nok 3 - filter format drops debug from noisy module only\n  ---\n  duration_ms: 0.706163\n  type: 'test'\n  ...\n# Subtest: errors keep stack and child loggers add meta\nok 4 - errors keep stack and child loggers add meta\n  ---\n  duration_ms: 1.763611\n  type: 'test'\n  ...\n# Subtest: level threshold\nok 5 - level threshold\n  ---\n  duration_ms: 0.517091\n  type: 'test'\n  ...\n# Subtest: printf line format\nok 6 - printf line format\n  ---\n  duration_ms: 0.147049\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 263.445163\n"
+}

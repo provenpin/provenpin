@@ -1,0 +1,29 @@
+{
+  "id": "web-push-vapid-payload-encryption",
+  "status": "passed",
+  "ran_at": "2026-10-15T20:10:10.075Z",
+  "last_passed_at": "2026-10-15T20:10:10.075Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2432,
+    "test": 427
+  },
+  "pinned": {
+    "web-push": "3.6.7",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "http_ece": "1.2.1"
+  },
+  "recipe_hash": "sha256:de1bd8cbcddc62f37b269a981f16b5e211476fc7be05a861f01d415fc00d5cee",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38799498972"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: VAPID keys are P-256 base64url\nok 1 - VAPID keys are P-256 base64url\n  ---\n  duration_ms: 1.506178\n  type: 'test'\n  ...\n# Subtest: request details: endpoint, headers, encrypted body\nok 2 - request details: endpoint, headers, encrypted body\n  ---\n  duration_ms: 5.855995\n  type: 'test'\n  ...\n# Subtest: browser side can decrypt the payload\nok 3 - browser side can decrypt the payload\n  ---\n  duration_ms: 2.789237\n  type: 'test'\n  ...\n# Subtest: a different subscriber cannot decrypt\nok 4 - a different subscriber cannot decrypt\n  ---\n  duration_ms: 1.528971\n  type: 'test'\n  ...\n# Subtest: VAPID JWT verifies with the public key and carries aud/exp/sub\nok 5 - VAPID JWT verifies with the public key and carries aud/exp/sub\n  ---\n  duration_ms: 1.220782\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 276.155087\n"
+}
