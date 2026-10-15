@@ -86,8 +86,14 @@ jobs:
           git config user.name "provenpin-bot"
           git config user.email "bot@users.noreply.github.com"
           git add receipts index
-          git diff --cached --quiet || git commit -m "receipts: $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          git diff --cached --quiet && exit 0
+          git commit -m "receipts: $(date -u +%Y-%m-%dT%H:%MZ)"
+          # another run may have pushed receipts meanwhile: rebase onto it and retry
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push && exit 0
+            echo "push failed (attempt $i), retrying"; sleep $((i * 5))
+          done
+          exit 1
       - name: Deploy MCP server
         if: ${{ vars.DEPLOY_ENABLED == 'true' }}
         working-directory: server
