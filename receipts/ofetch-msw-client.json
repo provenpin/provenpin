@@ -1,15 +1,15 @@
 {
   "id": "ofetch-msw-client",
   "status": "passed",
-  "ran_at": "2026-10-15T15:01:55.081Z",
-  "last_passed_at": "2026-10-15T15:01:55.081Z",
+  "ran_at": "2026-10-15T16:03:05.710Z",
+  "last_passed_at": "2026-10-15T16:03:05.710Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8967,
-    "test": 435
+    "setup": 7152,
+    "test": 684
   },
   "pinned": {
     "ofetch": "1.5.1",
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38755782594"
+    "runner": "github-actions 38764699834"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists, filters, creates\nok 1 - lists, filters, creates\n  ---\n  duration_ms: 51.424574\n  type: 'test'\n  ...\n# Subtest: maps 404 to FetchError\nok 2 - maps 404 to FetchError\n  ---\n  duration_ms: 6.328968\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 339.658162\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists, filters, creates\nok 1 - lists, filters, creates\n  ---\n  duration_ms: 87.213816\n  type: 'test'\n  ...\n# Subtest: maps 404 to FetchError\nok 2 - maps 404 to FetchError\n  ---\n  duration_ms: 9.900032\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 537.3998\n"
 }

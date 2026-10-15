@@ -1,15 +1,15 @@
 {
   "id": "croner-zod-job-scheduler",
   "status": "passed",
-  "ran_at": "2026-10-15T14:57:02.216Z",
-  "last_passed_at": "2026-10-15T14:57:02.216Z",
+  "ran_at": "2026-10-15T15:57:51.098Z",
+  "last_passed_at": "2026-10-15T15:57:51.098Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2321,
-    "test": 2909
+    "setup": 2224,
+    "test": 3321
   },
   "pinned": {
     "croner": "10.0.1",
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38755782594"
+    "runner": "github-actions 38764699834"
   },
   "errors": [],
-  "log_tail": "# Subtest: rejects duplicate job names\nok 2 - rejects duplicate job names\n  ---\n  duration_ms: 1.185298\n  type: 'test'\n  ...\n# Subtest: previews runs in a timezone across a DST change\nok 3 - previews runs in a timezone across a DST change\n  ---\n  duration_ms: 2.723237\n  type: 'test'\n  ...\n# Subtest: supports last-day-of-month and weekday ranges\nok 4 - supports last-day-of-month and weekday ranges\n  ---\n  duration_ms: 2.412549\n  type: 'test'\n  ...\n# Subtest: runs a per-second job for maxRuns and then stops\nok 5 - runs a per-second job for maxRuns and then stops\n  ---\n  duration_ms: 2601.841631\n  type: 'test'\n  ...\n# Subtest: refuses to start when a handler is missing\nok 6 - refuses to start when a handler is missing\n  ---\n  duration_ms: 0.560916\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2815.338531\n"
+  "log_tail": "# Subtest: rejects duplicate job names\nok 2 - rejects duplicate job names\n  ---\n  duration_ms: 1.850812\n  type: 'test'\n  ...\n# Subtest: previews runs in a timezone across a DST change\nok 3 - previews runs in a timezone across a DST change\n  ---\n  duration_ms: 7.36803\n  type: 'test'\n  ...\n# Subtest: supports last-day-of-month and weekday ranges\nok 4 - supports last-day-of-month and weekday ranges\n  ---\n  duration_ms: 4.428219\n  type: 'test'\n  ...\n# Subtest: runs a per-second job for maxRuns and then stops\nok 5 - runs a per-second job for maxRuns and then stops\n  ---\n  duration_ms: 2602.767889\n  type: 'test'\n  ...\n# Subtest: refuses to start when a handler is missing\nok 6 - refuses to start when a handler is missing\n  ---\n  duration_ms: 0.790621\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3168.759549\n"
 }

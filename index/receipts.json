@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-15T15:09:00.918Z",
+ "generated_at": "2026-10-15T16:07:23.120Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 215,
+ "count": 236,
  "recipes": [
   {
    "id": "ajv-formats-json-schema",
@@ -15,8 +15,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:05.510Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:56:42.161Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -35,8 +35,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:06.493Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:56:41.248Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:38.090Z",
@@ -57,8 +57,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:05.996Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:56:41.473Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:35.766Z",
@@ -66,6 +66,25 @@
      "@anthropic-ai/sdk": "0.134.0"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "anyio-to-thread-bridge",
+   "language": "python",
+   "pinned": {
+    "anyio": "4.15.1",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T15:56:39.712Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -80,8 +99,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:04.030Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:56:41.186Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -100,8 +119,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:03.552Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:56:40.163Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:44.458Z",
@@ -122,8 +141,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:11.093Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:56:39.358Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -141,8 +160,27 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:07.585Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:56:44.366Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "arrow-time-machine-shift",
+   "language": "python",
+   "pinned": {
+    "arrow": "1.4.0",
+    "time-machine": "3.5.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T15:56:59.392Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -161,7 +199,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:10:30.901Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:39.006Z",
@@ -170,6 +208,25 @@
      "vitest": "5.0.4"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "attrs-cattrs-json-roundtrip",
+   "language": "python",
+   "pinned": {
+    "attrs": "26.1.0",
+    "cattrs": "26.2.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T15:57:00.283Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -182,8 +239,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:17.978Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:56:57.286Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:41.252Z",
@@ -207,8 +264,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:24.424Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:56:59.867Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:33.519Z",
@@ -236,7 +293,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:10:49.766Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -257,8 +314,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:27.159Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:05.457Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -278,8 +335,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:37.453Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:01.363Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:35.036Z",
@@ -302,8 +359,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:25.276Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:20.047Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:35.299Z",
@@ -326,8 +383,27 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:34.200Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:15.937Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "bleach-markupsafe-html",
+   "language": "python",
+   "pinned": {
+    "bleach": "6.4.0",
+    "markupsafe": "3.0.4",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T15:57:15.224Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -345,8 +421,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:31.729Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:26.354Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:13.348Z",
@@ -367,8 +443,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:32.335Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:22.570Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:50.891Z",
@@ -389,8 +465,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:40.375Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:25.461Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -407,8 +483,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:47.142Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:27.860Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:50.823Z",
@@ -429,8 +505,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:44.464Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:30.120Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:51.191Z",
@@ -451,8 +527,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:52.483Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:40.973Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:08:53.883Z",
@@ -473,8 +549,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:54.509Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:40.854Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -493,8 +569,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:56:58.511Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:39.350Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "passes_on_latest",
     "checked_at": "2026-10-15T13:08:54.108Z",
@@ -504,6 +580,25 @@
      "freezegun": "1.5.5"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "click-rich-progress",
+   "language": "python",
+   "pinned": {
+    "click": "8.5.0",
+    "rich": "15.0.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T15:57:51.297Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -517,8 +612,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:02.759Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:45.694Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -537,8 +632,28 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:02.216Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:51.098Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "cryptography-passlib-bcrypt",
+   "language": "python",
+   "pinned": {
+    "passlib": "1.7.4",
+    "bcrypt": "4.0.1",
+    "cryptography": "50.0.2",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T15:57:52.648Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -557,8 +672,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:12.594Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:55.236Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:08.128Z",
@@ -567,6 +682,24 @@
      "csv-stringify": "6.9.0"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "cyclopts-annotated-cli",
+   "language": "python",
+   "pinned": {
+    "cyclopts": "5.2.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T15:58:06.812Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -580,8 +713,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:03.963Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:56.746Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:07.070Z",
@@ -603,8 +736,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:10.072Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:01.346Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "passes_on_latest",
     "checked_at": "2026-10-15T13:09:06.983Z",
@@ -625,8 +758,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:11.273Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:57:59.947Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -644,8 +777,27 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:16.384Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:20.658Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "diskcache-filelock-jobs",
+   "language": "python",
+   "pinned": {
+    "diskcache": "5.6.3",
+    "filelock": "4.2.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T15:58:14.799Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -664,8 +816,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:32.246Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:10.405Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:10.821Z",
@@ -688,8 +840,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:24.590Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:17.540Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:12.269Z",
@@ -712,8 +864,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:20.568Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:16.679Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:07.926Z",
@@ -737,8 +889,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:23.176Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:15.856Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:12.150Z",
@@ -763,7 +915,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:11:45.909Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:20.313Z",
@@ -774,6 +926,25 @@
      "happy-dom": "21.0.1"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "dramatiq-stub-broker-testing",
+   "language": "python",
+   "pinned": {
+    "dramatiq": "2.2.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T15:58:21.469Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -788,8 +959,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:29.203Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:32.321Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "passes_on_latest",
     "checked_at": "2026-10-15T13:09:22.757Z",
@@ -814,8 +985,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:27.815Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:35.625Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:27.116Z",
@@ -839,8 +1010,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:33.930Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:35.228Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:27.678Z",
@@ -862,8 +1033,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:41.217Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:34.205Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:25.066Z",
@@ -886,8 +1057,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:43.528Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:47.216Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "passes_on_latest",
     "checked_at": "2026-10-15T13:09:23.838Z",
@@ -912,8 +1083,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:42.568Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:37.217Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "passes_on_latest",
     "checked_at": "2026-10-15T13:09:26.198Z",
@@ -937,8 +1108,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:45.885Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:39.308Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:42.310Z",
@@ -962,7 +1133,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:12:08.878Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -984,8 +1155,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:57:49.076Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:53.720Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -1003,8 +1174,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:01.436Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:56.325Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:43.542Z",
@@ -1029,8 +1200,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:00.309Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:58:57.716Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:41.348Z",
@@ -1057,8 +1228,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:09.001Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:03.161Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:40.249Z",
@@ -1084,8 +1255,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:13.457Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:10.391Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:44.138Z",
@@ -1115,8 +1286,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:09.244Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:09.782Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:47.845Z",
@@ -1144,8 +1315,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:13.004Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:12.641Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:00.449Z",
@@ -1171,8 +1342,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:16.697Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:23.858Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:54.502Z",
@@ -1198,8 +1369,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:19.249Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:16.875Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:55.979Z",
@@ -1224,8 +1395,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:22.622Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:23.971Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -1247,8 +1418,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:26.491Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:20.507Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:55.994Z",
@@ -1270,8 +1441,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:26.310Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:23.125Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -1291,8 +1462,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:37.420Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:34.539Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:58.637Z",
@@ -1319,8 +1490,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:35.495Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:30.636Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:09:57.724Z",
@@ -1346,8 +1517,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:35.673Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:29.885Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:03.464Z",
@@ -1370,8 +1541,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:35.409Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:38.234Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:07.125Z",
@@ -1395,8 +1566,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:39.033Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:42.167Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:09.475Z",
@@ -1421,8 +1592,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:42.707Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:45.775Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:10.061Z",
@@ -1447,8 +1618,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:41.613Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:45.637Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:15.087Z",
@@ -1470,8 +1641,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:46.703Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:44.801Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:12.188Z",
@@ -1494,8 +1665,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:48.647Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:52.242Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:17.205Z",
@@ -1517,8 +1688,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:54.832Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:55.181Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:18.712Z",
@@ -1542,8 +1713,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:00.764Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:51.397Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:17.976Z",
@@ -1565,8 +1736,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:58:56.074Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:55.847Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:25.071Z",
@@ -1587,8 +1758,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:00.188Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:01.472Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:24.868Z",
@@ -1608,8 +1779,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:03.096Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T15:59:59.604Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:27.936Z",
@@ -1630,8 +1801,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:03.202Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:05.190Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:31.808Z",
@@ -1654,8 +1825,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:03.580Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:03.765Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:30.246Z",
@@ -1668,6 +1839,25 @@
    }
   },
   {
+   "id": "feedparser-pydantic-models",
+   "language": "python",
+   "pinned": {
+    "feedparser": "6.0.14",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:00:09.687Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "fflate-zip-roundtrip",
    "language": "typescript",
    "pinned": {
@@ -1677,8 +1867,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:14.898Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:12.613Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -1696,8 +1886,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:16.037Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:15.645Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:32.825Z",
@@ -1719,8 +1909,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:14.615Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:14.071Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:32.704Z",
@@ -1743,8 +1933,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:27.992Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:20.131Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:36.126Z",
@@ -1780,8 +1970,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:20.986Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:21.905Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "passes_on_latest",
     "checked_at": "2026-10-15T13:10:39.027Z",
@@ -1806,8 +1996,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:23.521Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:33.921Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:42.919Z",
@@ -1830,8 +2020,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:25.699Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:34.076Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:46.836Z",
@@ -1855,8 +2045,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:23.462Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:30.860Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -1876,8 +2066,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:33.868Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:32.538Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "breaks_on_latest",
     "checked_at": "2026-10-15T13:17:12.923Z",
@@ -1900,8 +2090,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:30.968Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:36.765Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:45.567Z",
@@ -1922,8 +2112,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:33.591Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:34.593Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -1947,7 +2137,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:13:46.628Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:46.976Z",
@@ -1974,8 +2164,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:41.297Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:41.244Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:00.290Z",
@@ -1999,8 +2189,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:44.221Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:57.023Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2021,7 +2211,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:13:49.591Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:50.985Z",
@@ -2046,8 +2236,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:47.518Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:49.702Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:57.678Z",
@@ -2071,8 +2261,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:49.827Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:53.027Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:59.577Z",
@@ -2094,8 +2284,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:52.018Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:53.181Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:00.993Z",
@@ -2119,8 +2309,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:10.749Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:00:56.876Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:10:59.966Z",
@@ -2142,8 +2332,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T14:59:58.632Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:00.076Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:02.158Z",
@@ -2165,8 +2355,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:02.861Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:07.041Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:08.461Z",
@@ -2191,8 +2381,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:05.749Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:08.459Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:10.790Z",
@@ -2214,8 +2404,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:02.740Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:10.842Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2235,7 +2425,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:14:17.820Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "breaks_on_latest",
     "checked_at": "2026-10-15T13:17:14.811Z",
@@ -2257,8 +2447,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:07.253Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:20.530Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:12.771Z",
@@ -2278,8 +2468,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:14.900Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:14.457Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:15.047Z",
@@ -2301,7 +2491,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:14:21.217Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:16.537Z",
@@ -2330,7 +2520,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:14:20.264Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2350,8 +2540,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:21.092Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:24.726Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2370,8 +2560,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:23.788Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:30.212Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2393,8 +2583,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:30.636Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:31.395Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2414,7 +2604,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:14:32.391Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:13.725Z",
@@ -2438,8 +2628,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:33.373Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:44.447Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "passes_on_latest",
     "checked_at": "2026-10-15T13:11:22.112Z",
@@ -2460,8 +2650,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:36.256Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:35.321Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:34.085Z",
@@ -2483,8 +2673,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:37.875Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:48.872Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:32.936Z",
@@ -2504,8 +2694,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:40.337Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:42.212Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:26.070Z",
@@ -2526,8 +2716,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:40.590Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:41.060Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:30.132Z",
@@ -2549,8 +2739,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:47.678Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:47.241Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:28.446Z",
@@ -2571,8 +2761,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:53.040Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:52.740Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:30.000Z",
@@ -2592,8 +2782,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:02.304Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:52.619Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2610,8 +2800,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:52.921Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:54.565Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:34.511Z",
@@ -2632,8 +2822,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:04.213Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:01:58.827Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2652,8 +2842,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:57.062Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:00.842Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:43.055Z",
@@ -2661,6 +2851,25 @@
      "luxon": "3.7.2"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "lxml-cssselect-scrape",
+   "language": "python",
+   "pinned": {
+    "lxml": "6.1.3",
+    "cssselect": "1.6.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:02:02.354Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -2675,8 +2884,27 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:00:58.896Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:08.128Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "marshmallow-dataclass-schema",
+   "language": "python",
+   "pinned": {
+    "marshmallow-dataclass": "8.7.1",
+    "marshmallow": "4.3.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:02:08.822Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2697,8 +2925,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:00.690Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:15.778Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "passes_on_latest",
     "checked_at": "2026-10-15T13:11:43.409Z",
@@ -2723,8 +2951,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:16.343Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:11.351Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2742,8 +2970,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:13.550Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:13.360Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2760,8 +2988,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:11.709Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:16.479Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:44.076Z",
@@ -2782,8 +3010,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:16.267Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:18.478Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:44.630Z",
@@ -2804,8 +3032,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:17.613Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:23.605Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2834,8 +3062,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:22.357Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:25.821Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "breaks_on_latest",
     "checked_at": "2026-10-15T13:17:13.185Z",
@@ -2867,8 +3095,26 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:17.858Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:26.961Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "networkx-shortest-path-dag",
+   "language": "python",
+   "pinned": {
+    "networkx": "3.6.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:02:33.124Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2886,8 +3132,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:18.783Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:30.157Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2909,8 +3155,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:32.674Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:41.028Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:53.558Z",
@@ -2935,8 +3181,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:30.969Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:34.929Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:52.694Z",
@@ -2961,8 +3207,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:36.022Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:39.390Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:50.086Z",
@@ -2987,8 +3233,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:35.846Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:43.328Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:11:56.524Z",
@@ -3012,8 +3258,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:36.772Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:53.603Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:00.794Z",
@@ -3032,8 +3278,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:39.741Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:48.702Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:03.029Z",
@@ -3053,8 +3299,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:39.636Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:50.646Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:04.919Z",
@@ -3077,8 +3323,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:51.274Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:02:50.718Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3097,8 +3343,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:55.081Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:05.710Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3118,8 +3364,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:01.501Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:05.818Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:13.340Z",
@@ -3142,8 +3388,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:58.516Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:22.057Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:05.352Z",
@@ -3164,8 +3410,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:01:58.165Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:10.253Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:09.867Z",
@@ -3187,8 +3433,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:06.629Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:07.250Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:12.821Z",
@@ -3211,8 +3457,27 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:02.766Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:08.998Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "orjson-pydantic-v2-roundtrip",
+   "language": "python",
+   "pinned": {
+    "orjson": "3.13.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:03:10.454Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3232,8 +3497,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:05.139Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:23.790Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3251,8 +3516,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:09.829Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:34.002Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3270,8 +3535,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:15.616Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:26.259Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3289,8 +3554,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:16.741Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:36.429Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:14.168Z",
@@ -3311,8 +3576,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:20.342Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:25.534Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:12.556Z",
@@ -3333,8 +3598,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:22.939Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:26.973Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:16.548Z",
@@ -3362,8 +3627,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:21.234Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:28.627Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:18.138Z",
@@ -3386,8 +3651,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:25.807Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:40.388Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:17.377Z",
@@ -3408,8 +3673,46 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:22.804Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:41.110Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pendulum-time-machine-freeze",
+   "language": "python",
+   "pinned": {
+    "pendulum": "3.3.0",
+    "time-machine": "3.5.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:03:44.075Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pillow-piexif-gps",
+   "language": "python",
+   "pinned": {
+    "pillow": "12.3.0",
+    "piexif": "1.1.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:03:44.594Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3428,8 +3731,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:27.478Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:42.025Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3447,8 +3750,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:35.475Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:44.128Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:23.641Z",
@@ -3469,8 +3772,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:35.251Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:58.460Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:26.258Z",
@@ -3496,7 +3799,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:16:17.855Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3516,8 +3819,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:41.563Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:57.497Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:27.506Z",
@@ -3539,8 +3842,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:50.348Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:03:56.856Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:30.238Z",
@@ -3559,8 +3862,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:43.220Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:04.987Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:28.420Z",
@@ -3579,8 +3882,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:48.282Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:15.135Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:35.228Z",
@@ -3602,8 +3905,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:50.041Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:11.674Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:31.487Z",
@@ -3626,8 +3929,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:49.660Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:00.445Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:35.547Z",
@@ -3650,8 +3953,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:02:52.296Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:14.187Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:36.363Z",
@@ -3673,8 +3976,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:05.217Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:15.340Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:40.684Z",
@@ -3694,8 +3997,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:03.925Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:17.034Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:42.809Z",
@@ -3715,8 +4018,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:04.456Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:30.612Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:44.461Z",
@@ -3738,8 +4041,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:07.449Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:30.000Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:45.239Z",
@@ -3761,8 +4064,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:08.716Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:29.190Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:45.240Z",
@@ -3785,8 +4088,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:08.913Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:32.935Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3807,8 +4110,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:15.605Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:33.614Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:49.571Z",
@@ -3839,7 +4142,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:16:54.468Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:52.011Z",
@@ -3866,8 +4169,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:25.784Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:36.557Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:51.220Z",
@@ -3877,6 +4180,25 @@
      "zod": "4.6.7"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "redis-fakeredis-pipeline",
+   "language": "python",
+   "pinned": {
+    "redis": "8.1.0",
+    "fakeredis": "2.40.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:04:35.581Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -3891,7 +4213,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:17:00.038Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3909,8 +4231,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:31.316Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:57.569Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -3929,8 +4251,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:29.633Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:49.436Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:59.144Z",
@@ -3953,8 +4275,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:26.252Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:51.067Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:58.816Z",
@@ -3975,8 +4297,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:26.648Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:54.849Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:00.178Z",
@@ -3998,8 +4320,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:35.737Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:53.953Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4018,8 +4340,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:46.820Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:04:55.647Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4037,8 +4359,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:44.268Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:08.507Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4059,8 +4381,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:49.692Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:25.396Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:12:58.054Z",
@@ -4082,8 +4404,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:51.259Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:08.424Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4102,8 +4424,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:52.131Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:11.312Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:05.049Z",
@@ -4129,7 +4451,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:17:23.635Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4147,8 +4469,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:55.861Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:12.910Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:05.508Z",
@@ -4169,8 +4491,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:03:55.664Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:14.236Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:05.989Z",
@@ -4193,8 +4515,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:00.600Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:23.207Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:05.438Z",
@@ -4218,8 +4540,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:07.335Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:23.436Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:12.319Z",
@@ -4240,8 +4562,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:17.526Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:26.536Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:14.762Z",
@@ -4261,8 +4583,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:16.528Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:27.864Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:11.827Z",
@@ -4283,8 +4605,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:11.051Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:31.829Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4303,8 +4625,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:14.482Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:35.609Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:17.027Z",
@@ -4324,8 +4646,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:21.621Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:40.781Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:18.657Z",
@@ -4333,6 +4655,26 @@
      "sqlmodel": "0.0.48"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "starlette-httpx-asgi-client",
+   "language": "python",
+   "pinned": {
+    "starlette": "1.8.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:05:41.889Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -4345,8 +4687,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:19.534Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:41.120Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:18.447Z",
@@ -4354,6 +4696,24 @@
      "stripe": "23.0.0"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "structlog-bound-logger-context",
+   "language": "python",
+   "pinned": {
+    "structlog": "26.1.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:05:43.171Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -4367,8 +4727,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:31.577Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:45.858Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:20.261Z",
@@ -4391,7 +4751,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:17:53.870Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "passes_on_latest",
     "checked_at": "2026-10-15T13:13:23.175Z",
@@ -4415,7 +4775,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:17:51.801Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:25.672Z",
@@ -4438,8 +4798,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:49.781Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:52.486Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4457,8 +4817,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:38.276Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:55.336Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4476,8 +4836,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:40.970Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:05:58.469Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4497,8 +4857,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:57.077Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:06.586Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:29.624Z",
@@ -4508,6 +4868,24 @@
      "respx": "0.23.1"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "tomlkit-comment-preserve",
+   "language": "python",
+   "pinned": {
+    "tomlkit": "0.15.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:05:57.157Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -4524,7 +4902,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:17:57.767Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:28.331Z",
@@ -4549,8 +4927,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:45.217Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:14.382Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:30.814Z",
@@ -4572,8 +4950,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:47.433Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:16.175Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:31.513Z",
@@ -4593,8 +4971,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:51.986Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:11.813Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4612,8 +4990,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:04:57.515Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:18.424Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4630,8 +5008,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:17.846Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:21.555Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:39.647Z",
@@ -4651,8 +5029,8 @@
    },
    "runtime": "Python 3.13.16",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:24.932Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:14.554Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:35.129Z",
@@ -4674,8 +5052,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:03.086Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:35.353Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4693,8 +5071,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:05.253Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:23.716Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4712,8 +5090,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:06.553Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:26.637Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4731,8 +5109,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:06.777Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:27.427Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4751,8 +5129,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:13.149Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:31.318Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4775,7 +5153,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:18:27.119Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:42.445Z",
@@ -4790,6 +5168,24 @@
    }
   },
   {
+   "id": "watchdog-events-tmpdir",
+   "language": "python",
+   "pinned": {
+    "watchdog": "6.0.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T16:06:41.489Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "ws-zod-message-protocol",
    "language": "typescript",
    "pinned": {
@@ -4801,8 +5197,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:42.532Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:40.058Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4820,8 +5216,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:22.169Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:43.518Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4841,8 +5237,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:25.013Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:41.521Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4861,8 +5257,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:43.673Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:48.035Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:43.870Z",
@@ -4885,8 +5281,8 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-15T15:05:34.571Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "last_passed_at": "2026-10-15T16:06:52.902Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4905,7 +5301,7 @@
    "runtime": "node v22.23.3",
    "status": "setup_failed",
    "last_passed_at": "2026-10-15T14:18:53.900Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38755782594",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
    "staleness": {
     "status": "current",
     "checked_at": "2026-10-15T13:13:43.749Z",

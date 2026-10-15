@@ -1,0 +1,27 @@
+{
+  "id": "cyclopts-annotated-cli",
+  "status": "passed",
+  "ran_at": "2026-10-15T15:58:06.812Z",
+  "last_passed_at": "2026-10-15T15:58:06.812Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 404,
+    "test": 2317
+  },
+  "pinned": {
+    "cyclopts": "5.2.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:ce6d961f98100dfd10d64d0ba445b790e148fd323b6845508c2e01befa011b51",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38764699834"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.56s\n"
+}

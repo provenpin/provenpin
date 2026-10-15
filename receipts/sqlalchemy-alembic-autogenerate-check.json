@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-alembic-autogenerate-check",
   "status": "passed",
-  "ran_at": "2026-10-15T15:03:55.861Z",
-  "last_passed_at": "2026-10-15T15:03:55.861Z",
+  "ran_at": "2026-10-15T16:05:12.910Z",
+  "last_passed_at": "2026-10-15T16:05:12.910Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 694,
-    "test": 4727
+    "setup": 334,
+    "test": 4788
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38755782594"
+    "runner": "github-actions 38764699834"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 2.99s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 2.92s\n"
 }

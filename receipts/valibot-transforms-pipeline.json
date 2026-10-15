@@ -1,15 +1,15 @@
 {
   "id": "valibot-transforms-pipeline",
   "status": "passed",
-  "ran_at": "2026-10-15T15:05:06.553Z",
-  "last_passed_at": "2026-10-15T15:05:06.553Z",
+  "ran_at": "2026-10-15T16:06:26.637Z",
+  "last_passed_at": "2026-10-15T16:06:26.637Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2394,
-    "test": 348
+    "setup": 2340,
+    "test": 345
   },
   "pinned": {
     "valibot": "1.5.0",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38755782594"
+    "runner": "github-actions 38764699834"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: normalizes email\nok 1 - normalizes email\n  ---\n  duration_ms: 1.049351\n  type: 'test'\n  ...\n# Subtest: brands user ids\nok 2 - brands user ids\n  ---\n  duration_ms: 0.518139\n  type: 'test'\n  ...\n# Subtest: parses account with defaults\nok 3 - parses account with defaults\n  ---\n  duration_ms: 1.043621\n  type: 'test'\n  ...\n# Subtest: reports issue paths\nok 4 - reports issue paths\n  ---\n  duration_ms: 0.360874\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 199.386593\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: normalizes email\nok 1 - normalizes email\n  ---\n  duration_ms: 1.001254\n  type: 'test'\n  ...\n# Subtest: brands user ids\nok 2 - brands user ids\n  ---\n  duration_ms: 0.52902\n  type: 'test'\n  ...\n# Subtest: parses account with defaults\nok 3 - parses account with defaults\n  ---\n  duration_ms: 1.020931\n  type: 'test'\n  ...\n# Subtest: reports issue paths\nok 4 - reports issue paths\n  ---\n  duration_ms: 0.382266\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 189.535708\n"
 }

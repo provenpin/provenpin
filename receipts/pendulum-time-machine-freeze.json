@@ -1,0 +1,28 @@
+{
+  "id": "pendulum-time-machine-freeze",
+  "status": "passed",
+  "ran_at": "2026-10-15T16:03:44.075Z",
+  "last_passed_at": "2026-10-15T16:03:44.075Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 355,
+    "test": 979
+  },
+  "pinned": {
+    "pendulum": "3.3.0",
+    "time-machine": "3.5.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:98daada27e6bbf423aa04217c5a00ab6a0a4a3c7a1c2d0879adf6a7742a5dc84",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38764699834"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"
+}

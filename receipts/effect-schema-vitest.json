@@ -1,14 +1,14 @@
 {
   "id": "effect-schema-vitest",
   "status": "setup_failed",
-  "ran_at": "2026-10-15T14:57:47.920Z",
+  "ran_at": "2026-10-15T15:58:42.078Z",
   "last_passed_at": "2026-10-15T14:12:08.878Z",
   "tests": {
     "passed": 0,
     "failed": 1
   },
   "duration_ms": {
-    "setup": 6694,
+    "setup": 5508,
     "test": 0
   },
   "pinned": {
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38755782594"
+    "runner": "github-actions 38764699834"
   },
   "errors": [],
-  "log_tail": "npm error Cannot read properties of null (reading 'edgesOut')\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T14_57_47_974Z-debug-0.log\n"
+  "log_tail": "npm error Cannot read properties of null (reading 'edgesOut')\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T15_58_42_133Z-debug-0.log\n"
 }

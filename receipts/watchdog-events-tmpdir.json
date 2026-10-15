@@ -1,0 +1,27 @@
+{
+  "id": "watchdog-events-tmpdir",
+  "status": "passed",
+  "ran_at": "2026-10-15T16:06:41.489Z",
+  "last_passed_at": "2026-10-15T16:06:41.489Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 246,
+    "test": 1417
+  },
+  "pinned": {
+    "watchdog": "6.0.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:630ee53b86f489432ceb90ebcff32b1e1924f96d5a1513705e7bca052d60027e",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38764699834"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.14s\n"
+}

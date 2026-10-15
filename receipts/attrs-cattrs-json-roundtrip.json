@@ -1,0 +1,28 @@
+{
+  "id": "attrs-cattrs-json-roundtrip",
+  "status": "passed",
+  "ran_at": "2026-10-15T15:57:00.283Z",
+  "last_passed_at": "2026-10-15T15:57:00.283Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 213,
+    "test": 938
+  },
+  "pinned": {
+    "attrs": "26.1.0",
+    "cattrs": "26.2.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:fdcff96e0088c5e526700f0475860c2dc776fcb9e468d2b06503213c16c7e3cb",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38764699834"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.09s\n"
+}

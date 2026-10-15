@@ -1,14 +1,14 @@
 {
   "id": "jose-jwks-verify",
   "status": "setup_failed",
-  "ran_at": "2026-10-15T15:00:16.434Z",
+  "ran_at": "2026-10-15T16:01:17.097Z",
   "last_passed_at": "2026-10-15T14:14:21.217Z",
   "tests": {
     "passed": 0,
     "failed": 1
   },
   "duration_ms": {
-    "setup": 5852,
+    "setup": 5793,
     "test": 0
   },
   "pinned": {
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38755782594"
+    "runner": "github-actions 38764699834"
   },
   "errors": [],
-  "log_tail": "npm error Cannot read properties of null (reading 'edgesOut')\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T15_00_16_475Z-debug-0.log\n"
+  "log_tail": "npm error Cannot read properties of null (reading 'edgesOut')\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T16_01_17_159Z-debug-0.log\n"
 }

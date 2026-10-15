@@ -1,0 +1,28 @@
+{
+  "id": "click-rich-progress",
+  "status": "passed",
+  "ran_at": "2026-10-15T15:57:51.297Z",
+  "last_passed_at": "2026-10-15T15:57:51.297Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 181,
+    "test": 2512
+  },
+  "pinned": {
+    "click": "8.5.0",
+    "rich": "15.0.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:4905f7edc12bf1b2d6280a2fc7723253794fa61ff029fabe9efaa2a05c793c1c",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38764699834"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.28s\n"
+}

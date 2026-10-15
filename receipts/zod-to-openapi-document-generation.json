@@ -1,15 +1,15 @@
 {
   "id": "zod-to-openapi-document-generation",
   "status": "passed",
-  "ran_at": "2026-10-15T15:05:34.571Z",
-  "last_passed_at": "2026-10-15T15:05:34.571Z",
+  "ran_at": "2026-10-15T16:06:52.902Z",
+  "last_passed_at": "2026-10-15T16:06:52.902Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2393,
-    "test": 577
+    "setup": 2175,
+    "test": 513
   },
   "pinned": {
     "zod": "4.6.7",
@@ -23,8 +23,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38755782594"
+    "runner": "github-actions 38764699834"
   },
   "errors": [],
-  "log_tail": "# Subtest: document has paths, operation ids and a 3.1 header\nok 1 - document has paths, operation ids and a 3.1 header\n  ---\n  duration_ms: 1.388009\n  type: 'test'\n  ...\n# Subtest: registered schemas become $refs into components\nok 2 - registered schemas become $refs into components\n  ---\n  duration_ms: 0.194002\n  type: 'test'\n  ...\n# Subtest: zod constraints map to JSON Schema keywords\nok 3 - zod constraints map to JSON Schema keywords\n  ---\n  duration_ms: 0.177902\n  type: 'test'\n  ...\n# Subtest: path, query params and security are documented\nok 4 - path, query params and security are documented\n  ---\n  duration_ms: 0.257481\n  type: 'test'\n  ...\n# Subtest: the same schema still validates at runtime and YAML round-trips\nok 5 - the same schema still validates at runtime and YAML round-trips\n  ---\n  duration_ms: 30.552461\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 426.197054\n"
+  "log_tail": "# Subtest: document has paths, operation ids and a 3.1 header\nok 1 - document has paths, operation ids and a 3.1 header\n  ---\n  duration_ms: 1.048688\n  type: 'test'\n  ...\n# Subtest: registered schemas become $refs into components\nok 2 - registered schemas become $refs into components\n  ---\n  duration_ms: 0.153737\n  type: 'test'\n  ...\n# Subtest: zod constraints map to JSON Schema keywords\nok 3 - zod constraints map to JSON Schema keywords\n  ---\n  duration_ms: 0.10129\n  type: 'test'\n  ...\n# Subtest: path, query params and security are documented\nok 4 - path, query params and security are documented\n  ---\n  duration_ms: 0.186946\n  type: 'test'\n  ...\n# Subtest: the same schema still validates at runtime and YAML round-trips\nok 5 - the same schema still validates at runtime and YAML round-trips\n  ---\n  duration_ms: 23.416635\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 358.230189\n"
 }
