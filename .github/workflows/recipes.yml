@@ -78,20 +78,23 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: "22" }
       - uses: actions/download-artifact@v4
-        with: { pattern: receipt-*, path: receipts, merge-multiple: true }
+        with: { pattern: receipt-*, path: new-receipts, merge-multiple: true }
       - run: npm ci || npm install
-      - run: node runner/build-index.mjs
       - name: Commit receipts and index
         run: |
           git config user.name "provenpin-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add receipts index
-          git diff --cached --quiet && exit 0
-          git commit -m "receipts: $(date -u +%Y-%m-%dT%H:%MZ)"
-          # another run may have pushed receipts meanwhile: rebase onto it and retry
+          # Another run may push receipts meanwhile. Each attempt starts from the latest main,
+          # applies only this run's receipts, rebuilds the index and pushes; retry on rejection.
           for i in 1 2 3 4 5; do
-            git pull --rebase origin main && git push && exit 0
-            echo "push failed (attempt $i), retrying"; sleep $((i * 5))
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp new-receipts/*.json receipts/
+            node runner/build-index.mjs
+            git add receipts index
+            git diff --cached --quiet && exit 0
+            git commit -q -m "receipts: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push origin HEAD:main && exit 0
+            echo "push rejected (attempt $i), retrying"; sleep $((i * 5))
           done
           exit 1
       - name: Deploy MCP server
