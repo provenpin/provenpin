@@ -1,0 +1,29 @@
+{
+  "id": "trpc-context-auth-middleware",
+  "status": "passed",
+  "ran_at": "2026-10-15T10:48:02.337Z",
+  "last_passed_at": "2026-10-15T10:48:02.337Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2829,
+    "test": 386
+  },
+  "pinned": {
+    "@trpc/server": "11.19.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  },
+  "recipe_hash": "sha256:faa8d0dc5a4bc2ee0bc53aa8af4f409b1dc6d4db005943ce553e1dd6a207e705",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38722522421"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: public works without a user\nok 1 - public works without a user\n  ---\n  duration_ms: 0.882073\n  type: 'test'\n  ...\n# Subtest: protected requires a user\nok 2 - protected requires a user\n  ---\n  duration_ms: 1.494495\n  type: 'test'\n  ...\n# Subtest: zod input errors become BAD_REQUEST\nok 3 - zod input errors become BAD_REQUEST\n  ---\n  duration_ms: 0.660132\n  type: 'test'\n  ...\n# Subtest: admin-only procedure\nok 4 - admin-only procedure\n  ---\n  duration_ms: 0.36174\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 258.549411\n"
+}

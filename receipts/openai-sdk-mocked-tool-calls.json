@@ -1,0 +1,29 @@
+{
+  "id": "openai-sdk-mocked-tool-calls",
+  "status": "passed",
+  "ran_at": "2026-10-15T10:47:28.011Z",
+  "last_passed_at": "2026-10-15T10:47:28.011Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3709,
+    "test": 624
+  },
+  "pinned": {
+    "openai": "7.34.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  },
+  "recipe_hash": "sha256:c5a941fbf2be059b98e3e9be5a1df2677e0f19e94f12e12f6f0e490f59bea191",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38722522421"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: calls the tool then answers\nok 1 - calls the tool then answers\n  ---\n  duration_ms: 13.821563\n  type: 'test'\n  ...\n# Subtest: bad tool arguments are reported back, not thrown\nok 2 - bad tool arguments are reported back, not thrown\n  ---\n  duration_ms: 2.827442\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 473.471964\n"
+}

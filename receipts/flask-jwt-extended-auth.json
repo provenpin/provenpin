@@ -1,15 +1,15 @@
 {
   "id": "flask-jwt-extended-auth",
   "status": "passed",
-  "ran_at": "2026-10-15T10:33:54.065Z",
-  "last_passed_at": "2026-10-15T10:33:54.065Z",
+  "ran_at": "2026-10-15T10:46:52.432Z",
+  "last_passed_at": "2026-10-15T10:46:52.432Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 269,
-    "test": 2266
+    "setup": 316,
+    "test": 1427
   },
   "pinned": {
     "flask": "3.1.3",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38721040568"
+    "runner": "github-actions 38722522421"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 0.78s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.43s\n"
 }

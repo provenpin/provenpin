@@ -1,0 +1,28 @@
+{
+  "id": "pandas-pandera-validation",
+  "status": "passed",
+  "ran_at": "2026-10-15T10:47:26.066Z",
+  "last_passed_at": "2026-10-15T10:47:26.066Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 643,
+    "test": 3489
+  },
+  "pinned": {
+    "pandas": "3.0.6",
+    "pandera": "0.34.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:542779831e4399a80e4fd0149926c7077576f8ea0e42f02f64e441930eec5f00",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38722522421"
+  },
+  "errors": [],
+  "log_tail": "...                                                                      [100%]\n3 passed in 1.97s\n"
+}

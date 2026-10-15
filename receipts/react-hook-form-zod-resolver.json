@@ -1,0 +1,31 @@
+{
+  "id": "react-hook-form-zod-resolver",
+  "status": "passed",
+  "ran_at": "2026-10-15T10:47:41.928Z",
+  "last_passed_at": "2026-10-15T10:47:41.928Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 5011,
+    "test": 321
+  },
+  "pinned": {
+    "react-hook-form": "7.90.0",
+    "@hookform/resolvers": "5.9.1",
+    "zod": "4.6.7",
+    "react": "19.3.1",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  },
+  "recipe_hash": "sha256:4d61c8bbabee329dbb827b0cb4b512f39096568376d580f1cd82efca8ead07b9",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38722522421"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid values come back coerced\nok 1 - valid values come back coerced\n  ---\n  duration_ms: 1.572034\n  type: 'test'\n  ...\n# Subtest: field and cross-field errors map to RHF errors\nok 2 - field and cross-field errors map to RHF errors\n  ---\n  duration_ms: 1.037129\n  type: 'test'\n  ...\n# Subtest: refinement error lands on confirm\nok 3 - refinement error lands on confirm\n  ---\n  duration_ms: 0.287752\n  type: 'test'\n  ...\n# Subtest: same schema validates on the server\nok 4 - same schema validates on the server\n  ---\n  duration_ms: 1.424251\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 212.42609\n"
+}

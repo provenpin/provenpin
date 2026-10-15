@@ -1,0 +1,37 @@
+{
+  "id": "express-passport-jwt",
+  "status": "passed",
+  "ran_at": "2026-10-15T10:46:19.847Z",
+  "last_passed_at": "2026-10-15T10:46:19.847Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3921,
+    "test": 635
+  },
+  "pinned": {
+    "express": "5.3.0",
+    "passport": "0.7.0",
+    "passport-jwt": "4.0.1",
+    "jsonwebtoken": "9.0.3",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/express": "5.0.6",
+    "@types/passport": "1.0.17",
+    "@types/passport-jwt": "4.0.1",
+    "@types/jsonwebtoken": "9.0.10"
+  },
+  "recipe_hash": "sha256:2e1b25046d5a324f68f4f9e1a88c66a576a225e540a3b53247d310df28e356f5",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38722522421"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: token unlocks /me\nok 1 - token unlocks /me\n  ---\n  duration_ms: 58.953258\n  type: 'test'\n  ...\n# Subtest: role check\nok 2 - role check\n  ---\n  duration_ms: 14.836973\n  type: 'test'\n  ...\n# Subtest: rejects missing, forged and expired tokens\nok 3 - rejects missing, forged and expired tokens\n  ---\n  duration_ms: 11.582512\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 473.708977\n"
+}
