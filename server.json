@@ -1,0 +1,10 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.provenpin/provenpin",
+  "title": "ProvenPin",
+  "description": "Tested, version-pinned code recipes for AI coding agents, each with its last-passed receipt.",
+  "version": "0.1.0",
+  "websiteUrl": "https://provenpin.com",
+  "repository": { "url": "https://github.com/provenpin/provenpin", "source": "github" },
+  "remotes": [ { "type": "streamable-http", "url": "https://mcp.provenpin.com/mcp" } ]
+}

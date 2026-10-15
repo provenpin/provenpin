@@ -6,6 +6,39 @@ Tested, version-pinned, multi-library code recipes for AI coding agents, served 
 
 Every recipe pins exact versions, runs its own tests in a clean environment, and carries a receipt with the time it last passed. Recipes are re-tested automatically when any of their libraries ships a new release. The MCP server only serves recipes that are currently passing.
 
+## Install
+
+ProvenPin is a hosted MCP server. No API key, no signup.
+
+Endpoint: `https://mcp.provenpin.com/mcp`
+
+**Claude Code**
+```
+claude mcp add --transport http provenpin https://mcp.provenpin.com/mcp
+```
+
+**Cursor** (`~/.cursor/mcp.json`)
+```json
+{ "mcpServers": { "provenpin": { "url": "https://mcp.provenpin.com/mcp" } } }
+```
+
+**VS Code** (`.vscode/mcp.json`)
+```json
+{ "servers": { "provenpin": { "type": "http", "url": "https://mcp.provenpin.com/mcp" } } }
+```
+
+**Windsurf** (`~/.codeium/windsurf/mcp_config.json`)
+```json
+{ "mcpServers": { "provenpin": { "serverUrl": "https://mcp.provenpin.com/mcp" } } }
+```
+
+**Cline** (MCP settings)
+```json
+{ "mcpServers": { "provenpin": { "type": "streamableHttp", "url": "https://mcp.provenpin.com/mcp" } } }
+```
+
+Then ask your agent something like "find a tested recipe for a Next.js Stripe webhook".
+
 ## MCP tools
 
 | tool | what it does |
@@ -47,7 +80,7 @@ claude mcp add --transport http provenpin http://localhost:8787/mcp
 
 Optional header for the future Pro tier: `x-provenpin-key: <key>` (keys come from the `PROVENPIN_API_KEYS` secret).
 
-## Deploy (not done yet)
+## Deploy your own
 
 1. Push this repo to a GitHub account for the brand.
 2. In Cloudflare: create an API token with "Edit Cloudflare Workers", add `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` as repo secrets, set repo variable `DEPLOY_ENABLED=true`.
