@@ -1,15 +1,15 @@
 {
   "id": "express-stripe-webhook",
   "status": "passed",
-  "ran_at": "2026-10-15T13:29:07.022Z",
-  "last_passed_at": "2026-10-15T13:29:07.022Z",
+  "ran_at": "2026-10-15T14:12:41.879Z",
+  "last_passed_at": "2026-10-15T14:12:41.879Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3775,
-    "test": 620
+    "setup": 4111,
+    "test": 838
   },
   "pinned": {
     "express": "5.3.0",
@@ -25,8 +25,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38742087302"
+    "runner": "github-actions 38748988915"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a correctly signed event\nok 1 - accepts a correctly signed event\n  ---\n  duration_ms: 26.390799\n  type: 'test'\n  ...\n# Subtest: rejects a bad signature\nok 2 - rejects a bad signature\n  ---\n  duration_ms: 5.361985\n  type: 'test'\n  ...\n# Subtest: rejects a missing signature\nok 3 - rejects a missing signature\n  ---\n  duration_ms: 3.105212\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 419.822272\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a correctly signed event\nok 1 - accepts a correctly signed event\n  ---\n  duration_ms: 37.397917\n  type: 'test'\n  ...\n# Subtest: rejects a bad signature\nok 2 - rejects a bad signature\n  ---\n  duration_ms: 7.564534\n  type: 'test'\n  ...\n# Subtest: rejects a missing signature\nok 3 - rejects a missing signature\n  ---\n  duration_ms: 4.14975\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 643.772875\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "better-sqlite3-zod-transactions",
   "status": "passed",
-  "ran_at": "2026-10-15T13:27:27.508Z",
-  "last_passed_at": "2026-10-15T13:27:27.508Z",
+  "ran_at": "2026-10-15T14:10:51.762Z",
+  "last_passed_at": "2026-10-15T14:10:51.762Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2643,
-    "test": 517
+    "setup": 2509,
+    "test": 372
   },
   "pinned": {
     "better-sqlite3": "13.0.3",
@@ -23,8 +23,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38742087302"
+    "runner": "github-actions 38748988915"
   },
   "errors": [],
-  "log_tail": "# Subtest: a transfer moves money and writes two entries\nok 1 - a transfer moves money and writes two entries\n  ---\n  duration_ms: 22.984382\n  type: 'test'\n  ...\n# Subtest: insufficient funds rolls back with no partial writes\nok 2 - insufficient funds rolls back with no partial writes\n  ---\n  duration_ms: 1.479089\n  type: 'test'\n  ...\n# Subtest: zod rejects bad input before touching the database\nok 3 - zod rejects bad input before touching the database\n  ---\n  duration_ms: 1.600576\n  type: 'test'\n  ...\n# Subtest: a failing item rolls back the whole batch\nok 4 - a failing item rolls back the whole batch\n  ---\n  duration_ms: 1.467477\n  type: 'test'\n  ...\n# Subtest: the CHECK constraint is a last line of defence\nok 5 - the CHECK constraint is a last line of defence\n  ---\n  duration_ms: 0.950219\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 359.695856\n"
+  "log_tail": "# Subtest: a transfer moves money and writes two entries\nok 1 - a transfer moves money and writes two entries\n  ---\n  duration_ms: 21.172783\n  type: 'test'\n  ...\n# Subtest: insufficient funds rolls back with no partial writes\nok 2 - insufficient funds rolls back with no partial writes\n  ---\n  duration_ms: 0.998364\n  type: 'test'\n  ...\n# Subtest: zod rejects bad input before touching the database\nok 3 - zod rejects bad input before touching the database\n  ---\n  duration_ms: 1.008259\n  type: 'test'\n  ...\n# Subtest: a failing item rolls back the whole batch\nok 4 - a failing item rolls back the whole batch\n  ---\n  duration_ms: 0.876921\n  type: 'test'\n  ...\n# Subtest: the CHECK constraint is a last line of defence\nok 5 - the CHECK constraint is a last line of defence\n  ---\n  duration_ms: 0.581857\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 251.426601\n"
 }

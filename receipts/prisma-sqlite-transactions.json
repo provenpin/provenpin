@@ -1,15 +1,15 @@
 {
   "id": "prisma-sqlite-transactions",
   "status": "passed",
-  "ran_at": "2026-10-15T13:32:37.831Z",
-  "last_passed_at": "2026-10-15T13:32:37.831Z",
+  "ran_at": "2026-10-15T14:16:24.995Z",
+  "last_passed_at": "2026-10-15T14:16:24.995Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 20640,
-    "test": 722
+    "setup": 17232,
+    "test": 584
   },
   "pinned": {
     "@prisma/client": "7.10.0",
@@ -23,8 +23,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38742087302"
+    "runner": "github-actions 38748988915"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: nested create\nok 1 - nested create\n  ---\n  duration_ms: 120.295442\n  type: 'test'\n  ...\n# Subtest: duplicate email maps P2002 to a domain error\nok 2 - duplicate email maps P2002 to a domain error\n  ---\n  duration_ms: 40.884915\n  type: 'test'\n  ...\n# Subtest: transfer commits both sides\nok 3 - transfer commits both sides\n  ---\n  duration_ms: 23.756164\n  type: 'test'\n  ...\n# Subtest: failed transfer rolls back\nok 4 - failed transfer rolls back\n  ---\n  duration_ms: 13.681199\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 523.895684\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: nested create\nok 1 - nested create\n  ---\n  duration_ms: 95.648445\n  type: 'test'\n  ...\n# Subtest: duplicate email maps P2002 to a domain error\nok 2 - duplicate email maps P2002 to a domain error\n  ---\n  duration_ms: 44.964825\n  type: 'test'\n  ...\n# Subtest: transfer commits both sides\nok 3 - transfer commits both sides\n  ---\n  duration_ms: 18.824429\n  type: 'test'\n  ...\n# Subtest: failed transfer rolls back\nok 4 - failed transfer rolls back\n  ---\n  duration_ms: 14.099894\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 441.980694\n"
 }

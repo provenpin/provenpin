@@ -1,0 +1,28 @@
+{
+  "id": "nanoid-custom-alphabet",
+  "status": "passed",
+  "ran_at": "2026-10-15T14:15:08.839Z",
+  "last_passed_at": "2026-10-15T14:15:08.839Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2137,
+    "test": 335
+  },
+  "pinned": {
+    "nanoid": "6.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:beeb350c9450ba22e370160b442e9ef5e2592be3285c69a69542d31101cf6f6e",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38748988915"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: session ids are unique and fixed length\nok 1 - session ids are unique and fixed length\n  ---\n  duration_ms: 2.149662\n  type: 'test'\n  ...\n# Subtest: custom alphabets stick to their charset\nok 2 - custom alphabets stick to their charset\n  ---\n  duration_ms: 0.342751\n  type: 'test'\n  ...\n# Subtest: nonSecure works synchronously\nok 3 - nonSecure works synchronously\n  ---\n  duration_ms: 0.157345\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 188.948129\n"
+}

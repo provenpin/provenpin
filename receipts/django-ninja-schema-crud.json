@@ -1,15 +1,15 @@
 {
   "id": "django-ninja-schema-crud",
   "status": "passed",
-  "ran_at": "2026-10-15T13:28:13.093Z",
-  "last_passed_at": "2026-10-15T13:28:13.093Z",
+  "ran_at": "2026-10-15T14:11:43.985Z",
+  "last_passed_at": "2026-10-15T14:11:43.985Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1025,
-    "test": 2565
+    "setup": 931,
+    "test": 1829
   },
   "pinned": {
     "django": "6.1.2",
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38742087302"
+    "runner": "github-actions 38748988915"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\ntests/test_api.py::test_create_returns_201_and_persists\n  /tmp/pp-django-ninja-schema-crud-VDLTpa/.venv/lib/python3.13/site-packages/ninja/operation.py:232: DeprecationWarning: Returning tuple (status_code, response) is deprecated. Use Status(status_code, response) instead.\n    return self._result_to_response(request, result, temporal_response)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.71s\n"
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\ntests/test_api.py::test_create_returns_201_and_persists\n  /tmp/pp-django-ninja-schema-crud-wnOnNB/.venv/lib/python3.13/site-packages/ninja/operation.py:232: DeprecationWarning: Returning tuple (status_code, response) is deprecated. Use Status(status_code, response) instead.\n    return self._result_to_response(request, result, temporal_response)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.52s\n"
 }

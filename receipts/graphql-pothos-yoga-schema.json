@@ -1,0 +1,30 @@
+{
+  "id": "graphql-pothos-yoga-schema",
+  "status": "passed",
+  "ran_at": "2026-10-15T14:13:40.758Z",
+  "last_passed_at": "2026-10-15T14:13:40.758Z",
+  "tests": {
+    "passed": 1,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 4172,
+    "test": 473
+  },
+  "pinned": {
+    "@pothos/core": "4.15.1",
+    "graphql": "17.0.2",
+    "graphql-yoga": "5.24.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:44f2c68b5166371b8610284473f5ff8c9dbfc61d789130a91bba5df117a26d9c",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38748988915"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: create and query posts\nok 1 - create and query posts\n  ---\n  duration_ms: 16.940622\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 363.106806\n"
+}

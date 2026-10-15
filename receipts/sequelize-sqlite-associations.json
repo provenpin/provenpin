@@ -1,0 +1,29 @@
+{
+  "id": "sequelize-sqlite-associations",
+  "status": "passed",
+  "ran_at": "2026-10-15T14:17:12.966Z",
+  "last_passed_at": "2026-10-15T14:17:12.966Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 4727,
+    "test": 543
+  },
+  "pinned": {
+    "sequelize": "6.37.8",
+    "sqlite3": "6.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:9ba4c95ef48a775105fe7806cbe1602cb96145bc6296afe65ea52365ac789123",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38748988915"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: transaction creates user and posts with include\nok 1 - transaction creates user and posts with include\n  ---\n  duration_ms: 82.175605\n  type: 'test'\n  ...\n# Subtest: rollback leaves no rows when nested create fails\nok 2 - rollback leaves no rows when nested create fails\n  ---\n  duration_ms: 19.883517\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 420.432735\n"
+}

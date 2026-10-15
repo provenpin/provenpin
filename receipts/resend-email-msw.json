@@ -1,15 +1,15 @@
 {
   "id": "resend-email-msw",
   "status": "passed",
-  "ran_at": "2026-10-15T13:33:18.001Z",
-  "last_passed_at": "2026-10-15T13:33:18.001Z",
+  "ran_at": "2026-10-15T14:17:08.906Z",
+  "last_passed_at": "2026-10-15T14:17:08.906Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8258,
-    "test": 697
+    "setup": 9543,
+    "test": 549
   },
   "pinned": {
     "resend": "6.33.0",
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38742087302"
+    "runner": "github-actions 38748988915"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sends html, text and tags\nok 1 - sends html, text and tags\n  ---\n  duration_ms: 70.288358\n  type: 'test'\n  ...\n# [Resend API Error]: {\n#   status: 401,\n#   error: {\n#     statusCode: 401,\n#     name: 'validation_error',\n#     message: 'API key is invalid'\n#   },\n#   path: '/emails'\n# }\n# Subtest: API errors are thrown with the message\nok 2 - API errors are thrown with the message\n  ---\n  duration_ms: 13.66344\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 553.668761\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sends html, text and tags\nok 1 - sends html, text and tags\n  ---\n  duration_ms: 43.649818\n  type: 'test'\n  ...\n# [Resend API Error]: {\n#   status: 401,\n#   error: {\n#     statusCode: 401,\n#     name: 'validation_error',\n#     message: 'API key is invalid'\n#   },\n#   path: '/emails'\n# }\n# Subtest: API errors are thrown with the message\nok 2 - API errors are thrown with the message\n  ---\n  duration_ms: 8.523923\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 424.831607\n"
 }

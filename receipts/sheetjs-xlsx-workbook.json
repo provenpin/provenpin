@@ -1,0 +1,28 @@
+{
+  "id": "sheetjs-xlsx-workbook",
+  "status": "passed",
+  "ran_at": "2026-10-15T14:17:18.538Z",
+  "last_passed_at": "2026-10-15T14:17:18.538Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1925,
+    "test": 651
+  },
+  "pinned": {
+    "xlsx": "0.18.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:2f039d76acd3ed5a300bdb0224ff615d0e54ba2313a7a694b07f0e3cc4ef8a76",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38748988915"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: json sheet roundtrip\nok 1 - json sheet roundtrip\n  ---\n  duration_ms: 19.361525\n  type: 'test'\n  ...\n# Subtest: aoa totals workbook\nok 2 - aoa totals workbook\n  ---\n  duration_ms: 5.096502\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 483.597\n"
+}

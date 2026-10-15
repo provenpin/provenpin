@@ -1,15 +1,15 @@
 {
   "id": "anthropic-streaming-mock",
   "status": "passed",
-  "ran_at": "2026-10-15T13:27:09.186Z",
-  "last_passed_at": "2026-10-15T13:27:09.186Z",
+  "ran_at": "2026-10-15T14:10:32.728Z",
+  "last_passed_at": "2026-10-15T14:10:32.728Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3673,
-    "test": 619
+    "setup": 3074,
+    "test": 538
   },
   "pinned": {
     "@anthropic-ai/sdk": "0.134.0",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38742087302"
+    "runner": "github-actions 38748988915"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# Subtest: streams text deltas and builds the final message\nok 1 - streams text deltas and builds the final message\n  ---\n  duration_ms: 43.264556\n  type: 'test'\n  ...\n# Subtest: stream error events reject\nok 2 - stream error events reject\n  ---\n  duration_ms: 2.488451\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 450.695878\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# Subtest: streams text deltas and builds the final message\nok 1 - streams text deltas and builds the final message\n  ---\n  duration_ms: 40.80543\n  type: 'test'\n  ...\n# Subtest: stream error events reject\nok 2 - stream error events reject\n  ---\n  duration_ms: 2.159831\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 396.540979\n"
 }

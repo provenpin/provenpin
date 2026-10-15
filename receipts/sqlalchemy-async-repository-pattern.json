@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-async-repository-pattern",
   "status": "passed",
-  "ran_at": "2026-10-15T13:33:38.230Z",
-  "last_passed_at": "2026-10-15T13:33:38.230Z",
+  "ran_at": "2026-10-15T14:17:35.238Z",
+  "last_passed_at": "2026-10-15T14:17:35.238Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 440,
-    "test": 1422
+    "setup": 620,
+    "test": 2933
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -23,8 +23,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38742087302"
+    "runner": "github-actions 38748988915"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n=============================== warnings summary ===============================\ntests/test_repository.py::test_attributes_readable_after_commit\n  /tmp/pp-sqlalchemy-async-repository-pattern-BTi3kG/.venv/lib/python3.13/site-packages/sqlalchemy/sql/compiler.py:4281: RuntimeWarning: coroutine 'Connection.cursor' was never awaited\n    def bindparam_string(\n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 1 warning in 0.67s\n"
+  "log_tail": "......                                                                   [100%]\n=============================== warnings summary ===============================\ntests/test_repository.py::test_attributes_readable_after_commit\n  /tmp/pp-sqlalchemy-async-repository-pattern-eWyt2Z/.venv/lib/python3.13/site-packages/sqlalchemy/sql/compiler.py:4281: RuntimeWarning: coroutine 'Connection.cursor' was never awaited\n    def bindparam_string(\n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 1 warning in 1.11s\n"
 }
