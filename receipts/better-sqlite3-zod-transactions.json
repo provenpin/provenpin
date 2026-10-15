@@ -1,0 +1,30 @@
+{
+  "id": "better-sqlite3-zod-transactions",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:27:27.508Z",
+  "last_passed_at": "2026-10-15T13:27:27.508Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2643,
+    "test": 517
+  },
+  "pinned": {
+    "better-sqlite3": "13.0.3",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5",
+    "@types/better-sqlite3": "9.6.0"
+  },
+  "recipe_hash": "sha256:fd89fdb620deea5a31893595c9e65134337c07a5191eb2943ebc60a66952271b",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: a transfer moves money and writes two entries\nok 1 - a transfer moves money and writes two entries\n  ---\n  duration_ms: 22.984382\n  type: 'test'\n  ...\n# Subtest: insufficient funds rolls back with no partial writes\nok 2 - insufficient funds rolls back with no partial writes\n  ---\n  duration_ms: 1.479089\n  type: 'test'\n  ...\n# Subtest: zod rejects bad input before touching the database\nok 3 - zod rejects bad input before touching the database\n  ---\n  duration_ms: 1.600576\n  type: 'test'\n  ...\n# Subtest: a failing item rolls back the whole batch\nok 4 - a failing item rolls back the whole batch\n  ---\n  duration_ms: 1.467477\n  type: 'test'\n  ...\n# Subtest: the CHECK constraint is a last line of defence\nok 5 - the CHECK constraint is a last line of defence\n  ---\n  duration_ms: 0.950219\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 359.695856\n"
+}

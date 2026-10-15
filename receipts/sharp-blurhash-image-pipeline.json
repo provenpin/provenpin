@@ -1,0 +1,29 @@
+{
+  "id": "sharp-blurhash-image-pipeline",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:33:21.642Z",
+  "last_passed_at": "2026-10-15T13:33:21.642Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2775,
+    "test": 603
+  },
+  "pinned": {
+    "sharp": "0.35.5",
+    "blurhash": "2.0.5",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5"
+  },
+  "recipe_hash": "sha256:ad6ab1d4d646d617f3ab9b5a57ed4621ef5bfc27474c414077fc67696d275feb",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: fixture really carries EXIF orientation\nok 1 - fixture really carries EXIF orientation\n  ---\n  duration_ms: 43.947813\n  type: 'test'\n  ...\n# Subtest: variants are auto-rotated, never upscaled, and stripped of EXIF\nok 2 - variants are auto-rotated, never upscaled, and stripped of EXIF\n  ---\n  duration_ms: 93.315991\n  type: 'test'\n  ...\n# Subtest: rotated output is portrait and a webp\nok 3 - rotated output is portrait and a webp\n  ---\n  duration_ms: 23.474174\n  type: 'test'\n  ...\n# Subtest: blurhash is stable and decodes back to a placeholder PNG\nok 4 - blurhash is stable and decodes back to a placeholder PNG\n  ---\n  duration_ms: 20.762326\n  type: 'test'\n  ...\n# Subtest: placeholder colours follow the source: top is red, bottom is blue after rotation\nok 5 - placeholder colours follow the source: top is red, bottom is blue after rotation\n  ---\n  duration_ms: 9.80986\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 464.351496\n"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "redux-toolkit-rtk-query-msw",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:33:13.355Z",
+  "last_passed_at": "2026-10-15T13:33:13.355Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 11047,
+    "test": 941
+  },
+  "pinned": {
+    "@reduxjs/toolkit": "2.13.0",
+    "msw": "3.0.3",
+    "vitest": "5.0.4",
+    "@types/node": "26.6.5"
+  },
+  "recipe_hash": "sha256:e7a4f839d2478f0fff085980c96ed09a234195a494777a89d0ecaeecb118ae01",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-redux-toolkit-rtk-query-msw-V8UmLY\u001b[39m\n\n \u001b[32m✓\u001b[39m test/store.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 185\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 13:33:24\n\u001b[2m   Duration \u001b[22m 491ms\u001b[2m (tests 51%, import 36%, transform 12%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-redux-toolkit-rtk-query-msw-V8UmLY/test-report.json\n"
+}

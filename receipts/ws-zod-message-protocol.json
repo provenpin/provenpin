@@ -1,0 +1,30 @@
+{
+  "id": "ws-zod-message-protocol",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:34:25.392Z",
+  "last_passed_at": "2026-10-15T13:34:25.392Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2141,
+    "test": 553
+  },
+  "pinned": {
+    "ws": "8.22.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5",
+    "@types/ws": "8.18.2"
+  },
+  "recipe_hash": "sha256:2b961c510c2fb9b19d06ea83a7d045f348e42a525da04b3860d1bcc7944743a2",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: rejects connections without a valid token\nok 1 - rejects connections without a valid token\n  ---\n  duration_ms: 27.079253\n  type: 'test'\n  ...\n# Subtest: welcomes and answers ping\nok 2 - welcomes and answers ping\n  ---\n  duration_ms: 7.504566\n  type: 'test'\n  ...\n# Subtest: invalid frames get typed errors and the socket stays open\nok 3 - invalid frames get typed errors and the socket stays open\n  ---\n  duration_ms: 6.265638\n  type: 'test'\n  ...\n# Subtest: broadcasts room messages to every member\nok 4 - broadcasts room messages to every member\n  ---\n  duration_ms: 6.466336\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 402.817355\n"
+}

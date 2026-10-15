@@ -1,0 +1,32 @@
+{
+  "id": "aws-sdk-v3-dynamodb-sqs-vitest",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:27:05.944Z",
+  "last_passed_at": "2026-10-15T13:27:05.944Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 8270,
+    "test": 631
+  },
+  "pinned": {
+    "@aws-sdk/client-dynamodb": "3.1152.0",
+    "@aws-sdk/lib-dynamodb": "3.1152.0",
+    "@aws-sdk/client-sqs": "3.1152.0",
+    "aws-sdk-client-mock": "4.1.0",
+    "aws-sdk-client-mock-vitest": "8.0.0",
+    "vitest": "5.0.4",
+    "@types/node": "26.6.5"
+  },
+  "recipe_hash": "sha256:602e3a2df5a096dfabaa1372ef6b72792a435775be351b35db4e512a29bab12d",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-BkEpYo\u001b[39m\n\n \u001b[32m✓\u001b[39m test/orders.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 20\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n\u001b[2m   Start at \u001b[22m 13:27:14\n\u001b[2m   Duration \u001b[22m 265ms\u001b[2m (import 67%, transform 20%, tests 11%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-BkEpYo/test-report.json\n"
+}

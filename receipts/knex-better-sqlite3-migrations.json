@@ -1,0 +1,29 @@
+{
+  "id": "knex-better-sqlite3-migrations",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:30:58.725Z",
+  "last_passed_at": "2026-10-15T13:30:58.725Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3076,
+    "test": 531
+  },
+  "pinned": {
+    "knex": "3.3.0",
+    "better-sqlite3": "13.0.3",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5"
+  },
+  "recipe_hash": "sha256:cc669a92973b317318792b35dd5d394740f5f7d92df19d3b3285f2aceb985315",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: migrate.latest applies every migration in order and records them\nok 1 - migrate.latest applies every migration in order and records them\n  ---\n  duration_ms: 113.172074\n  type: 'test'\n  ...\n# Subtest: rollback and down undo the schema step by step\nok 2 - rollback and down undo the schema step by step\n  ---\n  duration_ms: 18.890784\n  type: 'test'\n  ...\n# Subtest: seeds in a transaction and queries with joins and aggregates\nok 3 - seeds in a transaction and queries with joins and aggregates\n  ---\n  duration_ms: 7.398503\n  type: 'test'\n  ...\n# Subtest: unique and foreign key constraints are enforced\nok 4 - unique and foreign key constraints are enforced\n  ---\n  duration_ms: 4.122909\n  type: 'test'\n  ...\n# Subtest: a failing transaction leaves no rows behind\nok 5 - a failing transaction leaves no rows behind\n  ---\n  duration_ms: 3.695847\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 402.518549\n"
+}

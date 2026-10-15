@@ -1,0 +1,30 @@
+{
+  "id": "zod-to-openapi-document-generation",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:34:27.275Z",
+  "last_passed_at": "2026-10-15T13:34:27.275Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2316,
+    "test": 570
+  },
+  "pinned": {
+    "zod": "4.6.7",
+    "@asteasolutions/zod-to-openapi": "9.1.0",
+    "yaml": "2.9.1",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5"
+  },
+  "recipe_hash": "sha256:6ab1b537e91c496d73f7b9c4cf23562d291cb89039ec81e9e4690ef8c3d613e8",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: document has paths, operation ids and a 3.1 header\nok 1 - document has paths, operation ids and a 3.1 header\n  ---\n  duration_ms: 1.3789\n  type: 'test'\n  ...\n# Subtest: registered schemas become $refs into components\nok 2 - registered schemas become $refs into components\n  ---\n  duration_ms: 0.190646\n  type: 'test'\n  ...\n# Subtest: zod constraints map to JSON Schema keywords\nok 3 - zod constraints map to JSON Schema keywords\n  ---\n  duration_ms: 0.15483\n  type: 'test'\n  ...\n# Subtest: path, query params and security are documented\nok 4 - path, query params and security are documented\n  ---\n  duration_ms: 0.243906\n  type: 'test'\n  ...\n# Subtest: the same schema still validates at runtime and YAML round-trips\nok 5 - the same schema still validates at runtime and YAML round-trips\n  ---\n  duration_ms: 26.502118\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 413.696084\n"
+}

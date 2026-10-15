@@ -1,0 +1,29 @@
+{
+  "id": "commander-zod-cli",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:27:58.191Z",
+  "last_passed_at": "2026-10-15T13:27:58.191Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1958,
+    "test": 629
+  },
+  "pinned": {
+    "commander": "15.0.0",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5"
+  },
+  "recipe_hash": "sha256:79685e4c1ac19c2ba66d3b32001ea23a10037b0a752c5033f82855278771a10e",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: add collects variadic text, repeatable tags and a default priority\nok 1 - add collects variadic text, repeatable tags and a default priority\n  ---\n  duration_ms: 4.941113\n  type: 'test'\n  ...\n# Subtest: choices() rejects an unknown priority with exit code 1\nok 2 - choices() rejects an unknown priority with exit code 1\n  ---\n  duration_ms: 0.659453\n  type: 'test'\n  ...\n# Subtest: zod refinements surface through program.error with a custom exit code\nok 3 - zod refinements surface through program.error with a custom exit code\n  ---\n  duration_ms: 0.896374\n  type: 'test'\n  ...\n# Subtest: list prints text or JSON and validates --min through a zod argParser\nok 4 - list prints text or JSON and validates --min through a zod argParser\n  ---\n  duration_ms: 2.485809\n  type: 'test'\n  ...\n# Subtest: --version and missing arguments exit through exitOverride\nok 5 - --version and missing arguments exit through exitOverride\n  ---\n  duration_ms: 0.691571\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 491.357407\n"
+}

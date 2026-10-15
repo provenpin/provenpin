@@ -1,0 +1,29 @@
+{
+  "id": "croner-zod-job-scheduler",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:27:51.971Z",
+  "last_passed_at": "2026-10-15T13:27:51.971Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2261,
+    "test": 3384
+  },
+  "pinned": {
+    "croner": "10.0.1",
+    "zod": "4.6.7",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5"
+  },
+  "recipe_hash": "sha256:c2909661a10dbdbf3eb8f144b177b82b7faa2dc2e2bce52b5bb46279476dd41e",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: rejects duplicate job names\nok 2 - rejects duplicate job names\n  ---\n  duration_ms: 2.00607\n  type: 'test'\n  ...\n# Subtest: previews runs in a timezone across a DST change\nok 3 - previews runs in a timezone across a DST change\n  ---\n  duration_ms: 9.05188\n  type: 'test'\n  ...\n# Subtest: supports last-day-of-month and weekday ranges\nok 4 - supports last-day-of-month and weekday ranges\n  ---\n  duration_ms: 4.418294\n  type: 'test'\n  ...\n# Subtest: runs a per-second job for maxRuns and then stops\nok 5 - runs a per-second job for maxRuns and then stops\n  ---\n  duration_ms: 2604.593557\n  type: 'test'\n  ...\n# Subtest: refuses to start when a handler is missing\nok 6 - refuses to start when a handler is missing\n  ---\n  duration_ms: 0.833062\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3222.767908\n"
+}

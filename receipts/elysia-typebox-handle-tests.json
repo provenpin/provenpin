@@ -1,0 +1,32 @@
+{
+  "id": "elysia-typebox-handle-tests",
+  "status": "passed",
+  "ran_at": "2026-10-15T13:28:39.864Z",
+  "last_passed_at": "2026-10-15T13:28:39.864Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3635,
+    "test": 621
+  },
+  "pinned": {
+    "elysia": "1.4.30",
+    "@sinclair/typebox": "0.34.52",
+    "exact-mirror": "1.2.6",
+    "file-type": "22.2.0",
+    "openapi-types": "12.1.3",
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5"
+  },
+  "recipe_hash": "sha256:4d508486cf22c42d573f256f89de0f4421da136101cfe83d4b7e1fe04844760c",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38742087302"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: public route works without a key\nok 1 - public route works without a key\n  ---\n  duration_ms: 33.961205\n  type: 'test'\n  ...\n# Subtest: guarded routes reject a missing API key\nok 2 - guarded routes reject a missing API key\n  ---\n  duration_ms: 8.000586\n  type: 'test'\n  ...\n# Subtest: creates a note and coerces path and query params\nok 3 - creates a note and coerces path and query params\n  ---\n  duration_ms: 15.812568\n  type: 'test'\n  ...\n# Subtest: TypeBox validation failures map to 422 with paths\nok 4 - TypeBox validation failures map to 422 with paths\n  ---\n  duration_ms: 9.254629\n  type: 'test'\n  ...\n# Subtest: unknown note ids return 404\nok 5 - unknown note ids return 404\n  ---\n  duration_ms: 2.094125\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 461.251315\n"
+}
