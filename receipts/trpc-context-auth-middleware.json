@@ -1,15 +1,15 @@
 {
   "id": "trpc-context-auth-middleware",
   "status": "passed",
-  "ran_at": "2026-10-15T13:04:05.007Z",
-  "last_passed_at": "2026-10-15T13:04:05.007Z",
+  "ran_at": "2026-10-15T13:11:54.814Z",
+  "last_passed_at": "2026-10-15T13:11:54.814Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3715,
-    "test": 471
+    "setup": 3321,
+    "test": 460
   },
   "pinned": {
     "@trpc/server": "11.19.0",
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38738622435"
+    "runner": "github-actions 38738874208"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: public works without a user\nok 1 - public works without a user\n  ---\n  duration_ms: 1.403491\n  type: 'test'\n  ...\n# Subtest: protected requires a user\nok 2 - protected requires a user\n  ---\n  duration_ms: 2.204187\n  type: 'test'\n  ...\n# Subtest: zod input errors become BAD_REQUEST\nok 3 - zod input errors become BAD_REQUEST\n  ---\n  duration_ms: 0.962769\n  type: 'test'\n  ...\n# Subtest: admin-only procedure\nok 4 - admin-only procedure\n  ---\n  duration_ms: 0.579783\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 321.726077\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: public works without a user\nok 1 - public works without a user\n  ---\n  duration_ms: 1.32116\n  type: 'test'\n  ...\n# Subtest: protected requires a user\nok 2 - protected requires a user\n  ---\n  duration_ms: 2.221723\n  type: 'test'\n  ...\n# Subtest: zod input errors become BAD_REQUEST\nok 3 - zod input errors become BAD_REQUEST\n  ---\n  duration_ms: 0.949855\n  type: 'test'\n  ...\n# Subtest: admin-only procedure\nok 4 - admin-only procedure\n  ---\n  duration_ms: 0.576407\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 309.69877\n"
 }

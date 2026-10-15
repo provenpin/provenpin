@@ -1,15 +1,15 @@
 {
   "id": "polars-pandera-validation",
   "status": "passed",
-  "ran_at": "2026-10-15T13:02:24.996Z",
-  "last_passed_at": "2026-10-15T13:02:24.996Z",
+  "ran_at": "2026-10-15T13:10:16.655Z",
+  "last_passed_at": "2026-10-15T13:10:16.655Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 694,
-    "test": 2831
+    "setup": 1177,
+    "test": 2991
   },
   "pinned": {
     "polars": "2.0.0",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38738622435"
+    "runner": "github-actions 38738874208"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.90s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.95s\n"
 }

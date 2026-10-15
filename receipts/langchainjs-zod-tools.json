@@ -1,15 +1,15 @@
 {
   "id": "langchainjs-zod-tools",
   "status": "passed",
-  "ran_at": "2026-10-15T13:01:13.056Z",
-  "last_passed_at": "2026-10-15T13:01:13.056Z",
+  "ran_at": "2026-10-15T13:08:57.058Z",
+  "last_passed_at": "2026-10-15T13:08:57.058Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4764,
-    "test": 631
+    "setup": 4695,
+    "test": 761
   },
   "pinned": {
     "@langchain/core": "1.2.17",
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38738622435"
+    "runner": "github-actions 38738874208"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: tool validates and runs directly\nok 1 - tool validates and runs directly\n  ---\n  duration_ms: 6.684077\n  type: 'test'\n  ...\n# Subtest: loop executes tool calls and returns final answer\nok 2 - loop executes tool calls and returns final answer\n  ---\n  duration_ms: 0.963811\n  type: 'test'\n  ...\n# Subtest: bad args are returned to the model as an error\nok 3 - bad args are returned to the model as an error\n  ---\n  duration_ms: 0.597018\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 488.917613\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: tool validates and runs directly\nok 1 - tool validates and runs directly\n  ---\n  duration_ms: 7.633821\n  type: 'test'\n  ...\n# Subtest: loop executes tool calls and returns final answer\nok 2 - loop executes tool calls and returns final answer\n  ---\n  duration_ms: 1.054347\n  type: 'test'\n  ...\n# Subtest: bad args are returned to the model as an error\nok 3 - bad args are returned to the model as an error\n  ---\n  duration_ms: 0.674956\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 591.034494\n"
 }
