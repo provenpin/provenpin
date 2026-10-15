@@ -1,15 +1,15 @@
 {
   "id": "jinja2-markupsafe-email-templates",
   "status": "passed",
-  "ran_at": "2026-10-15T13:08:55.153Z",
-  "last_passed_at": "2026-10-15T13:08:55.153Z",
+  "ran_at": "2026-10-15T13:15:55.451Z",
+  "last_passed_at": "2026-10-15T13:15:55.451Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 792,
-    "test": 1103
+    "setup": 258,
+    "test": 1331
   },
   "pinned": {
     "jinja2": "3.1.6",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38738874208"
+    "runner": "github-actions 38740169402"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.13s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.19s\n"
 }

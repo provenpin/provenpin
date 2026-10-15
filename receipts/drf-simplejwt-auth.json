@@ -1,15 +1,15 @@
 {
   "id": "drf-simplejwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-15T13:06:19.394Z",
-  "last_passed_at": "2026-10-15T13:06:19.394Z",
+  "ran_at": "2026-10-15T13:13:43.422Z",
+  "last_passed_at": "2026-10-15T13:13:43.422Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 746,
-    "test": 7347
+    "setup": 644,
+    "test": 6823
   },
   "pinned": {
     "django": "6.1.2",
@@ -23,8 +23,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38738874208"
+    "runner": "github-actions 38740169402"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 3.58s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 4.34s\n"
 }

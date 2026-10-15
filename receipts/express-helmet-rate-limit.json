@@ -1,15 +1,15 @@
 {
   "id": "express-helmet-rate-limit",
   "status": "passed",
-  "ran_at": "2026-10-15T13:06:40.062Z",
-  "last_passed_at": "2026-10-15T13:06:40.062Z",
+  "ran_at": "2026-10-15T13:14:02.700Z",
+  "last_passed_at": "2026-10-15T13:14:02.700Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3816,
-    "test": 560
+    "setup": 3531,
+    "test": 562
   },
   "pinned": {
     "express": "5.3.0",
@@ -26,8 +26,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38738874208"
+    "runner": "github-actions 38740169402"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sets security headers\nok 1 - sets security headers\n  ---\n  duration_ms: 40.623815\n  type: 'test'\n  ...\n# Subtest: returns 429 after the limit\nok 2 - returns 429 after the limit\n  ---\n  duration_ms: 10.393265\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 405.612088\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sets security headers\nok 1 - sets security headers\n  ---\n  duration_ms: 41.344558\n  type: 'test'\n  ...\n# Subtest: returns 429 after the limit\nok 2 - returns 429 after the limit\n  ---\n  duration_ms: 13.501258\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 412.043114\n"
 }

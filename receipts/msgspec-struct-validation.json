@@ -1,15 +1,15 @@
 {
   "id": "msgspec-struct-validation",
   "status": "passed",
-  "ran_at": "2026-10-15T13:09:16.854Z",
-  "last_passed_at": "2026-10-15T13:09:16.854Z",
+  "ran_at": "2026-10-15T13:16:29.281Z",
+  "last_passed_at": "2026-10-15T13:16:29.281Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 251,
-    "test": 1110
+    "setup": 320,
+    "test": 1091
   },
   "pinned": {
     "msgspec": "0.22.0",
@@ -20,8 +20,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38738874208"
+    "runner": "github-actions 38740169402"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.03s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.02s\n"
 }
