@@ -1,0 +1,28 @@
+{
+  "id": "handlebars-email-templates",
+  "status": "passed",
+  "ran_at": "2026-10-15T14:59:33.591Z",
+  "last_passed_at": "2026-10-15T14:59:33.591Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1953,
+    "test": 438
+  },
+  "pinned": {
+    "handlebars": "4.7.10",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:eb0f4a01790e5ed4b5cb6f6032927be9e4d46155f40c4f0ece5032778b293b7e",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38755782594"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders invoice with partials and helpers\nok 1 - renders invoice with partials and helpers\n  ---\n  duration_ms: 12.008105\n  type: 'test'\n  ...\n# Subtest: escapes HTML in names\nok 2 - escapes HTML in names\n  ---\n  duration_ms: 0.348109\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 242.418322\n"
+}

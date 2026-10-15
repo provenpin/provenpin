@@ -1,15 +1,15 @@
 {
   "id": "zod-env-dotenv-config",
   "status": "passed",
-  "ran_at": "2026-10-15T14:18:31.956Z",
-  "last_passed_at": "2026-10-15T14:18:31.956Z",
+  "ran_at": "2026-10-15T15:05:43.673Z",
+  "last_passed_at": "2026-10-15T15:05:43.673Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2224,
-    "test": 466
+    "setup": 2482,
+    "test": 735
   },
   "pinned": {
     "zod": "4.6.7",
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38748988915"
+    "runner": "github-actions 38755782594"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: coerces and defaults\nok 1 - coerces and defaults\n  ---\n  duration_ms: 3.143017\n  type: 'test'\n  ...\n# Subtest: reads a .env file without overriding real env\nok 2 - reads a .env file without overriding real env\n  ---\n  duration_ms: 1.230266\n  type: 'test'\n  ...\n# Subtest: readable error listing every bad key\nok 3 - readable error listing every bad key\n  ---\n  duration_ms: 1.280711\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 324.939249\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: coerces and defaults\nok 1 - coerces and defaults\n  ---\n  duration_ms: 3.16105\n  type: 'test'\n  ...\n# Subtest: reads a .env file without overriding real env\nok 2 - reads a .env file without overriding real env\n  ---\n  duration_ms: 1.224586\n  type: 'test'\n  ...\n# Subtest: readable error listing every bad key\nok 3 - readable error listing every bad key\n  ---\n  duration_ms: 1.263078\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 500.160902\n"
 }

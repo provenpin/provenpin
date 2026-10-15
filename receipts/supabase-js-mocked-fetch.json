@@ -1,15 +1,15 @@
 {
   "id": "supabase-js-mocked-fetch",
-  "status": "passed",
-  "ran_at": "2026-10-15T14:17:53.870Z",
+  "status": "setup_failed",
+  "ran_at": "2026-10-15T15:04:24.512Z",
   "last_passed_at": "2026-10-15T14:17:53.870Z",
   "tests": {
-    "passed": 4,
-    "failed": 0
+    "passed": 0,
+    "failed": 1
   },
   "duration_ms": {
-    "setup": 7417,
-    "test": 790
+    "setup": 6795,
+    "test": 0
   },
   "pinned": {
     "@supabase/supabase-js": "2.117.3",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38748988915"
+    "runner": "github-actions 38755782594"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-supabase-js-mocked-fetch-zRVYkm\u001b[39m\n\n \u001b[32m✓\u001b[39m test/todos.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 36\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:18:01\n\u001b[2m   Duration \u001b[22m 242ms\u001b[2m (transform 38%, import 32%, tests 27%, worker 3%)\u001b[22m\n\nJSON report written to /tmp/pp-supabase-js-mocked-fetch-zRVYkm/test-report.json\n"
+  "log_tail": "npm error Cannot read properties of null (reading 'edgesOut')\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T15_04_24_568Z-debug-0.log\n"
 }

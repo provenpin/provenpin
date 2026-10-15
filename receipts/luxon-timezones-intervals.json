@@ -1,15 +1,15 @@
 {
   "id": "luxon-timezones-intervals",
   "status": "passed",
-  "ran_at": "2026-10-15T14:15:00.548Z",
-  "last_passed_at": "2026-10-15T14:15:00.548Z",
+  "ran_at": "2026-10-15T15:00:57.062Z",
+  "last_passed_at": "2026-10-15T15:00:57.062Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1733,
-    "test": 430
+    "setup": 2571,
+    "test": 379
   },
   "pinned": {
     "luxon": "3.7.2",
@@ -22,8 +22,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38748988915"
+    "runner": "github-actions 38755782594"
   },
   "errors": [],
-  "log_tail": "# Subtest: zone conversion keeps the instant\nok 1 - zone conversion keeps the instant\n  ---\n  duration_ms: 41.417852\n  type: 'test'\n  ...\n# Subtest: business hours in the caller's zone\nok 2 - business hours in the caller's zone\n  ---\n  duration_ms: 1.324591\n  type: 'test'\n  ...\n# Subtest: interval overlap\nok 3 - interval overlap\n  ---\n  duration_ms: 1.199933\n  type: 'test'\n  ...\n# Subtest: month math clamps to month end; durations read well\nok 4 - month math clamps to month end; durations read well\n  ---\n  duration_ms: 24.587333\n  type: 'test'\n  ...\n# Subtest: invalid input throws\nok 5 - invalid input throws\n  ---\n  duration_ms: 0.494621\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 292.405476\n"
+  "log_tail": "# Subtest: zone conversion keeps the instant\nok 1 - zone conversion keeps the instant\n  ---\n  duration_ms: 33.965845\n  type: 'test'\n  ...\n# Subtest: business hours in the caller's zone\nok 2 - business hours in the caller's zone\n  ---\n  duration_ms: 1.230823\n  type: 'test'\n  ...\n# Subtest: interval overlap\nok 3 - interval overlap\n  ---\n  duration_ms: 1.374351\n  type: 'test'\n  ...\n# Subtest: month math clamps to month end; durations read well\nok 4 - month math clamps to month end; durations read well\n  ---\n  duration_ms: 9.366563\n  type: 'test'\n  ...\n# Subtest: invalid input throws\nok 5 - invalid input throws\n  ---\n  duration_ms: 0.444982\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 234.029882\n"
 }

@@ -1,0 +1,28 @@
+{
+  "id": "decimal-js-money-math",
+  "status": "passed",
+  "ran_at": "2026-10-15T14:57:16.384Z",
+  "last_passed_at": "2026-10-15T14:57:16.384Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1504,
+    "test": 706
+  },
+  "pinned": {
+    "decimal.js": "10.6.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:f19e4390b06efaabbdceeca00494557d3c8f390b41354e3b8d9f1fd52c77048f",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38755782594"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: avoids float drift on line totals\nok 1 - avoids float drift on line totals\n  ---\n  duration_ms: 0.96456\n  type: 'test'\n  ...\n# Subtest: applies tax and discount\nok 2 - applies tax and discount\n  ---\n  duration_ms: 0.50523\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 544.601485\n"
+}

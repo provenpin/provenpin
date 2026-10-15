@@ -1,15 +1,15 @@
 {
   "id": "rq-fakeredis-jobs",
   "status": "passed",
-  "ran_at": "2026-10-15T14:17:17.655Z",
-  "last_passed_at": "2026-10-15T14:17:17.655Z",
+  "ran_at": "2026-10-15T15:03:26.648Z",
+  "last_passed_at": "2026-10-15T15:03:26.648Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 317,
-    "test": 2183
+    "setup": 396,
+    "test": 3102
   },
   "pinned": {
     "rq": "2.12.0",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38748988915"
+    "runner": "github-actions 38755782594"
   },
   "errors": [],
-  "log_tail": "..                                                                       [100%]\n2 passed in 1.15s\n"
+  "log_tail": "..                                                                       [100%]\n2 passed in 1.64s\n"
 }

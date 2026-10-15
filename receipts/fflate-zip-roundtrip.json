@@ -1,0 +1,28 @@
+{
+  "id": "fflate-zip-roundtrip",
+  "status": "passed",
+  "ran_at": "2026-10-15T14:59:14.898Z",
+  "last_passed_at": "2026-10-15T14:59:14.898Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1626,
+    "test": 859
+  },
+  "pinned": {
+    "fflate": "0.8.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:8f69d78b1ab59c25c551223a4a4bf10e7899ae0952203a1efa5cfc92de536bd6",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38755782594"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: zip roundtrip preserves files\nok 1 - zip roundtrip preserves files\n  ---\n  duration_ms: 2.515089\n  type: 'test'\n  ...\n# Subtest: gzip roundtrip\nok 2 - gzip roundtrip\n  ---\n  duration_ms: 0.530703\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 705.77653\n"
+}

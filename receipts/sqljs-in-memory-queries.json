@@ -1,0 +1,28 @@
+{
+  "id": "sqljs-in-memory-queries",
+  "status": "passed",
+  "ran_at": "2026-10-15T15:04:11.051Z",
+  "last_passed_at": "2026-10-15T15:04:11.051Z",
+  "tests": {
+    "passed": 1,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2018,
+    "test": 471
+  },
+  "pinned": {
+    "sql.js": "1.15.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:46a527a631e80b67eab31b27a632031156dfd849fde3de4d3eda198594610fde",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38755782594"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: crud and roundtrip export\nok 1 - crud and roundtrip export\n  ---\n  duration_ms: 45.934268\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 326.903237\n"
+}
