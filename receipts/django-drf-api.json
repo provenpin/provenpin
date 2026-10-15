@@ -1,0 +1,29 @@
+{
+  "id": "django-drf-api",
+  "status": "passed",
+  "ran_at": "2026-10-15T10:33:14.057Z",
+  "last_passed_at": "2026-10-15T10:33:14.057Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 657,
+    "test": 3626
+  },
+  "pinned": {
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "pytest-django": "4.14.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:be23abaa13b8435dc91585f797188caa52b2b2009ac1425254a8ae661340ec54",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38721040568"
+  },
+  "errors": [],
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.82s\n"
+}

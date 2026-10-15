@@ -1,15 +1,15 @@
 {
   "id": "pydantic-settings-config",
   "status": "passed",
-  "ran_at": "2026-10-15T09:48:30.140Z",
-  "last_passed_at": "2026-10-15T09:48:30.140Z",
+  "ran_at": "2026-10-15T10:34:24.117Z",
+  "last_passed_at": "2026-10-15T10:34:24.117Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 429,
-    "test": 1211
+    "setup": 346,
+    "test": 1700
   },
   "pinned": {
     "pydantic": "2.14.1",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38715522384"
+    "runner": "github-actions 38721040568"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 0.60s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.71s\n"
 }

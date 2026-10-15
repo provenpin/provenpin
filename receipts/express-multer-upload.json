@@ -1,0 +1,33 @@
+{
+  "id": "express-multer-upload",
+  "status": "passed",
+  "ran_at": "2026-10-15T10:33:10.877Z",
+  "last_passed_at": "2026-10-15T10:33:10.877Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3400,
+    "test": 547
+  },
+  "pinned": {
+    "express": "5.3.0",
+    "multer": "2.4.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/express": "5.0.6",
+    "@types/multer": "2.3.0"
+  },
+  "recipe_hash": "sha256:f991ab06c4c033bb098ceb29226968afeaac2c775b9da5cf9ae9b1de297fbe24",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38721040568"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a small png\nok 1 - accepts a small png\n  ---\n  duration_ms: 45.202052\n  type: 'test'\n  ...\n# Subtest: rejects the wrong type\nok 2 - rejects the wrong type\n  ---\n  duration_ms: 7.466306\n  type: 'test'\n  ...\n# Subtest: rejects files over the limit with 413\nok 3 - rejects files over the limit with 413\n  ---\n  duration_ms: 9.260411\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 403.29949\n"
+}

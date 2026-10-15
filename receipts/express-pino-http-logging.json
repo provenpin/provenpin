@@ -1,0 +1,33 @@
+{
+  "id": "express-pino-http-logging",
+  "status": "passed",
+  "ran_at": "2026-10-15T10:33:23.201Z",
+  "last_passed_at": "2026-10-15T10:33:23.201Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2993,
+    "test": 467
+  },
+  "pinned": {
+    "express": "5.3.0",
+    "pino": "10.4.0",
+    "pino-http": "11.0.0",
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/express": "5.0.6"
+  },
+  "recipe_hash": "sha256:0aa114efe871dd69be71bc632596133ae8340e320bd97e8388b0d07d2ce41532",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38721040568"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: logs with request id and redacts auth\nok 1 - logs with request id and redacts auth\n  ---\n  duration_ms: 68.623024\n  type: 'test'\n  ...\n# Subtest: generates a request id when none is sent\nok 2 - generates a request id when none is sent\n  ---\n  duration_ms: 7.567679\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 347.446429\n"
+}
