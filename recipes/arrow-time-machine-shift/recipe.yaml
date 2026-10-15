@@ -1,0 +1,19 @@
+id: arrow-time-machine-shift
+title: "Arrow date shifting and humanize with clocks frozen by time-machine"
+summary: "Shift Arrow dates by calendar units, humanize relative times, and pin the clock with time-machine so the output is deterministic offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [arrow, time-machine]
+tags: [dates, time, testing]
+pinned:
+  arrow: "1.4.0"
+  time-machine: "3.5.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - scheduling.py
+  - tests/test_shifts.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,19 @@
+id: click-rich-progress
+title: "Click CLI with rich Progress bars and Status for batch work"
+summary: "A Click command normalizes a batch while rich draws a Progress bar and a Status spinner, with tests that pin down terminal detection, transient output and ANSI stripping."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [click, rich]
+tags: [cli, progress, terminal-ui]
+pinned:
+  click: "8.5.0"
+  rich: "15.0.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - cli.py
+  - tests/test_cli.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

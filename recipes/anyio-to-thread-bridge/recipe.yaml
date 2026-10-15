@@ -1,0 +1,19 @@
+id: anyio-to-thread-bridge
+title: "anyio to_thread and from_thread bridging sync work under pytest-asyncio"
+summary: "Run blocking code in worker threads with anyio.to_thread, call back into async code from those threads with anyio.from_thread, and test the whole bridge offline with pytest-asyncio."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [anyio, pytest-asyncio]
+tags: [async, threading, testing, concurrency]
+pinned:
+  anyio: "4.15.1"
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - bridge.py
+  - tests/test_bridge.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,19 @@
+id: bleach-markupsafe-html
+title: "bleach HTML sanitizer + MarkupSafe Markup"
+summary: "Sanitize untrusted HTML with bleach, then wrap the safe result in MarkupSafe Markup so it embeds in templates without double escaping."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [bleach, markupsafe]
+tags: [html, security, sanitization, templating]
+pinned:
+  bleach: "6.4.0"
+  markupsafe: "3.0.4"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - sanitizer.py
+  - tests/test_sanitizer.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

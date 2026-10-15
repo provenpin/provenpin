@@ -1,0 +1,19 @@
+id: dramatiq-stub-broker-testing
+title: "Dramatiq actors run inline with StubBroker and results middleware"
+summary: "Define Dramatiq actors that store results, run them synchronously against a StubBroker with a background Worker, and assert on results, failures and async actors offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [dramatiq]
+tags: [queues, background-jobs, testing]
+pinned:
+  dramatiq: "2.2.1"
+  pytest: "9.1.1"
+  pytest-asyncio: "1.4.0"
+files:
+  - requirements.txt
+  - tasks.py
+  - tests/test_tasks.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

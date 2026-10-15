@@ -1,0 +1,19 @@
+id: marshmallow-dataclass-schema
+title: "marshmallow-dataclass schemas: nested load, dump and validation"
+summary: "Generate marshmallow schemas from dataclasses to load, dump and validate nested records, including typed nested objects, field renaming and path-aware ValidationErrors."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [marshmallow-dataclass, marshmallow]
+tags: [serialization, validation, dataclasses]
+pinned:
+  marshmallow-dataclass: "8.7.1"
+  marshmallow: "4.3.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - schemas.py
+  - tests/test_schemas.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

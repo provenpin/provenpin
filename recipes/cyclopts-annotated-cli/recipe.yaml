@@ -1,0 +1,18 @@
+id: cyclopts-annotated-cli
+title: "Cyclopts CLI with Annotated types and rich help"
+summary: "A typed Cyclopts command using Annotated Parameter help text and enum/int/list coercion, invoked offline in tests with captured stdout, stderr and return values."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [cyclopts]
+tags: [cli, argument-parsing, testing]
+pinned:
+  cyclopts: "5.2.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - cli.py
+  - tests/test_cli.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

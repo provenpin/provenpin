@@ -1,0 +1,20 @@
+id: starlette-httpx-asgi-client
+title: "Starlette routes and middleware tested offline with httpx ASGITransport"
+summary: "A Starlette app with BaseHTTPMiddleware and lifespan state, exercised in-process via httpx ASGITransport without a real server."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [starlette, httpx]
+tags: [web, asgi, testing, async]
+pinned:
+  starlette: "1.8.0"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+  pytest-asyncio: "1.4.0"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

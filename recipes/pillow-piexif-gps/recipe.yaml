@@ -1,0 +1,19 @@
+id: pillow-piexif-gps
+title: "Pillow + piexif EXIF GPS tags"
+summary: "Read and write decimal GPS coordinates as EXIF rationals on JPEGs with piexif, then cross-check the same tags through Pillow's Exif IFD."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pillow, piexif]
+tags: [images, exif, geotagging, metadata]
+pinned:
+  pillow: "12.3.0"
+  piexif: "1.1.3"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - gps.py
+  - tests/test_gps.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,19 @@
+id: feedparser-pydantic-models
+title: "feedparser XML fixtures into pydantic v2 models"
+summary: "Convert RSS and Atom feeds parsed by feedparser, including struct_time dates and tags, into validated pydantic v2 models with offline XML fixtures."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [feedparser, pydantic]
+tags: [parsing, xml, data-validation, testing]
+pinned:
+  feedparser: "6.0.14"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - feed.py
+  - tests/test_feed.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

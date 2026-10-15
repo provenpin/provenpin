@@ -1,0 +1,19 @@
+id: orjson-pydantic-v2-roundtrip
+title: "orjson + Pydantic v2 model round trip"
+summary: "Serialize Pydantic v2 models to bytes with orjson through a default fallback and option flags, then validate them back offline with TypeAdapter."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [orjson, pydantic]
+tags: [serialization, json, pydantic]
+pinned:
+  orjson: "3.13.0"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - codec.py
+  - tests/test_codec.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

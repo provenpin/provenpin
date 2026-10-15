@@ -1,0 +1,19 @@
+id: attrs-cattrs-json-roundtrip
+title: "attrs classes + cattrs JSON dict round-trip"
+summary: "Nested attrs classes with enums, datetimes and defaults, structured and unstructured to JSON dicts with cattrs' preconfigured json converter."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [attrs, cattrs]
+tags: [serialization, json, data-modeling]
+pinned:
+  attrs: "26.1.0"
+  cattrs: "26.2.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - tests/test_roundtrip.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

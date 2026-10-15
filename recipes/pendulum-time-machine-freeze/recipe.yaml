@@ -1,0 +1,19 @@
+id: pendulum-time-machine-freeze
+title: "Pendulum DateTime arithmetic and timezone shifts frozen with time-machine"
+summary: "Freeze the clock with time-machine to test Pendulum month-end clamping, DST-safe day additions and timezone shifts fully offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pendulum, time-machine]
+tags: [datetime, timezones, testing]
+pinned:
+  pendulum: "3.3.0"
+  time-machine: "3.5.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - clock.py
+  - tests/test_clock.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
