@@ -1,26 +1,27 @@
 {
   "id": "ioredis-cache-aside-mock",
   "status": "passed",
-  "ran_at": "2026-10-15T18:50:34.891Z",
-  "last_passed_at": "2026-10-15T18:50:34.891Z",
+  "ran_at": "2026-10-15T23:54:16.758Z",
+  "last_passed_at": "2026-10-15T23:54:16.758Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4874,
-    "test": 956
+    "setup": 4629,
+    "test": 483
   },
   "pinned": {
-    "ioredis": "5.11.1",
+    "ioredis": "6.0.0",
     "@types/node": "24.19.2",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
+    "vite": "8.3.4",
     "ioredis-mock": "8.13.1"
   },
-  "recipe_hash": "sha256:f8be56e42616f3de1ed754e39978ac502652d9a38d6ee122fbbf7b1bfad9be4d",
+  "recipe_hash": "sha256:1b66be19c8414c2e7c54c38e5ed1166783d17d341879cde384e1752211471c75",
   "files": {
-    "recipes/ioredis-cache-aside-mock/package.json": "sha256:8657c2db6759686278a718225c9e8b74dcfe18145e98eac5b86be982c93727c6",
-    "recipes/ioredis-cache-aside-mock/recipe.yaml": "sha256:f1951be1315385040fe4e332015a44fbab793579b2743c739347ee6a06414bc4",
+    "recipes/ioredis-cache-aside-mock/package.json": "sha256:14ff0dd196f9435731f054a98b8a6bb85110c26304fb95facdac0e180495d901",
+    "recipes/ioredis-cache-aside-mock/recipe.yaml": "sha256:46e42cb75b378bbacefb692c052ed34e90348a41fd9dd7f56a2d46514929597b",
     "recipes/ioredis-cache-aside-mock/src/cache.ts": "sha256:995847d2ae92068b6a288f1fb6c0f61243e2f72d034684ac8e4d687c0a4a7f46",
     "recipes/ioredis-cache-aside-mock/test/cache.test.ts": "sha256:c5ea3747dd7af1427c4eeec6b2ae11017326772aee667862d9da5eafa2cf7d08"
   },
@@ -28,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38788473612"
+    "runner": "github-actions 38826298448"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-ioredis-cache-aside-mock-3xbciw\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cache.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 23\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:50:40\n\u001b[2m   Duration \u001b[22m 274ms\u001b[2m (import 48%, transform 36%, tests 14%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-ioredis-cache-aside-mock-3xbciw/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-ioredis-cache-aside-mock-ELgGEH\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cache.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 19\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 23:54:21\n\u001b[2m   Duration \u001b[22m 167ms\u001b[2m (import 54%, transform 24%, tests 20%, worker 3%)\u001b[22m\n\nJSON report written to /tmp/pp-ioredis-cache-aside-mock-ELgGEH/test-report.json\n"
 }
