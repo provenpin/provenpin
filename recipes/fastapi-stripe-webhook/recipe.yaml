@@ -1,0 +1,21 @@
+id: fastapi-stripe-webhook
+title: "FastAPI + Stripe webhook signature verification"
+summary: "Verify Stripe webhook signatures in FastAPI from the raw request body and dispatch on event type. Tested offline with locally signed payloads."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, stripe]
+tags: [payments, webhooks, stripe]
+pinned:
+  fastapi: "0.143.1"
+  stripe: "16.0.0"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app/__init__.py
+  - app/main.py
+  - tests/test_webhook.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

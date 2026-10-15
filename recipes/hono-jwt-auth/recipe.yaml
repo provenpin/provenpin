@@ -1,0 +1,20 @@
+id: hono-jwt-auth
+title: "Hono + hono/jwt bearer auth with Zod login"
+summary: "Issue HS256 JWTs from a Zod-validated login route in Hono and guard routes with the built-in jwt middleware."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [hono, zod, "@hono/zod-validator"]
+tags: [auth, jwt, edge]
+pinned:
+  "hono": "4.13.13"
+  "zod": "4.6.7"
+  "@hono/zod-validator": "0.9.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

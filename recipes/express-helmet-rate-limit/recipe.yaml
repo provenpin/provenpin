@@ -1,0 +1,23 @@
+id: express-helmet-rate-limit
+title: "Express 5 + Helmet + express-rate-limit hardening"
+summary: "Add security headers with Helmet and per-IP rate limiting with express-rate-limit to an Express 5 API."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [express, helmet, express-rate-limit]
+tags: [security, rate-limit, headers]
+pinned:
+  "express": "5.3.0"
+  "helmet": "8.3.0"
+  "express-rate-limit": "8.7.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "supertest": "7.3.1"
+  "@types/supertest": "7.2.1"
+  "@types/express": "5.0.6"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,19 @@
+id: bcryptjs-jose-sessions
+title: "bcryptjs password hashing + jose JWT sessions"
+summary: "Hash passwords with bcryptjs and issue and verify signed JWT session tokens with jose. Framework-agnostic auth core."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [bcryptjs, jose]
+tags: [auth, passwords, jwt, sessions]
+pinned:
+  "bcryptjs": "3.0.3"
+  "jose": "6.2.12"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/auth.ts
+  - test/auth.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

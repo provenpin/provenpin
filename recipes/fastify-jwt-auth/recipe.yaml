@@ -1,0 +1,19 @@
+id: fastify-jwt-auth
+title: "Fastify 5 + @fastify/jwt protected routes"
+summary: "Sign and verify JWTs in Fastify 5 with @fastify/jwt and an authenticate preHandler that guards routes."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fastify, "@fastify/jwt"]
+tags: [auth, jwt, api]
+pinned:
+  "fastify": "5.12.7"
+  "@fastify/jwt": "10.2.4"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

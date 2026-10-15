@@ -1,0 +1,9 @@
+SECRET_KEY = "test-only"
+DEBUG = True
+ALLOWED_HOSTS = ["*"]
+INSTALLED_APPS = ["django.contrib.contenttypes", "django.contrib.auth", "rest_framework", "books"]
+DATABASES = {"default": {"ENGINE": "django.db.backends.sqlite3", "NAME": ":memory:"}}
+ROOT_URLCONF = "urls"
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+USE_TZ = True
+REST_FRAMEWORK = {"DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticatedOrReadOnly"]}

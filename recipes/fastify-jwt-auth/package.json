@@ -1,0 +1,16 @@
+{
+  "name": "fastify-jwt-auth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "fastify": "5.12.7",
+    "@fastify/jwt": "10.2.4"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  }
+}

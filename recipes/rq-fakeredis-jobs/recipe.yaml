@@ -1,0 +1,19 @@
+id: rq-fakeredis-jobs
+title: "RQ background jobs tested with fakeredis"
+summary: "Enqueue Redis Queue (RQ) jobs and process them with a SimpleWorker against fakeredis, so queue tests run offline with no Redis server."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [rq, fakeredis]
+tags: [queues, background-jobs, redis]
+pinned:
+  rq: "2.12.0"
+  fakeredis: "2.40.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - jobs.py
+  - tests/test_jobs.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

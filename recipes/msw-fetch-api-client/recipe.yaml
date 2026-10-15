@@ -1,0 +1,19 @@
+id: msw-fetch-api-client
+title: "Typed fetch API client tested with MSW + Zod"
+summary: "A typed fetch client that parses responses with Zod, tested offline by intercepting requests with MSW's Node server."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [msw, zod]
+tags: [testing, mocking, http-client]
+pinned:
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "msw": "3.0.3"
+files:
+  - package.json
+  - src/client.ts
+  - test/client.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

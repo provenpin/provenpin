@@ -1,0 +1,25 @@
+id: django-drf-api
+title: "Django 6 + Django REST Framework model API with pytest-django"
+summary: "A DRF ModelViewSet with a serializer, router and token-free permissions, tested with pytest-django and APIClient on in-memory SQLite."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [django, djangorestframework, pytest-django]
+tags: [api, rest, orm, crud]
+pinned:
+  django: "6.1.2"
+  djangorestframework: "3.18.3"
+  pytest-django: "4.14.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - settings.py
+  - urls.py
+  - books/__init__.py
+  - books/models.py
+  - books/serializers.py
+  - books/views.py
+  - tests/test_books.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

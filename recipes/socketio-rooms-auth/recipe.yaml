@@ -1,0 +1,19 @@
+id: socketio-rooms-auth
+title: "Socket.IO 4 rooms with handshake auth"
+summary: "Socket.IO server with token auth in the handshake middleware and room-scoped broadcasts, tested with socket.io-client."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [socket.io, socket.io-client]
+tags: [realtime, websockets, rooms]
+pinned:
+  "socket.io": "4.8.4"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "socket.io-client": "4.8.4"
+files:
+  - package.json
+  - src/server.ts
+  - test/server.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

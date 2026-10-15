@@ -1,0 +1,16 @@
+{
+  "name": "bcryptjs-jose-sessions",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "bcryptjs": "3.0.3",
+    "jose": "6.2.12"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  }
+}
