@@ -1,8 +1,12 @@
+import re
+
 from typer.testing import CliRunner
 
 from app import app, render_table
 
 runner = CliRunner()
+# CI runners (GITHUB_ACTIONS, FORCE_COLOR) make rich emit ANSI styles; strip them before matching.
+ANSI = re.compile(r"\x1b\[[0-9;]*m")
 
 
 def test_run_renders_summary_table():
@@ -34,8 +38,9 @@ def test_invalid_value_exits_with_code_2():
 def test_help_is_rendered_by_rich():
     result = runner.invoke(app, ["--help"])
     assert result.exit_code == 0
-    assert "Arguments" in result.stdout
-    assert "\u256d\u2500 Arguments" in result.stdout
+    plain = ANSI.sub("", result.stdout)
+    assert "Arguments" in plain
+    assert "\u256d\u2500 Arguments" in plain
 
 
 def test_ascii_box_is_deterministic():
