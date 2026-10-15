@@ -1,0 +1,19 @@
+id: jsonwebtoken-hs256-rs256
+title: "jsonwebtoken HS256 and RS256"
+summary: "Sign and verify JSON Web Tokens with jsonwebtoken: HS256 secrets plus RS256 RSA keys from node:crypto, with deterministic expiry via clockTimestamp, issuer and audience checks, and rejection of the none algorithm."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [jsonwebtoken]
+tags: [jwt, auth, crypto, security]
+pinned:
+  "jsonwebtoken": "9.0.3"
+  "@types/jsonwebtoken": "9.0.10"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/tokens.ts
+  - test/tokens.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,21 @@
+id: babel-codemod-parse-traverse
+title: "Babel codemod: rename bindings and prune console.log"
+summary: "Parse TypeScript with @babel/parser, rename identifier bindings through scope.rename, drop console.log calls with @babel/traverse, and emit code with @babel/generator while handling the ESM/CJS default-export interop offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@babel/parser", "@babel/traverse", "@babel/generator", "@babel/types"]
+tags: [ast, codemod, babel, refactor]
+pinned:
+  "@babel/parser": "8.0.7"
+  "@babel/traverse": "8.0.7"
+  "@babel/generator": "8.0.6"
+  "@babel/types": "8.0.6"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/codemod.ts
+  - test/codemod.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

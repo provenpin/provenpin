@@ -1,0 +1,16 @@
+{
+  "name": "dexie-fake-indexeddb-store",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "dexie": "4.4.6",
+    "fake-indexeddb": "6.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

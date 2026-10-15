@@ -1,0 +1,18 @@
+id: viem-offline-sign-verify
+title: "viem offline sign and verify"
+summary: "Create a local viem account from a fixed test private key fully offline: sign and verify a message, sign EIP-712 typed data and recover the signer, and round-trip an ERC-20 transfer call with encodeFunctionData/decodeFunctionData and parseUnits/formatUnits."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [viem]
+tags: [ethereum, viem, signing, eip712, erc20]
+pinned:
+  "viem": "2.57.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/sign.ts
+  - test/sign.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

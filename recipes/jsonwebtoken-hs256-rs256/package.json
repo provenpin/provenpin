@@ -1,0 +1,16 @@
+{
+  "name": "jsonwebtoken-hs256-rs256",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "jsonwebtoken": "9.0.3"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "9.0.10",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

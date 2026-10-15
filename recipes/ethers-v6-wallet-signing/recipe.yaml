@@ -1,0 +1,18 @@
+id: ethers-v6-wallet-signing
+title: "ethers v6 offline wallet signing"
+summary: "Sign and verify plain messages and EIP-712 typed data with an ethers v6 Wallet, encode/decode ERC-20 transfer calldata, and convert token units, all fully offline with no provider."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ethers]
+tags: [ethers, wallet, signing, eip712, erc20]
+pinned:
+  "ethers": "6.17.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/wallet.ts
+  - test/wallet.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,10 @@
+{
+  "name": "qs-nested-query-strings",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {"qs":"6.16.1"},
+  "devDependencies": {"@types/qs":"6.15.1","@types/node":"26.6.5","tsx":"4.23.15"}
+}

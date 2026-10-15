@@ -1,0 +1,18 @@
+id: sass-compile-string-importer
+title: "sass compileString with in-memory importer"
+summary: "Compile Sass from a string with dart-sass, using variables and mixins from an in-memory @use module provided by a custom canonicalize/load importer, compressed output, and an undefined-variable error assertion, all offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [sass]
+tags: [sass, scss, css, compiler]
+pinned:
+  "sass": "1.105.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/compiler.ts
+  - test/compiler.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

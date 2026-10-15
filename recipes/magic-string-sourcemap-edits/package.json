@@ -1,0 +1,16 @@
+{
+  "name": "magic-string-sourcemap-edits",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "magic-string": "1.4.3",
+    "source-map-js": "1.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

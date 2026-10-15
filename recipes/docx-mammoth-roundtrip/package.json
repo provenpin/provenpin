@@ -1,0 +1,16 @@
+{
+  "name": "docx-mammoth-roundtrip",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "docx": "9.11.0",
+    "mammoth": "1.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

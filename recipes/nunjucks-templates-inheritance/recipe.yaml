@@ -1,0 +1,19 @@
+id: nunjucks-templates-inheritance
+title: "nunjucks template inheritance"
+summary: "Render nunjucks templates from a temp dir with a FileSystemLoader, covering extends/block inheritance, an imported macro, a custom filter and autoescape with the |safe filter, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [nunjucks]
+tags: [templates, nunjucks, inheritance, autoescape]
+pinned:
+  "nunjucks": "3.2.4"
+  "@types/nunjucks": "3.2.6"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/render.ts
+  - test/render.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

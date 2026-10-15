@@ -1,0 +1,18 @@
+id: terser-minify-sourcemap
+title: "terser async minify with source maps"
+summary: "Minify JavaScript asynchronously with terser using compress (drop_console) and mangle options plus a source map, then assert the output is smaller, contains no console calls and still runs correctly when evaluated with node:vm offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [terser]
+tags: [minify, terser, sourcemap, tooling]
+pinned:
+  "terser": "5.51.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/minify.ts
+  - test/minify.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

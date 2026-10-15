@@ -1,0 +1,18 @@
+id: cron-parser-next-runs
+title: "cron-parser next run dates"
+summary: "Parse cron expressions with cron-parser v5, compute next and previous run dates against a fixed currentDate and tz, iterate with take, and reject invalid expressions offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [cron-parser]
+tags: [cron, scheduling, dates]
+pinned:
+  "cron-parser": "5.10.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/scheduler.ts
+  - test/scheduler.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

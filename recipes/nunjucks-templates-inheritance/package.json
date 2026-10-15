@@ -1,0 +1,16 @@
+{
+  "name": "nunjucks-templates-inheritance",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "nunjucks": "3.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/nunjucks": "3.2.6",
+    "tsx": "4.23.15"
+  }
+}

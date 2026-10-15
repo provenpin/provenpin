@@ -1,0 +1,18 @@
+id: shiki-highlight-html
+title: "Shiki highlight to HTML"
+summary: "Highlight TypeScript and JSON offline with Shiki's createHighlighter, producing HTML for a single theme and dual themes plus raw tokens, then dispose the highlighter."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [shiki]
+tags: [highlighting, html, syntax]
+pinned:
+  "shiki": "4.5.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/highlight.ts
+  - test/highlight.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

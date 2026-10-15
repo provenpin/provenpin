@@ -1,0 +1,19 @@
+id: magic-string-sourcemap-edits
+title: "magic-string sourcemap edits"
+summary: "Overwrite, prependLeft, append and remove ranges in a source string with magic-string, generate a hires source map and verify positions with source-map-js SourceMapConsumer.originalPositionFor offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [magic-string, source-map-js]
+tags: [sourcemap, code-edits, transform]
+pinned:
+  "magic-string": "1.4.3"
+  "source-map-js": "1.2.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/transform.ts
+  - test/transform.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

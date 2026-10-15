@@ -1,0 +1,19 @@
+id: dexie-fake-indexeddb-store
+title: "Dexie 4 store on fake-indexeddb"
+summary: "Build an offline Dexie 4 database in Node backed by fake-indexeddb, covering indexed and compound indexes, bulkAdd, where/between/equals queries, updates and a transaction that rolls back on throw."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [dexie, fake-indexeddb]
+tags: [database, indexeddb, dexie, testing]
+pinned:
+  "dexie": "4.4.6"
+  "fake-indexeddb": "6.2.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/store.ts
+  - test/store.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

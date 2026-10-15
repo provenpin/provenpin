@@ -1,0 +1,20 @@
+id: docx-mammoth-roundtrip
+title: "docx to mammoth roundtrip"
+summary: "Build a .docx in memory with docx (heading, paragraph, table), then read it back with mammoth's convertToHtml and extractRawText and assert the content, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [docx, mammoth]
+tags: [docx, word, mammoth, html, buffer]
+pinned:
+  "docx": "9.11.0"
+  "mammoth": "1.13.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/generate.ts
+  - src/read.ts
+  - test/roundtrip.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

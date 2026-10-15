@@ -1,0 +1,20 @@
+id: rate-limiter-flexible-memory
+title: "rate-limiter-flexible in-memory limiters"
+summary: "Use rate-limiter-flexible's RateLimiterMemory to consume points, surface rejections with msBeforeNext and remainingPoints, apply blockDuration, penalty and reward, and guard requests with a framework-agnostic middleware tested offline against fake req/res objects."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [rate-limiter-flexible]
+tags: [rate-limiting, throttling, middleware]
+pinned:
+  "rate-limiter-flexible": "11.2.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/limiter.ts
+  - src/middleware.ts
+  - test/limiter.test.ts
+  - test/middleware.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

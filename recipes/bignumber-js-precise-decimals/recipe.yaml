@@ -1,0 +1,18 @@
+id: bignumber-js-precise-decimals
+title: "bignumber.js precise decimals"
+summary: "Do exact decimal math with bignumber.js: 0.1 + 0.2 === 0.3, configurable rounding modes, fixed-point formatting, numeric comparisons and a cart-total helper, all offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [bignumber.js]
+tags: [math, decimals, money, bignumber]
+pinned:
+  "bignumber.js": "11.1.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/decimals.ts
+  - test/decimals.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

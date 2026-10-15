@@ -1,0 +1,18 @@
+id: cuid2-collision-resistant-ids
+title: "cuid2 collision-resistant ids"
+summary: "Generate collision-resistant ids with @paralleldrive/cuid2: default createId, init with a custom length, isCuid validation and uniqueness across many ids offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@paralleldrive/cuid2"]
+tags: [ids, cuid, uniqueness, validation]
+pinned:
+  "@paralleldrive/cuid2": "3.3.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/ids.ts
+  - test/ids.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

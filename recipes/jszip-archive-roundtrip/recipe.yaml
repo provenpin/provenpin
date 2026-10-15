@@ -1,0 +1,18 @@
+id: jszip-archive-roundtrip
+title: "JSZip archive round-trip"
+summary: "Build a DEFLATE zip in memory with JSZip containing a nested folder, a text file and a binary file, then load it back, list entries and read contents as string and uint8array offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [jszip]
+tags: [zip, archive, compression]
+pinned:
+  "jszip": "3.10.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/archive.ts
+  - test/archive.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

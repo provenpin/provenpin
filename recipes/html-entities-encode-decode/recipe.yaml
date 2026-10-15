@@ -1,0 +1,18 @@
+id: html-entities-encode-decode
+title: "html-entities encode and decode"
+summary: "Encode and decode HTML entities offline with html-entities, covering specialChars and nonAscii encode modes, named and numeric entity decoding, and safely escaping untrusted user content."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [html-entities]
+tags: [html, entities, escaping, security]
+pinned:
+  "html-entities": "2.6.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/html-entities.ts
+  - test/html-entities.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

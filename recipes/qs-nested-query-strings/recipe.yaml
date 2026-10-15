@@ -1,0 +1,19 @@
+id: qs-nested-query-strings
+title: "qs nested query strings"
+summary: "Parse and stringify nested query strings with qs, covering nested objects, bracket/index/repeat/comma array formats, depth limits and a typed filter parser offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [qs]
+tags: [query-string, parsing, serialization, http]
+pinned:
+  "qs": "6.16.1"
+  "@types/qs": "6.15.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/query.ts
+  - test/query.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

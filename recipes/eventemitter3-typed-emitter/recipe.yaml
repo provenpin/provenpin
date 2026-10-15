@@ -1,0 +1,18 @@
+id: eventemitter3-typed-emitter
+title: "EventEmitter3 typed event emitter"
+summary: "Build a typed event emitter with eventemitter3 using an explicit event map, covering on, once, off, listenerCount and removeAllListeners fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [eventemitter3]
+tags: [events, emitter, pubsub]
+pinned:
+  "eventemitter3": "5.0.4"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/emitter.ts
+  - test/emitter.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,18 @@
+id: graphql-js-schema-execute
+title: "graphql-js code-first schema execution"
+summary: "Build a code-first graphql-js schema with an object type, a custom Date scalar, arguments and variables, then execute it and inspect validation and resolver errors offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [graphql]
+tags: [graphql, schema, scalars, execution]
+pinned:
+  "graphql": "17.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/schema.ts
+  - test/schema.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
