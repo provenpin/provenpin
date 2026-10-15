@@ -1,0 +1,19 @@
+id: pino-redaction-custom-transport
+title: "pino logging with redaction, request context and a custom transport"
+summary: "A pino 10 logger with path and wildcard redaction, error serialisers, string levels and an AsyncLocalStorage mixin for request ids, plus a pino-abstract-transport alert sink combined via multistream, tested offline against in-memory streams."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pino, pino-abstract-transport]
+tags: [logging, observability, security]
+pinned:
+  "pino": "10.4.0"
+  "pino-abstract-transport": "3.0.0"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/logger.ts
+  - test/logger.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,23 @@
+id: aws-sdk-v3-dynamodb-sqs-vitest
+title: "AWS SDK v3 DynamoDB document client and SQS events, tested with Vitest matchers"
+summary: "A single-table DynamoDB order service on @aws-sdk/lib-dynamodb with conditional puts, begins_with queries and optimistic locking, publishing SQS events, tested offline with aws-sdk-client-mock and aws-sdk-client-mock-vitest matchers."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@aws-sdk/client-dynamodb", "@aws-sdk/lib-dynamodb", "@aws-sdk/client-sqs", aws-sdk-client-mock, vitest]
+tags: [aws, dynamodb, sqs, mocking, testing]
+pinned:
+  "@aws-sdk/client-dynamodb": "3.1152.0"
+  "@aws-sdk/lib-dynamodb": "3.1152.0"
+  "@aws-sdk/client-sqs": "3.1152.0"
+  "aws-sdk-client-mock": "4.1.0"
+  "aws-sdk-client-mock-vitest": "8.0.0"
+  "vitest": "5.0.4"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/orders.ts
+  - test/orders.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

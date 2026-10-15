@@ -1,0 +1,21 @@
+id: cheerio-zod-scrape-fixtures
+title: "Cheerio HTML scraping with Zod-validated records and saved fixtures"
+summary: "Scrape a product listing and a spec table with Cheerio, normalise prices and relative URLs, and validate every record with Zod 4 so broken cards are reported, tested offline against saved HTML fixtures."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [cheerio, zod]
+tags: [scraping, html, validation, fixtures]
+pinned:
+  "cheerio": "1.2.0"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/scrape.ts
+  - test/fixtures/listing.html
+  - test/fixtures/specs.html
+  - test/scrape.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

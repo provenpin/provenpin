@@ -1,0 +1,17 @@
+{
+  "name": "ws-zod-message-protocol",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "ws": "8.22.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5",
+    "@types/ws": "8.18.2"
+  }
+}

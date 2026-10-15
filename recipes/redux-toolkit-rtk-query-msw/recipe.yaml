@@ -1,0 +1,20 @@
+id: redux-toolkit-rtk-query-msw
+title: "Redux Toolkit + RTK Query with tag invalidation and optimistic updates, tested with MSW"
+summary: "An RTK Query API slice with auth headers from Redux state, tag-based cache invalidation and an optimistic update with rollback, tested offline in Vitest against MSW 3 request handlers without rendering React."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@reduxjs/toolkit", msw, vitest]
+tags: [state, data-fetching, caching, mocking]
+pinned:
+  "@reduxjs/toolkit": "2.13.0"
+  "msw": "3.0.3"
+  "vitest": "5.0.4"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/store.ts
+  - test/store.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

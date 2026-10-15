@@ -1,0 +1,21 @@
+id: aws-sdk-v3-s3-client-mock
+title: "AWS SDK v3 S3 storage helpers tested with aws-sdk-client-mock"
+summary: "S3 helpers on @aws-sdk/client-s3 for JSON put/get with NoSuchKey handling, paginated listing, batched DeleteObjects and locally signed presigned URLs, tested offline with aws-sdk-client-mock and sdkStreamMixin bodies."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@aws-sdk/client-s3", "@aws-sdk/s3-request-presigner", aws-sdk-client-mock]
+tags: [aws, s3, storage, mocking]
+pinned:
+  "@aws-sdk/client-s3": "3.1152.0"
+  "@aws-sdk/s3-request-presigner": "3.1152.0"
+  "aws-sdk-client-mock": "4.1.0"
+  "@smithy/util-stream": "4.8.2"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/storage.ts
+  - test/storage.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

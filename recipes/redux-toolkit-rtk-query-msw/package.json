@@ -1,0 +1,16 @@
+{
+  "name": "redux-toolkit-rtk-query-msw",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --reporter=default --reporter=json --outputFile=test-report.json"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "2.13.0"
+  },
+  "devDependencies": {
+    "msw": "3.0.3",
+    "vitest": "5.0.4",
+    "@types/node": "26.6.5"
+  }
+}

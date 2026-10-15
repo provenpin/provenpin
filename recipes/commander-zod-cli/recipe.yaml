@@ -1,0 +1,20 @@
+id: commander-zod-cli
+title: "Commander CLI with Zod option validation, tested in-process"
+summary: "A Commander subcommand CLI with variadic arguments, repeatable options, choices and Zod-backed argument parsers, made testable with exitOverride and configureOutput so node:test runs it in-process without spawning."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [commander, zod]
+tags: [cli, validation, testing]
+pinned:
+  "commander": "15.0.0"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/bin.ts
+  - src/cli.ts
+  - test/cli.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

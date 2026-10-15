@@ -1,0 +1,20 @@
+id: oslo-sessions-totp-2fa
+title: "Hashed session tokens and TOTP 2FA with the Oslo libraries"
+summary: "Lucia-guide style sessions with random tokens stored only as sha256 hashes, sliding expiry and per-user revocation, plus TOTP enrolment URIs, grace-window verification and single-use recovery codes using @oslojs/crypto, @oslojs/encoding and @oslojs/otp, tested with node:test mock timers."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@oslojs/crypto", "@oslojs/encoding", "@oslojs/otp"]
+tags: [auth, sessions, 2fa, totp, security]
+pinned:
+  "@oslojs/crypto": "1.0.1"
+  "@oslojs/encoding": "1.1.0"
+  "@oslojs/otp": "1.1.0"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/auth.ts
+  - test/auth.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

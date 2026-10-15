@@ -1,0 +1,20 @@
+id: better-sqlite3-zod-transactions
+title: "better-sqlite3 transactions with Zod-validated inputs"
+summary: "A small ledger on better-sqlite3 using db.transaction for atomic transfers, nested transactions as savepoints for all-or-nothing batches, and Zod 4 to validate inputs and rows, tested on in-memory SQLite."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [better-sqlite3, zod]
+tags: [database, sqlite, transactions, validation]
+pinned:
+  "better-sqlite3": "13.0.3"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+  "@types/better-sqlite3": "9.6.0"
+files:
+  - package.json
+  - src/ledger.ts
+  - test/ledger.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

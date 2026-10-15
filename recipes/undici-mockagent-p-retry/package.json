@@ -1,0 +1,16 @@
+{
+  "name": "undici-mockagent-p-retry",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "undici": "8.12.1",
+    "p-retry": "8.0.1"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5"
+  }
+}

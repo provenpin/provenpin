@@ -1,0 +1,20 @@
+id: zod-to-openapi-document-generation
+title: "Zod 4 schemas to an OpenAPI 3.1 document with zod-to-openapi"
+summary: "Register Zod 4 schemas, path and query parameters, security schemes and routes in an OpenAPIRegistry and generate an OpenAPI 3.1 document (JSON and YAML) from the same schemas used for runtime validation, tested offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [zod, "@asteasolutions/zod-to-openapi", yaml]
+tags: [openapi, api-docs, validation, schema]
+pinned:
+  "zod": "4.6.7"
+  "@asteasolutions/zod-to-openapi": "9.1.0"
+  "yaml": "2.9.1"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/openapi.ts
+  - test/openapi.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

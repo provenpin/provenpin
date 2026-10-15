@@ -1,0 +1,19 @@
+id: undici-mockagent-p-retry
+title: "undici HTTP client with p-retry backoff, tested with MockAgent"
+summary: "A JSON client on undici.request wrapped in p-retry that retries 429, 5xx and network errors but aborts on other 4xx, tested offline with undici MockAgent, disableNetConnect and assertNoPendingInterceptors."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [undici, p-retry]
+tags: [http-client, retries, mocking]
+pinned:
+  "undici": "8.12.1"
+  "p-retry": "8.0.1"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/client.ts
+  - test/client.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

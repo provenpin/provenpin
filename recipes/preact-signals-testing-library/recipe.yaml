@@ -1,0 +1,25 @@
+id: preact-signals-testing-library
+title: "Preact components with Signals state, tested with Testing Library on jsdom"
+summary: "A Preact 11 cart using @preact/signals signal and computed state plus a hooks-based async form, tested in Vitest on jsdom with @testing-library/preact and user-event, including re-render on signal change without new props."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [preact, "@preact/signals", "@testing-library/preact", "@testing-library/user-event", jsdom, vitest]
+tags: [frontend, components, state, testing]
+pinned:
+  "preact": "11.0.1"
+  "@preact/signals": "2.11.3"
+  "@testing-library/preact": "3.2.4"
+  "@testing-library/user-event": "14.6.8"
+  "jsdom": "30.1.3"
+  "vitest": "5.0.4"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/cart.tsx
+  - test/cart.test.tsx
+  - tsconfig.json
+  - vitest.config.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

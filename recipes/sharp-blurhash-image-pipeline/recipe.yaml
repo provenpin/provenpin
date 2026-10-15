@@ -1,0 +1,19 @@
+id: sharp-blurhash-image-pipeline
+title: "sharp responsive image variants with BlurHash placeholders"
+summary: "A sharp pipeline that applies EXIF rotation, strips metadata and renders WebP widths without upscaling, plus BlurHash encode from raw pixels and decode to a tiny PNG placeholder, tested on synthetic images generated in-test."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [sharp, blurhash]
+tags: [images, performance, placeholders]
+pinned:
+  "sharp": "0.35.5"
+  "blurhash": "2.0.5"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/pipeline.ts
+  - test/pipeline.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

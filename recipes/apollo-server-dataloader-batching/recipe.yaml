@@ -1,0 +1,20 @@
+id: apollo-server-dataloader-batching
+title: "Apollo Server 5 resolvers with per-request DataLoader batching"
+summary: "An Apollo Server 5 schema whose nested resolvers use per-request DataLoader instances to batch and dedupe lookups (no N+1), with GraphQLError extension codes and cache invalidation after a mutation, tested in-process with executeOperation."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@apollo/server", graphql, dataloader]
+tags: [graphql, api, performance, testing]
+pinned:
+  "@apollo/server": "5.5.1"
+  "graphql": "16.14.2"
+  "dataloader": "2.2.3"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/server.ts
+  - test/server.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

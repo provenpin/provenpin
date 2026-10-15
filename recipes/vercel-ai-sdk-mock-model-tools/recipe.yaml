@@ -1,0 +1,19 @@
+id: vercel-ai-sdk-mock-model-tools
+title: "Vercel AI SDK tool loops, structured output and streaming with a mock model"
+summary: "AI SDK generateText with a Zod-typed tool and a stopWhen step cap, Output.object structured results validated by Zod, and streamText deltas, all tested offline with MockLanguageModelV4 and simulateReadableStream from ai/test."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ai, zod]
+tags: [ai, llm, tools, streaming, mocking]
+pinned:
+  "ai": "7.0.141"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/agent.ts
+  - test/agent.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

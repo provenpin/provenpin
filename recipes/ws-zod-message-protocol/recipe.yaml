@@ -1,0 +1,20 @@
+id: ws-zod-message-protocol
+title: "ws WebSocket server with a Zod-validated message protocol"
+summary: "A room chat server on the ws library with token auth on the upgrade URL, a Zod 4 discriminated union for every inbound frame and typed error replies, tested offline with real ws clients on an ephemeral localhost port."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ws, zod]
+tags: [websockets, realtime, validation]
+pinned:
+  "ws": "8.22.0"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+  "@types/ws": "8.18.2"
+files:
+  - package.json
+  - src/server.ts
+  - test/server.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,19 @@
+id: knex-better-sqlite3-migrations
+title: "Knex migrations, seeds and queries on better-sqlite3"
+summary: "Knex 3 with the better-sqlite3 client: in-code migrations via a custom migrationSource (latest, down, rollback, list), foreign keys enabled per connection, a transactional seed and a join plus aggregate query, tested on in-memory SQLite."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [knex, better-sqlite3]
+tags: [database, migrations, sqlite, sql]
+pinned:
+  "knex": "3.3.0"
+  "better-sqlite3": "13.0.3"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

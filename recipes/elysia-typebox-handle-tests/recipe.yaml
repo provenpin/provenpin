@@ -1,0 +1,22 @@
+id: elysia-typebox-handle-tests
+title: "Elysia API with TypeBox validation and guards, tested via app.handle on Node"
+summary: "An Elysia 1.4 app with TypeBox schemas for params, query, body and responses, a guard with an API key check and custom error mapping, tested on Node with web-standard Request objects through app.handle and no open port."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [elysia, "@sinclair/typebox"]
+tags: [api, validation, web-standard, testing]
+pinned:
+  "elysia": "1.4.30"
+  "@sinclair/typebox": "0.34.52"
+  "exact-mirror": "1.2.6"
+  "file-type": "22.2.0"
+  "openapi-types": "12.1.3"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

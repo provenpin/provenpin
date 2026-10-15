@@ -1,0 +1,19 @@
+id: croner-zod-job-scheduler
+title: "Croner cron jobs from a Zod-validated config, with timezone previews"
+summary: "Validate a job config with Zod 4 (cron pattern checked by croner, IANA timezone, unique names), preview upcoming runs across DST and month ends with croner nextRuns, and start protected jobs with maxRuns, tested offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [croner, zod]
+tags: [cron, scheduling, timezones, validation]
+pinned:
+  "croner": "10.0.1"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/scheduler.ts
+  - test/scheduler.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

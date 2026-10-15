@@ -1,0 +1,17 @@
+{
+  "name": "oslo-sessions-totp-2fa",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@oslojs/crypto": "1.0.1",
+    "@oslojs/encoding": "1.1.0",
+    "@oslojs/otp": "1.1.0"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5"
+  }
+}

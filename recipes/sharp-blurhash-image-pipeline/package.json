@@ -1,0 +1,16 @@
+{
+  "name": "sharp-blurhash-image-pipeline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "sharp": "0.35.5",
+    "blurhash": "2.0.5"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "26.6.5"
+  }
+}

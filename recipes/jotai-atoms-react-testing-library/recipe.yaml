@@ -1,0 +1,27 @@
+id: jotai-atoms-react-testing-library
+title: "Jotai atoms with React 19, tested with Testing Library and isolated stores"
+summary: "Jotai 3 primitive, derived, write-only and async atoms driving a React 19 todo UI with Suspense, tested in Vitest on happy-dom with @testing-library/react, user-event and a fresh createStore per test, plus store-only tests without React."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [jotai, react, "@testing-library/react", happy-dom, vitest]
+tags: [state, react, frontend, testing]
+pinned:
+  "jotai": "3.0.1"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "@testing-library/react": "16.3.3"
+  "@testing-library/dom": "10.4.2"
+  "@testing-library/user-event": "14.6.8"
+  "happy-dom": "21.0.1"
+  "vitest": "5.0.4"
+  "@types/react": "19.3.0"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/todos.tsx
+  - test/todos.test.tsx
+  - vitest.config.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

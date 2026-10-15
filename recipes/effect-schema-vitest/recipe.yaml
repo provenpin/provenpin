@@ -1,0 +1,20 @@
+id: effect-schema-vitest
+title: "Effect 4 Schema classes, typed errors and retries, tested with @effect/vitest"
+summary: "Effect 4 Schema.Class models with checks, brands, FiniteFromString and fromJsonString for decode and encode, TaggedError failures, and Effect.retry with exponential backoff verified on the TestClock using @effect/vitest."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [effect, "@effect/vitest", vitest]
+tags: [validation, schema, functional, retries, testing]
+pinned:
+  "effect": "4.0.5"
+  "@effect/vitest": "4.0.5"
+  "vitest": "5.0.4"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/orders.ts
+  - test/orders.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json
