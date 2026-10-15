@@ -1,15 +1,15 @@
 {
   "id": "astro-container-render",
-  "status": "setup_failed",
-  "ran_at": "2026-10-15T15:56:54.742Z",
-  "last_passed_at": "2026-10-15T14:10:30.901Z",
+  "status": "passed",
+  "ran_at": "2026-10-15T16:19:51.734Z",
+  "last_passed_at": "2026-10-15T16:19:51.734Z",
   "tests": {
-    "passed": 0,
-    "failed": 1
+    "passed": 2,
+    "failed": 0
   },
   "duration_ms": {
-    "setup": 12809,
-    "test": 0
+    "setup": 10726,
+    "test": 1933
   },
   "pinned": {
     "astro": "7.3.8",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 38767991559"
   },
   "errors": [],
-  "log_tail": "npm error Cannot read properties of null (reading 'edgesOut')\nnpm error A complete log of this run can be found in: /home/runner/.npm/_logs/2026-10-15T15_56_54_796Z-debug-0.log\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\u001b[33m\u001b[1m16:20:03\u001b[22m [WARN]\u001b[39m Missing pages directory: src/pages\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-astro-container-render-jhCzsk\u001b[39m\n\n \u001b[32m✓\u001b[39m test/PriceCard.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 31\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m   Start at \u001b[22m 16:20:03\n\u001b[2m   Duration \u001b[22m 1.00s\u001b[2m (transform 77%, import 20%, tests 3%)\u001b[22m\n\nJSON report written to /tmp/pp-astro-container-render-jhCzsk/test-report.json\n"
 }
