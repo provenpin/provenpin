@@ -1,0 +1,16 @@
+{
+  "name": "zod-v4-json-schema-export",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "zod": "4.6.7",
+    "ajv": "8.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

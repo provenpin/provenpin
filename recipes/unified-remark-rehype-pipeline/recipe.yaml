@@ -1,0 +1,24 @@
+id: unified-remark-rehype-pipeline
+title: "unified Markdown to safe HTML with remark-gfm and rehype-sanitize"
+summary: "Turn Markdown into sanitized HTML with unified, remark-parse, remark-gfm, remark-rehype, rehype-sanitize and rehype-stringify, plus a custom plugin that collects a table of contents."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [unified, remark-parse, remark-gfm, remark-rehype, rehype-sanitize, rehype-stringify, unist-util-visit]
+tags: [markdown, html, sanitize, gfm, remark, rehype]
+pinned:
+  "unified": "11.0.5"
+  "remark-parse": "11.0.0"
+  "remark-gfm": "4.0.1"
+  "remark-rehype": "11.1.2"
+  "rehype-sanitize": "6.0.0"
+  "rehype-stringify": "10.0.1"
+  "unist-util-visit": "5.1.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/markdown.ts
+  - test/markdown.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

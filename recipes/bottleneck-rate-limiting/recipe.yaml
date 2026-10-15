@@ -1,0 +1,18 @@
+id: bottleneck-rate-limiting
+title: "Bottleneck rate limiting with concurrency, spacing and retries"
+summary: "Throttle calls to a flaky API with Bottleneck using maxConcurrent, minTime spacing, priorities and automatic retries from the failed event, checked offline with timestamps."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [bottleneck]
+tags: [rate-limit, throttle, concurrency, retry]
+pinned:
+  "bottleneck": "2.19.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/limiter.ts
+  - test/limiter.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

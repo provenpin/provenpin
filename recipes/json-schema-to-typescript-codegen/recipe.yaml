@@ -1,0 +1,18 @@
+id: json-schema-to-typescript-codegen
+title: "Generate TypeScript types from JSON Schema with json-schema-to-typescript"
+summary: "Compile JSON Schemas into TypeScript interfaces with json-schema-to-typescript, covering required and optional fields, enums, $ref definitions, descriptions as JSDoc and strict additionalProperties."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [json-schema-to-typescript]
+tags: [codegen, json-schema, types, typescript]
+pinned:
+  "json-schema-to-typescript": "16.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/codegen.ts
+  - test/codegen.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

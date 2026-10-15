@@ -1,0 +1,18 @@
+id: execa-child-processes
+title: "execa child processes with errors, timeouts and input"
+summary: "Run child processes with execa 10: capture stdout and stderr, pass stdin input, split lines, handle non-zero exits with ExecaError or reject: false, and kill slow commands with a timeout."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [execa]
+tags: [child-process, shell, cli, subprocess]
+pinned:
+  "execa": "10.1.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/proc.ts
+  - test/proc.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

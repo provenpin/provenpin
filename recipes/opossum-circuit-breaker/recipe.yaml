@@ -1,0 +1,19 @@
+id: opossum-circuit-breaker
+title: "opossum circuit breaker with fallback and recovery"
+summary: "Wrap a flaky async call in an opossum circuit breaker that opens after failures, serves a fallback while open, half-opens after resetTimeout and closes on success, with event and stats checks."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [opossum]
+tags: [circuit-breaker, resilience, fallback, retry]
+pinned:
+  "opossum": "10.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "@types/opossum": "8.1.9"
+files:
+  - package.json
+  - src/breaker.ts
+  - test/breaker.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

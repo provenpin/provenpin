@@ -1,0 +1,19 @@
+id: fastify-swagger-openapi
+title: "Fastify 5 OpenAPI docs generated with @fastify/swagger"
+summary: "Generate an OpenAPI 3 document from Fastify 5 route schemas with @fastify/swagger, using shared $ref schemas, tags and security, then serve and check it with inject()."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fastify, "@fastify/swagger"]
+tags: [openapi, swagger, api-docs, json-schema]
+pinned:
+  "fastify": "5.12.7"
+  "@fastify/swagger": "9.9.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,18 @@
+id: mathjs-units-expressions
+title: "mathjs expressions, unit conversion and BigNumber precision"
+summary: "Evaluate user formulas safely with mathjs: scoped and compiled expressions, unit conversions, matrices, a BigNumber instance for exact decimals, and disabling risky functions."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [mathjs]
+tags: [math, units, expressions, bignumber, calculator]
+pinned:
+  "mathjs": "15.2.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/calc.ts
+  - test/calc.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

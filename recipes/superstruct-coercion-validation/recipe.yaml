@@ -1,0 +1,18 @@
+id: superstruct-coercion-validation
+title: "Superstruct structs with coercion, defaults and refinements"
+summary: "Validate and coerce untrusted input with Superstruct 2: string to number coercion, defaulted fields, custom refinements, Infer types and StructError failure paths."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [superstruct]
+tags: [validation, schema, coercion]
+pinned:
+  "superstruct": "2.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/order.ts
+  - test/order.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,16 @@
+{
+  "name": "opossum-circuit-breaker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "opossum": "10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/opossum": "8.1.9"
+  }
+}

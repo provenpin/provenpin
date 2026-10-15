@@ -1,0 +1,19 @@
+id: fastify-multipart-upload
+title: "Fastify 5 file uploads with @fastify/multipart"
+summary: "Accept multipart file uploads in Fastify 5 with @fastify/multipart, reading fields and files, hashing content, rejecting oversized files with 413, tested with inject() and a native FormData body."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fastify, "@fastify/multipart"]
+tags: [upload, multipart, files, forms]
+pinned:
+  "fastify": "5.12.7"
+  "@fastify/multipart": "10.1.4"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

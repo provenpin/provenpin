@@ -1,0 +1,19 @@
+id: vitest-fake-timers-es-toolkit
+title: "Vitest fake timers with es-toolkit debounce, throttle and retry"
+summary: "Test time-based helpers from es-toolkit (debounce, throttle, delay, retry) deterministically with Vitest fake timers, advanceTimersByTime and setSystemTime, without real waiting."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [vitest, es-toolkit]
+tags: [testing, timers, debounce, throttle]
+pinned:
+  "es-toolkit": "1.52.0"
+  "@types/node": "26.6.5"
+  "vitest": "5.0.5"
+files:
+  - package.json
+  - src/autosave.ts
+  - test/autosave.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

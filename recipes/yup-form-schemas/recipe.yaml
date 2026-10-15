@@ -1,0 +1,18 @@
+id: yup-form-schemas
+title: "Yup schemas for signup forms with conditional rules"
+summary: "Build a Yup v1 signup schema with refs for password confirmation, when() conditional fields, transforms and InferType, collecting every error per field."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [yup]
+tags: [validation, forms, schema]
+pinned:
+  "yup": "1.7.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/signup.ts
+  - test/signup.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

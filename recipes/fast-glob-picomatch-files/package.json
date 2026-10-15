@@ -1,0 +1,17 @@
+{
+  "name": "fast-glob-picomatch-files",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "fast-glob": "3.3.3",
+    "picomatch": "4.0.7"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/picomatch": "4.0.3"
+  }
+}

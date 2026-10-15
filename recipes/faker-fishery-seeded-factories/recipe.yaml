@@ -1,0 +1,19 @@
+id: faker-fishery-seeded-factories
+title: "Seeded test data factories with Fishery and Faker"
+summary: "Build typed test data with Fishery factories backed by seeded @faker-js/faker v10, covering sequences, param overrides, traits, associations, transient params and deterministic output."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fishery, "@faker-js/faker"]
+tags: [testing, fixtures, factories, fake-data]
+pinned:
+  "fishery": "2.4.0"
+  "@faker-js/faker": "10.6.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/factories.ts
+  - test/factories.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

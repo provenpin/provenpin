@@ -1,0 +1,22 @@
+id: joi-express-validation
+title: "Joi request validation middleware for Express 5"
+summary: "Validate Express 5 bodies and query strings with Joi schemas in a reusable middleware, with defaults, type conversion, stripUnknown and 400 error details, tested with supertest."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [joi, express, supertest]
+tags: [validation, express, middleware, api]
+pinned:
+  "joi": "18.2.9"
+  "express": "5.3.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "supertest": "7.3.1"
+  "@types/express": "5.0.6"
+  "@types/supertest": "7.2.1"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

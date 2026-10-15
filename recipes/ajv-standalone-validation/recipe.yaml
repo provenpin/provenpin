@@ -1,0 +1,18 @@
+id: ajv-standalone-validation
+title: "Ajv standalone validation code generated at build time"
+summary: "Compile JSON Schemas once with Ajv into standalone ESM validator modules, write them to disk and import them at runtime without compiling, checking errors, defaults and type coercion."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ajv]
+tags: [json-schema, validation, codegen, performance]
+pinned:
+  "ajv": "8.20.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/build.ts
+  - test/build.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,18 @@
+id: rxjs-testscheduler-marbles
+title: "RxJS 7 operators tested with TestScheduler marble diagrams"
+summary: "Test a typeahead search stream built with debounceTime, distinctUntilChanged, switchMap and catchError, plus a retry stream, using RxJS TestScheduler marbles with virtual time."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [rxjs]
+tags: [reactive, observables, testing, marbles]
+pinned:
+  "rxjs": "7.8.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/search.ts
+  - test/search.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

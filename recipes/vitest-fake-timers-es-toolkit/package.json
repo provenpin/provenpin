@@ -1,0 +1,15 @@
+{
+  "name": "vitest-fake-timers-es-toolkit",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run --reporter=default --reporter=json --outputFile=test-report.json"
+  },
+  "dependencies": {
+    "es-toolkit": "1.52.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "vitest": "5.0.5"
+  }
+}

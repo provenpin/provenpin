@@ -1,0 +1,19 @@
+{
+  "name": "joi-express-validation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "joi": "18.2.9",
+    "express": "5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "supertest": "7.3.1",
+    "@types/express": "5.0.6",
+    "@types/supertest": "7.2.1"
+  }
+}

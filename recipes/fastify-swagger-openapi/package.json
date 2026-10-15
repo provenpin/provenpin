@@ -1,0 +1,16 @@
+{
+  "name": "fastify-swagger-openapi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "fastify": "5.12.7",
+    "@fastify/swagger": "9.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

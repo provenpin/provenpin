@@ -1,0 +1,19 @@
+id: gray-matter-zod-frontmatter
+title: "gray-matter front matter parsing validated with Zod"
+summary: "Parse Markdown front matter with gray-matter, validate and coerce it with a Zod v4 schema, read excerpts and write posts back with matter.stringify."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [gray-matter, zod]
+tags: [markdown, frontmatter, yaml, validation, blog]
+pinned:
+  "gray-matter": "4.0.3"
+  "zod": "4.6.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/posts.ts
+  - test/posts.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

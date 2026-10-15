@@ -1,0 +1,20 @@
+id: dompurify-jsdom-sanitize
+title: "DOMPurify HTML sanitizing in Node with jsdom"
+summary: "Sanitize untrusted HTML server-side with DOMPurify on a jsdom window, using profiles, allow-lists and a hook that hardens links with rel and target."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [dompurify, jsdom]
+tags: [sanitize, xss, html, security]
+pinned:
+  "dompurify": "3.4.17"
+  "jsdom": "30.1.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "@types/jsdom": "30.0.0"
+files:
+  - package.json
+  - src/sanitize.ts
+  - test/sanitize.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

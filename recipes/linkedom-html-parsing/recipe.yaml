@@ -1,0 +1,18 @@
+id: linkedom-html-parsing
+title: "linkedom server-side HTML parsing and rewriting"
+summary: "Parse and transform HTML in Node with linkedom: query links and Open Graph meta tags, absolutize relative URLs, add lazy loading to images and serialize the document back."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [linkedom]
+tags: [html, dom, parsing, scraping, ssr]
+pinned:
+  "linkedom": "0.18.13"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/page.ts
+  - test/page.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

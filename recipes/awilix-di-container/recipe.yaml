@@ -1,0 +1,18 @@
+id: awilix-di-container
+title: "Awilix dependency injection with scoped request containers"
+summary: "Wire services with an Awilix container in PROXY mode using asClass, asFunction and asValue, singleton, scoped and transient lifetimes, per-request scopes and disposers."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [awilix]
+tags: [dependency-injection, ioc, architecture]
+pinned:
+  "awilix": "13.0.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/container.ts
+  - test/container.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,19 @@
+id: zod-v4-json-schema-export
+title: "Zod v4 schemas exported to JSON Schema and checked with Ajv"
+summary: "Export Zod v4 schemas to JSON Schema 2020-12 with z.toJSONSchema, using .meta() ids and descriptions and input vs output modes, then validate the same data with Ajv 2020."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [zod, ajv]
+tags: [json-schema, validation, zod, interop]
+pinned:
+  "zod": "4.6.7"
+  "ajv": "8.20.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/schemas.ts
+  - test/schemas.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

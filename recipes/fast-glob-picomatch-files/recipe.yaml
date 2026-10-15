@@ -1,0 +1,20 @@
+id: fast-glob-picomatch-files
+title: "fast-glob file discovery with picomatch filters"
+summary: "Find files with fast-glob using ignore lists, dotfile and depth options, and filter paths with compiled picomatch matchers, all against a temp directory fixture."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fast-glob, picomatch]
+tags: [glob, filesystem, files, patterns]
+pinned:
+  "fast-glob": "3.3.3"
+  "picomatch": "4.0.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "@types/picomatch": "4.0.3"
+files:
+  - package.json
+  - src/files.ts
+  - test/files.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

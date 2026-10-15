@@ -1,0 +1,19 @@
+id: semver-range-checks
+title: "semver range checks and upgrade planning"
+summary: "Use node-semver to check engine ranges, pick the highest satisfying release, classify patch, minor and major upgrades, coerce loose versions and handle prereleases."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [semver]
+tags: [versioning, dependencies, npm, release]
+pinned:
+  "semver": "7.8.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "@types/semver": "7.8.0"
+files:
+  - package.json
+  - src/versions.ts
+  - test/versions.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

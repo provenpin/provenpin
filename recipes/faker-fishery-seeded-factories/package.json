@@ -1,0 +1,16 @@
+{
+  "name": "faker-fishery-seeded-factories",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "fishery": "2.4.0",
+    "@faker-js/faker": "10.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

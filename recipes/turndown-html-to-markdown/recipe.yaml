@@ -1,0 +1,19 @@
+id: turndown-html-to-markdown
+title: "Turndown HTML to Markdown with custom rules"
+summary: "Convert HTML to clean Markdown with Turndown using ATX headings, fenced code blocks with languages, a strikethrough rule, a figure rule and removal of script and style tags."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [turndown]
+tags: [markdown, html, conversion, content]
+pinned:
+  "turndown": "7.2.4"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "@types/turndown": "5.0.6"
+files:
+  - package.json
+  - src/convert.ts
+  - test/convert.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
