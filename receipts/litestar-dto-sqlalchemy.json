@@ -18,6 +18,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:1710d603e0666f1616cc2c06ad6443c2998747e0d46f5e287d1c73e1028f904d",
+  "files": {
+    "recipes/litestar-dto-sqlalchemy/app.py": "sha256:27582cb4f7a4d6bc32735b246a945ab1223e42a2919e23b9f62f31e7d5e2b624",
+    "recipes/litestar-dto-sqlalchemy/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/litestar-dto-sqlalchemy/recipe.yaml": "sha256:06d694ad86655022b07edb1f580ac146356534d5ca89557074984da867417366",
+    "recipes/litestar-dto-sqlalchemy/requirements.txt": "sha256:ae92a1324649ca3870ebbe8671d8beefee51be7773226a046652cf7048018b5e",
+    "recipes/litestar-dto-sqlalchemy/tests/test_app.py": "sha256:d02c6fb4f505c9758baedc96a962dc73a8037a0a16d92251a048e2f0066cdbbc"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

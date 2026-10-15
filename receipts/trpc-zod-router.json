@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:ed240a85341c3887e5a857711f8502b2f167a1574b536bd2aed5403335af0f8b",
+  "files": {
+    "recipes/trpc-zod-router/package.json": "sha256:ff674ab55bc6cd9d708bd6ea3ef92a76bc2199ffe67eb64fc3889b13783e33eb",
+    "recipes/trpc-zod-router/recipe.yaml": "sha256:f30702412e50675d19df9264f1575313c0cf540aaf2f5ff5cbbec5f664e918a8",
+    "recipes/trpc-zod-router/src/router.ts": "sha256:2e62331a424b57612a3f5e7915589c6230104ccc14e8b2fce9734a68987e5f68",
+    "recipes/trpc-zod-router/test/router.test.ts": "sha256:b9c08186ebc6c0bff2161c344c250bc8d188c29285ac8fba9b057a143424f1ae"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

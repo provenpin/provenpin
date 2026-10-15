@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:4afaa6d2b4f71775d05336736b828840d4d25aeb10a275fb23aab6cfd66030d7",
+  "files": {
+    "recipes/otplib-totp-hotp/package.json": "sha256:d1147d1eb36313d9313f6c71e9c3cea66a200ddd8187218758f0e53b617bb27a",
+    "recipes/otplib-totp-hotp/recipe.yaml": "sha256:fba28415ff44b5d2695c06d034c617dd62ea7abfa75037e3a0a8282711be69f4",
+    "recipes/otplib-totp-hotp/src/otp.ts": "sha256:0857d72bfe59096b41a6c74f1d212e8f5cb4ee4e6d1106fab2cd622b7aa957ea",
+    "recipes/otplib-totp-hotp/test/otp.test.ts": "sha256:b5b6cd483a73f4718ed6b44884326bfbf54cbfb25675210cd08fefdd6a1c8e51"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

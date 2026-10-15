@@ -17,6 +17,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:908cc07def1a550856292c39c8796c92838847676d105282f7485e3c5b4bd876",
+  "files": {
+    "recipes/jimp-image-resize/package.json": "sha256:1cda1c82d3334172cf25899db937f60eeba4a44f07601f0433fb1f9249307827",
+    "recipes/jimp-image-resize/recipe.yaml": "sha256:0b3adcbad6b5f4454bd52b875f35f8b13fbf2b436c0d312c08e1ccd1c089c435",
+    "recipes/jimp-image-resize/src/thumbs.ts": "sha256:c0823f99c38ccd5b2d1a9410dac4e53d5de9a1241b9557fbf388c209fc7037ad",
+    "recipes/jimp-image-resize/test/thumbs.test.ts": "sha256:e53e5550d5f786af5937533751c7cc1225677fa939c06bfa5a00bdd4360ce083"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

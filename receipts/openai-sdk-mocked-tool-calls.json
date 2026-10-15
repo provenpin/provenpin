@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:c5a941fbf2be059b98e3e9be5a1df2677e0f19e94f12e12f6f0e490f59bea191",
+  "files": {
+    "recipes/openai-sdk-mocked-tool-calls/package.json": "sha256:4ac804db80381f6cf865083a8c3b851e5cc830e6a10765fde1df29b6a7a62670",
+    "recipes/openai-sdk-mocked-tool-calls/recipe.yaml": "sha256:7d043a1020c542c2ee59b58abd635efb573fb1f14f139736bece3eb19ed1eecf",
+    "recipes/openai-sdk-mocked-tool-calls/src/agent.ts": "sha256:82234a7c00cab6f2c23bc3156d443e5955fc27ea5847b46911a23020aea22bd0",
+    "recipes/openai-sdk-mocked-tool-calls/test/agent.test.ts": "sha256:df699e8d6b9e6ad79b0cfe1a762dc568adeafa4a5fad3ad8680ec48894ba51ca"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

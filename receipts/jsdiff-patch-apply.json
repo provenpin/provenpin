@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:4e59e391a2e05cdd1fbfd9b9f5d1889b8f8da5240ad85d96a5d14a5d6f299e8b",
+  "files": {
+    "recipes/jsdiff-patch-apply/package.json": "sha256:0625cde99d23dc1520c2a3689f4345db5ef9b1f81e2500d8a9022b7c16f109fb",
+    "recipes/jsdiff-patch-apply/recipe.yaml": "sha256:ee5087ed59c108da4016362db3baecfeddca15aa50ba4e2cf2fcae23d06b7c3f",
+    "recipes/jsdiff-patch-apply/src/patch.ts": "sha256:ecc6de0b2f4d2297c16d45949aa46e42f67504d6092b15a84ff172e7a194d779",
+    "recipes/jsdiff-patch-apply/test/patch.test.ts": "sha256:b1ffef7e4fdd5824064cc2f916c9cd11e83c65a9dc9630dd22efb9e06642722f"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

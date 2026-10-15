@@ -21,6 +21,12 @@
     "@types/express": "5.0.6"
   },
   "recipe_hash": "sha256:d4ec6e12790592cbb3198ec8cd0b2687bdcfa04a32f863d6045eb13e7192a3bd",
+  "files": {
+    "recipes/express-validator-supertest/package.json": "sha256:82ae73fc07f846701560473fd426351ed2d6873265b40b0c6df6a59e89ce1dbd",
+    "recipes/express-validator-supertest/recipe.yaml": "sha256:11665a1cc4d71b4f95d3773966a3d3a58c45b42cbec6a4b55d4f579f7adb6ddf",
+    "recipes/express-validator-supertest/src/app.ts": "sha256:558c020be23af43b077fafcc4bc2fbdaf365787b9bec3e631e6849afa21de3c1",
+    "recipes/express-validator-supertest/test/app.test.ts": "sha256:e7e13c2cab05c9414d10f63551a61ec8ca263fd5deec0f6e44397fe58f7c2a4e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -22,6 +22,12 @@
     "@types/jsonwebtoken": "9.0.10"
   },
   "recipe_hash": "sha256:36d027ee9109eeaf7006ffa7b08c23b3bc2fa7ebc80add15d211dcc7f6d1916d",
+  "files": {
+    "recipes/express-jwt-auth/package.json": "sha256:ef70a7e738394626d01ab2a71946d10613ddf804809272e9226e0470469e7313",
+    "recipes/express-jwt-auth/recipe.yaml": "sha256:f39bb7ac9e1a8a9774ba0a2f8ab5c568c5cc14d2edfa13bb7c780c560c4b7dd6",
+    "recipes/express-jwt-auth/src/app.ts": "sha256:c2aebdccbdbfdfb9ad0a130066dfb781301ccc4e36fcbe03e0f5cc5fd2cd4ea9",
+    "recipes/express-jwt-auth/test/app.test.ts": "sha256:bee739c473f435239eaa985446e5293a8df145078ce30b3e5059879f9560db2d"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

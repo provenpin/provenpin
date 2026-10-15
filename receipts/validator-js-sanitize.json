@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:e8b5e552a9416ad37fe273c3a8e02309af2ea311570aab53d5267b52bf12e300",
+  "files": {
+    "recipes/validator-js-sanitize/package.json": "sha256:a533b39bef57333b380dcbf2111f85a14296efdab64139929d30bdac0f8a2134",
+    "recipes/validator-js-sanitize/recipe.yaml": "sha256:d84b20e6c6ae22c7875dd0b36b9aff5eb433245bef513cd8f36d283f384e8f16",
+    "recipes/validator-js-sanitize/src/sanitize.ts": "sha256:01a24013b4097a53d7721292ea24fefb43d2a79fe807da8d8b2e306dd58455f7",
+    "recipes/validator-js-sanitize/test/sanitize.test.ts": "sha256:cb36478fa4b7bf11fca5ac090a19cb5420f94150b9edca8e90a0124f65d379a0"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,13 @@
     "tzlocal": "5.4.4"
   },
   "recipe_hash": "sha256:2574c4ece559fb98a2d58adb2225fb7c0cc2eaaff7cd4c7038ccef2690897626",
+  "files": {
+    "recipes/apscheduler-time-machine-jobs/jobs.py": "sha256:92922b9c2a7b71cf0f346b8d3d68684c38b1b9aacce18400d4649bed55a0bd89",
+    "recipes/apscheduler-time-machine-jobs/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/apscheduler-time-machine-jobs/recipe.yaml": "sha256:b2ce9d93fbd733d176b0ca4ac264ebb45748ff1a6cc4c794f674bac5724dc8e6",
+    "recipes/apscheduler-time-machine-jobs/requirements.txt": "sha256:b23b0bf9df3be8a973d8dfa681e2c44f57ffbd71dd7f850889f5654bedbacd4f",
+    "recipes/apscheduler-time-machine-jobs/tests/test_jobs.py": "sha256:29feb494b7680a0f659a15d7bfd9db87c9eb6b8c146ec86ee21a150f26fbbb17"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

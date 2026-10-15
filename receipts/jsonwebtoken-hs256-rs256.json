@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:fae83ca346f716f0475412b2a4fdacd79abdccee0276151740737c190fa4fb29",
+  "files": {
+    "recipes/jsonwebtoken-hs256-rs256/package.json": "sha256:8db59671ad24523c1ffa32006f39d05532d3fcd23e32e2289e2b4904e1cd9a7e",
+    "recipes/jsonwebtoken-hs256-rs256/recipe.yaml": "sha256:dafe15cb1b06d0bcfa9fe35625b0092d4c9e92589d202b752329dc04a6714cd7",
+    "recipes/jsonwebtoken-hs256-rs256/src/tokens.ts": "sha256:8195311108ed254b7e0f68a801368bd74559361a045723a9ca95ba63d183b84b",
+    "recipes/jsonwebtoken-hs256-rs256/test/tokens.test.ts": "sha256:bda85d09447b57d12edfd75422c00f29d1f2a9aee772a85bd03ba9900ed13d20"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

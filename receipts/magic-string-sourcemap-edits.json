@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:ce8e23d6451b12319dd08cb4eb039bab5f42a18f7e941a8497c97e4e5cb6e29b",
+  "files": {
+    "recipes/magic-string-sourcemap-edits/package.json": "sha256:ecb3a4c14134523e780c0b5a861ba0991973ae3b05352e307c77fa3d676b2395",
+    "recipes/magic-string-sourcemap-edits/recipe.yaml": "sha256:da51e686be48148b13894536abc263d731724089032b86d375f488946e5ca062",
+    "recipes/magic-string-sourcemap-edits/src/transform.ts": "sha256:68817d6c4c684b702e1b52453678f9262bd82768756604fe54e2a22b5335ee6e",
+    "recipes/magic-string-sourcemap-edits/test/transform.test.ts": "sha256:2968507b5ef4fad4a656fd21b9a6ba32bf26aadd0c3ccd66a7424ac6230d13b1"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

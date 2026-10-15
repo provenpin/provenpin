@@ -18,6 +18,17 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:2d5e9b6ebc39942f24690b08498b86c3ff07f12d5538f8bd5fd8ad5c87223b55",
+  "files": {
+    "recipes/fastapi-jinja2-htmx-partials/app.py": "sha256:bfdde6ae4924f535b6f96e4d51f8ec94468aee93d2923b3d5ea6ed90c01d0d07",
+    "recipes/fastapi-jinja2-htmx-partials/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fastapi-jinja2-htmx-partials/recipe.yaml": "sha256:b58e151085ab4f52a5cea6e5cee786b9a18d496eb280a31d998b1551d09a98bf",
+    "recipes/fastapi-jinja2-htmx-partials/requirements.txt": "sha256:cf472eb01a551b49f61a1bf35dc6614f3a6f993b664ae30004ab6f9d18a73fc6",
+    "recipes/fastapi-jinja2-htmx-partials/templates/base.html": "sha256:47ecf151c57e848c5dc4c58311983d27eba6e309c0f37c6c92307cd710c84e53",
+    "recipes/fastapi-jinja2-htmx-partials/templates/item_row.html": "sha256:e2e0e03b45d2b3670efc09548de9a40361291a99acb60d8d7c47f6d07d120442",
+    "recipes/fastapi-jinja2-htmx-partials/templates/items_page.html": "sha256:e3907538fa910a4962ebdc26822b04205638e6e86edd75dc23f834f612d1860b",
+    "recipes/fastapi-jinja2-htmx-partials/templates/items_partial.html": "sha256:1aca8ef6dfbe3c5285b5ef5df96e639e064f92f1c387fa28b63d1ba795584185",
+    "recipes/fastapi-jinja2-htmx-partials/tests/test_pages.py": "sha256:61c8ba9bcd7ce2a455ecacc0550a636fcb3ba60ae47db8ff9f696321dc1e1ef5"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

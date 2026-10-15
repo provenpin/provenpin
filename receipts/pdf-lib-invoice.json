@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:efb083f3e75b445b099f422f43aec7ae877b28dbf741b6109e6a3786a2a40404",
+  "files": {
+    "recipes/pdf-lib-invoice/package.json": "sha256:9fb6342598b2c45b482ad99076e9b4053b76891ce0e899311b52e95e6ce07316",
+    "recipes/pdf-lib-invoice/recipe.yaml": "sha256:0263a27a9a94810fc73cbc80e624257b728343626809269f47d527519e5de641",
+    "recipes/pdf-lib-invoice/src/invoice.ts": "sha256:897dd0df98a0eb942e1fc165f7507baf532bee6ab1a745b9b71849cca717a898",
+    "recipes/pdf-lib-invoice/test/invoice.test.ts": "sha256:9b1dee35959cbaaa3395aae8e6bdb7b632893907d05ab4da5a34c5e7be0c6f9c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:24470ecc8c34d0025fc5b539919f4c9748072d3dfdeba32b1a0ab1a545521008",
+  "files": {
+    "recipes/rq-fakeredis-jobs/jobs.py": "sha256:f68afac9177277aecd7279e3b86d5860569243241a641efb015816e8c8f40fbc",
+    "recipes/rq-fakeredis-jobs/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/rq-fakeredis-jobs/recipe.yaml": "sha256:548d6414b8204488bcb5125d136bf0a81a0a06f2b860a0a091e8447b97c32f1a",
+    "recipes/rq-fakeredis-jobs/requirements.txt": "sha256:3d65a7800e3f87a0f98068057c0718d2c54026bd9039d23493ab3b57425bc27a",
+    "recipes/rq-fakeredis-jobs/tests/test_jobs.py": "sha256:1952ef81d9694a0a629971b24ec303937906924d2a5e2c8b6b5a29531b97a986"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

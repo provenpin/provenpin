@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:46a527a631e80b67eab31b27a632031156dfd849fde3de4d3eda198594610fde",
+  "files": {
+    "recipes/sqljs-in-memory-queries/package.json": "sha256:2fb4752070a0a73ac41ed46cb32db1ed4874b6fd8b3e0ecc8d8f31c8fb512e94",
+    "recipes/sqljs-in-memory-queries/recipe.yaml": "sha256:f69ada0c408c34c088c74dc6f62bf9589ddee16e7767c79468ad2a9ebb224580",
+    "recipes/sqljs-in-memory-queries/src/db.ts": "sha256:bae4a95e025f5dfc7482f981365ad480fe41c5bc7b0a0871630cf6485f9cc732",
+    "recipes/sqljs-in-memory-queries/test/db.test.ts": "sha256:ab55241399ffa01e5e38bc2ee27c86388cb8fb27312490779018992abd95b5c5"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

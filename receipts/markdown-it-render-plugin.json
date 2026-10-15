@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:742c3a88086b470908abdb777309d9a9d305fb7960a94a25513fc86e3a287ac9",
+  "files": {
+    "recipes/markdown-it-render-plugin/package.json": "sha256:bf04a6c6c1e5b8dbfd4c3c92ddc527f836adbd751e6dd02f70ca391286937f85",
+    "recipes/markdown-it-render-plugin/recipe.yaml": "sha256:7b6335864622675eaba9b22d65b2c6a16f7cb8c129751741ba99e2da71299850",
+    "recipes/markdown-it-render-plugin/src/render.ts": "sha256:19156613fc8fb01177a5d2e4774f8b0b0bb287048aba8fac439c7e70d113165a",
+    "recipes/markdown-it-render-plugin/test/render.test.ts": "sha256:1c2c9556247f05df44787e483c05f4f7ef2b3c6d27c4f6bfaa37fb7b839b6e71"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

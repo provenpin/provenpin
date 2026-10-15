@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:aa78e08e267814a51380af875f239062e9eeebddb4f479c02d6b24f35eedbce4",
+  "files": {
+    "recipes/ethers-v6-wallet-signing/package.json": "sha256:3b587b4b5e1d343b6052ff865722621fd5b4fbdbf7bc3ae5948da1c980046713",
+    "recipes/ethers-v6-wallet-signing/recipe.yaml": "sha256:7b2aee47b6cb2f5469b3619894a2302b720dfeb70b80938d2a167dd7375cf5fc",
+    "recipes/ethers-v6-wallet-signing/src/wallet.ts": "sha256:3b8df254d968977666ea7f96059e04990ca69aac3a066f288a728ae010164332",
+    "recipes/ethers-v6-wallet-signing/test/wallet.test.ts": "sha256:d2360913f92f35489d29595ae20d71838387c37e9df55f1469096337362b2524"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

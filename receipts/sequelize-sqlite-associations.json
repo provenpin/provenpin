@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:9ba4c95ef48a775105fe7806cbe1602cb96145bc6296afe65ea52365ac789123",
+  "files": {
+    "recipes/sequelize-sqlite-associations/package.json": "sha256:6b89bee9c8f3369219a53c601d20bc3e0ab7dad9f88e9c3cc6a78c54051a2b2b",
+    "recipes/sequelize-sqlite-associations/recipe.yaml": "sha256:9f8bba8af95db2d72e594b8eb38f3c60758c649355dc1d908a4718c3245d0e07",
+    "recipes/sequelize-sqlite-associations/src/db.ts": "sha256:919a310fbba270ba5fa145029039502e9e183ae90e9bb67b00ab03a03c207d08",
+    "recipes/sequelize-sqlite-associations/test/db.test.ts": "sha256:c634e8b22c7f3e36eca5c04c9a40c72643bc95e6cbd6e125b81a25d3cce8a253"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

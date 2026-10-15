@@ -21,6 +21,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:a0ff8967f893ce3d0e1d874bdbfa831636be5be830a21c2e622ad53c5c76800b",
+  "files": {
+    "recipes/koa-router-zod-supertest/package.json": "sha256:0645485b3e4340c39fd41925c44cc7b590ea09cfe6b7a789c9caa25248613701",
+    "recipes/koa-router-zod-supertest/recipe.yaml": "sha256:6f0310af0fcd5fa46ccf2e2ca9cc97a02387a619f369a92ba0134a0360d57757",
+    "recipes/koa-router-zod-supertest/src/app.ts": "sha256:48a716eb4fa8dc90925c63139a63bcd86f422fc19b7cdb6a949f8da60be9e7d7",
+    "recipes/koa-router-zod-supertest/test/app.test.ts": "sha256:4012298dd3e3544ab3f875faf0dbff9205cd8e1b21a60ca91d11e60e6b6275e4"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

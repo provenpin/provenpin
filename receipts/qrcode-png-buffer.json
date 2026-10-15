@@ -18,6 +18,12 @@
     "@types/qrcode": "1.5.6"
   },
   "recipe_hash": "sha256:b547723fb894c4391080ba0c910496d0bad8be79b4dce2f3494e7256f3e0dff7",
+  "files": {
+    "recipes/qrcode-png-buffer/package.json": "sha256:f98541dc708e3b832e1db7db12e7e87495ff4f79f13fb0fd9a93e05f5f869643",
+    "recipes/qrcode-png-buffer/recipe.yaml": "sha256:912619f2871e5f302651d22efba1dbcf9baf5baa130bf779edd164ae48915a9e",
+    "recipes/qrcode-png-buffer/src/qr.ts": "sha256:4ce62cf0500293a147482eb669567e091f46aaeef21efb0aba0b2ee5f2b31b21",
+    "recipes/qrcode-png-buffer/test/qr.test.ts": "sha256:13a4be7eb09df1e3436cbf3d33094ead9a8aab7e3ec358bf762ee7a041a10b5a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

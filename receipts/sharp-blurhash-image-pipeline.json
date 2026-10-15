@@ -18,6 +18,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:ad6ab1d4d646d617f3ab9b5a57ed4621ef5bfc27474c414077fc67696d275feb",
+  "files": {
+    "recipes/sharp-blurhash-image-pipeline/package.json": "sha256:124daa6d3232ed1315e79cc3ff1aa2f3895cba81633e6299c8e9b91500cf62d1",
+    "recipes/sharp-blurhash-image-pipeline/recipe.yaml": "sha256:9d1c69906c5536ef68f31eac87afe19d6049b44f84f3a2e25cf6bb59a1f34cbb",
+    "recipes/sharp-blurhash-image-pipeline/src/pipeline.ts": "sha256:d87b8b54c31e6b269084bf8d7d89cb124c7c7bc80fd4e2889838f796a399d48c",
+    "recipes/sharp-blurhash-image-pipeline/test/pipeline.test.ts": "sha256:c9c9aa1c7e6a7e3f4888a931f34e2dbb3533663081e255ca540cfc18842a4c10"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

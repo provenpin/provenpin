@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:b4e727159d920cdc8e6747923ef5e53607cd8015613282e2bef7e557f1ec2990",
+  "files": {
+    "recipes/cuid2-collision-resistant-ids/package.json": "sha256:871365b67658c2800f9a0de65863c4e08d1b603be5cd81faa2b8953803cc51f1",
+    "recipes/cuid2-collision-resistant-ids/recipe.yaml": "sha256:2725f6783d850045fb6ea4aede035f0bdb0831d0fd4a6236b4ee16d7bfbf018a",
+    "recipes/cuid2-collision-resistant-ids/src/ids.ts": "sha256:38ccc7288b986cb223a1aa79c79fbb235e6d52a573b198bcb8a9a5cb1b6bbc92",
+    "recipes/cuid2-collision-resistant-ids/test/ids.test.ts": "sha256:c9ae06d6c40f3bebe1006e7c916ff218cb84dc1eb523e7a19f172260711663a8"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

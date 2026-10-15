@@ -18,6 +18,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:e7a4f839d2478f0fff085980c96ed09a234195a494777a89d0ecaeecb118ae01",
+  "files": {
+    "recipes/redux-toolkit-rtk-query-msw/package.json": "sha256:b09d6e37a94bc38d53778ed79a10e6227d054b73203bed222b44f1cd34a7b1bb",
+    "recipes/redux-toolkit-rtk-query-msw/recipe.yaml": "sha256:9eb1a3e0614532bd96640e4540b10d22f6e2b81efad1a40a2c94efaacfe105f3",
+    "recipes/redux-toolkit-rtk-query-msw/src/store.ts": "sha256:e555ecdeb75b7d9fdf8d6de0e09ec2afdea9e17440494f289c5ec1dadfb24b13",
+    "recipes/redux-toolkit-rtk-query-msw/test/store.test.ts": "sha256:97ef5693c19c792ff2490cac0448302a6e9599e4564e8a3efb107ca90115f32c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

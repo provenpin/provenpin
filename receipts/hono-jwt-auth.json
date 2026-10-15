@@ -19,6 +19,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:92352f4f4072a6e0a82b0af70fd5d9b579c4e1ffdea883ea16cf52ac7c13bfaa",
+  "files": {
+    "recipes/hono-jwt-auth/package.json": "sha256:931d5f1b4fc98036cb6ce74afee49662c5d495dfc0706253f7d248574614ec2a",
+    "recipes/hono-jwt-auth/recipe.yaml": "sha256:e8f48d2d89d3c2ffac717ae18e281793e5b898935cdc509ee571f4e16631d55f",
+    "recipes/hono-jwt-auth/src/app.ts": "sha256:7a9377bd5208966dec74d4f47feea7d9f113c1c2f858491a37c99a2bf35ade0e",
+    "recipes/hono-jwt-auth/test/app.test.ts": "sha256:628895d734369b11c36335a25bf5df0fb1513be9efca94e634526eba1900627a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

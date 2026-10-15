@@ -18,6 +18,14 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:ac153caa2ea010988ce8664eb80f50ff784c0603ff2b755e1252bca7d3570b05",
+  "files": {
+    "recipes/cheerio-zod-scrape-fixtures/package.json": "sha256:888c85c31d9df57863c07a419ac9cf8703b9e4851b8736249658f6e7414b9f37",
+    "recipes/cheerio-zod-scrape-fixtures/recipe.yaml": "sha256:98c2cff60027a4161e181cddfb65c7dbacbdc25cad1ddabbec6dcda62a747108",
+    "recipes/cheerio-zod-scrape-fixtures/src/scrape.ts": "sha256:e90c21d3edd3de97ab06bf432c524dd1401481b1cff381387cc55a1e38b1383b",
+    "recipes/cheerio-zod-scrape-fixtures/test/fixtures/listing.html": "sha256:2f50f54b451e0c6ebc8fa1739709bfdc0102ee06121845deb066ba37b25fda7d",
+    "recipes/cheerio-zod-scrape-fixtures/test/fixtures/specs.html": "sha256:4b1ff896e78d3e61cc94ca09c38e72d1a8e994710feb2a1b972485b517bd4884",
+    "recipes/cheerio-zod-scrape-fixtures/test/scrape.test.ts": "sha256:6c63ea025df7fa4b52027ee1aa1465098f087cf32a7850eac35a117ecd7c1442"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

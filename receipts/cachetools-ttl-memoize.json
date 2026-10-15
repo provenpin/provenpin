@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:8ad12359b5a103aba4f869e5f8a32dc36039211c4766859a944184258c87c62d",
+  "files": {
+    "recipes/cachetools-ttl-memoize/memoize.py": "sha256:3258ca7c315def2e36af591116d365c10d5fad52f6de51757f5f3691f0d6a198",
+    "recipes/cachetools-ttl-memoize/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/cachetools-ttl-memoize/recipe.yaml": "sha256:cde2daed5cf293948088fc2f62d8204aa38d770ba0ea355a27329ada7346383d",
+    "recipes/cachetools-ttl-memoize/requirements.txt": "sha256:d120def32b1adca398c364b70104b629c27662b8ff9fa76b7e8fdb1979285056",
+    "recipes/cachetools-ttl-memoize/tests/test_memoize.py": "sha256:8924a3357d371f3eba0985e6cb7e726a18526f514d7bfa2b9a46148246d73b3c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

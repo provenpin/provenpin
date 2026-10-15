@@ -18,6 +18,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:a7350d038e54fd0e85017c79d5452b216a098f45dbca179808fe901f9b8438c3",
+  "files": {
+    "recipes/pino-redaction-custom-transport/package.json": "sha256:d2b5ede04aa5641cc5b89f43f3af98b0247abddaac5ff0ea50521a6196b7da56",
+    "recipes/pino-redaction-custom-transport/recipe.yaml": "sha256:8ce0c9d8ebe775d4dd703d5a6a0353eaa65c6f1c4796d8baa6470252b6ffa657",
+    "recipes/pino-redaction-custom-transport/src/logger.ts": "sha256:cff582bbada228196b755656617dcd15914c76cce2f954df2eb8bc0295d2d0f7",
+    "recipes/pino-redaction-custom-transport/test/logger.test.ts": "sha256:a97a7f1c49ae759a8853773a0506df1135639dc9b448640eb27097733b6e1511"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

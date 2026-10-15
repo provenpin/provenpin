@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:a34ab0618c564efdc8cc0a94968a94bc9be5817fdf0d1e415a9c694126b645d3",
+  "files": {
+    "recipes/p-queue-priority/package.json": "sha256:ac0f7a6d1c8017a7f3dbd7005d14151a7baa13ae57b06ec59c4de9176adb4098",
+    "recipes/p-queue-priority/recipe.yaml": "sha256:19be6150556da7234a99701f1a1ec5cec2724ec4643b23544acf665899e7674c",
+    "recipes/p-queue-priority/src/jobs.ts": "sha256:def3b68295db2af1f8a50e3c32098e3f169d2dc36275058651194b8f76a71c08",
+    "recipes/p-queue-priority/test/jobs.test.ts": "sha256:48d6851a940b94c7b77624679af4ec586f0d5afa05c5c70a7f1881b0bf26a816"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

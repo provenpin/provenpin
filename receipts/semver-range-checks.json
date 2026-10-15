@@ -18,6 +18,12 @@
     "@types/semver": "7.8.0"
   },
   "recipe_hash": "sha256:7046f5a70fd881c2e22c448eeab52d662a719941d30a214adbd0955825a5c0f0",
+  "files": {
+    "recipes/semver-range-checks/package.json": "sha256:fc272bac71e8e6326bac92fdc497fa555de4e595d84eb16da9509a3c6df89884",
+    "recipes/semver-range-checks/recipe.yaml": "sha256:7175ba3e209eb194a5e1164f615cc755539e36153f48cc639a8dbd58cba635e0",
+    "recipes/semver-range-checks/src/versions.ts": "sha256:3b900f012b0e7b6b8930d485e5d609af6b7e32012994ff571c54ce78af9e7f8e",
+    "recipes/semver-range-checks/test/versions.test.ts": "sha256:8dbad71bf30dcf7dafe56347800945bfecdef72ff02a6c3289f606e903d16790"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

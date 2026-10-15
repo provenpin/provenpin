@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:a3d0360fc682c38d758e39067635d352101a5c55b2de5d547f4207ea55734bc4",
+  "files": {
+    "recipes/chrono-node-reference-date/package.json": "sha256:3382e7d4c67f96b1fc8f0e3685481043f6e02c3184bef81f1ce041394236f3be",
+    "recipes/chrono-node-reference-date/recipe.yaml": "sha256:336d4c8a130ec4be937ba9a046e56d1b92c1f777b541d221bd8dc0ac17aff233",
+    "recipes/chrono-node-reference-date/src/parse.ts": "sha256:72075bb8fdf4cca31f8060f170e5702003c1b256bb2c0899a1b4e951e229b2a9",
+    "recipes/chrono-node-reference-date/test/parse.test.ts": "sha256:344557c4f16dd642e75accbfe3fefad767c66c3c227baada67582e103f9fbded"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

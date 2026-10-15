@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:98daada27e6bbf423aa04217c5a00ab6a0a4a3c7a1c2d0879adf6a7742a5dc84",
+  "files": {
+    "recipes/pendulum-time-machine-freeze/clock.py": "sha256:720acace6e8e730041afc9d73f6e14fdfda24af323367b093a9b8f5c333aa9a6",
+    "recipes/pendulum-time-machine-freeze/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pendulum-time-machine-freeze/recipe.yaml": "sha256:3a20ce6d0120ef0dc67b22d1cce5bbd56cd2f9226aa218ba3d04d7c88d615f44",
+    "recipes/pendulum-time-machine-freeze/requirements.txt": "sha256:786347ff91b873359f1f40f2d7b154310fa70423c5a6cb4b2a3c749d2f286bf4",
+    "recipes/pendulum-time-machine-freeze/tests/test_clock.py": "sha256:2643bdc517d902efa48162a63575b0323d6847ea7b7c855686abe37e88d7b11e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

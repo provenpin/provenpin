@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:d5c4670990ac086eedc977bf457f6829b3d1158683acfabc5feec0183e0c7a96",
+  "files": {
+    "recipes/prettier-format-api/package.json": "sha256:5bcedc3f81b8b6fc9cba4205b1e85672a0c9802b97072612a8109fe9ff34b374",
+    "recipes/prettier-format-api/recipe.yaml": "sha256:ccfde6b07db61a654f66280055e832cff09a21833ae1bed4e7bd3040afa5a5a0",
+    "recipes/prettier-format-api/src/formatter.ts": "sha256:2b6ae14e4851e14d2973e02f82433e57d1122d8fe00d14c17840084e9228f6f6",
+    "recipes/prettier-format-api/test/formatter.test.ts": "sha256:8dd8bc35d27bdc41fc5754e2c1e5f17c61d23eaa19867c22b4eacc68a536da80"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

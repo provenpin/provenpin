@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:e26dc2cc182be783ed23ff1e2712b5f69f00bd23e99abdd543b72ae5ebc32f09",
+  "files": {
+    "recipes/fastify-multipart-upload/package.json": "sha256:83f1a8409c520537c6e92193055c475db9e043d21375b1cb0a8fc2cfad5e963f",
+    "recipes/fastify-multipart-upload/recipe.yaml": "sha256:5c8a9d2f90b2c3e70b9d9d8154466b6640c4b3d13eb1471394821aedc4aa52cc",
+    "recipes/fastify-multipart-upload/src/app.ts": "sha256:79f84ada131d72bb5f1d2ef22fbff6dec89ce7b2130edf21264550caa3dea453",
+    "recipes/fastify-multipart-upload/test/app.test.ts": "sha256:bc82bbc48d61febdb2b6b47fdce384d298c9c73c4d7926c9da64ea8da20db930"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

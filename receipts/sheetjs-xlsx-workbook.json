@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:2f039d76acd3ed5a300bdb0224ff615d0e54ba2313a7a694b07f0e3cc4ef8a76",
+  "files": {
+    "recipes/sheetjs-xlsx-workbook/package.json": "sha256:5c5ecf84e05908a794f53ee3e02128593e4c0fe68f2314a6e53fdd16eede8c2e",
+    "recipes/sheetjs-xlsx-workbook/recipe.yaml": "sha256:05d2798bf6cbb415fae46bf661ea0f7d1c56b9e358ef988fd712139a0c2d9fba",
+    "recipes/sheetjs-xlsx-workbook/src/workbook.ts": "sha256:1e670048334541b693d204aa81012dfc7983246c52b14886bb2bcf2f3ada9f0c",
+    "recipes/sheetjs-xlsx-workbook/test/workbook.test.ts": "sha256:f7caa0d4287c340aa66153c861c3a0416fe0d209605131b44558db149d94415c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

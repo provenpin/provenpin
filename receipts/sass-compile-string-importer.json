@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:031a22b403a6a9846423b70cdfe4ef517771bd143bd7cf47e1263c3281bef4ad",
+  "files": {
+    "recipes/sass-compile-string-importer/package.json": "sha256:4f701cd1f750568241f3e1758ecf694578cf5fe9b43247aa991d34ad991677f0",
+    "recipes/sass-compile-string-importer/recipe.yaml": "sha256:c867e0b9cf09ac962a4ab78f89f47aacfb4f862f2dee8ca280dafa4187053518",
+    "recipes/sass-compile-string-importer/src/compiler.ts": "sha256:8656b89be0bfa86191e24da412b0375692d4f7ea25dedfbb5a4227a35054cc83",
+    "recipes/sass-compile-string-importer/test/compiler.test.ts": "sha256:f8abb8f7bb51a2f501633e03250da4452ffbf6f0d6f5dcb889340980cefe4c02"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:47d9328e309e9ac26875c9e38ceaf17c0ea5f0d8392c314b0a5090949425b3de",
+  "files": {
+    "recipes/langchain-core-fake-llm-python/chain.py": "sha256:20d513e4fe2fc2004be89cfd3f7de22e7834b925034da94ea4f78f2a1c52a8e0",
+    "recipes/langchain-core-fake-llm-python/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/langchain-core-fake-llm-python/recipe.yaml": "sha256:b5c6f5c86e4606194b07293d414435663ee6b2de6d1fcbede2ea9c18150d6714",
+    "recipes/langchain-core-fake-llm-python/requirements.txt": "sha256:ca23cd0c495664f99c88fbc173bb6f3d42815082e707fc999e87a363f04d889e",
+    "recipes/langchain-core-fake-llm-python/tests/test_chain.py": "sha256:21c2fdc0b1a2c37ae9eb14275bcd79bbfa167f550952b0db2a28b3ac74a884c4"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

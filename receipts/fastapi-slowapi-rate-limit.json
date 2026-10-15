@@ -18,6 +18,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:1313cf855f80be89a1bbaf92588458f2a1ab20fdfef17bc11fdff1ba69039412",
+  "files": {
+    "recipes/fastapi-slowapi-rate-limit/app.py": "sha256:6a390fdbaf8e346fcb0f7d75d133d45b14bd0a928ed031288bdd63c1d5a8ae71",
+    "recipes/fastapi-slowapi-rate-limit/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fastapi-slowapi-rate-limit/recipe.yaml": "sha256:441415f327acdea9e4a2e0a4fccef5a5120984ba568c01898987352eb3411408",
+    "recipes/fastapi-slowapi-rate-limit/requirements.txt": "sha256:2ff2c4d1acac8ded11bd9beff592c66ff25f90b7332930ec1e768876cec67a2a",
+    "recipes/fastapi-slowapi-rate-limit/tests/test_app.py": "sha256:526703d5fa6d1e5deb9dc3fd1434112d006a20474e8e6b2b413b6af062f374c5"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

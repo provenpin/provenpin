@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:e42a072a9e7eec4af6de60ebaba16422152fbda052ffb780e592472ad74bc1af",
+  "files": {
+    "recipes/cockatiel-retry-circuit-policy/package.json": "sha256:4d992a5cb57a80eb72be73100c4003ecfb6697b56ce898a0e2cefa130518270f",
+    "recipes/cockatiel-retry-circuit-policy/recipe.yaml": "sha256:2dc6fec77d451dd8e040ed385a7a92f2bc4fc854694a7f0919a662cafe56a1a5",
+    "recipes/cockatiel-retry-circuit-policy/src/policies.ts": "sha256:b2608913baa80a381bfe5f7fe4dbcdf29926b99cb57fdd45761b4d4669dae707",
+    "recipes/cockatiel-retry-circuit-policy/test/policies.test.ts": "sha256:ac30070d98a6e6e0c8a737cf571449cb76fefe6873feca2fa4870192081e6faa"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:7a213f6e7047976b6cc2e49138f22653e9f4e1108a53f592d03334ed34fcb805",
+  "files": {
+    "recipes/diskcache-filelock-jobs/jobs.py": "sha256:df0ec5490e90ff8dfd0bc0ea7a9e2fb4f980efeda8ffb0eae2f9cbbc8a107de8",
+    "recipes/diskcache-filelock-jobs/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/diskcache-filelock-jobs/recipe.yaml": "sha256:6bf003f4420b29fd414e95efb230e6de544dd0a976b66a8f55d7e32e57bef35f",
+    "recipes/diskcache-filelock-jobs/requirements.txt": "sha256:a13aa9587237d67fda640fabd91cd87585b948c46ef27980ec60d8c954dfd96a",
+    "recipes/diskcache-filelock-jobs/tests/test_jobs.py": "sha256:fb5bc7382383a9b98db761584a35123e156314962e80f8332930324eb04b5464"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

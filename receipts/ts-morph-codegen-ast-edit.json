@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:628d1952b5274c0b2117ef40357a9ec713c9344adc460e054b43ef69f79db8f0",
+  "files": {
+    "recipes/ts-morph-codegen-ast-edit/package.json": "sha256:9923deb0075e066829609902a2977fe62e00f18e655fb3c0962878171dfe130d",
+    "recipes/ts-morph-codegen-ast-edit/recipe.yaml": "sha256:3589c0785556f52dbd8c06b3f1cbecaab4934e07ef69e6ad17d5ceab6c41f38d",
+    "recipes/ts-morph-codegen-ast-edit/src/codemod.ts": "sha256:4f666d67d2833235c4292b32e43a9991a8e043d5e2ae64e1fe6ed1deefb6fde6",
+    "recipes/ts-morph-codegen-ast-edit/test/codemod.test.ts": "sha256:e340d1fff96be89ae8f3112d2cfe743d04944a0b024097d4efa4f3ff6747413d"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

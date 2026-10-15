@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:0b3b4d943fb327df00d4e1b4ac7cb417f2ebec02266a6ffd8a20117c7dd4ada6",
+  "files": {
+    "recipes/ofetch-msw-client/package.json": "sha256:a9d114324729b4f26fef33fd9c18955776a5665d748eae5240baf1f11d7eb301",
+    "recipes/ofetch-msw-client/recipe.yaml": "sha256:019e1ea3689d8bdb59b33a821352b47ece39cfc340cafe5ef4104847c51efc31",
+    "recipes/ofetch-msw-client/src/client.ts": "sha256:355aa7072354d75269b2a24c2f2e336ac9020315fe50ce50823b1afa0b893e05",
+    "recipes/ofetch-msw-client/test/client.test.ts": "sha256:2c5d9e94b8b8ab78d776344f90910fdbdca8e099b57da8e459eb45a5a4fe5ec9"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:857a653d54cc524a270bb023c3149a7b1cd241d1309bbe3381cc4ad18bbf3879",
+  "files": {
+    "recipes/msgpackr-encode-decode/package.json": "sha256:4cda21f0869df170b22f896d2fead26d70e31db41b1c8540a094823811056b7a",
+    "recipes/msgpackr-encode-decode/recipe.yaml": "sha256:bd6e098733d430bf228391a5ba5995d44085ce4156fb3a2f3d151411b946e65c",
+    "recipes/msgpackr-encode-decode/src/codec.ts": "sha256:d5d42282df8331cb19b7ea563ff56d530256bf680cf943ca0583b1fbed738ef5",
+    "recipes/msgpackr-encode-decode/test/codec.test.ts": "sha256:925b2c73ce04d578d31d7dc0fc1f3a94ad49103b13d443069b98eec5ba9a1ee1"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

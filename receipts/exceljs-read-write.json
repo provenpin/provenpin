@@ -17,6 +17,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:cfabe612814534211147bfb5fc36bd321811715e5784b91333a0e50a8d5090af",
+  "files": {
+    "recipes/exceljs-read-write/package.json": "sha256:a027e7cf655589741d47643dad15ac3b1f5fe5f88c425190cbddebd8a5fe0aa4",
+    "recipes/exceljs-read-write/recipe.yaml": "sha256:e893954f09280c422fe33c6a72245c862535d69f5d30f8a322568f33d4ed3b0d",
+    "recipes/exceljs-read-write/src/xlsx.ts": "sha256:5b02f95506f75e343523355d1584ae0a82152e2843a59a32d5bc9ec2a573e446",
+    "recipes/exceljs-read-write/test/xlsx.test.ts": "sha256:c6d988fcf6f28d5ab58f38aa2c8a2437b46528f51d43facb9a6cd3f1f4646422"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

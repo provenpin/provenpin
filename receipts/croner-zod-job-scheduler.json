@@ -18,6 +18,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:c2909661a10dbdbf3eb8f144b177b82b7faa2dc2e2bce52b5bb46279476dd41e",
+  "files": {
+    "recipes/croner-zod-job-scheduler/package.json": "sha256:0fd53de8c763f2ab0e3a89b44d5b2b3ff18d3c5b473e46d8b0fca3ac6232c947",
+    "recipes/croner-zod-job-scheduler/recipe.yaml": "sha256:0673a9db1259affec44b1e4cbf2e60c8317f19142de9f19f330348fac27dde53",
+    "recipes/croner-zod-job-scheduler/src/scheduler.ts": "sha256:3b517a78320104753042f04133aec85bc2f5c6463614fcf213ff38664cc7b246",
+    "recipes/croner-zod-job-scheduler/test/scheduler.test.ts": "sha256:6d7de49f520a4aab9d84a4afd44d75fdc89af2f1103c2adfd096aea6f5a1e001"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

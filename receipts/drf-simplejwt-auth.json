@@ -19,6 +19,15 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:55b2a7e3c4bc80b4b5029ca83d6cf7d4f85bc140c825da2e7e74520b74565290",
+  "files": {
+    "recipes/drf-simplejwt-auth/pytest.ini": "sha256:4bc441b2eeab2fcaec19c01585dd4cae02ff6de8b462a2d0f2f23f2349d1d199",
+    "recipes/drf-simplejwt-auth/recipe.yaml": "sha256:1cf66682bfe4c4c56caa866f3bf4c28860f4025d04b481169249a3f7df06ee5c",
+    "recipes/drf-simplejwt-auth/requirements.txt": "sha256:6b412fbb67ccdca453bc16139f30a04b8a97fe1b58dbbd75bec0b7cc53243c10",
+    "recipes/drf-simplejwt-auth/settings.py": "sha256:a99e942b77e9ff522be78f288d9775a325a2934dc3dd4e8ceab6bacfdfa535cd",
+    "recipes/drf-simplejwt-auth/tests/test_auth.py": "sha256:d20ff1fc2bf789d982502ab038c889b5f681619f141799d6bb355a99e2ae30d0",
+    "recipes/drf-simplejwt-auth/urls.py": "sha256:efb679ae3ed913b48020636cb36c77433097be96aab89629846d9d8978460da1",
+    "recipes/drf-simplejwt-auth/views.py": "sha256:30f9663df8c4ccc3bd910c7747af6bdc04a47dfb5d5c87fecdbae97123e95f5c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

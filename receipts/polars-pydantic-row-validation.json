@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:344964fcc5014a885fee68d8040c91afa49d0d476d6ecd5e2cd140a2169fc1e2",
+  "files": {
+    "recipes/polars-pydantic-row-validation/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/polars-pydantic-row-validation/recipe.yaml": "sha256:0f675ef3c05e31aa3d7febb192afdca22993254abd731069f82a469db7deaa25",
+    "recipes/polars-pydantic-row-validation/requirements.txt": "sha256:264d769a8d4e55a20d1f97d3809f8eca81477dffd889dc44e62d8df7167a338f",
+    "recipes/polars-pydantic-row-validation/rows.py": "sha256:2695f8b926a4fbd6b0d4865909c9d3cc5ab3f5a241d4471997c9b341d6236d77",
+    "recipes/polars-pydantic-row-validation/tests/test_rows.py": "sha256:0e03cf96079ce74e6e68956971d1b6c7cc838b2682582beed44017334e61aa69"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

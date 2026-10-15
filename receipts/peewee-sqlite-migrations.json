@@ -16,6 +16,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:d33755e73531aac262b9ea7b9006449a9d2ffde40272b7ef48902b841f4047b3",
+  "files": {
+    "recipes/peewee-sqlite-migrations/migrations.py": "sha256:d0f83063011ba7bfaeabc3c448f828a24c1c514cd30448a312b69b2efe599f85",
+    "recipes/peewee-sqlite-migrations/models.py": "sha256:035867b52702e85db3a20a17d52637c8ed2ed030797e4880acdfb866a2023a3a",
+    "recipes/peewee-sqlite-migrations/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/peewee-sqlite-migrations/recipe.yaml": "sha256:fb6c8f10f0c46c3ebb1750580fdf01a6d59d1b44baea7f1a3237391f83c41990",
+    "recipes/peewee-sqlite-migrations/requirements.txt": "sha256:1b9e3421991a3b90ac7ef113013652fccc69de595b9d2e844234af667dbaa000",
+    "recipes/peewee-sqlite-migrations/tests/test_migrations.py": "sha256:90dd6c8e3844f05103ba039ef0a71cb9a4ecce0f33e7582e9694db78856b983f"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

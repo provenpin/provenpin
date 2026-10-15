@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:8f69d78b1ab59c25c551223a4a4bf10e7899ae0952203a1efa5cfc92de536bd6",
+  "files": {
+    "recipes/fflate-zip-roundtrip/package.json": "sha256:d990250d7b0f574eebfd2cc1570469efd63418be55178345b4188d6a3397d86c",
+    "recipes/fflate-zip-roundtrip/recipe.yaml": "sha256:33320498728016737dec2bff546040292b3f1e03e1aa893a72d4d143d294a45e",
+    "recipes/fflate-zip-roundtrip/src/archive.ts": "sha256:ae3301f3e336251b4d1cd15b13d4c6f5f8e6da3be00b56ca0e6da3d54e2fda41",
+    "recipes/fflate-zip-roundtrip/test/archive.test.ts": "sha256:810ddfbdb749aae740822371f954465625b9d750c2acc7f679ac77744a5c5b06"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -21,6 +21,12 @@
     "@types/supertest": "7.2.1"
   },
   "recipe_hash": "sha256:f3c19db0457528be272085d23882a3c5430ee4d471bb91d7bc0e0bac2d21250b",
+  "files": {
+    "recipes/express-zod-validation/package.json": "sha256:3d11922bb94c2e1f0b98c739bee706957dbaa97fd88d1434692b68039db49ece",
+    "recipes/express-zod-validation/recipe.yaml": "sha256:8b0474f43b2ddbb6d850b0fa7fd07a3cb04396ba5a2bc5804c1de67344863465",
+    "recipes/express-zod-validation/src/app.ts": "sha256:48506fde6cd9ddb0545a8c9fd49fe590223fc01202e27ddc1ab4af274c4b8ff6",
+    "recipes/express-zod-validation/test/app.test.ts": "sha256:14c87c47b917e0fa27b7a0e36e2e6f76df70167438b7fdf2c74d38ceaf3597a8"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

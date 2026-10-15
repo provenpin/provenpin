@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:de063a7153b5de08214ef541a4bbb8064a8bd892f0676b139f2f6049f56d3b98",
+  "files": {
+    "recipes/huey-sqlite-immediate/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/huey-sqlite-immediate/recipe.yaml": "sha256:f6ce46ca9e8ce36329e76854fc571fcab48d7a3c578e4fca29ce461415d4a5f5",
+    "recipes/huey-sqlite-immediate/requirements.txt": "sha256:a58787023008b52206014141339fdb71f349ca1e95a9f8a7d25170a38a9ae143",
+    "recipes/huey-sqlite-immediate/tasks.py": "sha256:61930e8adec1b2ccdb539377855e9fa4f35579e21486a3e7bc80c467e52f1790",
+    "recipes/huey-sqlite-immediate/tests/test_tasks.py": "sha256:9eabf56f1faf1c9ddafd6b4a38ce5788358a7bb5f80041db9b6c9111806bb611"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:3e5c1b8cab32b11868ae8005a89cb7da9fcf3cd6089b062e5ab2e1be232767ff",
+  "files": {
+    "recipes/duckdb-polars-analytics/analytics.py": "sha256:2ca55877abb3e0dcc0a23948222112b6797e36b6a40e6027b0821ec84e264aae",
+    "recipes/duckdb-polars-analytics/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/duckdb-polars-analytics/recipe.yaml": "sha256:c1af90a1066025a534d26f97a47e5d2da7fa510fe27be109931169ebb0ab4832",
+    "recipes/duckdb-polars-analytics/requirements.txt": "sha256:e40f46d061d61e0495b25f74ea23edbf3d97a2592d1340eeec57b50b61f3d998",
+    "recipes/duckdb-polars-analytics/tests/test_analytics.py": "sha256:e0fdd985020a4e8cde7fdd1eb7cb04dbc109e112210efef9d12c3936960e4a9b"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

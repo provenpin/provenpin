@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:eb0f4a01790e5ed4b5cb6f6032927be9e4d46155f40c4f0ece5032778b293b7e",
+  "files": {
+    "recipes/handlebars-email-templates/package.json": "sha256:72983f76bde0ead91b285ddd4d953047dde7a2dd55536befa20bfa17f467db55",
+    "recipes/handlebars-email-templates/recipe.yaml": "sha256:0369144c77c70f5f90d14d05ebac46ef42c638c9dd77a2ad9ce76eae4cc9a24f",
+    "recipes/handlebars-email-templates/src/templates.ts": "sha256:a9b3e255df4b6cbaf870f5a17b1e304614cef00fd4ba9eef30d5f14bdb3704ba",
+    "recipes/handlebars-email-templates/test/templates.test.ts": "sha256:48fcc2369a7ebcc1ad022c49e16831624726e072ce6e83b0c9a11bf47810abcd"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -21,6 +21,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:02e980b4e3e1308a614dec1a4054b241dba73c72d26c5db3c9b76fc31df89d80",
+  "files": {
+    "recipes/fastapi-oauth2-pyjwt-scopes/app.py": "sha256:1b40ede3e0a4a8ff097ae67fec962e3cdaa11b2aa52695da8ac428822a314db1",
+    "recipes/fastapi-oauth2-pyjwt-scopes/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fastapi-oauth2-pyjwt-scopes/recipe.yaml": "sha256:729822ce66b9d60684793c0e59b94437698dcb20704a4b10b6f699c2de063735",
+    "recipes/fastapi-oauth2-pyjwt-scopes/requirements.txt": "sha256:1b637e755b869da73df8ffc8170534d4fec7c7d3e06d32a767f2fff43e8b67b5",
+    "recipes/fastapi-oauth2-pyjwt-scopes/tests/test_app.py": "sha256:47786d2394773167d35b20ed2618ec75810ca405a9971a385caab390f88ccff9"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

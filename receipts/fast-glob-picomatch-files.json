@@ -19,6 +19,12 @@
     "@types/picomatch": "4.0.3"
   },
   "recipe_hash": "sha256:518811949457a77e2fc6cf204e6ef990ec783612b33297ec2d4ceeab583ed505",
+  "files": {
+    "recipes/fast-glob-picomatch-files/package.json": "sha256:713901c5a98bb366c6d1d4beba1a9ba6d3635dfe0118d50c7cb72e027f30f27e",
+    "recipes/fast-glob-picomatch-files/recipe.yaml": "sha256:cb5e3d51f5d7c1c52334f1e314e4d3a1d66a3f2932e8e6d254695e0ae0543625",
+    "recipes/fast-glob-picomatch-files/src/files.ts": "sha256:0cb12b44ff14dcb642ace0aaf1a8b84500e580ae7e82a08b3dd8eb556a1d1c39",
+    "recipes/fast-glob-picomatch-files/test/files.test.ts": "sha256:b8b23de3e0c354a092493a85f7fbba7bb13a5c435434f3cc50db4bb6b3edf1d5"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

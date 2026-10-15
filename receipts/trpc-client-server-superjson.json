@@ -20,6 +20,13 @@
     "vitest": "5.0.4"
   },
   "recipe_hash": "sha256:e6b6d54fa6643ba1d6c605cbd8c9162a9ecc78192a64c5eb130822dffd8a1f60",
+  "files": {
+    "recipes/trpc-client-server-superjson/package.json": "sha256:3dd4fbc11b1e29d4be593d851e783b9e01871739cd9fe27f59ec96221a24ced4",
+    "recipes/trpc-client-server-superjson/recipe.yaml": "sha256:22e65ffeb6c1ac5fdb756807c04b1d75b5faef2379b002be79c733e087940107",
+    "recipes/trpc-client-server-superjson/src/client.ts": "sha256:0e65dc24db931fce337e499c285239a2950a13b060408ce7d8232edf3597ea5b",
+    "recipes/trpc-client-server-superjson/src/server.ts": "sha256:26a69d78ae23e172e508ca75cea84440a1a863fc1985ee1de09dae823a5c6f77",
+    "recipes/trpc-client-server-superjson/test/trpc.test.ts": "sha256:a56be167abbf0bec95348c82d97ad50739484780e0281d5a29fc90378671dfdc"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

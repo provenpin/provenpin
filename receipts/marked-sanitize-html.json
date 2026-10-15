@@ -19,6 +19,12 @@
     "@types/sanitize-html": "2.16.2"
   },
   "recipe_hash": "sha256:9e38b9d528678e2351adea09499efd9d98c771be9d8f643682d072608de9b058",
+  "files": {
+    "recipes/marked-sanitize-html/package.json": "sha256:9bccdb894ecec0f75e7c45e319d2b7b0133e42d2d2a7a89587b7d7737bfefd22",
+    "recipes/marked-sanitize-html/recipe.yaml": "sha256:d0a921952e904f558e8fa14ca603e4a079ac64176c17ae9941b9564ce37b86e8",
+    "recipes/marked-sanitize-html/src/markdown.ts": "sha256:5883e308573688951ff043fb7d1fc38d196e965e63abb8711d625a48e82e8aa9",
+    "recipes/marked-sanitize-html/test/markdown.test.ts": "sha256:b2b7c4de49d256c50e8e68b092321cdd0ff1358f5b908a2cba61a4e880a28a0e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

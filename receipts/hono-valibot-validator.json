@@ -19,6 +19,12 @@
     "vitest": "5.0.4"
   },
   "recipe_hash": "sha256:7e330eb27038521f0206484d4ebb0f92c3c533070b119b6fd9e467d5446e7e65",
+  "files": {
+    "recipes/hono-valibot-validator/package.json": "sha256:03121c42bd9afec76d4ff0011f29b53487d2d25b3d005239af508b1276f0eaf3",
+    "recipes/hono-valibot-validator/recipe.yaml": "sha256:6ad7fc5c8555e95dadca566f794e726d54b84023abc412497abdf5decd047b8a",
+    "recipes/hono-valibot-validator/src/app.ts": "sha256:623a7c8555c44cba126d813484813ac95e4a817e0307107ac155ddf352112371",
+    "recipes/hono-valibot-validator/test/app.test.ts": "sha256:baaade9e17fd4afd346e10aaa42a1a5e2ad3c46d40ef3e5aa726c49ecb7ca3b4"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

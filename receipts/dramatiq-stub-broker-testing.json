@@ -17,6 +17,13 @@
     "pytest-asyncio": "1.4.0"
   },
   "recipe_hash": "sha256:fedca08d1ce82dab9006f6bd46bb91def89adb00370809b412404c56c932f976",
+  "files": {
+    "recipes/dramatiq-stub-broker-testing/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/dramatiq-stub-broker-testing/recipe.yaml": "sha256:0b5ecc657583d691a90c61e10f5458224d6dde351cbcb491668a98e425baee43",
+    "recipes/dramatiq-stub-broker-testing/requirements.txt": "sha256:f8b60e77665ff9321a4fa241831a254d0d738ffbed63664c386872342cda37e6",
+    "recipes/dramatiq-stub-broker-testing/tasks.py": "sha256:0cc7ca70c8dc23e54cc6437fbd194dc5c33771086922d1abaddce95c583edb42",
+    "recipes/dramatiq-stub-broker-testing/tests/test_tasks.py": "sha256:94552d7aed803cfa2da08acbacfcca7d40f72a5b0d498c9739252951deff289c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

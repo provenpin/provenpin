@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:ce7fb201b1b5233e727ee5cbdac70e23230d60790146226f414f8ca847f6d5e6",
+  "files": {
+    "recipes/polars-pandera-validation/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/polars-pandera-validation/recipe.yaml": "sha256:cee52da3eff1082bfa4943c0d6924e694ccb402bcd0d5173e8b936ec08cfff0f",
+    "recipes/polars-pandera-validation/requirements.txt": "sha256:d4baceee20a1c64fbad7e2cbfe33b331576aa5d94dea3a74a7b4cf1ec3152590",
+    "recipes/polars-pandera-validation/schemas.py": "sha256:e595617a6f940f0214ad98504f83b512dc2f3d1e31308b24e8f4f98641d35628",
+    "recipes/polars-pandera-validation/tests/test_schemas.py": "sha256:ecf817c4f0997fff7d57b9712a973df06507656749c69edb48397d9288ceb69a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:89a7958d097c482e7f8e5c94505846db0b86d61523d8404347c98fb65dceea94",
+  "files": {
+    "recipes/flexsearch-document-index/package.json": "sha256:232e63c566352d9ea2c69959f207db7fab6cb89cac727cafe253a0ed51d85257",
+    "recipes/flexsearch-document-index/recipe.yaml": "sha256:949b8dc3bc5fbb44a6963c24143a54420ade4d8effa581a4cd1f67ad6d7fdd8f",
+    "recipes/flexsearch-document-index/src/index-docs.ts": "sha256:6d364df73ff16c1b7a5d34e9e23f964046b17cc13b70ec8c8e80029274a0012c",
+    "recipes/flexsearch-document-index/test/index-docs.test.ts": "sha256:81d4298f3615c1f50f9fe2e326ed4649689e9e75b30c86bd863a888aa4af2967"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

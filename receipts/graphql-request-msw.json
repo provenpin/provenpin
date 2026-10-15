@@ -19,6 +19,12 @@
     "msw": "3.0.3"
   },
   "recipe_hash": "sha256:9ae01f3deb3089ebebe4099f8a43c103255e1549a2d56533baeae559f9ef6428",
+  "files": {
+    "recipes/graphql-request-msw/package.json": "sha256:02795cad325790764b592ec59195ecfbefaf331def7203a2776a30aa17f3a951",
+    "recipes/graphql-request-msw/recipe.yaml": "sha256:dc5504a91b2e1a2bf7761b22156eb1ea99015a11dd0f6fbb75f807bf7c3630e1",
+    "recipes/graphql-request-msw/src/api.ts": "sha256:4c13a9c0ddb77f29c7148d137655db24a74bb0a2b366577c64b545f9a8671799",
+    "recipes/graphql-request-msw/test/api.test.ts": "sha256:e74fe9e483c9517b56677520570416bca48972285c71311cc593572d74fff2ef"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

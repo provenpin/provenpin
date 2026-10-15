@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:e06a5c00b4bc4bf5060fad8653f830745d97a2d26aac3e37a043d1ef3bf527df",
+  "files": {
+    "recipes/anyio-to-thread-bridge/bridge.py": "sha256:bb38f56a8555ece3a63f0cce1c8e0b9545b8da1d9c0b9730e45e99d699dc015a",
+    "recipes/anyio-to-thread-bridge/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/anyio-to-thread-bridge/recipe.yaml": "sha256:71c64235ae921ea39944ce893b8c8a3f0be016560879814c720f72a96b0fe04a",
+    "recipes/anyio-to-thread-bridge/requirements.txt": "sha256:59e83aa098c5771c0bd32b09632d69ae6b48c17d59191f71058a394dc2cbbc85",
+    "recipes/anyio-to-thread-bridge/tests/test_bridge.py": "sha256:6bd4432174421573193b7ab5667702716363ce3ed266d3bda68f4025266b3fac"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

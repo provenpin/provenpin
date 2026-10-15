@@ -19,6 +19,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:8f81bca44749dbc25b5ec4ae46efa029162720ab6a54f9c0f21270f8e812ee8d",
+  "files": {
+    "recipes/fastapi-argon2-login/app.py": "sha256:c0dc9663ad703a46a1a7c49c9071bcd96635dac39c26fcf486ec72507fb7dcbc",
+    "recipes/fastapi-argon2-login/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fastapi-argon2-login/recipe.yaml": "sha256:7e63576a5d3495e6ef5f800afcd69ad84fba1a913c536971b01bdd636dac2cbd",
+    "recipes/fastapi-argon2-login/requirements.txt": "sha256:596e7f31040c35977820920fc8cf9d08abd34bcacd85bb04c08f93300508554a",
+    "recipes/fastapi-argon2-login/tests/test_login.py": "sha256:a3fda24af5ec83ef7e343dae4760a1b1604a8a096fe6f55ee7d11c87bb476168"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

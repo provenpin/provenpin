@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:f15d10d2b2070f24a92ff42cba7591644fc475e9b8b11ee5cb2b4ca3e8e34929",
+  "files": {
+    "recipes/drizzle-pglite-postgres/package.json": "sha256:0ffa5ef79b006cf3bc934ce9f77d59de355ce751f61755cf26c981335cf6cfb3",
+    "recipes/drizzle-pglite-postgres/recipe.yaml": "sha256:9c02e04c8290d5684f4222b41f1db91eda2164a1fd9c6a7ce6324e336b1b1524",
+    "recipes/drizzle-pglite-postgres/src/db.ts": "sha256:9ce289a33d33c9b486b161b4fa12e9cb98fa0b130f917111dbda503f6587b076",
+    "recipes/drizzle-pglite-postgres/test/db.test.ts": "sha256:a79f56d080849fbbc01bdff7f9f83cff0fa805ca655ebef602faaa7b425fc8f5"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

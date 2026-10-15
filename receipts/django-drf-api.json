@@ -18,6 +18,18 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:be23abaa13b8435dc91585f797188caa52b2b2009ac1425254a8ae661340ec54",
+  "files": {
+    "recipes/django-drf-api/books/__init__.py": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recipes/django-drf-api/books/models.py": "sha256:d6e4b42aaf61de866bcb98da4e996334eb92cc55450c4f5f3fde8ae674c8c5b2",
+    "recipes/django-drf-api/books/serializers.py": "sha256:0f28af244c883b30e24b682b2aa8541aa9b231c306fc3b7d3ac0276d24b5bfa4",
+    "recipes/django-drf-api/books/views.py": "sha256:04e98d80f2bf47cb351ac2ba05e737d1ee37575a7f30ad27b5f474bd29279e06",
+    "recipes/django-drf-api/pytest.ini": "sha256:4bc441b2eeab2fcaec19c01585dd4cae02ff6de8b462a2d0f2f23f2349d1d199",
+    "recipes/django-drf-api/recipe.yaml": "sha256:987400d9ecf2e20f45e87dff8a544666e08401b9faa116f98fa0ca5d192d43ac",
+    "recipes/django-drf-api/requirements.txt": "sha256:72a2724fc4fac9339ba43af67d6ffd48069b904101fce4052e6002bad362e547",
+    "recipes/django-drf-api/settings.py": "sha256:34bc31a105505b6b8f3ac027b804a2449c4da76dc60136ca5b071fdee1772b3b",
+    "recipes/django-drf-api/tests/test_books.py": "sha256:4ac336d1fbcf38109e6523b63e5caea04ebcd5a1c61b253ddc83bc5ba789b1aa",
+    "recipes/django-drf-api/urls.py": "sha256:beb1cdcb6d50970023b7e976ccf5886016bede5f209432c2b4a9c8c2e3910966"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:bfd78de311b13804adabcf9a17c3f023a63117b10ae610fe7ad380f33151cf3a",
+  "files": {
+    "recipes/fuse-js-weighted-search/package.json": "sha256:2765f670a1aeb8ee2dcf0dde544ef0ca1532bf2e058fc4e87dc614ac13445527",
+    "recipes/fuse-js-weighted-search/recipe.yaml": "sha256:6be0b05a6d3c4160017101126e4bfd83a129edb942a6066d5a065403b07131c2",
+    "recipes/fuse-js-weighted-search/src/search.ts": "sha256:dcb53edec540ebacf03128fee7a0cf8257128ed31b76a0765ce8d0915820bb1b",
+    "recipes/fuse-js-weighted-search/test/search.test.ts": "sha256:f15d2239815b17f2785eecd604f10b2ec11055779b5b37a4e3752a523f277dff"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

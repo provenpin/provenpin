@@ -19,6 +19,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:60649784a5ab09d594b99690d18cb7cbb4a28e51ba1cb1329d1d2c2129b12637",
+  "files": {
+    "recipes/sqlalchemy-aiosqlite-session-factory/database.py": "sha256:234702280f1b1fcd3b177076920aa85d214b4d3a07b0d597391b33cfdc3b92a4",
+    "recipes/sqlalchemy-aiosqlite-session-factory/models.py": "sha256:dc528600afcfd999e3d975920bb368a9e7c60ff8251182b81be7436b51cfb991",
+    "recipes/sqlalchemy-aiosqlite-session-factory/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/sqlalchemy-aiosqlite-session-factory/recipe.yaml": "sha256:8f157268740bd3965224d36b8d22656afec03f42951ae126e645af8c22352a44",
+    "recipes/sqlalchemy-aiosqlite-session-factory/requirements.txt": "sha256:66912c9e9874338f307fec8441528f13f741b5211ac9a472b51c58ae227b74a9",
+    "recipes/sqlalchemy-aiosqlite-session-factory/tests/test_sessions.py": "sha256:b8f83d86ae370aeeeed5dc16165f704d2dc6bc02458e53bd0d6eac8ad1e94901"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

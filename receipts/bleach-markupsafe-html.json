@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:7d20a01175ee5c3c572a62c04ff83849d8270a0f82146f2e1a39c50538c8cc39",
+  "files": {
+    "recipes/bleach-markupsafe-html/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/bleach-markupsafe-html/recipe.yaml": "sha256:adf25034eb2649a616922590be269bf7cd5bedd3e6118977790f42cc6307d884",
+    "recipes/bleach-markupsafe-html/requirements.txt": "sha256:a0307a875eb3da55880067bf92ee7a93145eee6b9914b2a563b8fb296483ce74",
+    "recipes/bleach-markupsafe-html/sanitizer.py": "sha256:a444b868d817ce3634967c7dc710a53f54499d47c46240d57191960ea02e02de",
+    "recipes/bleach-markupsafe-html/tests/test_sanitizer.py": "sha256:49964600d9c8b6a289f5405b068e52c08687f87e20126b6eab5774121d6b72e7"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

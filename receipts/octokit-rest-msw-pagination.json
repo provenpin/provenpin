@@ -18,6 +18,12 @@
     "msw": "3.0.3"
   },
   "recipe_hash": "sha256:434ef65fab03bf31cf6db2756c1ff51655c564975e580ddcb0fbcb119085c5fb",
+  "files": {
+    "recipes/octokit-rest-msw-pagination/package.json": "sha256:92fb3031788fbba1cbf50110a5ddc23b2139185fa5383ae7d4a8a42ceab9a206",
+    "recipes/octokit-rest-msw-pagination/recipe.yaml": "sha256:edb9adf73aae238e659d86e3796cb07efb5dfb09fa337e15a1d3f63343add1ea",
+    "recipes/octokit-rest-msw-pagination/src/github.ts": "sha256:b00b6d94ae6c194fdebba6fbe7e1af89e4f0523bd3467c6beac6bf1b870bfb9c",
+    "recipes/octokit-rest-msw-pagination/test/github.test.ts": "sha256:c394eea929b2b65908906c98249fe66d23853cde351938e0f9d04a8714a1c498"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -19,6 +19,12 @@
     "@types/jsdom": "30.0.0"
   },
   "recipe_hash": "sha256:f824af977f0bb14da5f5e77325155ef5411efe797a4ae2dc6b73a135038ffeef",
+  "files": {
+    "recipes/dompurify-jsdom-sanitize/package.json": "sha256:75f8617ae08ae04cabe66b1129e8ec833a899aab2430fcbbf481aae09110bd0c",
+    "recipes/dompurify-jsdom-sanitize/recipe.yaml": "sha256:fd78b7a88b3afd163674062e91a0ad6950ee4f8dd65d4eefdac0a5f10efecf03",
+    "recipes/dompurify-jsdom-sanitize/src/sanitize.ts": "sha256:b9b89562d7ffe12a3c94daea6de88780bed756da522a7ff9f4fa39cf15638ce2",
+    "recipes/dompurify-jsdom-sanitize/test/sanitize.test.ts": "sha256:033665683e77ce1a16402d939f0ed91a43e04941f691f5e3b7ba4cb5b09d837b"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -21,6 +21,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:602e3a2df5a096dfabaa1372ef6b72792a435775be351b35db4e512a29bab12d",
+  "files": {
+    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/package.json": "sha256:1cee0dbd1b16dfd15590d5431edbbbdf1b55dfcde36c19e97c8c1262c8297e58",
+    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/recipe.yaml": "sha256:2843c1bc89697240c4ea6c951a669ad22ce5be3eac1c654fde3f64d11518fc71",
+    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/src/orders.ts": "sha256:a14c3c5c7ec654a1f69f35794a304597743fc81bcb619d50bb0f557861e5571d",
+    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/test/orders.test.ts": "sha256:e0f1a8e228104bf875bd27f6b0aef45869f41798f19b312c2b7c391b44bc4f1b"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

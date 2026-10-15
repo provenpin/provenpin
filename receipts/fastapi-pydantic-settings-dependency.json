@@ -18,6 +18,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:105b32b11afa745f92a8b43f48b67a8db667d5caa38adf959ff53d15d80357f3",
+  "files": {
+    "recipes/fastapi-pydantic-settings-dependency/config.py": "sha256:a8846f448c97bbf08bfa8baabcf10768dc01ded8816217301c124fa7e288bedc",
+    "recipes/fastapi-pydantic-settings-dependency/main.py": "sha256:f702de4ea646984297efef00854288b303314304455662696b8b417c3f8d9a63",
+    "recipes/fastapi-pydantic-settings-dependency/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fastapi-pydantic-settings-dependency/recipe.yaml": "sha256:993619417b8add2702665ebc42d4d745b98c623294967c8709106561aa74fbf4",
+    "recipes/fastapi-pydantic-settings-dependency/requirements.txt": "sha256:d54993e3c9df13ee6fe08b7e13bad02a6c43f625ce8d3881d5720d1bdc02f01a",
+    "recipes/fastapi-pydantic-settings-dependency/tests/test_app.py": "sha256:fcfe4d3567fd59de7bf93b84e99e2765ad84808ec2f29408bb60041104254e4e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

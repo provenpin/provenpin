@@ -18,6 +18,12 @@
     "ioredis-mock": "8.13.1"
   },
   "recipe_hash": "sha256:f8be56e42616f3de1ed754e39978ac502652d9a38d6ee122fbbf7b1bfad9be4d",
+  "files": {
+    "recipes/ioredis-cache-aside-mock/package.json": "sha256:8657c2db6759686278a718225c9e8b74dcfe18145e98eac5b86be982c93727c6",
+    "recipes/ioredis-cache-aside-mock/recipe.yaml": "sha256:f1951be1315385040fe4e332015a44fbab793579b2743c739347ee6a06414bc4",
+    "recipes/ioredis-cache-aside-mock/src/cache.ts": "sha256:995847d2ae92068b6a288f1fb6c0f61243e2f72d034684ac8e4d687c0a4a7f46",
+    "recipes/ioredis-cache-aside-mock/test/cache.test.ts": "sha256:c5ea3747dd7af1427c4eeec6b2ae11017326772aee667862d9da5eafa2cf7d08"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

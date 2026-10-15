@@ -20,6 +20,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:2795cd13d444e63ac2e786b37356c4e3e0636bda1fa07027becea3dcd746f436",
+  "files": {
+    "recipes/nextjs-stripe-webhook/app/api/stripe/webhook/route.ts": "sha256:0387ae034daff93cd1a4db2d3d970eb01dc03a8219c6d66a3b959eb1b8850be3",
+    "recipes/nextjs-stripe-webhook/package.json": "sha256:6d6434520fee891413e9b08a386dda81667f80a5d9e3e2ff620a0a64a8d457d6",
+    "recipes/nextjs-stripe-webhook/recipe.yaml": "sha256:b3208eff40a344edeedec5e25dd4c3686c384701954201b371df0b68d53ecf8f",
+    "recipes/nextjs-stripe-webhook/test/webhook.test.ts": "sha256:2fa87f0f3c50f4060b458a7f5e21b73dd298c5c3d21277d46ec6b6cfd7b5b911"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

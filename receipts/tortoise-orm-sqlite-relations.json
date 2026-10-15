@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:ad82860a4b393271cc8e3d245d919b53374181bbaa7698dc9230df4abaaa0a77",
+  "files": {
+    "recipes/tortoise-orm-sqlite-relations/models.py": "sha256:3f282905b954c73491b62fcb5cb282a1750c4593e1641112d7b520d16d886b43",
+    "recipes/tortoise-orm-sqlite-relations/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/tortoise-orm-sqlite-relations/recipe.yaml": "sha256:d1f8511a500e05c15464962e64eefaafc8971f89c551e71b14fe6173c9b35a30",
+    "recipes/tortoise-orm-sqlite-relations/requirements.txt": "sha256:43c6f2e4f77701ff3501a43e6bc26b9ce22427e62818645fd20ceb33009230af",
+    "recipes/tortoise-orm-sqlite-relations/tests/test_relations.py": "sha256:bb1e4afd70808c838a3b82949fca5f5f2b32a53a3a7aa89d41b90a6363de427b"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

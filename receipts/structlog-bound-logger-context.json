@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:87945d10830dd3ced03d9d968ae54ebce062be7963554a46c27dd01fbeba9d5c",
+  "files": {
+    "recipes/structlog-bound-logger-context/observability.py": "sha256:52299e67a7458243ce1720749ebce4a4e7ae7f368bdc2445ba10b4a21624911a",
+    "recipes/structlog-bound-logger-context/pytest.ini": "sha256:88c344ea0f814ab7b9108bb818651db34ef2b8c81dc5b5bf6bcd64823038a54a",
+    "recipes/structlog-bound-logger-context/recipe.yaml": "sha256:35c0b0be12903b9148814bbcac6367e1f86709042ecd8a48c0dc34f06751bd7d",
+    "recipes/structlog-bound-logger-context/requirements.txt": "sha256:e21db175533da32ec61f4bb44376048ec2892389aa0dee4ea0084055ac412997",
+    "recipes/structlog-bound-logger-context/tests/test_observability.py": "sha256:f80580905e9b686fb7183dd7d30acdd1f443b4a7c49ac5e382ed9f09712ead6f"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

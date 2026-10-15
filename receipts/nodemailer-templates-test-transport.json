@@ -18,6 +18,12 @@
     "@types/nodemailer": "8.0.2"
   },
   "recipe_hash": "sha256:5bc5f1e706d4be3e903a4fe56291f7c3b2ad0da076c4260e513980f68940bea2",
+  "files": {
+    "recipes/nodemailer-templates-test-transport/package.json": "sha256:8ce9dab2859b8e5a794c7b7e9289fbe9aaacc9a3c5c22032f7cdfd0175199a37",
+    "recipes/nodemailer-templates-test-transport/recipe.yaml": "sha256:e69b2e8445805cd88c76bfa06230839bc7ea086557e311da70c14415794f377f",
+    "recipes/nodemailer-templates-test-transport/src/mailer.ts": "sha256:751ff51b9bb343ee326fb8d1001c11fd90e7af4678de28ec4b2ad3ac37d7c594",
+    "recipes/nodemailer-templates-test-transport/test/mailer.test.ts": "sha256:adb2e28daba7d1c166aebbdb5e56c7dac67f100d35c1c4642a3527a1632bee04"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

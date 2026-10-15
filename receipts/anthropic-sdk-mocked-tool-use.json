@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:f0e8682a2883801145a4c4f20f0ccd99f70401a7cc2d7b6d4d2f25cdcf4e49d3",
+  "files": {
+    "recipes/anthropic-sdk-mocked-tool-use/package.json": "sha256:86cdd0f4d8dcbafbceff7743240de451bb888bdb1e6ac75003a29c5586819d0b",
+    "recipes/anthropic-sdk-mocked-tool-use/recipe.yaml": "sha256:5596e5ea5209c2beb3113aefce0b15eff5daf9bd642610834a9ab9a56527f07c",
+    "recipes/anthropic-sdk-mocked-tool-use/src/agent.ts": "sha256:6545ed6fe5d39c931eb3d474d72c353eb036c0a4f372afa80e9698b376bd45d9",
+    "recipes/anthropic-sdk-mocked-tool-use/test/agent.test.ts": "sha256:f4734dda178ea7e5debdfc2bec7e2dddc751d22e4b29872f81f9bcd7e58d9866"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

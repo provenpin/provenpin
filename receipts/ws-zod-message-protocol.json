@@ -19,6 +19,12 @@
     "@types/ws": "8.18.2"
   },
   "recipe_hash": "sha256:2b961c510c2fb9b19d06ea83a7d045f348e42a525da04b3860d1bcc7944743a2",
+  "files": {
+    "recipes/ws-zod-message-protocol/package.json": "sha256:0c93ffb292663aa228c00e9f26ce9b1b39eb33fba8edcf018dd34533c41b90c0",
+    "recipes/ws-zod-message-protocol/recipe.yaml": "sha256:e3f5c70d71cf6554ee53be1484c0318f98784aea268e5cee0bc53906af37db02",
+    "recipes/ws-zod-message-protocol/src/server.ts": "sha256:033086424fae5327e0fede7616dd5160a23a2169f6e481d3a1494f6fa071f49a",
+    "recipes/ws-zod-message-protocol/test/server.test.ts": "sha256:75f9c5335883348f2fa2a09d516450cfe5682fb105be50aadb199dd161298b3c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

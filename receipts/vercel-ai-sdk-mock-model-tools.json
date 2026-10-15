@@ -18,6 +18,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:80d5f860203398e67d690478336e3a4baf3c530f9391c7151883bb6305bb6ab3",
+  "files": {
+    "recipes/vercel-ai-sdk-mock-model-tools/package.json": "sha256:20d33b6f8d03392ed55c2d284e106896fd94dc70a380db3aac92720fe6865ead",
+    "recipes/vercel-ai-sdk-mock-model-tools/recipe.yaml": "sha256:96e4bc816d27513cc825dcec06699b9f96c58f219da307dc9da56af511260571",
+    "recipes/vercel-ai-sdk-mock-model-tools/src/agent.ts": "sha256:fc0dc1bdb8c2d533e69cd164b701ff258e9e83c443a955c9cf099868ae614241",
+    "recipes/vercel-ai-sdk-mock-model-tools/test/agent.test.ts": "sha256:b0c431b7b2d9e91f73b9d38d4ea3092beeb46a4ea1db866af798e2c4949a56a0"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

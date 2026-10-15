@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:c7e8a13ac01f22cf4b7d8ede2dcd8f55eb720e279186cb9293829fb3a0059ee5",
+  "files": {
+    "recipes/structlog-stdlib-json-renderer/logging_setup.py": "sha256:72c6fa6805b05c81994519626d2ecada0a80a875ef8d9069a9c1092330366685",
+    "recipes/structlog-stdlib-json-renderer/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/structlog-stdlib-json-renderer/recipe.yaml": "sha256:0e99af4f091a9acbef03b61bc0a6caa8c94d7a8e2b85ae2f9cac305cf0ef997a",
+    "recipes/structlog-stdlib-json-renderer/requirements.txt": "sha256:ee72737961d8daefc2f46c7b03c2aa6fc5f5d6ea22377a7de1b4cb3cbfd966cb",
+    "recipes/structlog-stdlib-json-renderer/tests/test_logging.py": "sha256:236b57d0cccb32e94c329a1236843ef4535e88b633c2c42c2eb1bd8d9538e9c7"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

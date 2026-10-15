@@ -19,6 +19,14 @@
     "prisma": "7.10.0"
   },
   "recipe_hash": "sha256:3e63c580310db413b3fc9c2223d687e3b882c1a681d1a4fdc98aa4ed3a49c22c",
+  "files": {
+    "recipes/prisma-sqlite-transactions/package.json": "sha256:678b0b06d31696f75197ac0b316bfcfac3f30d891855b55046f018f72de60a4c",
+    "recipes/prisma-sqlite-transactions/prisma.config.ts": "sha256:1fdd9667782f6d5344d85511724bb6450a1815243a89347d924206f29649772b",
+    "recipes/prisma-sqlite-transactions/prisma/schema.prisma": "sha256:727e42c3657be619dc124813218c9c93278ef5c8d63ffc8326d68b9711734f68",
+    "recipes/prisma-sqlite-transactions/recipe.yaml": "sha256:102dff7da1609360e13ded0cff1dfd4bad661bc04a87e5f72d298a468879a5b5",
+    "recipes/prisma-sqlite-transactions/src/bank.ts": "sha256:f7e6e8275f9fcdec373d0b92450a811e40ac2ad41ecf0beee5ce3112b130fcc6",
+    "recipes/prisma-sqlite-transactions/test/bank.test.ts": "sha256:39d1a98be4f490966d504457464a704a808b1639cc9a549cb4cec8baaff9528c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

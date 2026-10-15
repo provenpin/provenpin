@@ -31,6 +31,16 @@
     "pygments": "2.19.2"
   },
   "recipe_hash": "sha256:15755a28bf83f8f6a94ef20ac2c2a2ffb24fc6d9ed85de4da52d484e99d2f6ab",
+  "files": {
+    "recipes/flask-migrate-sqlite/app.py": "sha256:df66f4b93e30caf44d453246cd11c3a662586903f49bd8311a909d70552c2133",
+    "recipes/flask-migrate-sqlite/migrations/env.py": "sha256:2a09edb9ba83f8f187129fa336e4674ec9657fc4e3d2580b26f16d69d3a8034a",
+    "recipes/flask-migrate-sqlite/migrations/versions/3f2a1b7c9d10_create_user.py": "sha256:a257f6d2a80db167cb46642bde02f761b2277f11eded3dbfe34f5db86bdb1be2",
+    "recipes/flask-migrate-sqlite/models.py": "sha256:564a71cb7ac3297717a14dda1133c2e34f5f98a8558ab9796474834966461d07",
+    "recipes/flask-migrate-sqlite/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/flask-migrate-sqlite/recipe.yaml": "sha256:76825e1ed89ea25886935ab17c68e6a4e9cb81ee8adf6bf5f4ecbbf15e6378c2",
+    "recipes/flask-migrate-sqlite/requirements.txt": "sha256:434278241c7f94720bd86c8f86b43873137dc3b6df8673e93fb95d483e6683e4",
+    "recipes/flask-migrate-sqlite/tests/test_migrations.py": "sha256:917064fd3742191c067f1fea3bdaac8c55980fbc857f4a5e78d9dce679096be5"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

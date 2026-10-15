@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:6b3cddb79b048ec670ff0f8580d2bc73d461903d16dfecc52636b64f76fe067e",
+  "files": {
+    "recipes/valtio-proxy-state/package.json": "sha256:4b6a2957b96842a81ab92b2591f341928de169ac2705e92d768822b7abcb2f3c",
+    "recipes/valtio-proxy-state/recipe.yaml": "sha256:db60c86fbb48b51a23a79fed9b9c23284f9cfcc3933132260d445ec16eefc2b5",
+    "recipes/valtio-proxy-state/src/store.ts": "sha256:f5d83ed06db64054d768a1aa4934f2d59c6864b7dabde404250bd7e05211f178",
+    "recipes/valtio-proxy-state/test/store.test.ts": "sha256:8abc7538cf29fa26e68e3962bcde18d2d613a653718320e8584d4aeaf4582483"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

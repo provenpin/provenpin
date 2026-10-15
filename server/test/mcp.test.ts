@@ -5,7 +5,7 @@ import { searchRecipes, listStacks, type RecipeIndex, type Recipe } from "../src
 
 const mk = (id: string, stack: string[], status = "passed", tags: string[] = []): Recipe => ({
   id, title: id.replace(/-/g, " "), summary: `recipe ${id}`, language: "typescript", runtime: "node", stack, tags,
-  pinned: { a: "1.0.0" }, setup: "npm i", test: "npm test", files: [{ path: "a.ts", content: "x" }],
+  pinned: { a: "1.0.0" }, setup: "npm i", test: "npm test", files: [{ path: "a.ts", sha256: "sha256:abc", content: "x" }],
   receipt: { status, ran_at: "2026-10-15T00:00:00Z", last_passed_at: status === "passed" ? "2026-10-15T00:00:00Z" : null },
 });
 const index: RecipeIndex = { schema_version: 1, generated_at: "2026-10-15T00:00:00Z", count: 3, recipes: [
@@ -14,7 +14,7 @@ const index: RecipeIndex = { schema_version: 1, generated_at: "2026-10-15T00:00:
   mk("broken-thing", ["stripe"], "failed"),
 ] };
 
-const handler = createHandler(index, { apiKeys: "pro_key_1", proEnabled: "true", receipts: { count: 1, recipes: [{ id: "x" }] } });
+const handler = createHandler(index, { apiKeys: "pro_key_1", proEnabled: "true", receipts: { count: 1, recipes: [{ id: "x", files: { "recipes/x/a.ts": "sha256:abc" } }] } });
 async function rpc(body: unknown, headers: Record<string, string> = {}) {
   const res = await handler(new Request("http://x/mcp", { method: "POST", headers: { "content-type": "application/json", ...headers }, body: JSON.stringify(body) }));
   return { res, json: res.status === 202 ? null : await res.json() as any };
@@ -42,7 +42,9 @@ test("initialize + tools/list", async () => {
 });
 test("tools/call works for all three tools", async () => {
   assert.equal((await call("search_recipes", { query: "stripe webhook" })).results[0].id, "nextjs-stripe-webhook");
-  assert.equal((await call("get_recipe", { id: "express-zod-validation" })).files[0].path, "a.ts");
+  const got = await call("get_recipe", { id: "express-zod-validation" });
+  assert.equal(got.files[0].path, "a.ts");
+  assert.equal(got.files[0].sha256, "sha256:abc");
   assert.ok((await call("list_stacks")).stacks.length >= 4);
 });
 test("get_recipe errors for unknown or failing recipes", async () => {
@@ -105,5 +107,7 @@ test("receipts.json is served and cacheable", async () => {
   const res = await handler(new Request("http://x/receipts.json"));
   assert.equal(res.status, 200);
   assert.match(res.headers.get("cache-control") ?? "", /public/);
-  assert.equal((await res.json() as any).count, 1);
+  const body = await res.json() as any;
+  assert.equal(body.count, 1);
+  assert.equal(body.recipes[0].files["recipes/x/a.ts"], "sha256:abc");
 });

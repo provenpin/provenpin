@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:bafd3628a135b6b5fc3048b045f01bbe29d11bda7b4cc42885924a632832873c",
+  "files": {
+    "recipes/esbuild-in-memory-bundle/package.json": "sha256:fc799cfb3b56b6d902b46031146e1f22342385000299d3c48936b5ed7e628f1e",
+    "recipes/esbuild-in-memory-bundle/recipe.yaml": "sha256:997ac184bb0d61dbd35c51134c35dd709274517f63594d164e55bb54159224f7",
+    "recipes/esbuild-in-memory-bundle/src/bundle.ts": "sha256:2f8f3fc6096d30880d930709bdbb1d5f77536effd2e127462a1e9e027daca6ad",
+    "recipes/esbuild-in-memory-bundle/test/bundle.test.ts": "sha256:8b88cb409375fb7204a673e5626ff517eada9c56f236d0c89d46622f9185d101"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

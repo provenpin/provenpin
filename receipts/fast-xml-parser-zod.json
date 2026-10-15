@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:f6301126a9fc497db88a1871a8071fb71a24af2a1685ce969a366f64f0269255",
+  "files": {
+    "recipes/fast-xml-parser-zod/package.json": "sha256:cdb0b44b272c038e480d95b6f8eb88c9c7f872ac486ff01fc86d95e063dc0791",
+    "recipes/fast-xml-parser-zod/recipe.yaml": "sha256:91696eb2960e3bdbe02f25ea53b5c5c9ac9d424df9c079718f6acbd42fba3d42",
+    "recipes/fast-xml-parser-zod/src/xml.ts": "sha256:accd885da1ae048379c38fb0f6ef077f4acb3bec26e2a2e0d2866e6bc7e462e0",
+    "recipes/fast-xml-parser-zod/test/xml.test.ts": "sha256:c155ca780bfa87470850f6b53e58a888fe37bba31a6f3dfe765efd39d9ee03a6"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

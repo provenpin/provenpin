@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:008a57fee69b6f9a4a007d8dea4ec1adc066843064dc32498c6acc5c5f83ce3c",
+  "files": {
+    "recipes/execa-child-processes/package.json": "sha256:84f3e81de7339dfd06c33fea2554e7bf49ef1ea25b921614d20c033cc3b82a78",
+    "recipes/execa-child-processes/recipe.yaml": "sha256:27d724dc8c4e2f0d8aba953950cdfb84daca4add0900dcdded106dfc6261415c",
+    "recipes/execa-child-processes/src/proc.ts": "sha256:e1070a8574031baf534b74e111c1ad16afc4cca8191673c21f2b0339240ca135",
+    "recipes/execa-child-processes/test/proc.test.ts": "sha256:08cb5c31cd4d9474e032f1e8a3f0664ce27b539d3a544e425d7b540ffa0e0bad"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

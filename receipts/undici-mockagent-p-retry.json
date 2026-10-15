@@ -18,6 +18,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:6c21ef227ef7295c36398900d9b43e88039baf3f6ae660cdbf5a3e2fe5006879",
+  "files": {
+    "recipes/undici-mockagent-p-retry/package.json": "sha256:9fb9bd9f471fbbd6cd8900574ff0b39a96f619757764f437df2251c11c011581",
+    "recipes/undici-mockagent-p-retry/recipe.yaml": "sha256:45a02c2b1c98040ea4e8471eda13598a8d8ee2680425a3c0f49d10da474cea11",
+    "recipes/undici-mockagent-p-retry/src/client.ts": "sha256:970f9c3f84aead7ae6d839e9bbfb45c768d5940e9f58dc2b4e6f4c0c6f977c66",
+    "recipes/undici-mockagent-p-retry/test/client.test.ts": "sha256:54a7a7dd08676b230b98f4a0135984313bbce8d01c78f67ebf9e2cff5db72fc1"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:bf56cf22f9506d9fcb04be907102d3a6d4799055df63a1c1e568617f226fccb1",
+  "files": {
+    "recipes/anthropic-streaming-mock/package.json": "sha256:48d49f0684c04acaac4ee7d6a6c2baa155a46182529ca65cb323a05b7c77d00b",
+    "recipes/anthropic-streaming-mock/recipe.yaml": "sha256:b90d0c36650c8bfcebe12b468f445690662940cf0fcb6119b2264b085beecf71",
+    "recipes/anthropic-streaming-mock/src/stream.ts": "sha256:54b45e30d1b22968adaeea902169e84067802eb3ef2132b5a4d66d5fba0ea04a",
+    "recipes/anthropic-streaming-mock/test/stream.test.ts": "sha256:7cb48d080d9f43b4dfda55068bfb96b95210b1cbd4ceacd7f4a3491d27f6fb5c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -19,6 +19,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:6b75d04dbdbc7b956f88b7a0f5db56b41f52569526a42d6ee00c2cdebbbb5f8f",
+  "files": {
+    "recipes/httpx-respx-api-client/client.py": "sha256:026ca3eeff539521352024a17e382de588ce5834f5c97cf1321be8cf3461b4d5",
+    "recipes/httpx-respx-api-client/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/httpx-respx-api-client/recipe.yaml": "sha256:aa75f41bd8fd29537644617cb34b49625b1cf6accb9bc41ca6cfcfdd5181854d",
+    "recipes/httpx-respx-api-client/requirements.txt": "sha256:122d58d6958690130b1fff39e0a1c62b4665c9be15ddcd9236fb7564943f8f1e",
+    "recipes/httpx-respx-api-client/tests/test_client.py": "sha256:d49e123d9364eebe503b2599f797ce3fd61783efa7e457b172cc3c95b7cd574e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

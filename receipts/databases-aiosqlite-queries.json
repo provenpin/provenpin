@@ -18,6 +18,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:7a214fbe5cba54e9f50ffd17d0246268b98a44230845fd817d8bb10a8bb8ce25",
+  "files": {
+    "recipes/databases-aiosqlite-queries/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/databases-aiosqlite-queries/recipe.yaml": "sha256:69e8b7b39d7eb6bf654b63f5fc0e02932b135a6959094a5c6f8c5091ec2fa661",
+    "recipes/databases-aiosqlite-queries/requirements.txt": "sha256:0fdcbaf0b5d426313e110fe77a63023c65b395f98255fe2d906d991d32a7a4f1",
+    "recipes/databases-aiosqlite-queries/tasks.py": "sha256:ba6f9ff247ac2d4d88eace75db8025174d438a3c8b212f4ba856824f4d31038a",
+    "recipes/databases-aiosqlite-queries/tests/test_tasks.py": "sha256:906edcc1262f205eeebb66e82aa0da994b5447bbe109b2ec9aed5ea9b7f1572a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

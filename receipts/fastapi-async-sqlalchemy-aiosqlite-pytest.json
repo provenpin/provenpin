@@ -21,6 +21,13 @@
     "greenlet": "3.2.4"
   },
   "recipe_hash": "sha256:c298605fb398378374e04e182e442f92ed7b33af5e3db5d1eab8d6ad5c35596e",
+  "files": {
+    "recipes/fastapi-async-sqlalchemy-aiosqlite-pytest/app.py": "sha256:57e61d2ed6353545b60099e5a022a86bd81e2290f337889de1ad5a1c0dae44e2",
+    "recipes/fastapi-async-sqlalchemy-aiosqlite-pytest/pytest.ini": "sha256:d519cf350584983132931b08391d034882c1c2e5467c3afbaef8977181e00177",
+    "recipes/fastapi-async-sqlalchemy-aiosqlite-pytest/recipe.yaml": "sha256:986fc8242c8b65b6601293bed586d4d538de919e621fc90ac56499c9f6a9af92",
+    "recipes/fastapi-async-sqlalchemy-aiosqlite-pytest/requirements.txt": "sha256:fbe8159c645f34ba91b22ae98d3d0f766279c7702df0af454fe025c012a32e1b",
+    "recipes/fastapi-async-sqlalchemy-aiosqlite-pytest/tests/test_app.py": "sha256:eb41d4b33ce2cf1c89c8884ebdd1a0fb13fe40dbad7a3d1a3f51aeb10d3f1382"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,14 @@
     "pytest-asyncio": "1.4.0"
   },
   "recipe_hash": "sha256:0e46ec949617b097f9d7ae59ef6fca5a034fddbd9b5736812576ecb9c82bcad4",
+  "files": {
+    "recipes/aiohttp-pytest-plugin-client/app.py": "sha256:365c01c06f8e276df880db0de2ac592a00320a15c7472eead1bbad864d418a25",
+    "recipes/aiohttp-pytest-plugin-client/conftest.py": "sha256:28f3115c7748e74c761aa046990e98e15e741a10cdd41938dfa85e041d09af3d",
+    "recipes/aiohttp-pytest-plugin-client/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/aiohttp-pytest-plugin-client/recipe.yaml": "sha256:62a1c056079425bd7be5d2e4e18289317dedde8fb2ac0d27eb94f9ab44543564",
+    "recipes/aiohttp-pytest-plugin-client/requirements.txt": "sha256:209418c07703351925b35a69d979397ef6490c34dce0d85c09b643f1fb033b26",
+    "recipes/aiohttp-pytest-plugin-client/tests/test_app.py": "sha256:ed74b72d3f4fd3e97aad55ce56380263c2845719dd9947cec7fff1e47ffc0388"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

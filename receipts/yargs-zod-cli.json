@@ -19,6 +19,12 @@
     "@types/yargs": "17.0.35"
   },
   "recipe_hash": "sha256:61a445618ac4964df087e323290d911e7121599c40ef9d05300f7b2430d92b37",
+  "files": {
+    "recipes/yargs-zod-cli/package.json": "sha256:4a7e9bf574074675c09ac8ec7d2721f2621fbfb93592fca65311f4e18dde144e",
+    "recipes/yargs-zod-cli/recipe.yaml": "sha256:434cc11fcef03dd49c5bd004309cd5299e8ab7ddee430ca3b730a6c92bb37299",
+    "recipes/yargs-zod-cli/src/cli.ts": "sha256:29ffbe6113718f10de74cbe43c6ea8f98af1e39c02c7e2e3fce01bcda1e9ef15",
+    "recipes/yargs-zod-cli/test/cli.test.ts": "sha256:155f8f46c458a2b9c27e5dac5b4d380548f0f00c158e642cb59d9166a3afdacd"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

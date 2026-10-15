@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:3a17fc974f6abcfb874fc04d458fa543820a7dab0023318ea648dde6023290f4",
+  "files": {
+    "recipes/graphql-yoga-schema-context/package.json": "sha256:17d2b515ff98dadcef6938a07e9498f5f347e91102688a546d7723a20d103565",
+    "recipes/graphql-yoga-schema-context/recipe.yaml": "sha256:bef3cd855cf1fd53cf66aac022751c562842aa484b58e80f49df955fa9b0ba36",
+    "recipes/graphql-yoga-schema-context/src/yoga.ts": "sha256:68fc163513a5bcee8a2c0ec1451cefc97cc5d5eb0409da274fbd0fdc96308217",
+    "recipes/graphql-yoga-schema-context/test/yoga.test.ts": "sha256:2e20ddd975c7f53f74762b5f02bca2ec9ca8373caad7051f2cf1165bfb267d90"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

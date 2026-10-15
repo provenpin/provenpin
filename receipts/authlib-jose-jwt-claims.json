@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:fc50f1b1f7f4cc6014fbfd9700bbb0e78b67145471d3919405ec9cfef24d3ce8",
+  "files": {
+    "recipes/authlib-jose-jwt-claims/jwt_utils.py": "sha256:c137f1d5bd2190b95322b5876f150f80922aca0f33856f20b5d2728d3d7fb9c1",
+    "recipes/authlib-jose-jwt-claims/pytest.ini": "sha256:c18388d8973c4660ff504e8a6c1539df3af6cb9ac676e0a257ec0a332e3e6261",
+    "recipes/authlib-jose-jwt-claims/recipe.yaml": "sha256:8c89e957b902556c3f3fc020a2e95c8bd1c54d7da48a652f05c07d9fad3a16fa",
+    "recipes/authlib-jose-jwt-claims/requirements.txt": "sha256:cb333d9c0dabc060205c1cba6038346132bbbfc6d5d8ee4b21a05448ce5ae1b7",
+    "recipes/authlib-jose-jwt-claims/tests/test_jwt.py": "sha256:c70a9d07c19d73d7c30b0b6157bdf8b8fe2f8325451fe7648a25973edc4f544d"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -24,6 +24,13 @@
     "pygments": "2.19.2"
   },
   "recipe_hash": "sha256:cc6a4d62a7066ca53509721b5b3ce45a10708162a3ec2be2c05903032a200513",
+  "files": {
+    "recipes/pandas-sqlalchemy-to-sql/db.py": "sha256:4fdf689b87f1b669f7b6e15c5a37f5910018aaba599712a3e46ee07879716a52",
+    "recipes/pandas-sqlalchemy-to-sql/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pandas-sqlalchemy-to-sql/recipe.yaml": "sha256:e363fa45ffc75bd9543738c4d572ac79179afbeb696abd4610723a882c085d4c",
+    "recipes/pandas-sqlalchemy-to-sql/requirements.txt": "sha256:bd62977b40c2ceeebb5d05d87677cb8e2207e34f18025967ca671ab82463cd20",
+    "recipes/pandas-sqlalchemy-to-sql/tests/test_db.py": "sha256:39c10d9f5512497298cd504708426e22883c01bd980a43bc34cdaa44252909ed"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,12 @@
     "vitest": "5.0.5"
   },
   "recipe_hash": "sha256:c2de147807f50a8bbd7031572ad8575e741eed3f902491917a5fd407e5d17097",
+  "files": {
+    "recipes/vitest-fake-timers-es-toolkit/package.json": "sha256:3271ac30ed7351094bc51683d8f4d826e24386486de09c05f413371e889ddb91",
+    "recipes/vitest-fake-timers-es-toolkit/recipe.yaml": "sha256:3f331dfd6de286ac2663af62563dd705c5b300569f13b572753673630e897db2",
+    "recipes/vitest-fake-timers-es-toolkit/src/autosave.ts": "sha256:05d9a85038764d86317d8093bcb226e36ec5190b20ac11b63aeecc5ff62b980d",
+    "recipes/vitest-fake-timers-es-toolkit/test/autosave.test.ts": "sha256:6b4844fe58c574e31dc6e0922af45cbe49c9252d4a91ca5dd416597630d62459"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

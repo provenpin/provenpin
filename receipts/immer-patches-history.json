@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:b2ff20225dada0090670d7a87ade0ad27e3c5dadd5ec9425c1b6b35bc6b9c469",
+  "files": {
+    "recipes/immer-patches-history/package.json": "sha256:21ddb0c0eaf9883eebebe5f5a840ffe7776ecba20d8ee8c1f7fc21d48ecabc53",
+    "recipes/immer-patches-history/recipe.yaml": "sha256:4e76064e977522d696259dec6ae96413572ae8eab123b698a253b925f71356b5",
+    "recipes/immer-patches-history/src/store.ts": "sha256:4ac5b4c993339aa43b21a543b66d4822d8170f6659b4e52d25346c7fc7514baa",
+    "recipes/immer-patches-history/test/store.test.ts": "sha256:6146e74b79537d38cc09ae81fa15eeb794041943e863bc0474e11147b5e922d8"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

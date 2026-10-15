@@ -17,6 +17,13 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:08d1b21ad1425c4575ceb59ae6eb679d1d8ee7020a09a858db4112427e0b0f53",
+  "files": {
+    "recipes/protobufjs-proto-encode/package.json": "sha256:e3119a9cb350e048689067f9e24667f35999fd20d13c24fdd298d412124a11b3",
+    "recipes/protobufjs-proto-encode/recipe.yaml": "sha256:f3dbbe2f0b0aa156111ca7f171e29c260f3c7a1f8f8d6d3197c589e25f417123",
+    "recipes/protobufjs-proto-encode/src/codec.ts": "sha256:51f109f980e46dab980a3152bd16ad5e9d0a26c5a6eaa954b76daf7f0960909c",
+    "recipes/protobufjs-proto-encode/src/person.proto": "sha256:cec4090e0fab9bcc0a29d40372c955abd1608f6deceeb306bb37dd0128ac5236",
+    "recipes/protobufjs-proto-encode/test/codec.test.ts": "sha256:c0646b0bfde595528cda59a4d1260582e4007a53e63df31ad9c159d63a1d8f62"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

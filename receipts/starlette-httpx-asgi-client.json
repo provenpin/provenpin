@@ -18,6 +18,13 @@
     "pytest-asyncio": "1.4.0"
   },
   "recipe_hash": "sha256:fe39159e453c5b86cd545143f8689784241f99a23a7702dc6840758a0270217e",
+  "files": {
+    "recipes/starlette-httpx-asgi-client/app.py": "sha256:beb348413ace06900b5aa0995cce91ef1356bb29dd9acc098c61cedd1a3a99d4",
+    "recipes/starlette-httpx-asgi-client/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/starlette-httpx-asgi-client/recipe.yaml": "sha256:ad8fcfb809f77422c37dbe94ceccdc0da0e60fcfca544dcba32a565c56f7002d",
+    "recipes/starlette-httpx-asgi-client/requirements.txt": "sha256:d6ebdf89103d2b1157919e39352e5ff9e0ae68b28bd69b963c1412f0dfd29707",
+    "recipes/starlette-httpx-asgi-client/tests/test_app.py": "sha256:ad2e0ffea5079a2b00beb363af55e3ac060cc381ed4d87599af5ee783cc2ff0e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

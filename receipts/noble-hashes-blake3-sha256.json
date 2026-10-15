@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:125358de7e0cd8561c30bde0ce7c74480d6ae8b207a97beb2b2a2604d115e18b",
+  "files": {
+    "recipes/noble-hashes-blake3-sha256/package.json": "sha256:5bd9268f3761c625dc4dd382e33902dc8212ce40ad285533cee5795622ce3104",
+    "recipes/noble-hashes-blake3-sha256/recipe.yaml": "sha256:e03fe4098ff983f83d873fe78107931b05fdf771656eed2a07f3aebceb5f0af6",
+    "recipes/noble-hashes-blake3-sha256/src/hash.ts": "sha256:d85a38dcfa2d84cdb2f701d5bba44afd6c42e5e5f79b387534e9ad8990cd6413",
+    "recipes/noble-hashes-blake3-sha256/test/hash.test.ts": "sha256:6607d273da32b5d2c39fda52dc948c5ee3a8feb7729b1b8297453a8240f3dd87"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

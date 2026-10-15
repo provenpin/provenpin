@@ -18,6 +18,12 @@
     "@types/luxon": "3.7.6"
   },
   "recipe_hash": "sha256:ac0a391ac439b0b582e0aa4262bc24fef985a115a3973d28c22e3ed90cf0404f",
+  "files": {
+    "recipes/luxon-timezones-intervals/package.json": "sha256:7f1396695ba186852508f5836bec674bf4762744977c3ed086e6da86b7296b16",
+    "recipes/luxon-timezones-intervals/recipe.yaml": "sha256:6837cc5c6d3c338cad2d06d10f46d9828fd47dae2843ba95eba7ee4b14943a1f",
+    "recipes/luxon-timezones-intervals/src/time.ts": "sha256:e3590296cb20a4a01f48f7ab06506fa6ea4379ac7ae0ef3add7725935927fe94",
+    "recipes/luxon-timezones-intervals/test/time.test.ts": "sha256:692f87a09c5c338c26091dd86601868d3abf42d8bcbbb4454577a1a95ff5575e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

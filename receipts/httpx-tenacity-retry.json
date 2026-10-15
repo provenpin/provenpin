@@ -18,6 +18,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:009d23465d87cf65667549e93a5df007742174ff3dfcde406ab2682199ad02e8",
+  "files": {
+    "recipes/httpx-tenacity-retry/client.py": "sha256:dae99ecb8f2ff5be0ff8cb222d47a32e78ce15d3aaa92ff59818d060ddccc38a",
+    "recipes/httpx-tenacity-retry/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/httpx-tenacity-retry/recipe.yaml": "sha256:144b535d69b4efaa0d7561f06d53f2c93a1056bc586f948f18e87d7ba9b965ea",
+    "recipes/httpx-tenacity-retry/requirements.txt": "sha256:7c5b3fd54baaafd1a889684f4f6da057b61d749ea237619b24e4c4eb7a4af769",
+    "recipes/httpx-tenacity-retry/tests/test_client.py": "sha256:83deafef2032f197311964239c76e9184141047135498e7e37374c21493ff4fc"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

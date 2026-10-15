@@ -17,6 +17,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:cc7d414ac346456714473026741bb29cfa53688243f7418820e80dae54a3dd74",
+  "files": {
+    "recipes/piccolo-sqlite-crud/crud.py": "sha256:824c596d8d7a2e9986240f4164f8df9ee224393e81ba5dff5df5a81db91a4c9b",
+    "recipes/piccolo-sqlite-crud/db.py": "sha256:fe344f120ed9fcfb99d8186e839e5d02b4128f52660df01c9ef2ff29778550a3",
+    "recipes/piccolo-sqlite-crud/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/piccolo-sqlite-crud/recipe.yaml": "sha256:7fb3e8e9e111fcb062148b29875d1c8688e48d2f9fac2bae17cf116953a16b9d",
+    "recipes/piccolo-sqlite-crud/requirements.txt": "sha256:9138cc2c277aceca054c9afea0289f36ec89d1ec6669cf3797c9852c9b1539fa",
+    "recipes/piccolo-sqlite-crud/tests/test_crud.py": "sha256:6224e9dfd0afeed7baa2a5f93e61f1c24603e977be93c67a65d730646cdac107"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

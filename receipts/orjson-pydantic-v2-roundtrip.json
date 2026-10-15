@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:136ff0a7e79f59c0d25c13fc8e079794add368d120395b60a8aad63cb2b455b6",
+  "files": {
+    "recipes/orjson-pydantic-v2-roundtrip/codec.py": "sha256:d56e181a9006646dbf380845e4350865e0ee7df5d57dbc2458790ae7a7ad57aa",
+    "recipes/orjson-pydantic-v2-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/orjson-pydantic-v2-roundtrip/recipe.yaml": "sha256:2c2f2273e68ec93b11d8191f6dd3ad4b3e427cf325630d1eb7aff28724181d14",
+    "recipes/orjson-pydantic-v2-roundtrip/requirements.txt": "sha256:7c9fe758aec55d29e49a5f9db3cebbc4330227412308a45a248090484ad3c37d",
+    "recipes/orjson-pydantic-v2-roundtrip/tests/test_codec.py": "sha256:f2bdd294afd8b7f7dbfcaa1542f73ff5742ee73856d77b2b1bb08b1170ae905f"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

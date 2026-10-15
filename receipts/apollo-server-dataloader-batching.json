@@ -19,6 +19,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:198a6cb942c4db9b095f5f830a4cb5cf6a69591fcc1c29b29b72ee651cc09790",
+  "files": {
+    "recipes/apollo-server-dataloader-batching/package.json": "sha256:610ac0f988efccf916b1204e77686eaf1c9018c10eb178478c7d9a2055ec2e26",
+    "recipes/apollo-server-dataloader-batching/recipe.yaml": "sha256:61d0083a4d7e619b0db6df29e3815d1454576e9e9aefd2d67f3adbf347aa2cd1",
+    "recipes/apollo-server-dataloader-batching/src/server.ts": "sha256:3c8e3e457267fe839a9f79065e20a33c0eb70e8b774d81d0361823d3b3bc8e01",
+    "recipes/apollo-server-dataloader-batching/test/server.test.ts": "sha256:544e2d6fe6029b43f45b49f7dc512c327cfb6a6bf2f87effaffcddb6605f2e9c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

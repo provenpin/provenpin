@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:78fb04353afb6118fd568c65169432001dbfe02ddeb2dc090c393f59d54b80ce",
+  "files": {
+    "recipes/sqlalchemy-orjson-json-column/models.py": "sha256:41781824836913d7c117748a3ae776dd946d8014cc500f01485d3397a30faa30",
+    "recipes/sqlalchemy-orjson-json-column/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlalchemy-orjson-json-column/recipe.yaml": "sha256:7cd3e661cc6a2ddf8527cd2b0230f4ba2a6c9ade6b114cc9bfece2159d831875",
+    "recipes/sqlalchemy-orjson-json-column/requirements.txt": "sha256:bc8aef948efe813e16dae0807c9426b9e5b0ca25066cb8a7cf338f1f54589535",
+    "recipes/sqlalchemy-orjson-json-column/tests/test_json_columns.py": "sha256:41e99061bfec790b60102e3cdef8ab05020b36315aef9bff419dec8d3947d182"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:9872ce20036fe9748ba6d2cdfe78e2919eee544ae579ba8ae353adf5fdc8969d",
+  "files": {
+    "recipes/json-schema-to-typescript-codegen/package.json": "sha256:83d137f523b1315590184b61a31fe9df5eaa5f8b970bcb5e8430b974dd451157",
+    "recipes/json-schema-to-typescript-codegen/recipe.yaml": "sha256:9c2999416008ccc54bf2862da0932b31818d08259fbef1a13944afe76f155e23",
+    "recipes/json-schema-to-typescript-codegen/src/codegen.ts": "sha256:265428f1f3577c82fc4b95434d3e85bd4ff4a7d347a457f9f5c46698e74dfca6",
+    "recipes/json-schema-to-typescript-codegen/test/codegen.test.ts": "sha256:77fe9cc0f170e89c29470bfa2479738daca276819ec78ac8432d1d4360702355"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

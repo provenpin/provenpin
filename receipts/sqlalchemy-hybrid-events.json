@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:8b7da09bf73c3d96e910ccb032967bdfd19361b32f1c92153f7b5dbc8e5f2d29",
+  "files": {
+    "recipes/sqlalchemy-hybrid-events/models.py": "sha256:a32c9cc93a98eb295c76bb07dcd7fbb46dcd7c0fd2d51106212def02448fb784",
+    "recipes/sqlalchemy-hybrid-events/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlalchemy-hybrid-events/recipe.yaml": "sha256:76982b0739697a7b62044d49f583aa75da6faeedcae905e109c96d01c4fddf25",
+    "recipes/sqlalchemy-hybrid-events/requirements.txt": "sha256:2cf55f47ed26528e9a180e569b1faadb04455c4b717c29e0f069acc6b12c6acd",
+    "recipes/sqlalchemy-hybrid-events/tests/test_models.py": "sha256:c8c4c7c8df13ca0920b5760824ed5ae657a8af2f48a93b176a0bba0d91db4262"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

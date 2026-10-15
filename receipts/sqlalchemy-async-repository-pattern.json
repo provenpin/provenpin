@@ -19,6 +19,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:34331712212791a6633879f274a94c0a694eafeb42d32b800596b76017a0d43d",
+  "files": {
+    "recipes/sqlalchemy-async-repository-pattern/pytest.ini": "sha256:2ae6a792a8e6b4fed552a1bd08e2b21743ec1077d76485427c5d6c75d6364e01",
+    "recipes/sqlalchemy-async-repository-pattern/recipe.yaml": "sha256:04732825e8a4b2466bf4823f7a52d77435466132cc93cff43ac12ec749f69de1",
+    "recipes/sqlalchemy-async-repository-pattern/repository.py": "sha256:ca776463568763705c3bdb5555e7d362a0f5d4cfecdf560ec2257bd9be17ab17",
+    "recipes/sqlalchemy-async-repository-pattern/requirements.txt": "sha256:cd4b01b54fd08f1c379f5dae67d8ddfc1b4ea9a79d3283820359748d072250de",
+    "recipes/sqlalchemy-async-repository-pattern/tests/test_repository.py": "sha256:f7e31b46a2f919466767f544fa808d7c0b44e0d4d25ae860d3aa04d2a0e368f6"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

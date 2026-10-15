@@ -19,6 +19,14 @@
     "prisma": "7.10.0"
   },
   "recipe_hash": "sha256:a4cc5ad1f439bd365561aed54331d9a448d9d149657e9400ff0d13a830124b43",
+  "files": {
+    "recipes/prisma-sqlite-adapter/package.json": "sha256:b8f1bbe93709c92c1c2d74f9ad70508836e38b7a9f73203e1d1e91f55f205a7f",
+    "recipes/prisma-sqlite-adapter/prisma.config.ts": "sha256:1fdd9667782f6d5344d85511724bb6450a1815243a89347d924206f29649772b",
+    "recipes/prisma-sqlite-adapter/prisma/schema.prisma": "sha256:d6dc2bab4e68ea9ffd5ad68fcc7b9372b764deb0bb19ded2f79b95d445a2489c",
+    "recipes/prisma-sqlite-adapter/recipe.yaml": "sha256:8470d3d84fcd4ec89600d2553b886585cbcc900bf47f40ffa5f22b73813b6861",
+    "recipes/prisma-sqlite-adapter/src/db.ts": "sha256:74f744f189c58f535a8f8b85f855103e634271ea09ea2cccb69127175c34d2e1",
+    "recipes/prisma-sqlite-adapter/test/db.test.ts": "sha256:c73c001b433407023b2597c7bfb050abfff36606d57785162d1c2dc9ed95c2a5"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

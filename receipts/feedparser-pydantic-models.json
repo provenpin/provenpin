@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:270dfb89bf6446f4b4c62a39d5ec64eee432b3c2bfa421f68b87a9031a1e0781",
+  "files": {
+    "recipes/feedparser-pydantic-models/feed.py": "sha256:7931b5a08ce19072f6987befc2a9f1432086a71bd03db4ed2cd319a757374654",
+    "recipes/feedparser-pydantic-models/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/feedparser-pydantic-models/recipe.yaml": "sha256:b36cf028ee3420e03358235701f9b7912ca7ac973fe3d67b1aadac45152fb7cc",
+    "recipes/feedparser-pydantic-models/requirements.txt": "sha256:55ace450a0bb188482ed4e21586a965def0dd8bdbea25a520c5a1cc1d2b24597",
+    "recipes/feedparser-pydantic-models/tests/test_feed.py": "sha256:a0879e942fc30927d18515f1946e6f283f92d4c2424cb016e7de0afbcdcdf7e2"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -21,6 +21,14 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:62ad85464a17f296cdee312cf257b0527674337e12fefbafe8a242393780d0fb",
+  "files": {
+    "recipes/preact-signals-testing-library/package.json": "sha256:a9b2eb2e300513fb3d69d13b9c8b7ee367a6b6c9d88d8ae8eaeb6c047fb67183",
+    "recipes/preact-signals-testing-library/recipe.yaml": "sha256:97ff685d0198a3c28eda347fa2deaa42f57e6dee738fea6d9e4a96d85ebbc426",
+    "recipes/preact-signals-testing-library/src/cart.tsx": "sha256:145cdcf2e88c502b437d64b2fca20787b8a6300121d6346bab1bdeeb7ef17e4c",
+    "recipes/preact-signals-testing-library/test/cart.test.tsx": "sha256:e8cf909e3413ee8c41e2a80f050e7e0f5ada5d7c5122cc48d5f01cfd98afebcd",
+    "recipes/preact-signals-testing-library/tsconfig.json": "sha256:cdc08f11ac81270a888f1c343153a35fd65164f05927cb7300c579e5c58221ed",
+    "recipes/preact-signals-testing-library/vitest.config.ts": "sha256:dca31045ad9715b1868bba26c94101b01edc76ba07441dbcff4e8c6aa245dd40"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:db92099cb5a8b648549985f54ac4f63ceb57d0219beff575de0179f69de352e1",
+  "files": {
+    "recipes/minisearch-fields-boost-serialize/package.json": "sha256:af1634e13611ed8b3869f553626f893304b52472aae67c492917bae1bdd0e0c3",
+    "recipes/minisearch-fields-boost-serialize/recipe.yaml": "sha256:390c8118e9a61bddb24f140191ba3dc1ea9bc4b4c5f9efcd7e7016339b9a2734",
+    "recipes/minisearch-fields-boost-serialize/src/index.ts": "sha256:0bdfeb7446da41db421757282197fd8e6b3338631bbb6c5d3cc1ba6dda532af3",
+    "recipes/minisearch-fields-boost-serialize/test/index.test.ts": "sha256:a8cfa9bcb69493f437c6f5f8c222f5780c12da27d28398873939f8a9a97306ce"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

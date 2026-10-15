@@ -26,6 +26,12 @@
     "@types/jsonwebtoken": "9.0.10"
   },
   "recipe_hash": "sha256:2e1b25046d5a324f68f4f9e1a88c66a576a225e540a3b53247d310df28e356f5",
+  "files": {
+    "recipes/express-passport-jwt/package.json": "sha256:3580530aea843b9e0f4c25186824590111b3402308774ee42e0fbd0cd55c6b3d",
+    "recipes/express-passport-jwt/recipe.yaml": "sha256:832bb8cde4e2bc71d8a7f73cdd1ecb6c35ac6427b81904058adb6fdede759b4b",
+    "recipes/express-passport-jwt/src/app.ts": "sha256:c797bf5115fae0109c6281df4466925355f2e234151561b2b5a6bbf4a7d57bdf",
+    "recipes/express-passport-jwt/test/app.test.ts": "sha256:2a9b034c59cb520b5fce38f0e7e923dcf1dc17ee5274fe72646ef98934353300"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

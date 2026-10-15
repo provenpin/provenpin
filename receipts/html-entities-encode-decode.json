@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:83b663246220bcadac22f4a8327fe39226f1c3b309d36771b3f2b261c80af2a0",
+  "files": {
+    "recipes/html-entities-encode-decode/package.json": "sha256:50ffb2a3bd38344cfdf660cf168d8bea9fe228e0f96288fdd4f4fd5d7d934325",
+    "recipes/html-entities-encode-decode/recipe.yaml": "sha256:c000908974b7a688a4b9ff1382e8f5af0a5566b8749e8fc94f08da0a1956535e",
+    "recipes/html-entities-encode-decode/src/html-entities.ts": "sha256:6b21ff75e5c66551dc9ee90245acae724f7f442459e084717021b911893df899",
+    "recipes/html-entities-encode-decode/test/html-entities.test.ts": "sha256:e98edde1bcf455d1026dead5841da64c7335c40e74d915e533da8f435b9fa53a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

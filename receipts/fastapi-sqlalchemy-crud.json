@@ -19,6 +19,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:7a5becba6341865a403af1c6bf1beca93ebccb66c1f996368dcc3445e5881793",
+  "files": {
+    "recipes/fastapi-sqlalchemy-crud/app/__init__.py": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recipes/fastapi-sqlalchemy-crud/app/main.py": "sha256:b0b4281def81640c3fd53251e1d98d0a5f2737a9c6b2d18b88190763d3ab3bf7",
+    "recipes/fastapi-sqlalchemy-crud/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fastapi-sqlalchemy-crud/recipe.yaml": "sha256:55e15525c293f85ad0d5fe8a35f8d73cd57d65a1e80c44bb560e13135868411b",
+    "recipes/fastapi-sqlalchemy-crud/requirements.txt": "sha256:45e1a147ef606b9259443ebb6d05de56678cac6b7ae9667b84a852740a2639f5",
+    "recipes/fastapi-sqlalchemy-crud/tests/test_main.py": "sha256:ed7fa2286380d29adf5667e89cdbbda7f837ddf1bf9b51de10786048d19f6ff7"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

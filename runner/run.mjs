@@ -4,7 +4,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { RECEIPTS, listRecipeIds, loadRecipe, validateRecipe, recipeHash, readReceipt, parseCounts, rewriteSetup } from "./lib.mjs";
+import { RECEIPTS, listRecipeIds, loadRecipe, validateRecipe, recipeHash, fileHashes, readReceipt, parseCounts, rewriteSetup } from "./lib.mjs";
 
 const TIMEOUT_MS = +(process.env.PROVENPIN_TIMEOUT_MS ?? 15 * 60 * 1000);
 
@@ -44,6 +44,7 @@ export function runRecipe(id) {
     duration_ms: { setup: setup.ms, test: test.ms },
     pinned: r.pinned,
     recipe_hash: recipeHash(r),
+    files: fileHashes(r),
     environment: {
       os: `${os.platform()} ${os.release()}`,
       arch: os.arch(),

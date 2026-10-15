@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:8a3f7b655061a63e5eaba17e49ef6bbdc7a8d8a39c12064a688da19589e8807e",
+  "files": {
+    "recipes/langchain-core-fake-model-chain/package.json": "sha256:f4e9b50f4e0aef06cf7ce1aece0f5a4ea016fa310947dc131645b3705bd7f13c",
+    "recipes/langchain-core-fake-model-chain/recipe.yaml": "sha256:b22152264f20cd2936c60434dee98009bc11cac3a870b97eff72a0d8213bad2e",
+    "recipes/langchain-core-fake-model-chain/src/chain.ts": "sha256:b2119ffd346f94ebb923541bd481182501086b4d21664a1ad31ed35b74b4692f",
+    "recipes/langchain-core-fake-model-chain/test/chain.test.ts": "sha256:e29ae1b3d47f3660c2f94a20831e6915590c2d41d29df77e6c1c944c241322bc"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

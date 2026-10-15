@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:5028c10ebe28751e7cd780fd38f88ab9836caca1cbd0084e90b3e6ff7749c170",
+  "files": {
+    "recipes/ulid-pydantic-custom-type/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/ulid-pydantic-custom-type/recipe.yaml": "sha256:b0f71dacb26776dbce3b49605231c1fa584e71142d277a5c6cc3918c1d2b1dd0",
+    "recipes/ulid-pydantic-custom-type/requirements.txt": "sha256:2db6885c3d11f461cad699ad683cea7a4fb06a529c48072da4f3350526124cd8",
+    "recipes/ulid-pydantic-custom-type/tests/test_ulids.py": "sha256:88e97b2bb7e92c3a8c65ae1f96f68a2eed7cf16f90106cccb658d521d6893dd0",
+    "recipes/ulid-pydantic-custom-type/ulids.py": "sha256:05666c4d9fd7f48ce2a06815e8f9fb20fa9b3b74a88e258962eca68660e42739"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,12 @@
     "@types/opossum": "8.1.9"
   },
   "recipe_hash": "sha256:3e1614a1c32b0d153225a74a69343f9df268c9c981156dec0e590db32f3b7e5a",
+  "files": {
+    "recipes/opossum-circuit-breaker/package.json": "sha256:32d9535adbdb99d16ce2be2eacc144ed457d7feb9cc903df22fb672b021f612f",
+    "recipes/opossum-circuit-breaker/recipe.yaml": "sha256:450b6a1b292af584165466d05f7e1474bef577c6ee0ef4b3fc496ea7adb5e4fb",
+    "recipes/opossum-circuit-breaker/src/breaker.ts": "sha256:5dc8110689c331d1f838677822c4acc56d89aff0c396c3bd06e13542eeef27c7",
+    "recipes/opossum-circuit-breaker/test/breaker.test.ts": "sha256:30315ce947b9a5ace8ab566ea7860823517c6e0d0bada368418154046bdd733f"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

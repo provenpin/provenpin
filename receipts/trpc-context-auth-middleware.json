@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:faa8d0dc5a4bc2ee0bc53aa8af4f409b1dc6d4db005943ce553e1dd6a207e705",
+  "files": {
+    "recipes/trpc-context-auth-middleware/package.json": "sha256:9ba5c2f09af63665050021741c334792b4785c7de53be1bf34bdbd9d10a28790",
+    "recipes/trpc-context-auth-middleware/recipe.yaml": "sha256:d1888dde7c384e47703a49ed6ade63c69653662642abfd1eb8d62417c3a2c714",
+    "recipes/trpc-context-auth-middleware/src/router.ts": "sha256:bc6c3d456e7dc46a57b52ce150c340e72ef72acc792260ac4eefde4322aeaff4",
+    "recipes/trpc-context-auth-middleware/test/router.test.ts": "sha256:9085a2aaa41d189165fba4ec126a2aaddbd4d2e9c7ebefb1407dbdb50ba2cba5"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

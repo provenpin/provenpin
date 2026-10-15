@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:2d3109af774c8131cd7eb65fe5536bc87cffa2288d1d301ae20fa261bdd2f5d6",
+  "files": {
+    "recipes/cron-parser-next-runs/package.json": "sha256:ae033b76d343c5e82c8bf7b4b5bb3ee6d36f17b2fca90bb399100e7f623e24a6",
+    "recipes/cron-parser-next-runs/recipe.yaml": "sha256:5dbd425e710999f9071850021b29950f8cd58147f13d260c88856d7c5f27f187",
+    "recipes/cron-parser-next-runs/src/scheduler.ts": "sha256:17465e4403e950ba61c3ad849583c6c77674413d413e73d733d8113cc3f60add",
+    "recipes/cron-parser-next-runs/test/scheduler.test.ts": "sha256:b4bd0e3c0a2fe0bd1fce8d7ebb04309abea6639219981c26f6ae0947f1b21082"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

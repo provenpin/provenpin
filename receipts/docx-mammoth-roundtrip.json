@@ -18,6 +18,13 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:3b164caacf6993bb34c8114cdbd66565c2ff80416fdcda738ffc2d370d4a2d30",
+  "files": {
+    "recipes/docx-mammoth-roundtrip/package.json": "sha256:4e3a8ad6ab69b6b619467cf79590b935056d7147c3f3e4a380456b281725fbd2",
+    "recipes/docx-mammoth-roundtrip/recipe.yaml": "sha256:a893d789260977f1ca5f3efcbf469fbf908ca917cd4bdd9d0d5fcdfea40eccf8",
+    "recipes/docx-mammoth-roundtrip/src/generate.ts": "sha256:98cfd06022d8ecd899534564790a32db52f76f38a080bda033e9d4858ddd92ca",
+    "recipes/docx-mammoth-roundtrip/src/read.ts": "sha256:2591eab3bc42d774d855639574d715a6b7631b671a1efcea5c2e1a41c9886884",
+    "recipes/docx-mammoth-roundtrip/test/roundtrip.test.ts": "sha256:b992a99743d780a6651a7ec860354618b7210cb4a3a35c94ec2932aff8d7ec0b"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

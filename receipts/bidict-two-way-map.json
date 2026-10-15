@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:a412d8a978528be28a5e450d36e33288ec3164dd9603e0e0d54905fafe91eaa4",
+  "files": {
+    "recipes/bidict-two-way-map/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/bidict-two-way-map/recipe.yaml": "sha256:0f37b6c7cafdc0330c7acde7035f85838599ceddf6760dd2099caf4182dfa602",
+    "recipes/bidict-two-way-map/requirements.txt": "sha256:e7e96db3f53b70032356b5e82117e6ec872c8c29d9828a4d3cff01db155a3b3c",
+    "recipes/bidict-two-way-map/tests/test_two_way_map.py": "sha256:cecf90724807ced5e09c13112aa2e7ba7d6ace7cd936ecef6b3e073204f49934",
+    "recipes/bidict-two-way-map/two_way_map.py": "sha256:de2f1a045de51ecdd3c990d168a9cd4b26f73e54c6f520a0b30c2ad6812e0469"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

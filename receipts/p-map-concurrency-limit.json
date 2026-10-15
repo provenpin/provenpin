@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:ed9abf70db299e91ffe8fac0e1bfbe7b626ab5e86234c8cf865825fcfd812ce2",
+  "files": {
+    "recipes/p-map-concurrency-limit/package.json": "sha256:2626b0740b957c3d3c218f371153a0fd5ff0322fe17f08e926e2ea6addd24a1d",
+    "recipes/p-map-concurrency-limit/recipe.yaml": "sha256:23d478e6fe0b140b776e17d04f6f4c80606747a7a3e3cd8308032310c66eaa15",
+    "recipes/p-map-concurrency-limit/src/map.ts": "sha256:8988b34bb154c48e4568149264fe0aac44b41412c22b5af0a55c46ce742995e4",
+    "recipes/p-map-concurrency-limit/test/map.test.ts": "sha256:c7eba02c85dd2fc0a8fbd3b211df1e524134d4298829bfccf6734e0baedbf975"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

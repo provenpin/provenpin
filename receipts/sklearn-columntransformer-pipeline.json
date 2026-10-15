@@ -20,6 +20,13 @@
     "scipy": "1.16.2"
   },
   "recipe_hash": "sha256:3484a85b9b27b14c6eca796bfe6a0296bfacb57dd17bbf73a6209bfb1bd87787",
+  "files": {
+    "recipes/sklearn-columntransformer-pipeline/pipeline.py": "sha256:881d8c1c9527580c9670bb356a048bd696bb92f490440f8a7a8597171283828a",
+    "recipes/sklearn-columntransformer-pipeline/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sklearn-columntransformer-pipeline/recipe.yaml": "sha256:8d4cbf445e73b767c2c268b4583c7fae28bc7a7b89a8b0a7b3169f434a6f2c66",
+    "recipes/sklearn-columntransformer-pipeline/requirements.txt": "sha256:cd212ad460c16834b495e747e0b7ed8aaa3bb0055431385c551583bc9e849b2b",
+    "recipes/sklearn-columntransformer-pipeline/tests/test_pipeline.py": "sha256:9653485936cb2608389b9807198fdb2e13c3d12c76dfcb54700f22fe7a6cac25"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

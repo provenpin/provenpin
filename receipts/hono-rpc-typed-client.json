@@ -19,6 +19,13 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:f1f891d7dc9ffc4292e5a39e96ba2b4db690e5132b51fa8fe0d1bd6f3c1d339d",
+  "files": {
+    "recipes/hono-rpc-typed-client/package.json": "sha256:cd53db17ca92f2a8ed9e0ad878f1ab503885a23d3cdadc4e1ba07f52fefb0cfb",
+    "recipes/hono-rpc-typed-client/recipe.yaml": "sha256:959e98411e879ee18632aca3f2b9914755f1d4766bc347fd4da530f2dd2bccc2",
+    "recipes/hono-rpc-typed-client/src/app.ts": "sha256:2890b4b203eb99aa1c788f0995d94ad5d553adf3f0d61d1bc965f7e5dde53bdc",
+    "recipes/hono-rpc-typed-client/src/client.ts": "sha256:71699e3139468cfe602e397dbad0f7ffa87bba67e9ac211f765250ef4c72af91",
+    "recipes/hono-rpc-typed-client/test/app.test.ts": "sha256:8f05ab1d2843ae0538228b4c72ddf217bdca9f74fdc9e76e52dea5a90dd78b52"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

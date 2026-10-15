@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:5668fab37264a9bc0879e6bc7f4ccdfd31daab81220100eba43a2471afdf0bb6",
+  "files": {
+    "recipes/celery-tasks-eager-testing/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/celery-tasks-eager-testing/recipe.yaml": "sha256:712bad0664976062a619f370215801737d947c80fedb7242cf9626dcb86968fe",
+    "recipes/celery-tasks-eager-testing/requirements.txt": "sha256:4cef75a741e91046cf2c26e77eb2285ef1bb900106ce02ac152429377b43d06c",
+    "recipes/celery-tasks-eager-testing/tasks.py": "sha256:20002fa33a376d13240cabc54d26975c52e18f45e5051e1c4c01eef3b5dcece5",
+    "recipes/celery-tasks-eager-testing/tests/test_tasks.py": "sha256:22f44ce3d954614e1d0a68051814834e5f6fd7890306435410da1832fd4167b2"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

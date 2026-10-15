@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:c77f156677f0bbb3a3c2ef316608c712568ca294f12b778a212e9fe5aed6811b",
+  "files": {
+    "recipes/async-mutex-critical-section/package.json": "sha256:bc71c4081f7f36cd01eeb57435cbb813d2cace5887b2e1efd59b78119506b0a2",
+    "recipes/async-mutex-critical-section/recipe.yaml": "sha256:126b7c886f5ac700a53810ed74f8f7451b733602aa504e508f5a13ebd97e88f2",
+    "recipes/async-mutex-critical-section/src/locked.ts": "sha256:b89ac0f983dec0018470dfc142b8ab37abb09b2065bb788c87bb1ec1528c784a",
+    "recipes/async-mutex-critical-section/test/locked.test.ts": "sha256:a800c337bc8243f08ec7518d684ce29fd7e116d4ef0db05c6c42989228fb8e6a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

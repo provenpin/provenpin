@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:542779831e4399a80e4fd0149926c7077576f8ea0e42f02f64e441930eec5f00",
+  "files": {
+    "recipes/pandas-pandera-validation/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pandas-pandera-validation/recipe.yaml": "sha256:b7c86e0a5732f8b73a1e92fd7833b38e6c3abd9c41e7a57bd51b8614e4a107aa",
+    "recipes/pandas-pandera-validation/requirements.txt": "sha256:537336aebb41a566a5b51a0e5af534fc1caf33adc6773a71619f3262151acde8",
+    "recipes/pandas-pandera-validation/schemas.py": "sha256:4349ac1fcdce62db998210a8a80453da4527c36a7e23f3f40c5fe507c489ad87",
+    "recipes/pandas-pandera-validation/tests/test_schemas.py": "sha256:bd447c7073046df86e394766de2849822507ad5f8496646e36384d99f10d7a04"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

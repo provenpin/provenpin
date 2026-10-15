@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:e62ab6254654e53bd764dab7400671a8437c0e00290c834ed472902f5fe35ac3",
+  "files": {
+    "recipes/dexie-fake-indexeddb-store/package.json": "sha256:50b8da364e861ff4ccf7d87b685aca0d11b5830924f4162c03790fbdc5e532ca",
+    "recipes/dexie-fake-indexeddb-store/recipe.yaml": "sha256:1ab472fc323b58b54162f2d3ff649ef57b2841c7c24b349b45882d732683d641",
+    "recipes/dexie-fake-indexeddb-store/src/store.ts": "sha256:59368948e10adc40e2e46d0787e18f13c28152ccf2d06afb945ac6187ceaf68d",
+    "recipes/dexie-fake-indexeddb-store/test/store.test.ts": "sha256:531850f3d2863b71e9f03c0cc51ce288840eb561c196783644fb88d2a347e189"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

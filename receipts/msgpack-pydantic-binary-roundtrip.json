@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:06ee45f88674cff279877cdf7530607964189da77901f21ac2ea39e205f70f8e",
+  "files": {
+    "recipes/msgpack-pydantic-binary-roundtrip/codec.py": "sha256:85581d9b58d805b4e32d2d3b8a5972df20f190ab58c9490e25e2e18862b50456",
+    "recipes/msgpack-pydantic-binary-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/msgpack-pydantic-binary-roundtrip/recipe.yaml": "sha256:4e04b80d8a47ed3327f78f9646bb4fbe76f10ea5eb4213c889547bc8125ddda6",
+    "recipes/msgpack-pydantic-binary-roundtrip/requirements.txt": "sha256:041cce60133f7a4c78c14169826469fd8958b7184b39d9a2e41fee85b6896f04",
+    "recipes/msgpack-pydantic-binary-roundtrip/tests/test_codec.py": "sha256:4a0d9b36c1e45e658ebdc5081a594671667ed4e926b90111ee2ab212dfaa72d2"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -35,3 +35,12 @@ test("rewriteSetup routes npm install through npm 11.6+ when PATH npm is older",
   assert.ok(out === "npm install --no-audit --no-fund" || out.startsWith("npx --yes npm@11.6.0 "));
   assert.equal(rewriteSetup("uv venv -q .venv", "python"), "uv venv -q .venv");
 });
+
+test("fileHashes covers the same files as recipeHash with repo-relative paths", async () => {
+  const { listRecipeIds, loadRecipe, fileHashes } = await import("../lib.mjs");
+  const id = listRecipeIds()[0];
+  const r = loadRecipe(id);
+  const fh = fileHashes(r);
+  assert.deepEqual(Object.keys(fh).sort(), ["recipe.yaml", ...r.files].map((f) => `recipes/${id}/${f}`).sort());
+  for (const v of Object.values(fh)) assert.match(v, /^sha256:[0-9a-f]{64}$/);
+});

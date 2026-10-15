@@ -20,6 +20,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:31b895462049e4f5257683818c4b46e25862e9ed5c11cbc1b5dc3bd04d5d18ee",
+  "files": {
+    "recipes/nextjs-route-handler-zod/app/api/todos/route.ts": "sha256:20d359d3e49435a141cc70ec1e0b0adadd684245c8797a8ce81d89ebf8c33b90",
+    "recipes/nextjs-route-handler-zod/package.json": "sha256:7433c820375623fb7daea1033af04441b9076cc216a907013413bb4bb436102b",
+    "recipes/nextjs-route-handler-zod/recipe.yaml": "sha256:025cbb6f76ff401a23c130644da6b9e32a14943754adb3d03b21d70cd47f5f90",
+    "recipes/nextjs-route-handler-zod/test/route.test.ts": "sha256:08431bec0064487b76933a07ea80c305c965634eeb6f6660ae00ddfac0c622fe"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

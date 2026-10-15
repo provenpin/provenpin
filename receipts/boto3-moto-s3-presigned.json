@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:939582083a837e7d3775c0b2306c0585994a843d065ddcaeec4744c106c0517b",
+  "files": {
+    "recipes/boto3-moto-s3-presigned/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/boto3-moto-s3-presigned/recipe.yaml": "sha256:0768dddbdb84417daa247e07e2c0dcf1664fbcb0dd4f69dafd9a8b9bcccb026b",
+    "recipes/boto3-moto-s3-presigned/requirements.txt": "sha256:6d417d1698f5010518731329254649f2f3d49a3220d283278e98f85abfa9ded5",
+    "recipes/boto3-moto-s3-presigned/s3_helper.py": "sha256:285095dde56752720a4cbaee3056cf273f5f12612fed62f200ac4c7886aabd55",
+    "recipes/boto3-moto-s3-presigned/tests/test_s3_helper.py": "sha256:587223d6a51b0273a8902559b77070c578865733fe8169894bdbbd3d9ba9ee23"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

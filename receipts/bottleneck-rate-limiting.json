@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:48c23c1ba1ca887148457815e9542b448002ba8c4980c2785eb01e1d24ec91c6",
+  "files": {
+    "recipes/bottleneck-rate-limiting/package.json": "sha256:0647f315e062e084fa25bc006e3cd2ff6e4676128ade18c7efe80ebf680cabe0",
+    "recipes/bottleneck-rate-limiting/recipe.yaml": "sha256:d38253ca8d6c9fd14647d68fd5b3075394470f13eb7592e40f958ef2c89855ec",
+    "recipes/bottleneck-rate-limiting/src/limiter.ts": "sha256:9bb5775645a181f0857e32c501feaa826bfe4be1993072ccca70a9aee2113b2a",
+    "recipes/bottleneck-rate-limiting/test/limiter.test.ts": "sha256:83fe58c1cfd20330f8e02e582245856b16402691687c20f9935fb8ef97a1bcc1"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:7926d5192fdcc347e56ebaa55927041563aa47da3f99ea73f30d02dc9d042528",
+  "files": {
+    "recipes/jinja2-markupsafe-email-templates/email_templates.py": "sha256:109f36813ab8e5b74deb788f0085be17c19cf32b697e6deda6b569534752858e",
+    "recipes/jinja2-markupsafe-email-templates/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/jinja2-markupsafe-email-templates/recipe.yaml": "sha256:1839f842201c400f1bf0811923c855a63f78112a78d4f49342d61fcee613f51e",
+    "recipes/jinja2-markupsafe-email-templates/requirements.txt": "sha256:443febaeb3b59dd33673902dc99f57ded10db8bf685b9b8fe3d6419b089e4a39",
+    "recipes/jinja2-markupsafe-email-templates/tests/test_email_templates.py": "sha256:4974de40eed1f655ac1b73b8b2220c1991057b5427dcaa09beede1bd3e2bb866"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,13 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:464452ddc77b08aec5e82bd5ca26e0c2ea4084c88cf7f7dd089b958b9c19c44d",
+  "files": {
+    "recipes/mikroorm-sqlite-entities/package.json": "sha256:ca49d0c66808fa4904fcb2af6109c6ccce788ea4a4c0a389569a5425b69e22b0",
+    "recipes/mikroorm-sqlite-entities/recipe.yaml": "sha256:37ee1ba5e2426320429e1457abad01f5b96db7176801ecea586b7155eb5b7a63",
+    "recipes/mikroorm-sqlite-entities/src/db.ts": "sha256:0ff84ed4d462410c811debc20abba1651e5d5451933d3ff0861e27b55b3c9995",
+    "recipes/mikroorm-sqlite-entities/src/entities.ts": "sha256:62d7060d42e5b4d01d665d6e1c59f56ba1d9301606b8793ef4dc4efacdfda8fe",
+    "recipes/mikroorm-sqlite-entities/test/db.test.ts": "sha256:1142b6593d8bfbd42623a8b4f5e7bfef63bf5d625405e5881616d6a6f30c8877"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

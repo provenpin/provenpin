@@ -18,6 +18,15 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:5ba240f8f11128505194ffc18deba84e65520341404a0d67e062f1c7d741b395",
+  "files": {
+    "recipes/drizzle-pglite-migrations/drizzle/0000_init.sql": "sha256:96228f2744a243e45def874a2d3090bfec609c392d066ab2432df7fd67ac21ba",
+    "recipes/drizzle-pglite-migrations/drizzle/meta/_journal.json": "sha256:da841f69359973df0d60d15a56577fda5927eb5f85a9083ad7a063009beaee23",
+    "recipes/drizzle-pglite-migrations/package.json": "sha256:52bb90cc616d69d2d6c2ce408deaf7092276185cb3da67f2b16aca0179e3d7a6",
+    "recipes/drizzle-pglite-migrations/recipe.yaml": "sha256:715ba70849cb0e1a53afe65c9f7625daab5ebed1bedda69a09d40010e5e9c4e9",
+    "recipes/drizzle-pglite-migrations/src/db.ts": "sha256:4207dd05b707ba828a57ec3927fade5ab55d637a39a43ea9e5906c5619bfb337",
+    "recipes/drizzle-pglite-migrations/src/schema.ts": "sha256:70ab2bccc5bfb4ad31c391a5f932c84da48dc15d796d881830802954f8106107",
+    "recipes/drizzle-pglite-migrations/test/db.test.ts": "sha256:5943c83770955cfb3b1a94d4a48208100c15f765cbf58389ebc30df750eeb6b0"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

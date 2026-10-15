@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:07ea9c1326f39218df6c205b45a011b9543387c45e380fe4c63869cfd84d1f37",
+  "files": {
+    "recipes/pytest-asyncio-taskgroup-timeouts/pytest.ini": "sha256:0b2841be24fb917825e7886d22b33fc1740a1d608572f61be73bfdd38c61a25c",
+    "recipes/pytest-asyncio-taskgroup-timeouts/recipe.yaml": "sha256:f2b18c71aecd053445192fcc6cecff4ed27e2d53e3fbac5948f545c7ab2d5204",
+    "recipes/pytest-asyncio-taskgroup-timeouts/requirements.txt": "sha256:952002c2dfd84bfd1a14f10c9c88d4fcaed84cd96d5bf69473b2d4c382213f7a",
+    "recipes/pytest-asyncio-taskgroup-timeouts/tests/test_workers.py": "sha256:14f2a1603e73510f56b75fa8a78941ff31624b26c5b40e7bdbb39f9a722384dc",
+    "recipes/pytest-asyncio-taskgroup-timeouts/workers.py": "sha256:33cd20de39e8449fe75c1ddfcc614b514226585dc7841b20e6f6cce545afd54b"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

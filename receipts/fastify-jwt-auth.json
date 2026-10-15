@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:e02b836ac13503c8d3a2cfde2b53c09ca7d38738ee878e8bfabe17d2a6795f89",
+  "files": {
+    "recipes/fastify-jwt-auth/package.json": "sha256:ac1068215389e97288cb15138bd74edb9a26076ca409016fc094618b020a14ce",
+    "recipes/fastify-jwt-auth/recipe.yaml": "sha256:66a533606af90b7cc839474cc5f5ef2a76218ba73b8242171fa7169ee1d1b0b2",
+    "recipes/fastify-jwt-auth/src/app.ts": "sha256:704b9c394398521fbb7847db806bdfb8e13375084e44c9a49379dd00c10535d4",
+    "recipes/fastify-jwt-auth/test/app.test.ts": "sha256:51c1478abcb5494ff6bcc1b0abd432dc5f0b623b8326f8de81dec11ceda98c56"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

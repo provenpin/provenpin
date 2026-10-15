@@ -18,6 +18,17 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:b7dfe6ee3a11292d378ff14f5586342f69ec9364e5d29aa17c2c18fd83ec7f10",
+  "files": {
+    "recipes/django-ninja-schema-crud/catalog/__init__.py": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recipes/django-ninja-schema-crud/catalog/api.py": "sha256:cbc889f8b9d669df54eded1c6a50f68f30812dd827ae859a6b7d275bb450316d",
+    "recipes/django-ninja-schema-crud/catalog/models.py": "sha256:4827b57b219c8164b880133ebfb2993657fedd19ba80a5ac094c29455abed449",
+    "recipes/django-ninja-schema-crud/catalog/urls.py": "sha256:f07542f0f99a7250b434c77c7510aba75d92afd66154fd6f00b81a0df12cd678",
+    "recipes/django-ninja-schema-crud/pytest.ini": "sha256:4bc441b2eeab2fcaec19c01585dd4cae02ff6de8b462a2d0f2f23f2349d1d199",
+    "recipes/django-ninja-schema-crud/recipe.yaml": "sha256:2c14e71a31debe104ef0098aaadebd75bf71ea1959584e79e0b35cd47c6363a6",
+    "recipes/django-ninja-schema-crud/requirements.txt": "sha256:d49a572c25a62c202ea43f5118c55d76d67fb460fc6c1f9c0fe676020a206a35",
+    "recipes/django-ninja-schema-crud/settings.py": "sha256:882e988c2b658c835ffdfe21e2face70e74e1a9f042cf2616859dbfbd824129a",
+    "recipes/django-ninja-schema-crud/tests/test_api.py": "sha256:5a32604bc11e50a8926f6e01bac329527a489ce108b5f186e7c2e9a7e09661fe"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

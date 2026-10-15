@@ -18,6 +18,20 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:09d477c43d24b4eb87a7dd0e05d37dc66968b28b11a3775404e4aaabd3c8b499",
+  "files": {
+    "recipes/django-celery-eager-signals/celery_app.py": "sha256:a52985993b38029c39ef8fa20bc46465ebad0e241d611c165944bf20338e17f0",
+    "recipes/django-celery-eager-signals/notes/__init__.py": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recipes/django-celery-eager-signals/notes/apps.py": "sha256:86e117d0a05ac43f85abb348a806246dc73f5e050feabb19bd84fbe699539ca9",
+    "recipes/django-celery-eager-signals/notes/models.py": "sha256:ee5eb690566e2bf354ad5c64c5fdd6df35d564b6b3afdc819576649485baaa22",
+    "recipes/django-celery-eager-signals/notes/signals.py": "sha256:d4c993a96325a34689e3fb6843c470309911c6c54b9c445a4d1368a603992a93",
+    "recipes/django-celery-eager-signals/notes/tasks.py": "sha256:58085be18979296e3a0f183d360153c0339adbb05ea13918841c71d4103b4c07",
+    "recipes/django-celery-eager-signals/pytest.ini": "sha256:4bc441b2eeab2fcaec19c01585dd4cae02ff6de8b462a2d0f2f23f2349d1d199",
+    "recipes/django-celery-eager-signals/recipe.yaml": "sha256:2f5b870ac1384b36641510373506e0d789f78a1a0957016a6ee791b2f81d73b9",
+    "recipes/django-celery-eager-signals/requirements.txt": "sha256:1237bd1978163b6fcfb81c1c3725d109561bddbaac207c0a4a1bff1dd169de8a",
+    "recipes/django-celery-eager-signals/settings.py": "sha256:5346197c634fc1db88ed15d4cc295c9d23874907ce35515ce00bb02dc05a1e7a",
+    "recipes/django-celery-eager-signals/tests/conftest.py": "sha256:b8f43282c56b07c0b2fab5828b1d1db6c23465ad4a0b87b055cc5968f90b6b04",
+    "recipes/django-celery-eager-signals/tests/test_signals.py": "sha256:262e951f62b13d0fc2eaca2fd4c04468dc80c21b0bc6d1ba270f0be9276e2d8d"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

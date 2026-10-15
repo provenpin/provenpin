@@ -18,6 +18,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:84b396c41700909a0c4ad341da5e7699cca8141c8a927b194d1a7aac1511e03d",
+  "files": {
+    "recipes/flask-wtforms-csrf-validation/app.py": "sha256:a4ddb95952193766ab3ab331fed4092301c5da3eab040dac05e723a093f3478f",
+    "recipes/flask-wtforms-csrf-validation/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/flask-wtforms-csrf-validation/recipe.yaml": "sha256:35d17cc396f2a283c2e7a6139f9ddb0ce36af5e7cff4b42b84c1b8faa0feffdb",
+    "recipes/flask-wtforms-csrf-validation/requirements.txt": "sha256:28a183808bc40dd00b0ae0ea98157f09517bd963936c127ec193e4e3802dfbea",
+    "recipes/flask-wtforms-csrf-validation/tests/test_forms.py": "sha256:8af8320aef78665b4f44c32e363d95f229bd9b194034580d31944ca9b3b8ce69"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,13 @@
     "pytest-asyncio": "1.4.0"
   },
   "recipe_hash": "sha256:c04a9465b13d5066b42f3288b345c62d0dfb27ada05bc73896359f02ca784dc9",
+  "files": {
+    "recipes/fastapi-dependency-overrides-httpx/app.py": "sha256:45e7d6239ba42346afe32bbd9a1f85316fe6eebaa7f877c803ebb43c5f69df94",
+    "recipes/fastapi-dependency-overrides-httpx/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/fastapi-dependency-overrides-httpx/recipe.yaml": "sha256:90b66f16db1b1af3ec9032368ab0eb4e8100f13bf29b6499015fb0fdd49acb3d",
+    "recipes/fastapi-dependency-overrides-httpx/requirements.txt": "sha256:2535e2d08e6f3d43d6a2412df9de927212e4c80a6b41e7f59fb08821a5ab3427",
+    "recipes/fastapi-dependency-overrides-httpx/tests/test_app.py": "sha256:56e259180b36b2f3d78daa80b02e9fa18c4c51b0e55b68ba8e19bb0e0647636c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

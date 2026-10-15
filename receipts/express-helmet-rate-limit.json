@@ -22,6 +22,12 @@
     "@types/express": "5.0.6"
   },
   "recipe_hash": "sha256:55458c34d391ca738a58bf2e1a9b152e2ec9355f6ff5d0826f6c52bd7da3e94a",
+  "files": {
+    "recipes/express-helmet-rate-limit/package.json": "sha256:ef5fd6d52f2fb0d3d66bd4a641c38018c0071f12e4d8b6bb8816ddf1a7ce96c9",
+    "recipes/express-helmet-rate-limit/recipe.yaml": "sha256:0024b68d5f03fde58e20a9520a3261449198a32226dbb01ed96540dca44649ec",
+    "recipes/express-helmet-rate-limit/src/app.ts": "sha256:4c8953e5c7e32ba9ec6896df7b5d81c0bfef6baa87d268c6bf6b34242e6d0e4a",
+    "recipes/express-helmet-rate-limit/test/app.test.ts": "sha256:95d2aa2e72ebd13be63ab3c5e8c31dad548785fe0dc97134fb1c04a65641dddb"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

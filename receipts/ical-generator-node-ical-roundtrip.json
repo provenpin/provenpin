@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:623449503a679c86f52f42577fef90e3f1782f216f0cbe9cafb7c3d23b7a90aa",
+  "files": {
+    "recipes/ical-generator-node-ical-roundtrip/package.json": "sha256:3c6ac0665ab5bdb0a68c7f66598b6d8f68ca99f0a4ee13723a842a1acaf61e11",
+    "recipes/ical-generator-node-ical-roundtrip/recipe.yaml": "sha256:4b61cf1aa63de93cb0ed74f2a8733555531a71131eb9b5b016c2ca4ad8e64ddc",
+    "recipes/ical-generator-node-ical-roundtrip/src/calendar.ts": "sha256:54e3ed55a38ec51671c1393f3a370d7d8773993fd45e557cc71cc4d21b439db9",
+    "recipes/ical-generator-node-ical-roundtrip/test/calendar.test.ts": "sha256:0e903c8bf6f4a50a9ee1dbf266d347104ba411b11b9227cf5bbf9719013dafad"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

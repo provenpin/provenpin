@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:17a3554f86149e421b932724f96c1994a314c96f9bde007f16826e71807b3373",
+  "files": {
+    "recipes/orama-fulltext-search/package.json": "sha256:41b922f1ec0c17775da1e22b8ea4039a21df0169ef5ff4695bd5bc9c0712c9c1",
+    "recipes/orama-fulltext-search/recipe.yaml": "sha256:1288592dea100578033c08ff15a26b1afd8c204328c83683d293620ac79c3ca0",
+    "recipes/orama-fulltext-search/src/search.ts": "sha256:0de017b31c067c2c97d4479e48cd403a71534c5931f344c42b1701439a61bf5c",
+    "recipes/orama-fulltext-search/test/search.test.ts": "sha256:48b260970bed6ed9b728588edbbc092066cffefd6d3b44c42c8c03522d6a1b66"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

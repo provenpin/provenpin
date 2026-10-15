@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:b06fe33b4b0cfa8c5b55e80578cd900dd636ef2cb19f7b547f025bdf5e893c45",
+  "files": {
+    "recipes/svix-webhook-verify-hono/package.json": "sha256:ecce62364791fc959e2fa5504b952ae883a1ac996dc8f54e35843bcd69242112",
+    "recipes/svix-webhook-verify-hono/recipe.yaml": "sha256:24f77b64c1a94a77e5afc5ba190693c73cd2c24425ca0f31980a8e8f16c8fc74",
+    "recipes/svix-webhook-verify-hono/src/app.ts": "sha256:a2fc4a253c09e27728ea6c7bf6eabbf2789ec7526f4bd4e136f64eeb6c0bee51",
+    "recipes/svix-webhook-verify-hono/test/app.test.ts": "sha256:05e4e28a97fe44d8f72482024d1da59aaac1ff19c8c2e39ab71b07f6a2213de8"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

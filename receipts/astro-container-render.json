@@ -17,6 +17,14 @@
     "vitest": "5.0.4"
   },
   "recipe_hash": "sha256:72c2694725ce67be18e70f3a8ce0d86e4f136cc5818be96c453f7746d02b246f",
+  "files": {
+    "recipes/astro-container-render/astro.config.mjs": "sha256:e5804d67075e46f5248f30ae1b37690413cb49e6ecb9dfd742778bd12caa8560",
+    "recipes/astro-container-render/package.json": "sha256:a09f94ed6b3b07528435b06fca8d7397119f13a2e4e83905bbb3b407b04edc55",
+    "recipes/astro-container-render/recipe.yaml": "sha256:3b250fcd10d5d9ba4d69340e3491a61c09dd9e22893e9dff16eed1114c737f2c",
+    "recipes/astro-container-render/src/components/PriceCard.astro": "sha256:8f915d1ab85c104215abf7b801c75a6669648059483d551b2adf68b6fff1e9fe",
+    "recipes/astro-container-render/test/PriceCard.test.ts": "sha256:815ae99f9c6d3c906c63d1771ea41c6a2eed53e866cc570cd83007971b0c62e0",
+    "recipes/astro-container-render/vitest.config.ts": "sha256:9985c7cc96cb91998eabe244fc5cdd82ca1ba8a3e3fced925c33ce646dce18ac"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

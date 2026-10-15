@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:4e86751a72aa254e5f398090d00a42cd074ebf12b9f0c320270923e97f53eaa7",
+  "files": {
+    "recipes/cache-manager-memory-store/package.json": "sha256:a80ba8f7152feeacad9c4c192224e5ffe578a8dd2480cf0351b88508d9ea27d7",
+    "recipes/cache-manager-memory-store/recipe.yaml": "sha256:91b1b6595534077545ac028c096029ca1cfc4057cd33b3909c71bf50d3b1d5a7",
+    "recipes/cache-manager-memory-store/src/cache.ts": "sha256:ef436738f30743ea98a290950eebc1c376f5f649dd75ebf91c0ada718f0720e5",
+    "recipes/cache-manager-memory-store/test/cache.test.ts": "sha256:25eba50893e4a03b7592488c817c7f935281b29ee446ab469de591aaf05c1e7a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

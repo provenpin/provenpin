@@ -19,6 +19,12 @@
     "@types/better-sqlite3": "9.6.0"
   },
   "recipe_hash": "sha256:fd89fdb620deea5a31893595c9e65134337c07a5191eb2943ebc60a66952271b",
+  "files": {
+    "recipes/better-sqlite3-zod-transactions/package.json": "sha256:a6db85dc7143732d746930fb136f1c8e93b9cbed589368ebff59a7ce6be176bb",
+    "recipes/better-sqlite3-zod-transactions/recipe.yaml": "sha256:a2d7b23caba4d0bbf7406e98c88b4a79b13a12bb5b4f7dfbc516143e975851ae",
+    "recipes/better-sqlite3-zod-transactions/src/ledger.ts": "sha256:971ae21524858a7789ed0f9caf40f0e47c2c34e4ba739b458c300f2ec7549239",
+    "recipes/better-sqlite3-zod-transactions/test/ledger.test.ts": "sha256:23500ea5c089fe7c462bcebb06ce7a406f643d1aeff8c9aae74bd1d55a1a9e45"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

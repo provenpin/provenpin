@@ -18,6 +18,13 @@
     "msw": "3.0.3"
   },
   "recipe_hash": "sha256:2e85bd77c495e78be414dcc1407f03dd3920f1977e6131a832b01bcc787d8472",
+  "files": {
+    "recipes/openapi-fetch-msw/package.json": "sha256:4b38d4b89e572239c89e2696f36b19fb75f4878a37919ac39e9b01adc303c79e",
+    "recipes/openapi-fetch-msw/recipe.yaml": "sha256:c3d7b3ccf9fe1043445f5326e417a7c40be3a262c37eb7bdf2c7a78da246a4a0",
+    "recipes/openapi-fetch-msw/src/client.ts": "sha256:b88690d23add4fdfb4c8f61d4700d3d98b9bf1d2c7767ddc10b66236ead0d01c",
+    "recipes/openapi-fetch-msw/src/schema.ts": "sha256:3a53bffd2d80fb41f9a211629eb5411974b7c605898e32856217bdd9c2de9e23",
+    "recipes/openapi-fetch-msw/test/client.test.ts": "sha256:cec05ccd45fe4a646b6f7889e497d59a5ac95e91ed0bd2ec8889bd10a1670015"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

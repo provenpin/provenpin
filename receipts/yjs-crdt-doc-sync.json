@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:a3eb41d8acdf6161a7f64cba3b03dbb0f1b1180a7b518cadbcc2f214049e4887",
+  "files": {
+    "recipes/yjs-crdt-doc-sync/package.json": "sha256:ac60d5f45dbc0623af04535e7af7330b2b2bf129c907defd379266b8d667c215",
+    "recipes/yjs-crdt-doc-sync/recipe.yaml": "sha256:b8564604911a8f9f41003d3ee72689c7982bff59f273f534b51bb34c86c435ff",
+    "recipes/yjs-crdt-doc-sync/src/sync.ts": "sha256:ddad1ddfa93217e0973082711b2cc7f7eea4cca7346cec1067dd38ac8e922397",
+    "recipes/yjs-crdt-doc-sync/test/sync.test.ts": "sha256:b212edf5e109778a1a9f951b27cbe50a79525288a5b88021dfa18865b2678882"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

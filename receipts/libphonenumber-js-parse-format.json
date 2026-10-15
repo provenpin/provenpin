@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:7e91486a26a0cfe8b8a1df4752f2b9f3dfd5bad6fa7b3edab5514e1ca33cd6f5",
+  "files": {
+    "recipes/libphonenumber-js-parse-format/package.json": "sha256:64f254b75cd876b606bf392d115e9e2d3019406a88d32c201a3836698dd93c59",
+    "recipes/libphonenumber-js-parse-format/recipe.yaml": "sha256:da1441dd6c232713407ed70fd57fa559892fe41e434f120ca1390649265e675b",
+    "recipes/libphonenumber-js-parse-format/src/phone.ts": "sha256:aaaa00cb363a0287819d79cc0d141a761bfff9dffffb0c7e439e836660263418",
+    "recipes/libphonenumber-js-parse-format/test/phone.test.ts": "sha256:89514bdab3de8e9871134d5760d804304cb94fe1b360e36f15929ca3008114a7"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:ac860ea321f63d811fa276fbbbaba2c465bccf7c6799ec087540e179cd00c488",
+  "files": {
+    "recipes/fastapi-stripe-webhook/app/__init__.py": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recipes/fastapi-stripe-webhook/app/main.py": "sha256:feb9cdf079ecc2d0f3afb7efe2fdbc68e70316cc4543091a17f77b4d44b7cba5",
+    "recipes/fastapi-stripe-webhook/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fastapi-stripe-webhook/recipe.yaml": "sha256:2b5a2e6ceaed4b2e22cd5c166234d39b395e0e65761055562be24e8d7dbf727a",
+    "recipes/fastapi-stripe-webhook/requirements.txt": "sha256:e85031ecf320d8b83efa824a396a5d0a31d36c583aa12d6b43fcd19b47777587",
+    "recipes/fastapi-stripe-webhook/tests/test_webhook.py": "sha256:40a60c4f4983ea174c6166d9e603038b25ebae4b5665d58fef4dd2cbe27cfeae"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

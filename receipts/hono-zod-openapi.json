@@ -19,6 +19,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:bd3b64c10c4196ee22aef78b543105986b57e1a621b2f6bf8d8e74062fadaff0",
+  "files": {
+    "recipes/hono-zod-openapi/package.json": "sha256:0f44f5166ae8f9283b0649c8507a851f05efcecca1af620aee97a1642aa3c84c",
+    "recipes/hono-zod-openapi/recipe.yaml": "sha256:ab1936e7a209f612367d90636190d57f89d5ad959ac73e7bf477d8d06d7a3ba6",
+    "recipes/hono-zod-openapi/src/app.ts": "sha256:db9db41c74efd4b518698597a75901d0b083ce2271ac558f5c36d3d85d8bc6e7",
+    "recipes/hono-zod-openapi/test/app.test.ts": "sha256:bf44ea558145569d9f23f70dacc7989c181cc3472fc5f4dd684216cc96f152d3"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

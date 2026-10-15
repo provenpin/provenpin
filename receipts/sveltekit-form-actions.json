@@ -19,6 +19,12 @@
     "vitest": "5.0.4"
   },
   "recipe_hash": "sha256:35cba0d159602024c94b056bb9747b51b896a865fd4528b54c91cb21eb285248",
+  "files": {
+    "recipes/sveltekit-form-actions/package.json": "sha256:4c65647adeb5861b60cb51146aea6a912d384ab81ea1fbc5327772064e426882",
+    "recipes/sveltekit-form-actions/recipe.yaml": "sha256:8bccb97581ca6852c3d0024e0d81deb7cefd074287e0a72520ffb966e3dc9b2a",
+    "recipes/sveltekit-form-actions/src/routes/signup/+page.server.ts": "sha256:3bdd1f79981c037367c3af6ccabeab9ebddbc11691820dd24d850596f497c47f",
+    "recipes/sveltekit-form-actions/test/actions.test.ts": "sha256:258d7702a489a8e8f69c38cf1a0cdef626ea6e1cb0d540e39fe75055c7fa6ea8"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

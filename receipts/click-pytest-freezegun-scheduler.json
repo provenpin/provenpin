@@ -18,6 +18,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:1c1077920a654e3db282128d03edf506027c2d37d2fb6053fdfab28d9ac25c55",
+  "files": {
+    "recipes/click-pytest-freezegun-scheduler/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/click-pytest-freezegun-scheduler/recipe.yaml": "sha256:8ad51c967edb0e20a6c1ed83d2d92ba93b769cccdb0ebab771876621e1a63c9d",
+    "recipes/click-pytest-freezegun-scheduler/requirements.txt": "sha256:d35ca4c30077ef1681cfbb18c5f3da0038acafe7b56ccf64872ce4fde160f04a",
+    "recipes/click-pytest-freezegun-scheduler/scheduler.py": "sha256:16681f0d71c426757c6a70d4889bb519826317af5d00432edca5cf1a9e5b534e",
+    "recipes/click-pytest-freezegun-scheduler/tests/test_cli.py": "sha256:0ac29b7cd70047f5bf6f22a341c4ac5d776718a2d0e42d6b25215446e1b7c439"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

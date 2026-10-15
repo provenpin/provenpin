@@ -21,6 +21,12 @@
     "@types/express": "5.0.6"
   },
   "recipe_hash": "sha256:7538249a783d2f10ccbb31b42a38248f1dac4a6c5a24924c09349accfa22fe99",
+  "files": {
+    "recipes/express-stripe-webhook/package.json": "sha256:ac4e2c15265323e615c3827ffaf9055925f5783a89309f55a2a0f64142532110",
+    "recipes/express-stripe-webhook/recipe.yaml": "sha256:c3bff076d43cb878517d871a2599bf35e633ff2093f7ab9f242bcaa446e53dee",
+    "recipes/express-stripe-webhook/src/app.ts": "sha256:d2b1d2e1741c5c9f71addb7794d2fadc40343d75f7247ee3da0f8b7e40b180bf",
+    "recipes/express-stripe-webhook/test/app.test.ts": "sha256:2167bfe8deb3a33e5096759698f40f4210b864ec74ffe7195c68279d0dd3d329"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

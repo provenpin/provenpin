@@ -20,6 +20,13 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:60749d64f692c24a43153457597df18da5aee6859ffa74bf277099311b6cc670",
+  "files": {
+    "recipes/authjs-drizzle-adapter-pglite/package.json": "sha256:e139ed740bb9ef5a6ef64b220730f853b1c1dac675af29169da4a3140f35516c",
+    "recipes/authjs-drizzle-adapter-pglite/recipe.yaml": "sha256:91a2def74b1812c2c4deee4826abbfdab55b11180413237130c3f22b1853abe3",
+    "recipes/authjs-drizzle-adapter-pglite/src/auth.ts": "sha256:7230e95ab552da2a255438ba4f867e0c5cfddcbe7be282864c7fa032b27d165d",
+    "recipes/authjs-drizzle-adapter-pglite/src/schema.ts": "sha256:ca2b12fa66781f330f3471e70fbcbfa45ef996c09a5553fa99d2d2529d2e2f30",
+    "recipes/authjs-drizzle-adapter-pglite/test/adapter.test.ts": "sha256:f21246071d922ac67b16fa5d438eac2d799b95305e69a68b69132d9b8e10870d"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -19,6 +19,13 @@
     "pytest-asyncio": "1.4.0"
   },
   "recipe_hash": "sha256:7e69e939c45c266fe3361835b502d72f162e1680e74d73347d73f53a4e74f43e",
+  "files": {
+    "recipes/starlette-itsdangerous-sessions/app.py": "sha256:40f4101ceb9a17de9e61d507cdc2e455d9ab0f4dd41bafaa2b706e146cdc7e41",
+    "recipes/starlette-itsdangerous-sessions/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/starlette-itsdangerous-sessions/recipe.yaml": "sha256:ab3058a203e80496b57bf96b8712865b97df5b46f79c273a7bf88e6288d2ec97",
+    "recipes/starlette-itsdangerous-sessions/requirements.txt": "sha256:e751a314b715d4411997e60b7c9cf114f297ff62422744aebc8ed8ecf70bc996",
+    "recipes/starlette-itsdangerous-sessions/tests/test_sessions.py": "sha256:c063811856818219814c334583359122465f00db5e46ba2bc45d25be6fd3cb4f"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

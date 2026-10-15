@@ -16,6 +16,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:f8ec0839d3f7c25fee4ef96fb17461d601297cc5538c445aa38dfea5c009c7f2",
+  "files": {
+    "recipes/pydantic-ai-testmodel-tools/agent.py": "sha256:6f760ea33e14092031bb9836c8c3af01949e4bdce9c3fe57c2740b1b9d5d24b4",
+    "recipes/pydantic-ai-testmodel-tools/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pydantic-ai-testmodel-tools/recipe.yaml": "sha256:ca1adc86fd099e1c6b395ae26844aabb41ebf80bec5f74047882d198f9cb04ea",
+    "recipes/pydantic-ai-testmodel-tools/requirements.txt": "sha256:9b0eccb6ecdf508d0c24678aebcd278f426b4f131b5604f0c952a75b967154e5",
+    "recipes/pydantic-ai-testmodel-tools/tests/conftest.py": "sha256:45869e2cb562f5a7d7308ac57ce4596e6837a4939a77a570d1c474427fc8469a",
+    "recipes/pydantic-ai-testmodel-tools/tests/test_agent.py": "sha256:300d248ab3883f5e0a2ad9352d6656dd39aab1843a8d3156647d4569df8b48b8"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:f539456e3f94183ced03b11aa4af24f78c58f0d7dd173effce24c7819fa730fa",
+  "files": {
+    "recipes/effect-schema-vitest/package.json": "sha256:66e5583930bfff4dc1334ba979581a95b154f7426c0aad43fccae153b1ec7a9f",
+    "recipes/effect-schema-vitest/recipe.yaml": "sha256:f0876eaeaa8d585a2a974e178262ac5f146409cdeb585185ba7b0ba0e2b02627",
+    "recipes/effect-schema-vitest/src/orders.ts": "sha256:0b1274d2660763348bb3e303a275fe48a52b40386aabc4d6b1f84a8819a6de98",
+    "recipes/effect-schema-vitest/test/orders.test.ts": "sha256:a876a84f94ee08c327f6cdc316983e0f64db9385a3c5acbfca8817f78b51c23c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

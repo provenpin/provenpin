@@ -18,6 +18,12 @@
     "socket.io-client": "4.8.4"
   },
   "recipe_hash": "sha256:2c6c83055b9af496a1f810870be05375759c6c376447e55e36d90373a61b6b74",
+  "files": {
+    "recipes/socketio-rooms-auth/package.json": "sha256:17bb04990b361202fcc5696f6ad8418830d80f310c7819207ed3705562558491",
+    "recipes/socketio-rooms-auth/recipe.yaml": "sha256:167e0a88cd71b631285235114ec76ca862d0fd85a986817c6f203d0bf1f74f5e",
+    "recipes/socketio-rooms-auth/src/server.ts": "sha256:b1528d1f5b3abea6808661ffaa562e482260f9d251701d27583caa1b35278b9e",
+    "recipes/socketio-rooms-auth/test/server.test.ts": "sha256:4ff860e9e6f8f9b30867079ad38558fac2d96ce9c3baf924eca8d5eb1984f488"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

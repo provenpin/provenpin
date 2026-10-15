@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:72a57902dd0fbb792d1051c84ea5f6b323cc6af49d08bb8cc1fde6470bc60d9a",
+  "files": {
+    "recipes/pandas-pyarrow-parquet-roundtrip/parquet_pipeline.py": "sha256:39ab0e89b1150e519e477ddbb2f00f3726b998679c482ac3a073be9b2074ce22",
+    "recipes/pandas-pyarrow-parquet-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pandas-pyarrow-parquet-roundtrip/recipe.yaml": "sha256:f12f4e2a3252a6a19305ae69197d441eb33a619d796975aef6d1bde43f692e9b",
+    "recipes/pandas-pyarrow-parquet-roundtrip/requirements.txt": "sha256:f05324fe7a98dd415d9342a5cc95e6eb6011d5ebfc9f8472072910c686e20a16",
+    "recipes/pandas-pyarrow-parquet-roundtrip/tests/test_roundtrip.py": "sha256:21862ec4b7873b9b080b90f96f66fca2bdfccabcbcadc0a13772c1e711e7f3b9"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

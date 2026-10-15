@@ -19,6 +19,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:a1b9d28f2e1c1d0445390b94bbca693460f1ec4083b75a69bfbe52f32f651a4e",
+  "files": {
+    "recipes/objection-knex-sqlite/package.json": "sha256:efcafbe19b89a41b941bbd6307f234e9a9ba9885aea504ff510f02dd9a861263",
+    "recipes/objection-knex-sqlite/recipe.yaml": "sha256:7adb493bf8b0093c0f0efd33217b624c3a487d89aa64a2775095e4dbbbd8b2dc",
+    "recipes/objection-knex-sqlite/src/db.ts": "sha256:3c23013700f8b123e6f298c66254a19e0d9f57e16b7ca6a7f93ec413c2c2bf64",
+    "recipes/objection-knex-sqlite/test/db.test.ts": "sha256:34ea7f2f51748a8c0b354096e667c4c01d3c605f290dfdc22600e009e65e51bc"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

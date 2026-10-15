@@ -19,6 +19,13 @@
     "pytest-asyncio": "1.4.0"
   },
   "recipe_hash": "sha256:ef1caa9ab22da5e11ca32195457187883ff94525e8409faa2c0824fbdf3618b5",
+  "files": {
+    "recipes/prometheus-client-fastapi-metrics/app.py": "sha256:d42640ab3e57993341f9840872704df1db5ecdf248de1ecaf807e236641e2eed",
+    "recipes/prometheus-client-fastapi-metrics/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/prometheus-client-fastapi-metrics/recipe.yaml": "sha256:70b98c96af854ae2bd1b920601a80ba76345dde8c816578042714e48571db604",
+    "recipes/prometheus-client-fastapi-metrics/requirements.txt": "sha256:f8dffcc01cf57be8e1876a065d3c0d7a64e3aa215035ae6b7d354f17d05bbeb1",
+    "recipes/prometheus-client-fastapi-metrics/tests/test_metrics.py": "sha256:4c309988c333fd127b475da1129cffe212e800b093fe0f71266112fd07c368ab"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

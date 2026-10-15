@@ -18,6 +18,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:eed3808b13386590b696f4b852f850bc30999ed51c0c478f7cd13063065d5ed4",
+  "files": {
+    "recipes/fastapi-pydantic-v2-models/app/__init__.py": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recipes/fastapi-pydantic-v2-models/app/main.py": "sha256:38a7c3667db3dbaf404c9a103ac5c11f78543e055b600c8187bab87af3a4e746",
+    "recipes/fastapi-pydantic-v2-models/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fastapi-pydantic-v2-models/recipe.yaml": "sha256:24f895e8c76a3ddf0db8340f1ec55c168b0e942f8e8b81a4f4e347afa5579d26",
+    "recipes/fastapi-pydantic-v2-models/requirements.txt": "sha256:b8d0ad8b7137aafc97e6c2a2fd306e3ba275c43cef02b84289965102305eeab4",
+    "recipes/fastapi-pydantic-v2-models/tests/test_orders.py": "sha256:830b32609f819ff9649af7fdbe0b4ed5b38002e3e8f706df1674e48a580034a8"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

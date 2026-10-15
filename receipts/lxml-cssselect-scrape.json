@@ -17,6 +17,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:99bffab1ba2eba1233702a05853d06e78a5559e1ef8e20cc8a40c62cba2497e1",
+  "files": {
+    "recipes/lxml-cssselect-scrape/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/lxml-cssselect-scrape/recipe.yaml": "sha256:4bb08f139a948830b7120447137d1c26b58cab33a4e7b3bf4c49439e6b851404",
+    "recipes/lxml-cssselect-scrape/requirements.txt": "sha256:dfaa79631d0b5baae64ebba7ef7f3a9302b2f586a2a73ca6d409290a1a82086a",
+    "recipes/lxml-cssselect-scrape/scrape.py": "sha256:37f84e44ef8cec784bd95acc3f862ed4e75293165e63c0299dd7f2cff25f155d",
+    "recipes/lxml-cssselect-scrape/tests/fixtures/products.html": "sha256:bc44c02dc07505da76e42d8a59fbc92225cc32f7d0c87d4ffece789ae1fcadf4",
+    "recipes/lxml-cssselect-scrape/tests/test_scrape.py": "sha256:e7f791289442c92deff683aa5ca610bd7791c0d3b93bec0e4d84ff704dd57534"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

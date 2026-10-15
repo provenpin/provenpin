@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:faaf7be082d7d2970b2066c79fdf6ed1f86af999c9fe6e250c21f97b8e10c635",
+  "files": {
+    "recipes/cryptography-fernet-multi-key/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/cryptography-fernet-multi-key/recipe.yaml": "sha256:55f18d54ce968159e833e01c8da1cd8744386863bc9cd804be9a258c7f8dd90b",
+    "recipes/cryptography-fernet-multi-key/requirements.txt": "sha256:03982b99a1c97fb1dc823ef09eb9f5ea47ee91ca413e9f6508971a6a2ee88fb3",
+    "recipes/cryptography-fernet-multi-key/rotation.py": "sha256:f7902d49de85337e056caef4fa2fa7ee4cc58cfb7d031f00c6e75ad06abac573",
+    "recipes/cryptography-fernet-multi-key/tests/test_crypto.py": "sha256:f9118cca45b3d86401c781df22bc65263fb44e9d91e5c72dfa6668a3f696136e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

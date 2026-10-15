@@ -17,6 +17,12 @@
     "vitest": "5.0.4"
   },
   "recipe_hash": "sha256:6d5f798c09ff275df7ca8df64ac12db224b7ea3439a87b1bebbf5361fe287821",
+  "files": {
+    "recipes/jose-jwks-verify/package.json": "sha256:a6467b4c60bba40ec91ace7125ce81453991f9561eb708e3cb1cad105bc00340",
+    "recipes/jose-jwks-verify/recipe.yaml": "sha256:35285ddf32b660cab8e3cf1ed869c49d5ef8c8df93f1e6c84fbba53126658031",
+    "recipes/jose-jwks-verify/src/verify.ts": "sha256:8aaae1f425e8e054610ccbcd09d7cb37b25e136ea336a3186621cab825964e3e",
+    "recipes/jose-jwks-verify/test/verify.test.ts": "sha256:127797beacb02b8c7828959c4dcdacd9ef3e157703c50f622bc9f0abce0c43c2"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

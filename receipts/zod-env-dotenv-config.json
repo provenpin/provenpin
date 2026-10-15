@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:9d4356ac95215301e648bb411cb6106d98c03182e762a141c9f76fc2001ce22a",
+  "files": {
+    "recipes/zod-env-dotenv-config/package.json": "sha256:64750e7074cc9716cf7b6ca6cb7245d854f207d0fa20b074a5cca0f911a001d2",
+    "recipes/zod-env-dotenv-config/recipe.yaml": "sha256:7d72564a564f41ce55bbb398c28b367208c5bd53939cb179c048bbb67393e730",
+    "recipes/zod-env-dotenv-config/src/env.ts": "sha256:3b44bb63756d7a258e00ff186889850404cb120b3a1832c80ed056cb40687d09",
+    "recipes/zod-env-dotenv-config/test/env.test.ts": "sha256:02655b470eabda975083dc3896b089227341070a7f58d9db430c7596c2c74fbc"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

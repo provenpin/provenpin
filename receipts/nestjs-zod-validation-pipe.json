@@ -26,6 +26,14 @@
     "@types/express": "5.0.6"
   },
   "recipe_hash": "sha256:227684b71d051290dcccc0ee91b3f0febbf338fbbca57179d6ad26475481da5a",
+  "files": {
+    "recipes/nestjs-zod-validation-pipe/package.json": "sha256:9031ac5f1bfce29f6c965144a28857417df3018a2c029125436b3da90cec8a44",
+    "recipes/nestjs-zod-validation-pipe/recipe.yaml": "sha256:e846d28583ee4d4927e8d6b1355b3ae2aefb8cf5c7fe0aa1acca87e16c0d9ecb",
+    "recipes/nestjs-zod-validation-pipe/src/app.ts": "sha256:cd368d646f42f0bdc025e3c634360317118dddc2884bcde3eee6e2eb36e26b9d",
+    "recipes/nestjs-zod-validation-pipe/src/zod-pipe.ts": "sha256:5abceaa3ef527ddbc3a6f9bc2cbbc27d638dc598d75fc61cb03359985c0fc340",
+    "recipes/nestjs-zod-validation-pipe/test/app.test.ts": "sha256:181e57d35e47864b9be125c668a144ab6da49413b89972e2536268f744d0dc5c",
+    "recipes/nestjs-zod-validation-pipe/tsconfig.json": "sha256:ddc8c178d5073769e6d340cb9b17613599d3048317dbdf420288d88aca63d371"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

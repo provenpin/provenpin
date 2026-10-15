@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:2398b0e10520c818a35db2fc68552cd8b362e0371fcdb06a4ced156119ffff21",
+  "files": {
+    "recipes/archiver-unzipper-zip-roundtrip/package.json": "sha256:1ec1c87bf54a860460921b9a8ba490ffb52033110b4cba308af2827e7a8cfb45",
+    "recipes/archiver-unzipper-zip-roundtrip/recipe.yaml": "sha256:68febcd23aa01b66f0a383ca3a9bbba9f925d2981680000b33b2fda2ca058143",
+    "recipes/archiver-unzipper-zip-roundtrip/src/zip.ts": "sha256:f64450be388fc659d9afc506ec68f0f429593dd66f44f27d458ba53c20258cd6",
+    "recipes/archiver-unzipper-zip-roundtrip/test/zip.test.ts": "sha256:733837a289895f1791ba7bcefeb3a39e2bd8243cb0135cdca4508ea0af0a1717"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

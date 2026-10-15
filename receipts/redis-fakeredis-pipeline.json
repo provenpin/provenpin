@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:6b6677c08c5ff9426a60a01e1ad1d716437192cdb93eaa0d22d7aaac1d9ccebb",
+  "files": {
+    "recipes/redis-fakeredis-pipeline/pipeline.py": "sha256:c87b5829df0822e05a6b42ed5fa06ab8ebaf4d08260cb444700c4bab747508da",
+    "recipes/redis-fakeredis-pipeline/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/redis-fakeredis-pipeline/recipe.yaml": "sha256:ff731526c79ac8ab27bd9af53583169fa2cea264b96b74f00bb7b1dea74f297e",
+    "recipes/redis-fakeredis-pipeline/requirements.txt": "sha256:864b6f81740722cd3c8ee40dc8caa26599d3432ce200c7191857ebeda29f52a8",
+    "recipes/redis-fakeredis-pipeline/tests/test_pipeline.py": "sha256:a06db6eb1ced41019f44780344ff0b85058dbdb4c36b89250166c24b4dfa3914"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:b1e66083ac3c1ea546cea28bfdb7f4ccbaf46806445b2f8c6f5e2a0ee0bfbe3c",
+  "files": {
+    "recipes/platformdirs-toml-config-store/config_store.py": "sha256:f013d4d8a5eb0b5f2e7218c9c872a10ff99d89b01745d86b7e8dd03463058ab2",
+    "recipes/platformdirs-toml-config-store/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/platformdirs-toml-config-store/recipe.yaml": "sha256:f17458da46be12c36fcb5bf07be058e45d50c662c17b5870c7e317b276272416",
+    "recipes/platformdirs-toml-config-store/requirements.txt": "sha256:13eaf5b008cb91854c1cfc97407eee2f038856bb95e0e9dedeb3cd61e0fa301c",
+    "recipes/platformdirs-toml-config-store/tests/test_config_store.py": "sha256:6438f73e453a8dc9c89e29fc198d9201d3defd51ad7eaf41a6738e338c035ca5"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

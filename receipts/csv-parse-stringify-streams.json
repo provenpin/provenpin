@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:e1d49fdd81d7e188e2c96612587e9ccbf942b855698a7f1ab8b47ab8fe2c2100",
+  "files": {
+    "recipes/csv-parse-stringify-streams/package.json": "sha256:53f28d0f31bbfee9cd0e56145d1de982cd1de0b65091e0b199fc5c6bc9eb5345",
+    "recipes/csv-parse-stringify-streams/recipe.yaml": "sha256:150290c1a9b787ea44da70997808bb5d9dd76c617c564c0115457c731dae8be8",
+    "recipes/csv-parse-stringify-streams/src/transform.ts": "sha256:83ec3cb2ee6a10878e4005647a7af04d282a727c763aad2487f1652c39cf91fb",
+    "recipes/csv-parse-stringify-streams/test/transform.test.ts": "sha256:bc8ab711d22d8df45c7c3593a41f7b9eba505b0ccc6923df5ba0087151126571"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

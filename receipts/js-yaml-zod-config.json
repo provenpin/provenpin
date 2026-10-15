@@ -19,6 +19,12 @@
     "@types/js-yaml": "4.0.9"
   },
   "recipe_hash": "sha256:f0cbd4de4f82f2172bda202058068e1b4bcc1a3e145e5e6c5d218f1bb5a569e0",
+  "files": {
+    "recipes/js-yaml-zod-config/package.json": "sha256:a45a771628ed38cebd1fb7c0899d04e190bb0ea7adc85830f2892777e1c6cb5e",
+    "recipes/js-yaml-zod-config/recipe.yaml": "sha256:abb68d02dc759ee08f6063d0ad67146b9d89696b5d417b007ec0347e3c8d880b",
+    "recipes/js-yaml-zod-config/src/config.ts": "sha256:d23d2b8656fddafeadcc4820729f42d2e87af17a9eba5269e8e97c83847e1a05",
+    "recipes/js-yaml-zod-config/test/config.test.ts": "sha256:53dfd7e87aadd03491a9f5adf950e15a4d40906e1076bdecf999ea6216209229"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

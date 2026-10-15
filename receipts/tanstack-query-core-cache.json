@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:1196e084f2bb8cb16445e3872a4d83867bb7ef29d8801bcd281658ee051eb932",
+  "files": {
+    "recipes/tanstack-query-core-cache/package.json": "sha256:a100bd05b30f7bd7ed67c5709d73b9f134a16a94d4476f57beced4ac61d5a575",
+    "recipes/tanstack-query-core-cache/recipe.yaml": "sha256:6cd2076ee02ce79ea21ced98260dfdfdfefcd48e3f76262cfe2d0827d4fa7de9",
+    "recipes/tanstack-query-core-cache/src/client.ts": "sha256:63f473399141e099a7a79a8b67cf915df1486467452df55483d10bb780fbe43d",
+    "recipes/tanstack-query-core-cache/test/client.test.ts": "sha256:c60598e882a7fb79e2663b1f7c7c5779a23ddd77bce2cd383e31cea5979a4d3c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -18,6 +18,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:cc669a92973b317318792b35dd5d394740f5f7d92df19d3b3285f2aceb985315",
+  "files": {
+    "recipes/knex-better-sqlite3-migrations/package.json": "sha256:a3860d1afdb4f584211a9f185fa1c4dd8250461d3bd9024624faa17a4b597f91",
+    "recipes/knex-better-sqlite3-migrations/recipe.yaml": "sha256:6e920212c3debefe31a275e6a2d2fbfabaf7f23a308a54a079696d792f981d8c",
+    "recipes/knex-better-sqlite3-migrations/src/db.ts": "sha256:8ac00b8ce6137a8a507496da3cba1961dac566460ece0ba8346162d5e0e34366",
+    "recipes/knex-better-sqlite3-migrations/test/db.test.ts": "sha256:259c9a000b81a5ce32d814b630d96eb289cd9116c3773f97d8d3f7be7b1935b0"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

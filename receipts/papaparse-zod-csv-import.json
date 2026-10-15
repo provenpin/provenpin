@@ -19,6 +19,12 @@
     "@types/papaparse": "5.5.2"
   },
   "recipe_hash": "sha256:dcf9ccf01431f17d6d44a310614608f38608220b2607834bd5d514a3a00d34b0",
+  "files": {
+    "recipes/papaparse-zod-csv-import/package.json": "sha256:ce0a7788f31e964ad1bf7326554f4d907572c56479e98edc9c9434a485223399",
+    "recipes/papaparse-zod-csv-import/recipe.yaml": "sha256:a9b5afa73f2ce7bf94292408a9cfc6317772dec9186772ed69c6762db7a4cf77",
+    "recipes/papaparse-zod-csv-import/src/import.ts": "sha256:9fbd4ded7304bde080cdcb179ddf8fdce4d0bf16e9d44d6712933d6715c289d0",
+    "recipes/papaparse-zod-csv-import/test/import.test.ts": "sha256:ad9103e11bee8f1c5434cdad923034876f610e440010e80a00c2a388a81e3aaa"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

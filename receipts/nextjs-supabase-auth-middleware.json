@@ -21,6 +21,13 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:bb3b35773498d2fc78502f5101ddaa58e4070abc5180d198f849f379ff14fa27",
+  "files": {
+    "recipes/nextjs-supabase-auth-middleware/lib/supabase/middleware.ts": "sha256:e6ba1a4b8c16df467194a42ea7923bcefe0940de4de1e7775c66fbaa56e4eb1d",
+    "recipes/nextjs-supabase-auth-middleware/middleware.ts": "sha256:4c368028715b206318050aa7cd9fa5bc23aa9b6b14a2346f88f96853ce29325a",
+    "recipes/nextjs-supabase-auth-middleware/package.json": "sha256:3a98dfe1bbee00713a2822ed6d2d6f7e7404d9558a317f60f3843a9085b3e254",
+    "recipes/nextjs-supabase-auth-middleware/recipe.yaml": "sha256:def82d1600e42ac2e9dc85a77bf96332185da3bfaf464fb2a46e76e20f116741",
+    "recipes/nextjs-supabase-auth-middleware/test/middleware.test.ts": "sha256:0f92e4c072561708c6db6dca6874ba474807039424a8ee244a608e13900cce59"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

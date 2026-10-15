@@ -21,6 +21,12 @@
     "@types/supertest": "7.2.1"
   },
   "recipe_hash": "sha256:1a0c42a6d8831d1510b4b85f6c141fc6b002d271e713b3f55f9d6fd908e29de5",
+  "files": {
+    "recipes/joi-express-validation/package.json": "sha256:58f91af9d3f0bffc23d5b04c8c2da65e054d29b679034712c164d18a833e01cf",
+    "recipes/joi-express-validation/recipe.yaml": "sha256:1eee99c43ad53ac109f67054fca0d6d1ce9c79c037328b1b7c00a21068ae276c",
+    "recipes/joi-express-validation/src/app.ts": "sha256:82b7ab53a29adb89395a0bbacd7988fd73e8b6bc8434443f34aaa996b5d10151",
+    "recipes/joi-express-validation/test/app.test.ts": "sha256:a329d19a7af1cc1a50734402722f67546812397c8c3b3d5562034bb5413b966f"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

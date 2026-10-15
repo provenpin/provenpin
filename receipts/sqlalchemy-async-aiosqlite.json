@@ -19,6 +19,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:650ae2abe5d56151912771a5d27483e8bdafa81dfb7a9459fa8756695b15b938",
+  "files": {
+    "recipes/sqlalchemy-async-aiosqlite/models.py": "sha256:4e40eb2f5402e7f8959e53db366dec96d4650abb285e807129db56d4369d2eda",
+    "recipes/sqlalchemy-async-aiosqlite/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlalchemy-async-aiosqlite/recipe.yaml": "sha256:b933035fcc5b18250ba1fd8e897a42c2fa425804f71919ab405508dea57e50fb",
+    "recipes/sqlalchemy-async-aiosqlite/requirements.txt": "sha256:66912c9e9874338f307fec8441528f13f741b5211ac9a472b51c58ae227b74a9",
+    "recipes/sqlalchemy-async-aiosqlite/tests/test_models.py": "sha256:f60d9381a43af4afdbe88c06dc6cc78d394f7b310550f433c3dc2ed036618567"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

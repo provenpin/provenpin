@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:a8f1ac79dd2c78a354d80a02a23bda5da9376e70680229f6f697c7dadcdff67c",
+  "files": {
+    "recipes/deepdiff-pydantic-compare/compare.py": "sha256:b49e0d9c02a857eb8a5a238c1b5474da2074af20de5dc92a66e4eaaff40d7da8",
+    "recipes/deepdiff-pydantic-compare/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/deepdiff-pydantic-compare/recipe.yaml": "sha256:b54d84f27dc88c220fb9868dca09292fbafbb30215037c3e2de44e8b4da108f6",
+    "recipes/deepdiff-pydantic-compare/requirements.txt": "sha256:8fae231ac06f60101067e79c73ad9ea87f7145d9b9b210e2632532687d4fe2b5",
+    "recipes/deepdiff-pydantic-compare/tests/test_compare.py": "sha256:e868e929260d946f23c8ac11de24726d32f5b8c3f3b65f6671cd56fc6a16fd07"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

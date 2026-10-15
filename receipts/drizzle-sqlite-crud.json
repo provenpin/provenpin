@@ -19,6 +19,12 @@
     "@types/better-sqlite3": "9.6.0"
   },
   "recipe_hash": "sha256:05ff667c6061289867976c906c65f9020cc4159404a4cd3ad51077737f4fcc19",
+  "files": {
+    "recipes/drizzle-sqlite-crud/package.json": "sha256:cd4390d7e96ebbc5a1eb7b3438f4b1b48870ab40f791ab7b9f9199c6174cb84c",
+    "recipes/drizzle-sqlite-crud/recipe.yaml": "sha256:0d170fe34575b0f9354b3571edcfebbc6d175b0b0af15d470624b0869e47d3af",
+    "recipes/drizzle-sqlite-crud/src/db.ts": "sha256:9397b20376cd5570aab0c282d40b05e97a7fd685c96297c7429952ebc5d77c13",
+    "recipes/drizzle-sqlite-crud/test/db.test.ts": "sha256:bbf32a9e06b1b3128996f8529463aea51b517bdd3bf2e42e551b466cff56950e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

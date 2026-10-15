@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:0ab1039757650c1bad8cd6450d15e128e1bcc0486bd85043e53d25391e85fb07",
+  "files": {
+    "recipes/terser-minify-sourcemap/package.json": "sha256:569f84703a1c41de642be0cb56fe9cb5410ed6fb8fbc21beb632f3c81aba705a",
+    "recipes/terser-minify-sourcemap/recipe.yaml": "sha256:93bf42cda8b328a7f5196983acaac70668daf4030e50961a871863d8409abc40",
+    "recipes/terser-minify-sourcemap/src/minify.ts": "sha256:fed176fe54a43d82ba3dd52f90b2dc207e1c4badbcb47d54e01c354544995bcc",
+    "recipes/terser-minify-sourcemap/test/minify.test.ts": "sha256:e58e0bd02addb521138989e948fa02078e3060b32ad92caf717b3f532ea2a597"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

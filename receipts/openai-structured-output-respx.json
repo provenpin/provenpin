@@ -19,6 +19,13 @@
     "httpx": "0.28.1"
   },
   "recipe_hash": "sha256:8994758b95592560297b02f2dc7e63bd90e815c3ce34571e74db1f6cbbed5102",
+  "files": {
+    "recipes/openai-structured-output-respx/client.py": "sha256:b39083f762357bae07e87b29c8b8a7ba17d65446774d022e181e3bf166e4ce87",
+    "recipes/openai-structured-output-respx/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/openai-structured-output-respx/recipe.yaml": "sha256:067406850dc8755f0b01f05d0be8adee1ac2306a70d094f34a411922dc93b615",
+    "recipes/openai-structured-output-respx/requirements.txt": "sha256:31b6c7f88c8005edfda27112d10bc88bf10e31668642d27a1052d2bbbddecda2",
+    "recipes/openai-structured-output-respx/tests/test_extract.py": "sha256:db7e0bf40925d2d646e6dc773df9d563a869490cdc83653d428458970802b19d"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

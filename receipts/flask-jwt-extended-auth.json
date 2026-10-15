@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:4e83984db990364c2433f5dca0f766484421860dbb1a4776a0cbd4cb3ec0a431",
+  "files": {
+    "recipes/flask-jwt-extended-auth/app.py": "sha256:511aa9ade70b504da40e9988d94d4896edc7abf738e8114fa11b1741a1af1dd1",
+    "recipes/flask-jwt-extended-auth/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/flask-jwt-extended-auth/recipe.yaml": "sha256:f1cef7c59ced85103c8f8a434f6970f36b2d8a2c2f8dfd41ab4165dd26a4270c",
+    "recipes/flask-jwt-extended-auth/requirements.txt": "sha256:7c441247256e266d46391e2ebf5c6942a5fe1abfe41d0853fddb55315ade3fb2",
+    "recipes/flask-jwt-extended-auth/tests/test_auth.py": "sha256:0ef583dbd1e506c0a20efd25cbeb5ba1629fd6f44c7c8214079a989a8e8ff4fb"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

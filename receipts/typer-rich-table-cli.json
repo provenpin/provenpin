@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:ecc26a1a54f75673aefcb4ae49e614edeacbcbb206b15d01bc0832986bc5136d",
+  "files": {
+    "recipes/typer-rich-table-cli/cli.py": "sha256:4ee3e8ac9230f1add35da76144a451625d1085f9f36164ac3d82ffa4d3c0164e",
+    "recipes/typer-rich-table-cli/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/typer-rich-table-cli/recipe.yaml": "sha256:db1efae2245d2e3baf564f1c1d671fd645eab0eaa871464d09fc104f960a671e",
+    "recipes/typer-rich-table-cli/requirements.txt": "sha256:a6e211ad7c63cb6d6511c73306279b380a87667a06b2b1ec61b3713b08b29a43",
+    "recipes/typer-rich-table-cli/tests/test_cli.py": "sha256:56392cf0078dbc244bab9e8c03a2418fd0b0d3178e9a3e9addd18a1c2c7d07f7"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

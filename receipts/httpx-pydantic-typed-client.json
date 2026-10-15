@@ -18,6 +18,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:5d3ae9ecce770481abaf1d4c20eac01c4c1134808c06468b4355b8b2a55302ab",
+  "files": {
+    "recipes/httpx-pydantic-typed-client/client.py": "sha256:ec54be9e262cb86f69531a4ecccd13e8e8ab868a6153a4dffc15935b419de168",
+    "recipes/httpx-pydantic-typed-client/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/httpx-pydantic-typed-client/recipe.yaml": "sha256:96a8a0e4a383b2989da2ae1ce993885454fa124d28a2b3adb262413e98c19ba4",
+    "recipes/httpx-pydantic-typed-client/requirements.txt": "sha256:3f5cb13f0acb25d95ad241ffcd961f876b0292041324fbc1e6a35977fedba8b1",
+    "recipes/httpx-pydantic-typed-client/tests/test_client.py": "sha256:1b55cc21387664d6b7e57b8d23ad15bb60864cdcc2fc0026fb4224bfb72ef74b"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

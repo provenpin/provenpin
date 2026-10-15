@@ -18,6 +18,12 @@
     "http_ece": "1.2.1"
   },
   "recipe_hash": "sha256:de1bd8cbcddc62f37b269a981f16b5e211476fc7be05a861f01d415fc00d5cee",
+  "files": {
+    "recipes/web-push-vapid-payload-encryption/package.json": "sha256:a740cbe2c8a6b83606d20aa0c449e7cb563714343d325acc6cc94a2c83ba160f",
+    "recipes/web-push-vapid-payload-encryption/recipe.yaml": "sha256:c365b7916aad17c14e278cdce5161a1a96f7d7dacc30cf34d8edebe1906a345f",
+    "recipes/web-push-vapid-payload-encryption/src/push.ts": "sha256:127682272d1c7c91dba98375b3d89f1ed50c8ef2ce96193a6ea4d4c3eb088c61",
+    "recipes/web-push-vapid-payload-encryption/test/push.test.ts": "sha256:e9378ce269ff468ce30d00f946eab65143eca6f71b24be7d94e1895aaa549c58"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

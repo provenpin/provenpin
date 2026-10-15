@@ -18,6 +18,13 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:79685e4c1ac19c2ba66d3b32001ea23a10037b0a752c5033f82855278771a10e",
+  "files": {
+    "recipes/commander-zod-cli/package.json": "sha256:a804944613536c85070c3476d28f032dc8f4c8406728ba7d2c12785e3de79d1f",
+    "recipes/commander-zod-cli/recipe.yaml": "sha256:b7095a45853875a35f8086c2a85d01eeeab06b7827f4c8d7811355600ffe7077",
+    "recipes/commander-zod-cli/src/bin.ts": "sha256:837eedd535ce025ff9f7fb17ab0762f48c65cad8019e2242b2038a956c46393e",
+    "recipes/commander-zod-cli/src/cli.ts": "sha256:7c8978cf56bf9787882ac76d42df1fbc15ecf639c51a95c4b804bad45faa5e26",
+    "recipes/commander-zod-cli/test/cli.test.ts": "sha256:f80f6c5f8b1d75222ffaf75482fe4b455033bae5db1cdcf9c12d7f558c53edbc"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

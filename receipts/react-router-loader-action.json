@@ -20,6 +20,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:2ca95265219f1007f862e7e8c41f9168dee04789adfd9da7e7e65a20f4a327fd",
+  "files": {
+    "recipes/react-router-loader-action/package.json": "sha256:aa8c797b40cd043d9442e901d507ce7c8a5e2dfc6959d5ea27ee77d399128411",
+    "recipes/react-router-loader-action/recipe.yaml": "sha256:ac2f4f960efb25e8775990765acda2ff36abc6e08da7a6ede8325d900da40d63",
+    "recipes/react-router-loader-action/src/routes.ts": "sha256:9596c139594d1dcab41d32dc01a830e0dba05814c211341524328ec6059762f9",
+    "recipes/react-router-loader-action/test/routes.test.ts": "sha256:07bef8a1e7638a78395d846898d4ecbf8b1419f7e55ce9fa2cf2a68252d52c6c"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

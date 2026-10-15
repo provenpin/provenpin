@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:9d6bbf2d6920b28eef781b45ba89033d69d44433a22853d32bda0f8967d971d7",
+  "files": {
+    "recipes/xstate-v5-traffic-light/package.json": "sha256:f866f05aef2529f4de0dc2cae173fed877203402e334652c0f52e13975f23f2e",
+    "recipes/xstate-v5-traffic-light/recipe.yaml": "sha256:e6f693f5f89ce6342592d4d10cfb8a42d039f22b62662cb31f1bcab92e3281c3",
+    "recipes/xstate-v5-traffic-light/src/light.ts": "sha256:cf67092afabe4591acfc41f33dd917552337581a6deefd8adb9ea62e4d461aa2",
+    "recipes/xstate-v5-traffic-light/test/light.test.ts": "sha256:7c431d2eb58c42c96d629b214068c2867bb7dd5177080999c8a73280e9f5e0dd"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

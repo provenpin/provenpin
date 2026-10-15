@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:9974fafd0fd8145bb5bb4bb76d48868ee331fdba7b0fafb9684f82d5b221a3a2",
+  "files": {
+    "recipes/winston-custom-format-transport/package.json": "sha256:eb503e8bd1daaf70142c83c01285e4d0a40bd12df77f78f77b8246d23dead948",
+    "recipes/winston-custom-format-transport/recipe.yaml": "sha256:8ed7dce51d03937c9fab4e503a57f4d8b2edbc7436a819932ea3b25569b3925c",
+    "recipes/winston-custom-format-transport/src/logger.ts": "sha256:be7fcd97b6b21dd4925223e7df13c8dd97643c56c43c87f8080b7cc3ff63f4d8",
+    "recipes/winston-custom-format-transport/test/logger.test.ts": "sha256:2edafe34a5e3f237a853465848fedf1260b36af7bb0194a7cc4385ef7b1628be"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

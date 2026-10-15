@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:01a00b33d47eface13f787b1d883eeaf8022821becd210f94881c529e9616323",
+  "files": {
+    "recipes/numpy-scipy-optimize-fit/fit.py": "sha256:e5283c598f0a567c7491c41885c1b248e4a72f81a30c2d67db3eb230fad6f2be",
+    "recipes/numpy-scipy-optimize-fit/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/numpy-scipy-optimize-fit/recipe.yaml": "sha256:408ef3a2d30f8718beb4f54864a0f8be31423371b71a5ce0fc8348e708897210",
+    "recipes/numpy-scipy-optimize-fit/requirements.txt": "sha256:17c91a5ff538090199b9e18b051adbdc537af2f6b8d7949d0c9059e8ea868a7f",
+    "recipes/numpy-scipy-optimize-fit/tests/test_fit.py": "sha256:4427b5b279c109354bbb3d2ca61ee3a571c523ae4c4daf67761c066e61283550"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,16 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:5f931c8414aaae71b1cdeac3a2c7ad69b261a1826e1aba7133898b1555aca680",
+  "files": {
+    "recipes/sqlalchemy-alembic-migrations/migrations/env.py": "sha256:2bb9cd747e0dade4a9281fe31ef05d546ab9831ed3607fbbefb4780869e99a07",
+    "recipes/sqlalchemy-alembic-migrations/migrations/script.py.mako": "sha256:60e564fff34da257558af663ee930926b563209d5d45dfed1a7ba1cb82e45855",
+    "recipes/sqlalchemy-alembic-migrations/migrations/versions/0001_create_account.py": "sha256:906bad131c8ad6f548080319538ec57b8de274a96e40895b4a263975a9a5d41c",
+    "recipes/sqlalchemy-alembic-migrations/models.py": "sha256:a75640ed7d019aad6a4eea5d74fc8f2475406aa69d126bcd87e9d65f4346682c",
+    "recipes/sqlalchemy-alembic-migrations/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlalchemy-alembic-migrations/recipe.yaml": "sha256:b02c2954acd75b2cfb21bb553681151eab610b9f7b13ca05709ca5486832e9e9",
+    "recipes/sqlalchemy-alembic-migrations/requirements.txt": "sha256:49ba09186cd85bc8c6d8b1bf83e8bb126a7f4875cf04a47c2051fec0a225f961",
+    "recipes/sqlalchemy-alembic-migrations/tests/test_migrations.py": "sha256:14898551afaab1cfa45c2e79018ab4a813ed1fa392de1b48ad9707d38b252ac6"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

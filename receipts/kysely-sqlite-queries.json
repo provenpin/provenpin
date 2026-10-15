@@ -19,6 +19,12 @@
     "@types/better-sqlite3": "9.6.0"
   },
   "recipe_hash": "sha256:f6c3c3768075fd6c51d166879f5ef32957b0d81d00ea9a943fc779ba8affaa4f",
+  "files": {
+    "recipes/kysely-sqlite-queries/package.json": "sha256:1bc9594c7842d526d3341e6cbfb7ba18cfdfef4e46d2860467d55f86df5aa107",
+    "recipes/kysely-sqlite-queries/recipe.yaml": "sha256:a2a63568fc47358b615bddfaae06e57f779370a13e5aa70d88a6cae5ded767ed",
+    "recipes/kysely-sqlite-queries/src/db.ts": "sha256:cbddbb910e47df520fd391ccb64e38d66bf1dd7304ba24aed75ea1ae3c63bd9c",
+    "recipes/kysely-sqlite-queries/test/db.test.ts": "sha256:ef3dbc8c6a2465bca80aad53a9f6809242373f1cdb90219073b031fe8140540e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:324823974202287bcc9dc26e0cadee86ebfe3671d31bca7dedf34e96758b5ba6",
+  "files": {
+    "recipes/boto3-moto-dynamodb-sqs/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/boto3-moto-dynamodb-sqs/recipe.yaml": "sha256:84587d26697701bb5877f49fceb9b866e4b11dfb5b6c7bf8430802503f4cfcdb",
+    "recipes/boto3-moto-dynamodb-sqs/requirements.txt": "sha256:6d417d1698f5010518731329254649f2f3d49a3220d283278e98f85abfa9ded5",
+    "recipes/boto3-moto-dynamodb-sqs/store.py": "sha256:3cd2bf381b50659c1f09f4cf4b21b5cca06c19c2f86398e01438cd7568402715",
+    "recipes/boto3-moto-dynamodb-sqs/tests/test_store.py": "sha256:922058294e608b7e31aa8c125535e3c015eb090b11cba28650d9a9d0b5054ac6"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -12,10 +12,14 @@ export function buildIndex() {
     return {
       id, title: r.title, summary: r.summary, language: r.language, runtime: r.runtime,
       stack: r.stack, tags: r.tags ?? [], pinned: r.pinned, setup: r.setup, test: r.test,
-      files: r.files.map((f) => ({ path: f, content: fs.readFileSync(path.join(r.dir, f), "utf8") })),
+      files: r.files.map((f) => {
+        const sha256 = fresh ? rc.files?.[`recipes/${id}/${f}`] : undefined;
+        return { path: f, ...(sha256 ? { sha256 } : {}), content: fs.readFileSync(path.join(r.dir, f), "utf8") };
+      }),
       receipt: rc ? {
         status: fresh ? rc.status : "stale", ran_at: rc.ran_at, last_passed_at: rc.last_passed_at,
         tests: rc.tests, environment: rc.environment, recipe_hash: rc.recipe_hash,
+        ...(rc.files ? { files: rc.files } : {}),
       } : { status: "untested", ran_at: null, last_passed_at: null },
     };
   });
@@ -47,6 +51,8 @@ export function buildReceipts(idx, staleness = readStaleness()) {
         runtime: rc?.environment?.runtime ?? r.runtime,
         status: r.receipt.status, last_passed_at: r.receipt.last_passed_at ?? null,
         run_url: rc && r.receipt.status !== "stale" ? runUrl(rc) : null,
+        recipe_hash: rc?.recipe_hash ?? null,
+        files: rc?.files ?? null,
         staleness: st ? { status: st.status, checked_at: st.checked_at, latest: st.latest, run_url: st.run_url ?? null }
           : { status: "unchecked", checked_at: null, latest: {}, run_url: null },
       };

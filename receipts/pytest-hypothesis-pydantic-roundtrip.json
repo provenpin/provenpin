@@ -17,6 +17,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:1ded3c18407e6461369f7b60f0be6d1264a1478fd227bc23a15960fb05ae4110",
+  "files": {
+    "recipes/pytest-hypothesis-pydantic-roundtrip/inventory.py": "sha256:fd24b8f951e1b20416b193a13c76f60dcd211d45e6ac72f7015289111358bd1b",
+    "recipes/pytest-hypothesis-pydantic-roundtrip/models.py": "sha256:330f67b587d3277c39ab2055d6062378696dff8e1e3ccf7c419857b0173cb476",
+    "recipes/pytest-hypothesis-pydantic-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pytest-hypothesis-pydantic-roundtrip/recipe.yaml": "sha256:3918d76db23f902ff54b191f63014a12d0035a8fa6bddf93f69c9df68dfc2e63",
+    "recipes/pytest-hypothesis-pydantic-roundtrip/requirements.txt": "sha256:db3e6fddcad08ade01b742995cb3e92d01738dff4667d240459c96060cb79fbf",
+    "recipes/pytest-hypothesis-pydantic-roundtrip/tests/test_models.py": "sha256:6a24e45739eeb866ebeee69a1c7712c611ff313adb59254cd85d877922d544e6"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

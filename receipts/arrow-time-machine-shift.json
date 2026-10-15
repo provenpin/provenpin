@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:b29cb1c529bdac97987e71475731c090770325900bf457730bf9e67a56c4e910",
+  "files": {
+    "recipes/arrow-time-machine-shift/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/arrow-time-machine-shift/recipe.yaml": "sha256:4f1de383774257c8a155203538d8ebad428ae68db4c5df46bcf2d0476b9ba253",
+    "recipes/arrow-time-machine-shift/requirements.txt": "sha256:a732517f4bb04c3bbf8769c02a825f0db5375534b19ddac699bee601ff3d6f4f",
+    "recipes/arrow-time-machine-shift/scheduling.py": "sha256:24d07a72784918d5a666b1992f41706e2fe3eb953f94cafb5c8ce302bf6f7393",
+    "recipes/arrow-time-machine-shift/tests/test_shifts.py": "sha256:9f0d9aa8506e4a9761cd5726e0daf0c019aae6c404273d4c818989d842d63799"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

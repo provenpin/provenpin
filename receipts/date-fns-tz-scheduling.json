@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:77f036ea18a146fa1126817761891d3b991c93874d39a68d0b7e8f16ee050234",
+  "files": {
+    "recipes/date-fns-tz-scheduling/package.json": "sha256:0028f2cfea19bf9b582b30d71702312b8502a9690495eae23423504331da0928",
+    "recipes/date-fns-tz-scheduling/recipe.yaml": "sha256:12fbdb837429f5b8d1db4ca648f41063ff487310a6e45310045117e3a389fd97",
+    "recipes/date-fns-tz-scheduling/src/schedule.ts": "sha256:600926b9edeed098c0e7c69bfb727de25c8f32733fb0d63b5f3e3cee2880b8c8",
+    "recipes/date-fns-tz-scheduling/test/schedule.test.ts": "sha256:291c3a25e22be64a16324bcd725357e778dd77a725d7f1eca3420f03cf25395e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

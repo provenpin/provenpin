@@ -20,6 +20,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:af4a057892d0ab01d797d3e4e3c8b0e716b49a7015762af8b57a2904949511b8",
+  "files": {
+    "recipes/aws-sdk-v3-s3-client-mock/package.json": "sha256:4a66a002e7ff12ab092beccb33e28f1d7b67c2689ac6741c606ed53cc4080bc2",
+    "recipes/aws-sdk-v3-s3-client-mock/recipe.yaml": "sha256:9c83b5c0e7ceda8a595328bab8236f7866a2fc0a941e850808c471930c8ec3e5",
+    "recipes/aws-sdk-v3-s3-client-mock/src/storage.ts": "sha256:c0424f6461bc2ee35b022b493353687b2c7da7c07bae43a2d12a5e9773974237",
+    "recipes/aws-sdk-v3-s3-client-mock/test/storage.test.ts": "sha256:0c2fc0bab85236337e296f6cada09dcb0edf6b6023b6d21399b3eacc227ed474"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

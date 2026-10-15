@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:4ceafa65a7c488d6d55c65e8c30756ad221510b6aef8a6e42fd08155f1707b29",
+  "files": {
+    "recipes/ajv-formats-json-schema/package.json": "sha256:4574bef7912b916d218a2831eff5cf6bb2029313636f5525cae910987526959b",
+    "recipes/ajv-formats-json-schema/recipe.yaml": "sha256:54aa2cf9873be870bc4b4b95a95bb4719a985adf29a59f0412c3cee6e6b0a57c",
+    "recipes/ajv-formats-json-schema/src/validate.ts": "sha256:d6de895e3ef287e78a80b20018a6e178a96e962cb4a1ed0b74b97205765d0c9b",
+    "recipes/ajv-formats-json-schema/test/validate.test.ts": "sha256:f3aa097a21deeb1952b40b1889dffba45c6c1e784bf98a1a1212bbda8fd28db0"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

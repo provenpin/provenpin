@@ -19,6 +19,12 @@
     "supertest": "7.3.1"
   },
   "recipe_hash": "sha256:2b8e3e3a5ac3aa9691d369d5b83260ac633825611abc191bc6ed054240103cc8",
+  "files": {
+    "recipes/twilio-webhook-signature-express/package.json": "sha256:9bc009efe80203a73e4fdf61d0c5868919618fab3ee18e4be694c20df6382803",
+    "recipes/twilio-webhook-signature-express/recipe.yaml": "sha256:40e866f097822dde23808b2234f5174c5e134db1a3be12ee04fae81871047542",
+    "recipes/twilio-webhook-signature-express/src/app.ts": "sha256:533079baaddf95c933dbf08c3c6e2dfa8fe7f79c1eb47ed4894af80fcbbe1bc4",
+    "recipes/twilio-webhook-signature-express/test/app.test.ts": "sha256:a2c86dc3417141c64420454ffa58a76f889289bfcff2bdb5d34b33181cb2faff"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

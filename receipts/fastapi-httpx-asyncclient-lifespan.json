@@ -19,6 +19,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:a62a7f6e9f1c68a6736cc0f78d8f4b9394567f460fa61098573919221175e070",
+  "files": {
+    "recipes/fastapi-httpx-asyncclient-lifespan/app.py": "sha256:15a602011c34408190b2faca8be7b1e64f22e6e0258faf17b4c644d762437803",
+    "recipes/fastapi-httpx-asyncclient-lifespan/pytest.ini": "sha256:d519cf350584983132931b08391d034882c1c2e5467c3afbaef8977181e00177",
+    "recipes/fastapi-httpx-asyncclient-lifespan/recipe.yaml": "sha256:0b55a43d1d7918c76ae3359b0361ac7784b9d5740abefa8daefd1a73613336e4",
+    "recipes/fastapi-httpx-asyncclient-lifespan/requirements.txt": "sha256:679dc447db2b31ef5836f7980ad5d455ded6db0cd6d3dba8912a98196dfe4d45",
+    "recipes/fastapi-httpx-asyncclient-lifespan/tests/test_app.py": "sha256:196c134c9ecf0c452e9511c1f5428a0944299703919605867ec3479c6159a717"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

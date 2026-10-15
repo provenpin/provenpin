@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:a669c7522ba5e9656e97b503901a67811eefcec650e4c7069d9a0589f89049c5",
+  "files": {
+    "recipes/networkx-shortest-path-dag/graph.py": "sha256:8d2c5296d58538f263068219de7a9f9dbbdaa34967186483b224c2fa7970275f",
+    "recipes/networkx-shortest-path-dag/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/networkx-shortest-path-dag/recipe.yaml": "sha256:2a28d3eb484324b1fd0df84c6e8f8c10145484e32356adf397f053e399e449a7",
+    "recipes/networkx-shortest-path-dag/requirements.txt": "sha256:a68259af26721daf155a6a4038c987e982afe09cc52ce723ee0121b9c9d43024",
+    "recipes/networkx-shortest-path-dag/tests/test_graph.py": "sha256:3e959078a451a52dced69675ce47330d9e420775577281994d4940b5d68caf50"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

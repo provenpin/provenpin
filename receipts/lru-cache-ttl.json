@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:e879065a202cd45de36680e9de6d76dc980f8b8b351679d1a1b5065b6f129522",
+  "files": {
+    "recipes/lru-cache-ttl/package.json": "sha256:2f25515cd2496ac161de2cca02a84f077b62ac4c9a8d81562b1fcc44646e90fb",
+    "recipes/lru-cache-ttl/recipe.yaml": "sha256:b49a1dea33204a7ca997ecb6fcd1395174765241af0800da5f7a40d7d08883a9",
+    "recipes/lru-cache-ttl/src/cache.ts": "sha256:327430ce6e7ac7dc475c61c8ae7807a7421135bf537c299ab6b789b6b743bb6d",
+    "recipes/lru-cache-ttl/test/cache.test.ts": "sha256:5a91550fedd6102a7b3d73361f6e943d1cbc098e3438e5d05d1dfb8a55088ef3"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -21,6 +21,12 @@
     "@types/express-session": "1.19.0"
   },
   "recipe_hash": "sha256:a0e66506e39047f561364c9e1ccfe26ac753006cd00359f6485cfed32151199d",
+  "files": {
+    "recipes/express-session-cookie-e2e/package.json": "sha256:e35ea724509a3a0d0a1a65f3f0b072f46d9967e095f24611124f1713eac4a669",
+    "recipes/express-session-cookie-e2e/recipe.yaml": "sha256:b18ad6cad5a19a93433eb1ee0cff3d26bdd95be7af56aa4a442fffd82fe465f4",
+    "recipes/express-session-cookie-e2e/src/app.ts": "sha256:b2273006a4701038f5c8637020007d7be11cba970c396b324e82ba5862c7cd4f",
+    "recipes/express-session-cookie-e2e/test/e2e.test.ts": "sha256:93d6f13a321e0bee1b4d09b181ddfd87287aa634bcde0e86c294504d47c4a25f"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:b525b96356eebe253715e75da1c9c527c99a4b8b94c28d9bb60a50eadac75a4a",
+  "files": {
+    "recipes/opentelemetry-sdk-inmemory-span/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/opentelemetry-sdk-inmemory-span/recipe.yaml": "sha256:2f18d3346cc48303667b1e6af7b19ecb48121a26ce321aa207f5880f2b51a1af",
+    "recipes/opentelemetry-sdk-inmemory-span/requirements.txt": "sha256:171439de597dde6aac8299fde487444d73674cdd31545fd277dfecbac634ed5a",
+    "recipes/opentelemetry-sdk-inmemory-span/spans.py": "sha256:967dc8fcb83d3e18f6bf7635bb880fab1878c197096110eb7568b34167122c66",
+    "recipes/opentelemetry-sdk-inmemory-span/tests/test_spans.py": "sha256:4f1468fcf5b8e9578ee6480b0b967787afa309f332cd4c6dcab1e2a74d834717"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

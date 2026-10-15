@@ -18,6 +18,15 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:651b68c5f45bb5ae308316e0ab873b3f2c8d00abd3e3bafc6b98bbe56cafcf55",
+  "files": {
+    "recipes/celery-redis-fakeredis-results/celery_app.py": "sha256:a5042964892ad18836d481ce1ac08245ad98ab4e30d70e784fe4c2d4c64fe058",
+    "recipes/celery-redis-fakeredis-results/dedupe.py": "sha256:0050f6f996ac682eca2f607357abe96501f6828809de960bc7091d823c0a658d",
+    "recipes/celery-redis-fakeredis-results/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/celery-redis-fakeredis-results/recipe.yaml": "sha256:5f687e45a692d2e20890ac06c5c896c816185bc343c604fe4947eeb834cf7fb7",
+    "recipes/celery-redis-fakeredis-results/requirements.txt": "sha256:55cf3d3e21b38501fdfc72bfe50873a62e53e2ac8e7d617b6edc66a124240cd2",
+    "recipes/celery-redis-fakeredis-results/tasks.py": "sha256:61f9110d7f242beac3ca986a19152a70fed3578b1552c2b023a5b0bbc776c53d",
+    "recipes/celery-redis-fakeredis-results/tests/test_tasks.py": "sha256:70be09a4e4a7576119f853a18244a1b1be1b86588467f221cb43a7c9153abe80"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:f39f4a205ca8fcbb96e4d455ae002447dcc10330137cc44978baaba2d90a1083",
+  "files": {
+    "recipes/msgspec-struct-validation/models.py": "sha256:ea80e34ea58064a74aec3ac0f9fa3d7997b06ff4a3bf54432630068729e587df",
+    "recipes/msgspec-struct-validation/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/msgspec-struct-validation/recipe.yaml": "sha256:2cdbb8ffc281e5b1dca34641312d48e47a084ebdf38769dd7c2f804efd251e1a",
+    "recipes/msgspec-struct-validation/requirements.txt": "sha256:52bfbf468f58b821120e47f77ba893d0204207e4ab4de16260244b9dce548761",
+    "recipes/msgspec-struct-validation/tests/test_models.py": "sha256:b45f19dbe867cc61789b19b4b8cf760190fa5ade1d78d568c14359b2b31eb4c3"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

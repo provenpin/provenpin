@@ -20,6 +20,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:6107ce4f65f8eeacab884172e00f511407e55cb46c68494b8e8d522df9774ee4",
+  "files": {
+    "recipes/babel-codemod-parse-traverse/package.json": "sha256:fce590add12136e41a4361c7bce9a326349e50f95b5b1ac6f6d602a22e9d22da",
+    "recipes/babel-codemod-parse-traverse/recipe.yaml": "sha256:48234fc2adea5a5ab8a22c6a44aaccc4ad4407ee9120e62c4bcf4b3ce09cb29e",
+    "recipes/babel-codemod-parse-traverse/src/codemod.ts": "sha256:ad4b000e0b82e1cccb0e98c23122d9ba4253d8b90528018594fb9da08cf6acd1",
+    "recipes/babel-codemod-parse-traverse/test/codemod.test.ts": "sha256:997eb8a80bb801bde34efa28d7391b1f8c248b221b5a11e14eca05970b4c3ff9"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

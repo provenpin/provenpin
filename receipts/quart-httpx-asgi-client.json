@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:50b330e0f202fc2f1075864803b7e4b078b4158367d18c4fe82a2034e647deb8",
+  "files": {
+    "recipes/quart-httpx-asgi-client/app.py": "sha256:97579c4212def6196ad87494f720170d510b0f4f0aab45e16543b1a0f988e096",
+    "recipes/quart-httpx-asgi-client/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/quart-httpx-asgi-client/recipe.yaml": "sha256:5f070b8aa3f62ab43aca449fcdcf750c0fa0fa08bf5d2ade555eda095da1fde9",
+    "recipes/quart-httpx-asgi-client/requirements.txt": "sha256:b4737fae82a990f547ed7eba9c2ebf0f608ab9532404cebcfa135f3f5ceef12e",
+    "recipes/quart-httpx-asgi-client/tests/test_app.py": "sha256:b7a448247607cdc2e510bc32710a477e0c6a682e17eec70373e11c229a490ad9"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -19,6 +19,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:54f32c07d9ab5e6d725fb7912a89a21cc5daf5b1d79a99bb8f7b2d41ac638c15",
+  "files": {
+    "recipes/oslo-sessions-totp-2fa/package.json": "sha256:c920d0a81cc1e6a6e6ed04467dad6a4ab4bddd448773d9e8686ff58cfe1b6357",
+    "recipes/oslo-sessions-totp-2fa/recipe.yaml": "sha256:6be7780e7896a30434233d79df8e3eb993d05ca43795793e4f8ad0d0a62aa9f3",
+    "recipes/oslo-sessions-totp-2fa/src/auth.ts": "sha256:88ed93433fd4d1b631345e4dc113014aca1e79fc55bae34acb12a33a3f195091",
+    "recipes/oslo-sessions-totp-2fa/test/auth.test.ts": "sha256:2ab28d4a7dd7ca0d63fa2263ed1b3f09b41d18a1e01a0e5149366e8645f9c6e9"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:76499a2c9539a64f6e4112421aaf8af677dff6d1ff5630923ade34028cb335a3",
+  "files": {
+    "recipes/viem-offline-sign-verify/package.json": "sha256:0e49f0faa245595562f439c246ab28104d7eb359654fa729b26e4d9cb5caf0cb",
+    "recipes/viem-offline-sign-verify/recipe.yaml": "sha256:d01e905f3b248594059d3820499b8a5f45c119005912b7acb364a1f8bd5bc68d",
+    "recipes/viem-offline-sign-verify/src/sign.ts": "sha256:e6dbde5d4dd18d557734533edbb46ee32b6dacd21d650fabb30dfdeaf41bfb83",
+    "recipes/viem-offline-sign-verify/test/sign.test.ts": "sha256:63a3248ec4c35b2e9871ba751a3dd98c0f242153e58d352c9e145f085c7de87f"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

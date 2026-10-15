@@ -17,6 +17,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:dc08c62df6a9c465824d532d5197847d3c29b4a86489dcb36f55621c1e2e9ccc",
+  "files": {
+    "recipes/fastify-json-schema/package.json": "sha256:4a5b0763e43b7acfa74e904d138cb6dc24ef9c87e1f3fc83e50a944c678ddb6c",
+    "recipes/fastify-json-schema/recipe.yaml": "sha256:a081e9fb8a2f28d6e9f55407cfd65cc9951d79a4ecea3bfab84d168430d5608b",
+    "recipes/fastify-json-schema/src/app.ts": "sha256:64083f91af807400960e8650760dd630e65c868e4ea8ae3c36080c4016c3d22f",
+    "recipes/fastify-json-schema/test/app.test.ts": "sha256:48c59c1aaf96722755d4bb5ee45c2b2956a1030212da79992b786acc5c73949e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

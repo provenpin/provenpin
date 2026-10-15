@@ -17,6 +17,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:f8f381a0b6619e7ed81d34749c0cac041e959d8b39e1daf7be4272e28f3af1cc",
+  "files": {
+    "recipes/jszip-archive-roundtrip/package.json": "sha256:8da0e38383403c7633766b8fba14ce2ad7f2885916b8be2b34af4821e4dbcbee",
+    "recipes/jszip-archive-roundtrip/recipe.yaml": "sha256:59c20e4ee693c8f41ac55c8b0f8aaecf60a97c9b59d980b5d43359e54d7ebffe",
+    "recipes/jszip-archive-roundtrip/src/archive.ts": "sha256:78b080aeedf9661719b7024f2e816c6f72a2758256eafff570d2a00e3d524da0",
+    "recipes/jszip-archive-roundtrip/test/archive.test.ts": "sha256:29b000234165f57b7fcd42522ce5ad447f14ad9472f3172a92544916dc2380fd"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

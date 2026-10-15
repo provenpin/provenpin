@@ -1,7 +1,10 @@
-export interface RecipeFile { path: string; content: string }
+/** sha256 is "sha256:<hex>" of the exact bytes the receipt tested (absent when unknown). */
+export interface RecipeFile { path: string; sha256?: string; content: string }
 export interface Receipt {
   status: string; ran_at: string | null; last_passed_at: string | null;
   tests?: { passed: number; failed: number }; environment?: Record<string, string>; recipe_hash?: string;
+  /** Repo-relative path -> "sha256:<hex>" for every file covered by recipe_hash. */
+  files?: Record<string, string>;
 }
 export interface Recipe {
   id: string; title: string; summary: string; language: string; runtime: string;

@@ -19,6 +19,12 @@
     "nock": "15.0.1"
   },
   "recipe_hash": "sha256:790336bc6e248593247b5b8a2fbe3242bc9f6141919ed3c9f29df6cfd20c4865",
+  "files": {
+    "recipes/axios-retry-nock/package.json": "sha256:4c9b6090a4779d555f11b6148a26fb35aa593ce4199c40840b5576fea60870d1",
+    "recipes/axios-retry-nock/recipe.yaml": "sha256:75530040a452fa7fe42c9599e95dca6d9ba0ff811a4e2000d500fc4b175be840",
+    "recipes/axios-retry-nock/src/client.ts": "sha256:ec425ac2f8e717a8adbce851dd2245f7020699d6b56ba01b4e74f0cef91bf066",
+    "recipes/axios-retry-nock/test/client.test.ts": "sha256:699f53a072bdbd0b57e002ce3b5f46209db7ab53eeac5f7246e3b84ef3112238"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

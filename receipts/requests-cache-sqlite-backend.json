@@ -18,6 +18,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:9f503504ac634603d59b61a710dbaaf59152ccc3a79417e6448d27fd44c9ada8",
+  "files": {
+    "recipes/requests-cache-sqlite-backend/cache_session.py": "sha256:4901a99dae500bf5e84d1efda31f3d67581c2e15fea3ed72ffd4cb97fb57d8ac",
+    "recipes/requests-cache-sqlite-backend/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/requests-cache-sqlite-backend/recipe.yaml": "sha256:5200e2d9c3b2a3184aee9fc73288ed1b4e2ba922ba689b134666d0c8f4e2629a",
+    "recipes/requests-cache-sqlite-backend/requirements.txt": "sha256:f9926892fb3f2501725447209070fb0f1b7d6e564c72a8d01ccc4253f156f5d6",
+    "recipes/requests-cache-sqlite-backend/tests/test_cache.py": "sha256:d860eb061f555d0ba4a4b26016bb77e6d80aa953e9465807e91ba805b4866b93"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

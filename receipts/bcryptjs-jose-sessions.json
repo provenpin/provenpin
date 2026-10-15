@@ -18,6 +18,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:285cfaad6a02d843ad2e76f911efef1c674c35ce4b740aaa7407226e53fbc163",
+  "files": {
+    "recipes/bcryptjs-jose-sessions/package.json": "sha256:c35fdb0578f6f20b5bafb59a67bd23e2a634a2d5f09e358131ae66437056b510",
+    "recipes/bcryptjs-jose-sessions/recipe.yaml": "sha256:34fb0cf18ddca8df174c762a4381eb911746287cba782435436153d6c15b0d81",
+    "recipes/bcryptjs-jose-sessions/src/auth.ts": "sha256:1fb2d8a35081834104db6ef05e0c4caf9ee30fd4bfb937b2567ce1aefe28ead7",
+    "recipes/bcryptjs-jose-sessions/test/auth.test.ts": "sha256:f653f3c1338cf182efcb875ab75c6c0c04421ad7ac19860978e1cf460ed25dbd"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

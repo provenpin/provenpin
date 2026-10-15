@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:4c118add10c81ceb131e908157ad477d2f93f8767f27d9c55c906e13b518b272",
+  "files": {
+    "recipes/typer-cli-testing/cli.py": "sha256:0c3139a02785ede1cdb811aedd28f601ba7c3a9a6c684dc574e1f76a591cc332",
+    "recipes/typer-cli-testing/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/typer-cli-testing/recipe.yaml": "sha256:ff2c1b91fb1a0079855bdae9efd944984204311fcaaca84dce377881803c85eb",
+    "recipes/typer-cli-testing/requirements.txt": "sha256:4c228287585b855211e379635cc1fea71fc4017b4ec8c651a55f00246e75fefd",
+    "recipes/typer-cli-testing/tests/test_cli.py": "sha256:e36c582a8f2ad5a6dcab1877d5aba051417373fd868dc3da3c4e13ab5493148e"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

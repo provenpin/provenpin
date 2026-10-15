@@ -22,6 +22,12 @@
     "@types/express": "5.0.6"
   },
   "recipe_hash": "sha256:0aa114efe871dd69be71bc632596133ae8340e320bd97e8388b0d07d2ce41532",
+  "files": {
+    "recipes/express-pino-http-logging/package.json": "sha256:f1d3b2000f1bcc845bd096470f5e4d950bf13717f7ed2ef54138c5b148e8304e",
+    "recipes/express-pino-http-logging/recipe.yaml": "sha256:93ecdfe834b79800f2c13f77db96b82e4965527ea270aa0e840fd8c0b2f6a671",
+    "recipes/express-pino-http-logging/src/app.ts": "sha256:0b1538901540979bc0fe459f71507a1dd3851348056569b87ceb9d7e7f116caa",
+    "recipes/express-pino-http-logging/test/app.test.ts": "sha256:16e08432a3e51076a2eeb793458937b7b4822322394f85b2fbbde6c425334e65"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

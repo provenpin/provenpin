@@ -17,6 +17,12 @@
     "@types/node": "24.19.2"
   },
   "recipe_hash": "sha256:aae51c9c59dbab301f320b0cb41db8844204d713992a6282ec2f84e48d15e3d8",
+  "files": {
+    "recipes/stripe-checkout-mocked-http/package.json": "sha256:9bf0d102e5a123163aa9b4dfd74cfea47ae43bbd6a57493c03c3083af1642a94",
+    "recipes/stripe-checkout-mocked-http/recipe.yaml": "sha256:3f770191df42d15aa48c83392d0814fd471ed33bad6b7eab4ce7a75954226906",
+    "recipes/stripe-checkout-mocked-http/src/checkout.ts": "sha256:d63033f119ee2434b327e54904b2a5fbbc6fbb5fb2fc1aa9995a5887ad5a9c3c",
+    "recipes/stripe-checkout-mocked-http/test/checkout.test.ts": "sha256:566d8ca2c043b8c14ae8d518ed923ce955ce306015f1f4b6311d29378a68cc20"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

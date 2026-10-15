@@ -18,6 +18,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:a6bace54fd2373891b7c45c563edb3ad212d995a9ac4b4bf361af3277fc868bc",
+  "files": {
+    "recipes/postcss-custom-plugin-autoprefixer/package.json": "sha256:18a9dbc061d834626f9156c6ed03c9e00d4e5bdf6507001f34d575a88a1b08d1",
+    "recipes/postcss-custom-plugin-autoprefixer/recipe.yaml": "sha256:1cff0dbd4fcf6b36d5fe3364c157077e44081987722778c8ee3dc3604e1422aa",
+    "recipes/postcss-custom-plugin-autoprefixer/src/css.ts": "sha256:d7bbd1e3e293bb4e12a0d91071640b8b5706a92bf7b39942610c99a72837f882",
+    "recipes/postcss-custom-plugin-autoprefixer/test/css.test.ts": "sha256:e08e9ef974fdc5589650f64ca87001ec4fde588cc1aadf66d21725a5591d62e3"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

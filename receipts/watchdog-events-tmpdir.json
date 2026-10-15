@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:630ee53b86f489432ceb90ebcff32b1e1924f96d5a1513705e7bca052d60027e",
+  "files": {
+    "recipes/watchdog-events-tmpdir/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/watchdog-events-tmpdir/recipe.yaml": "sha256:3c5146397cb672becf6d23a835ef7aebb13fc910d54f7b199f53bbe3a8385f28",
+    "recipes/watchdog-events-tmpdir/requirements.txt": "sha256:d075d2cced81403664177a267db2bf3f08eebd6bcb277d0294ac494d8c4f7968",
+    "recipes/watchdog-events-tmpdir/tests/test_watcher.py": "sha256:ff48ec957c16fd31fe5b7f4859a93c83d6c40acf56ed3aaa3d1683b2c8504f2b",
+    "recipes/watchdog-events-tmpdir/watcher.py": "sha256:b5c269412016077a4f49e8d5acfd0264ed67c3050b8b86ae0cc4be73b2b1174a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -22,6 +22,12 @@
     "@types/better-sqlite3": "9.6.0"
   },
   "recipe_hash": "sha256:b9023f60d4e2b41d42d9b0c8dc83e001b92133759e2ae3dd5a3f6f58b97cf889",
+  "files": {
+    "recipes/hono-drizzle-sqlite-api/package.json": "sha256:687570cf57ae439cad650e97016ea92dc7fe1839f334f6b4fca1bb4e8dc546a2",
+    "recipes/hono-drizzle-sqlite-api/recipe.yaml": "sha256:56b18e442b6abcb530e85385980ca817318b95881d1d943821b81a79c72bc5b0",
+    "recipes/hono-drizzle-sqlite-api/src/app.ts": "sha256:617003a5d573cde26bfb688829e04018f85c9de089d76712375380055b25ab7d",
+    "recipes/hono-drizzle-sqlite-api/test/app.test.ts": "sha256:ebb25382130158c4f9ced79e125eb1bc19ab3ab93e94618524477f9c24c7584a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:fdcff96e0088c5e526700f0475860c2dc776fcb9e468d2b06503213c16c7e3cb",
+  "files": {
+    "recipes/attrs-cattrs-json-roundtrip/models.py": "sha256:cd45442b4fd3e45806ea22da0ae80e1e4212445ffd0896d4633aef9bceb34e4d",
+    "recipes/attrs-cattrs-json-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/attrs-cattrs-json-roundtrip/recipe.yaml": "sha256:6e25f27b6ebd58da41128a4b74bb267bd72e8d6dc47f85b8adaa4661815b0761",
+    "recipes/attrs-cattrs-json-roundtrip/requirements.txt": "sha256:f3bae78efdd5ad102ea20678538b7283f39eba15d396405221e12e4e4837cdd2",
+    "recipes/attrs-cattrs-json-roundtrip/tests/test_roundtrip.py": "sha256:fc9b2b0a731589e4620bc56b3dc9d42a423e582c11082c001b8c2513609e71d6"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

@@ -22,6 +22,12 @@
     "@types/multer": "2.3.0"
   },
   "recipe_hash": "sha256:f991ab06c4c033bb098ceb29226968afeaac2c775b9da5cf9ae9b1de297fbe24",
+  "files": {
+    "recipes/express-multer-upload/package.json": "sha256:de2d5ca06273a6bea4503a86d6e2895ef7d4963d13d3f2ae283f8c5a8fb70835",
+    "recipes/express-multer-upload/recipe.yaml": "sha256:c903c16f157cbf00f3255b913b8912e10d1ece39bb99292123d28be1fe26ebc4",
+    "recipes/express-multer-upload/src/app.ts": "sha256:b6bf35730dbbc8ba7e5f886d99b190b89336a4a3bc856c7ba677f3f5e6fc9168",
+    "recipes/express-multer-upload/test/app.test.ts": "sha256:8e59e944c396ec11ff9f7fca11490a8748e49b105b6bc0bc68fccc8a7265df2a"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

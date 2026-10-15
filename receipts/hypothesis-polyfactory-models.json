@@ -18,6 +18,15 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:7bdc012686f521caac3a94d4adcf0cab62080fd418d59407ff5eb981bfcda6e6",
+  "files": {
+    "recipes/hypothesis-polyfactory-models/factories.py": "sha256:f75bd90ccb6d7b704de2a704244fe38f6502fec01df3525d09acca83c581eb78",
+    "recipes/hypothesis-polyfactory-models/models.py": "sha256:c694c43256f13ce8f8a7967eb0fa38814f575943b6646350e8cf696cdbda5b23",
+    "recipes/hypothesis-polyfactory-models/pytest.ini": "sha256:5a029ea467a91b8836e1092afd6dae0e38fa8ecd5917b4ab182fd2c84bb3fa78",
+    "recipes/hypothesis-polyfactory-models/recipe.yaml": "sha256:d66a6ac83e06fc89d0db1dbd8ec830e2f62a6c78ca005e9cbf8e36dac09836c3",
+    "recipes/hypothesis-polyfactory-models/requirements.txt": "sha256:e6faee76569e03d8db7398989cada36d390cb9600fb7e8b5942f187fc94db09d",
+    "recipes/hypothesis-polyfactory-models/strategies.py": "sha256:21be457a0d63cc9f4390a7a9336cdbe4fc7af3e54c15aa1c15f8021c59fb0ded",
+    "recipes/hypothesis-polyfactory-models/tests/test_strategies.py": "sha256:56fe9f4239688299a82b3d252c8b8fa4f97aed35608592b368fc4a38d61305ab"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

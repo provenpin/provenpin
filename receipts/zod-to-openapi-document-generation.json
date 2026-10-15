@@ -19,6 +19,12 @@
     "@types/node": "26.6.5"
   },
   "recipe_hash": "sha256:6ab1b537e91c496d73f7b9c4cf23562d291cb89039ec81e9e4690ef8c3d613e8",
+  "files": {
+    "recipes/zod-to-openapi-document-generation/package.json": "sha256:7fbca7e48cb526df2e66686d0482df5380480bc7c76a597b59fc5dd3b191f9fd",
+    "recipes/zod-to-openapi-document-generation/recipe.yaml": "sha256:ead120883087ae5cace47967e5b28fe13c43678d756482ab40eede6933950f25",
+    "recipes/zod-to-openapi-document-generation/src/openapi.ts": "sha256:48d7939c02bdf634d2989929bc907629be9ff2ca74338792eb845142bf04f4d7",
+    "recipes/zod-to-openapi-document-generation/test/openapi.test.ts": "sha256:ddfb66001e1e5978a683fa2a16bf3e52978a3c44604a1163c7c129edf9b9d9de"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

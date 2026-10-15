@@ -18,6 +18,12 @@
     "msw": "3.0.3"
   },
   "recipe_hash": "sha256:dce4371ed1675f2424d8a32a7d79adbcfa20ce4cfbf4558096084feabe742536",
+  "files": {
+    "recipes/msw-fetch-api-client/package.json": "sha256:acb2b1029f71e7291b096825ba56eb7e67c5d01a48853861f533d795866328bc",
+    "recipes/msw-fetch-api-client/recipe.yaml": "sha256:111bd7656dceefe7de129a8307b8e75bc17e464184e75c9636417eecfcf0f997",
+    "recipes/msw-fetch-api-client/src/client.ts": "sha256:c969815a3765763a84c24e6103da3a89938aca6c37c4fa11c41941ec32ae8da2",
+    "recipes/msw-fetch-api-client/test/client.test.ts": "sha256:bdf3d458c1bb39a34c9f15acbae97b954fc6c215b7297339192ac8296857babd"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

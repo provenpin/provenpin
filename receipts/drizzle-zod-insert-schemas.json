@@ -21,6 +21,12 @@
     "@types/better-sqlite3": "9.6.0"
   },
   "recipe_hash": "sha256:77c68b3ecf06cc2bfaca04a9a312cfb49fddc0068a3a8ceb192f4d9a4d16dad1",
+  "files": {
+    "recipes/drizzle-zod-insert-schemas/package.json": "sha256:799bca095d8b848902319573001d7fc13f958cc7ad2dd02b0bf47bbd92d29990",
+    "recipes/drizzle-zod-insert-schemas/recipe.yaml": "sha256:6c69a3defef74e2ef8f31388c228fdbeddd95d01634472d7c69b6ddf0d5fe142",
+    "recipes/drizzle-zod-insert-schemas/src/db.ts": "sha256:3d5674a00d79d511da323761440fea8cd68e5665c35eb905f160275c85b7e933",
+    "recipes/drizzle-zod-insert-schemas/test/db.test.ts": "sha256:4452dadaaeae5593405ec27121e73c3d93c97c4019ee6f3f4f271db36f214720"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

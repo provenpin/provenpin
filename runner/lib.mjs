@@ -53,6 +53,19 @@ export function recipeHash(r) {
   return "sha256:" + h.digest("hex");
 }
 
+/**
+ * Per-file sha256 of the exact bytes hashed by recipeHash, keyed by repo-relative path
+ * (e.g. "recipes/<id>/src/app.ts"). Same file set as recipe_hash: recipe.yaml plus r.files.
+ */
+export function fileHashes(r) {
+  const out = {};
+  const rel = path.relative(ROOT, r.dir).split(path.sep).join("/");
+  for (const f of ["recipe.yaml", ...r.files].sort()) {
+    out[`${rel}/${f}`] = "sha256:" + crypto.createHash("sha256").update(fs.readFileSync(path.join(r.dir, f))).digest("hex");
+  }
+  return out;
+}
+
 export function readReceipt(id) {
   const p = path.join(RECEIPTS, `${id}.json`);
   return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : null;

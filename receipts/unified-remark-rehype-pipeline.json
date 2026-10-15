@@ -23,6 +23,12 @@
     "tsx": "4.23.15"
   },
   "recipe_hash": "sha256:1f4a22375f5a6ef330e4bd1b604cf3085b066b2901e28dd39cb7caed0b348461",
+  "files": {
+    "recipes/unified-remark-rehype-pipeline/package.json": "sha256:6b2a4fdfa0f19796cbda61e1bf3d6501f11280715f80e84d06e56d9e7660531a",
+    "recipes/unified-remark-rehype-pipeline/recipe.yaml": "sha256:c908bb0b156d26add5fe8d4b090f7d4df9c6769415f530b59c64459813d2e549",
+    "recipes/unified-remark-rehype-pipeline/src/markdown.ts": "sha256:9cd190332804d3e72816ee892e9edd7af033d3b347d536b6156266588c8fb6eb",
+    "recipes/unified-remark-rehype-pipeline/test/markdown.test.ts": "sha256:130378d08499cb4d5ba476e4269474f5227bc67ac2fce10faec47a77d8a6f3f3"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

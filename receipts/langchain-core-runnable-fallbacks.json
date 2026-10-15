@@ -16,6 +16,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:77978b32eb6f632cebe98e9d26a92d851db675fbb642f24412cacf6c666219e8",
+  "files": {
+    "recipes/langchain-core-runnable-fallbacks/chain.py": "sha256:dad8012b271735ebc54196897102d21a4dc75c7fd819d36c2dc5f97b538ba190",
+    "recipes/langchain-core-runnable-fallbacks/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/langchain-core-runnable-fallbacks/recipe.yaml": "sha256:5a6249ec843cc81c2501a0a7f540e281f43bccbac2c9297c68d39f722c2eb82f",
+    "recipes/langchain-core-runnable-fallbacks/requirements.txt": "sha256:5142eb440cc8efbc479b36d8e8188ddc5de300ed62e9a0dd4a66c7c1473b9970",
+    "recipes/langchain-core-runnable-fallbacks/tests/test_chain.py": "sha256:099a0b6bc763208621d03abcd734dfa43214b7ba46a9276887a71ea1650380a7"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

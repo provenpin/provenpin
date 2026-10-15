@@ -17,6 +17,13 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:7f07743b20dba902acaa0f030a2de278522c2ccd43b44f81c820c4ebed853571",
+  "files": {
+    "recipes/sqlalchemy-alembic-autogenerate-check/models.py": "sha256:86340d399e6520b129102d2f02485879bfb6a2897ca82cbe1c02da4528494b2a",
+    "recipes/sqlalchemy-alembic-autogenerate-check/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlalchemy-alembic-autogenerate-check/recipe.yaml": "sha256:9039a1be17434a14bd2f969031a1a3f9012102c6478c20871392e7757b9f5d8e",
+    "recipes/sqlalchemy-alembic-autogenerate-check/requirements.txt": "sha256:49ba09186cd85bc8c6d8b1bf83e8bb126a7f4875cf04a47c2051fec0a225f961",
+    "recipes/sqlalchemy-alembic-autogenerate-check/tests/test_drift.py": "sha256:1695e3094fa161f99a5101b726e1fb8e9d0bc0f5a170bea3b37c2bebaa90a9c6"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",

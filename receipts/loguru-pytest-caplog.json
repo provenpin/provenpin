@@ -16,6 +16,14 @@
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:157a62f1b0d2c76d9198f87e02cc5850b8d1edff1424cdbd078a9c49bfd1a310",
+  "files": {
+    "recipes/loguru-pytest-caplog/logsetup.py": "sha256:5f2bed3aa3daf769cd843fd032be4efcfc9405a59af19efe4821fcbb637fed3b",
+    "recipes/loguru-pytest-caplog/orders.py": "sha256:62e804a8a9df3d0c4061f80d1310fe61feda50042eb711e956907c6dae38aa56",
+    "recipes/loguru-pytest-caplog/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/loguru-pytest-caplog/recipe.yaml": "sha256:739f8aadb68d773a255523c771dbe2909eb2d1c62a1e742be65b3d5bdba38789",
+    "recipes/loguru-pytest-caplog/requirements.txt": "sha256:256081bf544de2b832c385107090c13c5dafdee2a966482f07a7cad39449aa83",
+    "recipes/loguru-pytest-caplog/tests/test_logging.py": "sha256:d7bd77b1276949c6052801720071973ed00e82f1cd4598bb106f5c540b536f94"
+  },
   "environment": {
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
