@@ -1,0 +1,19 @@
+id: luxon-timezones-intervals
+title: "Luxon DateTime zones, durations and intervals"
+summary: "Parse, convert and format with Luxon across zones, do calendar-aware math, business-hours checks and Interval overlap, all DST-safe."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [luxon]
+tags: [dates, timezones]
+pinned:
+  "luxon": "3.7.2"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "@types/luxon": "3.7.6"
+files:
+  - package.json
+  - src/time.ts
+  - test/time.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

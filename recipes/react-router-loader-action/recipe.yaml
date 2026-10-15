@@ -1,0 +1,21 @@
+id: react-router-loader-action
+title: "React Router 8 data loaders and actions tested with createStaticHandler"
+summary: "Route loaders and actions with redirects, validation errors and 404 responses in React Router's data APIs, tested offline with createStaticHandler and plain Requests."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [react-router, react, zod]
+tags: [react, routing, forms, ssr]
+pinned:
+  "react-router": "8.4.0"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/routes.ts
+  - test/routes.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

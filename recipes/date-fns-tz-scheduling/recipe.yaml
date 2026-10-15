@@ -1,0 +1,19 @@
+id: date-fns-tz-scheduling
+title: "date-fns 4 + @date-fns/tz time zone math (DST-safe)"
+summary: "Schedule and format across time zones with date-fns v4 and TZDate from @date-fns/tz: local-midnight boundaries, DST transitions and UTC storage."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [date-fns, "@date-fns/tz"]
+tags: [dates, timezones, scheduling]
+pinned:
+  "date-fns": "4.4.0"
+  "@date-fns/tz": "1.5.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/schedule.ts
+  - test/schedule.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

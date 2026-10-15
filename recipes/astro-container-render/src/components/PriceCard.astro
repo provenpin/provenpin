@@ -1,0 +1,11 @@
+---
+interface Props { name: string; price: number; featured?: boolean }
+const { name, price, featured = false } = Astro.props;
+const label = price === 0 ? "Free" : `$${price}/mo`;
+---
+<article class:list={["card", { featured }]}>
+  <h2>{name}</h2>
+  <p class="price">{label}</p>
+  {featured && <span class="badge">Most popular</span>}
+  <slot />
+</article>

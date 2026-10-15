@@ -1,0 +1,21 @@
+id: nextjs-server-action-zod
+title: "Next.js 16 server actions + Zod with useActionState-shaped results"
+summary: "A 'use server' form action that validates FormData with Zod and returns field errors in the shape useActionState expects, tested by calling the action directly."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [next, zod, react]
+tags: [nextjs, server-actions, forms, validation]
+pinned:
+  "next": "16.4.1"
+  "zod": "4.6.7"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - app/contact/actions.ts
+  - test/actions.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

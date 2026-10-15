@@ -1,0 +1,22 @@
+id: authjs-drizzle-adapter-pglite
+title: "Auth.js Drizzle adapter on PGlite Postgres (database sessions)"
+summary: "Set up @auth/drizzle-adapter with the standard Postgres tables on Drizzle, and test user, account linking and database session lifecycle against in-memory PGlite."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@auth/drizzle-adapter", "@auth/core", drizzle-orm, "@electric-sql/pglite"]
+tags: [auth, sessions, oauth, postgres]
+pinned:
+  "@auth/drizzle-adapter": "1.11.3"
+  "@auth/core": "0.41.3"
+  "drizzle-orm": "0.45.4"
+  "@electric-sql/pglite": "0.5.10"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/schema.ts
+  - src/auth.ts
+  - test/adapter.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

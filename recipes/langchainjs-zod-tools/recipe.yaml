@@ -1,0 +1,19 @@
+id: langchainjs-zod-tools
+title: "LangChain.js tools with Zod schemas and a manual tool-calling loop"
+summary: "Define LangChain.js tools with tool() and Zod schemas, run model tool_calls through them, and feed ToolMessages back, tested with a scripted fake chat model."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@langchain/core", zod]
+tags: [ai, llm, langchain, tool-calling]
+pinned:
+  "@langchain/core": "1.2.17"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/agent.ts
+  - test/agent.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

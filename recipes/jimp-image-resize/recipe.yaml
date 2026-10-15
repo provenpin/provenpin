@@ -1,0 +1,18 @@
+id: jimp-image-resize
+title: "Pure-JS image resize, crop and thumbnails with Jimp (no Sharp)"
+summary: "Create thumbnails with Jimp (no native deps): cover-crop to a square, resize keeping aspect ratio, and re-encode PNG/JPEG buffers, tested with generated images."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [jimp]
+tags: [images, thumbnails, uploads]
+pinned:
+  "jimp": "1.6.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/thumbs.ts
+  - test/thumbs.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

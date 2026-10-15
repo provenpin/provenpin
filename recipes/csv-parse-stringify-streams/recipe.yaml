@@ -1,0 +1,19 @@
+id: csv-parse-stringify-streams
+title: "Streaming CSV transform with csv-parse + csv-stringify"
+summary: "Transform large CSV files without loading them into memory: csv-parse in columns mode, a Node Transform for row logic, csv-stringify output, wired with stream/promises pipeline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [csv-parse, csv-stringify]
+tags: [csv, streams, etl]
+pinned:
+  "csv-parse": "7.0.3"
+  "csv-stringify": "6.9.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/transform.ts
+  - test/transform.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,17 @@
+{
+  "name": "graphql-request-msw",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "graphql-request": "7.4.0",
+    "graphql": "16.14.2"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "msw": "3.0.3"
+  }
+}

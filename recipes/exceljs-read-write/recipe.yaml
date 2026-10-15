@@ -1,0 +1,18 @@
+id: exceljs-read-write
+title: "Excel .xlsx export and import with ExcelJS"
+summary: "Generate styled .xlsx reports (header row, number formats, formulas, frozen panes) and read uploaded workbooks back into typed rows with ExcelJS, all in memory."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [exceljs]
+tags: [excel, xlsx, reports, import]
+pinned:
+  "exceljs": "4.4.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/xlsx.ts
+  - test/xlsx.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

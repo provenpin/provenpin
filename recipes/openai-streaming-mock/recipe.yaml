@@ -1,0 +1,18 @@
+id: openai-streaming-mock
+title: "OpenAI Node SDK streaming chat completions, tested with a mocked SSE fetch"
+summary: "Stream chat completion deltas with the OpenAI SDK (for await over chunks), accumulate text and usage, and handle aborts, tested offline with a fake fetch that returns an SSE body."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [openai]
+tags: [ai, llm, streaming, mocking]
+pinned:
+  "openai": "7.34.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/stream.ts
+  - test/stream.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

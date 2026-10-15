@@ -1,0 +1,22 @@
+id: express-session-cookie-e2e
+title: "Express 5 + express-session login flow, e2e-style over real HTTP with a cookie jar"
+summary: "Session login/logout with express-session (regenerate on login, httpOnly cookies), tested end to end against a real listening server using fetch-cookie, no browser or Playwright."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [express, express-session, fetch-cookie]
+tags: [auth, sessions, e2e, testing]
+pinned:
+  "express": "5.3.0"
+  "express-session": "1.19.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "fetch-cookie": "3.2.0"
+  "@types/express": "5.0.6"
+  "@types/express-session": "1.19.0"
+files:
+  - package.json
+  - src/app.ts
+  - test/e2e.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

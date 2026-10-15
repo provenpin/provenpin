@@ -1,0 +1,22 @@
+id: dom-testing-library-happy-dom
+title: "Vanilla DOM form testing with Testing Library + user-event on happy-dom (Vitest)"
+summary: "Test framework-free DOM code (a validated signup form) the way users use it, with @testing-library/dom queries and user-event typing on happy-dom."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@testing-library/dom", "@testing-library/user-event", happy-dom, vitest]
+tags: [testing, dom, forms, accessibility]
+pinned:
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+  "@testing-library/dom": "10.4.2"
+  "@testing-library/user-event": "14.6.8"
+  "happy-dom": "21.0.1"
+files:
+  - package.json
+  - vitest.config.ts
+  - src/form.ts
+  - test/form.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

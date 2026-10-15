@@ -1,0 +1,18 @@
+id: anthropic-streaming-mock
+title: "Anthropic SDK message streaming with text deltas, tested with a mocked SSE fetch"
+summary: "Stream Claude responses with the Anthropic TypeScript SDK (messages.stream, text events, finalMessage), tested offline with a fake fetch returning Anthropic SSE events."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@anthropic-ai/sdk"]
+tags: [ai, llm, streaming, mocking]
+pinned:
+  "@anthropic-ai/sdk": "0.134.0"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/stream.ts
+  - test/stream.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

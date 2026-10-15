@@ -1,0 +1,25 @@
+id: vue-pinia-testing
+title: "Vue 3 + Pinia store and component tests with @pinia/testing (Vitest)"
+summary: "Test a Pinia setup store directly and a Vue 3 component that uses it with @vue/test-utils and createTestingPinia (stubbed actions, initial state), on jsdom."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [vue, pinia, "@pinia/testing", "@vue/test-utils", vitest]
+tags: [vue, state, testing]
+pinned:
+  "vue": "3.5.44"
+  "pinia": "4.1.0"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+  "@pinia/testing": "2.0.2"
+  "@vue/test-utils": "2.5.1"
+  "jsdom": "30.1.3"
+files:
+  - package.json
+  - vitest.config.ts
+  - src/cart.ts
+  - src/CartBadge.ts
+  - test/cart.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

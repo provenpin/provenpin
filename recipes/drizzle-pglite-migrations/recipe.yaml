@@ -1,0 +1,22 @@
+id: drizzle-pglite-migrations
+title: "Drizzle ORM migrations on PGlite (in-memory Postgres)"
+summary: "Apply versioned SQL migrations with Drizzle's PGlite migrator, use Postgres features (jsonb, enums, arrays, onConflictDoUpdate) and test against a fresh in-memory database."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [drizzle-orm, "@electric-sql/pglite", postgres]
+tags: [orm, migrations, postgres, testing]
+pinned:
+  "drizzle-orm": "0.45.4"
+  "@electric-sql/pglite": "0.5.10"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - drizzle/0000_init.sql
+  - drizzle/meta/_journal.json
+  - src/schema.ts
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

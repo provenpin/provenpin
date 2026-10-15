@@ -1,0 +1,21 @@
+id: astro-container-render
+title: "Astro 7 component rendering tests with the Container API (Vitest)"
+summary: "Render Astro components to HTML in Vitest with the Container API and getViteConfig, checking props, slots and conditional markup."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [astro, vitest]
+tags: [astro, ssr, testing]
+pinned:
+  "astro": "7.3.8"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+files:
+  - package.json
+  - vitest.config.ts
+  - astro.config.mjs
+  - src/components/PriceCard.astro
+  - test/PriceCard.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json

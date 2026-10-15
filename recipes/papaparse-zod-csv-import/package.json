@@ -1,0 +1,17 @@
+{
+  "name": "papaparse-zod-csv-import",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "papaparse": "5.7.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2",
+    "@types/papaparse": "5.5.2"
+  }
+}

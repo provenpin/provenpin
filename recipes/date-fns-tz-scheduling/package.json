@@ -1,0 +1,16 @@
+{
+  "name": "date-fns-tz-scheduling",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "date-fns": "4.4.0",
+    "@date-fns/tz": "1.5.0"
+  },
+  "devDependencies": {
+    "tsx": "4.23.15",
+    "@types/node": "24.19.2"
+  }
+}

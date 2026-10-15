@@ -1,0 +1,22 @@
+id: i18next-react-ssr
+title: "i18next + react-i18next: plurals, interpolation and SSR rendering"
+summary: "Configure i18next with resources, plurals, context and escaping, and render react-i18next components to HTML on the server, with per-request instances."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [i18next, react-i18next, react]
+tags: [i18n, react, ssr]
+pinned:
+  "i18next": "26.4.5"
+  "react-i18next": "17.0.16"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/i18n.ts
+  - src/Inbox.ts
+  - test/i18n.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

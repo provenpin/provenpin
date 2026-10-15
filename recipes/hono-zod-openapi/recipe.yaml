@@ -1,0 +1,20 @@
+id: hono-zod-openapi
+title: "Hono + @hono/zod-openapi typed routes with generated OpenAPI docs"
+summary: "Define Hono routes with createRoute and Zod schemas so requests are validated, handlers are typed and an OpenAPI 3.1 document is generated at /doc."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [hono, "@hono/zod-openapi", zod]
+tags: [api, openapi, validation, docs]
+pinned:
+  "hono": "4.13.13"
+  "@hono/zod-openapi": "1.6.3"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

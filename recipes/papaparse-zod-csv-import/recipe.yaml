@@ -1,0 +1,20 @@
+id: papaparse-zod-csv-import
+title: "CSV import with PapaParse + Zod row validation"
+summary: "Parse CSV uploads with PapaParse (headers, BOM, quoted fields), validate each row with Zod and report row-numbered errors instead of failing the whole file."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [papaparse, zod]
+tags: [csv, import, validation]
+pinned:
+  "papaparse": "5.7.0"
+  "zod": "4.6.7"
+  "tsx": "4.23.15"
+  "@types/node": "24.19.2"
+  "@types/papaparse": "5.5.2"
+files:
+  - package.json
+  - src/import.ts
+  - test/import.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,21 @@
+id: sveltekit-form-actions
+title: "SvelteKit form actions with fail() and Zod, unit-tested (Vitest)"
+summary: "SvelteKit +page.server.ts form actions that validate with Zod, return fail(400) with field errors, and redirect on success, tested by calling the actions with a fake RequestEvent."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@sveltejs/kit", svelte, zod, vitest]
+tags: [svelte, forms, validation, ssr]
+pinned:
+  "@sveltejs/kit": "3.1.0"
+  "svelte": "5.57.2"
+  "zod": "4.6.7"
+  "@types/node": "24.19.2"
+  "vitest": "5.0.4"
+files:
+  - package.json
+  - src/routes/signup/+page.server.ts
+  - test/actions.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
+test_report: test-report.json
