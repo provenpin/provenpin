@@ -1,0 +1,22 @@
+id: hypothesis-polyfactory-models
+title: "Generate Hypothesis strategies from polyfactory pydantic models"
+summary: "Bridge a polyfactory ModelFactory into Hypothesis: regex strings, HttpUrl and other pydantic-core types come from the factory while the fields under test stay drawable and shrinkable."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [hypothesis, polyfactory, pydantic]
+tags: [testing, property-based-testing, fixtures]
+pinned:
+  hypothesis: "6.169.4"
+  polyfactory: "3.3.0"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - factories.py
+  - strategies.py
+  - tests/test_strategies.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

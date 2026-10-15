@@ -1,0 +1,18 @@
+id: cryptography-fernet-multi-key
+title: "cryptography MultiFernet key ring with rotation"
+summary: "Wrap cryptography's MultiFernet in a small key ring that encrypts with the newest key, still decrypts tokens from older keys, re-encrypts them with rotate(), and rejects tokens once their key is dropped, all tested offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [cryptography]
+tags: [security, encryption, key-rotation, secrets]
+pinned:
+  cryptography: "50.0.2"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - rotation.py
+  - tests/test_crypto.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
