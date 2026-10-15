@@ -27,7 +27,7 @@ export function stackPins(r) {
 
 /** Short reason for a break, e.g. an npm peer-dependency conflict with another pinned package. */
 export function breakReason(out, bumped = []) {
-  const all = [...out.matchAll(/peer (\S+)@"([^"]+)" from (\S+)@(\S+)/g)];
+  const all = [...out.matchAll(/peer(?:Optional)? (\S+)@"([^"]+)" from (\S+)@(\S+)/g)];
   const m = all.find((x) => bumped.includes(x[1])) ?? all[0];
   if (/ERESOLVE/.test(out) && m) return `no stable release supports it yet: ${m[3]}@${m[4]} requires ${m[1]} ${m[2]}`;
   if (/ERESOLVE|ResolutionImpossible|No solution found/.test(out)) return "dependency conflict on install";

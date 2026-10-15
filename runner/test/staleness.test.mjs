@@ -33,6 +33,6 @@ test("peer conflicts are explained", () => {
   assert.match(breakReason('npm error code ERESOLVE\nnpm error peer graphql@"14 - 16" from graphql-request@7.4.0'), /graphql-request@7.4.0 requires graphql 14 - 16/);
 });
 test("reason prefers the peer line naming the bumped package", () => {
-  const out = 'npm error code ERESOLVE\nnpm error peer typeorm@"^0.3.0 || ^1.0.0-dev" from @nestjs/typeorm@12.0.2\nnpm error peer better-sqlite3@"^12.0.0" from typeorm@1.1.2';
+  const out = 'npm error code ERESOLVE\nnpm error peer typeorm@"^0.3.0 || ^1.0.0-dev" from @nestjs/typeorm@12.0.2\nnpm error peerOptional better-sqlite3@"^12.0.0" from typeorm@1.1.2';
   assert.equal(breakReason(out, ["better-sqlite3"]), "no stable release supports it yet: typeorm@1.1.2 requires better-sqlite3 ^12.0.0");
 });
