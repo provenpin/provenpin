@@ -1,15 +1,15 @@
 {
   "id": "networkx-shortest-path-dag",
   "status": "passed",
-  "ran_at": "2026-10-15T16:02:33.124Z",
-  "last_passed_at": "2026-10-15T16:02:33.124Z",
+  "ran_at": "2026-10-15T18:51:16.143Z",
+  "last_passed_at": "2026-10-15T18:51:16.143Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 213,
-    "test": 1821
+    "setup": 235,
+    "test": 1287
   },
   "pinned": {
     "networkx": "3.6.1",
@@ -20,8 +20,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 38788473612"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.60s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.59s\n"
 }

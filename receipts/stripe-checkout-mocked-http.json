@@ -1,15 +1,15 @@
 {
   "id": "stripe-checkout-mocked-http",
   "status": "passed",
-  "ran_at": "2026-10-15T16:05:41.120Z",
-  "last_passed_at": "2026-10-15T16:05:41.120Z",
+  "ran_at": "2026-10-15T18:52:42.483Z",
+  "last_passed_at": "2026-10-15T18:52:42.483Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2018,
-    "test": 442
+    "setup": 1973,
+    "test": 317
   },
   "pinned": {
     "stripe": "23.0.0",
@@ -21,8 +21,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 38788473612"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sends line items, metadata and idempotency key\nok 1 - sends line items, metadata and idempotency key\n  ---\n  duration_ms: 10.438933\n  type: 'test'\n  ...\n# Subtest: Stripe errors become typed exceptions\nok 2 - Stripe errors become typed exceptions\n  ---\n  duration_ms: 3.500476\n  type: 'test'\n  ...\n# Subtest: rejects an empty cart before calling Stripe\nok 3 - rejects an empty cart before calling Stripe\n  ---\n  duration_ms: 0.310331\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 306.663675\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sends line items, metadata and idempotency key\nok 1 - sends line items, metadata and idempotency key\n  ---\n  duration_ms: 8.633176\n  type: 'test'\n  ...\n# Subtest: Stripe errors become typed exceptions\nok 2 - Stripe errors become typed exceptions\n  ---\n  duration_ms: 3.354078\n  type: 'test'\n  ...\n# Subtest: rejects an empty cart before calling Stripe\nok 3 - rejects an empty cart before calling Stripe\n  ---\n  duration_ms: 0.325577\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 217.499999\n"
 }
