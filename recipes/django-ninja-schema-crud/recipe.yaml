@@ -1,0 +1,24 @@
+id: django-ninja-schema-crud
+title: "Django Ninja API with Schema models and pagination on sqlite"
+summary: "A typed Django Ninja CRUD API with Schema input and output models, page-number pagination and sqlite, tested offline with the ninja TestClient and pytest-django."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [django, django-ninja, pytest-django]
+tags: [web-api, orm, testing]
+pinned:
+  django: "6.1.2"
+  django-ninja: "1.7.1"
+  pytest-django: "4.14.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - settings.py
+  - catalog/__init__.py
+  - catalog/models.py
+  - catalog/api.py
+  - catalog/urls.py
+  - tests/test_api.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

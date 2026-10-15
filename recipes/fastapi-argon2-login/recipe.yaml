@@ -1,0 +1,21 @@
+id: fastapi-argon2-login
+title: "FastAPI login with argon2-cffi hashing and rehash checks"
+summary: "A form-based FastAPI login that verifies argon2id hashes without leaking which users exist, and transparently upgrades outdated hashes on successful login, tested offline with TestClient and an in-memory store."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, argon2-cffi, python-multipart, httpx]
+tags: [auth, security, passwords]
+pinned:
+  fastapi: "0.143.1"
+  argon2-cffi: "25.1.0"
+  httpx: "0.28.1"
+  python-multipart: "0.0.32"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_login.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

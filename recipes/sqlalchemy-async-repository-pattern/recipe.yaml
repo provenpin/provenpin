@@ -1,0 +1,21 @@
+id: sqlalchemy-async-repository-pattern
+title: "Async repository pattern with SQLAlchemy 2 AsyncSession on aiosqlite"
+summary: "A typed async repository over SQLAlchemy 2 AsyncSession with eager loading, foreign keys enforced on SQLite, and offline pytest-asyncio tests against an in-memory database."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [sqlalchemy, aiosqlite, pytest-asyncio]
+tags: [database, orm, async, testing]
+pinned:
+  sqlalchemy: "2.1.4"
+  aiosqlite: "0.22.1"
+  greenlet: "3.2.4"
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - repository.py
+  - tests/test_repository.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

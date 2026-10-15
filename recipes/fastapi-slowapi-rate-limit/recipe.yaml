@@ -1,0 +1,20 @@
+id: fastapi-slowapi-rate-limit
+title: "FastAPI endpoints rate limited with slowapi, tested with TestClient"
+summary: "Add per-route and per-API-key rate limits to FastAPI with slowapi, then test 429 behavior offline with TestClient and the in-memory store."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, slowapi, httpx]
+tags: [http-api, rate-limiting, testing]
+pinned:
+  fastapi: "0.143.1"
+  slowapi: "0.1.10"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

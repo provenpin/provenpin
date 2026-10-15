@@ -1,0 +1,19 @@
+id: pyjwt-cryptography-rs256
+title: "RS256 JWTs with PyJWT and cryptography-generated keys"
+summary: "Generate an RSA keypair with cryptography, sign RS256 JWTs with PyJWT, and verify them with a public key while enforcing algorithm, audience, expiry and signature checks, all tested offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pyjwt, cryptography]
+tags: [auth, jwt, security, crypto]
+pinned:
+  pyjwt: "2.15.1"
+  cryptography: "50.0.2"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - auth.py
+  - tests/test_auth.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

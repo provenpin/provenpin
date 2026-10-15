@@ -1,0 +1,19 @@
+id: loguru-pytest-caplog
+title: "Capture loguru logs in pytest caplog via a propagate sink and structured extra"
+summary: "Forward loguru records into stdlib logging so pytest caplog sees them, keep bound context as structured extra, and test it offline without a real log backend."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [loguru, pytest]
+tags: [logging, testing, observability]
+pinned:
+  loguru: "0.7.3"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - logsetup.py
+  - orders.py
+  - tests/test_logging.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

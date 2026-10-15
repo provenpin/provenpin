@@ -1,0 +1,20 @@
+id: flask-marshmallow-webargs
+title: "Flask API args parsed and validated with webargs and marshmallow"
+summary: "Flask routes that parse query strings and JSON bodies through marshmallow schemas via webargs, with JSON 422 validation errors, tested offline with the Flask test client."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [flask, webargs, marshmallow]
+tags: [http-server, validation, api]
+pinned:
+  flask: "3.1.3"
+  webargs: "8.7.1"
+  marshmallow: "4.3.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_api.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

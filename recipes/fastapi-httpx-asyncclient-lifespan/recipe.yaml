@@ -1,0 +1,21 @@
+id: fastapi-httpx-asyncclient-lifespan
+title: "FastAPI lifespan state tested with httpx ASGITransport and asgi-lifespan"
+summary: "A FastAPI app that opens a SQLite connection in its lifespan, then test it offline through httpx ASGITransport, with asgi-lifespan running startup and shutdown."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, httpx, asgi-lifespan]
+tags: [web-framework, testing, async]
+pinned:
+  fastapi: "0.143.1"
+  httpx: "0.28.1"
+  asgi-lifespan: "2.1.0"
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

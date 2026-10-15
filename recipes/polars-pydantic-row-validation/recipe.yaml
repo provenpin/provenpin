@@ -1,0 +1,19 @@
+id: polars-pydantic-row-validation
+title: "Validating polars DataFrame rows with pydantic v2 TypeAdapter and collecting errors"
+summary: "Validate each polars row against a strict pydantic v2 model with a shared TypeAdapter, collect per-row errors instead of failing the batch, and catch polars and pydantic gotchas such as nulls, NaN, numeric strings and extra columns."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [polars, pydantic]
+tags: [data-validation, dataframes, testing]
+pinned:
+  polars: "2.0.0"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - rows.py
+  - tests/test_rows.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

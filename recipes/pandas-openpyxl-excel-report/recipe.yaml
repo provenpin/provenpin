@@ -1,0 +1,19 @@
+id: pandas-openpyxl-excel-report
+title: "pandas DataFrame to formatted Excel report with openpyxl styles and roundtrip read"
+summary: "Write a DataFrame to a styled .xlsx with openpyxl (header styles, number formats, widths, freeze panes, filters), then read it back with pandas and verify, fully offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pandas, openpyxl]
+tags: [excel, reporting, data]
+pinned:
+  pandas: "3.0.6"
+  openpyxl: "3.1.5"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - report.py
+  - tests/test_report.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,24 @@
+id: fastapi-jinja2-htmx-partials
+title: "FastAPI Jinja2 full pages vs HTMX partials via HX-Request"
+summary: "Serve a full HTML page to normal browsers and a bare HTML fragment to HTMX requests, chosen by the HX-Request header, with Vary set for caches. Tested offline with the sync TestClient."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, jinja2, httpx]
+tags: [web, templates, htmx]
+pinned:
+  fastapi: "0.143.1"
+  jinja2: "3.1.6"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app.py
+  - templates/base.html
+  - templates/items_page.html
+  - templates/items_partial.html
+  - templates/item_row.html
+  - tests/test_pages.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

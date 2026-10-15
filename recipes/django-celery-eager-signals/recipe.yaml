@@ -1,0 +1,27 @@
+id: django-celery-eager-signals
+title: "Django post_save signal enqueuing a Celery task, tested with eager mode and on_commit"
+summary: "A post_save signal queues a Celery task only after the row commits via transaction.on_commit, then tests run offline on in-memory SQLite with Celery eager mode and pytest-django's on_commit capture."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [django, celery, pytest-django]
+tags: [django, queues, signals, testing]
+pinned:
+  django: "6.1.2"
+  celery: "5.6.3"
+  pytest-django: "4.14.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - settings.py
+  - celery_app.py
+  - notes/__init__.py
+  - notes/apps.py
+  - notes/models.py
+  - notes/signals.py
+  - notes/tasks.py
+  - tests/conftest.py
+  - tests/test_signals.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

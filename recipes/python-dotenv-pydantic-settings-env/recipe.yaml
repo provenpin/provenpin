@@ -1,0 +1,20 @@
+id: python-dotenv-pydantic-settings-env
+title: "Loading .env files with python-dotenv and pydantic-settings precedence rules"
+summary: "Typed app settings from .env files with pydantic-settings, covering source precedence, layered env files, extra-key rules and python-dotenv override behavior, tested offline with tmp_path files."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [python-dotenv, pydantic-settings, pydantic]
+tags: [configuration, environment, testing]
+pinned:
+  python-dotenv: "1.2.4"
+  pydantic-settings: "2.16.0"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - settings.py
+  - tests/test_settings.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
