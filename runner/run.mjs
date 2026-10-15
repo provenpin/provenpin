@@ -21,6 +21,8 @@ export function runRecipe(id) {
   const r = loadRecipe(id);
   const ranAt = new Date().toISOString();
   const errors = validateRecipe(r);
+  if (r.runtime === "node" && r.runtime_version && process.versions.node.split(".")[0] !== String(r.runtime_version))
+    errors.push(`needs node ${r.runtime_version}, running ${process.version}`);
   const work = fs.mkdtempSync(path.join(os.tmpdir(), `pp-${id}-`));
   let setup = { code: 0, out: "", ms: 0 }, test = { code: 1, out: "", ms: 0 };
   if (errors.length === 0) {
