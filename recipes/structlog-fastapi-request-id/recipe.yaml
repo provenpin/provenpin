@@ -1,0 +1,20 @@
+id: structlog-fastapi-request-id
+title: "FastAPI request ids in structlog contextvars, tested with capture_logs"
+summary: "Pure ASGI middleware binds a request id into structlog contextvars, echoes it in an X-Request-ID header, and is tested offline with TestClient and structlog.testing.capture_logs."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, structlog, httpx]
+tags: [logging, middleware, observability, testing]
+pinned:
+  fastapi: "0.143.1"
+  structlog: "26.1.0"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

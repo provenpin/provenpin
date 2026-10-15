@@ -1,0 +1,19 @@
+id: typer-rich-table-cli
+title: "Typer CLI with Rich tables, progress and --json output"
+summary: "A Typer command that renders Rich tables and progress on stderr, with a --json mode for piping, tested offline with CliRunner and no-color Rich output."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [typer, rich]
+tags: [cli, terminal, testing]
+pinned:
+  typer: "0.27.3"
+  rich: "15.0.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - cli.py
+  - tests/test_cli.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

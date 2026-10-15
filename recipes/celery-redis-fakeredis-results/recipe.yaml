@@ -1,0 +1,22 @@
+id: celery-redis-fakeredis-results
+title: "Celery 5 on Redis with fakeredis-backed idempotency, tested offline in eager mode"
+summary: "Configure a Celery app on a Redis broker and result backend for production, guard a task with a Redis SET NX idempotency lock, and test it offline with task_always_eager and fakeredis."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [celery, redis, fakeredis]
+tags: [queues, background-jobs, idempotency, caching]
+pinned:
+  celery: "5.6.3"
+  redis: "8.1.0"
+  fakeredis: "2.40.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - celery_app.py
+  - dedupe.py
+  - tasks.py
+  - tests/test_tasks.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

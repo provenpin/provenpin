@@ -1,0 +1,21 @@
+id: pydantic-settings-yaml-secrets
+title: "pydantic-settings v2 config from env, YAML and defaults with SecretStr"
+summary: "Nested pydantic-settings models loaded with precedence init > env > YAML > defaults, with env_nested_delimiter, SecretStr masking, and offline tests using tmp_path and monkeypatch."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pydantic-settings, pydantic, pyyaml]
+tags: [configuration, secrets, testing]
+pinned:
+  pydantic-settings: "2.16.0"
+  pydantic: "2.14.1"
+  python-dotenv: "1.2.2"
+  pyyaml: "6.0.3"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - settings.py
+  - tests/test_settings.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

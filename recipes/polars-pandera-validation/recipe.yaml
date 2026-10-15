@@ -1,0 +1,19 @@
+id: polars-pandera-validation
+title: "Polars DataFrame validation with pandera, collecting all errors"
+summary: "Validate Polars DataFrames with a pandera.polars DataFrameModel, collect every failing check with lazy validation, and test the schema offline with in-memory frames."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [polars, pandera]
+tags: [data-validation, dataframes, testing]
+pinned:
+  polars: "2.0.0"
+  pandera: "0.34.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - schemas.py
+  - tests/test_schemas.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

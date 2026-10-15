@@ -1,0 +1,19 @@
+id: pandas-pyarrow-parquet-roundtrip
+title: "Pandas pyarrow-backed dtypes with partitioned Parquet round trips"
+summary: "Write and read partitioned Parquet with pyarrow, enforce a pa.schema on write, and keep nullable ints intact using dtype_backend=pyarrow, tested offline on tmp_path."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pandas, pyarrow]
+tags: [dataframes, parquet, data-io]
+pinned:
+  pandas: "3.0.6"
+  pyarrow: "26.0.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - parquet_pipeline.py
+  - tests/test_roundtrip.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

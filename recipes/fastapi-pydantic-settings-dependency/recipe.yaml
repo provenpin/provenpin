@@ -1,0 +1,21 @@
+id: fastapi-pydantic-settings-dependency
+title: "FastAPI config via pydantic-settings as a cached dependency"
+summary: "Load config from env vars with pydantic-settings, inject it into FastAPI routes through a cached dependency, and test it offline with monkeypatch and dependency_overrides."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, pydantic-settings, httpx]
+tags: [web-api, configuration, testing]
+pinned:
+  fastapi: "0.143.1"
+  pydantic-settings: "2.16.0"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - config.py
+  - main.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

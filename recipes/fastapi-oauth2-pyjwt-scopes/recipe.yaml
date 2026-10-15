@@ -1,0 +1,23 @@
+id: fastapi-oauth2-pyjwt-scopes
+title: "FastAPI OAuth2 password flow with PyJWT tokens and scope checks"
+summary: "OAuth2 password login issuing PyJWT access tokens, Argon2 hashes via pwdlib, and per-route scope checks with SecurityScopes, tested offline with TestClient."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, pyjwt, pwdlib, argon2-cffi, python-multipart]
+tags: [auth, api, security]
+pinned:
+  fastapi: "0.143.1"
+  pyjwt: "2.15.1"
+  pwdlib: "0.3.1"
+  argon2-cffi: "25.1.0"
+  python-multipart: "0.0.32"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,20 @@
+id: click-pytest-freezegun-scheduler
+title: "Click CLI for RRULE next run times, tested with freezegun and CliRunner"
+summary: "A Click command that computes the next run times of an RFC 5545 rule in any IANA zone with dateutil rrule and zoneinfo, with DST gaps normalized and time frozen with freezegun in tests."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [click, python-dateutil, freezegun, zoneinfo]
+tags: [cli, scheduling, testing, timezones]
+pinned:
+  click: "8.5.0"
+  python-dateutil: "2.9.0.post0"
+  freezegun: "1.5.5"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - scheduler.py
+  - tests/test_cli.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

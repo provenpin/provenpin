@@ -1,0 +1,21 @@
+id: tenacity-httpx-respx-backoff
+title: "httpx + tenacity async retries honoring Retry-After, tested with respx"
+summary: "Wrap async httpx calls in tenacity AsyncRetrying that retries 429 and 5xx, honors Retry-After, and patches the wait to zero in tests with respx mocks."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [httpx, tenacity, respx]
+tags: [http-client, retries, testing, async]
+pinned:
+  httpx: "0.28.1"
+  tenacity: "9.2.1"
+  respx: "0.23.1"
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - client.py
+  - tests/test_client.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

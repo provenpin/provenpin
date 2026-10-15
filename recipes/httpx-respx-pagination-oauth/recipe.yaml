@@ -1,0 +1,19 @@
+id: httpx-respx-pagination-oauth
+title: "httpx OAuth2 client-credentials client with cached tokens and Link pagination"
+summary: "A sync httpx client that fetches and caches an OAuth2 client-credentials token, refreshes it on 401, and follows Link-header pagination, tested offline with respx routes."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [httpx, respx]
+tags: [http-client, oauth, pagination, testing]
+pinned:
+  httpx: "0.28.1"
+  respx: "0.23.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - client.py
+  - tests/test_client.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
