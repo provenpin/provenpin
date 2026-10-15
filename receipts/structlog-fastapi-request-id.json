@@ -1,0 +1,29 @@
+{
+  "id": "structlog-fastapi-request-id",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:22:01.908Z",
+  "last_passed_at": "2026-10-15T11:22:01.908Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 525,
+    "test": 2667
+  },
+  "pinned": {
+    "fastapi": "0.143.1",
+    "structlog": "26.1.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:c1dfbd6e5ef0b40887abca4de536ed31f19bed9f30b1b338f2cb9b4bb7cddb8b",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38726414138"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-structlog-fastapi-request-id-4fuAZ7/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.89s\n"
+}

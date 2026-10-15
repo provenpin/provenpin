@@ -1,0 +1,28 @@
+{
+  "id": "httpx-respx-pagination-oauth",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:20:19.404Z",
+  "last_passed_at": "2026-10-15T11:20:19.404Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 191,
+    "test": 1266
+  },
+  "pinned": {
+    "httpx": "0.28.1",
+    "respx": "0.23.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:a3683ec6faca911b1bbc47a413dbf611d3544cd2dd4c87d052601a250d28e360",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38726414138"
+  },
+  "errors": [],
+  "log_tail": "....                                                                     [100%]\n4 passed in 0.10s\n"
+}
