@@ -1,6 +1,6 @@
 id: nestjs-typeorm-sqlite
 title: "NestJS 12 + TypeORM 1 on in-memory SQLite, tested with @nestjs/testing"
-summary: "A NestJS module with a TypeORM entity, repository-backed service and controller, wired to in-memory SQLite and tested end to end through the Nest app with supertest. better-sqlite3 stays on 12.x because TypeORM 1.1 peers on ^12."
+summary: "A NestJS module with a TypeORM entity, repository-backed service and controller, wired to in-memory SQLite and tested end to end through the Nest app with supertest. Install uses --legacy-peer-deps because TypeORM 1.1 still peers on better-sqlite3 ^12, but the driver passes its tests against better-sqlite3 13."
 language: typescript
 runtime: node
 runtime_version: "22"
@@ -12,7 +12,7 @@ pinned:
   "@nestjs/platform-express": "12.1.3"
   "@nestjs/typeorm": "12.0.2"
   "typeorm": "1.1.2"
-  "better-sqlite3": "12.11.1"
+  "better-sqlite3": "13.0.3"
   "reflect-metadata": "0.2.2"
   "rxjs": "7.8.2"
   "tsx": "4.23.15"
@@ -26,5 +26,5 @@ files:
   - tsconfig.json
   - src/app.ts
   - test/app.test.ts
-setup: npm install --no-audit --no-fund --ignore-scripts=false
+setup: npm install --legacy-peer-deps --no-audit --no-fund --ignore-scripts=false
 test: npm test

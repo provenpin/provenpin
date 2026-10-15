@@ -6,11 +6,12 @@
     "test": "vitest run --reporter=default --reporter=json --outputFile=test-report.json"
   },
   "dependencies": {
-    "ioredis": "5.11.1"
+    "ioredis": "6.0.0"
   },
   "devDependencies": {
     "@types/node": "24.19.2",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
+    "vite": "8.3.4",
     "ioredis-mock": "8.13.1"
   }
 }

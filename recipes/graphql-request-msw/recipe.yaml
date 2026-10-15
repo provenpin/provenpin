@@ -1,6 +1,6 @@
 id: graphql-request-msw
 title: "graphql-request client with typed operations, mocked by MSW graphql handlers"
-summary: "Call a GraphQL API with graphql-request (variables, headers, error handling) and test offline with MSW's graphql.link(url).query/mutation handlers (msw 3 API). graphql stays on 16.x: graphql-request 7 peers on graphql 14 - 16."
+summary: "Call a GraphQL API with graphql-request (variables, headers, error handling) and test offline with MSW's graphql.link(url).query/mutation handlers (msw 3 API). Install uses --legacy-peer-deps because graphql-request 7 still peers on graphql 14 - 16, but the client passes its tests against graphql 17."
 language: typescript
 runtime: node
 runtime_version: "22"
@@ -8,7 +8,7 @@ stack: [graphql-request, graphql, msw]
 tags: [graphql, http-client, mocking]
 pinned:
   "graphql-request": "7.4.0"
-  "graphql": "16.14.2"
+  "graphql": "17.0.2"
   "tsx": "4.23.15"
   "@types/node": "24.19.2"
   "msw": "3.0.3"
@@ -16,5 +16,5 @@ files:
   - package.json
   - src/api.ts
   - test/api.test.ts
-setup: npm install --no-audit --no-fund --ignore-scripts=false
+setup: npm install --legacy-peer-deps --no-audit --no-fund --ignore-scripts=false
 test: npm test
