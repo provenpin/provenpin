@@ -1,0 +1,19 @@
+id: boto3-moto-s3-presigned
+title: "boto3 S3 helper with paginated listing and presigned URLs, tested offline with moto"
+summary: "A small boto3 S3 helper for upload, paginated listing, presigned GET URLs and batched delete, tested offline with moto's mock_aws and fake credentials."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [boto3, moto]
+tags: [aws, s3, testing]
+pinned:
+  boto3: "1.43.114"
+  moto: "5.2.4"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - s3_helper.py
+  - tests/test_s3_helper.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,20 @@
+id: duckdb-polars-analytics
+title: "DuckDB over Polars DataFrames: replacement scans, parquet roundtrip, group-by parity"
+summary: "Query Polars DataFrames directly with DuckDB, return .pl() results, round-trip through parquet in tmp_path, and check group-by aggregations against Polars native output."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [duckdb, polars, pyarrow]
+tags: [analytics, dataframes, parquet]
+pinned:
+  duckdb: "1.5.6"
+  polars: "2.0.0"
+  pyarrow: "26.0.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - analytics.py
+  - tests/test_analytics.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

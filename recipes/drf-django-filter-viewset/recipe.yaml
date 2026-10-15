@@ -1,0 +1,24 @@
+id: drf-django-filter-viewset
+title: "DRF ModelViewSet with django-filter range, exact and ordering filters"
+summary: "A ModelViewSet with a django-filter FilterSet for price ranges, exact name and ordering, plus page-number pagination, configured in code and tested offline with APIClient on in-memory SQLite."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [django, djangorestframework, django-filter, pytest-django]
+tags: [web-api, django, testing]
+pinned:
+  django: "6.1.2"
+  djangorestframework: "3.18.3"
+  django-filter: "26.2.0"
+  pytest-django: "4.14.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - pytest.ini
+  - conftest.py
+  - shop/__init__.py
+  - shop/models.py
+  - shop/api.py
+  - tests/test_api.py
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

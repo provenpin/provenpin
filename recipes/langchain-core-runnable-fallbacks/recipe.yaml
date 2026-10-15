@@ -1,0 +1,18 @@
+id: langchain-core-runnable-fallbacks
+title: "langchain-core LCEL chain with retries and fallbacks, tested offline"
+summary: "Compose a prompt, a chat model and an output parser with with_retry and with_fallbacks, then test the failure paths offline with GenericFakeChatModel and a failing runnable."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [langchain-core]
+tags: [llm, lcel, testing, resilience]
+pinned:
+  langchain-core: "1.6.10"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - chain.py
+  - tests/test_chain.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

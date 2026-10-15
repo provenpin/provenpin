@@ -1,0 +1,20 @@
+id: apscheduler-time-machine-jobs
+title: "APScheduler job triggers tested deterministically with time-machine"
+summary: "Compute CronTrigger and IntervalTrigger fire times without a running scheduler, and test them offline by freezing the clock with time-machine."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [apscheduler, time-machine]
+tags: [scheduling, testing, time]
+pinned:
+  apscheduler: "3.11.3"
+  time-machine: "3.5.1"
+  pytest: "9.1.1"
+  tzlocal: "5.4.4"
+files:
+  - requirements.txt
+  - jobs.py
+  - tests/test_jobs.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

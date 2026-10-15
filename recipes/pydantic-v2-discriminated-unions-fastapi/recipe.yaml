@@ -1,0 +1,20 @@
+id: pydantic-v2-discriminated-unions-fastapi
+title: "FastAPI endpoint with Pydantic v2 discriminated unions and Annotated validators"
+summary: "Accept a tagged union of payment methods with Field(discriminator), add Annotated validators, and test the exact 422 error shapes offline with TestClient."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, pydantic, httpx]
+tags: [web-api, validation, testing]
+pinned:
+  fastapi: "0.143.1"
+  pydantic: "2.14.1"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

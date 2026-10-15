@@ -1,0 +1,19 @@
+id: numpy-scipy-optimize-fit
+title: "NumPy + SciPy curve_fit and bounded minimize, tested with seeded noise"
+summary: "Fit a noisy exponential with scipy.optimize.curve_fit and bounded L-BFGS-B minimization, then assert recovered parameters with NumPy testing helpers and check residuals with scipy.stats."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [numpy, scipy]
+tags: [numerics, optimization, statistics]
+pinned:
+  numpy: "2.5.4"
+  scipy: "1.18.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - fit.py
+  - tests/test_fit.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

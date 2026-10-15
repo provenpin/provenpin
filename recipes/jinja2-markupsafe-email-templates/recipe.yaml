@@ -1,0 +1,19 @@
+id: jinja2-markupsafe-email-templates
+title: "Jinja2 sandboxed email templates with autoescape and custom filters"
+summary: "A Jinja2 environment with FileSystemLoader, per-extension autoescape, StrictUndefined, custom filters returning Markup, and a sandbox, tested offline against temporary templates."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [jinja2, markupsafe]
+tags: [templating, email, security]
+pinned:
+  jinja2: "3.1.6"
+  markupsafe: "3.0.4"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - email_templates.py
+  - tests/test_email_templates.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,22 @@
+id: sklearn-columntransformer-pipeline
+title: "scikit-learn Pipeline with ColumnTransformer on pandas, GridSearchCV and joblib"
+summary: "A scikit-learn Pipeline that scales numeric columns and one-hot encodes categories inside a ColumnTransformer on a pandas DataFrame, tuned with GridSearchCV, then saved and reloaded with joblib. Tested offline on small in-memory data."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [scikit-learn, pandas, joblib]
+tags: [ml, pipelines, testing]
+pinned:
+  scikit-learn: "1.9.1"
+  pandas: "3.0.6"
+  joblib: "1.6.0"
+  pytest: "9.1.1"
+  numpy: "2.3.3"
+  scipy: "1.16.2"
+files:
+  - requirements.txt
+  - pipeline.py
+  - tests/test_pipeline.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

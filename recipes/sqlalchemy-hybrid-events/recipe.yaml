@@ -1,0 +1,18 @@
+id: sqlalchemy-hybrid-events
+title: "SQLAlchemy 2.0 hybrid properties, column_property and before_flush audit events"
+summary: "Map hybrid_property and column_property on SQLAlchemy 2.0 models, stamp audit timestamps with a before_flush listener, and test everything offline on in-memory SQLite."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [sqlalchemy]
+tags: [orm, database, testing]
+pinned:
+  sqlalchemy: "2.1.4"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - tests/test_models.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

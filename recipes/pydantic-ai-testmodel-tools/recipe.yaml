@@ -1,0 +1,19 @@
+id: pydantic-ai-testmodel-tools
+title: "pydantic-ai Agent with typed output and deps-based tools, tested offline"
+summary: "A pydantic-ai agent with a typed Pydantic output and a tool that reads deps, tested fully offline with TestModel, FunctionModel and Agent.override."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pydantic-ai, pydantic]
+tags: [llm, agents, testing]
+pinned:
+  pydantic-ai-slim: "2.56.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - agent.py
+  - tests/conftest.py
+  - tests/test_agent.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: pytest-asyncio-taskgroup-timeouts
+title: "asyncio TaskGroup, timeouts and semaphores tested with pytest-asyncio"
+summary: "Bounded concurrent fetches with asyncio.Semaphore, per-call asyncio.timeout and TaskGroup error handling, tested offline with pytest-asyncio loop scope config and async fixtures."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [asyncio, pytest-asyncio]
+tags: [asyncio, concurrency, testing]
+pinned:
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - workers.py
+  - tests/test_workers.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,23 @@
+id: drf-simplejwt-auth
+title: "Django REST Framework JWT auth with simplejwt, tested offline"
+summary: "Obtain and refresh JWT pairs with simplejwt, add custom claims, protect a DRF view, and test expired-token rejection on sqlite in-memory with pytest-django."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [django, djangorestframework, djangorestframework-simplejwt, pytest-django]
+tags: [auth, jwt, api]
+pinned:
+  django: "6.1.2"
+  djangorestframework: "3.18.3"
+  djangorestframework-simplejwt: "5.5.1"
+  pytest-django: "4.14.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - settings.py
+  - urls.py
+  - views.py
+  - tests/test_auth.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

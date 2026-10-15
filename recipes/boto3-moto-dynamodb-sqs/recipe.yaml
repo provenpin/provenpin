@@ -1,0 +1,19 @@
+id: boto3-moto-dynamodb-sqs
+title: "boto3 DynamoDB idempotency and SQS queue tested offline with moto"
+summary: "A DynamoDB conditional put for idempotent writes plus SQS send and receive, tested offline with moto mock_aws and fake credentials."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [boto3, moto]
+tags: [aws, dynamodb, sqs, testing]
+pinned:
+  boto3: "1.43.114"
+  moto: "5.2.4"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - store.py
+  - tests/test_store.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

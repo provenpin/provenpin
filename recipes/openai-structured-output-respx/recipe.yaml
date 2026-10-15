@@ -1,0 +1,21 @@
+id: openai-structured-output-respx
+title: "OpenAI chat.completions.parse with Pydantic output + respx mocks"
+summary: "Get typed output from OpenAI chat.completions.parse using a Pydantic response_format, handle refusals and schema mismatches, and test offline with respx returning canned JSON."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [openai, respx, pydantic]
+tags: [llm, structured-output, testing]
+pinned:
+  openai: "3.31.0"
+  respx: "0.23.1"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+  httpx: "0.28.1"
+files:
+  - requirements.txt
+  - client.py
+  - tests/test_extract.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
