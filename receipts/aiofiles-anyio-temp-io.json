@@ -1,0 +1,29 @@
+{
+  "id": "aiofiles-anyio-temp-io",
+  "status": "passed",
+  "ran_at": "2026-10-15T18:10:06.236Z",
+  "last_passed_at": "2026-10-15T18:10:06.236Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 211,
+    "test": 2856
+  },
+  "pinned": {
+    "aiofiles": "25.1.0",
+    "anyio": "4.15.1",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:f057d8678572e81b7d697d6d46123ec8fa542d8b4b35ddba8c4d406b6648b18d",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38783276983"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.11s\n"
+}

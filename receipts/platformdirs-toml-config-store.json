@@ -1,0 +1,28 @@
+{
+  "id": "platformdirs-toml-config-store",
+  "status": "passed",
+  "ran_at": "2026-10-15T18:10:11.766Z",
+  "last_passed_at": "2026-10-15T18:10:11.766Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 205,
+    "test": 1190
+  },
+  "pinned": {
+    "platformdirs": "4.13.0",
+    "tomlkit": "0.15.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:b1e66083ac3c1ea546cea28bfdb7f4ccbaf46806445b2f8c6f5e2a0ee0bfbe3c",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38783276983"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"
+}

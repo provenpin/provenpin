@@ -1,0 +1,30 @@
+{
+  "id": "python-multipart-starlette-forms",
+  "status": "passed",
+  "ran_at": "2026-10-15T18:10:19.280Z",
+  "last_passed_at": "2026-10-15T18:10:19.280Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 339,
+    "test": 2668
+  },
+  "pinned": {
+    "python-multipart": "0.0.32",
+    "starlette": "1.8.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+  },
+  "recipe_hash": "sha256:a64432fe589673437f30ef8635bd91f5efcea89d700e3b383d0b2abed30c734a",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38783276983"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.25s\n"
+}

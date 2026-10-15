@@ -1,0 +1,28 @@
+{
+  "id": "ulid-pydantic-custom-type",
+  "status": "passed",
+  "ran_at": "2026-10-15T18:10:28.926Z",
+  "last_passed_at": "2026-10-15T18:10:28.926Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 946,
+    "test": 2245
+  },
+  "pinned": {
+    "python-ulid": "4.0.1",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:5028c10ebe28751e7cd780fd38f88ab9836caca1cbd0084e90b3e6ff7749c170",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38783276983"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.54s\n"
+}

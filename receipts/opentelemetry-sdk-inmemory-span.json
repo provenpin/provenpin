@@ -1,0 +1,28 @@
+{
+  "id": "opentelemetry-sdk-inmemory-span",
+  "status": "passed",
+  "ran_at": "2026-10-15T18:09:56.360Z",
+  "last_passed_at": "2026-10-15T18:09:56.360Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 227,
+    "test": 966
+  },
+  "pinned": {
+    "opentelemetry-sdk": "1.45.1",
+    "opentelemetry-api": "1.45.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:b525b96356eebe253715e75da1c9c527c99a4b8b94c28d9bb60a50eadac75a4a",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38783276983"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.13s\n"
+}

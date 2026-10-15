@@ -1,0 +1,30 @@
+{
+  "id": "httpx-authlib-oauth2-mock",
+  "status": "passed",
+  "ran_at": "2026-10-15T18:09:57.441Z",
+  "last_passed_at": "2026-10-15T18:09:57.441Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 400,
+    "test": 5904
+  },
+  "pinned": {
+    "authlib": "1.9.1",
+    "httpx": "0.28.1",
+    "respx": "0.23.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+  },
+  "recipe_hash": "sha256:739191536265ab82e313cef17de59f002f99b1fac7f8281d54113d760d940b8b",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38783276983"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.50s\n"
+}

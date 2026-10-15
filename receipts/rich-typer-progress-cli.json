@@ -1,0 +1,28 @@
+{
+  "id": "rich-typer-progress-cli",
+  "status": "failed",
+  "ran_at": "2026-10-15T18:10:23.563Z",
+  "last_passed_at": null,
+  "tests": {
+    "passed": 5,
+    "failed": 1
+  },
+  "duration_ms": {
+    "setup": 375,
+    "test": 1611
+  },
+  "pinned": {
+    "typer": "0.27.3",
+    "rich": "15.0.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:2898718ef7f3822ed6d4bea4454a15de4924155fda1a8df4e645bac38aa84a14",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38783276983"
+  },
+  "errors": [],
+  "log_tail": "....F.                                                                   [100%]\n=================================== FAILURES ===================================\n________________________ test_help_is_rendered_by_rich _________________________\n\n    def test_help_is_rendered_by_rich():\n        result = runner.invoke(app, [\"--help\"])\n        assert result.exit_code == 0\n        assert \"Arguments\" in result.stdout\n>       assert \"\\u256d\\u2500 Arguments\" in result.stdout\nE       AssertionError: assert '╭─ Arguments' in '\\x1b[1m                                                                                \\x1b[0m\\n\\x1b[1m \\x1b[0m\\x1b[1...   \\x1b[2m│\\x1b[0m\\n\\x1b[2m╰──────────────────────────────────────────────────────────────────────────────╯\\x1b[0m\\n\\n'\nE        +  where '\\x1b[1m                                                                                \\x1b[0m\\n\\x1b[1m \\x1b[0m\\x1b[1...   \\x1b[2m│\\x1b[0m\\n\\x1b[2m╰──────────────────────────────────────────────────────────────────────────────╯\\x1b[0m\\n\\n' = <Result okay>.stdout\n\ntests/test_app.py:38: AssertionError\n=========================== short test summary info ============================\nFAILED tests/test_app.py::test_help_is_rendered_by_rich - AssertionError: assert '╭─ Arguments' in '\\x1b[1m                                                                                \\x1b[0m\\n\\x1b[1m \\x1b[0m\\x1b[1...   \\x1b[2m│\\x1b[0m\\n\\x1b[2m╰──────────────────────────────────────────────────────────────────────────────╯\\x1b[0m\\n\\n'\n +  where '\\x1b[1m                                                                                \\x1b[0m\\n\\x1b[1m \\x1b[0m\\x1b[1...   \\x1b[2m│\\x1b[0m\\n\\x1b[2m╰──────────────────────────────────────────────────────────────────────────────╯\\x1b[0m\\n\\n' = <Result okay>.stdout\n1 failed, 5 passed in 0.48s\n"
+}
