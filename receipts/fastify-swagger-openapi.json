@@ -1,0 +1,29 @@
+{
+  "id": "fastify-swagger-openapi",
+  "status": "passed",
+  "ran_at": "2026-10-15T17:10:53.726Z",
+  "last_passed_at": "2026-10-15T17:10:53.726Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3351,
+    "test": 717
+  },
+  "pinned": {
+    "fastify": "5.12.7",
+    "@fastify/swagger": "9.9.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:7d81b5909b90a96992e0fc937f033aaefb5f46f1af54efd8d91acc3d5fc0c36b",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38775053802"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates an OpenAPI 3.1 document from route schemas\nok 1 - generates an OpenAPI 3.1 document from route schemas\n  ---\n  duration_ms: 185.453201\n  type: 'test'\n  ...\n# Subtest: serves the document and hides the docs route itself\nok 2 - serves the document and hides the docs route itself\n  ---\n  duration_ms: 46.879373\n  type: 'test'\n  ...\n# Subtest: the same schemas validate requests\nok 3 - the same schemas validate requests\n  ---\n  duration_ms: 30.463008\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 568.375025\n"
+}

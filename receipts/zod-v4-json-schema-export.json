@@ -1,0 +1,29 @@
+{
+  "id": "zod-v4-json-schema-export",
+  "status": "passed",
+  "ran_at": "2026-10-15T17:11:31.976Z",
+  "last_passed_at": "2026-10-15T17:11:31.976Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1975,
+    "test": 401
+  },
+  "pinned": {
+    "zod": "4.6.7",
+    "ajv": "8.20.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:45942482b15e9a483dc3d4e4833f229605a7ba5a3d024521e6f8380e6ee98f75",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38775053802"
+  },
+  "errors": [],
+  "log_tail": "# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# unknown format \"uuid\" ignored in schema at path \"\\#/properties/id\"\n# unknown format \"uuid\" ignored in schema at path \"\\#/properties/id\"\n# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# Subtest: exports draft 2020-12 with metadata and shared $defs\nok 1 - exports draft 2020-12 with metadata and shared $defs\n  ---\n  duration_ms: 2.078671\n  type: 'test'\n  ...\n# Subtest: input vs output: defaulted fields are optional on input only\nok 2 - input vs output: defaulted fields are optional on input only\n  ---\n  duration_ms: 0.736292\n  type: 'test'\n  ...\n# Subtest: Ajv and Zod agree on the same data\nok 3 - Ajv and Zod agree on the same data\n  ---\n  duration_ms: 31.695185\n  type: 'test'\n  ...\n# Subtest: parsing applies defaults that the output schema requires\nok 4 - parsing applies defaults that the output schema requires\n  ---\n  duration_ms: 19.62848\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 311.493106\n"
+}

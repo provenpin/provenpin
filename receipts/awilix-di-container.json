@@ -1,0 +1,28 @@
+{
+  "id": "awilix-di-container",
+  "status": "passed",
+  "ran_at": "2026-10-15T17:10:39.743Z",
+  "last_passed_at": "2026-10-15T17:10:39.743Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2991,
+    "test": 458
+  },
+  "pinned": {
+    "awilix": "13.0.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:3d4b19a5a264bf1f7e8f6fc3971cfaf113bb4f2559bfbb6dfba4dcb02b75a7e0",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38775053802"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: resolves the dependency graph\nok 1 - resolves the dependency graph\n  ---\n  duration_ms: 3.153404\n  type: 'test'\n  ...\n# Subtest: lifetimes: singletons shared, scoped per scope, transient always new\nok 2 - lifetimes: singletons shared, scoped per scope, transient always new\n  ---\n  duration_ms: 0.6151\n  type: 'test'\n  ...\n# Subtest: overrides for tests replace a registration\nok 3 - overrides for tests replace a registration\n  ---\n  duration_ms: 0.448318\n  type: 'test'\n  ...\n# Subtest: dispose runs disposers for resolved singletons\nok 4 - dispose runs disposers for resolved singletons\n  ---\n  duration_ms: 0.478024\n  type: 'test'\n  ...\n# Subtest: strict mode reports missing registrations\nok 5 - strict mode reports missing registrations\n  ---\n  duration_ms: 0.749311\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 304.638863\n"
+}

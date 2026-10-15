@@ -1,0 +1,28 @@
+{
+  "id": "json-schema-to-typescript-codegen",
+  "status": "passed",
+  "ran_at": "2026-10-15T17:10:59.591Z",
+  "last_passed_at": "2026-10-15T17:10:59.591Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3107,
+    "test": 689
+  },
+  "pinned": {
+    "json-schema-to-typescript": "16.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:9872ce20036fe9748ba6d2cdfe78e2919eee544ae579ba8ae353adf5fdc8969d",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38775053802"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates interfaces with required, optional and enum fields\nok 1 - generates interfaces with required, optional and enum fields\n  ---\n  duration_ms: 118.950718\n  type: 'test'\n  ...\n# Subtest: $ref definitions become their own interfaces\nok 2 - $ref definitions become their own interfaces\n  ---\n  duration_ms: 5.681574\n  type: 'test'\n  ...\n# Subtest: descriptions become JSDoc comments\nok 3 - descriptions become JSDoc comments\n  ---\n  duration_ms: 4.919513\n  type: 'test'\n  ...\n# Subtest: open objects keep an index signature when allowed\nok 4 - open objects keep an index signature when allowed\n  ---\n  duration_ms: 2.977455\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 564.118061\n"
+}

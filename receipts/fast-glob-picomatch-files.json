@@ -1,0 +1,30 @@
+{
+  "id": "fast-glob-picomatch-files",
+  "status": "passed",
+  "ran_at": "2026-10-15T17:10:36.149Z",
+  "last_passed_at": "2026-10-15T17:10:36.149Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2487,
+    "test": 325
+  },
+  "pinned": {
+    "fast-glob": "3.3.3",
+    "picomatch": "4.0.7",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/picomatch": "4.0.3"
+  },
+  "recipe_hash": "sha256:518811949457a77e2fc6cf204e6ef990ec783612b33297ec2d4ceeab583ed505",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38775053802"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: finds sources and skips node_modules, dist and dotfiles\nok 1 - finds sources and skips node_modules, dist and dotfiles\n  ---\n  duration_ms: 15.53544\n  type: 'test'\n  ...\n# Subtest: dot and deep options\nok 2 - dot and deep options\n  ---\n  duration_ms: 3.286758\n  type: 'test'\n  ...\n# Subtest: stats and escaped special characters\nok 3 - stats and escaped special characters\n  ---\n  duration_ms: 1.896278\n  type: 'test'\n  ...\n# Subtest: picomatch partitions test files\nok 4 - picomatch partitions test files\n  ---\n  duration_ms: 3.469361\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 212.41851\n"
+}

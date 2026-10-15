@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-15T16:21:18.457Z",
+ "generated_at": "2026-10-15T17:11:51.200Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 236,
+ "count": 260,
  "recipes": [
   {
    "id": "ajv-formats-json-schema",
@@ -17,6 +17,25 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T15:56:42.161Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "ajv-standalone-validation",
+   "language": "typescript",
+   "pinned": {
+    "ajv": "8.20.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:37.938Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -279,6 +298,25 @@
    }
   },
   {
+   "id": "awilix-di-container",
+   "language": "typescript",
+   "pinned": {
+    "awilix": "13.0.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:39.743Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "aws-sdk-v3-dynamodb-sqs-vitest",
    "language": "typescript",
    "pinned": {
@@ -456,6 +494,25 @@
    }
   },
   {
+   "id": "bottleneck-rate-limiting",
+   "language": "typescript",
+   "pinned": {
+    "bottleneck": "2.19.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:35.449Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "casl-ability-rules",
    "language": "typescript",
    "pinned": {
@@ -594,6 +651,25 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T15:57:51.297Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "cockatiel-retry-circuit-policy",
+   "language": "typescript",
+   "pinned": {
+    "cockatiel": "4.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:35.411Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -929,6 +1005,27 @@
    }
   },
   {
+   "id": "dompurify-jsdom-sanitize",
+   "language": "typescript",
+   "pinned": {
+    "dompurify": "3.4.17",
+    "jsdom": "30.1.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/jsdom": "30.0.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:38.354Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "dramatiq-stub-broker-testing",
    "language": "python",
    "pinned": {
@@ -1186,6 +1283,25 @@
    }
   },
   {
+   "id": "execa-child-processes",
+   "language": "typescript",
+   "pinned": {
+    "execa": "10.1.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:44.472Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "express-helmet-rate-limit",
    "language": "typescript",
    "pinned": {
@@ -1428,6 +1544,47 @@
      "zod": "4.6.7"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "faker-fishery-seeded-factories",
+   "language": "typescript",
+   "pinned": {
+    "fishery": "2.4.0",
+    "@faker-js/faker": "10.6.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:36.865Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fast-glob-picomatch-files",
+   "language": "typescript",
+   "pinned": {
+    "fast-glob": "3.3.3",
+    "picomatch": "4.0.7",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/picomatch": "4.0.3"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:36.149Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -1814,6 +1971,46 @@
    }
   },
   {
+   "id": "fastify-multipart-upload",
+   "language": "typescript",
+   "pinned": {
+    "fastify": "5.12.7",
+    "@fastify/multipart": "10.1.4",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:55.590Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastify-swagger-openapi",
+   "language": "typescript",
+   "pinned": {
+    "fastify": "5.12.7",
+    "@fastify/swagger": "9.9.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:53.726Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "fastify-zod-type-provider",
    "language": "typescript",
    "pinned": {
@@ -2100,6 +2297,26 @@
      "graphql": "17.0.2"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "gray-matter-zod-frontmatter",
+   "language": "typescript",
+   "pinned": {
+    "gray-matter": "4.0.3",
+    "zod": "4.6.7",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:57.401Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -2481,6 +2698,29 @@
    }
   },
   {
+   "id": "joi-express-validation",
+   "language": "typescript",
+   "pinned": {
+    "joi": "18.2.9",
+    "express": "5.3.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "supertest": "7.3.1",
+    "@types/express": "5.0.6",
+    "@types/supertest": "7.2.1"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:57.847Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "jose-jwks-verify",
    "language": "typescript",
    "pinned": {
@@ -2542,6 +2782,25 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T16:01:24.726Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "json-schema-to-typescript-codegen",
+   "language": "typescript",
+   "pinned": {
+    "json-schema-to-typescript": "16.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:10:59.591Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -2726,6 +2985,25 @@
      "zod": "4.6.7"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "linkedom-html-parsing",
+   "language": "typescript",
+   "pinned": {
+    "linkedom": "0.18.13",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:02.732Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -2938,6 +3216,25 @@
      "sqlalchemy": "2.1.4"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "mathjs-units-expressions",
+   "language": "typescript",
+   "pinned": {
+    "mathjs": "15.2.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:07.248Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -3459,6 +3756,26 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T16:03:08.998Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "opossum-circuit-breaker",
+   "language": "typescript",
+   "pinned": {
+    "opossum": "10.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/opossum": "8.1.9"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:05.943Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -4310,6 +4627,45 @@
    }
   },
   {
+   "id": "rxjs-testscheduler-marbles",
+   "language": "typescript",
+   "pinned": {
+    "rxjs": "7.8.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:17.307Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "semver-range-checks",
+   "language": "typescript",
+   "pinned": {
+    "semver": "7.8.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/semver": "7.8.0"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:22.230Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "sequelize-sqlite-associations",
    "language": "typescript",
    "pinned": {
@@ -4763,6 +5119,25 @@
    }
   },
   {
+   "id": "superstruct-coercion-validation",
+   "language": "typescript",
+   "pinned": {
+    "superstruct": "2.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:18.696Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "sveltekit-form-actions",
    "language": "typescript",
    "pinned": {
@@ -4981,6 +5356,26 @@
    }
   },
   {
+   "id": "turndown-html-to-markdown",
+   "language": "typescript",
+   "pinned": {
+    "turndown": "7.2.4",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/turndown": "5.0.6"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:17.711Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "typebox-value-check",
    "language": "typescript",
    "pinned": {
@@ -5062,6 +5457,31 @@
    }
   },
   {
+   "id": "unified-remark-rehype-pipeline",
+   "language": "typescript",
+   "pinned": {
+    "unified": "11.0.5",
+    "remark-parse": "11.0.0",
+    "remark-gfm": "4.0.1",
+    "remark-rehype": "11.1.2",
+    "rehype-sanitize": "6.0.0",
+    "rehype-stringify": "10.0.1",
+    "unist-util-visit": "5.1.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:19.994Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "uuid-v7-sortable-ids",
    "language": "typescript",
    "pinned": {
@@ -5131,6 +5551,25 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T16:06:31.318Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "vitest-fake-timers-es-toolkit",
+   "language": "typescript",
+   "pinned": {
+    "es-toolkit": "1.52.0",
+    "@types/node": "26.6.5",
+    "vitest": "5.0.5"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:28.368Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
@@ -5247,6 +5686,25 @@
    }
   },
   {
+   "id": "yup-form-schemas",
+   "language": "typescript",
+   "pinned": {
+    "yup": "1.7.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:28.035Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "zod-env-dotenv-config",
    "language": "typescript",
    "pinned": {
@@ -5283,6 +5741,26 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T16:06:52.902Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38764699834",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "zod-v4-json-schema-export",
+   "language": "typescript",
+   "pinned": {
+    "zod": "4.6.7",
+    "ajv": "8.20.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:11:31.976Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38775053802",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,

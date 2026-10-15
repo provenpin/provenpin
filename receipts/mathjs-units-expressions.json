@@ -1,0 +1,28 @@
+{
+  "id": "mathjs-units-expressions",
+  "status": "passed",
+  "ran_at": "2026-10-15T17:11:07.248Z",
+  "last_passed_at": "2026-10-15T17:11:07.248Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2896,
+    "test": 1093
+  },
+  "pinned": {
+    "mathjs": "15.2.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:5e9e86dc85976176c9966ceb5353c25abeb03a4ab4e3bb7e64ee61a42e7351c7",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38775053802"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: converts units\nok 2 - converts units\n  ---\n  duration_ms: 2.788264\n  type: 'test'\n  ...\n# Subtest: compiled rules run repeatedly\nok 3 - compiled rules run repeatedly\n  ---\n  duration_ms: 1.731596\n  type: 'test'\n  ...\n# Subtest: matrices\nok 4 - matrices\n  ---\n  duration_ms: 1.223837\n  type: 'test'\n  ...\n# Subtest: BigNumber avoids float drift\nok 5 - BigNumber avoids float drift\n  ---\n  duration_ms: 31.497168\n  type: 'test'\n  ...\n# Subtest: import and createUnit are disabled for untrusted input\nok 6 - import and createUnit are disabled for untrusted input\n  ---\n  duration_ms: 0.692144\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 956.868473\n"
+}
