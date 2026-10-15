@@ -1,0 +1,18 @@
+id: sortedcontainers-sorteddict-events
+title: "SortedDict timeline queries for event windows under pytest"
+summary: "Keep an ordered event timeline in a SortedDict, query inclusive and exclusive windows with irange, read the latest-N tail, prune old keys, and test the tuple boundary gotcha offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [sortedcontainers]
+tags: [data-structures, events, testing]
+pinned:
+  sortedcontainers: "2.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - timeline.py
+  - tests/test_timeline.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

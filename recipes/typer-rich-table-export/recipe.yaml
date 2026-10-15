@@ -1,0 +1,19 @@
+id: typer-rich-table-export
+title: "Typer CLI exporting Rich tables and CSV for batch reports"
+summary: "A Typer command that aggregates a batch of CSV reports, renders a Rich table with escaped cells and formatted totals, and exports a machine-parseable CSV, tested offline with CliRunner."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [typer, rich]
+tags: [cli, csv, reporting, testing]
+pinned:
+  typer: "0.27.3"
+  rich: "15.0.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - report.py
+  - tests/test_report.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

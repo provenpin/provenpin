@@ -1,0 +1,19 @@
+id: sqlalchemy-orjson-json-column
+title: "SQLAlchemy JSON columns serialized with orjson"
+summary: "Wire orjson dumps/loads into the SQLAlchemy engine so dict and list columns stay single-encoded JSON, with mutation tracking gotchas, tested on in-memory SQLite."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [sqlalchemy, orjson]
+tags: [orm, serialization, json, testing]
+pinned:
+  sqlalchemy: "2.1.4"
+  orjson: "3.13.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - tests/test_json_columns.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: huey-sqlite-immediate
+title: "Huey sqlite task queue with immediate mode and consumer stubs"
+summary: "Define Huey tasks on sqlite storage, run them inline with immediate mode, and drain the queue in tests with stubbed consumer and scheduler helpers."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [huey]
+tags: [queues, background-jobs, sqlite, testing]
+pinned:
+  huey: "3.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - tasks.py
+  - tests/test_tasks.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,19 @@
+id: jmespath-pydantic-filter
+title: "jmespath queries over pydantic model dumps"
+summary: "Dump pydantic models to JSON-mode dicts and filter or reshape them with jmespath expressions, covering datetime, Enum and list-root gotchas offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [jmespath, pydantic]
+tags: [data-transformation, filtering, models]
+pinned:
+  jmespath: "1.1.0"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - catalog.py
+  - tests/test_catalog.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

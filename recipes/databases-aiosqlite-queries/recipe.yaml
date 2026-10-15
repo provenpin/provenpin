@@ -1,0 +1,20 @@
+id: databases-aiosqlite-queries
+title: "databases queries and transactions on aiosqlite"
+summary: "Async schema, queries and transactions on the databases library with aiosqlite, tested offline against a temporary SQLite file with pytest-asyncio."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [databases, aiosqlite]
+tags: [database, sqlite, async, transactions, testing]
+pinned:
+  databases: "0.9.0"
+  aiosqlite: "0.22.1"
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - tasks.py
+  - tests/test_tasks.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

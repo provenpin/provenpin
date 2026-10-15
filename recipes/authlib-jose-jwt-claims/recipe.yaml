@@ -1,0 +1,18 @@
+id: authlib-jose-jwt-claims
+title: "Authlib jose JWT encode/decode with custom claims"
+summary: "Issue and verify HS256 JWTs with Authlib jose, enforcing required and custom claims, then test round trips, expiry, leeway, tampering and algorithm confusion offline under pytest."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [authlib]
+tags: [jwt, auth, security, testing]
+pinned:
+  authlib: "1.9.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - jwt_utils.py
+  - tests/test_jwt.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

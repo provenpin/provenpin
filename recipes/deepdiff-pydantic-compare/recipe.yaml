@@ -1,0 +1,19 @@
+id: deepdiff-pydantic-compare
+title: "DeepDiff diffing of pydantic v2 model dumps with ignore_order"
+summary: "Compare pydantic v2 model dumps with DeepDiff, normalizing python vs json dump modes and taming list order, datetime and float gotchas."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [deepdiff, pydantic]
+tags: [testing, serialization, comparison]
+pinned:
+  deepdiff: "9.1.0"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - compare.py
+  - tests/test_compare.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

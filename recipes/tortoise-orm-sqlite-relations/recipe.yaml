@@ -1,0 +1,19 @@
+id: tortoise-orm-sqlite-relations
+title: "Tortoise ORM relations and filters on sqlite under pytest-asyncio"
+summary: "Model foreign keys, reverse and many-to-many relations in Tortoise ORM, then exercise select_related, prefetch_related, dotted filters, distinct and annotate counts offline on in-memory sqlite."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [tortoise-orm, sqlite]
+tags: [orm, database, relations, testing, async]
+pinned:
+  tortoise-orm: "1.1.9"
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - tests/test_relations.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

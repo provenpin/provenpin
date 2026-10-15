@@ -1,0 +1,21 @@
+id: fastapi-cashews-memory-cache
+title: "FastAPI endpoints cached with cashews in-memory backend"
+summary: "FastAPI routes backed by a cashews mem:// cache with key templates, TTL and explicit invalidation, tested fully offline through httpx ASGITransport."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, cashews, httpx, pydantic]
+tags: [caching, web-api, testing]
+pinned:
+  fastapi: "0.143.2"
+  cashews: "7.6.0"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+  pytest-asyncio: "1.4.0"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

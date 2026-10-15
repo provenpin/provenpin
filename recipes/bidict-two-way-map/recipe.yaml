@@ -1,0 +1,18 @@
+id: bidict-two-way-map
+title: "bidict two-way maps, inverse views and duplicate key errors"
+summary: "Use bidict and OrderedBidict as bidirectional maps, resolve key and value collisions with forceput and OnDup, and handle the dedicated duplication errors."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [bidict]
+tags: [data-structures, bidirectional-mapping, validation]
+pinned:
+  bidict: "0.24.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - two_way_map.py
+  - tests/test_two_way_map.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
