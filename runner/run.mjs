@@ -4,7 +4,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { RECEIPTS, listRecipeIds, loadRecipe, validateRecipe, recipeHash, readReceipt, parseCounts } from "./lib.mjs";
+import { RECEIPTS, listRecipeIds, loadRecipe, validateRecipe, recipeHash, readReceipt, parseCounts, rewriteSetup } from "./lib.mjs";
 
 const TIMEOUT_MS = +(process.env.PROVENPIN_TIMEOUT_MS ?? 15 * 60 * 1000);
 
@@ -27,7 +27,7 @@ export function runRecipe(id) {
   let setup = { code: 0, out: "", ms: 0 }, test = { code: 1, out: "", ms: 0 };
   if (errors.length === 0) {
     for (const f of r.files) { fs.mkdirSync(path.dirname(path.join(work, f)), { recursive: true }); fs.copyFileSync(path.join(r.dir, f), path.join(work, f)); }
-    setup = sh(r.setup, work);
+    setup = sh(rewriteSetup(r.setup, r.runtime), work);
     if (setup.code === 0) test = sh(r.test, work);
   }
   let report;

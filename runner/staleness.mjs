@@ -6,7 +6,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { ROOT, listRecipeIds, loadRecipe, validateRecipe, parseCounts } from "./lib.mjs";
+import { ROOT, listRecipeIds, loadRecipe, validateRecipe, parseCounts, rewriteSetup } from "./lib.mjs";
 import { latest } from "./affected.mjs";
 
 const TIMEOUT_MS = +(process.env.PROVENPIN_TIMEOUT_MS ?? 15 * 60 * 1000);
@@ -66,7 +66,7 @@ export async function checkRecipe(id, fetchLatest = latest) {
   try {
     for (const f of r.files) { fs.mkdirSync(path.dirname(path.join(work, f)), { recursive: true }); fs.copyFileSync(path.join(r.dir, f), path.join(work, f)); }
     bumpManifest(work, r.runtime, bumps);
-    const setup = sh(r.setup, work);
+    const setup = sh(rewriteSetup(r.setup, r.runtime), work);
     const test = setup.code === 0 ? sh(r.test, work) : { code: 1, out: "" };
     let report;
     if (r.test_report) { const rp = path.join(work, r.test_report); report = setup.code === 0 && fs.existsSync(rp) ? fs.readFileSync(rp, "utf8") : null; }

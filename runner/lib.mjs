@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { spawnSync } from "node:child_process";
 import YAML from "yaml";
 
 export const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
@@ -95,3 +96,23 @@ export function parseCounts(out, runtime, report) {
   const p = out.match(/(\d+) passed/), f = out.match(/(\d+) failed/), e = out.match(/(\d+) errors?/);
   return { passed: p ? +p[1] : 0, failed: (f ? +f[1] : 0) + (e ? +e[1] : 0) };
 }
+
+/** True when the PATH npm is 11.6+, which includes the arborist peer-set edgesOut fix. */
+function npmMeetsMin() {
+  const r = spawnSync("npm", ["-v"], { encoding: "utf8" });
+  const [maj, min] = (r.stdout || "").trim().split(".").map(Number);
+  return maj > 11 || (maj === 11 && min >= 6);
+}
+
+/**
+ * npm < 11.6 crashes on some Vitest peer trees with
+ * "Cannot read properties of null (reading 'edgesOut')".
+ * Route node installs through npm@11.6+ when the PATH npm is older.
+ */
+export function rewriteSetup(cmd, runtime) {
+  if (runtime !== "node") return cmd;
+  if (!/^\s*npm\s+(install|ci|i)\b/.test(cmd)) return cmd;
+  if (npmMeetsMin()) return cmd;
+  return cmd.replace(/^\s*npm\s+/, "npx --yes npm@11.6.0 ");
+}
+

@@ -27,3 +27,11 @@ test("missing or garbage report counts as failed", () => {
   assert.deepEqual(parseCounts("# pass 9", "node", null), { passed: 0, failed: 1 });
   assert.deepEqual(parseCounts("# pass 9", "node", "nonsense"), { passed: 0, failed: 1 });
 });
+
+import { rewriteSetup } from "../lib.mjs";
+test("rewriteSetup routes npm install through npm 11.6+ when PATH npm is older", () => {
+  const out = rewriteSetup("npm install --no-audit --no-fund", "node");
+  // On this box npm is 10.x, so we expect the npx rewrite. If CI already has npm 11.6+, out stays as-is.
+  assert.ok(out === "npm install --no-audit --no-fund" || out.startsWith("npx --yes npm@11.6.0 "));
+  assert.equal(rewriteSetup("uv venv -q .venv", "python"), "uv venv -q .venv");
+});
