@@ -1,0 +1,18 @@
+id: ts-pattern-discriminated-unions
+title: "ts-pattern exhaustive matching on discriminated unions"
+summary: "Match TypeScript discriminated unions exhaustively with ts-pattern match, P selectors and .exhaustive(), covering nested event handling without unsafe defaults."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ts-pattern]
+tags: [pattern-matching, typescript, unions]
+pinned:
+  "ts-pattern": "5.9.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/events.ts
+  - test/events.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

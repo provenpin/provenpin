@@ -1,0 +1,18 @@
+id: immer-patches-history
+title: "Immer produce with patches and inverse patches"
+summary: "Update immutable state with Immer produce, capture patches and inversePatches for undo, and applyPatches to replay edits in tests."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [immer]
+tags: [immutable, state, patches]
+pinned:
+  "immer": "11.1.21"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/store.ts
+  - test/store.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

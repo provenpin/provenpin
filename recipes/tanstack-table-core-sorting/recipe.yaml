@@ -1,0 +1,18 @@
+id: tanstack-table-core-sorting
+title: "TanStack Table core sorting, filtering and pagination"
+summary: "Use @tanstack/table-core headlessly to sort, filter and paginate row models without React, asserting filtered and page rows in plain Node tests."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@tanstack/table-core"]
+tags: [table, sorting, filtering, pagination]
+pinned:
+  "@tanstack/table-core": "8.21.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/people.ts
+  - test/people.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

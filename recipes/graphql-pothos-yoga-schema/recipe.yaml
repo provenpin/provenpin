@@ -1,0 +1,20 @@
+id: graphql-pothos-yoga-schema
+title: "Pothos GraphQL schema served by GraphQL Yoga"
+summary: "Build a typed GraphQL schema with Pothos (queries and mutations over an in-memory store) and execute it offline through GraphQL Yoga's fetch handler."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@pothos/core", graphql, graphql-yoga]
+tags: [graphql, api, schema]
+pinned:
+  "@pothos/core": "4.15.1"
+  "graphql": "17.0.2"
+  "graphql-yoga": "5.24.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/schema.ts
+  - test/schema.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

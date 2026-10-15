@@ -1,0 +1,18 @@
+id: typebox-value-check
+title: "TypeBox schemas with Value.Check and Value.Parse"
+summary: "Define TypeBox schemas with constraints and transforms, then use Value.Check, Value.Errors and Value.Parse for typed validation without a runtime compiler."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@sinclair/typebox"]
+tags: [validation, schema, json-schema]
+pinned:
+  "@sinclair/typebox": "0.34.52"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/schema.ts
+  - test/schema.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

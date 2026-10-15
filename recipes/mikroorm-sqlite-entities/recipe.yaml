@@ -1,0 +1,20 @@
+id: mikroorm-sqlite-entities
+title: "MikroORM 7 entities and Unit of Work on SQLite"
+summary: "Define MikroORM 7 EntitySchema models with OneToMany relations, persist through the Unit of Work, and query with populate on an in-memory better-sqlite3 database."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@mikro-orm/sqlite", better-sqlite3]
+tags: [orm, database, sqlite]
+pinned:
+  "@mikro-orm/sqlite": "7.2.5"
+  "better-sqlite3": "13.0.3"
+  "tsx": "4.23.15"
+  "@types/node": "26.6.5"
+files:
+  - package.json
+  - src/entities.ts
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

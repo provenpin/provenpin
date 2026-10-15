@@ -1,0 +1,20 @@
+id: yargs-zod-cli
+title: "yargs 18 CLI options validated with Zod 4"
+summary: "Build a yargs 18 command parser that funnels argv through Zod 4 safeParse, returning typed options or field errors without exiting the process in tests."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [yargs, zod]
+tags: [cli, validation]
+pinned:
+  "yargs": "18.2.0"
+  "zod": "4.6.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "@types/yargs": "17.0.35"
+files:
+  - package.json
+  - src/cli.ts
+  - test/cli.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

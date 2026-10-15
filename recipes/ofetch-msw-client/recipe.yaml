@@ -1,0 +1,19 @@
+id: ofetch-msw-client
+title: "ofetch HTTP client mocked with MSW"
+summary: "Call APIs with ofetch against an MSW 2 HTTP worker in Node, covering JSON responses, query params and error status mapping offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ofetch, msw]
+tags: [http, fetch, testing, mock]
+pinned:
+  "ofetch": "1.5.1"
+  "msw": "3.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/client.ts
+  - test/client.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

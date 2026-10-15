@@ -1,0 +1,18 @@
+id: remeda-pipe-data
+title: "Remeda pipe, groupBy and typed data helpers"
+summary: "Transform collections with Remeda pipe, map, filter, groupBy and sumBy while keeping TypeScript inference, covering a small analytics pipeline in Node tests."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [remeda]
+tags: [utils, data, pipeline]
+pinned:
+  "remeda": "2.52.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/stats.ts
+  - test/stats.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

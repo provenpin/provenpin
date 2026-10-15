@@ -1,0 +1,20 @@
+id: js-yaml-zod-config
+title: "js-yaml 5 config files validated with Zod 4"
+summary: "Parse YAML app config with js-yaml, validate it with Zod 4 (including env defaults), and reject unknown keys or bad types with field errors."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [js-yaml, zod]
+tags: [config, yaml, validation]
+pinned:
+  "js-yaml": "5.4.3"
+  "zod": "4.6.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "@types/js-yaml": "4.0.9"
+files:
+  - package.json
+  - src/config.ts
+  - test/config.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

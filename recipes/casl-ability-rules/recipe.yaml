@@ -1,0 +1,18 @@
+id: casl-ability-rules
+title: "CASL ability rules for resource authorization"
+summary: "Define @casl/ability rules for roles, check can/cannot on subjects, and pack/unpack abilities for transfer, covering update conditions on owned records."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@casl/ability"]
+tags: [authz, permissions, rbac]
+pinned:
+  "@casl/ability": "7.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/abilities.ts
+  - test/abilities.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

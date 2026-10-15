@@ -1,0 +1,20 @@
+id: objection-knex-sqlite
+title: "Objection.js models with Knex on SQLite"
+summary: "Use Objection.js Model classes on a Knex better-sqlite3 connection with relationMappings, inserts and eager graph fetches in offline tests."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [objection, knex, better-sqlite3]
+tags: [orm, database, sqlite]
+pinned:
+  "objection": "3.9.1"
+  "knex": "3.3.0"
+  "better-sqlite3": "13.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

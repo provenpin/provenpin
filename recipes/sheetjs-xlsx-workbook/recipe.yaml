@@ -1,0 +1,18 @@
+id: sheetjs-xlsx-workbook
+title: "SheetJS xlsx read and write workbooks in memory"
+summary: "Build and parse Excel workbooks with SheetJS community xlsx: JSON sheet roundtrips, header rows, and AOA writes using in-memory buffers only."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [xlsx]
+tags: [excel, spreadsheet, csv]
+pinned:
+  "xlsx": "0.18.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/workbook.ts
+  - test/workbook.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

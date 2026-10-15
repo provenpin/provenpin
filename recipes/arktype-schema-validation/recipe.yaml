@@ -1,0 +1,18 @@
+id: arktype-schema-validation
+title: "ArkType 2 schemas with morphs, narrows and discriminated unions"
+summary: "Validate and transform data with ArkType 2: object schemas, morph pipes, narrow predicates, and discriminated unions returning typed data or readable problems."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [arktype]
+tags: [validation, schema, typescript]
+pinned:
+  "arktype": "2.2.8"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/user.ts
+  - test/user.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

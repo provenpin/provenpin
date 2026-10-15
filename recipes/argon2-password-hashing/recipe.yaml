@@ -1,0 +1,18 @@
+id: argon2-password-hashing
+title: "argon2id password hashing and verification"
+summary: "Hash and verify passwords with the argon2 native bindings using argon2id, custom time/memory costs, and needsRehash detection when options change."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [argon2]
+tags: [auth, security, passwords]
+pinned:
+  "argon2": "0.45.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/passwords.ts
+  - test/passwords.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

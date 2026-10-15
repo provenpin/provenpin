@@ -1,0 +1,21 @@
+id: hono-rpc-typed-client
+title: "Hono RPC typed client with zod validator"
+summary: "Expose a Hono app as an RPC-typed AppType, call it in-process with hc and app.request, and validate JSON bodies with @hono/zod-validator."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [hono, zod, "@hono/zod-validator"]
+tags: [rpc, api, validation, edge]
+pinned:
+  "hono": "4.13.13"
+  "zod": "4.6.7"
+  "@hono/zod-validator": "0.9.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/app.ts
+  - src/client.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

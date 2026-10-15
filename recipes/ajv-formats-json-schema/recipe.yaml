@@ -1,0 +1,19 @@
+id: ajv-formats-json-schema
+title: "AJV 8 JSON Schema validation with ajv-formats"
+summary: "Compile JSON Schema drafts with AJV 8, enable email/uri/uuid formats via ajv-formats, and return field errors from validate.errors for API payloads."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ajv, ajv-formats]
+tags: [validation, json-schema]
+pinned:
+  "ajv": "8.20.0"
+  "ajv-formats": "3.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/validate.ts
+  - test/validate.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

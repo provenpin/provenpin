@@ -1,0 +1,19 @@
+id: sequelize-sqlite-associations
+title: "Sequelize 6 associations and transactions on SQLite"
+summary: "Define Sequelize models with hasMany and belongsTo, run CRUD inside a managed transaction, and query with includes on a file-backed SQLite database."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [sequelize, sqlite3]
+tags: [orm, database, sqlite, transactions]
+pinned:
+  "sequelize": "6.37.8"
+  "sqlite3": "6.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

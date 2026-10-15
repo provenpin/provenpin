@@ -1,0 +1,18 @@
+id: valtio-proxy-state
+title: "Valtio proxy state with subscribe and snapshot"
+summary: "Manage mutable proxy state with Valtio, subscribe to changes, read immutable snapshots, and derive UI-ready views without React."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [valtio]
+tags: [state, proxy, react-alternative]
+pinned:
+  "valtio": "2.3.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/store.ts
+  - test/store.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

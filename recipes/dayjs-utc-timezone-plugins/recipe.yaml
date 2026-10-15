@@ -1,0 +1,18 @@
+id: dayjs-utc-timezone-plugins
+title: "dayjs UTC, timezone and duration plugins"
+summary: "Work with dayjs plugins for UTC conversion, IANA time zones, durations and relative time, formatting Anchorage and UTC timestamps without network calls."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [dayjs]
+tags: [dates, timezone, utc]
+pinned:
+  "dayjs": "1.11.23"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/time.ts
+  - test/time.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

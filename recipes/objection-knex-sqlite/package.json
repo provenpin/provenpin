@@ -1,0 +1,17 @@
+{
+  "name": "objection-knex-sqlite",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "objection": "3.9.1",
+    "knex": "3.3.0",
+    "better-sqlite3": "13.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}
