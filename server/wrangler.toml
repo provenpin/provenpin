@@ -7,9 +7,12 @@ compatibility_date = "2026-10-01"
 PROVENPIN_REQUIRE_KEY = "false"
 
 # Privacy-safe usage counts (see src/usage.ts). No IPs, user agents or query text are recorded.
-[[analytics_engine_datasets]]
-binding = "USAGE"
-dataset = "provenpin_usage"
+# DISABLED until Analytics Engine is enabled on the Cloudflare account (deploy fails otherwise).
+# The code treats env.USAGE as optional, so counts still go to console logs meanwhile.
+# To re-add: enable at dash.cloudflare.com > Workers > Analytics Engine, then uncomment the 3 lines below.
+# [[analytics_engine_datasets]]
+# binding = "USAGE"
+# dataset = "provenpin_usage"
 
 [observability]
 enabled = true
