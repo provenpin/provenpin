@@ -1,0 +1,19 @@
+id: svix-webhook-verify-hono
+title: "Svix webhook signature verification in a Hono route"
+summary: "Verify Svix-signed webhooks (the scheme Clerk and Resend use) on the raw body in a Hono handler: valid, tampered, stale-timestamp, wrong-secret and duplicate-delivery cases, signed locally with svix."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [svix, hono]
+tags: [webhooks, hmac, security, hono]
+pinned:
+  "svix": "2.8.0"
+  "hono": "4.13.13"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

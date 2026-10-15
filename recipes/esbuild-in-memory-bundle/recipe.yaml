@@ -1,0 +1,18 @@
+id: esbuild-in-memory-bundle
+title: "esbuild build API bundling virtual files in memory (write:false)"
+summary: "Bundle TypeScript from an in-memory file map with an esbuild resolve/load plugin and write:false, use define, tree shaking, minify and external source maps, evaluate the bundle, and assert structured build errors."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [esbuild]
+tags: [bundler, build, plugins, typescript]
+pinned:
+  "esbuild": "0.28.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/bundle.ts
+  - test/bundle.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

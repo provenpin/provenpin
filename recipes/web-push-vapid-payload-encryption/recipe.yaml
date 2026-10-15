@@ -1,0 +1,19 @@
+id: web-push-vapid-payload-encryption
+title: "web-push VAPID keys and aes128gcm payload encryption, verified offline"
+summary: "Generate VAPID keys and the exact push-service request with web-push (no send), then decrypt the aes128gcm payload as the browser would with http_ece and verify the ES256 VAPID JWT with node:crypto."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [web-push, http_ece]
+tags: [push-notifications, encryption, vapid, pwa]
+pinned:
+  "web-push": "3.6.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "http_ece": "1.2.1"
+files:
+  - package.json
+  - src/push.ts
+  - test/push.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

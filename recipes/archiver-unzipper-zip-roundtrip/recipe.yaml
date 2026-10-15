@@ -1,0 +1,19 @@
+id: archiver-unzipper-zip-roundtrip
+title: "archiver + unzipper zip round trip in memory"
+summary: "Stream text and binary entries into an in-memory zip with archiver, then read it back with unzipper via central-directory random access and a streaming entry parser."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [archiver, unzipper]
+tags: [zip, streams, files, compression]
+pinned:
+  "archiver": "8.0.0"
+  "unzipper": "0.12.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/zip.ts
+  - test/zip.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

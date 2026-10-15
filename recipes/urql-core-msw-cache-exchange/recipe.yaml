@@ -1,0 +1,20 @@
+id: urql-core-msw-cache-exchange
+title: "urql core client with MSW: auth headers, document cache and errors"
+summary: "Test an @urql/core client offline against MSW graphql handlers: auth via fetchOptions, cache-first hits vs network-only, mutation invalidation in the document cache, and CombinedError for GraphQL and HTTP failures."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@urql/core", msw, graphql]
+tags: [graphql, api-client, caching, testing]
+pinned:
+  "@urql/core": "6.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "msw": "3.0.3"
+  "graphql": "17.0.2"
+files:
+  - package.json
+  - src/client.ts
+  - test/client.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

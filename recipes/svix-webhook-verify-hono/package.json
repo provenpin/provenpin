@@ -1,0 +1,16 @@
+{
+  "name": "svix-webhook-verify-hono",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "svix": "2.8.0",
+    "hono": "4.13.13"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

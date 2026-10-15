@@ -1,0 +1,18 @@
+id: jsdiff-patch-apply
+title: "jsdiff unified patches: create, apply with fuzz, reverse and word diff"
+summary: "Create unified diffs with the diff package, apply them (with fuzz for drifted sources), reverse a patch, count added/removed lines and render word-level diffs."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [diff]
+tags: [diff, patch, text]
+pinned:
+  "diff": "9.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/patch.ts
+  - test/patch.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

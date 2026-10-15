@@ -1,0 +1,16 @@
+{
+  "name": "ical-generator-node-ical-roundtrip",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "ical-generator": "11.1.2",
+    "node-ical": "0.27.3"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

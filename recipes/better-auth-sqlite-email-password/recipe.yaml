@@ -1,0 +1,19 @@
+id: better-auth-sqlite-email-password
+title: "Better Auth email/password on in-memory SQLite"
+summary: "Configure Better Auth with better-sqlite3 in memory, run its migrations, then sign up, sign in through auth.handler with a session cookie, read the session, reject bad credentials and sign out, all offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [better-auth, better-sqlite3]
+tags: [auth, sessions, sqlite, passwords]
+pinned:
+  "better-auth": "1.7.10"
+  "better-sqlite3": "13.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/auth.ts
+  - test/auth.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

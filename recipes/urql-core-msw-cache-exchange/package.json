@@ -1,0 +1,17 @@
+{
+  "name": "urql-core-msw-cache-exchange",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@urql/core": "6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "msw": "3.0.3",
+    "graphql": "17.0.2"
+  }
+}

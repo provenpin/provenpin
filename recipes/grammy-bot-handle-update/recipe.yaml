@@ -1,0 +1,18 @@
+id: grammy-bot-handle-update
+title: "grammY Telegram bot tested offline with handleUpdate and an API transformer"
+summary: "Unit test a grammY bot with commands, sessions, inline keyboards and callback queries by feeding updates to bot.handleUpdate and capturing Bot API calls with an API transformer, no network."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [grammy]
+tags: [telegram, bot, chat, testing]
+pinned:
+  "grammy": "1.46.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/bot.ts
+  - test/bot.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

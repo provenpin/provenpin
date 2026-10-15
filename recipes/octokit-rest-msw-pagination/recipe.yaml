@@ -1,0 +1,19 @@
+id: octokit-rest-msw-pagination
+title: "Octokit REST client with MSW: pagination, early stop and errors"
+summary: "Test an @octokit/rest client offline with MSW handlers for api.github.com: paginate through Link headers, stop paging early with done(), create issues with auth, and map 404 RequestErrors."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@octokit/rest", msw]
+tags: [github, api-client, pagination, testing]
+pinned:
+  "@octokit/rest": "22.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "msw": "3.0.3"
+files:
+  - package.json
+  - src/github.ts
+  - test/github.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

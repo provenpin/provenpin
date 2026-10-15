@@ -1,0 +1,22 @@
+id: ink-testing-library-cli
+title: "Ink interactive CLI components tested with ink-testing-library"
+summary: "Build an interactive Ink 8 (React) terminal checklist with useInput and a timer-driven countdown, and test frames, arrow-key and space input, submit callbacks and effects with ink-testing-library."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ink, ink-testing-library, react]
+tags: [cli, terminal, react, testing]
+pinned:
+  "ink": "8.0.0"
+  "react": "19.3.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "ink-testing-library": "4.0.0"
+  "@types/react": "19.3.0"
+files:
+  - package.json
+  - src/App.tsx
+  - test/app.test.ts
+  - tsconfig.json
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

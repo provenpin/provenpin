@@ -1,0 +1,17 @@
+{
+  "name": "graphql-tools-schema-mock",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "10.1.5",
+    "@graphql-tools/mock": "9.1.18",
+    "graphql": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

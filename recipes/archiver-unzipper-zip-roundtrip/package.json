@@ -1,0 +1,16 @@
+{
+  "name": "archiver-unzipper-zip-roundtrip",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "archiver": "8.0.0",
+    "unzipper": "0.12.5"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

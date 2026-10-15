@@ -1,0 +1,18 @@
+id: octokit-webhooks-verify-handler
+title: "@octokit/webhooks signature verification and event handlers"
+summary: "Sign and verify GitHub X-Hub-Signature-256 payloads with @octokit/webhooks, dispatch issues.opened, push and onAny handlers, and serve them through createNodeMiddleware over real local HTTP."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@octokit/webhooks"]
+tags: [github, webhooks, hmac, security]
+pinned:
+  "@octokit/webhooks": "14.2.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/hooks.ts
+  - test/hooks.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

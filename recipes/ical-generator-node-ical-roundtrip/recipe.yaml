@@ -1,0 +1,19 @@
+id: ical-generator-node-ical-roundtrip
+title: "ical-generator .ics feed round-tripped through node-ical"
+summary: "Generate an iCalendar feed with ical-generator (escaped text, attendees, a weekly RRULE with an EXDATE) and parse it back with node-ical, expanding the recurrence offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ical-generator, node-ical]
+tags: [calendar, ics, recurrence, scheduling]
+pinned:
+  "ical-generator": "11.1.2"
+  "node-ical": "0.27.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/calendar.ts
+  - test/calendar.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

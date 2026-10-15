@@ -1,0 +1,18 @@
+id: libphonenumber-js-parse-format
+title: "libphonenumber-js parse, validate and format phone numbers"
+summary: "Normalize user phone input to E.164 with libphonenumber-js max metadata: national and international formats, number type, extensions, validation, as-you-type formatting and extraction from text."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [libphonenumber-js]
+tags: [phone, validation, formatting, i18n]
+pinned:
+  "libphonenumber-js": "1.13.15"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/phone.ts
+  - test/phone.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

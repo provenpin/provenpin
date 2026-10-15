@@ -1,0 +1,18 @@
+id: yjs-crdt-doc-sync
+title: "Yjs CRDT document sync with state vectors, relay and undo"
+summary: "Sync two Yjs docs by exchanging state-vector diffs, converge concurrent text and map edits, relay live updates like a provider, undo, and merge updates out of order."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [yjs]
+tags: [crdt, collaboration, realtime, sync]
+pinned:
+  "yjs": "13.6.33"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/sync.ts
+  - test/sync.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

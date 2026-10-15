@@ -1,0 +1,18 @@
+id: fuse-js-weighted-search
+title: "Fuse.js fuzzy search with weighted keys and a prebuilt index"
+summary: "Fuzzy search a product list with Fuse.js using weighted title/brand/tag keys, match metadata, and a serialized prebuilt index, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [fuse.js]
+tags: [search, fuzzy, typescript]
+pinned:
+  "fuse.js": "7.5.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/search.ts
+  - test/search.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

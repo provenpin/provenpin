@@ -1,0 +1,19 @@
+id: rrule-luxon-timezone-recurrence
+title: "rrule recurring events across timezones and DST with luxon"
+summary: "Generate weekly and monthly recurrences with rrule in floating wall-clock time and map them into real IANA zones with luxon, so 9am stays 9am across DST, plus toText, RFC 5545 round trip and BYSETPOS."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [rrule, luxon]
+tags: [recurrence, calendar, timezone, dst]
+pinned:
+  "rrule": "2.8.1"
+  "luxon": "3.7.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/schedule.ts
+  - test/schedule.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

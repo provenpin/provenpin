@@ -1,0 +1,18 @@
+id: minisearch-fields-boost-serialize
+title: "MiniSearch full-text index with field boosting and JSON serialization"
+summary: "Build a MiniSearch index over title and body with title boosting, prefix and fuzzy search, stored-field filters, auto-suggest, discard, and JSON save/load."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [minisearch]
+tags: [search, full-text, index]
+pinned:
+  "minisearch": "7.2.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/index.ts
+  - test/index.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

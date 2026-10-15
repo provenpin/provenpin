@@ -1,0 +1,19 @@
+id: postcss-custom-plugin-autoprefixer
+title: "PostCSS custom plugin plus autoprefixer with pinned browsers"
+summary: "Write a PostCSS 8 plugin that resolves design tokens, converts px to rem and strips @debug rules, chain it with autoprefixer using a fixed browser list, and check prefixes, source maps and CssSyntaxError positions."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [postcss, autoprefixer]
+tags: [css, build, plugins]
+pinned:
+  "postcss": "8.5.30"
+  "autoprefixer": "10.6.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/css.ts
+  - test/css.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

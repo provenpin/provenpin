@@ -1,0 +1,19 @@
+id: winston-custom-format-transport
+title: "winston custom formats and an in-memory custom transport"
+summary: "Build a winston logger with custom redact and filter formats, error stacks, child metadata, a fixed timestamp and a custom winston-transport that captures JSON entries for assertions."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [winston, winston-transport]
+tags: [logging, observability, testing]
+pinned:
+  "winston": "3.19.0"
+  "winston-transport": "4.9.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/logger.ts
+  - test/logger.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

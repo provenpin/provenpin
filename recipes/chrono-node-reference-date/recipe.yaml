@@ -1,0 +1,18 @@
+id: chrono-node-reference-date
+title: "chrono-node natural language dates with a fixed reference and timezone"
+summary: "Parse phrases like \"tomorrow at 9am\", weekday names, ranges and dates inside sentences with chrono-node against a fixed reference instant and UTC offset, plus en.GB day-first parsing."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [chrono-node]
+tags: [dates, nlp, parsing, timezone]
+pinned:
+  "chrono-node": "2.10.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/parse.ts
+  - test/parse.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

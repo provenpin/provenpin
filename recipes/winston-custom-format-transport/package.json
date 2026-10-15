@@ -1,0 +1,16 @@
+{
+  "name": "winston-custom-format-transport",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "winston": "3.19.0",
+    "winston-transport": "4.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

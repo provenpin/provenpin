@@ -1,0 +1,20 @@
+id: graphql-tools-schema-mock
+title: "GraphQL schema mocking with @graphql-tools/schema and @graphql-tools/mock"
+summary: "Build an executable schema with makeExecutableSchema and layer deterministic mocks, a MockStore, MockList and partial real resolvers on top with addMocksToSchema, including mutations that write to the store."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@graphql-tools/schema", "@graphql-tools/mock", graphql]
+tags: [graphql, mocking, testing, api]
+pinned:
+  "@graphql-tools/schema": "10.1.5"
+  "@graphql-tools/mock": "9.1.18"
+  "graphql": "17.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/schema.ts
+  - test/schema.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

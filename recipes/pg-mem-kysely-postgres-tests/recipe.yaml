@@ -1,0 +1,19 @@
+id: pg-mem-kysely-postgres-tests
+title: "pg-mem in-memory Postgres with Kysely for fast DB tests"
+summary: "Run Kysely queries against pg-mem through its node-postgres adapter: serial ids, RETURNING, a frozen now(), unique/check/foreign-key constraints, atomic multi-row inserts, joins with aggregates, and snapshot restore (pg-mem does not roll back multi-query transactions)."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pg-mem, kysely]
+tags: [postgres, database, testing, sql]
+pinned:
+  "kysely": "0.29.6"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+  "pg-mem": "3.0.14"
+files:
+  - package.json
+  - src/db.ts
+  - test/db.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

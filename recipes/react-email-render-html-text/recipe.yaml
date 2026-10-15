@@ -1,0 +1,22 @@
+id: react-email-render-html-text
+title: "React Email template rendered to HTML and plain text"
+summary: "Build a transactional email with @react-email/components (preview, rows/columns, button, link) in TSX and render both the HTML document and the plain-text version with @react-email/render, checking escaping offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@react-email/components", "@react-email/render", react]
+tags: [email, react, templates, html]
+pinned:
+  "@react-email/components": "1.0.12"
+  "@react-email/render": "2.1.0"
+  "react": "19.3.1"
+  "react-dom": "19.3.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/Welcome.tsx
+  - test/welcome.test.ts
+  - tsconfig.json
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
