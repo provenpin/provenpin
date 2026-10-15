@@ -1,0 +1,22 @@
+id: sqlalchemy-aiosqlite-session-factory
+title: "SQLAlchemy 2 async session factory over aiosqlite"
+summary: "An async SQLAlchemy 2.0 engine and session factory over aiosqlite, with StaticPool in-memory wiring and pytest-asyncio tests covering commit, rollback and integrity errors."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [sqlalchemy, aiosqlite, pytest-asyncio]
+tags: [database, orm, async, testing]
+pinned:
+  sqlalchemy: "2.1.4"
+  aiosqlite: "0.22.1"
+  greenlet: "3.5.6"
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - database.py
+  - models.py
+  - tests/test_sessions.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
