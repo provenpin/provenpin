@@ -1,0 +1,28 @@
+{
+  "id": "zustand-store-vitest",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:14:23.682Z",
+  "last_passed_at": "2026-10-15T11:14:23.682Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 7275,
+    "test": 645
+  },
+  "pinned": {
+    "zustand": "5.0.15",
+    "@types/node": "24.19.2",
+    "vitest": "5.0.4"
+  },
+  "recipe_hash": "sha256:b8af6f943e6cb7f79cc72420c37542aeb30f39916a259d9df802a0c91064c758",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38725258425"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-zustand-store-vitest-WkD6ih\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 11:14:31\n\u001b[2m   Duration \u001b[22m 161ms\u001b[2m (transform 55%, import 23%, tests 14%, worker 8%)\u001b[22m\n\nJSON report written to /tmp/pp-zustand-store-vitest-WkD6ih/test-report.json\n"
+}
