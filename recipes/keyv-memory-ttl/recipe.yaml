@@ -1,0 +1,18 @@
+id: keyv-memory-ttl
+title: "Keyv in-memory store with TTL expiry"
+summary: "Use Keyv's default Map store to set, get, and expire values with TTL offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["keyv"]
+tags: ["cache", "ttl", "kv"]
+pinned:
+  "keyv": "6.1.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/cache.ts
+  - test/cache.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

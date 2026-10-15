@@ -1,0 +1,19 @@
+id: flexsearch-document-index
+title: "FlexSearch Document index add and search"
+summary: "Build a FlexSearch Document index over title/content fields and search with enrichment offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["flexsearch"]
+tags: ["search", "index", "full-text"]
+pinned:
+  "flexsearch": "0.8.212"
+  "@types/flexsearch": "0.7.42"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/index-docs.ts
+  - test/index-docs.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

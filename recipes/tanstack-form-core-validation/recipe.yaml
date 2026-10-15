@@ -1,0 +1,18 @@
+id: tanstack-form-core-validation
+title: "TanStack form-core sync validation and submit"
+summary: "Use @tanstack/form-core FormApi with field validators and onSubmit to validate values offline without a UI."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@tanstack/form-core"]
+tags: ["forms", "validation"]
+pinned:
+  "@tanstack/form-core": "1.33.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/form.ts
+  - test/form.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

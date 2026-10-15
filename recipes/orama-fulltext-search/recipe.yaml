@@ -1,0 +1,18 @@
+id: orama-fulltext-search
+title: "Orama full-text search over in-memory documents"
+summary: "Create an @orama/orama schema, insert documents, and run full-text search with term matching offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@orama/orama"]
+tags: ["search", "full-text", "in-memory"]
+pinned:
+  "@orama/orama": "3.1.18"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/search.ts
+  - test/search.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

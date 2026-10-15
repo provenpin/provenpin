@@ -1,0 +1,18 @@
+id: noble-hashes-blake3-sha256
+title: "@noble/hashes blake3 and sha256 digests"
+summary: "Hash utf8 bytes with @noble/hashes blake3 and sha256, comparing hex digests offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@noble/hashes"]
+tags: ["crypto", "hash", "blake3", "sha256"]
+pinned:
+  "@noble/hashes": "2.4.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/hash.ts
+  - test/hash.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

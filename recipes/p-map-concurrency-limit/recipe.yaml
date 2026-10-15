@@ -1,0 +1,18 @@
+id: p-map-concurrency-limit
+title: "p-map concurrency-limited async mapping"
+summary: "Map an async iterator with p-map while capping concurrency and preserving result order."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["p-map"]
+tags: ["concurrency", "async", "map"]
+pinned:
+  "p-map": "7.1.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/map.ts
+  - test/map.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,18 @@
+id: deepmerge-ts-nested
+title: "deepmerge-ts nested object and array merge"
+summary: "Deep-merge nested objects and concatenate arrays with deepmerge-ts while leaving sources untouched."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["deepmerge-ts"]
+tags: ["merge", "objects", "config"]
+pinned:
+  "deepmerge-ts": "8.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/merge.ts
+  - test/merge.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

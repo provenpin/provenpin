@@ -1,0 +1,20 @@
+id: clsx-tailwind-merge-cva
+title: "clsx, tailwind-merge and CVA button variants"
+summary: "Compose class names with clsx, resolve Tailwind conflicts via tailwind-merge, and define button variants with class-variance-authority."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["clsx", "tailwind-merge", "class-variance-authority"]
+tags: ["css", "tailwind", "variants"]
+pinned:
+  "clsx": "2.1.1"
+  "tailwind-merge": "3.7.0"
+  "class-variance-authority": "0.7.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/button.ts
+  - test/button.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

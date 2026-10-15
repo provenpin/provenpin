@@ -1,0 +1,16 @@
+{
+  "name": "markdown-it-render-plugin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "markdown-it": "15.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/markdown-it": "14.2.0"
+  }
+}

@@ -1,0 +1,19 @@
+id: ramda-pipe-evolve
+title: "Ramda pipe, compose and evolve transforms"
+summary: "Compose pure data transforms with Ramda pipe/compose and evolve records without mutation."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["ramda"]
+tags: ["functional", "data", "transform"]
+pinned:
+  "ramda": "0.32.0"
+  "@types/ramda": "0.32.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/transform.ts
+  - test/transform.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

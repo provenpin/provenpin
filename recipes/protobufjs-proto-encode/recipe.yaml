@@ -1,0 +1,19 @@
+id: protobufjs-proto-encode
+title: "protobufjs load .proto and encode messages"
+summary: "Load a local .proto fixture with protobufjs, create a message type, and encode/decode binary offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["protobufjs"]
+tags: ["protobuf", "serialization", "binary"]
+pinned:
+  "protobufjs": "8.8.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/person.proto
+  - src/codec.ts
+  - test/codec.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

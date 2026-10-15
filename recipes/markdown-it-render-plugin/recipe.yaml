@@ -1,0 +1,19 @@
+id: markdown-it-render-plugin
+title: "markdown-it render with custom plugin"
+summary: "Render Markdown to HTML with markdown-it and a small custom plugin that rewrites link targets offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["markdown-it"]
+tags: ["markdown", "html", "plugin"]
+pinned:
+  "markdown-it": "15.0.2"
+  "@types/markdown-it": "14.2.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/render.ts
+  - test/render.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

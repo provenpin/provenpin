@@ -1,0 +1,19 @@
+id: cache-manager-memory-store
+title: "cache-manager memory store wrap and mset"
+summary: "Create a cache-manager cache backed by Keyv Map storage, wrap loaders, and multi-set values offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["cache-manager", "keyv"]
+tags: ["cache", "memory", "wrap"]
+pinned:
+  "cache-manager": "7.2.9"
+  "keyv": "6.1.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/cache.ts
+  - test/cache.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

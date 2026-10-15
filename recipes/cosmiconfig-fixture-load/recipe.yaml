@@ -1,0 +1,18 @@
+id: cosmiconfig-fixture-load
+title: "cosmiconfig load config from fixture files"
+summary: "Use cosmiconfigSync to load JSON and JS module configs from a temporary search root without touching the real filesystem home."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["cosmiconfig"]
+tags: ["config", "loader"]
+pinned:
+  "cosmiconfig": "10.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/load-config.ts
+  - test/load-config.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

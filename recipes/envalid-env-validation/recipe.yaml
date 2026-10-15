@@ -1,0 +1,18 @@
+id: envalid-env-validation
+title: "envalid cleanEnv for typed process env"
+summary: "Validate and coerce environment variables with envalid cleanEnv, str, num, bool and port validators offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["envalid"]
+tags: ["env", "validation", "config"]
+pinned:
+  "envalid": "8.2.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/env.ts
+  - test/env.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

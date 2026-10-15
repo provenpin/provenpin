@@ -1,0 +1,18 @@
+id: chokidar-temp-watch
+title: "chokidar watch temp directory add events"
+summary: "Watch a temporary directory with chokidar and assert add events when files are written, all offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["chokidar"]
+tags: ["fs", "watch", "events"]
+pinned:
+  "chokidar": "5.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/watch.ts
+  - test/watch.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

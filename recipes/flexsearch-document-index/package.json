@@ -1,0 +1,16 @@
+{
+  "name": "flexsearch-document-index",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "flexsearch": "0.8.212"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15",
+    "@types/flexsearch": "0.7.42"
+  }
+}
