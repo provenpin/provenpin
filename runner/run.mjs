@@ -30,7 +30,9 @@ export function runRecipe(id) {
     setup = sh(r.setup, work);
     if (setup.code === 0) test = sh(r.test, work);
   }
-  const counts = parseCounts(test.out, r.runtime);
+  let report;
+  if (r.test_report) { const rp = path.join(work, r.test_report); report = setup.code === 0 && fs.existsSync(rp) ? fs.readFileSync(rp, "utf8") : null; }
+  const counts = parseCounts(test.out, r.runtime, report);
   const status = errors.length ? "invalid" : setup.code !== 0 ? "setup_failed" : test.code === 0 && counts.failed === 0 && counts.passed > 0 ? "passed" : "failed";
   const prev = readReceipt(id);
   const receipt = {

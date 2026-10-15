@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseCounts, listRecipeIds, loadRecipe, validateRecipe } from "../lib.mjs";
+import { parseJsonReport, parseJunit, parseCounts, listRecipeIds, loadRecipe, validateRecipe } from "../lib.mjs";
 import { findAffected } from "../affected.mjs";
 
 test("parses node and pytest counts", () => {
@@ -14,4 +14,16 @@ test("affected only lists recipes with newer releases", async () => {
   const a = await findAffected(async (_rt, pkg) => (pkg === "zod" ? "99.0.0" : null));
   assert.ok(a.length > 0);
   for (const x of a) assert.deepEqual(x.updates.map((u) => u.pkg), ["zod"]);
+});
+
+test("parses vitest json and junit reports", () => {
+  assert.deepEqual(parseCounts("", "node", JSON.stringify({ numPassedTests: 4, numFailedTests: 1, numTotalTests: 5 })), { passed: 4, failed: 1 });
+  assert.deepEqual(parseCounts("", "node", '<?xml version="1.0"?><testsuites name="vitest" tests="5" failures="1" errors="0" skipped="1"><testsuite tests="5"/></testsuites>'), { passed: 3, failed: 1 });
+  assert.deepEqual(parseJunit('<testsuite tests="2" failures="0"/><testsuite tests="3" errors="1"/>'), { passed: 4, failed: 1 });
+  assert.throws(() => parseJsonReport("{}"));
+});
+
+test("missing or garbage report counts as failed", () => {
+  assert.deepEqual(parseCounts("# pass 9", "node", null), { passed: 0, failed: 1 });
+  assert.deepEqual(parseCounts("# pass 9", "node", "nonsense"), { passed: 0, failed: 1 });
 });

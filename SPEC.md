@@ -18,6 +18,7 @@ A recipe is a folder `recipes/<id>/` holding a `recipe.yaml` manifest plus the f
 | `files` | list | every file that ships with the recipe, relative paths |
 | `setup` | string | shell command run in a clean temp copy (installs pinned deps) |
 | `test` | string | shell command; exit 0 plus at least one passing test means passed |
+| `test_report` | string, optional | relative path of a JSON (Vitest/Jest `json` reporter) or JUnit XML report the test command writes. When set, counts come from this file and a missing report means failed. Without it, counts are parsed from node:test or pytest output |
 
 Tests must run offline after install: use in-memory SQLite, local mock servers, or request mocks. No real accounts or keys.
 
