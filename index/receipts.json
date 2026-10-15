@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-15T17:11:51.200Z",
+ "generated_at": "2026-10-15T17:53:52.659Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 260,
+ "count": 261,
  "recipes": [
   {
    "id": "ajv-formats-json-schema",
@@ -4808,6 +4808,27 @@
    "status": "passed",
    "last_passed_at": "2026-10-15T16:20:22.240Z",
    "run_url": "https://github.com/provenpin/provenpin/actions/runs/38767991559",
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "sqlalchemy-aiosqlite-session-factory",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "aiosqlite": "0.22.1",
+    "greenlet": "3.5.6",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-15T17:53:33.645Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38781018805",
    "staleness": {
     "status": "unchecked",
     "checked_at": null,
