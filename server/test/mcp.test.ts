@@ -79,7 +79,7 @@ test("usage events are privacy-safe and carry clientInfo via session id", async 
   await post({ jsonrpc: "2.0", id: 2, method: "tools/call", params: { name: "search_recipes", arguments: { query: "secret words here" } } }, { "mcp-session-id": sid });
   await post({ jsonrpc: "2.0", id: 3, method: "tools/list" }, { "x-provenpin-internal": "1" });
   assert.equal(points.length, 3);
-  assert.deepEqual(points[1].blobs, ["tools/call", "search_recipes", "", "cursor", "1.7", "external", "free"]);
+  assert.deepEqual(points[1].blobs, ["tools/call", "search_recipes", "", "cursor", "1.7", "external", "free", ""]);
   assert.deepEqual(points[1].doubles, [17]);
   assert.equal(points[2].blobs[5], "internal");
   const all = JSON.stringify(points);

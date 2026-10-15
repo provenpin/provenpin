@@ -1,6 +1,7 @@
 // Minimal stateless MCP server over Streamable HTTP (JSON responses), no SDK needed.
 // Works anywhere with web-standard Request/Response: Cloudflare Workers, Node 20+, Bun, Deno.
 import { clientFromSession, eventFor, makeSessionId, record, type AnalyticsSink } from "./usage.ts";
+import { checkCompatibility, compatBoost, parseVersionsInput } from "./versions.ts";
 import { listStacks, searchRecipes, type RecipeIndex } from "./search.ts";
 
 export const PROTOCOL_VERSION = "2025-06-18";
@@ -29,7 +30,7 @@ const TOOLS = [
   {
     name: "search_recipes",
     title: "Search tested recipes",
-    description: "Find a tested, version-pinned code recipe for wiring libraries together. Call this BEFORE writing glue code that combines 2+ libraries (auth + framework, ORM + database, payments webhooks, queues, validation, request mocking, logging), and when you hit version conflicts, peer-dependency errors, or integration errors between libraries. Example queries: 'express stripe webhook', 'fastapi sqlmodel crud', 'hono jwt'. Only recipes whose latest test run passed are returned. Each result lists its exact pinned versions and a test receipt (receipt.last_passed_at). If nothing matches, write the code yourself; try list_stacks to see what is covered.",
+    description: "Find a tested, version-pinned code recipe for wiring libraries together. Call this BEFORE writing glue code that combines 2+ libraries (auth + framework, ORM + database, payments webhooks, queues, validation, request mocking, logging), and when you hit version conflicts, peer-dependency errors, or integration errors between libraries. Example queries: 'express stripe webhook', 'fastapi sqlmodel crud', 'hono jwt'. Only recipes whose latest test run passed are returned. Each result lists its exact pinned versions and a test receipt (receipt.last_passed_at). Pass the project's lockfile or a {package: version} map as versions: recipes that match the installed versions rank first and each result gets a compatibility summary. If nothing matches, write the code yourself; try list_stacks to see what is covered.",
     inputSchema: {
       type: "object",
       properties: {
@@ -37,6 +38,7 @@ const TOOLS = [
         stack: { type: "array", items: { type: "string" }, description: "Only recipes that use all of these libraries." },
         language: { type: "string", enum: ["typescript", "python"] },
         limit: { type: "integer", minimum: 1, maximum: 25, default: 10 },
+        versions: { type: ["object", "string"], additionalProperties: { type: "string" }, description: "Optional but recommended: the versions in the user's project, so results are checked against them. Either a map like {\"next\": \"15.2.0\", \"zod\": \"3.23.8\"} or the raw text of package.json, package-lock.json, pnpm-lock.yaml, yarn.lock, requirements.txt, poetry.lock or uv.lock (max 200KB). Used only for this call, never stored." },
       },
       required: ["query"],
     },
@@ -45,8 +47,8 @@ const TOOLS = [
   {
     name: "get_recipe",
     title: "Get a recipe",
-    description: "Get a full recipe by id (ids come from search_recipes): every source and test file, the exact pinned dependency versions, the setup and test commands, and its test receipt (when it last passed, test counts, runtime and runner). Use the pinned versions together; they are the versions the tests passed with. Adapt names and config to the user's project, and keep the included tests to check your integration.",
-    inputSchema: { type: "object", properties: { id: { type: "string" } }, required: ["id"] },
+    description: "Get a full recipe by id (ids come from search_recipes): every source and test file, the exact pinned dependency versions, the setup and test commands, and its test receipt (when it last passed, test counts, runtime and runner). Pass the project's lockfile or a {package: version} map as versions to get a compatibility section first, comparing each pinned package with the installed one (exact, compatible, mismatch, or not in your project) with plain warnings. Use the pinned versions together; they are the versions the tests passed with. Adapt names and config to the user's project, and keep the included tests to check your integration.",
+    inputSchema: { type: "object", properties: { id: { type: "string" }, versions: { type: ["object", "string"], additionalProperties: { type: "string" }, description: "Optional but recommended: the versions in the user's project, so results are checked against them. Either a map like {\"next\": \"15.2.0\", \"zod\": \"3.23.8\"} or the raw text of package.json, package-lock.json, pnpm-lock.yaml, yarn.lock, requirements.txt, poetry.lock or uv.lock (max 200KB). Used only for this call, never stored." }, }, required: ["id"] },
     annotations: { readOnlyHint: true, openWorldHint: false },
   },
   {
@@ -67,14 +69,25 @@ export function callTool(index: RecipeIndex, name: string, args: Json, tier: "fr
   if (name === "search_recipes") {
     if (typeof args.query !== "string") return text("query must be a string", true);
     const limit = Math.min(Math.max(+args.limit || 10, 1), tier === "pro" ? 25 : 10);
-    const results = searchRecipes(index, args.query, { stack: args.stack, language: args.language, limit });
-    return text({ count: results.length, results, hint: results.length ? "Call get_recipe with an id for the full files." : "No tested recipe matched. Try fewer words or call list_stacks." });
+    const pv = args.versions === undefined ? null : parseVersionsInput(args.versions);
+    if (pv && "error" in pv) return text(pv.error, true);
+    let results: any[] = searchRecipes(index, args.query, { stack: args.stack, language: args.language, limit: pv ? 50 : limit });
+    if (pv) {
+      results = results.map((r) => {
+        const c = checkCompatibility(r.pinned, pv);
+        return { ...r, score: r.score + compatBoost(c), compatibility: { overall: c.overall, summary: c.summary, mismatches: c.packages.filter((p) => p.verdict === "mismatch").map((p) => ({ package: p.package, tested: p.tested, yours: p.yours })) } };
+      }).sort((a, b) => b.score - a.score || a.id.localeCompare(b.id)).slice(0, limit);
+    }
+    return text({ count: results.length, ...(pv ? { versions_detected: { format: pv.format, packages: pv.versions.size } } : {}), results, hint: results.length ? "Call get_recipe with an id for the full files." : "No tested recipe matched. Try fewer words or call list_stacks." });
   }
   if (name === "get_recipe") {
     const r = index.recipes.find((x) => x.id === args.id);
     if (!r) return text(`No recipe with id '${args.id}'. Use search_recipes to find ids.`, true);
     if (r.receipt.status !== "passed") return text(`Recipe '${r.id}' is not currently passing (status: ${r.receipt.status}).`, true);
-    return text(r);
+    if (args.versions === undefined) return text(r);
+    const pv = parseVersionsInput(args.versions);
+    if ("error" in pv) return text(pv.error, true);
+    return text({ compatibility: checkCompatibility(r.pinned, pv), ...r });
   }
   if (name === "list_stacks") return text({ stacks: listStacks(index) });
   return null;

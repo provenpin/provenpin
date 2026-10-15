@@ -1,10 +1,10 @@
 // Privacy-safe usage events. Records ONLY: MCP method, tool name, recipe id or search query LENGTH
 // (never the query text), the MCP client's self-reported clientInfo name+version, an internal flag, the tier (free/pro,
-// never the key), and a timestamp.
+// never the key), whether a versions/lockfile argument was passed (boolean only, never its content), and a timestamp.
 // No IPs, no user agents, no headers, no session ids, no query text.
 export interface UsageEvent {
   ts: string; method: string; tool: string; recipe: string; qlen: number;
-  client: string; client_version: string; internal: boolean; tier: "free" | "pro";
+  client: string; client_version: string; internal: boolean; versions_provided: boolean; tier: "free" | "pro";
 }
 export interface AnalyticsSink { writeDataPoint(p: { blobs?: string[]; doubles?: number[]; indexes?: string[] }): void }
 
@@ -34,6 +34,7 @@ export function eventFor(msg: any, client: { name: string; version: string }, in
     recipe: tool === "get_recipe" ? clean(args.id, 96) : "",
     qlen: tool === "search_recipes" && typeof args.query === "string" ? args.query.length : 0,
     client: client.name, client_version: client.version,
+    versions_provided: (tool === "get_recipe" || tool === "search_recipes") && args.versions !== undefined && args.versions !== null,
     internal: internalHeader || client.name === INTERNAL_CLIENT, tier,
   };
 }
@@ -42,7 +43,7 @@ export function record(ev: UsageEvent, sink?: AnalyticsSink) {
   try {
     sink?.writeDataPoint({
       indexes: [ev.client.slice(0, 32)],
-      blobs: [ev.method, ev.tool, ev.recipe, ev.client, ev.client_version, ev.internal ? "internal" : "external", ev.tier],
+      blobs: [ev.method, ev.tool, ev.recipe, ev.client, ev.client_version, ev.internal ? "internal" : "external", ev.tier, ev.versions_provided ? "versions" : ""],
       doubles: [ev.qlen],
     });
   } catch {}
