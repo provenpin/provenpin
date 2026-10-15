@@ -1,0 +1,21 @@
+id: prometheus-client-fastapi-metrics
+title: "FastAPI metrics with prometheus_client scraped as text"
+summary: "Instrument FastAPI with prometheus_client using a per-app registry, label by route template to bound cardinality, and scrape the text exposition format offline through httpx.ASGITransport."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, prometheus-client, httpx, pytest]
+tags: [metrics, observability, web, testing, async]
+pinned:
+  prometheus-client: "0.26.0"
+  fastapi: "0.143.2"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+  pytest-asyncio: "1.4.0"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_metrics.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,19 @@
+id: peewee-sqlite-migrations
+title: "Peewee models, migrations and transactions on SQLite"
+summary: "Define Peewee models, evolve the schema with playhouse.migrate inside a migration context, and exercise atomic transactions against a SQLite file backed by pytest tmp_path."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [peewee]
+tags: [orm, sqlite, migrations, transactions, testing]
+pinned:
+  peewee: "4.5.3"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - migrations.py
+  - tests/test_migrations.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

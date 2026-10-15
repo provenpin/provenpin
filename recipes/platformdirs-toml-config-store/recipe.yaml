@@ -1,0 +1,19 @@
+id: platformdirs-toml-config-store
+title: "platformdirs config path + tomlkit TOML config store"
+summary: "Resolve a per-user config file with platformdirs, then read and write it with tomlkit while preserving comments, key order and native types."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [platformdirs, tomlkit]
+tags: [config, files, cli]
+pinned:
+  platformdirs: "4.13.0"
+  tomlkit: "0.15.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - config_store.py
+  - tests/test_config_store.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

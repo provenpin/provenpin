@@ -1,0 +1,19 @@
+id: ulid-pydantic-custom-type
+title: "ULID primary keys as a Pydantic v2 custom type"
+summary: "A Pydantic v2 custom type that validates and normalizes ULIDs, keeps them as rich orderable objects, serializes to canonical strings and stores them as sortable sqlite primary keys."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [python-ulid, pydantic]
+tags: [primary-keys, serialization, testing]
+pinned:
+  python-ulid: "4.0.1"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - ulids.py
+  - tests/test_ulids.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

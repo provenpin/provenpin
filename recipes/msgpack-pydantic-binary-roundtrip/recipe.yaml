@@ -1,0 +1,19 @@
+id: msgpack-pydantic-binary-roundtrip
+title: "msgpack binary round-trip for pydantic v2 models"
+summary: "Pack and unpack pydantic v2 models to compact MessagePack bytes, handling Decimal, UUID, datetime, int map keys and bytes safely."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [msgpack, pydantic]
+tags: [serialization, binary, data-modeling]
+pinned:
+  msgpack: "1.2.3"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - codec.py
+  - tests/test_codec.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

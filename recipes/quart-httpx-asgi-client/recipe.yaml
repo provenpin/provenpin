@@ -1,0 +1,19 @@
+id: quart-httpx-asgi-client
+title: "Quart async routes tested offline with httpx ASGITransport"
+summary: "A Quart app with async JSON bodies and an injected httpx client, exercised fully in-process via httpx.ASGITransport and httpx.MockTransport."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [quart, httpx, pytest]
+tags: [web, testing, async]
+pinned:
+  quart: "0.23.1"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

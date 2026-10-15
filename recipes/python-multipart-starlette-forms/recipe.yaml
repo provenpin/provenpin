@@ -1,0 +1,21 @@
+id: python-multipart-starlette-forms
+title: "Starlette multipart form uploads parsed with python-multipart, tested offline"
+summary: "Parse multipart text fields and file uploads in Starlette with python-multipart, then exercise the app fully in-process through httpx.ASGITransport with no network."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [starlette, python-multipart, httpx, pytest]
+tags: [web, forms, file-upload, testing, async]
+pinned:
+  python-multipart: "0.0.32"
+  starlette: "1.8.0"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+  pytest-asyncio: "1.4.0"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,19 @@
+id: opentelemetry-sdk-inmemory-span
+title: "OpenTelemetry SDK spans captured with InMemorySpanExporter"
+summary: "Record nested spans, links and attributes with the OpenTelemetry SDK, then assert on the finished spans via InMemorySpanExporter and a SimpleSpanProcessor, fully offline under pytest."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [opentelemetry]
+tags: [observability, tracing, testing]
+pinned:
+  opentelemetry-sdk: "1.45.1"
+  opentelemetry-api: "1.45.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - spans.py
+  - tests/test_spans.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

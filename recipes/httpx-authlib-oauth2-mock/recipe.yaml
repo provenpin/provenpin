@@ -1,0 +1,21 @@
+id: httpx-authlib-oauth2-mock
+title: "authlib OAuth2 client credentials flow + httpx mocked by respx"
+summary: "An async authlib OAuth2 client that fetches, caches and auto-refreshes client_credentials tokens over httpx, tested fully offline with respx route mocks."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [authlib, httpx, respx]
+tags: [oauth2, auth, http-client, testing]
+pinned:
+  authlib: "1.9.1"
+  httpx: "0.28.1"
+  respx: "0.23.1"
+  pytest: "9.1.1"
+  pytest-asyncio: "1.4.0"
+files:
+  - requirements.txt
+  - client.py
+  - tests/test_client.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

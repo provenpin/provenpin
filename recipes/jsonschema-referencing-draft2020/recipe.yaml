@@ -1,0 +1,19 @@
+id: jsonschema-referencing-draft2020
+title: "jsonschema Draft 2020-12 validation with a referencing registry"
+summary: "Validate JSON fixtures against Draft 2020-12 schemas that cross-reference each other via a referencing Registry, including dynamic anchors, unevaluatedProperties and format checking."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [jsonschema, referencing]
+tags: [validation, json, schema, testing]
+pinned:
+  jsonschema: "4.26.0"
+  referencing: "0.37.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - schemas.py
+  - tests/test_schemas.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

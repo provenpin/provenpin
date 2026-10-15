@@ -1,0 +1,19 @@
+id: beanie-mongomock-odm
+title: "Beanie ODM documents tested against mongomock-motor offline"
+summary: "Define Beanie documents with a unique index and a link, then query them fully offline on mongomock-motor, patching a motor-only call and resolving links by hand."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [beanie, mongomock-motor, pymongo]
+tags: [odm, mongodb, testing, async]
+pinned:
+  beanie: "2.2.0"
+  mongomock-motor: "0.0.36"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - documents.py
+  - tests/test_documents.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
