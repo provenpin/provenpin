@@ -1,0 +1,24 @@
+id: django-pytest-factoryboy
+title: "Django models with factory_boy and pytest-django db fixtures"
+summary: "Django models built with factory_boy DjangoModelFactory (SubFactory, get_or_create, traits) and tested offline on in-memory SQLite with pytest-django database access rules and on_commit capture."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [django, factory-boy, pytest-django]
+tags: [django, testing, orm]
+pinned:
+  django: "6.1.2"
+  factory-boy: "3.3.3"
+  pytest-django: "4.14.0"
+  pytest: "9.1.1"
+  faker: "37.4.0"
+files:
+  - requirements.txt
+  - settings.py
+  - pytest.ini
+  - shop/__init__.py
+  - shop/models.py
+  - factories.py
+  - tests/test_models.py
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
