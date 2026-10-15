@@ -1,0 +1,30 @@
+{
+  "id": "drf-django-filter-viewset",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:43:40.761Z",
+  "last_passed_at": "2026-10-15T11:43:40.761Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 693,
+    "test": 1865
+  },
+  "pinned": {
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "django-filter": "26.2.0",
+    "pytest-django": "4.14.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:cc0a7b284ed7001d68f20c39f067aa653e56c1b3a447851bf43f553b2cc11083",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38729275160"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.47s\n"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "langchain-core-runnable-fallbacks",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:45:50.320Z",
+  "last_passed_at": "2026-10-15T11:45:50.320Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 562,
+    "test": 2725
+  },
+  "pinned": {
+    "langchain-core": "1.6.10",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:77978b32eb6f632cebe98e9d26a92d851db675fbb642f24412cacf6c666219e8",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38729275160"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.49s\n"
+}

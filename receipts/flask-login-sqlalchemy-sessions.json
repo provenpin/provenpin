@@ -1,0 +1,29 @@
+{
+  "id": "flask-login-sqlalchemy-sessions",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:45:02.643Z",
+  "last_passed_at": "2026-10-15T11:45:02.643Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 311,
+    "test": 6000
+  },
+  "pinned": {
+    "flask": "3.1.3",
+    "flask-login": "0.6.3",
+    "flask-sqlalchemy": "3.1.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:61d8314cd24bd381a05389ef9f7690109bc94c11e109df1eeeb4ea5a20ef6cf6",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38729275160"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 3.68s\n"
+}

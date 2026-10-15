@@ -1,0 +1,28 @@
+{
+  "id": "boto3-moto-dynamodb-sqs",
+  "status": "passed",
+  "ran_at": "2026-10-15T11:43:25.543Z",
+  "last_passed_at": "2026-10-15T11:43:25.543Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1057,
+    "test": 5164
+  },
+  "pinned": {
+    "boto3": "1.43.114",
+    "moto": "5.2.4",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:324823974202287bcc9dc26e0cadee86ebfe3671d31bca7dedf34e96758b5ba6",
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38729275160"
+  },
+  "errors": [],
+  "log_tail": "....                                                                     [100%]\n4 passed in 3.41s\n"
+}
