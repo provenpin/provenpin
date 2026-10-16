@@ -1,0 +1,35 @@
+{
+  "id": "fs-extra-json-copy",
+  "status": "passed",
+  "ran_at": "2026-10-16T17:50:44.889Z",
+  "last_passed_at": "2026-10-16T17:50:44.889Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2402,
+    "test": 428
+  },
+  "pinned": {
+    "fs-extra": "11.4.1",
+    "@types/fs-extra": "11.0.4",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:b8ba7866fd0a8ad1fc0514331002fd41f5a66db707aaf2ea45eab587fce7a481",
+  "files": {
+    "recipes/fs-extra-json-copy/package.json": "sha256:0449e4c4e79e778589afab207f1c68c90d03252f1e6a4949ff4a74c54934e2f4",
+    "recipes/fs-extra-json-copy/recipe.yaml": "sha256:6e064dafe9f67abf1d840abbf8d79aca479dffd37dd660c2786c7e1d335d1ee2",
+    "recipes/fs-extra-json-copy/src/tree.ts": "sha256:98e4471e04ec7cff9047b819c1df0e6f7b0b210176049d9073441b495775afa0",
+    "recipes/fs-extra-json-copy/test/tree.test.ts": "sha256:68adf42e679387969439bcf87fc9cc24606aed1d027b8134164f8f1e37971e6a"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38942732901"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: writeJson/readJson roundtrips a config\nok 1 - writeJson/readJson roundtrips a config\n  ---\n  duration_ms: 7.995005\n  type: 'test'\n  ...\n# Subtest: copy duplicates the tree and move updates paths\nok 2 - copy duplicates the tree and move updates paths\n  ---\n  duration_ms: 89.343606\n  type: 'test'\n  ...\n# Subtest: remove deletes the tree\nok 3 - remove deletes the tree\n  ---\n  duration_ms: 4.650461\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 295.440592\n"
+}

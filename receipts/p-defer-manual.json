@@ -1,0 +1,34 @@
+{
+  "id": "p-defer-manual",
+  "status": "passed",
+  "ran_at": "2026-10-16T17:50:43.783Z",
+  "last_passed_at": "2026-10-16T17:50:43.783Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1888,
+    "test": 307
+  },
+  "pinned": {
+    "p-defer": "4.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:c650ff029d0f5e8aaff845fe3eb299283619f2f8b281bfc97350fc5bdb0942e5",
+  "files": {
+    "recipes/p-defer-manual/package.json": "sha256:a62222906df16c09a3f2d7d931c4e90c8ead0c93a70c51299057e914f474a1e8",
+    "recipes/p-defer-manual/recipe.yaml": "sha256:eb3b188206b7dbe4863ece1475ebc17027c4481d0878a557a86784c8341edd46",
+    "recipes/p-defer-manual/src/deferred.ts": "sha256:2acf668a35fd3be9a76ad99a13ad28d063189df90b8c22b3fba687f954df9be8",
+    "recipes/p-defer-manual/test/deferred.test.ts": "sha256:dee30e153daf0a211868a593e3f6c85e4981e39668e495ba311987615a98fa46"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38942732901"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: resolves a deferred promise from outside\nok 1 - resolves a deferred promise from outside\n  ---\n  duration_ms: 1.355651\n  type: 'test'\n  ...\n# Subtest: rejects a deferred promise from outside\nok 2 - rejects a deferred promise from outside\n  ---\n  duration_ms: 0.23149\n  type: 'test'\n  ...\n# Subtest: thenable check distinguishes promises from plain values\nok 3 - thenable check distinguishes promises from plain values\n  ---\n  duration_ms: 0.114081\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 175.938569\n"
+}

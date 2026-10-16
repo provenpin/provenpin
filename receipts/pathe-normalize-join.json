@@ -1,0 +1,34 @@
+{
+  "id": "pathe-normalize-join",
+  "status": "passed",
+  "ran_at": "2026-10-16T17:50:43.872Z",
+  "last_passed_at": "2026-10-16T17:50:43.872Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1989,
+    "test": 330
+  },
+  "pinned": {
+    "pathe": "2.0.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:a4d520d9bad077f01ee03f0e1cde86cf1837061931b7c8fdb47035d0ac2ee6fe",
+  "files": {
+    "recipes/pathe-normalize-join/package.json": "sha256:352f8a4f2e6c5ec75743cfd8a55534ee7a68e6324820031ae295be6f816a3502",
+    "recipes/pathe-normalize-join/recipe.yaml": "sha256:72f14b40f678cf13e33b6d14ebf313028bd1bb364d9d1a76be344a243c951a67",
+    "recipes/pathe-normalize-join/src/paths.ts": "sha256:229276520b491c12a5f8e1680e297fb5ab2521d2b397efa53dcf4857a2f782f8",
+    "recipes/pathe-normalize-join/test/paths.test.ts": "sha256:14452e2385ed8b87edb5f6e88fef42fdb15abe4cbc084ade84e9843804fc470d"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38942732901"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: join returns POSIX-style paths\nok 1 - join returns POSIX-style paths\n  ---\n  duration_ms: 1.238991\n  type: 'test'\n  ...\n# Subtest: mixed slash inputs normalize consistently\nok 2 - mixed slash inputs normalize consistently\n  ---\n  duration_ms: 0.15999\n  type: 'test'\n  ...\n# Subtest: normalize resolves dot segments\nok 3 - normalize resolves dot segments\n  ---\n  duration_ms: 0.088225\n  type: 'test'\n  ...\n# Subtest: basename, extname and dirname operate on POSIX paths\nok 4 - basename, extname and dirname operate on POSIX paths\n  ---\n  duration_ms: 0.249872\n  type: 'test'\n  ...\n# Subtest: relative computes POSIX-style traversals\nok 5 - relative computes POSIX-style traversals\n  ---\n  duration_ms: 0.305663\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 190.992595\n"
+}

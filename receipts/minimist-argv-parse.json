@@ -1,0 +1,35 @@
+{
+  "id": "minimist-argv-parse",
+  "status": "passed",
+  "ran_at": "2026-10-16T17:50:43.024Z",
+  "last_passed_at": "2026-10-16T17:50:43.024Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1915,
+    "test": 225
+  },
+  "pinned": {
+    "minimist": "1.2.8",
+    "@types/minimist": "1.2.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:774c65e9d2d341dd5af1d85f0d456cda9a76b0e495698416a46fa4b2471ccd57",
+  "files": {
+    "recipes/minimist-argv-parse/package.json": "sha256:9162b354dc4265821e8fc630a33b4866436f85ef139ffb20c14e030ba3ace4f2",
+    "recipes/minimist-argv-parse/recipe.yaml": "sha256:e0093d3f7b4433e437f633d36b16433b09b53eb9fb836d71539b723f05438d63",
+    "recipes/minimist-argv-parse/src/argv.ts": "sha256:008d370dbe70d7e644c6d856c9d6610375e3cab5a7499628c1772ea96e45a254",
+    "recipes/minimist-argv-parse/test/argv.test.ts": "sha256:3f076560c708607ff7f6af6c2a162408e5d04e2f5c56f7f3b46bc97084bdc3f7"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38942732901"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: honours aliases\nok 2 - honours aliases\n  ---\n  duration_ms: 0.264388\n  type: 'test'\n  ...\n# Subtest: applies defaults when flags are absent\nok 3 - applies defaults when flags are absent\n  ---\n  duration_ms: 0.669811\n  type: 'test'\n  ...\n# Subtest: collects positional arguments into _\nok 4 - collects positional arguments into _\n  ---\n  duration_ms: 0.406503\n  type: 'test'\n  ...\n# Subtest: separates arguments after -- when enabled\nok 5 - separates arguments after -- when enabled\n  ---\n  duration_ms: 0.180223\n  type: 'test'\n  ...\n# Subtest: keeps unknown flags when not restricted\nok 6 - keeps unknown flags when not restricted\n  ---\n  duration_ms: 0.192957\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 130.525962\n"
+}

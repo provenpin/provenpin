@@ -1,0 +1,34 @@
+{
+  "id": "p-timeout-abort",
+  "status": "passed",
+  "ran_at": "2026-10-16T17:50:45.370Z",
+  "last_passed_at": "2026-10-16T17:50:45.370Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1731,
+    "test": 426
+  },
+  "pinned": {
+    "p-timeout": "8.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d8d8d85131615cbf830b34b9ae685d6e3cdf1c4e75f2e2d01c1abbae914cf42b",
+  "files": {
+    "recipes/p-timeout-abort/package.json": "sha256:616ef9e946e27758f1d5314539624ce97ffe35dbe4a13c821f878424ca7fc43b",
+    "recipes/p-timeout-abort/recipe.yaml": "sha256:97ef08a9c0c8e439737be8f5645080d67eb761675cc69a57929d1f6a870de92e",
+    "recipes/p-timeout-abort/src/timeout.ts": "sha256:7122e89b862665797fb1b4f53b26d7519b54fec0e845822a1a7ab8cd00f4edde",
+    "recipes/p-timeout-abort/test/timeout.test.ts": "sha256:021e5b01cb58d8cfb5649999b3bffb9c975c4878fd1d54860e12d466290f3d73"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38942732901"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: rejects with TimeoutError when the wrapped promise hangs\nok 1 - rejects with TimeoutError when the wrapped promise hangs\n  ---\n  duration_ms: 21.7551\n  type: 'test'\n  ...\n# Subtest: supports a custom TimeoutError message\nok 2 - supports a custom TimeoutError message\n  ---\n  duration_ms: 20.322823\n  type: 'test'\n  ...\n# Subtest: resolves with the value when the promise settles in time\nok 3 - resolves with the value when the promise settles in time\n  ---\n  duration_ms: 0.353412\n  type: 'test'\n  ...\n# Subtest: clears the timer once the promise resolves\nok 4 - clears the timer once the promise resolves\n  ---\n  duration_ms: 0.292579\n  type: 'test'\n  ...\n# Subtest: falls back to a value instead of throwing\nok 5 - falls back to a value instead of throwing\n  ---\n  duration_ms: 19.952408\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 251.592224\n"
+}

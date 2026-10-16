@@ -1,0 +1,34 @@
+{
+  "id": "picocolors-ansi",
+  "status": "passed",
+  "ran_at": "2026-10-16T17:50:43.661Z",
+  "last_passed_at": "2026-10-16T17:50:43.661Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1807,
+    "test": 339
+  },
+  "pinned": {
+    "picocolors": "1.1.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:1378ea4e92502fe0f2403f6fbd467d1006cdb26c164b4eba814f5ecad437ff84",
+  "files": {
+    "recipes/picocolors-ansi/package.json": "sha256:3b780af180685dea742b9de678e5810361605a6da8556ccbe095745a2891bbeb",
+    "recipes/picocolors-ansi/recipe.yaml": "sha256:9ba8046c42b8f7beee4c36c5faadf7c0aeb669eb41228bcda0b1f2d9b387b6bc",
+    "recipes/picocolors-ansi/src/colors.ts": "sha256:ac0ef719710af32b1377cb0c73d337e250a08edeeaf37d960ca7548412dfbb56",
+    "recipes/picocolors-ansi/test/colors.test.ts": "sha256:cd12417c7a01552698c12b1f33a00f9847e667e5006031246fb27fc91b227c50"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38942732901"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: bold and dim helpers emit expected ANSI codes\nok 2 - bold and dim helpers emit expected ANSI codes\n  ---\n  duration_ms: 0.136786\n  type: 'test'\n  ...\n# Subtest: bgYellow helper emits expected background ANSI code\nok 3 - bgYellow helper emits expected background ANSI code\n  ---\n  duration_ms: 0.145132\n  type: 'test'\n  ...\n# Subtest: composed status line carries nested codes\nok 4 - composed status line carries nested codes\n  ---\n  duration_ms: 0.263674\n  type: 'test'\n  ...\n# Subtest: coloring disabled yields plain output\nok 5 - coloring disabled yields plain output\n  ---\n  duration_ms: 0.179396\n  type: 'test'\n  ...\n# Subtest: coloring enabled reports support\nok 6 - coloring enabled reports support\n  ---\n  duration_ms: 0.126647\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 190.198409\n"
+}
