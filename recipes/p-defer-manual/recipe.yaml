@@ -1,0 +1,18 @@
+id: p-defer-manual
+title: "p-defer deferred promises"
+summary: "Create deferred promises with p-defer, settle them later from outside, and assert resolve, reject and thenable behavior offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [p-defer]
+tags: [promise, async, deferred]
+pinned:
+  "p-defer": "4.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/deferred.ts
+  - test/deferred.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

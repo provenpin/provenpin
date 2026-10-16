@@ -1,0 +1,18 @@
+id: p-timeout-abort
+title: "p-timeout hang and resolve guards"
+summary: "Wrap hanging and fast promises with p-timeout to assert TimeoutError, custom messages, returned values and deterministic timer cleanup offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [p-timeout]
+tags: [timeout, promise, async]
+pinned:
+  "p-timeout": "8.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/timeout.ts
+  - test/timeout.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

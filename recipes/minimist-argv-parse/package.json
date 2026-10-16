@@ -1,0 +1,16 @@
+{
+  "name": "minimist-argv-parse",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "minimist": "1.2.8"
+  },
+  "devDependencies": {
+    "@types/minimist": "1.2.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

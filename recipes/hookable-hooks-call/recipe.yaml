@@ -1,0 +1,18 @@
+id: hookable-hooks-call
+title: "hookable serial and parallel hook calls"
+summary: "Create a typed hook registry with hookable and drive it with hook, hookOnce, callHook, callHookParallel and removeHook while asserting serial ordering and one-shot hooks offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [hookable]
+tags: [hooks, plugins, events]
+pinned:
+  "hookable": "6.1.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/pipeline.ts
+  - test/pipeline.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

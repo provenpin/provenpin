@@ -1,0 +1,18 @@
+id: pathe-normalize-join
+title: "pathe POSIX path helpers"
+summary: "Join, normalize, basename, extname, dirname and relative with pathe, asserting consistent POSIX-style results for mixed slash inputs, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pathe]
+tags: [path, posix, filesystem]
+pinned:
+  "pathe": "2.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/paths.ts
+  - test/paths.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

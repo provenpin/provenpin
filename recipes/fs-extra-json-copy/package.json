@@ -1,0 +1,16 @@
+{
+  "name": "fs-extra-json-copy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "fs-extra": "11.4.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "11.0.4",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

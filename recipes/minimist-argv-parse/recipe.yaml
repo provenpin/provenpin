@@ -1,0 +1,19 @@
+id: minimist-argv-parse
+title: "minimist argv parse"
+summary: "Parse argv arrays with minimist using string, boolean, alias, default and -- options, asserting parsed flags, positional _ and permissive unknown flags, all offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [minimist]
+tags: [cli, argv, parser]
+pinned:
+  "minimist": "1.2.8"
+  "@types/minimist": "1.2.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/argv.ts
+  - test/argv.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

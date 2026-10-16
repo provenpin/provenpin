@@ -1,0 +1,18 @@
+id: picocolors-ansi
+title: "picocolors ANSI color helpers"
+summary: "Apply picocolors red, green, bold, dim and bgYellow helpers, asserting ANSI escape codes and plain output when coloring is disabled offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [picocolors]
+tags: [cli, colors, ansi]
+pinned:
+  "picocolors": "1.1.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/colors.ts
+  - test/colors.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

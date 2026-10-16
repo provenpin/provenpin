@@ -1,0 +1,18 @@
+id: ignore-gitignore-filter
+title: "ignore gitignore-style path filter"
+summary: "Apply gitignore-style rules (directory patterns, negation) to a list of paths with the ignore package, using ignores, filter and createFilter offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ignore]
+tags: [gitignore, paths, filter, ignore]
+pinned:
+  "ignore": "7.0.12"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/filter.ts
+  - test/filter.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

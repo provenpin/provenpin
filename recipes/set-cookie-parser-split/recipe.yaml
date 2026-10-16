@@ -1,0 +1,19 @@
+id: set-cookie-parser-split
+title: "set-cookie-parser single and joined headers"
+summary: "Parse single and array Set-Cookie headers with set-cookie-parser, split comma-joined headers using splitCookiesString, and assert name, value, path, httpOnly and sameSite fields offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [set-cookie-parser]
+tags: [http, cookies, headers]
+pinned:
+  "set-cookie-parser": "3.1.4"
+  "@types/set-cookie-parser": "2.4.10"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/cookies.ts
+  - test/cookies.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
