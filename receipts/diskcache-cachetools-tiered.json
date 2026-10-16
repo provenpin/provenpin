@@ -1,0 +1,35 @@
+{
+  "id": "diskcache-cachetools-tiered",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:56:45.886Z",
+  "last_passed_at": "2026-10-16T00:56:45.886Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 236,
+    "test": 1474
+  },
+  "pinned": {
+    "diskcache": "5.6.3",
+    "cachetools": "7.2.2",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:9c54e9b17aafe1f38f19c12183fc5676a50a93153af0e0709fdbe3f92f3741a4",
+  "files": {
+    "recipes/diskcache-cachetools-tiered/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/diskcache-cachetools-tiered/recipe.yaml": "sha256:c4b51a07e4a155a8f85967ac4160ab4af9b0c1466a846ceed70005f9582dfcc7",
+    "recipes/diskcache-cachetools-tiered/requirements.txt": "sha256:169fd8918949c40c87f035350a614cbe84cb6beb5012db272cf8a945d0a028b0",
+    "recipes/diskcache-cachetools-tiered/tests/test_tiered.py": "sha256:ae75fefe0bd73a6b2d2dbb5b6677f0019862b6c64293b1827bea6775edbf9645",
+    "recipes/diskcache-cachetools-tiered/tiered.py": "sha256:d96286b7d5585034c7e03a9b91b8e3a82c721dd2dce436323b6fc87d62114616"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38832319459"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.53s\n"
+}

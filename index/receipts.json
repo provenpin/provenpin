@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-16T00:56:00.974Z",
+ "generated_at": "2026-10-16T00:57:03.952Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 377,
+ "count": 382,
  "recipes": [
   {
    "id": "aiofiles-anyio-temp-io",
@@ -1622,6 +1622,33 @@
    }
   },
   {
+   "id": "croniter-pendulum-next-run",
+   "language": "python",
+   "pinned": {
+    "croniter": "6.2.4",
+    "pendulum": "3.3.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:56:44.642Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38832319459",
+   "recipe_hash": "sha256:427c8cb1248b9a290703efeab54d2a61d2733303d9c4ca85f7511a287789b3fd",
+   "files": {
+    "recipes/croniter-pendulum-next-run/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/croniter-pendulum-next-run/recipe.yaml": "sha256:a74fa9455475e2498e6467bbd914fa39ab3b35cef2dff4db962c7896803b7a70",
+    "recipes/croniter-pendulum-next-run/requirements.txt": "sha256:bf3051c03ccbcd8002f2bd3ef35b2fc4bb4d2313d495c43950b3f04512982d49",
+    "recipes/croniter-pendulum-next-run/scheduler.py": "sha256:7a878e89a44789987612fa37800430f9b6c55b10468bd2ecfd4dbc6beda5dcde",
+    "recipes/croniter-pendulum-next-run/tests/test_scheduler.py": "sha256:0b5f7c5294a2392375c4f8046eb92b81f889a849e6c918eb033b486638fd0e5c"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "cryptography-fernet-multi-key",
    "language": "python",
    "pinned": {
@@ -1970,6 +1997,33 @@
     "recipes/dexie-fake-indexeddb-store/recipe.yaml": "sha256:1ab472fc323b58b54162f2d3ff649ef57b2841c7c24b349b45882d732683d641",
     "recipes/dexie-fake-indexeddb-store/src/store.ts": "sha256:59368948e10adc40e2e46d0787e18f13c28152ccf2d06afb945ac6187ceaf68d",
     "recipes/dexie-fake-indexeddb-store/test/store.test.ts": "sha256:531850f3d2863b71e9f03c0cc51ce288840eb561c196783644fb88d2a347e189"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "diskcache-cachetools-tiered",
+   "language": "python",
+   "pinned": {
+    "diskcache": "5.6.3",
+    "cachetools": "7.2.2",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:56:45.886Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38832319459",
+   "recipe_hash": "sha256:9c54e9b17aafe1f38f19c12183fc5676a50a93153af0e0709fdbe3f92f3741a4",
+   "files": {
+    "recipes/diskcache-cachetools-tiered/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/diskcache-cachetools-tiered/recipe.yaml": "sha256:c4b51a07e4a155a8f85967ac4160ab4af9b0c1466a846ceed70005f9582dfcc7",
+    "recipes/diskcache-cachetools-tiered/requirements.txt": "sha256:169fd8918949c40c87f035350a614cbe84cb6beb5012db272cf8a945d0a028b0",
+    "recipes/diskcache-cachetools-tiered/tests/test_tiered.py": "sha256:ae75fefe0bd73a6b2d2dbb5b6677f0019862b6c64293b1827bea6775edbf9645",
+    "recipes/diskcache-cachetools-tiered/tiered.py": "sha256:d96286b7d5585034c7e03a9b91b8e3a82c721dd2dce436323b6fc87d62114616"
    },
    "staleness": {
     "status": "unchecked",
@@ -3432,6 +3486,36 @@
      "python-multipart": "0.0.32"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "fastapi-prometheus-instrumentator",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.2",
+    "prometheus-fastapi-instrumentator": "8.1.0",
+    "prometheus-client": "0.26.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:56:39.219Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38832319459",
+   "recipe_hash": "sha256:7bae75b56eceb320a24993c1cf9ba4a4519d823c96b0c692af0e80c5c7bd9683",
+   "files": {
+    "recipes/fastapi-prometheus-instrumentator/app.py": "sha256:1a28e937a00bf1d5770c2468fc5c1b709b0053ace8e522d4adc64fc78abc8100",
+    "recipes/fastapi-prometheus-instrumentator/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/fastapi-prometheus-instrumentator/recipe.yaml": "sha256:f871862047c93246e4c08c066382a82e9535efdb6ef73f6f8812d5d1e25efda6",
+    "recipes/fastapi-prometheus-instrumentator/requirements.txt": "sha256:8c31f7aa39ae3e398f9a0a81555ac68d5b0ed5ccbf2b86ebdfd93f4474792895",
+    "recipes/fastapi-prometheus-instrumentator/tests/test_instrumentation.py": "sha256:2fa60995a74cb14b742c5021e072b5794ee4a435ce977dc40a4a03f5b7caeb54"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -6880,6 +6964,33 @@
    }
   },
   {
+   "id": "openpyxl-pydantic-row-import",
+   "language": "python",
+   "pinned": {
+    "openpyxl": "3.1.5",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:56:42.875Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38832319459",
+   "recipe_hash": "sha256:ca97e19cc306b50f5bca0624f08f2564e0c2709f68da7c021ff6aa9d91bfef6c",
+   "files": {
+    "recipes/openpyxl-pydantic-row-import/importer.py": "sha256:aa1dd21fbb296b15cc44cf670018096410f979077d592c2a48dcbdeeb1f4cdbb",
+    "recipes/openpyxl-pydantic-row-import/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/openpyxl-pydantic-row-import/recipe.yaml": "sha256:e3755a77edbeb2ec93288af9bbb8f94085a49fb509f39b5d33d8d442f1c88d25",
+    "recipes/openpyxl-pydantic-row-import/requirements.txt": "sha256:2a9137b7595e07455c27c75657eb93c29ac4a22be866c3a771a61f612aa441aa",
+    "recipes/openpyxl-pydantic-row-import/tests/test_importer.py": "sha256:07dab720387d8988bb3df7a2471b8b6a84193a5aee06592a969d33aef4283e4e"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "opentelemetry-sdk-inmemory-span",
    "language": "python",
    "pinned": {
@@ -8194,6 +8305,33 @@
     "recipes/python-multipart-starlette-forms/recipe.yaml": "sha256:760334abb427a752c19026c24d98bf43cb739d7a7791654b10f09c100fa7d3d4",
     "recipes/python-multipart-starlette-forms/requirements.txt": "sha256:a39ff64384d8b0a835183ebf0293a2a3421f2fcbd0262442709d2a6f5c87a021",
     "recipes/python-multipart-starlette-forms/tests/test_app.py": "sha256:71680fcdbb37560ad98de3bf9bc1bb379a4a4e1fc31109d5bf98725d914b4523"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pyyaml-jsonschema-config",
+   "language": "python",
+   "pinned": {
+    "pyyaml": "6.0.3",
+    "jsonschema": "4.26.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:56:47.081Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38832319459",
+   "recipe_hash": "sha256:d51efd5d1efeded3202e99581a3dadd8aa9d6472fb67eb23526a6a073bae6a1d",
+   "files": {
+    "recipes/pyyaml-jsonschema-config/config.py": "sha256:654166c041910380b128b33570e109142633679c4d2685d5b1547955cc74c577",
+    "recipes/pyyaml-jsonschema-config/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pyyaml-jsonschema-config/recipe.yaml": "sha256:eaa84d56800670ef5c7feda7ca0136e71fc171d7a2b601d200f0e38287fe1e31",
+    "recipes/pyyaml-jsonschema-config/requirements.txt": "sha256:7697282215947d175087e980e586698d13e912d7e8e7850cf7d62bd923ec2de0",
+    "recipes/pyyaml-jsonschema-config/tests/test_config.py": "sha256:8b7f5d15384c00fce7ba28d956fa2a91e9e9d3de0411889862054098f9424afc"
    },
    "staleness": {
     "status": "unchecked",

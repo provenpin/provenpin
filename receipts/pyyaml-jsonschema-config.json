@@ -1,0 +1,35 @@
+{
+  "id": "pyyaml-jsonschema-config",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:56:47.081Z",
+  "last_passed_at": "2026-10-16T00:56:47.081Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1360,
+    "test": 1214
+  },
+  "pinned": {
+    "pyyaml": "6.0.3",
+    "jsonschema": "4.26.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:d51efd5d1efeded3202e99581a3dadd8aa9d6472fb67eb23526a6a073bae6a1d",
+  "files": {
+    "recipes/pyyaml-jsonschema-config/config.py": "sha256:654166c041910380b128b33570e109142633679c4d2685d5b1547955cc74c577",
+    "recipes/pyyaml-jsonschema-config/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pyyaml-jsonschema-config/recipe.yaml": "sha256:eaa84d56800670ef5c7feda7ca0136e71fc171d7a2b601d200f0e38287fe1e31",
+    "recipes/pyyaml-jsonschema-config/requirements.txt": "sha256:7697282215947d175087e980e586698d13e912d7e8e7850cf7d62bd923ec2de0",
+    "recipes/pyyaml-jsonschema-config/tests/test_config.py": "sha256:8b7f5d15384c00fce7ba28d956fa2a91e9e9d3de0411889862054098f9424afc"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38832319459"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.20s\n"
+}

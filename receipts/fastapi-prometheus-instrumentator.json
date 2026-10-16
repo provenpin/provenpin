@@ -1,0 +1,38 @@
+{
+  "id": "fastapi-prometheus-instrumentator",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:56:39.219Z",
+  "last_passed_at": "2026-10-16T00:56:39.219Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 501,
+    "test": 1503
+  },
+  "pinned": {
+    "fastapi": "0.143.2",
+    "prometheus-fastapi-instrumentator": "8.1.0",
+    "prometheus-client": "0.26.0",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+  },
+  "recipe_hash": "sha256:7bae75b56eceb320a24993c1cf9ba4a4519d823c96b0c692af0e80c5c7bd9683",
+  "files": {
+    "recipes/fastapi-prometheus-instrumentator/app.py": "sha256:1a28e937a00bf1d5770c2468fc5c1b709b0053ace8e522d4adc64fc78abc8100",
+    "recipes/fastapi-prometheus-instrumentator/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/fastapi-prometheus-instrumentator/recipe.yaml": "sha256:f871862047c93246e4c08c066382a82e9535efdb6ef73f6f8812d5d1e25efda6",
+    "recipes/fastapi-prometheus-instrumentator/requirements.txt": "sha256:8c31f7aa39ae3e398f9a0a81555ac68d5b0ed5ccbf2b86ebdfd93f4474792895",
+    "recipes/fastapi-prometheus-instrumentator/tests/test_instrumentation.py": "sha256:2fa60995a74cb14b742c5021e072b5794ee4a435ce977dc40a4a03f5b7caeb54"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38832319459"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.56s\n"
+}

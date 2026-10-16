@@ -1,0 +1,35 @@
+{
+  "id": "croniter-pendulum-next-run",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:56:44.642Z",
+  "last_passed_at": "2026-10-16T00:56:44.642Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 321,
+    "test": 929
+  },
+  "pinned": {
+    "croniter": "6.2.4",
+    "pendulum": "3.3.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:427c8cb1248b9a290703efeab54d2a61d2733303d9c4ca85f7511a287789b3fd",
+  "files": {
+    "recipes/croniter-pendulum-next-run/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/croniter-pendulum-next-run/recipe.yaml": "sha256:a74fa9455475e2498e6467bbd914fa39ab3b35cef2dff4db962c7896803b7a70",
+    "recipes/croniter-pendulum-next-run/requirements.txt": "sha256:bf3051c03ccbcd8002f2bd3ef35b2fc4bb4d2313d495c43950b3f04512982d49",
+    "recipes/croniter-pendulum-next-run/scheduler.py": "sha256:7a878e89a44789987612fa37800430f9b6c55b10468bd2ecfd4dbc6beda5dcde",
+    "recipes/croniter-pendulum-next-run/tests/test_scheduler.py": "sha256:0b5f7c5294a2392375c4f8046eb92b81f889a849e6c918eb033b486638fd0e5c"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38832319459"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.15s\n"
+}

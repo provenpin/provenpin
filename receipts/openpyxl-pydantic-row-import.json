@@ -1,0 +1,35 @@
+{
+  "id": "openpyxl-pydantic-row-import",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:56:42.875Z",
+  "last_passed_at": "2026-10-16T00:56:42.875Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 357,
+    "test": 2041
+  },
+  "pinned": {
+    "openpyxl": "3.1.5",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:ca97e19cc306b50f5bca0624f08f2564e0c2709f68da7c021ff6aa9d91bfef6c",
+  "files": {
+    "recipes/openpyxl-pydantic-row-import/importer.py": "sha256:aa1dd21fbb296b15cc44cf670018096410f979077d592c2a48dcbdeeb1f4cdbb",
+    "recipes/openpyxl-pydantic-row-import/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/openpyxl-pydantic-row-import/recipe.yaml": "sha256:e3755a77edbeb2ec93288af9bbb8f94085a49fb509f39b5d33d8d442f1c88d25",
+    "recipes/openpyxl-pydantic-row-import/requirements.txt": "sha256:2a9137b7595e07455c27c75657eb93c29ac4a22be866c3a771a61f612aa441aa",
+    "recipes/openpyxl-pydantic-row-import/tests/test_importer.py": "sha256:07dab720387d8988bb3df7a2471b8b6a84193a5aee06592a969d33aef4283e4e"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38832319459"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.65s\n"
+}
