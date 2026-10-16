@@ -1,0 +1,22 @@
+id: fastapi-prometheus-instrumentator
+title: "FastAPI metrics with prometheus-fastapi-instrumentator tested offline"
+summary: "Instrument a FastAPI app with the default prometheus-fastapi-instrumentator metrics, scrape /metrics through httpx.ASGITransport, and cover the route-template labels, untemplated grouping, self-scraping and shared-registry gotchas."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, prometheus-fastapi-instrumentator, prometheus-client, httpx, pytest]
+tags: [metrics, observability, web, testing, async]
+pinned:
+  fastapi: "0.143.2"
+  prometheus-fastapi-instrumentator: "8.1.0"
+  prometheus-client: "0.26.0"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+  pytest-asyncio: "1.4.0"
+files:
+  - requirements.txt
+  - app.py
+  - tests/test_instrumentation.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

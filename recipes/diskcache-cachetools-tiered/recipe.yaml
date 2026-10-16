@@ -1,0 +1,19 @@
+id: diskcache-cachetools-tiered
+title: "Tiered cache: diskcache FanoutCache plus cachetools LRU"
+summary: "A MutableMapping two-tier cache that promotes values from a sharded diskcache FanoutCache into a cachetools LRUCache, covering persistence, expiration and promotion gotchas with offline tests."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [diskcache, cachetools]
+tags: [caching, performance, testing]
+pinned:
+  diskcache: "5.6.3"
+  cachetools: "7.2.2"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - tiered.py
+  - tests/test_tiered.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

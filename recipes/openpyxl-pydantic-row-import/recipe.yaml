@@ -1,0 +1,19 @@
+id: openpyxl-pydantic-row-import
+title: "openpyxl worksheet rows validated into pydantic models offline"
+summary: "Read xlsx rows from openpyxl into pydantic v2 models, handling None cells, whole-float to int coercion, whitespace, ignored extra columns and row-numbered errors, all tested offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [openpyxl, pydantic]
+tags: [spreadsheets, data-validation, data-import, testing]
+pinned:
+  openpyxl: "3.1.5"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - importer.py
+  - tests/test_importer.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

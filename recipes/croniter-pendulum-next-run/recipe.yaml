@@ -1,0 +1,19 @@
+id: croniter-pendulum-next-run
+title: "croniter next run times as pendulum timezone-aware datetimes"
+summary: "Compute the next cron fire times as tz-aware pendulum DateTimes, handling DST gaps and folds, with focused offline tests."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [croniter, pendulum]
+tags: [scheduling, datetime, timezone]
+pinned:
+  croniter: "6.2.4"
+  pendulum: "3.3.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - scheduler.py
+  - tests/test_scheduler.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

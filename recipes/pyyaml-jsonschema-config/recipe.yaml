@@ -1,0 +1,19 @@
+id: pyyaml-jsonschema-config
+title: "PyYAML config validated with jsonschema Draft 2020-12"
+summary: "Load a YAML config with PyYAML safe loading and validate it offline against a JSON Schema Draft 2020-12 with jsonschema, including format checks and duplicate-key detection."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pyyaml, jsonschema]
+tags: [config, validation, yaml]
+pinned:
+  pyyaml: "6.0.3"
+  jsonschema: "4.26.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - config.py
+  - tests/test_config.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
