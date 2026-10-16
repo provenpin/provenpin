@@ -1,0 +1,34 @@
+{
+  "id": "tabulate-markdown-report",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:58:14.628Z",
+  "last_passed_at": "2026-10-16T09:58:14.628Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 230,
+    "test": 1878
+  },
+  "pinned": {
+    "tabulate": "0.10.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:dcc4013c3d1650e0e002994e32528e4e944479bda835ba655ff2570a37ae19a3",
+  "files": {
+    "recipes/tabulate-markdown-report/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/tabulate-markdown-report/recipe.yaml": "sha256:a79a055e963ccb2aa42e858ce1aee624b2dfe183b725d6a62df4fdba09f92f4f",
+    "recipes/tabulate-markdown-report/report.py": "sha256:f288c26aed6689d4365ae5c30470432716c64f0d8c79ce7886ed8a1f6f1067f9",
+    "recipes/tabulate-markdown-report/requirements.txt": "sha256:0b811d7330c18c925d6c7a9eb8507532327bd6b307912fd7805d7e05268ceeb6",
+    "recipes/tabulate-markdown-report/tests/test_report.py": "sha256:63a1cd474de4d53c972045a18ed5734568b66b386a97adff5b8bdda52ffcdb48"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.20s\n"
+}

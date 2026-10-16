@@ -1,0 +1,34 @@
+{
+  "id": "croniter-next-prev",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:03.303Z",
+  "last_passed_at": "2026-10-16T09:57:03.303Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 175,
+    "test": 1163
+  },
+  "pinned": {
+    "croniter": "6.2.4",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:43a03e7a6f6b3c45103622166c2206c55d8e328eb57192ab8d1393325f75c769",
+  "files": {
+    "recipes/croniter-next-prev/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/croniter-next-prev/recipe.yaml": "sha256:2bc0ceb9f4ef187cbaf8c82c02912168af75075c386b4f12d3005c8c7bf7e991",
+    "recipes/croniter-next-prev/requirements.txt": "sha256:bd37bb191a54f7490f55a3f2488783cd52ed4fb1c07647e7a6c3996950c2f0f1",
+    "recipes/croniter-next-prev/schedule.py": "sha256:3f04c3c463f1c5e8e27a77a6b5971310b2264600fe876d3e7161307e299a7784",
+    "recipes/croniter-next-prev/tests/test_schedule.py": "sha256:02d3d610a9bce684ed99f96e7b109db4001276e1f476ce68c33a610f4890f16e"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.11s\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "xlsxwriter-charts-bytesio",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:58:26.947Z",
+  "last_passed_at": "2026-10-16T09:58:26.947Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 188,
+    "test": 1749
+  },
+  "pinned": {
+    "xlsxwriter": "3.2.9",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:9b1951f2d95a0723350434998c25df2a202f88af214b4fb69661c85424356a74",
+  "files": {
+    "recipes/xlsxwriter-charts-bytesio/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/xlsxwriter-charts-bytesio/recipe.yaml": "sha256:04feb6223dec96e12d2a6fc61337bde1857e52cc973155d572c32c704ae897ca",
+    "recipes/xlsxwriter-charts-bytesio/report.py": "sha256:e623c540f4859c50ba6e5448ddc99a57b0d91efaf86efa036481ec77934c7471",
+    "recipes/xlsxwriter-charts-bytesio/requirements.txt": "sha256:5fb631e39101582f0ce0adb928ce6feb5a0bf8f44a035204c25d8f59bc5ed89e",
+    "recipes/xlsxwriter-charts-bytesio/tests/test_report.py": "sha256:346d0679e306b5e2cfc2d03e85d4742371c9ad5d4529ab5400d338007aa4ec2c"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.21s\n"
+}

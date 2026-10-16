@@ -1,0 +1,34 @@
+{
+  "id": "pillow-image-thumbnail",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:42.783Z",
+  "last_passed_at": "2026-10-16T09:57:42.783Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 322,
+    "test": 591
+  },
+  "pinned": {
+    "pillow": "12.3.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:c18d513a3164a7e25432db491aa5b71dba4f2fc2ae40a3119b6cd5e338346918",
+  "files": {
+    "recipes/pillow-image-thumbnail/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pillow-image-thumbnail/recipe.yaml": "sha256:e50fb1d77848f3131553f7428da4740bb72461a9cc5da78d95b47fdb27b7fb18",
+    "recipes/pillow-image-thumbnail/requirements.txt": "sha256:61265dd58e9dbcb17e1176c79a0be440309a008e7ceb11a640783c46696b9d78",
+    "recipes/pillow-image-thumbnail/tests/test_thumbnailer.py": "sha256:bbd8db3595b069f3b1257883e48170af559657531dfe0da096eb1312a8d3bce9",
+    "recipes/pillow-image-thumbnail/thumbnailer.py": "sha256:88e4685038c2f36cf0ea473e65682903cb5a4a4d781c676a81a2df8da3a22344"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.12s\n"
+}

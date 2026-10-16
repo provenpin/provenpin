@@ -1,0 +1,34 @@
+{
+  "id": "pyarrow-parquet-roundtrip",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:44.979Z",
+  "last_passed_at": "2026-10-16T09:57:44.979Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 661,
+    "test": 1481
+  },
+  "pinned": {
+    "pyarrow": "26.0.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:f526eb1701dcedfb0401f8ba9ad7accba716e769ddf47147eb0abe88872e47f2",
+  "files": {
+    "recipes/pyarrow-parquet-roundtrip/parquet_roundtrip.py": "sha256:6562c197432d8db8aa5d989da7732df96ce2a552943a8956c1a2af80c44f5ec8",
+    "recipes/pyarrow-parquet-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pyarrow-parquet-roundtrip/recipe.yaml": "sha256:1fce485b334bcdf8a5552a35fcddf59dad415143e584fa945392b5ead06aa428",
+    "recipes/pyarrow-parquet-roundtrip/requirements.txt": "sha256:e35ae31ab5200e01e4c155695f330be4d3fa60b554ecb44b78f94b2f98838c16",
+    "recipes/pyarrow-parquet-roundtrip/tests/test_parquet_roundtrip.py": "sha256:ec648eeaf411753e2fcee94f9c1181a3a69b83205e8f0b0f694f4e665599200e"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.33s\n"
+}

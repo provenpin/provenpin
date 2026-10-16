@@ -1,0 +1,36 @@
+{
+  "id": "cattrs-preconf-orjson-converter",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:06.584Z",
+  "last_passed_at": "2026-10-16T09:57:06.584Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 173,
+    "test": 1567
+  },
+  "pinned": {
+    "attrs": "26.1.0",
+    "cattrs": "26.2.1",
+    "orjson": "3.13.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:a614f3546411f03ab74dc8154bc213067662e4c6d0d4ad85e53d2366521f7d39",
+  "files": {
+    "recipes/cattrs-preconf-orjson-converter/converter.py": "sha256:7ba011758d92355a1d7ef2a554b710060a019d7e4b4cf93b37a4b0d88126b96e",
+    "recipes/cattrs-preconf-orjson-converter/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/cattrs-preconf-orjson-converter/recipe.yaml": "sha256:41ed02bd58a9dde9062371fc761665272c214ad8ac7b79faa155073f7d29445e",
+    "recipes/cattrs-preconf-orjson-converter/requirements.txt": "sha256:bd6ecddbed1e5863a4f54415e497beb69141a9a71994d7f1d3bf4f8dfd4f1c50",
+    "recipes/cattrs-preconf-orjson-converter/tests/test_converter.py": "sha256:08f4748ad53170c8b0070f5c1e85b5601a2c6d59119d449046c1ac2ce4812e3f"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.14s\n"
+}

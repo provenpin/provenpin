@@ -1,0 +1,34 @@
+{
+  "id": "ftfy-mojibake-fix",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:19.371Z",
+  "last_passed_at": "2026-10-16T09:57:19.371Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 199,
+    "test": 2211
+  },
+  "pinned": {
+    "ftfy": "6.3.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:af47ef32c441b5c7888551858fabca29c0bcf81800eb8b12b6ecd8f69e0cc47f",
+  "files": {
+    "recipes/ftfy-mojibake-fix/fixer.py": "sha256:90d42c22b0c5651d80bc09c6268eb77fc98413e8fc3e7e55cb200ed9a909cf3c",
+    "recipes/ftfy-mojibake-fix/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/ftfy-mojibake-fix/recipe.yaml": "sha256:e0b0a4ebd1478d71f2ac8753fbb236fbbee94026eb8e61ba0c3be53e7a3753fb",
+    "recipes/ftfy-mojibake-fix/requirements.txt": "sha256:ceb3ad895d70940c3bbfdfbd38c4343114388cafe3f29b77f5d9e0f6199b592b",
+    "recipes/ftfy-mojibake-fix/tests/test_fixer.py": "sha256:397bdd29ef966df038b9942058fa530f92fed0205086d589f4fcdaecdef046ae"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.03s\n"
+}

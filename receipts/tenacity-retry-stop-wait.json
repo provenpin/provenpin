@@ -1,0 +1,34 @@
+{
+  "id": "tenacity-retry-stop-wait",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:58:13.938Z",
+  "last_passed_at": "2026-10-16T09:58:13.938Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 248,
+    "test": 702
+  },
+  "pinned": {
+    "tenacity": "9.2.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:ef1825af75edd884235c641d37ad69a7106e02e6380a59957e6b37b244c76e5d",
+  "files": {
+    "recipes/tenacity-retry-stop-wait/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/tenacity-retry-stop-wait/recipe.yaml": "sha256:c5678365d4e29ea150986aa325ba8d9d1b1d586f6ac238d4fd18a98406dd3952",
+    "recipes/tenacity-retry-stop-wait/requirements.txt": "sha256:e58d3428d73f34957259feeedd9e8e604f1c82b8bb0a74d453785ece80d9c3d4",
+    "recipes/tenacity-retry-stop-wait/retrier.py": "sha256:cb1214c2e41eaa9bbd27ea9855d13bd34808698cf3b6bb38ab8b831cca701c3a",
+    "recipes/tenacity-retry-stop-wait/tests/test_retrier.py": "sha256:42be67765226b8efcce5a3e1d20e25230c027a522a034e66d57662cc50892321"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
+}

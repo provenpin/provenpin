@@ -1,0 +1,34 @@
+{
+  "id": "tinydb-query-storage-middleware",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:58:15.515Z",
+  "last_passed_at": "2026-10-16T09:58:15.515Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 181,
+    "test": 1058
+  },
+  "pinned": {
+    "tinydb": "4.9.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:a9dc822c7f854b64928893f732f8b6bf40d2198f778fc64994428a19d3393937",
+  "files": {
+    "recipes/tinydb-query-storage-middleware/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/tinydb-query-storage-middleware/recipe.yaml": "sha256:98870b79f53c0e31c3a2cb81de57317408b052f1727d66f6fd6cb2004025a9cf",
+    "recipes/tinydb-query-storage-middleware/requirements.txt": "sha256:009f98bfba481dad53f005a1688a491fde7b88d3854b9b338c81e8c737569811",
+    "recipes/tinydb-query-storage-middleware/store.py": "sha256:5d3f2ab66721623ae0d01d6ad72c9a3be675434979938291ab1b3882fa75acb8",
+    "recipes/tinydb-query-storage-middleware/tests/test_store.py": "sha256:cb1522d9487fc28c7291c7fff89953065c9e1a5512d299f75dabf6d9700d437a"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+}

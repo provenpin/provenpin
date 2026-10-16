@@ -1,0 +1,34 @@
+{
+  "id": "result-ok-err-map",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:59.044Z",
+  "last_passed_at": "2026-10-16T09:57:59.044Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 190,
+    "test": 1056
+  },
+  "pinned": {
+    "result": "0.17.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:6a4eaac044595312ca816356d545bf173e274d706868a94f158f0fd8900cee38",
+  "files": {
+    "recipes/result-ok-err-map/pipeline.py": "sha256:628461c8cf7e72aad5b9d4dc2147b604b99399d7c72c19160f06864822da8e31",
+    "recipes/result-ok-err-map/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/result-ok-err-map/recipe.yaml": "sha256:f2e5e69841dabbbaf3d0e1bd485fd6f5b9eb88c89081bfffe1e5f8dca302ba4a",
+    "recipes/result-ok-err-map/requirements.txt": "sha256:f73e1762179b873529e8c36aec2f93e98eb96ff3b9d2a3ec703761017af6c182",
+    "recipes/result-ok-err-map/tests/test_pipeline.py": "sha256:801c6006e766361d10e0d0daf2b5dc2e914b8f51c0cf73d03092604bf1795c66"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+}

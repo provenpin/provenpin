@@ -1,0 +1,34 @@
+{
+  "id": "jinja2-sandboxed-user-templates",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:30.688Z",
+  "last_passed_at": "2026-10-16T09:57:30.688Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 287,
+    "test": 2107
+  },
+  "pinned": {
+    "jinja2": "3.1.6",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:5485940098a4a0d99c4475b11c16d42776e7b333faf61ed5a81e85e65b68da5d",
+  "files": {
+    "recipes/jinja2-sandboxed-user-templates/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/jinja2-sandboxed-user-templates/recipe.yaml": "sha256:d8ae38692cf2ba3bef070fe46a135824ae24d6e9c75d60ffe7f3561a6e6f8196",
+    "recipes/jinja2-sandboxed-user-templates/renderer.py": "sha256:fa2aeb25adda432b1be50bc0ebfb9352c6b58b3bd7afecb783bb6f06c92da1a0",
+    "recipes/jinja2-sandboxed-user-templates/requirements.txt": "sha256:f45cf64371cc066be74728505985aa527f7db98808a6c6c56802c98cf77468e6",
+    "recipes/jinja2-sandboxed-user-templates/tests/test_renderer.py": "sha256:f9775a8fdeb33fff0af73fcdaccbd6d6d61008d05d23229e4a6dc8796750a990"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.28s\n"
+}

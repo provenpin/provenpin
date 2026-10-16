@@ -1,0 +1,34 @@
+{
+  "id": "babel-locale-number-date-format",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:01.687Z",
+  "last_passed_at": "2026-10-16T09:57:01.687Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 458,
+    "test": 1151
+  },
+  "pinned": {
+    "babel": "2.18.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:0fe074f8d9c4aae9941e3a9b572cea326008aed1f9094397b9c041feb6be08a1",
+  "files": {
+    "recipes/babel-locale-number-date-format/money.py": "sha256:59772f20bb3a5b02db3972736bf70fa0a5d982f064d8dcef74952635e4a99d9f",
+    "recipes/babel-locale-number-date-format/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/babel-locale-number-date-format/recipe.yaml": "sha256:f61cabd83c25a95a5b91fd35b915c9d7b9d701f2b40ddd4297c4a47131c86750",
+    "recipes/babel-locale-number-date-format/requirements.txt": "sha256:8fb5fdc3b0ac87eb82fb307346a96e0ede4b0dab6df59173c1fc14fd7f83705b",
+    "recipes/babel-locale-number-date-format/tests/test_money.py": "sha256:8dddfa7a8df27262c62d851f3d7cc261768c3789003bd48e96a00550066f2f0b"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.13s\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "charset-normalizer-decode",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:01.330Z",
+  "last_passed_at": "2026-10-16T09:57:01.330Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 232,
+    "test": 2326
+  },
+  "pinned": {
+    "charset-normalizer": "3.5.2",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:ff9ff766b35e4825c0e7e5ca6c366ae5a0fc119960ae2c8006cd9193923ed217",
+  "files": {
+    "recipes/charset-normalizer-decode/decode.py": "sha256:abf8ee95ff717806b5d2c5489f6fd1b294b61e5f9a3437d584ea950f1d89b8f2",
+    "recipes/charset-normalizer-decode/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/charset-normalizer-decode/recipe.yaml": "sha256:3dc1e7a0620012700e896b801a5a0aac3fabf97045e38bf64200d73162e35452",
+    "recipes/charset-normalizer-decode/requirements.txt": "sha256:6653362dabbcde17d1d1bffc8914513061693d418764b3fd736661f8abcb24bf",
+    "recipes/charset-normalizer-decode/tests/test_decode.py": "sha256:c1db2856493117d1cf47d8dfb55c2d4adbce262413cfb4d147286843538eb301"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.16s\n"
+}

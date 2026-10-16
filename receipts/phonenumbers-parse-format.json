@@ -1,0 +1,34 @@
+{
+  "id": "phonenumbers-parse-format",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:40.917Z",
+  "last_passed_at": "2026-10-16T09:57:40.917Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 332,
+    "test": 738
+  },
+  "pinned": {
+    "phonenumbers": "9.0.41",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:3edd20833369bc1dc6b94f487b2a4506c453792ebb7a7881737762d37b9f81fc",
+  "files": {
+    "recipes/phonenumbers-parse-format/phone.py": "sha256:20dfbc1539223fbd42b04f74a3ed5d81fd3f5b0b63b4460353e107931d7b6fd8",
+    "recipes/phonenumbers-parse-format/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/phonenumbers-parse-format/recipe.yaml": "sha256:10e42b9970ed2b073ddd2b18bb6fa850705d3bdcf5cbe0d22e3ac7c48d68e680",
+    "recipes/phonenumbers-parse-format/requirements.txt": "sha256:18af2e47adc8f5937eb15fa73f5140279f826403c46ecdbcaff917da0937c9ee",
+    "recipes/phonenumbers-parse-format/tests/test_phone.py": "sha256:bfd44ef7e830fc43fc1edbe688dea73b703578bc47e2351e150e0dca8ef3ced4"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.10s\n"
+}

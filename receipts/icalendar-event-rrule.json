@@ -1,0 +1,34 @@
+{
+  "id": "icalendar-event-rrule",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:20.925Z",
+  "last_passed_at": "2026-10-16T09:57:20.925Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 329,
+    "test": 831
+  },
+  "pinned": {
+    "icalendar": "7.3.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:bcc313bb88f1bd50f2e9b8829013fa699bd6ef38b67aea0e48062073e1afe704",
+  "files": {
+    "recipes/icalendar-event-rrule/events.py": "sha256:957a71fe7ae3fbef71cc1b4e38d6a7f517e28a5612d3b294c2a7dec2db51d18d",
+    "recipes/icalendar-event-rrule/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/icalendar-event-rrule/recipe.yaml": "sha256:7fecc44e7232d997d7d50dc4d01c21af1e9605ab09b00c51e99a76a4dca726fd",
+    "recipes/icalendar-event-rrule/requirements.txt": "sha256:ee48eaeba7d573d9470e9b4e68bb82058d28b659251e69343418c409902f0825",
+    "recipes/icalendar-event-rrule/tests/test_events.py": "sha256:23bf763dd37130069b02a0c919d122710139a8869478eb4b3b79b36fdcac13ed"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.20s\n"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "marshmallow-oneofschema-polymorphic",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:22.341Z",
+  "last_passed_at": "2026-10-16T09:57:22.341Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 194,
+    "test": 766
+  },
+  "pinned": {
+    "marshmallow": "4.3.1",
+    "marshmallow-oneofschema": "3.2.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:ee1a6e4070a9e400f49e2b330a1fc7125f8e39bed6dfe571a8b5f86d4f6a3cbc",
+  "files": {
+    "recipes/marshmallow-oneofschema-polymorphic/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/marshmallow-oneofschema-polymorphic/recipe.yaml": "sha256:6d24a20c21b55562356888c19e17ae8a7eadb1befb59d7efad0fa62a84372ba6",
+    "recipes/marshmallow-oneofschema-polymorphic/requirements.txt": "sha256:2f52bf6bdb0f873a1924f21bba772cf056c2f098afecc389f0416fed1fde5122",
+    "recipes/marshmallow-oneofschema-polymorphic/schemas.py": "sha256:08cd86d03d80563fb5901d5c8a0d35ff7b6664fbb709fc8090a39209dd06def1",
+    "recipes/marshmallow-oneofschema-polymorphic/tests/test_schemas.py": "sha256:0b9c09c4a9aade48f170b5ea8368678668fcebee4c445a59adfc8744d79eb04d"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"
+}

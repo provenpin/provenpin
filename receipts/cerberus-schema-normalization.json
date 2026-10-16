@@ -1,0 +1,34 @@
+{
+  "id": "cerberus-schema-normalization",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:00.249Z",
+  "last_passed_at": "2026-10-16T09:57:00.249Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 253,
+    "test": 2301
+  },
+  "pinned": {
+    "cerberus": "1.3.8",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:1f25aa8050d93f667a9198e8e11f88deee3c5a91960cfae836c7c09e4e5642d9",
+  "files": {
+    "recipes/cerberus-schema-normalization/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/cerberus-schema-normalization/recipe.yaml": "sha256:8160446daf748933e7ab5f8e52e4c4a924e3b1fba2807b0667680169cdce4d35",
+    "recipes/cerberus-schema-normalization/requirements.txt": "sha256:0b4e999f2f2aa2fd219a244bd761a9f3b6190d32be9118616d207dfaa4bad676",
+    "recipes/cerberus-schema-normalization/schema.py": "sha256:58bda39e0694913209d2557d6b33170038340d288c8ba4784ce00a0ea181bf63",
+    "recipes/cerberus-schema-normalization/tests/test_schema.py": "sha256:667f7cc74d690ba329ea7ad6fb1095673266272f78c8f9878609b1b1abd68b0d"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.11s\n"
+}

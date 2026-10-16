@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-16T06:56:28.486Z",
+ "generated_at": "2026-10-16T09:58:42.647Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 403,
+ "count": 439,
  "recipes": [
   {
    "id": "adm-zip-roundtrip",
@@ -796,6 +796,32 @@
    }
   },
   {
+   "id": "babel-locale-number-date-format",
+   "language": "python",
+   "pinned": {
+    "babel": "2.18.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:01.687Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:0fe074f8d9c4aae9941e3a9b572cea326008aed1f9094397b9c041feb6be08a1",
+   "files": {
+    "recipes/babel-locale-number-date-format/money.py": "sha256:59772f20bb3a5b02db3972736bf70fa0a5d982f064d8dcef74952635e4a99d9f",
+    "recipes/babel-locale-number-date-format/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/babel-locale-number-date-format/recipe.yaml": "sha256:f61cabd83c25a95a5b91fd35b915c9d7b9d701f2b40ddd4297c4a47131c86750",
+    "recipes/babel-locale-number-date-format/requirements.txt": "sha256:8fb5fdc3b0ac87eb82fb307346a96e0ede4b0dab6df59173c1fc14fd7f83705b",
+    "recipes/babel-locale-number-date-format/tests/test_money.py": "sha256:8dddfa7a8df27262c62d851f3d7cc261768c3789003bd48e96a00550066f2f0b"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "bcryptjs-jose-sessions",
    "language": "typescript",
    "pinned": {
@@ -1014,6 +1040,32 @@
    }
   },
   {
+   "id": "blinker-signals-decoupled-events",
+   "language": "python",
+   "pinned": {
+    "blinker": "1.9.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:56:59.324Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:af8c1b2e50248417aaedcf8f64985cd4e8958e78e219106f24836e265a465eeb",
+   "files": {
+    "recipes/blinker-signals-decoupled-events/events.py": "sha256:a058c89b8d03fd7751d6e4a142278f243932c9c627eb689a233ef18429113a0c",
+    "recipes/blinker-signals-decoupled-events/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/blinker-signals-decoupled-events/recipe.yaml": "sha256:3dfe99d1ba130f547679eb7aeeaca6c52878d5f7286cfbc3f4913d5323be64c3",
+    "recipes/blinker-signals-decoupled-events/requirements.txt": "sha256:abe837289691fe837006b7dd4c2287ed59acbc08840782d512edeadecbe9a474",
+    "recipes/blinker-signals-decoupled-events/tests/test_events.py": "sha256:5484781e7ce3a9388adb8b3df8ac26fa25970ac1d0b71d38c15b403dcda25fb1"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "boltons-funcutils-retry",
    "language": "python",
    "pinned": {
@@ -1031,6 +1083,32 @@
     "recipes/boltons-funcutils-retry/recipe.yaml": "sha256:5f47a5830bf3108dbb31f89728eef84ddc05b527e73de6641768c9bdbafecb1a",
     "recipes/boltons-funcutils-retry/requirements.txt": "sha256:a2a03e84d439979bf3393d8a34e98d68c49e0b64fed62de69653b0047efdd7e6",
     "recipes/boltons-funcutils-retry/tests/test_helpers.py": "sha256:fa52401565783da2ea8ffe7558ca504dd6471e0ce038332ec5e34ce7f71b1536"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "boltons-iterutils-remap",
+   "language": "python",
+   "pinned": {
+    "boltons": "26.2.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:03.778Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:fb919d441bad10af47a61361f63d682065fe2b9510b68028cceff3cc695ea527",
+   "files": {
+    "recipes/boltons-iterutils-remap/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/boltons-iterutils-remap/recipe.yaml": "sha256:751e03e50aab52fe601cfb21cd25a008fb4dac46f656e0cd588914c5cf28697f",
+    "recipes/boltons-iterutils-remap/requirements.txt": "sha256:a2a03e84d439979bf3393d8a34e98d68c49e0b64fed62de69653b0047efdd7e6",
+    "recipes/boltons-iterutils-remap/tests/test_transform.py": "sha256:d8b588e7a054341ac4848da2a8a9d7b35b07740d76ce967c7297f51d1917ec0e",
+    "recipes/boltons-iterutils-remap/transform.py": "sha256:2af4aa7629999f0f68cf1f6b77f13cddb13dd0e74655b57e01754e0afdf4d065"
    },
    "staleness": {
     "status": "unchecked",
@@ -1232,6 +1310,34 @@
    }
   },
   {
+   "id": "cattrs-preconf-orjson-converter",
+   "language": "python",
+   "pinned": {
+    "attrs": "26.1.0",
+    "cattrs": "26.2.1",
+    "orjson": "3.13.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:06.584Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:a614f3546411f03ab74dc8154bc213067662e4c6d0d4ad85e53d2366521f7d39",
+   "files": {
+    "recipes/cattrs-preconf-orjson-converter/converter.py": "sha256:7ba011758d92355a1d7ef2a554b710060a019d7e4b4cf93b37a4b0d88126b96e",
+    "recipes/cattrs-preconf-orjson-converter/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/cattrs-preconf-orjson-converter/recipe.yaml": "sha256:41ed02bd58a9dde9062371fc761665272c214ad8ac7b79faa155073f7d29445e",
+    "recipes/cattrs-preconf-orjson-converter/requirements.txt": "sha256:bd6ecddbed1e5863a4f54415e497beb69141a9a71994d7f1d3bf4f8dfd4f1c50",
+    "recipes/cattrs-preconf-orjson-converter/tests/test_converter.py": "sha256:08f4748ad53170c8b0070f5c1e85b5601a2c6d59119d449046c1ac2ce4812e3f"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "celery-beat-schedule-crontab",
    "language": "python",
    "pinned": {
@@ -1322,6 +1428,32 @@
    }
   },
   {
+   "id": "cerberus-schema-normalization",
+   "language": "python",
+   "pinned": {
+    "cerberus": "1.3.8",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:00.249Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:1f25aa8050d93f667a9198e8e11f88deee3c5a91960cfae836c7c09e4e5642d9",
+   "files": {
+    "recipes/cerberus-schema-normalization/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/cerberus-schema-normalization/recipe.yaml": "sha256:8160446daf748933e7ab5f8e52e4c4a924e3b1fba2807b0667680169cdce4d35",
+    "recipes/cerberus-schema-normalization/requirements.txt": "sha256:0b4e999f2f2aa2fd219a244bd761a9f3b6190d32be9118616d207dfaa4bad676",
+    "recipes/cerberus-schema-normalization/schema.py": "sha256:58bda39e0694913209d2557d6b33170038340d288c8ba4784ce00a0ea181bf63",
+    "recipes/cerberus-schema-normalization/tests/test_schema.py": "sha256:667f7cc74d690ba329ea7ad6fb1095673266272f78c8f9878609b1b1abd68b0d"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "chalk-ansi-styles",
    "language": "typescript",
    "pinned": {
@@ -1365,6 +1497,58 @@
     "recipes/change-case-string-cases/recipe.yaml": "sha256:167c0a98cae72ac94e87bd6a389d38c1387ffb4799c6228cda6f492cd2196eb8",
     "recipes/change-case-string-cases/src/cases.ts": "sha256:b89463cf1236514feb2e7fd118d1de2faa008aba6864beb9c0fae9f5a5bfb799",
     "recipes/change-case-string-cases/test/cases.test.ts": "sha256:c679104becf8bc489ca9117a26a0460326fe5c7174d9862309f2fac906c29d9a"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "chardet-charset-detect",
+   "language": "python",
+   "pinned": {
+    "chardet": "7.6.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:04.857Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:4be7ca0c5e7b926c9216cc9fd97ce2008002670777e4de78cdacd082d76fd5cf",
+   "files": {
+    "recipes/chardet-charset-detect/detect.py": "sha256:2cff0828f26f16811aa28893b6f27cb5e34da38fad11ca1d601c59d04e35357a",
+    "recipes/chardet-charset-detect/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/chardet-charset-detect/recipe.yaml": "sha256:fc25047df07a23cdba76814f691d112df1936053e87b4a554dccabcbcd73e9e8",
+    "recipes/chardet-charset-detect/requirements.txt": "sha256:f2732e25eaef935d3cc2474f47ee0f288faa5be0651d36b2bac1b15e4c4bf7f5",
+    "recipes/chardet-charset-detect/tests/test_detect.py": "sha256:0e19276e0ca38b8e6bdf84b2e63c8c03b75b11c9b6e068c5dd8259224efac3bf"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "charset-normalizer-decode",
+   "language": "python",
+   "pinned": {
+    "charset-normalizer": "3.5.2",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:01.330Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:ff9ff766b35e4825c0e7e5ca6c366ae5a0fc119960ae2c8006cd9193923ed217",
+   "files": {
+    "recipes/charset-normalizer-decode/decode.py": "sha256:abf8ee95ff717806b5d2c5489f6fd1b294b61e5f9a3437d584ea950f1d89b8f2",
+    "recipes/charset-normalizer-decode/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/charset-normalizer-decode/recipe.yaml": "sha256:3dc1e7a0620012700e896b801a5a0aac3fabf97045e38bf64200d73162e35452",
+    "recipes/charset-normalizer-decode/requirements.txt": "sha256:6653362dabbcde17d1d1bffc8914513061693d418764b3fd736661f8abcb24bf",
+    "recipes/charset-normalizer-decode/tests/test_decode.py": "sha256:c1db2856493117d1cf47d8dfb55c2d4adbce262413cfb4d147286843538eb301"
    },
    "staleness": {
     "status": "unchecked",
@@ -1692,6 +1876,32 @@
     "recipes/croner-zod-job-scheduler/recipe.yaml": "sha256:0673a9db1259affec44b1e4cbf2e60c8317f19142de9f19f330348fac27dde53",
     "recipes/croner-zod-job-scheduler/src/scheduler.ts": "sha256:3b517a78320104753042f04133aec85bc2f5c6463614fcf213ff38664cc7b246",
     "recipes/croner-zod-job-scheduler/test/scheduler.test.ts": "sha256:6d7de49f520a4aab9d84a4afd44d75fdc89af2f1103c2adfd096aea6f5a1e001"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "croniter-next-prev",
+   "language": "python",
+   "pinned": {
+    "croniter": "6.2.4",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:03.303Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:43a03e7a6f6b3c45103622166c2206c55d8e328eb57192ab8d1393325f75c769",
+   "files": {
+    "recipes/croniter-next-prev/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/croniter-next-prev/recipe.yaml": "sha256:2bc0ceb9f4ef187cbaf8c82c02912168af75075c386b4f12d3005c8c7bf7e991",
+    "recipes/croniter-next-prev/requirements.txt": "sha256:bd37bb191a54f7490f55a3f2488783cd52ed4fb1c07647e7a6c3996950c2f0f1",
+    "recipes/croniter-next-prev/schedule.py": "sha256:3f04c3c463f1c5e8e27a77a6b5971310b2264600fe876d3e7161307e299a7784",
+    "recipes/croniter-next-prev/tests/test_schedule.py": "sha256:02d3d610a9bce684ed99f96e7b109db4001276e1f476ce68c33a610f4890f16e"
    },
    "staleness": {
     "status": "unchecked",
@@ -4280,6 +4490,58 @@
    }
   },
   {
+   "id": "fpdf2-multipage-table",
+   "language": "python",
+   "pinned": {
+    "fpdf2": "2.8.9",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:17.593Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:35c0d3664ed9abd2cb360502efae7f9e3881c60e4200a6779dc594a2fc11689c",
+   "files": {
+    "recipes/fpdf2-multipage-table/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fpdf2-multipage-table/recipe.yaml": "sha256:c795f3f2ce24f3e631d72905d6dcec355145fa0e91c8b03defbccdad3e6c49da",
+    "recipes/fpdf2-multipage-table/report.py": "sha256:3597756c468c857c24ae8a1c91c8f7a2892be02afb92732e51307935fa4e594f",
+    "recipes/fpdf2-multipage-table/requirements.txt": "sha256:2f9cf35ca27f9d6d4abb14c911fe2589250ad7127ddb473956f7259e5c62b639",
+    "recipes/fpdf2-multipage-table/tests/test_report.py": "sha256:f50296835e17b2f3f29f5e1e4fd9833f2fc9831114efda79db84f282db312e57"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "ftfy-mojibake-fix",
+   "language": "python",
+   "pinned": {
+    "ftfy": "6.3.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:19.371Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:af47ef32c441b5c7888551858fabca29c0bcf81800eb8b12b6ecd8f69e0cc47f",
+   "files": {
+    "recipes/ftfy-mojibake-fix/fixer.py": "sha256:90d42c22b0c5651d80bc09c6268eb77fc98413e8fc3e7e55cb200ed9a909cf3c",
+    "recipes/ftfy-mojibake-fix/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/ftfy-mojibake-fix/recipe.yaml": "sha256:e0b0a4ebd1478d71f2ac8753fbb236fbbee94026eb8e61ba0c3be53e7a3753fb",
+    "recipes/ftfy-mojibake-fix/requirements.txt": "sha256:ceb3ad895d70940c3bbfdfbd38c4343114388cafe3f29b77f5d9e0f6199b592b",
+    "recipes/ftfy-mojibake-fix/tests/test_fixer.py": "sha256:397bdd29ef966df038b9942058fa530f92fed0205086d589f4fcdaecdef046ae"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "fuse-js-weighted-search",
    "language": "typescript",
    "pinned": {
@@ -5049,6 +5311,32 @@
    }
   },
   {
+   "id": "icalendar-event-rrule",
+   "language": "python",
+   "pinned": {
+    "icalendar": "7.3.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:20.925Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:bcc313bb88f1bd50f2e9b8829013fa699bd6ef38b67aea0e48062073e1afe704",
+   "files": {
+    "recipes/icalendar-event-rrule/events.py": "sha256:957a71fe7ae3fbef71cc1b4e38d6a7f517e28a5612d3b294c2a7dec2db51d18d",
+    "recipes/icalendar-event-rrule/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/icalendar-event-rrule/recipe.yaml": "sha256:7fecc44e7232d997d7d50dc4d01c21af1e9605ab09b00c51e99a76a4dca726fd",
+    "recipes/icalendar-event-rrule/requirements.txt": "sha256:ee48eaeba7d573d9470e9b4e68bb82058d28b659251e69343418c409902f0825",
+    "recipes/icalendar-event-rrule/tests/test_events.py": "sha256:23bf763dd37130069b02a0c919d122710139a8869478eb4b3b79b36fdcac13ed"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "immer-patches-history",
    "language": "typescript",
    "pinned": {
@@ -5137,6 +5425,32 @@
    }
   },
   {
+   "id": "jellyfish-phonetic-match",
+   "language": "python",
+   "pinned": {
+    "jellyfish": "1.3.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:23.400Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:22f9aa0df793418725999cd8b6f6fd946345d5b45383ddbf9eefbba865d8c2f9",
+   "files": {
+    "recipes/jellyfish-phonetic-match/matcher.py": "sha256:2d61c55d50a3595a436124e34de5438feb1e105cfac79cb3880897569f3c1f3d",
+    "recipes/jellyfish-phonetic-match/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/jellyfish-phonetic-match/recipe.yaml": "sha256:dd18a40fb15052a9b5283bbdc2e7bc6bd814dd19bc444748f13d95859eb50e3c",
+    "recipes/jellyfish-phonetic-match/requirements.txt": "sha256:880d5203ebb4cd7930908908cb7bb866abd5a3c1552bf2dc7772139c5c52963f",
+    "recipes/jellyfish-phonetic-match/tests/test_matcher.py": "sha256:987fc5ceafffe1ad1b070b77b253c4a20d0e4e2afd17d33606e9c49092c7e064"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "jimp-image-resize",
    "language": "typescript",
    "pinned": {
@@ -5192,6 +5506,32 @@
      "markupsafe": "3.0.4"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "jinja2-sandboxed-user-templates",
+   "language": "python",
+   "pinned": {
+    "jinja2": "3.1.6",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:30.688Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:5485940098a4a0d99c4475b11c16d42776e7b333faf61ed5a81e85e65b68da5d",
+   "files": {
+    "recipes/jinja2-sandboxed-user-templates/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/jinja2-sandboxed-user-templates/recipe.yaml": "sha256:d8ae38692cf2ba3bef070fe46a135824ae24d6e9c75d60ffe7f3561a6e6f8196",
+    "recipes/jinja2-sandboxed-user-templates/renderer.py": "sha256:fa2aeb25adda432b1be50bc0ebfb9352c6b58b3bd7afecb783bb6f06c92da1a0",
+    "recipes/jinja2-sandboxed-user-templates/requirements.txt": "sha256:f45cf64371cc066be74728505985aa527f7db98808a6c6c56802c98cf77468e6",
+    "recipes/jinja2-sandboxed-user-templates/tests/test_renderer.py": "sha256:f9775a8fdeb33fff0af73fcdaccbd6d6d61008d05d23229e4a6dc8796750a990"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -5764,6 +6104,32 @@
    }
   },
   {
+   "id": "limits-moving-window-memory",
+   "language": "python",
+   "pinned": {
+    "limits": "5.8.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:22.997Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:b3b79644af85aa8402a4ff2e9783533442118a4c671e5e9d27de5d21d24db6d7",
+   "files": {
+    "recipes/limits-moving-window-memory/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/limits-moving-window-memory/ratelimit.py": "sha256:2a5f3e0229231ca312653df0241083df3dc04a2a48bd780dec077249993ff8d1",
+    "recipes/limits-moving-window-memory/recipe.yaml": "sha256:c32a749807e7fcefd7ea38a77c8f727e39cf584fc56ced43ff35343fc5e846a1",
+    "recipes/limits-moving-window-memory/requirements.txt": "sha256:d5edd30ccf524f17edc5ad59531d8384d06acc43a8d5fc04b9b95ab2ae421f7f",
+    "recipes/limits-moving-window-memory/tests/test_ratelimit.py": "sha256:5913c14c6085fe5c72d8fec8dea0d6cc6f11357546873d3a55c8ed57a13a090a"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "linkedom-html-parsing",
    "language": "typescript",
    "pinned": {
@@ -6151,6 +6517,33 @@
    }
   },
   {
+   "id": "marshmallow-oneofschema-polymorphic",
+   "language": "python",
+   "pinned": {
+    "marshmallow": "4.3.1",
+    "marshmallow-oneofschema": "3.2.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:22.341Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:ee1a6e4070a9e400f49e2b330a1fc7125f8e39bed6dfe571a8b5f86d4f6a3cbc",
+   "files": {
+    "recipes/marshmallow-oneofschema-polymorphic/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/marshmallow-oneofschema-polymorphic/recipe.yaml": "sha256:6d24a20c21b55562356888c19e17ae8a7eadb1befb59d7efad0fa62a84372ba6",
+    "recipes/marshmallow-oneofschema-polymorphic/requirements.txt": "sha256:2f52bf6bdb0f873a1924f21bba772cf056c2f098afecc389f0416fed1fde5122",
+    "recipes/marshmallow-oneofschema-polymorphic/schemas.py": "sha256:08cd86d03d80563fb5901d5c8a0d35ff7b6664fbb709fc8090a39209dd06def1",
+    "recipes/marshmallow-oneofschema-polymorphic/tests/test_schemas.py": "sha256:0b9c09c4a9aade48f170b5ea8368678668fcebee4c445a59adfc8744d79eb04d"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "marshmallow-sqlalchemy-flask-api",
    "language": "python",
    "pinned": {
@@ -6417,6 +6810,32 @@
     "recipes/msgpackr-encode-decode/recipe.yaml": "sha256:bd6e098733d430bf228391a5ba5995d44085ce4156fb3a2f3d151411b946e65c",
     "recipes/msgpackr-encode-decode/src/codec.ts": "sha256:d5d42282df8331cb19b7ea563ff56d530256bf680cf943ca0583b1fbed738ef5",
     "recipes/msgpackr-encode-decode/test/codec.test.ts": "sha256:925b2c73ce04d578d31d7dc0fc1f3a94ad49103b13d443069b98eec5ba9a1ee1"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "msgspec-msgpack-tagged-unions",
+   "language": "python",
+   "pinned": {
+    "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:29.646Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:c0889374e81ffe1841a742779e50e0db9a3f6d336e61b9959e60cf3098dbcddd",
+   "files": {
+    "recipes/msgspec-msgpack-tagged-unions/models.py": "sha256:c5a0a4d8df38227cbd653982dfc5e8289415aa0b204727c29677bae2520d72fc",
+    "recipes/msgspec-msgpack-tagged-unions/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/msgspec-msgpack-tagged-unions/recipe.yaml": "sha256:edf959e235575d6aea08417351b00f3743b6916b9a8911065dde0b6e705f0136",
+    "recipes/msgspec-msgpack-tagged-unions/requirements.txt": "sha256:52bfbf468f58b821120e47f77ba893d0204207e4ab4de16260244b9dce548761",
+    "recipes/msgspec-msgpack-tagged-unions/tests/test_models.py": "sha256:11be5e33d18ad5c804640d7d2242e16df3031a13a27ac6b14e2b53395d6cc2fe"
    },
    "staleness": {
     "status": "unchecked",
@@ -7256,6 +7675,32 @@
    }
   },
   {
+   "id": "openpyxl-styles-named-styles",
+   "language": "python",
+   "pinned": {
+    "openpyxl": "3.1.5",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:38.380Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:bdeeb9e666b22c81706fd48a9658fb32fb044dafb24212e7cfb71e07018d241b",
+   "files": {
+    "recipes/openpyxl-styles-named-styles/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/openpyxl-styles-named-styles/recipe.yaml": "sha256:92ab6954be8dc576cdbf19a6786aae42a186a8213dbd31949a1eee24c9799929",
+    "recipes/openpyxl-styles-named-styles/report.py": "sha256:6af44090acf07933b8427821bfb04b21864ec6f581ab0e5a398127d862ef34cb",
+    "recipes/openpyxl-styles-named-styles/requirements.txt": "sha256:04d57a0cf737e12a456a52486ad769a106e722c83576e7e3e298b2ef68f55b31",
+    "recipes/openpyxl-styles-named-styles/tests/test_report.py": "sha256:d37db25c2c9b566bfd8b5d57dbba044e68df8ea3caf032a276c8dc71b62f26a0"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "opentelemetry-sdk-inmemory-span",
    "language": "python",
    "pinned": {
@@ -7758,6 +8203,32 @@
    }
   },
   {
+   "id": "peewee-playhouse-sqlite-json",
+   "language": "python",
+   "pinned": {
+    "peewee": "4.5.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:39.111Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:7d80b0242bf3655b0f8470639cc593f5f703fd1223cf6cb4cf24992092e8adad",
+   "files": {
+    "recipes/peewee-playhouse-sqlite-json/models.py": "sha256:567c1bf34001fac7b00a106f8db17324145bdd0ae3b6592cdec90bfa9ed6bcdb",
+    "recipes/peewee-playhouse-sqlite-json/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/peewee-playhouse-sqlite-json/recipe.yaml": "sha256:1af243555dc6c788975873359548ffe9c573b15621d67e848fa803a95e7ff133",
+    "recipes/peewee-playhouse-sqlite-json/requirements.txt": "sha256:1b9e3421991a3b90ac7ef113013652fccc69de595b9d2e844234af667dbaa000",
+    "recipes/peewee-playhouse-sqlite-json/tests/test_json.py": "sha256:902e197980f6420d84d922a15481d5d9ad99619a52692ff8ace721f1a346885c"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "peewee-sqlite-migrations",
    "language": "python",
    "pinned": {
@@ -7776,6 +8247,32 @@
     "recipes/peewee-sqlite-migrations/recipe.yaml": "sha256:fb6c8f10f0c46c3ebb1750580fdf01a6d59d1b44baea7f1a3237391f83c41990",
     "recipes/peewee-sqlite-migrations/requirements.txt": "sha256:1b9e3421991a3b90ac7ef113013652fccc69de595b9d2e844234af667dbaa000",
     "recipes/peewee-sqlite-migrations/tests/test_migrations.py": "sha256:90dd6c8e3844f05103ba039ef0a71cb9a4ecce0f33e7582e9694db78856b983f"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pendulum-period-range",
+   "language": "python",
+   "pinned": {
+    "pendulum": "3.3.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:40.134Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:6ae17d2910fdc13638c34276205469d1b45bed486c3e95c83bdf582fd381e429",
+   "files": {
+    "recipes/pendulum-period-range/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pendulum-period-range/ranges.py": "sha256:9828615d322b8ab1b0719ff16471171ee1e4b9e0f258643c552ea73822878d64",
+    "recipes/pendulum-period-range/recipe.yaml": "sha256:18343463dff1487f4fb24e92b14717c5b2b8ca2555be0be5a2a9ac7d66ee04fa",
+    "recipes/pendulum-period-range/requirements.txt": "sha256:b5462b1076b2dc859914860af0f379b199fddc75a81c7ff8f4307598c60628e6",
+    "recipes/pendulum-period-range/tests/test_ranges.py": "sha256:0acb9fa1d3a34827c83d3963fcc46ad19f90cece03b1814921810d3674f8b810"
    },
    "staleness": {
     "status": "unchecked",
@@ -7839,6 +8336,32 @@
    }
   },
   {
+   "id": "phonenumbers-parse-format",
+   "language": "python",
+   "pinned": {
+    "phonenumbers": "9.0.41",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:40.917Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:3edd20833369bc1dc6b94f487b2a4506c453792ebb7a7881737762d37b9f81fc",
+   "files": {
+    "recipes/phonenumbers-parse-format/phone.py": "sha256:20dfbc1539223fbd42b04f74a3ed5d81fd3f5b0b63b4460353e107931d7b6fd8",
+    "recipes/phonenumbers-parse-format/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/phonenumbers-parse-format/recipe.yaml": "sha256:10e42b9970ed2b073ddd2b18bb6fa850705d3bdcf5cbe0d22e3ac7c48d68e680",
+    "recipes/phonenumbers-parse-format/requirements.txt": "sha256:18af2e47adc8f5937eb15fa73f5140279f826403c46ecdbcaff917da0937c9ee",
+    "recipes/phonenumbers-parse-format/tests/test_phone.py": "sha256:bfd44ef7e830fc43fc1edbe688dea73b703578bc47e2351e150e0dca8ef3ced4"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "piccolo-sqlite-crud",
    "language": "python",
    "pinned": {
@@ -7858,6 +8381,32 @@
     "recipes/piccolo-sqlite-crud/recipe.yaml": "sha256:7fb3e8e9e111fcb062148b29875d1c8688e48d2f9fac2bae17cf116953a16b9d",
     "recipes/piccolo-sqlite-crud/requirements.txt": "sha256:9138cc2c277aceca054c9afea0289f36ec89d1ec6669cf3797c9852c9b1539fa",
     "recipes/piccolo-sqlite-crud/tests/test_crud.py": "sha256:6224e9dfd0afeed7baa2a5f93e61f1c24603e977be93c67a65d730646cdac107"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pillow-image-thumbnail",
+   "language": "python",
+   "pinned": {
+    "pillow": "12.3.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:42.783Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:c18d513a3164a7e25432db491aa5b71dba4f2fc2ae40a3119b6cd5e338346918",
+   "files": {
+    "recipes/pillow-image-thumbnail/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pillow-image-thumbnail/recipe.yaml": "sha256:e50fb1d77848f3131553f7428da4740bb72461a9cc5da78d95b47fdb27b7fb18",
+    "recipes/pillow-image-thumbnail/requirements.txt": "sha256:61265dd58e9dbcb17e1176c79a0be440309a008e7ceb11a640783c46696b9d78",
+    "recipes/pillow-image-thumbnail/tests/test_thumbnailer.py": "sha256:bbd8db3595b069f3b1257883e48170af559657531dfe0da096eb1312a8d3bce9",
+    "recipes/pillow-image-thumbnail/thumbnailer.py": "sha256:88e4685038c2f36cf0ea473e65682903cb5a4a4d781c676a81a2df8da3a22344"
    },
    "staleness": {
     "status": "unchecked",
@@ -8318,6 +8867,58 @@
    }
   },
   {
+   "id": "pyarrow-parquet-roundtrip",
+   "language": "python",
+   "pinned": {
+    "pyarrow": "26.0.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:44.979Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:f526eb1701dcedfb0401f8ba9ad7accba716e769ddf47147eb0abe88872e47f2",
+   "files": {
+    "recipes/pyarrow-parquet-roundtrip/parquet_roundtrip.py": "sha256:6562c197432d8db8aa5d989da7732df96ce2a552943a8956c1a2af80c44f5ec8",
+    "recipes/pyarrow-parquet-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pyarrow-parquet-roundtrip/recipe.yaml": "sha256:1fce485b334bcdf8a5552a35fcddf59dad415143e584fa945392b5ead06aa428",
+    "recipes/pyarrow-parquet-roundtrip/requirements.txt": "sha256:e35ae31ab5200e01e4c155695f330be4d3fa60b554ecb44b78f94b2f98838c16",
+    "recipes/pyarrow-parquet-roundtrip/tests/test_parquet_roundtrip.py": "sha256:ec648eeaf411753e2fcee94f9c1181a3a69b83205e8f0b0f694f4e665599200e"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pybreaker-circuit-breaker-states",
+   "language": "python",
+   "pinned": {
+    "pybreaker": "1.4.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:48.539Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:398a31a2643efc01e856cd1c344decc58d9d438eca98e6e98c85e992e2d33958",
+   "files": {
+    "recipes/pybreaker-circuit-breaker-states/breaker.py": "sha256:5639363c7be4a6c965637f4095c79ca074cadc010030e96edbe713c278331df1",
+    "recipes/pybreaker-circuit-breaker-states/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pybreaker-circuit-breaker-states/recipe.yaml": "sha256:1a0bbd162b0e3588617473e20a377ecb3a4f3b402bfaed6b5786ccb48231758f",
+    "recipes/pybreaker-circuit-breaker-states/requirements.txt": "sha256:adccee8ccca843d68ec9498145132276a45d50f5be93484763b7d7c2d62dd8c3",
+    "recipes/pybreaker-circuit-breaker-states/tests/test_breaker.py": "sha256:a90a39b311b11ed547952382fd42d63e80c5353536716e91a7aaabc3bbfa1dd6"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "pydantic-ai-testmodel-tools",
    "language": "python",
    "pinned": {
@@ -8675,6 +9276,32 @@
    }
   },
   {
+   "id": "python-dateutil-relativedelta-billing",
+   "language": "python",
+   "pinned": {
+    "python-dateutil": "2.9.0.post0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:49.611Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:676da35ad30731c0de45e74269e7a5f7a8df9bb0df870ca97ffa2753661ee0fe",
+   "files": {
+    "recipes/python-dateutil-relativedelta-billing/billing.py": "sha256:6665ef07d5b5ef4ea369978f711a56bcab4bbaf3f482c73439500c23d0d71c92",
+    "recipes/python-dateutil-relativedelta-billing/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/python-dateutil-relativedelta-billing/recipe.yaml": "sha256:0ca4a9db2ddebd5178dcbd975052e9d3822365c7aaf7ac4dcde163cafcb065b0",
+    "recipes/python-dateutil-relativedelta-billing/requirements.txt": "sha256:7d811f524c8760cf1096453a2d9170ce25f9753e27b08a74264de4f753df7417",
+    "recipes/python-dateutil-relativedelta-billing/tests/test_billing.py": "sha256:5494a00b2e8a0c97537d7341c38895045e50dcc09067bbf625b502d72ded0910"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "python-dotenv-pydantic-settings-env",
    "language": "python",
    "pinned": {
@@ -8727,6 +9354,33 @@
     "recipes/python-multipart-starlette-forms/recipe.yaml": "sha256:760334abb427a752c19026c24d98bf43cb739d7a7791654b10f09c100fa7d3d4",
     "recipes/python-multipart-starlette-forms/requirements.txt": "sha256:a39ff64384d8b0a835183ebf0293a2a3421f2fcbd0262442709d2a6f5c87a021",
     "recipes/python-multipart-starlette-forms/tests/test_app.py": "sha256:71680fcdbb37560ad98de3bf9bc1bb379a4a4e1fc31109d5bf98725d914b4523"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "python-slugify-unidecode-titles",
+   "language": "python",
+   "pinned": {
+    "python-slugify": "9.1.3",
+    "text-unidecode": "1.3.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:56.255Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:1a6b609110778e7d2c272895b353428e1f869be90b68fcc581c012db9efe3cc3",
+   "files": {
+    "recipes/python-slugify-unidecode-titles/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/python-slugify-unidecode-titles/recipe.yaml": "sha256:20f4ad152227c1340fb814551409ecc5d594a3ac48db7ea02a7331b6d86d32dc",
+    "recipes/python-slugify-unidecode-titles/requirements.txt": "sha256:3ad4351092ac37b6650d9e8d66c167a00b7bf0e5ab2294f96cb75e976a00b81e",
+    "recipes/python-slugify-unidecode-titles/slugs.py": "sha256:1606db34ebb7db1a71b4bbc2cc25ea727f8cebed732b53cef12a7ce4ddfe4e5a",
+    "recipes/python-slugify-unidecode-titles/tests/test_slugs.py": "sha256:14040bdf44e007d49717230392cbde6a154e2a3782b679c5cebb1701416f1486"
    },
    "staleness": {
     "status": "unchecked",
@@ -8862,6 +9516,32 @@
     "recipes/ramda-pipe-evolve/recipe.yaml": "sha256:cc31ed2220aa2d5484caedab2758f37f9a1be4c2cbe48ee09152e8e14cec43a5",
     "recipes/ramda-pipe-evolve/src/transform.ts": "sha256:2f930263d32da383b4a9889abba6d0d0663813af7ad8c35a8045d540b6158379",
     "recipes/ramda-pipe-evolve/test/transform.test.ts": "sha256:5695e662851aac1fd9f735c4c8c1305a9ae78902491eb487589f00421c176d7b"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "rapidfuzz-fuzzy-match",
+   "language": "python",
+   "pinned": {
+    "rapidfuzz": "3.14.6",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:56.733Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:3cef2fc8a42ebb14df1746203018428c2233487fd3e0b8da86003a0bd0480c68",
+   "files": {
+    "recipes/rapidfuzz-fuzzy-match/matcher.py": "sha256:785e51d01d3ba7a80a55611609b5ed7d067566a64b0d87eb3fb3e26668a4d3fa",
+    "recipes/rapidfuzz-fuzzy-match/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/rapidfuzz-fuzzy-match/recipe.yaml": "sha256:d2450e963666e1d978749a2dff18c2c26251d4b6f699b5e6f6fef821bbcca477",
+    "recipes/rapidfuzz-fuzzy-match/requirements.txt": "sha256:2e46d1215a66f2b959e4fb804b8d8e85ee11836215f9a453cb757e7dd2c43238",
+    "recipes/rapidfuzz-fuzzy-match/tests/test_matcher.py": "sha256:ef041f539715bf02174e981260240641ad388c222cc63745ea60584ab6f501f6"
    },
    "staleness": {
     "status": "unchecked",
@@ -9116,6 +9796,32 @@
    }
   },
   {
+   "id": "reportlab-platypus-table",
+   "language": "python",
+   "pinned": {
+    "reportlab": "5.0.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:57.586Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:22e953a3d6336e86ca101b3150258d687bcd42d63e0ea0b6c0a6a364a789b969",
+   "files": {
+    "recipes/reportlab-platypus-table/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/reportlab-platypus-table/recipe.yaml": "sha256:695419badc2aae73ae07dfb7c25155a807ad2cece3ffec29eae6ba0e136330c6",
+    "recipes/reportlab-platypus-table/report.py": "sha256:d3d2433be6bf95b410d2d4246f592b81eee16d6b61d4fe2a58b0cb108af79a8a",
+    "recipes/reportlab-platypus-table/requirements.txt": "sha256:010a70df12924dac2202cff2e06d6a3a9b1d41d50c4c7f85bbd605702a2055a4",
+    "recipes/reportlab-platypus-table/tests/test_report.py": "sha256:547f4762ba625cb618810f68264e61cd704a4eb53812c2da2732b84a91859fba"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "requests-cache-sqlite-backend",
    "language": "python",
    "pinned": {
@@ -9204,6 +9910,59 @@
    }
   },
   {
+   "id": "result-ok-err-map",
+   "language": "python",
+   "pinned": {
+    "result": "0.17.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:57:59.044Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:6a4eaac044595312ca816356d545bf173e274d706868a94f158f0fd8900cee38",
+   "files": {
+    "recipes/result-ok-err-map/pipeline.py": "sha256:628461c8cf7e72aad5b9d4dc2147b604b99399d7c72c19160f06864822da8e31",
+    "recipes/result-ok-err-map/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/result-ok-err-map/recipe.yaml": "sha256:f2e5e69841dabbbaf3d0e1bd485fd6f5b9eb88c89081bfffe1e5f8dca302ba4a",
+    "recipes/result-ok-err-map/requirements.txt": "sha256:f73e1762179b873529e8c36aec2f93e98eb96ff3b9d2a3ec703761017af6c182",
+    "recipes/result-ok-err-map/tests/test_pipeline.py": "sha256:801c6006e766361d10e0d0daf2b5dc2e914b8f51c0cf73d03092604bf1795c66"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "returns-maybe-ioresult",
+   "language": "python",
+   "pinned": {
+    "returns": "0.29.0",
+    "typing-extensions": "4.16.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:58:05.561Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:0237f3f9c9abf8ba7bef1d9f148349668aeefcc332350593c4ad5648322455b0",
+   "files": {
+    "recipes/returns-maybe-ioresult/maybe_ioresult.py": "sha256:d311742ea1cce4029d51d1dfc1eb687cba2da930185610bd9e6b748a2c536cf9",
+    "recipes/returns-maybe-ioresult/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/returns-maybe-ioresult/recipe.yaml": "sha256:da2f3119bc6fc5bf7e49f71613923a16d8fdf3625a4ffb688f9c1b5e0d7aa043",
+    "recipes/returns-maybe-ioresult/requirements.txt": "sha256:7989bf584f7f980d00f4be303d636f21c2c0db3a9ef92b12d68f51027f1b19fc",
+    "recipes/returns-maybe-ioresult/tests/test_maybe_ioresult.py": "sha256:0a5245da380d30a5d9cf5e7870bc05d824f6708c2a270d5f270aefaf03273a1c"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "rich-typer-progress-cli",
    "language": "python",
    "pinned": {
@@ -9279,6 +10038,32 @@
     "recipes/rrule-luxon-timezone-recurrence/recipe.yaml": "sha256:740f640802adb41d2657e6d6d19b3636a81b77af3aed3a5a79046c65b02c5226",
     "recipes/rrule-luxon-timezone-recurrence/src/schedule.ts": "sha256:02607c2a375085ed2e1a55c686569b209352abddcf97813b0993ba992c9fb182",
     "recipes/rrule-luxon-timezone-recurrence/test/schedule.test.ts": "sha256:66d8e45882b264e148f43cfb666936d2d53f4613e733f6d30ac5c9cd5b04492d"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "ruamel-yaml-roundtrip-comments",
+   "language": "python",
+   "pinned": {
+    "ruamel.yaml": "0.19.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:58:06.814Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:bc77506b500f70d683354ebf3e6a9075c7ea5496ae73ab25c43e0fe74cf635c3",
+   "files": {
+    "recipes/ruamel-yaml-roundtrip-comments/config.py": "sha256:f63aa2e128d96692aa090340388ec4a7ab60d2720b8db5cd40d1cb6544246cc9",
+    "recipes/ruamel-yaml-roundtrip-comments/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/ruamel-yaml-roundtrip-comments/recipe.yaml": "sha256:3d6e804b3eaa4511cf292019338e0e6229396d16fb327105d653deae505585ea",
+    "recipes/ruamel-yaml-roundtrip-comments/requirements.txt": "sha256:e3dab2023fc34ef71eec624ba6b2b4daaeea731e357803dbc4fc6fc933c24115",
+    "recipes/ruamel-yaml-roundtrip-comments/tests/test_config.py": "sha256:03c713ac23668a36f54317747492328d8360773b54dc152fb151407acab62b44"
    },
    "staleness": {
     "status": "unchecked",
@@ -9920,6 +10705,32 @@
    }
   },
   {
+   "id": "sqlite-utils-fts-search",
+   "language": "python",
+   "pinned": {
+    "sqlite-utils": "4.2.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:58:12.275Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:24a6cb2242d352f7439a8cd7bf89df343d67c37ff66166566555af295b109165",
+   "files": {
+    "recipes/sqlite-utils-fts-search/notes.py": "sha256:c14cab75234a2aa7267dd0fd03c75b453990e1bd22c68bf47bdcf05c531246d4",
+    "recipes/sqlite-utils-fts-search/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlite-utils-fts-search/recipe.yaml": "sha256:55fbac951d8856c7598cd4936adbda4d4a5ff6d701957c1cd4f73045ac61ad23",
+    "recipes/sqlite-utils-fts-search/requirements.txt": "sha256:f315470a970e3b380e89c166aa08aed856257dcd2b63803ecf6d9bfacbe8bac4",
+    "recipes/sqlite-utils-fts-search/tests/test_notes.py": "sha256:3ac91fb719e3017772d5d0accb57819137428272332066eea2671a26aacf7654"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "sqljs-in-memory-queries",
    "language": "typescript",
    "pinned": {
@@ -10318,6 +11129,32 @@
    }
   },
   {
+   "id": "tabulate-markdown-report",
+   "language": "python",
+   "pinned": {
+    "tabulate": "0.10.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:58:14.628Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:dcc4013c3d1650e0e002994e32528e4e944479bda835ba655ff2570a37ae19a3",
+   "files": {
+    "recipes/tabulate-markdown-report/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/tabulate-markdown-report/recipe.yaml": "sha256:a79a055e963ccb2aa42e858ce1aee624b2dfe183b725d6a62df4fdba09f92f4f",
+    "recipes/tabulate-markdown-report/report.py": "sha256:f288c26aed6689d4365ae5c30470432716c64f0d8c79ce7886ed8a1f6f1067f9",
+    "recipes/tabulate-markdown-report/requirements.txt": "sha256:0b811d7330c18c925d6c7a9eb8507532327bd6b307912fd7805d7e05268ceeb6",
+    "recipes/tabulate-markdown-report/tests/test_report.py": "sha256:63a1cd474de4d53c972045a18ed5734568b66b386a97adff5b8bdda52ffcdb48"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "tanstack-form-core-validation",
    "language": "typescript",
    "pinned": {
@@ -10481,6 +11318,32 @@
    }
   },
   {
+   "id": "tenacity-retry-stop-wait",
+   "language": "python",
+   "pinned": {
+    "tenacity": "9.2.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:58:13.938Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:ef1825af75edd884235c641d37ad69a7106e02e6380a59957e6b37b244c76e5d",
+   "files": {
+    "recipes/tenacity-retry-stop-wait/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/tenacity-retry-stop-wait/recipe.yaml": "sha256:c5678365d4e29ea150986aa325ba8d9d1b1d586f6ac238d4fd18a98406dd3952",
+    "recipes/tenacity-retry-stop-wait/requirements.txt": "sha256:e58d3428d73f34957259feeedd9e8e604f1c82b8bb0a74d453785ece80d9c3d4",
+    "recipes/tenacity-retry-stop-wait/retrier.py": "sha256:cb1214c2e41eaa9bbd27ea9855d13bd34808698cf3b6bb38ab8b831cca701c3a",
+    "recipes/tenacity-retry-stop-wait/tests/test_retrier.py": "sha256:42be67765226b8efcce5a3e1d20e25230c027a522a034e66d57662cc50892321"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "terser-minify-sourcemap",
    "language": "typescript",
    "pinned": {
@@ -10524,6 +11387,32 @@
     "recipes/throttle-debounce-fns/recipe.yaml": "sha256:98317c87a4e88d18b3582a67c0e988b578fa615dbed34f4fbe8b33dac9b8f5b6",
     "recipes/throttle-debounce-fns/src/counter.ts": "sha256:4b719fa0ecaa6b3bce141cbcbe1494eb3bf0265b8779294ea245f542378492f8",
     "recipes/throttle-debounce-fns/test/counter.test.ts": "sha256:e6dea72979bedd2830b40a93d6b5be1743f2ca3a49f1fa16bbed269429ffadbb"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "tinydb-query-storage-middleware",
+   "language": "python",
+   "pinned": {
+    "tinydb": "4.9.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:58:15.515Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:a9dc822c7f854b64928893f732f8b6bf40d2198f778fc64994428a19d3393937",
+   "files": {
+    "recipes/tinydb-query-storage-middleware/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/tinydb-query-storage-middleware/recipe.yaml": "sha256:98870b79f53c0e31c3a2cb81de57317408b052f1727d66f6fd6cb2004025a9cf",
+    "recipes/tinydb-query-storage-middleware/requirements.txt": "sha256:009f98bfba481dad53f005a1688a491fde7b88d3854b9b338c81e8c737569811",
+    "recipes/tinydb-query-storage-middleware/store.py": "sha256:5d3f2ab66721623ae0d01d6ad72c9a3be675434979938291ab1b3882fa75acb8",
+    "recipes/tinydb-query-storage-middleware/tests/test_store.py": "sha256:cb1522d9487fc28c7291c7fff89953065c9e1a5512d299f75dabf6d9700d437a"
    },
    "staleness": {
     "status": "unchecked",
@@ -11252,6 +12141,32 @@
    }
   },
   {
+   "id": "voluptuous-config-schema-coerce",
+   "language": "python",
+   "pinned": {
+    "voluptuous": "0.16.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:58:19.901Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:2d74ed4b07a4ecb34af6667c2628a2fb22172611d3d832af7614504fc889d9b8",
+   "files": {
+    "recipes/voluptuous-config-schema-coerce/config.py": "sha256:198cf7250838fa28b3c30be1ce617ee3d0f7574f80810cf3fc7437d13dcb2a3c",
+    "recipes/voluptuous-config-schema-coerce/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/voluptuous-config-schema-coerce/recipe.yaml": "sha256:3e8af19841c8cba0bf92783f85374364f7e5d6117cc60b5f8f65204b766701cb",
+    "recipes/voluptuous-config-schema-coerce/requirements.txt": "sha256:1d74cb096f7e44428929f0139e165072912be3ceadf967a91b375a4c52bf7a34",
+    "recipes/voluptuous-config-schema-coerce/tests/test_config.py": "sha256:d6a96077fd8eee1123f168df892738d3a9953d8b579157adf92c72d8cb2b3550"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "vue-pinia-testing",
    "language": "typescript",
    "pinned": {
@@ -11389,6 +12304,32 @@
     "recipes/ws-zod-message-protocol/recipe.yaml": "sha256:e3f5c70d71cf6554ee53be1484c0318f98784aea268e5cee0bc53906af37db02",
     "recipes/ws-zod-message-protocol/src/server.ts": "sha256:033086424fae5327e0fede7616dd5160a23a2169f6e481d3a1494f6fa071f49a",
     "recipes/ws-zod-message-protocol/test/server.test.ts": "sha256:75f9c5335883348f2fa2a09d516450cfe5682fb105be50aadb199dd161298b3c"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "xlsxwriter-charts-bytesio",
+   "language": "python",
+   "pinned": {
+    "xlsxwriter": "3.2.9",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T09:58:26.947Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38883899161",
+   "recipe_hash": "sha256:9b1951f2d95a0723350434998c25df2a202f88af214b4fb69661c85424356a74",
+   "files": {
+    "recipes/xlsxwriter-charts-bytesio/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/xlsxwriter-charts-bytesio/recipe.yaml": "sha256:04feb6223dec96e12d2a6fc61337bde1857e52cc973155d572c32c704ae897ca",
+    "recipes/xlsxwriter-charts-bytesio/report.py": "sha256:e623c540f4859c50ba6e5448ddc99a57b0d91efaf86efa036481ec77934c7471",
+    "recipes/xlsxwriter-charts-bytesio/requirements.txt": "sha256:5fb631e39101582f0ce0adb928ce6feb5a0bf8f44a035204c25d8f59bc5ed89e",
+    "recipes/xlsxwriter-charts-bytesio/tests/test_report.py": "sha256:346d0679e306b5e2cfc2d03e85d4742371c9ad5d4529ab5400d338007aa4ec2c"
    },
    "staleness": {
     "status": "unchecked",

@@ -1,0 +1,34 @@
+{
+  "id": "reportlab-platypus-table",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:57.586Z",
+  "last_passed_at": "2026-10-16T09:57:57.586Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 235,
+    "test": 2521
+  },
+  "pinned": {
+    "reportlab": "5.0.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:22e953a3d6336e86ca101b3150258d687bcd42d63e0ea0b6c0a6a364a789b969",
+  "files": {
+    "recipes/reportlab-platypus-table/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/reportlab-platypus-table/recipe.yaml": "sha256:695419badc2aae73ae07dfb7c25155a807ad2cece3ffec29eae6ba0e136330c6",
+    "recipes/reportlab-platypus-table/report.py": "sha256:d3d2433be6bf95b410d2d4246f592b81eee16d6b61d4fe2a58b0cb108af79a8a",
+    "recipes/reportlab-platypus-table/requirements.txt": "sha256:010a70df12924dac2202cff2e06d6a3a9b1d41d50c4c7f85bbd605702a2055a4",
+    "recipes/reportlab-platypus-table/tests/test_report.py": "sha256:547f4762ba625cb618810f68264e61cd704a4eb53812c2da2732b84a91859fba"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.66s\n"
+}

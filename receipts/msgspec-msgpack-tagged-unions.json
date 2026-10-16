@@ -1,0 +1,34 @@
+{
+  "id": "msgspec-msgpack-tagged-unions",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:29.646Z",
+  "last_passed_at": "2026-10-16T09:57:29.646Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 362,
+    "test": 1239
+  },
+  "pinned": {
+    "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:c0889374e81ffe1841a742779e50e0db9a3f6d336e61b9959e60cf3098dbcddd",
+  "files": {
+    "recipes/msgspec-msgpack-tagged-unions/models.py": "sha256:c5a0a4d8df38227cbd653982dfc5e8289415aa0b204727c29677bae2520d72fc",
+    "recipes/msgspec-msgpack-tagged-unions/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/msgspec-msgpack-tagged-unions/recipe.yaml": "sha256:edf959e235575d6aea08417351b00f3743b6916b9a8911065dde0b6e705f0136",
+    "recipes/msgspec-msgpack-tagged-unions/requirements.txt": "sha256:52bfbf468f58b821120e47f77ba893d0204207e4ab4de16260244b9dce548761",
+    "recipes/msgspec-msgpack-tagged-unions/tests/test_models.py": "sha256:11be5e33d18ad5c804640d7d2242e16df3031a13a27ac6b14e2b53395d6cc2fe"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+}

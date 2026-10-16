@@ -1,0 +1,34 @@
+{
+  "id": "ruamel-yaml-roundtrip-comments",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:58:06.814Z",
+  "last_passed_at": "2026-10-16T09:58:06.814Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 198,
+    "test": 768
+  },
+  "pinned": {
+    "ruamel.yaml": "0.19.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:bc77506b500f70d683354ebf3e6a9075c7ea5496ae73ab25c43e0fe74cf635c3",
+  "files": {
+    "recipes/ruamel-yaml-roundtrip-comments/config.py": "sha256:f63aa2e128d96692aa090340388ec4a7ab60d2720b8db5cd40d1cb6544246cc9",
+    "recipes/ruamel-yaml-roundtrip-comments/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/ruamel-yaml-roundtrip-comments/recipe.yaml": "sha256:3d6e804b3eaa4511cf292019338e0e6229396d16fb327105d653deae505585ea",
+    "recipes/ruamel-yaml-roundtrip-comments/requirements.txt": "sha256:e3dab2023fc34ef71eec624ba6b2b4daaeea731e357803dbc4fc6fc933c24115",
+    "recipes/ruamel-yaml-roundtrip-comments/tests/test_config.py": "sha256:03c713ac23668a36f54317747492328d8360773b54dc152fb151407acab62b44"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.15s\n"
+}

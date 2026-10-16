@@ -1,0 +1,34 @@
+{
+  "id": "blinker-signals-decoupled-events",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:56:59.324Z",
+  "last_passed_at": "2026-10-16T09:56:59.324Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 323,
+    "test": 458
+  },
+  "pinned": {
+    "blinker": "1.9.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:af8c1b2e50248417aaedcf8f64985cd4e8958e78e219106f24836e265a465eeb",
+  "files": {
+    "recipes/blinker-signals-decoupled-events/events.py": "sha256:a058c89b8d03fd7751d6e4a142278f243932c9c627eb689a233ef18429113a0c",
+    "recipes/blinker-signals-decoupled-events/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/blinker-signals-decoupled-events/recipe.yaml": "sha256:3dfe99d1ba130f547679eb7aeeaca6c52878d5f7286cfbc3f4913d5323be64c3",
+    "recipes/blinker-signals-decoupled-events/requirements.txt": "sha256:abe837289691fe837006b7dd4c2287ed59acbc08840782d512edeadecbe9a474",
+    "recipes/blinker-signals-decoupled-events/tests/test_events.py": "sha256:5484781e7ce3a9388adb8b3df8ac26fa25970ac1d0b71d38c15b403dcda25fb1"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.02s\n"
+}

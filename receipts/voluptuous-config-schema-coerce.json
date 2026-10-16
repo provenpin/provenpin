@@ -1,0 +1,34 @@
+{
+  "id": "voluptuous-config-schema-coerce",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:58:19.901Z",
+  "last_passed_at": "2026-10-16T09:58:19.901Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 181,
+    "test": 1402
+  },
+  "pinned": {
+    "voluptuous": "0.16.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:2d74ed4b07a4ecb34af6667c2628a2fb22172611d3d832af7614504fc889d9b8",
+  "files": {
+    "recipes/voluptuous-config-schema-coerce/config.py": "sha256:198cf7250838fa28b3c30be1ce617ee3d0f7574f80810cf3fc7437d13dcb2a3c",
+    "recipes/voluptuous-config-schema-coerce/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/voluptuous-config-schema-coerce/recipe.yaml": "sha256:3e8af19841c8cba0bf92783f85374364f7e5d6117cc60b5f8f65204b766701cb",
+    "recipes/voluptuous-config-schema-coerce/requirements.txt": "sha256:1d74cb096f7e44428929f0139e165072912be3ceadf967a91b375a4c52bf7a34",
+    "recipes/voluptuous-config-schema-coerce/tests/test_config.py": "sha256:d6a96077fd8eee1123f168df892738d3a9953d8b579157adf92c72d8cb2b3550"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+}

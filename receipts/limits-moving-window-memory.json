@@ -1,0 +1,34 @@
+{
+  "id": "limits-moving-window-memory",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:22.997Z",
+  "last_passed_at": "2026-10-16T09:57:22.997Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 314,
+    "test": 858
+  },
+  "pinned": {
+    "limits": "5.8.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:b3b79644af85aa8402a4ff2e9783533442118a4c671e5e9d27de5d21d24db6d7",
+  "files": {
+    "recipes/limits-moving-window-memory/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/limits-moving-window-memory/ratelimit.py": "sha256:2a5f3e0229231ca312653df0241083df3dc04a2a48bd780dec077249993ff8d1",
+    "recipes/limits-moving-window-memory/recipe.yaml": "sha256:c32a749807e7fcefd7ea38a77c8f727e39cf584fc56ced43ff35343fc5e846a1",
+    "recipes/limits-moving-window-memory/requirements.txt": "sha256:d5edd30ccf524f17edc5ad59531d8384d06acc43a8d5fc04b9b95ab2ae421f7f",
+    "recipes/limits-moving-window-memory/tests/test_ratelimit.py": "sha256:5913c14c6085fe5c72d8fec8dea0d6cc6f11357546873d3a55c8ed57a13a090a"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.25s\n"
+}

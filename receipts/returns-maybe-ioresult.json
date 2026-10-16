@@ -1,0 +1,35 @@
+{
+  "id": "returns-maybe-ioresult",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:58:05.561Z",
+  "last_passed_at": "2026-10-16T09:58:05.561Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 233,
+    "test": 930
+  },
+  "pinned": {
+    "returns": "0.29.0",
+    "typing-extensions": "4.16.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:0237f3f9c9abf8ba7bef1d9f148349668aeefcc332350593c4ad5648322455b0",
+  "files": {
+    "recipes/returns-maybe-ioresult/maybe_ioresult.py": "sha256:d311742ea1cce4029d51d1dfc1eb687cba2da930185610bd9e6b748a2c536cf9",
+    "recipes/returns-maybe-ioresult/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/returns-maybe-ioresult/recipe.yaml": "sha256:da2f3119bc6fc5bf7e49f71613923a16d8fdf3625a4ffb688f9c1b5e0d7aa043",
+    "recipes/returns-maybe-ioresult/requirements.txt": "sha256:7989bf584f7f980d00f4be303d636f21c2c0db3a9ef92b12d68f51027f1b19fc",
+    "recipes/returns-maybe-ioresult/tests/test_maybe_ioresult.py": "sha256:0a5245da380d30a5d9cf5e7870bc05d824f6708c2a270d5f270aefaf03273a1c"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "boltons-iterutils-remap",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:03.778Z",
+  "last_passed_at": "2026-10-16T09:57:03.778Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 199,
+    "test": 675
+  },
+  "pinned": {
+    "boltons": "26.2.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:fb919d441bad10af47a61361f63d682065fe2b9510b68028cceff3cc695ea527",
+  "files": {
+    "recipes/boltons-iterutils-remap/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/boltons-iterutils-remap/recipe.yaml": "sha256:751e03e50aab52fe601cfb21cd25a008fb4dac46f656e0cd588914c5cf28697f",
+    "recipes/boltons-iterutils-remap/requirements.txt": "sha256:a2a03e84d439979bf3393d8a34e98d68c49e0b64fed62de69653b0047efdd7e6",
+    "recipes/boltons-iterutils-remap/tests/test_transform.py": "sha256:d8b588e7a054341ac4848da2a8a9d7b35b07740d76ce967c7297f51d1917ec0e",
+    "recipes/boltons-iterutils-remap/transform.py": "sha256:2af4aa7629999f0f68cf1f6b77f13cddb13dd0e74655b57e01754e0afdf4d065"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+}

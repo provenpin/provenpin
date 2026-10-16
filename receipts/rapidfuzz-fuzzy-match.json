@@ -1,0 +1,34 @@
+{
+  "id": "rapidfuzz-fuzzy-match",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:56.733Z",
+  "last_passed_at": "2026-10-16T09:57:56.733Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 256,
+    "test": 928
+  },
+  "pinned": {
+    "rapidfuzz": "3.14.6",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:3cef2fc8a42ebb14df1746203018428c2233487fd3e0b8da86003a0bd0480c68",
+  "files": {
+    "recipes/rapidfuzz-fuzzy-match/matcher.py": "sha256:785e51d01d3ba7a80a55611609b5ed7d067566a64b0d87eb3fb3e26668a4d3fa",
+    "recipes/rapidfuzz-fuzzy-match/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/rapidfuzz-fuzzy-match/recipe.yaml": "sha256:d2450e963666e1d978749a2dff18c2c26251d4b6f699b5e6f6fef821bbcca477",
+    "recipes/rapidfuzz-fuzzy-match/requirements.txt": "sha256:2e46d1215a66f2b959e4fb804b8d8e85ee11836215f9a453cb757e7dd2c43238",
+    "recipes/rapidfuzz-fuzzy-match/tests/test_matcher.py": "sha256:ef041f539715bf02174e981260240641ad388c222cc63745ea60584ab6f501f6"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+}

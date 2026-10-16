@@ -1,0 +1,34 @@
+{
+  "id": "fpdf2-multipage-table",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:17.593Z",
+  "last_passed_at": "2026-10-16T09:57:17.593Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 261,
+    "test": 3261
+  },
+  "pinned": {
+    "fpdf2": "2.8.9",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:35c0d3664ed9abd2cb360502efae7f9e3881c60e4200a6779dc594a2fc11689c",
+  "files": {
+    "recipes/fpdf2-multipage-table/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fpdf2-multipage-table/recipe.yaml": "sha256:c795f3f2ce24f3e631d72905d6dcec355145fa0e91c8b03defbccdad3e6c49da",
+    "recipes/fpdf2-multipage-table/report.py": "sha256:3597756c468c857c24ae8a1c91c8f7a2892be02afb92732e51307935fa4e594f",
+    "recipes/fpdf2-multipage-table/requirements.txt": "sha256:2f9cf35ca27f9d6d4abb14c911fe2589250ad7127ddb473956f7259e5c62b639",
+    "recipes/fpdf2-multipage-table/tests/test_report.py": "sha256:f50296835e17b2f3f29f5e1e4fd9833f2fc9831114efda79db84f282db312e57"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.69s\n"
+}

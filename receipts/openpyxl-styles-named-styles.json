@@ -1,0 +1,34 @@
+{
+  "id": "openpyxl-styles-named-styles",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:57:38.380Z",
+  "last_passed_at": "2026-10-16T09:57:38.380Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 312,
+    "test": 904
+  },
+  "pinned": {
+    "openpyxl": "3.1.5",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:bdeeb9e666b22c81706fd48a9658fb32fb044dafb24212e7cfb71e07018d241b",
+  "files": {
+    "recipes/openpyxl-styles-named-styles/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/openpyxl-styles-named-styles/recipe.yaml": "sha256:92ab6954be8dc576cdbf19a6786aae42a186a8213dbd31949a1eee24c9799929",
+    "recipes/openpyxl-styles-named-styles/report.py": "sha256:6af44090acf07933b8427821bfb04b21864ec6f581ab0e5a398127d862ef34cb",
+    "recipes/openpyxl-styles-named-styles/requirements.txt": "sha256:04d57a0cf737e12a456a52486ad769a106e722c83576e7e3e298b2ef68f55b31",
+    "recipes/openpyxl-styles-named-styles/tests/test_report.py": "sha256:d37db25c2c9b566bfd8b5d57dbba044e68df8ea3caf032a276c8dc71b62f26a0"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.29s\n"
+}

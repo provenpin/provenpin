@@ -1,0 +1,34 @@
+{
+  "id": "sqlite-utils-fts-search",
+  "status": "passed",
+  "ran_at": "2026-10-16T09:58:12.275Z",
+  "last_passed_at": "2026-10-16T09:58:12.275Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 241,
+    "test": 1488
+  },
+  "pinned": {
+    "sqlite-utils": "4.2.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:24a6cb2242d352f7439a8cd7bf89df343d67c37ff66166566555af295b109165",
+  "files": {
+    "recipes/sqlite-utils-fts-search/notes.py": "sha256:c14cab75234a2aa7267dd0fd03c75b453990e1bd22c68bf47bdcf05c531246d4",
+    "recipes/sqlite-utils-fts-search/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlite-utils-fts-search/recipe.yaml": "sha256:55fbac951d8856c7598cd4936adbda4d4a5ff6d701957c1cd4f73045ac61ad23",
+    "recipes/sqlite-utils-fts-search/requirements.txt": "sha256:f315470a970e3b380e89c166aa08aed856257dcd2b63803ecf6d9bfacbe8bac4",
+    "recipes/sqlite-utils-fts-search/tests/test_notes.py": "sha256:3ac91fb719e3017772d5d0accb57819137428272332066eea2671a26aacf7654"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38883899161"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.31s\n"
+}
