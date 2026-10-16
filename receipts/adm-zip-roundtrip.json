@@ -1,15 +1,15 @@
 {
   "id": "adm-zip-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-16T06:50:11.694Z",
-  "last_passed_at": "2026-10-16T06:50:11.694Z",
+  "ran_at": "2026-10-16T12:51:00.590Z",
+  "last_passed_at": "2026-10-16T12:51:00.590Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1597,
-    "test": 370
+    "setup": 1375,
+    "test": 425
   },
   "pinned": {
     "adm-zip": "0.6.1",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38863396323"
+    "runner": "github-actions 38903329434"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips string entries through a buffer\nok 1 - roundtrips string entries through a buffer\n  ---\n  duration_ms: 11.176034\n  type: 'test'\n  ...\n# Subtest: stores folder entries and raw buffers\nok 2 - stores folder entries and raw buffers\n  ---\n  duration_ms: 1.014447\n  type: 'test'\n  ...\n# Subtest: writes a zip to a temp path and reads it back\nok 3 - writes a zip to a temp path and reads it back\n  ---\n  duration_ms: 10.283197\n  type: 'test'\n  ...\n# Subtest: throws for a missing entry\nok 4 - throws for a missing entry\n  ---\n  duration_ms: 0.679623\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 240.396927\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips string entries through a buffer\nok 1 - roundtrips string entries through a buffer\n  ---\n  duration_ms: 12.880692\n  type: 'test'\n  ...\n# Subtest: stores folder entries and raw buffers\nok 2 - stores folder entries and raw buffers\n  ---\n  duration_ms: 1.007218\n  type: 'test'\n  ...\n# Subtest: writes a zip to a temp path and reads it back\nok 3 - writes a zip to a temp path and reads it back\n  ---\n  duration_ms: 10.771041\n  type: 'test'\n  ...\n# Subtest: throws for a missing entry\nok 4 - throws for a missing entry\n  ---\n  duration_ms: 0.70944\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 301.745862\n"
 }

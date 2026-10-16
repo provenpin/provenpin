@@ -1,15 +1,15 @@
 {
   "id": "fastify-zod-type-provider",
   "status": "passed",
-  "ran_at": "2026-10-16T06:52:27.800Z",
-  "last_passed_at": "2026-10-16T06:52:27.800Z",
+  "ran_at": "2026-10-16T12:53:10.359Z",
+  "last_passed_at": "2026-10-16T12:53:10.359Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2901,
-    "test": 410
+    "setup": 3666,
+    "test": 447
   },
   "pinned": {
     "fastify": "5.12.7",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38863396323"
+    "runner": "github-actions 38903329434"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid body and response schema strips extra fields\nok 1 - valid body and response schema strips extra fields\n  ---\n  duration_ms: 75.144912\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 2 - invalid body is 400\n  ---\n  duration_ms: 5.977484\n  type: 'test'\n  ...\n# Subtest: querystring coercion and defaults\nok 3 - querystring coercion and defaults\n  ---\n  duration_ms: 4.304417\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 320.470239\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid body and response schema strips extra fields\nok 1 - valid body and response schema strips extra fields\n  ---\n  duration_ms: 84.038018\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 2 - invalid body is 400\n  ---\n  duration_ms: 6.132405\n  type: 'test'\n  ...\n# Subtest: querystring coercion and defaults\nok 3 - querystring coercion and defaults\n  ---\n  duration_ms: 4.550951\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 349.230944\n"
 }

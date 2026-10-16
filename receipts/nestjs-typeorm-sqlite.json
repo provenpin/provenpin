@@ -1,15 +1,15 @@
 {
   "id": "nestjs-typeorm-sqlite",
   "status": "passed",
-  "ran_at": "2026-10-16T06:53:49.266Z",
-  "last_passed_at": "2026-10-16T06:53:49.266Z",
+  "ran_at": "2026-10-16T12:54:33.869Z",
+  "last_passed_at": "2026-10-16T12:54:33.869Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6350,
-    "test": 1306
+    "setup": 8249,
+    "test": 1393
   },
   "pinned": {
     "@nestjs/core": "12.1.3",
@@ -39,8 +39,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38863396323"
+    "runner": "github-actions 38903329434"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: create and list\nok 1 - create and list\n  ---\n  duration_ms: 292.088817\n  type: 'test'\n  ...\n# Subtest: 404 and pipe validation\nok 2 - 404 and pipe validation\n  ---\n  duration_ms: 6.233253\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1121.028141\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: create and list\nok 1 - create and list\n  ---\n  duration_ms: 224.572504\n  type: 'test'\n  ...\n# Subtest: 404 and pipe validation\nok 2 - 404 and pipe validation\n  ---\n  duration_ms: 12.722431\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1241.220321\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "papaparse-zod-csv-import",
   "status": "passed",
-  "ran_at": "2026-10-16T06:54:21.085Z",
-  "last_passed_at": "2026-10-16T06:54:21.085Z",
+  "ran_at": "2026-10-16T12:55:11.897Z",
+  "last_passed_at": "2026-10-16T12:55:11.897Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2080,
-    "test": 506
+    "setup": 1981,
+    "test": 382
   },
   "pinned": {
     "papaparse": "5.7.0",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38863396323"
+    "runner": "github-actions 38903329434"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid rows parsed, quoted commas kept, BOM and blank lines ignored\nok 1 - valid rows parsed, quoted commas kept, BOM and blank lines ignored\n  ---\n  duration_ms: 6.320728\n  type: 'test'\n  ...\n# Subtest: errors carry spreadsheet row numbers\nok 2 - errors carry spreadsheet row numbers\n  ---\n  duration_ms: 0.769751\n  type: 'test'\n  ...\n# Subtest: round-trips through export\nok 3 - round-trips through export\n  ---\n  duration_ms: 1.344375\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 350.72201\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid rows parsed, quoted commas kept, BOM and blank lines ignored\nok 1 - valid rows parsed, quoted commas kept, BOM and blank lines ignored\n  ---\n  duration_ms: 4.544995\n  type: 'test'\n  ...\n# Subtest: errors carry spreadsheet row numbers\nok 2 - errors carry spreadsheet row numbers\n  ---\n  duration_ms: 0.629185\n  type: 'test'\n  ...\n# Subtest: round-trips through export\nok 3 - round-trips through export\n  ---\n  duration_ms: 1.021546\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 264.561957\n"
 }
