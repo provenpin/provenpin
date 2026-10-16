@@ -1,0 +1,20 @@
+id: dequal-object-hash-compare
+title: "dequal deep compare with object-hash digests"
+summary: "Deep-compare nested objects, arrays, Maps, Sets and Dates with dequal, then compute stable object-hash digests using unorderedArrays and excludeKeys, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [dequal, object-hash]
+tags: [equality, hashing, objects]
+pinned:
+  "dequal": "2.0.3"
+  "object-hash": "3.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/compare.ts
+  - src/object-hash.d.ts
+  - test/compare.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

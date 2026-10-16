@@ -1,0 +1,19 @@
+id: io-ts-codec-decode
+title: "io-ts codec decode and encode"
+summary: "Define io-ts runtime codecs for an object, optional fields, unions, arrays and a branded type, then decode unknown input, report errors with PathReporter and encode back to plain JSON offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [io-ts, fp-ts]
+tags: [validation, codec, io-ts, fp-ts]
+pinned:
+  "io-ts": "2.2.22"
+  "fp-ts": "2.16.11"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/codec.ts
+  - test/codec.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

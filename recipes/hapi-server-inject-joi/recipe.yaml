@@ -1,0 +1,20 @@
+id: hapi-server-inject-joi
+title: "hapi server with joi validation"
+summary: "Build a @hapi/hapi server with joi-validated params, payload and query, a custom failAction and Boom errors, tested via server.inject offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@hapi/hapi", "joi", "@hapi/boom"]
+tags: [http, validation, testing]
+pinned:
+  "@hapi/hapi": "21.4.10"
+  "@hapi/boom": "10.0.1"
+  "joi": "18.3.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/server.ts
+  - test/server.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

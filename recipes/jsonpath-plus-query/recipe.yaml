@@ -1,0 +1,18 @@
+id: jsonpath-plus-query
+title: "jsonpath-plus nested store query"
+summary: "Query a nested store JSON with jsonpath-plus using filters, recursive descent and wildcards, asserting matched values and paths with resultType value and path. Offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [jsonpath-plus]
+tags: [jsonpath, query, json]
+pinned:
+  "jsonpath-plus": "11.2.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/query.ts
+  - test/query.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

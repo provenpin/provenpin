@@ -1,0 +1,18 @@
+id: json-logic-js-rules
+title: "json-logic-js business rules"
+summary: "Evaluate business rules with json-logic-js over data objects using and, or, comparisons, var defaults, in and if, plus a custom operation registered with add_operation; assert each result offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [json-logic-js]
+tags: [rules, logic, business-rules]
+pinned:
+  "json-logic-js": "2.0.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/rules.ts
+  - test/rules.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

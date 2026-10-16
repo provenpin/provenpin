@@ -1,0 +1,18 @@
+id: openpgp-encrypt-decrypt
+title: "openpgp encrypt, sign, decrypt and verify"
+summary: "Generate a passphrase protected curve25519 OpenPGP key set and exercise encrypt and sign, decrypt and verify, detached signatures, and wrong key failures offline with openpgp v6."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [openpgp]
+tags: [openpgp, pgp, encryption, signing, crypto]
+pinned:
+  "openpgp": "6.3.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/pgp.ts
+  - test/pgp.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

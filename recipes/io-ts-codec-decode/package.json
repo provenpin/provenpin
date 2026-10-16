@@ -1,0 +1,16 @@
+{
+  "name": "io-ts-codec-decode",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "io-ts": "2.2.22",
+    "fp-ts": "2.16.11"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}
