@@ -9,6 +9,8 @@ compatibility_date = "2026-10-01"
 [vars]
 PROVENPIN_PRO_ENABLED = "false"
 PROVENPIN_REQUIRE_KEY = "false"
+# Anonymous real-usage counter (see USAGE-COUNTER.md). Off by default.
+PROVENPIN_USAGE_COUNTER = "false"
 
 # KV namespace for Pro keys. Create it with: npx wrangler kv namespace create PRO_KEYS
 # (needs a token with Workers KV Storage Edit), then paste the id here and uncomment.
@@ -31,6 +33,16 @@ PROVENPIN_REQUIRE_KEY = "false"
 [[analytics_engine_datasets]]
 binding = "USAGE"
 dataset = "provenpin_usage"
+
+# Anonymous real-usage counter (see USAGE-COUNTER.md). Uncomment to enable, with PROVENPIN_USAGE_COUNTER = "true".
+# [[analytics_engine_datasets]]
+# binding = "USAGE_COUNTER"
+# dataset = "provenpin_real_usage"
+# Optional, for "sessions with 2+ real calls": npx wrangler kv namespace create USAGE_SESSIONS
+# and npx wrangler secret put USAGE_COUNTER_SALT (any random string).
+# [[kv_namespaces]]
+# binding = "USAGE_SESSIONS"
+# id = "<namespace id>"
 
 [observability]
 enabled = true
