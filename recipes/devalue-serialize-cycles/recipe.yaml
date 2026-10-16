@@ -1,0 +1,18 @@
+id: devalue-serialize-cycles
+title: "devalue serialization with cycles and repeated refs"
+summary: "Serialize and parse values with devalue, covering cyclic references, Dates, Maps and repeated refs, and assert that functions throw offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [devalue]
+tags: [serialization, devalue, cycles, maps]
+pinned:
+  "devalue": "6.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/serialize.ts
+  - test/serialize.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

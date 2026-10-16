@@ -1,0 +1,20 @@
+id: inversify-di-container
+title: "inversify DI container"
+summary: "Bind interfaces to implementations with symbols, decorate classes with injectable and inject, and resolve singleton vs transient scopes from an inversify Container offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [inversify, reflect-metadata]
+tags: [dependency-injection, ioc, container]
+pinned:
+  "inversify": "8.2.3"
+  "reflect-metadata": "0.2.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - tsconfig.json
+  - src/container.ts
+  - test/container.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,18 @@
+id: dot-prop-nested-paths
+title: "dot-prop nested property paths"
+summary: "Read, write, check and delete nested object properties with dot-prop using dotted paths, escaped dots and defaults, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [dot-prop]
+tags: [object, path, utilities]
+pinned:
+  "dot-prop": "10.2.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/paths.ts
+  - test/paths.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

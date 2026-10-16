@@ -1,0 +1,19 @@
+id: string-width-strip-ansi
+title: "string width and ansi stripping"
+summary: "Measure the visual width of ASCII, CJK, and emoji strings and strip ANSI escape codes with string-width and strip-ansi, asserting widths and cleaned output offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [string-width, strip-ansi]
+tags: [text, ansi, terminal, unicode]
+pinned:
+  "string-width": "8.3.0"
+  "strip-ansi": "7.2.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/width.ts
+  - test/width.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

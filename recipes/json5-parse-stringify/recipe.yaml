@@ -1,0 +1,18 @@
+id: json5-parse-stringify
+title: "json5 parse and stringify"
+summary: "Parse JSON5 text that uses comments, trailing commas, unquoted keys and hex numbers; stringify with options; assert parsed values and a SyntaxError on invalid input. Offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [json5]
+tags: [json, parser, config]
+pinned:
+  "json5": "2.2.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/parse.ts
+  - test/parse.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

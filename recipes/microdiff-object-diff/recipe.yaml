@@ -1,0 +1,18 @@
+id: microdiff-object-diff
+title: "microdiff object diff"
+summary: "Diff nested objects and arrays with microdiff, asserting CREATE, REMOVE and CHANGE entries with their paths, and that identical inputs yield an empty diff offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [microdiff]
+tags: [diff, objects, arrays]
+pinned:
+  "microdiff": "1.6.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/diff.ts
+  - test/diff.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

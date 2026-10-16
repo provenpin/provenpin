@@ -1,0 +1,18 @@
+id: iconv-lite-encode-decode
+title: "iconv-lite encode and decode"
+summary: "Encode strings to win1252, shift_jis and utf16le Buffers with iconv-lite, decode them back and assert exact byte values, round trips and encodingExists checks fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [iconv-lite]
+tags: [encoding, buffer, iconv]
+pinned:
+  "iconv-lite": "0.7.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/codec.ts
+  - test/codec.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,16 @@
+{
+  "name": "xml2js-parse-build",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "xml2js": "0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/xml2js": "0.4.14",
+    "tsx": "4.23.15"
+  }
+}

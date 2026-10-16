@@ -1,0 +1,19 @@
+id: xml2js-parse-build
+title: "xml2js parse and build round trip"
+summary: "Parse XML with attributes and repeated elements using xml2js parseStringPromise (explicitArray false, mergeAttrs), then rebuild XML with Builder and assert the parsed object and output, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [xml2js]
+tags: [xml, parser, builder]
+pinned:
+  "xml2js": "0.6.2"
+  "@types/xml2js": "0.4.14"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/convert.ts
+  - test/convert.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

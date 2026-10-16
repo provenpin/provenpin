@@ -1,0 +1,18 @@
+id: file-type-buffer-detect
+title: "file-type buffer detection"
+summary: "Detect PNG, PDF, ZIP and GIF from small in-memory magic byte buffers with file-type, asserting ext and mime, and undefined for plain text."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [file-type]
+tags: [file-type, mime, magic-bytes, binary]
+pinned:
+  "file-type": "22.2.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/detect.ts
+  - test/detect.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
