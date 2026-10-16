@@ -1,0 +1,18 @@
+id: more-itertools-batched-window
+title: "more-itertools batched, windowed, peekable and collapse"
+summary: "Group records with batched, slide over them with windowed, peek without consuming via peekable, and flatten nested tags with collapse, all tested offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [more-itertools]
+tags: [iterators, data-processing, testing]
+pinned:
+  more-itertools: "11.2.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - stream_ops.py
+  - tests/test_stream_ops.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

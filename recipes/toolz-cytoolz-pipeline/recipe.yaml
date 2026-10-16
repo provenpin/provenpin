@@ -1,0 +1,19 @@
+id: toolz-cytoolz-pipeline
+title: "toolz compose, curry and cytoolz-accelerated pipelines"
+summary: "Build lazy functional pipelines with toolz.compose, curry and pipe, accelerated by cytoolz.curried map/filter/reduce, and test the lazy and curry gotchas offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [toolz, cytoolz]
+tags: [functional, data-pipeline, testing]
+pinned:
+  toolz: "1.2.0"
+  cytoolz: "1.2.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - pipeline.py
+  - tests/test_pipeline.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,19 @@
+id: beartype-pydantic-runtime-check
+title: "beartype conf + pydantic model_validate runtime checks"
+summary: "Pair beartype boundary checks with pydantic model_validate, using BeartypeConf to align int/float coercion and route violations, and pin down the gotchas where the two guards disagree."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [beartype, pydantic]
+tags: [validation, runtime, types]
+pinned:
+  beartype: "0.23.1"
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - checks.py
+  - tests/test_checks.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

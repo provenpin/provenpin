@@ -1,0 +1,19 @@
+id: cachetools-funcy-memoize
+title: "cachetools TTLCache wrapped with funcy decorators"
+summary: "Memoize through a cachetools TTLCache with an injectable clock, then layer funcy retry and fallback so only successful results get cached. Fully offline tests."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [cachetools, funcy]
+tags: [caching, memoization, testing]
+pinned:
+  cachetools: "7.2.2"
+  funcy: "2.1.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - memoize.py
+  - tests/test_memoize.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

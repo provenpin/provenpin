@@ -1,0 +1,18 @@
+id: pydantic-annotated-after-validator
+title: "Pydantic v2 Annotated validators (Before and After)"
+summary: "Reusable BeforeValidator and AfterValidator types that coerce, constrain and normalize values, tested offline, including the defaults-are-not-validated gotcha."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pydantic]
+tags: [validation, data-modeling, testing]
+pinned:
+  pydantic: "2.14.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - tests/test_validators.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

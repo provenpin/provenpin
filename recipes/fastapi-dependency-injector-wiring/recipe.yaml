@@ -1,0 +1,22 @@
+id: fastapi-dependency-injector-wiring
+title: "FastAPI routes wired to a dependency-injector DeclarativeContainer, tested offline"
+summary: "Build a DeclarativeContainer with Configuration, Singleton and Factory providers, wire it into FastAPI routes with @inject and Depends(Provide[...]), and test it in-process with httpx.ASGITransport."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastapi, dependency-injector, httpx, pytest]
+tags: [web, dependency-injection, testing, async]
+pinned:
+  fastapi: "0.143.2"
+  dependency-injector: "4.49.1"
+  httpx: "0.28.1"
+  pytest: "9.1.1"
+  pytest-asyncio: "1.4.0"
+files:
+  - requirements.txt
+  - container.py
+  - app.py
+  - tests/test_app.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

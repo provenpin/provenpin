@@ -1,0 +1,19 @@
+id: orjson-msgspec-encode-parity
+title: "orjson and msgspec encode/decode parity helpers"
+summary: "Run orjson and msgspec side by side with canonical sort-key and non-str-key options, a shared Struct hook and typed decoding, and pin down where their bytes diverge."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [orjson, msgspec]
+tags: [serialization, json, testing]
+pinned:
+  orjson: "3.13.0"
+  msgspec: "0.22.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - parity.py
+  - tests/test_parity.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
