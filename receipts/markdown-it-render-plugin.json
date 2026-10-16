@@ -1,15 +1,15 @@
 {
   "id": "markdown-it-render-plugin",
   "status": "passed",
-  "ran_at": "2026-10-15T20:57:05.642Z",
-  "last_passed_at": "2026-10-15T20:57:05.642Z",
+  "ran_at": "2026-10-16T06:53:34.999Z",
+  "last_passed_at": "2026-10-16T06:53:34.999Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1808,
-    "test": 420
+    "setup": 1730,
+    "test": 403
   },
   "pinned": {
     "markdown-it": "15.0.2",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38805962781"
+    "runner": "github-actions 38863396323"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders headings and emphasis\nok 1 - renders headings and emphasis\n  ---\n  duration_ms: 6.723045\n  type: 'test'\n  ...\n# Subtest: plugin sets target blank on links\nok 2 - plugin sets target blank on links\n  ---\n  duration_ms: 5.324476\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 270.05819\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders headings and emphasis\nok 1 - renders headings and emphasis\n  ---\n  duration_ms: 6.353959\n  type: 'test'\n  ...\n# Subtest: plugin sets target blank on links\nok 2 - plugin sets target blank on links\n  ---\n  duration_ms: 5.180672\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 255.95445\n"
 }
