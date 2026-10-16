@@ -1,0 +1,34 @@
+{
+  "id": "katex-render-to-string",
+  "status": "passed",
+  "ran_at": "2026-10-16T20:33:06.600Z",
+  "last_passed_at": "2026-10-16T20:33:06.600Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1947,
+    "test": 365
+  },
+  "pinned": {
+    "katex": "0.19.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:96e3fc61bb41d5f8850f4042e9a4aa779bfa72db1a040964775752af598cada8",
+  "files": {
+    "recipes/katex-render-to-string/package.json": "sha256:1e2167177e098b34833022cbc2ad96cade975d977cfe91c37af903e2fd82a49f",
+    "recipes/katex-render-to-string/recipe.yaml": "sha256:7fc5afb88df03468ffc3f940df9d23311e80b2c353d86e3a15a44fb98078ecb3",
+    "recipes/katex-render-to-string/src/render.ts": "sha256:f52325df50936712a26c8ce38986194c8aed48a1863f8cf9d297270e4a0fdec3",
+    "recipes/katex-render-to-string/test/render.test.ts": "sha256:dea93bcc0fd09340580ce9abb0aa46860a965dde628f5e072d081354721a57c0"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38962988948"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: renders inline math with katex classes and MathML\nok 1 - renders inline math with katex classes and MathML\n  ---\n  duration_ms: 3.764047\n  type: 'test'\n  ...\n# Subtest: renders display math with katex-display wrapper\nok 2 - renders display math with katex-display wrapper\n  ---\n  duration_ms: 1.410507\n  type: 'test'\n  ...\n# Subtest: throws a ParseError for invalid TeX when throwOnError is true\nok 3 - throws a ParseError for invalid TeX when throwOnError is true\n  ---\n  duration_ms: 0.655604\n  type: 'test'\n  ...\n# Subtest: renders an error span for invalid TeX when throwOnError is false\nok 4 - renders an error span for invalid TeX when throwOnError is false\n  ---\n  duration_ms: 0.213424\n  type: 'test'\n  ...\n# Subtest: applies custom macros across a render call\nok 5 - applies custom macros across a render call\n  ---\n  duration_ms: 0.517159\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 238.831271\n"
+}

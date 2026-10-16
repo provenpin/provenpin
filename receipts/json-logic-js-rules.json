@@ -1,0 +1,34 @@
+{
+  "id": "json-logic-js-rules",
+  "status": "passed",
+  "ran_at": "2026-10-16T20:33:01.418Z",
+  "last_passed_at": "2026-10-16T20:33:01.418Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1339,
+    "test": 261
+  },
+  "pinned": {
+    "json-logic-js": "2.0.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:8cd23e5daf70cbc99929d696a7204d4a319bb6d072b7e01486d21fbc59deb33e",
+  "files": {
+    "recipes/json-logic-js-rules/package.json": "sha256:fbe241818b31dca8613ccabaa49a8342d8150c6ec2c93ee15fc67bc13e862e91",
+    "recipes/json-logic-js-rules/recipe.yaml": "sha256:481499265e127bf9f57f70761279f930d72941fd2aa821103799411195dcadd2",
+    "recipes/json-logic-js-rules/src/rules.ts": "sha256:d3d611cc727e8c4b897868e88daf1c5e553f956038de210a1ec5db2e475862d3",
+    "recipes/json-logic-js-rules/test/rules.test.ts": "sha256:cc3ac200646ef474ecd3be8acf7fcd86cb45fd431955111dfaaaf2382f528bc1"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38962988948"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: or combines predicates and in matches array values\nok 2 - or combines predicates and in matches array values\n  ---\n  duration_ms: 0.159361\n  type: 'test'\n  ...\n# Subtest: var reads nested paths and falls back to a default\nok 3 - var reads nested paths and falls back to a default\n  ---\n  duration_ms: 0.07303\n  type: 'test'\n  ...\n# Subtest: in returns false when the array is absent\nok 4 - in returns false when the array is absent\n  ---\n  duration_ms: 0.074021\n  type: 'test'\n  ...\n# Subtest: if picks the first matching branch\nok 5 - if picks the first matching branch\n  ---\n  duration_ms: 0.071898\n  type: 'test'\n  ...\n# Subtest: custom operation applies tiered volume discount\nok 6 - custom operation applies tiered volume discount\n  ---\n  duration_ms: 0.063966\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 152.76052\n"
+}

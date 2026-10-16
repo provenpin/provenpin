@@ -1,0 +1,36 @@
+{
+  "id": "dequal-object-hash-compare",
+  "status": "passed",
+  "ran_at": "2026-10-16T20:33:04.537Z",
+  "last_passed_at": "2026-10-16T20:33:04.537Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1544,
+    "test": 620
+  },
+  "pinned": {
+    "dequal": "2.0.3",
+    "object-hash": "3.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:3cae387c5ec309fe543a290ceb5f650295eb8ca0d52c397aeeabd2d70019916a",
+  "files": {
+    "recipes/dequal-object-hash-compare/package.json": "sha256:02dfcb835f6b96b5762ac0fbbe8ce61cca269d4589af225f6cd75fd9a45b4dbc",
+    "recipes/dequal-object-hash-compare/recipe.yaml": "sha256:559247873a76fd6e66483dd67a6aa039a9d9587865808ec58e30c15304c57705",
+    "recipes/dequal-object-hash-compare/src/compare.ts": "sha256:38c6f89418890283ccb93b319fb0671cb24cb7b83c5ab0820bd144d8906985db",
+    "recipes/dequal-object-hash-compare/src/object-hash.d.ts": "sha256:2eca635008aa658be690b9f057167ea7fef17a2b26b9991566cee46dca029b19",
+    "recipes/dequal-object-hash-compare/test/compare.test.ts": "sha256:8e8788eff6c9e1610409a7c5ae4f86533e0b3d54ae616c7ecf24b796e54f2c35"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38962988948"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: dequal reports inequality for different nested values\nok 2 - dequal reports inequality for different nested values\n  ---\n  duration_ms: 0.236944\n  type: 'test'\n  ...\n# Subtest: stableHash matches equivalent objects regardless of key order\nok 3 - stableHash matches equivalent objects regardless of key order\n  ---\n  duration_ms: 1.137487\n  type: 'test'\n  ...\n# Subtest: stableHash differs when a nested value changes\nok 4 - stableHash differs when a nested value changes\n  ---\n  duration_ms: 0.357002\n  type: 'test'\n  ...\n# Subtest: unorderedArrays makes array hashes order independent\nok 5 - unorderedArrays makes array hashes order independent\n  ---\n  duration_ms: 0.629079\n  type: 'test'\n  ...\n# Subtest: excludeKeys ignores volatile fields\nok 6 - excludeKeys ignores volatile fields\n  ---\n  duration_ms: 0.347849\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 495.692312\n"
+}

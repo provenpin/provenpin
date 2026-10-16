@@ -1,0 +1,34 @@
+{
+  "id": "openpgp-encrypt-decrypt",
+  "status": "passed",
+  "ran_at": "2026-10-16T20:33:03.753Z",
+  "last_passed_at": "2026-10-16T20:33:03.753Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1751,
+    "test": 618
+  },
+  "pinned": {
+    "openpgp": "6.3.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:23c7f73da4bc2ee17843d699ae8529e9a4b0f276d675c7d79e124d99e1a7a600",
+  "files": {
+    "recipes/openpgp-encrypt-decrypt/package.json": "sha256:c4819a37670755fb2830e93fe2ba70691bb4517b0b8d6157a427f6f23b7c6e7a",
+    "recipes/openpgp-encrypt-decrypt/recipe.yaml": "sha256:aa158de14895ddf48b7698a4d308dc94f5da2fe926d4588da811b1d21930a922",
+    "recipes/openpgp-encrypt-decrypt/src/pgp.ts": "sha256:e254777b9c56b71133e677eacc272918c88f3d77a17230a0c56d232eefc6689e",
+    "recipes/openpgp-encrypt-decrypt/test/pgp.test.ts": "sha256:28dcd6d0351baea897485c1f4387741b4e6e527386bcc5bedd45e21d48e765c7"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38962988948"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: encrypts, signs, decrypts and verifies a message\nok 1 - encrypts, signs, decrypts and verifies a message\n  ---\n  duration_ms: 154.806663\n  type: 'test'\n  ...\n# Subtest: detached signature verifies against the original message\nok 2 - detached signature verifies against the original message\n  ---\n  duration_ms: 10.835093\n  type: 'test'\n  ...\n# Subtest: detached signature does not verify with the wrong key\nok 3 - detached signature does not verify with the wrong key\n  ---\n  duration_ms: 4.379534\n  type: 'test'\n  ...\n# Subtest: wrong private key cannot decrypt\nok 4 - wrong private key cannot decrypt\n  ---\n  duration_ms: 40.549453\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 462.54436\n"
+}

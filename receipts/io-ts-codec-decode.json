@@ -1,0 +1,35 @@
+{
+  "id": "io-ts-codec-decode",
+  "status": "passed",
+  "ran_at": "2026-10-16T20:33:04.762Z",
+  "last_passed_at": "2026-10-16T20:33:04.762Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1786,
+    "test": 282
+  },
+  "pinned": {
+    "io-ts": "2.2.22",
+    "fp-ts": "2.16.11",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d8fbc9a7370ab115f957f1a09ec2afd1aa238817ff5e1fe08790f10dc3ee9dca",
+  "files": {
+    "recipes/io-ts-codec-decode/package.json": "sha256:af604fab3e0606f990905b33d8a5b1f5521e251b8b46d77b545a60f19f4deda2",
+    "recipes/io-ts-codec-decode/recipe.yaml": "sha256:b59c72c9eaeae7f660eaf5738eeebe70f5f564b387d99eeca7e7ad1bacbc3dd7",
+    "recipes/io-ts-codec-decode/src/codec.ts": "sha256:97a0e4212730c3e6e6cea590dc5c7cd3ba9924e1830556de19cb0a507e432ecd",
+    "recipes/io-ts-codec-decode/test/codec.test.ts": "sha256:7dd6748c8eb74b19687e1facbe5c2eb6cfee15e4e7ad8e40ef6c410a56cc9e9e"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38962988948"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: treats partial fields as optional\nok 2 - treats partial fields as optional\n  ---\n  duration_ms: 0.731685\n  type: 'test'\n  ...\n# Subtest: rejects an unknown union member and reports the path\nok 3 - rejects an unknown union member and reports the path\n  ---\n  duration_ms: 0.306579\n  type: 'test'\n  ...\n# Subtest: rejects a non-positive branded age\nok 4 - rejects a non-positive branded age\n  ---\n  duration_ms: 0.134321\n  type: 'test'\n  ...\n# Subtest: rejects wrong element type inside an array\nok 5 - rejects wrong element type inside an array\n  ---\n  duration_ms: 0.083826\n  type: 'test'\n  ...\n# Subtest: encodes a valid value back to plain json\nok 6 - encodes a valid value back to plain json\n  ---\n  duration_ms: 0.057937\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 180.578465\n"
+}

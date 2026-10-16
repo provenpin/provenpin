@@ -1,0 +1,34 @@
+{
+  "id": "jsonpath-plus-query",
+  "status": "passed",
+  "ran_at": "2026-10-16T20:33:01.725Z",
+  "last_passed_at": "2026-10-16T20:33:01.725Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2016,
+    "test": 335
+  },
+  "pinned": {
+    "jsonpath-plus": "11.2.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:60e7c8029dadb7a7590c5f5eec807950c59b3e52b1d9e1e245b89116e9d2b597",
+  "files": {
+    "recipes/jsonpath-plus-query/package.json": "sha256:a527b80297129a96ea120b40dcbe51241a9db71e306351f793275e9b0ecec7b4",
+    "recipes/jsonpath-plus-query/recipe.yaml": "sha256:a97a0728ff9003760464cd3d957926a969434971029202806a890b99185c1ae4",
+    "recipes/jsonpath-plus-query/src/query.ts": "sha256:205f72639bd8c3ca8a6963300eeadd9f0d3df254a77e1c464f5d589db6541ecc",
+    "recipes/jsonpath-plus-query/test/query.test.ts": "sha256:b8c558641bb007d5c0790f015811379290a79434207e0c4ee4d446d89d42e500"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38962988948"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: wildcard maps over the book array\nok 3 - wildcard maps over the book array\n  ---\n  duration_ms: 0.224569\n  type: 'test'\n  ...\n# Subtest: resultType value returns matched nodes\nok 4 - resultType value returns matched nodes\n  ---\n  duration_ms: 0.586552\n  type: 'test'\n  ...\n# Subtest: resultType path returns matched locations\nok 5 - resultType path returns matched locations\n  ---\n  duration_ms: 0.54235\n  type: 'test'\n  ...\n# Subtest: returned paths round-trip back to the same values\nok 6 - returned paths round-trip back to the same values\n  ---\n  duration_ms: 0.561707\n  type: 'test'\n  ...\n# Subtest: wildcard over an object collects its values\nok 7 - wildcard over an object collects its values\n  ---\n  duration_ms: 0.210712\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 194.911754\n"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "hapi-server-inject-joi",
+  "status": "passed",
+  "ran_at": "2026-10-16T20:33:06.889Z",
+  "last_passed_at": "2026-10-16T20:33:06.889Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2422,
+    "test": 633
+  },
+  "pinned": {
+    "@hapi/hapi": "21.4.10",
+    "@hapi/boom": "10.0.1",
+    "joi": "18.3.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:653e7e68256c6ad2bb04d28dad231099221bd91b64f4343b32940c619c162d9d",
+  "files": {
+    "recipes/hapi-server-inject-joi/package.json": "sha256:4bc8f854f5e5b81f05524d0f8cf1a09ce1e097fc6f951ad2ce505c9f545c6bea",
+    "recipes/hapi-server-inject-joi/recipe.yaml": "sha256:dd73bd93548326bcca04b86ed081b3cbbddc18232b2be327544e1a9bcbb8f858",
+    "recipes/hapi-server-inject-joi/src/server.ts": "sha256:12ecec498ee7ed1b1363312c04b31eb80e01469266a721d5b36ae7a10d2825bf",
+    "recipes/hapi-server-inject-joi/test/server.test.ts": "sha256:8f82e880855653d18a53e5ccebb07d6a2a9537fbbe04b249bc50f7df6a7ec740"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38962988948"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: GET /users/{id} rejects an invalid id with 400\nok 2 - GET /users/{id} rejects an invalid id with 400\n  ---\n  duration_ms: 3.553096\n  type: 'test'\n  ...\n# Subtest: GET /users/{id} returns a Boom 404 for a missing user\nok 3 - GET /users/{id} returns a Boom 404 for a missing user\n  ---\n  duration_ms: 2.147212\n  type: 'test'\n  ...\n# Subtest: POST /users accepts a valid payload with 201\nok 4 - POST /users accepts a valid payload with 201\n  ---\n  duration_ms: 27.550799\n  type: 'test'\n  ...\n# Subtest: POST /users rejects an invalid payload with 400\nok 5 - POST /users rejects an invalid payload with 400\n  ---\n  duration_ms: 6.816609\n  type: 'test'\n  ...\n# Subtest: GET /search validates and coerces the query string\nok 6 - GET /search validates and coerces the query string\n  ---\n  duration_ms: 4.565662\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 476.737214\n"
+}
