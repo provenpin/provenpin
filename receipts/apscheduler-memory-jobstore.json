@@ -1,0 +1,34 @@
+{
+  "id": "apscheduler-memory-jobstore",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:21.014Z",
+  "last_passed_at": "2026-10-16T00:01:21.014Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 493,
+    "test": 2285
+  },
+  "pinned": {
+    "apscheduler": "3.11.3",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:8a312a5a7a763a9d7a688572762916396499a1528fdf24060e2848d9529b991d",
+  "files": {
+    "recipes/apscheduler-memory-jobstore/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/apscheduler-memory-jobstore/recipe.yaml": "sha256:b327d19302e307a0905f64226e29f02148edcaeac61cc3715889b0f79f2c3b20",
+    "recipes/apscheduler-memory-jobstore/requirements.txt": "sha256:8fd718de14cd7b90c88d2c334c75131d31bad6d4f7c2825a32e254ebadb214e7",
+    "recipes/apscheduler-memory-jobstore/scheduler.py": "sha256:0fc84c9255f43c27820ef646942ff2e6d2539e5e106559a286c3642e20956362",
+    "recipes/apscheduler-memory-jobstore/tests/test_scheduler.py": "sha256:08eff17e53597eaaf7a63096c8119ed23be516007fd66f87e642774c28ade389"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.04s\n"
+}

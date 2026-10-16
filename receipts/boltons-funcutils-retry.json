@@ -1,0 +1,34 @@
+{
+  "id": "boltons-funcutils-retry",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:26.959Z",
+  "last_passed_at": "2026-10-16T00:01:26.959Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 384,
+    "test": 1969
+  },
+  "pinned": {
+    "boltons": "26.2.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:3e038c8b25a519d37595ba35bb17d914ef5db085b7edd3877c950768c5a1c993",
+  "files": {
+    "recipes/boltons-funcutils-retry/helpers.py": "sha256:e2ab8f34d3de224fa8dd2df68cd02cea0373f7f0bf8819346ba49226d9299472",
+    "recipes/boltons-funcutils-retry/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/boltons-funcutils-retry/recipe.yaml": "sha256:5f47a5830bf3108dbb31f89728eef84ddc05b527e73de6641768c9bdbafecb1a",
+    "recipes/boltons-funcutils-retry/requirements.txt": "sha256:a2a03e84d439979bf3393d8a34e98d68c49e0b64fed62de69653b0047efdd7e6",
+    "recipes/boltons-funcutils-retry/tests/test_helpers.py": "sha256:fa52401565783da2ea8ffe7558ca504dd6471e0ce038332ec5e34ce7f71b1536"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+}

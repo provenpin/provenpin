@@ -1,0 +1,34 @@
+{
+  "id": "pydantic-annotated-after-validator",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:39.014Z",
+  "last_passed_at": "2026-10-16T00:01:39.014Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 825,
+    "test": 1073
+  },
+  "pinned": {
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:38f3f008c5a4beea16d420e2234c5ca1f36d3dd640c9e3180cd8a0e59c5e36bb",
+  "files": {
+    "recipes/pydantic-annotated-after-validator/models.py": "sha256:0fe8946d4cc828b10bb0a77dcd27a3992840c079959bb07936c0d91ebf0f7e80",
+    "recipes/pydantic-annotated-after-validator/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pydantic-annotated-after-validator/recipe.yaml": "sha256:2f836c6df626b93fad35f87c1ca105b04f101944cccb575be4a8865fdcbebd06",
+    "recipes/pydantic-annotated-after-validator/requirements.txt": "sha256:a9d8cd6e63fd70d8d8ed77922f994f27ccbbcba831455ca54dfc0b2f27be4adc",
+    "recipes/pydantic-annotated-after-validator/tests/test_validators.py": "sha256:72c659d31374c30c02c47e48c91adfc22f17a74915f00f30fab5b0f58b8626a8"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.21s\n"
+}

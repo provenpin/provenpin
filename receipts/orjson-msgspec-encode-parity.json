@@ -1,0 +1,35 @@
+{
+  "id": "orjson-msgspec-encode-parity",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:41.126Z",
+  "last_passed_at": "2026-10-16T00:01:41.126Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 526,
+    "test": 1913
+  },
+  "pinned": {
+    "orjson": "3.13.0",
+    "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:2dbf2ee15d4cb32895eab6ccb975d02b3783ca74a075aba1657960a365335d69",
+  "files": {
+    "recipes/orjson-msgspec-encode-parity/parity.py": "sha256:58c5fb99e65ae47dd346175280dcc35257a0a2322f85721d81c4a040d215aed1",
+    "recipes/orjson-msgspec-encode-parity/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/orjson-msgspec-encode-parity/recipe.yaml": "sha256:57994be1bc9429c2faa17236ac726ce89e2fee2dd540f96ff377a9465e24376f",
+    "recipes/orjson-msgspec-encode-parity/requirements.txt": "sha256:2ceab14142939a2b9c4a69f14ad7c986ce196f04090de71b7397e465673775dd",
+    "recipes/orjson-msgspec-encode-parity/tests/test_parity.py": "sha256:363e825a0822e6991627c1bb71e57e1b487da3a390c72edecff8ea0d96c04e46"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
+}

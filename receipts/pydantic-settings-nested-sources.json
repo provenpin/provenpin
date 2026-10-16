@@ -1,0 +1,34 @@
+{
+  "id": "pydantic-settings-nested-sources",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:39.150Z",
+  "last_passed_at": "2026-10-16T00:01:39.150Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 618,
+    "test": 921
+  },
+  "pinned": {
+    "pydantic-settings": "2.16.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:4169b5dc10389497f7f94c4e4f47408c22e3cd48db93006b2fff25c4f2dc4500",
+  "files": {
+    "recipes/pydantic-settings-nested-sources/config.py": "sha256:a48f1b2936acab6b022e879cf53b9612a35c34e4e6836758b9e1ba19f3a46b6d",
+    "recipes/pydantic-settings-nested-sources/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pydantic-settings-nested-sources/recipe.yaml": "sha256:1c8b471884e05faa4695f4c9078c48366b869b1d8af23ffb32cb0d7bfbfe53f9",
+    "recipes/pydantic-settings-nested-sources/requirements.txt": "sha256:26884568f9a8839126de117b25d3450c8e6a7153953a04b798bf614b8a29136b",
+    "recipes/pydantic-settings-nested-sources/tests/test_config.py": "sha256:6c71096efdc53987fbdaae106a3d1bc5c3aa7d1e3b20123bd332c6c53fd16c29"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.40s\n"
+}

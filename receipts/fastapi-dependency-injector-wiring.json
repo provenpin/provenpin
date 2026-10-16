@@ -1,0 +1,38 @@
+{
+  "id": "fastapi-dependency-injector-wiring",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:22.018Z",
+  "last_passed_at": "2026-10-16T00:01:22.018Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 332,
+    "test": 1973
+  },
+  "pinned": {
+    "fastapi": "0.143.2",
+    "dependency-injector": "4.49.1",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+  },
+  "recipe_hash": "sha256:b2766a8f55da8801bc7c3edf8bc64c42b63027b6b935e745eb8171a063fe54b3",
+  "files": {
+    "recipes/fastapi-dependency-injector-wiring/app.py": "sha256:5e3a09c202d2160e2e93583e36707abac5e2182b1568a9e89382f9226eac7fd1",
+    "recipes/fastapi-dependency-injector-wiring/container.py": "sha256:052cfbf4f80a2b4ff32664eceff0861ab97b7edaada5cc790339291896c06316",
+    "recipes/fastapi-dependency-injector-wiring/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/fastapi-dependency-injector-wiring/recipe.yaml": "sha256:37cd040014a82a676f0bfb93c3f5cd064866f880cf5b34758191e430a61c316b",
+    "recipes/fastapi-dependency-injector-wiring/requirements.txt": "sha256:e776c545f960d24214a938751d25885960e48751c5ae682944fa95c37466df15",
+    "recipes/fastapi-dependency-injector-wiring/tests/test_app.py": "sha256:9458c2dda5108aa320f72a5176d9a885cce2dba7b4312c0e35d0ea9a4b6598a1"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.78s\n"
+}

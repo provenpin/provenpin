@@ -1,0 +1,36 @@
+{
+  "id": "sqlmodel-sqlalchemy-core-select",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:39.563Z",
+  "last_passed_at": "2026-10-16T00:01:39.563Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 472,
+    "test": 1464
+  },
+  "pinned": {
+    "sqlmodel": "0.0.48",
+    "sqlalchemy": "2.1.4",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:f5dcc0b32fe612e09b0c889950c017bda53c0bfc03b77088426881d22022e37b",
+  "files": {
+    "recipes/sqlmodel-sqlalchemy-core-select/models.py": "sha256:7f152a6b6b93a3872b3f93032441a3d46bdf3925f72a2b711411cb5a99a9bb88",
+    "recipes/sqlmodel-sqlalchemy-core-select/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlmodel-sqlalchemy-core-select/queries.py": "sha256:317fd0eeee468ea3320769a91d07c7ffdb639e8a448b7d2d0656639ca165823e",
+    "recipes/sqlmodel-sqlalchemy-core-select/recipe.yaml": "sha256:cf9b920d17cc41fd945a346cd28a83e9f502de2d23ae110b67a476461914701b",
+    "recipes/sqlmodel-sqlalchemy-core-select/requirements.txt": "sha256:a3f68a552c64bf914c12f3469787e5188c7fe48ce778203a7aa09fa5c84f1117",
+    "recipes/sqlmodel-sqlalchemy-core-select/tests/test_core_select.py": "sha256:495921864b4e7084bd0d5a7f2abe54bf0a89ab2e032869680d3db6725bf88d87"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.96s\n"
+}

@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-15T23:54:40.840Z",
+ "generated_at": "2026-10-16T00:01:59.038Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 363,
+ "count": 377,
  "recipes": [
   {
    "id": "aiofiles-anyio-temp-io",
@@ -53,6 +53,34 @@
     "recipes/aiohttp-pytest-plugin-client/recipe.yaml": "sha256:62a1c056079425bd7be5d2e4e18289317dedde8fb2ac0d27eb94f9ab44543564",
     "recipes/aiohttp-pytest-plugin-client/requirements.txt": "sha256:209418c07703351925b35a69d979397ef6490c34dce0d85c09b643f1fb033b26",
     "recipes/aiohttp-pytest-plugin-client/tests/test_app.py": "sha256:ed74b72d3f4fd3e97aad55ce56380263c2845719dd9947cec7fff1e47ffc0388"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "aiolimiter-httpx-rate-limit",
+   "language": "python",
+   "pinned": {
+    "aiolimiter": "1.3.0",
+    "httpx": "0.28.1",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:20.789Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:ab2b8f8e686d0dee2814886929467c35c943c4ce9d555ca1a1bf1b2ba13945f1",
+   "files": {
+    "recipes/aiolimiter-httpx-rate-limit/client.py": "sha256:3db7220565df107c786c32c7f50764165e577b8ad50023194e2d54822f56c123",
+    "recipes/aiolimiter-httpx-rate-limit/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/aiolimiter-httpx-rate-limit/recipe.yaml": "sha256:cf34f226b4a3249d07b669fb0de3b0079ee42e158ae4a30f84c2e4e40a463065",
+    "recipes/aiolimiter-httpx-rate-limit/requirements.txt": "sha256:57518b6f3bc74be065dbd21b6de7a5c4ec885507f1694e171616790380c1fc73",
+    "recipes/aiolimiter-httpx-rate-limit/tests/test_client.py": "sha256:d7129e5a844d3cf54afa30c73685a0884d9680ee875a7b48cb41f5ee499e12c5"
    },
    "staleness": {
     "status": "unchecked",
@@ -219,6 +247,32 @@
     "recipes/apollo-server-dataloader-batching/recipe.yaml": "sha256:61d0083a4d7e619b0db6df29e3815d1454576e9e9aefd2d67f3adbf347aa2cd1",
     "recipes/apollo-server-dataloader-batching/src/server.ts": "sha256:3c8e3e457267fe839a9f79065e20a33c0eb70e8b774d81d0361823d3b3bc8e01",
     "recipes/apollo-server-dataloader-batching/test/server.test.ts": "sha256:544e2d6fe6029b43f45b49f7dc512c327cfb6a6bf2f87effaffcddb6605f2e9c"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "apscheduler-memory-jobstore",
+   "language": "python",
+   "pinned": {
+    "apscheduler": "3.11.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:21.014Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:8a312a5a7a763a9d7a688572762916396499a1528fdf24060e2848d9529b991d",
+   "files": {
+    "recipes/apscheduler-memory-jobstore/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/apscheduler-memory-jobstore/recipe.yaml": "sha256:b327d19302e307a0905f64226e29f02148edcaeac61cc3715889b0f79f2c3b20",
+    "recipes/apscheduler-memory-jobstore/requirements.txt": "sha256:8fd718de14cd7b90c88d2c334c75131d31bad6d4f7c2825a32e254ebadb214e7",
+    "recipes/apscheduler-memory-jobstore/scheduler.py": "sha256:0fc84c9255f43c27820ef646942ff2e6d2539e5e106559a286c3642e20956362",
+    "recipes/apscheduler-memory-jobstore/tests/test_scheduler.py": "sha256:08eff17e53597eaaf7a63096c8119ed23be516007fd66f87e642774c28ade389"
    },
    "staleness": {
     "status": "unchecked",
@@ -772,6 +826,33 @@
    }
   },
   {
+   "id": "beartype-pydantic-runtime-check",
+   "language": "python",
+   "pinned": {
+    "beartype": "0.23.1",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:20.959Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:4b08f019afcd70372edc8cc949e72467da766a7500f84c5fede3ee7836c5d5bc",
+   "files": {
+    "recipes/beartype-pydantic-runtime-check/checks.py": "sha256:4b0b4e4127aa0a4cb894fe7a35408df3196d480543bebd0a9a43b37bb2b71bc5",
+    "recipes/beartype-pydantic-runtime-check/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/beartype-pydantic-runtime-check/recipe.yaml": "sha256:d02d19d9d7c4c4b6ffaac723d78ea0d5afe79dd389d7c008c93eb0c1c8a7fea3",
+    "recipes/beartype-pydantic-runtime-check/requirements.txt": "sha256:40f1b7dd431165e6c86fd1882ec971aad7596616ff44e00ac90e42560d083f72",
+    "recipes/beartype-pydantic-runtime-check/tests/test_checks.py": "sha256:9f45448f803bbbd58dd8794b335a4d3d9567c4e57db5d94fca71af579f07186a"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "better-auth-sqlite-email-password",
    "language": "typescript",
    "pinned": {
@@ -906,6 +987,32 @@
    }
   },
   {
+   "id": "boltons-funcutils-retry",
+   "language": "python",
+   "pinned": {
+    "boltons": "26.2.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:26.959Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:3e038c8b25a519d37595ba35bb17d914ef5db085b7edd3877c950768c5a1c993",
+   "files": {
+    "recipes/boltons-funcutils-retry/helpers.py": "sha256:e2ab8f34d3de224fa8dd2df68cd02cea0373f7f0bf8819346ba49226d9299472",
+    "recipes/boltons-funcutils-retry/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/boltons-funcutils-retry/recipe.yaml": "sha256:5f47a5830bf3108dbb31f89728eef84ddc05b527e73de6641768c9bdbafecb1a",
+    "recipes/boltons-funcutils-retry/requirements.txt": "sha256:a2a03e84d439979bf3393d8a34e98d68c49e0b64fed62de69653b0047efdd7e6",
+    "recipes/boltons-funcutils-retry/tests/test_helpers.py": "sha256:fa52401565783da2ea8ffe7558ca504dd6471e0ce038332ec5e34ce7f71b1536"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "boto3-moto-dynamodb-sqs",
    "language": "python",
    "pinned": {
@@ -1010,6 +1117,33 @@
     "recipes/cache-manager-memory-store/recipe.yaml": "sha256:91b1b6595534077545ac028c096029ca1cfc4057cd33b3909c71bf50d3b1d5a7",
     "recipes/cache-manager-memory-store/src/cache.ts": "sha256:ef436738f30743ea98a290950eebc1c376f5f649dd75ebf91c0ada718f0720e5",
     "recipes/cache-manager-memory-store/test/cache.test.ts": "sha256:25eba50893e4a03b7592488c817c7f935281b29ee446ab469de591aaf05c1e7a"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "cachetools-funcy-memoize",
+   "language": "python",
+   "pinned": {
+    "cachetools": "7.2.2",
+    "funcy": "2.1.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:19.757Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:0ca870875fce2e5a91b9b4a302671ac7450e56a4c18b35124ff160a23ddf45f2",
+   "files": {
+    "recipes/cachetools-funcy-memoize/memoize.py": "sha256:71041169218c0939b1db685546cb6f8ff357fe9940df56b27f7cb1a4efa9022e",
+    "recipes/cachetools-funcy-memoize/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/cachetools-funcy-memoize/recipe.yaml": "sha256:c4bd5715e3d72d2b84e22ff74bf91979e00315a3186fef6935f129ab7136e0ce",
+    "recipes/cachetools-funcy-memoize/requirements.txt": "sha256:1d3869ec96ea8d4d4ca64a151aa85187735f0bc5451bd4e095d50b6ac74725c7",
+    "recipes/cachetools-funcy-memoize/tests/test_memoize.py": "sha256:6b04161ca0bc171ab51639e9fe755a724ec3134b2b84692bbd913670bce16132"
    },
    "staleness": {
     "status": "unchecked",
@@ -2921,6 +3055,34 @@
    }
   },
   {
+   "id": "faker-polyfactory-seeded",
+   "language": "python",
+   "pinned": {
+    "faker": "40.43.0",
+    "polyfactory": "3.3.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:19.671Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:6bc8406486f56f1defafe160121a0df5a79cd7fdba8071b121e6e59fd333cdb4",
+   "files": {
+    "recipes/faker-polyfactory-seeded/factories.py": "sha256:e805411805ac2b478c443aec8a36583d2cf2271c1c9f427c51b93fa2c318082c",
+    "recipes/faker-polyfactory-seeded/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/faker-polyfactory-seeded/recipe.yaml": "sha256:3b965e5f73cedd86f1c82d6b4e4a726b04e4e9329ae7abf156f87843763e1b6f",
+    "recipes/faker-polyfactory-seeded/requirements.txt": "sha256:f7452f2f7c6515091eb12c842505a1c93652c96e130529bfa87dbd63168d0e54",
+    "recipes/faker-polyfactory-seeded/tests/test_factories.py": "sha256:0dfabe4c24a7f66d4cc7619d0b7d5023db9dd13b11e6f6715e8ae99fa4413ec2"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "fast-glob-picomatch-files",
    "language": "typescript",
    "pinned": {
@@ -3067,6 +3229,36 @@
     "recipes/fastapi-cashews-memory-cache/recipe.yaml": "sha256:fa690f7b33ac244fad9eb99d5c8c69efe507ef77445c65420177609f0c247a99",
     "recipes/fastapi-cashews-memory-cache/requirements.txt": "sha256:708cbfc67cc24e5193ea9833ec86bb02b2adf9106300bfc23a8b2cb2246ae2b1",
     "recipes/fastapi-cashews-memory-cache/tests/test_app.py": "sha256:ab88a8795b7da15977eb06edda64de5c47da7b801ad622e6263d565086020e05"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "fastapi-dependency-injector-wiring",
+   "language": "python",
+   "pinned": {
+    "fastapi": "0.143.2",
+    "dependency-injector": "4.49.1",
+    "httpx": "0.28.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:22.018Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:b2766a8f55da8801bc7c3edf8bc64c42b63027b6b935e745eb8171a063fe54b3",
+   "files": {
+    "recipes/fastapi-dependency-injector-wiring/app.py": "sha256:5e3a09c202d2160e2e93583e36707abac5e2182b1568a9e89382f9226eac7fd1",
+    "recipes/fastapi-dependency-injector-wiring/container.py": "sha256:052cfbf4f80a2b4ff32664eceff0861ab97b7edaada5cc790339291896c06316",
+    "recipes/fastapi-dependency-injector-wiring/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/fastapi-dependency-injector-wiring/recipe.yaml": "sha256:37cd040014a82a676f0bfb93c3f5cd064866f880cf5b34758191e430a61c316b",
+    "recipes/fastapi-dependency-injector-wiring/requirements.txt": "sha256:e776c545f960d24214a938751d25885960e48751c5ae682944fa95c37466df15",
+    "recipes/fastapi-dependency-injector-wiring/tests/test_app.py": "sha256:9458c2dda5108aa320f72a5176d9a885cce2dba7b4312c0e35d0ea9a4b6598a1"
    },
    "staleness": {
     "status": "unchecked",
@@ -5859,6 +6051,32 @@
    }
   },
   {
+   "id": "more-itertools-batched-window",
+   "language": "python",
+   "pinned": {
+    "more-itertools": "11.2.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:20.485Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:ad133fb43e435e8e37ec0e03198686996779289aa1f04270ddc397bbb93f3c3d",
+   "files": {
+    "recipes/more-itertools-batched-window/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/more-itertools-batched-window/recipe.yaml": "sha256:fb75a59fbf409055defa31fe33c02390dd6365d942b9ad72ed6329304430d3e3",
+    "recipes/more-itertools-batched-window/requirements.txt": "sha256:783e22288cd0dc3cfdbd0e60ec9c615730d857fbfc647bb81dd19c39fba58fc2",
+    "recipes/more-itertools-batched-window/stream_ops.py": "sha256:dbb3592977f41a69f2dc638a605db8a4ab1ce8fd4fee996a26a154fc0d86a655",
+    "recipes/more-itertools-batched-window/tests/test_stream_ops.py": "sha256:f2e94df9e52f9dda0f5b0479dd8dee45065a4a751e00774348d63888df871e1f"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "msgpack-pydantic-binary-roundtrip",
    "language": "python",
    "pinned": {
@@ -6742,6 +6960,33 @@
    }
   },
   {
+   "id": "orjson-msgspec-encode-parity",
+   "language": "python",
+   "pinned": {
+    "orjson": "3.13.0",
+    "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:41.126Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:2dbf2ee15d4cb32895eab6ccb975d02b3783ca74a075aba1657960a365335d69",
+   "files": {
+    "recipes/orjson-msgspec-encode-parity/parity.py": "sha256:58c5fb99e65ae47dd346175280dcc35257a0a2322f85721d81c4a040d215aed1",
+    "recipes/orjson-msgspec-encode-parity/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/orjson-msgspec-encode-parity/recipe.yaml": "sha256:57994be1bc9429c2faa17236ac726ce89e2fee2dd540f96ff377a9465e24376f",
+    "recipes/orjson-msgspec-encode-parity/requirements.txt": "sha256:2ceab14142939a2b9c4a69f14ad7c986ce196f04090de71b7397e465673775dd",
+    "recipes/orjson-msgspec-encode-parity/tests/test_parity.py": "sha256:363e825a0822e6991627c1bb71e57e1b487da3a390c72edecff8ea0d96c04e46"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "orjson-pydantic-v2-roundtrip",
    "language": "python",
    "pinned": {
@@ -7567,6 +7812,32 @@
    }
   },
   {
+   "id": "pydantic-annotated-after-validator",
+   "language": "python",
+   "pinned": {
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:39.014Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:38f3f008c5a4beea16d420e2234c5ca1f36d3dd640c9e3180cd8a0e59c5e36bb",
+   "files": {
+    "recipes/pydantic-annotated-after-validator/models.py": "sha256:0fe8946d4cc828b10bb0a77dcd27a3992840c079959bb07936c0d91ebf0f7e80",
+    "recipes/pydantic-annotated-after-validator/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pydantic-annotated-after-validator/recipe.yaml": "sha256:2f836c6df626b93fad35f87c1ca105b04f101944cccb575be4a8865fdcbebd06",
+    "recipes/pydantic-annotated-after-validator/requirements.txt": "sha256:a9d8cd6e63fd70d8d8ed77922f994f27ccbbcba831455ca54dfc0b2f27be4adc",
+    "recipes/pydantic-annotated-after-validator/tests/test_validators.py": "sha256:72c659d31374c30c02c47e48c91adfc22f17a74915f00f30fab5b0f58b8626a8"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "pydantic-email-phone-validation",
    "language": "python",
    "pinned": {
@@ -7648,6 +7919,32 @@
     "recipes/pydantic-settings-dotenv-secrets/requirements.txt": "sha256:cb88e9113be381a296c796e55cd34c34bd15d8b3a8e8d11ad030cec7091e0d6c",
     "recipes/pydantic-settings-dotenv-secrets/settings.py": "sha256:54b196fd71fbf9ceaa897095ed91ec7753a630af0adef18d7c313c3583613459",
     "recipes/pydantic-settings-dotenv-secrets/tests/test_settings.py": "sha256:09e31e7282a5025c8340f38b7bfe05f66b1f52b528b963830ead05defb4dfa4f"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pydantic-settings-nested-sources",
+   "language": "python",
+   "pinned": {
+    "pydantic-settings": "2.16.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:39.150Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:4169b5dc10389497f7f94c4e4f47408c22e3cd48db93006b2fff25c4f2dc4500",
+   "files": {
+    "recipes/pydantic-settings-nested-sources/config.py": "sha256:a48f1b2936acab6b022e879cf53b9612a35c34e4e6836758b9e1ba19f3a46b6d",
+    "recipes/pydantic-settings-nested-sources/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pydantic-settings-nested-sources/recipe.yaml": "sha256:1c8b471884e05faa4695f4c9078c48366b869b1d8af23ffb32cb0d7bfbfe53f9",
+    "recipes/pydantic-settings-nested-sources/requirements.txt": "sha256:26884568f9a8839126de117b25d3450c8e6a7153953a04b798bf614b8a29136b",
+    "recipes/pydantic-settings-nested-sources/tests/test_config.py": "sha256:6c71096efdc53987fbdaae106a3d1bc5c3aa7d1e3b20123bd332c6c53fd16c29"
    },
    "staleness": {
     "status": "unchecked",
@@ -8897,6 +9194,34 @@
    }
   },
   {
+   "id": "sqlalchemy-factory-boy-sqlite",
+   "language": "python",
+   "pinned": {
+    "sqlalchemy": "2.1.4",
+    "factory-boy": "3.3.3",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:38.967Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:85c6126a335b38fbd104c658f5c637ebcfd70e51364624aa9e04a5f80592f47a",
+   "files": {
+    "recipes/sqlalchemy-factory-boy-sqlite/factories.py": "sha256:99cfb0d6f6433d599e2c8262e8500f5ab5fa6238bdba8d90ab1941c5e92ba007",
+    "recipes/sqlalchemy-factory-boy-sqlite/models.py": "sha256:36bd628ae333b7d5b7c42a6dd2b700fa32303046985c29758e7c297d8cf799b2",
+    "recipes/sqlalchemy-factory-boy-sqlite/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlalchemy-factory-boy-sqlite/recipe.yaml": "sha256:669a1193140ed834c888b67f8ae9009ddf46e99f65d8011906b3e7ede9e974d1",
+    "recipes/sqlalchemy-factory-boy-sqlite/requirements.txt": "sha256:30606ffb48ef2fadf01e8311aafdaa8f9b97acbbc38df437a4c36769d6b2c27b",
+    "recipes/sqlalchemy-factory-boy-sqlite/tests/test_factories.py": "sha256:ec168f2498166213966e6e8a8414c082384f8e050ba310934afd0cb1df89b4a1"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "sqlalchemy-hybrid-events",
    "language": "python",
    "pinned": {
@@ -9066,6 +9391,34 @@
      "sqlmodel": "0.0.48"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "sqlmodel-sqlalchemy-core-select",
+   "language": "python",
+   "pinned": {
+    "sqlmodel": "0.0.48",
+    "sqlalchemy": "2.1.4",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:39.563Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:f5dcc0b32fe612e09b0c889950c017bda53c0bfc03b77088426881d22022e37b",
+   "files": {
+    "recipes/sqlmodel-sqlalchemy-core-select/models.py": "sha256:7f152a6b6b93a3872b3f93032441a3d46bdf3925f72a2b711411cb5a99a9bb88",
+    "recipes/sqlmodel-sqlalchemy-core-select/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlmodel-sqlalchemy-core-select/queries.py": "sha256:317fd0eeee468ea3320769a91d07c7ffdb639e8a448b7d2d0656639ca165823e",
+    "recipes/sqlmodel-sqlalchemy-core-select/recipe.yaml": "sha256:cf9b920d17cc41fd945a346cd28a83e9f502de2d23ae110b67a476461914701b",
+    "recipes/sqlmodel-sqlalchemy-core-select/requirements.txt": "sha256:a3f68a552c64bf914c12f3469787e5188c7fe48ce778203a7aa09fa5c84f1117",
+    "recipes/sqlmodel-sqlalchemy-core-select/tests/test_core_select.py": "sha256:495921864b4e7084bd0d5a7f2abe54bf0a89ab2e032869680d3db6725bf88d87"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -9559,6 +9912,33 @@
     "recipes/tomlkit-comment-preserve/recipe.yaml": "sha256:a654769df3ac26e6aca0ceffe529cd474c486915e67b9ed21156c4b91c65bb01",
     "recipes/tomlkit-comment-preserve/requirements.txt": "sha256:3b48e3eb4fd3a74808b8eb7491f8959b306314a8d72148130af5bff3e80fd614",
     "recipes/tomlkit-comment-preserve/tests/test_config.py": "sha256:6ab164d6c7f81ed328afb7f7c943e6f6271c5e4e0510111cdccc4a3d7bb541cb"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "toolz-cytoolz-pipeline",
+   "language": "python",
+   "pinned": {
+    "toolz": "1.2.0",
+    "cytoolz": "1.2.0",
+    "pytest": "9.1.1"
+   },
+   "runtime": "Python 3.13.16",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T00:01:43.212Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38826982604",
+   "recipe_hash": "sha256:dfc3c204531da0eb6ffb91c7cc990cac6492f6978705c980fbcb2870ac66c88f",
+   "files": {
+    "recipes/toolz-cytoolz-pipeline/pipeline.py": "sha256:1fe43b5f0efb9f4634c7baf39c64ceba040e137eda1a2e9f548e78a14593be25",
+    "recipes/toolz-cytoolz-pipeline/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/toolz-cytoolz-pipeline/recipe.yaml": "sha256:bf6178fb1bb5ac33ec91d35e9693b3784e35bb271bd2303f1199568009d15b1c",
+    "recipes/toolz-cytoolz-pipeline/requirements.txt": "sha256:109136315a37c599b7133c50c34e590b153671d8766344610f5dcb14477f84e9",
+    "recipes/toolz-cytoolz-pipeline/tests/test_pipeline.py": "sha256:e33fe6b788802951d8edd0f5178bef185183049a16a13349bff250529c3817b3"
    },
    "staleness": {
     "status": "unchecked",

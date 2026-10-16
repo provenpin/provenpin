@@ -1,0 +1,35 @@
+{
+  "id": "toolz-cytoolz-pipeline",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:43.212Z",
+  "last_passed_at": "2026-10-16T00:01:43.212Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1113,
+    "test": 935
+  },
+  "pinned": {
+    "toolz": "1.2.0",
+    "cytoolz": "1.2.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:dfc3c204531da0eb6ffb91c7cc990cac6492f6978705c980fbcb2870ac66c88f",
+  "files": {
+    "recipes/toolz-cytoolz-pipeline/pipeline.py": "sha256:1fe43b5f0efb9f4634c7baf39c64ceba040e137eda1a2e9f548e78a14593be25",
+    "recipes/toolz-cytoolz-pipeline/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/toolz-cytoolz-pipeline/recipe.yaml": "sha256:bf6178fb1bb5ac33ec91d35e9693b3784e35bb271bd2303f1199568009d15b1c",
+    "recipes/toolz-cytoolz-pipeline/requirements.txt": "sha256:109136315a37c599b7133c50c34e590b153671d8766344610f5dcb14477f84e9",
+    "recipes/toolz-cytoolz-pipeline/tests/test_pipeline.py": "sha256:e33fe6b788802951d8edd0f5178bef185183049a16a13349bff250529c3817b3"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
+}

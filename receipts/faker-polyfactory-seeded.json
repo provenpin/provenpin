@@ -1,0 +1,36 @@
+{
+  "id": "faker-polyfactory-seeded",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:19.671Z",
+  "last_passed_at": "2026-10-16T00:01:19.671Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 383,
+    "test": 2594
+  },
+  "pinned": {
+    "faker": "40.43.0",
+    "polyfactory": "3.3.0",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:6bc8406486f56f1defafe160121a0df5a79cd7fdba8071b121e6e59fd333cdb4",
+  "files": {
+    "recipes/faker-polyfactory-seeded/factories.py": "sha256:e805411805ac2b478c443aec8a36583d2cf2271c1c9f427c51b93fa2c318082c",
+    "recipes/faker-polyfactory-seeded/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/faker-polyfactory-seeded/recipe.yaml": "sha256:3b965e5f73cedd86f1c82d6b4e4a726b04e4e9329ae7abf156f87843763e1b6f",
+    "recipes/faker-polyfactory-seeded/requirements.txt": "sha256:f7452f2f7c6515091eb12c842505a1c93652c96e130529bfa87dbd63168d0e54",
+    "recipes/faker-polyfactory-seeded/tests/test_factories.py": "sha256:0dfabe4c24a7f66d4cc7619d0b7d5023db9dd13b11e6f6715e8ae99fa4413ec2"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.62s\n"
+}

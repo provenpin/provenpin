@@ -1,0 +1,36 @@
+{
+  "id": "sqlalchemy-factory-boy-sqlite",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:38.967Z",
+  "last_passed_at": "2026-10-16T00:01:38.967Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1011,
+    "test": 2410
+  },
+  "pinned": {
+    "sqlalchemy": "2.1.4",
+    "factory-boy": "3.3.3",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:85c6126a335b38fbd104c658f5c637ebcfd70e51364624aa9e04a5f80592f47a",
+  "files": {
+    "recipes/sqlalchemy-factory-boy-sqlite/factories.py": "sha256:99cfb0d6f6433d599e2c8262e8500f5ab5fa6238bdba8d90ab1941c5e92ba007",
+    "recipes/sqlalchemy-factory-boy-sqlite/models.py": "sha256:36bd628ae333b7d5b7c42a6dd2b700fa32303046985c29758e7c297d8cf799b2",
+    "recipes/sqlalchemy-factory-boy-sqlite/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlalchemy-factory-boy-sqlite/recipe.yaml": "sha256:669a1193140ed834c888b67f8ae9009ddf46e99f65d8011906b3e7ede9e974d1",
+    "recipes/sqlalchemy-factory-boy-sqlite/requirements.txt": "sha256:30606ffb48ef2fadf01e8311aafdaa8f9b97acbbc38df437a4c36769d6b2c27b",
+    "recipes/sqlalchemy-factory-boy-sqlite/tests/test_factories.py": "sha256:ec168f2498166213966e6e8a8414c082384f8e050ba310934afd0cb1df89b4a1"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.19s\n"
+}

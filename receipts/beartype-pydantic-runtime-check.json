@@ -1,0 +1,35 @@
+{
+  "id": "beartype-pydantic-runtime-check",
+  "status": "passed",
+  "ran_at": "2026-10-16T00:01:20.959Z",
+  "last_passed_at": "2026-10-16T00:01:20.959Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 671,
+    "test": 1172
+  },
+  "pinned": {
+    "beartype": "0.23.1",
+    "pydantic": "2.14.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:4b08f019afcd70372edc8cc949e72467da766a7500f84c5fede3ee7836c5d5bc",
+  "files": {
+    "recipes/beartype-pydantic-runtime-check/checks.py": "sha256:4b0b4e4127aa0a4cb894fe7a35408df3196d480543bebd0a9a43b37bb2b71bc5",
+    "recipes/beartype-pydantic-runtime-check/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/beartype-pydantic-runtime-check/recipe.yaml": "sha256:d02d19d9d7c4c4b6ffaac723d78ea0d5afe79dd389d7c008c93eb0c1c8a7fea3",
+    "recipes/beartype-pydantic-runtime-check/requirements.txt": "sha256:40f1b7dd431165e6c86fd1882ec971aad7596616ff44e00ac90e42560d083f72",
+    "recipes/beartype-pydantic-runtime-check/tests/test_checks.py": "sha256:9f45448f803bbbd58dd8794b335a4d3d9567c4e57db5d94fca71af579f07186a"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38826982604"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.55s\n"
+}
