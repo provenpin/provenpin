@@ -1,0 +1,16 @@
+{
+  "name": "lunr-search-index",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "lunr": "2.3.9"
+  },
+  "devDependencies": {
+    "@types/lunr": "2.3.7",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

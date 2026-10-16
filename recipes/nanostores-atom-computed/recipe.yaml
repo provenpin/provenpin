@@ -1,0 +1,18 @@
+id: nanostores-atom-computed
+title: "nanostores atoms, maps and computed stores"
+summary: "Model derived state with nanostores using atom and map stores, a computed derived store, plus listen/subscribe and get; assert computed updates and that unsubscribe stops notifications offline with no DOM."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [nanostores]
+tags: [state, stores, reactive, computed]
+pinned:
+  "nanostores": "1.5.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/store.ts
+  - test/store.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

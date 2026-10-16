@@ -1,0 +1,18 @@
+id: ejs-render-partials
+title: "ejs render with partials"
+summary: "Render EJS string and file templates with strict locals, include a partial via include() resolved from a temp dir, and catch a ReferenceError for a missing local."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ejs]
+tags: [templates, partials, ejs]
+pinned:
+  "ejs": "7.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/render.ts
+  - test/render.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

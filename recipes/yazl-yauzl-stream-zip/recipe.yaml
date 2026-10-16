@@ -1,0 +1,19 @@
+id: yazl-yauzl-stream-zip
+title: "yazl to yauzl stream zip roundtrip"
+summary: "Build a zip in memory with yazl.ZipFile from buffers and strings, pipe its outputEntryData stream into a buffer, then read every entry back with yauzl.fromBuffer using lazyEntries and promise-wrapped callbacks."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [yazl, yauzl]
+tags: [zip, archive, stream, roundtrip]
+pinned:
+  "yazl": "3.3.1"
+  "yauzl": "3.4.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/zip.ts
+  - test/zip.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

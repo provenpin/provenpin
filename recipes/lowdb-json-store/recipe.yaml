@@ -1,0 +1,18 @@
+id: lowdb-json-store
+title: "lowdb JSON store"
+summary: "Seed default data, read and write nested collections, and verify a persistence roundtrip with lowdb's JSONFilePreset and MemoryPreset fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [lowdb]
+tags: [database, json, persistence, lowdb]
+pinned:
+  "lowdb": "7.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/store.ts
+  - test/store.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

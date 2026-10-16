@@ -1,0 +1,18 @@
+id: scrypt-js-kdf
+title: "scrypt-js password key derivation"
+summary: "Derive deterministic keys from a password and salt with scrypt-js using sync and async scrypt, verifying the RFC 7914 vector and salt divergence offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [scrypt-js]
+tags: [kdf, crypto, scrypt, password]
+pinned:
+  "scrypt-js": "3.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/kdf.ts
+  - test/kdf.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

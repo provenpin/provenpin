@@ -1,0 +1,18 @@
+id: clipanion-cli-parser
+title: "clipanion typed CLI parser"
+summary: "Define a clipanion Cli with two commands using Option.String/Option.Boolean, then drive it in tests via Cli.run with captured stdout/stderr to assert help text and exit codes without process.exit."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [clipanion]
+tags: [cli, commands, parsing]
+pinned:
+  "clipanion": "3.2.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/cli.ts
+  - test/cli.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

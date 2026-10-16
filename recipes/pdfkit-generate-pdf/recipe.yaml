@@ -1,0 +1,18 @@
+id: pdfkit-generate-pdf
+title: "pdfkit generate PDF"
+summary: "Build a PDFDocument with pdfkit, stream it into a buffer, and assert the output starts with %PDF using only built-in fonts offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pdfkit]
+tags: [pdf, document, stream]
+pinned:
+  "pdfkit": "0.20.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/pdf.ts
+  - test/pdf.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

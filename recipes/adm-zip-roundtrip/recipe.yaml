@@ -1,0 +1,19 @@
+id: adm-zip-roundtrip
+title: "adm-zip buffer roundtrip"
+summary: "Build an in-memory zip from string and buffer entries, write it to a temp file or buffer, then read it back with AdmZip to assert entry names and text contents offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [adm-zip]
+tags: [zip, archive, io]
+pinned:
+  "adm-zip": "0.6.1"
+  "@types/adm-zip": "0.6.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/archive.ts
+  - test/archive.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

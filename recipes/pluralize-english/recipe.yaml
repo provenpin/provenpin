@@ -1,0 +1,19 @@
+id: pluralize-english
+title: "pluralize English nouns"
+summary: "Pluralize and singularize regular and irregular English nouns with custom rules and count-aware output using the pluralize library offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pluralize]
+tags: [text, grammar, i18n]
+pinned:
+  "pluralize": "8.0.0"
+  "@types/pluralize": "0.0.33"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/nouns.ts
+  - test/nouns.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

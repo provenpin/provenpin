@@ -1,0 +1,20 @@
+id: tweetnacl-sign-box
+title: "TweetNaCl signing and box encryption"
+summary: "Sign and verify messages with Ed25519 detached signatures and encrypt with authenticated public-key box using tweetnacl, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [tweetnacl]
+tags: [crypto, signing, encryption]
+pinned:
+  "tweetnacl": "1.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/sign.ts
+  - src/box.ts
+  - test/sign.test.ts
+  - test/box.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

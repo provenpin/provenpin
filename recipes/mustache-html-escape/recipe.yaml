@@ -1,0 +1,19 @@
+id: mustache-html-escape
+title: "mustache sections, partials and HTML escaping"
+summary: "Render mustache templates with nested and inverted sections, partials and escaped vs unescaped output, asserting that user content is HTML-escaped by default offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [mustache]
+tags: [templates, html, escaping, mustache]
+pinned:
+  "mustache": "4.2.0"
+  "@types/mustache": "4.2.6"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/render.ts
+  - test/render.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

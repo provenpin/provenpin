@@ -1,0 +1,18 @@
+id: pug-compile-locals
+title: "pug compiled templates with locals and mixins"
+summary: "Compile pug templates from a string and from a file, rendering locals, mixins, conditionals and iteration while contrasting escaped (=) and unescaped (!=) output offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pug]
+tags: [templates, pug, html]
+pinned:
+  "pug": "3.0.4"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/render.ts
+  - test/render.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

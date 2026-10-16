@@ -1,0 +1,16 @@
+{
+  "name": "adm-zip-roundtrip",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "adm-zip": "0.6.1"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "0.6.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

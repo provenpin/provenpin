@@ -1,0 +1,19 @@
+id: mjml-to-html
+title: "mjml to html"
+summary: "Render MJML markup to responsive HTML email with mjml2html, asserting expected text and inlined styles, running validation in soft mode and inspecting the errors array for intentionally broken markup."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [mjml]
+tags: [email, html, mjml, template]
+pinned:
+  "mjml": "5.4.1"
+  "@types/mjml": "5.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/convert.ts
+  - test/convert.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

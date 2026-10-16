@@ -1,0 +1,18 @@
+id: reselect-create-selector
+title: "reselect createSelector memoized selectors"
+summary: "Build memoized derived state with reselect createSelector: input selectors plus a combiner, assert the combiner runs once for identical inputs, use weakMapMemoize/default and a parameterized selector pattern, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [reselect]
+tags: [state, selectors, memoization]
+pinned:
+  "reselect": "5.3.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/selectors.ts
+  - test/selectors.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

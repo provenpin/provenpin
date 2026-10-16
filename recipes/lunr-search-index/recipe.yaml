@@ -1,0 +1,19 @@
+id: lunr-search-index
+title: "lunr search index"
+summary: "Build and query a lunr full-text index with title boosting, field-scoped queries and JSON round-tripping, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [lunr]
+tags: [search, index, full-text]
+pinned:
+  "lunr": "2.3.9"
+  "@types/lunr": "2.3.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/search.ts
+  - test/search.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

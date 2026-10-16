@@ -1,0 +1,18 @@
+id: proxy-memoize-deep
+title: "proxy-memoize nested selector"
+summary: "Memoize a selector over nested state with proxy-memoize, asserting stable result references when unrelated branches change, recomputation when selected paths change, and multi-entry caching with the size option."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [proxy-memoize]
+tags: [memoization, selectors, state, performance]
+pinned:
+  "proxy-memoize": "3.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/selectors.ts
+  - test/selectors.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

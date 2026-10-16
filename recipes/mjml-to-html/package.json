@@ -1,0 +1,16 @@
+{
+  "name": "mjml-to-html",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "mjml": "5.4.1"
+  },
+  "devDependencies": {
+    "@types/mjml": "5.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

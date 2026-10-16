@@ -1,0 +1,18 @@
+id: pako-deflate-gzip
+title: "pako deflate and gzip roundtrips"
+summary: "Compress and decompress Uint8Array and string payloads with pako deflate/inflate and gzip/ungzip, checking roundtrip equality and using the level option."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pako]
+tags: [compression, deflate, gzip, bytes]
+pinned:
+  "pako": "3.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/codec.ts
+  - test/codec.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,18 @@
+id: throttle-debounce-fns
+title: "throttle-debounce rate limiting"
+summary: "Wrap a counter with throttle-debounce debounce and throttle, asserting debounce collapses rapid calls and throttle limits rate using node:test fake timers, including cancel."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [throttle-debounce]
+tags: [debounce, throttle, rate-limit, timers]
+pinned:
+  "throttle-debounce": "5.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/counter.ts
+  - test/counter.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

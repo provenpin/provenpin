@@ -1,0 +1,18 @@
+id: pretty-ms-format
+title: "pretty-ms duration formatting"
+summary: "Format millisecond durations with pretty-ms using compact, verbose and colon notation styles plus millisecond/second precision options, covering zero, sub-second, multi-hour and negative values offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pretty-ms]
+tags: [time, duration, formatting]
+pinned:
+  "pretty-ms": "10.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/format.ts
+  - test/format.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
