@@ -1,0 +1,34 @@
+{
+  "id": "currency-js-money-math",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:20:55.995Z",
+  "last_passed_at": "2026-10-16T15:20:55.995Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2128,
+    "test": 218
+  },
+  "pinned": {
+    "currency.js": "2.0.4",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:ad9971b368bd1904b7824e56f8f6edcb62154ce1c5eb21c5d8fec5fc0578a4ec",
+  "files": {
+    "recipes/currency-js-money-math/package.json": "sha256:0f24d191fd70b8c2c15833af876818bc93602899324735c1998396c5bf07a419",
+    "recipes/currency-js-money-math/recipe.yaml": "sha256:13a8c394745364def16f72a899362da1acd126f1bf0e9582827ed3e23a0bea0a",
+    "recipes/currency-js-money-math/src/money.ts": "sha256:9e6fab6d9b4ba3b509b5afc3156358c9d5668e0d95c21a33c30865a81683898a",
+    "recipes/currency-js-money-math/test/money.test.ts": "sha256:9caa5dccaf2e1eb0ddc96ecbfa70a4fdef2ee13bd423f499d1453742050f7591"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: adds precise cents with no floating point drift\nok 2 - adds precise cents with no floating point drift\n  ---\n  duration_ms: 0.362383\n  type: 'test'\n  ...\n# Subtest: subtracts precise cents with no floating point drift\nok 3 - subtracts precise cents with no floating point drift\n  ---\n  duration_ms: 0.128773\n  type: 'test'\n  ...\n# Subtest: multiplies to whole cents\nok 4 - multiplies to whole cents\n  ---\n  duration_ms: 0.103986\n  type: 'test'\n  ...\n# Subtest: distributes a total into whole cents with no drift\nok 5 - distributes a total into whole cents with no drift\n  ---\n  duration_ms: 0.664535\n  type: 'test'\n  ...\n# Subtest: formats with symbol and separator options\nok 6 - formats with symbol and separator options\n  ---\n  duration_ms: 0.165068\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 122.991029\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "pretty-bytes-format",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:21:19.187Z",
+  "last_passed_at": "2026-10-16T15:21:19.187Z",
+  "tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1664,
+    "test": 365
+  },
+  "pinned": {
+    "pretty-bytes": "7.2.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d06541580b4e558eac60e1be7790a292a54f9348126a71b5dbafce725a226eac",
+  "files": {
+    "recipes/pretty-bytes-format/package.json": "sha256:95aac82bc53901e8dda4314299258260c019e5ed1ab23514696a13dd888a6dee",
+    "recipes/pretty-bytes-format/recipe.yaml": "sha256:11346e66c5fcb3464182c8dfc90e1d8c4a3a36a0b7932fb9d3b52e6063d495c7",
+    "recipes/pretty-bytes-format/src/format.ts": "sha256:fb5c899817d72324425cd438d6ad3cc097cc214bb0a31c0128e32796213407dd",
+    "recipes/pretty-bytes-format/test/format.test.ts": "sha256:2d52cdcd1aeb893404acf3c8d5bfc771c9009c3c177032be7e53a96a47a20f36"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: formats bits when requested\nok 4 - formats bits when requested\n  ---\n  duration_ms: 0.140212\n  type: 'test'\n  ...\n# Subtest: formats binary units when requested\nok 5 - formats binary units when requested\n  ---\n  duration_ms: 0.221645\n  type: 'test'\n  ...\n# Subtest: adds a sign for positive and negative values\nok 6 - adds a sign for positive and negative values\n  ---\n  duration_ms: 0.19712\n  type: 'test'\n  ...\n# Subtest: honours minimumFractionDigits\nok 7 - honours minimumFractionDigits\n  ---\n  duration_ms: 38.161059\n  type: 'test'\n  ...\n# Subtest: rejects non-finite input\nok 8 - rejects non-finite input\n  ---\n  duration_ms: 0.392104\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 219.900198\n"
+}

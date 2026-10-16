@@ -1,0 +1,39 @@
+{
+  "id": "cors-express-preflight",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:20:56.500Z",
+  "last_passed_at": "2026-10-16T15:20:56.500Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 4230,
+    "test": 575
+  },
+  "pinned": {
+    "cors": "2.8.6",
+    "express": "5.3.0",
+    "supertest": "7.3.1",
+    "@types/cors": "2.8.19",
+    "@types/express": "5.0.6",
+    "@types/supertest": "7.2.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:cad5ff5604f58dd5a6d0f87af14bcc5db237d46be1dceacc56199f9770340e27",
+  "files": {
+    "recipes/cors-express-preflight/package.json": "sha256:bb16070356e07a7cd8b621705762ba6d494b9c130a2cce7be498f2f71c5c610b",
+    "recipes/cors-express-preflight/recipe.yaml": "sha256:c15cf99a8fbf5419dafc73891e357ff19d549cbd70d8563fb07dce32887bccb0",
+    "recipes/cors-express-preflight/src/app.ts": "sha256:0b93a55cbfe5d45bb2918a64819f12d34d02fe9b70cd123f4295c8e9317ba920",
+    "recipes/cors-express-preflight/test/app.test.ts": "sha256:873238cb6ceac3f392dd0f2a43fef95acbbdaefbe27cd790c12dc00b0e448854"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: reflects an allowed origin on a simple request\nok 1 - reflects an allowed origin on a simple request\n  ---\n  duration_ms: 42.299655\n  type: 'test'\n  ...\n# Subtest: answers OPTIONS preflight with Access-Control-Allow-* headers\nok 2 - answers OPTIONS preflight with Access-Control-Allow-* headers\n  ---\n  duration_ms: 7.287923\n  type: 'test'\n  ...\n# Subtest: denies a disallowed origin by omitting the allow-origin header\nok 3 - denies a disallowed origin by omitting the allow-origin header\n  ---\n  duration_ms: 4.304414\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 423.703096\n"
+}

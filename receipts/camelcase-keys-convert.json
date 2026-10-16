@@ -1,0 +1,35 @@
+{
+  "id": "camelcase-keys-convert",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:21:00.840Z",
+  "last_passed_at": "2026-10-16T15:21:00.840Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1890,
+    "test": 384
+  },
+  "pinned": {
+    "camelcase": "10.0.0",
+    "camelcase-keys": "10.0.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:2adb8fb9887fc4ed305db43eaee2ef2f97980a9102a2e5fea1bbe72ecd5be515",
+  "files": {
+    "recipes/camelcase-keys-convert/package.json": "sha256:fafa91b13621ceb6e4cf41d8ce7a6df81f86e95a85ddfa14c21a2a6b91dc49ba",
+    "recipes/camelcase-keys-convert/recipe.yaml": "sha256:385c7597623290ec07eb09a3b0701fc7c47d2c4abfc788fcfd92975c02079018",
+    "recipes/camelcase-keys-convert/src/convert.ts": "sha256:ccc841c29ab9c5d1b28f6519a8c70b6c92626ed6968b6e605cecf43ce076db91",
+    "recipes/camelcase-keys-convert/test/convert.test.ts": "sha256:9bd427de3faf1577a5e89fd5cf6703f0fa49789bb95196a2dd30cd03d79693ec"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: camelcases a snake_case string\nok 1 - camelcases a snake_case string\n  ---\n  duration_ms: 1.349974\n  type: 'test'\n  ...\n# Subtest: camelcases a string with pascalCase option\nok 2 - camelcases a string with pascalCase option\n  ---\n  duration_ms: 0.189645\n  type: 'test'\n  ...\n# Subtest: deep converts snake_case keys including nested arrays\nok 3 - deep converts snake_case keys including nested arrays\n  ---\n  duration_ms: 2.269783\n  type: 'test'\n  ...\n# Subtest: deep converts a top level array of objects\nok 4 - deep converts a top level array of objects\n  ---\n  duration_ms: 0.244837\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 230.125649\n"
+}

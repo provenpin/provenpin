@@ -1,0 +1,34 @@
+{
+  "id": "sqids-encode-decode",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:21:19.701Z",
+  "last_passed_at": "2026-10-16T15:21:19.701Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1806,
+    "test": 289
+  },
+  "pinned": {
+    "sqids": "0.3.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:4d40350cb201f1d009a7ccc533cabd842b9fcf421a5fe8a3f5bc06dc9a00ed72",
+  "files": {
+    "recipes/sqids-encode-decode/package.json": "sha256:bfaafd59e5722ce7870944140718233c471e04749a6320f929972b67e04596a2",
+    "recipes/sqids-encode-decode/recipe.yaml": "sha256:00e8bb13ef72d03ce463cc5f861035c7ccfc2a6a440f10b07f09ebe743b06c10",
+    "recipes/sqids-encode-decode/src/sqids.ts": "sha256:2ec0c31ba0c24c89aae3f2c9c50d2d876da94d05db0b2f495896df7517b2b14b",
+    "recipes/sqids-encode-decode/test/sqids.test.ts": "sha256:1f278c59415437b230abd7c97d4937c417a87c4b2f146fdb76e5c599b00fcf33"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips a list of non-negative numbers\nok 1 - roundtrips a list of non-negative numbers\n  ---\n  duration_ms: 2.412882\n  type: 'test'\n  ...\n# Subtest: different number lists produce different ids\nok 2 - different number lists produce different ids\n  ---\n  duration_ms: 1.188586\n  type: 'test'\n  ...\n# Subtest: custom alphabet and minLength are honored\nok 3 - custom alphabet and minLength are honored\n  ---\n  duration_ms: 0.66733\n  type: 'test'\n  ...\n# Subtest: configurations with different alphabets diverge\nok 4 - configurations with different alphabets diverge\n  ---\n  duration_ms: 0.903999\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 160.836484\n"
+}

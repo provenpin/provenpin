@@ -1,0 +1,35 @@
+{
+  "id": "bigjs-decimal-math",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:20:58.116Z",
+  "last_passed_at": "2026-10-16T15:20:58.116Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1687,
+    "test": 334
+  },
+  "pinned": {
+    "big.js": "7.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:de0bde1972d19ee11f849865bbb68042521bd7bdd0ac1c5aa4710d496588b1a2",
+  "files": {
+    "recipes/bigjs-decimal-math/package.json": "sha256:ac51e4505c94feb3518e5b96af1d30890c2bc181f42509083621558c19a9d5dc",
+    "recipes/bigjs-decimal-math/recipe.yaml": "sha256:e79c2e89431ea8413a4672dfde1b489897464d95b9f386eadf409f33f861329e",
+    "recipes/bigjs-decimal-math/src/decimal.ts": "sha256:d6bde55e3b1ec4da371253c76c83284fc79c305e517bbb33df0af5469cd89418",
+    "recipes/bigjs-decimal-math/test/decimal.test.ts": "sha256:b70347f8d6b4405c6720d4ef7f26e4a2a82fc4de9c230829847a50fa657af0b4",
+    "recipes/bigjs-decimal-math/tsconfig.json": "sha256:e05cfcaa88301ee1b0bbfa2bb542585503823b40fd68c53bec8c34e23e3036e4"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: 0.1 + 0.2 equals 0.3 with big.js\nok 1 - 0.1 + 0.2 equals 0.3 with big.js\n  ---\n  duration_ms: 1.401533\n  type: 'test'\n  ...\n# Subtest: comparisons use eq and gt\nok 2 - comparisons use eq and gt\n  ---\n  duration_ms: 0.250611\n  type: 'test'\n  ...\n# Subtest: division honours DP and rounding mode\nok 3 - division honours DP and rounding mode\n  ---\n  duration_ms: 0.472798\n  type: 'test'\n  ...\n# Subtest: pow raises integer exponents precisely\nok 4 - pow raises integer exponents precisely\n  ---\n  duration_ms: 0.340189\n  type: 'test'\n  ...\n# Subtest: round applies the requested rounding mode\nok 5 - round applies the requested rounding mode\n  ---\n  duration_ms: 0.216117\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 187.068584\n"
+}

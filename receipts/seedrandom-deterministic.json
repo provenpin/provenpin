@@ -1,0 +1,35 @@
+{
+  "id": "seedrandom-deterministic",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:21:22.459Z",
+  "last_passed_at": "2026-10-16T15:21:22.459Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1671,
+    "test": 435
+  },
+  "pinned": {
+    "seedrandom": "3.0.5",
+    "@types/seedrandom": "3.0.8",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:bd2c2fc4b75d1aae0d9f095df89a4ad02fad13e1f240fbd6a149486c4d97d258",
+  "files": {
+    "recipes/seedrandom-deterministic/package.json": "sha256:b71af7e1c206468fec12d1a2a5bb4adcf794513d339fd58dc975eafb915cc704",
+    "recipes/seedrandom-deterministic/recipe.yaml": "sha256:e185cb670d242d85ba6bbc7042eb0d113abf75e2d1567ed682266e59c6244ecf",
+    "recipes/seedrandom-deterministic/src/rng.ts": "sha256:28c00a3b288592d8645cd09b28cdc9039da3d94a1b7365ed99c4f87311e4f75d",
+    "recipes/seedrandom-deterministic/test/rng.test.ts": "sha256:37347e4430baee72c1addb8ca634b8ea47a5c12b8a2d368d28269be9f756b5af"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: same seed produces identical sequences\nok 1 - same seed produces identical sequences\n  ---\n  duration_ms: 2.65232\n  type: 'test'\n  ...\n# Subtest: different seeds produce different sequences\nok 2 - different seeds produce different sequences\n  ---\n  duration_ms: 0.339357\n  type: 'test'\n  ...\n# Subtest: alea generator is reproducible\nok 3 - alea generator is reproducible\n  ---\n  duration_ms: 0.419605\n  type: 'test'\n  ...\n# Subtest: withSeededMath patches Math.random then restores it\nok 4 - withSeededMath patches Math.random then restores it\n  ---\n  duration_ms: 0.316244\n  type: 'test'\n  ...\n# Subtest: withSeededMath restores Math.random even on error\nok 5 - withSeededMath restores Math.random even on error\n  ---\n  duration_ms: 0.395079\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 268.345874\n"
+}

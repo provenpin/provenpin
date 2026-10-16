@@ -1,0 +1,35 @@
+{
+  "id": "proper-lockfile-concurrent",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:21:17.491Z",
+  "last_passed_at": "2026-10-16T15:21:17.491Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1785,
+    "test": 411
+  },
+  "pinned": {
+    "proper-lockfile": "4.1.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:35f8036539dd4f7d463fedd157e959ed9f93e168e72da5f0715f132cadf0658a",
+  "files": {
+    "recipes/proper-lockfile-concurrent/package.json": "sha256:b10dbe52edb832e92842d92a26aef27c42c8b1c04aa224a563a7bc080a5be24e",
+    "recipes/proper-lockfile-concurrent/recipe.yaml": "sha256:38e760704d2b2e73fda02244f2a7137a626c2c5751b430d71f20c8b1552a5509",
+    "recipes/proper-lockfile-concurrent/src/lock.ts": "sha256:1ee95ab598e92cf8f467a3417e0bad589fe50717db42989b5bae1bcbc32f5b7b",
+    "recipes/proper-lockfile-concurrent/test/lock.test.ts": "sha256:b4c29e4cc5bd99bfce924ae645bd7f4a75f8592f3cbc34312e8c207ed7aecc1b",
+    "recipes/proper-lockfile-concurrent/types/proper-lockfile.d.ts": "sha256:9360bd73f64f54191d8a7d6faa3131697c8e850775f9054eb62bda0561ad39bd"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: a second lock on the same file is rejected while the first is held\nok 1 - a second lock on the same file is rejected while the first is held\n  ---\n  duration_ms: 16.276678\n  type: 'test'\n  ...\n# Subtest: acquireWithRetry waits for the holder to release\nok 2 - acquireWithRetry waits for the holder to release\n  ---\n  duration_ms: 45.816531\n  type: 'test'\n  ...\n# Subtest: lockSync release and check reflect the lock state\nok 3 - lockSync release and check reflect the lock state\n  ---\n  duration_ms: 5.944156\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 265.931201\n"
+}

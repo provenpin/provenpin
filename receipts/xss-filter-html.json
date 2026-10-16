@@ -1,0 +1,34 @@
+{
+  "id": "xss-filter-html",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:21:20.860Z",
+  "last_passed_at": "2026-10-16T15:21:20.860Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1629,
+    "test": 348
+  },
+  "pinned": {
+    "xss": "1.0.15",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:19fc7ec76166ac0ee266be660d3c2d6c67fd727cb76d16097a325bf516c778a1",
+  "files": {
+    "recipes/xss-filter-html/package.json": "sha256:df11f386336c11edf7f3fe65ec1043a294a80ceb12d022ec150f5c9b627ea838",
+    "recipes/xss-filter-html/recipe.yaml": "sha256:8b0b5d99904f11a3e40a74e54c06945cfa62457dbd005ee258e7c93216ac3fb4",
+    "recipes/xss-filter-html/src/sanitize.ts": "sha256:f569bb1ecff83b17cfd23e35e9ee0e56ab91dd94317a173b865d5b53915a2cf2",
+    "recipes/xss-filter-html/test/sanitize.test.ts": "sha256:5e3b7f053bb60f953f9190ab552ba04757e25a1c7a87a9f0e9d434fec73b9080"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: keeps whitelisted markup intact\nok 1 - keeps whitelisted markup intact\n  ---\n  duration_ms: 1.735912\n  type: 'test'\n  ...\n# Subtest: strips script tags and their contents\nok 2 - strips script tags and their contents\n  ---\n  duration_ms: 0.423982\n  type: 'test'\n  ...\n# Subtest: removes event handler attributes but keeps safe ones\nok 3 - removes event handler attributes but keeps safe ones\n  ---\n  duration_ms: 0.759158\n  type: 'test'\n  ...\n# Subtest: removes javascript: urls\nok 4 - removes javascript: urls\n  ---\n  duration_ms: 0.292807\n  type: 'test'\n  ...\n# Subtest: strips disallowed tags and their handlers\nok 5 - strips disallowed tags and their handlers\n  ---\n  duration_ms: 0.20892\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 202.165839\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "msgpackr-pack-unpack",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:21:14.716Z",
+  "last_passed_at": "2026-10-16T15:21:14.716Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2144,
+    "test": 228
+  },
+  "pinned": {
+    "msgpackr": "2.1.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:677d52da0a230b060927a55fbc9bf04970a23317535903de76b93067c6d0b789",
+  "files": {
+    "recipes/msgpackr-pack-unpack/package.json": "sha256:42a5a7f0d6af28e9ff926ae610350220e12f9e580adbededac203b66ed8a820b",
+    "recipes/msgpackr-pack-unpack/recipe.yaml": "sha256:b42b3d876406361772773f0a107932a97de0455b12ade89a52ee0456272ef6d0",
+    "recipes/msgpackr-pack-unpack/src/codec.ts": "sha256:ff47f2f75544e6c1e60c7eda8fac35e93573424d74416216d785418c292a05cd",
+    "recipes/msgpackr-pack-unpack/test/codec.test.ts": "sha256:62e12f8c6918d28e3935b710c536fcb5f053e4db39e59eeafd1b25ce3bcd0cff"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips dates, maps and binary\nok 1 - roundtrips dates, maps and binary\n  ---\n  duration_ms: 2.256724\n  type: 'test'\n  ...\n# Subtest: Packr and Unpackr honor options\nok 2 - Packr and Unpackr honor options\n  ---\n  duration_ms: 0.21906\n  type: 'test'\n  ...\n# Subtest: packed repetitive data is smaller than JSON\nok 3 - packed repetitive data is smaller than JSON\n  ---\n  duration_ms: 0.259281\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 133.214688\n"
+}

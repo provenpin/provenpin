@@ -1,0 +1,34 @@
+{
+  "id": "mime-types-lookup",
+  "status": "passed",
+  "ran_at": "2026-10-16T15:20:57.314Z",
+  "last_passed_at": "2026-10-16T15:20:57.314Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1642,
+    "test": 357
+  },
+  "pinned": {
+    "mime-types": "3.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:490210cdca532eab457b75104bca7456f2ca8cb2f38e62d6612f688bab7809a3",
+  "files": {
+    "recipes/mime-types-lookup/package.json": "sha256:217ca080181e4055fabb710f9c7da44c8d77908981e6525919e0990404c691b3",
+    "recipes/mime-types-lookup/recipe.yaml": "sha256:0b6c6f6b23da36701364858fb64565bc2798f204cdef8f6f73d8c36b2f15f047",
+    "recipes/mime-types-lookup/src/mime.ts": "sha256:2c41df1b1fbcc360c81ac9e65f5fba8e69a687e17da11fd19c033356188c18d8",
+    "recipes/mime-types-lookup/test/mime.test.ts": "sha256:6acb124d9521c0778c3c20890b34aec6299aface292f44c4fc9f71e32cc40ce3"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38923127324"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: resolves content-type from common extensions\nok 1 - resolves content-type from common extensions\n  ---\n  duration_ms: 1.146001\n  type: 'test'\n  ...\n# Subtest: resolves extension from common types\nok 2 - resolves extension from common types\n  ---\n  duration_ms: 0.285293\n  type: 'test'\n  ...\n# Subtest: builds a full content-type with charset\nok 3 - builds a full content-type with charset\n  ---\n  duration_ms: 0.274393\n  type: 'test'\n  ...\n# Subtest: handles unknown input gracefully\nok 4 - handles unknown input gracefully\n  ---\n  duration_ms: 0.198411\n  type: 'test'\n  ...\n# Subtest: round trips a lookup back to its extension\nok 5 - round trips a lookup back to its extension\n  ---\n  duration_ms: 0.135062\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 202.546416\n"
+}
