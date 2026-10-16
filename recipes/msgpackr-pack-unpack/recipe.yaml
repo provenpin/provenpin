@@ -1,0 +1,18 @@
+id: msgpackr-pack-unpack
+title: "msgpackr pack and unpack"
+summary: "Round-trip objects with dates, maps and binary using msgpackr, exercise Packr/Unpackr options, and assert packed data is smaller than JSON for repetitive records, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [msgpackr]
+tags: [serialization, msgpack, binary]
+pinned:
+  "msgpackr": "2.1.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/codec.ts
+  - test/codec.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

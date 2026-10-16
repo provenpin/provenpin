@@ -1,0 +1,19 @@
+id: defu-klona-merge
+title: "defu and klona deep defaults with safe cloning"
+summary: "Deep-merge layered configuration defaults with defu (arrays concatenate or replace via a custom merger) and clone with klona so mutations never touch the source, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [defu, klona]
+tags: [config, merge, clone, defaults]
+pinned:
+  "defu": "6.1.7"
+  "klona": "2.0.6"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/config.ts
+  - test/config.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

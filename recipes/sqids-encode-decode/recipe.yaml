@@ -1,0 +1,18 @@
+id: sqids-encode-decode
+title: "sqids encode and decode"
+summary: "Encode lists of non-negative numbers into short ids with sqids and decode them back, customizing the alphabet and minimum length, all offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [sqids]
+tags: [ids, encoding, sqids]
+pinned:
+  "sqids": "0.3.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/sqids.ts
+  - test/sqids.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

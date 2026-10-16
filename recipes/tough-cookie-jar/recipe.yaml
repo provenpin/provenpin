@@ -1,0 +1,18 @@
+id: tough-cookie-jar
+title: "tough-cookie jar round trip"
+summary: "Store and read cookies with a tough-cookie CookieJar for a URL, guard against domain mismatches, serialize and deserialize the jar JSON, and expire a cookie, all offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [tough-cookie]
+tags: [http, cookies, serialization, security]
+pinned:
+  "tough-cookie": "6.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/jar.ts
+  - test/jar.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

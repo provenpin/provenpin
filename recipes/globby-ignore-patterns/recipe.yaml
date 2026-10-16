@@ -1,0 +1,18 @@
+id: globby-ignore-patterns
+title: "globby ignore patterns"
+summary: "Match files under a temp directory with globby using patterns, ignore, absolute and onlyFiles, asserting sorted paths and excluded files offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [globby]
+tags: [glob, filesystem, matching]
+pinned:
+  "globby": "16.2.4"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/match.ts
+  - test/match.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

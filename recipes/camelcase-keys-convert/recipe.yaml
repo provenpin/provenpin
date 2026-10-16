@@ -1,0 +1,19 @@
+id: camelcase-keys-convert
+title: "camelcase and camelcase-keys deep conversion"
+summary: "Convert snake_case object keys deeply with camelcase-keys, including nested arrays, and transform strings with camelcase using the pascalCase option, asserting nested results offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [camelcase, camelcase-keys]
+tags: [strings, objects, keys, transform]
+pinned:
+  "camelcase": "10.0.0"
+  "camelcase-keys": "10.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/convert.ts
+  - test/convert.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,18 @@
+id: mime-types-lookup
+title: "mime-types lookup"
+summary: "Look up content-type from an extension and extension from a type with mime-types, asserting json, html, png and wasm plus the charset helper and graceful unknown handling, offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [mime-types]
+tags: [mime, content-type, lookup]
+pinned:
+  "mime-types": "3.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/mime.ts
+  - test/mime.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

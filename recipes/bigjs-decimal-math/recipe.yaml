@@ -1,0 +1,19 @@
+id: bigjs-decimal-math
+title: "big.js precise decimal math"
+summary: "Precise decimal arithmetic with big.js: configure DP and RM, add and divide with different rounding modes, raise integer powers, round values and compare with eq and gt. Proves 0.1 plus 0.2 equals 0.3 offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [big.js]
+tags: [decimal, math, precision, rounding]
+pinned:
+  "big.js": "7.0.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - tsconfig.json
+  - src/decimal.ts
+  - test/decimal.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

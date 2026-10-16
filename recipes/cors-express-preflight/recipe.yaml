@@ -1,0 +1,23 @@
+id: cors-express-preflight
+title: "cors express preflight"
+summary: "Configure cors with express to reflect allowed origins, answer OPTIONS preflight with Access-Control-Allow-* headers, and deny a disallowed origin, tested offline with supertest."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [cors, express, supertest]
+tags: [cors, http, express, preflight]
+pinned:
+  "cors": "2.8.6"
+  "express": "5.3.0"
+  "supertest": "7.3.1"
+  "@types/cors": "2.8.19"
+  "@types/express": "5.0.6"
+  "@types/supertest": "7.2.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

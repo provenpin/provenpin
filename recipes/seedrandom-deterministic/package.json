@@ -1,0 +1,16 @@
+{
+  "name": "seedrandom-deterministic",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "seedrandom": "3.0.5"
+  },
+  "devDependencies": {
+    "@types/seedrandom": "3.0.8",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

@@ -1,0 +1,19 @@
+id: proper-lockfile-concurrent
+title: "proper-lockfile concurrent locking"
+summary: "Lock a temp file with proper-lockfile, prove a second lock is rejected, wait out a retry, release, and inspect state with lock.check plus lock.sync before cleaning up. Offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [proper-lockfile]
+tags: [locking, filesystem, concurrency]
+pinned:
+  "proper-lockfile": "4.1.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/lock.ts
+  - types/proper-lockfile.d.ts
+  - test/lock.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

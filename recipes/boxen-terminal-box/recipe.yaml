@@ -1,0 +1,18 @@
+id: boxen-terminal-box
+title: "boxen bordered terminal box"
+summary: "Render a terminal box with boxen using a border style, padding, margin, title and dimmed border, asserting expected text and box drawing characters at a forced width offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [boxen]
+tags: [terminal, cli, text]
+pinned:
+  "boxen": "9.0.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/box.ts
+  - test/box.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

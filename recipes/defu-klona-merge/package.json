@@ -1,0 +1,16 @@
+{
+  "name": "defu-klona-merge",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "defu": "6.1.7",
+    "klona": "2.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

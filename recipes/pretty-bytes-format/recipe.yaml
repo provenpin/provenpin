@@ -1,0 +1,18 @@
+id: pretty-bytes-format
+title: "pretty-bytes unit formatting"
+summary: "Format byte counts with pretty-bytes using signed, bits, binary and minimumFractionDigits options, asserting 0, kB/MB/GB boundaries and negative values offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [pretty-bytes]
+tags: [bytes, formatting, units]
+pinned:
+  "pretty-bytes": "7.2.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/format.ts
+  - test/format.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

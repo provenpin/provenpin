@@ -1,0 +1,18 @@
+id: xss-filter-html
+title: "xss HTML whitelist filter"
+summary: "Filter untrusted HTML with xss using a safe tag whitelist, stripping scripts and event handlers while keeping safe markup offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [xss]
+tags: [security, html, sanitize, xss]
+pinned:
+  "xss": "1.0.15"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/sanitize.ts
+  - test/sanitize.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

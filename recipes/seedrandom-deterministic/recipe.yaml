@@ -1,0 +1,19 @@
+id: seedrandom-deterministic
+title: "seedrandom deterministic sequences"
+summary: "Build seeded pseudorandom generators with seedrandom, assert reproducible sequences, verify divergence between seeds, and temporarily patch then restore Math.random offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [seedrandom]
+tags: [random, seedrandom, deterministic, testing]
+pinned:
+  "seedrandom": "3.0.5"
+  "@types/seedrandom": "3.0.8"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/rng.ts
+  - test/rng.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

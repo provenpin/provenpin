@@ -1,0 +1,18 @@
+id: currency-js-money-math
+title: "currency.js precise money math"
+summary: "Build exact money helpers with currency.js: construct from string or number, add, subtract, multiply and distribute into whole cents, format with symbol and separator options, and prove there is no floating point drift offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [currency.js]
+tags: [currency, money, math]
+pinned:
+  "currency.js": "2.0.4"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/money.ts
+  - test/money.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
