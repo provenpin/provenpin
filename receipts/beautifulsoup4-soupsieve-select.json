@@ -1,0 +1,35 @@
+{
+  "id": "beautifulsoup4-soupsieve-select",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:56:56.427Z",
+  "last_passed_at": "2026-10-16T21:56:56.427Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 401,
+    "test": 1204
+  },
+  "pinned": {
+    "beautifulsoup4": "4.15.0",
+    "soupsieve": "3.0.3",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:f4550a632ea62055d8099b6b25f2c575318c51a3da6f3f154a8ca25adbfe9e25",
+  "files": {
+    "recipes/beautifulsoup4-soupsieve-select/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/beautifulsoup4-soupsieve-select/recipe.yaml": "sha256:12d2eebecb63f4a5112e104313d92ebdef17f6226361f941916728796a4d1253",
+    "recipes/beautifulsoup4-soupsieve-select/requirements.txt": "sha256:9ee5aebe7b903b986f57361d6aa62686c5c17e34b35fe24a50b8a57cd066fc0c",
+    "recipes/beautifulsoup4-soupsieve-select/scrape.py": "sha256:92c5a039a739e16f80e3700133a7b02cf102c4fc59ee0f263655d1bc8b6c9016",
+    "recipes/beautifulsoup4-soupsieve-select/tests/test_scrape.py": "sha256:65669f3d1126d4a2a49c8424177dd959b0040cfa5138e1a4fb29bbcb83e1b66c"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": ".......                                                                  [100%]\n7 passed in 0.13s\n"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "python-box-dot-access-config",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:30.588Z",
+  "last_passed_at": "2026-10-16T21:57:30.588Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 490,
+    "test": 1149
+  },
+  "pinned": {
+    "python-box": "7.4.1",
+    "PyYAML": "6.0.3",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:fae93cd7873ecfff129c14d1a0d2c12a4eb7f6ae6703f96d459bbe774c0c94da",
+  "files": {
+    "recipes/python-box-dot-access-config/config.py": "sha256:504bb235e04528b9df11e07a71ef52c41114fb68baf67f0af470405741381bc5",
+    "recipes/python-box-dot-access-config/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/python-box-dot-access-config/recipe.yaml": "sha256:58ecc244dddbc968399eb534028a02592014df0a7ec46d10dbf47bbac85ab8f7",
+    "recipes/python-box-dot-access-config/requirements.txt": "sha256:20b30a6ed5861f43ee33a955607dabf0522cf97029ef5bf70ada08b602ba6f41",
+    "recipes/python-box-dot-access-config/tests/test_config.py": "sha256:6e0f18df7ed1e066d712ed964bfbbdd63e92da01947b2fce460efeb6049d574c"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.11s\n"
+}

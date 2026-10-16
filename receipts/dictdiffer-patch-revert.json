@@ -1,0 +1,34 @@
+{
+  "id": "dictdiffer-patch-revert",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:56:50.608Z",
+  "last_passed_at": "2026-10-16T21:56:50.608Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 623,
+    "test": 388
+  },
+  "pinned": {
+    "dictdiffer": "0.10.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:437d5b6640796c0e86b03330aee3cad34a942e7e085176c26f09a3cf84c1a816",
+  "files": {
+    "recipes/dictdiffer-patch-revert/dictpatch.py": "sha256:07f5b926c8302bbac7ac4fbef65343901205133d31fa14d4202cc75ab13a253f",
+    "recipes/dictdiffer-patch-revert/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/dictdiffer-patch-revert/recipe.yaml": "sha256:035f72912403af0461c93f0030072d775d378a187f74448de4fa83df31b4a146",
+    "recipes/dictdiffer-patch-revert/requirements.txt": "sha256:25189f09fde765ddf3ebe3eaef35014e2f713cfee7633f56cb85dec3ff554d40",
+    "recipes/dictdiffer-patch-revert/tests/test_patch.py": "sha256:d69956fdd3a6e5ebf5caf1f0775d8f5edc1d68369f9aecc9a19d0d90d7738a4c"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.01s\n"
+}

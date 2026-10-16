@@ -1,0 +1,34 @@
+{
+  "id": "pyparsing-arith-expression-grammar",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:18.432Z",
+  "last_passed_at": "2026-10-16T21:57:18.432Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 230,
+    "test": 1305
+  },
+  "pinned": {
+    "pyparsing": "3.3.3",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:3678f8f68f1586442826413d37c85d5d1f2b73911fe375b33e1eb4c04f8aec0f",
+  "files": {
+    "recipes/pyparsing-arith-expression-grammar/grammar.py": "sha256:5592c27f3427eff7fad08a53018863c0d52b909555538d66578869e68a37550d",
+    "recipes/pyparsing-arith-expression-grammar/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pyparsing-arith-expression-grammar/recipe.yaml": "sha256:d258098a89d3bb5b4e381e68df1a8237586903925f3f3e17556cbc7409be0b97",
+    "recipes/pyparsing-arith-expression-grammar/requirements.txt": "sha256:3c2188c6032847b22941764e6c8a51ffcd127ca6e4914eeec0fcc8fabfd168e7",
+    "recipes/pyparsing-arith-expression-grammar/tests/test_grammar.py": "sha256:2acb08dc749ee56efdf9a9e74c0ff7c129e8411ff9d15731442265577eebe275"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
+}

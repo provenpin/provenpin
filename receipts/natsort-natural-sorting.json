@@ -1,0 +1,34 @@
+{
+  "id": "natsort-natural-sorting",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:15.396Z",
+  "last_passed_at": "2026-10-16T21:57:15.396Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 179,
+    "test": 989
+  },
+  "pinned": {
+    "natsort": "8.4.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:6aed8b345bbb03c99cc9a213ec5875462f7eed6ad3d736924b0a1694c3faa73f",
+  "files": {
+    "recipes/natsort-natural-sorting/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/natsort-natural-sorting/recipe.yaml": "sha256:3f98914328245dcf902504cb7fffddfeaff8ff41070813a2fbf765c0cc06b688",
+    "recipes/natsort-natural-sorting/requirements.txt": "sha256:b739d8926fed253d5d14502b5c40d8a59ec7cc769762a0fd20e580e73c6d7656",
+    "recipes/natsort-natural-sorting/sorting.py": "sha256:1cf418c4b3f71b8032a2fe84b79d72ccb4dc6d216f67d3807ac8944a30cca1d0",
+    "recipes/natsort-natural-sorting/tests/test_sorting.py": "sha256:7c6b3fc4a61a192602afdfae5a27dea6cb3e11660a86f1b93d30181f8bbb5eaa"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+}

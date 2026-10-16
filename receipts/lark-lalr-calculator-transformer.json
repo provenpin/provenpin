@@ -1,0 +1,34 @@
+{
+  "id": "lark-lalr-calculator-transformer",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:12.744Z",
+  "last_passed_at": "2026-10-16T21:57:12.744Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 278,
+    "test": 1426
+  },
+  "pinned": {
+    "lark": "1.3.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:3cafd355268e9dcf499dae785d2d624b858d1efde93ad2b17bbb7aace3b3c972",
+  "files": {
+    "recipes/lark-lalr-calculator-transformer/calculator.py": "sha256:13fe8768338f751957979a07999bc77238f32a9b36e845730ba88367bc75dffb",
+    "recipes/lark-lalr-calculator-transformer/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/lark-lalr-calculator-transformer/recipe.yaml": "sha256:21f7a83bb06f9ab1176eb9f6d541f84ca4be823d68940d349126a1f192efa08a",
+    "recipes/lark-lalr-calculator-transformer/requirements.txt": "sha256:ecdba08dc6d0991b98fcec08916c1bcf5eea715cf6a1a7b64077ecd5bc31527d",
+    "recipes/lark-lalr-calculator-transformer/tests/test_calculator.py": "sha256:4f6976a36c4d95f04e1a8a7f0764bf76cc5d56c5cea1b8ac4397afa2a10db065"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.24s\n"
+}

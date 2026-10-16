@@ -1,0 +1,34 @@
+{
+  "id": "mako-template-inheritance",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:07.149Z",
+  "last_passed_at": "2026-10-16T21:57:07.149Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 252,
+    "test": 629
+  },
+  "pinned": {
+    "mako": "1.4.3",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:db0c9ad2d84d0544ff63b864e08e764ee41a15cabf071dd6a5cad34afb4df933",
+  "files": {
+    "recipes/mako-template-inheritance/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/mako-template-inheritance/recipe.yaml": "sha256:5607d0999f76f5fa1b0760ce9add5f876477a95cb5455cf376d4c6fef0fa5ae7",
+    "recipes/mako-template-inheritance/renderer.py": "sha256:30e3f20908274052836212dd76cf20e166aa1db6e6705db6cd71044f352b1587",
+    "recipes/mako-template-inheritance/requirements.txt": "sha256:69a0c700ec486ddc4602a0a01532198140f52c21e82fa0f7ddca5403d5f6ba9f",
+    "recipes/mako-template-inheritance/tests/test_renderer.py": "sha256:3972e44051f2091cd8e068741378f9962de950cd1031408fe06c1d48cc6d6091"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.13s\n"
+}

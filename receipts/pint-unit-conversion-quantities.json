@@ -1,0 +1,34 @@
+{
+  "id": "pint-unit-conversion-quantities",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:13.466Z",
+  "last_passed_at": "2026-10-16T21:57:13.466Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 517,
+    "test": 1233
+  },
+  "pinned": {
+    "pint": "0.26.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:5967484ecb7ced78fb2e9f86793b81c8f74057ac11116c8842560fcc5ebd5039",
+  "files": {
+    "recipes/pint-unit-conversion-quantities/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pint-unit-conversion-quantities/recipe.yaml": "sha256:09745615674464a11100f48652a1f92123969a2585bbd1e9196ffbdd34fe5140",
+    "recipes/pint-unit-conversion-quantities/requirements.txt": "sha256:a0d901ec2a5f094bd89fe7c41de1faee9289f0cdc2a54e62935f10e548365e21",
+    "recipes/pint-unit-conversion-quantities/tests/test_units.py": "sha256:72eb51d96145302277a553346560b32d81fa1b09d6ebdded4ca36a28a2e000d2",
+    "recipes/pint-unit-conversion-quantities/units.py": "sha256:33d439dba315019e1817ab69e3a5943387817cf626b2b40dde39b5f01cb7d4da"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.43s\n"
+}

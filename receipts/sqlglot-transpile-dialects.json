@@ -1,0 +1,34 @@
+{
+  "id": "sqlglot-transpile-dialects",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:41.394Z",
+  "last_passed_at": "2026-10-16T21:57:41.394Z",
+  "tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 406,
+    "test": 1585
+  },
+  "pinned": {
+    "sqlglot": "30.23.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:7ff06af02e846b4a6a471c54ca72427805f41fea2caf9066d7e6747835aa6d3d",
+  "files": {
+    "recipes/sqlglot-transpile-dialects/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/sqlglot-transpile-dialects/recipe.yaml": "sha256:ee7befb3a6427957be84a0c40cbd53f56d40de6e841526e12750382b4ebdeca2",
+    "recipes/sqlglot-transpile-dialects/requirements.txt": "sha256:ab43ae3eb1112709226a1a3ac062e1fc775c96aa19bed23a78513e6abce75d74",
+    "recipes/sqlglot-transpile-dialects/tests/test_transpile.py": "sha256:7a5dea7226be4059e15ee74ba8e10bb8b969d740ca403de756581f1bdf91e10b",
+    "recipes/sqlglot-transpile-dialects/transpile.py": "sha256:ff7183d0a015b2fd80da58e51d090edaf165d91a48186cd29eff107996b98bb6"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": ".........                                                                [100%]\n9 passed in 0.39s\n"
+}

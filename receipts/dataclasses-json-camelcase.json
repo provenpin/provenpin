@@ -1,0 +1,34 @@
+{
+  "id": "dataclasses-json-camelcase",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:56:56.960Z",
+  "last_passed_at": "2026-10-16T21:56:56.960Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 180,
+    "test": 1855
+  },
+  "pinned": {
+    "dataclasses-json": "0.6.7",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:fa354317fd855510ef82e83d2e468ce5f747f3785d23a570472e06e69b784c3e",
+  "files": {
+    "recipes/dataclasses-json-camelcase/models.py": "sha256:ce8d454933c1a93f5aba0c39c85f3ec5acc3b44477d2ddc6bf277163877f059d",
+    "recipes/dataclasses-json-camelcase/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/dataclasses-json-camelcase/recipe.yaml": "sha256:2517906e6c97860a01dc0d1cc4bc84ba15a4332b7f74f5709b883c46c98d3469",
+    "recipes/dataclasses-json-camelcase/requirements.txt": "sha256:ee2d355feeb6fb0bc4d6b590649ca89615a18b176ccd2408b0b52404954f0ebf",
+    "recipes/dataclasses-json-camelcase/tests/test_serialization.py": "sha256:4e21dc7333c2e9dd667fab7e865acc86f8e4e39b5b86e4540fe5b0e227852d30"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.32s\n"
+}

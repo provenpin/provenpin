@@ -1,0 +1,34 @@
+{
+  "id": "inflect-plural-ordinal",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:56:53.600Z",
+  "last_passed_at": "2026-10-16T21:56:53.600Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 254,
+    "test": 3317
+  },
+  "pinned": {
+    "inflect": "7.5.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:dc3cb41c1dbad213777499f42c9888b99c1a11d4a3353ff30714a180d1b1ee4d",
+  "files": {
+    "recipes/inflect-plural-ordinal/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/inflect-plural-ordinal/recipe.yaml": "sha256:57b1ed5029af0cb497dd47e211d71fd93bfc38418703ba5f558570f16e1a4953",
+    "recipes/inflect-plural-ordinal/requirements.txt": "sha256:e56167ca22aa9274b929206e3e899efaf1a3cd44b2959e4cf696a33114853912",
+    "recipes/inflect-plural-ordinal/tests/test_ui.py": "sha256:ef88625795cd750f6cdf08dafcd82f834cd6caed539819c29d74a6cdea000094",
+    "recipes/inflect-plural-ordinal/ui.py": "sha256:7b11d17045285fb3504bf7a0ecf2bef56ed92b374c1c737028daf3d05fc65ab8"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.63s\n"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "markdown-pygments-codehilite",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:06.616Z",
+  "last_passed_at": "2026-10-16T21:57:06.616Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 385,
+    "test": 731
+  },
+  "pinned": {
+    "markdown": "3.11.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:95eaa936a3cb775eb8c508e91579059f46bd501d27e782b5dd7667c0e81a4935",
+  "files": {
+    "recipes/markdown-pygments-codehilite/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/markdown-pygments-codehilite/recipe.yaml": "sha256:1697614e1eb353ff3f3e715f244d8d177d21cd9835d98c599d22e757db7b8f23",
+    "recipes/markdown-pygments-codehilite/renderer.py": "sha256:bfdc35958254f075f3b4e9d7ed1ab8c683d25e4ff69fcb3476920539612a7dd6",
+    "recipes/markdown-pygments-codehilite/requirements.txt": "sha256:2cadd3feafc5d2f92ef8bb938ac2118cb54882a3006f1c169d6a0dfcc9baf504",
+    "recipes/markdown-pygments-codehilite/tests/test_renderer.py": "sha256:58b885c702b26e78caaa29df008970a282464bae49f61431afe73f4cf251b0bc"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
+}

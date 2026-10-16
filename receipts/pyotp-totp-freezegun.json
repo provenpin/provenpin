@@ -1,0 +1,35 @@
+{
+  "id": "pyotp-totp-freezegun",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:15.697Z",
+  "last_passed_at": "2026-10-16T21:57:15.697Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 361,
+    "test": 1983
+  },
+  "pinned": {
+    "pyotp": "2.10.0",
+    "freezegun": "1.5.5",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:c397c1a637fcda9fe3d1a861742f8ea84d8b499b75cec6360ee4d785250300b6",
+  "files": {
+    "recipes/pyotp-totp-freezegun/otp.py": "sha256:89f35669012a3f4b4978be9d98f9118da24a6114dd1491f2c0516d1a4806585f",
+    "recipes/pyotp-totp-freezegun/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pyotp-totp-freezegun/recipe.yaml": "sha256:ea04953b4430f017c0cce2b0fc39d7b55f57ea2916538faf6f64d13a2bb468f3",
+    "recipes/pyotp-totp-freezegun/requirements.txt": "sha256:cdb9cfd38fc3aa762389763a4c781c28e169f20c8b7d0d433a73c4dfcecc50a7",
+    "recipes/pyotp-totp-freezegun/tests/test_otp.py": "sha256:d101b71a1ea6b4bc25580c4c0971177096f8b45b3bc02442a871a82768bfff7e"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.82s\n"
+}

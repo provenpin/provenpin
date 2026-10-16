@@ -1,0 +1,34 @@
+{
+  "id": "polib-po-catalog-roundtrip",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:19.119Z",
+  "last_passed_at": "2026-10-16T21:57:19.119Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 199,
+    "test": 1253
+  },
+  "pinned": {
+    "polib": "1.2.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:8be70725e52a9f9d12af86d11662dfa06eee314ae33c1ab9fb8f6f56769f12d6",
+  "files": {
+    "recipes/polib-po-catalog-roundtrip/catalog.py": "sha256:a9ab7ca4b51d4a163b74060b284b29cb12afd9d1a9eec6ec91866e2735b34f1d",
+    "recipes/polib-po-catalog-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/polib-po-catalog-roundtrip/recipe.yaml": "sha256:fcea82118e8f576fa10614a0aef96ce3fa6d317a602496319cc7817321db2da8",
+    "recipes/polib-po-catalog-roundtrip/requirements.txt": "sha256:2b44a899f70eb6e98526b4be065f50e05b12b95e510d1c3c4a09a6f339d1838e",
+    "recipes/polib-po-catalog-roundtrip/tests/test_catalog.py": "sha256:32e91b942791dc14dac3787ad1b419e087b99e227167e3c053fe224046bd09e7"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
+}

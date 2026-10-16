@@ -1,0 +1,34 @@
+{
+  "id": "python-json-logger-structured",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:33.366Z",
+  "last_passed_at": "2026-10-16T21:57:33.366Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 577,
+    "test": 1786
+  },
+  "pinned": {
+    "python-json-logger": "4.2.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:764c68205887f24c76612f2f2958efc89d9869ed0053bd7ca6a570b0eee4bc0b",
+  "files": {
+    "recipes/python-json-logger-structured/logging_setup.py": "sha256:daec8d88559b2f928c8d18cb9001a13cef77e4dae6d168f26db3e411f7c402c7",
+    "recipes/python-json-logger-structured/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/python-json-logger-structured/recipe.yaml": "sha256:4b732dac4c3727a6a3bc69456b3f4ba2846e979fa5b8f998bcadaae12b80a8b1",
+    "recipes/python-json-logger-structured/requirements.txt": "sha256:6714b0b739285b6193fd2b7cbfe449c868668d12ec3170f071a3ef12ae200379",
+    "recipes/python-json-logger-structured/tests/test_logging.py": "sha256:a900ce0e8d809218515745ebcd6eedc80a5b4fe6353611f05ba686a24fc99a0d"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": ".......                                                                  [100%]\n7 passed in 0.03s\n"
+}

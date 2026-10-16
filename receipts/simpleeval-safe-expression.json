@@ -1,0 +1,34 @@
+{
+  "id": "simpleeval-safe-expression",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:36.731Z",
+  "last_passed_at": "2026-10-16T21:57:36.731Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 241,
+    "test": 1057
+  },
+  "pinned": {
+    "simpleeval": "1.0.8",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:4468b9c1adbdd6d0512058edbd1f942a433ddb1ea18456619ab7c9cfb8b298f4",
+  "files": {
+    "recipes/simpleeval-safe-expression/formulas.py": "sha256:a9c1cf4bb99953f1fbffe9c4e55086b7747b0d00a0e945ea9c94e4bb42c43b8e",
+    "recipes/simpleeval-safe-expression/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/simpleeval-safe-expression/recipe.yaml": "sha256:9494183b39119ef000ebfcffcdada09c5fb461cd329d0dcacce2ad90c32f75c1",
+    "recipes/simpleeval-safe-expression/requirements.txt": "sha256:ba5e8ec1a0f157626b77ec3299a6c167ecf96158d8fccb25236745c1ae010f15",
+    "recipes/simpleeval-safe-expression/tests/test_formulas.py": "sha256:905d5e6f54622c689e46eaa6957f9e3116273bdaeff85f180d8b8243cd93434a"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "email-validator-normalize",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:56:49.584Z",
+  "last_passed_at": "2026-10-16T21:56:49.584Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 267,
+    "test": 1043
+  },
+  "pinned": {
+    "email-validator": "2.3.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:ee90ee83dbb74c164f04b3d01c5a6cb745772b83b45cf6e1d0d65fa3654531e5",
+  "files": {
+    "recipes/email-validator-normalize/emails.py": "sha256:0e2e77fda435bd843fbf7d61d14eb2aade451af5a5a8d38f9da64d4fddebc05e",
+    "recipes/email-validator-normalize/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/email-validator-normalize/recipe.yaml": "sha256:748ce669a2dad716af3fb1b975a7e21575a1ff0a483e1b45f4b4d011e7479bb8",
+    "recipes/email-validator-normalize/requirements.txt": "sha256:991755cc4a59d789a7bd5258f78f272834f3615fe195a052806a3cc7594d6ef8",
+    "recipes/email-validator-normalize/tests/test_email.py": "sha256:8d0bba6444e7eb42a2d6e1dee3997a652fe99249f570e0ec63afc2bf6f5e6f54"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.31s\n"
+}

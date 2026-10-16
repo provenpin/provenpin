@@ -1,0 +1,35 @@
+{
+  "id": "pypdf-reportlab-merge-split",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:24.927Z",
+  "last_passed_at": "2026-10-16T21:57:24.927Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 501,
+    "test": 2017
+  },
+  "pinned": {
+    "pypdf": "6.21.0",
+    "reportlab": "5.0.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:bd6669317a78df17c4dbe2d017a296868400a8bfcb0f2354c3c4600d7c3d311d",
+  "files": {
+    "recipes/pypdf-reportlab-merge-split/pdf_tools.py": "sha256:033a475c8e4ce56ef8573a7d6a7d847427991f1321835861a638a5b8bac11f3c",
+    "recipes/pypdf-reportlab-merge-split/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pypdf-reportlab-merge-split/recipe.yaml": "sha256:c7c94ce6d406967389d6543a528539e011b60bc9fa1eddba5b4f48443e1649b0",
+    "recipes/pypdf-reportlab-merge-split/requirements.txt": "sha256:9cb623696de3aa1a2538af57eaf2d928f18a5c627dc229c3e9b408d9136258ba",
+    "recipes/pypdf-reportlab-merge-split/tests/test_pdf_tools.py": "sha256:4ee4792c3d3422ffb5a5721068814fbaae094c22cc73b0b1d6f721722e2b6c18"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.71s\n"
+}

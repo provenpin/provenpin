@@ -1,0 +1,34 @@
+{
+  "id": "babel-locale-number-currency",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:56:51.656Z",
+  "last_passed_at": "2026-10-16T21:56:51.656Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 445,
+    "test": 951
+  },
+  "pinned": {
+    "babel": "2.18.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:296a30f306b7c0e41b4488dc2a66683be8489cf3acd34edb2aa7fcad3d767d85",
+  "files": {
+    "recipes/babel-locale-number-currency/locales.py": "sha256:74e2c80252ebcf5b739b9f797d571db16db12bab2b33d585b34a3b8a0216d68d",
+    "recipes/babel-locale-number-currency/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/babel-locale-number-currency/recipe.yaml": "sha256:b4fd1967e44289336e31096e9d9bf13bfb8cf687a37ffa22e0c6c79516fbc7a6",
+    "recipes/babel-locale-number-currency/requirements.txt": "sha256:8fb5fdc3b0ac87eb82fb307346a96e0ede4b0dab6df59173c1fc14fd7f83705b",
+    "recipes/babel-locale-number-currency/tests/test_locales.py": "sha256:12ed16d713ff686f162f3a7c55cb9685054ce903df2633742759951846278718"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.13s\n"
+}

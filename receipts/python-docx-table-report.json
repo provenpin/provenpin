@@ -1,0 +1,34 @@
+{
+  "id": "python-docx-table-report",
+  "status": "passed",
+  "ran_at": "2026-10-16T21:57:35.341Z",
+  "last_passed_at": "2026-10-16T21:57:35.341Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 432,
+    "test": 1600
+  },
+  "pinned": {
+    "python-docx": "1.2.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:ca60a360f1d3c25ea670af1cf0173c323a7b64daeb4086a61376804ec9be7b22",
+  "files": {
+    "recipes/python-docx-table-report/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/python-docx-table-report/recipe.yaml": "sha256:1d67da25a7c9a92c4dc416d1e1e5892f64ae3837ca125649f310a0c116762454",
+    "recipes/python-docx-table-report/report.py": "sha256:da1e74ddcaa51e5d0a780a9d2ae26d62942fddde9050f8124e09f4ba22b5f441",
+    "recipes/python-docx-table-report/requirements.txt": "sha256:6ba311de658cc28ac0b0ec34375078e770bbc5d2a4f6f58cb6000f95d0be5eef",
+    "recipes/python-docx-table-report/tests/test_report.py": "sha256:92a456958b1fff0e8427f98d77c83a73c5cb6e1ae220685af22b709f28b84016"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 38972656245"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.44s\n"
+}
