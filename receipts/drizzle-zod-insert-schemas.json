@@ -1,15 +1,15 @@
 {
   "id": "drizzle-zod-insert-schemas",
   "status": "passed",
-  "ran_at": "2026-10-15T18:48:38.074Z",
-  "last_passed_at": "2026-10-15T18:48:38.074Z",
+  "ran_at": "2026-10-16T00:50:35.116Z",
+  "last_passed_at": "2026-10-16T00:50:35.116Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7976,
-    "test": 542
+    "setup": 10346,
+    "test": 894
   },
   "pinned": {
     "drizzle-orm": "0.45.4",
@@ -31,8 +31,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38788473612"
+    "runner": "github-actions 38831610868"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid input is inserted\nok 1 - valid input is inserted\n  ---\n  duration_ms: 7.124544\n  type: 'test'\n  ...\n# Subtest: invalid input never reaches the database\nok 2 - invalid input never reaches the database\n  ---\n  duration_ms: 1.037286\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 436.657023\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid input is inserted\nok 1 - valid input is inserted\n  ---\n  duration_ms: 11.612614\n  type: 'test'\n  ...\n# Subtest: invalid input never reaches the database\nok 2 - invalid input never reaches the database\n  ---\n  duration_ms: 1.562666\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 739.274919\n"
 }

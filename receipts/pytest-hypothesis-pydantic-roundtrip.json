@@ -1,15 +1,15 @@
 {
   "id": "pytest-hypothesis-pydantic-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-15T16:04:30.000Z",
-  "last_passed_at": "2026-10-15T16:04:30.000Z",
+  "ran_at": "2026-10-16T00:54:17.811Z",
+  "last_passed_at": "2026-10-16T00:54:17.811Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 326,
-    "test": 5937
+    "setup": 525,
+    "test": 4768
   },
   "pinned": {
     "hypothesis": "6.169.4",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 38831610868"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 4.66s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 3.36s\n"
 }

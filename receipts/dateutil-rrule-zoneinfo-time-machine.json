@@ -1,15 +1,15 @@
 {
   "id": "dateutil-rrule-zoneinfo-time-machine",
   "status": "passed",
-  "ran_at": "2026-10-15T18:48:15.732Z",
-  "last_passed_at": "2026-10-15T18:48:15.732Z",
+  "ran_at": "2026-10-16T00:50:13.167Z",
+  "last_passed_at": "2026-10-16T00:50:13.167Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 200,
-    "test": 798
+    "setup": 445,
+    "test": 1363
   },
   "pinned": {
     "python-dateutil": "2.9.0.post0",
@@ -29,7 +29,7 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38788473612"
+    "runner": "github-actions 38831610868"
   },
   "errors": [],
   "log_tail": "....                                                                     [100%]\n4 passed in 0.03s\n"
