@@ -1,0 +1,35 @@
+{
+  "id": "mjml-to-html",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:14.445Z",
+  "last_passed_at": "2026-10-16T02:18:14.445Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 6146,
+    "test": 591
+  },
+  "pinned": {
+    "mjml": "5.4.1",
+    "@types/mjml": "5.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:9da8ffffba79610599bfdf02c2be6caf051a2e9084cde53506bf037b6ebab8d7",
+  "files": {
+    "recipes/mjml-to-html/package.json": "sha256:1562654f596df9482fed4dc059272187acd8a4dad95a79f302f764cbed059e42",
+    "recipes/mjml-to-html/recipe.yaml": "sha256:75dfa9c079dbbbeb7f1a7fdd5d41d2f7f2deca05fab6905dcc478566aee973cb",
+    "recipes/mjml-to-html/src/convert.ts": "sha256:a00648c8c3bda1e8b2cfe4ea4f0ff1135e9fa2f5e5ddd4104878dad2f65fe4b9",
+    "recipes/mjml-to-html/test/convert.test.ts": "sha256:1934f91063d9eec7d05171780ef0f2b8e5c38849c1024ba36680571d702d97a2"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders mjml to html with expected text\nok 1 - renders mjml to html with expected text\n  ---\n  duration_ms: 8.348742\n  type: 'test'\n  ...\n# Subtest: inlines styles derived from mjml attributes\nok 2 - inlines styles derived from mjml attributes\n  ---\n  duration_ms: 1.609719\n  type: 'test'\n  ...\n# Subtest: reports validation errors for broken markup in soft mode\nok 3 - reports validation errors for broken markup in soft mode\n  ---\n  duration_ms: 0.795931\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 487.006068\n"
+}

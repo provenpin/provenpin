@@ -1,0 +1,34 @@
+{
+  "id": "nanostores-atom-computed",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:33.194Z",
+  "last_passed_at": "2026-10-16T02:18:33.194Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1971,
+    "test": 2327
+  },
+  "pinned": {
+    "nanostores": "1.5.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:713bac831f08fa516cf13b827ee938cc341e9afb912e5be2efc738b783add367",
+  "files": {
+    "recipes/nanostores-atom-computed/package.json": "sha256:1b449146ebc62b7de8c4dce32d7d12cee891c1dc80f9c5586185ae4490a629b5",
+    "recipes/nanostores-atom-computed/recipe.yaml": "sha256:ececb867e3155c713b1c2b4415cff52a1412483a78f127bef0af95963f66bc7d",
+    "recipes/nanostores-atom-computed/src/store.ts": "sha256:4a31ced194316ba0d6d8b587ec3d93a5e10d73be147324b1cd1f45e90477d707",
+    "recipes/nanostores-atom-computed/test/store.test.ts": "sha256:9b0f8e87790b42bedb531850d6112a229e76232f040e6046cf6aefc66814ed90"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: atom get and set\nok 1 - atom get and set\n  ---\n  duration_ms: 1.165286\n  type: 'test'\n  ...\n# Subtest: map get and setKey\nok 2 - map get and setKey\n  ---\n  duration_ms: 0.749716\n  type: 'test'\n  ...\n# Subtest: subscribe fires immediately and stops after unsubscribe\nok 3 - subscribe fires immediately and stops after unsubscribe\n  ---\n  duration_ms: 0.232376\n  type: 'test'\n  ...\n# Subtest: listen skips the initial value and stops after unsubscribe\nok 4 - listen skips the initial value and stops after unsubscribe\n  ---\n  duration_ms: 0.28262\n  type: 'test'\n  ...\n# Subtest: computed derives from atom and map stores and freezes when unsubscribed\nok 5 - computed derives from atom and map stores and freezes when unsubscribed\n  ---\n  duration_ms: 0.955513\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2180.599927\n"
+}

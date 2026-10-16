@@ -1,0 +1,34 @@
+{
+  "id": "lowdb-json-store",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:19.133Z",
+  "last_passed_at": "2026-10-16T02:18:19.133Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1943,
+    "test": 390
+  },
+  "pinned": {
+    "lowdb": "7.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:16ad982572fde5016884acab106e5b7fd0688712aa50c124e20bddc89a281a6e",
+  "files": {
+    "recipes/lowdb-json-store/package.json": "sha256:3792c5983c6936f4b6a4c48130d412d6ed68df13e8c5dae1536fb1e1b9493f30",
+    "recipes/lowdb-json-store/recipe.yaml": "sha256:2e463fbf27d3a40dc3c313914f4ee30088cc106f09785b8d3480e33cb754f554",
+    "recipes/lowdb-json-store/src/store.ts": "sha256:0b8a4055ae7e8fec1caac0017b6fc5fe451e951bf63c7ecf9561a84a68f2b7e2",
+    "recipes/lowdb-json-store/test/store.test.ts": "sha256:40f9f7d26f6b41faa5c63494bc10bdf186d854deca705e5e462e451c2244f44d"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: seeds default data into a missing JSON file\nok 1 - seeds default data into a missing JSON file\n  ---\n  duration_ms: 23.608551\n  type: 'test'\n  ...\n# Subtest: persists nested collections across reopen\nok 2 - persists nested collections across reopen\n  ---\n  duration_ms: 6.711603\n  type: 'test'\n  ...\n# Subtest: supports direct data mutation followed by write()\nok 3 - supports direct data mutation followed by write()\n  ---\n  duration_ms: 4.112432\n  type: 'test'\n  ...\n# Subtest: Memory adapter keeps data in memory only\nok 4 - Memory adapter keeps data in memory only\n  ---\n  duration_ms: 0.598209\n  type: 'test'\n  ...\n# Subtest: rejects writes that violate referential integrity\nok 5 - rejects writes that violate referential integrity\n  ---\n  duration_ms: 0.767595\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 237.468237\n"
+}

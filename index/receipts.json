@@ -1,9 +1,36 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-16T00:57:03.952Z",
+ "generated_at": "2026-10-16T02:19:26.328Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 382,
+ "count": 403,
  "recipes": [
+  {
+   "id": "adm-zip-roundtrip",
+   "language": "typescript",
+   "pinned": {
+    "adm-zip": "0.6.1",
+    "@types/adm-zip": "0.6.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:14.940Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:e601d0ffad2e77c4e2994d1ecd039b8171ab6fc789d12dbdf3339b58472b0fbb",
+   "files": {
+    "recipes/adm-zip-roundtrip/package.json": "sha256:ed8d19e98bb23cb52a82f52599bc547bdb731680c4b27fcff3b1cd5b1c691c35",
+    "recipes/adm-zip-roundtrip/recipe.yaml": "sha256:fa76fe9b142dde4def7d738ded0f818c46eb8fcb052d0bf901fc47f183a069d7",
+    "recipes/adm-zip-roundtrip/src/archive.ts": "sha256:a743368d6d79ddbda6af43d55b31cda781f250d4dc0898835f55712a47c1f579",
+    "recipes/adm-zip-roundtrip/test/archive.test.ts": "sha256:92ae5748737d0d0495506170088406f0cfe2ccad55fd6459e1996152df06277b"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
   {
    "id": "aiofiles-anyio-temp-io",
    "language": "python",
@@ -1295,6 +1322,32 @@
    }
   },
   {
+   "id": "chalk-ansi-styles",
+   "language": "typescript",
+   "pinned": {
+    "chalk": "6.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:13.517Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:10d771f6738ae160b0f7513f39e4ecdf2d90bc985d9184914517b01620b56ecf",
+   "files": {
+    "recipes/chalk-ansi-styles/package.json": "sha256:ec1c45ff5a9b8fd1def29932fd2eb2b0999d16972f81ff78f2dee5d8976e70ae",
+    "recipes/chalk-ansi-styles/recipe.yaml": "sha256:e8ae76e38469338e9d97e8325636b51386d517a257c88ee1e11945477ee01b81",
+    "recipes/chalk-ansi-styles/src/styles.ts": "sha256:d41689d71c479fe97975f7cc3851a814f01ac0dc647a4c75a49fbd3209e57d29",
+    "recipes/chalk-ansi-styles/test/styles.test.ts": "sha256:d30444ef466de832ff67922ccd51e9f2e55a57287ebc1077bf8f5edfa73f4f20"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "change-case-string-cases",
    "language": "typescript",
    "pinned": {
@@ -1452,6 +1505,32 @@
     "recipes/click-rich-progress/recipe.yaml": "sha256:b7246ca67b372dc4bff8fda403106d81c2a7f9e574849792bd6d0ce113c04ea3",
     "recipes/click-rich-progress/requirements.txt": "sha256:25c9c170ea0cdff8d8a97cdb4ff845b3dbc2cb43fc7b8522c2e4af61bf759128",
     "recipes/click-rich-progress/tests/test_cli.py": "sha256:2b36e20b8005cfc3aba1cbd7519f6fad73d8d39823c1ccd105d7ecf0e990b849"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "clipanion-cli-parser",
+   "language": "typescript",
+   "pinned": {
+    "clipanion": "3.2.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:13.309Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:20d79f433383d18ba2fa75854d20448a72198f58313365340f25b29757d99327",
+   "files": {
+    "recipes/clipanion-cli-parser/package.json": "sha256:b9e98bbb910d86cbbdde2cfcffac649a04485013394a9a1039f50d89a3cd3852",
+    "recipes/clipanion-cli-parser/recipe.yaml": "sha256:99bae13d4a7ff2ef93617d45184006f9649efd8945c873ecd93f7350881ab9c7",
+    "recipes/clipanion-cli-parser/src/cli.ts": "sha256:149f0e2c0c3a18567548b2201401dc37271fa3a71a481dfc6830e2fa6d053a96",
+    "recipes/clipanion-cli-parser/test/cli.test.ts": "sha256:c788f43c09f0fd92dbbc84d04042b37f0816976cfca28436025c6c986909a6f9"
    },
    "staleness": {
     "status": "unchecked",
@@ -2577,6 +2656,32 @@
     "recipes/effect-schema-vitest/recipe.yaml": "sha256:f0876eaeaa8d585a2a974e178262ac5f146409cdeb585185ba7b0ba0e2b02627",
     "recipes/effect-schema-vitest/src/orders.ts": "sha256:0b1274d2660763348bb3e303a275fe48a52b40386aabc4d6b1f84a8819a6de98",
     "recipes/effect-schema-vitest/test/orders.test.ts": "sha256:a876a84f94ee08c327f6cdc316983e0f64db9385a3c5acbfca8817f78b51c23c"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "ejs-render-partials",
+   "language": "typescript",
+   "pinned": {
+    "ejs": "7.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:14.619Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:10de2bc965b575e8776bb0f6471e74e5277aafef6abfd5195c2d89557fcaeddb",
+   "files": {
+    "recipes/ejs-render-partials/package.json": "sha256:0e15747e55a9c3561f2164541cb41cd7496c8f6db8587122991934f96ff2b74e",
+    "recipes/ejs-render-partials/recipe.yaml": "sha256:a0570e7ad22d0b630a60c4c34bce0c8caa646ee80b0d3193543a6aa9bbfa11bb",
+    "recipes/ejs-render-partials/src/render.ts": "sha256:2559a352ec77649618b66189e99e34ec65ac55963ca35e65bd1acac03a1392b6",
+    "recipes/ejs-render-partials/test/render.test.ts": "sha256:262fe57929e4457af9d4ebe1e0dc0787a17e6d30f04a3d374a10e5d5d67957ca"
    },
    "staleness": {
     "status": "unchecked",
@@ -5801,6 +5906,32 @@
    }
   },
   {
+   "id": "lowdb-json-store",
+   "language": "typescript",
+   "pinned": {
+    "lowdb": "7.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:19.133Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:16ad982572fde5016884acab106e5b7fd0688712aa50c124e20bddc89a281a6e",
+   "files": {
+    "recipes/lowdb-json-store/package.json": "sha256:3792c5983c6936f4b6a4c48130d412d6ed68df13e8c5dae1536fb1e1b9493f30",
+    "recipes/lowdb-json-store/recipe.yaml": "sha256:2e463fbf27d3a40dc3c313914f4ee30088cc106f09785b8d3480e33cb754f554",
+    "recipes/lowdb-json-store/src/store.ts": "sha256:0b8a4055ae7e8fec1caac0017b6fc5fe451e951bf63c7ecf9561a84a68f2b7e2",
+    "recipes/lowdb-json-store/test/store.test.ts": "sha256:40f9f7d26f6b41faa5c63494bc10bdf186d854deca705e5e462e451c2244f44d"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "lru-cache-ttl",
    "language": "typescript",
    "pinned": {
@@ -5818,6 +5949,33 @@
     "recipes/lru-cache-ttl/recipe.yaml": "sha256:b49a1dea33204a7ca997ecb6fcd1395174765241af0800da5f7a40d7d08883a9",
     "recipes/lru-cache-ttl/src/cache.ts": "sha256:327430ce6e7ac7dc475c61c8ae7807a7421135bf537c299ab6b789b6b743bb6d",
     "recipes/lru-cache-ttl/test/cache.test.ts": "sha256:5a91550fedd6102a7b3d73361f6e943d1cbc098e3438e5d05d1dfb8a55088ef3"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "lunr-search-index",
+   "language": "typescript",
+   "pinned": {
+    "lunr": "2.3.9",
+    "@types/lunr": "2.3.7",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:12.908Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:90eba80791867f8a4e4dfc1f88ba2d767f1ee071ecc5853710a8067790b4686a",
+   "files": {
+    "recipes/lunr-search-index/package.json": "sha256:eb9213d4ac98baa3486459cf2957e20a54a7cf38c943519c589c6d3e65b2e504",
+    "recipes/lunr-search-index/recipe.yaml": "sha256:164bb43799064d55ce9702ccd37828020cb47c2d4db29601c6d76d80bcf2fb26",
+    "recipes/lunr-search-index/src/search.ts": "sha256:616cfde710860008a1e9c80c77bc8f6ea82c8b84865c31d26c26048bc8c68e5b",
+    "recipes/lunr-search-index/test/search.test.ts": "sha256:7e3e6182759b6b480feb43d886c079ed4c78de2dee7b5ed146cee6b14069a8c0"
    },
    "staleness": {
     "status": "unchecked",
@@ -6055,6 +6213,33 @@
    }
   },
   {
+   "id": "memoizee-promise-ttl",
+   "language": "typescript",
+   "pinned": {
+    "memoizee": "0.4.17",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:16.961Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:328c1010528f8087a2b73e18f34bb69756851388ad9da4cf02234c4fa437100b",
+   "files": {
+    "recipes/memoizee-promise-ttl/package.json": "sha256:0c7dfd90a29ede5699767dd5d917be43918dca7cbed9973f3849738dd465cb99",
+    "recipes/memoizee-promise-ttl/recipe.yaml": "sha256:ddd17e206dc406dac8e3a2df6ab93a80a2f739071dad7fdfcc602836d6e4f44e",
+    "recipes/memoizee-promise-ttl/src/memo.ts": "sha256:7fb40d6e80aca8d82f554505c0e5720a6cfc621b151e8f9c9e05e8fd3e8ea640",
+    "recipes/memoizee-promise-ttl/src/memoizee.d.ts": "sha256:8e6c642afbe1023f4389e65d44a03b45d0f0ab68e49f5349fa4bac35f0f32edf",
+    "recipes/memoizee-promise-ttl/test/memo.test.ts": "sha256:17e3b77e58c21f0a31e15a6be12bcccef31f8594ee7a38b10b63cc6ff0cc92fc"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "mikroorm-sqlite-entities",
    "language": "typescript",
    "pinned": {
@@ -6126,6 +6311,33 @@
     "recipes/mitt-typed-events/recipe.yaml": "sha256:4de88d0e4a81f527546c6657f93e10e3ae40ef5ed039e8c64fa75243aa71c751",
     "recipes/mitt-typed-events/src/bus.ts": "sha256:ba1b1ade613c3835b9bab4a8aa542fc3ea6668fb560dc3b494fa3382b822a9d7",
     "recipes/mitt-typed-events/test/bus.test.ts": "sha256:e1d11169ce0361c945174ac60109706198f9e308c9c73d84dd2b2313ef6a9131"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "mjml-to-html",
+   "language": "typescript",
+   "pinned": {
+    "mjml": "5.4.1",
+    "@types/mjml": "5.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:14.445Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:9da8ffffba79610599bfdf02c2be6caf051a2e9084cde53506bf037b6ebab8d7",
+   "files": {
+    "recipes/mjml-to-html/package.json": "sha256:1562654f596df9482fed4dc059272187acd8a4dad95a79f302f764cbed059e42",
+    "recipes/mjml-to-html/recipe.yaml": "sha256:75dfa9c079dbbbeb7f1a7fdd5d41d2f7f2deca05fab6905dcc478566aee973cb",
+    "recipes/mjml-to-html/src/convert.ts": "sha256:a00648c8c3bda1e8b2cfe4ea4f0ff1135e9fa2f5e5ddd4104878dad2f65fe4b9",
+    "recipes/mjml-to-html/test/convert.test.ts": "sha256:1934f91063d9eec7d05171780ef0f2b8e5c38849c1024ba36680571d702d97a2"
    },
    "staleness": {
     "status": "unchecked",
@@ -6272,6 +6484,33 @@
    }
   },
   {
+   "id": "mustache-html-escape",
+   "language": "typescript",
+   "pinned": {
+    "mustache": "4.2.0",
+    "@types/mustache": "4.2.6",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:38.470Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:1816c298be3739ccd7c52849853d5ac2709b117abde029c62eac5dd66831c56b",
+   "files": {
+    "recipes/mustache-html-escape/package.json": "sha256:7a2ec2ab03449a3f9dc48dc301bef16ac6775679f872583f95548dd99a4eebca",
+    "recipes/mustache-html-escape/recipe.yaml": "sha256:5dc7303f78bee8d26c86f875a3fe28eb1581c9af4fd09bda158ee2a897de0159",
+    "recipes/mustache-html-escape/src/render.ts": "sha256:d957b44dfb632245cb880d17a23e1db0e8bab81f6635fb8539e08a61f1e265b3",
+    "recipes/mustache-html-escape/test/render.test.ts": "sha256:4607fd0a30c56db0d53e195fa6f58d8a8dfeb56a71e7e143a128453d40442fe2"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "nanoid-custom-alphabet",
    "language": "typescript",
    "pinned": {
@@ -6289,6 +6528,32 @@
     "recipes/nanoid-custom-alphabet/recipe.yaml": "sha256:86be7632b2fad783e9d9cb726804f5d7760ae24555f338c6963918804be4803e",
     "recipes/nanoid-custom-alphabet/src/ids.ts": "sha256:3e4e327675eccb254dcebb0caa74a5660757bcaea956544f690bdbc5a7a5217b",
     "recipes/nanoid-custom-alphabet/test/ids.test.ts": "sha256:93a6436418c6b40a51e3d787b41be3d2324b01bb98aa547701ccaa977ae6018b"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "nanostores-atom-computed",
+   "language": "typescript",
+   "pinned": {
+    "nanostores": "1.5.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:33.194Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:713bac831f08fa516cf13b827ee938cc341e9afb912e5be2efc738b783add367",
+   "files": {
+    "recipes/nanostores-atom-computed/package.json": "sha256:1b449146ebc62b7de8c4dce32d7d12cee891c1dc80f9c5586185ae4490a629b5",
+    "recipes/nanostores-atom-computed/recipe.yaml": "sha256:ececb867e3155c713b1c2b4415cff52a1412483a78f127bef0af95963f66bc7d",
+    "recipes/nanostores-atom-computed/src/store.ts": "sha256:4a31ced194316ba0d6d8b587ec3d93a5e10d73be147324b1cd1f45e90477d707",
+    "recipes/nanostores-atom-computed/test/store.test.ts": "sha256:9b0f8e87790b42bedb531850d6112a229e76232f040e6046cf6aefc66814ed90"
    },
    "staleness": {
     "status": "unchecked",
@@ -7257,6 +7522,32 @@
    }
   },
   {
+   "id": "pako-deflate-gzip",
+   "language": "typescript",
+   "pinned": {
+    "pako": "3.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:33.679Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:a5826af897b0b299047e6ccbae2574d65bb28843d9e63f977c9717c0187c04ff",
+   "files": {
+    "recipes/pako-deflate-gzip/package.json": "sha256:9f85b483f98b7184bc87677dd93d6ee7c0f2fdc0bed40256ff87c15046e5f3f9",
+    "recipes/pako-deflate-gzip/recipe.yaml": "sha256:8a5e816b8cd41d7cecc09247a6962607c01d0b780e3276d34a54c89a25d3922d",
+    "recipes/pako-deflate-gzip/src/codec.ts": "sha256:ca3067212680226c3f5be2f576490f169523bd14f197d3259255f7cd90735f91",
+    "recipes/pako-deflate-gzip/test/codec.test.ts": "sha256:9e6fd8344d14b010d58e00a80c9607cc42b6b0d9c38975cd164c16a462c351c4"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "pandas-openpyxl-excel-report",
    "language": "python",
    "pinned": {
@@ -7432,6 +7723,32 @@
     "recipes/pdf-lib-invoice/recipe.yaml": "sha256:0263a27a9a94810fc73cbc80e624257b728343626809269f47d527519e5de641",
     "recipes/pdf-lib-invoice/src/invoice.ts": "sha256:897dd0df98a0eb942e1fc165f7507baf532bee6ab1a745b9b71849cca717a898",
     "recipes/pdf-lib-invoice/test/invoice.test.ts": "sha256:9b1dee35959cbaaa3395aae8e6bdb7b632893907d05ab4da5a34c5e7be0c6f9c"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pdfkit-generate-pdf",
+   "language": "typescript",
+   "pinned": {
+    "pdfkit": "0.20.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:35.436Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:856c277712bd7ef50b6723c9a2ea1fb158956a3cfe9fbe800503f68d9b0e1efc",
+   "files": {
+    "recipes/pdfkit-generate-pdf/package.json": "sha256:81497f306e2e7d1de7493afc7a806a5ed4e65eca0351912d6dfe13fe9c065d71",
+    "recipes/pdfkit-generate-pdf/recipe.yaml": "sha256:4abe630d92498ebe286276fb19d409c35fee8fc93c475350f6f93870212848af",
+    "recipes/pdfkit-generate-pdf/src/pdf.ts": "sha256:3fd2eb30d8049b6502138c0e1cc89c7cb649359dc020649dafa4a86b5b91efbf",
+    "recipes/pdfkit-generate-pdf/test/pdf.test.ts": "sha256:4e459a57414d50ba28ce08ab3c2983bbacad4fc70104415ab5f07703240e11a5"
    },
    "staleness": {
     "status": "unchecked",
@@ -7631,6 +7948,33 @@
    }
   },
   {
+   "id": "pluralize-english",
+   "language": "typescript",
+   "pinned": {
+    "pluralize": "8.0.0",
+    "@types/pluralize": "0.0.33",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:40.110Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:d205aeaf08bcf784a84f6b465008b8a39ec292b20e65b8b42aff759e9537db6c",
+   "files": {
+    "recipes/pluralize-english/package.json": "sha256:0d8048293ee7de9d0d363c06835e78e88bccc6567f774ba1239f3a7a80c3e3b1",
+    "recipes/pluralize-english/recipe.yaml": "sha256:f97767c4c25914798fbb348772706b7165bc1e6580ce94f005ee709cadb7639d",
+    "recipes/pluralize-english/src/nouns.ts": "sha256:bb81afa7482e89a45632dad86f0b096f86e372dbe94d5702ce1b8590b497b6b0",
+    "recipes/pluralize-english/test/nouns.test.ts": "sha256:64a18ba68c020bc8a2ab90498cee88f4ebd4a50dcacc2914d6d68fafacb96f9d"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "polars-pandera-validation",
    "language": "python",
    "pinned": {
@@ -7776,6 +8120,32 @@
    }
   },
   {
+   "id": "pretty-ms-format",
+   "language": "typescript",
+   "pinned": {
+    "pretty-ms": "10.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:42.486Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:2393c2fa2f1ea7e4d35fd79aa1d2c36f4ad36d4bff8a51944ef415a63666ddb8",
+   "files": {
+    "recipes/pretty-ms-format/package.json": "sha256:3028f5187b6352ad855bbc3def234b3b6b06b7c635174c8c3031a0fe8b1ff75e",
+    "recipes/pretty-ms-format/recipe.yaml": "sha256:090891c6ba1769f165e25201970f9482086616d7742361de414a785f1e7d4e3f",
+    "recipes/pretty-ms-format/src/format.ts": "sha256:55584b13241a1ebe6c2f6bc14c06d220fa292b50f4e932dbb768921f56ec937a",
+    "recipes/pretty-ms-format/test/format.test.ts": "sha256:b0496b01dd1ef17b5931e2d77fad4cd109db277497f16a21bb6d3dbf2cc4ee83"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "prisma-sqlite-adapter",
    "language": "typescript",
    "pinned": {
@@ -7887,6 +8257,58 @@
     "recipes/protobufjs-proto-encode/src/codec.ts": "sha256:51f109f980e46dab980a3152bd16ad5e9d0a26c5a6eaa954b76daf7f0960909c",
     "recipes/protobufjs-proto-encode/src/person.proto": "sha256:cec4090e0fab9bcc0a29d40372c955abd1608f6deceeb306bb37dd0128ac5236",
     "recipes/protobufjs-proto-encode/test/codec.test.ts": "sha256:c0646b0bfde595528cda59a4d1260582e4007a53e63df31ad9c159d63a1d8f62"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "proxy-memoize-deep",
+   "language": "typescript",
+   "pinned": {
+    "proxy-memoize": "3.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:39.676Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:d3c081993c84b7b7bc43072334bfb1ca12ad2ade4f752f2262e218b819078f09",
+   "files": {
+    "recipes/proxy-memoize-deep/package.json": "sha256:79799c1bb7ea01eaa3728574b70cd880063b1024ce75e27a319f3427d054bfc7",
+    "recipes/proxy-memoize-deep/recipe.yaml": "sha256:9231507e7cf891f6d004b669d02c465979dea11489bc98c39bc007be2e091196",
+    "recipes/proxy-memoize-deep/src/selectors.ts": "sha256:52efc103c19061c423dac39b7c3d718fc2dc03dc0b90561aaf6600da0a7a1f04",
+    "recipes/proxy-memoize-deep/test/selectors.test.ts": "sha256:a464d06493b54c7e5ea9c15aebc1b9d857b134b717d997eb7ac4ff0f5596d68a"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "pug-compile-locals",
+   "language": "typescript",
+   "pinned": {
+    "pug": "3.0.4",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:37.851Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:5902747c148591d315245e5b64a18e15457e96fc36c2f512cb201b391fab4898",
+   "files": {
+    "recipes/pug-compile-locals/package.json": "sha256:75f8671604060b305b030d6e7d01a3f759c11c546adf9e6f95add14012a3b578",
+    "recipes/pug-compile-locals/recipe.yaml": "sha256:28a94a38374dd83b3494fd6d4488911625b4590a7d8ccae2c62d117768d681d8",
+    "recipes/pug-compile-locals/src/render.ts": "sha256:3971e79ea72924a80659f95e40b3779e0704a5c63e7ccfb8c5499ac9ae918f81",
+    "recipes/pug-compile-locals/test/render.test.ts": "sha256:e911d2b21163222fb088a4f64a06edb21d3c5782a7d259c46e6ac2da0c108724"
    },
    "staleness": {
     "status": "unchecked",
@@ -8726,6 +9148,32 @@
    }
   },
   {
+   "id": "reselect-create-selector",
+   "language": "typescript",
+   "pinned": {
+    "reselect": "5.3.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:55.085Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:1f2e126d854d76d169eb2254978e53323a7f79b58e9a2a389579a2120e392c01",
+   "files": {
+    "recipes/reselect-create-selector/package.json": "sha256:42dbc46b7adf2725db91e9ba3cd8ff62528d6c9d44af3cc42ccc4ab4855eeb8c",
+    "recipes/reselect-create-selector/recipe.yaml": "sha256:232de56f50a831d823910278fff4ed3397a4ff4da532bd8358c4680415ee1ca6",
+    "recipes/reselect-create-selector/src/selectors.ts": "sha256:aa0835b2f8859f85540e16d56612c07dde2ad1cafc27084e42e05a5ffa2dc83d",
+    "recipes/reselect-create-selector/test/selectors.test.ts": "sha256:82ab2d0e81e34a02e36b522a81cbb284d53ec61111bd9e1413a23c21c2ebf5ef"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "resend-email-msw",
    "language": "typescript",
    "pinned": {
@@ -8883,6 +9331,32 @@
     "recipes/sass-compile-string-importer/recipe.yaml": "sha256:c867e0b9cf09ac962a4ab78f89f47aacfb4f862f2dee8ca280dafa4187053518",
     "recipes/sass-compile-string-importer/src/compiler.ts": "sha256:8656b89be0bfa86191e24da412b0375692d4f7ea25dedfbb5a4227a35054cc83",
     "recipes/sass-compile-string-importer/test/compiler.test.ts": "sha256:f8abb8f7bb51a2f501633e03250da4452ffbf6f0d6f5dcb889340980cefe4c02"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "scrypt-js-kdf",
+   "language": "typescript",
+   "pinned": {
+    "scrypt-js": "3.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:57.128Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:d29f8ac30cd72ea951e58e3a2adbcb7226a65aeffc1fc53495c78047d8a6cdff",
+   "files": {
+    "recipes/scrypt-js-kdf/package.json": "sha256:037e34a23266c1c6dd2d32555c1d47992b8ba4a6ed188abd862aa39e4461db11",
+    "recipes/scrypt-js-kdf/recipe.yaml": "sha256:d7c17bae309a947e519a4f2dd4b83fa421d8b4c3be7d95cb0187fc7c648e8ef8",
+    "recipes/scrypt-js-kdf/src/kdf.ts": "sha256:b9a6d12a76510424de10a2fb3d1eb3f0e777e1bd068f50935db0ee549d1edde8",
+    "recipes/scrypt-js-kdf/test/kdf.test.ts": "sha256:036dfa63718dd34c2fbf4e190fae4a892ab6b7d54c0bf024716c342bbd1eae8f"
    },
    "staleness": {
     "status": "unchecked",
@@ -10033,6 +10507,32 @@
    }
   },
   {
+   "id": "throttle-debounce-fns",
+   "language": "typescript",
+   "pinned": {
+    "throttle-debounce": "5.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:56.562Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:22a3058ba7aa2085374aff287f76cabeed732179abbf98df0e6e151120f9a8bb",
+   "files": {
+    "recipes/throttle-debounce-fns/package.json": "sha256:01eaddf668a0e7da86e8a713780e5979d317b5918f2572bb314c05ba8e6b8a5f",
+    "recipes/throttle-debounce-fns/recipe.yaml": "sha256:98317c87a4e88d18b3582a67c0e988b578fa615dbed34f4fbe8b33dac9b8f5b6",
+    "recipes/throttle-debounce-fns/src/counter.ts": "sha256:4b719fa0ecaa6b3bce141cbcbe1494eb3bf0265b8779294ea245f542378492f8",
+    "recipes/throttle-debounce-fns/test/counter.test.ts": "sha256:e6dea72979bedd2830b40a93d6b5be1743f2ca3a49f1fa16bbed269429ffadbb"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "tomlkit-comment-preserve",
    "language": "python",
    "pinned": {
@@ -10278,6 +10778,34 @@
     "recipes/turndown-html-to-markdown/recipe.yaml": "sha256:6e31f7d056ce476af9621d46548a7bc0deedf789995f97077bac6e912b058a66",
     "recipes/turndown-html-to-markdown/src/convert.ts": "sha256:df3b2328745a877f0425e8840d6e4c6d91053734215a42cf63d736e90c0159b8",
     "recipes/turndown-html-to-markdown/test/convert.test.ts": "sha256:d8ee29ae298267c7f45d7896307f68b4d5b80161d06b66a6eb8d28a25c8c1e01"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "tweetnacl-sign-box",
+   "language": "typescript",
+   "pinned": {
+    "tweetnacl": "1.0.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:18:58.022Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:cedae0be3b54b8b8a92b5b2a9aeedb7b5aab22bc0030a84400dcf0daf95a9278",
+   "files": {
+    "recipes/tweetnacl-sign-box/package.json": "sha256:a5f79749964856bbc8fb29930a029c5615bf6b753711dd114cd47e9f56516d7c",
+    "recipes/tweetnacl-sign-box/recipe.yaml": "sha256:84584e84ed64c04af93da664fb4f460fb0ff7b178ea3fc6f30a2454697f735ca",
+    "recipes/tweetnacl-sign-box/src/box.ts": "sha256:801d4d1cd0b5b0b91009fca9216102a7841930eb1122d5c1fb1d0deda8872f6c",
+    "recipes/tweetnacl-sign-box/src/sign.ts": "sha256:0c232f70294b29f16615f2511b3d6dc689976e2911685514ac4521e9fed858c4",
+    "recipes/tweetnacl-sign-box/test/box.test.ts": "sha256:21daac67c4b097cdb0d17a91be93d74df7ee133f5e1ee184e7c2e06e6ebb3db3",
+    "recipes/tweetnacl-sign-box/test/sign.test.ts": "sha256:8df50b520fc14bb9683398784bebd1f7e8c794c6ed6d8f317b852181eef4d018"
    },
    "staleness": {
     "status": "unchecked",
@@ -10915,6 +11443,33 @@
     "recipes/yargs-zod-cli/recipe.yaml": "sha256:434cc11fcef03dd49c5bd004309cd5299e8ab7ddee430ca3b730a6c92bb37299",
     "recipes/yargs-zod-cli/src/cli.ts": "sha256:29ffbe6113718f10de74cbe43c6ea8f98af1e39c02c7e2e3fce01bcda1e9ef15",
     "recipes/yargs-zod-cli/test/cli.test.ts": "sha256:155f8f46c458a2b9c27e5dac5b4d380548f0f00c158e642cb59d9166a3afdacd"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "yazl-yauzl-stream-zip",
+   "language": "typescript",
+   "pinned": {
+    "yazl": "3.3.1",
+    "yauzl": "3.4.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-16T02:19:01.578Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/38839686104",
+   "recipe_hash": "sha256:4011ad8426fd81f2fe20afea4cb1a9113e180f2e4df1a62ac41c389d090e5f9d",
+   "files": {
+    "recipes/yazl-yauzl-stream-zip/package.json": "sha256:b1a210fff2c7f887d9518e29186dcfb2c19b0e8803fecdd5aedf52cdfda2c54f",
+    "recipes/yazl-yauzl-stream-zip/recipe.yaml": "sha256:85ee101845298b1f9ed2008a7d5787a15ea404cb0593f13bf5f18afaabc097bf",
+    "recipes/yazl-yauzl-stream-zip/src/zip.ts": "sha256:4ceed9903f477b62ae623371de87f5344153baa39ee305536956039547d65592",
+    "recipes/yazl-yauzl-stream-zip/test/zip.test.ts": "sha256:024f10dc6fa836d840a9dc8ab277ec1552586d0a9949b1c60118c7caef5d3568"
    },
    "staleness": {
     "status": "unchecked",

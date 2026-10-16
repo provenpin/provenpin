@@ -1,0 +1,35 @@
+{
+  "id": "adm-zip-roundtrip",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:14.940Z",
+  "last_passed_at": "2026-10-16T02:18:14.940Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1920,
+    "test": 391
+  },
+  "pinned": {
+    "adm-zip": "0.6.1",
+    "@types/adm-zip": "0.6.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:e601d0ffad2e77c4e2994d1ecd039b8171ab6fc789d12dbdf3339b58472b0fbb",
+  "files": {
+    "recipes/adm-zip-roundtrip/package.json": "sha256:ed8d19e98bb23cb52a82f52599bc547bdb731680c4b27fcff3b1cd5b1c691c35",
+    "recipes/adm-zip-roundtrip/recipe.yaml": "sha256:fa76fe9b142dde4def7d738ded0f818c46eb8fcb052d0bf901fc47f183a069d7",
+    "recipes/adm-zip-roundtrip/src/archive.ts": "sha256:a743368d6d79ddbda6af43d55b31cda781f250d4dc0898835f55712a47c1f579",
+    "recipes/adm-zip-roundtrip/test/archive.test.ts": "sha256:92ae5748737d0d0495506170088406f0cfe2ccad55fd6459e1996152df06277b"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips string entries through a buffer\nok 1 - roundtrips string entries through a buffer\n  ---\n  duration_ms: 16.498434\n  type: 'test'\n  ...\n# Subtest: stores folder entries and raw buffers\nok 2 - stores folder entries and raw buffers\n  ---\n  duration_ms: 1.241645\n  type: 'test'\n  ...\n# Subtest: writes a zip to a temp path and reads it back\nok 3 - writes a zip to a temp path and reads it back\n  ---\n  duration_ms: 12.815347\n  type: 'test'\n  ...\n# Subtest: throws for a missing entry\nok 4 - throws for a missing entry\n  ---\n  duration_ms: 0.779858\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 246.60256\n"
+}

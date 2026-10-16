@@ -1,0 +1,35 @@
+{
+  "id": "lunr-search-index",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:12.908Z",
+  "last_passed_at": "2026-10-16T02:18:12.908Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2036,
+    "test": 385
+  },
+  "pinned": {
+    "lunr": "2.3.9",
+    "@types/lunr": "2.3.7",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:90eba80791867f8a4e4dfc1f88ba2d767f1ee071ecc5853710a8067790b4686a",
+  "files": {
+    "recipes/lunr-search-index/package.json": "sha256:eb9213d4ac98baa3486459cf2957e20a54a7cf38c943519c589c6d3e65b2e504",
+    "recipes/lunr-search-index/recipe.yaml": "sha256:164bb43799064d55ce9702ccd37828020cb47c2d4db29601c6d76d80bcf2fb26",
+    "recipes/lunr-search-index/src/search.ts": "sha256:616cfde710860008a1e9c80c77bc8f6ea82c8b84865c31d26c26048bc8c68e5b",
+    "recipes/lunr-search-index/test/search.test.ts": "sha256:7e3e6182759b6b480feb43d886c079ed4c78de2dee7b5ed146cee6b14069a8c0"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: finds documents by term\nok 1 - finds documents by term\n  ---\n  duration_ms: 5.812358\n  type: 'test'\n  ...\n# Subtest: returns an empty result set for unknown terms\nok 2 - returns an empty result set for unknown terms\n  ---\n  duration_ms: 1.277669\n  type: 'test'\n  ...\n# Subtest: supports field-scoped queries\nok 3 - supports field-scoped queries\n  ---\n  duration_ms: 0.934707\n  type: 'test'\n  ...\n# Subtest: boosts title matches over body matches\nok 4 - boosts title matches over body matches\n  ---\n  duration_ms: 0.982327\n  type: 'test'\n  ...\n# Subtest: round-trips an index through toJSON and lunr.Index.load\nok 5 - round-trips an index through toJSON and lunr.Index.load\n  ---\n  duration_ms: 1.94686\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 234.793863\n"
+}

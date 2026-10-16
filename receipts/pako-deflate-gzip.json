@@ -1,0 +1,34 @@
+{
+  "id": "pako-deflate-gzip",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:33.679Z",
+  "last_passed_at": "2026-10-16T02:18:33.679Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1530,
+    "test": 373
+  },
+  "pinned": {
+    "pako": "3.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:a5826af897b0b299047e6ccbae2574d65bb28843d9e63f977c9717c0187c04ff",
+  "files": {
+    "recipes/pako-deflate-gzip/package.json": "sha256:9f85b483f98b7184bc87677dd93d6ee7c0f2fdc0bed40256ff87c15046e5f3f9",
+    "recipes/pako-deflate-gzip/recipe.yaml": "sha256:8a5e816b8cd41d7cecc09247a6962607c01d0b780e3276d34a54c89a25d3922d",
+    "recipes/pako-deflate-gzip/src/codec.ts": "sha256:ca3067212680226c3f5be2f576490f169523bd14f197d3259255f7cd90735f91",
+    "recipes/pako-deflate-gzip/test/codec.test.ts": "sha256:9e6fd8344d14b010d58e00a80c9607cc42b6b0d9c38975cd164c16a462c351c4"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: deflate/inflate roundtrips a Uint8Array\nok 1 - deflate/inflate roundtrips a Uint8Array\n  ---\n  duration_ms: 6.76314\n  type: 'test'\n  ...\n# Subtest: deflate/inflate roundtrips a string\nok 2 - deflate/inflate roundtrips a string\n  ---\n  duration_ms: 1.743016\n  type: 'test'\n  ...\n# Subtest: gzip/ungzip roundtrips a string\nok 3 - gzip/ungzip roundtrips a string\n  ---\n  duration_ms: 1.496103\n  type: 'test'\n  ...\n# Subtest: compressed output is smaller for repetitive input\nok 4 - compressed output is smaller for repetitive input\n  ---\n  duration_ms: 2.148886\n  type: 'test'\n  ...\n# Subtest: deflate honors the level option\nok 5 - deflate honors the level option\n  ---\n  duration_ms: 4.619294\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 225.563105\n"
+}

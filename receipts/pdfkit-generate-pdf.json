@@ -1,0 +1,34 @@
+{
+  "id": "pdfkit-generate-pdf",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:35.436Z",
+  "last_passed_at": "2026-10-16T02:18:35.436Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2336,
+    "test": 603
+  },
+  "pinned": {
+    "pdfkit": "0.20.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:856c277712bd7ef50b6723c9a2ea1fb158956a3cfe9fbe800503f68d9b0e1efc",
+  "files": {
+    "recipes/pdfkit-generate-pdf/package.json": "sha256:81497f306e2e7d1de7493afc7a806a5ed4e65eca0351912d6dfe13fe9c065d71",
+    "recipes/pdfkit-generate-pdf/recipe.yaml": "sha256:4abe630d92498ebe286276fb19d409c35fee8fc93c475350f6f93870212848af",
+    "recipes/pdfkit-generate-pdf/src/pdf.ts": "sha256:3fd2eb30d8049b6502138c0e1cc89c7cb649359dc020649dafa4a86b5b91efbf",
+    "recipes/pdfkit-generate-pdf/test/pdf.test.ts": "sha256:4e459a57414d50ba28ce08ab3c2983bbacad4fc70104415ab5f07703240e11a5"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates a PDF starting with %PDF and a non-trivial length\nok 1 - generates a PDF starting with %PDF and a non-trivial length\n  ---\n  duration_ms: 15.253965\n  type: 'test'\n  ...\n# Subtest: writes a valid EOF marker\nok 2 - writes a valid EOF marker\n  ---\n  duration_ms: 3.492843\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 454.489665\n"
+}

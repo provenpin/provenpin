@@ -1,0 +1,34 @@
+{
+  "id": "pretty-ms-format",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:42.486Z",
+  "last_passed_at": "2026-10-16T02:18:42.486Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3289,
+    "test": 377
+  },
+  "pinned": {
+    "pretty-ms": "10.0.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:2393c2fa2f1ea7e4d35fd79aa1d2c36f4ad36d4bff8a51944ef415a63666ddb8",
+  "files": {
+    "recipes/pretty-ms-format/package.json": "sha256:3028f5187b6352ad855bbc3def234b3b6b06b7c635174c8c3031a0fe8b1ff75e",
+    "recipes/pretty-ms-format/recipe.yaml": "sha256:090891c6ba1769f165e25201970f9482086616d7742361de414a785f1e7d4e3f",
+    "recipes/pretty-ms-format/src/format.ts": "sha256:55584b13241a1ebe6c2f6bc14c06d220fa292b50f4e932dbb768921f56ec937a",
+    "recipes/pretty-ms-format/test/format.test.ts": "sha256:b0496b01dd1ef17b5931e2d77fad4cd109db277497f16a21bb6d3dbf2cc4ee83"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: formats zero, sub-second and negative durations\nok 1 - formats zero, sub-second and negative durations\n  ---\n  duration_ms: 2.014218\n  type: 'test'\n  ...\n# Subtest: formats multi-hour durations\nok 2 - formats multi-hour durations\n  ---\n  duration_ms: 0.167513\n  type: 'test'\n  ...\n# Subtest: supports compact and verbose styles\nok 3 - supports compact and verbose styles\n  ---\n  duration_ms: 0.273231\n  type: 'test'\n  ...\n# Subtest: supports colon notation\nok 4 - supports colon notation\n  ---\n  duration_ms: 0.270776\n  type: 'test'\n  ...\n# Subtest: supports separate milliseconds and precision options\nok 5 - supports separate milliseconds and precision options\n  ---\n  duration_ms: 0.32633\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 217.285166\n"
+}

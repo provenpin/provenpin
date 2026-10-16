@@ -1,0 +1,34 @@
+{
+  "id": "chalk-ansi-styles",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:13.517Z",
+  "last_passed_at": "2026-10-16T02:18:13.517Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1591,
+    "test": 214
+  },
+  "pinned": {
+    "chalk": "6.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:10d771f6738ae160b0f7513f39e4ecdf2d90bc985d9184914517b01620b56ecf",
+  "files": {
+    "recipes/chalk-ansi-styles/package.json": "sha256:ec1c45ff5a9b8fd1def29932fd2eb2b0999d16972f81ff78f2dee5d8976e70ae",
+    "recipes/chalk-ansi-styles/recipe.yaml": "sha256:e8ae76e38469338e9d97e8325636b51386d517a257c88ee1e11945477ee01b81",
+    "recipes/chalk-ansi-styles/src/styles.ts": "sha256:d41689d71c479fe97975f7cc3851a814f01ac0dc647a4c75a49fbd3209e57d29",
+    "recipes/chalk-ansi-styles/test/styles.test.ts": "sha256:d30444ef466de832ff67922ccd51e9f2e55a57287ebc1077bf8f5edfa73f4f20"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: nested modifiers emit bold, red and blue-background escapes\nok 1 - nested modifiers emit bold, red and blue-background escapes\n  ---\n  duration_ms: 0.688678\n  type: 'test'\n  ...\n# Subtest: level 0 disables styling so non-TTY output is deterministic\nok 2 - level 0 disables styling so non-TTY output is deterministic\n  ---\n  duration_ms: 0.138128\n  type: 'test'\n  ...\n# Subtest: nested styles keep inner escapes and outer emphasis\nok 3 - nested styles keep inner escapes and outer emphasis\n  ---\n  duration_ms: 0.141754\n  type: 'test'\n  ...\n# Subtest: status line combines bold red and blue background\nok 4 - status line combines bold red and blue background\n  ---\n  duration_ms: 0.074582\n  type: 'test'\n  ...\n# Subtest: success badge combines background and foreground\nok 5 - success badge combines background and foreground\n  ---\n  duration_ms: 0.17292\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 124.545724\n"
+}

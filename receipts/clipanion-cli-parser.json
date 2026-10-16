@@ -1,0 +1,34 @@
+{
+  "id": "clipanion-cli-parser",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:13.309Z",
+  "last_passed_at": "2026-10-16T02:18:13.309Z",
+  "tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1697,
+    "test": 293
+  },
+  "pinned": {
+    "clipanion": "3.2.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:20d79f433383d18ba2fa75854d20448a72198f58313365340f25b29757d99327",
+  "files": {
+    "recipes/clipanion-cli-parser/package.json": "sha256:b9e98bbb910d86cbbdde2cfcffac649a04485013394a9a1039f50d89a3cd3852",
+    "recipes/clipanion-cli-parser/recipe.yaml": "sha256:99bae13d4a7ff2ef93617d45184006f9649efd8945c873ecd93f7350881ab9c7",
+    "recipes/clipanion-cli-parser/src/cli.ts": "sha256:149f0e2c0c3a18567548b2201401dc37271fa3a71a481dfc6830e2fa6d053a96",
+    "recipes/clipanion-cli-parser/test/cli.test.ts": "sha256:c788f43c09f0fd92dbbc84d04042b37f0816976cfca28436025c6c986909a6f9"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: prints command help and exits 0\nok 5 - prints command help and exits 0\n  ---\n  duration_ms: 1.225372\n  type: 'test'\n  ...\n# Subtest: prints top-level help listing commands\nok 6 - prints top-level help listing commands\n  ---\n  duration_ms: 6.095183\n  type: 'test'\n  ...\n# Subtest: returns exit code 1 for a usage error\nok 7 - returns exit code 1 for a usage error\n  ---\n  duration_ms: 0.813079\n  type: 'test'\n  ...\n# Subtest: returns exit code 1 for an unknown command\nok 8 - returns exit code 1 for an unknown command\n  ---\n  duration_ms: 0.523752\n  type: 'test'\n  ...\n# Subtest: prints the binary version\nok 9 - prints the binary version\n  ---\n  duration_ms: 0.591304\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 187.639246\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "scrypt-js-kdf",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:57.128Z",
+  "last_passed_at": "2026-10-16T02:18:57.128Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2009,
+    "test": 456
+  },
+  "pinned": {
+    "scrypt-js": "3.0.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d29f8ac30cd72ea951e58e3a2adbcb7226a65aeffc1fc53495c78047d8a6cdff",
+  "files": {
+    "recipes/scrypt-js-kdf/package.json": "sha256:037e34a23266c1c6dd2d32555c1d47992b8ba4a6ed188abd862aa39e4461db11",
+    "recipes/scrypt-js-kdf/recipe.yaml": "sha256:d7c17bae309a947e519a4f2dd4b83fa421d8b4c3be7d95cb0187fc7c648e8ef8",
+    "recipes/scrypt-js-kdf/src/kdf.ts": "sha256:b9a6d12a76510424de10a2fb3d1eb3f0e777e1bd068f50935db0ee549d1edde8",
+    "recipes/scrypt-js-kdf/test/kdf.test.ts": "sha256:036dfa63718dd34c2fbf4e190fae4a892ab6b7d54c0bf024716c342bbd1eae8f"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sync and async outputs are identical and deterministic\nok 1 - sync and async outputs are identical and deterministic\n  ---\n  duration_ms: 33.025255\n  type: 'test'\n  ...\n# Subtest: different salts produce different keys\nok 2 - different salts produce different keys\n  ---\n  duration_ms: 8.902088\n  type: 'test'\n  ...\n# Subtest: higher cost params still return a stable hex key\nok 3 - higher cost params still return a stable hex key\n  ---\n  duration_ms: 195.321595\n  type: 'test'\n  ...\n# Subtest: password changes the derived key\nok 4 - password changes the derived key\n  ---\n  duration_ms: 8.169241\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 363.972552\n"
+}

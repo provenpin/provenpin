@@ -1,0 +1,35 @@
+{
+  "id": "pluralize-english",
+  "status": "passed",
+  "ran_at": "2026-10-16T02:18:40.110Z",
+  "last_passed_at": "2026-10-16T02:18:40.110Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1775,
+    "test": 284
+  },
+  "pinned": {
+    "pluralize": "8.0.0",
+    "@types/pluralize": "0.0.33",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d205aeaf08bcf784a84f6b465008b8a39ec292b20e65b8b42aff759e9537db6c",
+  "files": {
+    "recipes/pluralize-english/package.json": "sha256:0d8048293ee7de9d0d363c06835e78e88bccc6567f774ba1239f3a7a80c3e3b1",
+    "recipes/pluralize-english/recipe.yaml": "sha256:f97767c4c25914798fbb348772706b7165bc1e6580ce94f005ee709cadb7639d",
+    "recipes/pluralize-english/src/nouns.ts": "sha256:bb81afa7482e89a45632dad86f0b096f86e372dbe94d5702ce1b8590b497b6b0",
+    "recipes/pluralize-english/test/nouns.test.ts": "sha256:64a18ba68c020bc8a2ab90498cee88f4ebd4a50dcacc2914d6d68fafacb96f9d"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38839686104"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: handles irregular nouns\nok 3 - handles irregular nouns\n  ---\n  duration_ms: 0.317479\n  type: 'test'\n  ...\n# Subtest: classifies plural and singular forms\nok 4 - classifies plural and singular forms\n  ---\n  duration_ms: 0.519848\n  type: 'test'\n  ...\n# Subtest: applies a custom irregular rule\nok 5 - applies a custom irregular rule\n  ---\n  duration_ms: 0.140287\n  type: 'test'\n  ...\n# Subtest: applies a custom plural rule\nok 6 - applies a custom plural rule\n  ---\n  duration_ms: 0.102872\n  type: 'test'\n  ...\n# Subtest: pluralizes according to count including 0 and 1\nok 7 - pluralizes according to count including 0 and 1\n  ---\n  duration_ms: 0.232754\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 166.996008\n"
+}
