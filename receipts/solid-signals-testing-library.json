@@ -1,15 +1,15 @@
 {
   "id": "solid-signals-testing-library",
   "status": "passed",
-  "ran_at": "2026-10-16T12:56:11.527Z",
-  "last_passed_at": "2026-10-16T12:56:11.527Z",
+  "ran_at": "2026-10-16T18:51:00.199Z",
+  "last_passed_at": "2026-10-16T18:51:00.199Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 9809,
-    "test": 1526
+    "setup": 8930,
+    "test": 1989
   },
   "pinned": {
     "solid-js": "1.9.17",
@@ -33,8 +33,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38903329434"
+    "runner": "github-actions 38949646724"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-solid-signals-testing-library-tQhMqj\u001b[39m\n\n \u001b[32m✓\u001b[39m test/Search.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 198\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:56:21\n\u001b[2m   Duration \u001b[22m 986ms\u001b[2m (environment 51%, tests 22%, transform 19%, import 8%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-solid-signals-testing-library-tQhMqj/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-solid-signals-testing-library-YmxkSA\u001b[39m\n\n \u001b[32m✓\u001b[39m test/Search.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 262\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:51:09\n\u001b[2m   Duration \u001b[22m 1.32s\u001b[2m (environment 51%, tests 22%, transform 18%, import 9%)\u001b[22m\n\nJSON report written to /tmp/pp-solid-signals-testing-library-YmxkSA/test-report.json\n"
 }

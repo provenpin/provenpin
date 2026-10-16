@@ -1,15 +1,15 @@
 {
   "id": "tanstack-virtual-core-window",
   "status": "passed",
-  "ran_at": "2026-10-16T12:56:42.723Z",
-  "last_passed_at": "2026-10-16T12:56:42.723Z",
+  "ran_at": "2026-10-16T18:51:27.538Z",
+  "last_passed_at": "2026-10-16T18:51:27.538Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1846,
-    "test": 454
+    "setup": 1708,
+    "test": 273
   },
   "pinned": {
     "@tanstack/virtual-core": "3.19.5",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38903329434"
+    "runner": "github-actions 38949646724"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: computes a window of visible indexes near the top\nok 1 - computes a window of visible indexes near the top\n  ---\n  duration_ms: 4.565075\n  type: 'test'\n  ...\n# Subtest: total size scales with count and estimate\nok 2 - total size scales with count and estimate\n  ---\n  duration_ms: 0.621792\n  type: 'test'\n  ...\n# Subtest: defaultRangeExtractor expands overscan\nok 3 - defaultRangeExtractor expands overscan\n  ---\n  duration_ms: 0.70098\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 290.749257\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: computes a window of visible indexes near the top\nok 1 - computes a window of visible indexes near the top\n  ---\n  duration_ms: 3.151815\n  type: 'test'\n  ...\n# Subtest: total size scales with count and estimate\nok 2 - total size scales with count and estimate\n  ---\n  duration_ms: 0.44404\n  type: 'test'\n  ...\n# Subtest: defaultRangeExtractor expands overscan\nok 3 - defaultRangeExtractor expands overscan\n  ---\n  duration_ms: 0.500035\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 162.040792\n"
 }
