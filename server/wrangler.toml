@@ -40,9 +40,9 @@ binding = "USAGE_COUNTER"
 dataset = "provenpin_real_usage"
 # Optional, for "sessions with 2+ real calls": npx wrangler kv namespace create USAGE_SESSIONS
 # and npx wrangler secret put USAGE_COUNTER_SALT (any random string).
-# [[kv_namespaces]]
-# binding = "USAGE_SESSIONS"
-# id = "<namespace id>"
+[[kv_namespaces]]
+binding = "USAGE_SESSIONS"
+id = "8a333c2d5edd432d9bf6bd60365c7acc"
 
 [observability]
 enabled = true
