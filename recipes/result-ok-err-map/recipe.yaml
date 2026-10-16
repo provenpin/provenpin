@@ -1,0 +1,18 @@
+id: result-ok-err-map
+title: "result Ok / Err map and and_then error handling without exceptions"
+summary: "Railway-oriented pipelines with the result library: chain fallible steps with map, map_err and and_then, recover with or_else, and turn exceptions into Err values via as_result."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [result]
+tags: [error-handling, functional, result-type, no-exceptions]
+pinned:
+  result: "0.17.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - pipeline.py
+  - tests/test_pipeline.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

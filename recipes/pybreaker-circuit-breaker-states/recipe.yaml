@@ -1,0 +1,18 @@
+id: pybreaker-circuit-breaker-states
+title: "pybreaker circuit breaker closed, open and half-open transitions"
+summary: "A payment service guarded by a pybreaker CircuitBreaker, with offline tests for tripping on failures, open-state short-circuiting, half-open trial calls, success thresholds and excluded business exceptions."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pybreaker]
+tags: [resilience, circuit-breaker, testing]
+pinned:
+  pybreaker: "1.4.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - breaker.py
+  - tests/test_breaker.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

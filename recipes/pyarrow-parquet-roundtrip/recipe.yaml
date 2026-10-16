@@ -1,0 +1,18 @@
+id: pyarrow-parquet-roundtrip
+title: "PyArrow Table to Parquet bytes roundtrip with schema and compression"
+summary: "Serialize a PyArrow Table to Parquet bytes in memory and read it back, checking schema, nulls, timezone, metadata and compression codec."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pyarrow]
+tags: [dataframe, parquet, serialization, columnar]
+pinned:
+  pyarrow: "26.0.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - parquet_roundtrip.py
+  - tests/test_parquet_roundtrip.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

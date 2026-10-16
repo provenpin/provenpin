@@ -1,0 +1,19 @@
+id: marshmallow-oneofschema-polymorphic
+title: "marshmallow-oneofschema polymorphic nested schemas"
+summary: "A OneOfSchema discriminated union over nested dataclass schemas that loads and dumps polymorphic payloads, with tests covering type dispatch and its sharp edges."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [marshmallow, marshmallow-oneofschema, pytest]
+tags: [serialization, validation, polymorphism]
+pinned:
+  marshmallow: "4.3.1"
+  marshmallow-oneofschema: "3.2.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - schemas.py
+  - tests/test_schemas.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

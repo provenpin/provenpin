@@ -1,0 +1,18 @@
+id: icalendar-event-rrule
+title: "icalendar Event with RRULE, DTSTART and timezone-aware dt"
+summary: "Build RFC 5545 VEVENTs with icalendar: timezone-aware DTSTART, a DAILY RRULE, a UTC UNTIL and an embedded VTIMEZONE, all tested offline with pytest."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [icalendar]
+tags: [calendar, timezone, rfc5545, datetime]
+pinned:
+  icalendar: "7.3.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - events.py
+  - tests/test_events.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

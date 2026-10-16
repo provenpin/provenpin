@@ -1,0 +1,18 @@
+id: rapidfuzz-fuzzy-match
+title: "rapidfuzz extractOne and scorers for fuzzy string matching"
+summary: "Pick the best candidate with process.extractOne, control matching with WRatio, partial and token scorers, and normalize messy input with utils.default_process."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [rapidfuzz]
+tags: [fuzzy-matching, string-similarity, search]
+pinned:
+  rapidfuzz: "3.14.6"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - matcher.py
+  - tests/test_matcher.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

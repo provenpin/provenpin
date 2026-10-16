@@ -1,0 +1,19 @@
+id: returns-maybe-ioresult
+title: "returns Maybe and IOResult railway composition with map and bind"
+summary: "Railway-style composition over returns Maybe and IOResult: map versus bind, short-circuiting Nothing, maybe and bind_optional, impure_safe failures and IO-boxed unwrap, all tested offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [returns]
+tags: [functional, error-handling, maybe, ioresult]
+pinned:
+  returns: "0.29.0"
+  typing-extensions: "4.16.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - maybe_ioresult.py
+  - tests/test_maybe_ioresult.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

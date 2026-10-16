@@ -1,0 +1,18 @@
+id: chardet-charset-detect
+title: "chardet confidence-based charset detection"
+summary: "Detect and decode Latin-1, UTF-8 and Shift-JIS byte samples with chardet, handling low-confidence misdetection, the CP932 superset and BOM or binary edge cases."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [chardet]
+tags: [text-encoding, decoding, unicode]
+pinned:
+  chardet: "7.6.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - detect.py
+  - tests/test_detect.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

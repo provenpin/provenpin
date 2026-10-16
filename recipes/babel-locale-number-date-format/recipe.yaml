@@ -1,0 +1,18 @@
+id: babel-locale-number-date-format
+title: "Babel locale-aware number, currency and date formatting"
+summary: "Format and parse numbers, currency and dates per locale with Babel, handling non-breaking spaces, currency-specific fraction digits and timezone conversion, all offline under pytest."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [babel]
+tags: [i18n, formatting, l10n]
+pinned:
+  babel: "2.18.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - money.py
+  - tests/test_money.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

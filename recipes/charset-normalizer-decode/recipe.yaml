@@ -1,0 +1,18 @@
+id: charset-normalizer-decode
+title: "charset-normalizer detecting and decoding mixed-encoding bytes"
+summary: "Decode byte samples that each use a different encoding with charset-normalizer, surfacing ambiguity, BOM handling and the short-sample confidence penalty."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [charset-normalizer]
+tags: [text-encoding, decoding, unicode]
+pinned:
+  charset-normalizer: "3.5.2"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - decode.py
+  - tests/test_decode.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

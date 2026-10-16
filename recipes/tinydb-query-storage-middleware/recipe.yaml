@@ -1,0 +1,18 @@
+id: tinydb-query-storage-middleware
+title: "TinyDB queries with MemoryStorage and CachingMiddleware"
+summary: "A TinyDB table backed by MemoryStorage and CachingMiddleware, with where/Query lookups, buffered writes that only flush at a cache size, and offline tests that inspect the cache."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [tinydb]
+tags: [storage, caching, testing]
+pinned:
+  tinydb: "4.9.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - store.py
+  - tests/test_store.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

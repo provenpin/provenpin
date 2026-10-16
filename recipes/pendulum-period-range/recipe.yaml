@@ -1,0 +1,18 @@
+id: pendulum-period-range
+title: "pendulum Interval ranges and DateTime timezone conversion"
+summary: "Build day and month ranges with pendulum Interval (Period in pendulum 2), convert the same instant between timezones, and see how DST and DateTime subtraction behave, tested fully offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pendulum]
+tags: [dates, timezones, scheduling]
+pinned:
+  pendulum: "3.3.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - ranges.py
+  - tests/test_ranges.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: fpdf2-multipage-table
+title: "fpdf2 multi-page PDF table with repeated headers and page numbers"
+summary: "Build a table that flows across pages with fpdf2, repeat the heading row on every page and stamp Page X/N footers, then assert on the rendered output offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fpdf2]
+tags: [pdf, reporting, tables]
+pinned:
+  fpdf2: "2.8.9"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - report.py
+  - tests/test_report.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

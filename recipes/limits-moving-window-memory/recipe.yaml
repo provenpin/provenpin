@@ -1,0 +1,18 @@
+id: limits-moving-window-memory
+title: "limits moving and fixed window rate limiting with memory storage"
+summary: "Enforce moving and fixed window rate limits with the limits library and its in-memory storage, and test the sliding recovery and boundary burst gotchas offline with a controllable clock."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [limits]
+tags: [rate-limiting, testing, memory]
+pinned:
+  limits: "5.8.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - ratelimit.py
+  - tests/test_ratelimit.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

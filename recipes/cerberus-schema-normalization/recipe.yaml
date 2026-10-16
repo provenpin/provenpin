@@ -1,0 +1,18 @@
+id: cerberus-schema-normalization
+title: "Cerberus schemas: coercion, defaults and custom rules"
+summary: "A Cerberus signup schema that coerces types, fills default and default_setter fields, and enforces subclass plus check_with rules, tested offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [cerberus]
+tags: [validation, data-normalization, forms]
+pinned:
+  cerberus: "1.3.8"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - schema.py
+  - tests/test_schema.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

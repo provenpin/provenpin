@@ -1,0 +1,18 @@
+id: jinja2-sandboxed-user-templates
+title: "Jinja2 SandboxedEnvironment for untrusted user templates"
+summary: "Render untrusted user templates with a hardened sandbox: allowlisted globals, an immutable context, strict undefined handling and an output size cap."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [jinja2]
+tags: [templating, security, user-input]
+pinned:
+  jinja2: "3.1.6"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - renderer.py
+  - tests/test_renderer.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

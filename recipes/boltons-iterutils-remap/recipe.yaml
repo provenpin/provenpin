@@ -1,0 +1,18 @@
+id: boltons-iterutils-remap
+title: "boltons iterutils remap and get_path for nested dict transforms"
+summary: "Recursively redact, drop and rename keys in nested dicts with boltons remap, then read values back safely with get_path."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [boltons]
+tags: [data-transformation, dictionaries, etl]
+pinned:
+  boltons: "26.2.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - transform.py
+  - tests/test_transform.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: blinker-signals-decoupled-events
+title: "blinker named signals for decoupled event handlers with sender filtering"
+summary: "Wire named blinker signals between producers and subscribers, scope handlers to a sender with sender filtering, and test weak references, temporary connections and muting fully offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [blinker]
+tags: [events, pubsub, decoupling, testing]
+pinned:
+  blinker: "1.9.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - events.py
+  - tests/test_events.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: ftfy-mojibake-fix
+title: "ftfy mojibake repair and curly-quote normalization"
+summary: "Repair Latin-1 mojibake with ftfy, undo double-encoding, straighten curly quotes to ASCII and control HTML unescaping, all tested offline under pytest."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [ftfy]
+tags: [text, unicode, mojibake, normalization]
+pinned:
+  ftfy: "6.3.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - fixer.py
+  - tests/test_fixer.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

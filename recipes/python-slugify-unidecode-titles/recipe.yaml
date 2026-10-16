@@ -1,0 +1,19 @@
+id: python-slugify-unidecode-titles
+title: "python-slugify + text-unidecode multilingual URL slugs"
+summary: "Turn accented, Cyrillic and CJK titles into URL slugs with python-slugify, using text-unidecode for ASCII romanization or allow_unicode to keep scripts verbatim, then dedupe collisions."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [python-slugify, text-unidecode]
+tags: [strings, i18n, url-slugs]
+pinned:
+  python-slugify: "9.1.3"
+  text-unidecode: "1.3.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - slugs.py
+  - tests/test_slugs.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

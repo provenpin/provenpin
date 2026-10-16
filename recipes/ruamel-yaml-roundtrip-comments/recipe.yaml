@@ -1,0 +1,18 @@
+id: ruamel-yaml-roundtrip-comments
+title: "Round-trip edit YAML with ruamel.yaml keeping comments and key order"
+summary: "Load YAML with ruamel.yaml round-trip mode, mutate scalars, sequences and inserted keys in place, then dump it back with comments, quotes and key order intact."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [ruamel.yaml]
+tags: [yaml, config, serialization, files]
+pinned:
+  ruamel.yaml: "0.19.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - config.py
+  - tests/test_config.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
