@@ -1,6 +1,7 @@
 // Minimal stateless MCP server over Streamable HTTP (JSON responses), no SDK needed.
 // Works anywhere with web-standard Request/Response: Cloudflare Workers, Node 20+, Bun, Deno.
 import { clientFromSession, eventFor, makeSessionId, record, type AnalyticsSink } from "./usage.ts";
+import { createCounter, isRealCall, type CounterKV } from "./counter.ts";
 import { checkCompatibility, compatBoost, parseVersionsInput } from "./versions.ts";
 import { listStacks, searchRecipes, type RecipeIndex } from "./search.ts";
 
@@ -42,6 +43,11 @@ export interface ServerOptions {
   proLimiter?: RateLimiter;
   /** Optional Workers Analytics Engine dataset for privacy-safe usage counts. */
   analytics?: AnalyticsSink;
+  /** Anonymous real-usage counter (see USAGE-COUNTER.md). Off unless usageCounter === "true". */
+  usageCounter?: string;
+  counterSink?: AnalyticsSink;
+  counterSessions?: CounterKV;
+  counterSalt?: string;
 }
 
 const TOOLS = [
@@ -169,6 +175,7 @@ export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
     try { return (await lim.limit({ key: k })).success; } catch { return true; }
   }
   const version = opts.version ?? "0.1.0";
+  const counter = createCounter({ enabled: opts.usageCounter, sink: opts.counterSink, sessions: opts.counterSessions, salt: opts.counterSalt });
   return async (req: Request): Promise<Response> => {
     const url = new URL(req.url);
     if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: CORS });
@@ -196,7 +203,15 @@ export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
     const client = init ? { name: String(ci?.name ?? "unknown"), version: String(ci?.version ?? "unknown") }
       : clientFromSession(req.headers.get("mcp-session-id")) ?? { name: "unknown", version: "unknown" };
     for (const m of msgs) record(eventFor(m, client, internalHeader, tier, keyId), opts.analytics);
-    const out = msgs.map((m) => handleRpc(index, m, tier, version)).filter((x): x is Json => x !== null);
+    const results = msgs.map((m) => handleRpc(index, m, tier, version));
+    if (counter.enabled) {
+      const country = (req as any).cf?.country, ua = req.headers.get("user-agent"), sid = req.headers.get("mcp-session-id");
+      for (let i = 0; i < msgs.length; i++) {
+        const tool = isRealCall(msgs[i], results[i]);
+        if (tool) await counter.count({ tool, client, country, ua, sessionId: sid, internal: internalHeader || client.name === "provenpin-internal" });
+      }
+    }
+    const out = results.filter((x): x is Json => x !== null);
     if (out.length === 0) return new Response(null, { status: 202, headers: CORS });
     const headers: Record<string, string> = { ...CORS, "x-provenpin-tier": tier };
     if (init) headers["mcp-session-id"] = makeSessionId(client.name, client.version);
