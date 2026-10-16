@@ -1,0 +1,35 @@
+{
+  "id": "xml2js-parse-build",
+  "status": "passed",
+  "ran_at": "2026-10-16T19:55:16.862Z",
+  "last_passed_at": "2026-10-16T19:55:16.862Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1678,
+    "test": 584
+  },
+  "pinned": {
+    "xml2js": "0.6.2",
+    "@types/xml2js": "0.4.14",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:0e1d56c5b7b6a0e19b2b6353f5d3888b685cde18608d95c879a2690c3837f637",
+  "files": {
+    "recipes/xml2js-parse-build/package.json": "sha256:426415ba39407416ffe1ece794169621218344a3b9c10682ce23c4f8bcfa2dde",
+    "recipes/xml2js-parse-build/recipe.yaml": "sha256:7fac2e4c3f9ab2aa934cbde392e682c7cb073e068881fd4d06983a7311e5e308",
+    "recipes/xml2js-parse-build/src/convert.ts": "sha256:4d7dd8cdb9d360f7107ce1891ee0d439a5c524750e7b6992c6858ed0ace052c3",
+    "recipes/xml2js-parse-build/test/convert.test.ts": "sha256:8fb56dce34f3917b0be6fcff78a554f33ec6cd7f7038fcf9d46d8073009077df"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38958328921"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses attributes and repeated elements\nok 1 - parses attributes and repeated elements\n  ---\n  duration_ms: 4.172509\n  type: 'test'\n  ...\n# Subtest: builds XML back from parsed data\nok 2 - builds XML back from parsed data\n  ---\n  duration_ms: 3.633251\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 340.068379\n"
+}

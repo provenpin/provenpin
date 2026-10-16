@@ -1,0 +1,35 @@
+{
+  "id": "string-width-strip-ansi",
+  "status": "passed",
+  "ran_at": "2026-10-16T19:54:48.654Z",
+  "last_passed_at": "2026-10-16T19:54:48.654Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1712,
+    "test": 393
+  },
+  "pinned": {
+    "string-width": "8.3.0",
+    "strip-ansi": "7.2.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:a9d5bae23d88179678415afd3093b129a0ec195098d5186d078f57d16f5510f9",
+  "files": {
+    "recipes/string-width-strip-ansi/package.json": "sha256:182bdaba13231422e0060cdb6f3a68b17cb9d45373b57cdd451e587cc95bb445",
+    "recipes/string-width-strip-ansi/recipe.yaml": "sha256:41a03f6c9d1926bdf1598977bef89db8693e270d65fcee6b0e2041023e150662",
+    "recipes/string-width-strip-ansi/src/width.ts": "sha256:e4ec39316b293b9941c9fc19417e589b2da7bd93ac83028d5443730e0896d403",
+    "recipes/string-width-strip-ansi/test/width.test.ts": "sha256:194f828b8038704130cbd218a8afc67f94632a46471b69fb682ee25f0a3ba500"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38958328921"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: measures CJK wide characters as two columns each\nok 2 - measures CJK wide characters as two columns each\n  ---\n  duration_ms: 19.689691\n  type: 'test'\n  ...\n# Subtest: measures emoji as two columns\nok 3 - measures emoji as two columns\n  ---\n  duration_ms: 1.371894\n  type: 'test'\n  ...\n# Subtest: ignores ANSI escape codes when measuring width\nok 4 - ignores ANSI escape codes when measuring width\n  ---\n  duration_ms: 0.299622\n  type: 'test'\n  ...\n# Subtest: strips ANSI codes to plain text\nok 5 - strips ANSI codes to plain text\n  ---\n  duration_ms: 0.160271\n  type: 'test'\n  ...\n# Subtest: strip keeps wide characters and emoji intact\nok 6 - strip keeps wide characters and emoji intact\n  ---\n  duration_ms: 0.250049\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 246.405734\n"
+}

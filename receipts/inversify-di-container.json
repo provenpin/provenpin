@@ -1,0 +1,36 @@
+{
+  "id": "inversify-di-container",
+  "status": "passed",
+  "ran_at": "2026-10-16T19:54:48.980Z",
+  "last_passed_at": "2026-10-16T19:54:48.980Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2463,
+    "test": 424
+  },
+  "pinned": {
+    "inversify": "8.2.3",
+    "reflect-metadata": "0.2.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d826fbdbe0e27aacc5f8ba9cc0db5336d5dc5e321eb315492acff7d8c1bacb3d",
+  "files": {
+    "recipes/inversify-di-container/package.json": "sha256:af0784c80552ac6241548a55447f0c031a82d06d9973cdcf28e9fd21bf9f8485",
+    "recipes/inversify-di-container/recipe.yaml": "sha256:37d5da512d75c05128ff1ee51c0878d6f30df2ac950c56b26d7936e4f7f311e8",
+    "recipes/inversify-di-container/src/container.ts": "sha256:23f9f9524add7b89ef665d1c9aa7448852d1f9695e24922e6c522be7550d0c6a",
+    "recipes/inversify-di-container/test/container.test.ts": "sha256:916aa2f050b95f3068901cdc7fadfe9a4620d161e427b35e51a4e55ce3e15c3c",
+    "recipes/inversify-di-container/tsconfig.json": "sha256:4ceccac08f6b04730ee3bbb87114ea168ed4920cc33135bce8359d7a9f9f9371"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38958328921"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: singleton bindings resolve to the same instance\nok 1 - singleton bindings resolve to the same instance\n  ---\n  duration_ms: 3.477944\n  type: 'test'\n  ...\n# Subtest: transient bindings resolve to new instances\nok 2 - transient bindings resolve to new instances\n  ---\n  duration_ms: 0.900139\n  type: 'test'\n  ...\n# Subtest: injects dependencies into the resolved service\nok 3 - injects dependencies into the resolved service\n  ---\n  duration_ms: 0.942864\n  type: 'test'\n  ...\n# Subtest: interfaces resolve to their bound implementations\nok 4 - interfaces resolve to their bound implementations\n  ---\n  duration_ms: 0.564256\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 310.140559\n"
+}

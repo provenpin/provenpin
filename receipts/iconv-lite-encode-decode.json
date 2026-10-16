@@ -1,0 +1,34 @@
+{
+  "id": "iconv-lite-encode-decode",
+  "status": "passed",
+  "ran_at": "2026-10-16T19:54:46.383Z",
+  "last_passed_at": "2026-10-16T19:54:46.383Z",
+  "tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1781,
+    "test": 361
+  },
+  "pinned": {
+    "iconv-lite": "0.7.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:044ea36684ef3af02f7c8c4d9f3172b8d9d1af6a5f3a9242796822ce5600017b",
+  "files": {
+    "recipes/iconv-lite-encode-decode/package.json": "sha256:7ddf58527b0e9a46a9d4b32551a0d8f407ca4cf138450d9e889de3ddaf54a6e4",
+    "recipes/iconv-lite-encode-decode/recipe.yaml": "sha256:c40b99fe3a4dca3c69029f92294e6752ba409da1ece7cfe9c2254d46831c85aa",
+    "recipes/iconv-lite-encode-decode/src/codec.ts": "sha256:67e5ebec289d2fecd9946059f34aa540df86e49ff4e6c5e760e30a7f10433843",
+    "recipes/iconv-lite-encode-decode/test/codec.test.ts": "sha256:2e7d10c35672260843e19c228df13783bc217ae4f76d250bda3323d9180c1c54"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38958328921"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: encodes shift_jis to exact bytes\nok 4 - encodes shift_jis to exact bytes\n  ---\n  duration_ms: 0.351707\n  type: 'test'\n  ...\n# Subtest: decodes shift_jis bytes back to text\nok 5 - decodes shift_jis bytes back to text\n  ---\n  duration_ms: 0.332492\n  type: 'test'\n  ...\n# Subtest: encodes utf16le to exact bytes\nok 6 - encodes utf16le to exact bytes\n  ---\n  duration_ms: 0.180087\n  type: 'test'\n  ...\n# Subtest: decodes utf16le bytes back to text\nok 7 - decodes utf16le bytes back to text\n  ---\n  duration_ms: 0.349444\n  type: 'test'\n  ...\n# Subtest: round trips each supported encoding\nok 8 - round trips each supported encoding\n  ---\n  duration_ms: 0.279182\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 212.999425\n"
+}

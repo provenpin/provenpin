@@ -1,0 +1,34 @@
+{
+  "id": "wrap-ansi-columns",
+  "status": "passed",
+  "ran_at": "2026-10-16T19:55:06.385Z",
+  "last_passed_at": "2026-10-16T19:55:06.385Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2342,
+    "test": 380
+  },
+  "pinned": {
+    "wrap-ansi": "10.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:e2066f834059146e9d0f24d6cab3c9404cc72e482b41a7e797305c69fbc2abaa",
+  "files": {
+    "recipes/wrap-ansi-columns/package.json": "sha256:2512a4103303cd5a7fb145b2443242fe68059e219a03c949c5187eadaf183a2c",
+    "recipes/wrap-ansi-columns/recipe.yaml": "sha256:4d1d40873ced83db6359f2ee3c3e6c05eccc99f8ffdac9aa1216595841b89e9a",
+    "recipes/wrap-ansi-columns/src/wrap.ts": "sha256:722a93a7a870a4df44769ebad83f3ff8d695e546eaf6d72493eeca96291a4b81",
+    "recipes/wrap-ansi-columns/test/wrap.test.ts": "sha256:d7d1cc965c3919b1a08f006198809b3a07e3375aea1b4b176a1b6d3a6cc8230c"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38958328921"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: wraps long text to a column width on word boundaries\nok 1 - wraps long text to a column width on word boundaries\n  ---\n  duration_ms: 1.866391\n  type: 'test'\n  ...\n# Subtest: hard wrap breaks words longer than the column width\nok 2 - hard wrap breaks words longer than the column width\n  ---\n  duration_ms: 0.565885\n  type: 'test'\n  ...\n# Subtest: soft wrap keeps long words intact\nok 3 - soft wrap keeps long words intact\n  ---\n  duration_ms: 0.215652\n  type: 'test'\n  ...\n# Subtest: trim removes whitespace on wrapped line boundaries\nok 4 - trim removes whitespace on wrapped line boundaries\n  ---\n  duration_ms: 0.308695\n  type: 'test'\n  ...\n# Subtest: preserves ANSI escape codes while wrapping\nok 5 - preserves ANSI escape codes while wrapping\n  ---\n  duration_ms: 1.29244\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 232.574831\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "file-type-buffer-detect",
+  "status": "passed",
+  "ran_at": "2026-10-16T19:54:48.689Z",
+  "last_passed_at": "2026-10-16T19:54:48.689Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1854,
+    "test": 466
+  },
+  "pinned": {
+    "file-type": "22.2.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d78f2d258a16483a285bab32665033f615ab3ca91a03358c647be74ee11c2701",
+  "files": {
+    "recipes/file-type-buffer-detect/package.json": "sha256:ba7997bdccd3fe96adb6152657a85fdbbe981464db9c3a92013b389a1a634a83",
+    "recipes/file-type-buffer-detect/recipe.yaml": "sha256:b47873fc6d0b907efe0ccd2a2ae2e833876d60f82618fd8e160cbd27f5d16077",
+    "recipes/file-type-buffer-detect/src/detect.ts": "sha256:c10fbb8d5c174f057d817861bcbbd7e299382965cfba69443ed638a1d778f670",
+    "recipes/file-type-buffer-detect/test/detect.test.ts": "sha256:8fd3a6f76540e90a8431e5e73f1386b61299036bd8c64fc7aab19f4e9276d09b"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38958328921"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: detects png from magic bytes\nok 1 - detects png from magic bytes\n  ---\n  duration_ms: 4.394867\n  type: 'test'\n  ...\n# Subtest: detects pdf from magic bytes\nok 2 - detects pdf from magic bytes\n  ---\n  duration_ms: 0.303421\n  type: 'test'\n  ...\n# Subtest: detects zip from magic bytes\nok 3 - detects zip from magic bytes\n  ---\n  duration_ms: 0.906568\n  type: 'test'\n  ...\n# Subtest: detects gif from magic bytes\nok 4 - detects gif from magic bytes\n  ---\n  duration_ms: 0.2493\n  type: 'test'\n  ...\n# Subtest: returns undefined for plain text\nok 5 - returns undefined for plain text\n  ---\n  duration_ms: 0.843604\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 346.968595\n"
+}

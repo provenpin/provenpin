@@ -1,0 +1,34 @@
+{
+  "id": "devalue-serialize-cycles",
+  "status": "passed",
+  "ran_at": "2026-10-16T19:54:47.367Z",
+  "last_passed_at": "2026-10-16T19:54:47.367Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1479,
+    "test": 245
+  },
+  "pinned": {
+    "devalue": "6.0.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:b89bf30f3bd9d315db95c4f0d5d586551f01d7f27983e1f1909a7d8ed406db7a",
+  "files": {
+    "recipes/devalue-serialize-cycles/package.json": "sha256:3cb59e4bc5c3fee187fb1d218739f3a77ca1353ca3d93c48a0d59c14e36defd8",
+    "recipes/devalue-serialize-cycles/recipe.yaml": "sha256:ec6c3b25300f45e5bcce58a7a45884a8763aac880d5e0ae627a2254c2164a9fd",
+    "recipes/devalue-serialize-cycles/src/serialize.ts": "sha256:7a4a0efda65d02fbd2ca3010aca4095d9b59617a8a281c1b24f4aa3be6ca8299",
+    "recipes/devalue-serialize-cycles/test/serialize.test.ts": "sha256:741f485a364f713bb334437e4d12ce9f61c73f9103d9b607fe6b59d385c8a545"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38958328921"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: preserves cyclic references as the same object\nok 1 - preserves cyclic references as the same object\n  ---\n  duration_ms: 1.63226\n  type: 'test'\n  ...\n# Subtest: preserves repeated references by identity\nok 2 - preserves repeated references by identity\n  ---\n  duration_ms: 0.144335\n  type: 'test'\n  ...\n# Subtest: preserves Date values\nok 3 - preserves Date values\n  ---\n  duration_ms: 0.130696\n  type: 'test'\n  ...\n# Subtest: preserves Map entries\nok 4 - preserves Map entries\n  ---\n  duration_ms: 0.145217\n  type: 'test'\n  ...\n# Subtest: throws when stringifying a function\nok 5 - throws when stringifying a function\n  ---\n  duration_ms: 0.401471\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 137.261829\n"
+}

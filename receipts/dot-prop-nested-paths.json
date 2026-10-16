@@ -1,0 +1,34 @@
+{
+  "id": "dot-prop-nested-paths",
+  "status": "passed",
+  "ran_at": "2026-10-16T19:54:49.021Z",
+  "last_passed_at": "2026-10-16T19:54:49.021Z",
+  "tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1716,
+    "test": 318
+  },
+  "pinned": {
+    "dot-prop": "10.2.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:287c069a7525edc169fff54a4315eb22ff6a3f67ebd32a36cb2c291893c8a515",
+  "files": {
+    "recipes/dot-prop-nested-paths/package.json": "sha256:7080c0d1f751b90d398b3daad9e1b087143df080eb4e75e3adcaaddd373a3d0a",
+    "recipes/dot-prop-nested-paths/recipe.yaml": "sha256:874db4b8325bf1ad2d16674d83bf2a4bd226fa92c30c90421d2af470e01ca3f7",
+    "recipes/dot-prop-nested-paths/src/paths.ts": "sha256:9feb9606a0f4e4945650993b4edb49f7e28c380d88246db0a9ed76aa2ebb7233",
+    "recipes/dot-prop-nested-paths/test/paths.test.ts": "sha256:2f63412a67d3f5e7e83c92d74788005187a0e1daec48dd19d2aaefe37afe498c"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 38958328921"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: setProperty creates nested objects\nok 4 - setProperty creates nested objects\n  ---\n  duration_ms: 0.682281\n  type: 'test'\n  ...\n# Subtest: setProperty honours escaped dots\nok 5 - setProperty honours escaped dots\n  ---\n  duration_ms: 0.148096\n  type: 'test'\n  ...\n# Subtest: hasProperty detects nested and escaped paths\nok 6 - hasProperty detects nested and escaped paths\n  ---\n  duration_ms: 0.195224\n  type: 'test'\n  ...\n# Subtest: deleteProperty removes nested and escaped keys\nok 7 - deleteProperty removes nested and escaped keys\n  ---\n  duration_ms: 0.373576\n  type: 'test'\n  ...\n# Subtest: readPath returns a fallback for missing paths\nok 8 - readPath returns a fallback for missing paths\n  ---\n  duration_ms: 0.146292\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 180.191913\n"
+}
