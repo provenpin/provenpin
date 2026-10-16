@@ -1,0 +1,19 @@
+id: pyotp-totp-freezegun
+title: "pyotp TOTP and HOTP codes tested at frozen time"
+summary: "Generate RFC-compatible TOTP and HOTP codes, build otpauth provisioning URIs and tolerate one-step clock drift, all pinned to deterministic time with freezegun."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pyotp, freezegun]
+tags: [2fa, authentication, time, testing]
+pinned:
+  pyotp: "2.10.0"
+  freezegun: "1.5.5"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - otp.py
+  - tests/test_otp.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

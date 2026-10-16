@@ -1,0 +1,19 @@
+id: itsdangerous-urlsafe-timed-tokens
+title: "itsdangerous URL-safe timed tokens"
+summary: "Sign URL-safe, expiring email-confirmation and password-reset tokens with salts and max_age, testing expiry and salt separation offline with freezegun."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [itsdangerous, freezegun]
+tags: [tokens, security, auth, testing]
+pinned:
+  itsdangerous: "2.2.0"
+  freezegun: "1.5.5"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - tokens.py
+  - tests/test_tokens.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

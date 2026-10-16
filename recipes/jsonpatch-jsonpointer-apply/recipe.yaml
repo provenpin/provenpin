@@ -1,0 +1,19 @@
+id: jsonpatch-jsonpointer-apply
+title: "RFC 6902 JSON patches with jsonpatch + RFC 6901 pointers with jsonpointer"
+summary: "Create, apply and hand-roll the inverse of RFC 6902 JSON patches with jsonpatch, and resolve or set RFC 6901 pointers (including ~0 and ~1 escapes) with jsonpointer."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [jsonpatch, jsonpointer]
+tags: [json, serialization, diffing]
+pinned:
+  jsonpatch: "1.35.0"
+  jsonpointer: "3.2.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - patching.py
+  - tests/test_patching.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

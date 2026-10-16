@@ -1,0 +1,19 @@
+id: markdown-pygments-codehilite
+title: "Markdown to HTML with fenced code, codehilite, toc and tables"
+summary: "Render Markdown with Python-Markdown extensions and Pygments highlighting, extract a nested table of contents, and generate the matching Pygments CSS."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [markdown, pygments]
+tags: [markdown, html, syntax-highlighting, rendering]
+pinned:
+  markdown: "3.11.1"
+  pygments: "2.21.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - renderer.py
+  - tests/test_renderer.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

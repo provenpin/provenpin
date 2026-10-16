@@ -1,0 +1,19 @@
+id: beautifulsoup4-soupsieve-select
+title: "BeautifulSoup 4 + soupsieve CSS selector scraping"
+summary: "Scrape fixture HTML with BeautifulSoup and soupsieve CSS selectors to pull table cells, links and data attributes, plus the html.parser tbody gotcha."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [beautifulsoup4, soupsieve, pytest]
+tags: [scraping, html, css-selectors, parsing, testing]
+pinned:
+  beautifulsoup4: "4.15.0"
+  soupsieve: "3.0.3"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - scrape.py
+  - tests/test_scrape.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

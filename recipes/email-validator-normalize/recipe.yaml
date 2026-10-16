@@ -1,0 +1,18 @@
+id: email-validator-normalize
+title: "Validate and normalize email addresses with email-validator offline"
+summary: "A small wrapper around email-validator for validating and normalizing addresses without DNS lookups, including internationalized domain names and Unicode SMTPUTF8 local parts."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [email-validator]
+tags: [validation, email, unicode]
+pinned:
+  email-validator: "2.3.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - emails.py
+  - tests/test_email.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

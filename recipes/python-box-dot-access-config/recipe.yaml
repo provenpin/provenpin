@@ -1,0 +1,19 @@
+id: python-box-dot-access-config
+title: "python-box dot-access config: frozen boxes, defaults and YAML/JSON roundtrip"
+summary: "Build dot-access config objects with python-box, deep-merge overrides and defaults, take frozen read-only views, then convert back to plain dicts and round-trip through YAML and JSON."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [python-box, pyyaml]
+tags: [configuration, yaml, json]
+pinned:
+  python-box: "7.4.1"
+  PyYAML: "6.0.3"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - config.py
+  - tests/test_config.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

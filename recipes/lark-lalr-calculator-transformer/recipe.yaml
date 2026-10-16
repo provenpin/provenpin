@@ -1,0 +1,18 @@
+id: lark-lalr-calculator-transformer
+title: "Lark LALR calculator with a Transformer and error handling"
+summary: "A small LALR arithmetic grammar parsed with lark and evaluated by a Transformer, plus how syntax errors and exceptions raised inside transformer methods surface."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [lark]
+tags: [parsing, grammar, calculator, error-handling]
+pinned:
+  lark: "1.3.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - calculator.py
+  - tests/test_calculator.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

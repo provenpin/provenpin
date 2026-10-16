@@ -1,0 +1,18 @@
+id: dataclasses-json-camelcase
+title: "dataclasses-json camelCase serialization"
+summary: "Serialize dataclasses to camelCase JSON with dataclasses-json, handling nested types, datetimes and unknown keys via LetterCase and Undefined."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [dataclasses-json]
+tags: [serialization, json, dataclasses]
+pinned:
+  dataclasses-json: "0.6.7"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - tests/test_serialization.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

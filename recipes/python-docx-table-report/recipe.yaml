@@ -1,0 +1,18 @@
+id: python-docx-table-report
+title: "python-docx report with styled tables and page breaks"
+summary: "Generate a Word report with python-docx - a title, headings, a styled table and a page break - then reopen the .docx and verify structure, order and styling."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [python-docx]
+tags: [documents, reports, testing]
+pinned:
+  python-docx: "1.2.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - report.py
+  - tests/test_report.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

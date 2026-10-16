@@ -1,0 +1,19 @@
+id: pypdf-reportlab-merge-split
+title: "reportlab in-memory PDFs merged, split and rotated with pypdf"
+summary: "Generate PDFs in memory with reportlab, then merge, split, rotate and read metadata with pypdf, including the metadata and rotation gotchas."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pypdf, reportlab]
+tags: [pdf, documents, files]
+pinned:
+  pypdf: "6.21.0"
+  reportlab: "5.0.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - pdf_tools.py
+  - tests/test_pdf_tools.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: pint-unit-conversion-quantities
+title: "pint unit-aware math: conversions, offset units and formatting"
+summary: "Do unit-aware arithmetic with pint: convert between units, catch dimensionality mismatches, handle offset units like degC safely, and format quantities."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pint]
+tags: [units, measurement, numerics]
+pinned:
+  pint: "0.26.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - units.py
+  - tests/test_units.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

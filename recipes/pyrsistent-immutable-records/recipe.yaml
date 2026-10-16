@@ -1,0 +1,18 @@
+id: pyrsistent-immutable-records
+title: "pyrsistent PRecord, PVector and PMap immutable data"
+summary: "Immutable records, vectors and maps with PRecord, PVector and PMap: field and global invariants, PMap evolvers for batch updates, structural sharing and freeze/thaw snapshots, tested offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pyrsistent]
+tags: [immutable-data, data-structures, functional]
+pinned:
+  pyrsistent: "0.20.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - records.py
+  - tests/test_records.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

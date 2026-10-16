@@ -1,0 +1,18 @@
+id: inflect-plural-ordinal
+title: "inflect plurals, ordinals, a/an articles and number-to-words for UI strings"
+summary: "Build count-aware English labels with inflect: singular for one, irregular plurals, 11/12/13-safe ordinals, sound-based articles and spelled-out numbers."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [inflect]
+tags: [text, formatting, i18n]
+pinned:
+  inflect: "7.5.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - ui.py
+  - tests/test_ui.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: babel-locale-number-currency
+title: "Babel locale-aware numbers, currency, percent and dates"
+summary: "Format numbers, currency, percent and dates for en_US, de_DE and fr_FR with Babel, and see how symbol placement, currency digits and parse rules change per locale."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [babel]
+tags: [localization, formatting, i18n]
+pinned:
+  babel: "2.18.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - locales.py
+  - tests/test_locales.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

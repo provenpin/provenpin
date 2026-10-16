@@ -1,0 +1,18 @@
+id: mako-template-inheritance
+title: "Mako template inheritance, defs and HTML escaping"
+summary: "Load Mako templates from an in-memory TemplateLookup, inherit a base layout, call defs and apply filters with safe HTML escaping by default."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [mako]
+tags: [templating, html-escape, code-generation]
+pinned:
+  mako: "1.4.3"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - renderer.py
+  - tests/test_renderer.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

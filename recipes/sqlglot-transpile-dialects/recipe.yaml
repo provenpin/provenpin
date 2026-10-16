@@ -1,0 +1,18 @@
+id: sqlglot-transpile-dialects
+title: "sqlglot SQL transpilation between SQLite, Postgres and MySQL"
+summary: "Parse, transpile and rewrite SQL across SQLite, Postgres and MySQL dialects with sqlglot, and inspect the resulting AST offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [sqlglot]
+tags: [sql, ast, transpile]
+pinned:
+  sqlglot: "30.23.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - transpile.py
+  - tests/test_transpile.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: natsort-natural-sorting
+title: "Natural sorting with natsort for filenames, versions and paths"
+summary: "Sort filenames and version strings the way humans expect with natsort, using IGNORECASE and PATH flags, parallel-list ordering and the FLOAT algorithm for decimals."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [natsort]
+tags: [sorting, filenames, versions, paths]
+pinned:
+  natsort: "8.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - sorting.py
+  - tests/test_sorting.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
