@@ -1,15 +1,15 @@
 {
   "id": "bcryptjs-jose-sessions",
   "status": "passed",
-  "ran_at": "2026-10-17T06:46:02.153Z",
-  "last_passed_at": "2026-10-17T06:46:02.153Z",
+  "ran_at": "2026-10-17T12:43:30.610Z",
+  "last_passed_at": "2026-10-17T12:43:30.610Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1631,
-    "test": 652
+    "setup": 1560,
+    "test": 750
   },
   "pinned": {
     "bcryptjs": "3.0.3",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39011054706"
+    "runner": "github-actions 39033571506"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: hash and verify a password\nok 1 - hash and verify a password\n  ---\n  duration_ms: 266.103838\n  type: 'test'\n  ...\n# Subtest: session round trip\nok 2 - session round trip\n  ---\n  duration_ms: 9.307553\n  type: 'test'\n  ...\n# Subtest: rejects tampered and expired tokens\nok 3 - rejects tampered and expired tokens\n  ---\n  duration_ms: 2.561851\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 509.189089\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: hash and verify a password\nok 1 - hash and verify a password\n  ---\n  duration_ms: 288.589844\n  type: 'test'\n  ...\n# Subtest: session round trip\nok 2 - session round trip\n  ---\n  duration_ms: 5.797811\n  type: 'test'\n  ...\n# Subtest: rejects tampered and expired tokens\nok 3 - rejects tampered and expired tokens\n  ---\n  duration_ms: 2.946269\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 572.803296\n"
 }

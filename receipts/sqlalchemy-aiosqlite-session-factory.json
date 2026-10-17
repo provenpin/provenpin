@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-aiosqlite-session-factory",
   "status": "passed",
-  "ran_at": "2026-10-17T06:51:24.338Z",
-  "last_passed_at": "2026-10-17T06:51:24.338Z",
+  "ran_at": "2026-10-17T12:49:14.619Z",
+  "last_passed_at": "2026-10-17T12:49:14.619Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 430,
-    "test": 1691
+    "setup": 353,
+    "test": 3227
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -31,8 +31,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39011054706"
+    "runner": "github-actions 39033571506"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.73s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.87s\n"
 }
