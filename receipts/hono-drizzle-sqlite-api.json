@@ -1,15 +1,15 @@
 {
   "id": "hono-drizzle-sqlite-api",
   "status": "passed",
-  "ran_at": "2026-10-17T00:53:58.859Z",
-  "last_passed_at": "2026-10-17T00:53:58.859Z",
+  "ran_at": "2026-10-17T06:48:24.159Z",
+  "last_passed_at": "2026-10-17T06:48:24.159Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 11081,
-    "test": 1099
+    "setup": 11782,
+    "test": 1356
   },
   "pinned": {
     "hono": "4.13.13",
@@ -32,8 +32,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38988196687"
+    "runner": "github-actions 39011054706"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-hono-drizzle-sqlite-api-OvT9HZ\u001b[39m\n\n \u001b[32m✓\u001b[39m test/app.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 57\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 00:54:10\n\u001b[2m   Duration \u001b[22m 638ms\u001b[2m (import 81%, tests 11%, transform 8%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-hono-drizzle-sqlite-api-OvT9HZ/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-hono-drizzle-sqlite-api-W3zLu1\u001b[39m\n\n \u001b[32m✓\u001b[39m test/app.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 52\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:48:36\n\u001b[2m   Duration \u001b[22m 686ms\u001b[2m (import 59%, transform 32%, tests 9%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-hono-drizzle-sqlite-api-W3zLu1/test-report.json\n"
 }

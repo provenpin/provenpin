@@ -1,15 +1,15 @@
 {
   "id": "pillow-image-thumbnail",
   "status": "passed",
-  "ran_at": "2026-10-17T00:55:50.967Z",
-  "last_passed_at": "2026-10-17T00:55:50.967Z",
+  "ran_at": "2026-10-17T06:50:13.317Z",
+  "last_passed_at": "2026-10-17T06:50:13.317Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 384,
-    "test": 600
+    "setup": 208,
+    "test": 1420
   },
   "pinned": {
     "pillow": "12.3.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38988196687"
+    "runner": "github-actions 39011054706"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.11s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.15s\n"
 }

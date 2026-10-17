@@ -1,15 +1,15 @@
 {
   "id": "ioredis-cache-aside-mock",
   "status": "passed",
-  "ran_at": "2026-10-17T00:54:17.920Z",
-  "last_passed_at": "2026-10-17T00:54:17.920Z",
+  "ran_at": "2026-10-17T06:48:45.445Z",
+  "last_passed_at": "2026-10-17T06:48:45.445Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4535,
-    "test": 680
+    "setup": 3410,
+    "test": 463
   },
   "pinned": {
     "ioredis": "6.0.0",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38988196687"
+    "runner": "github-actions 39011054706"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-ioredis-cache-aside-mock-OeMTVM\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cache.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 23\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 00:54:22\n\u001b[2m   Duration \u001b[22m 242ms\u001b[2m (import 58%, transform 23%, tests 17%, worker 3%)\u001b[22m\n\nJSON report written to /tmp/pp-ioredis-cache-aside-mock-OeMTVM/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-ioredis-cache-aside-mock-ddtFKz\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cache.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 18\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:48:49\n\u001b[2m   Duration \u001b[22m 158ms\u001b[2m (import 56%, transform 22%, tests 20%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-ioredis-cache-aside-mock-ddtFKz/test-report.json\n"
 }
