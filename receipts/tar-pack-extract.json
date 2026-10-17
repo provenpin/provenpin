@@ -1,0 +1,34 @@
+{
+  "id": "tar-pack-extract",
+  "status": "passed",
+  "ran_at": "2026-10-17T19:19:45.137Z",
+  "last_passed_at": "2026-10-17T19:19:45.137Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2015,
+    "test": 370
+  },
+  "pinned": {
+    "tar": "7.5.22",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:621718726a37e7dbd0700ed8d10822b66437da19ddab86018d6992441baad807",
+  "files": {
+    "recipes/tar-pack-extract/package.json": "sha256:b9b24047cce9cb5d32e19421df9700b6501e8ba9bdb6b0f8e2c9e4f440060333",
+    "recipes/tar-pack-extract/recipe.yaml": "sha256:355dceb97551c2e498d356bac7c1ca4f781e915a7accfe831cf632028cd8abe7",
+    "recipes/tar-pack-extract/src/pack.ts": "sha256:8981fbf9b9187ce1e36800d6e02c4cf0bda492cfd68f6d01266571abb3db7f7a",
+    "recipes/tar-pack-extract/test/pack.test.ts": "sha256:816ed4662e766bbd90472d8753e3cc19c39b45a3a2ad48d5ec8d623b5bed4e57"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39061946720"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: creates a gzipped tarball and lists its file entries\nok 1 - creates a gzipped tarball and lists its file entries\n  ---\n  duration_ms: 13.343162\n  type: 'test'\n  ...\n# Subtest: extracts with a filter and strip, preserving contents\nok 2 - extracts with a filter and strip, preserving contents\n  ---\n  duration_ms: 6.383647\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 225.544445\n"
+}

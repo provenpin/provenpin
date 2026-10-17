@@ -1,0 +1,34 @@
+{
+  "id": "jscodeshift-transform-test",
+  "status": "passed",
+  "ran_at": "2026-10-17T19:19:44.432Z",
+  "last_passed_at": "2026-10-17T19:19:44.432Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 4299,
+    "test": 537
+  },
+  "pinned": {
+    "jscodeshift": "17.4.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:ae723fbf297f41629f4d4c5b92c312c372e14e67c7e6d474000baf80179499fa",
+  "files": {
+    "recipes/jscodeshift-transform-test/package.json": "sha256:b61c653427aaea84e91eee51e2f128e5d85f5b4394de9a649c1d0718983a92e7",
+    "recipes/jscodeshift-transform-test/recipe.yaml": "sha256:d2b039d14ae2119e4658fff4b415bc4bc52b6ccaf473f0554107edfa2c015f98",
+    "recipes/jscodeshift-transform-test/src/transform.ts": "sha256:ad3b2eaf0a65d4a4822f779c2b1c1d251956b3d56670152f0e47e9595cfddbfe",
+    "recipes/jscodeshift-transform-test/test/transform.test.ts": "sha256:2e127a2e2e676f29d928b25037847c8186a50f0fbe86270cfc28eafb1f57b7fe"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39061946720"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renames an imported identifier and its usages\nok 1 - renames an imported identifier and its usages\n  ---\n  duration_ms: 20.512693\n  type: 'test'\n  ...\n# Subtest: converts a require call to a default import and renames usages\nok 2 - converts a require call to a default import and renames usages\n  ---\n  duration_ms: 4.009822\n  type: 'test'\n  ...\n# Subtest: converts a destructured require to a named import\nok 3 - converts a destructured require to a named import\n  ---\n  duration_ms: 3.539066\n  type: 'test'\n  ...\n# Subtest: leaves non-computed member property names untouched\nok 4 - leaves non-computed member property names untouched\n  ---\n  duration_ms: 2.636206\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 384.917063\n"
+}

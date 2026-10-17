@@ -1,0 +1,38 @@
+{
+  "id": "mdx-compile-evaluate",
+  "status": "passed",
+  "ran_at": "2026-10-17T19:19:49.794Z",
+  "last_passed_at": "2026-10-17T19:19:49.794Z",
+  "tests": {
+    "passed": 1,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 6326,
+    "test": 995
+  },
+  "pinned": {
+    "@mdx-js/mdx": "3.1.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:e706d12d3099c15b75938e627de9c32225f06ecc86a7ec9c5aa7c0a76db2535b",
+  "files": {
+    "recipes/mdx-compile-evaluate/package.json": "sha256:a9079f9d446081ab650bfdad2f3bae35e07d988b0bff0cd833675749ef834645",
+    "recipes/mdx-compile-evaluate/recipe.yaml": "sha256:20c665da2aa49a9cec1abdbc8ae5e8cd04a9c47da873919b5f7d2a2e444cdded",
+    "recipes/mdx-compile-evaluate/src/render.ts": "sha256:ae3cc5e4b001143dd9cc744a87244e53e0e16aeec9bb0232ce9607f9ce244f23",
+    "recipes/mdx-compile-evaluate/test/mdx.test.ts": "sha256:c68c884cf07d77dacbe992ca0ac7612b01a1ac5f57bd50bd3a8b7afe5f1ba2c8"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39061946720"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: evaluates frontmatter-free MDX and renders static HTML\nok 1 - evaluates frontmatter-free MDX and renders static HTML\n  ---\n  duration_ms: 26.7209\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 842.51326\n"
+}

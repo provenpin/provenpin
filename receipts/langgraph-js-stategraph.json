@@ -1,0 +1,35 @@
+{
+  "id": "langgraph-js-stategraph",
+  "status": "passed",
+  "ran_at": "2026-10-17T19:19:45.845Z",
+  "last_passed_at": "2026-10-17T19:19:45.845Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 4237,
+    "test": 966
+  },
+  "pinned": {
+    "@langchain/langgraph": "1.5.1",
+    "@langchain/core": "1.2.18",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:7ee12fb1ba399dded924ad12c5ee72d42faecbd2fe9a8e9a003280272ff28786",
+  "files": {
+    "recipes/langgraph-js-stategraph/package.json": "sha256:66f7ab01f8c69c18de09a324986c79affd20521ac1517a8c13dd13275e7ed26c",
+    "recipes/langgraph-js-stategraph/recipe.yaml": "sha256:2a87c060331d3b11c34d83f958668147266a03c5ee3bdae818676c7d84c60880",
+    "recipes/langgraph-js-stategraph/src/graph.ts": "sha256:4d757d3abaf9306d1ed8decf4a16809e55b76d9c9d7955fe3f0084fb74546092",
+    "recipes/langgraph-js-stategraph/test/graph.test.ts": "sha256:eecb71c65948b452a1cbab960eea1852b00c3c0d59f79ce01ca04706066bf139"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39061946720"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: routes through the conditional edge and accumulates state on one thread\nok 1 - routes through the conditional edge and accumulates state on one thread\n  ---\n  duration_ms: 50.264746\n  type: 'test'\n  ...\n# Subtest: keeps separate state per thread\nok 2 - keeps separate state per thread\n  ---\n  duration_ms: 18.634008\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 817.986689\n"
+}

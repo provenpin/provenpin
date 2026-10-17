@@ -1,0 +1,35 @@
+{
+  "id": "node-forge-self-signed-cert",
+  "status": "passed",
+  "ran_at": "2026-10-17T19:19:44.584Z",
+  "last_passed_at": "2026-10-17T19:19:44.584Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1472,
+    "test": 444
+  },
+  "pinned": {
+    "node-forge": "1.4.0",
+    "@types/node": "26.6.5",
+    "@types/node-forge": "1.3.14",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:43cc24ec39b5a6054c3967fe6f24360049b8d38f43fc7bc8831b7106e647e37c",
+  "files": {
+    "recipes/node-forge-self-signed-cert/package.json": "sha256:9a873969a2c071214f76cff33e0626218697181f0b4a078caa0ffae327f5f3fb",
+    "recipes/node-forge-self-signed-cert/recipe.yaml": "sha256:7e5a251cf713a986051d04a307f819c6108b4effa375a494436da7a78681b3f4",
+    "recipes/node-forge-self-signed-cert/src/cert.ts": "sha256:6287bf18cafe0596f7a1b72a96dfb625cd1aaf957f911c5a7a35e7ae0e2cefa2",
+    "recipes/node-forge-self-signed-cert/test/cert.test.ts": "sha256:3972a0303ff220629df73e4fa4ef91543d3e66bccaa6da04eb2ce0fc0bcee018"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39061946720"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: sets the requested validity window\nok 2 - sets the requested validity window\n  ---\n  duration_ms: 0.142012\n  type: 'test'\n  ...\n# Subtest: includes basicConstraints, keyUsage and subjectAltName extensions\nok 3 - includes basicConstraints, keyUsage and subjectAltName extensions\n  ---\n  duration_ms: 0.546695\n  type: 'test'\n  ...\n# Subtest: round-trips through PEM and verifies the certificate signature\nok 4 - round-trips through PEM and verifies the certificate signature\n  ---\n  duration_ms: 2.83296\n  type: 'test'\n  ...\n# Subtest: signs and verifies data with SHA-256\nok 5 - signs and verifies data with SHA-256\n  ---\n  duration_ms: 25.389272\n  type: 'test'\n  ...\n# Subtest: rejects tampered data\nok 6 - rejects tampered data\n  ---\n  duration_ms: 21.903189\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 330.912289\n"
+}
