@@ -1,0 +1,19 @@
+id: node-html-parser-query
+title: "node-html-parser query and mutate"
+summary: "Parse an HTML fixture with node-html-parser, query nodes via CSS selectors, read text and attributes, mutate with set_content, setAttribute and remove, then serialize back and assert the result offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [node-html-parser]
+tags: [html, parsing, dom, css-selectors]
+pinned:
+  "node-html-parser": "9.0.4"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/query.ts
+  - test/query.test.ts
+  - fixtures/page.html
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

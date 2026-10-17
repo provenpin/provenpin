@@ -1,0 +1,19 @@
+id: mcp-sdk-inmemory-tools
+title: "MCP server with in-memory tools"
+summary: "Build an McpServer from @modelcontextprotocol/sdk that registers two zod-typed tools and one resource, then exercise it offline through a Client linked by InMemoryTransport.createLinkedPair()."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@modelcontextprotocol/sdk", "zod"]
+tags: [mcp, tools, inmemory, protocol]
+pinned:
+  "@modelcontextprotocol/sdk": "1.32.1"
+  "zod": "4.6.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/server.ts
+  - test/server.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

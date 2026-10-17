@@ -1,0 +1,18 @@
+id: swc-core-transform-minify
+title: "swc core transform and minify"
+summary: "Transform TypeScript with JSX to ES2020 using @swc/core transformSync, minify with minifySync and inspect the program AST with parseSync, all offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@swc/core"]
+tags: [compiler, transform, minify, ast]
+pinned:
+  "@swc/core": "1.16.18"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/transform.ts
+  - test/transform.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

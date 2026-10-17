@@ -1,0 +1,18 @@
+id: gpt-tokenizer-count-limit
+title: "gpt-tokenizer count and limit"
+summary: "Encode and decode text round trips, count tokens, check isWithinTokenLimit, encode chat messages and truncate text to a token budget offline with gpt-tokenizer."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [gpt-tokenizer]
+tags: [tokens, tokenizer, gpt, text]
+pinned:
+  "gpt-tokenizer": "4.0.3"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/tokenizer.ts
+  - test/tokenizer.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

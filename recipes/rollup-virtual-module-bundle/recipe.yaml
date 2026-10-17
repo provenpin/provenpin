@@ -1,0 +1,18 @@
+id: rollup-virtual-module-bundle
+title: "rollup virtual module bundle"
+summary: "Bundle in-memory virtual modules with the rollup JS API, generate ESM output, assert tree-shaking drops an unused export, and execute the bundle through a data URL import offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [rollup]
+tags: [bundler, rollup, esm, tree-shaking]
+pinned:
+  "rollup": "4.64.7"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/bundle.ts
+  - test/bundle.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

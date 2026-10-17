@@ -1,0 +1,19 @@
+id: axios-mock-adapter-client
+title: "axios typed API client with axios-mock-adapter"
+summary: "Build a typed axios client with a baseURL and an auth header interceptor, then mock GET, POST, 404, network error and timeout offline while asserting parsed data, the header seen by the mock and error handling."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [axios, axios-mock-adapter]
+tags: [http, axios, mock, testing]
+pinned:
+  "axios": "1.20.0"
+  "axios-mock-adapter": "2.1.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/client.ts
+  - test/client.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

@@ -1,0 +1,18 @@
+id: langchain-textsplitters-recursive
+title: "LangChain recursive markdown chunking"
+summary: "Split a long markdown document with the LangChain RecursiveCharacterTextSplitter using the markdown language preset, createDocuments metadata and chunkOverlap, then verify chunk size, boundary overlap and metadata propagation offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@langchain/textsplitters"]
+tags: [langchain, markdown, chunking, text-splitting]
+pinned:
+  "@langchain/textsplitters": "1.0.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/splitter.ts
+  - test/splitter.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

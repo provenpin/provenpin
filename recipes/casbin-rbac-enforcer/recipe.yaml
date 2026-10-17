@@ -1,0 +1,18 @@
+id: casbin-rbac-enforcer
+title: "casbin RBAC enforcer"
+summary: "Build a casbin RBAC model from a string, add policies and roles in code, then assert allow, deny, role inheritance and dynamic policy removal decisions offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [casbin]
+tags: [authorization, rbac, casbin, access-control]
+pinned:
+  "casbin": "5.51.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/rbac.ts
+  - test/rbac.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
