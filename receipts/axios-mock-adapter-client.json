@@ -1,0 +1,35 @@
+{
+  "id": "axios-mock-adapter-client",
+  "status": "passed",
+  "ran_at": "2026-10-17T05:58:35.445Z",
+  "last_passed_at": "2026-10-17T05:58:35.445Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2031,
+    "test": 625
+  },
+  "pinned": {
+    "axios": "1.20.0",
+    "axios-mock-adapter": "2.1.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:3fe2ce438a2f5ae65dc2930c108a4083a238e39618237f893451c789736e874c",
+  "files": {
+    "recipes/axios-mock-adapter-client/package.json": "sha256:185ac5c8f1702028916deddec0add1ee217c8640366fd89700ae6a98670b7942",
+    "recipes/axios-mock-adapter-client/recipe.yaml": "sha256:c68b192c2d8fa17d1ebca409591842b1df86e8a5500de82f08aea32234bff511",
+    "recipes/axios-mock-adapter-client/src/client.ts": "sha256:53c3eb4734b66b1abff5af8e0fe95ffe64cd8fc94f16c6e85ad574cbb13fac58",
+    "recipes/axios-mock-adapter-client/test/client.test.ts": "sha256:2469a47ca43c320d643d007db0c69b711ff269736c4004e1f4e737bfc5bdcdb6"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39008163431"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: GET parses data and the request carries the auth header\nok 1 - GET parses data and the request carries the auth header\n  ---\n  duration_ms: 4.366409\n  type: 'test'\n  ...\n# Subtest: POST sends the body and parses the created resource\nok 2 - POST sends the body and parses the created resource\n  ---\n  duration_ms: 0.983958\n  type: 'test'\n  ...\n# Subtest: 404 rejects with an ApiError that keeps the status\nok 3 - 404 rejects with an ApiError that keeps the status\n  ---\n  duration_ms: 2.781861\n  type: 'test'\n  ...\n# Subtest: network error rejects with an ApiError\nok 4 - network error rejects with an ApiError\n  ---\n  duration_ms: 1.081941\n  type: 'test'\n  ...\n# Subtest: timeout rejects with a timeout ApiError\nok 5 - timeout rejects with a timeout ApiError\n  ---\n  duration_ms: 1.094473\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 485.82944\n"
+}

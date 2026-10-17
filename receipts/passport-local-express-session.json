@@ -1,0 +1,44 @@
+{
+  "id": "passport-local-express-session",
+  "status": "passed",
+  "ran_at": "2026-10-17T05:58:36.193Z",
+  "last_passed_at": "2026-10-17T05:58:36.193Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3889,
+    "test": 547
+  },
+  "pinned": {
+    "express": "5.3.0",
+    "express-session": "1.19.0",
+    "passport": "0.7.0",
+    "passport-local": "1.0.0",
+    "supertest": "7.3.1",
+    "@types/express": "5.0.6",
+    "@types/express-session": "1.19.0",
+    "@types/node": "26.6.5",
+    "@types/passport": "1.0.17",
+    "@types/passport-local": "1.0.38",
+    "@types/supertest": "7.2.1",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:bf209881db437932d75a10fa7da37cdf034f63f586e79dcdc0986075b156b779",
+  "files": {
+    "recipes/passport-local-express-session/package.json": "sha256:d5c27b1b12664906e06488f66df3b6177a8b06767624dae22f6543ad9ce70550",
+    "recipes/passport-local-express-session/recipe.yaml": "sha256:296ef4e706bdc53778098acefb329fa6c374a70000ab0b79a85cca39ac975d23",
+    "recipes/passport-local-express-session/src/app.ts": "sha256:acfe69f404c20fcbccb94ab9ccb2245263c0b0ce0bbfb93447f76809bc59c778",
+    "recipes/passport-local-express-session/src/auth.ts": "sha256:0e6f3edce15021547b5a7938bf02d77e30a79d033bbb9a55afa7bab6fda3f802",
+    "recipes/passport-local-express-session/test/app.test.ts": "sha256:001562967efe053c95a1b1d89d637c04178d36ab4ed8fc05c2aa08748a8bd65b"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39008163431"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: rejects a bad password\nok 1 - rejects a bad password\n  ---\n  duration_ms: 51.194714\n  type: 'test'\n  ...\n# Subtest: login sets a session and the protected route returns the user\nok 2 - login sets a session and the protected route returns the user\n  ---\n  duration_ms: 20.788249\n  type: 'test'\n  ...\n# Subtest: protected route rejects anonymous requests\nok 3 - protected route rejects anonymous requests\n  ---\n  duration_ms: 4.99696\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 412.151529\n"
+}

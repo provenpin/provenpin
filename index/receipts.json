@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-17T00:58:43.080Z",
+ "generated_at": "2026-10-17T05:59:12.618Z",
  "staleness_checked_at": "2026-10-15T13:17:34.466Z",
- "count": 506,
+ "count": 515,
  "recipes": [
   {
    "id": "adm-zip-roundtrip",
@@ -735,6 +735,33 @@
    }
   },
   {
+   "id": "axios-mock-adapter-client",
+   "language": "typescript",
+   "pinned": {
+    "axios": "1.20.0",
+    "axios-mock-adapter": "2.1.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-17T05:58:35.445Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39008163431",
+   "recipe_hash": "sha256:3fe2ce438a2f5ae65dc2930c108a4083a238e39618237f893451c789736e874c",
+   "files": {
+    "recipes/axios-mock-adapter-client/package.json": "sha256:185ac5c8f1702028916deddec0add1ee217c8640366fd89700ae6a98670b7942",
+    "recipes/axios-mock-adapter-client/recipe.yaml": "sha256:c68b192c2d8fa17d1ebca409591842b1df86e8a5500de82f08aea32234bff511",
+    "recipes/axios-mock-adapter-client/src/client.ts": "sha256:53c3eb4734b66b1abff5af8e0fe95ffe64cd8fc94f16c6e85ad574cbb13fac58",
+    "recipes/axios-mock-adapter-client/test/client.test.ts": "sha256:2469a47ca43c320d643d007db0c69b711ff269736c4004e1f4e737bfc5bdcdb6"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "axios-retry-nock",
    "language": "typescript",
    "pinned": {
@@ -1408,6 +1435,32 @@
     "recipes/camelcase-keys-convert/recipe.yaml": "sha256:385c7597623290ec07eb09a3b0701fc7c47d2c4abfc788fcfd92975c02079018",
     "recipes/camelcase-keys-convert/src/convert.ts": "sha256:ccc841c29ab9c5d1b28f6519a8c70b6c92626ed6968b6e605cecf43ce076db91",
     "recipes/camelcase-keys-convert/test/convert.test.ts": "sha256:9bd427de3faf1577a5e89fd5cf6703f0fa49789bb95196a2dd30cd03d79693ec"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "casbin-rbac-enforcer",
+   "language": "typescript",
+   "pinned": {
+    "casbin": "5.51.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-17T05:58:34.689Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39008163431",
+   "recipe_hash": "sha256:b60896d6eb2a9e0041b6398f38be20fde0f2ac09140156a375fc57463d5975bc",
+   "files": {
+    "recipes/casbin-rbac-enforcer/package.json": "sha256:3c54f61e5ba7a04703da080a03f568d32963a7549bc1664c30b2df643f515c41",
+    "recipes/casbin-rbac-enforcer/recipe.yaml": "sha256:f3acd8911178e80615cddc9c23cc9dd0418f20da592dab7ac6c9dba720813982",
+    "recipes/casbin-rbac-enforcer/src/rbac.ts": "sha256:c225a9d5abdc274d643bb9a6b845cb68e789194d54d2fb2f0dbb69e2017c5cbe",
+    "recipes/casbin-rbac-enforcer/test/rbac.test.ts": "sha256:d522d42aad0d5735c71366f180322f6bf69ae2c83cfe840744d1e7337995f4a1"
    },
    "staleness": {
     "status": "unchecked",
@@ -5074,6 +5127,32 @@
    }
   },
   {
+   "id": "gpt-tokenizer-count-limit",
+   "language": "typescript",
+   "pinned": {
+    "gpt-tokenizer": "4.0.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-17T05:58:35.404Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39008163431",
+   "recipe_hash": "sha256:bf3566f11744fadb74dec5cf61e4633964511e3d107e6b47664fb2868e142f6a",
+   "files": {
+    "recipes/gpt-tokenizer-count-limit/package.json": "sha256:20936a763d043cc2afa8687fa9bde702177c9ac5ec8fd81498562d886de6b21a",
+    "recipes/gpt-tokenizer-count-limit/recipe.yaml": "sha256:0371f1a5627071a8792733b2a545ab098a62760cbb2a68d767c4dea5c657cfce",
+    "recipes/gpt-tokenizer-count-limit/src/tokenizer.ts": "sha256:c7804289c1013c94e6c59b47f1595f3a2be1c9da8e8613b246d1b62188c58555",
+    "recipes/gpt-tokenizer-count-limit/test/tokenizer.test.ts": "sha256:15270afeb3e95788802804bdbf2a84a8dacdab3b659d8f96c2a3d3134a0b3df0"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "grammy-bot-handle-update",
    "language": "typescript",
    "pinned": {
@@ -6873,6 +6952,32 @@
    }
   },
   {
+   "id": "langchain-textsplitters-recursive",
+   "language": "typescript",
+   "pinned": {
+    "@langchain/textsplitters": "1.0.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-17T05:58:33.377Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39008163431",
+   "recipe_hash": "sha256:7d5047a6f6857edc70737f3e71b23597d7bb33de974d25f871d60172d837fac3",
+   "files": {
+    "recipes/langchain-textsplitters-recursive/package.json": "sha256:e08838543402c852b28a524bedb2bf00526ae6d3cb893f365ade7111924a3cf3",
+    "recipes/langchain-textsplitters-recursive/recipe.yaml": "sha256:c824aba567764a38de94d24edbba4b9a15da647c633e5b68392286ba0f766a79",
+    "recipes/langchain-textsplitters-recursive/src/splitter.ts": "sha256:2decfdd1cc27f43fdcc5964869e59986df7d3cf98b427aefdb1e6621bcbb901d",
+    "recipes/langchain-textsplitters-recursive/test/splitter.test.ts": "sha256:98419c58bbff51743828557d9d603b18963129753b47ea330a4fc5ca41d51aed"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "langchainjs-zod-tools",
    "language": "typescript",
    "pinned": {
@@ -7501,6 +7606,33 @@
     "recipes/mathjs-units-expressions/recipe.yaml": "sha256:ed997f1b7d8d4769116b4aa8c91dfc52fe398ef214c207824d74aef602f87e3a",
     "recipes/mathjs-units-expressions/src/calc.ts": "sha256:3752ac0a15a0635db7ef83f9febe1fdc585e55bed65a57db495e30c386083d6a",
     "recipes/mathjs-units-expressions/test/calc.test.ts": "sha256:94d63c51bda354e1b05bdccff3585ee2bb21a36d2e0faba4a587495c80381772"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "mcp-sdk-inmemory-tools",
+   "language": "typescript",
+   "pinned": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.7",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-17T05:58:33.778Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39008163431",
+   "recipe_hash": "sha256:ce2772d97765d3acee4852157e0138571939ba07377dce535d774f5056195b26",
+   "files": {
+    "recipes/mcp-sdk-inmemory-tools/package.json": "sha256:6e0696c486ad1148af2a753293408d0103d48f7a840b9bfcd5a16fd70fc3d438",
+    "recipes/mcp-sdk-inmemory-tools/recipe.yaml": "sha256:89496dab777b8901065f62c250e315fdebe2ffef054809948efdb0fda4a31539",
+    "recipes/mcp-sdk-inmemory-tools/src/server.ts": "sha256:24e77fbe0a67a0d08624bea9b84c0c50673c4b0d28e6aec833a4d65082252848",
+    "recipes/mcp-sdk-inmemory-tools/test/server.test.ts": "sha256:048132a328555342cd9ffa4fe0dba5c9ef7b5268dfce8ddcd0741265b3ef7589"
    },
    "staleness": {
     "status": "unchecked",
@@ -8328,6 +8460,33 @@
     "recipes/noble-hashes-blake3-sha256/recipe.yaml": "sha256:e03fe4098ff983f83d873fe78107931b05fdf771656eed2a07f3aebceb5f0af6",
     "recipes/noble-hashes-blake3-sha256/src/hash.ts": "sha256:d85a38dcfa2d84cdb2f701d5bba44afd6c42e5e5f79b387534e9ad8990cd6413",
     "recipes/noble-hashes-blake3-sha256/test/hash.test.ts": "sha256:6607d273da32b5d2c39fda52dc948c5ee3a8feb7729b1b8297453a8240f3dd87"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "node-html-parser-query",
+   "language": "typescript",
+   "pinned": {
+    "node-html-parser": "9.0.4",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-17T05:58:35.693Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39008163431",
+   "recipe_hash": "sha256:2d0933badac8c9538adaedeef432b34ddb7f2b84763087aa1508a774f5f67ecd",
+   "files": {
+    "recipes/node-html-parser-query/fixtures/page.html": "sha256:495850da90a0ee446b0238cc91abb2b47f3cd1f3c92e330234747617899711a8",
+    "recipes/node-html-parser-query/package.json": "sha256:9389eebc1486f25d2f72275c717a0984905d9401902b682ef20fd9016a5c253f",
+    "recipes/node-html-parser-query/recipe.yaml": "sha256:38d4926f909657ad75e557b04e85fb715932a79401d9567ac4544e41f04a1d84",
+    "recipes/node-html-parser-query/src/query.ts": "sha256:16a68a096c57e7f3bf5b79262bffbdeb966d76e35c03de2d937c74e550e878b6",
+    "recipes/node-html-parser-query/test/query.test.ts": "sha256:63b7a341482e9aa5ee06eb8bdb76a2093b8f38623a5687971b3a77a3351e3cc2"
    },
    "staleness": {
     "status": "unchecked",
@@ -9287,6 +9446,42 @@
      "zod": "4.6.7"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/38740167658"
+   }
+  },
+  {
+   "id": "passport-local-express-session",
+   "language": "typescript",
+   "pinned": {
+    "express": "5.3.0",
+    "express-session": "1.19.0",
+    "passport": "0.7.0",
+    "passport-local": "1.0.0",
+    "supertest": "7.3.1",
+    "@types/express": "5.0.6",
+    "@types/express-session": "1.19.0",
+    "@types/node": "26.6.5",
+    "@types/passport": "1.0.17",
+    "@types/passport-local": "1.0.38",
+    "@types/supertest": "7.2.1",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-17T05:58:36.193Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39008163431",
+   "recipe_hash": "sha256:bf209881db437932d75a10fa7da37cdf034f63f586e79dcdc0986075b156b779",
+   "files": {
+    "recipes/passport-local-express-session/package.json": "sha256:d5c27b1b12664906e06488f66df3b6177a8b06767624dae22f6543ad9ce70550",
+    "recipes/passport-local-express-session/recipe.yaml": "sha256:296ef4e706bdc53778098acefb329fa6c374a70000ab0b79a85cca39ac975d23",
+    "recipes/passport-local-express-session/src/app.ts": "sha256:acfe69f404c20fcbccb94ab9ccb2245263c0b0ce0bbfb93447f76809bc59c778",
+    "recipes/passport-local-express-session/src/auth.ts": "sha256:0e6f3edce15021547b5a7938bf02d77e30a79d033bbb9a55afa7bab6fda3f802",
+    "recipes/passport-local-express-session/test/app.test.ts": "sha256:001562967efe053c95a1b1d89d637c04178d36ab4ed8fc05c2aa08748a8bd65b"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
@@ -11471,6 +11666,32 @@
    }
   },
   {
+   "id": "rollup-virtual-module-bundle",
+   "language": "typescript",
+   "pinned": {
+    "rollup": "4.64.7",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-17T05:58:35.707Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39008163431",
+   "recipe_hash": "sha256:bc66abe85b084e16a8b822e98818f8430c3f04d7f6eb3208b317d23897c197a9",
+   "files": {
+    "recipes/rollup-virtual-module-bundle/package.json": "sha256:271efda97255761213b637c736077c1139a7dd50329dad192b1729fe87577f78",
+    "recipes/rollup-virtual-module-bundle/recipe.yaml": "sha256:7e7be46987655c18cd76f46c86a8815bdaf02de578cb699f071dd70a78ca4933",
+    "recipes/rollup-virtual-module-bundle/src/bundle.ts": "sha256:1d11265825031ae471b9695f0db7ef61ae2d936eecbaf04f904f314c71c76201",
+    "recipes/rollup-virtual-module-bundle/test/bundle.test.ts": "sha256:e1b3531dd0d11d8f56311a264e8d971aef9eb40cd2bb032f81525f2fd0ed4dbe"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
    "id": "rq-fakeredis-jobs",
    "language": "python",
    "pinned": {
@@ -12786,6 +13007,32 @@
     "recipes/svix-webhook-verify-hono/recipe.yaml": "sha256:24f77b64c1a94a77e5afc5ba190693c73cd2c24425ca0f31980a8e8f16c8fc74",
     "recipes/svix-webhook-verify-hono/src/app.ts": "sha256:a2fc4a253c09e27728ea6c7bf6eabbf2789ec7526f4bd4e136f64eeb6c0bee51",
     "recipes/svix-webhook-verify-hono/test/app.test.ts": "sha256:05e4e28a97fe44d8f72482024d1da59aaac1ff19c8c2e39ab71b07f6a2213de8"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
+   }
+  },
+  {
+   "id": "swc-core-transform-minify",
+   "language": "typescript",
+   "pinned": {
+    "@swc/core": "1.16.18",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-17T05:58:54.474Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39008163431",
+   "recipe_hash": "sha256:0dcdf17cda3964a771faa3084e44a205f5f0ba5d85a22ad0e277a421b4b4078a",
+   "files": {
+    "recipes/swc-core-transform-minify/package.json": "sha256:ca7f2a79cda4a63d4831bd35277424ba9b06ad6158d26b2a852dacecd06875d6",
+    "recipes/swc-core-transform-minify/recipe.yaml": "sha256:0d8aa7b8462ab53129a8069fada3d83c282c89a93c55b665de20131084dc86fe",
+    "recipes/swc-core-transform-minify/src/transform.ts": "sha256:bd365de319a4b34282501d849085f8a0d9f1a37c4501a6d9ae0aff5eac76bf4d",
+    "recipes/swc-core-transform-minify/test/transform.test.ts": "sha256:a4e1196c80459dd20e458df24cbcfc81c142f4d608dbeaac1bb8e206c3a3b715"
    },
    "staleness": {
     "status": "unchecked",

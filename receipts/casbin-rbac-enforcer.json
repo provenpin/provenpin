@@ -1,0 +1,34 @@
+{
+  "id": "casbin-rbac-enforcer",
+  "status": "passed",
+  "ran_at": "2026-10-17T05:58:34.689Z",
+  "last_passed_at": "2026-10-17T05:58:34.689Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3374,
+    "test": 459
+  },
+  "pinned": {
+    "casbin": "5.51.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:b60896d6eb2a9e0041b6398f38be20fde0f2ac09140156a375fc57463d5975bc",
+  "files": {
+    "recipes/casbin-rbac-enforcer/package.json": "sha256:3c54f61e5ba7a04703da080a03f568d32963a7549bc1664c30b2df643f515c41",
+    "recipes/casbin-rbac-enforcer/recipe.yaml": "sha256:f3acd8911178e80615cddc9c23cc9dd0418f20da592dab7ac6c9dba720813982",
+    "recipes/casbin-rbac-enforcer/src/rbac.ts": "sha256:c225a9d5abdc274d643bb9a6b845cb68e789194d54d2fb2f0dbb69e2017c5cbe",
+    "recipes/casbin-rbac-enforcer/test/rbac.test.ts": "sha256:d522d42aad0d5735c71366f180322f6bf69ae2c83cfe840744d1e7337995f4a1"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39008163431"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: resolves role inheritance for direct and nested roles\nok 3 - resolves role inheritance for direct and nested roles\n  ---\n  duration_ms: 2.251997\n  type: 'test'\n  ...\n# Subtest: applies a deny rule that overrides an inherited allow\nok 4 - applies a deny rule that overrides an inherited allow\n  ---\n  duration_ms: 1.187476\n  type: 'test'\n  ...\n# Subtest: removes a policy at runtime and denies later requests\nok 5 - removes a policy at runtime and denies later requests\n  ---\n  duration_ms: 2.17452\n  type: 'test'\n  ...\n# Subtest: removes a grouping policy at runtime and revokes inherited access\nok 6 - removes a grouping policy at runtime and revokes inherited access\n  ---\n  duration_ms: 1.580076\n  type: 'test'\n  ...\n# Subtest: adds a policy at runtime and grants new access\nok 7 - adds a policy at runtime and grants new access\n  ---\n  duration_ms: 1.133885\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 317.015511\n"
+}

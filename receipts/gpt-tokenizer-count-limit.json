@@ -1,0 +1,34 @@
+{
+  "id": "gpt-tokenizer-count-limit",
+  "status": "passed",
+  "ran_at": "2026-10-17T05:58:35.404Z",
+  "last_passed_at": "2026-10-17T05:58:35.404Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 2542,
+    "test": 540
+  },
+  "pinned": {
+    "gpt-tokenizer": "4.0.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:bf3566f11744fadb74dec5cf61e4633964511e3d107e6b47664fb2868e142f6a",
+  "files": {
+    "recipes/gpt-tokenizer-count-limit/package.json": "sha256:20936a763d043cc2afa8687fa9bde702177c9ac5ec8fd81498562d886de6b21a",
+    "recipes/gpt-tokenizer-count-limit/recipe.yaml": "sha256:0371f1a5627071a8792733b2a545ab098a62760cbb2a68d767c4dea5c657cfce",
+    "recipes/gpt-tokenizer-count-limit/src/tokenizer.ts": "sha256:c7804289c1013c94e6c59b47f1595f3a2be1c9da8e8613b246d1b62188c58555",
+    "recipes/gpt-tokenizer-count-limit/test/tokenizer.test.ts": "sha256:15270afeb3e95788802804bdbf2a84a8dacdab3b659d8f96c2a3d3134a0b3df0"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39008163431"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: encode and decode round trip text\nok 1 - encode and decode round trip text\n  ---\n  duration_ms: 6.31907\n  type: 'test'\n  ...\n# Subtest: token counts are positive and stable\nok 2 - token counts are positive and stable\n  ---\n  duration_ms: 0.310971\n  type: 'test'\n  ...\n# Subtest: isWithinTokenLimit reflects the budget\nok 3 - isWithinTokenLimit reflects the budget\n  ---\n  duration_ms: 0.704025\n  type: 'test'\n  ...\n# Subtest: encodeChat counts tokens for a short chat\nok 4 - encodeChat counts tokens for a short chat\n  ---\n  duration_ms: 0.589722\n  type: 'test'\n  ...\n# Subtest: truncates text to a token budget\nok 5 - truncates text to a token budget\n  ---\n  duration_ms: 0.371985\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 392.239015\n"
+}
