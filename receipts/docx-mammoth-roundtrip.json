@@ -1,15 +1,15 @@
 {
   "id": "docx-mammoth-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-15T22:58:08.153Z",
-  "last_passed_at": "2026-10-15T22:58:08.153Z",
+  "ran_at": "2026-10-17T00:52:05.158Z",
+  "last_passed_at": "2026-10-17T00:52:05.158Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2805,
-    "test": 738
+    "setup": 2626,
+    "test": 716
   },
   "pinned": {
     "docx": "9.11.0",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38820570375"
+    "runner": "github-actions 38988196687"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates a non-empty in-memory docx buffer\nok 1 - generates a non-empty in-memory docx buffer\n  ---\n  duration_ms: 75.388042\n  type: 'test'\n  ...\n# Subtest: convertToHtml renders the heading, paragraph and table\nok 2 - convertToHtml renders the heading, paragraph and table\n  ---\n  duration_ms: 78.862028\n  type: 'test'\n  ...\n# Subtest: extractRawText preserves the document text\nok 3 - extractRawText preserves the document text\n  ---\n  duration_ms: 31.946518\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 571.133856\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates a non-empty in-memory docx buffer\nok 1 - generates a non-empty in-memory docx buffer\n  ---\n  duration_ms: 76.047017\n  type: 'test'\n  ...\n# Subtest: convertToHtml renders the heading, paragraph and table\nok 2 - convertToHtml renders the heading, paragraph and table\n  ---\n  duration_ms: 75.149017\n  type: 'test'\n  ...\n# Subtest: extractRawText preserves the document text\nok 3 - extractRawText preserves the document text\n  ---\n  duration_ms: 36.145484\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 574.2662\n"
 }

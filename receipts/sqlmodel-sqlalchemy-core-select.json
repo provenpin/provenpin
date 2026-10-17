@@ -1,15 +1,15 @@
 {
   "id": "sqlmodel-sqlalchemy-core-select",
   "status": "passed",
-  "ran_at": "2026-10-16T00:01:39.563Z",
-  "last_passed_at": "2026-10-16T00:01:39.563Z",
+  "ran_at": "2026-10-17T00:57:31.625Z",
+  "last_passed_at": "2026-10-17T00:57:31.625Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 472,
-    "test": 1464
+    "setup": 604,
+    "test": 3092
   },
   "pinned": {
     "sqlmodel": "0.0.48",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38826982604"
+    "runner": "github-actions 38988196687"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.96s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.75s\n"
 }
