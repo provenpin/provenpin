@@ -1,0 +1,18 @@
+id: jscodeshift-transform-test
+title: "jscodeshift rename and require-to-import transform"
+summary: "Run jscodeshift programmatically with the tsx parser to rename an imported identifier and its usages and to convert require calls into ES imports, asserting exact output source offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [jscodeshift]
+tags: [codemod, ast, refactor]
+pinned:
+  "jscodeshift": "17.4.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/transform.ts
+  - test/transform.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

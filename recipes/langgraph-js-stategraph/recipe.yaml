@@ -1,0 +1,19 @@
+id: langgraph-js-stategraph
+title: "langgraph js stategraph"
+summary: "Build a LangGraph StateGraph with an Annotation state, two nodes and a conditional edge, compile it with a MemorySaver checkpointer and assert state accumulation and routing across two invocations on one thread."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [langgraph]
+tags: [langgraph, stategraph, agents]
+pinned:
+  "@langchain/langgraph": "1.5.1"
+  "@langchain/core": "1.2.18"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/graph.ts
+  - test/graph.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

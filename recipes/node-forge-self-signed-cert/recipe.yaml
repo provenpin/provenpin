@@ -1,0 +1,19 @@
+id: node-forge-self-signed-cert
+title: "node-forge self-signed certificate"
+summary: "Generate an RSA 2048 keypair, build a self-signed X.509 certificate with subject, issuer, basicConstraints, keyUsage and subjectAltName extensions, round-trip it through PEM, verify its signature and sign/verify data with SHA-256 offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [node-forge]
+tags: [crypto, x509, certificates, rsa, pki]
+pinned:
+  "node-forge": "1.4.0"
+  "@types/node": "26.6.5"
+  "@types/node-forge": "1.3.14"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/cert.ts
+  - test/cert.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

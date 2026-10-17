@@ -1,0 +1,18 @@
+id: tar-pack-extract
+title: "tar pack, list and extract"
+summary: "Create a gzipped tarball from a temp directory tree with node-tar, list entries, then extract a filtered subtree with strip and assert contents offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [tar]
+tags: [tar, archive, gzip, fs]
+pinned:
+  "tar": "7.5.22"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/pack.ts
+  - test/pack.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

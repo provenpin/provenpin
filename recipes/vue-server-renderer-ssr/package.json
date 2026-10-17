@@ -1,0 +1,16 @@
+{
+  "name": "vue-server-renderer-ssr",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "vue": "3.5.44",
+    "@vue/server-renderer": "3.5.44"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

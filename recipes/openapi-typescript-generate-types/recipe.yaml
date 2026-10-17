@@ -1,0 +1,18 @@
+id: openapi-typescript-generate-types
+title: "openapi-typescript generate types"
+summary: "Generate TypeScript types from an inline OpenAPI 3.1 document with the openapi-typescript programmatic API using openapiTS and astToString, asserting generated interface members and path keys offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [openapi-typescript]
+tags: [openapi, typescript, codegen, types]
+pinned:
+  "openapi-typescript": "7.13.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/generate.ts
+  - test/generate.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

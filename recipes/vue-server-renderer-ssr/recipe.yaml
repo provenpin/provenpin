@@ -1,0 +1,19 @@
+id: vue-server-renderer-ssr
+title: "Vue 3 SSR with renderToString"
+summary: "Server-render a Vue 3 app built with defineComponent and h(), covering props, computed, list rendering and provide/inject, then assert the HTML output offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [vue, "@vue/server-renderer"]
+tags: [vue, ssr, render, components]
+pinned:
+  "vue": "3.5.44"
+  "@vue/server-renderer": "3.5.44"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

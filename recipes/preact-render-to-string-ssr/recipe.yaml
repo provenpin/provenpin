@@ -1,0 +1,19 @@
+id: preact-render-to-string-ssr
+title: "preact render to string SSR"
+summary: "Server-render preact components with preact-render-to-string, covering props, useState initial values, conditional output, keyed lists and dangerouslySetInnerHTML while asserting exact escaped HTML offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [preact, preact-render-to-string]
+tags: [ssr, preact, html, testing]
+pinned:
+  "preact": "11.0.1"
+  "preact-render-to-string": "6.8.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/app.ts
+  - test/app.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
