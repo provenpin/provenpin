@@ -1,0 +1,34 @@
+{
+  "id": "isodate-duration-parse",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:56:58.010Z",
+  "last_passed_at": "2026-10-18T03:56:58.010Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 311,
+    "test": 453
+  },
+  "pinned": {
+    "isodate": "0.7.2",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:7ceb2faf32b825009fedeccdd5d4eb5ace00d9159df0a618c6ad52e5afbf4dce",
+  "files": {
+    "recipes/isodate-duration-parse/durations.py": "sha256:8d84e27e528a4171fa228d0da5ea4c0641311f0ad9a631a9a7fc02194a31f365",
+    "recipes/isodate-duration-parse/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/isodate-duration-parse/recipe.yaml": "sha256:e0bd503463a825ed76fe4b2511b2469476810e373442d914173d3ab7a6fd5e1d",
+    "recipes/isodate-duration-parse/requirements.txt": "sha256:99f1a30bcc8774eca1d4bddfec1d6202d59c67189b405cd6180f8a48434c6c99",
+    "recipes/isodate-duration-parse/tests/test_durations.py": "sha256:a861c7775da79603c4f972c2030ef63af26e7d0974808d33c837eeb47eddd7da"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+}

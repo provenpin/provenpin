@@ -1,0 +1,34 @@
+{
+  "id": "joserfc-jwt-jwe-roundtrip",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:14.600Z",
+  "last_passed_at": "2026-10-18T03:57:14.600Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 456,
+    "test": 757
+  },
+  "pinned": {
+    "joserfc": "1.7.5",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:518c2789c6b0304f303c30a6e7ed6053c5dac741ec0570bc78ebd91e4367edd9",
+  "files": {
+    "recipes/joserfc-jwt-jwe-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/joserfc-jwt-jwe-roundtrip/recipe.yaml": "sha256:a1acdd4d506dd5bf9c0d32fd6967cd123124ed99a946c7657428a24a1f58136a",
+    "recipes/joserfc-jwt-jwe-roundtrip/requirements.txt": "sha256:96c39428fc8ab1b5503eded2802b5c8b9d2f2359c08246b9f4126a4f44058970",
+    "recipes/joserfc-jwt-jwe-roundtrip/tests/test_tokens.py": "sha256:25d87b9a5192829ba87603983a7d4e04fe33f01dd85062b0659c9d7bb4710c3f",
+    "recipes/joserfc-jwt-jwe-roundtrip/tokens.py": "sha256:fc5d93fb6dbdd5e9aa96e60a0677a9c26e957f6b760f1d4a64dd18b56c8233cb"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.14s\n"
+}

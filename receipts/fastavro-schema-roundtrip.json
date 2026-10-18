@@ -1,0 +1,34 @@
+{
+  "id": "fastavro-schema-roundtrip",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:01.176Z",
+  "last_passed_at": "2026-10-18T03:57:01.176Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 465,
+    "test": 1142
+  },
+  "pinned": {
+    "fastavro": "1.13.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:687db828efd7f6ccfad6fb6203e87cc47cd60eb8ff24a33e07b8688cc0cb4c19",
+  "files": {
+    "recipes/fastavro-schema-roundtrip/avro_store.py": "sha256:f7e66ce011396017c72f52063e5c6b758f40aad08f9f8263d523838722e69282",
+    "recipes/fastavro-schema-roundtrip/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/fastavro-schema-roundtrip/recipe.yaml": "sha256:ce0bbc25212b40657773645fbd5ccea104692fa0efe52b9275d03ae98ccd2ff9",
+    "recipes/fastavro-schema-roundtrip/requirements.txt": "sha256:910755d7615437664c958effdcdab45bf55ccba2a65d035fa6d41ea7eb2fe8ce",
+    "recipes/fastavro-schema-roundtrip/tests/test_avro_store.py": "sha256:1022ff01ae99990d12449f4337dabe8e68e77c4c5dfedcf3aeaed9685a1c95d6"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"
+}

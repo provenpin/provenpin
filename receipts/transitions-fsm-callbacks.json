@@ -1,0 +1,34 @@
+{
+  "id": "transitions-fsm-callbacks",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:38.229Z",
+  "last_passed_at": "2026-10-18T03:57:38.229Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 381,
+    "test": 628
+  },
+  "pinned": {
+    "transitions": "0.9.3",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:0fa22a94d35652ed55de00c37f724a3271a640c9939237f0269a3ec17ac151d8",
+  "files": {
+    "recipes/transitions-fsm-callbacks/order.py": "sha256:91ae6b7cc0622194e4edebefd361280f1bc0a7dad69d50478faeed8616f08d6b",
+    "recipes/transitions-fsm-callbacks/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/transitions-fsm-callbacks/recipe.yaml": "sha256:2977eca0158418ddc0da00c7c4ea1360b442aef33654245631b91810bf18c20b",
+    "recipes/transitions-fsm-callbacks/requirements.txt": "sha256:4c67d5a6ad427a94eb50cc04ca0c444b42670b8add9a0ccfea4be9734181eb47",
+    "recipes/transitions-fsm-callbacks/tests/test_order.py": "sha256:af8d2af8969dfcfdeb9a9c6b0dd72a9f2aecc14a48867f8f605dc862247d1580"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.03s\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "construct-binary-struct-parsing",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:03.056Z",
+  "last_passed_at": "2026-10-18T03:57:03.056Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 268,
+    "test": 1694
+  },
+  "pinned": {
+    "construct": "2.10.70",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:fb07c9ca114c5b4ec6903d5797a324f0d31bfc0f695c3c5e76682c88e1e4145b",
+  "files": {
+    "recipes/construct-binary-struct-parsing/header.py": "sha256:d62c568595c9346da03d44ab21a15dcbfa3e2b8a6aeff9bfcd1d9aedf8cefcae",
+    "recipes/construct-binary-struct-parsing/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/construct-binary-struct-parsing/recipe.yaml": "sha256:b871d70a103c6c6804cb431421c4c722f782324bf5a58dbe8a5135b905d15ae6",
+    "recipes/construct-binary-struct-parsing/requirements.txt": "sha256:2c59151eebe2ccb061662b544d828b2787e83b8b6824c87bd6ab5144d5d0b1d4",
+    "recipes/construct-binary-struct-parsing/tests/test_header.py": "sha256:ad3cc6a69a42c640c1287d8703ec96c882036e486ee8e7885767fd007901de41"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.14s\n"
+}

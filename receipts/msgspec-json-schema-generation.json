@@ -1,0 +1,34 @@
+{
+  "id": "msgspec-json-schema-generation",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:20.090Z",
+  "last_passed_at": "2026-10-18T03:57:20.090Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 380,
+    "test": 1062
+  },
+  "pinned": {
+    "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:f72f6d05d3b0e28ebcc13f6173a81d5930573651a5d1816ce22b3d7f15d4a8ed",
+  "files": {
+    "recipes/msgspec-json-schema-generation/models.py": "sha256:e9a379de6ede2f20a255a9acd70c8cb44618cf839ce40d6e66bc90914e8e937e",
+    "recipes/msgspec-json-schema-generation/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/msgspec-json-schema-generation/recipe.yaml": "sha256:72ea1417f60585e6af3564f8408e4c8ec29319d31f9ed61b4de538bb275b0b1c",
+    "recipes/msgspec-json-schema-generation/requirements.txt": "sha256:52bfbf468f58b821120e47f77ba893d0204207e4ab4de16260244b9dce548761",
+    "recipes/msgspec-json-schema-generation/tests/test_schema.py": "sha256:347e5f529fd3bc182d284a59874c5790004df28b308f9cd70f832f1d7523fb27"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
+}

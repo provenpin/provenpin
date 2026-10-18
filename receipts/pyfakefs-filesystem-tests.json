@@ -1,0 +1,34 @@
+{
+  "id": "pyfakefs-filesystem-tests",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:20.456Z",
+  "last_passed_at": "2026-10-18T03:57:20.456Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 174,
+    "test": 2178
+  },
+  "pinned": {
+    "pyfakefs": "6.2.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:0b61b6bbb4e8411322ea281cfb7827ba4dc46509466fe21ff34c1a4e2cbc45a3",
+  "files": {
+    "recipes/pyfakefs-filesystem-tests/files.py": "sha256:bec9992a6f29187c816937e6c8a494195ecc655618c1bec1fbd7abd168b6a5ff",
+    "recipes/pyfakefs-filesystem-tests/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pyfakefs-filesystem-tests/recipe.yaml": "sha256:6534ada2a0f391213c79a15a4dace5ebb4a40a0c0d07a6030da07ccee43ffac6",
+    "recipes/pyfakefs-filesystem-tests/requirements.txt": "sha256:a9f2c6ccd25e222c84476294ba549245ace647c5043cf74c73d09b995fea9754",
+    "recipes/pyfakefs-filesystem-tests/tests/test_files.py": "sha256:22ddb10c3145dadecd425ff6e21ee47e944aa9e0806996e74f000b9e1b37d268"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+}

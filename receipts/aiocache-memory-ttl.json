@@ -1,0 +1,35 @@
+{
+  "id": "aiocache-memory-ttl",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:56:58.195Z",
+  "last_passed_at": "2026-10-18T03:56:58.195Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 898,
+    "test": 1912
+  },
+  "pinned": {
+    "aiocache": "0.12.3",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
+  },
+  "recipe_hash": "sha256:72f1d6dc30ae199b0f722fac91a14e6817100918cd8e763dc48f18b2d272f57a",
+  "files": {
+    "recipes/aiocache-memory-ttl/memory_cache.py": "sha256:3e4719e68049ec46cb3dbdb7e3452fb4af2a63ea6f316225d6ec93621330ba56",
+    "recipes/aiocache-memory-ttl/pytest.ini": "sha256:84bd7749dd89382ca22e501795a5c66f86cbd34ecc9b7968b7329884022a3a17",
+    "recipes/aiocache-memory-ttl/recipe.yaml": "sha256:43364f0d5338c13dca8ca2ec3e5204d259a8cd5efd4b88c304177e4d2f839d38",
+    "recipes/aiocache-memory-ttl/requirements.txt": "sha256:21fb42f316df35c73508f8514739b8ff144e28914d14286a049333a936d25ced",
+    "recipes/aiocache-memory-ttl/tests/test_memory_cache.py": "sha256:aa44e9d80a40ea74d94d40e63b229dc7d74c9848b6c15c59bba032474a505ac7"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": ".......                                                                  [100%]\n7 passed in 0.20s\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "typeguard-runtime-typecheck",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:41.006Z",
+  "last_passed_at": "2026-10-18T03:57:41.006Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 228,
+    "test": 1033
+  },
+  "pinned": {
+    "typeguard": "4.6.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:707a9f3fdefc141392de172180623d679998089d1f49813b0ee83882960131fe",
+  "files": {
+    "recipes/typeguard-runtime-typecheck/checks.py": "sha256:04e4a804196a5e609ab824049cb9c498a259516fae34ff193db464c6140bbf8d",
+    "recipes/typeguard-runtime-typecheck/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/typeguard-runtime-typecheck/recipe.yaml": "sha256:380becd8dbb3224078d86be44576e87295ad479d47a9c33bb9b765087977bd9e",
+    "recipes/typeguard-runtime-typecheck/requirements.txt": "sha256:a255f735f5574336c2a0d3cfa63ce101c179a22e18d190001a67547d07da817e",
+    "recipes/typeguard-runtime-typecheck/tests/test_checks.py": "sha256:dc2e15b3e1c576d0508c4d42ea624a027698a58045e1eafce9fdc7cf12d785c0"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "injector-di-modules",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:56:59.698Z",
+  "last_passed_at": "2026-10-18T03:56:59.698Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 185,
+    "test": 1329
+  },
+  "pinned": {
+    "injector": "0.24.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:de3b52d7fb7995995faeed2fb083bf44d03f618d2faec0305a64a11bc01c07f0",
+  "files": {
+    "recipes/injector-di-modules/app.py": "sha256:d8401798e57d417349fb79904bc9fcc741ae692c84691e5b64c0df2073ac2bfb",
+    "recipes/injector-di-modules/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/injector-di-modules/recipe.yaml": "sha256:218280057d2f050f563e5761346e5b0dc3c6dddbfeaf774d341cec18220f26d1",
+    "recipes/injector-di-modules/requirements.txt": "sha256:48a2e56e223f1d612ef8663358e23b98c911d030366e116b61177f4b9ee37f5d",
+    "recipes/injector-di-modules/tests/test_app.py": "sha256:81346f6b555c7747673f7a31882acf4e4fbeef0ae485835fb5c458a0145a0b49"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.19s\n"
+}

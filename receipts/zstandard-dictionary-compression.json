@@ -1,0 +1,34 @@
+{
+  "id": "zstandard-dictionary-compression",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:41.169Z",
+  "last_passed_at": "2026-10-18T03:57:41.169Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 480,
+    "test": 642
+  },
+  "pinned": {
+    "zstandard": "0.25.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:f086627ebd7f06185cbdf65a1eee6dc204934842d20f8223ac068bc146dca533",
+  "files": {
+    "recipes/zstandard-dictionary-compression/codec.py": "sha256:49354eb562fed5c2237cb9e5ad5d45b4dff903a04e9008341ea08bb9a6d935bc",
+    "recipes/zstandard-dictionary-compression/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/zstandard-dictionary-compression/recipe.yaml": "sha256:8ebe13714a4ecc5401e4837da952dd00553d852a7322a908c873f82d10b543ce",
+    "recipes/zstandard-dictionary-compression/requirements.txt": "sha256:d35e4fea6551158405b86016615e9e2da38320a98d9c1d33f7f1535a8896be42",
+    "recipes/zstandard-dictionary-compression/tests/test_codec.py": "sha256:f7edcac570cf975a4525b6a495adfc79dc118afe67480d0615f69f885e190c51"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+}

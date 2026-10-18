@@ -1,0 +1,35 @@
+{
+  "id": "strawberry-graphql-schema-tests",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:34.372Z",
+  "last_passed_at": "2026-10-18T03:57:34.372Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 373,
+    "test": 2347
+  },
+  "pinned": {
+    "strawberry-graphql": "0.336.0",
+    "pytest-asyncio": "1.4.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:ba6dd5fdbd116a5bc106ad893ea7ad42300efd020ed1f0f7640ee80d99bff63c",
+  "files": {
+    "recipes/strawberry-graphql-schema-tests/pytest.ini": "sha256:337a9794386cbcbc00b4362c7ebc3bbfc21a271a0e55c96fdf99af191d372845",
+    "recipes/strawberry-graphql-schema-tests/recipe.yaml": "sha256:7634da6983303694172edca452bc914657d7beae597ca9522d015a61406350b8",
+    "recipes/strawberry-graphql-schema-tests/requirements.txt": "sha256:9b82ffdcd260b91bc239e18a625c25624c9e4c7a892b9f197697cc7cf56805b3",
+    "recipes/strawberry-graphql-schema-tests/schema.py": "sha256:8d326c5c5e459c1714d3895e2a5d1e251bf254657e5ff9d5eb78dd296b5ea2b7",
+    "recipes/strawberry-graphql-schema-tests/tests/test_schema.py": "sha256:0d3906af6e48254362f6c4c7335eb0a61fa0321f40dc80a054c94a16e74c5ab6"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.58s\n"
+}

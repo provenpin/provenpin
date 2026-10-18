@@ -1,0 +1,34 @@
+{
+  "id": "parsimonious-peg-grammar",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:21.245Z",
+  "last_passed_at": "2026-10-18T03:57:21.245Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 264,
+    "test": 1051
+  },
+  "pinned": {
+    "parsimonious": "0.11.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:299def025e3f0a72ae13803bec5ee49d42e9b7e39d9caccce125cf081a2eacf9",
+  "files": {
+    "recipes/parsimonious-peg-grammar/grammar.py": "sha256:8ca5fe8a6635ac14e43dc242f5d700d3db0e5f3295425a9ab29770954934f740",
+    "recipes/parsimonious-peg-grammar/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/parsimonious-peg-grammar/recipe.yaml": "sha256:9fd633c171f39aed048641edda5cba068dd081b2240000ece5f8f22abd7acf8a",
+    "recipes/parsimonious-peg-grammar/requirements.txt": "sha256:1b70ac3ec8cfb67cbc8fc07d4bd341488653787a8aba151563de751022b15432",
+    "recipes/parsimonious-peg-grammar/tests/test_grammar.py": "sha256:1c6fb32743192e90cc0994c98e9553ca50287a21a959569b031826032579957c"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
+}

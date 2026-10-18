@@ -1,0 +1,34 @@
+{
+  "id": "pytest-mock-spy-autospec",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:24.279Z",
+  "last_passed_at": "2026-10-18T03:57:24.279Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 225,
+    "test": 1403
+  },
+  "pinned": {
+    "pytest-mock": "3.17.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:ccec81dacecd4d2c5695cb2228b16e577729b3bc3c7e04b29a5a77153fc6af17",
+  "files": {
+    "recipes/pytest-mock-spy-autospec/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pytest-mock-spy-autospec/recipe.yaml": "sha256:fb2070e248849c7fbd9b587a5cba58c1fc4c3a6bc2e40ef1399e36da4d561c14",
+    "recipes/pytest-mock-spy-autospec/requirements.txt": "sha256:67ee4d8c1f4c86649b5d520c9f5e941b56bc95670e8ab53316978da54534f63b",
+    "recipes/pytest-mock-spy-autospec/service.py": "sha256:c150f54a59aa4e04f1c5c20c9ab28b49c004130c6b17c388094db9029ae764e5",
+    "recipes/pytest-mock-spy-autospec/tests/test_service.py": "sha256:1f7b062a66973034b811c737373ac3a9503795649bf3b4a2f18efaac0d7d3c66"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.15s\n"
+}

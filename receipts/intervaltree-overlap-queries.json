@@ -1,0 +1,35 @@
+{
+  "id": "intervaltree-overlap-queries",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:56:59.465Z",
+  "last_passed_at": "2026-10-18T03:56:59.465Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 560,
+    "test": 1366
+  },
+  "pinned": {
+    "intervaltree": "3.2.1",
+    "sortedcontainers": "2.4.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:694376e898f444b886c9bc83e2f9a1f86755488cd0e6cef94f19f74d4f6f1a60",
+  "files": {
+    "recipes/intervaltree-overlap-queries/bookings.py": "sha256:68e23905be5b0b6c47ff8cb64fd9c6c74df499c7e7b1de2a7e3bc14bc092deaa",
+    "recipes/intervaltree-overlap-queries/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/intervaltree-overlap-queries/recipe.yaml": "sha256:033fc0074fe292f91ceeaad82500cf5ad2e68a6d1d9d8b68166958b45f1c5462",
+    "recipes/intervaltree-overlap-queries/requirements.txt": "sha256:248fa95004cb79591390b17de323f88330f6d243ba48340b4a030aab4bf95352",
+    "recipes/intervaltree-overlap-queries/tests/test_bookings.py": "sha256:540b134030cc1a3d0a823f9a110be69dc2a3f54dce8c2fe51d0a8550064987f4"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "hypothesis-stateful-rulebasedstatemachine",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:56:58.575Z",
+  "last_passed_at": "2026-10-18T03:56:58.575Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 440,
+    "test": 2842
+  },
+  "pinned": {
+    "hypothesis": "6.170.1",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:3c12c60cb6adb2120e9c7f6cb4bf180d89adb6e9c59db064178de4bf25624efd",
+  "files": {
+    "recipes/hypothesis-stateful-rulebasedstatemachine/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/hypothesis-stateful-rulebasedstatemachine/recipe.yaml": "sha256:6c8171c69638a171cb7699a970f20f143d86f6e0273e596415a9111ba26291c9",
+    "recipes/hypothesis-stateful-rulebasedstatemachine/requirements.txt": "sha256:a7318e49ed4418a3c177919df149660f9cabae2edc1874968203e06e73d569af",
+    "recipes/hypothesis-stateful-rulebasedstatemachine/store.py": "sha256:4243625a1832c500838960095830f88ae023ca12f502e4b82500ba94e4f2bc7a",
+    "recipes/hypothesis-stateful-rulebasedstatemachine/tests/test_stateful.py": "sha256:99c729b9888504a80a25fdeebd443af74e5669e1a2b906cc42cade3d8a20bb24"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 2.32s\n"
+}

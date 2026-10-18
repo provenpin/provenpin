@@ -1,0 +1,36 @@
+{
+  "id": "pluggy-plugin-hooks",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:57:23.879Z",
+  "last_passed_at": "2026-10-18T03:57:23.879Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 196,
+    "test": 1322
+  },
+  "pinned": {
+    "pluggy": "1.7.0",
+    "pytest": "9.1.1"
+  },
+  "recipe_hash": "sha256:2002c097ca4ecb4dbfda109beeac745697c0a8e7ba16bb268984992a6e4dec07",
+  "files": {
+    "recipes/pluggy-plugin-hooks/core.py": "sha256:887ae04ef0636679597022894951501ece880d5d84b2a2def7bb8a0fccf8fb53",
+    "recipes/pluggy-plugin-hooks/hookspecs.py": "sha256:53169fcf278988b01527d08b601dc3762af307967b9ed169ac3abbae1cd479ca",
+    "recipes/pluggy-plugin-hooks/plugins.py": "sha256:69793abb59c4567871d39957586f2952e4c38d474a8fae1a42b767d87d854b30",
+    "recipes/pluggy-plugin-hooks/pytest.ini": "sha256:07e12af78809b103a9e003b9bf24f9718928fa263046b37bf3ebc9ebbf802ceb",
+    "recipes/pluggy-plugin-hooks/recipe.yaml": "sha256:70e56393ff4e1b43402ac750ad875a24382df52b7e4058ad9543b425e48c0e0e",
+    "recipes/pluggy-plugin-hooks/requirements.txt": "sha256:9b1423c60aa172f390028a1708617eb74808d0d6998997de6929a89432b22c1e",
+    "recipes/pluggy-plugin-hooks/tests/test_hooks.py": "sha256:00fe3b3e404f127d90aa783f8d9be86d7fc40123da71a6242acc6e8d8589402d"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 39095370682"
+  },
+  "errors": [],
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+}
