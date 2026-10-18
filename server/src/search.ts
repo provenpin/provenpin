@@ -91,8 +91,8 @@ const STOPWORDS = new Set(("a about above after again against all am an and any 
  * Honest no-match. A result's coverage is the idf-weighted share of the query's words that appear anywhere in the
  * recipe (title, id, summary, tags, stack, pinned packages). A content word no recipe uses at all (a library or
  * product ProvenPin has no recipe for) still counts against coverage, at UNKNOWN_WEIGHT of the rarest known word.
- * If the top-ranked result covers less than MIN_COVERAGE, nothing fits and search returns no results instead of
- * a confident-looking wrong one. Both values were chosen on the 2026-10-18 outside-test queries
+ * If the top-ranked result covers less than MIN_COVERAGE, and the query names no library that a shown recipe is
+ * built on, nothing fits and search returns no results instead of a confident-looking wrong one. Both values were chosen on the 2026-10-18 outside-test queries
  * (server/scripts/eval-search.ts), so they are tuned in-sample.
  */
 export const UNKNOWN_WEIGHT = 0.75;
@@ -129,8 +129,11 @@ export function searchRecipes(index: RecipeIndex, query: string, opts: { stack?:
     })
     .filter((x) => q.length === 0 || x.score > 0)
     .sort((a, b) => b.score - a.score || a.r.id.localeCompare(b.r.id));
-  if (scored.length && scored[0].coverage < MIN_COVERAGE) return [];
-  return scored.slice(0, opts.limit ?? 10).map(({ r, score, coverage }) => ({
+  // A query that names a library one of the shown recipes is built on is never answered with "no match".
+  const shown = scored.slice(0, opts.limit ?? 10);
+  const namesShownStack = shown.some(({ r }) => r.stack.some((p) => named(p.toLowerCase())));
+  if (shown.length && shown[0].coverage < MIN_COVERAGE && !namesShownStack) return [];
+  return shown.map(({ r, score, coverage }) => ({
     id: r.id, title: r.title, summary: r.summary, stack: r.stack, language: r.language, score, coverage: Math.round(coverage * 100) / 100,
     pinned: r.pinned, receipt: { status: r.receipt.status, last_passed_at: r.receipt.last_passed_at },
   }));

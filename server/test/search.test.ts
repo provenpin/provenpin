@@ -93,7 +93,8 @@ test("no match: a query mostly about things no recipe covers returns nothing", (
 
 test("each result reports its coverage between 0 and 1", () => {
   const r = searchRecipes(index, "fastify json schema validation");
-  assert.ok(r.every((x) => x.coverage >= MIN_COVERAGE && x.coverage <= 1));
+  assert.ok(r.every((x) => x.coverage >= 0 && x.coverage <= 1));
+  assert.ok(r[0].coverage >= MIN_COVERAGE);
   assert.equal(r[0].coverage, 1);
 });
 
@@ -101,4 +102,10 @@ test("live index: every passing recipe's own title still finds results", { skip:
   const live: RecipeIndex = JSON.parse(fs.readFileSync(liveIndexPath, "utf8"));
   const empty = live.recipes.filter((r) => r.receipt.status === "passed" && !searchRecipes(live, r.title).length).map((r) => r.id);
   assert.deepEqual(empty, []);
+});
+
+test("no match never hides recipes built on a library the query names", () => {
+  // Same unknown words as above, but naming ajv keeps the ajv recipe even though its coverage is low.
+  const r = searchRecipes(index, "ajv for eslintrc eslint flatconfig codemod prettier husky lintstaged commitlint");
+  assert.ok(r.some((x) => x.id === "ajv-formats-json-schema"));
 });
