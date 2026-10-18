@@ -1,0 +1,82 @@
+[
+ {
+  "id": "pydantic-annotated-after-validator",
+  "query": "Python project using pydantic. I need this: Pydantic v2 Annotated validators (Before and After). Reusable BeforeValidator and AfterValidator types that coerce, constrain and normalize values, tested offline, including the defaults-are-not-validated gotcha. Please write the code."
+ },
+ {
+  "id": "httpx-pydantic-typed-client",
+  "query": "Python project using httpx, pydantic, respx. I need this: Typed httpx client parsing into pydantic v2 models, tested with respx. An async httpx client that retries 5xx and transport errors, validates responses into pydantic v2 models, and is tested offline with respx route mocks. Please write the code."
+ },
+ {
+  "id": "fastapi-argon2-login",
+  "query": "Python project using fastapi, argon2-cffi, python-multipart, httpx. I need this: FastAPI login with argon2-cffi hashing and rehash checks. A form-based FastAPI login that verifies argon2id hashes without leaking which users exist, and transparently upgrades outdated hashes on successful login, tested offline with TestClient and an in-memory store. Please write the code."
+ },
+ {
+  "id": "sqlalchemy-aiosqlite-session-factory",
+  "query": "Python project using sqlalchemy, aiosqlite, pytest-asyncio. I need this: SQLAlchemy 2 async session factory over aiosqlite. An async SQLAlchemy 2.0 engine and session factory over aiosqlite, with StaticPool in-memory wiring and pytest-asyncio tests covering commit, rollback and integrity errors. Please write the code."
+ },
+ {
+  "id": "flask-jwt-extended-auth",
+  "query": "Python project using flask, flask-jwt-extended. I need this: Flask 3 + Flask-JWT-Extended access and refresh tokens. Login, protected routes, refresh tokens and custom claims in Flask 3 using Flask-JWT-Extended, with an app factory. Please write the code."
+ },
+ {
+  "id": "django-celery-eager-signals",
+  "query": "Python project using django, celery, pytest-django. I need this: Django post_save signal enqueuing a Celery task, tested with eager mode and on_commit. A post_save signal queues a Celery task only after the row commits via transaction.on_commit, then tests run offline on in-memory SQLite with Celery eager mode and pytest-django's on_commit capture. Please write the code."
+ },
+ {
+  "id": "pydantic-settings-dotenv-secrets",
+  "query": "Python project using pydantic-settings, python-dotenv. I need this: pydantic-settings nested dotenv config with SecretStr masking. Compose nested pydantic-settings models from .env files, mask credentials with SecretStr, and pin down env precedence and JSON parsing offline. Please write the code."
+ },
+ {
+  "id": "pandas-openpyxl-excel-report",
+  "query": "Python project using pandas, openpyxl. I need this: pandas DataFrame to formatted Excel report with openpyxl styles and roundtrip read. Write a DataFrame to a styled .xlsx with openpyxl (header styles, number formats, widths, freeze panes, filters), then read it back with pandas and verify, fully offline. Please write the code."
+ },
+ {
+  "id": "celery-beat-schedule-crontab",
+  "query": "Python project using celery. I need this: Celery beat crontab schedules validated and run eagerly. Define beat_schedule crontab entries, validate task names and schedule types before deploy, and test each scheduled call offline with task_always_eager. Please write the code."
+ },
+ {
+  "id": "rich-typer-progress-cli",
+  "query": "Python project using typer, rich. I need this: Typer CLI with rich Progress and Table for batch jobs. A Typer command that squares a batch of numbers behind a rich Progress bar and prints a rich Table summary, tested offline through typer's CliRunner. Please write the code."
+ },
+ {
+  "id": "zod-env-dotenv-config",
+  "query": "TypeScript project using zod, dotenv. I need this: Zod 4 + dotenv typed environment config. Load .env files with dotenv and validate process.env with Zod 4 at startup: coercion, defaults, enums, URLs and readable errors. Please write the code."
+ },
+ {
+  "id": "express-helmet-rate-limit",
+  "query": "TypeScript project using express, helmet, express-rate-limit. I need this: Express 5 + Helmet + express-rate-limit hardening. Add security headers with Helmet and per-IP rate limiting with express-rate-limit to an Express 5 API. Please write the code."
+ },
+ {
+  "id": "better-sqlite3-zod-transactions",
+  "query": "TypeScript project using better-sqlite3, zod. I need this: better-sqlite3 transactions with Zod-validated inputs. A small ledger on better-sqlite3 using db.transaction for atomic transfers, nested transactions as savepoints for all-or-nothing batches, and Zod 4 to validate inputs and rows, tested on in-memory SQLite. Please write the code."
+ },
+ {
+  "id": "i18next-react-ssr",
+  "query": "TypeScript project using i18next, react-i18next, react. I need this: i18next + react-i18next: plurals, interpolation and SSR rendering. Configure i18next with resources, plurals, context and escaping, and render react-i18next components to HTML on the server, with per-request instances. Please write the code."
+ },
+ {
+  "id": "graphql-js-schema-execute",
+  "query": "TypeScript project using graphql. I need this: graphql-js code-first schema execution. Build a code-first graphql-js schema with an object type, a custom Date scalar, arguments and variables, then execute it and inspect validation and resolver errors offline. Please write the code."
+ },
+ {
+  "id": "hono-jwt-auth",
+  "query": "TypeScript project using hono, zod, @hono/zod-validator. I need this: Hono + hono/jwt bearer auth with Zod login. Issue HS256 JWTs from a Zod-validated login route in Hono and guard routes with the built-in jwt middleware. Please write the code."
+ },
+ {
+  "id": "drizzle-pglite-migrations",
+  "query": "TypeScript project using drizzle-orm, @electric-sql/pglite, postgres. I need this: Drizzle ORM migrations on PGlite (in-memory Postgres). Apply versioned SQL migrations with Drizzle's PGlite migrator, use Postgres features (jsonb, enums, arrays, onConflictDoUpdate) and test against a fresh in-memory database. Please write the code."
+ },
+ {
+  "id": "fastify-json-schema",
+  "query": "TypeScript project using fastify. I need this: Fastify 5 routes with JSON Schema validation. Fastify 5 route validation and response serialization with JSON Schema, tested via app.inject(). Please write the code."
+ },
+ {
+  "id": "jsonwebtoken-hs256-rs256",
+  "query": "TypeScript project using jsonwebtoken. I need this: jsonwebtoken HS256 and RS256. Sign and verify JSON Web Tokens with jsonwebtoken: HS256 secrets plus RS256 RSA keys from node:crypto, with deterministic expiry via clockTimestamp, issuer and audience checks, and rejection of the none algorithm. Please write the code."
+ },
+ {
+  "id": "ajv-formats-json-schema",
+  "query": "TypeScript project using ajv, ajv-formats. I need this: AJV 8 JSON Schema validation with ajv-formats. Compile JSON Schema drafts with AJV 8, enable email/uri/uuid formats via ajv-formats, and return field errors from validate.errors for API payloads. Please write the code."
+ }
+]
