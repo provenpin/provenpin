@@ -1,0 +1,236 @@
+{
+  "args": {
+    "query": "verify Apple App Store Server Notification V2 signedPayload JWS including the x5c certificate chain"
+  },
+  "t": "2026-10-18T04:30:37Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 156,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "fastapi-pydantic-v2-models",
+        "title": "FastAPI + Pydantic v2 validators, discriminated unions and serializers",
+        "summary": "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 21.45,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:32.402Z"
+        }
+      },
+      {
+        "id": "node-forge-self-signed-cert",
+        "title": "node-forge self-signed certificate",
+        "summary": "Generate an RSA 2048 keypair, build a self-signed X.509 certificate with subject, issuer, basicConstraints, keyUsage and subjectAltName extensions, round-trip it through PEM, verify its signature and sign/verify data with SHA-256 offline.",
+        "stack": [
+          "node-forge"
+        ],
+        "language": "typescript",
+        "score": 19.83,
+        "pinned": {
+          "node-forge": "1.4.0",
+          "@types/node": "26.6.5",
+          "@types/node-forge": "1.3.14",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:44.584Z"
+        }
+      },
+      {
+        "id": "vue-server-renderer-ssr",
+        "title": "Vue 3 SSR with renderToString",
+        "summary": "Server-render a Vue 3 app built with defineComponent and h(), covering props, computed, list rendering and provide/inject, then assert the HTML output offline.",
+        "stack": [
+          "vue",
+          "@vue/server-renderer"
+        ],
+        "language": "typescript",
+        "score": 19.48,
+        "pinned": {
+          "vue": "3.5.44",
+          "@vue/server-renderer": "3.5.44",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:47.156Z"
+        }
+      },
+      {
+        "id": "nextjs-server-action-zod",
+        "title": "Next.js 16 server actions + Zod with useActionState-shaped results",
+        "summary": "A 'use server' form action that validates FormData with Zod and returns field errors in the shape useActionState expects, tested by calling the action directly.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 19.45,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:33.179Z"
+        }
+      },
+      {
+        "id": "nextjs-stripe-webhook",
+        "title": "Next.js App Router + Stripe webhook handler",
+        "summary": "A Next.js route handler that verifies Stripe webhook signatures from the raw body and handles checkout.session.completed.",
+        "stack": [
+          "nextjs",
+          "stripe"
+        ],
+        "language": "typescript",
+        "score": 16.61,
+        "pinned": {
+          "next": "16.4.1",
+          "stripe": "23.0.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:35.427Z"
+        }
+      },
+      {
+        "id": "aiohttp-pytest-plugin-client",
+        "title": "aiohttp routes tested offline with the pytest-aiohttp test client",
+        "summary": "An aiohttp JSON app exercised through the pytest-aiohttp in-process test client, plus a conftest that brings loopback up so the client runs inside a network-isolated sandbox.",
+        "stack": [
+          "aiohttp",
+          "pytest-aiohttp",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 16.34,
+        "pinned": {
+          "aiohttp": "3.14.5",
+          "pytest-aiohttp": "1.1.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:28.730Z"
+        }
+      },
+      {
+        "id": "apollo-server-dataloader-batching",
+        "title": "Apollo Server 5 resolvers with per-request DataLoader batching",
+        "summary": "An Apollo Server 5 schema whose nested resolvers use per-request DataLoader instances to batch and dedupe lookups (no N+1), with GraphQLError extension codes and cache invalidation after a mutation, tested in-process with executeOperation.",
+        "stack": [
+          "@apollo/server",
+          "graphql",
+          "dataloader"
+        ],
+        "language": "typescript",
+        "score": 15.01,
+        "pinned": {
+          "@apollo/server": "5.5.1",
+          "graphql": "16.14.2",
+          "dataloader": "2.2.3",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:21.993Z"
+        }
+      },
+      {
+        "id": "trpc-client-server-superjson",
+        "title": "tRPC 11 client + server over fetch with superjson (Vitest)",
+        "summary": "End-to-end typed tRPC 11: fetch adapter server, createTRPCClient with httpBatchLink and superjson transformer for Dates and Maps, tested in-process with Vitest.",
+        "stack": [
+          "@trpc/server",
+          "@trpc/client",
+          "superjson",
+          "zod",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 15.01,
+        "pinned": {
+          "@trpc/server": "11.19.0",
+          "@trpc/client": "11.19.0",
+          "superjson": "2.2.6",
+          "zod": "4.6.7",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:24.382Z"
+        }
+      },
+      {
+        "id": "feedparser-pydantic-models",
+        "title": "feedparser XML fixtures into pydantic v2 models",
+        "summary": "Convert RSS and Atom feeds parsed by feedparser, including struct_time dates and tags, into validated pydantic v2 models with offline XML fixtures.",
+        "stack": [
+          "feedparser",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 14.13,
+        "pinned": {
+          "feedparser": "6.0.14",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:09.687Z"
+        }
+      },
+      {
+        "id": "zustand-store-vitest",
+        "title": "Zustand 5 store with persist middleware, tested with Vitest",
+        "summary": "A typed Zustand 5 vanilla store with actions, derived selectors and persist middleware on a custom storage, tested with Vitest including state reset between tests.",
+        "stack": [
+          "zustand",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 13.48,
+        "pinned": {
+          "zustand": "5.0.15",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:50.301Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

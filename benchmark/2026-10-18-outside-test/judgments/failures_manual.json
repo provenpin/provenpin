@@ -1,0 +1,133 @@
+[
+ {
+  "task_id": null,
+  "severity": "major",
+  "type": "broken_recipe",
+  "tool": "get_recipe",
+  "arguments": {
+   "id": "ky-msw-vitest"
+  },
+  "response_excerpt": "setup: \"npm install --no-audit --no-fund --ignore-scripts=false\"; receipt.environment.runtime: \"node v22.23.3\" (no npm version given). My run of that setup on Node v22.22.0 with its bundled npm 10.9.4: \"npm error Cannot read properties of null (reading 'edgesOut')\", exit 1.",
+  "expected": "the published setup command installs on the stated runtime (Node 22)",
+  "observed": "8 of 99 TypeScript recipes (aws-sdk-v3-dynamodb-sqs-vitest, effect-schema-vitest, hono-drizzle-sqlite-api, jose-jwks-verify, jotai-atoms-react-testing-library, ky-msw-vitest, redux-toolkit-rtk-query-msw, trpc-client-server-superjson) crash in npm install with npm 10.9.4, the npm that ships with Node 22. All 8 pass (test counts equal the receipts) when the same setup runs through npx npm@11.6.0. ProvenPin's own runner (runner/lib.mjs, rewriteSetup in the public repo) quietly switches to npm 11.6.0 when npm is older than 11.6, but the served setup command and receipt do not mention it. Classed as an undisclosed environment requirement, not broken recipe code. Evidence: recipes/<id>/run.log and retry_npm116.log."
+ },
+ {
+  "task_id": null,
+  "severity": "minor",
+  "type": "other",
+  "tool": "get_recipe",
+  "arguments": {
+   "id": "<any of the 194 fetched recipes>"
+  },
+  "response_excerpt": "receipt.files lists \"recipes/<id>/recipe.yaml\": \"sha256:...\", but files[] has no recipe.yaml entry",
+  "expected": "every file whose hash is in the receipt is served, so a client can recompute receipt.recipe_hash from the response alone",
+  "observed": "all 194 receipts list a recipe.yaml that get_recipe does not serve. Every served file's sha256 matched (194/194), but recipe_hash could only be recomputed with recipe.yaml from the public git repo (an anonymous clone). Using only the MCP response, the receipt cannot be checked end to end."
+ },
+ {
+  "task_id": null,
+  "severity": "minor",
+  "type": "other",
+  "tool": "get_recipe",
+  "arguments": {
+   "id": "nestjs-typeorm-sqlite"
+  },
+  "response_excerpt": "get_recipe response has no staleness field; receipts.json for the same recipe has staleness \"breaks_on_latest\"",
+  "expected": "an agent reading a recipe through MCP is told when it is known to break on the latest library versions, or when staleness was never checked",
+  "observed": "receipts.json (generated 2026-10-18T03:59:18Z) carries a staleness status, but neither search_recipes nor get_recipe shows it. In receipts.json 406 of 555 recipes (73%) are 'unchecked', 137 'current', 9 'passes_on_latest' and 3 'breaks_on_latest'. Among the 194 recipes I fetched: 100 unchecked, 87 current, 6 passes_on_latest, 1 breaks_on_latest (nestjs-typeorm-sqlite, still returned by search with no warning)."
+ },
+ {
+  "task_id": null,
+  "severity": "minor",
+  "type": "other",
+  "tool": "get_recipe",
+  "arguments": {
+   "id": "<listed recipes>"
+  },
+  "response_excerpt": "title/summary text of each recipe (recipes/<id>/recipe.json)",
+  "expected": "a recipe's title and summary claim only behaviour its code and tests show",
+  "observed": "4 read-only reviewer subagents read every file of the 194 recipes. They found about 20 recipes whose title or summary claims more than the code or tests show, for example: fastapi-sqlalchemy-crud ('CRUD', but only create and read endpoints); cache-manager-memory-store ('wrap loaders', but cache.wrap is never used); js-yaml-zod-config (says unknown keys are rejected, but z.object strips them; 'env defaults' are not implemented); nestjs-zod-validation-pipe (says tested through @nestjs/testing, which is never used); openai-python-respx-mock (title says structured outputs, but the code uses JSON mode); express-stripe-webhook ('dispatch on event type', but there is no per-type routing); drizzle-pglite-postgres ('relations', but no relations() API); kysely-sqlite-queries ('schema migration', but no Migrator); p-map-concurrency-limit ('async iterator', but the input is a plain array); openai-streaming-mock ('handle aborts', but no mid-stream abort is tested); jinja2-sandboxed-user-templates ('hardened', with incomplete resource limits); express-openapi-validator-spec (response validation never tested); fastapi-pydantic-v2-models ('response_model filtering', but nothing is filtered); arktype-schema-validation ('narrow predicates', but no .narrow()); celery-tasks-eager-testing ('in-memory broker', but the broker is bypassed); nextjs-stripe-webhook and nextjs-server-action-zod (Next.js installed but never exercised). Full verbatim lists: recipes/_review_group1..4.txt. The tests that do exist pass."
+ },
+ {
+  "task_id": null,
+  "severity": "major",
+  "type": "version_check",
+  "tool": "search_recipes",
+  "arguments": {
+   "query": "drizzle orm sqlite",
+   "versions": {
+    "drizzle-orm": "0.45.4",
+    "better-sqlite3": "13.0.3"
+   }
+  },
+  "response_excerpt": "#1 drizzle-sqlite-crud score 124.64, compatibility overall 'mismatch' (better-sqlite3 tested 12.11.1, yours 13.0.3); #2 hono-drizzle-sqlite-api score 104.39, overall 'exact'. Without versions: 122.64 and 92.39.",
+  "expected": "the search_recipes description: 'recipes that match the installed versions rank first'; hono-drizzle-sqlite-api (exact) should rank above drizzle-sqlite-crud (mismatch)",
+  "observed": "a matching versions map adds a small score bonus (+12 for the exact recipe, +2 for the mismatching one), so a recipe whose pins conflict with the project still ranks first. The compatibility summary on each result shows the mismatch, so an agent that reads it is warned; the ranking alone does not deliver the promise. Checks V21 and V22 did move the matching recipe from a tie to first. (check V23)"
+ },
+ {
+  "task_id": null,
+  "severity": "minor",
+  "type": "version_check",
+  "tool": "get_recipe",
+  "arguments": {
+   "id": "express-stripe-webhook",
+   "versions": "<package.json with \"express\": \"^5.2.0\", \"stripe\": \"^23.0.0\">"
+  },
+  "response_excerpt": "stripe: tested 23.0.0, yours '^23.0.0', verdict 'exact'; express: yours '^5.2.0', verdict 'compatible'",
+  "expected": "a semver range in package.json is not reported as an exact match (it can resolve to any 23.x); flag it as a range, or resolve it conservatively",
+  "observed": "ranges are stripped of the caret and compared as if they were installed versions; '^23.0.0' becomes 'exact'. package.json without a lockfile is a supported input format, so this case is common. (check V20)"
+ },
+ {
+  "task_id": null,
+  "severity": "minor",
+  "type": "version_check",
+  "tool": "get_recipe",
+  "arguments": {
+   "id": "express-stripe-webhook",
+   "versions": ""
+  },
+  "response_excerpt": "compatibility: overall 'unknown', detected_format 'requirements.txt', express and stripe not_in_project with 'Install express@5.3.0 to match the tested setup.'",
+  "expected": "a clear error, or a note that the empty versions input was ignored",
+  "observed": "an empty string is accepted, labelled requirements.txt, and every package is reported as missing from the project, which is confusing rather than wrong in a harmful way. Invalid JSON (V24), a number (V26), an array (V27) and an input over 200KB (V28) all got clear, polite errors. (check V25)"
+ },
+ {
+  "task_id": null,
+  "severity": "minor",
+  "type": "version_check",
+  "tool": "get_recipe",
+  "arguments": {
+   "id": "fastapi-stripe-webhook",
+   "versions": {
+    "fastapi": "0.144.0",
+    "stripe": "16.0.0",
+    "httpx": "0.28.1"
+   }
+  },
+  "response_excerpt": "pinned: {fastapi 0.143.1, stripe 16.0.0, httpx 0.28.1, pytest 9.1.1}; compatibility.packages: fastapi, stripe, httpx only",
+  "expected": "get_recipe's description: 'comparing each pinned package with the installed one (exact, compatible, mismatch, or not in your project)', so pytest would be not_in_project",
+  "observed": "test and dev pins are never compared (pytest in Python recipes; tsx, @types/*, supertest in express-stripe-webhook). This is probably deliberate, but it is undocumented, and an agent is not told that the recipe's tests need pytest 9.1.1 or tsx 4.23.15. All the verdicts that were reported were correct. (checks V10, V14, V16, which I count as incorrect because their pre-registered expectations included the pytest verdict)"
+ },
+ {
+  "task_id": null,
+  "severity": "minor",
+  "type": "docs",
+  "tool": null,
+  "arguments": {
+   "url": "https://provenpin.com/docs/"
+  },
+  "response_excerpt": "\"Each package gets a verdict (exact, compatible, mismatch or not in project) with a plain warning, and recipes that match your versions rank first.\"",
+  "expected": "documented behaviour matches what the server does",
+  "observed": "not every pinned package gets a verdict (test/dev pins are skipped), a caret range is called 'exact', and in V23 a mismatching recipe ranked first. See the version_check failures."
+ },
+ {
+  "task_id": null,
+  "severity": "minor",
+  "type": "docs",
+  "tool": null,
+  "arguments": {
+   "url": "https://provenpin.com/docs/"
+  },
+  "response_excerpt": "\"It also carries recipe_hash, one sha256 over the exact recipe files that were tested ... comparing hashes against your copy happens on your side.\"",
+  "expected": "enough detail to recompute recipe_hash from what get_recipe returns",
+  "observed": "the hash construction is not documented, and it covers recipe.yaml, which get_recipe does not serve. I could verify recipe_hash only by reading the runner source and cloning the repo. The page also omits staleness, the forced --ignore-scripts=false, the npm >= 11.6 requirement of 8 recipes, and how to recognize a 'no match' search result."
+ }
+]

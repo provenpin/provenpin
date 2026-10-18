@@ -1,0 +1,235 @@
+{
+  "args": {
+    "query": "blink an LED and read a push button on Raspberry Pi with gpiozero"
+  },
+  "t": "2026-10-18T04:31:36Z",
+  "wall_s": 0.96,
+  "ok": true,
+  "ms": 159,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "web-push-vapid-payload-encryption",
+        "title": "web-push VAPID keys and aes128gcm payload encryption, verified offline",
+        "summary": "Generate VAPID keys and the exact push-service request with web-push (no send), then decrypt the aes128gcm payload as the browser would with http_ece and verify the ES256 VAPID JWT with node:crypto.",
+        "stack": [
+          "web-push",
+          "http_ece"
+        ],
+        "language": "typescript",
+        "score": 42.37,
+        "pinned": {
+          "web-push": "3.6.7",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "http_ece": "1.2.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:10:10.075Z"
+        }
+      },
+      {
+        "id": "pandas-sqlalchemy-to-sql",
+        "title": "pandas to_sql and read_sql with a SQLAlchemy 2 engine on sqlite, with dtype handling",
+        "summary": "Write and read DataFrames through a SQLAlchemy 2 engine, control column types with dtype, and handle datetimes and nullable ints, tested offline on in-memory sqlite.",
+        "stack": [
+          "pandas",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 21.82,
+        "pinned": {
+          "pandas": "3.0.6",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1",
+          "numpy": "2.3.4",
+          "python-dateutil": "2.9.0.post0",
+          "six": "1.17.0",
+          "typing-extensions": "4.15.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:04.837Z"
+        }
+      },
+      {
+        "id": "clsx-tailwind-merge-cva",
+        "title": "clsx, tailwind-merge and CVA button variants",
+        "summary": "Compose class names with clsx, resolve Tailwind conflicts via tailwind-merge, and define button variants with class-variance-authority.",
+        "stack": [
+          "clsx",
+          "tailwind-merge",
+          "class-variance-authority"
+        ],
+        "language": "typescript",
+        "score": 18.52,
+        "pinned": {
+          "clsx": "2.1.1",
+          "tailwind-merge": "3.7.0",
+          "class-variance-authority": "0.7.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:56:47.960Z"
+        }
+      },
+      {
+        "id": "pandas-openpyxl-excel-report",
+        "title": "pandas DataFrame to formatted Excel report with openpyxl styles and roundtrip read",
+        "summary": "Write a DataFrame to a styled .xlsx with openpyxl (header styles, number formats, widths, freeze panes, filters), then read it back with pandas and verify, fully offline.",
+        "stack": [
+          "pandas",
+          "openpyxl"
+        ],
+        "language": "python",
+        "score": 14.24,
+        "pinned": {
+          "pandas": "3.0.6",
+          "openpyxl": "3.1.5",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:36.429Z"
+        }
+      },
+      {
+        "id": "exceljs-read-write",
+        "title": "Excel .xlsx export and import with ExcelJS",
+        "summary": "Generate styled .xlsx reports (header row, number formats, formulas, frozen panes) and read uploaded workbooks back into typed rows with ExcelJS, all in memory.",
+        "stack": [
+          "exceljs"
+        ],
+        "language": "typescript",
+        "score": 13.2,
+        "pinned": {
+          "exceljs": "4.4.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:39.562Z"
+        }
+      },
+      {
+        "id": "polib-po-catalog-roundtrip",
+        "title": "polib PO catalog read, edit and write roundtrip with MO compile",
+        "summary": "Read, edit and write gettext PO catalogs with polib, compile them to MO, and audit fuzzy and untranslated entries fully offline.",
+        "stack": [
+          "polib"
+        ],
+        "language": "python",
+        "score": 13.2,
+        "pinned": {
+          "polib": "1.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:19.119Z"
+        }
+      },
+      {
+        "id": "django-celery-eager-signals",
+        "title": "Django post_save signal enqueuing a Celery task, tested with eager mode and on_commit",
+        "summary": "A post_save signal queues a Celery task only after the row commits via transaction.on_commit, then tests run offline on in-memory SQLite with Celery eager mode and pytest-django's on_commit capture.",
+        "stack": [
+          "django",
+          "celery",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 12.9,
+        "pinned": {
+          "django": "6.1.2",
+          "celery": "5.6.3",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:10.405Z"
+        }
+      },
+      {
+        "id": "elysia-typebox-handle-tests",
+        "title": "Elysia API with TypeBox validation and guards, tested via app.handle on Node",
+        "summary": "An Elysia 1.4 app with TypeBox schemas for params, query, body and responses, a guard with an API key check and custom error mapping, tested on Node with web-standard Request objects through app.handle and no open port.",
+        "stack": [
+          "elysia",
+          "@sinclair/typebox"
+        ],
+        "language": "typescript",
+        "score": 12.73,
+        "pinned": {
+          "elysia": "1.4.30",
+          "@sinclair/typebox": "0.34.52",
+          "exact-mirror": "1.2.6",
+          "file-type": "22.2.0",
+          "openapi-types": "12.1.3",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:53.720Z"
+        }
+      },
+      {
+        "id": "litestar-dto-sqlalchemy",
+        "title": "Litestar app with advanced-alchemy and DTOs on SQLite",
+        "summary": "A Litestar app wired to SQLAlchemy through the advanced-alchemy plugin, with separate read and write DTOs over aiosqlite, tested offline with litestar.testing TestClient.",
+        "stack": [
+          "litestar",
+          "advanced-alchemy",
+          "aiosqlite"
+        ],
+        "language": "python",
+        "score": 11.96,
+        "pinned": {
+          "litestar": "2.24.0",
+          "advanced-alchemy": "1.11.0",
+          "aiosqlite": "0.22.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:47.241Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-async-repository-pattern",
+        "title": "Async repository pattern with SQLAlchemy 2 AsyncSession on aiosqlite",
+        "summary": "A typed async repository over SQLAlchemy 2 AsyncSession with eager loading, foreign keys enforced on SQLite, and offline pytest-asyncio tests against an in-memory database.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 11.31,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.2.4",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:38.701Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

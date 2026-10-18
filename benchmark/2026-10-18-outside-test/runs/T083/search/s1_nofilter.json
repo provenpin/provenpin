@@ -1,0 +1,216 @@
+{
+  "args": {
+    "query": "read a GRIB2 weather forecast with xarray and cfgrib and extract 2m temperature at a lat lon"
+  },
+  "t": "2026-10-18T04:31:51Z",
+  "wall_s": 0.98,
+  "ok": true,
+  "ms": 143,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "tar-pack-extract",
+        "title": "tar pack, list and extract",
+        "summary": "Create a gzipped tarball from a temp directory tree with node-tar, list entries, then extract a filtered subtree with strip and assert contents offline.",
+        "stack": [
+          "tar"
+        ],
+        "language": "typescript",
+        "score": 19.57,
+        "pinned": {
+          "tar": "7.5.22",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:45.137Z"
+        }
+      },
+      {
+        "id": "pandas-sqlalchemy-to-sql",
+        "title": "pandas to_sql and read_sql with a SQLAlchemy 2 engine on sqlite, with dtype handling",
+        "summary": "Write and read DataFrames through a SQLAlchemy 2 engine, control column types with dtype, and handle datetimes and nullable ints, tested offline on in-memory sqlite.",
+        "stack": [
+          "pandas",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 16.32,
+        "pinned": {
+          "pandas": "3.0.6",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1",
+          "numpy": "2.3.4",
+          "python-dateutil": "2.9.0.post0",
+          "six": "1.17.0",
+          "typing-extensions": "4.15.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:04.837Z"
+        }
+      },
+      {
+        "id": "pandas-openpyxl-excel-report",
+        "title": "pandas DataFrame to formatted Excel report with openpyxl styles and roundtrip read",
+        "summary": "Write a DataFrame to a styled .xlsx with openpyxl (header styles, number formats, widths, freeze panes, filters), then read it back with pandas and verify, fully offline.",
+        "stack": [
+          "pandas",
+          "openpyxl"
+        ],
+        "language": "python",
+        "score": 14.24,
+        "pinned": {
+          "pandas": "3.0.6",
+          "openpyxl": "3.1.5",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:36.429Z"
+        }
+      },
+      {
+        "id": "ajv-standalone-validation",
+        "title": "Ajv standalone validation code generated at build time",
+        "summary": "Compile JSON Schemas once with Ajv into standalone ESM validator modules, write them to disk and import them at runtime without compiling, checking errors, defaults and type coercion.",
+        "stack": [
+          "ajv"
+        ],
+        "language": "typescript",
+        "score": 13.53,
+        "pinned": {
+          "ajv": "8.20.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:37.938Z"
+        }
+      },
+      {
+        "id": "exceljs-read-write",
+        "title": "Excel .xlsx export and import with ExcelJS",
+        "summary": "Generate styled .xlsx reports (header row, number formats, formulas, frozen panes) and read uploaded workbooks back into typed rows with ExcelJS, all in memory.",
+        "stack": [
+          "exceljs"
+        ],
+        "language": "typescript",
+        "score": 13.2,
+        "pinned": {
+          "exceljs": "4.4.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:39.562Z"
+        }
+      },
+      {
+        "id": "polib-po-catalog-roundtrip",
+        "title": "polib PO catalog read, edit and write roundtrip with MO compile",
+        "summary": "Read, edit and write gettext PO catalogs with polib, compile them to MO, and audit fuzzy and untranslated entries fully offline.",
+        "stack": [
+          "polib"
+        ],
+        "language": "python",
+        "score": 13.2,
+        "pinned": {
+          "polib": "1.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:19.119Z"
+        }
+      },
+      {
+        "id": "chrono-node-reference-date",
+        "title": "chrono-node natural language dates with a fixed reference and timezone",
+        "summary": "Parse phrases like \"tomorrow at 9am\", weekday names, ranges and dates inside sentences with chrono-node against a fixed reference instant and UTC offset, plus en.GB day-first parsing.",
+        "stack": [
+          "chrono-node"
+        ],
+        "language": "typescript",
+        "score": 11.45,
+        "pinned": {
+          "chrono-node": "2.10.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:08:36.835Z"
+        }
+      },
+      {
+        "id": "pyotp-totp-freezegun",
+        "title": "pyotp TOTP and HOTP codes tested at frozen time",
+        "summary": "Generate RFC-compatible TOTP and HOTP codes, build otpauth provisioning URIs and tolerate one-step clock drift, all pinned to deterministic time with freezegun.",
+        "stack": [
+          "pyotp",
+          "freezegun"
+        ],
+        "language": "python",
+        "score": 10.92,
+        "pinned": {
+          "pyotp": "2.10.0",
+          "freezegun": "1.5.5",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:15.697Z"
+        }
+      },
+      {
+        "id": "markdown-pygments-codehilite",
+        "title": "Markdown to HTML with fenced code, codehilite, toc and tables",
+        "summary": "Render Markdown with Python-Markdown extensions and Pygments highlighting, extract a nested table of contents, and generate the matching Pygments CSS.",
+        "stack": [
+          "markdown",
+          "pygments"
+        ],
+        "language": "python",
+        "score": 10.55,
+        "pinned": {
+          "markdown": "3.11.1",
+          "pygments": "2.21.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:06.616Z"
+        }
+      },
+      {
+        "id": "pdf-lib-invoice",
+        "title": "pdf-lib create and read invoice PDF",
+        "summary": "Build a multi-page invoice PDF with pdf-lib, draw text and rectangles, then reload the bytes and assert page count offline.",
+        "stack": [
+          "pdf-lib"
+        ],
+        "language": "typescript",
+        "score": 9.83,
+        "pinned": {
+          "pdf-lib": "1.17.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:41.110Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

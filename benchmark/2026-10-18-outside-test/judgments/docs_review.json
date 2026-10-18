@@ -1,0 +1,25 @@
+{
+ "url": "https://provenpin.com/docs/",
+ "fetched": "one GET with the benchmark User-Agent, saved as docs_review/docs.html and docs_review/docs.txt; no linked page was followed",
+ "rating": 3,
+ "could_install_from_docs_alone": "yes. One copy-paste snippet each for Claude Code, Cursor, VS Code, Windsurf and Cline, plus 'Streamable HTTP at https://mcp.provenpin.com/mcp' for any other client. No key or signup. My raw-HTTP client worked from that line plus the standard MCP handshake.",
+ "good": [
+  "short, accurate install instructions for five clients",
+  "tools are named with one-line purposes; the versions input formats are listed and match what the server accepted (all 8 formats were detected correctly)",
+  "honest caveat: 'A passing receipt proves the recipe works on its pinned versions, not on yours.'",
+  "receipts are explained (status, pins, runtime, test counts, CI link, recipe_hash, per-file sha256), and the hashes I recomputed matched for 194/194 recipes"
+ ],
+ "missing_or_confusing": [
+  "how recipe_hash is computed is not stated (I took it from runner/lib.mjs: sha256 over the sorted [recipe.yaml, ...files], each entry hashed as path + NUL + bytes), and recipe.yaml is not served by get_recipe, so 'comparing hashes against your copy' works for single files but not for recipe_hash",
+  "nothing on what search returns when nothing fits: in my test it always returned 10 results for descriptive queries, and the score field is not explained",
+  "the staleness status in receipts.json (73% 'unchecked', 3 'breaks_on_latest') is not mentioned, and get_recipe does not show it",
+  "no mention that setup commands force --ignore-scripts=false, or that 8 recipes need npm >= 11.6 (the runner upgrades npm silently)",
+  "no input schemas or limits (for example search limit, rate limits, or what Pro adds) on this page; tools/list gives the schemas"
+ ],
+ "overclaimed_vs_observed": [
+  "'recipes that match your versions rank first': not in check V23 (a mismatching recipe stayed first)",
+  "'Each package gets a verdict': test/dev pins (pytest, tsx, @types/*, supertest) are never given one, and a caret range '^23.0.0' was called 'exact' (V20)"
+ ],
+ "not_verified": ["'Lockfiles are never stored'", "the local server instructions (cd server && npm install && npm run dev)"],
+ "reason_for_rating": "Install and basic use are easy and correct, so a new user can get going. But two of the four claims in the versions section did not hold in my checks, and the page leaves out what a careful user needs to verify receipts or judge freshness and safety. 3 of 5."
+}

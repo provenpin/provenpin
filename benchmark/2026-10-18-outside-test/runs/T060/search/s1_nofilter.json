@@ -1,0 +1,256 @@
+{
+  "args": {
+    "query": "openai node v3 Configuration and OpenAIApi are not constructors: migrate to the new OpenAI client"
+  },
+  "t": "2026-10-18T04:30:34Z",
+  "wall_s": 0.92,
+  "ok": true,
+  "ms": 165,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "openai-streaming-mock",
+        "title": "OpenAI Node SDK streaming chat completions, tested with a mocked SSE fetch",
+        "summary": "Stream chat completion deltas with the OpenAI SDK (for await over chunks), accumulate text and usage, and handle aborts, tested offline with a fake fetch that returns an SSE body.",
+        "stack": [
+          "openai"
+        ],
+        "language": "typescript",
+        "score": 69.49,
+        "pinned": {
+          "openai": "7.34.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:57.727Z"
+        }
+      },
+      {
+        "id": "openai-sdk-mocked-tool-calls",
+        "title": "OpenAI Node SDK tool calling + Zod, tested with a mocked fetch",
+        "summary": "Run an OpenAI chat tool-calling loop with Zod-validated tool arguments, tested offline by injecting a fake fetch into the official SDK.",
+        "stack": [
+          "openai",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 68.78,
+        "pinned": {
+          "openai": "7.34.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:52.577Z"
+        }
+      },
+      {
+        "id": "openai-python-respx-mock",
+        "title": "OpenAI Python SDK structured outputs, tested with respx",
+        "summary": "Call the OpenAI Python SDK and validate JSON output with Pydantic, testing success, malformed output and API errors offline by mocking HTTP with respx.",
+        "stack": [
+          "openai",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 63.48,
+        "pinned": {
+          "openai": "3.31.0",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:47.669Z"
+        }
+      },
+      {
+        "id": "openai-structured-output-respx",
+        "title": "OpenAI chat.completions.parse with Pydantic output + respx mocks",
+        "summary": "Get typed output from OpenAI chat.completions.parse using a Pydantic response_format, handle refusals and schema mismatches, and test offline with respx returning canned JSON.",
+        "stack": [
+          "openai",
+          "respx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 62.05,
+        "pinned": {
+          "openai": "3.31.0",
+          "respx": "0.23.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1",
+          "httpx": "0.28.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:03.242Z"
+        }
+      },
+      {
+        "id": "flask-migrate-sqlite",
+        "title": "Flask-SQLAlchemy models with Flask-Migrate upgrades on sqlite in tests",
+        "summary": "Define Flask-SQLAlchemy models, version the schema with Flask-Migrate, and test upgrade, downgrade and model/migration drift offline on a temporary sqlite file.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "flask-migrate",
+          "sqlalchemy",
+          "alembic"
+        ],
+        "language": "python",
+        "score": 30.29,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "flask-migrate": "4.1.0",
+          "pytest": "9.1.1",
+          "alembic": "1.16.5",
+          "mako": "1.3.10",
+          "sqlalchemy": "2.0.43",
+          "typing-extensions": "4.15.0",
+          "werkzeug": "3.1.3",
+          "jinja2": "3.1.6",
+          "markupsafe": "3.0.3",
+          "itsdangerous": "2.2.0",
+          "blinker": "1.9.0",
+          "click": "8.3.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:51.580Z"
+        }
+      },
+      {
+        "id": "aws-sdk-v3-dynamodb-sqs-vitest",
+        "title": "AWS SDK v3 DynamoDB document client and SQS events, tested with Vitest matchers",
+        "summary": "A single-table DynamoDB order service on @aws-sdk/lib-dynamodb with conditional puts, begins_with queries and optimistic locking, publishing SQS events, tested offline with aws-sdk-client-mock and aws-sdk-client-mock-vitest matchers.",
+        "stack": [
+          "@aws-sdk/client-dynamodb",
+          "@aws-sdk/lib-dynamodb",
+          "@aws-sdk/client-sqs",
+          "aws-sdk-client-mock",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 25.39,
+        "pinned": {
+          "@aws-sdk/client-dynamodb": "3.1152.0",
+          "@aws-sdk/lib-dynamodb": "3.1152.0",
+          "@aws-sdk/client-sqs": "3.1152.0",
+          "aws-sdk-client-mock": "4.1.0",
+          "aws-sdk-client-mock-vitest": "8.0.0",
+          "vitest": "5.0.4",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:20.502Z"
+        }
+      },
+      {
+        "id": "aws-sdk-v3-s3-client-mock",
+        "title": "AWS SDK v3 S3 storage helpers tested with aws-sdk-client-mock",
+        "summary": "S3 helpers on @aws-sdk/client-s3 for JSON put/get with NoSuchKey handling, paginated listing, batched DeleteObjects and locally signed presigned URLs, tested offline with aws-sdk-client-mock and sdkStreamMixin bodies.",
+        "stack": [
+          "@aws-sdk/client-s3",
+          "@aws-sdk/s3-request-presigner",
+          "aws-sdk-client-mock"
+        ],
+        "language": "typescript",
+        "score": 23.97,
+        "pinned": {
+          "@aws-sdk/client-s3": "3.1152.0",
+          "@aws-sdk/s3-request-presigner": "3.1152.0",
+          "aws-sdk-client-mock": "4.1.0",
+          "@smithy/util-stream": "4.8.2",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:05.457Z"
+        }
+      },
+      {
+        "id": "ky-msw-vitest",
+        "title": "ky HTTP client with hooks and retries, tested with MSW + Vitest",
+        "summary": "A ky 2 API client (prefix option, state-object hooks) with auth hooks, retry on 5xx and typed JSON, tested offline with MSW's Node server in Vitest.",
+        "stack": [
+          "ky",
+          "msw",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 21.19,
+        "pinned": {
+          "ky": "2.2.0",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:49.038Z"
+        }
+      },
+      {
+        "id": "urql-core-msw-cache-exchange",
+        "title": "urql core client with MSW: auth headers, document cache and errors",
+        "summary": "Test an @urql/core client offline against MSW graphql handlers: auth via fetchOptions, cache-first hits vs network-only, mutation invalidation in the document cache, and CombinedError for GraphQL and HTTP failures.",
+        "stack": [
+          "@urql/core",
+          "msw",
+          "graphql"
+        ],
+        "language": "typescript",
+        "score": 19.62,
+        "pinned": {
+          "@urql/core": "6.0.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "msw": "3.0.3",
+          "graphql": "17.0.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:10:04.091Z"
+        }
+      },
+      {
+        "id": "msw-fetch-api-client",
+        "title": "Typed fetch API client tested with MSW + Zod",
+        "summary": "A typed fetch client that parses responses with Zod, tested offline by intercepting requests with MSW's Node server.",
+        "stack": [
+          "msw",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 19.06,
+        "pinned": {
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:23.153Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

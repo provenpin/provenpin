@@ -1,0 +1,221 @@
+{
+  "args": {
+    "query": "prisma too many connections on vercel serverless, connection pool exhausted what do"
+  },
+  "t": "2026-10-18T04:34:19Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 137,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "prisma-sqlite-adapter",
+        "title": "Prisma 7 + SQLite via better-sqlite3 adapter",
+        "summary": "Prisma Client 7 with the better-sqlite3 driver adapter, schema push and relational queries on a local SQLite file.",
+        "stack": [
+          "prisma",
+          "sqlite",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 69.77,
+        "pinned": {
+          "@prisma/client": "7.10.0",
+          "@prisma/adapter-better-sqlite3": "7.10.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "prisma": "7.10.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:21.651Z"
+        }
+      },
+      {
+        "id": "prisma-sqlite-transactions",
+        "title": "Prisma 7 + SQLite: nested writes, interactive transactions and unique errors",
+        "summary": "Prisma Client 7 on SQLite (better-sqlite3 adapter): nested creates, an interactive $transaction that rolls back, and handling P2002 unique-constraint errors.",
+        "stack": [
+          "prisma",
+          "sqlite",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 69.77,
+        "pinned": {
+          "@prisma/client": "7.10.0",
+          "@prisma/adapter-better-sqlite3": "7.10.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "prisma": "7.10.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:22.623Z"
+        }
+      },
+      {
+        "id": "sqlmodel-relationships-sqlite",
+        "title": "SQLModel one-to-many and many-to-many relationships tested on in-memory SQLite",
+        "summary": "Model one-to-many and link-table many-to-many relationships with SQLModel, load them with selectinload, and test offline on in-memory SQLite with StaticPool.",
+        "stack": [
+          "sqlmodel",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 19.65,
+        "pinned": {
+          "sqlmodel": "0.0.48",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:05:40.781Z"
+        }
+      },
+      {
+        "id": "zstandard-dictionary-compression",
+        "title": "zstandard trained dictionaries for many small JSON records",
+        "summary": "Train a Zstandard dictionary on JSON records, compress single records and newline-delimited streams, and handle frame content size and dictionary mismatch pitfalls.",
+        "stack": [
+          "zstandard"
+        ],
+        "language": "python",
+        "score": 11.27,
+        "pinned": {
+          "zstandard": "0.25.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:57:41.169Z"
+        }
+      },
+      {
+        "id": "p-limit-concurrency",
+        "title": "p-limit concurrent async job pool",
+        "summary": "Cap parallel async work with p-limit, tracking in-flight count and collecting results in input order offline.",
+        "stack": [
+          "p-limit"
+        ],
+        "language": "typescript",
+        "score": 11.26,
+        "pinned": {
+          "p-limit": "7.3.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:34.002Z"
+        }
+      },
+      {
+        "id": "vercel-ai-sdk-mock-model-tools",
+        "title": "Vercel AI SDK tool loops, structured output and streaming with a mock model",
+        "summary": "AI SDK generateText with a Zod-typed tool and a stopWhen step cap, Output.object structured results validated by Zod, and streamText deltas, all tested offline with MockLanguageModelV4 and simulateReadableStream from ai/test.",
+        "stack": [
+          "ai",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 11.26,
+        "pinned": {
+          "ai": "7.0.141",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:36.006Z"
+        }
+      },
+      {
+        "id": "knex-better-sqlite3-migrations",
+        "title": "Knex migrations, seeds and queries on better-sqlite3",
+        "summary": "Knex 3 with the better-sqlite3 client: in-code migrations via a custom migrationSource (latest, down, rollback, list), foreign keys enabled per connection, a transactional seed and a join plus aggregate query, tested on in-memory SQLite.",
+        "stack": [
+          "knex",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 10.43,
+        "pinned": {
+          "knex": "3.3.0",
+          "better-sqlite3": "13.0.3",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:30.212Z"
+        }
+      },
+      {
+        "id": "objection-knex-sqlite",
+        "title": "Objection.js models with Knex on SQLite",
+        "summary": "Use Objection.js Model classes on a Knex better-sqlite3 connection with relationMappings, inserts and eager graph fetches in offline tests.",
+        "stack": [
+          "objection",
+          "knex",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 10.43,
+        "pinned": {
+          "objection": "3.9.1",
+          "knex": "3.3.0",
+          "better-sqlite3": "13.0.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:43.731Z"
+        }
+      },
+      {
+        "id": "tortoise-orm-sqlite-relations",
+        "title": "Tortoise ORM relations and filters on sqlite under pytest-asyncio",
+        "summary": "Model foreign keys, reverse and many-to-many relations in Tortoise ORM, then exercise select_related, prefetch_related, dotted filters, distinct and annotate counts offline on in-memory sqlite.",
+        "stack": [
+          "tortoise-orm",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 10.21,
+        "pinned": {
+          "tortoise-orm": "1.1.9",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:55.284Z"
+        }
+      },
+      {
+        "id": "blinker-signals-decoupled-events",
+        "title": "blinker named signals for decoupled event handlers with sender filtering",
+        "summary": "Wire named blinker signals between producers and subscribers, scope handlers to a sender with sender filtering, and test weak references, temporary connections and muting fully offline.",
+        "stack": [
+          "blinker"
+        ],
+        "language": "python",
+        "score": 5.63,
+        "pinned": {
+          "blinker": "1.9.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:56:59.324Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

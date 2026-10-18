@@ -1,0 +1,239 @@
+{
+  "args": {
+    "query": "mock fetch in Vitest tests with MSW handlers"
+  },
+  "t": "2026-10-18T04:33:34Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 165,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "ky-msw-vitest",
+        "title": "ky HTTP client with hooks and retries, tested with MSW + Vitest",
+        "summary": "A ky 2 API client (prefix option, state-object hooks) with auth hooks, retry on 5xx and typed JSON, tested offline with MSW's Node server in Vitest.",
+        "stack": [
+          "ky",
+          "msw",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 99.08,
+        "pinned": {
+          "ky": "2.2.0",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:49.038Z"
+        }
+      },
+      {
+        "id": "redux-toolkit-rtk-query-msw",
+        "title": "Redux Toolkit + RTK Query with tag invalidation and optimistic updates, tested with MSW",
+        "summary": "An RTK Query API slice with auth headers from Redux state, tag-based cache invalidation and an optimistic update with rollback, tested offline in Vitest against MSW 3 request handlers without rendering React.",
+        "stack": [
+          "@reduxjs/toolkit",
+          "msw",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 96.09,
+        "pinned": {
+          "@reduxjs/toolkit": "2.13.0",
+          "msw": "3.0.3",
+          "vitest": "5.0.4",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:14.706Z"
+        }
+      },
+      {
+        "id": "openapi-fetch-msw",
+        "title": "openapi-fetch typed client with MSW",
+        "summary": "Call a typed OpenAPI paths client with openapi-fetch against MSW handlers, covering GET/POST and error status offline.",
+        "stack": [
+          "openapi-fetch",
+          "msw"
+        ],
+        "language": "typescript",
+        "score": 86.84,
+        "pinned": {
+          "openapi-fetch": "0.17.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:08.998Z"
+        }
+      },
+      {
+        "id": "ofetch-msw-client",
+        "title": "ofetch HTTP client mocked with MSW",
+        "summary": "Call APIs with ofetch against an MSW 2 HTTP worker in Node, covering JSON responses, query params and error status mapping offline.",
+        "stack": [
+          "ofetch",
+          "msw"
+        ],
+        "language": "typescript",
+        "score": 77.13,
+        "pinned": {
+          "ofetch": "1.5.1",
+          "msw": "3.0.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:05.710Z"
+        }
+      },
+      {
+        "id": "graphql-request-msw",
+        "title": "graphql-request client with typed operations, mocked by MSW graphql handlers",
+        "summary": "Call a GraphQL API with graphql-request (variables, headers, error handling) and test offline with MSW's graphql.link(url).query/mutation handlers (msw 3 API). Install uses --legacy-peer-deps because graphql-request 7 still peers on graphql 14 - 16, but the client passes its tests against graphql 17.",
+        "stack": [
+          "graphql-request",
+          "graphql",
+          "msw"
+        ],
+        "language": "typescript",
+        "score": 67.99,
+        "pinned": {
+          "graphql-request": "7.4.0",
+          "graphql": "17.0.2",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:06.405Z"
+        }
+      },
+      {
+        "id": "ioredis-cache-aside-mock",
+        "title": "ioredis cache-aside with TTL, tested with ioredis-mock (Vitest)",
+        "summary": "Cache-aside helper on ioredis with JSON values, TTLs, stampede-safe single flight and invalidation, tested offline with ioredis-mock in Vitest. Install uses --legacy-peer-deps because ioredis-mock 8 still peers on ioredis ^5, but the mock passes its tests against ioredis 6. vite is pinned so Vitest still resolves under legacy-peer-deps.",
+        "stack": [
+          "ioredis",
+          "ioredis-mock",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 66.41,
+        "pinned": {
+          "ioredis": "6.0.0",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.5",
+          "vite": "8.3.4",
+          "ioredis-mock": "8.13.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:33.837Z"
+        }
+      },
+      {
+        "id": "msw-fetch-api-client",
+        "title": "Typed fetch API client tested with MSW + Zod",
+        "summary": "A typed fetch client that parses responses with Zod, tested offline by intercepting requests with MSW's Node server.",
+        "stack": [
+          "msw",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 65.32,
+        "pinned": {
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:23.153Z"
+        }
+      },
+      {
+        "id": "urql-core-msw-cache-exchange",
+        "title": "urql core client with MSW: auth headers, document cache and errors",
+        "summary": "Test an @urql/core client offline against MSW graphql handlers: auth via fetchOptions, cache-first hits vs network-only, mutation invalidation in the document cache, and CombinedError for GraphQL and HTTP failures.",
+        "stack": [
+          "@urql/core",
+          "msw",
+          "graphql"
+        ],
+        "language": "typescript",
+        "score": 58.95,
+        "pinned": {
+          "@urql/core": "6.0.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "msw": "3.0.3",
+          "graphql": "17.0.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:10:04.091Z"
+        }
+      },
+      {
+        "id": "octokit-rest-msw-pagination",
+        "title": "Octokit REST client with MSW: pagination, early stop and errors",
+        "summary": "Test an @octokit/rest client offline with MSW handlers for api.github.com: paginate through Link headers, stop paging early with done(), create issues with auth, and map 404 RequestErrors.",
+        "stack": [
+          "@octokit/rest",
+          "msw"
+        ],
+        "language": "typescript",
+        "score": 58.24,
+        "pinned": {
+          "@octokit/rest": "22.0.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:09:02.769Z"
+        }
+      },
+      {
+        "id": "trpc-client-server-superjson",
+        "title": "tRPC 11 client + server over fetch with superjson (Vitest)",
+        "summary": "End-to-end typed tRPC 11: fetch adapter server, createTRPCClient with httpBatchLink and superjson transformer for Dates and Maps, tested in-process with Vitest.",
+        "stack": [
+          "@trpc/server",
+          "@trpc/client",
+          "superjson",
+          "zod",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 57.36,
+        "pinned": {
+          "@trpc/server": "11.19.0",
+          "@trpc/client": "11.19.0",
+          "superjson": "2.2.6",
+          "zod": "4.6.7",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:24.382Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

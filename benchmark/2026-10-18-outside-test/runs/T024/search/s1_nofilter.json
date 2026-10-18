@@ -1,0 +1,248 @@
+{
+  "args": {
+    "query": "Drizzle ORM with better-sqlite3 schema, migrations and relational queries"
+  },
+  "t": "2026-10-18T04:31:19Z",
+  "wall_s": 1.0,
+  "ok": true,
+  "ms": 151,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "drizzle-sqlite-crud",
+        "title": "Drizzle ORM + better-sqlite3 CRUD",
+        "summary": "Typed schema, migrations-free table creation and CRUD with Drizzle on an in-memory SQLite database.",
+        "stack": [
+          "drizzle-orm",
+          "better-sqlite3",
+          "sqlite"
+        ],
+        "language": "typescript",
+        "score": 145.2,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "better-sqlite3": "12.11.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:19.087Z"
+        }
+      },
+      {
+        "id": "hono-drizzle-sqlite-api",
+        "title": "Hono + Drizzle ORM + SQLite REST API (Vitest)",
+        "summary": "CRUD REST API in Hono backed by Drizzle ORM on better-sqlite3, with Zod validation, tested with Vitest and app.request().",
+        "stack": [
+          "hono",
+          "drizzle-orm",
+          "better-sqlite3",
+          "zod",
+          "@hono/zod-validator",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 133.92,
+        "pinned": {
+          "hono": "4.13.13",
+          "drizzle-orm": "0.45.4",
+          "better-sqlite3": "13.0.3",
+          "zod": "4.6.7",
+          "@hono/zod-validator": "0.9.1",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:13.119Z"
+        }
+      },
+      {
+        "id": "drizzle-zod-insert-schemas",
+        "title": "Drizzle ORM + drizzle-zod validated inserts on SQLite",
+        "summary": "Generate Zod insert and select schemas from Drizzle tables with drizzle-zod, refine them, and validate input before inserting into SQLite.",
+        "stack": [
+          "drizzle-orm",
+          "drizzle-zod",
+          "zod",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 123.59,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "drizzle-zod": "0.8.3",
+          "zod": "4.6.7",
+          "better-sqlite3": "12.11.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:23.365Z"
+        }
+      },
+      {
+        "id": "drizzle-pglite-migrations",
+        "title": "Drizzle ORM migrations on PGlite (in-memory Postgres)",
+        "summary": "Apply versioned SQL migrations with Drizzle's PGlite migrator, use Postgres features (jsonb, enums, arrays, onConflictDoUpdate) and test against a fresh in-memory database.",
+        "stack": [
+          "drizzle-orm",
+          "@electric-sql/pglite",
+          "postgres"
+        ],
+        "language": "typescript",
+        "score": 102.61,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "@electric-sql/pglite": "0.5.10",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:14.474Z"
+        }
+      },
+      {
+        "id": "knex-better-sqlite3-migrations",
+        "title": "Knex migrations, seeds and queries on better-sqlite3",
+        "summary": "Knex 3 with the better-sqlite3 client: in-code migrations via a custom migrationSource (latest, down, rollback, list), foreign keys enabled per connection, a transactional seed and a join plus aggregate query, tested on in-memory SQLite.",
+        "stack": [
+          "knex",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 101.3,
+        "pinned": {
+          "knex": "3.3.0",
+          "better-sqlite3": "13.0.3",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:30.212Z"
+        }
+      },
+      {
+        "id": "prisma-sqlite-adapter",
+        "title": "Prisma 7 + SQLite via better-sqlite3 adapter",
+        "summary": "Prisma Client 7 with the better-sqlite3 driver adapter, schema push and relational queries on a local SQLite file.",
+        "stack": [
+          "prisma",
+          "sqlite",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 89.16,
+        "pinned": {
+          "@prisma/client": "7.10.0",
+          "@prisma/adapter-better-sqlite3": "7.10.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "prisma": "7.10.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:21.651Z"
+        }
+      },
+      {
+        "id": "drizzle-pglite-postgres",
+        "title": "Drizzle ORM + PGlite in-memory Postgres",
+        "summary": "Real Postgres semantics in tests with no server: Drizzle ORM on PGlite (WASM Postgres) with relations, returning() and transactions.",
+        "stack": [
+          "drizzle-orm",
+          "@electric-sql/pglite",
+          "postgres"
+        ],
+        "language": "typescript",
+        "score": 81.26,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "@electric-sql/pglite": "0.5.10",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:20.992Z"
+        }
+      },
+      {
+        "id": "kysely-sqlite-queries",
+        "title": "Kysely + better-sqlite3 typed queries",
+        "summary": "Type-safe SQL with Kysely on SQLite, including a schema migration, joins and a transaction.",
+        "stack": [
+          "kysely",
+          "better-sqlite3",
+          "sqlite"
+        ],
+        "language": "typescript",
+        "score": 70.81,
+        "pinned": {
+          "kysely": "0.29.6",
+          "better-sqlite3": "12.11.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:55.964Z"
+        }
+      },
+      {
+        "id": "better-sqlite3-zod-transactions",
+        "title": "better-sqlite3 transactions with Zod-validated inputs",
+        "summary": "A small ledger on better-sqlite3 using db.transaction for atomic transfers, nested transactions as savepoints for all-or-nothing batches, and Zod 4 to validate inputs and rows, tested on in-memory SQLite.",
+        "stack": [
+          "better-sqlite3",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 69.77,
+        "pinned": {
+          "better-sqlite3": "13.0.3",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:15.937Z"
+        }
+      },
+      {
+        "id": "mikroorm-sqlite-entities",
+        "title": "MikroORM 7 entities and Unit of Work on SQLite",
+        "summary": "Define MikroORM 7 EntitySchema models with OneToMany relations, persist through the Unit of Work, and query with populate on an in-memory better-sqlite3 database.",
+        "stack": [
+          "@mikro-orm/sqlite",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 69.77,
+        "pinned": {
+          "@mikro-orm/sqlite": "7.2.5",
+          "better-sqlite3": "13.0.3",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:02:11.351Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

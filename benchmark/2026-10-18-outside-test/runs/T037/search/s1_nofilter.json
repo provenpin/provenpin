@@ -1,0 +1,219 @@
+{
+  "args": {
+    "query": "Node CLI with commander subcommands and interactive prompts using @inquirer/prompts"
+  },
+  "t": "2026-10-18T04:34:22Z",
+  "wall_s": 1.0,
+  "ok": true,
+  "ms": 138,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "commander-zod-cli",
+        "title": "Commander CLI with Zod option validation, tested in-process",
+        "summary": "A Commander subcommand CLI with variadic arguments, repeatable options, choices and Zod-backed argument parsers, made testable with exitOverride and configureOutput so node:test runs it in-process without spawning.",
+        "stack": [
+          "commander",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 99.81,
+        "pinned": {
+          "commander": "15.0.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:45.694Z"
+        }
+      },
+      {
+        "id": "typer-cli-testing",
+        "title": "Typer CLI with subcommands, options and CliRunner tests",
+        "summary": "Build a Typer CLI with subcommands, typed options, env var fallbacks and exit codes, tested with typer.testing.CliRunner.",
+        "stack": [
+          "typer"
+        ],
+        "language": "python",
+        "score": 41.94,
+        "pinned": {
+          "typer": "0.27.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:21.555Z"
+        }
+      },
+      {
+        "id": "ink-testing-library-cli",
+        "title": "Ink interactive CLI components tested with ink-testing-library",
+        "summary": "Build an interactive Ink 8 (React) terminal checklist with useInput and a timer-driven countdown, and test frames, arrow-key and space input, submit callbacks and effects with ink-testing-library.",
+        "stack": [
+          "ink",
+          "ink-testing-library",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 35.84,
+        "pinned": {
+          "ink": "8.0.0",
+          "react": "19.3.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "ink-testing-library": "4.0.0",
+          "@types/react": "19.3.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:09:00.098Z"
+        }
+      },
+      {
+        "id": "clipanion-cli-parser",
+        "title": "clipanion typed CLI parser",
+        "summary": "Define a clipanion Cli with two commands using Option.String/Option.Boolean, then drive it in tests via Cli.run with captured stdout/stderr to assert help text and exit codes without process.exit.",
+        "stack": [
+          "clipanion"
+        ],
+        "language": "typescript",
+        "score": 24.29,
+        "pinned": {
+          "clipanion": "3.2.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T02:18:13.309Z"
+        }
+      },
+      {
+        "id": "cyclopts-annotated-cli",
+        "title": "Cyclopts CLI with Annotated types and rich help",
+        "summary": "A typed Cyclopts command using Annotated Parameter help text and enum/int/list coercion, invoked offline in tests with captured stdout, stderr and return values.",
+        "stack": [
+          "cyclopts"
+        ],
+        "language": "python",
+        "score": 23.68,
+        "pinned": {
+          "cyclopts": "5.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:06.812Z"
+        }
+      },
+      {
+        "id": "click-pytest-freezegun-scheduler",
+        "title": "Click CLI for RRULE next run times, tested with freezegun and CliRunner",
+        "summary": "A Click command that computes the next run times of an RFC 5545 rule in any IANA zone with dateutil rrule and zoneinfo, with DST gaps normalized and time frozen with freezegun in tests.",
+        "stack": [
+          "click",
+          "python-dateutil",
+          "freezegun",
+          "zoneinfo"
+        ],
+        "language": "python",
+        "score": 21.59,
+        "pinned": {
+          "click": "8.5.0",
+          "python-dateutil": "2.9.0.post0",
+          "freezegun": "1.5.5",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:53.112Z"
+        }
+      },
+      {
+        "id": "click-rich-progress",
+        "title": "Click CLI with rich Progress bars and Status for batch work",
+        "summary": "A Click command normalizes a batch while rich draws a Progress bar and a Status spinner, with tests that pin down terminal detection, transient output and ANSI stripping.",
+        "stack": [
+          "click",
+          "rich"
+        ],
+        "language": "python",
+        "score": 21.59,
+        "pinned": {
+          "click": "8.5.0",
+          "rich": "15.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:51.297Z"
+        }
+      },
+      {
+        "id": "typer-rich-table-cli",
+        "title": "Typer CLI with Rich tables, progress and --json output",
+        "summary": "A Typer command that renders Rich tables and progress on stderr, with a --json mode for piping, tested offline with CliRunner and no-color Rich output.",
+        "stack": [
+          "typer",
+          "rich"
+        ],
+        "language": "python",
+        "score": 21.59,
+        "pinned": {
+          "typer": "0.27.3",
+          "rich": "15.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:14.554Z"
+        }
+      },
+      {
+        "id": "rich-typer-progress-cli",
+        "title": "Typer CLI with rich Progress and Table for batch jobs",
+        "summary": "A Typer command that squares a batch of numbers behind a rich Progress bar and prints a rich Table summary, tested offline through typer's CliRunner.",
+        "stack": [
+          "typer",
+          "rich"
+        ],
+        "language": "python",
+        "score": 20.87,
+        "pinned": {
+          "typer": "0.27.3",
+          "rich": "15.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:12:17.167Z"
+        }
+      },
+      {
+        "id": "typer-rich-table-export",
+        "title": "Typer CLI exporting Rich tables and CSV for batch reports",
+        "summary": "A Typer command that aggregates a batch of CSV reports, renders a Rich table with escaped cells and formatted totals, and exports a machine-parseable CSV, tested offline with CliRunner.",
+        "stack": [
+          "typer",
+          "rich"
+        ],
+        "language": "python",
+        "score": 20.15,
+        "pinned": {
+          "typer": "0.27.3",
+          "rich": "15.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:58.533Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

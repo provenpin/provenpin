@@ -1,0 +1,250 @@
+{
+  "args": {
+    "query": "next js app router cookies() returns a promise now?? how do i read the session cookie in server component and route handler"
+  },
+  "t": "2026-10-18T04:33:37Z",
+  "wall_s": 1.0,
+  "ok": true,
+  "ms": 147,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "nextjs-stripe-webhook",
+        "title": "Next.js App Router + Stripe webhook handler",
+        "summary": "A Next.js route handler that verifies Stripe webhook signatures from the raw body and handles checkout.session.completed.",
+        "stack": [
+          "nextjs",
+          "stripe"
+        ],
+        "language": "typescript",
+        "score": 126.33,
+        "pinned": {
+          "next": "16.4.1",
+          "stripe": "23.0.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:35.427Z"
+        }
+      },
+      {
+        "id": "nextjs-route-handler-zod",
+        "title": "Next.js 16 App Router route handler + Zod validation",
+        "summary": "Validate JSON bodies and search params in a Next.js App Router route handler with Zod, returning typed 400s; tested by calling the handler with NextRequest.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 117.86,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:28.442Z"
+        }
+      },
+      {
+        "id": "nextjs-supabase-auth-middleware",
+        "title": "Next.js middleware + Supabase SSR session refresh",
+        "summary": "Refresh Supabase auth cookies in Next.js middleware with @supabase/ssr and redirect signed-out users away from protected routes.",
+        "stack": [
+          "nextjs",
+          "supabase"
+        ],
+        "language": "typescript",
+        "score": 98.62,
+        "pinned": {
+          "next": "16.4.1",
+          "@supabase/ssr": "0.12.7",
+          "@supabase/supabase-js": "2.117.3",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:36.082Z"
+        }
+      },
+      {
+        "id": "nextjs-server-action-zod",
+        "title": "Next.js 16 server actions + Zod with useActionState-shaped results",
+        "summary": "A 'use server' form action that validates FormData with Zod and returns field errors in the shape useActionState expects, tested by calling the action directly.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 91.43,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:33.179Z"
+        }
+      },
+      {
+        "id": "nextauth-credentials-callbacks",
+        "title": "NextAuth.js v4 credentials provider + JWT/session callbacks (mocked)",
+        "summary": "NextAuth v4 authOptions for Next.js with a Credentials provider, bcrypt-checked users and role claims flowing through jwt and session callbacks, unit-tested without a server.",
+        "stack": [
+          "next-auth",
+          "next",
+          "bcryptjs"
+        ],
+        "language": "typescript",
+        "score": 76.18,
+        "pinned": {
+          "next-auth": "4.24.15",
+          "next": "16.4.1",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "bcryptjs": "3.0.3",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:28.664Z"
+        }
+      },
+      {
+        "id": "returns-maybe-ioresult",
+        "title": "returns Maybe and IOResult railway composition with map and bind",
+        "summary": "Railway-style composition over returns Maybe and IOResult: map versus bind, short-circuiting Nothing, maybe and bind_optional, impure_safe failures and IO-boxed unwrap, all tested offline.",
+        "stack": [
+          "returns"
+        ],
+        "language": "python",
+        "score": 68.43,
+        "pinned": {
+          "returns": "0.29.0",
+          "typing-extensions": "4.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:05.561Z"
+        }
+      },
+      {
+        "id": "express-session-cookie-e2e",
+        "title": "Express 5 + express-session login flow, e2e-style over real HTTP with a cookie jar",
+        "summary": "Session login/logout with express-session (regenerate on login, httpOnly cookies), tested end to end against a real listening server using fetch-cookie, no browser or Playwright.",
+        "stack": [
+          "express",
+          "express-session",
+          "fetch-cookie"
+        ],
+        "language": "typescript",
+        "score": 51.55,
+        "pinned": {
+          "express": "5.3.0",
+          "express-session": "1.19.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "fetch-cookie": "3.2.0",
+          "@types/express": "5.0.6",
+          "@types/express-session": "1.19.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:52.438Z"
+        }
+      },
+      {
+        "id": "tough-cookie-jar",
+        "title": "tough-cookie jar round trip",
+        "summary": "Store and read cookies with a tough-cookie CookieJar for a URL, guard against domain mismatches, serialize and deserialize the jar JSON, and expire a cookie, all offline.",
+        "stack": [
+          "tough-cookie"
+        ],
+        "language": "typescript",
+        "score": 47,
+        "pinned": {
+          "tough-cookie": "6.0.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T15:21:18.743Z"
+        }
+      },
+      {
+        "id": "set-cookie-parser-split",
+        "title": "set-cookie-parser single and joined headers",
+        "summary": "Parse single and array Set-Cookie headers with set-cookie-parser, split comma-joined headers using splitCookiesString, and assert name, value, path, httpOnly and sameSite fields offline.",
+        "stack": [
+          "set-cookie-parser"
+        ],
+        "language": "typescript",
+        "score": 38.43,
+        "pinned": {
+          "set-cookie-parser": "3.1.4",
+          "@types/set-cookie-parser": "2.4.10",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T17:51:13.990Z"
+        }
+      },
+      {
+        "id": "passport-local-express-session",
+        "title": "passport-local express session auth",
+        "summary": "Authenticate express requests with passport LocalStrategy against an in-memory store, persist the login with express-session and guard a protected route offline.",
+        "stack": [
+          "express",
+          "passport",
+          "passport-local",
+          "express-session"
+        ],
+        "language": "typescript",
+        "score": 37.17,
+        "pinned": {
+          "express": "5.3.0",
+          "express-session": "1.19.0",
+          "passport": "0.7.0",
+          "passport-local": "1.0.0",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/express-session": "1.19.0",
+          "@types/node": "26.6.5",
+          "@types/passport": "1.0.17",
+          "@types/passport-local": "1.0.38",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:36.193Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

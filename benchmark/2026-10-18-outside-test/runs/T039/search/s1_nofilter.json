@@ -1,0 +1,229 @@
+{
+  "args": {
+    "query": "type-safe Kysely queries with node-postgres including a transaction"
+  },
+  "t": "2026-10-18T04:32:20Z",
+  "wall_s": 1.02,
+  "ok": true,
+  "ms": 150,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "pg-mem-kysely-postgres-tests",
+        "title": "pg-mem in-memory Postgres with Kysely for fast DB tests",
+        "summary": "Run Kysely queries against pg-mem through its node-postgres adapter: serial ids, RETURNING, a frozen now(), unique/check/foreign-key constraints, atomic multi-row inserts, joins with aggregates, and snapshot restore (pg-mem does not roll back multi-query transactions).",
+        "stack": [
+          "pg-mem",
+          "kysely"
+        ],
+        "language": "typescript",
+        "score": 104.67,
+        "pinned": {
+          "kysely": "0.29.6",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "pg-mem": "3.0.14"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:08.335Z"
+        }
+      },
+      {
+        "id": "kysely-sqlite-queries",
+        "title": "Kysely + better-sqlite3 typed queries",
+        "summary": "Type-safe SQL with Kysely on SQLite, including a schema migration, joins and a transaction.",
+        "stack": [
+          "kysely",
+          "better-sqlite3",
+          "sqlite"
+        ],
+        "language": "typescript",
+        "score": 91.16,
+        "pinned": {
+          "kysely": "0.29.6",
+          "better-sqlite3": "12.11.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:55.964Z"
+        }
+      },
+      {
+        "id": "drizzle-pglite-migrations",
+        "title": "Drizzle ORM migrations on PGlite (in-memory Postgres)",
+        "summary": "Apply versioned SQL migrations with Drizzle's PGlite migrator, use Postgres features (jsonb, enums, arrays, onConflictDoUpdate) and test against a fresh in-memory database.",
+        "stack": [
+          "drizzle-orm",
+          "@electric-sql/pglite",
+          "postgres"
+        ],
+        "language": "typescript",
+        "score": 79.87,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "@electric-sql/pglite": "0.5.10",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:14.474Z"
+        }
+      },
+      {
+        "id": "drizzle-pglite-postgres",
+        "title": "Drizzle ORM + PGlite in-memory Postgres",
+        "summary": "Real Postgres semantics in tests with no server: Drizzle ORM on PGlite (WASM Postgres) with relations, returning() and transactions.",
+        "stack": [
+          "drizzle-orm",
+          "@electric-sql/pglite",
+          "postgres"
+        ],
+        "language": "typescript",
+        "score": 78.83,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "@electric-sql/pglite": "0.5.10",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:20.992Z"
+        }
+      },
+      {
+        "id": "authjs-drizzle-adapter-pglite",
+        "title": "Auth.js Drizzle adapter on PGlite Postgres (database sessions)",
+        "summary": "Set up @auth/drizzle-adapter with the standard Postgres tables on Drizzle, and test user, account linking and database session lifecycle against in-memory PGlite.",
+        "stack": [
+          "@auth/drizzle-adapter",
+          "@auth/core",
+          "drizzle-orm",
+          "@electric-sql/pglite"
+        ],
+        "language": "typescript",
+        "score": 27.95,
+        "pinned": {
+          "@auth/drizzle-adapter": "1.11.3",
+          "@auth/core": "0.41.3",
+          "drizzle-orm": "0.45.4",
+          "@electric-sql/pglite": "0.5.10",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.638Z"
+        }
+      },
+      {
+        "id": "file-type-buffer-detect",
+        "title": "file-type buffer detection",
+        "summary": "Detect PNG, PDF, ZIP and GIF from small in-memory magic byte buffers with file-type, asserting ext and mime, and undefined for plain text.",
+        "stack": [
+          "file-type"
+        ],
+        "language": "typescript",
+        "score": 27.59,
+        "pinned": {
+          "file-type": "22.2.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T19:54:48.689Z"
+        }
+      },
+      {
+        "id": "typeguard-runtime-typecheck",
+        "title": "Runtime type checking with typeguard: @typechecked, check_type and generics",
+        "summary": "Enforce annotations at runtime with typeguard: @typechecked functions, standalone check_type, TypeCheckError messages and bounded TypeVars, plus the FIRST_ITEM container gotcha.",
+        "stack": [
+          "typeguard"
+        ],
+        "language": "python",
+        "score": 22.31,
+        "pinned": {
+          "typeguard": "4.6.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:57:41.006Z"
+        }
+      },
+      {
+        "id": "chrono-node-reference-date",
+        "title": "chrono-node natural language dates with a fixed reference and timezone",
+        "summary": "Parse phrases like \"tomorrow at 9am\", weekday names, ranges and dates inside sentences with chrono-node against a fixed reference instant and UTC offset, plus en.GB day-first parsing.",
+        "stack": [
+          "chrono-node"
+        ],
+        "language": "typescript",
+        "score": 20.3,
+        "pinned": {
+          "chrono-node": "2.10.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:08:36.835Z"
+        }
+      },
+      {
+        "id": "fastify-zod-type-provider",
+        "title": "Fastify 5 + Zod 4 type provider for typed routes",
+        "summary": "Use fastify-type-provider-zod so Zod 4 schemas validate requests, serialize responses and type handlers in Fastify 5.",
+        "stack": [
+          "fastify",
+          "zod",
+          "fastify-type-provider-zod"
+        ],
+        "language": "typescript",
+        "score": 16.79,
+        "pinned": {
+          "fastify": "5.12.7",
+          "zod": "4.6.7",
+          "fastify-type-provider-zod": "7.0.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:53.230Z"
+        }
+      },
+      {
+        "id": "ical-generator-node-ical-roundtrip",
+        "title": "ical-generator .ics feed round-tripped through node-ical",
+        "summary": "Generate an iCalendar feed with ical-generator (escaped text, attendees, a weekly RRULE with an EXDATE) and parse it back with node-ical, expanding the recurrence offline.",
+        "stack": [
+          "ical-generator",
+          "node-ical"
+        ],
+        "language": "typescript",
+        "score": 16.77,
+        "pinned": {
+          "ical-generator": "11.1.2",
+          "node-ical": "0.27.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:08:40.019Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "args": {
+    "query": "OpenAI Python SDK structured outputs parsed into a Pydantic model"
+  },
+  "t": "2026-10-18T04:33:55Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 141,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "openai-python-respx-mock",
+        "title": "OpenAI Python SDK structured outputs, tested with respx",
+        "summary": "Call the OpenAI Python SDK and validate JSON output with Pydantic, testing success, malformed output and API errors offline by mocking HTTP with respx.",
+        "stack": [
+          "openai",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 133.32,
+        "pinned": {
+          "openai": "3.31.0",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:47.669Z"
+        }
+      },
+      {
+        "id": "openai-structured-output-respx",
+        "title": "OpenAI chat.completions.parse with Pydantic output + respx mocks",
+        "summary": "Get typed output from OpenAI chat.completions.parse using a Pydantic response_format, handle refusals and schema mismatches, and test offline with respx returning canned JSON.",
+        "stack": [
+          "openai",
+          "respx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 120.15,
+        "pinned": {
+          "openai": "3.31.0",
+          "respx": "0.23.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1",
+          "httpx": "0.28.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:03.242Z"
+        }
+      },
+      {
+        "id": "openai-sdk-mocked-tool-calls",
+        "title": "OpenAI Node SDK tool calling + Zod, tested with a mocked fetch",
+        "summary": "Run an OpenAI chat tool-calling loop with Zod-validated tool arguments, tested offline by injecting a fake fetch into the official SDK.",
+        "stack": [
+          "openai",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 78.63,
+        "pinned": {
+          "openai": "7.34.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:52.577Z"
+        }
+      },
+      {
+        "id": "openai-streaming-mock",
+        "title": "OpenAI Node SDK streaming chat completions, tested with a mocked SSE fetch",
+        "summary": "Stream chat completion deltas with the OpenAI SDK (for await over chunks), accumulate text and usage, and handle aborts, tested offline with a fake fetch that returns an SSE body.",
+        "stack": [
+          "openai"
+        ],
+        "language": "typescript",
+        "score": 75.8,
+        "pinned": {
+          "openai": "7.34.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:57.727Z"
+        }
+      },
+      {
+        "id": "langchain-core-fake-llm-python",
+        "title": "LangChain (Python) LCEL chain with structured parsing, tested with a fake chat model",
+        "summary": "Compose ChatPromptTemplate, a chat model and a Pydantic output parser with LCEL in langchain-core, tested offline using GenericFakeChatModel.",
+        "stack": [
+          "langchain-core",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 59.18,
+        "pinned": {
+          "langchain-core": "1.6.10",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:58.673Z"
+        }
+      },
+      {
+        "id": "python-dotenv-pydantic-settings-env",
+        "title": "Loading .env files with python-dotenv and pydantic-settings precedence rules",
+        "summary": "Typed app settings from .env files with pydantic-settings, covering source precedence, layered env files, extra-key rules and python-dotenv override behavior, tested offline with tmp_path files.",
+        "stack": [
+          "python-dotenv",
+          "pydantic-settings",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 54.85,
+        "pinned": {
+          "python-dotenv": "1.2.4",
+          "pydantic-settings": "2.16.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:29.190Z"
+        }
+      },
+      {
+        "id": "orjson-pydantic-v2-roundtrip",
+        "title": "orjson + Pydantic v2 model round trip",
+        "summary": "Serialize Pydantic v2 models to bytes with orjson through a default fallback and option flags, then validate them back offline with TypeAdapter.",
+        "stack": [
+          "orjson",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 53.97,
+        "pinned": {
+          "orjson": "3.13.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:10.454Z"
+        }
+      },
+      {
+        "id": "deepdiff-pydantic-compare",
+        "title": "DeepDiff diffing of pydantic v2 model dumps with ignore_order",
+        "summary": "Compare pydantic v2 model dumps with DeepDiff, normalizing python vs json dump modes and taming list order, datetime and float gotchas.",
+        "stack": [
+          "deepdiff",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 50.63,
+        "pinned": {
+          "deepdiff": "9.1.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:25.491Z"
+        }
+      },
+      {
+        "id": "feedparser-pydantic-models",
+        "title": "feedparser XML fixtures into pydantic v2 models",
+        "summary": "Convert RSS and Atom feeds parsed by feedparser, including struct_time dates and tags, into validated pydantic v2 models with offline XML fixtures.",
+        "stack": [
+          "feedparser",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 50.57,
+        "pinned": {
+          "feedparser": "6.0.14",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:09.687Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-v2-models",
+        "title": "FastAPI + Pydantic v2 validators, discriminated unions and serializers",
+        "summary": "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 49.86,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:32.402Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

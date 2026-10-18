@@ -1,0 +1,247 @@
+{
+  "args": {
+    "query": "Next.js 15 async request APIs: await params, cookies() and headers() in app router pages and route handlers"
+  },
+  "t": "2026-10-18T04:34:25Z",
+  "wall_s": 1.0,
+  "ok": true,
+  "ms": 131,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "nextjs-stripe-webhook",
+        "title": "Next.js App Router + Stripe webhook handler",
+        "summary": "A Next.js route handler that verifies Stripe webhook signatures from the raw body and handles checkout.session.completed.",
+        "stack": [
+          "nextjs",
+          "stripe"
+        ],
+        "language": "typescript",
+        "score": 111.09,
+        "pinned": {
+          "next": "16.4.1",
+          "stripe": "23.0.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:35.427Z"
+        }
+      },
+      {
+        "id": "nextjs-route-handler-zod",
+        "title": "Next.js 16 App Router route handler + Zod validation",
+        "summary": "Validate JSON bodies and search params in a Next.js App Router route handler with Zod, returning typed 400s; tested by calling the handler with NextRequest.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 106.76,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:28.442Z"
+        }
+      },
+      {
+        "id": "nextjs-supabase-auth-middleware",
+        "title": "Next.js middleware + Supabase SSR session refresh",
+        "summary": "Refresh Supabase auth cookies in Next.js middleware with @supabase/ssr and redirect signed-out users away from protected routes.",
+        "stack": [
+          "nextjs",
+          "supabase"
+        ],
+        "language": "typescript",
+        "score": 91.34,
+        "pinned": {
+          "next": "16.4.1",
+          "@supabase/ssr": "0.12.7",
+          "@supabase/supabase-js": "2.117.3",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:36.082Z"
+        }
+      },
+      {
+        "id": "nextjs-server-action-zod",
+        "title": "Next.js 16 server actions + Zod with useActionState-shaped results",
+        "summary": "A 'use server' form action that validates FormData with Zod and returns field errors in the shape useActionState expects, tested by calling the action directly.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 66.68,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:33.179Z"
+        }
+      },
+      {
+        "id": "nextauth-credentials-callbacks",
+        "title": "NextAuth.js v4 credentials provider + JWT/session callbacks (mocked)",
+        "summary": "NextAuth v4 authOptions for Next.js with a Credentials provider, bcrypt-checked users and role claims flowing through jwt and session callbacks, unit-tested without a server.",
+        "stack": [
+          "next-auth",
+          "next",
+          "bcryptjs"
+        ],
+        "language": "typescript",
+        "score": 61.22,
+        "pinned": {
+          "next-auth": "4.24.15",
+          "next": "16.4.1",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "bcryptjs": "3.0.3",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:28.664Z"
+        }
+      },
+      {
+        "id": "set-cookie-parser-split",
+        "title": "set-cookie-parser single and joined headers",
+        "summary": "Parse single and array Set-Cookie headers with set-cookie-parser, split comma-joined headers using splitCookiesString, and assert name, value, path, httpOnly and sameSite fields offline.",
+        "stack": [
+          "set-cookie-parser"
+        ],
+        "language": "typescript",
+        "score": 38.88,
+        "pinned": {
+          "set-cookie-parser": "3.1.4",
+          "@types/set-cookie-parser": "2.4.10",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T17:51:13.990Z"
+        }
+      },
+      {
+        "id": "react-router-loader-action",
+        "title": "React Router 8 data loaders and actions tested with createStaticHandler",
+        "summary": "Route loaders and actions with redirects, validation errors and 404 responses in React Router's data APIs, tested offline with createStaticHandler and plain Requests.",
+        "stack": [
+          "react-router",
+          "react",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 32.65,
+        "pinned": {
+          "react-router": "8.4.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:05.412Z"
+        }
+      },
+      {
+        "id": "graphql-request-msw",
+        "title": "graphql-request client with typed operations, mocked by MSW graphql handlers",
+        "summary": "Call a GraphQL API with graphql-request (variables, headers, error handling) and test offline with MSW's graphql.link(url).query/mutation handlers (msw 3 API). Install uses --legacy-peer-deps because graphql-request 7 still peers on graphql 14 - 16, but the client passes its tests against graphql 17.",
+        "stack": [
+          "graphql-request",
+          "graphql",
+          "msw"
+        ],
+        "language": "typescript",
+        "score": 31.39,
+        "pinned": {
+          "graphql-request": "7.4.0",
+          "graphql": "17.0.2",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:06.405Z"
+        }
+      },
+      {
+        "id": "express5-async-error-handling",
+        "title": "express 5 async error handling",
+        "summary": "Use express 5 with supertest to forward rejected async handlers to a JSON error middleware, with router-level params, a JSON 404 handler and offline tests.",
+        "stack": [
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 28.16,
+        "pinned": {
+          "express": "5.3.0",
+          "supertest": "7.3.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:32.228Z"
+        }
+      },
+      {
+        "id": "starlette-itsdangerous-sessions",
+        "title": "Starlette SessionMiddleware signed cookies with itsdangerous",
+        "summary": "Add cookie sessions to a Starlette app via SessionMiddleware, then test login, tampering, logout, expiry and JSON safety fully offline over httpx ASGITransport.",
+        "stack": [
+          "starlette",
+          "itsdangerous",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 26.44,
+        "pinned": {
+          "starlette": "1.8.0",
+          "itsdangerous": "2.2.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:56.631Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

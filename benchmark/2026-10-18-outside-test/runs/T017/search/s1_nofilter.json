@@ -1,0 +1,223 @@
+{
+  "args": {
+    "query": "Anthropic Python SDK tool use loop with tool input schema from a Pydantic model"
+  },
+  "t": "2026-10-18T04:31:25Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 140,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "anthropic-sdk-mocked-tool-use",
+        "title": "Anthropic TypeScript SDK tool use loop, tested with a mocked fetch",
+        "summary": "Run a Claude tool_use loop with the official Anthropic SDK and Zod-validated tool inputs, tested offline with an injected fetch.",
+        "stack": [
+          "@anthropic-ai/sdk",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 100.25,
+        "pinned": {
+          "@anthropic-ai/sdk": "0.134.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.647Z"
+        }
+      },
+      {
+        "id": "python-dotenv-pydantic-settings-env",
+        "title": "Loading .env files with python-dotenv and pydantic-settings precedence rules",
+        "summary": "Typed app settings from .env files with pydantic-settings, covering source precedence, layered env files, extra-key rules and python-dotenv override behavior, tested offline with tmp_path files.",
+        "stack": [
+          "python-dotenv",
+          "pydantic-settings",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 59.28,
+        "pinned": {
+          "python-dotenv": "1.2.4",
+          "pydantic-settings": "2.16.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:29.190Z"
+        }
+      },
+      {
+        "id": "openai-python-respx-mock",
+        "title": "OpenAI Python SDK structured outputs, tested with respx",
+        "summary": "Call the OpenAI Python SDK and validate JSON output with Pydantic, testing success, malformed output and API errors offline by mocking HTTP with respx.",
+        "stack": [
+          "openai",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 55.81,
+        "pinned": {
+          "openai": "3.31.0",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:47.669Z"
+        }
+      },
+      {
+        "id": "orjson-pydantic-v2-roundtrip",
+        "title": "orjson + Pydantic v2 model round trip",
+        "summary": "Serialize Pydantic v2 models to bytes with orjson through a default fallback and option flags, then validate them back offline with TypeAdapter.",
+        "stack": [
+          "orjson",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 54.69,
+        "pinned": {
+          "orjson": "3.13.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:10.454Z"
+        }
+      },
+      {
+        "id": "langchain-core-fake-llm-python",
+        "title": "LangChain (Python) LCEL chain with structured parsing, tested with a fake chat model",
+        "summary": "Compose ChatPromptTemplate, a chat model and a Pydantic output parser with LCEL in langchain-core, tested offline using GenericFakeChatModel.",
+        "stack": [
+          "langchain-core",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 53.46,
+        "pinned": {
+          "langchain-core": "1.6.10",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:58.673Z"
+        }
+      },
+      {
+        "id": "deepdiff-pydantic-compare",
+        "title": "DeepDiff diffing of pydantic v2 model dumps with ignore_order",
+        "summary": "Compare pydantic v2 model dumps with DeepDiff, normalizing python vs json dump modes and taming list order, datetime and float gotchas.",
+        "stack": [
+          "deepdiff",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 52.79,
+        "pinned": {
+          "deepdiff": "9.1.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:25.491Z"
+        }
+      },
+      {
+        "id": "anthropic-streaming-mock",
+        "title": "Anthropic SDK message streaming with text deltas, tested with a mocked SSE fetch",
+        "summary": "Stream Claude responses with the Anthropic TypeScript SDK (messages.stream, text events, finalMessage), tested offline with a fake fetch returning Anthropic SSE events.",
+        "stack": [
+          "@anthropic-ai/sdk"
+        ],
+        "language": "typescript",
+        "score": 50.3,
+        "pinned": {
+          "@anthropic-ai/sdk": "0.134.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:18.529Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-v2-models",
+        "title": "FastAPI + Pydantic v2 validators, discriminated unions and serializers",
+        "summary": "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 49.86,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:32.402Z"
+        }
+      },
+      {
+        "id": "openai-sdk-mocked-tool-calls",
+        "title": "OpenAI Node SDK tool calling + Zod, tested with a mocked fetch",
+        "summary": "Run an OpenAI chat tool-calling loop with Zod-validated tool arguments, tested offline by injecting a fake fetch into the official SDK.",
+        "stack": [
+          "openai",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 48.38,
+        "pinned": {
+          "openai": "7.34.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:52.577Z"
+        }
+      },
+      {
+        "id": "sqlalchemy2-pydantic-v2-from-attributes",
+        "title": "SQLAlchemy 2 ORM rows serialized with Pydantic v2 from_attributes",
+        "summary": "Map SQLAlchemy 2 models, expose nested relationships through Pydantic v2 schemas with from_attributes=True and a computed_field, and test them offline against in-memory SQLite.",
+        "stack": [
+          "sqlalchemy",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 48.07,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:50.176Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

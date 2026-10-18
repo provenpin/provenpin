@@ -1,0 +1,100 @@
+{"task_id": "T001", "covered": true, "fitting_recipes": ["fastapi-async-sqlalchemy-aiosqlite-pytest", "fastapi-sqlalchemy-crud"], "code_checked": false, "code_check_note": null}
+{"task_id": "T002", "covered": true, "fitting_recipes": ["fastapi-jwt-auth", "fastapi-oauth2-pyjwt-scopes"], "code_checked": false, "code_check_note": null}
+{"task_id": "T003", "covered": true, "fitting_recipes": ["httpx-tenacity-retry", "tenacity-httpx-respx-backoff"], "code_checked": false, "code_check_note": null}
+{"task_id": "T004", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: no Celery recipe uses autoretry_for/retry_backoff/self.retry/max_retries (celery-redis-fakeredis-results, celery-tasks-eager-testing, celery-beat-schedule-crontab)"}
+{"task_id": "T005", "covered": true, "fitting_recipes": ["pydantic-settings-config", "pydantic-settings-nested-sources", "pydantic-settings-yaml-secrets", "python-dotenv-pydantic-settings-env"], "code_checked": false, "code_check_note": null}
+{"task_id": "T006", "covered": true, "fitting_recipes": ["rich-typer-progress-cli", "typer-rich-table-cli", "typer-rich-table-export"], "code_checked": false, "code_check_note": null}
+{"task_id": "T007", "covered": true, "fitting_recipes": ["structlog-fastapi-request-id"], "code_checked": false, "code_check_note": null}
+{"task_id": "T008", "covered": true, "fitting_recipes": ["fastapi-stripe-webhook"], "code_checked": false, "code_check_note": null}
+{"task_id": "T009", "covered": true, "fitting_recipes": ["boto3-moto-s3-presigned"], "code_checked": false, "code_check_note": null}
+{"task_id": "T010", "covered": true, "fitting_recipes": ["pandas-sqlalchemy-to-sql"], "code_checked": false, "code_check_note": null}
+{"task_id": "T011", "covered": true, "fitting_recipes": ["duckdb-polars-analytics"], "code_checked": false, "code_check_note": null}
+{"task_id": "T012", "covered": true, "fitting_recipes": ["httpx-authlib-oauth2-mock", "httpx-pydantic-typed-client", "httpx-respx-api-client", "tenacity-httpx-respx-backoff"], "code_checked": false, "code_check_note": null}
+{"task_id": "T013", "covered": true, "fitting_recipes": ["sqlalchemy-alembic-autogenerate-check", "sqlalchemy-alembic-migrations"], "code_checked": false, "code_check_note": null}
+{"task_id": "T014", "covered": true, "fitting_recipes": ["marshmallow-sqlalchemy-flask-api"], "code_checked": false, "code_check_note": null}
+{"task_id": "T015", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: django-drf-api uses IsAuthenticatedOrReadOnly with no TokenAuthentication/authtoken"}
+{"task_id": "T016", "covered": true, "fitting_recipes": ["openai-structured-output-respx"], "code_checked": true, "code_check_note": "code: top1 openai-python-respx-mock uses json_object + model_validate_json, not the parse helper (not fit); #2 uses chat.completions.parse (fit)"}
+{"task_id": "T017", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T018", "covered": true, "fitting_recipes": ["aiolimiter-httpx-rate-limit"], "code_checked": false, "code_check_note": null}
+{"task_id": "T019", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: opentelemetry-sdk-inmemory-span has no FastAPI app or instrumentation"}
+{"task_id": "T020", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T021", "covered": true, "fitting_recipes": ["express-zod-validation"], "code_checked": false, "code_check_note": null}
+{"task_id": "T022", "covered": true, "fitting_recipes": ["fastify-jwt-auth"], "code_checked": false, "code_check_note": null}
+{"task_id": "T023", "covered": true, "fitting_recipes": ["hono-drizzle-sqlite-api", "hono-jwt-auth", "hono-rpc-typed-client", "hono-zod-validator"], "code_checked": false, "code_check_note": null}
+{"task_id": "T024", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: no drizzle + better-sqlite3 recipe uses migrations"}
+{"task_id": "T025", "covered": true, "fitting_recipes": ["prisma-sqlite-transactions"], "code_checked": false, "code_check_note": null}
+{"task_id": "T026", "covered": true, "fitting_recipes": ["trpc-client-server-superjson", "trpc-zod-router"], "code_checked": false, "code_check_note": null}
+{"task_id": "T027", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T028", "covered": true, "fitting_recipes": ["axios-retry-nock"], "code_checked": false, "code_check_note": null}
+{"task_id": "T029", "covered": true, "fitting_recipes": ["express-stripe-webhook"], "code_checked": false, "code_check_note": null}
+{"task_id": "T030", "covered": true, "fitting_recipes": ["jose-jwks-verify"], "code_checked": true, "code_check_note": "code: jose-jwks-verify exports createRemoteJWKSet + jwtVerify with issuer/audience/algorithms (fit confirmed)"}
+{"task_id": "T031", "covered": true, "fitting_recipes": ["ky-msw-vitest", "ofetch-msw-client", "openapi-fetch-msw", "redux-toolkit-rtk-query-msw"], "code_checked": false, "code_check_note": null}
+{"task_id": "T032", "covered": true, "fitting_recipes": ["express-pino-http-logging"], "code_checked": false, "code_check_note": null}
+{"task_id": "T033", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T034", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T035", "covered": true, "fitting_recipes": ["aws-sdk-v3-s3-client-mock"], "code_checked": false, "code_check_note": null}
+{"task_id": "T036", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T037", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T038", "covered": true, "fitting_recipes": ["express-openapi-validator-spec", "express-validator-supertest", "http-errors-express-error-middleware", "joi-express-validation"], "code_checked": false, "code_check_note": null}
+{"task_id": "T039", "covered": true, "fitting_recipes": ["pg-mem-kysely-postgres-tests"], "code_checked": true, "code_check_note": "code: pg-mem-kysely uses PostgresDialect over a pg-compatible Pool and db.transaction().execute (fit confirmed)"}
+{"task_id": "T040", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T041", "covered": true, "fitting_recipes": ["fastapi-pydantic-v2-models", "sqlalchemy2-pydantic-v2-from-attributes"], "code_checked": true, "code_check_note": "code: sqlalchemy2-pydantic-v2-from-attributes uses ConfigDict(from_attributes)/model_validate/model_dump; fastapi-pydantic-v2-models uses field_validator/model_validator/ConfigDict (fit confirmed)"}
+{"task_id": "T042", "covered": true, "fitting_recipes": ["sqlalchemy-hybrid-events"], "code_checked": true, "code_check_note": "code: sqlalchemy-hybrid-events uses DeclarativeBase/Mapped/mapped_column with select()+session.scalars(); rank-4 factory-boy recipe not fetched, so not counted; top1 is SQLModel + Core select"}
+{"task_id": "T043", "covered": true, "fitting_recipes": ["fastapi-async-sqlalchemy-aiosqlite-pytest", "fastapi-cashews-memory-cache", "fastapi-dependency-overrides-httpx", "fastapi-httpx-asyncclient-lifespan"], "code_checked": false, "code_check_note": null}
+{"task_id": "T044", "covered": true, "fitting_recipes": ["fastapi-httpx-asyncclient-lifespan"], "code_checked": false, "code_check_note": null}
+{"task_id": "T045", "covered": true, "fitting_recipes": ["fastapi-jwt-auth", "fastapi-oauth2-pyjwt-scopes", "pyjwt-cryptography-rs256"], "code_checked": false, "code_check_note": null}
+{"task_id": "T046", "covered": true, "fitting_recipes": ["openai-python-respx-mock", "openai-structured-output-respx"], "code_checked": false, "code_check_note": null}
+{"task_id": "T047", "covered": true, "fitting_recipes": ["aiofiles-anyio-temp-io", "anyio-to-thread-bridge", "pytest-asyncio-taskgroup-timeouts", "sqlalchemy-async-aiosqlite"], "code_checked": true, "code_check_note": "code: pytest-asyncio-taskgroup-timeouts sets asyncio_mode=strict and default fixture/test loop scopes, uses @pytest_asyncio.fixture (fit confirmed)"}
+{"task_id": "T048", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: no pandas recipe touches copy-on-write or the str dtype"}
+{"task_id": "T049", "covered": true, "fitting_recipes": ["flask-marshmallow-webargs"], "code_checked": true, "code_check_note": "code: flask-marshmallow-webargs (rank 2) uses fields.*(load_default=...) on marshmallow 4.3.1 and no Schema.context; top1 marshmallow-dataclass-schema shows neither"}
+{"task_id": "T050", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: numpy-scipy-optimize-fit only happens to use np.inf; nothing about the removed aliases"}
+{"task_id": "T051", "covered": true, "fitting_recipes": ["nestjs-zod-validation-pipe", "express-zod-validation"], "code_checked": true, "code_check_note": "code: nestjs-zod-validation-pipe (rank 5) and express-zod-validation (not in top 10) use z.email() and z.flattenError (2 of the 3 named zod 4 changes); no zod recipe uses the error param; top1 zod-v4-json-schema-export has only z.email()"}
+{"task_id": "T052", "covered": true, "fitting_recipes": ["express5-async-error-handling", "http-errors-express-error-middleware"], "code_checked": false, "code_check_note": null}
+{"task_id": "T053", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T054", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: no Next.js recipe awaits params, cookies() or headers()"}
+{"task_id": "T055", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: fastify-swagger-openapi uses a full querystring JSON schema (1 of 3 v5 changes); no reply.redirect or listen"}
+{"task_id": "T056", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: nestjs-typeorm-sqlite uses TypeOrmModule.forRoot, never DataSource/getRepository"}
+{"task_id": "T057", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T058", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T059", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: drizzle-pglite-migrations calls migrate() on a folder but has no drizzle.config / dialect"}
+{"task_id": "T060", "covered": true, "fitting_recipes": ["openai-sdk-mocked-tool-calls", "openai-streaming-mock"], "code_checked": false, "code_check_note": null}
+{"task_id": "T061", "covered": true, "fitting_recipes": ["fastapi-sqlalchemy-crud"], "code_checked": true, "code_check_note": "code: fastapi-sqlalchemy-crud uses ConfigDict(from_attributes=True) and expire_on_commit=False (fit confirmed)"}
+{"task_id": "T062", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: celery-redis-fakeredis-results sets task_acks_late=True but no retries, backoff or time limits"}
+{"task_id": "T063", "covered": true, "fitting_recipes": ["fastapi-async-sqlalchemy-aiosqlite-pytest", "fastapi-sqlalchemy-crud"], "code_checked": true, "code_check_note": "code: both FastAPI SQLAlchemy recipes set expire_on_commit=False (fit confirmed)"}
+{"task_id": "T064", "covered": true, "fitting_recipes": ["aiofiles-anyio-temp-io", "fastapi-async-sqlalchemy-aiosqlite-pytest", "sqlalchemy-async-aiosqlite"], "code_checked": true, "code_check_note": "code: fastapi-async-sqlalchemy (asyncio_mode=auto + default fixture loop scope), aiofiles-anyio (auto), sqlalchemy-async-aiosqlite (markers) (fit confirmed)"}
+{"task_id": "T065", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T066", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: boto3-moto-s3-presigned uses put_object only; no multipart/upload_fileobj/TransferConfig"}
+{"task_id": "T067", "covered": true, "fitting_recipes": ["pydantic-settings-yaml-secrets"], "code_checked": false, "code_check_note": null}
+{"task_id": "T068", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: structlog-stdlib-json-renderer and structlog-bound-logger-context route stdlib records through ProcessorFormatter but have no FastAPI middleware or uvicorn config; structlog-fastapi-request-id has middleware but no stdlib/uvicorn routing; no single recipe covers both"}
+{"task_id": "T069", "covered": true, "fitting_recipes": ["fastapi-async-sqlalchemy-aiosqlite-pytest", "fastapi-dependency-overrides-httpx", "fastapi-httpx-asyncclient-lifespan"], "code_checked": false, "code_check_note": null}
+{"task_id": "T070", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: fastapi-jwt-auth returns 401 on expired tokens but has no refresh-token flow"}
+{"task_id": "T071", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T072", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: axios-retry-nock has no rate limiter"}
+{"task_id": "T073", "covered": true, "fitting_recipes": ["express-stripe-webhook"], "code_checked": false, "code_check_note": null}
+{"task_id": "T074", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: no zod recipe uses the error param or z.config customError"}
+{"task_id": "T075", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: express5-async-error-handling has no wildcard route (named or otherwise)"}
+{"task_id": "T076", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T077", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T078", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: drizzle-sqlite-crud creates tables with raw CREATE TABLE; the only migrate() recipe is PGlite"}
+{"task_id": "T079", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T080", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: no Next.js recipe calls await cookies(); supabase middleware uses request.cookies in middleware only"}
+{"task_id": "T081", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T082", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T083", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T084", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T085", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T086", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T087", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T088", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T089", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T090", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: litestar-guards-di has Provide-based DI but no request bodies and no msgspec Structs at all; no Litestar+msgspec recipe in the index"}
+{"task_id": "T091", "covered": false, "fitting_recipes": [], "code_checked": true, "code_check_note": "code: effect-schema-vitest has Schema.TaggedError and Schema decoding but no service/Layer"}
+{"task_id": "T092", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T093", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T094", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T095", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T096", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T097", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T098", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T099", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}
+{"task_id": "T100", "covered": false, "fitting_recipes": [], "code_checked": false, "code_check_note": null}

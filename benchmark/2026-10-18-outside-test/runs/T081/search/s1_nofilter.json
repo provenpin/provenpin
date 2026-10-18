@@ -1,0 +1,224 @@
+{
+  "args": {
+    "query": "solve a sudoku with the OR-Tools CP-SAT solver in Python"
+  },
+  "t": "2026-10-18T04:30:16Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 142,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "mcp-sdk-inmemory-tools",
+        "title": "MCP server with in-memory tools",
+        "summary": "Build an McpServer from @modelcontextprotocol/sdk that registers two zod-typed tools and one resource, then exercise it offline through a Client linked by InMemoryTransport.createLinkedPair().",
+        "stack": [
+          "@modelcontextprotocol/sdk",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 32.56,
+        "pinned": {
+          "@modelcontextprotocol/sdk": "1.32.1",
+          "zod": "4.6.7",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:33.778Z"
+        }
+      },
+      {
+        "id": "vercel-ai-sdk-mock-model-tools",
+        "title": "Vercel AI SDK tool loops, structured output and streaming with a mock model",
+        "summary": "AI SDK generateText with a Zod-typed tool and a stopWhen step cap, Output.object structured results validated by Zod, and streamText deltas, all tested offline with MockLanguageModelV4 and simulateReadableStream from ai/test.",
+        "stack": [
+          "ai",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 27.97,
+        "pinned": {
+          "ai": "7.0.141",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:36.006Z"
+        }
+      },
+      {
+        "id": "python-json-logger-structured",
+        "title": "Structured JSON logs with python-json-logger, captured in tests",
+        "summary": "Emit one JSON object per log record with python-json-logger 4.x, using extra fields, renamed keys, static fields, timestamp and exception info, and assert the parsed output offline.",
+        "stack": [
+          "python-json-logger"
+        ],
+        "language": "python",
+        "score": 23.24,
+        "pinned": {
+          "python-json-logger": "4.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:33.366Z"
+        }
+      },
+      {
+        "id": "graphql-tools-schema-mock",
+        "title": "GraphQL schema mocking with @graphql-tools/schema and @graphql-tools/mock",
+        "summary": "Build an executable schema with makeExecutableSchema and layer deterministic mocks, a MockStore, MockList and partial real resolvers on top with addMocksToSchema, including mutations that write to the store.",
+        "stack": [
+          "@graphql-tools/schema",
+          "@graphql-tools/mock",
+          "graphql"
+        ],
+        "language": "typescript",
+        "score": 22.78,
+        "pinned": {
+          "@graphql-tools/schema": "10.1.5",
+          "@graphql-tools/mock": "9.1.18",
+          "graphql": "17.0.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:08:40.920Z"
+        }
+      },
+      {
+        "id": "python-multipart-starlette-forms",
+        "title": "Starlette multipart form uploads parsed with python-multipart, tested offline",
+        "summary": "Parse multipart text fields and file uploads in Starlette with python-multipart, then exercise the app fully in-process through httpx.ASGITransport with no network.",
+        "stack": [
+          "starlette",
+          "python-multipart",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 21.81,
+        "pinned": {
+          "python-multipart": "0.0.32",
+          "starlette": "1.8.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:19.280Z"
+        }
+      },
+      {
+        "id": "python-docx-table-report",
+        "title": "python-docx report with styled tables and page breaks",
+        "summary": "Generate a Word report with python-docx - a title, headings, a styled table and a page break - then reopen the .docx and verify structure, order and styling.",
+        "stack": [
+          "python-docx"
+        ],
+        "language": "python",
+        "score": 21.42,
+        "pinned": {
+          "python-docx": "1.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:35.341Z"
+        }
+      },
+      {
+        "id": "python-slugify-unidecode-titles",
+        "title": "python-slugify + text-unidecode multilingual URL slugs",
+        "summary": "Turn accented, Cyrillic and CJK titles into URL slugs with python-slugify, using text-unidecode for ASCII romanization or allow_unicode to keep scripts verbatim, then dedupe collisions.",
+        "stack": [
+          "python-slugify",
+          "text-unidecode"
+        ],
+        "language": "python",
+        "score": 20.82,
+        "pinned": {
+          "python-slugify": "9.1.3",
+          "text-unidecode": "1.3.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:52.810Z"
+        }
+      },
+      {
+        "id": "python-dotenv-pydantic-settings-env",
+        "title": "Loading .env files with python-dotenv and pydantic-settings precedence rules",
+        "summary": "Typed app settings from .env files with pydantic-settings, covering source precedence, layered env files, extra-key rules and python-dotenv override behavior, tested offline with tmp_path files.",
+        "stack": [
+          "python-dotenv",
+          "pydantic-settings",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 18.95,
+        "pinned": {
+          "python-dotenv": "1.2.4",
+          "pydantic-settings": "2.16.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:29.190Z"
+        }
+      },
+      {
+        "id": "langchainjs-zod-tools",
+        "title": "LangChain.js tools with Zod schemas and a manual tool-calling loop",
+        "summary": "Define LangChain.js tools with tool() and Zod schemas, run model tool_calls through them, and feed ToolMessages back, tested with a scripted fake chat model.",
+        "stack": [
+          "@langchain/core",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 18.9,
+        "pinned": {
+          "@langchain/core": "1.2.17",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:13.015Z"
+        }
+      },
+      {
+        "id": "python-box-dot-access-config",
+        "title": "python-box dot-access config: frozen boxes, defaults and YAML/JSON roundtrip",
+        "summary": "Build dot-access config objects with python-box, deep-merge overrides and defaults, take frozen read-only views, then convert back to plain dicts and round-trip through YAML and JSON.",
+        "stack": [
+          "python-box",
+          "pyyaml"
+        ],
+        "language": "python",
+        "score": 17.51,
+        "pinned": {
+          "python-box": "7.4.1",
+          "PyYAML": "6.0.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:30.588Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

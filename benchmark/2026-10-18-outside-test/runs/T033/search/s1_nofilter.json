@@ -1,0 +1,239 @@
+{
+  "args": {
+    "query": "OpenAI Node SDK structured outputs with a zod schema"
+  },
+  "t": "2026-10-18T04:32:14Z",
+  "wall_s": 1.0,
+  "ok": true,
+  "ms": 149,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "openai-sdk-mocked-tool-calls",
+        "title": "OpenAI Node SDK tool calling + Zod, tested with a mocked fetch",
+        "summary": "Run an OpenAI chat tool-calling loop with Zod-validated tool arguments, tested offline by injecting a fake fetch into the official SDK.",
+        "stack": [
+          "openai",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 119.36,
+        "pinned": {
+          "openai": "7.34.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:52.577Z"
+        }
+      },
+      {
+        "id": "openai-python-respx-mock",
+        "title": "OpenAI Python SDK structured outputs, tested with respx",
+        "summary": "Call the OpenAI Python SDK and validate JSON output with Pydantic, testing success, malformed output and API errors offline by mocking HTTP with respx.",
+        "stack": [
+          "openai",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 93.16,
+        "pinned": {
+          "openai": "3.31.0",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:47.669Z"
+        }
+      },
+      {
+        "id": "openai-structured-output-respx",
+        "title": "OpenAI chat.completions.parse with Pydantic output + respx mocks",
+        "summary": "Get typed output from OpenAI chat.completions.parse using a Pydantic response_format, handle refusals and schema mismatches, and test offline with respx returning canned JSON.",
+        "stack": [
+          "openai",
+          "respx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 86.85,
+        "pinned": {
+          "openai": "3.31.0",
+          "respx": "0.23.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1",
+          "httpx": "0.28.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:03.242Z"
+        }
+      },
+      {
+        "id": "openai-streaming-mock",
+        "title": "OpenAI Node SDK streaming chat completions, tested with a mocked SSE fetch",
+        "summary": "Stream chat completion deltas with the OpenAI SDK (for await over chunks), accumulate text and usage, and handle aborts, tested offline with a fake fetch that returns an SSE body.",
+        "stack": [
+          "openai"
+        ],
+        "language": "typescript",
+        "score": 83.96,
+        "pinned": {
+          "openai": "7.34.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:57.727Z"
+        }
+      },
+      {
+        "id": "zod-v4-json-schema-export",
+        "title": "Zod v4 schemas exported to JSON Schema and checked with Ajv",
+        "summary": "Export Zod v4 schemas to JSON Schema 2020-12 with z.toJSONSchema, using .meta() ids and descriptions and input vs output modes, then validate the same data with Ajv 2020.",
+        "stack": [
+          "zod",
+          "ajv"
+        ],
+        "language": "typescript",
+        "score": 61.39,
+        "pinned": {
+          "zod": "4.6.7",
+          "ajv": "8.20.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:11:31.976Z"
+        }
+      },
+      {
+        "id": "vercel-ai-sdk-mock-model-tools",
+        "title": "Vercel AI SDK tool loops, structured output and streaming with a mock model",
+        "summary": "AI SDK generateText with a Zod-typed tool and a stopWhen step cap, Output.object structured results validated by Zod, and streamText deltas, all tested offline with MockLanguageModelV4 and simulateReadableStream from ai/test.",
+        "stack": [
+          "ai",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 58.39,
+        "pinned": {
+          "ai": "7.0.141",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:36.006Z"
+        }
+      },
+      {
+        "id": "anthropic-sdk-mocked-tool-use",
+        "title": "Anthropic TypeScript SDK tool use loop, tested with a mocked fetch",
+        "summary": "Run a Claude tool_use loop with the official Anthropic SDK and Zod-validated tool inputs, tested offline with an injected fetch.",
+        "stack": [
+          "@anthropic-ai/sdk",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 54.13,
+        "pinned": {
+          "@anthropic-ai/sdk": "0.134.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.647Z"
+        }
+      },
+      {
+        "id": "mcp-sdk-inmemory-tools",
+        "title": "MCP server with in-memory tools",
+        "summary": "Build an McpServer from @modelcontextprotocol/sdk that registers two zod-typed tools and one resource, then exercise it offline through a Client linked by InMemoryTransport.createLinkedPair().",
+        "stack": [
+          "@modelcontextprotocol/sdk",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 51.32,
+        "pinned": {
+          "@modelcontextprotocol/sdk": "1.32.1",
+          "zod": "4.6.7",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:33.778Z"
+        }
+      },
+      {
+        "id": "nestjs-zod-validation-pipe",
+        "title": "NestJS Zod ValidationPipe for body DTOs",
+        "summary": "Validate NestJS request bodies with a reusable Zod ValidationPipe that returns 400 field errors, tested through @nestjs/testing and supertest without relying on emitDecoratorMetadata.",
+        "stack": [
+          "@nestjs/core",
+          "@nestjs/common",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 45.33,
+        "pinned": {
+          "@nestjs/core": "12.1.3",
+          "@nestjs/common": "12.1.3",
+          "@nestjs/platform-express": "12.1.3",
+          "zod": "4.6.7",
+          "reflect-metadata": "0.2.2",
+          "rxjs": "7.8.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "@nestjs/testing": "12.1.3",
+          "supertest": "7.3.1",
+          "@types/supertest": "7.2.1",
+          "@types/express": "5.0.6"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:02:26.961Z"
+        }
+      },
+      {
+        "id": "zod-to-openapi-document-generation",
+        "title": "Zod 4 schemas to an OpenAPI 3.1 document with zod-to-openapi",
+        "summary": "Register Zod 4 schemas, path and query parameters, security schemes and routes in an OpenAPIRegistry and generate an OpenAPI 3.1 document (JSON and YAML) from the same schemas used for runtime validation, tested offline.",
+        "stack": [
+          "zod",
+          "@asteasolutions/zod-to-openapi",
+          "yaml"
+        ],
+        "language": "typescript",
+        "score": 44.67,
+        "pinned": {
+          "zod": "4.6.7",
+          "@asteasolutions/zod-to-openapi": "9.1.0",
+          "yaml": "2.9.1",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:52.902Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "args": {
+    "query": "how parse yaml config file + validate with pydantic and let env vars override values??"
+  },
+  "t": "2026-10-18T04:31:22Z",
+  "wall_s": 1.03,
+  "ok": true,
+  "ms": 167,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "pydantic-settings-config",
+        "title": "Pydantic Settings typed config from env and .env",
+        "summary": "Typed app configuration with pydantic-settings: env prefixes, nested settings, secrets and validation errors.",
+        "stack": [
+          "pydantic",
+          "pydantic-settings"
+        ],
+        "language": "python",
+        "score": 81.11,
+        "pinned": {
+          "pydantic": "2.14.1",
+          "pydantic-settings": "2.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:11.674Z"
+        }
+      },
+      {
+        "id": "pydantic-settings-yaml-secrets",
+        "title": "pydantic-settings v2 config from env, YAML and defaults with SecretStr",
+        "summary": "Nested pydantic-settings models loaded with precedence init > env > YAML > defaults, with env_nested_delimiter, SecretStr masking, and offline tests using tmp_path and monkeypatch.",
+        "stack": [
+          "pydantic-settings",
+          "pydantic",
+          "pyyaml"
+        ],
+        "language": "python",
+        "score": 73.55,
+        "pinned": {
+          "pydantic-settings": "2.16.0",
+          "pydantic": "2.14.1",
+          "python-dotenv": "1.2.2",
+          "pyyaml": "6.0.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:31.062Z"
+        }
+      },
+      {
+        "id": "js-yaml-zod-config",
+        "title": "js-yaml 5 config files validated with Zod 4",
+        "summary": "Parse YAML app config with js-yaml, validate it with Zod 4 (including env defaults), and reject unknown keys or bad types with field errors.",
+        "stack": [
+          "js-yaml",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 66.21,
+        "pinned": {
+          "js-yaml": "5.4.3",
+          "zod": "4.6.7",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "@types/js-yaml": "4.0.9"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:51.386Z"
+        }
+      },
+      {
+        "id": "zod-to-openapi-document-generation",
+        "title": "Zod 4 schemas to an OpenAPI 3.1 document with zod-to-openapi",
+        "summary": "Register Zod 4 schemas, path and query parameters, security schemes and routes in an OpenAPIRegistry and generate an OpenAPI 3.1 document (JSON and YAML) from the same schemas used for runtime validation, tested offline.",
+        "stack": [
+          "zod",
+          "@asteasolutions/zod-to-openapi",
+          "yaml"
+        ],
+        "language": "typescript",
+        "score": 59.94,
+        "pinned": {
+          "zod": "4.6.7",
+          "@asteasolutions/zod-to-openapi": "9.1.0",
+          "yaml": "2.9.1",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:52.902Z"
+        }
+      },
+      {
+        "id": "python-dotenv-pydantic-settings-env",
+        "title": "Loading .env files with python-dotenv and pydantic-settings precedence rules",
+        "summary": "Typed app settings from .env files with pydantic-settings, covering source precedence, layered env files, extra-key rules and python-dotenv override behavior, tested offline with tmp_path files.",
+        "stack": [
+          "python-dotenv",
+          "pydantic-settings",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 59.11,
+        "pinned": {
+          "python-dotenv": "1.2.4",
+          "pydantic-settings": "2.16.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:29.190Z"
+        }
+      },
+      {
+        "id": "orjson-pydantic-v2-roundtrip",
+        "title": "orjson + Pydantic v2 model round trip",
+        "summary": "Serialize Pydantic v2 models to bytes with orjson through a default fallback and option flags, then validate them back offline with TypeAdapter.",
+        "stack": [
+          "orjson",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 54.93,
+        "pinned": {
+          "orjson": "3.13.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:10.454Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-v2-models",
+        "title": "FastAPI + Pydantic v2 validators, discriminated unions and serializers",
+        "summary": "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 52.98,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:32.402Z"
+        }
+      },
+      {
+        "id": "beartype-pydantic-runtime-check",
+        "title": "beartype conf + pydantic model_validate runtime checks",
+        "summary": "Pair beartype boundary checks with pydantic model_validate, using BeartypeConf to align int/float coercion and route violations, and pin down the gotchas where the two guards disagree.",
+        "stack": [
+          "beartype",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 51.51,
+        "pinned": {
+          "beartype": "0.23.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:01:20.959Z"
+        }
+      },
+      {
+        "id": "zod-env-dotenv-config",
+        "title": "Zod 4 + dotenv typed environment config",
+        "summary": "Load .env files with dotenv and validate process.env with Zod 4 at startup: coercion, defaults, enums, URLs and readable errors.",
+        "stack": [
+          "zod",
+          "dotenv"
+        ],
+        "language": "typescript",
+        "score": 48.34,
+        "pinned": {
+          "zod": "4.6.7",
+          "dotenv": "18.0.8",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:37.615Z"
+        }
+      },
+      {
+        "id": "pydantic-settings-nested-sources",
+        "title": "pydantic-settings nested BaseSettings with env_nested_delimiter",
+        "summary": "Group configuration into nested Pydantic settings models and populate them from prefixed environment variables separated by a double underscore, tested fully offline.",
+        "stack": [
+          "pydantic-settings",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 48.09,
+        "pinned": {
+          "pydantic-settings": "2.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:01:39.150Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

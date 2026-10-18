@@ -1,0 +1,232 @@
+{
+  "args": {
+    "query": "Temporal TypeScript SDK workflow with signals and queries"
+  },
+  "t": "2026-10-18T04:32:56Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 130,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "temporal-polyfill-dates",
+        "title": "Temporal polyfill PlainDate and Duration",
+        "summary": "Work with calendar dates using @js-temporal/polyfill Temporal.PlainDate and Duration, covering add, until and timezone-free math offline.",
+        "stack": [
+          "@js-temporal/polyfill"
+        ],
+        "language": "typescript",
+        "score": 47.88,
+        "pinned": {
+          "@js-temporal/polyfill": "0.5.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:05:58.469Z"
+        }
+      },
+      {
+        "id": "transitions-fsm-callbacks",
+        "title": "transitions order workflow with conditions and callbacks",
+        "summary": "An order workflow state machine built with transitions, covering states, triggers, guarded conditions, before/after callbacks via EventData and MachineError on invalid moves, tested offline.",
+        "stack": [
+          "transitions"
+        ],
+        "language": "python",
+        "score": 38.06,
+        "pinned": {
+          "transitions": "0.9.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:57:38.229Z"
+        }
+      },
+      {
+        "id": "json-schema-to-typescript-codegen",
+        "title": "Generate TypeScript types from JSON Schema with json-schema-to-typescript",
+        "summary": "Compile JSON Schemas into TypeScript interfaces with json-schema-to-typescript, covering required and optional fields, enums, $ref definitions, descriptions as JSDoc and strict additionalProperties.",
+        "stack": [
+          "json-schema-to-typescript"
+        ],
+        "language": "typescript",
+        "score": 30.99,
+        "pinned": {
+          "json-schema-to-typescript": "16.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:59.591Z"
+        }
+      },
+      {
+        "id": "openapi-typescript-generate-types",
+        "title": "openapi-typescript generate types",
+        "summary": "Generate TypeScript types from an inline OpenAPI 3.1 document with the openapi-typescript programmatic API using openapiTS and astToString, asserting generated interface members and path keys offline.",
+        "stack": [
+          "openapi-typescript"
+        ],
+        "language": "typescript",
+        "score": 29.56,
+        "pinned": {
+          "openapi-typescript": "7.13.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:47.514Z"
+        }
+      },
+      {
+        "id": "anthropic-sdk-mocked-tool-use",
+        "title": "Anthropic TypeScript SDK tool use loop, tested with a mocked fetch",
+        "summary": "Run a Claude tool_use loop with the official Anthropic SDK and Zod-validated tool inputs, tested offline with an injected fetch.",
+        "stack": [
+          "@anthropic-ai/sdk",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 28.78,
+        "pinned": {
+          "@anthropic-ai/sdk": "0.134.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.647Z"
+        }
+      },
+      {
+        "id": "django-celery-eager-signals",
+        "title": "Django post_save signal enqueuing a Celery task, tested with eager mode and on_commit",
+        "summary": "A post_save signal queues a Celery task only after the row commits via transaction.on_commit, then tests run offline on in-memory SQLite with Celery eager mode and pytest-django's on_commit capture.",
+        "stack": [
+          "django",
+          "celery",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 27.88,
+        "pinned": {
+          "django": "6.1.2",
+          "celery": "5.6.3",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:10.405Z"
+        }
+      },
+      {
+        "id": "aws-sdk-v3-dynamodb-sqs-vitest",
+        "title": "AWS SDK v3 DynamoDB document client and SQS events, tested with Vitest matchers",
+        "summary": "A single-table DynamoDB order service on @aws-sdk/lib-dynamodb with conditional puts, begins_with queries and optimistic locking, publishing SQS events, tested offline with aws-sdk-client-mock and aws-sdk-client-mock-vitest matchers.",
+        "stack": [
+          "@aws-sdk/client-dynamodb",
+          "@aws-sdk/lib-dynamodb",
+          "@aws-sdk/client-sqs",
+          "aws-sdk-client-mock",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 26.48,
+        "pinned": {
+          "@aws-sdk/client-dynamodb": "3.1152.0",
+          "@aws-sdk/lib-dynamodb": "3.1152.0",
+          "@aws-sdk/client-sqs": "3.1152.0",
+          "aws-sdk-client-mock": "4.1.0",
+          "aws-sdk-client-mock-vitest": "8.0.0",
+          "vitest": "5.0.4",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:20.502Z"
+        }
+      },
+      {
+        "id": "preact-signals-testing-library",
+        "title": "Preact components with Signals state, tested with Testing Library on jsdom",
+        "summary": "A Preact 11 cart using @preact/signals signal and computed state plus a hooks-based async form, tested in Vitest on jsdom with @testing-library/preact and user-event, including re-render on signal change without new props.",
+        "stack": [
+          "preact",
+          "@preact/signals",
+          "@testing-library/preact",
+          "@testing-library/user-event",
+          "jsdom",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 26.46,
+        "pinned": {
+          "preact": "11.0.1",
+          "@preact/signals": "2.11.3",
+          "@testing-library/preact": "3.2.4",
+          "@testing-library/user-event": "14.6.8",
+          "jsdom": "30.1.3",
+          "vitest": "5.0.4",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:17.584Z"
+        }
+      },
+      {
+        "id": "anthropic-streaming-mock",
+        "title": "Anthropic SDK message streaming with text deltas, tested with a mocked SSE fetch",
+        "summary": "Stream Claude responses with the Anthropic TypeScript SDK (messages.stream, text events, finalMessage), tested offline with a fake fetch returning Anthropic SSE events.",
+        "stack": [
+          "@anthropic-ai/sdk"
+        ],
+        "language": "typescript",
+        "score": 24.56,
+        "pinned": {
+          "@anthropic-ai/sdk": "0.134.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:18.529Z"
+        }
+      },
+      {
+        "id": "aws-sdk-v3-s3-client-mock",
+        "title": "AWS SDK v3 S3 storage helpers tested with aws-sdk-client-mock",
+        "summary": "S3 helpers on @aws-sdk/client-s3 for JSON put/get with NoSuchKey handling, paginated listing, batched DeleteObjects and locally signed presigned URLs, tested offline with aws-sdk-client-mock and sdkStreamMixin bodies.",
+        "stack": [
+          "@aws-sdk/client-s3",
+          "@aws-sdk/s3-request-presigner",
+          "aws-sdk-client-mock"
+        ],
+        "language": "typescript",
+        "score": 21.75,
+        "pinned": {
+          "@aws-sdk/client-s3": "3.1152.0",
+          "@aws-sdk/s3-request-presigner": "3.1152.0",
+          "aws-sdk-client-mock": "4.1.0",
+          "@smithy/util-stream": "4.8.2",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:05.457Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

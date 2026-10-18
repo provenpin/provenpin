@@ -1,0 +1,253 @@
+{
+  "args": {
+    "query": "SQLAlchemy 1.4 to 2.0: replace session.query() with select() and use Mapped[] typed models"
+  },
+  "t": "2026-10-18T04:30:58Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 131,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "sqlmodel-sqlalchemy-core-select",
+        "title": "SQLModel tables queried with SQLAlchemy Core select on sqlite",
+        "summary": "Query SQLModel-mapped tables with SQLAlchemy Core select and aggregate constructs, showing how result shapes differ from SQLModel's own select, tested offline on in-memory sqlite.",
+        "stack": [
+          "sqlmodel",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 65.02,
+        "pinned": {
+          "sqlmodel": "0.0.48",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:54.936Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-hybrid-events",
+        "title": "SQLAlchemy 2.0 hybrid properties, column_property and before_flush audit events",
+        "summary": "Map hybrid_property and column_property on SQLAlchemy 2.0 models, stamp audit timestamps with a before_flush listener, and test everything offline on in-memory SQLite.",
+        "stack": [
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 64.4,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:41.891Z"
+        }
+      },
+      {
+        "id": "flask-migrate-sqlite",
+        "title": "Flask-SQLAlchemy models with Flask-Migrate upgrades on sqlite in tests",
+        "summary": "Define Flask-SQLAlchemy models, version the schema with Flask-Migrate, and test upgrade, downgrade and model/migration drift offline on a temporary sqlite file.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "flask-migrate",
+          "sqlalchemy",
+          "alembic"
+        ],
+        "language": "python",
+        "score": 55.42,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "flask-migrate": "4.1.0",
+          "pytest": "9.1.1",
+          "alembic": "1.16.5",
+          "mako": "1.3.10",
+          "sqlalchemy": "2.0.43",
+          "typing-extensions": "4.15.0",
+          "werkzeug": "3.1.3",
+          "jinja2": "3.1.6",
+          "markupsafe": "3.0.3",
+          "itsdangerous": "2.2.0",
+          "blinker": "1.9.0",
+          "click": "8.3.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:51.580Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-factory-boy-sqlite",
+        "title": "factory_boy SQLAlchemy ModelFactory on in-memory sqlite",
+        "summary": "Declare SQLAlchemy 2.0 models and factory_boy ModelFactory fixtures bound to a shared in-memory sqlite session, tested fully offline with pytest.",
+        "stack": [
+          "sqlalchemy",
+          "factory-boy"
+        ],
+        "language": "python",
+        "score": 54.92,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "factory-boy": "3.3.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:43.754Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-async-aiosqlite",
+        "title": "SQLAlchemy 2 async ORM + aiosqlite with pytest-asyncio",
+        "summary": "SQLAlchemy 2.x typed async ORM (Mapped, mapped_column, async_sessionmaker, selectinload) on aiosqlite, with pytest-asyncio fixtures.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 53.12,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.5.6",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:32.478Z"
+        }
+      },
+      {
+        "id": "pandas-sqlalchemy-to-sql",
+        "title": "pandas to_sql and read_sql with a SQLAlchemy 2 engine on sqlite, with dtype handling",
+        "summary": "Write and read DataFrames through a SQLAlchemy 2 engine, control column types with dtype, and handle datetimes and nullable ints, tested offline on in-memory sqlite.",
+        "stack": [
+          "pandas",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 51.75,
+        "pinned": {
+          "pandas": "3.0.6",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1",
+          "numpy": "2.3.4",
+          "python-dateutil": "2.9.0.post0",
+          "six": "1.17.0",
+          "typing-extensions": "4.15.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:04.837Z"
+        }
+      },
+      {
+        "id": "fastapi-sqlalchemy-crud",
+        "title": "FastAPI + SQLAlchemy 2 CRUD with dependency-injected sessions",
+        "summary": "FastAPI routes backed by SQLAlchemy 2.x typed models, a per-request session dependency, and TestClient tests on SQLite.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 51.3,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:39.195Z"
+        }
+      },
+      {
+        "id": "marshmallow-sqlalchemy-flask-api",
+        "title": "Flask API with Flask-SQLAlchemy and marshmallow-sqlalchemy, validation errors as 422",
+        "summary": "A Flask JSON API that loads and dumps SQLAlchemy models through SQLAlchemyAutoSchema, returns validation errors as 422, and is tested offline with the Flask test client on in-memory sqlite.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "marshmallow-sqlalchemy",
+          "marshmallow",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 51.02,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "marshmallow-sqlalchemy": "1.5.0",
+          "marshmallow": "3.26.1",
+          "sqlalchemy": "2.0.36",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:16.352Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-aiosqlite-session-factory",
+        "title": "SQLAlchemy 2 async session factory over aiosqlite",
+        "summary": "An async SQLAlchemy 2.0 engine and session factory over aiosqlite, with StaticPool in-memory wiring and pytest-asyncio tests covering commit, rollback and integrity errors.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 50.19,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.5.6",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:24.710Z"
+        }
+      },
+      {
+        "id": "sqlalchemy2-pydantic-v2-from-attributes",
+        "title": "SQLAlchemy 2 ORM rows serialized with Pydantic v2 from_attributes",
+        "summary": "Map SQLAlchemy 2 models, expose nested relationships through Pydantic v2 schemas with from_attributes=True and a computed_field, and test them offline against in-memory SQLite.",
+        "stack": [
+          "sqlalchemy",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 49.6,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:50.176Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

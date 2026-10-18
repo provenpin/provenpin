@@ -1,0 +1,239 @@
+{
+  "args": {
+    "query": "cache FastAPI endpoint responses in Redis with TTL using redis.asyncio"
+  },
+  "t": "2026-10-18T04:30:04Z",
+  "wall_s": 1.02,
+  "ok": true,
+  "ms": 208,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "requests-cache-sqlite-backend",
+        "title": "requests-cache CachedSession with sqlite backend and expiry",
+        "summary": "A requests session backed by a persistent sqlite cache with TTL expiry and 200-only caching, tested offline with responses mocks.",
+        "stack": [
+          "requests",
+          "requests-cache",
+          "responses"
+        ],
+        "language": "python",
+        "score": 80.2,
+        "pinned": {
+          "requests": "2.34.2",
+          "requests-cache": "1.3.3",
+          "responses": "0.26.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:49.436Z"
+        }
+      },
+      {
+        "id": "redis-fakeredis-pipeline",
+        "title": "redis-py pipelines and WATCH transactions tested with fakeredis",
+        "summary": "Batch commands with redis-py pipelines and guard optimistic WATCH/MULTI transactions, tested fully offline against a shared in-memory fakeredis server.",
+        "stack": [
+          "redis",
+          "fakeredis"
+        ],
+        "language": "python",
+        "score": 79.36,
+        "pinned": {
+          "redis": "8.1.0",
+          "fakeredis": "2.40.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:35.581Z"
+        }
+      },
+      {
+        "id": "celery-redis-fakeredis-results",
+        "title": "Celery 5 on Redis with fakeredis-backed idempotency, tested offline in eager mode",
+        "summary": "Configure a Celery app on a Redis broker and result backend for production, guard a task with a Redis SET NX idempotency lock, and test it offline with task_always_eager and fakeredis.",
+        "stack": [
+          "celery",
+          "redis",
+          "fakeredis"
+        ],
+        "language": "python",
+        "score": 70.41,
+        "pinned": {
+          "celery": "5.6.3",
+          "redis": "8.1.0",
+          "fakeredis": "2.40.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:30.120Z"
+        }
+      },
+      {
+        "id": "fastapi-cashews-memory-cache",
+        "title": "FastAPI endpoints cached with cashews in-memory backend",
+        "summary": "FastAPI routes backed by a cashews mem:// cache with key templates, TTL and explicit invalidation, tested fully offline through httpx ASGITransport.",
+        "stack": [
+          "fastapi",
+          "cashews",
+          "httpx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 62,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "cashews": "7.6.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.700Z"
+        }
+      },
+      {
+        "id": "lru-cache-ttl",
+        "title": "lru-cache TTL eviction and size limits",
+        "summary": "Cache computed values with lru-cache, covering max entries, TTL expiry via fake timers, and getOrSet style populate helpers offline.",
+        "stack": [
+          "lru-cache"
+        ],
+        "language": "typescript",
+        "score": 53.23,
+        "pinned": {
+          "lru-cache": "11.5.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:58.827Z"
+        }
+      },
+      {
+        "id": "pydantic-v2-discriminated-unions-fastapi",
+        "title": "FastAPI endpoint with Pydantic v2 discriminated unions and Annotated validators",
+        "summary": "Accept a tagged union of payment methods with Field(discriminator), add Annotated validators, and test the exact 422 error shapes offline with TestClient.",
+        "stack": [
+          "fastapi",
+          "pydantic",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 51.81,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:30.995Z"
+        }
+      },
+      {
+        "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
+        "title": "FastAPI with async SQLAlchemy 2 on aiosqlite, tested offline with per-test in-memory DBs",
+        "summary": "A FastAPI app using AsyncSession and async_sessionmaker on aiosqlite, tested with httpx.AsyncClient over ASGITransport, overriding the session dependency with a fresh in-memory database for each test.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "aiosqlite",
+          "httpx",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 51,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "httpx": "0.28.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1",
+          "greenlet": "3.2.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.420Z"
+        }
+      },
+      {
+        "id": "fastapi-websocket-auth",
+        "title": "FastAPI WebSockets with token auth and broadcast, tested with TestClient",
+        "summary": "FastAPI WebSocket endpoint that authenticates via query token, rejects with a close code and broadcasts to connected clients; tested with TestClient.websocket_connect.",
+        "stack": [
+          "fastapi",
+          "starlette"
+        ],
+        "language": "python",
+        "score": 49.85,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:48.087Z"
+        }
+      },
+      {
+        "id": "ioredis-cache-aside-mock",
+        "title": "ioredis cache-aside with TTL, tested with ioredis-mock (Vitest)",
+        "summary": "Cache-aside helper on ioredis with JSON values, TTLs, stampede-safe single flight and invalidation, tested offline with ioredis-mock in Vitest. Install uses --legacy-peer-deps because ioredis-mock 8 still peers on ioredis ^5, but the mock passes its tests against ioredis 6. vite is pinned so Vitest still resolves under legacy-peer-deps.",
+        "stack": [
+          "ioredis",
+          "ioredis-mock",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 46.78,
+        "pinned": {
+          "ioredis": "6.0.0",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.5",
+          "vite": "8.3.4",
+          "ioredis-mock": "8.13.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:33.837Z"
+        }
+      },
+      {
+        "id": "prometheus-client-fastapi-metrics",
+        "title": "FastAPI metrics with prometheus_client scraped as text",
+        "summary": "Instrument FastAPI with prometheus_client using a per-app registry, label by route template to bound cardinality, and scrape the text exposition format offline through httpx.ASGITransport.",
+        "stack": [
+          "fastapi",
+          "prometheus-client",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 46.72,
+        "pinned": {
+          "prometheus-client": "0.26.0",
+          "fastapi": "0.143.2",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:22.152Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

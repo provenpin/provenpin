@@ -1,0 +1,214 @@
+{
+  "args": {
+    "query": "Litestar app with msgspec Struct request bodies and dependency injection"
+  },
+  "t": "2026-10-18T04:31:42Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 147,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "litestar-guards-di",
+        "title": "Litestar app with DI, role guards and exception handlers",
+        "summary": "A Litestar app with a dependency-injected repository, a role guard on DELETE, and a custom exception handler, tested offline with create_test_client and an in-memory fake.",
+        "stack": [
+          "litestar"
+        ],
+        "language": "python",
+        "score": 109.3,
+        "pinned": {
+          "litestar": "2.24.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:52.740Z"
+        }
+      },
+      {
+        "id": "litestar-dto-sqlalchemy",
+        "title": "Litestar app with advanced-alchemy and DTOs on SQLite",
+        "summary": "A Litestar app wired to SQLAlchemy through the advanced-alchemy plugin, with separate read and write DTOs over aiosqlite, tested offline with litestar.testing TestClient.",
+        "stack": [
+          "litestar",
+          "advanced-alchemy",
+          "aiosqlite"
+        ],
+        "language": "python",
+        "score": 81.33,
+        "pinned": {
+          "litestar": "2.24.0",
+          "advanced-alchemy": "1.11.0",
+          "aiosqlite": "0.22.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:47.241Z"
+        }
+      },
+      {
+        "id": "msgspec-struct-validation",
+        "title": "msgspec Structs with tagged unions, constraints and fast codecs",
+        "summary": "Define msgspec Structs with tagged unions and Meta constraints, encode and decode JSON and MessagePack, inspect ValidationError paths, and convert plain dicts, all tested offline.",
+        "stack": [
+          "msgspec"
+        ],
+        "language": "python",
+        "score": 75.06,
+        "pinned": {
+          "msgspec": "0.22.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:02:16.479Z"
+        }
+      },
+      {
+        "id": "orjson-msgspec-encode-parity",
+        "title": "orjson and msgspec encode/decode parity helpers",
+        "summary": "Run orjson and msgspec side by side with canonical sort-key and non-str-key options, a shared Struct hook and typed decoding, and pin down where their bytes diverge.",
+        "stack": [
+          "orjson",
+          "msgspec"
+        ],
+        "language": "python",
+        "score": 68.91,
+        "pinned": {
+          "orjson": "3.13.0",
+          "msgspec": "0.22.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:01:41.126Z"
+        }
+      },
+      {
+        "id": "msgspec-json-schema-generation",
+        "title": "msgspec Structs to JSON Schema with constraints and tagged unions",
+        "summary": "Generate JSON Schema from msgspec Structs using Annotated Meta constraints, tagged unions and optional fields, then decode payloads with the same validation rules.",
+        "stack": [
+          "msgspec"
+        ],
+        "language": "python",
+        "score": 65.62,
+        "pinned": {
+          "msgspec": "0.22.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:57:20.090Z"
+        }
+      },
+      {
+        "id": "msgspec-msgpack-tagged-unions",
+        "title": "msgspec tagged union Structs over MessagePack and JSON",
+        "summary": "Model a tagged union of msgspec Structs, round-trip it through MessagePack and JSON, and verify tag selection and strict-field validation under pytest.",
+        "stack": [
+          "msgspec"
+        ],
+        "language": "python",
+        "score": 63.47,
+        "pinned": {
+          "msgspec": "0.22.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:29.646Z"
+        }
+      },
+      {
+        "id": "awilix-di-container",
+        "title": "Awilix dependency injection with scoped request containers",
+        "summary": "Wire services with an Awilix container in PROXY mode using asClass, asFunction and asValue, singleton, scoped and transient lifetimes, per-request scopes and disposers.",
+        "stack": [
+          "awilix"
+        ],
+        "language": "typescript",
+        "score": 52.87,
+        "pinned": {
+          "awilix": "13.0.5",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:39.743Z"
+        }
+      },
+      {
+        "id": "fastapi-dependency-injector-wiring",
+        "title": "FastAPI routes wired to a dependency-injector DeclarativeContainer, tested offline",
+        "summary": "Build a DeclarativeContainer with Configuration, Singleton and Factory providers, wire it into FastAPI routes with @inject and Depends(Provide[...]), and test it in-process with httpx.ASGITransport.",
+        "stack": [
+          "fastapi",
+          "dependency-injector",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 40.52,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "dependency-injector": "4.49.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:09.162Z"
+        }
+      },
+      {
+        "id": "fastapi-dependency-overrides-httpx",
+        "title": "FastAPI dependency_overrides tested offline with httpx ASGITransport",
+        "summary": "Override FastAPI dependencies (including nested ones) and drive the app in-process with httpx.ASGITransport, no network and no running server.",
+        "stack": [
+          "fastapi",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 37.58,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:13.224Z"
+        }
+      },
+      {
+        "id": "injector-di-modules",
+        "title": "injector Modules, @provider, singleton scope and ClassAssistedBuilder",
+        "summary": "Wire a small app with injector Modules, a @provider method, singleton-scoped services and ClassAssistedBuilder assisted construction, then override bindings with a test module.",
+        "stack": [
+          "injector",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 30.15,
+        "pinned": {
+          "injector": "0.24.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:56:59.698Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "args": {
+    "query": "migrate .eslintrc.json to eslint.config.js flat config with typescript-eslint"
+  },
+  "t": "2026-10-18T04:29:49Z",
+  "wall_s": 1.03,
+  "ok": true,
+  "ms": 218,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "json-schema-to-typescript-codegen",
+        "title": "Generate TypeScript types from JSON Schema with json-schema-to-typescript",
+        "summary": "Compile JSON Schemas into TypeScript interfaces with json-schema-to-typescript, covering required and optional fields, enums, $ref definitions, descriptions as JSDoc and strict additionalProperties.",
+        "stack": [
+          "json-schema-to-typescript"
+        ],
+        "language": "typescript",
+        "score": 39.39,
+        "pinned": {
+          "json-schema-to-typescript": "16.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:59.591Z"
+        }
+      },
+      {
+        "id": "flask-migrate-sqlite",
+        "title": "Flask-SQLAlchemy models with Flask-Migrate upgrades on sqlite in tests",
+        "summary": "Define Flask-SQLAlchemy models, version the schema with Flask-Migrate, and test upgrade, downgrade and model/migration drift offline on a temporary sqlite file.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "flask-migrate",
+          "sqlalchemy",
+          "alembic"
+        ],
+        "language": "python",
+        "score": 30.3,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "flask-migrate": "4.1.0",
+          "pytest": "9.1.1",
+          "alembic": "1.16.5",
+          "mako": "1.3.10",
+          "sqlalchemy": "2.0.43",
+          "typing-extensions": "4.15.0",
+          "werkzeug": "3.1.3",
+          "jinja2": "3.1.6",
+          "markupsafe": "3.0.3",
+          "itsdangerous": "2.2.0",
+          "blinker": "1.9.0",
+          "click": "8.3.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:51.580Z"
+        }
+      },
+      {
+        "id": "openapi-typescript-generate-types",
+        "title": "openapi-typescript generate types",
+        "summary": "Generate TypeScript types from an inline OpenAPI 3.1 document with the openapi-typescript programmatic API using openapiTS and astToString, asserting generated interface members and path keys offline.",
+        "stack": [
+          "openapi-typescript"
+        ],
+        "language": "typescript",
+        "score": 28.85,
+        "pinned": {
+          "openapi-typescript": "7.13.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:47.514Z"
+        }
+      },
+      {
+        "id": "js-yaml-zod-config",
+        "title": "js-yaml 5 config files validated with Zod 4",
+        "summary": "Parse YAML app config with js-yaml, validate it with Zod 4 (including env defaults), and reject unknown keys or bad types with field errors.",
+        "stack": [
+          "js-yaml",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 22.02,
+        "pinned": {
+          "js-yaml": "5.4.3",
+          "zod": "4.6.7",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "@types/js-yaml": "4.0.9"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:51.386Z"
+        }
+      },
+      {
+        "id": "pyyaml-jsonschema-config",
+        "title": "PyYAML config validated with jsonschema Draft 2020-12",
+        "summary": "Load a YAML config with PyYAML safe loading and validate it offline against a JSON Schema Draft 2020-12 with jsonschema, including format checks and duplicate-key detection.",
+        "stack": [
+          "pyyaml",
+          "jsonschema"
+        ],
+        "language": "python",
+        "score": 22.02,
+        "pinned": {
+          "pyyaml": "6.0.3",
+          "jsonschema": "4.26.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:56:47.081Z"
+        }
+      },
+      {
+        "id": "voluptuous-config-schema-coerce",
+        "title": "voluptuous config schemas with Coerce, All, Range and Required",
+        "summary": "Validate and coerce stringly-typed config into a typed dict with voluptuous, combining Coerce, All, Range, In and Required, and testing the failure paths offline.",
+        "stack": [
+          "voluptuous"
+        ],
+        "language": "python",
+        "score": 22.02,
+        "pinned": {
+          "voluptuous": "0.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:19.901Z"
+        }
+      },
+      {
+        "id": "platformdirs-toml-config-store",
+        "title": "platformdirs config path + tomlkit TOML config store",
+        "summary": "Resolve a per-user config file with platformdirs, then read and write it with tomlkit while preserving comments, key order and native types.",
+        "stack": [
+          "platformdirs",
+          "tomlkit"
+        ],
+        "language": "python",
+        "score": 20.59,
+        "pinned": {
+          "platformdirs": "4.13.0",
+          "tomlkit": "0.15.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:12.486Z"
+        }
+      },
+      {
+        "id": "cosmiconfig-fixture-load",
+        "title": "cosmiconfig load config from fixture files",
+        "summary": "Use cosmiconfigSync to load JSON and JS module configs from a temporary search root without touching the real filesystem home.",
+        "stack": [
+          "cosmiconfig"
+        ],
+        "language": "typescript",
+        "score": 18.38,
+        "pinned": {
+          "cosmiconfig": "10.0.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:56:53.042Z"
+        }
+      },
+      {
+        "id": "glom-nested-transform",
+        "title": "glom specs turning nested dicts into flat records",
+        "summary": "Flatten nested API payloads into typed flat records with glom Iter and Coalesce specs, explode list fields, and handle missing paths.",
+        "stack": [
+          "glom"
+        ],
+        "language": "python",
+        "score": 17.61,
+        "pinned": {
+          "glom": "25.12.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:36.435Z"
+        }
+      },
+      {
+        "id": "pydantic-settings-config",
+        "title": "Pydantic Settings typed config from env and .env",
+        "summary": "Typed app configuration with pydantic-settings: env prefixes, nested settings, secrets and validation errors.",
+        "stack": [
+          "pydantic",
+          "pydantic-settings"
+        ],
+        "language": "python",
+        "score": 17.28,
+        "pinned": {
+          "pydantic": "2.14.1",
+          "pydantic-settings": "2.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:11.674Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

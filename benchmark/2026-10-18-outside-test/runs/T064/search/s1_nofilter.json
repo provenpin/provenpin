@@ -1,0 +1,238 @@
+{
+  "args": {
+    "query": "pytest async test says coroutine was never awaited and my async fixture isnt running whats wrong"
+  },
+  "t": "2026-10-18T04:31:59Z",
+  "wall_s": 1.0,
+  "ok": true,
+  "ms": 153,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
+        "title": "FastAPI with async SQLAlchemy 2 on aiosqlite, tested offline with per-test in-memory DBs",
+        "summary": "A FastAPI app using AsyncSession and async_sessionmaker on aiosqlite, tested with httpx.AsyncClient over ASGITransport, overriding the session dependency with a fresh in-memory database for each test.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "aiosqlite",
+          "httpx",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 35.39,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "httpx": "0.28.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1",
+          "greenlet": "3.2.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.420Z"
+        }
+      },
+      {
+        "id": "quart-httpx-asgi-client",
+        "title": "Quart async routes tested offline with httpx ASGITransport",
+        "summary": "A Quart app with async JSON bodies and an injected httpx client, exercised fully in-process via httpx.ASGITransport and httpx.MockTransport.",
+        "stack": [
+          "quart",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 30.9,
+        "pinned": {
+          "quart": "0.23.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:16.510Z"
+        }
+      },
+      {
+        "id": "aiofiles-anyio-temp-io",
+        "title": "aiofiles async file IO coordinated by anyio under pytest-asyncio",
+        "summary": "Write and read files with aiofiles, fan out concurrent reads with an anyio task group, serialize appends with anyio.Lock, and test it all offline with pytest-asyncio.",
+        "stack": [
+          "aiofiles",
+          "anyio",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 30.86,
+        "pinned": {
+          "aiofiles": "25.1.0",
+          "anyio": "4.15.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:06.236Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-async-aiosqlite",
+        "title": "SQLAlchemy 2 async ORM + aiosqlite with pytest-asyncio",
+        "summary": "SQLAlchemy 2.x typed async ORM (Mapped, mapped_column, async_sessionmaker, selectinload) on aiosqlite, with pytest-asyncio fixtures.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 30.51,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.5.6",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:32.478Z"
+        }
+      },
+      {
+        "id": "anyio-to-thread-bridge",
+        "title": "anyio to_thread and from_thread bridging sync work under pytest-asyncio",
+        "summary": "Run blocking code in worker threads with anyio.to_thread, call back into async code from those threads with anyio.from_thread, and test the whole bridge offline with pytest-asyncio.",
+        "stack": [
+          "anyio",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 29.68,
+        "pinned": {
+          "anyio": "4.15.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:56:39.712Z"
+        }
+      },
+      {
+        "id": "aiohttp-pytest-plugin-client",
+        "title": "aiohttp routes tested offline with the pytest-aiohttp test client",
+        "summary": "An aiohttp JSON app exercised through the pytest-aiohttp in-process test client, plus a conftest that brings loopback up so the client runs inside a network-isolated sandbox.",
+        "stack": [
+          "aiohttp",
+          "pytest-aiohttp",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 29.42,
+        "pinned": {
+          "aiohttp": "3.14.5",
+          "pytest-aiohttp": "1.1.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:28.730Z"
+        }
+      },
+      {
+        "id": "fastapi-dependency-overrides-httpx",
+        "title": "FastAPI dependency_overrides tested offline with httpx ASGITransport",
+        "summary": "Override FastAPI dependencies (including nested ones) and drive the app in-process with httpx.ASGITransport, no network and no running server.",
+        "stack": [
+          "fastapi",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 27.85,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:13.224Z"
+        }
+      },
+      {
+        "id": "loguru-pytest-caplog",
+        "title": "Capture loguru logs in pytest caplog via a propagate sink and structured extra",
+        "summary": "Forward loguru records into stdlib logging so pytest caplog sees them, keep bound context as structured extra, and test it offline without a real log backend.",
+        "stack": [
+          "loguru",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 26.54,
+        "pinned": {
+          "loguru": "0.7.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:54.565Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-aiosqlite-session-factory",
+        "title": "SQLAlchemy 2 async session factory over aiosqlite",
+        "summary": "An async SQLAlchemy 2.0 engine and session factory over aiosqlite, with StaticPool in-memory wiring and pytest-asyncio tests covering commit, rollback and integrity errors.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 26.19,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.5.6",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:24.710Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-async-repository-pattern",
+        "title": "Async repository pattern with SQLAlchemy 2 AsyncSession on aiosqlite",
+        "summary": "A typed async repository over SQLAlchemy 2 AsyncSession with eager loading, foreign keys enforced on SQLite, and offline pytest-asyncio tests against an in-memory database.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 26.19,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.2.4",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:38.701Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

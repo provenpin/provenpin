@@ -1,0 +1,243 @@
+{
+  "args": {
+    "query": "openai.ChatCompletion.create is no longer supported: migrate openai python 0.28 code to the OpenAI client"
+  },
+  "t": "2026-10-18T04:34:04Z",
+  "wall_s": 1.02,
+  "ok": true,
+  "ms": 147,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "openai-python-respx-mock",
+        "title": "OpenAI Python SDK structured outputs, tested with respx",
+        "summary": "Call the OpenAI Python SDK and validate JSON output with Pydantic, testing success, malformed output and API errors offline by mocking HTTP with respx.",
+        "stack": [
+          "openai",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 72.85,
+        "pinned": {
+          "openai": "3.31.0",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:47.669Z"
+        }
+      },
+      {
+        "id": "openai-sdk-mocked-tool-calls",
+        "title": "OpenAI Node SDK tool calling + Zod, tested with a mocked fetch",
+        "summary": "Run an OpenAI chat tool-calling loop with Zod-validated tool arguments, tested offline by injecting a fake fetch into the official SDK.",
+        "stack": [
+          "openai",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 62.77,
+        "pinned": {
+          "openai": "7.34.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:52.577Z"
+        }
+      },
+      {
+        "id": "openai-streaming-mock",
+        "title": "OpenAI Node SDK streaming chat completions, tested with a mocked SSE fetch",
+        "summary": "Stream chat completion deltas with the OpenAI SDK (for await over chunks), accumulate text and usage, and handle aborts, tested offline with a fake fetch that returns an SSE body.",
+        "stack": [
+          "openai"
+        ],
+        "language": "typescript",
+        "score": 62.77,
+        "pinned": {
+          "openai": "7.34.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:57.727Z"
+        }
+      },
+      {
+        "id": "openai-structured-output-respx",
+        "title": "OpenAI chat.completions.parse with Pydantic output + respx mocks",
+        "summary": "Get typed output from OpenAI chat.completions.parse using a Pydantic response_format, handle refusals and schema mismatches, and test offline with respx returning canned JSON.",
+        "stack": [
+          "openai",
+          "respx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 61.34,
+        "pinned": {
+          "openai": "3.31.0",
+          "respx": "0.23.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1",
+          "httpx": "0.28.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:03.242Z"
+        }
+      },
+      {
+        "id": "flask-migrate-sqlite",
+        "title": "Flask-SQLAlchemy models with Flask-Migrate upgrades on sqlite in tests",
+        "summary": "Define Flask-SQLAlchemy models, version the schema with Flask-Migrate, and test upgrade, downgrade and model/migration drift offline on a temporary sqlite file.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "flask-migrate",
+          "sqlalchemy",
+          "alembic"
+        ],
+        "language": "python",
+        "score": 29.58,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "flask-migrate": "4.1.0",
+          "pytest": "9.1.1",
+          "alembic": "1.16.5",
+          "mako": "1.3.10",
+          "sqlalchemy": "2.0.43",
+          "typing-extensions": "4.15.0",
+          "werkzeug": "3.1.3",
+          "jinja2": "3.1.6",
+          "markupsafe": "3.0.3",
+          "itsdangerous": "2.2.0",
+          "blinker": "1.9.0",
+          "click": "8.3.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:51.580Z"
+        }
+      },
+      {
+        "id": "python-multipart-starlette-forms",
+        "title": "Starlette multipart form uploads parsed with python-multipart, tested offline",
+        "summary": "Parse multipart text fields and file uploads in Starlette with python-multipart, then exercise the app fully in-process through httpx.ASGITransport with no network.",
+        "stack": [
+          "starlette",
+          "python-multipart",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 21.49,
+        "pinned": {
+          "python-multipart": "0.0.32",
+          "starlette": "1.8.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:19.280Z"
+        }
+      },
+      {
+        "id": "httpx-pydantic-typed-client",
+        "title": "Typed httpx client parsing into pydantic v2 models, tested with respx",
+        "summary": "An async httpx client that retries 5xx and transport errors, validates responses into pydantic v2 models, and is tested offline with respx route mocks.",
+        "stack": [
+          "httpx",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 19.76,
+        "pinned": {
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:53.181Z"
+        }
+      },
+      {
+        "id": "python-box-dot-access-config",
+        "title": "python-box dot-access config: frozen boxes, defaults and YAML/JSON roundtrip",
+        "summary": "Build dot-access config objects with python-box, deep-merge overrides and defaults, take frozen read-only views, then convert back to plain dicts and round-trip through YAML and JSON.",
+        "stack": [
+          "python-box",
+          "pyyaml"
+        ],
+        "language": "python",
+        "score": 18.62,
+        "pinned": {
+          "python-box": "7.4.1",
+          "PyYAML": "6.0.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:30.588Z"
+        }
+      },
+      {
+        "id": "python-slugify-unidecode-titles",
+        "title": "python-slugify + text-unidecode multilingual URL slugs",
+        "summary": "Turn accented, Cyrillic and CJK titles into URL slugs with python-slugify, using text-unidecode for ASCII romanization or allow_unicode to keep scripts verbatim, then dedupe collisions.",
+        "stack": [
+          "python-slugify",
+          "text-unidecode"
+        ],
+        "language": "python",
+        "score": 18.62,
+        "pinned": {
+          "python-slugify": "9.1.3",
+          "text-unidecode": "1.3.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:52.810Z"
+        }
+      },
+      {
+        "id": "python-docx-table-report",
+        "title": "python-docx report with styled tables and page breaks",
+        "summary": "Generate a Word report with python-docx - a title, headings, a styled table and a page break - then reopen the .docx and verify structure, order and styling.",
+        "stack": [
+          "python-docx"
+        ],
+        "language": "python",
+        "score": 18.23,
+        "pinned": {
+          "python-docx": "1.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:35.341Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

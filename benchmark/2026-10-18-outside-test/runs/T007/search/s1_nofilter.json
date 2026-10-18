@@ -1,0 +1,238 @@
+{
+  "args": {
+    "query": "structlog JSON logging in FastAPI with request id bound to every log line"
+  },
+  "t": "2026-10-18T04:33:13Z",
+  "wall_s": 1.0,
+  "ok": true,
+  "ms": 135,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "structlog-fastapi-request-id",
+        "title": "FastAPI request ids in structlog contextvars, tested with capture_logs",
+        "summary": "Pure ASGI middleware binds a request id into structlog contextvars, echoes it in an X-Request-ID header, and is tested offline with TestClient and structlog.testing.capture_logs.",
+        "stack": [
+          "fastapi",
+          "structlog",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 148.71,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "structlog": "26.1.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:01.384Z"
+        }
+      },
+      {
+        "id": "structlog-stdlib-json-renderer",
+        "title": "structlog JSONRenderer routed through stdlib logging, captured in pytest",
+        "summary": "Configure structlog to render one JSON line per event via stdlib logging and ProcessorFormatter, then cover the pytest side offline: caplog holds the event dict (not the JSON), format_exc_info keeps tracebacks JSON-safe, passing default= to JSONRenderer disables the __structlog__ hook, and reconfiguring never stacks handlers.",
+        "stack": [
+          "structlog"
+        ],
+        "language": "python",
+        "score": 105.08,
+        "pinned": {
+          "structlog": "26.1.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:59:46.227Z"
+        }
+      },
+      {
+        "id": "structlog-bound-logger-context",
+        "title": "structlog bound logger contextvars + stdlib ProcessorFormatter",
+        "summary": "One JSON ProcessorFormatter renders both structlog events and foreign stdlib records while per-request contextvars bound with bind_contextvars are merged in, tested offline by capturing the log stream.",
+        "stack": [
+          "structlog"
+        ],
+        "language": "python",
+        "score": 103.2,
+        "pinned": {
+          "structlog": "26.1.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:05:43.171Z"
+        }
+      },
+      {
+        "id": "fastapi-jinja2-htmx-partials",
+        "title": "FastAPI Jinja2 full pages vs HTMX partials via HX-Request",
+        "summary": "Serve a full HTML page to normal browsers and a bare HTML fragment to HTMX requests, chosen by the HX-Request header, with Vary set for caches. Tested offline with the sync TestClient.",
+        "stack": [
+          "fastapi",
+          "jinja2",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 51.29,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "jinja2": "3.1.6",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:20.296Z"
+        }
+      },
+      {
+        "id": "prometheus-client-fastapi-metrics",
+        "title": "FastAPI metrics with prometheus_client scraped as text",
+        "summary": "Instrument FastAPI with prometheus_client using a per-app registry, label by route template to bound cardinality, and scrape the text exposition format offline through httpx.ASGITransport.",
+        "stack": [
+          "fastapi",
+          "prometheus-client",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 51.16,
+        "pinned": {
+          "prometheus-client": "0.26.0",
+          "fastapi": "0.143.2",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:22.152Z"
+        }
+      },
+      {
+        "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
+        "title": "FastAPI with async SQLAlchemy 2 on aiosqlite, tested offline with per-test in-memory DBs",
+        "summary": "A FastAPI app using AsyncSession and async_sessionmaker on aiosqlite, tested with httpx.AsyncClient over ASGITransport, overriding the session dependency with a fresh in-memory database for each test.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "aiosqlite",
+          "httpx",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 48.91,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "httpx": "0.28.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1",
+          "greenlet": "3.2.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.420Z"
+        }
+      },
+      {
+        "id": "fastapi-dependency-injector-wiring",
+        "title": "FastAPI routes wired to a dependency-injector DeclarativeContainer, tested offline",
+        "summary": "Build a DeclarativeContainer with Configuration, Singleton and Factory providers, wire it into FastAPI routes with @inject and Depends(Provide[...]), and test it in-process with httpx.ASGITransport.",
+        "stack": [
+          "fastapi",
+          "dependency-injector",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 48.26,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "dependency-injector": "4.49.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:09.162Z"
+        }
+      },
+      {
+        "id": "fastapi-slowapi-rate-limit",
+        "title": "FastAPI endpoints rate limited with slowapi, tested with TestClient",
+        "summary": "Add per-route and per-API-key rate limits to FastAPI with slowapi, then test 429 behavior offline with TestClient and the in-memory store.",
+        "stack": [
+          "fastapi",
+          "slowapi",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 47.87,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "slowapi": "0.1.10",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:40.456Z"
+        }
+      },
+      {
+        "id": "fastapi-stripe-webhook",
+        "title": "FastAPI + Stripe webhook signature verification",
+        "summary": "Verify Stripe webhook signatures in FastAPI from the raw request body and dispatch on event type. Tested offline with locally signed payloads.",
+        "stack": [
+          "fastapi",
+          "stripe"
+        ],
+        "language": "python",
+        "score": 47.8,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "stripe": "16.0.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:47.394Z"
+        }
+      },
+      {
+        "id": "fastapi-cashews-memory-cache",
+        "title": "FastAPI endpoints cached with cashews in-memory backend",
+        "summary": "FastAPI routes backed by a cashews mem:// cache with key templates, TTL and explicit invalidation, tested fully offline through httpx ASGITransport.",
+        "stack": [
+          "fastapi",
+          "cashews",
+          "httpx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 47.48,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "cashews": "7.6.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.700Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

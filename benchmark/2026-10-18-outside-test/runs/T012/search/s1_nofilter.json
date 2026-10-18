@@ -1,0 +1,238 @@
+{
+  "args": {
+    "query": "mock httpx calls in pytest using respx"
+  },
+  "t": "2026-10-18T04:33:28Z",
+  "wall_s": 1.03,
+  "ok": true,
+  "ms": 147,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "httpx-authlib-oauth2-mock",
+        "title": "authlib OAuth2 client credentials flow + httpx mocked by respx",
+        "summary": "An async authlib OAuth2 client that fetches, caches and auto-refreshes client_credentials tokens over httpx, tested fully offline with respx route mocks.",
+        "stack": [
+          "authlib",
+          "httpx",
+          "respx"
+        ],
+        "language": "python",
+        "score": 101.44,
+        "pinned": {
+          "authlib": "1.9.1",
+          "httpx": "0.28.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:09:57.441Z"
+        }
+      },
+      {
+        "id": "tenacity-httpx-respx-backoff",
+        "title": "httpx + tenacity async retries honoring Retry-After, tested with respx",
+        "summary": "Wrap async httpx calls in tenacity AsyncRetrying that retries 429 and 5xx, honors Retry-After, and patches the wait to zero in tests with respx mocks.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 99.65,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:06.586Z"
+        }
+      },
+      {
+        "id": "httpx-pydantic-typed-client",
+        "title": "Typed httpx client parsing into pydantic v2 models, tested with respx",
+        "summary": "An async httpx client that retries 5xx and transport errors, validates responses into pydantic v2 models, and is tested offline with respx route mocks.",
+        "stack": [
+          "httpx",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 94.52,
+        "pinned": {
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:53.181Z"
+        }
+      },
+      {
+        "id": "httpx-respx-api-client",
+        "title": "httpx async API client + respx mocks",
+        "summary": "A typed async API client on httpx with retries on 5xx and Pydantic parsing, tested offline with respx route mocks.",
+        "stack": [
+          "httpx",
+          "respx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 94.52,
+        "pinned": {
+          "httpx": "0.28.1",
+          "respx": "0.23.1",
+          "pydantic": "2.14.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:56.876Z"
+        }
+      },
+      {
+        "id": "httpx-respx-pagination-oauth",
+        "title": "httpx OAuth2 client-credentials client with cached tokens and Link pagination",
+        "summary": "A sync httpx client that fetches and caches an OAuth2 client-credentials token, refreshes it on 401, and follows Link-header pagination, tested offline with respx routes.",
+        "stack": [
+          "httpx",
+          "respx"
+        ],
+        "language": "python",
+        "score": 94.52,
+        "pinned": {
+          "httpx": "0.28.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:00.076Z"
+        }
+      },
+      {
+        "id": "httpx-tenacity-retry",
+        "title": "httpx client + tenacity retries with backoff, tested with respx",
+        "summary": "Retry transient HTTP failures (5xx, 429, timeouts) with tenacity around an httpx client, honoring a max attempt count, tested offline with respx.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 94.52,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:07.041Z"
+        }
+      },
+      {
+        "id": "openai-python-respx-mock",
+        "title": "OpenAI Python SDK structured outputs, tested with respx",
+        "summary": "Call the OpenAI Python SDK and validate JSON output with Pydantic, testing success, malformed output and API errors offline by mocking HTTP with respx.",
+        "stack": [
+          "openai",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 68.77,
+        "pinned": {
+          "openai": "3.31.0",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:47.669Z"
+        }
+      },
+      {
+        "id": "openai-structured-output-respx",
+        "title": "OpenAI chat.completions.parse with Pydantic output + respx mocks",
+        "summary": "Get typed output from OpenAI chat.completions.parse using a Pydantic response_format, handle refusals and schema mismatches, and test offline with respx returning canned JSON.",
+        "stack": [
+          "openai",
+          "respx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 63.94,
+        "pinned": {
+          "openai": "3.31.0",
+          "respx": "0.23.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1",
+          "httpx": "0.28.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:03.242Z"
+        }
+      },
+      {
+        "id": "quart-httpx-asgi-client",
+        "title": "Quart async routes tested offline with httpx ASGITransport",
+        "summary": "A Quart app with async JSON bodies and an injected httpx client, exercised fully in-process via httpx.ASGITransport and httpx.MockTransport.",
+        "stack": [
+          "quart",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 54.4,
+        "pinned": {
+          "quart": "0.23.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:16.510Z"
+        }
+      },
+      {
+        "id": "fastapi-dependency-overrides-httpx",
+        "title": "FastAPI dependency_overrides tested offline with httpx ASGITransport",
+        "summary": "Override FastAPI dependencies (including nested ones) and drive the app in-process with httpx.ASGITransport, no network and no running server.",
+        "stack": [
+          "fastapi",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 51.25,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:13.224Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

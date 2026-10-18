@@ -1,0 +1,214 @@
+{
+  "args": {
+    "query": "celery task just hangs forever no error, redis broker... also how do i retry when the external api is down"
+  },
+  "t": "2026-10-18T04:33:31Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 137,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "celery-redis-fakeredis-results",
+        "title": "Celery 5 on Redis with fakeredis-backed idempotency, tested offline in eager mode",
+        "summary": "Configure a Celery app on a Redis broker and result backend for production, guard a task with a Redis SET NX idempotency lock, and test it offline with task_always_eager and fakeredis.",
+        "stack": [
+          "celery",
+          "redis",
+          "fakeredis"
+        ],
+        "language": "python",
+        "score": 135.82,
+        "pinned": {
+          "celery": "5.6.3",
+          "redis": "8.1.0",
+          "fakeredis": "2.40.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:30.120Z"
+        }
+      },
+      {
+        "id": "django-celery-eager-signals",
+        "title": "Django post_save signal enqueuing a Celery task, tested with eager mode and on_commit",
+        "summary": "A post_save signal queues a Celery task only after the row commits via transaction.on_commit, then tests run offline on in-memory SQLite with Celery eager mode and pytest-django's on_commit capture.",
+        "stack": [
+          "django",
+          "celery",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 75.19,
+        "pinned": {
+          "django": "6.1.2",
+          "celery": "5.6.3",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:10.405Z"
+        }
+      },
+      {
+        "id": "celery-tasks-eager-testing",
+        "title": "Celery 5 tasks, chains and groups tested in eager mode",
+        "summary": "Define Celery tasks, chain and fan them out with groups, then test them offline with task_always_eager and the in-memory broker.",
+        "stack": [
+          "celery"
+        ],
+        "language": "python",
+        "score": 71.85,
+        "pinned": {
+          "celery": "5.6.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:40.973Z"
+        }
+      },
+      {
+        "id": "redis-fakeredis-pipeline",
+        "title": "redis-py pipelines and WATCH transactions tested with fakeredis",
+        "summary": "Batch commands with redis-py pipelines and guard optimistic WATCH/MULTI transactions, tested fully offline against a shared in-memory fakeredis server.",
+        "stack": [
+          "redis",
+          "fakeredis"
+        ],
+        "language": "python",
+        "score": 65.4,
+        "pinned": {
+          "redis": "8.1.0",
+          "fakeredis": "2.40.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:35.581Z"
+        }
+      },
+      {
+        "id": "celery-beat-schedule-crontab",
+        "title": "Celery beat crontab schedules validated and run eagerly",
+        "summary": "Define beat_schedule crontab entries, validate task names and schedule types before deploy, and test each scheduled call offline with task_always_eager.",
+        "stack": [
+          "celery"
+        ],
+        "language": "python",
+        "score": 60.76,
+        "pinned": {
+          "celery": "5.6.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:27.860Z"
+        }
+      },
+      {
+        "id": "result-ok-err-map",
+        "title": "result Ok / Err map and and_then error handling without exceptions",
+        "summary": "Railway-oriented pipelines with the result library: chain fallible steps with map, map_err and and_then, recover with or_else, and turn exceptions into Err values via as_result.",
+        "stack": [
+          "result"
+        ],
+        "language": "python",
+        "score": 27.15,
+        "pinned": {
+          "result": "0.17.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:59.044Z"
+        }
+      },
+      {
+        "id": "rq-fakeredis-jobs",
+        "title": "RQ background jobs tested with fakeredis",
+        "summary": "Enqueue Redis Queue (RQ) jobs and process them with a SimpleWorker against fakeredis, so queue tests run offline with no Redis server.",
+        "stack": [
+          "rq",
+          "fakeredis"
+        ],
+        "language": "python",
+        "score": 22.14,
+        "pinned": {
+          "rq": "2.12.0",
+          "fakeredis": "2.40.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:54.849Z"
+        }
+      },
+      {
+        "id": "boltons-funcutils-retry",
+        "title": "Boltons retry decorator and cached property helpers under pytest",
+        "summary": "A signature-preserving retry decorator composed with boltons.funcutils.wraps, plus cacheutils cachedproperty and cachedmethod memoization tested offline with pytest.",
+        "stack": [
+          "boltons"
+        ],
+        "language": "python",
+        "score": 21.1,
+        "pinned": {
+          "boltons": "26.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:01:26.959Z"
+        }
+      },
+      {
+        "id": "lark-lalr-calculator-transformer",
+        "title": "Lark LALR calculator with a Transformer and error handling",
+        "summary": "A small LALR arithmetic grammar parsed with lark and evaluated by a Transformer, plus how syntax errors and exceptions raised inside transformer methods surface.",
+        "stack": [
+          "lark"
+        ],
+        "language": "python",
+        "score": 20.63,
+        "pinned": {
+          "lark": "1.3.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:12.744Z"
+        }
+      },
+      {
+        "id": "elysia-typebox-handle-tests",
+        "title": "Elysia API with TypeBox validation and guards, tested via app.handle on Node",
+        "summary": "An Elysia 1.4 app with TypeBox schemas for params, query, body and responses, a guard with an API key check and custom error mapping, tested on Node with web-standard Request objects through app.handle and no open port.",
+        "stack": [
+          "elysia",
+          "@sinclair/typebox"
+        ],
+        "language": "typescript",
+        "score": 20.07,
+        "pinned": {
+          "elysia": "1.4.30",
+          "@sinclair/typebox": "0.34.52",
+          "exact-mirror": "1.2.6",
+          "file-type": "22.2.0",
+          "openapi-types": "12.1.3",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:53.720Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

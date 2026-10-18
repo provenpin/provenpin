@@ -1,0 +1,227 @@
+{
+  "args": {
+    "query": "axios-retry retry on network errors and 5xx with exponential delay"
+  },
+  "t": "2026-10-18T04:30:52Z",
+  "wall_s": 1.05,
+  "ok": true,
+  "ms": 185,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "axios-retry-nock",
+        "title": "Axios + axios-retry with exponential backoff, tested with nock",
+        "summary": "Configure axios-retry for idempotent requests and 429/5xx responses, tested offline with nock intercepts.",
+        "stack": [
+          "axios",
+          "axios-retry",
+          "nock"
+        ],
+        "language": "typescript",
+        "score": 147.11,
+        "pinned": {
+          "axios": "1.20.0",
+          "axios-retry": "4.5.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "nock": "15.0.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.680Z"
+        }
+      },
+      {
+        "id": "axios-mock-adapter-client",
+        "title": "axios typed API client with axios-mock-adapter",
+        "summary": "Build a typed axios client with a baseURL and an auth header interceptor, then mock GET, POST, 404, network error and timeout offline while asserting parsed data, the header seen by the mock and error handling.",
+        "stack": [
+          "axios",
+          "axios-mock-adapter"
+        ],
+        "language": "typescript",
+        "score": 90.51,
+        "pinned": {
+          "axios": "1.20.0",
+          "axios-mock-adapter": "2.1.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:35.445Z"
+        }
+      },
+      {
+        "id": "undici-mockagent-p-retry",
+        "title": "undici HTTP client with p-retry backoff, tested with MockAgent",
+        "summary": "A JSON client on undici.request wrapped in p-retry that retries 429, 5xx and network errors but aborts on other 4xx, tested offline with undici MockAgent, disableNetConnect and assertNoPendingInterceptors.",
+        "stack": [
+          "undici",
+          "p-retry"
+        ],
+        "language": "typescript",
+        "score": 33.15,
+        "pinned": {
+          "undici": "8.12.1",
+          "p-retry": "8.0.1",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:29.968Z"
+        }
+      },
+      {
+        "id": "boltons-funcutils-retry",
+        "title": "Boltons retry decorator and cached property helpers under pytest",
+        "summary": "A signature-preserving retry decorator composed with boltons.funcutils.wraps, plus cacheutils cachedproperty and cachedmethod memoization tested offline with pytest.",
+        "stack": [
+          "boltons"
+        ],
+        "language": "python",
+        "score": 23.94,
+        "pinned": {
+          "boltons": "26.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:01:26.959Z"
+        }
+      },
+      {
+        "id": "http-errors-express-error-middleware",
+        "title": "http-errors with Express error middleware",
+        "summary": "Express routes that throw http-errors and reject asynchronously, mapped by a central middleware to RFC 7807 problem details with expose-aware messages and a 500 fallback, tested offline with supertest.",
+        "stack": [
+          "express",
+          "http-errors",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 23.59,
+        "pinned": {
+          "express": "5.3.0",
+          "http-errors": "2.0.1",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/http-errors": "2.0.5",
+          "@types/node": "26.6.5",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:28.422Z"
+        }
+      },
+      {
+        "id": "vitest-fake-timers-es-toolkit",
+        "title": "Vitest fake timers with es-toolkit debounce, throttle and retry",
+        "summary": "Test time-based helpers from es-toolkit (debounce, throttle, delay, retry) deterministically with Vitest fake timers, advanceTimersByTime and setSystemTime, without real waiting.",
+        "stack": [
+          "vitest",
+          "es-toolkit"
+        ],
+        "language": "typescript",
+        "score": 20.46,
+        "pinned": {
+          "es-toolkit": "1.52.0",
+          "@types/node": "26.6.5",
+          "vitest": "5.0.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:11:28.368Z"
+        }
+      },
+      {
+        "id": "cockatiel-retry-circuit-policy",
+        "title": "cockatiel retry, circuit breaker and timeout policies",
+        "summary": "Compose cockatiel policies with wrap(): retries with backoff, a consecutive-failure circuit breaker that throws BrokenCircuitError, and an aggressive timeout, all with real but tiny delays.",
+        "stack": [
+          "cockatiel"
+        ],
+        "language": "typescript",
+        "score": 20.43,
+        "pinned": {
+          "cockatiel": "4.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:35.411Z"
+        }
+      },
+      {
+        "id": "tenacity-retry-stop-wait",
+        "title": "tenacity Retrying with stop_after_attempt and wait_exponential",
+        "summary": "Build a tenacity Retrying policy that stops after N attempts, backs off exponentially and only retries transient exception types, then prove the behavior offline under pytest.",
+        "stack": [
+          "tenacity"
+        ],
+        "language": "python",
+        "score": 20.03,
+        "pinned": {
+          "tenacity": "9.2.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:13.938Z"
+        }
+      },
+      {
+        "id": "tenacity-httpx-respx-backoff",
+        "title": "httpx + tenacity async retries honoring Retry-After, tested with respx",
+        "summary": "Wrap async httpx calls in tenacity AsyncRetrying that retries 429 and 5xx, honors Retry-After, and patches the wait to zero in tests with respx mocks.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 17.67,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:06.586Z"
+        }
+      },
+      {
+        "id": "httpx-tenacity-retry",
+        "title": "httpx client + tenacity retries with backoff, tested with respx",
+        "summary": "Retry transient HTTP failures (5xx, 429, timeouts) with tenacity around an httpx client, honoring a max attempt count, tested offline with respx.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 16.96,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:07.041Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

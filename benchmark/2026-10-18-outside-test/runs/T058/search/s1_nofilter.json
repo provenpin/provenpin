@@ -1,0 +1,270 @@
+{
+  "args": {
+    "query": "React 19 upgrade: ReactDOM.render removed, forwardRef no longer needed, useFormState renamed to useActionState"
+  },
+  "t": "2026-10-18T04:30:25Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 158,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "jotai-atoms-react-testing-library",
+        "title": "Jotai atoms with React 19, tested with Testing Library and isolated stores",
+        "summary": "Jotai 3 primitive, derived, write-only and async atoms driving a React 19 todo UI with Suspense, tested in Vitest on happy-dom with @testing-library/react, user-event and a fresh createStore per test, plus store-only tests without React.",
+        "stack": [
+          "jotai",
+          "react",
+          "@testing-library/react",
+          "happy-dom",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 74.65,
+        "pinned": {
+          "jotai": "3.0.1",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "@testing-library/react": "16.3.3",
+          "@testing-library/dom": "10.4.2",
+          "@testing-library/user-event": "14.6.8",
+          "happy-dom": "21.0.1",
+          "vitest": "5.0.4",
+          "@types/react": "19.3.0",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:47.711Z"
+        }
+      },
+      {
+        "id": "react-hook-form-zod-resolver",
+        "title": "React Hook Form + Zod 4 resolver schemas (no DOM)",
+        "summary": "Share one Zod schema between React Hook Form (via @hookform/resolvers) and the server, with cross-field refinements, tested by calling the resolver directly.",
+        "stack": [
+          "react-hook-form",
+          "@hookform/resolvers",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 64.3,
+        "pinned": {
+          "react-hook-form": "7.90.0",
+          "@hookform/resolvers": "5.9.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:56.174Z"
+        }
+      },
+      {
+        "id": "react-email-render-html-text",
+        "title": "React Email template rendered to HTML and plain text",
+        "summary": "Build a transactional email with @react-email/components (preview, rows/columns, button, link) in TSX and render both the HTML document and the plain-text version with @react-email/render, checking escaping offline.",
+        "stack": [
+          "@react-email/components",
+          "@react-email/render",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 61.41,
+        "pinned": {
+          "@react-email/components": "1.0.12",
+          "@react-email/render": "2.1.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:57.245Z"
+        }
+      },
+      {
+        "id": "i18next-react-ssr",
+        "title": "i18next + react-i18next: plurals, interpolation and SSR rendering",
+        "summary": "Configure i18next with resources, plurals, context and escaping, and render react-i18next components to HTML on the server, with per-request instances.",
+        "stack": [
+          "i18next",
+          "react-i18next",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 59.59,
+        "pinned": {
+          "i18next": "26.4.5",
+          "react-i18next": "17.0.16",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:29.970Z"
+        }
+      },
+      {
+        "id": "react-query-testing-library",
+        "title": "TanStack Query + React Testing Library hooks and components (Vitest + jsdom)",
+        "summary": "Test React components and hooks that use TanStack Query v5 with Testing Library on jsdom: fresh QueryClient per test, retries off, mocked fetchers, mutations with invalidation.",
+        "stack": [
+          "@tanstack/react-query",
+          "react",
+          "@testing-library/react",
+          "vitest",
+          "jsdom"
+        ],
+        "language": "typescript",
+        "score": 57.77,
+        "pinned": {
+          "@tanstack/react-query": "5.104.3",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4",
+          "@testing-library/react": "16.3.3",
+          "@testing-library/dom": "10.4.2",
+          "jsdom": "30.1.3",
+          "@types/react": "19.3.0",
+          "@types/react-dom": "19.3.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:56.741Z"
+        }
+      },
+      {
+        "id": "react-router-loader-action",
+        "title": "React Router 8 data loaders and actions tested with createStaticHandler",
+        "summary": "Route loaders and actions with redirects, validation errors and 404 responses in React Router's data APIs, tested offline with createStaticHandler and plain Requests.",
+        "stack": [
+          "react-router",
+          "react",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 57.77,
+        "pinned": {
+          "react-router": "8.4.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:05.412Z"
+        }
+      },
+      {
+        "id": "mdx-compile-evaluate",
+        "title": "MDX evaluate with react and renderToStaticMarkup",
+        "summary": "Compile and evaluate an MDX string offline with @mdx-js/mdx, inject a component through the components prop, renderToStaticMarkup the default export and assert both the HTML and an exported const.",
+        "stack": [
+          "@mdx-js/mdx",
+          "react",
+          "react-dom"
+        ],
+        "language": "typescript",
+        "score": 54.25,
+        "pinned": {
+          "@mdx-js/mdx": "3.1.1",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "@types/react": "19.3.0",
+          "@types/react-dom": "19.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:49.794Z"
+        }
+      },
+      {
+        "id": "nextjs-server-action-zod",
+        "title": "Next.js 16 server actions + Zod with useActionState-shaped results",
+        "summary": "A 'use server' form action that validates FormData with Zod and returns field errors in the shape useActionState expects, tested by calling the action directly.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 53.56,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:33.179Z"
+        }
+      },
+      {
+        "id": "ink-testing-library-cli",
+        "title": "Ink interactive CLI components tested with ink-testing-library",
+        "summary": "Build an interactive Ink 8 (React) terminal checklist with useInput and a timer-driven countdown, and test frames, arrow-key and space input, submit callbacks and effects with ink-testing-library.",
+        "stack": [
+          "ink",
+          "ink-testing-library",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 50.73,
+        "pinned": {
+          "ink": "8.0.0",
+          "react": "19.3.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "ink-testing-library": "4.0.0",
+          "@types/react": "19.3.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:09:00.098Z"
+        }
+      },
+      {
+        "id": "nextjs-route-handler-zod",
+        "title": "Next.js 16 App Router route handler + Zod validation",
+        "summary": "Validate JSON bodies and search params in a Next.js App Router route handler with Zod, returning typed 400s; tested by calling the handler with NextRequest.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 36.67,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:28.442Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "args": {
+    "query": "Tailwind CSS v4 upgrade: tailwind.config.js theme to @theme in CSS, @tailwind directives to @import, postcss plugin moved"
+  },
+  "t": "2026-10-18T04:32:29Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 131,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "postcss-custom-plugin-autoprefixer",
+        "title": "PostCSS custom plugin plus autoprefixer with pinned browsers",
+        "summary": "Write a PostCSS 8 plugin that resolves design tokens, converts px to rem and strips @debug rules, chain it with autoprefixer using a fixed browser list, and check prefixes, source maps and CssSyntaxError positions.",
+        "stack": [
+          "postcss",
+          "autoprefixer"
+        ],
+        "language": "typescript",
+        "score": 100.58,
+        "pinned": {
+          "postcss": "8.5.30",
+          "autoprefixer": "10.6.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:09:25.732Z"
+        }
+      },
+      {
+        "id": "clsx-tailwind-merge-cva",
+        "title": "clsx, tailwind-merge and CVA button variants",
+        "summary": "Compose class names with clsx, resolve Tailwind conflicts via tailwind-merge, and define button variants with class-variance-authority.",
+        "stack": [
+          "clsx",
+          "tailwind-merge",
+          "class-variance-authority"
+        ],
+        "language": "typescript",
+        "score": 58.19,
+        "pinned": {
+          "clsx": "2.1.1",
+          "tailwind-merge": "3.7.0",
+          "class-variance-authority": "0.7.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:56:47.960Z"
+        }
+      },
+      {
+        "id": "beautifulsoup4-soupsieve-select",
+        "title": "BeautifulSoup 4 + soupsieve CSS selector scraping",
+        "summary": "Scrape fixture HTML with BeautifulSoup and soupsieve CSS selectors to pull table cells, links and data attributes, plus the html.parser tbody gotcha.",
+        "stack": [
+          "beautifulsoup4",
+          "soupsieve",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 28.14,
+        "pinned": {
+          "beautifulsoup4": "4.15.0",
+          "soupsieve": "3.0.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:56:56.427Z"
+        }
+      },
+      {
+        "id": "markdown-it-render-plugin",
+        "title": "markdown-it render with custom plugin",
+        "summary": "Render Markdown to HTML with markdown-it and a small custom plugin that rewrites link targets offline.",
+        "stack": [
+          "markdown-it"
+        ],
+        "language": "typescript",
+        "score": 26.65,
+        "pinned": {
+          "markdown-it": "15.0.2",
+          "@types/markdown-it": "14.2.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:13.974Z"
+        }
+      },
+      {
+        "id": "openpyxl-pydantic-row-import",
+        "title": "openpyxl worksheet rows validated into pydantic models offline",
+        "summary": "Read xlsx rows from openpyxl into pydantic v2 models, handling None cells, whole-float to int coercion, whitespace, ignored extra columns and row-numbered errors, all tested offline.",
+        "stack": [
+          "openpyxl",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 23.09,
+        "pinned": {
+          "openpyxl": "3.1.5",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:56:42.875Z"
+        }
+      },
+      {
+        "id": "exceljs-read-write",
+        "title": "Excel .xlsx export and import with ExcelJS",
+        "summary": "Generate styled .xlsx reports (header row, number formats, formulas, frozen panes) and read uploaded workbooks back into typed rows with ExcelJS, all in memory.",
+        "stack": [
+          "exceljs"
+        ],
+        "language": "typescript",
+        "score": 22.7,
+        "pinned": {
+          "exceljs": "4.4.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:39.562Z"
+        }
+      },
+      {
+        "id": "papaparse-zod-csv-import",
+        "title": "CSV import with PapaParse + Zod row validation",
+        "summary": "Parse CSV uploads with PapaParse (headers, BOM, quoted fields), validate each row with Zod and report row-numbered errors instead of failing the whole file.",
+        "stack": [
+          "papaparse",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 21.27,
+        "pinned": {
+          "papaparse": "5.7.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "@types/papaparse": "5.5.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:03.045Z"
+        }
+      },
+      {
+        "id": "zod-v4-json-schema-export",
+        "title": "Zod v4 schemas exported to JSON Schema and checked with Ajv",
+        "summary": "Export Zod v4 schemas to JSON Schema 2020-12 with z.toJSONSchema, using .meta() ids and descriptions and input vs output modes, then validate the same data with Ajv 2020.",
+        "stack": [
+          "zod",
+          "ajv"
+        ],
+        "language": "typescript",
+        "score": 19.62,
+        "pinned": {
+          "zod": "4.6.7",
+          "ajv": "8.20.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:11:31.976Z"
+        }
+      },
+      {
+        "id": "node-html-parser-query",
+        "title": "node-html-parser query and mutate",
+        "summary": "Parse an HTML fixture with node-html-parser, query nodes via CSS selectors, read text and attributes, mutate with set_content, setAttribute and remove, then serialize back and assert the result offline.",
+        "stack": [
+          "node-html-parser"
+        ],
+        "language": "typescript",
+        "score": 17.54,
+        "pinned": {
+          "node-html-parser": "9.0.4",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:35.693Z"
+        }
+      },
+      {
+        "id": "sass-compile-string-importer",
+        "title": "sass compileString with in-memory importer",
+        "summary": "Compile Sass from a string with dart-sass, using variables and mixins from an in-memory @use module provided by a custom canonicalize/load importer, compressed output, and an undefined-variable error assertion, all offline.",
+        "stack": [
+          "sass"
+        ],
+        "language": "typescript",
+        "score": 17.44,
+        "pinned": {
+          "sass": "1.105.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:12.242Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

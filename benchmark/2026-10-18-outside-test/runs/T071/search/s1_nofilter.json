@@ -1,0 +1,247 @@
+{
+  "args": {
+    "query": "jwt verify keeps saying invalid signature in node even tho secret is right, also how do refresh tokens"
+  },
+  "t": "2026-10-18T04:30:31Z",
+  "wall_s": 0.98,
+  "ok": true,
+  "ms": 167,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "flask-jwt-extended-auth",
+        "title": "Flask 3 + Flask-JWT-Extended access and refresh tokens",
+        "summary": "Login, protected routes, refresh tokens and custom claims in Flask 3 using Flask-JWT-Extended, with an app factory.",
+        "stack": [
+          "flask",
+          "flask-jwt-extended"
+        ],
+        "language": "python",
+        "score": 54.76,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-jwt-extended": "4.7.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:15.645Z"
+        }
+      },
+      {
+        "id": "fastify-jwt-auth",
+        "title": "Fastify 5 + @fastify/jwt protected routes",
+        "summary": "Sign and verify JWTs in Fastify 5 with @fastify/jwt and an authenticate preHandler that guards routes.",
+        "stack": [
+          "fastify",
+          "@fastify/jwt"
+        ],
+        "language": "typescript",
+        "score": 32.49,
+        "pinned": {
+          "fastify": "5.12.7",
+          "@fastify/jwt": "10.2.4",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:48.017Z"
+        }
+      },
+      {
+        "id": "express-passport-jwt",
+        "title": "Express 5 + Passport JWT strategy",
+        "summary": "Protect Express 5 routes with passport-jwt (bearer tokens signed by jsonwebtoken), stateless sessions and role checks.",
+        "stack": [
+          "express",
+          "passport",
+          "passport-jwt",
+          "jsonwebtoken"
+        ],
+        "language": "typescript",
+        "score": 31.59,
+        "pinned": {
+          "express": "5.3.0",
+          "passport": "0.7.0",
+          "passport-jwt": "4.0.1",
+          "jsonwebtoken": "9.0.3",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "supertest": "7.3.1",
+          "@types/supertest": "7.2.1",
+          "@types/express": "5.0.6",
+          "@types/passport": "1.0.17",
+          "@types/passport-jwt": "4.0.1",
+          "@types/jsonwebtoken": "9.0.10"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:47.961Z"
+        }
+      },
+      {
+        "id": "nestjs-jwt-guard-testing",
+        "title": "NestJS JWT guard testing",
+        "summary": "Issue and verify JWTs with @nestjs/jwt, protect a route with a Bearer-token AuthGuard, and assert 401 without a token and 200 with a valid one using supertest offline.",
+        "stack": [
+          "@nestjs/core",
+          "@nestjs/common",
+          "@nestjs/jwt",
+          "@nestjs/testing",
+          "@nestjs/platform-express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 31.07,
+        "pinned": {
+          "@nestjs/common": "12.1.3",
+          "@nestjs/core": "12.1.3",
+          "@nestjs/jwt": "12.0.3",
+          "@nestjs/platform-express": "12.1.3",
+          "@nestjs/testing": "12.1.3",
+          "reflect-metadata": "0.2.2",
+          "rxjs": "7.8.2",
+          "supertest": "7.3.1",
+          "@types/supertest": "7.2.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:29.581Z"
+        }
+      },
+      {
+        "id": "bcryptjs-jose-sessions",
+        "title": "bcryptjs password hashing + jose JWT sessions",
+        "summary": "Hash passwords with bcryptjs and issue and verify signed JWT session tokens with jose. Framework-agnostic auth core.",
+        "stack": [
+          "bcryptjs",
+          "jose"
+        ],
+        "language": "typescript",
+        "score": 27.5,
+        "pinned": {
+          "bcryptjs": "3.0.3",
+          "jose": "6.2.12",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:36.411Z"
+        }
+      },
+      {
+        "id": "drf-simplejwt-auth",
+        "title": "Django REST Framework JWT auth with simplejwt, tested offline",
+        "summary": "Obtain and refresh JWT pairs with simplejwt, add custom claims, protect a DRF view, and test expired-token rejection on sqlite in-memory with pytest-django.",
+        "stack": [
+          "django",
+          "djangorestframework",
+          "djangorestframework-simplejwt",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 27.46,
+        "pinned": {
+          "django": "6.1.2",
+          "djangorestframework": "3.18.3",
+          "djangorestframework-simplejwt": "5.5.1",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:35.625Z"
+        }
+      },
+      {
+        "id": "svix-webhook-verify-hono",
+        "title": "Svix webhook signature verification in a Hono route",
+        "summary": "Verify Svix-signed webhooks (the scheme Clerk and Resend use) on the raw body in a Hono handler: valid, tampered, stale-timestamp, wrong-secret and duplicate-delivery cases, signed locally with svix.",
+        "stack": [
+          "svix",
+          "hono"
+        ],
+        "language": "typescript",
+        "score": 26.8,
+        "pinned": {
+          "svix": "2.8.0",
+          "hono": "4.13.13",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:09:47.305Z"
+        }
+      },
+      {
+        "id": "jose-jwks-verify",
+        "title": "Verify JWTs against a JWKS with jose (RS256, key rotation) in Vitest",
+        "summary": "Verify third-party RS256 access tokens (Auth0, Cognito, Clerk style) with jose's JWKS key sets, checking issuer, audience, expiry and key rotation, tested offline with a local JWKS.",
+        "stack": [
+          "jose",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 25.68,
+        "pinned": {
+          "jose": "6.2.12",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:43.595Z"
+        }
+      },
+      {
+        "id": "joserfc-jwt-jwe-roundtrip",
+        "title": "joserfc JWT signing + JWE encryption round-trip",
+        "summary": "Sign and verify JWTs and encrypt JWE tokens with joserfc using OctKey and RSAKey, including claims validation and expiry, all offline.",
+        "stack": [
+          "joserfc"
+        ],
+        "language": "python",
+        "score": 23.98,
+        "pinned": {
+          "joserfc": "1.7.5",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:57:14.600Z"
+        }
+      },
+      {
+        "id": "hono-jwt-auth",
+        "title": "Hono + hono/jwt bearer auth with Zod login",
+        "summary": "Issue HS256 JWTs from a Zod-validated login route in Hono and guard routes with the built-in jwt middleware.",
+        "stack": [
+          "hono",
+          "zod",
+          "@hono/zod-validator"
+        ],
+        "language": "typescript",
+        "score": 22.52,
+        "pinned": {
+          "hono": "4.13.13",
+          "zod": "4.6.7",
+          "@hono/zod-validator": "0.9.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:12.389Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

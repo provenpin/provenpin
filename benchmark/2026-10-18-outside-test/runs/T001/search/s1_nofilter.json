@@ -1,0 +1,236 @@
+{
+  "args": {
+    "query": "FastAPI CRUD API with SQLAlchemy 2.0 ORM and Pydantic v2 schemas on SQLite"
+  },
+  "t": "2026-10-18T04:32:32Z",
+  "wall_s": 1.03,
+  "ok": true,
+  "ms": 155,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "fastapi-sqlalchemy-crud",
+        "title": "FastAPI + SQLAlchemy 2 CRUD with dependency-injected sessions",
+        "summary": "FastAPI routes backed by SQLAlchemy 2.x typed models, a per-request session dependency, and TestClient tests on SQLite.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 172.32,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:39.195Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-v2-models",
+        "title": "FastAPI + Pydantic v2 validators, discriminated unions and serializers",
+        "summary": "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 119.64,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:32.402Z"
+        }
+      },
+      {
+        "id": "sqlalchemy2-pydantic-v2-from-attributes",
+        "title": "SQLAlchemy 2 ORM rows serialized with Pydantic v2 from_attributes",
+        "summary": "Map SQLAlchemy 2 models, expose nested relationships through Pydantic v2 schemas with from_attributes=True and a computed_field, and test them offline against in-memory SQLite.",
+        "stack": [
+          "sqlalchemy",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 115.28,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:50.176Z"
+        }
+      },
+      {
+        "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
+        "title": "FastAPI with async SQLAlchemy 2 on aiosqlite, tested offline with per-test in-memory DBs",
+        "summary": "A FastAPI app using AsyncSession and async_sessionmaker on aiosqlite, tested with httpx.AsyncClient over ASGITransport, overriding the session dependency with a fresh in-memory database for each test.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "aiosqlite",
+          "httpx",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 98.14,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "httpx": "0.28.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1",
+          "greenlet": "3.2.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.420Z"
+        }
+      },
+      {
+        "id": "drizzle-sqlite-crud",
+        "title": "Drizzle ORM + better-sqlite3 CRUD",
+        "summary": "Typed schema, migrations-free table creation and CRUD with Drizzle on an in-memory SQLite database.",
+        "stack": [
+          "drizzle-orm",
+          "better-sqlite3",
+          "sqlite"
+        ],
+        "language": "typescript",
+        "score": 93.09,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "better-sqlite3": "12.11.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:19.087Z"
+        }
+      },
+      {
+        "id": "sqlmodel-fastapi-crud",
+        "title": "SQLModel + FastAPI CRUD with in-memory SQLite",
+        "summary": "Full CRUD API with SQLModel table models, separate create/update schemas and a session dependency overridden for tests.",
+        "stack": [
+          "sqlmodel",
+          "fastapi"
+        ],
+        "language": "python",
+        "score": 92.69,
+        "pinned": {
+          "sqlmodel": "0.0.48",
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:51.901Z"
+        }
+      },
+      {
+        "id": "pydantic-v2-discriminated-unions-fastapi",
+        "title": "FastAPI endpoint with Pydantic v2 discriminated unions and Annotated validators",
+        "summary": "Accept a tagged union of payment methods with Field(discriminator), add Annotated validators, and test the exact 422 error shapes offline with TestClient.",
+        "stack": [
+          "fastapi",
+          "pydantic",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 92.6,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:30.995Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-alembic-autogenerate-check",
+        "title": "Alembic autogenerate compare_metadata drift check against SQLite",
+        "summary": "Declare SQLAlchemy 2 models with a naming convention, then detect schema drift offline by diffing the live SQLite schema against the metadata with Alembic compare_metadata.",
+        "stack": [
+          "sqlalchemy",
+          "alembic",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 90.2,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "alembic": "1.20.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:30.413Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-alembic-migrations",
+        "title": "SQLAlchemy 2 + Alembic programmatic migrations",
+        "summary": "Alembic migrations driven from Python (upgrade, downgrade, autogenerate check) against SQLite, with SQLAlchemy 2 models.",
+        "stack": [
+          "sqlalchemy",
+          "alembic",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 85.18,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "alembic": "1.20.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:31.301Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-background-tasks",
+        "title": "FastAPI background tasks + dependency overrides",
+        "summary": "FastAPI BackgroundTasks for post-response work, with dependency_overrides to swap services in tests.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 85.15,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:29.142Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

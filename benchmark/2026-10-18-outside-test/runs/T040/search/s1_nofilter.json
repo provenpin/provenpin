@@ -1,0 +1,218 @@
+{
+  "args": {
+    "query": "fetch 100 API items with max 5 concurrent requests and retry failures with p-retry"
+  },
+  "t": "2026-10-18T04:34:14Z",
+  "wall_s": 1.02,
+  "ok": true,
+  "ms": 158,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "undici-mockagent-p-retry",
+        "title": "undici HTTP client with p-retry backoff, tested with MockAgent",
+        "summary": "A JSON client on undici.request wrapped in p-retry that retries 429, 5xx and network errors but aborts on other 4xx, tested offline with undici MockAgent, disableNetConnect and assertNoPendingInterceptors.",
+        "stack": [
+          "undici",
+          "p-retry"
+        ],
+        "language": "typescript",
+        "score": 86.17,
+        "pinned": {
+          "undici": "8.12.1",
+          "p-retry": "8.0.1",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:29.968Z"
+        }
+      },
+      {
+        "id": "requests-cache-sqlite-backend",
+        "title": "requests-cache CachedSession with sqlite backend and expiry",
+        "summary": "A requests session backed by a persistent sqlite cache with TTL expiry and 200-only caching, tested offline with responses mocks.",
+        "stack": [
+          "requests",
+          "requests-cache",
+          "responses"
+        ],
+        "language": "python",
+        "score": 69.02,
+        "pinned": {
+          "requests": "2.34.2",
+          "requests-cache": "1.3.3",
+          "responses": "0.26.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:49.436Z"
+        }
+      },
+      {
+        "id": "openapi-fetch-msw",
+        "title": "openapi-fetch typed client with MSW",
+        "summary": "Call a typed OpenAPI paths client with openapi-fetch against MSW handlers, covering GET/POST and error status offline.",
+        "stack": [
+          "openapi-fetch",
+          "msw"
+        ],
+        "language": "typescript",
+        "score": 31.46,
+        "pinned": {
+          "openapi-fetch": "0.17.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:08.998Z"
+        }
+      },
+      {
+        "id": "p-limit-concurrency",
+        "title": "p-limit concurrent async job pool",
+        "summary": "Cap parallel async work with p-limit, tracking in-flight count and collecting results in input order offline.",
+        "stack": [
+          "p-limit"
+        ],
+        "language": "typescript",
+        "score": 30.89,
+        "pinned": {
+          "p-limit": "7.3.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:34.002Z"
+        }
+      },
+      {
+        "id": "axios-retry-nock",
+        "title": "Axios + axios-retry with exponential backoff, tested with nock",
+        "summary": "Configure axios-retry for idempotent requests and 429/5xx responses, tested offline with nock intercepts.",
+        "stack": [
+          "axios",
+          "axios-retry",
+          "nock"
+        ],
+        "language": "typescript",
+        "score": 24.39,
+        "pinned": {
+          "axios": "1.20.0",
+          "axios-retry": "4.5.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "nock": "15.0.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.680Z"
+        }
+      },
+      {
+        "id": "ollama-js-mocked-fetch",
+        "title": "ollama.js with a mocked fetch",
+        "summary": "Drive the ollama npm client with an injected fake fetch to exercise chat, streamed chat over NDJSON, and embed, all offline with no server.",
+        "stack": [
+          "ollama"
+        ],
+        "language": "typescript",
+        "score": 24.31,
+        "pinned": {
+          "ollama": "0.6.4",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:46.474Z"
+        }
+      },
+      {
+        "id": "boltons-funcutils-retry",
+        "title": "Boltons retry decorator and cached property helpers under pytest",
+        "summary": "A signature-preserving retry decorator composed with boltons.funcutils.wraps, plus cacheutils cachedproperty and cachedmethod memoization tested offline with pytest.",
+        "stack": [
+          "boltons"
+        ],
+        "language": "python",
+        "score": 23.94,
+        "pinned": {
+          "boltons": "26.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:01:26.959Z"
+        }
+      },
+      {
+        "id": "p-timeout-abort",
+        "title": "p-timeout hang and resolve guards",
+        "summary": "Wrap hanging and fast promises with p-timeout to assert TimeoutError, custom messages, returned values and deterministic timer cleanup offline.",
+        "stack": [
+          "p-timeout"
+        ],
+        "language": "typescript",
+        "score": 23.54,
+        "pinned": {
+          "p-timeout": "8.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T17:50:45.370Z"
+        }
+      },
+      {
+        "id": "graphql-yoga-schema-context",
+        "title": "GraphQL Yoga 5 schema, context and errors tested via fetch",
+        "summary": "Build a GraphQL Yoga server with SDL resolvers, per-request context auth and GraphQLError codes, tested in-process with yoga.fetch.",
+        "stack": [
+          "graphql-yoga",
+          "graphql"
+        ],
+        "language": "typescript",
+        "score": 23.25,
+        "pinned": {
+          "graphql-yoga": "5.24.5",
+          "graphql": "17.0.2",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:08.785Z"
+        }
+      },
+      {
+        "id": "p-defer-manual",
+        "title": "p-defer deferred promises",
+        "summary": "Create deferred promises with p-defer, settle them later from outside, and assert resolve, reject and thenable behavior offline.",
+        "stack": [
+          "p-defer"
+        ],
+        "language": "typescript",
+        "score": 22.12,
+        "pinned": {
+          "p-defer": "4.0.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T17:50:43.783Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

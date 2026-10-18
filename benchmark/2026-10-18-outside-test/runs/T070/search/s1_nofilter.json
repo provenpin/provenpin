@@ -1,0 +1,239 @@
+{
+  "args": {
+    "query": "jwt token expired error handling + refresh token flow in fastapi pls, getting 500 instead of 401"
+  },
+  "t": "2026-10-18T04:30:40Z",
+  "wall_s": 0.9,
+  "ok": true,
+  "ms": 174,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "fastapi-jwt-auth",
+        "title": "FastAPI + PyJWT bearer auth",
+        "summary": "OAuth2 password flow in FastAPI issuing PyJWT tokens, with a current-user dependency guarding routes.",
+        "stack": [
+          "fastapi",
+          "pyjwt"
+        ],
+        "language": "python",
+        "score": 70.25,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pyjwt": "2.15.1",
+          "httpx": "0.28.1",
+          "python-multipart": "0.0.32",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:28.079Z"
+        }
+      },
+      {
+        "id": "fastapi-websocket-auth",
+        "title": "FastAPI WebSockets with token auth and broadcast, tested with TestClient",
+        "summary": "FastAPI WebSocket endpoint that authenticates via query token, rejects with a close code and broadcasts to connected clients; tested with TestClient.websocket_connect.",
+        "stack": [
+          "fastapi",
+          "starlette"
+        ],
+        "language": "python",
+        "score": 53.8,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:48.087Z"
+        }
+      },
+      {
+        "id": "fastapi-oauth2-pyjwt-scopes",
+        "title": "FastAPI OAuth2 password flow with PyJWT tokens and scope checks",
+        "summary": "OAuth2 password login issuing PyJWT access tokens, Argon2 hashes via pwdlib, and per-route scope checks with SecurityScopes, tested offline with TestClient.",
+        "stack": [
+          "fastapi",
+          "pyjwt",
+          "pwdlib",
+          "argon2-cffi",
+          "python-multipart"
+        ],
+        "language": "python",
+        "score": 48.64,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pyjwt": "2.15.1",
+          "pwdlib": "0.3.1",
+          "argon2-cffi": "25.1.0",
+          "python-multipart": "0.0.32",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:28.448Z"
+        }
+      },
+      {
+        "id": "flask-jwt-extended-auth",
+        "title": "Flask 3 + Flask-JWT-Extended access and refresh tokens",
+        "summary": "Login, protected routes, refresh tokens and custom claims in Flask 3 using Flask-JWT-Extended, with an app factory.",
+        "stack": [
+          "flask",
+          "flask-jwt-extended"
+        ],
+        "language": "python",
+        "score": 48.43,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-jwt-extended": "4.7.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:15.645Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-background-tasks",
+        "title": "FastAPI background tasks + dependency overrides",
+        "summary": "FastAPI BackgroundTasks for post-response work, with dependency_overrides to swap services in tests.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 47.95,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:29.142Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-v2-models",
+        "title": "FastAPI + Pydantic v2 validators, discriminated unions and serializers",
+        "summary": "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 47.95,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:32.402Z"
+        }
+      },
+      {
+        "id": "fastapi-stripe-webhook",
+        "title": "FastAPI + Stripe webhook signature verification",
+        "summary": "Verify Stripe webhook signatures in FastAPI from the raw request body and dispatch on event type. Tested offline with locally signed payloads.",
+        "stack": [
+          "fastapi",
+          "stripe"
+        ],
+        "language": "python",
+        "score": 47.95,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "stripe": "16.0.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:47.394Z"
+        }
+      },
+      {
+        "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
+        "title": "FastAPI with async SQLAlchemy 2 on aiosqlite, tested offline with per-test in-memory DBs",
+        "summary": "A FastAPI app using AsyncSession and async_sessionmaker on aiosqlite, tested with httpx.AsyncClient over ASGITransport, overriding the session dependency with a fresh in-memory database for each test.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "aiosqlite",
+          "httpx",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 46.75,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "httpx": "0.28.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1",
+          "greenlet": "3.2.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.420Z"
+        }
+      },
+      {
+        "id": "fastapi-sqlalchemy-crud",
+        "title": "FastAPI + SQLAlchemy 2 CRUD with dependency-injected sessions",
+        "summary": "FastAPI routes backed by SQLAlchemy 2.x typed models, a per-request session dependency, and TestClient tests on SQLite.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 46.53,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:39.195Z"
+        }
+      },
+      {
+        "id": "sqlmodel-fastapi-crud",
+        "title": "SQLModel + FastAPI CRUD with in-memory SQLite",
+        "summary": "Full CRUD API with SQLModel table models, separate create/update schemas and a session dependency overridden for tests.",
+        "stack": [
+          "sqlmodel",
+          "fastapi"
+        ],
+        "language": "python",
+        "score": 46.12,
+        "pinned": {
+          "sqlmodel": "0.0.48",
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:51.901Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

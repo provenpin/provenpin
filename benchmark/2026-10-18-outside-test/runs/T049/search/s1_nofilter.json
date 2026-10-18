@@ -1,0 +1,225 @@
+{
+  "args": {
+    "query": "marshmallow 4 upgrade: missing= and default= removed, use load_default and dump_default, and Schema.context removed"
+  },
+  "t": "2026-10-18T04:29:55Z",
+  "wall_s": 0.97,
+  "ok": true,
+  "ms": 137,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "marshmallow-dataclass-schema",
+        "title": "marshmallow-dataclass schemas: nested load, dump and validation",
+        "summary": "Generate marshmallow schemas from dataclasses to load, dump and validate nested records, including typed nested objects, field renaming and path-aware ValidationErrors.",
+        "stack": [
+          "marshmallow-dataclass",
+          "marshmallow"
+        ],
+        "language": "python",
+        "score": 87.81,
+        "pinned": {
+          "marshmallow-dataclass": "8.7.1",
+          "marshmallow": "4.3.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:02:08.822Z"
+        }
+      },
+      {
+        "id": "flask-marshmallow-webargs",
+        "title": "Flask API args parsed and validated with webargs and marshmallow",
+        "summary": "Flask routes that parse query strings and JSON bodies through marshmallow schemas via webargs, with JSON 422 validation errors, tested offline with the Flask test client.",
+        "stack": [
+          "flask",
+          "webargs",
+          "marshmallow"
+        ],
+        "language": "python",
+        "score": 63.47,
+        "pinned": {
+          "flask": "3.1.3",
+          "webargs": "8.7.1",
+          "marshmallow": "4.3.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:20.131Z"
+        }
+      },
+      {
+        "id": "marshmallow-sqlalchemy-flask-api",
+        "title": "Flask API with Flask-SQLAlchemy and marshmallow-sqlalchemy, validation errors as 422",
+        "summary": "A Flask JSON API that loads and dumps SQLAlchemy models through SQLAlchemyAutoSchema, returns validation errors as 422, and is tested offline with the Flask test client on in-memory sqlite.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "marshmallow-sqlalchemy",
+          "marshmallow",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 58.75,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "marshmallow-sqlalchemy": "1.5.0",
+          "marshmallow": "3.26.1",
+          "sqlalchemy": "2.0.36",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:16.352Z"
+        }
+      },
+      {
+        "id": "marshmallow-oneofschema-polymorphic",
+        "title": "marshmallow-oneofschema polymorphic nested schemas",
+        "summary": "A OneOfSchema discriminated union over nested dataclass schemas that loads and dumps polymorphic payloads, with tests covering type dispatch and its sharp edges.",
+        "stack": [
+          "marshmallow",
+          "marshmallow-oneofschema",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 57.33,
+        "pinned": {
+          "marshmallow": "4.3.1",
+          "marshmallow-oneofschema": "3.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:22.341Z"
+        }
+      },
+      {
+        "id": "tomlkit-comment-preserve",
+        "title": "Edit and dump TOML with tomlkit while preserving comments and order",
+        "summary": "Load TOML with tomlkit, mutate scalar values, arrays and sections in place, then dump it back with comments, spacing and key order intact.",
+        "stack": [
+          "tomlkit"
+        ],
+        "language": "python",
+        "score": 19.32,
+        "pinned": {
+          "tomlkit": "0.15.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:19.770Z"
+        }
+      },
+      {
+        "id": "semver-range-checks",
+        "title": "semver range checks and upgrade planning",
+        "summary": "Use node-semver to check engine ranges, pick the highest satisfying release, classify patch, minor and major upgrades, coerce loose versions and handle prereleases.",
+        "stack": [
+          "semver"
+        ],
+        "language": "typescript",
+        "score": 14.6,
+        "pinned": {
+          "semver": "7.8.5",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "@types/semver": "7.8.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:11:22.230Z"
+        }
+      },
+      {
+        "id": "zod-env-dotenv-config",
+        "title": "Zod 4 + dotenv typed environment config",
+        "summary": "Load .env files with dotenv and validate process.env with Zod 4 at startup: coercion, defaults, enums, URLs and readable errors.",
+        "stack": [
+          "zod",
+          "dotenv"
+        ],
+        "language": "typescript",
+        "score": 14.51,
+        "pinned": {
+          "zod": "4.6.7",
+          "dotenv": "18.0.8",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:37.615Z"
+        }
+      },
+      {
+        "id": "cosmiconfig-fixture-load",
+        "title": "cosmiconfig load config from fixture files",
+        "summary": "Use cosmiconfigSync to load JSON and JS module configs from a temporary search root without touching the real filesystem home.",
+        "stack": [
+          "cosmiconfig"
+        ],
+        "language": "typescript",
+        "score": 14.47,
+        "pinned": {
+          "cosmiconfig": "10.0.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:56:53.042Z"
+        }
+      },
+      {
+        "id": "fastify-zod-type-provider",
+        "title": "Fastify 5 + Zod 4 type provider for typed routes",
+        "summary": "Use fastify-type-provider-zod so Zod 4 schemas validate requests, serialize responses and type handlers in Fastify 5.",
+        "stack": [
+          "fastify",
+          "zod",
+          "fastify-type-provider-zod"
+        ],
+        "language": "typescript",
+        "score": 13.97,
+        "pinned": {
+          "fastify": "5.12.7",
+          "zod": "4.6.7",
+          "fastify-type-provider-zod": "7.0.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:53.230Z"
+        }
+      },
+      {
+        "id": "protobufjs-proto-encode",
+        "title": "protobufjs load .proto and encode messages",
+        "summary": "Load a local .proto fixture with protobufjs, create a message type, and encode/decode binary offline.",
+        "stack": [
+          "protobufjs"
+        ],
+        "language": "typescript",
+        "score": 12.85,
+        "pinned": {
+          "protobufjs": "8.8.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:57:27.472Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

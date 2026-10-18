@@ -1,0 +1,252 @@
+{
+  "args": {
+    "query": "Flask REST API with Flask-SQLAlchemy models and marshmallow schema validation"
+  },
+  "t": "2026-10-18T04:33:49Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 145,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "marshmallow-sqlalchemy-flask-api",
+        "title": "Flask API with Flask-SQLAlchemy and marshmallow-sqlalchemy, validation errors as 422",
+        "summary": "A Flask JSON API that loads and dumps SQLAlchemy models through SQLAlchemyAutoSchema, returns validation errors as 422, and is tested offline with the Flask test client on in-memory sqlite.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "marshmallow-sqlalchemy",
+          "marshmallow",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 226.54,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "marshmallow-sqlalchemy": "1.5.0",
+          "marshmallow": "3.26.1",
+          "sqlalchemy": "2.0.36",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:16.352Z"
+        }
+      },
+      {
+        "id": "flask-migrate-sqlite",
+        "title": "Flask-SQLAlchemy models with Flask-Migrate upgrades on sqlite in tests",
+        "summary": "Define Flask-SQLAlchemy models, version the schema with Flask-Migrate, and test upgrade, downgrade and model/migration drift offline on a temporary sqlite file.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "flask-migrate",
+          "sqlalchemy",
+          "alembic"
+        ],
+        "language": "python",
+        "score": 151.08,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "flask-migrate": "4.1.0",
+          "pytest": "9.1.1",
+          "alembic": "1.16.5",
+          "mako": "1.3.10",
+          "sqlalchemy": "2.0.43",
+          "typing-extensions": "4.15.0",
+          "werkzeug": "3.1.3",
+          "jinja2": "3.1.6",
+          "markupsafe": "3.0.3",
+          "itsdangerous": "2.2.0",
+          "blinker": "1.9.0",
+          "click": "8.3.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:51.580Z"
+        }
+      },
+      {
+        "id": "flask-sqlalchemy-app-factory",
+        "title": "Flask 3 app factory + Flask-SQLAlchemy",
+        "summary": "Flask application factory with Flask-SQLAlchemy 3, a JSON API and pytest fixtures using an in-memory database.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 147.38,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:06.156Z"
+        }
+      },
+      {
+        "id": "flask-marshmallow-webargs",
+        "title": "Flask API args parsed and validated with webargs and marshmallow",
+        "summary": "Flask routes that parse query strings and JSON bodies through marshmallow schemas via webargs, with JSON 422 validation errors, tested offline with the Flask test client.",
+        "stack": [
+          "flask",
+          "webargs",
+          "marshmallow"
+        ],
+        "language": "python",
+        "score": 140.43,
+        "pinned": {
+          "flask": "3.1.3",
+          "webargs": "8.7.1",
+          "marshmallow": "4.3.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:20.131Z"
+        }
+      },
+      {
+        "id": "flask-login-sqlalchemy-sessions",
+        "title": "Flask-Login sessions with Flask-SQLAlchemy users and werkzeug password hashing",
+        "summary": "Login, login_required redirects, logout and a user_loader built on db.session.get, with the User model in SQLite memory and tests run through the Flask test client.",
+        "stack": [
+          "flask",
+          "flask-login",
+          "flask-sqlalchemy",
+          "werkzeug"
+        ],
+        "language": "python",
+        "score": 110.58,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-login": "0.6.3",
+          "flask-sqlalchemy": "3.1.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:14.071Z"
+        }
+      },
+      {
+        "id": "marshmallow-dataclass-schema",
+        "title": "marshmallow-dataclass schemas: nested load, dump and validation",
+        "summary": "Generate marshmallow schemas from dataclasses to load, dump and validate nested records, including typed nested objects, field renaming and path-aware ValidationErrors.",
+        "stack": [
+          "marshmallow-dataclass",
+          "marshmallow"
+        ],
+        "language": "python",
+        "score": 78.89,
+        "pinned": {
+          "marshmallow-dataclass": "8.7.1",
+          "marshmallow": "4.3.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:02:08.822Z"
+        }
+      },
+      {
+        "id": "marshmallow-oneofschema-polymorphic",
+        "title": "marshmallow-oneofschema polymorphic nested schemas",
+        "summary": "A OneOfSchema discriminated union over nested dataclass schemas that loads and dumps polymorphic payloads, with tests covering type dispatch and its sharp edges.",
+        "stack": [
+          "marshmallow",
+          "marshmallow-oneofschema",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 64.17,
+        "pinned": {
+          "marshmallow": "4.3.1",
+          "marshmallow-oneofschema": "3.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:22.341Z"
+        }
+      },
+      {
+        "id": "flask-wtforms-csrf-validation",
+        "title": "Flask-WTF forms with custom validators, CSRF on and off in tests",
+        "summary": "A Flask-WTF form with a reusable custom WTForms validator, rendered errors, and CSRF protection, tested offline with the Flask test client: CSRF disabled in the test config, then enforced.",
+        "stack": [
+          "flask",
+          "flask-wtf",
+          "wtforms"
+        ],
+        "language": "python",
+        "score": 63.66,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-wtf": "1.3.0",
+          "wtforms": "3.2.2",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:34.076Z"
+        }
+      },
+      {
+        "id": "flask-jwt-extended-auth",
+        "title": "Flask 3 + Flask-JWT-Extended access and refresh tokens",
+        "summary": "Login, protected routes, refresh tokens and custom claims in Flask 3 using Flask-JWT-Extended, with an app factory.",
+        "stack": [
+          "flask",
+          "flask-jwt-extended"
+        ],
+        "language": "python",
+        "score": 58.15,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-jwt-extended": "4.7.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:15.645Z"
+        }
+      },
+      {
+        "id": "fastapi-sqlalchemy-crud",
+        "title": "FastAPI + SQLAlchemy 2 CRUD with dependency-injected sessions",
+        "summary": "FastAPI routes backed by SQLAlchemy 2.x typed models, a per-request session dependency, and TestClient tests on SQLite.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 55.69,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:39.195Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

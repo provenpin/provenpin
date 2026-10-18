@@ -1,0 +1,224 @@
+{
+  "args": {
+    "query": "Celery task with automatic retries and exponential backoff using Redis broker"
+  },
+  "t": "2026-10-18T04:31:07Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 150,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "celery-redis-fakeredis-results",
+        "title": "Celery 5 on Redis with fakeredis-backed idempotency, tested offline in eager mode",
+        "summary": "Configure a Celery app on a Redis broker and result backend for production, guard a task with a Redis SET NX idempotency lock, and test it offline with task_always_eager and fakeredis.",
+        "stack": [
+          "celery",
+          "redis",
+          "fakeredis"
+        ],
+        "language": "python",
+        "score": 138.68,
+        "pinned": {
+          "celery": "5.6.3",
+          "redis": "8.1.0",
+          "fakeredis": "2.40.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:30.120Z"
+        }
+      },
+      {
+        "id": "django-celery-eager-signals",
+        "title": "Django post_save signal enqueuing a Celery task, tested with eager mode and on_commit",
+        "summary": "A post_save signal queues a Celery task only after the row commits via transaction.on_commit, then tests run offline on in-memory SQLite with Celery eager mode and pytest-django's on_commit capture.",
+        "stack": [
+          "django",
+          "celery",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 78.04,
+        "pinned": {
+          "django": "6.1.2",
+          "celery": "5.6.3",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:10.405Z"
+        }
+      },
+      {
+        "id": "celery-tasks-eager-testing",
+        "title": "Celery 5 tasks, chains and groups tested in eager mode",
+        "summary": "Define Celery tasks, chain and fan them out with groups, then test them offline with task_always_eager and the in-memory broker.",
+        "stack": [
+          "celery"
+        ],
+        "language": "python",
+        "score": 73.27,
+        "pinned": {
+          "celery": "5.6.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:40.973Z"
+        }
+      },
+      {
+        "id": "redis-fakeredis-pipeline",
+        "title": "redis-py pipelines and WATCH transactions tested with fakeredis",
+        "summary": "Batch commands with redis-py pipelines and guard optimistic WATCH/MULTI transactions, tested fully offline against a shared in-memory fakeredis server.",
+        "stack": [
+          "redis",
+          "fakeredis"
+        ],
+        "language": "python",
+        "score": 69.68,
+        "pinned": {
+          "redis": "8.1.0",
+          "fakeredis": "2.40.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:35.581Z"
+        }
+      },
+      {
+        "id": "celery-beat-schedule-crontab",
+        "title": "Celery beat crontab schedules validated and run eagerly",
+        "summary": "Define beat_schedule crontab entries, validate task names and schedule types before deploy, and test each scheduled call offline with task_always_eager.",
+        "stack": [
+          "celery"
+        ],
+        "language": "python",
+        "score": 63.61,
+        "pinned": {
+          "celery": "5.6.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:27.860Z"
+        }
+      },
+      {
+        "id": "effect-schema-vitest",
+        "title": "Effect 4 Schema classes, typed errors and retries, tested with @effect/vitest",
+        "summary": "Effect 4 Schema.Class models with checks, brands, FiniteFromString and fromJsonString for decode and encode, TaggedError failures, and Effect.retry with exponential backoff verified on the TestClock using @effect/vitest.",
+        "stack": [
+          "effect",
+          "@effect/vitest",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 33.67,
+        "pinned": {
+          "effect": "4.0.5",
+          "@effect/vitest": "4.0.5",
+          "vitest": "5.0.4",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:30.611Z"
+        }
+      },
+      {
+        "id": "tenacity-httpx-respx-backoff",
+        "title": "httpx + tenacity async retries honoring Retry-After, tested with respx",
+        "summary": "Wrap async httpx calls in tenacity AsyncRetrying that retries 429 and 5xx, honors Retry-After, and patches the wait to zero in tests with respx mocks.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 33.46,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:06.586Z"
+        }
+      },
+      {
+        "id": "axios-retry-nock",
+        "title": "Axios + axios-retry with exponential backoff, tested with nock",
+        "summary": "Configure axios-retry for idempotent requests and 429/5xx responses, tested offline with nock intercepts.",
+        "stack": [
+          "axios",
+          "axios-retry",
+          "nock"
+        ],
+        "language": "typescript",
+        "score": 31.99,
+        "pinned": {
+          "axios": "1.20.0",
+          "axios-retry": "4.5.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "nock": "15.0.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.680Z"
+        }
+      },
+      {
+        "id": "httpx-tenacity-retry",
+        "title": "httpx client + tenacity retries with backoff, tested with respx",
+        "summary": "Retry transient HTTP failures (5xx, 429, timeouts) with tenacity around an httpx client, honoring a max attempt count, tested offline with respx.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 29.11,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:07.041Z"
+        }
+      },
+      {
+        "id": "tenacity-retry-stop-wait",
+        "title": "tenacity Retrying with stop_after_attempt and wait_exponential",
+        "summary": "Build a tenacity Retrying policy that stops after N attempts, backs off exponentially and only retries transient exception types, then prove the behavior offline under pytest.",
+        "stack": [
+          "tenacity"
+        ],
+        "language": "python",
+        "score": 27.55,
+        "pinned": {
+          "tenacity": "9.2.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:13.938Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

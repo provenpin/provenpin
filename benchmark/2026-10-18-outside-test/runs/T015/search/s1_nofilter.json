@@ -1,0 +1,250 @@
+{
+  "args": {
+    "query": "Django REST Framework ModelViewSet with token authentication"
+  },
+  "t": "2026-10-18T04:29:52Z",
+  "wall_s": 0.97,
+  "ok": true,
+  "ms": 194,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "django-drf-api",
+        "title": "Django 6 + Django REST Framework model API with pytest-django",
+        "summary": "A DRF ModelViewSet with a serializer, router and token-free permissions, tested with pytest-django and APIClient on in-memory SQLite.",
+        "stack": [
+          "django",
+          "djangorestframework",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 98.93,
+        "pinned": {
+          "django": "6.1.2",
+          "djangorestframework": "3.18.3",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:17.540Z"
+        }
+      },
+      {
+        "id": "drf-django-filter-viewset",
+        "title": "DRF ModelViewSet with django-filter range, exact and ordering filters",
+        "summary": "A ModelViewSet with a django-filter FilterSet for price ranges, exact name and ordering, plus page-number pagination, configured in code and tested offline with APIClient on in-memory SQLite.",
+        "stack": [
+          "django",
+          "djangorestframework",
+          "django-filter",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 88,
+        "pinned": {
+          "django": "6.1.2",
+          "djangorestframework": "3.18.3",
+          "django-filter": "26.2.0",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:15.804Z"
+        }
+      },
+      {
+        "id": "drf-simplejwt-auth",
+        "title": "Django REST Framework JWT auth with simplejwt, tested offline",
+        "summary": "Obtain and refresh JWT pairs with simplejwt, add custom claims, protect a DRF view, and test expired-token rejection on sqlite in-memory with pytest-django.",
+        "stack": [
+          "django",
+          "djangorestframework",
+          "djangorestframework-simplejwt",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 80.09,
+        "pinned": {
+          "django": "6.1.2",
+          "djangorestframework": "3.18.3",
+          "djangorestframework-simplejwt": "5.5.1",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:35.625Z"
+        }
+      },
+      {
+        "id": "django-celery-eager-signals",
+        "title": "Django post_save signal enqueuing a Celery task, tested with eager mode and on_commit",
+        "summary": "A post_save signal queues a Celery task only after the row commits via transaction.on_commit, then tests run offline on in-memory SQLite with Celery eager mode and pytest-django's on_commit capture.",
+        "stack": [
+          "django",
+          "celery",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 72.32,
+        "pinned": {
+          "django": "6.1.2",
+          "celery": "5.6.3",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:10.405Z"
+        }
+      },
+      {
+        "id": "django-pytest-factoryboy",
+        "title": "Django models with factory_boy and pytest-django db fixtures",
+        "summary": "Django models built with factory_boy DjangoModelFactory (SubFactory, get_or_create, traits) and tested offline on in-memory SQLite with pytest-django database access rules and on_commit capture.",
+        "stack": [
+          "django",
+          "factory-boy",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 72.32,
+        "pinned": {
+          "django": "6.1.2",
+          "factory-boy": "3.3.3",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1",
+          "faker": "37.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:14.912Z"
+        }
+      },
+      {
+        "id": "django-ninja-schema-crud",
+        "title": "Django Ninja API with Schema models and pagination on sqlite",
+        "summary": "A typed Django Ninja CRUD API with Schema input and output models, page-number pagination and sqlite, tested offline with the ninja TestClient and pytest-django.",
+        "stack": [
+          "django",
+          "django-ninja",
+          "pytest-django"
+        ],
+        "language": "python",
+        "score": 59.17,
+        "pinned": {
+          "django": "6.1.2",
+          "django-ninja": "1.7.1",
+          "pytest-django": "4.14.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:16.679Z"
+        }
+      },
+      {
+        "id": "koa-router-zod-supertest",
+        "title": "Koa 3 REST API with @koa/router, Zod validation and supertest",
+        "summary": "A Koa 3 JSON API using @koa/router and @koa/bodyparser with Zod 4 body and param validation mapped to 400 responses by a central error middleware, tested offline with supertest.",
+        "stack": [
+          "koa",
+          "@koa/router",
+          "@koa/bodyparser",
+          "zod",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 24.84,
+        "pinned": {
+          "koa": "3.2.1",
+          "@koa/router": "15.7.0",
+          "@koa/bodyparser": "6.1.0",
+          "zod": "4.6.7",
+          "supertest": "7.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:31.395Z"
+        }
+      },
+      {
+        "id": "octokit-rest-msw-pagination",
+        "title": "Octokit REST client with MSW: pagination, early stop and errors",
+        "summary": "Test an @octokit/rest client offline with MSW handlers for api.github.com: paginate through Link headers, stop paging early with done(), create issues with auth, and map 404 RequestErrors.",
+        "stack": [
+          "@octokit/rest",
+          "msw"
+        ],
+        "language": "typescript",
+        "score": 24.84,
+        "pinned": {
+          "@octokit/rest": "22.0.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:09:02.769Z"
+        }
+      },
+      {
+        "id": "pyotp-totp-freezegun",
+        "title": "pyotp TOTP and HOTP codes tested at frozen time",
+        "summary": "Generate RFC-compatible TOTP and HOTP codes, build otpauth provisioning URIs and tolerate one-step clock drift, all pinned to deterministic time with freezegun.",
+        "stack": [
+          "pyotp",
+          "freezegun"
+        ],
+        "language": "python",
+        "score": 17.61,
+        "pinned": {
+          "pyotp": "2.10.0",
+          "freezegun": "1.5.5",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:15.697Z"
+        }
+      },
+      {
+        "id": "hono-drizzle-sqlite-api",
+        "title": "Hono + Drizzle ORM + SQLite REST API (Vitest)",
+        "summary": "CRUD REST API in Hono backed by Drizzle ORM on better-sqlite3, with Zod validation, tested with Vitest and app.request().",
+        "stack": [
+          "hono",
+          "drizzle-orm",
+          "better-sqlite3",
+          "zod",
+          "@hono/zod-validator",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 14.33,
+        "pinned": {
+          "hono": "4.13.13",
+          "drizzle-orm": "0.45.4",
+          "better-sqlite3": "13.0.3",
+          "zod": "4.6.7",
+          "@hono/zod-validator": "0.9.1",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:13.119Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

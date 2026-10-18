@@ -1,0 +1,219 @@
+{
+  "args": {
+    "query": "Fastify v4 to v5 migration: full JSON schema required for querystring and params, reply.redirect argument order changed, listen needs an options object"
+  },
+  "t": "2026-10-18T04:31:05Z",
+  "wall_s": 1.08,
+  "ok": true,
+  "ms": 236,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "fastify-swagger-openapi",
+        "title": "Fastify 5 OpenAPI docs generated with @fastify/swagger",
+        "summary": "Generate an OpenAPI 3 document from Fastify 5 route schemas with @fastify/swagger, using shared $ref schemas, tags and security, then serve and check it with inject().",
+        "stack": [
+          "fastify",
+          "@fastify/swagger"
+        ],
+        "language": "typescript",
+        "score": 75.87,
+        "pinned": {
+          "fastify": "5.12.7",
+          "@fastify/swagger": "9.9.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:53.726Z"
+        }
+      },
+      {
+        "id": "fastify-json-schema",
+        "title": "Fastify 5 routes with JSON Schema validation",
+        "summary": "Fastify 5 route validation and response serialization with JSON Schema, tested via app.inject().",
+        "stack": [
+          "fastify"
+        ],
+        "language": "typescript",
+        "score": 73.96,
+        "pinned": {
+          "fastify": "5.12.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:50.901Z"
+        }
+      },
+      {
+        "id": "fastify-zod-type-provider",
+        "title": "Fastify 5 + Zod 4 type provider for typed routes",
+        "summary": "Use fastify-type-provider-zod so Zod 4 schemas validate requests, serialize responses and type handlers in Fastify 5.",
+        "stack": [
+          "fastify",
+          "zod",
+          "fastify-type-provider-zod"
+        ],
+        "language": "typescript",
+        "score": 63.85,
+        "pinned": {
+          "fastify": "5.12.7",
+          "zod": "4.6.7",
+          "fastify-type-provider-zod": "7.0.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:53.230Z"
+        }
+      },
+      {
+        "id": "fastify-jwt-auth",
+        "title": "Fastify 5 + @fastify/jwt protected routes",
+        "summary": "Sign and verify JWTs in Fastify 5 with @fastify/jwt and an authenticate preHandler that guards routes.",
+        "stack": [
+          "fastify",
+          "@fastify/jwt"
+        ],
+        "language": "typescript",
+        "score": 61.62,
+        "pinned": {
+          "fastify": "5.12.7",
+          "@fastify/jwt": "10.2.4",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:48.017Z"
+        }
+      },
+      {
+        "id": "fastify-multipart-upload",
+        "title": "Fastify 5 file uploads with @fastify/multipart",
+        "summary": "Accept multipart file uploads in Fastify 5 with @fastify/multipart, reading fields and files, hashing content, rejecting oversized files with 413, tested with inject() and a native FormData body.",
+        "stack": [
+          "fastify",
+          "@fastify/multipart"
+        ],
+        "language": "typescript",
+        "score": 59.7,
+        "pinned": {
+          "fastify": "5.12.7",
+          "@fastify/multipart": "10.1.4",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:55.590Z"
+        }
+      },
+      {
+        "id": "json-schema-to-typescript-codegen",
+        "title": "Generate TypeScript types from JSON Schema with json-schema-to-typescript",
+        "summary": "Compile JSON Schemas into TypeScript interfaces with json-schema-to-typescript, covering required and optional fields, enums, $ref definitions, descriptions as JSDoc and strict additionalProperties.",
+        "stack": [
+          "json-schema-to-typescript"
+        ],
+        "language": "typescript",
+        "score": 52.55,
+        "pinned": {
+          "json-schema-to-typescript": "16.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:59.591Z"
+        }
+      },
+      {
+        "id": "zod-v4-json-schema-export",
+        "title": "Zod v4 schemas exported to JSON Schema and checked with Ajv",
+        "summary": "Export Zod v4 schemas to JSON Schema 2020-12 with z.toJSONSchema, using .meta() ids and descriptions and input vs output modes, then validate the same data with Ajv 2020.",
+        "stack": [
+          "zod",
+          "ajv"
+        ],
+        "language": "typescript",
+        "score": 50.26,
+        "pinned": {
+          "zod": "4.6.7",
+          "ajv": "8.20.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:11:31.976Z"
+        }
+      },
+      {
+        "id": "ajv-formats-json-schema",
+        "title": "AJV 8 JSON Schema validation with ajv-formats",
+        "summary": "Compile JSON Schema drafts with AJV 8, enable email/uri/uuid formats via ajv-formats, and return field errors from validate.errors for API payloads.",
+        "stack": [
+          "ajv",
+          "ajv-formats"
+        ],
+        "language": "typescript",
+        "score": 31.29,
+        "pinned": {
+          "ajv": "8.20.0",
+          "ajv-formats": "3.0.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:56:42.161Z"
+        }
+      },
+      {
+        "id": "orama-fulltext-search",
+        "title": "Orama full-text search over in-memory documents",
+        "summary": "Create an @orama/orama schema, insert documents, and run full-text search with term matching offline.",
+        "stack": [
+          "@orama/orama"
+        ],
+        "language": "typescript",
+        "score": 30.06,
+        "pinned": {
+          "@orama/orama": "3.1.18",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:57:12.044Z"
+        }
+      },
+      {
+        "id": "voluptuous-config-schema-coerce",
+        "title": "voluptuous config schemas with Coerce, All, Range and Required",
+        "summary": "Validate and coerce stringly-typed config into a typed dict with voluptuous, combining Coerce, All, Range, In and Required, and testing the failure paths offline.",
+        "stack": [
+          "voluptuous"
+        ],
+        "language": "python",
+        "score": 29.34,
+        "pinned": {
+          "voluptuous": "0.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:19.901Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

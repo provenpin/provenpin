@@ -1,0 +1,238 @@
+{
+  "args": {
+    "query": "stream LLM chat responses from a Next.js route handler using the Vercel AI SDK"
+  },
+  "t": "2026-10-18T04:34:01Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 129,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "nextjs-route-handler-zod",
+        "title": "Next.js 16 App Router route handler + Zod validation",
+        "summary": "Validate JSON bodies and search params in a Next.js App Router route handler with Zod, returning typed 400s; tested by calling the handler with NextRequest.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 94.2,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:28.442Z"
+        }
+      },
+      {
+        "id": "nextjs-stripe-webhook",
+        "title": "Next.js App Router + Stripe webhook handler",
+        "summary": "A Next.js route handler that verifies Stripe webhook signatures from the raw body and handles checkout.session.completed.",
+        "stack": [
+          "nextjs",
+          "stripe"
+        ],
+        "language": "typescript",
+        "score": 92.02,
+        "pinned": {
+          "next": "16.4.1",
+          "stripe": "23.0.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:35.427Z"
+        }
+      },
+      {
+        "id": "nextjs-supabase-auth-middleware",
+        "title": "Next.js middleware + Supabase SSR session refresh",
+        "summary": "Refresh Supabase auth cookies in Next.js middleware with @supabase/ssr and redirect signed-out users away from protected routes.",
+        "stack": [
+          "nextjs",
+          "supabase"
+        ],
+        "language": "typescript",
+        "score": 73.32,
+        "pinned": {
+          "next": "16.4.1",
+          "@supabase/ssr": "0.12.7",
+          "@supabase/supabase-js": "2.117.3",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:36.082Z"
+        }
+      },
+      {
+        "id": "vercel-ai-sdk-mock-model-tools",
+        "title": "Vercel AI SDK tool loops, structured output and streaming with a mock model",
+        "summary": "AI SDK generateText with a Zod-typed tool and a stopWhen step cap, Output.object structured results validated by Zod, and streamText deltas, all tested offline with MockLanguageModelV4 and simulateReadableStream from ai/test.",
+        "stack": [
+          "ai",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 70.43,
+        "pinned": {
+          "ai": "7.0.141",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:36.006Z"
+        }
+      },
+      {
+        "id": "nextjs-server-action-zod",
+        "title": "Next.js 16 server actions + Zod with useActionState-shaped results",
+        "summary": "A 'use server' form action that validates FormData with Zod and returns field errors in the shape useActionState expects, tested by calling the action directly.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 67.02,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:33.179Z"
+        }
+      },
+      {
+        "id": "anthropic-streaming-mock",
+        "title": "Anthropic SDK message streaming with text deltas, tested with a mocked SSE fetch",
+        "summary": "Stream Claude responses with the Anthropic TypeScript SDK (messages.stream, text events, finalMessage), tested offline with a fake fetch returning Anthropic SSE events.",
+        "stack": [
+          "@anthropic-ai/sdk"
+        ],
+        "language": "typescript",
+        "score": 62.06,
+        "pinned": {
+          "@anthropic-ai/sdk": "0.134.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:18.529Z"
+        }
+      },
+      {
+        "id": "nextauth-credentials-callbacks",
+        "title": "NextAuth.js v4 credentials provider + JWT/session callbacks (mocked)",
+        "summary": "NextAuth v4 authOptions for Next.js with a Credentials provider, bcrypt-checked users and role claims flowing through jwt and session callbacks, unit-tested without a server.",
+        "stack": [
+          "next-auth",
+          "next",
+          "bcryptjs"
+        ],
+        "language": "typescript",
+        "score": 61.55,
+        "pinned": {
+          "next-auth": "4.24.15",
+          "next": "16.4.1",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "bcryptjs": "3.0.3",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:28.664Z"
+        }
+      },
+      {
+        "id": "requests-cache-sqlite-backend",
+        "title": "requests-cache CachedSession with sqlite backend and expiry",
+        "summary": "A requests session backed by a persistent sqlite cache with TTL expiry and 200-only caching, tested offline with responses mocks.",
+        "stack": [
+          "requests",
+          "requests-cache",
+          "responses"
+        ],
+        "language": "python",
+        "score": 57.64,
+        "pinned": {
+          "requests": "2.34.2",
+          "requests-cache": "1.3.3",
+          "responses": "0.26.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:49.436Z"
+        }
+      },
+      {
+        "id": "openai-streaming-mock",
+        "title": "OpenAI Node SDK streaming chat completions, tested with a mocked SSE fetch",
+        "summary": "Stream chat completion deltas with the OpenAI SDK (for await over chunks), accumulate text and usage, and handle aborts, tested offline with a fake fetch that returns an SSE body.",
+        "stack": [
+          "openai"
+        ],
+        "language": "typescript",
+        "score": 54.33,
+        "pinned": {
+          "openai": "7.34.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:57.727Z"
+        }
+      },
+      {
+        "id": "anthropic-sdk-mocked-tool-use",
+        "title": "Anthropic TypeScript SDK tool use loop, tested with a mocked fetch",
+        "summary": "Run a Claude tool_use loop with the official Anthropic SDK and Zod-validated tool inputs, tested offline with an injected fetch.",
+        "stack": [
+          "@anthropic-ai/sdk",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 54.06,
+        "pinned": {
+          "@anthropic-ai/sdk": "0.134.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.647Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}
