@@ -54,7 +54,7 @@ const TOOLS = [
   {
     name: "search_recipes",
     title: "Search tested recipes",
-    description: "Find a tested, version-pinned code recipe for wiring libraries together. Call this BEFORE writing glue code that combines 2+ libraries (auth + framework, ORM + database, payments webhooks, queues, validation, request mocking, logging), and when you hit version conflicts, peer-dependency errors, or integration errors between libraries. Example queries: 'express stripe webhook', 'fastapi sqlmodel crud', 'hono jwt'. Only recipes whose latest test run passed are returned. Each result lists its exact pinned versions and a test receipt (receipt.last_passed_at). Pass the project's lockfile or a {package: version} map as versions: recipes that match the installed versions rank first and each result gets a compatibility summary. If nothing matches, write the code yourself; try list_stacks to see what is covered.",
+    description: "Find a tested, version-pinned code recipe for wiring libraries together. Call this BEFORE writing glue code that combines 2+ libraries (auth + framework, ORM + database, payments webhooks, queues, validation, request mocking, logging), and when you hit version conflicts, peer-dependency errors, or integration errors between libraries. Example queries: 'express stripe webhook', 'fastapi sqlmodel crud', 'hono jwt'. Only recipes whose latest test run passed are returned. Each result lists its exact pinned versions and a test receipt (receipt.last_passed_at). Pass the project's lockfile or a {package: version} map as versions: recipes that match the installed versions rank first and each result gets a compatibility summary. Each result's coverage (0 to 1) is the share of your query's words it matches. If no recipe fits, count is 0 and results is empty: write the code yourself; try list_stacks to see what is covered.",
     inputSchema: {
       type: "object",
       properties: {
@@ -102,7 +102,7 @@ export function callTool(index: RecipeIndex, name: string, args: Json, tier: "fr
         return { ...r, score: r.score + compatBoost(c), compatibility: { overall: c.overall, summary: c.summary, mismatches: c.packages.filter((p) => p.verdict === "mismatch").map((p) => ({ package: p.package, tested: p.tested, yours: p.yours })) } };
       }).sort((a, b) => b.score - a.score || a.id.localeCompare(b.id)).slice(0, limit);
     }
-    return text({ count: results.length, ...(pv ? { versions_detected: { format: pv.format, packages: pv.versions.size } } : {}), results, hint: results.length ? "Call get_recipe with an id for the full files." : "No tested recipe matched. Try fewer words or call list_stacks." });
+    return text({ count: results.length, ...(pv ? { versions_detected: { format: pv.format, packages: pv.versions.size } } : {}), results, hint: results.length ? "Call get_recipe with an id for the full files." : "No tested recipe fits this query, so none is shown. Write the code yourself, or name the library and the task in fewer words, or call list_stacks." });
   }
   if (name === "get_recipe") {
     const r = index.recipes.find((x) => x.id === args.id);
