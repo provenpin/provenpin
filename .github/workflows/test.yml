@@ -1,0 +1,66 @@
+name: test
+
+# Checks every pull request to main and every push to a pp/ work branch before it is merged.
+# Read-only token and no secrets: safe to run on pull requests from forks.
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: ["pp/**"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: test-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: npm ci
+      - run: npm test
+      - run: npm run validate
+      - run: npm ci
+        working-directory: server
+      - run: npm test
+        working-directory: server
+      - run: npm run typecheck
+        working-directory: server
+
+  recipes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0, persist-credentials: false }
+      - id: pick
+        name: Pick recipes touched by this branch
+        run: |
+          base=$(git merge-base HEAD origin/main)
+          ids=$(git diff --name-only "$base" HEAD -- recipes | cut -d/ -f2 | sort -u \
+            | while read -r id; do if [[ "$id" =~ ^[A-Za-z0-9._-]+$ ]] && [ -d "recipes/$id" ]; then echo "$id"; fi; done | tr '\n' ' ')
+          echo "ids=$ids" >> "$GITHUB_OUTPUT"
+          echo "Touched recipes: ${ids:-none}"
+      - uses: actions/setup-node@v4
+        if: steps.pick.outputs.ids != ''
+        with: { node-version: "22" }
+      - if: steps.pick.outputs.ids != ''
+        run: npm install -g npm@11
+      - uses: actions/setup-python@v5
+        if: steps.pick.outputs.ids != ''
+        with: { python-version: "3.13" }
+      - uses: astral-sh/setup-uv@v6
+        if: steps.pick.outputs.ids != ''
+      - if: steps.pick.outputs.ids != ''
+        run: npm ci
+      - name: Run touched recipes
+        if: steps.pick.outputs.ids != ''
+        env: { IDS: "${{ steps.pick.outputs.ids }}" }
+        run: node runner/run.mjs $IDS
