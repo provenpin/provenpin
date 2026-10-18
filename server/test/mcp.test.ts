@@ -111,3 +111,11 @@ test("receipts.json is served and cacheable", async () => {
   assert.equal(body.count, 1);
   assert.equal(body.recipes[0].files["recipes/x/a.ts"], "sha256:abc");
 });
+
+test("search_recipes says plainly when no recipe fits", async () => {
+  const out = await call("search_recipes", { query: "kubernetes helm operator" });
+  assert.equal(out.count, 0);
+  assert.deepEqual(out.results, []);
+  assert.match(out.hint, /No tested recipe fits/);
+  assert.ok(typeof (await call("search_recipes", { query: "stripe webhook" })).results[0].coverage === "number");
+});

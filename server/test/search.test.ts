@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
-import { packageForms, searchRecipes, type Recipe, type RecipeIndex } from "../src/search.ts";
+import { MIN_COVERAGE, packageForms, searchRecipes, type Recipe, type RecipeIndex } from "../src/search.ts";
 
 const mk = (id: string, title: string, summary: string, stack: string[], tags: string[], pinned: Record<string, string> = {}): Recipe => ({
   id, title, summary, language: "typescript", runtime: "node", stack, tags, pinned,
@@ -81,4 +81,24 @@ test("benchmark queries: top-1 on the live index", { skip: !fs.existsSync(liveIn
   const ids = new Set(live.recipes.filter((r) => r.receipt.status === "passed").map((r) => r.id));
   const misses = queries.filter((q) => ids.has(q.id) && top(q.query, live) !== q.id).map((q) => `${q.id} -> ${top(q.query, live)}`);
   assert.deepEqual(misses, []);
+});
+
+test("no match: a query mostly about things no recipe covers returns nothing", () => {
+  assert.ok(searchRecipes(index, "json schema validation").length > 0);
+  // Same generic words, but the query is really about tools no recipe mentions.
+  assert.deepEqual(searchRecipes(index, "json schema for eslintrc eslint flatconfig codemod prettier husky lintstaged"), []);
+  // Chatter and version numbers do not count against a query.
+  assert.equal(top("pls help, my fastify 5.2 json schema validation doesnt work"), "fastify-json-schema");
+});
+
+test("each result reports its coverage between 0 and 1", () => {
+  const r = searchRecipes(index, "fastify json schema validation");
+  assert.ok(r.every((x) => x.coverage >= MIN_COVERAGE && x.coverage <= 1));
+  assert.equal(r[0].coverage, 1);
+});
+
+test("live index: every passing recipe's own title still finds results", { skip: !fs.existsSync(liveIndexPath) && "no index/index.json" }, () => {
+  const live: RecipeIndex = JSON.parse(fs.readFileSync(liveIndexPath, "utf8"));
+  const empty = live.recipes.filter((r) => r.receipt.status === "passed" && !searchRecipes(live, r.title).length).map((r) => r.id);
+  assert.deepEqual(empty, []);
 });

@@ -44,8 +44,8 @@ const containsSeq = (hay: string[], needle: string[]) => {
   return false;
 };
 
-interface Doc { r: Recipe; stackTok: Set<string>; tags: Set<string>; title: Set<string>; body: Set<string>; stackPkgs: string[]; otherPkgs: string[] }
-interface Stats { docs: Doc[]; n: number; df: Map<string, number>; pkgDf: Map<string, number> }
+interface Doc { r: Recipe; stackTok: Set<string>; tags: Set<string>; title: Set<string>; body: Set<string>; stackPkgs: string[]; otherPkgs: string[]; all: Set<string> }
+interface Stats { docs: Doc[]; n: number; df: Map<string, number>; pkgDf: Map<string, number>; allDf: Map<string, number> }
 const statsCache = new WeakMap<RecipeIndex, Stats>();
 
 function stats(index: RecipeIndex): Stats {
@@ -53,19 +53,22 @@ function stats(index: RecipeIndex): Stats {
   if (hit) return hit;
   const df = new Map<string, number>();
   const pkgDf = new Map<string, number>();
+  const allDf = new Map<string, number>();
   const docs = index.recipes.map((r) => {
     const stackPkgs = [...new Set(r.stack.map((x) => x.toLowerCase()))];
     const otherPkgs = [...new Set(Object.keys(r.pinned ?? {}).map((x) => x.toLowerCase()))].filter((p) => !stackPkgs.includes(p));
     const d: Doc = {
       r, stackPkgs, otherPkgs,
       stackTok: new Set(r.stack.flatMap(tokenize)), tags: new Set(r.tags.flatMap(tokenize)),
-      title: new Set(tokenize(r.title + " " + r.id)), body: new Set(tokenize(r.summary)),
+      title: new Set(tokenize(r.title + " " + r.id)), body: new Set(tokenize(r.summary)), all: new Set(),
     };
+    d.all = new Set([...d.stackTok, ...d.tags, ...d.title, ...d.body, ...otherPkgs.flatMap(tokenize)]);
     for (const t of new Set([...d.stackTok, ...d.tags, ...d.title, ...d.body])) df.set(t, (df.get(t) ?? 0) + 1);
+    for (const t of d.all) allDf.set(t, (allDf.get(t) ?? 0) + 1);
     for (const p of [...stackPkgs, ...otherPkgs]) pkgDf.set(p, (pkgDf.get(p) ?? 0) + 1);
     return d;
   });
-  const s = { docs, n: docs.length, df, pkgDf };
+  const s = { docs, n: docs.length, df, pkgDf, allDf };
   statsCache.set(index, s);
   return s;
 }
@@ -76,10 +79,33 @@ const idf = (n: number, df: number) => Math.log(1 + n / (1 + df));
 /** Weights. A library named in the query is the strongest signal we have. */
 const W = { stackPkg: 8, pinnedPkg: 2, stackTok: 2, tag: 3, title: 2, body: 1 };
 
+// Common English words (the usual IR stopword list, with apostrophes dropped as tokenize drops them).
+const STOPWORDS = new Set(("a about above after again against all am an and any are as at be because been before being below between both but by " +
+  "can cant could did didnt do does doesnt doing dont down during each few for from further had has have having he her here hers him his how " +
+  "i if im in into is isnt it its itself ive just me more most my myself no nor not now of off on once only or other our ours out over own " +
+  "same she should so some such than that thats the their them then there these they this those through to too under until up very was " +
+  "wasnt we were what whats when where which while who why will with wont would you your yours s t d ll m re ve pls please thanks help " +
+  "also even get getting got keeps make need needs want use using via way like").split(" "));
+
+/**
+ * Honest no-match. A result's coverage is the idf-weighted share of the query's words that appear anywhere in the
+ * recipe (title, id, summary, tags, stack, pinned packages). A content word no recipe uses at all (a library or
+ * product ProvenPin has no recipe for) still counts against coverage, at UNKNOWN_WEIGHT of the rarest known word.
+ * If the top-ranked result covers less than MIN_COVERAGE, nothing fits and search returns no results instead of
+ * a confident-looking wrong one. Both values were chosen on the 2026-10-18 outside-test queries
+ * (server/scripts/eval-search.ts), so they are tuned in-sample.
+ */
+export const UNKNOWN_WEIGHT = 0.75;
+export const MIN_COVERAGE = 0.15;
+
 export function searchRecipes(index: RecipeIndex, query: string, opts: { stack?: string[]; language?: string; includeUnverified?: boolean; limit?: number } = {}) {
   const qSeq = tokenize(query);
   const q = [...new Set(qSeq)]; // repeating a word must not multiply its weight
-  const { docs, n, df, pkgDf } = stats(index);
+  const { docs, n, df, pkgDf, allDf } = stats(index);
+  const known = q.filter((t) => allDf.has(t));
+  const unknown = q.filter((t) => !allDf.has(t) && !STOPWORDS.has(t) && !/^\d+(\.\d+)*$/.test(t)).length;
+  const knownWeight = known.reduce((a, t) => a + idf(n, allDf.get(t)!), 0) + UNKNOWN_WEIGHT * unknown * idf(n, 0);
+  const coverage = (d: Doc) => knownWeight ? known.reduce((a, t) => a + (d.all.has(t) ? idf(n, allDf.get(t)!) : 0), 0) / knownWeight : 0;
   const pkgMatch = new Map<string, boolean>();
   const named = (p: string) => {
     let m = pkgMatch.get(p);
@@ -99,12 +125,13 @@ export function searchRecipes(index: RecipeIndex, query: string, opts: { stack?:
       }
       for (const p of d.stackPkgs) if (named(p)) score += W.stackPkg * idf(n, pkgDf.get(p) ?? 0);
       for (const p of d.otherPkgs) if (named(p)) score += W.pinnedPkg * idf(n, pkgDf.get(p) ?? 0);
-      return { r: d.r, score: Math.round(score * 100) / 100 };
+      return { r: d.r, score: Math.round(score * 100) / 100, coverage: q.length ? coverage(d) : 1 };
     })
     .filter((x) => q.length === 0 || x.score > 0)
     .sort((a, b) => b.score - a.score || a.r.id.localeCompare(b.r.id));
-  return scored.slice(0, opts.limit ?? 10).map(({ r, score }) => ({
-    id: r.id, title: r.title, summary: r.summary, stack: r.stack, language: r.language, score,
+  if (scored.length && scored[0].coverage < MIN_COVERAGE) return [];
+  return scored.slice(0, opts.limit ?? 10).map(({ r, score, coverage }) => ({
+    id: r.id, title: r.title, summary: r.summary, stack: r.stack, language: r.language, score, coverage: Math.round(coverage * 100) / 100,
     pinned: r.pinned, receipt: { status: r.receipt.status, last_passed_at: r.receipt.last_passed_at },
   }));
 }
