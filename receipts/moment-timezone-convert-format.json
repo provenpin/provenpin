@@ -1,0 +1,35 @@
+{
+  "id": "moment-timezone-convert-format",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:58:27.909Z",
+  "last_passed_at": "2026-10-18T03:58:27.909Z",
+  "tests": {
+    "passed": 4,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1677,
+    "test": 391
+  },
+  "pinned": {
+    "moment": "2.31.0",
+    "moment-timezone": "0.6.5",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:0d760a34b861ea96fa1bf9da0f0d2dd961bca0d84dfb8ef7767202389ba6aab0",
+  "files": {
+    "recipes/moment-timezone-convert-format/package.json": "sha256:50454741d86909ad86c9dc584abea8419e1a322e16b486ad7d2aa84c50d2521f",
+    "recipes/moment-timezone-convert-format/recipe.yaml": "sha256:6b5de641bd183465575be22707b745f30bd49a21580542162ddb1b025ef70ba5",
+    "recipes/moment-timezone-convert-format/src/timezone.ts": "sha256:044d942940c9d90636e68ad23fee1dac25c6fccc9fde8a5368508d83c4db1e8c",
+    "recipes/moment-timezone-convert-format/test/timezone.test.ts": "sha256:5f8badca6e9476e4d76fd49ad72204228486ee945834b4566cad72053cc70bf1"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39095442401"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: converts a New York morning to Tokyo and UTC with abbreviations\nok 1 - converts a New York morning to Tokyo and UTC with abbreviations\n  ---\n  duration_ms: 7.548816\n  type: 'test'\n  ...\n# Subtest: spring forward gap normalizes 02:30 to 03:30 EDT\nok 2 - spring forward gap normalizes 02:30 to 03:30 EDT\n  ---\n  duration_ms: 0.906035\n  type: 'test'\n  ...\n# Subtest: fall back overlap maps two UTC instants to 01:30 local\nok 3 - fall back overlap maps two UTC instants to 01:30 local\n  ---\n  duration_ms: 1.645717\n  type: 'test'\n  ...\n# Subtest: computes business hour overlap between zones\nok 4 - computes business hour overlap between zones\n  ---\n  duration_ms: 1.375472\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 244.493563\n"
+}

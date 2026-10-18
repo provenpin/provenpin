@@ -1,0 +1,34 @@
+{
+  "id": "ollama-js-mocked-fetch",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:58:46.474Z",
+  "last_passed_at": "2026-10-18T03:58:46.474Z",
+  "tests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1590,
+    "test": 278
+  },
+  "pinned": {
+    "ollama": "0.6.4",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:063a8efa6c21be6d46392f79efb6bce0fb9d8ab7fec35ccf81663c894259b16d",
+  "files": {
+    "recipes/ollama-js-mocked-fetch/package.json": "sha256:af62a78920bd1aab2b02b0f96b9bb090ca8a216ccd96d5a7d0b5a83b86aa78aa",
+    "recipes/ollama-js-mocked-fetch/recipe.yaml": "sha256:52caed2c3ae3bc85ec853722a4d3fe1595c37dd7cbd096375fed5ef6cd27a25e",
+    "recipes/ollama-js-mocked-fetch/src/client.ts": "sha256:71e756e2af706ea3f265ea826fda1b8c4b3e32c12a3c84534f4ff20cf2370f25",
+    "recipes/ollama-js-mocked-fetch/test/ollama.test.ts": "sha256:be0b41c44f67520f38c5f7ecba84fead10c1dca3b1acccd93a82cd5fa570af26"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39095442401"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: chat posts the request body and parses the reply\nok 1 - chat posts the request body and parses the reply\n  ---\n  duration_ms: 17.068869\n  type: 'test'\n  ...\n# Subtest: streamed chat concatenates NDJSON chunks in order\nok 2 - streamed chat concatenates NDJSON chunks in order\n  ---\n  duration_ms: 0.854817\n  type: 'test'\n  ...\n# Subtest: embed posts input and returns vectors\nok 3 - embed posts input and returns vectors\n  ---\n  duration_ms: 0.450778\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 174.6924\n"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "express-openapi-validator-spec",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:58:29.567Z",
+  "last_passed_at": "2026-10-18T03:58:29.567Z",
+  "tests": {
+    "passed": 5,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 4642,
+    "test": 1052
+  },
+  "pinned": {
+    "express": "5.3.0",
+    "express-openapi-validator": "5.6.2",
+    "supertest": "7.3.1",
+    "@types/express": "5.0.6",
+    "@types/supertest": "7.2.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d983eeb2ad1dfaa2acdf05e6af5cbb27f683622b555db3b10b235c8f3538c121",
+  "files": {
+    "recipes/express-openapi-validator-spec/package.json": "sha256:f14b1ec28530b25a3890d2edb357dd46e25898c2b1042a01c271ef31ccd5c823",
+    "recipes/express-openapi-validator-spec/recipe.yaml": "sha256:72309fa29396f4dcd752c4979b788936cff4280ccaddeb10f105548ff23601b9",
+    "recipes/express-openapi-validator-spec/src/app.ts": "sha256:3cbca744e8c83dec58d5adee90d43ae6f8945991b25b38e9d75fe5675be3a8c6",
+    "recipes/express-openapi-validator-spec/test/app.test.ts": "sha256:4b865856a2f07178f729ae44894b0f9e90dc09438400fc36ad21fc35ae483da5"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39095442401"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: GET valid path and query returns 200\nok 1 - GET valid path and query returns 200\n  ---\n  duration_ms: 181.71701\n  type: 'test'\n  ...\n# Subtest: GET invalid path param returns 400 with details\nok 2 - GET invalid path param returns 400 with details\n  ---\n  duration_ms: 110.076114\n  type: 'test'\n  ...\n# Subtest: GET invalid query returns 400 with details\nok 3 - GET invalid query returns 400 with details\n  ---\n  duration_ms: 70.125531\n  type: 'test'\n  ...\n# Subtest: POST valid JSON body returns 201\nok 4 - POST valid JSON body returns 201\n  ---\n  duration_ms: 65.788287\n  type: 'test'\n  ...\n# Subtest: POST invalid JSON body returns 400 with details\nok 5 - POST invalid JSON body returns 400 with details\n  ---\n  duration_ms: 53.661119\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 912.027885\n"
+}

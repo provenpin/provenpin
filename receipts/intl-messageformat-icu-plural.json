@@ -1,0 +1,34 @@
+{
+  "id": "intl-messageformat-icu-plural",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:58:30.317Z",
+  "last_passed_at": "2026-10-18T03:58:30.317Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1688,
+    "test": 306
+  },
+  "pinned": {
+    "intl-messageformat": "12.1.3",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:054becff3db77cad98bc3d1516cd21d4c3811a1f1d649ef63c7ca6adc1629b19",
+  "files": {
+    "recipes/intl-messageformat-icu-plural/package.json": "sha256:79cd3353f5b0b49114639d69be1dc1c53aa6498674008a9841a306bcf282a102",
+    "recipes/intl-messageformat-icu-plural/recipe.yaml": "sha256:fd09601cea37d0e6376d5480dbc3d15d9a680946d5b95cc382be3a583b56b1bd",
+    "recipes/intl-messageformat-icu-plural/src/messages.ts": "sha256:b93415e56418453e77b9ac945a90fdbc0e1539358480778d0f4f9d383dfd7f18",
+    "recipes/intl-messageformat-icu-plural/test/messages.test.ts": "sha256:b296b6930a196834264eca8b5b7f16da7b4dac08fe7a9242609fe9cb544826f5"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39095442401"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: select picks a branch by gender and falls back to other\nok 3 - select picks a branch by gender and falls back to other\n  ---\n  duration_ms: 0.59811\n  type: 'test'\n  ...\n# Subtest: number formatting differs between locales\nok 4 - number formatting differs between locales\n  ---\n  duration_ms: 0.426144\n  type: 'test'\n  ...\n# Subtest: date formatting uses locale order with UTC override\nok 5 - date formatting uses locale order with UTC override\n  ---\n  duration_ms: 4.754578\n  type: 'test'\n  ...\n# Subtest: nested select and plural resolve inner arguments\nok 6 - nested select and plural resolve inner arguments\n  ---\n  duration_ms: 1.09489\n  type: 'test'\n  ...\n# Subtest: rich text tags call the matching formatter function\nok 7 - rich text tags call the matching formatter function\n  ---\n  duration_ms: 0.464031\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 192.940278\n"
+}

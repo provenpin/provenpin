@@ -1,0 +1,34 @@
+{
+  "id": "turf-geojson-measure-buffer",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:58:55.330Z",
+  "last_passed_at": "2026-10-18T03:58:55.330Z",
+  "tests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 6872,
+    "test": 686
+  },
+  "pinned": {
+    "@turf/turf": "7.4.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:cbee5e3f5f70121c17e63116d25c4d11954b6d4286df44b02c8ca844637fb9dd",
+  "files": {
+    "recipes/turf-geojson-measure-buffer/package.json": "sha256:7bef16b5d44f61a6a841de1c33b1d69d3f0613011a1935cc0ad7acd0a65b658d",
+    "recipes/turf-geojson-measure-buffer/recipe.yaml": "sha256:3bc431cf319c10d4a6369df20b7fe8646b18d502ea22b46973b15c26c1dff9b4",
+    "recipes/turf-geojson-measure-buffer/src/geo.ts": "sha256:d58846f00442935e068d341acfbd6da5a53121b7e8e98ee6d1e33fab40bc57f8",
+    "recipes/turf-geojson-measure-buffer/test/geo.test.ts": "sha256:5b517383c3aa554dd031c6e413a1d2df1c985e4780498071d2ef6563e591de07"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39095442401"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: polygon area in square kilometers\nok 2 - polygon area in square kilometers\n  ---\n  duration_ms: 0.437301\n  type: 'test'\n  ...\n# Subtest: booleanPointInPolygon for inside and outside points\nok 3 - booleanPointInPolygon for inside and outside points\n  ---\n  duration_ms: 0.426134\n  type: 'test'\n  ...\n# Subtest: bbox returns the min and max corners\nok 4 - bbox returns the min and max corners\n  ---\n  duration_ms: 0.892108\n  type: 'test'\n  ...\n# Subtest: centroid averages multipoint coordinates\nok 5 - centroid averages multipoint coordinates\n  ---\n  duration_ms: 0.225516\n  type: 'test'\n  ...\n# Subtest: along a lineString at a given distance\nok 6 - along a lineString at a given distance\n  ---\n  duration_ms: 0.375048\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 554.339273\n"
+}

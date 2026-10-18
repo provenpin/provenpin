@@ -1,0 +1,46 @@
+{
+  "id": "nestjs-jwt-guard-testing",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:58:29.581Z",
+  "last_passed_at": "2026-10-18T03:58:29.581Z",
+  "tests": {
+    "passed": 2,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 5598,
+    "test": 1099
+  },
+  "pinned": {
+    "@nestjs/common": "12.1.3",
+    "@nestjs/core": "12.1.3",
+    "@nestjs/jwt": "12.0.3",
+    "@nestjs/platform-express": "12.1.3",
+    "@nestjs/testing": "12.1.3",
+    "reflect-metadata": "0.2.2",
+    "rxjs": "7.8.2",
+    "supertest": "7.3.1",
+    "@types/supertest": "7.2.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:d2606aa779bb17b97063f8462b9afce6bf300aa810427124a10a60ba07fe10bd",
+  "files": {
+    "recipes/nestjs-jwt-guard-testing/package.json": "sha256:6f5e32041c8b02f3c04bd9646126310436a82b84af28c42588acad38234bc4a6",
+    "recipes/nestjs-jwt-guard-testing/recipe.yaml": "sha256:ac9cbe95ca41246af0793aec17a3c2f7dba2beef61d471081cddda25bd70db4d",
+    "recipes/nestjs-jwt-guard-testing/src/app.module.ts": "sha256:572f165cd623164ecf95edb292c0b68ce2535ae2e25091d900814d3a8f37033a",
+    "recipes/nestjs-jwt-guard-testing/src/auth.controller.ts": "sha256:169242a8d8f5945fb0d6c788a3c8397aa8acfd6b85fac04fde892441edc4c0cc",
+    "recipes/nestjs-jwt-guard-testing/src/auth.guard.ts": "sha256:42b7c86028ae2057d9df62b837452f36b0c38db03c467d63ba851a744724efc3",
+    "recipes/nestjs-jwt-guard-testing/src/auth.service.ts": "sha256:e0e7f16c2c47e951452840440642e23901cc72bc9d728daf45a956f3bc4ecce3",
+    "recipes/nestjs-jwt-guard-testing/test/auth.e2e.test.ts": "sha256:446c96e82c3a8732013caa4711e8008bd0f2b165453928d2496bbbe24cff8dc4",
+    "recipes/nestjs-jwt-guard-testing/tsconfig.json": "sha256:941c93e736c0295e0b149caa614a051aa622915a3010f3cd97b034d26e613cad"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39095442401"
+  },
+  "errors": [],
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: protected route returns 401 without a token\nok 1 - protected route returns 401 without a token\n  ---\n  duration_ms: 145.890229\n  type: 'test'\n  ...\n# Subtest: login issues a JWT and the guard accepts it\nok 2 - login issues a JWT and the guard accepts it\n  ---\n  duration_ms: 40.767248\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 953.589044\n"
+}

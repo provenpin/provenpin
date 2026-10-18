@@ -1,0 +1,35 @@
+{
+  "id": "crypto-js-aes-hmac",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:58:29.719Z",
+  "last_passed_at": "2026-10-18T03:58:29.719Z",
+  "tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 1606,
+    "test": 351
+  },
+  "pinned": {
+    "crypto-js": "4.2.0",
+    "@types/crypto-js": "4.2.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:07465c6dedcefd25f7d5fec4550f6806d8223516f9bd7d25707bb3654fa44c7b",
+  "files": {
+    "recipes/crypto-js-aes-hmac/package.json": "sha256:1ad7f3bc576684b7e2ab158fd950ff33fcb90e21b19c151eca11338ec5460fc5",
+    "recipes/crypto-js-aes-hmac/recipe.yaml": "sha256:95f1c5fd526eb0e91e0593eb8987c2dff244f39db295215aae32ce1e15be9ff7",
+    "recipes/crypto-js-aes-hmac/src/crypto.ts": "sha256:2934f9a70c165a9529bad61294a4066d56f9c59ebe8328b8d6a7e5a9cf0ba61c",
+    "recipes/crypto-js-aes-hmac/test/crypto.test.ts": "sha256:a7cb928f8643e7838211c6a7adac850c300016de0aa6a22041cefac98c2f67ea"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39095442401"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\nok 5 - AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\n  ---\n  duration_ms: 0.341832\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 known vector (hex)\nok 6 - HmacSHA256 known vector (hex)\n  ---\n  duration_ms: 0.582942\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 base64 encodes the same known vector bytes\nok 7 - HmacSHA256 base64 encodes the same known vector bytes\n  ---\n  duration_ms: 0.41906\n  type: 'test'\n  ...\n# Subtest: SHA256 known vectors\nok 8 - SHA256 known vectors\n  ---\n  duration_ms: 0.202031\n  type: 'test'\n  ...\n# Subtest: PBKDF2-HMAC-SHA256 known vectors\nok 9 - PBKDF2-HMAC-SHA256 known vectors\n  ---\n  duration_ms: 0.955026\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 219.692123\n"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "http-errors-express-error-middleware",
+  "status": "passed",
+  "ran_at": "2026-10-18T03:58:28.422Z",
+  "last_passed_at": "2026-10-18T03:58:28.422Z",
+  "tests": {
+    "passed": 7,
+    "failed": 0
+  },
+  "duration_ms": {
+    "setup": 3126,
+    "test": 583
+  },
+  "pinned": {
+    "express": "5.3.0",
+    "http-errors": "2.0.1",
+    "supertest": "7.3.1",
+    "@types/express": "5.0.6",
+    "@types/http-errors": "2.0.5",
+    "@types/node": "26.6.5",
+    "@types/supertest": "7.2.1",
+    "tsx": "4.23.15"
+  },
+  "recipe_hash": "sha256:58c0bd6f61d9e4db3b7cb26eaedf9e20a5c396d01d07a789fcfdfcbfa848755a",
+  "files": {
+    "recipes/http-errors-express-error-middleware/package.json": "sha256:792b80521b76d40c7efd8fc9cae8eed0bd559d7fb5fbacb90cb00dafa3abcf68",
+    "recipes/http-errors-express-error-middleware/recipe.yaml": "sha256:754a9acb44f869382d00abbb5bf718cdc09a473de59a0963e271ca0c6ff4617b",
+    "recipes/http-errors-express-error-middleware/src/app.ts": "sha256:219116c7eddee499382731ded8133e2c921509721bc57c9e5b8fa036da7b3d8b",
+    "recipes/http-errors-express-error-middleware/src/problem.ts": "sha256:a84082a4a7dfaf9e06c6dc63053a4cc7424bfe27fd481ad2f747434a02ccbe59",
+    "recipes/http-errors-express-error-middleware/test/app.test.ts": "sha256:f23893f188931e3febdb9e660a8fae0aac528f49ce93869fc6f02d104bc9433e"
+  },
+  "environment": {
+    "os": "linux 6.17.0-1022-azure",
+    "arch": "x64",
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39095442401"
+  },
+  "errors": [],
+  "log_tail": "# Subtest: exposes custom properties on a 422\nok 3 - exposes custom properties on a 422\n  ---\n  duration_ms: 18.149952\n  type: 'test'\n  ...\n# Subtest: forwards async route rejections\nok 4 - forwards async route rejections\n  ---\n  duration_ms: 3.387891\n  type: 'test'\n  ...\n# Subtest: serves an exposed 5xx message when opted in\nok 5 - serves an exposed 5xx message when opted in\n  ---\n  duration_ms: 3.298434\n  type: 'test'\n  ...\n# Subtest: hides the message of an unexposed 500\nok 6 - hides the message of an unexposed 500\n  ---\n  duration_ms: 2.981971\n  type: 'test'\n  ...\n# Subtest: returns problem details for unknown routes\nok 7 - returns problem details for unknown routes\n  ---\n  duration_ms: 2.721764\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 434.897628\n"
+}
