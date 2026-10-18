@@ -1,0 +1,213 @@
+{
+  "args": {
+    "query": "generate PDF invoice from an HTML Jinja2 template with WeasyPrint"
+  },
+  "t": "2026-10-18T04:33:58Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 167,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "jinja2-markupsafe-email-templates",
+        "title": "Jinja2 sandboxed email templates with autoescape and custom filters",
+        "summary": "A Jinja2 environment with FileSystemLoader, per-extension autoescape, StrictUndefined, custom filters returning Markup, and a sandbox, tested offline against temporary templates.",
+        "stack": [
+          "jinja2",
+          "markupsafe"
+        ],
+        "language": "python",
+        "score": 64.6,
+        "pinned": {
+          "jinja2": "3.1.6",
+          "markupsafe": "3.0.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:14.457Z"
+        }
+      },
+      {
+        "id": "fastapi-jinja2-htmx-partials",
+        "title": "FastAPI Jinja2 full pages vs HTMX partials via HX-Request",
+        "summary": "Serve a full HTML page to normal browsers and a bare HTML fragment to HTMX requests, chosen by the HX-Request header, with Vary set for caches. Tested offline with the sync TestClient.",
+        "stack": [
+          "fastapi",
+          "jinja2",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 61.05,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "jinja2": "3.1.6",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:20.296Z"
+        }
+      },
+      {
+        "id": "jinja2-sandboxed-user-templates",
+        "title": "Jinja2 SandboxedEnvironment for untrusted user templates",
+        "summary": "Render untrusted user templates with a hardened sandbox: allowlisted globals, an immutable context, strict undefined handling and an output size cap.",
+        "stack": [
+          "jinja2"
+        ],
+        "language": "python",
+        "score": 60.14,
+        "pinned": {
+          "jinja2": "3.1.6",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:30.688Z"
+        }
+      },
+      {
+        "id": "pdf-lib-invoice",
+        "title": "pdf-lib create and read invoice PDF",
+        "summary": "Build a multi-page invoice PDF with pdf-lib, draw text and rectangles, then reload the bytes and assert page count offline.",
+        "stack": [
+          "pdf-lib"
+        ],
+        "language": "typescript",
+        "score": 52.69,
+        "pinned": {
+          "pdf-lib": "1.17.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:41.110Z"
+        }
+      },
+      {
+        "id": "pdfkit-generate-pdf",
+        "title": "pdfkit generate PDF",
+        "summary": "Build a PDFDocument with pdfkit, stream it into a buffer, and assert the output starts with %PDF using only built-in fonts offline.",
+        "stack": [
+          "pdfkit"
+        ],
+        "language": "typescript",
+        "score": 32.97,
+        "pinned": {
+          "pdfkit": "0.20.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T02:18:35.436Z"
+        }
+      },
+      {
+        "id": "mako-template-inheritance",
+        "title": "Mako template inheritance, defs and HTML escaping",
+        "summary": "Load Mako templates from an in-memory TemplateLookup, inherit a base layout, call defs and apply filters with safe HTML escaping by default.",
+        "stack": [
+          "mako"
+        ],
+        "language": "python",
+        "score": 30.13,
+        "pinned": {
+          "mako": "1.4.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:07.149Z"
+        }
+      },
+      {
+        "id": "mjml-to-html",
+        "title": "mjml to html",
+        "summary": "Render MJML markup to responsive HTML email with mjml2html, asserting expected text and inlined styles, running validation in soft mode and inspecting the errors array for intentionally broken markup.",
+        "stack": [
+          "mjml"
+        ],
+        "language": "typescript",
+        "score": 30.08,
+        "pinned": {
+          "mjml": "5.4.1",
+          "@types/mjml": "5.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T02:18:14.445Z"
+        }
+      },
+      {
+        "id": "react-email-render-html-text",
+        "title": "React Email template rendered to HTML and plain text",
+        "summary": "Build a transactional email with @react-email/components (preview, rows/columns, button, link) in TSX and render both the HTML document and the plain-text version with @react-email/render, checking escaping offline.",
+        "stack": [
+          "@react-email/components",
+          "@react-email/render",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 25.94,
+        "pinned": {
+          "@react-email/components": "1.0.12",
+          "@react-email/render": "2.1.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:57.245Z"
+        }
+      },
+      {
+        "id": "node-html-parser-query",
+        "title": "node-html-parser query and mutate",
+        "summary": "Parse an HTML fixture with node-html-parser, query nodes via CSS selectors, read text and attributes, mutate with set_content, setAttribute and remove, then serialize back and assert the result offline.",
+        "stack": [
+          "node-html-parser"
+        ],
+        "language": "typescript",
+        "score": 25.23,
+        "pinned": {
+          "node-html-parser": "9.0.4",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:35.693Z"
+        }
+      },
+      {
+        "id": "fpdf2-multipage-table",
+        "title": "fpdf2 multi-page PDF table with repeated headers and page numbers",
+        "summary": "Build a table that flows across pages with fpdf2, repeat the heading row on every page and stamp Page X/N footers, then assert on the rendered output offline.",
+        "stack": [
+          "fpdf2"
+        ],
+        "language": "python",
+        "score": 24.08,
+        "pinned": {
+          "fpdf2": "2.8.9",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:17.593Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

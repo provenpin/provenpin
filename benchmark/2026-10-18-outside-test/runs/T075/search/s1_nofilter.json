@@ -1,0 +1,268 @@
+{
+  "args": {
+    "query": "express 5 crashes on startup TypeError: Missing parameter name at 1 path-to-regexp"
+  },
+  "t": "2026-10-18T04:30:43Z",
+  "wall_s": 0.98,
+  "ok": true,
+  "ms": 142,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "express5-async-error-handling",
+        "title": "express 5 async error handling",
+        "summary": "Use express 5 with supertest to forward rejected async handlers to a JSON error middleware, with router-level params, a JSON 404 handler and offline tests.",
+        "stack": [
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 67.31,
+        "pinned": {
+          "express": "5.3.0",
+          "supertest": "7.3.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:32.228Z"
+        }
+      },
+      {
+        "id": "joi-express-validation",
+        "title": "Joi request validation middleware for Express 5",
+        "summary": "Validate Express 5 bodies and query strings with Joi schemas in a reusable middleware, with defaults, type conversion, stripUnknown and 400 error details, tested with supertest.",
+        "stack": [
+          "joi",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 65.48,
+        "pinned": {
+          "joi": "18.2.9",
+          "express": "5.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:38.085Z"
+        }
+      },
+      {
+        "id": "twilio-webhook-signature-express",
+        "title": "Twilio webhook signature validation in Express with TwiML replies",
+        "summary": "Validate X-Twilio-Signature on inbound SMS webhooks in Express with twilio.validateRequest, including query strings and tampered params, and reply with MessagingResponse TwiML, tested offline with supertest.",
+        "stack": [
+          "twilio",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 57.64,
+        "pinned": {
+          "twilio": "6.2.0",
+          "express": "5.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:10:13.471Z"
+        }
+      },
+      {
+        "id": "cors-express-preflight",
+        "title": "cors express preflight",
+        "summary": "Configure cors with express to reflect allowed origins, answer OPTIONS preflight with Access-Control-Allow-* headers, and deny a disallowed origin, tested offline with supertest.",
+        "stack": [
+          "cors",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 57.63,
+        "pinned": {
+          "cors": "2.8.6",
+          "express": "5.3.0",
+          "supertest": "7.3.1",
+          "@types/cors": "2.8.19",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T15:20:56.500Z"
+        }
+      },
+      {
+        "id": "http-errors-express-error-middleware",
+        "title": "http-errors with Express error middleware",
+        "summary": "Express routes that throw http-errors and reject asynchronously, mapped by a central middleware to RFC 7807 problem details with expose-aware messages and a 500 fallback, tested offline with supertest.",
+        "stack": [
+          "express",
+          "http-errors",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 57.63,
+        "pinned": {
+          "express": "5.3.0",
+          "http-errors": "2.0.1",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/http-errors": "2.0.5",
+          "@types/node": "26.6.5",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:28.422Z"
+        }
+      },
+      {
+        "id": "express-stripe-webhook",
+        "title": "Express 5 + Stripe webhook signature verification",
+        "summary": "Verify Stripe webhook signatures in Express 5 using the raw body, then dispatch on event type. Tested offline with generated test headers.",
+        "stack": [
+          "express",
+          "stripe"
+        ],
+        "language": "typescript",
+        "score": 56.93,
+        "pinned": {
+          "express": "5.3.0",
+          "stripe": "23.0.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "supertest": "7.3.1",
+          "@types/supertest": "7.2.1",
+          "@types/express": "5.0.6"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:55.090Z"
+        }
+      },
+      {
+        "id": "express-helmet-rate-limit",
+        "title": "Express 5 + Helmet + express-rate-limit hardening",
+        "summary": "Add security headers with Helmet and per-IP rate limiting with express-rate-limit to an Express 5 API.",
+        "stack": [
+          "express",
+          "helmet",
+          "express-rate-limit"
+        ],
+        "language": "typescript",
+        "score": 56.92,
+        "pinned": {
+          "express": "5.3.0",
+          "helmet": "8.3.0",
+          "express-rate-limit": "8.7.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "supertest": "7.3.1",
+          "@types/supertest": "7.2.1",
+          "@types/express": "5.0.6"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:39.788Z"
+        }
+      },
+      {
+        "id": "express-openapi-validator-spec",
+        "title": "express-openapi-validator request and response validation",
+        "summary": "Validate an Express app against an inline OpenAPI 3 spec using express-openapi-validator, returning validation errors as JSON and testing valid and invalid requests offline with supertest.",
+        "stack": [
+          "express",
+          "express-openapi-validator",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 55.81,
+        "pinned": {
+          "express": "5.3.0",
+          "express-openapi-validator": "5.6.2",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:29.567Z"
+        }
+      },
+      {
+        "id": "express-validator-supertest",
+        "title": "express-validator request checks with supertest",
+        "summary": "Validate Express JSON bodies and query params with express-validator, returning field errors, tested with supertest offline.",
+        "stack": [
+          "express",
+          "express-validator",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 55.81,
+        "pinned": {
+          "express": "5.3.0",
+          "express-validator": "7.3.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1",
+          "@types/supertest": "7.2.1",
+          "@types/express": "5.0.6"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:59:23.971Z"
+        }
+      },
+      {
+        "id": "passport-local-express-session",
+        "title": "passport-local express session auth",
+        "summary": "Authenticate express requests with passport LocalStrategy against an in-memory store, persist the login with express-session and guard a protected route offline.",
+        "stack": [
+          "express",
+          "passport",
+          "passport-local",
+          "express-session"
+        ],
+        "language": "typescript",
+        "score": 55.81,
+        "pinned": {
+          "express": "5.3.0",
+          "express-session": "1.19.0",
+          "passport": "0.7.0",
+          "passport-local": "1.0.0",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/express-session": "1.19.0",
+          "@types/node": "26.6.5",
+          "@types/passport": "1.0.17",
+          "@types/passport-local": "1.0.38",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:36.193Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

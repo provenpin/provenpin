@@ -1,0 +1,269 @@
+{
+  "args": {
+    "query": "verify OIDC JWT access tokens with a remote JWKS in Express using jose"
+  },
+  "t": "2026-10-18T04:34:31Z",
+  "wall_s": 1.0,
+  "ok": true,
+  "ms": 131,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "jose-jwks-verify",
+        "title": "Verify JWTs against a JWKS with jose (RS256, key rotation) in Vitest",
+        "summary": "Verify third-party RS256 access tokens (Auth0, Cognito, Clerk style) with jose's JWKS key sets, checking issuer, audience, expiry and key rotation, tested offline with a local JWKS.",
+        "stack": [
+          "jose",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 152.08,
+        "pinned": {
+          "jose": "6.2.12",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:43.595Z"
+        }
+      },
+      {
+        "id": "bcryptjs-jose-sessions",
+        "title": "bcryptjs password hashing + jose JWT sessions",
+        "summary": "Hash passwords with bcryptjs and issue and verify signed JWT session tokens with jose. Framework-agnostic auth core.",
+        "stack": [
+          "bcryptjs",
+          "jose"
+        ],
+        "language": "typescript",
+        "score": 94.72,
+        "pinned": {
+          "bcryptjs": "3.0.3",
+          "jose": "6.2.12",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:36.411Z"
+        }
+      },
+      {
+        "id": "express-passport-jwt",
+        "title": "Express 5 + Passport JWT strategy",
+        "summary": "Protect Express 5 routes with passport-jwt (bearer tokens signed by jsonwebtoken), stateless sessions and role checks.",
+        "stack": [
+          "express",
+          "passport",
+          "passport-jwt",
+          "jsonwebtoken"
+        ],
+        "language": "typescript",
+        "score": 77.74,
+        "pinned": {
+          "express": "5.3.0",
+          "passport": "0.7.0",
+          "passport-jwt": "4.0.1",
+          "jsonwebtoken": "9.0.3",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "supertest": "7.3.1",
+          "@types/supertest": "7.2.1",
+          "@types/express": "5.0.6",
+          "@types/passport": "1.0.17",
+          "@types/passport-jwt": "4.0.1",
+          "@types/jsonwebtoken": "9.0.10"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:47.961Z"
+        }
+      },
+      {
+        "id": "twilio-webhook-signature-express",
+        "title": "Twilio webhook signature validation in Express with TwiML replies",
+        "summary": "Validate X-Twilio-Signature on inbound SMS webhooks in Express with twilio.validateRequest, including query strings and tampered params, and reply with MessagingResponse TwiML, tested offline with supertest.",
+        "stack": [
+          "twilio",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 62.25,
+        "pinned": {
+          "twilio": "6.2.0",
+          "express": "5.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:10:13.471Z"
+        }
+      },
+      {
+        "id": "cors-express-preflight",
+        "title": "cors express preflight",
+        "summary": "Configure cors with express to reflect allowed origins, answer OPTIONS preflight with Access-Control-Allow-* headers, and deny a disallowed origin, tested offline with supertest.",
+        "stack": [
+          "cors",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 61.51,
+        "pinned": {
+          "cors": "2.8.6",
+          "express": "5.3.0",
+          "supertest": "7.3.1",
+          "@types/cors": "2.8.19",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T15:20:56.500Z"
+        }
+      },
+      {
+        "id": "express-jwt-auth",
+        "title": "Express 5 + jsonwebtoken auth middleware",
+        "summary": "Issue HS256 JWTs on login and protect routes with a bearer-token middleware.",
+        "stack": [
+          "express",
+          "jsonwebtoken"
+        ],
+        "language": "typescript",
+        "score": 61.31,
+        "pinned": {
+          "express": "5.3.0",
+          "jsonwebtoken": "9.0.3",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1",
+          "@types/jsonwebtoken": "9.0.10"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:39.257Z"
+        }
+      },
+      {
+        "id": "http-errors-express-error-middleware",
+        "title": "http-errors with Express error middleware",
+        "summary": "Express routes that throw http-errors and reject asynchronously, mapped by a central middleware to RFC 7807 problem details with expose-aware messages and a 500 fallback, tested offline with supertest.",
+        "stack": [
+          "express",
+          "http-errors",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 59.01,
+        "pinned": {
+          "express": "5.3.0",
+          "http-errors": "2.0.1",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/http-errors": "2.0.5",
+          "@types/node": "26.6.5",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:28.422Z"
+        }
+      },
+      {
+        "id": "joi-express-validation",
+        "title": "Joi request validation middleware for Express 5",
+        "summary": "Validate Express 5 bodies and query strings with Joi schemas in a reusable middleware, with defaults, type conversion, stripUnknown and 400 error details, tested with supertest.",
+        "stack": [
+          "joi",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 59,
+        "pinned": {
+          "joi": "18.2.9",
+          "express": "5.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:38.085Z"
+        }
+      },
+      {
+        "id": "passport-local-express-session",
+        "title": "passport-local express session auth",
+        "summary": "Authenticate express requests with passport LocalStrategy against an in-memory store, persist the login with express-session and guard a protected route offline.",
+        "stack": [
+          "express",
+          "passport",
+          "passport-local",
+          "express-session"
+        ],
+        "language": "typescript",
+        "score": 59,
+        "pinned": {
+          "express": "5.3.0",
+          "express-session": "1.19.0",
+          "passport": "0.7.0",
+          "passport-local": "1.0.0",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/express-session": "1.19.0",
+          "@types/node": "26.6.5",
+          "@types/passport": "1.0.17",
+          "@types/passport-local": "1.0.38",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:36.193Z"
+        }
+      },
+      {
+        "id": "express-openapi-validator-spec",
+        "title": "express-openapi-validator request and response validation",
+        "summary": "Validate an Express app against an inline OpenAPI 3 spec using express-openapi-validator, returning validation errors as JSON and testing valid and invalid requests offline with supertest.",
+        "stack": [
+          "express",
+          "express-openapi-validator",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 58.62,
+        "pinned": {
+          "express": "5.3.0",
+          "express-openapi-validator": "5.6.2",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:29.567Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

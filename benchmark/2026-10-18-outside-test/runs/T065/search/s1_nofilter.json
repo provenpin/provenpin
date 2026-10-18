@@ -1,0 +1,229 @@
+{
+  "args": {
+    "query": "pandas SettingWithCopyWarning everywhere, how to stop it & also make it faster maybe polars?"
+  },
+  "t": "2026-10-18T04:29:47Z",
+  "wall_s": 1.09,
+  "ok": true,
+  "ms": 248,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "pandas-openpyxl-excel-report",
+        "title": "pandas DataFrame to formatted Excel report with openpyxl styles and roundtrip read",
+        "summary": "Write a DataFrame to a styled .xlsx with openpyxl (header styles, number formats, widths, freeze panes, filters), then read it back with pandas and verify, fully offline.",
+        "stack": [
+          "pandas",
+          "openpyxl"
+        ],
+        "language": "python",
+        "score": 67.07,
+        "pinned": {
+          "pandas": "3.0.6",
+          "openpyxl": "3.1.5",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:36.429Z"
+        }
+      },
+      {
+        "id": "duckdb-polars-analytics",
+        "title": "DuckDB over Polars DataFrames: replacement scans, parquet roundtrip, group-by parity",
+        "summary": "Query Polars DataFrames directly with DuckDB, return .pl() results, round-trip through parquet in tmp_path, and check group-by aggregations against Polars native output.",
+        "stack": [
+          "duckdb",
+          "polars",
+          "pyarrow"
+        ],
+        "language": "python",
+        "score": 64.22,
+        "pinned": {
+          "duckdb": "1.5.6",
+          "polars": "2.0.0",
+          "pyarrow": "26.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:58:39.308Z"
+        }
+      },
+      {
+        "id": "polars-pandera-validation",
+        "title": "Polars DataFrame validation with pandera, collecting all errors",
+        "summary": "Validate Polars DataFrames with a pandera.polars DataFrameModel, collect every failing check with lazy validation, and test the schema offline with in-memory frames.",
+        "stack": [
+          "polars",
+          "pandera"
+        ],
+        "language": "python",
+        "score": 64.22,
+        "pinned": {
+          "polars": "2.0.0",
+          "pandera": "0.34.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:44.128Z"
+        }
+      },
+      {
+        "id": "polars-pydantic-row-validation",
+        "title": "Validating polars DataFrame rows with pydantic v2 TypeAdapter and collecting errors",
+        "summary": "Validate each polars row against a strict pydantic v2 model with a shared TypeAdapter, collect per-row errors instead of failing the batch, and catch polars and pydantic gotchas such as nulls, NaN, numeric strings and extra columns.",
+        "stack": [
+          "polars",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 64.22,
+        "pinned": {
+          "polars": "2.0.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:58.460Z"
+        }
+      },
+      {
+        "id": "pandas-pandera-validation",
+        "title": "pandas + Pandera DataFrame schema validation",
+        "summary": "Validate pandas DataFrames with Pandera DataFrameModel schemas: dtypes, coercion, value checks, custom dataframe checks and lazy error reports.",
+        "stack": [
+          "pandas",
+          "pandera"
+        ],
+        "language": "python",
+        "score": 58.99,
+        "pinned": {
+          "pandas": "3.0.6",
+          "pandera": "0.34.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:25.534Z"
+        }
+      },
+      {
+        "id": "sklearn-columntransformer-pipeline",
+        "title": "scikit-learn Pipeline with ColumnTransformer on pandas, GridSearchCV and joblib",
+        "summary": "A scikit-learn Pipeline that scales numeric columns and one-hot encodes categories inside a ColumnTransformer on a pandas DataFrame, tuned with GridSearchCV, then saved and reloaded with joblib. Tested offline on small in-memory data.",
+        "stack": [
+          "scikit-learn",
+          "pandas",
+          "joblib"
+        ],
+        "language": "python",
+        "score": 58.99,
+        "pinned": {
+          "scikit-learn": "1.9.1",
+          "pandas": "3.0.6",
+          "joblib": "1.6.0",
+          "pytest": "9.1.1",
+          "numpy": "2.3.3",
+          "scipy": "1.16.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:15.086Z"
+        }
+      },
+      {
+        "id": "pandas-sqlalchemy-to-sql",
+        "title": "pandas to_sql and read_sql with a SQLAlchemy 2 engine on sqlite, with dtype handling",
+        "summary": "Write and read DataFrames through a SQLAlchemy 2 engine, control column types with dtype, and handle datetimes and nullable ints, tested offline on in-memory sqlite.",
+        "stack": [
+          "pandas",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 58.1,
+        "pinned": {
+          "pandas": "3.0.6",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1",
+          "numpy": "2.3.4",
+          "python-dateutil": "2.9.0.post0",
+          "six": "1.17.0",
+          "typing-extensions": "4.15.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:04.837Z"
+        }
+      },
+      {
+        "id": "pandas-pyarrow-parquet-roundtrip",
+        "title": "Pandas pyarrow-backed dtypes with partitioned Parquet round trips",
+        "summary": "Write and read partitioned Parquet with pyarrow, enforce a pa.schema on write, and keep nullable ints intact using dtype_backend=pyarrow, tested offline on tmp_path.",
+        "stack": [
+          "pandas",
+          "pyarrow"
+        ],
+        "language": "python",
+        "score": 54.46,
+        "pinned": {
+          "pandas": "3.0.6",
+          "pyarrow": "26.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:26.973Z"
+        }
+      },
+      {
+        "id": "returns-maybe-ioresult",
+        "title": "returns Maybe and IOResult railway composition with map and bind",
+        "summary": "Railway-style composition over returns Maybe and IOResult: map versus bind, short-circuiting Nothing, maybe and bind_optional, impure_safe failures and IO-boxed unwrap, all tested offline.",
+        "stack": [
+          "returns"
+        ],
+        "language": "python",
+        "score": 33.78,
+        "pinned": {
+          "returns": "0.29.0",
+          "typing-extensions": "4.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:05.561Z"
+        }
+      },
+      {
+        "id": "octokit-rest-msw-pagination",
+        "title": "Octokit REST client with MSW: pagination, early stop and errors",
+        "summary": "Test an @octokit/rest client offline with MSW handlers for api.github.com: paginate through Link headers, stop paging early with done(), create issues with auth, and map 404 RequestErrors.",
+        "stack": [
+          "@octokit/rest",
+          "msw"
+        ],
+        "language": "typescript",
+        "score": 15.68,
+        "pinned": {
+          "@octokit/rest": "22.0.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "msw": "3.0.3"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:09:02.769Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

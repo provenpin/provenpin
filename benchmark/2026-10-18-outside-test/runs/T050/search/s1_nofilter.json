@@ -1,0 +1,219 @@
+{
+  "args": {
+    "query": "NumPy 2.0 removed np.float_, np.NaN and np.Inf: fix AttributeError after upgrading"
+  },
+  "t": "2026-10-18T04:34:28Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 132,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "numpy-scipy-optimize-fit",
+        "title": "NumPy + SciPy curve_fit and bounded minimize, tested with seeded noise",
+        "summary": "Fit a noisy exponential with scipy.optimize.curve_fit and bounded L-BFGS-B minimization, then assert recovered parameters with NumPy testing helpers and check residuals with scipy.stats.",
+        "stack": [
+          "numpy",
+          "scipy"
+        ],
+        "language": "python",
+        "score": 69.8,
+        "pinned": {
+          "numpy": "2.5.4",
+          "scipy": "1.18.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:02:50.646Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-hybrid-events",
+        "title": "SQLAlchemy 2.0 hybrid properties, column_property and before_flush audit events",
+        "summary": "Map hybrid_property and column_property on SQLAlchemy 2.0 models, stamp audit timestamps with a before_flush listener, and test everything offline on in-memory SQLite.",
+        "stack": [
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 16.95,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:41.891Z"
+        }
+      },
+      {
+        "id": "tenacity-retry-stop-wait",
+        "title": "tenacity Retrying with stop_after_attempt and wait_exponential",
+        "summary": "Build a tenacity Retrying policy that stops after N attempts, backs off exponentially and only retries transient exception types, then prove the behavior offline under pytest.",
+        "stack": [
+          "tenacity"
+        ],
+        "language": "python",
+        "score": 14.54,
+        "pinned": {
+          "tenacity": "9.2.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:13.938Z"
+        }
+      },
+      {
+        "id": "ftfy-mojibake-fix",
+        "title": "ftfy mojibake repair and curly-quote normalization",
+        "summary": "Repair Latin-1 mojibake with ftfy, undo double-encoding, straighten curly quotes to ASCII and control HTML unescaping, all tested offline under pytest.",
+        "stack": [
+          "ftfy"
+        ],
+        "language": "python",
+        "score": 13.39,
+        "pinned": {
+          "ftfy": "6.3.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:19.371Z"
+        }
+      },
+      {
+        "id": "tenacity-httpx-respx-backoff",
+        "title": "httpx + tenacity async retries honoring Retry-After, tested with respx",
+        "summary": "Wrap async httpx calls in tenacity AsyncRetrying that retries 429 and 5xx, honors Retry-After, and patches the wait to zero in tests with respx mocks.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 13.12,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:06.586Z"
+        }
+      },
+      {
+        "id": "pandas-sqlalchemy-to-sql",
+        "title": "pandas to_sql and read_sql with a SQLAlchemy 2 engine on sqlite, with dtype handling",
+        "summary": "Write and read DataFrames through a SQLAlchemy 2 engine, control column types with dtype, and handle datetimes and nullable ints, tested offline on in-memory sqlite.",
+        "stack": [
+          "pandas",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 12.01,
+        "pinned": {
+          "pandas": "3.0.6",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1",
+          "numpy": "2.3.4",
+          "python-dateutil": "2.9.0.post0",
+          "six": "1.17.0",
+          "typing-extensions": "4.15.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:04.837Z"
+        }
+      },
+      {
+        "id": "sklearn-columntransformer-pipeline",
+        "title": "scikit-learn Pipeline with ColumnTransformer on pandas, GridSearchCV and joblib",
+        "summary": "A scikit-learn Pipeline that scales numeric columns and one-hot encodes categories inside a ColumnTransformer on a pandas DataFrame, tuned with GridSearchCV, then saved and reloaded with joblib. Tested offline on small in-memory data.",
+        "stack": [
+          "scikit-learn",
+          "pandas",
+          "joblib"
+        ],
+        "language": "python",
+        "score": 12.01,
+        "pinned": {
+          "scikit-learn": "1.9.1",
+          "pandas": "3.0.6",
+          "joblib": "1.6.0",
+          "pytest": "9.1.1",
+          "numpy": "2.3.3",
+          "scipy": "1.16.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:15.086Z"
+        }
+      },
+      {
+        "id": "pydantic-annotated-after-validator",
+        "title": "Pydantic v2 Annotated validators (Before and After)",
+        "summary": "Reusable BeforeValidator and AfterValidator types that coerce, constrain and normalize values, tested offline, including the defaults-are-not-validated gotcha.",
+        "stack": [
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 10.4,
+        "pinned": {
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:01:39.014Z"
+        }
+      },
+      {
+        "id": "peewee-playhouse-sqlite-json",
+        "title": "peewee JSONField queries on SQLite after SqliteExtDatabase removal",
+        "summary": "Store and query JSON documents with peewee's core JSONField on SqliteDatabase, covering item access, as_text, has_key, contains and in-place mutations, plus the peewee 4 removal of playhouse SqliteExtDatabase.",
+        "stack": [
+          "peewee"
+        ],
+        "language": "python",
+        "score": 8.99,
+        "pinned": {
+          "peewee": "4.5.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:39.111Z"
+        }
+      },
+      {
+        "id": "jsdiff-patch-apply",
+        "title": "jsdiff unified patches: create, apply with fuzz, reverse and word diff",
+        "summary": "Create unified diffs with the diff package, apply them (with fuzz for drifted sources), reverse a patch, count added/removed lines and render word-level diffs.",
+        "stack": [
+          "diff"
+        ],
+        "language": "typescript",
+        "score": 7.76,
+        "pinned": {
+          "diff": "9.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:09:46.804Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

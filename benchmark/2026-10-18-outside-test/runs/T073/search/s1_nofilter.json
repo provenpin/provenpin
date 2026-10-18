@@ -1,0 +1,255 @@
+{
+  "args": {
+    "query": "stripe webhook error No signatures found matching the expected signature for payload express"
+  },
+  "t": "2026-10-18T04:32:02Z",
+  "wall_s": 0.98,
+  "ok": true,
+  "ms": 121,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "express-stripe-webhook",
+        "title": "Express 5 + Stripe webhook signature verification",
+        "summary": "Verify Stripe webhook signatures in Express 5 using the raw body, then dispatch on event type. Tested offline with generated test headers.",
+        "stack": [
+          "express",
+          "stripe"
+        ],
+        "language": "typescript",
+        "score": 148.58,
+        "pinned": {
+          "express": "5.3.0",
+          "stripe": "23.0.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "supertest": "7.3.1",
+          "@types/supertest": "7.2.1",
+          "@types/express": "5.0.6"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:55.090Z"
+        }
+      },
+      {
+        "id": "fastapi-stripe-webhook",
+        "title": "FastAPI + Stripe webhook signature verification",
+        "summary": "Verify Stripe webhook signatures in FastAPI from the raw request body and dispatch on event type. Tested offline with locally signed payloads.",
+        "stack": [
+          "fastapi",
+          "stripe"
+        ],
+        "language": "python",
+        "score": 103.15,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "stripe": "16.0.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:47.394Z"
+        }
+      },
+      {
+        "id": "nextjs-stripe-webhook",
+        "title": "Next.js App Router + Stripe webhook handler",
+        "summary": "A Next.js route handler that verifies Stripe webhook signatures from the raw body and handles checkout.session.completed.",
+        "stack": [
+          "nextjs",
+          "stripe"
+        ],
+        "language": "typescript",
+        "score": 80.92,
+        "pinned": {
+          "next": "16.4.1",
+          "stripe": "23.0.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:35.427Z"
+        }
+      },
+      {
+        "id": "twilio-webhook-signature-express",
+        "title": "Twilio webhook signature validation in Express with TwiML replies",
+        "summary": "Validate X-Twilio-Signature on inbound SMS webhooks in Express with twilio.validateRequest, including query strings and tampered params, and reply with MessagingResponse TwiML, tested offline with supertest.",
+        "stack": [
+          "twilio",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 76.99,
+        "pinned": {
+          "twilio": "6.2.0",
+          "express": "5.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:10:13.471Z"
+        }
+      },
+      {
+        "id": "express5-async-error-handling",
+        "title": "express 5 async error handling",
+        "summary": "Use express 5 with supertest to forward rejected async handlers to a JSON error middleware, with router-level params, a JSON 404 handler and offline tests.",
+        "stack": [
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 65.36,
+        "pinned": {
+          "express": "5.3.0",
+          "supertest": "7.3.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:32.228Z"
+        }
+      },
+      {
+        "id": "joi-express-validation",
+        "title": "Joi request validation middleware for Express 5",
+        "summary": "Validate Express 5 bodies and query strings with Joi schemas in a reusable middleware, with defaults, type conversion, stripUnknown and 400 error details, tested with supertest.",
+        "stack": [
+          "joi",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 63.14,
+        "pinned": {
+          "joi": "18.2.9",
+          "express": "5.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:38.085Z"
+        }
+      },
+      {
+        "id": "http-errors-express-error-middleware",
+        "title": "http-errors with Express error middleware",
+        "summary": "Express routes that throw http-errors and reject asynchronously, mapped by a central middleware to RFC 7807 problem details with expose-aware messages and a 500 fallback, tested offline with supertest.",
+        "stack": [
+          "express",
+          "http-errors",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 62.18,
+        "pinned": {
+          "express": "5.3.0",
+          "http-errors": "2.0.1",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/http-errors": "2.0.5",
+          "@types/node": "26.6.5",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:28.422Z"
+        }
+      },
+      {
+        "id": "stripe-checkout-mocked-http",
+        "title": "Stripe Node SDK Checkout Sessions with a mocked HTTP client",
+        "summary": "Create Stripe Checkout Sessions with line items, metadata and idempotency keys, tested offline by plugging a fake fetch into Stripe.createFetchHttpClient.",
+        "stack": [
+          "stripe"
+        ],
+        "language": "typescript",
+        "score": 61.34,
+        "pinned": {
+          "stripe": "23.0.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:59.225Z"
+        }
+      },
+      {
+        "id": "passport-local-express-session",
+        "title": "passport-local express session auth",
+        "summary": "Authenticate express requests with passport LocalStrategy against an in-memory store, persist the login with express-session and guard a protected route offline.",
+        "stack": [
+          "express",
+          "passport",
+          "passport-local",
+          "express-session"
+        ],
+        "language": "typescript",
+        "score": 57.24,
+        "pinned": {
+          "express": "5.3.0",
+          "express-session": "1.19.0",
+          "passport": "0.7.0",
+          "passport-local": "1.0.0",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/express-session": "1.19.0",
+          "@types/node": "26.6.5",
+          "@types/passport": "1.0.17",
+          "@types/passport-local": "1.0.38",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:36.193Z"
+        }
+      },
+      {
+        "id": "cors-express-preflight",
+        "title": "cors express preflight",
+        "summary": "Configure cors with express to reflect allowed origins, answer OPTIONS preflight with Access-Control-Allow-* headers, and deny a disallowed origin, tested offline with supertest.",
+        "stack": [
+          "cors",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 55.81,
+        "pinned": {
+          "cors": "2.8.6",
+          "express": "5.3.0",
+          "supertest": "7.3.1",
+          "@types/cors": "2.8.19",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T15:20:56.500Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

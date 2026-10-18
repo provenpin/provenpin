@@ -1,0 +1,234 @@
+{
+  "args": {
+    "query": "boto3 S3 upload and download tested with moto mock_aws in pytest"
+  },
+  "t": "2026-10-18T04:33:40Z",
+  "wall_s": 0.92,
+  "ok": true,
+  "ms": 154,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "boto3-moto-s3-presigned",
+        "title": "boto3 S3 helper with paginated listing and presigned URLs, tested offline with moto",
+        "summary": "A small boto3 S3 helper for upload, paginated listing, presigned GET URLs and batched delete, tested offline with moto's mock_aws and fake credentials.",
+        "stack": [
+          "boto3",
+          "moto"
+        ],
+        "language": "python",
+        "score": 205.52,
+        "pinned": {
+          "boto3": "1.43.114",
+          "moto": "5.2.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:22.570Z"
+        }
+      },
+      {
+        "id": "boto3-moto-dynamodb-sqs",
+        "title": "boto3 DynamoDB idempotency and SQS queue tested offline with moto",
+        "summary": "A DynamoDB conditional put for idempotent writes plus SQS send and receive, tested offline with moto mock_aws and fake credentials.",
+        "stack": [
+          "boto3",
+          "moto"
+        ],
+        "language": "python",
+        "score": 164.22,
+        "pinned": {
+          "boto3": "1.43.114",
+          "moto": "5.2.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:26.354Z"
+        }
+      },
+      {
+        "id": "aws-sdk-v3-s3-client-mock",
+        "title": "AWS SDK v3 S3 storage helpers tested with aws-sdk-client-mock",
+        "summary": "S3 helpers on @aws-sdk/client-s3 for JSON put/get with NoSuchKey handling, paginated listing, batched DeleteObjects and locally signed presigned URLs, tested offline with aws-sdk-client-mock and sdkStreamMixin bodies.",
+        "stack": [
+          "@aws-sdk/client-s3",
+          "@aws-sdk/s3-request-presigner",
+          "aws-sdk-client-mock"
+        ],
+        "language": "typescript",
+        "score": 104.27,
+        "pinned": {
+          "@aws-sdk/client-s3": "3.1152.0",
+          "@aws-sdk/s3-request-presigner": "3.1152.0",
+          "aws-sdk-client-mock": "4.1.0",
+          "@smithy/util-stream": "4.8.2",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:05.457Z"
+        }
+      },
+      {
+        "id": "aws-sdk-v3-dynamodb-sqs-vitest",
+        "title": "AWS SDK v3 DynamoDB document client and SQS events, tested with Vitest matchers",
+        "summary": "A single-table DynamoDB order service on @aws-sdk/lib-dynamodb with conditional puts, begins_with queries and optimistic locking, publishing SQS events, tested offline with aws-sdk-client-mock and aws-sdk-client-mock-vitest matchers.",
+        "stack": [
+          "@aws-sdk/client-dynamodb",
+          "@aws-sdk/lib-dynamodb",
+          "@aws-sdk/client-sqs",
+          "aws-sdk-client-mock",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 56.96,
+        "pinned": {
+          "@aws-sdk/client-dynamodb": "3.1152.0",
+          "@aws-sdk/lib-dynamodb": "3.1152.0",
+          "@aws-sdk/client-sqs": "3.1152.0",
+          "aws-sdk-client-mock": "4.1.0",
+          "aws-sdk-client-mock-vitest": "8.0.0",
+          "vitest": "5.0.4",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:20.502Z"
+        }
+      },
+      {
+        "id": "pytest-mock-spy-autospec",
+        "title": "pytest-mock: patch, autospec, spies and call assertions",
+        "summary": "Core pytest-mock patterns on a small notification service: loose mocker.patch, autospec signature checks, mocker.spy over real methods, patch.object stubs and assert_called_once_with.",
+        "stack": [
+          "pytest-mock",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 42.34,
+        "pinned": {
+          "pytest-mock": "3.17.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:57:24.279Z"
+        }
+      },
+      {
+        "id": "python-multipart-starlette-forms",
+        "title": "Starlette multipart form uploads parsed with python-multipart, tested offline",
+        "summary": "Parse multipart text fields and file uploads in Starlette with python-multipart, then exercise the app fully in-process through httpx.ASGITransport with no network.",
+        "stack": [
+          "starlette",
+          "python-multipart",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 36.13,
+        "pinned": {
+          "python-multipart": "0.0.32",
+          "starlette": "1.8.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:19.280Z"
+        }
+      },
+      {
+        "id": "axios-mock-adapter-client",
+        "title": "axios typed API client with axios-mock-adapter",
+        "summary": "Build a typed axios client with a baseURL and an auth header interceptor, then mock GET, POST, 404, network error and timeout offline while asserting parsed data, the header seen by the mock and error handling.",
+        "stack": [
+          "axios",
+          "axios-mock-adapter"
+        ],
+        "language": "typescript",
+        "score": 30.55,
+        "pinned": {
+          "axios": "1.20.0",
+          "axios-mock-adapter": "2.1.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:35.445Z"
+        }
+      },
+      {
+        "id": "fastify-multipart-upload",
+        "title": "Fastify 5 file uploads with @fastify/multipart",
+        "summary": "Accept multipart file uploads in Fastify 5 with @fastify/multipart, reading fields and files, hashing content, rejecting oversized files with 413, tested with inject() and a native FormData body.",
+        "stack": [
+          "fastify",
+          "@fastify/multipart"
+        ],
+        "language": "typescript",
+        "score": 29.4,
+        "pinned": {
+          "fastify": "5.12.7",
+          "@fastify/multipart": "10.1.4",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:55.590Z"
+        }
+      },
+      {
+        "id": "loguru-pytest-caplog",
+        "title": "Capture loguru logs in pytest caplog via a propagate sink and structured extra",
+        "summary": "Forward loguru records into stdlib logging so pytest caplog sees them, keep bound context as structured extra, and test it offline without a real log backend.",
+        "stack": [
+          "loguru",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 27.17,
+        "pinned": {
+          "loguru": "0.7.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:54.565Z"
+        }
+      },
+      {
+        "id": "ioredis-cache-aside-mock",
+        "title": "ioredis cache-aside with TTL, tested with ioredis-mock (Vitest)",
+        "summary": "Cache-aside helper on ioredis with JSON values, TTLs, stampede-safe single flight and invalidation, tested offline with ioredis-mock in Vitest. Install uses --legacy-peer-deps because ioredis-mock 8 still peers on ioredis ^5, but the mock passes its tests against ioredis 6. vite is pinned so Vitest still resolves under legacy-peer-deps.",
+        "stack": [
+          "ioredis",
+          "ioredis-mock",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 26.15,
+        "pinned": {
+          "ioredis": "6.0.0",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.5",
+          "vite": "8.3.4",
+          "ioredis-mock": "8.13.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:33.837Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "args": {
+    "query": "pandas read_sql and to_sql with a SQLAlchemy 2 engine"
+  },
+  "t": "2026-10-18T04:29:37Z",
+  "wall_s": 0.63,
+  "ok": true,
+  "ms": 628,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "pandas-sqlalchemy-to-sql",
+        "title": "pandas to_sql and read_sql with a SQLAlchemy 2 engine on sqlite, with dtype handling",
+        "summary": "Write and read DataFrames through a SQLAlchemy 2 engine, control column types with dtype, and handle datetimes and nullable ints, tested offline on in-memory sqlite.",
+        "stack": [
+          "pandas",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 162.49,
+        "pinned": {
+          "pandas": "3.0.6",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1",
+          "numpy": "2.3.4",
+          "python-dateutil": "2.9.0.post0",
+          "six": "1.17.0",
+          "typing-extensions": "4.15.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:04.837Z"
+        }
+      },
+      {
+        "id": "pandas-openpyxl-excel-report",
+        "title": "pandas DataFrame to formatted Excel report with openpyxl styles and roundtrip read",
+        "summary": "Write a DataFrame to a styled .xlsx with openpyxl (header styles, number formats, widths, freeze panes, filters), then read it back with pandas and verify, fully offline.",
+        "stack": [
+          "pandas",
+          "openpyxl"
+        ],
+        "language": "python",
+        "score": 78.7,
+        "pinned": {
+          "pandas": "3.0.6",
+          "openpyxl": "3.1.5",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:36.429Z"
+        }
+      },
+      {
+        "id": "sklearn-columntransformer-pipeline",
+        "title": "scikit-learn Pipeline with ColumnTransformer on pandas, GridSearchCV and joblib",
+        "summary": "A scikit-learn Pipeline that scales numeric columns and one-hot encodes categories inside a ColumnTransformer on a pandas DataFrame, tuned with GridSearchCV, then saved and reloaded with joblib. Tested offline on small in-memory data.",
+        "stack": [
+          "scikit-learn",
+          "pandas",
+          "joblib"
+        ],
+        "language": "python",
+        "score": 64.32,
+        "pinned": {
+          "scikit-learn": "1.9.1",
+          "pandas": "3.0.6",
+          "joblib": "1.6.0",
+          "pytest": "9.1.1",
+          "numpy": "2.3.3",
+          "scipy": "1.16.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:15.086Z"
+        }
+      },
+      {
+        "id": "pandas-pyarrow-parquet-roundtrip",
+        "title": "Pandas pyarrow-backed dtypes with partitioned Parquet round trips",
+        "summary": "Write and read partitioned Parquet with pyarrow, enforce a pa.schema on write, and keep nullable ints intact using dtype_backend=pyarrow, tested offline on tmp_path.",
+        "stack": [
+          "pandas",
+          "pyarrow"
+        ],
+        "language": "python",
+        "score": 61.33,
+        "pinned": {
+          "pandas": "3.0.6",
+          "pyarrow": "26.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:26.973Z"
+        }
+      },
+      {
+        "id": "pandas-pandera-validation",
+        "title": "pandas + Pandera DataFrame schema validation",
+        "summary": "Validate pandas DataFrames with Pandera DataFrameModel schemas: dtypes, coercion, value checks, custom dataframe checks and lazy error reports.",
+        "stack": [
+          "pandas",
+          "pandera"
+        ],
+        "language": "python",
+        "score": 60.42,
+        "pinned": {
+          "pandas": "3.0.6",
+          "pandera": "0.34.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:25.534Z"
+        }
+      },
+      {
+        "id": "sqlmodel-sqlalchemy-core-select",
+        "title": "SQLModel tables queried with SQLAlchemy Core select on sqlite",
+        "summary": "Query SQLModel-mapped tables with SQLAlchemy Core select and aggregate constructs, showing how result shapes differ from SQLModel's own select, tested offline on in-memory sqlite.",
+        "stack": [
+          "sqlmodel",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 58.51,
+        "pinned": {
+          "sqlmodel": "0.0.48",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:54.936Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-async-repository-pattern",
+        "title": "Async repository pattern with SQLAlchemy 2 AsyncSession on aiosqlite",
+        "summary": "A typed async repository over SQLAlchemy 2 AsyncSession with eager loading, foreign keys enforced on SQLite, and offline pytest-asyncio tests against an in-memory database.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 58.11,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.2.4",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:38.701Z"
+        }
+      },
+      {
+        "id": "sqlalchemy2-pydantic-v2-from-attributes",
+        "title": "SQLAlchemy 2 ORM rows serialized with Pydantic v2 from_attributes",
+        "summary": "Map SQLAlchemy 2 models, expose nested relationships through Pydantic v2 schemas with from_attributes=True and a computed_field, and test them offline against in-memory SQLite.",
+        "stack": [
+          "sqlalchemy",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 58.11,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:50.176Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-aiosqlite-session-factory",
+        "title": "SQLAlchemy 2 async session factory over aiosqlite",
+        "summary": "An async SQLAlchemy 2.0 engine and session factory over aiosqlite, with StaticPool in-memory wiring and pytest-asyncio tests covering commit, rollback and integrity errors.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 56.89,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.5.6",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:24.710Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-alembic-migrations",
+        "title": "SQLAlchemy 2 + Alembic programmatic migrations",
+        "summary": "Alembic migrations driven from Python (upgrade, downgrade, autogenerate check) against SQLite, with SQLAlchemy 2 models.",
+        "stack": [
+          "sqlalchemy",
+          "alembic",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 54.92,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "alembic": "1.20.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:31.301Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

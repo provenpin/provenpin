@@ -1,0 +1,225 @@
+{
+  "args": {
+    "query": "pydantic-settings load config from env vars and .env file with nested settings and prefix"
+  },
+  "t": "2026-10-18T04:31:01Z",
+  "wall_s": 0.96,
+  "ok": true,
+  "ms": 134,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "pydantic-settings-config",
+        "title": "Pydantic Settings typed config from env and .env",
+        "summary": "Typed app configuration with pydantic-settings: env prefixes, nested settings, secrets and validation errors.",
+        "stack": [
+          "pydantic",
+          "pydantic-settings"
+        ],
+        "language": "python",
+        "score": 145.43,
+        "pinned": {
+          "pydantic": "2.14.1",
+          "pydantic-settings": "2.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:11.674Z"
+        }
+      },
+      {
+        "id": "pydantic-settings-nested-sources",
+        "title": "pydantic-settings nested BaseSettings with env_nested_delimiter",
+        "summary": "Group configuration into nested Pydantic settings models and populate them from prefixed environment variables separated by a double underscore, tested fully offline.",
+        "stack": [
+          "pydantic-settings",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 128.85,
+        "pinned": {
+          "pydantic-settings": "2.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:01:39.150Z"
+        }
+      },
+      {
+        "id": "pydantic-settings-yaml-secrets",
+        "title": "pydantic-settings v2 config from env, YAML and defaults with SecretStr",
+        "summary": "Nested pydantic-settings models loaded with precedence init > env > YAML > defaults, with env_nested_delimiter, SecretStr masking, and offline tests using tmp_path and monkeypatch.",
+        "stack": [
+          "pydantic-settings",
+          "pydantic",
+          "pyyaml"
+        ],
+        "language": "python",
+        "score": 125.11,
+        "pinned": {
+          "pydantic-settings": "2.16.0",
+          "pydantic": "2.14.1",
+          "python-dotenv": "1.2.2",
+          "pyyaml": "6.0.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:31.062Z"
+        }
+      },
+      {
+        "id": "python-dotenv-pydantic-settings-env",
+        "title": "Loading .env files with python-dotenv and pydantic-settings precedence rules",
+        "summary": "Typed app settings from .env files with pydantic-settings, covering source precedence, layered env files, extra-key rules and python-dotenv override behavior, tested offline with tmp_path files.",
+        "stack": [
+          "python-dotenv",
+          "pydantic-settings",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 113.45,
+        "pinned": {
+          "python-dotenv": "1.2.4",
+          "pydantic-settings": "2.16.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:29.190Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-settings-dependency",
+        "title": "FastAPI config via pydantic-settings as a cached dependency",
+        "summary": "Load config from env vars with pydantic-settings, inject it into FastAPI routes through a cached dependency, and test it offline with monkeypatch and dependency_overrides.",
+        "stack": [
+          "fastapi",
+          "pydantic-settings",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 98.34,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic-settings": "2.16.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:31.090Z"
+        }
+      },
+      {
+        "id": "pydantic-settings-dotenv-secrets",
+        "title": "pydantic-settings nested dotenv config with SecretStr masking",
+        "summary": "Compose nested pydantic-settings models from .env files, mask credentials with SecretStr, and pin down env precedence and JSON parsing offline.",
+        "stack": [
+          "pydantic-settings",
+          "python-dotenv"
+        ],
+        "language": "python",
+        "score": 95.57,
+        "pinned": {
+          "pydantic-settings": "2.16.0",
+          "python-dotenv": "1.2.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:14.302Z"
+        }
+      },
+      {
+        "id": "sqlalchemy2-pydantic-v2-from-attributes",
+        "title": "SQLAlchemy 2 ORM rows serialized with Pydantic v2 from_attributes",
+        "summary": "Map SQLAlchemy 2 models, expose nested relationships through Pydantic v2 schemas with from_attributes=True and a computed_field, and test them offline against in-memory SQLite.",
+        "stack": [
+          "sqlalchemy",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 50.51,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:50.176Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-v2-models",
+        "title": "FastAPI + Pydantic v2 validators, discriminated unions and serializers",
+        "summary": "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 48.92,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:32.402Z"
+        }
+      },
+      {
+        "id": "orjson-pydantic-v2-roundtrip",
+        "title": "orjson + Pydantic v2 model round trip",
+        "summary": "Serialize Pydantic v2 models to bytes with orjson through a default fallback and option flags, then validate them back offline with TypeAdapter.",
+        "stack": [
+          "orjson",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 48.22,
+        "pinned": {
+          "orjson": "3.13.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:10.454Z"
+        }
+      },
+      {
+        "id": "hypothesis-polyfactory-models",
+        "title": "Generate Hypothesis strategies from polyfactory pydantic models",
+        "summary": "Bridge a polyfactory ModelFactory into Hypothesis: regex strings, HttpUrl and other pydantic-core types come from the factory while the fields under test stay drawable and shrinkable.",
+        "stack": [
+          "hypothesis",
+          "polyfactory",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 45.58,
+        "pinned": {
+          "hypothesis": "6.169.4",
+          "polyfactory": "3.3.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:26.805Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

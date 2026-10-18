@@ -1,0 +1,218 @@
+{
+  "args": {
+    "query": "PyJWT 2 upgrade: jwt.decode now requires algorithms and jwt.encode returns str instead of bytes"
+  },
+  "t": "2026-10-18T04:32:08Z",
+  "wall_s": 1.03,
+  "ok": true,
+  "ms": 174,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "returns-maybe-ioresult",
+        "title": "returns Maybe and IOResult railway composition with map and bind",
+        "summary": "Railway-style composition over returns Maybe and IOResult: map versus bind, short-circuiting Nothing, maybe and bind_optional, impure_safe failures and IO-boxed unwrap, all tested offline.",
+        "stack": [
+          "returns"
+        ],
+        "language": "python",
+        "score": 68.43,
+        "pinned": {
+          "returns": "0.29.0",
+          "typing-extensions": "4.16.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:05.561Z"
+        }
+      },
+      {
+        "id": "fastapi-oauth2-pyjwt-scopes",
+        "title": "FastAPI OAuth2 password flow with PyJWT tokens and scope checks",
+        "summary": "OAuth2 password login issuing PyJWT access tokens, Argon2 hashes via pwdlib, and per-route scope checks with SecurityScopes, tested offline with TestClient.",
+        "stack": [
+          "fastapi",
+          "pyjwt",
+          "pwdlib",
+          "argon2-cffi",
+          "python-multipart"
+        ],
+        "language": "python",
+        "score": 66.35,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pyjwt": "2.15.1",
+          "pwdlib": "0.3.1",
+          "argon2-cffi": "25.1.0",
+          "python-multipart": "0.0.32",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:28.448Z"
+        }
+      },
+      {
+        "id": "pyjwt-cryptography-rs256",
+        "title": "RS256 JWTs with PyJWT and cryptography-generated keys",
+        "summary": "Generate an RSA keypair with cryptography, sign RS256 JWTs with PyJWT, and verify them with a public key while enforcing algorithm, audience, expiry and signature checks, all tested offline.",
+        "stack": [
+          "pyjwt",
+          "cryptography"
+        ],
+        "language": "python",
+        "score": 66.35,
+        "pinned": {
+          "pyjwt": "2.15.1",
+          "cryptography": "50.0.2",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:15.340Z"
+        }
+      },
+      {
+        "id": "fastapi-jwt-auth",
+        "title": "FastAPI + PyJWT bearer auth",
+        "summary": "OAuth2 password flow in FastAPI issuing PyJWT tokens, with a current-user dependency guarding routes.",
+        "stack": [
+          "fastapi",
+          "pyjwt"
+        ],
+        "language": "python",
+        "score": 64.22,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pyjwt": "2.15.1",
+          "httpx": "0.28.1",
+          "python-multipart": "0.0.32",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:28.079Z"
+        }
+      },
+      {
+        "id": "pretty-bytes-format",
+        "title": "pretty-bytes unit formatting",
+        "summary": "Format byte counts with pretty-bytes using signed, bits, binary and minimumFractionDigits options, asserting 0, kB/MB/GB boundaries and negative values offline.",
+        "stack": [
+          "pretty-bytes"
+        ],
+        "language": "typescript",
+        "score": 31.55,
+        "pinned": {
+          "pretty-bytes": "7.2.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T15:21:19.187Z"
+        }
+      },
+      {
+        "id": "networkx-shortest-path-dag",
+        "title": "NetworkX DiGraph shortest paths, topological sort and cycle detection",
+        "summary": "Build a directed dependency graph, topologically order it, detect cycles with find_cycle, and pick shortest routes while keeping weighted Dijkstra vs hop-count BFS straight.",
+        "stack": [
+          "networkx"
+        ],
+        "language": "python",
+        "score": 19.02,
+        "pinned": {
+          "networkx": "3.6.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:23.515Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-alembic-migrations",
+        "title": "SQLAlchemy 2 + Alembic programmatic migrations",
+        "summary": "Alembic migrations driven from Python (upgrade, downgrade, autogenerate check) against SQLite, with SQLAlchemy 2 models.",
+        "stack": [
+          "sqlalchemy",
+          "alembic",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 15.1,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "alembic": "1.20.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:31.301Z"
+        }
+      },
+      {
+        "id": "pako-deflate-gzip",
+        "title": "pako deflate and gzip roundtrips",
+        "summary": "Compress and decompress Uint8Array and string payloads with pako deflate/inflate and gzip/ungzip, checking roundtrip equality and using the level option.",
+        "stack": [
+          "pako"
+        ],
+        "language": "typescript",
+        "score": 13.7,
+        "pinned": {
+          "pako": "3.0.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T02:18:33.679Z"
+        }
+      },
+      {
+        "id": "pyarrow-parquet-roundtrip",
+        "title": "PyArrow Table to Parquet bytes roundtrip with schema and compression",
+        "summary": "Serialize a PyArrow Table to Parquet bytes in memory and read it back, checking schema, nulls, timezone, metadata and compression codec.",
+        "stack": [
+          "pyarrow"
+        ],
+        "language": "python",
+        "score": 13.7,
+        "pinned": {
+          "pyarrow": "26.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:44.979Z"
+        }
+      },
+      {
+        "id": "arktype-schema-validation",
+        "title": "ArkType 2 schemas with morphs, narrows and discriminated unions",
+        "summary": "Validate and transform data with ArkType 2: object schemas, morph pipes, narrow predicates, and discriminated unions returning typed data or readable problems.",
+        "stack": [
+          "arktype"
+        ],
+        "language": "typescript",
+        "score": 12.51,
+        "pinned": {
+          "arktype": "2.2.8",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:56:44.366Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

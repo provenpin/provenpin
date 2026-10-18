@@ -1,0 +1,221 @@
+{
+  "args": {
+    "query": "Textual TUI app with a DataTable and key bindings"
+  },
+  "t": "2026-10-18T04:33:07Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 145,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "cryptography-fernet-multi-key",
+        "title": "cryptography MultiFernet key ring with rotation",
+        "summary": "Wrap cryptography's MultiFernet in a small key ring that encrypts with the newest key, still decrypts tokens from older keys, re-encrypts them with rotate(), and rejects tokens once their key is dropped, all tested offline.",
+        "stack": [
+          "cryptography"
+        ],
+        "language": "python",
+        "score": 22.77,
+        "pinned": {
+          "cryptography": "50.0.2",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:59:48.196Z"
+        }
+      },
+      {
+        "id": "babel-codemod-parse-traverse",
+        "title": "Babel codemod: rename bindings and prune console.log",
+        "summary": "Parse TypeScript with @babel/parser, rename identifier bindings through scope.rename, drop console.log calls with @babel/traverse, and emit code with @babel/generator while handling the ESM/CJS default-export interop offline.",
+        "stack": [
+          "@babel/parser",
+          "@babel/traverse",
+          "@babel/generator",
+          "@babel/types"
+        ],
+        "language": "typescript",
+        "score": 17.67,
+        "pinned": {
+          "@babel/parser": "8.0.7",
+          "@babel/traverse": "8.0.7",
+          "@babel/generator": "8.0.6",
+          "@babel/types": "8.0.6",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T22:58:09.746Z"
+        }
+      },
+      {
+        "id": "nextjs-stripe-webhook",
+        "title": "Next.js App Router + Stripe webhook handler",
+        "summary": "A Next.js route handler that verifies Stripe webhook signatures from the raw body and handles checkout.session.completed.",
+        "stack": [
+          "nextjs",
+          "stripe"
+        ],
+        "language": "typescript",
+        "score": 16.93,
+        "pinned": {
+          "next": "16.4.1",
+          "stripe": "23.0.0",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:35.427Z"
+        }
+      },
+      {
+        "id": "jose-jwks-verify",
+        "title": "Verify JWTs against a JWKS with jose (RS256, key rotation) in Vitest",
+        "summary": "Verify third-party RS256 access tokens (Auth0, Cognito, Clerk style) with jose's JWKS key sets, checking issuer, audience, expiry and key rotation, tested offline with a local JWKS.",
+        "stack": [
+          "jose",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 15.43,
+        "pinned": {
+          "jose": "6.2.12",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:43.595Z"
+        }
+      },
+      {
+        "id": "litestar-dto-sqlalchemy",
+        "title": "Litestar app with advanced-alchemy and DTOs on SQLite",
+        "summary": "A Litestar app wired to SQLAlchemy through the advanced-alchemy plugin, with separate read and write DTOs over aiosqlite, tested offline with litestar.testing TestClient.",
+        "stack": [
+          "litestar",
+          "advanced-alchemy",
+          "aiosqlite"
+        ],
+        "language": "python",
+        "score": 14.44,
+        "pinned": {
+          "litestar": "2.24.0",
+          "advanced-alchemy": "1.11.0",
+          "aiosqlite": "0.22.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:47.241Z"
+        }
+      },
+      {
+        "id": "litestar-guards-di",
+        "title": "Litestar app with DI, role guards and exception handlers",
+        "summary": "A Litestar app with a dependency-injected repository, a role guard on DELETE, and a custom exception handler, tested offline with create_test_client and an in-memory fake.",
+        "stack": [
+          "litestar"
+        ],
+        "language": "python",
+        "score": 14.44,
+        "pinned": {
+          "litestar": "2.24.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:52.740Z"
+        }
+      },
+      {
+        "id": "ruamel-yaml-roundtrip-comments",
+        "title": "Round-trip edit YAML with ruamel.yaml keeping comments and key order",
+        "summary": "Load YAML with ruamel.yaml round-trip mode, mutate scalars, sequences and inserted keys in place, then dump it back with comments, quotes and key order intact.",
+        "stack": [
+          "ruamel.yaml"
+        ],
+        "language": "python",
+        "score": 13.72,
+        "pinned": {
+          "ruamel.yaml": "0.19.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:06.814Z"
+        }
+      },
+      {
+        "id": "bidict-two-way-map",
+        "title": "bidict two-way maps, inverse views and duplicate key errors",
+        "summary": "Use bidict and OrderedBidict as bidirectional maps, resolve key and value collisions with forceput and OnDup, and handle the dedicated duplication errors.",
+        "stack": [
+          "bidict"
+        ],
+        "language": "python",
+        "score": 12.28,
+        "pinned": {
+          "bidict": "0.24.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:26.667Z"
+        }
+      },
+      {
+        "id": "injector-di-modules",
+        "title": "injector Modules, @provider, singleton scope and ClassAssistedBuilder",
+        "summary": "Wire a small app with injector Modules, a @provider method, singleton-scoped services and ClassAssistedBuilder assisted construction, then override bindings with a test module.",
+        "stack": [
+          "injector",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 11.87,
+        "pinned": {
+          "injector": "0.24.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:56:59.698Z"
+        }
+      },
+      {
+        "id": "nextjs-route-handler-zod",
+        "title": "Next.js 16 App Router route handler + Zod validation",
+        "summary": "Validate JSON bodies and search params in a Next.js App Router route handler with Zod, returning typed 400s; tested by calling the handler with NextRequest.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 11.58,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:28.442Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

@@ -1,0 +1,1611 @@
+{
+ "phase": "report_done",
+ "started_utc": "2026-10-18T03:50:19Z",
+ "model": "claude-opus-5-5 (session_context.model and last_served_model from get_session)",
+ "effort": "xhigh (session_context.effort_level from get_session; prompt asked for high)",
+ "product": "Claude Code 2.1.302, cloud session (claude.ai/code remote container, origin desktop_app)",
+ "environment": {
+  "os": "Ubuntu 24.04.5 LTS, Linux 6.18.44 x86_64",
+  "python": "3.13.16",
+  "node": "v22.22.0",
+  "npm": "10.9.4",
+  "uv": "0.11.32"
+ },
+ "seed": 706465614,
+ "done": {
+  "search": [
+   "T010",
+   "T078",
+   "T065",
+   "T053",
+   "T015",
+   "T049",
+   "T008",
+   "T029",
+   "T020",
+   "T061",
+   "T098",
+   "T091",
+   "T081",
+   "T027",
+   "T003",
+   "T058",
+   "T013",
+   "T071",
+   "T060",
+   "T087",
+   "T070",
+   "T075",
+   "T006",
+   "T044",
+   "T028",
+   "T023",
+   "T042",
+   "T005",
+   "T055",
+   "T004",
+   "T043",
+   "T086",
+   "T032",
+   "T024",
+   "T067",
+   "T017",
+   "T093",
+   "T022",
+   "T074",
+   "T089",
+   "T097",
+   "T090",
+   "T052",
+   "T048",
+   "T083",
+   "T077",
+   "T092",
+   "T064",
+   "T073",
+   "T096",
+   "T045",
+   "T059",
+   "T033",
+   "T056",
+   "T039",
+   "T063",
+   "T079",
+   "T057",
+   "T001",
+   "T051",
+   "T094",
+   "T047",
+   "T038",
+   "T099",
+   "T011",
+   "T066",
+   "T095",
+   "T088",
+   "T018",
+   "T019",
+   "T082",
+   "T041",
+   "T007",
+   "T002",
+   "T100",
+   "T025",
+   "T036",
+   "T012",
+   "T062",
+   "T031",
+   "T080",
+   "T009",
+   "T026",
+   "T021",
+   "T014",
+   "T072",
+   "T016",
+   "T085",
+   "T034",
+   "T046",
+   "T035",
+   "T069",
+   "T040",
+   "T084",
+   "T076",
+   "T037",
+   "T054",
+   "T050",
+   "T030",
+   "T068"
+  ],
+  "recipes": [
+   "aiofiles-anyio-temp-io",
+   "aiohttp-pytest-plugin-client",
+   "aiolimiter-httpx-rate-limit",
+   "anthropic-sdk-mocked-tool-use",
+   "anyio-to-thread-bridge",
+   "apollo-server-dataloader-batching",
+   "arktype-schema-validation",
+   "authjs-drizzle-adapter-pglite",
+   "aws-sdk-v3-dynamodb-sqs-vitest",
+   "aws-sdk-v3-s3-client-mock",
+   "axios-mock-adapter-client",
+   "axios-retry-nock",
+   "babel-codemod-parse-traverse",
+   "bcryptjs-jose-sessions",
+   "beautifulsoup4-soupsieve-select",
+   "boltons-funcutils-retry",
+   "boto3-moto-dynamodb-sqs",
+   "boto3-moto-s3-presigned",
+   "bottleneck-rate-limiting",
+   "cache-manager-memory-store",
+   "celery-beat-schedule-crontab",
+   "celery-redis-fakeredis-results",
+   "celery-tasks-eager-testing",
+   "clipanion-cli-parser",
+   "clsx-tailwind-merge-cva",
+   "commander-zod-cli",
+   "construct-binary-struct-parsing",
+   "cryptography-fernet-multi-key",
+   "csv-parse-stringify-streams",
+   "dataclasses-json-camelcase",
+   "diskcache-cachetools-tiered",
+   "django-celery-eager-signals",
+   "django-drf-api",
+   "drf-django-filter-viewset",
+   "drf-simplejwt-auth",
+   "drizzle-pglite-migrations",
+   "drizzle-pglite-postgres",
+   "drizzle-sqlite-crud",
+   "drizzle-zod-insert-schemas",
+   "duckdb-polars-analytics",
+   "effect-schema-vitest",
+   "express-helmet-rate-limit",
+   "express-jwt-auth",
+   "express-openapi-validator-spec",
+   "express-passport-jwt",
+   "express-pino-http-logging",
+   "express-stripe-webhook",
+   "express-validator-supertest",
+   "express-zod-validation",
+   "express5-async-error-handling",
+   "fastapi-argon2-login",
+   "fastapi-async-sqlalchemy-aiosqlite-pytest",
+   "fastapi-cashews-memory-cache",
+   "fastapi-dependency-overrides-httpx",
+   "fastapi-httpx-asyncclient-lifespan",
+   "fastapi-jinja2-htmx-partials",
+   "fastapi-jwt-auth",
+   "fastapi-oauth2-pyjwt-scopes",
+   "fastapi-pydantic-background-tasks",
+   "fastapi-pydantic-v2-models",
+   "fastapi-sqlalchemy-crud",
+   "fastapi-stripe-webhook",
+   "fastapi-websocket-auth",
+   "fastify-json-schema",
+   "fastify-jwt-auth",
+   "fastify-multipart-upload",
+   "fastify-swagger-openapi",
+   "fastify-zod-type-provider",
+   "feedparser-pydantic-models",
+   "flask-jwt-extended-auth",
+   "flask-marshmallow-webargs",
+   "flask-migrate-sqlite",
+   "flask-sqlalchemy-app-factory",
+   "hono-drizzle-sqlite-api",
+   "hono-rpc-typed-client",
+   "hono-zod-validator",
+   "http-errors-express-error-middleware",
+   "httpx-authlib-oauth2-mock",
+   "httpx-pydantic-typed-client",
+   "httpx-tenacity-retry",
+   "ink-testing-library-cli",
+   "io-ts-codec-decode",
+   "jinja2-markupsafe-email-templates",
+   "jinja2-sandboxed-user-templates",
+   "joi-express-validation",
+   "jose-jwks-verify",
+   "jotai-atoms-react-testing-library",
+   "js-yaml-zod-config",
+   "json-schema-to-typescript-codegen",
+   "knex-better-sqlite3-migrations",
+   "koa-router-zod-supertest",
+   "ky-msw-vitest",
+   "kysely-sqlite-queries",
+   "langchain-core-fake-llm-python",
+   "litestar-dto-sqlalchemy",
+   "litestar-guards-di",
+   "lru-cache-ttl",
+   "markdown-it-render-plugin",
+   "marshmallow-dataclass-schema",
+   "marshmallow-sqlalchemy-flask-api",
+   "mcp-sdk-inmemory-tools",
+   "mdx-compile-evaluate",
+   "mime-types-lookup",
+   "msgspec-struct-validation",
+   "nanoid-custom-alphabet",
+   "nestjs-jwt-guard-testing",
+   "nestjs-typeorm-sqlite",
+   "nestjs-zod-validation-pipe",
+   "nextjs-route-handler-zod",
+   "nextjs-server-action-zod",
+   "nextjs-stripe-webhook",
+   "nextjs-supabase-auth-middleware",
+   "node-forge-self-signed-cert",
+   "numpy-scipy-optimize-fit",
+   "openai-python-respx-mock",
+   "openai-sdk-mocked-tool-calls",
+   "openai-streaming-mock",
+   "openai-structured-output-respx",
+   "openapi-fetch-msw",
+   "openapi-typescript-generate-types",
+   "opentelemetry-sdk-inmemory-span",
+   "orjson-pydantic-v2-roundtrip",
+   "p-limit-concurrency",
+   "p-map-concurrency-limit",
+   "p-queue-concurrency",
+   "p-queue-priority",
+   "pandas-openpyxl-excel-report",
+   "pandas-pandera-validation",
+   "pandas-sqlalchemy-to-sql",
+   "pg-mem-kysely-postgres-tests",
+   "pino-redaction-custom-transport",
+   "polars-pandera-validation",
+   "polars-pydantic-row-validation",
+   "polib-po-catalog-roundtrip",
+   "postcss-custom-plugin-autoprefixer",
+   "preact-render-to-string-ssr",
+   "prisma-sqlite-adapter",
+   "prisma-sqlite-transactions",
+   "pydantic-settings-config",
+   "pydantic-settings-nested-sources",
+   "pydantic-settings-yaml-secrets",
+   "pydantic-v2-discriminated-unions-fastapi",
+   "pyjwt-cryptography-rs256",
+   "pytest-asyncio-taskgroup-timeouts",
+   "pytest-mock-spy-autospec",
+   "python-docx-table-report",
+   "python-dotenv-pydantic-settings-env",
+   "python-json-logger-structured",
+   "python-multipart-starlette-forms",
+   "python-slugify-unidecode-titles",
+   "quart-httpx-asgi-client",
+   "rate-limiter-flexible-memory",
+   "react-email-render-html-text",
+   "react-hook-form-zod-resolver",
+   "redis-fakeredis-pipeline",
+   "redux-toolkit-rtk-query-msw",
+   "requests-cache-sqlite-backend",
+   "returns-maybe-ioresult",
+   "rich-typer-progress-cli",
+   "rollup-virtual-module-bundle",
+   "sklearn-columntransformer-pipeline",
+   "sqlalchemy-aiosqlite-session-factory",
+   "sqlalchemy-alembic-autogenerate-check",
+   "sqlalchemy-alembic-migrations",
+   "sqlalchemy-async-aiosqlite",
+   "sqlalchemy-hybrid-events",
+   "sqlalchemy2-pydantic-v2-from-attributes",
+   "sqlmodel-relationships-sqlite",
+   "sqlmodel-sqlalchemy-core-select",
+   "structlog-bound-logger-context",
+   "structlog-fastapi-request-id",
+   "structlog-stdlib-json-renderer",
+   "tanstack-query-core-cache",
+   "tar-pack-extract",
+   "temporal-polyfill-dates",
+   "tenacity-httpx-respx-backoff",
+   "tenacity-retry-stop-wait",
+   "throttle-debounce-fns",
+   "transitions-fsm-callbacks",
+   "trpc-client-server-superjson",
+   "trpc-zod-router",
+   "ts-morph-codegen-ast-edit",
+   "twilio-webhook-signature-express",
+   "typer-cli-testing",
+   "typer-rich-table-cli",
+   "typer-rich-table-export",
+   "undici-mockagent-p-retry",
+   "vercel-ai-sdk-mock-model-tools",
+   "vue-server-renderer-ssr",
+   "web-push-vapid-payload-encryption",
+   "ws-zod-message-protocol",
+   "yup-form-schemas",
+   "zod-to-openapi-document-generation",
+   "zod-v4-json-schema-export"
+  ],
+  "arms": [
+   "T003/with_recipe/3",
+   "T003/without_recipe/3",
+   "T098/without_recipe/3",
+   "T001/without_recipe/3",
+   "T001/with_recipe/3",
+   "T073/with_recipe/3",
+   "T073/without_recipe/3",
+   "T098/with_recipe/3",
+   "T033/with_recipe/2",
+   "T033/without_recipe/2",
+   "T098/without_recipe/1",
+   "T065/with_recipe/1",
+   "T065/without_recipe/1",
+   "T098/with_recipe/1",
+   "T073/with_recipe/1",
+   "T073/without_recipe/1",
+   "T091/with_recipe/2",
+   "T091/without_recipe/2",
+   "T001/with_recipe/2",
+   "T001/without_recipe/2",
+   "T088/with_recipe/2",
+   "T088/without_recipe/2",
+   "T033/with_recipe/1",
+   "T033/without_recipe/1",
+   "T052/with_recipe/2",
+   "T052/without_recipe/2",
+   "T090/with_recipe/3",
+   "T090/without_recipe/3",
+   "T055/with_recipe/1",
+   "T055/without_recipe/1",
+   "T072/with_recipe/1",
+   "T072/without_recipe/1",
+   "T070/with_recipe/2",
+   "T070/without_recipe/2",
+   "T023/with_recipe/3",
+   "T023/without_recipe/3",
+   "T091/with_recipe/1",
+   "T091/without_recipe/1",
+   "T048/with_recipe/1",
+   "T048/without_recipe/1",
+   "T060/with_recipe/3",
+   "T060/without_recipe/3",
+   "T041/with_recipe/1",
+   "T041/without_recipe/1",
+   "T009/with_recipe/2",
+   "T009/without_recipe/2",
+   "T009/with_recipe/3",
+   "T009/without_recipe/3",
+   "T065/with_recipe/3",
+   "T065/without_recipe/3",
+   "T090/with_recipe/1",
+   "T090/without_recipe/1",
+   "T052/with_recipe/3",
+   "T052/without_recipe/3",
+   "T090/without_recipe/2",
+   "T090/with_recipe/2",
+   "T048/with_recipe/2",
+   "T048/without_recipe/2",
+   "T044/with_recipe/1",
+   "T044/without_recipe/1",
+   "T081/with_recipe/3",
+   "T081/without_recipe/3",
+   "T011/with_recipe/3",
+   "T011/without_recipe/3",
+   "T030/with_recipe/2",
+   "T030/without_recipe/2",
+   "T070/with_recipe/3",
+   "T070/without_recipe/3",
+   "T008/with_recipe/2",
+   "T008/without_recipe/2",
+   "T079/with_recipe/2",
+   "T079/without_recipe/2",
+   "T051/without_recipe/1",
+   "T051/with_recipe/1",
+   "T055/with_recipe/3",
+   "T055/without_recipe/3",
+   "T043/with_recipe/1",
+   "T043/without_recipe/1",
+   "T043/with_recipe/3",
+   "T043/without_recipe/3",
+   "T048/with_recipe/3",
+   "T048/without_recipe/3",
+   "T043/with_recipe/2",
+   "T043/without_recipe/2",
+   "T033/with_recipe/3",
+   "T033/without_recipe/3",
+   "T021/with_recipe/1",
+   "T021/without_recipe/1",
+   "T072/without_recipe/2",
+   "T072/with_recipe/2",
+   "T060/with_recipe/1",
+   "T060/without_recipe/1",
+   "T026/with_recipe/3",
+   "T026/without_recipe/3",
+   "T070/without_recipe/1",
+   "T070/with_recipe/1",
+   "T023/without_recipe/1",
+   "T023/with_recipe/1",
+   "T023/with_recipe/2",
+   "T023/without_recipe/2",
+   "T021/with_recipe/2",
+   "T021/without_recipe/2",
+   "T052/without_recipe/1",
+   "T052/with_recipe/1",
+   "T060/with_recipe/2",
+   "T060/without_recipe/2",
+   "T073/without_recipe/2",
+   "T073/with_recipe/2",
+   "T081/with_recipe/2",
+   "T081/without_recipe/2",
+   "T030/without_recipe/3",
+   "T030/with_recipe/3",
+   "T067/with_recipe/2",
+   "T067/without_recipe/2",
+   "T088/with_recipe/3",
+   "T088/without_recipe/3",
+   "T041/with_recipe/2",
+   "T041/without_recipe/2",
+   "T003/without_recipe/2",
+   "T003/with_recipe/2",
+   "T051/with_recipe/3",
+   "T051/without_recipe/3",
+   "T079/with_recipe/3",
+   "T079/without_recipe/3",
+   "T044/with_recipe/3",
+   "T044/without_recipe/3",
+   "T008/without_recipe/3",
+   "T008/with_recipe/3",
+   "T067/with_recipe/3",
+   "T067/without_recipe/3",
+   "T044/without_recipe/2",
+   "T044/with_recipe/2",
+   "T088/with_recipe/1",
+   "T088/without_recipe/1",
+   "T055/with_recipe/2",
+   "T055/without_recipe/2",
+   "T021/without_recipe/3",
+   "T021/with_recipe/3",
+   "T041/with_recipe/3",
+   "T041/without_recipe/3",
+   "T026/with_recipe/2",
+   "T026/without_recipe/2",
+   "T026/with_recipe/1",
+   "T026/without_recipe/1",
+   "T011/with_recipe/2",
+   "T011/without_recipe/2",
+   "T008/with_recipe/1",
+   "T008/without_recipe/1",
+   "T009/with_recipe/1",
+   "T009/without_recipe/1",
+   "T072/without_recipe/3",
+   "T072/with_recipe/3",
+   "T098/without_recipe/2",
+   "T098/with_recipe/2",
+   "T091/without_recipe/3",
+   "T091/with_recipe/3",
+   "T011/without_recipe/1",
+   "T011/with_recipe/1",
+   "T001/without_recipe/1",
+   "T001/with_recipe/1",
+   "T003/with_recipe/1",
+   "T003/without_recipe/1",
+   "T051/with_recipe/2",
+   "T051/without_recipe/2",
+   "T079/with_recipe/1",
+   "T079/without_recipe/1",
+   "T030/without_recipe/1",
+   "T030/with_recipe/1",
+   "T065/with_recipe/2",
+   "T065/without_recipe/2",
+   "T067/without_recipe/1",
+   "T067/with_recipe/1",
+   "T081/with_recipe/1",
+   "T081/without_recipe/1"
+  ],
+  "versions": [],
+  "latency": []
+ },
+ "events": [
+  {
+   "t": "2026-10-18T03:50:30Z",
+   "what": "pp.py health -> URLError Tunnel connection failed: 403 Forbidden. Egress proxy policy denies mcp.provenpin.com:443 and provenpin.com:443. Request never reached ProvenPin. Reported to [the owner]."
+  },
+  {
+   "t": "2026-10-18T03:51:00Z",
+   "what": "github.com/provenpin/provenpin GET returned HTTP 403 (cause not yet determined). pypi.org and registry.npmjs.org reachable."
+  },
+  {
+   "t": "2026-10-18T03:56:30Z",
+   "what": "[the owner] added mcp.provenpin.com, provenpin.com, github.com to allowed domains; policy applied live. health OK, recipes=523, index_generated_at=2026-10-18T00:59:12.564Z"
+  },
+  {
+   "t": "2026-10-18T03:56:45Z",
+   "what": "receipts.json downloaded (574142 bytes) via curl with benchmark User-Agent; not read yet"
+  },
+  {
+   "t": "2026-10-18T04:29:20Z",
+   "what": "prompt.txt regenerated once with 10 clarifications from test builders (T001,T021,T026,T043,T044,T051,T065,T079,T091,T098) before any search; acceptance tests frozen"
+  },
+  {
+   "t": "2026-10-18T04:29:32Z",
+   "what": "index changed before Step 2: recipes 523->555, index_generated_at 00:59:12.564Z -> 03:59:18.754Z. Old receipts.json kept as receipts_index-2026-10-18T00-59-12.json (not read); new receipts.json downloaded (not read yet)."
+  },
+  {
+   "t": "2026-10-18T04:39:10Z",
+   "what": "search phase done; index read after search; 193 distinct top-3 recipes selected for Step 3"
+  },
+  {
+   "t": "2026-10-18T05:06:28Z",
+   "what": "pp.py: added inter-process flock and PP_TAG log field (original saved as logs/pp.original.py); recipe runs: proxy env removed after axios-retry-nock leaked to proxy"
+  },
+  {
+   "t": "2026-10-18T05:34:11Z",
+   "what": "pp.py: logging-only addition, a 429/5xx is written to logs/retries.jsonl before the 60 s retry (previously the retry hid it; calls.jsonl so far has 603 calls, all HTTP 200, max 628 ms; the search phase checked wall time > 55 s and found none)"
+  },
+  {
+   "t": "2026-10-18T05:58:58Z",
+   "what": "Step 4 done: 174/174 arm runs finished (29 tasks x 3 runs x 2 arms); every run passed the acceptance test on attempt 1 in both arms, so no retry round was needed. Arm workdirs contain no __pycache__/node_modules/.venv (no sign agents ran code). Agents launched up to ~12 at a time; pp.py flock kept ProvenPin requests serialized with >=1 s gaps."
+  },
+  {
+   "t": "2026-10-18T06:01:21Z",
+   "what": "Step 5 done: 28 version checks (V01-V28) plus 3 no-versions baselines; 22/28 match pre-registered expectations; csv/version_checks.csv written by judge_versions.py. V28 and baselines were added to plan.json before any versions call."
+  },
+  {
+   "t": "2026-10-18T06:02:14Z",
+   "what": "Step 6 done: 30 searches + 10 gets, sequential via pp.py (1 s gap), all HTTP 200; csv/latency.csv also holds every call in logs/calls.jsonl"
+  },
+  {
+   "t": "2026-10-18T06:03:00Z",
+   "what": "Step 7 done: docs page read once (benchmark UA), rated 3/5 in judgments/docs_review.json; the footer links to /benchmarks/... and /experiment/ were NOT opened"
+  },
+  {
+   "t": "2026-10-18T06:09:11Z",
+   "what": "Step 8 done: score.py -> results.json and score_out.json; make_report_parts.py + make_report.py -> report.md (JSON pasted at the end, verified identical to results.json); zip excludes node_modules, venvs, __pycache__ and the client's transient .session/.lock/.last_call files"
+  }
+ ],
+ "updated_utc": "2026-10-18T06:09:11Z",
+ "health_start": {
+  "name": "ProvenPin MCP",
+  "ok": true,
+  "recipes": 523,
+  "index_generated_at": "2026-10-18T00:59:12.564Z",
+  "mcp_endpoint": "/mcp"
+ },
+ "search_order": [
+  "T010",
+  "T078",
+  "T065",
+  "T053",
+  "T015",
+  "T049",
+  "T008",
+  "T029",
+  "T020",
+  "T061",
+  "T098",
+  "T091",
+  "T081",
+  "T027",
+  "T003",
+  "T058",
+  "T013",
+  "T071",
+  "T060",
+  "T087",
+  "T070",
+  "T075",
+  "T006",
+  "T044",
+  "T028",
+  "T023",
+  "T042",
+  "T005",
+  "T055",
+  "T004",
+  "T043",
+  "T086",
+  "T032",
+  "T024",
+  "T067",
+  "T017",
+  "T093",
+  "T022",
+  "T074",
+  "T089",
+  "T097",
+  "T090",
+  "T052",
+  "T048",
+  "T083",
+  "T077",
+  "T092",
+  "T064",
+  "T073",
+  "T096",
+  "T045",
+  "T059",
+  "T033",
+  "T056",
+  "T039",
+  "T063",
+  "T079",
+  "T057",
+  "T001",
+  "T051",
+  "T094",
+  "T047",
+  "T038",
+  "T099",
+  "T011",
+  "T066",
+  "T095",
+  "T088",
+  "T018",
+  "T019",
+  "T082",
+  "T041",
+  "T007",
+  "T002",
+  "T100",
+  "T025",
+  "T036",
+  "T012",
+  "T062",
+  "T031",
+  "T080",
+  "T009",
+  "T026",
+  "T021",
+  "T014",
+  "T072",
+  "T016",
+  "T085",
+  "T034",
+  "T046",
+  "T035",
+  "T069",
+  "T040",
+  "T084",
+  "T076",
+  "T037",
+  "T054",
+  "T050",
+  "T030",
+  "T068"
+ ],
+ "shuffle_method": "random.Random(seed).shuffle(task_ids in file order) for search; arm run order uses random.Random(seed + 1)",
+ "substep": "194 recipes fetched, integrity-checked (194/194 pass), read by 4 reviewer subagents, run in isolation (185/194 first attempt; 194/194 after one setup retry). run_url web check pending [the owner] decision on WebFetch.",
+ "comparison_tasks": [
+  "T001",
+  "T003",
+  "T008",
+  "T009",
+  "T011",
+  "T041",
+  "T043",
+  "T044",
+  "T048",
+  "T065",
+  "T067",
+  "T070",
+  "T081",
+  "T088",
+  "T090",
+  "T021",
+  "T023",
+  "T026",
+  "T030",
+  "T033",
+  "T051",
+  "T052",
+  "T055",
+  "T060",
+  "T072",
+  "T073",
+  "T079",
+  "T091",
+  "T098"
+ ],
+ "subagent_probe": {
+  "model_reported": "claude-opus-5-5",
+  "reasoning_effort_reported": "40 (in-context parameter)",
+  "agent_effort_param": "xhigh",
+  "orchestrator_session_effort_level": "xhigh (get_session)",
+  "orchestrator_in_context_reasoning_effort": "40"
+ },
+ "health_checks": [
+  {
+   "t": "2026-10-18T04:29:32Z",
+   "phase_start": "search",
+   "ok": true,
+   "recipes": 555,
+   "index_generated_at": "2026-10-18T03:59:18.754Z"
+  },
+  {
+   "t": "2026-10-18T05:59:03Z",
+   "phase_start": "versions",
+   "ok": true,
+   "recipes": 555,
+   "index_generated_at": "2026-10-18T03:59:18.754Z"
+  },
+  {
+   "t": "2026-10-18T06:01:26Z",
+   "phase_start": "latency",
+   "ok": true,
+   "recipes": 555,
+   "index_generated_at": "2026-10-18T03:59:18.754Z"
+  },
+  {
+   "t": "2026-10-18T06:03:00Z",
+   "phase_start": "docs",
+   "ok": true,
+   "recipes": 555,
+   "index_generated_at": "2026-10-18T03:59:18.754Z"
+  },
+  {
+   "t": "2026-10-18T06:05:16Z",
+   "phase_start": "report",
+   "ok": true,
+   "recipes": 555,
+   "index_generated_at": "2026-10-18T03:59:18.754Z"
+  }
+ ],
+ "arm_order": [
+  {
+   "task": "T098",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T098",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T003",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T003",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T001",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T001",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T073",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T073",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T033",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T033",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T098",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T098",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T091",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T091",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T065",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T065",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T001",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T001",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T073",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T073",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T072",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T072",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T033",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T033",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T088",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T088",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T052",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T052",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T090",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T090",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T091",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T091",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T055",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T055",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T070",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T070",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T048",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T048",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T023",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T023",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T041",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T041",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T060",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T060",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T065",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T065",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T009",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T009",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T090",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T090",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T009",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T009",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T052",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T052",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T090",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T090",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T048",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T048",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T011",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T011",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T081",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T081",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T044",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T044",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T030",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T030",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T051",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T051",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T070",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T070",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T008",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T008",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T079",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T079",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T072",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T072",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T043",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T043",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T043",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T043",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T055",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T055",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T043",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T043",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T048",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T048",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T021",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T021",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T033",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T033",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T060",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T060",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T070",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T070",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T026",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T026",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T023",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T023",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T021",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T021",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T023",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T023",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T051",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T051",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T052",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T052",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T060",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T060",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T081",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T081",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T073",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T073",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T030",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T030",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T067",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T067",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T088",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T088",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T003",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T003",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T041",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T041",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T067",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T067",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T008",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T008",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T079",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T079",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T072",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T072",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T044",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T044",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T044",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T044",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T091",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T091",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T088",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T088",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T021",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T021",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T055",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T055",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T041",
+   "arm": "without_recipe",
+   "n": 3
+  },
+  {
+   "task": "T041",
+   "arm": "with_recipe",
+   "n": 3
+  },
+  {
+   "task": "T026",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T026",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T026",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T026",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T008",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T008",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T098",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T098",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T051",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T051",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T011",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T011",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T009",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T009",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T001",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T001",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T011",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T011",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T003",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T003",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T079",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T079",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T065",
+   "arm": "without_recipe",
+   "n": 2
+  },
+  {
+   "task": "T065",
+   "arm": "with_recipe",
+   "n": 2
+  },
+  {
+   "task": "T067",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T067",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T030",
+   "arm": "without_recipe",
+   "n": 1
+  },
+  {
+   "task": "T030",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T081",
+   "arm": "with_recipe",
+   "n": 1
+  },
+  {
+   "task": "T081",
+   "arm": "without_recipe",
+   "n": 1
+  }
+ ],
+ "arm_order_method": "pairs (task, run) shuffled with random.Random(seed+1); leading arm alternates by pair index; each pair's two runs execute concurrently"
+}

@@ -1,0 +1,233 @@
+{
+  "args": {
+    "query": "fetch many URLs concurrently with httpx AsyncClient limited to 5 requests per second using aiolimiter"
+  },
+  "t": "2026-10-18T04:33:01Z",
+  "wall_s": 0.98,
+  "ok": true,
+  "ms": 128,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "aiolimiter-httpx-rate-limit",
+        "title": "aiolimiter AsyncLimiter guarding httpx AsyncClient offline",
+        "summary": "Throttle an httpx AsyncClient with aiolimiter's leaky-bucket AsyncLimiter and test the burst, serialized concurrency, error and event-loop reuse gotchas fully offline with httpx.MockTransport.",
+        "stack": [
+          "aiolimiter",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 127.9,
+        "pinned": {
+          "aiolimiter": "1.3.0",
+          "httpx": "0.28.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T00:01:20.789Z"
+        }
+      },
+      {
+        "id": "requests-cache-sqlite-backend",
+        "title": "requests-cache CachedSession with sqlite backend and expiry",
+        "summary": "A requests session backed by a persistent sqlite cache with TTL expiry and 200-only caching, tested offline with responses mocks.",
+        "stack": [
+          "requests",
+          "requests-cache",
+          "responses"
+        ],
+        "language": "python",
+        "score": 66.89,
+        "pinned": {
+          "requests": "2.34.2",
+          "requests-cache": "1.3.3",
+          "responses": "0.26.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:49.436Z"
+        }
+      },
+      {
+        "id": "fastapi-httpx-asyncclient-lifespan",
+        "title": "FastAPI lifespan state tested with httpx ASGITransport and asgi-lifespan",
+        "summary": "A FastAPI app that opens a SQLite connection in its lifespan, then test it offline through httpx ASGITransport, with asgi-lifespan running startup and shutdown.",
+        "stack": [
+          "fastapi",
+          "httpx",
+          "asgi-lifespan"
+        ],
+        "language": "python",
+        "score": 50.93,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "asgi-lifespan": "2.1.0",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:17.491Z"
+        }
+      },
+      {
+        "id": "fastapi-slowapi-rate-limit",
+        "title": "FastAPI endpoints rate limited with slowapi, tested with TestClient",
+        "summary": "Add per-route and per-API-key rate limits to FastAPI with slowapi, then test 429 behavior offline with TestClient and the in-memory store.",
+        "stack": [
+          "fastapi",
+          "slowapi",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 46.35,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "slowapi": "0.1.10",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:40.456Z"
+        }
+      },
+      {
+        "id": "tenacity-httpx-respx-backoff",
+        "title": "httpx + tenacity async retries honoring Retry-After, tested with respx",
+        "summary": "Wrap async httpx calls in tenacity AsyncRetrying that retries 429 and 5xx, honors Retry-After, and patches the wait to zero in tests with respx mocks.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 42.3,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:06.586Z"
+        }
+      },
+      {
+        "id": "httpx-pydantic-typed-client",
+        "title": "Typed httpx client parsing into pydantic v2 models, tested with respx",
+        "summary": "An async httpx client that retries 5xx and transport errors, validates responses into pydantic v2 models, and is tested offline with respx route mocks.",
+        "stack": [
+          "httpx",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 40.47,
+        "pinned": {
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:53.181Z"
+        }
+      },
+      {
+        "id": "httpx-respx-pagination-oauth",
+        "title": "httpx OAuth2 client-credentials client with cached tokens and Link pagination",
+        "summary": "A sync httpx client that fetches and caches an OAuth2 client-credentials token, refreshes it on 401, and follows Link-header pagination, tested offline with respx routes.",
+        "stack": [
+          "httpx",
+          "respx"
+        ],
+        "language": "python",
+        "score": 40.47,
+        "pinned": {
+          "httpx": "0.28.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:00.076Z"
+        }
+      },
+      {
+        "id": "httpx-tenacity-retry",
+        "title": "httpx client + tenacity retries with backoff, tested with respx",
+        "summary": "Retry transient HTTP failures (5xx, 429, timeouts) with tenacity around an httpx client, honoring a max attempt count, tested offline with respx.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 40.47,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:07.041Z"
+        }
+      },
+      {
+        "id": "quart-httpx-asgi-client",
+        "title": "Quart async routes tested offline with httpx ASGITransport",
+        "summary": "A Quart app with async JSON bodies and an injected httpx client, exercised fully in-process via httpx.ASGITransport and httpx.MockTransport.",
+        "stack": [
+          "quart",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 40.47,
+        "pinned": {
+          "quart": "0.23.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:16.510Z"
+        }
+      },
+      {
+        "id": "starlette-httpx-asgi-client",
+        "title": "Starlette routes and middleware tested offline with httpx ASGITransport",
+        "summary": "A Starlette app with BaseHTTPMiddleware and lifespan state, exercised in-process via httpx ASGITransport without a real server.",
+        "stack": [
+          "starlette",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 40.47,
+        "pinned": {
+          "starlette": "1.8.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:05:41.889Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

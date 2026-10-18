@@ -1,0 +1,246 @@
+{
+  "args": {
+    "query": "implement an LRU cache from scratch in Python without functools or any library, O(1) get and put"
+  },
+  "t": "2026-10-18T04:32:59Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 139,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "lru-cache-ttl",
+        "title": "lru-cache TTL eviction and size limits",
+        "summary": "Cache computed values with lru-cache, covering max entries, TTL expiry via fake timers, and getOrSet style populate helpers offline.",
+        "stack": [
+          "lru-cache"
+        ],
+        "language": "typescript",
+        "score": 100.98,
+        "pinned": {
+          "lru-cache": "11.5.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:58.827Z"
+        }
+      },
+      {
+        "id": "cache-manager-memory-store",
+        "title": "cache-manager memory store wrap and mset",
+        "summary": "Create a cache-manager cache backed by Keyv Map storage, wrap loaders, and multi-set values offline.",
+        "stack": [
+          "cache-manager",
+          "keyv"
+        ],
+        "language": "typescript",
+        "score": 29.81,
+        "pinned": {
+          "cache-manager": "7.2.9",
+          "keyv": "6.1.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:56:44.964Z"
+        }
+      },
+      {
+        "id": "tanstack-query-core-cache",
+        "title": "TanStack Query Core fetch and cache",
+        "summary": "Drive async data fetching with @tanstack/query-core QueryClient, covering staleTime, cache hits and invalidateQueries without React offline.",
+        "stack": [
+          "@tanstack/query-core"
+        ],
+        "language": "typescript",
+        "score": 25.72,
+        "pinned": {
+          "@tanstack/query-core": "5.104.3",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:11.794Z"
+        }
+      },
+      {
+        "id": "jotai-atoms-react-testing-library",
+        "title": "Jotai atoms with React 19, tested with Testing Library and isolated stores",
+        "summary": "Jotai 3 primitive, derived, write-only and async atoms driving a React 19 todo UI with Suspense, tested in Vitest on happy-dom with @testing-library/react, user-event and a fresh createStore per test, plus store-only tests without React.",
+        "stack": [
+          "jotai",
+          "react",
+          "@testing-library/react",
+          "happy-dom",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 25.66,
+        "pinned": {
+          "jotai": "3.0.1",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "@testing-library/react": "16.3.3",
+          "@testing-library/dom": "10.4.2",
+          "@testing-library/user-event": "14.6.8",
+          "happy-dom": "21.0.1",
+          "vitest": "5.0.4",
+          "@types/react": "19.3.0",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:47.711Z"
+        }
+      },
+      {
+        "id": "preact-signals-testing-library",
+        "title": "Preact components with Signals state, tested with Testing Library on jsdom",
+        "summary": "A Preact 11 cart using @preact/signals signal and computed state plus a hooks-based async form, tested in Vitest on jsdom with @testing-library/preact and user-event, including re-render on signal change without new props.",
+        "stack": [
+          "preact",
+          "@preact/signals",
+          "@testing-library/preact",
+          "@testing-library/user-event",
+          "jsdom",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 24.24,
+        "pinned": {
+          "preact": "11.0.1",
+          "@preact/signals": "2.11.3",
+          "@testing-library/preact": "3.2.4",
+          "@testing-library/user-event": "14.6.8",
+          "jsdom": "30.1.3",
+          "vitest": "5.0.4",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:17.584Z"
+        }
+      },
+      {
+        "id": "diskcache-cachetools-tiered",
+        "title": "Tiered cache: diskcache FanoutCache plus cachetools LRU",
+        "summary": "A MutableMapping two-tier cache that promotes values from a sharded diskcache FanoutCache into a cachetools LRUCache, covering persistence, expiration and promotion gotchas with offline tests.",
+        "stack": [
+          "diskcache",
+          "cachetools"
+        ],
+        "language": "python",
+        "score": 23.81,
+        "pinned": {
+          "diskcache": "5.6.3",
+          "cachetools": "7.2.2",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:57.616Z"
+        }
+      },
+      {
+        "id": "ioredis-cache-aside-mock",
+        "title": "ioredis cache-aside with TTL, tested with ioredis-mock (Vitest)",
+        "summary": "Cache-aside helper on ioredis with JSON values, TTLs, stampede-safe single flight and invalidation, tested offline with ioredis-mock in Vitest. Install uses --legacy-peer-deps because ioredis-mock 8 still peers on ioredis ^5, but the mock passes its tests against ioredis 6. vite is pinned so Vitest still resolves under legacy-peer-deps.",
+        "stack": [
+          "ioredis",
+          "ioredis-mock",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 22.9,
+        "pinned": {
+          "ioredis": "6.0.0",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.5",
+          "vite": "8.3.4",
+          "ioredis-mock": "8.13.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:33.837Z"
+        }
+      },
+      {
+        "id": "solid-signals-testing-library",
+        "title": "SolidJS signals, memos and resources, tested with Solid Testing Library",
+        "summary": "SolidJS components using createSignal, createMemo, For, Show and createResource with Suspense, compiled by vite-plugin-solid and tested in Vitest on jsdom with @solidjs/testing-library and user-event.",
+        "stack": [
+          "solid-js",
+          "@solidjs/testing-library",
+          "vite-plugin-solid",
+          "jsdom",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 22.83,
+        "pinned": {
+          "solid-js": "1.9.17",
+          "@solidjs/testing-library": "0.8.10",
+          "@testing-library/user-event": "14.6.8",
+          "vite-plugin-solid": "2.11.14",
+          "jsdom": "30.1.3",
+          "vitest": "5.0.4",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:29.997Z"
+        }
+      },
+      {
+        "id": "ink-testing-library-cli",
+        "title": "Ink interactive CLI components tested with ink-testing-library",
+        "summary": "Build an interactive Ink 8 (React) terminal checklist with useInput and a timer-driven countdown, and test frames, arrow-key and space input, submit callbacks and effects with ink-testing-library.",
+        "stack": [
+          "ink",
+          "ink-testing-library",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 21.9,
+        "pinned": {
+          "ink": "8.0.0",
+          "react": "19.3.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "ink-testing-library": "4.0.0",
+          "@types/react": "19.3.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:09:00.098Z"
+        }
+      },
+      {
+        "id": "valibot-transforms-pipeline",
+        "title": "Valibot 1 pipes, transforms and branded outputs",
+        "summary": "Build a Valibot 1 schema pipeline with trim, email, pipe transforms, brands and safeParse that returns typed output or issue paths, without a web framework.",
+        "stack": [
+          "valibot"
+        ],
+        "language": "typescript",
+        "score": 21.88,
+        "pinned": {
+          "valibot": "1.5.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:26.637Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

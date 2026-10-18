@@ -1,0 +1,3086 @@
+{
+ "scores": {
+  "tasks_total": 100,
+  "coverage_rate": {
+   "value": 0.45,
+   "n": 100
+  },
+  "search_top1_rate": {
+   "value": 0.8667,
+   "n": 45
+  },
+  "search_top3_rate": {
+   "value": 0.9778,
+   "n": 45
+  },
+  "honest_no_match_rate": {
+   "value": 0.0,
+   "n": 55
+  },
+  "misleading_top1_on_uncovered_rate": {
+   "value": 0.6182,
+   "n": 55
+  },
+  "recipe_run_pass_rate": {
+   "value": 1.0,
+   "n": 194,
+   "level": "executed"
+  },
+  "integrity_match_rate": {
+   "value": 1.0,
+   "n": 194,
+   "level": "executed"
+  },
+  "version_check_accuracy": {
+   "value": 0.7857,
+   "n": 28
+  },
+  "with_vs_without": {
+   "tasks": 29,
+   "runs_per_arm_per_task": 3,
+   "same_model_and_effort_both_arms": true,
+   "with_recipe": {
+    "first_try_pass_rate": 1.0,
+    "final_pass_rate": 1.0,
+    "mean_attempts": 1,
+    "median_seconds": 76.1,
+    "mean_output_tokens": null,
+    "mean_output_chars": 3206.1,
+    "mean_total_tokens": 74302.9
+   },
+   "without_recipe": {
+    "first_try_pass_rate": 1.0,
+    "final_pass_rate": 1.0,
+    "mean_attempts": 1,
+    "median_seconds": 65.1,
+    "mean_output_tokens": null,
+    "mean_output_chars": 3617.5,
+    "mean_total_tokens": 68993.6
+   },
+   "contamination_risk": "low",
+   "notes": "Fresh general-purpose subagent for every one of the 174 runs (29 tasks x 3 runs x 2 arms), same model and effort as me, each with an empty working folder and a TASK.md. Both arms got the identical task text; with_recipe also got a per-run pp.py shim (search/get only) and the prompt's instruction to search, get and use the best match if it fits, plus 'name the recipe id you used'. Neither arm could install packages, run code or use the web, so the arms differ only in ProvenPin access. This is stricter than a normal agent session and is my design choice. Grading: I copied the produced files into a clean, pre-built environment with the task's pinned versions and ran my acceptance tests, written and frozen before any search. A failure would have gone back to the same subagent with the test output, up to 3 attempts, but every run passed on attempt 1, so the retry path was never used. Pair order was shuffled with Random(seed+1) and the leading arm alternated; the two runs of a pair started together, with up to about 12 agents in flight. Tokens: total_tokens is the Agent tool's reported subagent_tokens (all tokens the subagent processed, including cache reads), with the same meaning in both arms; output-only tokens were not available. The seconds of with_recipe runs include any time spent waiting for the shared pp.py lock when several agents searched at once; I did not measure that wait separately. The acceptance tests did not separate the arms: all 174 runs passed, so the differences are only in time, tokens and code size."
+  },
+  "latency_ms": {
+   "n": 40,
+   "p50": 153.0,
+   "p95": 211.0,
+   "max": 245,
+   "errors": 0,
+   "rate_limited": 0
+  },
+  "docs_clarity_1to5": 3,
+  "safety_flags": 20,
+  "overall_1to10": 6
+ },
+ "extra": {
+  "search_breakdown": {
+   "all": {
+    "tasks": 100,
+    "covered": 45,
+    "coverage_rate": {
+     "value": 0.45,
+     "n": 100
+    },
+    "top1_rate": {
+     "value": 0.8667,
+     "n": 45
+    },
+    "top3_rate": {
+     "value": 0.9778,
+     "n": 45
+    },
+    "language_filter_top1_rate": {
+     "value": 0.8667,
+     "n": 45
+    },
+    "language_filter_top3_rate": {
+     "value": 0.9778,
+     "n": 45
+    },
+    "stack_filter_top1_rate": {
+     "value": 0.7778,
+     "n": 45
+    },
+    "honest_no_match_rate": {
+     "value": 0.0,
+     "n": 55
+    },
+    "misleading_top1_on_uncovered_rate": {
+     "value": 0.6182,
+     "n": 55
+    },
+    "unrelated_top1_on_uncovered_rate": {
+     "value": 0.3818,
+     "n": 55
+    },
+    "search_misses": [
+     "T051"
+    ]
+   },
+   "by_language": {
+    "python": {
+     "tasks": 50,
+     "covered": 28,
+     "coverage_rate": {
+      "value": 0.56,
+      "n": 50
+     },
+     "top1_rate": {
+      "value": 0.8214,
+      "n": 28
+     },
+     "top3_rate": {
+      "value": 1.0,
+      "n": 28
+     },
+     "language_filter_top1_rate": {
+      "value": 0.8214,
+      "n": 28
+     },
+     "language_filter_top3_rate": {
+      "value": 1.0,
+      "n": 28
+     },
+     "stack_filter_top1_rate": {
+      "value": 0.7857,
+      "n": 28
+     },
+     "honest_no_match_rate": {
+      "value": 0.0,
+      "n": 22
+     },
+     "misleading_top1_on_uncovered_rate": {
+      "value": 0.5455,
+      "n": 22
+     },
+     "unrelated_top1_on_uncovered_rate": {
+      "value": 0.4545,
+      "n": 22
+     },
+     "search_misses": []
+    },
+    "typescript": {
+     "tasks": 50,
+     "covered": 17,
+     "coverage_rate": {
+      "value": 0.34,
+      "n": 50
+     },
+     "top1_rate": {
+      "value": 0.9412,
+      "n": 17
+     },
+     "top3_rate": {
+      "value": 0.9412,
+      "n": 17
+     },
+     "language_filter_top1_rate": {
+      "value": 0.9412,
+      "n": 17
+     },
+     "language_filter_top3_rate": {
+      "value": 0.9412,
+      "n": 17
+     },
+     "stack_filter_top1_rate": {
+      "value": 0.7647,
+      "n": 17
+     },
+     "honest_no_match_rate": {
+      "value": 0.0,
+      "n": 33
+     },
+     "misleading_top1_on_uncovered_rate": {
+      "value": 0.6667,
+      "n": 33
+     },
+     "unrelated_top1_on_uncovered_rate": {
+      "value": 0.3333,
+      "n": 33
+     },
+     "search_misses": [
+      "T051"
+     ]
+    }
+   },
+   "by_category": {
+    "integration": {
+     "tasks": 40,
+     "covered": 28,
+     "coverage_rate": {
+      "value": 0.7,
+      "n": 40
+     },
+     "top1_rate": {
+      "value": 0.9643,
+      "n": 28
+     },
+     "top3_rate": {
+      "value": 1.0,
+      "n": 28
+     },
+     "language_filter_top1_rate": {
+      "value": 0.9643,
+      "n": 28
+     },
+     "language_filter_top3_rate": {
+      "value": 1.0,
+      "n": 28
+     },
+     "stack_filter_top1_rate": {
+      "value": 0.8571,
+      "n": 28
+     },
+     "honest_no_match_rate": {
+      "value": 0.0,
+      "n": 12
+     },
+     "misleading_top1_on_uncovered_rate": {
+      "value": 0.9167,
+      "n": 12
+     },
+     "unrelated_top1_on_uncovered_rate": {
+      "value": 0.0833,
+      "n": 12
+     },
+     "search_misses": []
+    },
+    "version_gotcha": {
+     "tasks": 20,
+     "covered": 11,
+     "coverage_rate": {
+      "value": 0.55,
+      "n": 20
+     },
+     "top1_rate": {
+      "value": 0.6364,
+      "n": 11
+     },
+     "top3_rate": {
+      "value": 0.9091,
+      "n": 11
+     },
+     "language_filter_top1_rate": {
+      "value": 0.6364,
+      "n": 11
+     },
+     "language_filter_top3_rate": {
+      "value": 0.9091,
+      "n": 11
+     },
+     "stack_filter_top1_rate": {
+      "value": 0.6364,
+      "n": 11
+     },
+     "honest_no_match_rate": {
+      "value": 0.0,
+      "n": 9
+     },
+     "misleading_top1_on_uncovered_rate": {
+      "value": 0.4444,
+      "n": 9
+     },
+     "unrelated_top1_on_uncovered_rate": {
+      "value": 0.5556,
+      "n": 9
+     },
+     "search_misses": [
+      "T051"
+     ]
+    },
+    "messy_question": {
+     "tasks": 20,
+     "covered": 6,
+     "coverage_rate": {
+      "value": 0.3,
+      "n": 20
+     },
+     "top1_rate": {
+      "value": 0.8333,
+      "n": 6
+     },
+     "top3_rate": {
+      "value": 1.0,
+      "n": 6
+     },
+     "language_filter_top1_rate": {
+      "value": 0.8333,
+      "n": 6
+     },
+     "language_filter_top3_rate": {
+      "value": 1.0,
+      "n": 6
+     },
+     "stack_filter_top1_rate": {
+      "value": 0.6667,
+      "n": 6
+     },
+     "honest_no_match_rate": {
+      "value": 0.0,
+      "n": 14
+     },
+     "misleading_top1_on_uncovered_rate": {
+      "value": 0.7143,
+      "n": 14
+     },
+     "unrelated_top1_on_uncovered_rate": {
+      "value": 0.2857,
+      "n": 14
+     },
+     "search_misses": []
+    },
+    "likely_uncovered": {
+     "tasks": 20,
+     "covered": 0,
+     "coverage_rate": {
+      "value": 0.0,
+      "n": 20
+     },
+     "top1_rate": {
+      "value": null,
+      "n": 0
+     },
+     "top3_rate": {
+      "value": null,
+      "n": 0
+     },
+     "language_filter_top1_rate": {
+      "value": null,
+      "n": 0
+     },
+     "language_filter_top3_rate": {
+      "value": null,
+      "n": 0
+     },
+     "stack_filter_top1_rate": {
+      "value": null,
+      "n": 0
+     },
+     "honest_no_match_rate": {
+      "value": 0.0,
+      "n": 20
+     },
+     "misleading_top1_on_uncovered_rate": {
+      "value": 0.45,
+      "n": 20
+     },
+     "unrelated_top1_on_uncovered_rate": {
+      "value": 0.55,
+      "n": 20
+     },
+     "search_misses": []
+    }
+   },
+   "zero_count_searches": {
+    "s1": 0,
+    "s2": 0,
+    "s3": 37
+   },
+   "top1_score_by_outcome": {
+    "covered_fit": {
+     "n": 39,
+     "min": 35.39,
+     "median": 127.9,
+     "max": 226.54
+    },
+    "uncovered_misleading": {
+     "n": 34,
+     "min": 21.61,
+     "median": 90.19,
+     "max": 145.2
+    },
+    "covered_not_fit": {
+     "n": 6,
+     "min": 65.02,
+     "median": 81.05,
+     "max": 133.32
+    },
+    "uncovered_unrelated": {
+     "n": 21,
+     "min": 14.11,
+     "median": 42.37,
+     "max": 126.33
+    }
+   }
+  },
+  "recipe_breakdown": {
+   "all": {
+    "n": 194,
+    "first_attempt_pass_rate": {
+     "value": 0.9536,
+     "n": 194
+    },
+    "final_pass_rate": {
+     "value": 1.0,
+     "n": 194
+    },
+    "integrity_match_rate": {
+     "value": 1.0,
+     "n": 194
+    },
+    "test_counts_match_receipt": {
+     "value": 1.0,
+     "n": 194
+    }
+   },
+   "by_language": {
+    "python": {
+     "n": 95,
+     "first_attempt_pass_rate": {
+      "value": 1.0,
+      "n": 95
+     },
+     "final_pass_rate": {
+      "value": 1.0,
+      "n": 95
+     },
+     "integrity_match_rate": {
+      "value": 1.0,
+      "n": 95
+     },
+     "test_counts_match_receipt": {
+      "value": 1.0,
+      "n": 95
+     }
+    },
+    "typescript": {
+     "n": 99,
+     "first_attempt_pass_rate": {
+      "value": 0.9091,
+      "n": 99
+     },
+     "final_pass_rate": {
+      "value": 1.0,
+      "n": 99
+     },
+     "integrity_match_rate": {
+      "value": 1.0,
+      "n": 99
+     },
+     "test_counts_match_receipt": {
+      "value": 1.0,
+      "n": 99
+     }
+    }
+   },
+   "by_category_of_tasks_where_recipe_was_top3": {
+    "integration": {
+     "n": 106,
+     "first_attempt_pass_rate": {
+      "value": 0.934,
+      "n": 106
+     },
+     "final_pass_rate": {
+      "value": 1.0,
+      "n": 106
+     },
+     "integrity_match_rate": {
+      "value": 1.0,
+      "n": 106
+     },
+     "test_counts_match_receipt": {
+      "value": 1.0,
+      "n": 106
+     }
+    },
+    "version_gotcha": {
+     "n": 59,
+     "first_attempt_pass_rate": {
+      "value": 0.9492,
+      "n": 59
+     },
+     "final_pass_rate": {
+      "value": 1.0,
+      "n": 59
+     },
+     "integrity_match_rate": {
+      "value": 1.0,
+      "n": 59
+     },
+     "test_counts_match_receipt": {
+      "value": 1.0,
+      "n": 59
+     }
+    },
+    "messy_question": {
+     "n": 64,
+     "first_attempt_pass_rate": {
+      "value": 0.9688,
+      "n": 64
+     },
+     "final_pass_rate": {
+      "value": 1.0,
+      "n": 64
+     },
+     "integrity_match_rate": {
+      "value": 1.0,
+      "n": 64
+     },
+     "test_counts_match_receipt": {
+      "value": 1.0,
+      "n": 64
+     }
+    },
+    "likely_uncovered": {
+     "n": 66,
+     "first_attempt_pass_rate": {
+      "value": 0.9848,
+      "n": 66
+     },
+     "final_pass_rate": {
+      "value": 1.0,
+      "n": 66
+     },
+     "integrity_match_rate": {
+      "value": 1.0,
+      "n": 66
+     },
+     "test_counts_match_receipt": {
+      "value": 1.0,
+      "n": 66
+     }
+    }
+   },
+   "first_attempt_failures": [
+    "aws-sdk-v3-dynamodb-sqs-vitest",
+    "axios-retry-nock",
+    "effect-schema-vitest",
+    "hono-drizzle-sqlite-api",
+    "jose-jwks-verify",
+    "jotai-atoms-react-testing-library",
+    "ky-msw-vitest",
+    "redux-toolkit-rtk-query-msw",
+    "trpc-client-server-superjson"
+   ],
+   "setup_retries": {
+    "aws-sdk-v3-dynamodb-sqs-vitest": "retry_npm116",
+    "axios-retry-nock": "retry_noproxy",
+    "effect-schema-vitest": "retry_npm116",
+    "hono-drizzle-sqlite-api": "retry_npm116",
+    "jose-jwks-verify": "retry_npm116",
+    "jotai-atoms-react-testing-library": "retry_npm116",
+    "ky-msw-vitest": "retry_npm116",
+    "redux-toolkit-rtk-query-msw": "retry_npm116",
+    "trpc-client-server-superjson": "retry_npm116"
+   },
+   "runtime_same_as_receipt": {
+    "value": 0.4897,
+    "n": 194
+   },
+   "staleness_values": {
+    "unchecked": 100,
+    "current": 87,
+    "passes_on_latest": 6,
+    "breaks_on_latest": 1
+   }
+  },
+  "with_vs_without_breakdown": {
+   "per_task": [
+    {
+     "task_id": "T001",
+     "language": "python",
+     "category": "integration",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      89.5,
+      90.0
+     ],
+     "mean_total_tokens": [
+      73907,
+      68777
+     ],
+     "mean_output_chars": [
+      5166,
+      5896
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": -0.5,
+      "mean_total_tokens": 5130,
+      "mean_output_chars": -730
+     }
+    },
+    {
+     "task_id": "T003",
+     "language": "python",
+     "category": "integration",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      46.1,
+      59.2
+     ],
+     "mean_total_tokens": [
+      66637,
+      64951
+     ],
+     "mean_output_chars": [
+      2006,
+      2314
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": -13.1,
+      "mean_total_tokens": 1686,
+      "mean_output_chars": -308
+     }
+    },
+    {
+     "task_id": "T008",
+     "language": "python",
+     "category": "integration",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      109.0,
+      100.2
+     ],
+     "mean_total_tokens": [
+      73681,
+      69936
+     ],
+     "mean_output_chars": [
+      4139,
+      5093
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 8.8,
+      "mean_total_tokens": 3745,
+      "mean_output_chars": -954
+     }
+    },
+    {
+     "task_id": "T009",
+     "language": "python",
+     "category": "integration",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      39.3,
+      27.2
+     ],
+     "mean_total_tokens": [
+      66927,
+      62045
+     ],
+     "mean_output_chars": [
+      3505,
+      3475
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 12.1,
+      "mean_total_tokens": 4882,
+      "mean_output_chars": 30
+     }
+    },
+    {
+     "task_id": "T011",
+     "language": "python",
+     "category": "integration",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      47.6,
+      61.3
+     ],
+     "mean_total_tokens": [
+      67422,
+      65953
+     ],
+     "mean_output_chars": [
+      2345,
+      3207
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": -13.7,
+      "mean_total_tokens": 1469,
+      "mean_output_chars": -862
+     }
+    },
+    {
+     "task_id": "T041",
+     "language": "python",
+     "category": "version_gotcha",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      75.1,
+      47.7
+     ],
+     "mean_total_tokens": [
+      77388,
+      64110
+     ],
+     "mean_output_chars": [
+      1957,
+      1949
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 27.4,
+      "mean_total_tokens": 13278,
+      "mean_output_chars": 8
+     }
+    },
+    {
+     "task_id": "T043",
+     "language": "python",
+     "category": "version_gotcha",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      192.7,
+      152.4
+     ],
+     "mean_total_tokens": [
+      88486,
+      75984
+     ],
+     "mean_output_chars": [
+      6860,
+      7544
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 40.3,
+      "mean_total_tokens": 12502,
+      "mean_output_chars": -684
+     }
+    },
+    {
+     "task_id": "T044",
+     "language": "python",
+     "category": "version_gotcha",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      48.6,
+      38.3
+     ],
+     "mean_total_tokens": [
+      70628,
+      62859
+     ],
+     "mean_output_chars": [
+      1274,
+      1487
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 10.3,
+      "mean_total_tokens": 7769,
+      "mean_output_chars": -213
+     }
+    },
+    {
+     "task_id": "T048",
+     "language": "python",
+     "category": "version_gotcha",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      118.5,
+      104.1
+     ],
+     "mean_total_tokens": [
+      77870,
+      70170
+     ],
+     "mean_output_chars": [
+      3347,
+      3043
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 14.4,
+      "mean_total_tokens": 7700,
+      "mean_output_chars": 304
+     }
+    },
+    {
+     "task_id": "T065",
+     "language": "python",
+     "category": "messy_question",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      98.2,
+      87.4
+     ],
+     "mean_total_tokens": [
+      75177,
+      68655
+     ],
+     "mean_output_chars": [
+      2800,
+      3553
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 10.8,
+      "mean_total_tokens": 6522,
+      "mean_output_chars": -753
+     }
+    },
+    {
+     "task_id": "T067",
+     "language": "python",
+     "category": "messy_question",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      98.7,
+      85.6
+     ],
+     "mean_total_tokens": [
+      73147,
+      68927
+     ],
+     "mean_output_chars": [
+      2984,
+      3502
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 13.1,
+      "mean_total_tokens": 4220,
+      "mean_output_chars": -518
+     }
+    },
+    {
+     "task_id": "T070",
+     "language": "python",
+     "category": "messy_question",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      92.2,
+      108.3
+     ],
+     "mean_total_tokens": [
+      72117,
+      70921
+     ],
+     "mean_output_chars": [
+      5617,
+      5929
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": -16.1,
+      "mean_total_tokens": 1196,
+      "mean_output_chars": -312
+     }
+    },
+    {
+     "task_id": "T081",
+     "language": "python",
+     "category": "likely_uncovered",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      74.3,
+      38.1
+     ],
+     "mean_total_tokens": [
+      66737,
+      62925
+     ],
+     "mean_output_chars": [
+      4536,
+      4383
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 36.2,
+      "mean_total_tokens": 3812,
+      "mean_output_chars": 153
+     }
+    },
+    {
+     "task_id": "T088",
+     "language": "python",
+     "category": "likely_uncovered",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      52.2,
+      26.3
+     ],
+     "mean_total_tokens": [
+      72667,
+      61429
+     ],
+     "mean_output_chars": [
+      4107,
+      3796
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 25.9,
+      "mean_total_tokens": 11238,
+      "mean_output_chars": 311
+     }
+    },
+    {
+     "task_id": "T090",
+     "language": "python",
+     "category": "likely_uncovered",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      114.1,
+      111.4
+     ],
+     "mean_total_tokens": [
+      75747,
+      71183
+     ],
+     "mean_output_chars": [
+      3441,
+      4499
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 2.7,
+      "mean_total_tokens": 4564,
+      "mean_output_chars": -1058
+     }
+    },
+    {
+     "task_id": "T021",
+     "language": "typescript",
+     "category": "integration",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      82.2,
+      62.8
+     ],
+     "mean_total_tokens": [
+      69802,
+      65846
+     ],
+     "mean_output_chars": [
+      3081,
+      3038
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 19.4,
+      "mean_total_tokens": 3956,
+      "mean_output_chars": 43
+     }
+    },
+    {
+     "task_id": "T023",
+     "language": "typescript",
+     "category": "integration",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      62.0,
+      57.7
+     ],
+     "mean_total_tokens": [
+      68933,
+      65051
+     ],
+     "mean_output_chars": [
+      2612,
+      2656
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 4.3,
+      "mean_total_tokens": 3882,
+      "mean_output_chars": -44
+     }
+    },
+    {
+     "task_id": "T026",
+     "language": "typescript",
+     "category": "integration",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      82.8,
+      61.3
+     ],
+     "mean_total_tokens": [
+      76076,
+      65863
+     ],
+     "mean_output_chars": [
+      3993,
+      4472
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 21.5,
+      "mean_total_tokens": 10213,
+      "mean_output_chars": -479
+     }
+    },
+    {
+     "task_id": "T030",
+     "language": "typescript",
+     "category": "integration",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      48.0,
+      46.2
+     ],
+     "mean_total_tokens": [
+      70396,
+      64005
+     ],
+     "mean_output_chars": [
+      2678,
+      3140
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 1.8,
+      "mean_total_tokens": 6391,
+      "mean_output_chars": -462
+     }
+    },
+    {
+     "task_id": "T033",
+     "language": "typescript",
+     "category": "integration",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      59.5,
+      43.8
+     ],
+     "mean_total_tokens": [
+      70308,
+      63448
+     ],
+     "mean_output_chars": [
+      1911,
+      1954
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 15.7,
+      "mean_total_tokens": 6860,
+      "mean_output_chars": -43
+     }
+    },
+    {
+     "task_id": "T051",
+     "language": "typescript",
+     "category": "version_gotcha",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      237.9,
+      244.9
+     ],
+     "mean_total_tokens": [
+      95160,
+      87162
+     ],
+     "mean_output_chars": [
+      1869,
+      1975
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": -7.0,
+      "mean_total_tokens": 7998,
+      "mean_output_chars": -106
+     }
+    },
+    {
+     "task_id": "T052",
+     "language": "typescript",
+     "category": "version_gotcha",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      71.6,
+      61.4
+     ],
+     "mean_total_tokens": [
+      72696,
+      65414
+     ],
+     "mean_output_chars": [
+      2404,
+      2491
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 10.2,
+      "mean_total_tokens": 7282,
+      "mean_output_chars": -87
+     }
+    },
+    {
+     "task_id": "T055",
+     "language": "typescript",
+     "category": "version_gotcha",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      47.3,
+      25.9
+     ],
+     "mean_total_tokens": [
+      69569,
+      62038
+     ],
+     "mean_output_chars": [
+      1497,
+      1566
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 21.4,
+      "mean_total_tokens": 7531,
+      "mean_output_chars": -69
+     }
+    },
+    {
+     "task_id": "T060",
+     "language": "typescript",
+     "category": "version_gotcha",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      55.1,
+      39.7
+     ],
+     "mean_total_tokens": [
+      71253,
+      63306
+     ],
+     "mean_output_chars": [
+      2257,
+      2072
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 15.4,
+      "mean_total_tokens": 7947,
+      "mean_output_chars": 185
+     }
+    },
+    {
+     "task_id": "T072",
+     "language": "typescript",
+     "category": "messy_question",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      255.4,
+      368.6
+     ],
+     "mean_total_tokens": [
+      92221,
+      97415
+     ],
+     "mean_output_chars": [
+      4767,
+      7287
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": -113.2,
+      "mean_total_tokens": -5194,
+      "mean_output_chars": -2520
+     }
+    },
+    {
+     "task_id": "T073",
+     "language": "typescript",
+     "category": "messy_question",
+     "covered": true,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      51.4,
+      63.0
+     ],
+     "mean_total_tokens": [
+      66425,
+      65397
+     ],
+     "mean_output_chars": [
+      1996,
+      2967
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": -11.6,
+      "mean_total_tokens": 1028,
+      "mean_output_chars": -971
+     }
+    },
+    {
+     "task_id": "T079",
+     "language": "typescript",
+     "category": "messy_question",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      85.9,
+      51.5
+     ],
+     "mean_total_tokens": [
+      73682,
+      64198
+     ],
+     "mean_output_chars": [
+      2584,
+      2684
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 34.4,
+      "mean_total_tokens": 9484,
+      "mean_output_chars": -100
+     }
+    },
+    {
+     "task_id": "T091",
+     "language": "typescript",
+     "category": "likely_uncovered",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      137.2,
+      299.5
+     ],
+     "mean_total_tokens": [
+      78340,
+      92285
+     ],
+     "mean_output_chars": [
+      3556,
+      5038
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": -162.3,
+      "mean_total_tokens": -13945,
+      "mean_output_chars": -1482
+     }
+    },
+    {
+     "task_id": "T098",
+     "language": "typescript",
+     "category": "likely_uncovered",
+     "covered": false,
+     "runs": [
+      3,
+      3
+     ],
+     "passed": [
+      3,
+      3
+     ],
+     "passed_first_try": [
+      3,
+      3
+     ],
+     "mean_attempts": [
+      1.0,
+      1.0
+     ],
+     "mean_seconds": [
+      140.9,
+      104.5
+     ],
+     "mean_total_tokens": [
+      81384,
+      70560
+     ],
+     "mean_output_chars": [
+      3689,
+      3894
+     ],
+     "diff_with_minus_without": {
+      "passed": 0,
+      "passed_first_try": 0,
+      "mean_attempts": 0.0,
+      "mean_seconds": 36.4,
+      "mean_total_tokens": 10824,
+      "mean_output_chars": -205
+     }
+    }
+   ],
+   "win_loss_tie": {
+    "pass": {
+     "with_wins": 0,
+     "without_wins": 0,
+     "tie": 29
+    },
+    "first_try": {
+     "with_wins": 0,
+     "without_wins": 0,
+     "tie": 29
+    },
+    "attempts": {
+     "with_wins": 0,
+     "without_wins": 0,
+     "tie": 29
+    },
+    "seconds": {
+     "with_wins": 8,
+     "without_wins": 21,
+     "tie": 0
+    },
+    "total_tokens": {
+     "with_wins": 2,
+     "without_wins": 27,
+     "tie": 0
+    },
+    "output_chars": {
+     "with_wins": 22,
+     "without_wins": 7,
+     "tie": 0
+    }
+   },
+   "by_language": {
+    "python": {
+     "with_recipe": {
+      "runs": 45,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 79.5,
+      "mean_total_tokens": 73235.9
+     },
+     "without_recipe": {
+      "runs": 45,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 71.5,
+      "mean_total_tokens": 67255.0
+     }
+    },
+    "typescript": {
+     "with_recipe": {
+      "runs": 42,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 73.1,
+      "mean_total_tokens": 75446.2
+     },
+     "without_recipe": {
+      "runs": 42,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 58.7,
+      "mean_total_tokens": 70856.4
+     }
+    }
+   },
+   "by_category": {
+    "integration": {
+     "with_recipe": {
+      "runs": 30,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 61.6,
+      "mean_total_tokens": 70409.0
+     },
+     "without_recipe": {
+      "runs": 30,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 55.2,
+      "mean_total_tokens": 65587.5
+     }
+    },
+    "version_gotcha": {
+     "with_recipe": {
+      "runs": 24,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 72.8,
+      "mean_total_tokens": 77881.3
+     },
+     "without_recipe": {
+      "runs": 24,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 56.1,
+      "mean_total_tokens": 68880.4
+     }
+    },
+    "messy_question": {
+     "with_recipe": {
+      "runs": 18,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 87.7,
+      "mean_total_tokens": 75461.5
+     },
+     "without_recipe": {
+      "runs": 18,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 79.7,
+      "mean_total_tokens": 72585.6
+     }
+    },
+    "likely_uncovered": {
+     "with_recipe": {
+      "runs": 15,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 112.7,
+      "mean_total_tokens": 74975.2
+     },
+     "without_recipe": {
+      "runs": 15,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 69.6,
+      "mean_total_tokens": 71676.4
+     }
+    }
+   },
+   "by_coverage": {
+    "covered": {
+     "with_recipe": {
+      "runs": 51,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 69.0,
+      "mean_total_tokens": 73468.5
+     },
+     "without_recipe": {
+      "runs": 51,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 59.4,
+      "mean_total_tokens": 67387.4
+     }
+    },
+    "uncovered": {
+     "with_recipe": {
+      "runs": 36,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 90.8,
+      "mean_total_tokens": 75485.0
+     },
+     "without_recipe": {
+      "runs": 36,
+      "first_try_pass_rate": 1.0,
+      "final_pass_rate": 1.0,
+      "median_seconds": 71.1,
+      "mean_total_tokens": 71269.0
+     }
+    }
+   },
+   "runs_with": 87,
+   "runs_without": 87,
+   "recipe_used_by_with_runs": [
+    {
+     "task_id": "T001",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "fastapi-sqlalchemy-crud",
+     "fetched_with_get": [
+      "fastapi-sqlalchemy-crud"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T001",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "fastapi-sqlalchemy-crud",
+     "fetched_with_get": [
+      "fastapi-sqlalchemy-crud"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T001",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "fastapi-sqlalchemy-crud",
+     "fetched_with_get": [
+      "fastapi-sqlalchemy-crud"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T003",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "httpx-tenacity-retry",
+     "fetched_with_get": [
+      "httpx-tenacity-retry"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T003",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "httpx-tenacity-retry",
+     "fetched_with_get": [
+      "httpx-tenacity-retry"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T003",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "httpx-tenacity-retry",
+     "fetched_with_get": [
+      "httpx-tenacity-retry"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T008",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "fastapi-stripe-webhook",
+     "fetched_with_get": [
+      "fastapi-stripe-webhook"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T008",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "fastapi-stripe-webhook",
+     "fetched_with_get": [
+      "fastapi-stripe-webhook"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T008",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "fastapi-stripe-webhook",
+     "fetched_with_get": [
+      "fastapi-stripe-webhook"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T009",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "boto3-moto-s3-presigned",
+     "fetched_with_get": [
+      "boto3-moto-s3-presigned"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T009",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "boto3-moto-s3-presigned",
+     "fetched_with_get": [
+      "boto3-moto-s3-presigned"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T009",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "boto3-moto-s3-presigned",
+     "fetched_with_get": [
+      "boto3-moto-s3-presigned"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T011",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "duckdb-polars-analytics",
+     "fetched_with_get": [
+      "duckdb-polars-analytics"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T011",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "duckdb-polars-analytics",
+     "fetched_with_get": [
+      "duckdb-polars-analytics"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T011",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "duckdb-polars-analytics",
+     "fetched_with_get": [
+      "duckdb-polars-analytics"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T021",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "express-zod-validation",
+     "fetched_with_get": [
+      "express-zod-validation"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T021",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "express-zod-validation",
+     "fetched_with_get": [
+      "express-zod-validation"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T021",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "express-zod-validation",
+     "fetched_with_get": [
+      "express-zod-validation"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T023",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "hono-rpc-typed-client",
+     "fetched_with_get": [
+      "hono-rpc-typed-client"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T023",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "hono-rpc-typed-client",
+     "fetched_with_get": [
+      "hono-rpc-typed-client"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T023",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "hono-rpc-typed-client",
+     "fetched_with_get": [
+      "hono-rpc-typed-client"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T026",
+     "run": 1,
+     "usage": "reference",
+     "recipe_id": "trpc-client-server-superjson",
+     "fetched_with_get": [
+      "trpc-client-server-superjson",
+      "trpc-context-auth-middleware"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T026",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "trpc-context-auth-middleware",
+     "fetched_with_get": [
+      "trpc-client-server-superjson",
+      "trpc-context-auth-middleware"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T026",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "trpc-context-auth-middleware",
+     "fetched_with_get": [
+      "trpc-client-server-superjson",
+      "trpc-context-auth-middleware"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T030",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "jose-jwks-verify",
+     "fetched_with_get": [
+      "jose-jwks-verify"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T030",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "jose-jwks-verify",
+     "fetched_with_get": [
+      "jose-jwks-verify"
+     ],
+     "searches": 3,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T030",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "jose-jwks-verify",
+     "fetched_with_get": [
+      "jose-jwks-verify"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T033",
+     "run": 1,
+     "usage": "reference",
+     "recipe_id": "openai-sdk-mocked-tool-calls",
+     "fetched_with_get": [
+      "openai-sdk-mocked-tool-calls"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T033",
+     "run": 2,
+     "usage": "reference",
+     "recipe_id": "openai-sdk-mocked-tool-calls",
+     "fetched_with_get": [
+      "openai-sdk-mocked-tool-calls"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T033",
+     "run": 3,
+     "usage": "reference",
+     "recipe_id": "openai-sdk-mocked-tool-calls",
+     "fetched_with_get": [
+      "openai-sdk-mocked-tool-calls"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T041",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "fastapi-pydantic-v2-models",
+     "fetched_with_get": [
+      "fastapi-pydantic-v2-models"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T041",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "fastapi-pydantic-v2-models",
+     "fetched_with_get": [
+      "fastapi-pydantic-v2-models"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T041",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "fastapi-pydantic-v2-models",
+     "fetched_with_get": [
+      "fastapi-pydantic-v2-models",
+      "sqlalchemy2-pydantic-v2-from-attributes"
+     ],
+     "searches": 3,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T043",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "fastapi-httpx-asyncclient-lifespan",
+     "fetched_with_get": [
+      "fastapi-httpx-asyncclient-lifespan"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T043",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "fastapi-httpx-asyncclient-lifespan",
+     "fetched_with_get": [
+      "fastapi-httpx-asyncclient-lifespan"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T043",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "fastapi-httpx-asyncclient-lifespan",
+     "fetched_with_get": [
+      "fastapi-httpx-asyncclient-lifespan",
+      "starlette-httpx-asgi-client"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T044",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "fastapi-httpx-asyncclient-lifespan",
+     "fetched_with_get": [
+      "fastapi-httpx-asyncclient-lifespan"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T044",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "fastapi-httpx-asyncclient-lifespan",
+     "fetched_with_get": [
+      "fastapi-httpx-asyncclient-lifespan"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T044",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "fastapi-httpx-asyncclient-lifespan",
+     "fetched_with_get": [
+      "fastapi-httpx-asyncclient-lifespan"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T048",
+     "run": 1,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [
+      "pandas-sqlalchemy-to-sql"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T048",
+     "run": 2,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T048",
+     "run": 3,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T051",
+     "run": 1,
+     "usage": "reference",
+     "recipe_id": "js-yaml-zod-config",
+     "fetched_with_get": [
+      "js-yaml-zod-config"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T051",
+     "run": 2,
+     "usage": "reference",
+     "recipe_id": "js-yaml-zod-config",
+     "fetched_with_get": [
+      "js-yaml-zod-config",
+      "express-zod-validation"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T051",
+     "run": 3,
+     "usage": "reference",
+     "recipe_id": "js-yaml-zod-config",
+     "fetched_with_get": [
+      "js-yaml-zod-config",
+      "express-zod-validation"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T052",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "express5-async-error-handling",
+     "fetched_with_get": [
+      "express5-async-error-handling"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T052",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "express5-async-error-handling",
+     "fetched_with_get": [
+      "express5-async-error-handling"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T052",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "express5-async-error-handling",
+     "fetched_with_get": [
+      "express5-async-error-handling"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T055",
+     "run": 1,
+     "usage": "reference",
+     "recipe_id": "fastify-json-schema",
+     "fetched_with_get": [
+      "fastify-json-schema"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T055",
+     "run": 2,
+     "usage": "reference",
+     "recipe_id": "fastify-json-schema",
+     "fetched_with_get": [
+      "fastify-json-schema"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T055",
+     "run": 3,
+     "usage": "reference",
+     "recipe_id": "fastify-json-schema",
+     "fetched_with_get": [
+      "fastify-json-schema"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T060",
+     "run": 1,
+     "usage": "reference",
+     "recipe_id": "openai-sdk-mocked-tool-calls",
+     "fetched_with_get": [
+      "openai-sdk-mocked-tool-calls"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T060",
+     "run": 2,
+     "usage": "reference",
+     "recipe_id": "openai-sdk-mocked-tool-calls",
+     "fetched_with_get": [
+      "openai-streaming-mock",
+      "openai-sdk-mocked-tool-calls"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T060",
+     "run": 3,
+     "usage": "reference",
+     "recipe_id": "openai-sdk-mocked-tool-calls",
+     "fetched_with_get": [
+      "openai-sdk-mocked-tool-calls"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T065",
+     "run": 1,
+     "usage": "reference",
+     "recipe_id": "duckdb-polars-analytics",
+     "fetched_with_get": [
+      "duckdb-polars-analytics"
+     ],
+     "searches": 4,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T065",
+     "run": 2,
+     "usage": "reference",
+     "recipe_id": "duckdb-polars-analytics",
+     "fetched_with_get": [
+      "duckdb-polars-analytics"
+     ],
+     "searches": 3,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T065",
+     "run": 3,
+     "usage": "reference",
+     "recipe_id": "duckdb-polars-analytics",
+     "fetched_with_get": [
+      "duckdb-polars-analytics"
+     ],
+     "searches": 5,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T067",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "pydantic-settings-yaml-secrets",
+     "fetched_with_get": [
+      "pydantic-settings-yaml-secrets"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T067",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "pydantic-settings-yaml-secrets",
+     "fetched_with_get": [
+      "pydantic-settings-yaml-secrets"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T067",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "pydantic-settings-yaml-secrets",
+     "fetched_with_get": [
+      "pydantic-settings-yaml-secrets"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T070",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "fastapi-jwt-auth",
+     "fetched_with_get": [
+      "fastapi-jwt-auth"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T070",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "fastapi-jwt-auth",
+     "fetched_with_get": [
+      "fastapi-jwt-auth"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T070",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "fastapi-jwt-auth",
+     "fetched_with_get": [
+      "fastapi-jwt-auth"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T072",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "axios-retry-nock",
+     "fetched_with_get": [
+      "axios-retry-nock",
+      "bottleneck-rate-limiting"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T072",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "axios-retry-nock",
+     "fetched_with_get": [
+      "axios-retry-nock",
+      "bottleneck-rate-limiting"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T072",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "axios-retry-nock",
+     "fetched_with_get": [
+      "axios-retry-nock",
+      "bottleneck-rate-limiting"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T073",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "express-stripe-webhook",
+     "fetched_with_get": [
+      "express-stripe-webhook"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T073",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "express-stripe-webhook",
+     "fetched_with_get": [
+      "express-stripe-webhook"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T073",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "express-stripe-webhook",
+     "fetched_with_get": [
+      "express-stripe-webhook"
+     ],
+     "searches": 1,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T079",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "openai-streaming-mock",
+     "fetched_with_get": [
+      "openai-streaming-mock"
+     ],
+     "searches": 3,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T079",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "openai-streaming-mock",
+     "fetched_with_get": [
+      "openai-streaming-mock"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T079",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "openai-streaming-mock",
+     "fetched_with_get": [
+      "openai-streaming-mock"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T081",
+     "run": 1,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [],
+     "searches": 4,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T081",
+     "run": 2,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [],
+     "searches": 5,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T081",
+     "run": 3,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [
+      "pp-ortools-sudoku-cpsat-c5e8"
+     ],
+     "searches": 4,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T088",
+     "run": 1,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [
+      "diskcache-cachetools-tiered"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T088",
+     "run": 2,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [
+      "diskcache-cachetools-tiered"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T088",
+     "run": 3,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [
+      "diskcache-cachetools-tiered"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T090",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "litestar-guards-di",
+     "fetched_with_get": [
+      "litestar-guards-di"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T090",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "litestar-guards-di",
+     "fetched_with_get": [
+      "litestar-guards-di"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T090",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "litestar-guards-di",
+     "fetched_with_get": [
+      "litestar-guards-di"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T091",
+     "run": 1,
+     "usage": "used",
+     "recipe_id": "effect-schema-vitest",
+     "fetched_with_get": [
+      "effect-schema-vitest"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T091",
+     "run": 2,
+     "usage": "used",
+     "recipe_id": "effect-schema-vitest",
+     "fetched_with_get": [
+      "effect-schema-vitest"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T091",
+     "run": 3,
+     "usage": "used",
+     "recipe_id": "effect-schema-vitest",
+     "fetched_with_get": [
+      "effect-schema-vitest"
+     ],
+     "searches": 2,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T098",
+     "run": 1,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [],
+     "searches": 4,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T098",
+     "run": 2,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [],
+     "searches": 3,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    },
+    {
+     "task_id": "T098",
+     "run": 3,
+     "usage": "none",
+     "recipe_id": null,
+     "fetched_with_get": [
+      "json-schema-to-typescript-codegen"
+     ],
+     "searches": 3,
+     "basis": "agent's final note (judgments/arm_notes.jsonl); usage: used = the agent built on the recipe's pattern; reference = read it only to confirm an API detail; none = nothing fitting"
+    }
+   ],
+   "recipe_usage_counts": {
+    "used": 59,
+    "reference": 16,
+    "none": 12
+   },
+   "by_recipe_usage": {
+    "used": {
+     "with_recipe": {
+      "runs": 59,
+      "final_pass_rate": 1.0,
+      "median_seconds": 74.9,
+      "mean_total_tokens": 73697.1,
+      "mean_output_chars": 3338.4
+     },
+     "without_recipe": {
+      "runs": 59,
+      "final_pass_rate": 1.0,
+      "median_seconds": 67.7,
+      "mean_total_tokens": 69618.1,
+      "mean_output_chars": 3924.1
+     }
+    },
+    "reference": {
+     "with_recipe": {
+      "runs": 16,
+      "final_pass_rate": 1.0,
+      "median_seconds": 65.8,
+      "mean_total_tokens": 76265.8,
+      "mean_output_chars": 2183.1
+     },
+     "without_recipe": {
+      "runs": 16,
+      "final_pass_rate": 1.0,
+      "median_seconds": 53.2,
+      "mean_total_tokens": 68732.6,
+      "mean_output_chars": 2365.4
+     }
+    },
+    "none": {
+     "with_recipe": {
+      "runs": 12,
+      "final_pass_rate": 1.0,
+      "median_seconds": 95.5,
+      "mean_total_tokens": 74664.6,
+      "mean_output_chars": 3919.8
+     },
+     "without_recipe": {
+      "runs": 12,
+      "final_pass_rate": 1.0,
+      "median_seconds": 51.5,
+      "mean_total_tokens": 66271.1,
+      "mean_output_chars": 3779.2
+     }
+    }
+   },
+   "paired_run_differences": {
+    "seconds": {
+     "n_pairs": 87,
+     "mean_diff_with_minus_without": 1.6,
+     "median_diff": 13.0,
+     "pairs_with_lower": 29,
+     "pairs_with_higher": 58
+    },
+    "total_tokens": {
+     "n_pairs": 87,
+     "mean_diff_with_minus_without": 5309.4,
+     "median_diff": 6012.0,
+     "pairs_with_lower": 12,
+     "pairs_with_higher": 75
+    },
+    "output_chars": {
+     "n_pairs": 87,
+     "mean_diff_with_minus_without": -411.4,
+     "median_diff": -344.0,
+     "pairs_with_lower": 60,
+     "pairs_with_higher": 27
+    }
+   },
+   "mean_search_calls_per_with_run": 1.84,
+   "mean_get_calls_per_with_run": 1.06,
+   "tokens_meaning": "total_tokens = the Agent tool's reported subagent_tokens summed over attempts (all tokens the subagent processed, input + output incl. cache); output-only tokens were not reported, so mean_output_tokens is null"
+  },
+  "latency_breakdown": {
+   "all_calls": {
+    "n": 819,
+    "p50": 156.0,
+    "p95": 401.1,
+    "max": 633,
+    "errors": 0,
+    "rate_limited": 0
+   },
+   "search_recipes": {
+    "n": 494,
+    "p50": 160.0,
+    "p95": 449.0,
+    "max": 633,
+    "errors": 0,
+    "rate_limited": 0
+   },
+   "get_recipe": {
+    "n": 321,
+    "p50": 152.0,
+    "p95": 225.0,
+    "max": 586,
+    "errors": 0,
+    "rate_limited": 0
+   },
+   "list_stacks": {
+    "n": 1,
+    "p50": 226.0,
+    "p95": 226.0,
+    "max": 226,
+    "errors": 0,
+    "rate_limited": 0
+   },
+   "initialize": {
+    "n": 1,
+    "p50": 226.0,
+    "p95": 226.0,
+    "max": 226,
+    "errors": 0,
+    "rate_limited": 0
+   },
+   "tools/list": {
+    "n": 2,
+    "p50": 295.0,
+    "p95": 417.4,
+    "max": 431,
+    "errors": 0,
+    "rate_limited": 0
+   }
+  },
+  "server_retries_logged": [],
+  "docs_review": {
+   "url": "https://provenpin.com/docs/",
+   "fetched": "one GET with the benchmark User-Agent, saved as docs_review/docs.html and docs_review/docs.txt; no linked page was followed",
+   "rating": 3,
+   "could_install_from_docs_alone": "yes. One copy-paste snippet each for Claude Code, Cursor, VS Code, Windsurf and Cline, plus 'Streamable HTTP at https://mcp.provenpin.com/mcp' for any other client. No key or signup. My raw-HTTP client worked from that line plus the standard MCP handshake.",
+   "good": [
+    "short, accurate install instructions for five clients",
+    "tools are named with one-line purposes; the versions input formats are listed and match what the server accepted (all 8 formats were detected correctly)",
+    "honest caveat: 'A passing receipt proves the recipe works on its pinned versions, not on yours.'",
+    "receipts are explained (status, pins, runtime, test counts, CI link, recipe_hash, per-file sha256), and the hashes I recomputed matched for 194/194 recipes"
+   ],
+   "missing_or_confusing": [
+    "how recipe_hash is computed is not stated (I took it from runner/lib.mjs: sha256 over the sorted [recipe.yaml, ...files], each entry hashed as path + NUL + bytes), and recipe.yaml is not served by get_recipe, so 'comparing hashes against your copy' works for single files but not for recipe_hash",
+    "nothing on what search returns when nothing fits: in my test it always returned 10 results for descriptive queries, and the score field is not explained",
+    "the staleness status in receipts.json (73% 'unchecked', 3 'breaks_on_latest') is not mentioned, and get_recipe does not show it",
+    "no mention that setup commands force --ignore-scripts=false, or that 8 recipes need npm >= 11.6 (the runner upgrades npm silently)",
+    "no input schemas or limits (for example search limit, rate limits, or what Pro adds) on this page; tools/list gives the schemas"
+   ],
+   "overclaimed_vs_observed": [
+    "'recipes that match your versions rank first': not in check V23 (a mismatching recipe stayed first)",
+    "'Each package gets a verdict': test/dev pins (pytest, tsx, @types/*, supertest) are never given one, and a caret range '^23.0.0' was called 'exact' (V20)"
+   ],
+   "not_verified": [
+    "'Lockfiles are never stored'",
+    "the local server instructions (cd server && npm install && npm run dev)"
+   ],
+   "reason_for_rating": "Install and basic use are easy and correct, so a new user can get going. But two of the four claims in the versions section did not hold in my checks, and the page leaves out what a careful user needs to verify receipts or judge freshness and safety. 3 of 5."
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "run": {
+  "tester": "independent-bench-claude",
+  "model": "claude-opus-5-5 (Claude Opus 5.5); session_context.model and external_metadata.last_served_model from get_session both read claude-opus-5-5; a probe subagent launched like the arm agents reported claude-opus-5-5",
+  "effort": "xhigh (session effort_level, also passed as effort to every subagent; the prompt suggested high; the in-context reasoning_effort value was 40 for both me and the probe subagent)",
+  "product": "Claude Code 2.1.302 in a claude.ai/code cloud container (Linux), started from the desktop app",
+  "started_utc": "2026-10-18T03:50:19Z",
+  "finished_utc": "2026-10-18T06:05:16Z",
+  "access_mode": "mixed",
+  "client_info_sent": "{\"name\": \"independent-bench-claude\", \"version\": \"1.0\"} (MCP initialize, protocolVersion 2025-06-18)",
+  "user_agent_sent": "independent-bench-claude/1.0 (independent benchmark) on every pp.py request and every curl GET (receipts.json, recipes index, docs); the 5 GitHub run_url pages were read with the WebFetch tool, which sends its own User-Agent",
+  "can_execute_code": true,
+  "code_has_internet": "packages_only",
+  "environment": {
+   "os": "Ubuntu 24.04.5 LTS, Linux 6.18.44 x86_64",
+   "python": "3.13.16",
+   "node": "v22.22.0",
+   "notes": "npm 10.9.4 (Node 22 default), uv 0.11.32. Outbound traffic goes through an egress proxy: mcp.provenpin.com, provenpin.com and github.com were allowed by [the owner] at 03:56Z. The GitHub web UI and API for the repo were refused by the proxy, but an anonymous git clone worked. Recipe runs and grading used a temp HOME and an environment allowlist with no tokens and no proxy variables, so the code could reach only the package registries."
+  },
+  "health_start": {
+   "ok": true,
+   "recipes": 523,
+   "index_generated_at": "2026-10-18T00:59:12.564Z"
+  },
+  "health_end": {
+   "ok": true,
+   "recipes": 555,
+   "index_generated_at": "2026-10-18T03:59:18.754Z"
+  },
+  "notes": "The index changed once, before Step 2: 523 recipes (00:59:12.564Z) -> 555 (03:59:18.754Z), and it stayed at 555 for every later phase check (search, recipes, arms, versions, latency, docs, end). All search, recipe, arm, version and latency results come from the 555-recipe index. pp.py is the prompt's client with two benchmark additions: an inter-process flock so that concurrent subagents still send one request at a time with the 1 s gap, and a PP_TAG field in the log. A third addition (logging 429/5xx before the retry) came mid-Step 4; no 429/5xx was ever logged. All 819 logged calls returned HTTP 200."
+ },
+ "arms_notes": "Fresh general-purpose subagent for every one of the 174 runs (29 tasks x 3 runs x 2 arms), same model and effort as me, each with an empty working folder and a TASK.md. Both arms got the identical task text; with_recipe also got a per-run pp.py shim (search/get only) and the prompt's instruction to search, get and use the best match if it fits, plus 'name the recipe id you used'. Neither arm could install packages, run code or use the web, so the arms differ only in ProvenPin access. This is stricter than a normal agent session and is my design choice. Grading: I copied the produced files into a clean, pre-built environment with the task's pinned versions and ran my acceptance tests, written and frozen before any search. A failure would have gone back to the same subagent with the test output, up to 3 attempts, but every run passed on attempt 1, so the retry path was never used. Pair order was shuffled with Random(seed+1) and the leading arm alternated; the two runs of a pair started together, with up to about 12 agents in flight. Tokens: total_tokens is the Agent tool's reported subagent_tokens (all tokens the subagent processed, including cache reads), with the same meaning in both arms; output-only tokens were not available. The seconds of with_recipe runs include any time spent waiting for the shared pp.py lock when several agents searched at once; I did not measure that wait separately. The acceptance tests did not separate the arms: all 174 runs passed, so the differences are only in time, tokens and code size.",
+ "overall_1to10": 6
+}

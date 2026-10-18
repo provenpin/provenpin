@@ -1,0 +1,243 @@
+{
+  "args": {
+    "query": "FastAPI OAuth2 password flow login that issues JWT access tokens and protects routes"
+  },
+  "t": "2026-10-18T04:33:16Z",
+  "wall_s": 0.99,
+  "ok": true,
+  "ms": 138,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "fastapi-oauth2-pyjwt-scopes",
+        "title": "FastAPI OAuth2 password flow with PyJWT tokens and scope checks",
+        "summary": "OAuth2 password login issuing PyJWT access tokens, Argon2 hashes via pwdlib, and per-route scope checks with SecurityScopes, tested offline with TestClient.",
+        "stack": [
+          "fastapi",
+          "pyjwt",
+          "pwdlib",
+          "argon2-cffi",
+          "python-multipart"
+        ],
+        "language": "python",
+        "score": 95.1,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pyjwt": "2.15.1",
+          "pwdlib": "0.3.1",
+          "argon2-cffi": "25.1.0",
+          "python-multipart": "0.0.32",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:28.448Z"
+        }
+      },
+      {
+        "id": "fastapi-jwt-auth",
+        "title": "FastAPI + PyJWT bearer auth",
+        "summary": "OAuth2 password flow in FastAPI issuing PyJWT tokens, with a current-user dependency guarding routes.",
+        "stack": [
+          "fastapi",
+          "pyjwt"
+        ],
+        "language": "python",
+        "score": 80.07,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pyjwt": "2.15.1",
+          "httpx": "0.28.1",
+          "python-multipart": "0.0.32",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:28.079Z"
+        }
+      },
+      {
+        "id": "fastapi-argon2-login",
+        "title": "FastAPI login with argon2-cffi hashing and rehash checks",
+        "summary": "A form-based FastAPI login that verifies argon2id hashes without leaking which users exist, and transparently upgrades outdated hashes on successful login, tested offline with TestClient and an in-memory store.",
+        "stack": [
+          "fastapi",
+          "argon2-cffi",
+          "python-multipart",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 58.97,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "argon2-cffi": "25.1.0",
+          "httpx": "0.28.1",
+          "python-multipart": "0.0.32",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:04.117Z"
+        }
+      },
+      {
+        "id": "flask-jwt-extended-auth",
+        "title": "Flask 3 + Flask-JWT-Extended access and refresh tokens",
+        "summary": "Login, protected routes, refresh tokens and custom claims in Flask 3 using Flask-JWT-Extended, with an app factory.",
+        "stack": [
+          "flask",
+          "flask-jwt-extended"
+        ],
+        "language": "python",
+        "score": 55.74,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-jwt-extended": "4.7.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:15.645Z"
+        }
+      },
+      {
+        "id": "fastapi-dependency-injector-wiring",
+        "title": "FastAPI routes wired to a dependency-injector DeclarativeContainer, tested offline",
+        "summary": "Build a DeclarativeContainer with Configuration, Singleton and Factory providers, wire it into FastAPI routes with @inject and Depends(Provide[...]), and test it in-process with httpx.ASGITransport.",
+        "stack": [
+          "fastapi",
+          "dependency-injector",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 52.73,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "dependency-injector": "4.49.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:09.162Z"
+        }
+      },
+      {
+        "id": "fastapi-httpx-asyncclient-lifespan",
+        "title": "FastAPI lifespan state tested with httpx ASGITransport and asgi-lifespan",
+        "summary": "A FastAPI app that opens a SQLite connection in its lifespan, then test it offline through httpx ASGITransport, with asgi-lifespan running startup and shutdown.",
+        "stack": [
+          "fastapi",
+          "httpx",
+          "asgi-lifespan"
+        ],
+        "language": "python",
+        "score": 46.87,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "asgi-lifespan": "2.1.0",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:17.491Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-v2-models",
+        "title": "FastAPI + Pydantic v2 validators, discriminated unions and serializers",
+        "summary": "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 46.87,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:32.402Z"
+        }
+      },
+      {
+        "id": "fastapi-websocket-auth",
+        "title": "FastAPI WebSockets with token auth and broadcast, tested with TestClient",
+        "summary": "FastAPI WebSocket endpoint that authenticates via query token, rejects with a close code and broadcasts to connected clients; tested with TestClient.websocket_connect.",
+        "stack": [
+          "fastapi",
+          "starlette"
+        ],
+        "language": "python",
+        "score": 46.87,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:48.087Z"
+        }
+      },
+      {
+        "id": "fastapi-cashews-memory-cache",
+        "title": "FastAPI endpoints cached with cashews in-memory backend",
+        "summary": "FastAPI routes backed by a cashews mem:// cache with key templates, TTL and explicit invalidation, tested fully offline through httpx ASGITransport.",
+        "stack": [
+          "fastapi",
+          "cashews",
+          "httpx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 46.36,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "cashews": "7.6.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.700Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-settings-dependency",
+        "title": "FastAPI config via pydantic-settings as a cached dependency",
+        "summary": "Load config from env vars with pydantic-settings, inject it into FastAPI routes through a cached dependency, and test it offline with monkeypatch and dependency_overrides.",
+        "stack": [
+          "fastapi",
+          "pydantic-settings",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 46.36,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic-settings": "2.16.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:31.090Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

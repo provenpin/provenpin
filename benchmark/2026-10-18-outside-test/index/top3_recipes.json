@@ -1,0 +1,739 @@
+{
+ "fastapi-sqlalchemy-crud": [
+  "T001",
+  "T061",
+  "T063"
+ ],
+ "fastapi-pydantic-v2-models": [
+  "T001",
+  "T041",
+  "T084",
+  "T087"
+ ],
+ "sqlalchemy2-pydantic-v2-from-attributes": [
+  "T001",
+  "T041"
+ ],
+ "fastapi-async-sqlalchemy-aiosqlite-pytest": [
+  "T001",
+  "T019",
+  "T043",
+  "T061",
+  "T063",
+  "T064",
+  "T068",
+  "T069"
+ ],
+ "fastapi-oauth2-pyjwt-scopes": [
+  "T002",
+  "T045",
+  "T070"
+ ],
+ "fastapi-jwt-auth": [
+  "T002",
+  "T045",
+  "T070"
+ ],
+ "fastapi-argon2-login": [
+  "T002",
+  "T044"
+ ],
+ "httpx-tenacity-retry": [
+  "T003"
+ ],
+ "tenacity-httpx-respx-backoff": [
+  "T003",
+  "T012",
+  "T027"
+ ],
+ "tenacity-retry-stop-wait": [
+  "T003",
+  "T050"
+ ],
+ "celery-redis-fakeredis-results": [
+  "T004",
+  "T020",
+  "T062"
+ ],
+ "django-celery-eager-signals": [
+  "T004",
+  "T062"
+ ],
+ "celery-tasks-eager-testing": [
+  "T004",
+  "T062"
+ ],
+ "pydantic-settings-config": [
+  "T005",
+  "T067"
+ ],
+ "pydantic-settings-nested-sources": [
+  "T005"
+ ],
+ "pydantic-settings-yaml-secrets": [
+  "T005",
+  "T067"
+ ],
+ "rich-typer-progress-cli": [
+  "T006"
+ ],
+ "typer-rich-table-cli": [
+  "T006"
+ ],
+ "typer-rich-table-export": [
+  "T006",
+  "T066"
+ ],
+ "structlog-fastapi-request-id": [
+  "T007",
+  "T068"
+ ],
+ "structlog-stdlib-json-renderer": [
+  "T007",
+  "T097"
+ ],
+ "structlog-bound-logger-context": [
+  "T007"
+ ],
+ "fastapi-stripe-webhook": [
+  "T008",
+  "T029",
+  "T073",
+  "T099"
+ ],
+ "express-stripe-webhook": [
+  "T008",
+  "T029",
+  "T073",
+  "T099"
+ ],
+ "nextjs-stripe-webhook": [
+  "T008",
+  "T029",
+  "T034",
+  "T054",
+  "T073",
+  "T080",
+  "T082",
+  "T099"
+ ],
+ "pydantic-v2-discriminated-unions-fastapi": [
+  "T008",
+  "T061"
+ ],
+ "fastapi-websocket-auth": [
+  "T008",
+  "T044",
+  "T070",
+  "T092"
+ ],
+ "boto3-moto-s3-presigned": [
+  "T009",
+  "T035",
+  "T066"
+ ],
+ "boto3-moto-dynamodb-sqs": [
+  "T009"
+ ],
+ "aws-sdk-v3-s3-client-mock": [
+  "T009",
+  "T035",
+  "T066"
+ ],
+ "pytest-mock-spy-autospec": [
+  "T009"
+ ],
+ "pandas-sqlalchemy-to-sql": [
+  "T010",
+  "T048",
+  "T083",
+  "T089"
+ ],
+ "pandas-openpyxl-excel-report": [
+  "T010",
+  "T048",
+  "T065",
+  "T083",
+  "T089"
+ ],
+ "sklearn-columntransformer-pipeline": [
+  "T010"
+ ],
+ "duckdb-polars-analytics": [
+  "T011",
+  "T065"
+ ],
+ "polars-pydantic-row-validation": [
+  "T011"
+ ],
+ "polars-pandera-validation": [
+  "T011",
+  "T065"
+ ],
+ "httpx-authlib-oauth2-mock": [
+  "T012"
+ ],
+ "httpx-pydantic-typed-client": [
+  "T012"
+ ],
+ "sqlalchemy-alembic-migrations": [
+  "T013"
+ ],
+ "sqlalchemy-alembic-autogenerate-check": [
+  "T013"
+ ],
+ "flask-migrate-sqlite": [
+  "T013",
+  "T014",
+  "T042",
+  "T046",
+  "T053",
+  "T056"
+ ],
+ "marshmallow-sqlalchemy-flask-api": [
+  "T014",
+  "T049"
+ ],
+ "flask-sqlalchemy-app-factory": [
+  "T014"
+ ],
+ "django-drf-api": [
+  "T015"
+ ],
+ "drf-django-filter-viewset": [
+  "T015"
+ ],
+ "drf-simplejwt-auth": [
+  "T015"
+ ],
+ "openai-python-respx-mock": [
+  "T016",
+  "T017",
+  "T033",
+  "T046",
+  "T060"
+ ],
+ "openai-structured-output-respx": [
+  "T016",
+  "T033",
+  "T046",
+  "T079"
+ ],
+ "openai-sdk-mocked-tool-calls": [
+  "T016",
+  "T033",
+  "T046",
+  "T060",
+  "T079"
+ ],
+ "langchain-core-fake-llm-python": [
+  "T016"
+ ],
+ "anthropic-sdk-mocked-tool-use": [
+  "T017"
+ ],
+ "python-dotenv-pydantic-settings-env": [
+  "T017",
+  "T067",
+  "T088"
+ ],
+ "orjson-pydantic-v2-roundtrip": [
+  "T017",
+  "T041"
+ ],
+ "aiolimiter-httpx-rate-limit": [
+  "T018"
+ ],
+ "requests-cache-sqlite-backend": [
+  "T018",
+  "T020",
+  "T040"
+ ],
+ "fastapi-httpx-asyncclient-lifespan": [
+  "T018",
+  "T043",
+  "T044",
+  "T069"
+ ],
+ "opentelemetry-sdk-inmemory-span": [
+  "T019"
+ ],
+ "fastapi-cashews-memory-cache": [
+  "T019",
+  "T061"
+ ],
+ "redis-fakeredis-pipeline": [
+  "T020"
+ ],
+ "express-zod-validation": [
+  "T021"
+ ],
+ "http-errors-express-error-middleware": [
+  "T021",
+  "T025",
+  "T032",
+  "T052"
+ ],
+ "joi-express-validation": [
+  "T021",
+  "T036",
+  "T038",
+  "T052",
+  "T075"
+ ],
+ "fastify-jwt-auth": [
+  "T022",
+  "T071"
+ ],
+ "fastify-json-schema": [
+  "T022",
+  "T055"
+ ],
+ "fastify-zod-type-provider": [
+  "T022",
+  "T055"
+ ],
+ "hono-rpc-typed-client": [
+  "T023"
+ ],
+ "hono-zod-validator": [
+  "T023"
+ ],
+ "hono-drizzle-sqlite-api": [
+  "T023",
+  "T024",
+  "T059",
+  "T078"
+ ],
+ "drizzle-sqlite-crud": [
+  "T024",
+  "T059",
+  "T078"
+ ],
+ "drizzle-zod-insert-schemas": [
+  "T024",
+  "T059",
+  "T078"
+ ],
+ "prisma-sqlite-transactions": [
+  "T025",
+  "T076"
+ ],
+ "express5-async-error-handling": [
+  "T025",
+  "T052",
+  "T075"
+ ],
+ "trpc-zod-router": [
+  "T026"
+ ],
+ "koa-router-zod-supertest": [
+  "T026"
+ ],
+ "trpc-client-server-superjson": [
+  "T026"
+ ],
+ "p-queue-concurrency": [
+  "T027",
+  "T093"
+ ],
+ "p-queue-priority": [
+  "T027"
+ ],
+ "axios-retry-nock": [
+  "T027",
+  "T028",
+  "T072"
+ ],
+ "axios-mock-adapter-client": [
+  "T028",
+  "T072"
+ ],
+ "undici-mockagent-p-retry": [
+  "T028",
+  "T040"
+ ],
+ "twilio-webhook-signature-express": [
+  "T029",
+  "T073",
+  "T075"
+ ],
+ "jose-jwks-verify": [
+  "T030"
+ ],
+ "bcryptjs-jose-sessions": [
+  "T030"
+ ],
+ "express-passport-jwt": [
+  "T030",
+  "T071"
+ ],
+ "ky-msw-vitest": [
+  "T031"
+ ],
+ "redux-toolkit-rtk-query-msw": [
+  "T031"
+ ],
+ "openapi-fetch-msw": [
+  "T031",
+  "T040"
+ ],
+ "express-pino-http-logging": [
+  "T032"
+ ],
+ "pino-redaction-custom-transport": [
+  "T032"
+ ],
+ "openai-streaming-mock": [
+  "T033",
+  "T046",
+  "T060",
+  "T079",
+  "T097"
+ ],
+ "zod-v4-json-schema-export": [
+  "T033",
+  "T051",
+  "T074",
+  "T098"
+ ],
+ "nextjs-route-handler-zod": [
+  "T034",
+  "T054",
+  "T080"
+ ],
+ "nextjs-supabase-auth-middleware": [
+  "T034",
+  "T054",
+  "T080"
+ ],
+ "aws-sdk-v3-dynamodb-sqs-vitest": [
+  "T035",
+  "T060"
+ ],
+ "fastify-multipart-upload": [
+  "T035"
+ ],
+ "express-openapi-validator-spec": [
+  "T036",
+  "T038",
+  "T079"
+ ],
+ "express-validator-supertest": [
+  "T036",
+  "T038"
+ ],
+ "commander-zod-cli": [
+  "T037"
+ ],
+ "typer-cli-testing": [
+  "T037"
+ ],
+ "ink-testing-library-cli": [
+  "T037",
+  "T099"
+ ],
+ "clipanion-cli-parser": [
+  "T037"
+ ],
+ "pg-mem-kysely-postgres-tests": [
+  "T039"
+ ],
+ "kysely-sqlite-queries": [
+  "T039"
+ ],
+ "drizzle-pglite-migrations": [
+  "T039",
+  "T086"
+ ],
+ "p-limit-concurrency": [
+  "T040",
+  "T076"
+ ],
+ "sqlmodel-sqlalchemy-core-select": [
+  "T042"
+ ],
+ "sqlalchemy-hybrid-events": [
+  "T042",
+  "T050"
+ ],
+ "fastapi-dependency-overrides-httpx": [
+  "T043",
+  "T069"
+ ],
+ "returns-maybe-ioresult": [
+  "T045"
+ ],
+ "pyjwt-cryptography-rs256": [
+  "T045"
+ ],
+ "pytest-asyncio-taskgroup-timeouts": [
+  "T047"
+ ],
+ "sqlalchemy-async-aiosqlite": [
+  "T047",
+  "T061"
+ ],
+ "anyio-to-thread-bridge": [
+  "T047"
+ ],
+ "pandas-pandera-validation": [
+  "T048"
+ ],
+ "marshmallow-dataclass-schema": [
+  "T049"
+ ],
+ "flask-marshmallow-webargs": [
+  "T049"
+ ],
+ "numpy-scipy-optimize-fit": [
+  "T050"
+ ],
+ "ws-zod-message-protocol": [
+  "T051",
+  "T074",
+  "T092"
+ ],
+ "zod-to-openapi-document-generation": [
+  "T051",
+  "T098"
+ ],
+ "json-schema-to-typescript-codegen": [
+  "T053",
+  "T056",
+  "T077",
+  "T095",
+  "T098",
+  "T100"
+ ],
+ "openapi-typescript-generate-types": [
+  "T053",
+  "T077",
+  "T095",
+  "T100"
+ ],
+ "js-yaml-zod-config": [
+  "T053",
+  "T067"
+ ],
+ "fastify-swagger-openapi": [
+  "T055"
+ ],
+ "nestjs-typeorm-sqlite": [
+  "T056"
+ ],
+ "preact-render-to-string-ssr": [
+  "T056"
+ ],
+ "postcss-custom-plugin-autoprefixer": [
+  "T057"
+ ],
+ "clsx-tailwind-merge-cva": [
+  "T057",
+  "T089"
+ ],
+ "beautifulsoup4-soupsieve-select": [
+  "T057"
+ ],
+ "markdown-it-render-plugin": [
+  "T057"
+ ],
+ "jotai-atoms-react-testing-library": [
+  "T058"
+ ],
+ "react-hook-form-zod-resolver": [
+  "T058"
+ ],
+ "react-email-render-html-text": [
+  "T058"
+ ],
+ "mdx-compile-evaluate": [
+  "T058"
+ ],
+ "fastapi-pydantic-background-tasks": [
+  "T061"
+ ],
+ "sqlalchemy-aiosqlite-session-factory": [
+  "T063"
+ ],
+ "quart-httpx-asgi-client": [
+  "T064"
+ ],
+ "aiofiles-anyio-temp-io": [
+  "T064"
+ ],
+ "csv-parse-stringify-streams": [
+  "T066"
+ ],
+ "python-multipart-starlette-forms": [
+  "T066",
+  "T081",
+  "T084"
+ ],
+ "fastapi-jinja2-htmx-partials": [
+  "T068",
+  "T085"
+ ],
+ "flask-jwt-extended-auth": [
+  "T071"
+ ],
+ "nestjs-jwt-guard-testing": [
+  "T071"
+ ],
+ "express-jwt-auth": [
+  "T071"
+ ],
+ "express-helmet-rate-limit": [
+  "T072",
+  "T094"
+ ],
+ "nestjs-zod-validation-pipe": [
+  "T074"
+ ],
+ "prisma-sqlite-adapter": [
+  "T076"
+ ],
+ "sqlmodel-relationships-sqlite": [
+  "T076"
+ ],
+ "rollup-virtual-module-bundle": [
+  "T077"
+ ],
+ "mcp-sdk-inmemory-tools": [
+  "T081"
+ ],
+ "vercel-ai-sdk-mock-model-tools": [
+  "T081"
+ ],
+ "python-json-logger-structured": [
+  "T081",
+  "T084"
+ ],
+ "python-docx-table-report": [
+  "T081"
+ ],
+ "cryptography-fernet-multi-key": [
+  "T082"
+ ],
+ "babel-codemod-parse-traverse": [
+  "T082"
+ ],
+ "litestar-dto-sqlalchemy": [
+  "T082",
+  "T090"
+ ],
+ "litestar-guards-di": [
+  "T082",
+  "T090"
+ ],
+ "tar-pack-extract": [
+  "T083"
+ ],
+ "polib-po-catalog-roundtrip": [
+  "T083",
+  "T089"
+ ],
+ "jinja2-markupsafe-email-templates": [
+  "T085"
+ ],
+ "jinja2-sandboxed-user-templates": [
+  "T085"
+ ],
+ "drizzle-pglite-postgres": [
+  "T086"
+ ],
+ "authjs-drizzle-adapter-pglite": [
+  "T086"
+ ],
+ "boltons-funcutils-retry": [
+  "T086"
+ ],
+ "construct-binary-struct-parsing": [
+  "T086"
+ ],
+ "dataclasses-json-camelcase": [
+  "T086"
+ ],
+ "node-forge-self-signed-cert": [
+  "T087"
+ ],
+ "vue-server-renderer-ssr": [
+  "T087",
+  "T097"
+ ],
+ "aiohttp-pytest-plugin-client": [
+  "T087"
+ ],
+ "feedparser-pydantic-models": [
+  "T087"
+ ],
+ "lru-cache-ttl": [
+  "T088"
+ ],
+ "cache-manager-memory-store": [
+  "T088"
+ ],
+ "tanstack-query-core-cache": [
+  "T088"
+ ],
+ "diskcache-cachetools-tiered": [
+  "T088"
+ ],
+ "python-slugify-unidecode-titles": [
+  "T088"
+ ],
+ "web-push-vapid-payload-encryption": [
+  "T089"
+ ],
+ "msgspec-struct-validation": [
+  "T090"
+ ],
+ "effect-schema-vitest": [
+  "T091"
+ ],
+ "io-ts-codec-decode": [
+  "T091"
+ ],
+ "ts-morph-codegen-ast-edit": [
+  "T091"
+ ],
+ "nextjs-server-action-zod": [
+  "T092"
+ ],
+ "apollo-server-dataloader-batching": [
+  "T092"
+ ],
+ "p-map-concurrency-limit": [
+  "T093"
+ ],
+ "bottleneck-rate-limiting": [
+  "T093"
+ ],
+ "rate-limiter-flexible-memory": [
+  "T094"
+ ],
+ "throttle-debounce-fns": [
+  "T094"
+ ],
+ "temporal-polyfill-dates": [
+  "T095"
+ ],
+ "transitions-fsm-callbacks": [
+  "T095"
+ ],
+ "nanoid-custom-alphabet": [
+  "T096"
+ ],
+ "knex-better-sqlite3-migrations": [
+  "T096"
+ ],
+ "arktype-schema-validation": [
+  "T096"
+ ],
+ "yup-form-schemas": [
+  "T097"
+ ],
+ "mime-types-lookup": [
+  "T100"
+ ]
+}

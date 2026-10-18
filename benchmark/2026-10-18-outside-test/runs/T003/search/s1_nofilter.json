@@ -1,0 +1,233 @@
+{
+  "args": {
+    "query": "retry httpx requests with tenacity exponential backoff on 5xx and timeouts"
+  },
+  "t": "2026-10-18T04:30:22Z",
+  "wall_s": 0.91,
+  "ok": true,
+  "ms": 178,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "httpx-tenacity-retry",
+        "title": "httpx client + tenacity retries with backoff, tested with respx",
+        "summary": "Retry transient HTTP failures (5xx, 429, timeouts) with tenacity around an httpx client, honoring a max attempt count, tested offline with respx.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 133.2,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:07.041Z"
+        }
+      },
+      {
+        "id": "tenacity-httpx-respx-backoff",
+        "title": "httpx + tenacity async retries honoring Retry-After, tested with respx",
+        "summary": "Wrap async httpx calls in tenacity AsyncRetrying that retries 429 and 5xx, honors Retry-After, and patches the wait to zero in tests with respx mocks.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 128.97,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:06.586Z"
+        }
+      },
+      {
+        "id": "tenacity-retry-stop-wait",
+        "title": "tenacity Retrying with stop_after_attempt and wait_exponential",
+        "summary": "Build a tenacity Retrying policy that stops after N attempts, backs off exponentially and only retries transient exception types, then prove the behavior offline under pytest.",
+        "stack": [
+          "tenacity"
+        ],
+        "language": "python",
+        "score": 84.25,
+        "pinned": {
+          "tenacity": "9.2.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:13.938Z"
+        }
+      },
+      {
+        "id": "requests-cache-sqlite-backend",
+        "title": "requests-cache CachedSession with sqlite backend and expiry",
+        "summary": "A requests session backed by a persistent sqlite cache with TTL expiry and 200-only caching, tested offline with responses mocks.",
+        "stack": [
+          "requests",
+          "requests-cache",
+          "responses"
+        ],
+        "language": "python",
+        "score": 69.02,
+        "pinned": {
+          "requests": "2.34.2",
+          "requests-cache": "1.3.3",
+          "responses": "0.26.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:49.436Z"
+        }
+      },
+      {
+        "id": "axios-retry-nock",
+        "title": "Axios + axios-retry with exponential backoff, tested with nock",
+        "summary": "Configure axios-retry for idempotent requests and 429/5xx responses, tested offline with nock intercepts.",
+        "stack": [
+          "axios",
+          "axios-retry",
+          "nock"
+        ],
+        "language": "typescript",
+        "score": 46.85,
+        "pinned": {
+          "axios": "1.20.0",
+          "axios-retry": "4.5.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "nock": "15.0.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.680Z"
+        }
+      },
+      {
+        "id": "httpx-respx-api-client",
+        "title": "httpx async API client + respx mocks",
+        "summary": "A typed async API client on httpx with retries on 5xx and Pydantic parsing, tested offline with respx route mocks.",
+        "stack": [
+          "httpx",
+          "respx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 45.83,
+        "pinned": {
+          "httpx": "0.28.1",
+          "respx": "0.23.1",
+          "pydantic": "2.14.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:56.876Z"
+        }
+      },
+      {
+        "id": "httpx-pydantic-typed-client",
+        "title": "Typed httpx client parsing into pydantic v2 models, tested with respx",
+        "summary": "An async httpx client that retries 5xx and transport errors, validates responses into pydantic v2 models, and is tested offline with respx route mocks.",
+        "stack": [
+          "httpx",
+          "pydantic",
+          "respx"
+        ],
+        "language": "python",
+        "score": 45.44,
+        "pinned": {
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:53.181Z"
+        }
+      },
+      {
+        "id": "httpx-respx-pagination-oauth",
+        "title": "httpx OAuth2 client-credentials client with cached tokens and Link pagination",
+        "summary": "A sync httpx client that fetches and caches an OAuth2 client-credentials token, refreshes it on 401, and follows Link-header pagination, tested offline with respx routes.",
+        "stack": [
+          "httpx",
+          "respx"
+        ],
+        "language": "python",
+        "score": 44.43,
+        "pinned": {
+          "httpx": "0.28.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:00.076Z"
+        }
+      },
+      {
+        "id": "fastapi-httpx-asyncclient-lifespan",
+        "title": "FastAPI lifespan state tested with httpx ASGITransport and asgi-lifespan",
+        "summary": "A FastAPI app that opens a SQLite connection in its lifespan, then test it offline through httpx ASGITransport, with asgi-lifespan running startup and shutdown.",
+        "stack": [
+          "fastapi",
+          "httpx",
+          "asgi-lifespan"
+        ],
+        "language": "python",
+        "score": 42.6,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "asgi-lifespan": "2.1.0",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:17.491Z"
+        }
+      },
+      {
+        "id": "starlette-httpx-asgi-client",
+        "title": "Starlette routes and middleware tested offline with httpx ASGITransport",
+        "summary": "A Starlette app with BaseHTTPMiddleware and lifespan state, exercised in-process via httpx ASGITransport without a real server.",
+        "stack": [
+          "starlette",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 42.6,
+        "pinned": {
+          "starlette": "1.8.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:05:41.889Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

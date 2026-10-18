@@ -1,0 +1,250 @@
+{
+  "args": {
+    "query": "drizzle-kit config changed: driver replaced by dialect and generate:sqlite replaced by generate"
+  },
+  "t": "2026-10-18T04:32:11Z",
+  "wall_s": 1.02,
+  "ok": true,
+  "ms": 157,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "drizzle-sqlite-crud",
+        "title": "Drizzle ORM + better-sqlite3 CRUD",
+        "summary": "Typed schema, migrations-free table creation and CRUD with Drizzle on an in-memory SQLite database.",
+        "stack": [
+          "drizzle-orm",
+          "better-sqlite3",
+          "sqlite"
+        ],
+        "language": "typescript",
+        "score": 103.38,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "better-sqlite3": "12.11.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:19.087Z"
+        }
+      },
+      {
+        "id": "drizzle-zod-insert-schemas",
+        "title": "Drizzle ORM + drizzle-zod validated inserts on SQLite",
+        "summary": "Generate Zod insert and select schemas from Drizzle tables with drizzle-zod, refine them, and validate input before inserting into SQLite.",
+        "stack": [
+          "drizzle-orm",
+          "drizzle-zod",
+          "zod",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 75.76,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "drizzle-zod": "0.8.3",
+          "zod": "4.6.7",
+          "better-sqlite3": "12.11.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:23.365Z"
+        }
+      },
+      {
+        "id": "hono-drizzle-sqlite-api",
+        "title": "Hono + Drizzle ORM + SQLite REST API (Vitest)",
+        "summary": "CRUD REST API in Hono backed by Drizzle ORM on better-sqlite3, with Zod validation, tested with Vitest and app.request().",
+        "stack": [
+          "hono",
+          "drizzle-orm",
+          "better-sqlite3",
+          "zod",
+          "@hono/zod-validator",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 72.65,
+        "pinned": {
+          "hono": "4.13.13",
+          "drizzle-orm": "0.45.4",
+          "better-sqlite3": "13.0.3",
+          "zod": "4.6.7",
+          "@hono/zod-validator": "0.9.1",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4",
+          "@types/better-sqlite3": "9.6.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:13.119Z"
+        }
+      },
+      {
+        "id": "authjs-drizzle-adapter-pglite",
+        "title": "Auth.js Drizzle adapter on PGlite Postgres (database sessions)",
+        "summary": "Set up @auth/drizzle-adapter with the standard Postgres tables on Drizzle, and test user, account linking and database session lifecycle against in-memory PGlite.",
+        "stack": [
+          "@auth/drizzle-adapter",
+          "@auth/core",
+          "drizzle-orm",
+          "@electric-sql/pglite"
+        ],
+        "language": "typescript",
+        "score": 57.72,
+        "pinned": {
+          "@auth/drizzle-adapter": "1.11.3",
+          "@auth/core": "0.41.3",
+          "drizzle-orm": "0.45.4",
+          "@electric-sql/pglite": "0.5.10",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.638Z"
+        }
+      },
+      {
+        "id": "drizzle-pglite-migrations",
+        "title": "Drizzle ORM migrations on PGlite (in-memory Postgres)",
+        "summary": "Apply versioned SQL migrations with Drizzle's PGlite migrator, use Postgres features (jsonb, enums, arrays, onConflictDoUpdate) and test against a fresh in-memory database.",
+        "stack": [
+          "drizzle-orm",
+          "@electric-sql/pglite",
+          "postgres"
+        ],
+        "language": "typescript",
+        "score": 57.72,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "@electric-sql/pglite": "0.5.10",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:14.474Z"
+        }
+      },
+      {
+        "id": "drizzle-pglite-postgres",
+        "title": "Drizzle ORM + PGlite in-memory Postgres",
+        "summary": "Real Postgres semantics in tests with no server: Drizzle ORM on PGlite (WASM Postgres) with relations, returning() and transactions.",
+        "stack": [
+          "drizzle-orm",
+          "@electric-sql/pglite",
+          "postgres"
+        ],
+        "language": "typescript",
+        "score": 57.72,
+        "pinned": {
+          "drizzle-orm": "0.45.4",
+          "@electric-sql/pglite": "0.5.10",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:20.992Z"
+        }
+      },
+      {
+        "id": "prisma-sqlite-adapter",
+        "title": "Prisma 7 + SQLite via better-sqlite3 adapter",
+        "summary": "Prisma Client 7 with the better-sqlite3 driver adapter, schema push and relational queries on a local SQLite file.",
+        "stack": [
+          "prisma",
+          "sqlite",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 51.6,
+        "pinned": {
+          "@prisma/client": "7.10.0",
+          "@prisma/adapter-better-sqlite3": "7.10.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "prisma": "7.10.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:21.651Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-alembic-autogenerate-check",
+        "title": "Alembic autogenerate compare_metadata drift check against SQLite",
+        "summary": "Declare SQLAlchemy 2 models with a naming convention, then detect schema drift offline by diffing the live SQLite schema against the metadata with Alembic compare_metadata.",
+        "stack": [
+          "sqlalchemy",
+          "alembic",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 48.04,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "alembic": "1.20.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:30.413Z"
+        }
+      },
+      {
+        "id": "prisma-sqlite-transactions",
+        "title": "Prisma 7 + SQLite: nested writes, interactive transactions and unique errors",
+        "summary": "Prisma Client 7 on SQLite (better-sqlite3 adapter): nested creates, an interactive $transaction that rolls back, and handling P2002 unique-constraint errors.",
+        "stack": [
+          "prisma",
+          "sqlite",
+          "better-sqlite3"
+        ],
+        "language": "typescript",
+        "score": 47.79,
+        "pinned": {
+          "@prisma/client": "7.10.0",
+          "@prisma/adapter-better-sqlite3": "7.10.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "prisma": "7.10.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:22.623Z"
+        }
+      },
+      {
+        "id": "tortoise-orm-sqlite-relations",
+        "title": "Tortoise ORM relations and filters on sqlite under pytest-asyncio",
+        "summary": "Model foreign keys, reverse and many-to-many relations in Tortoise ORM, then exercise select_related, prefetch_related, dotted filters, distinct and annotate counts offline on in-memory sqlite.",
+        "stack": [
+          "tortoise-orm",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 47.79,
+        "pinned": {
+          "tortoise-orm": "1.1.9",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:55.284Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "args": {
+    "query": "test an Express API with supertest and vitest"
+  },
+  "t": "2026-10-18T04:32:44Z",
+  "wall_s": 1.02,
+  "ok": true,
+  "ms": 143,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "express-validator-supertest",
+        "title": "express-validator request checks with supertest",
+        "summary": "Validate Express JSON bodies and query params with express-validator, returning field errors, tested with supertest offline.",
+        "stack": [
+          "express",
+          "express-validator",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 104.82,
+        "pinned": {
+          "express": "5.3.0",
+          "express-validator": "7.3.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1",
+          "@types/supertest": "7.2.1",
+          "@types/express": "5.0.6"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:59:23.971Z"
+        }
+      },
+      {
+        "id": "joi-express-validation",
+        "title": "Joi request validation middleware for Express 5",
+        "summary": "Validate Express 5 bodies and query strings with Joi schemas in a reusable middleware, with defaults, type conversion, stripUnknown and 400 error details, tested with supertest.",
+        "stack": [
+          "joi",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 102.48,
+        "pinned": {
+          "joi": "18.2.9",
+          "express": "5.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:38.085Z"
+        }
+      },
+      {
+        "id": "express-openapi-validator-spec",
+        "title": "express-openapi-validator request and response validation",
+        "summary": "Validate an Express app against an inline OpenAPI 3 spec using express-openapi-validator, returning validation errors as JSON and testing valid and invalid requests offline with supertest.",
+        "stack": [
+          "express",
+          "express-openapi-validator",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 99.01,
+        "pinned": {
+          "express": "5.3.0",
+          "express-openapi-validator": "5.6.2",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:29.567Z"
+        }
+      },
+      {
+        "id": "http-errors-express-error-middleware",
+        "title": "http-errors with Express error middleware",
+        "summary": "Express routes that throw http-errors and reject asynchronously, mapped by a central middleware to RFC 7807 problem details with expose-aware messages and a 500 fallback, tested offline with supertest.",
+        "stack": [
+          "express",
+          "http-errors",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 97.11,
+        "pinned": {
+          "express": "5.3.0",
+          "http-errors": "2.0.1",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/http-errors": "2.0.5",
+          "@types/node": "26.6.5",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:28.422Z"
+        }
+      },
+      {
+        "id": "twilio-webhook-signature-express",
+        "title": "Twilio webhook signature validation in Express with TwiML replies",
+        "summary": "Validate X-Twilio-Signature on inbound SMS webhooks in Express with twilio.validateRequest, including query strings and tampered params, and reply with MessagingResponse TwiML, tested offline with supertest.",
+        "stack": [
+          "twilio",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 97.11,
+        "pinned": {
+          "twilio": "6.2.0",
+          "express": "5.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15",
+          "supertest": "7.3.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:10:13.471Z"
+        }
+      },
+      {
+        "id": "cors-express-preflight",
+        "title": "cors express preflight",
+        "summary": "Configure cors with express to reflect allowed origins, answer OPTIONS preflight with Access-Control-Allow-* headers, and deny a disallowed origin, tested offline with supertest.",
+        "stack": [
+          "cors",
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 95.68,
+        "pinned": {
+          "cors": "2.8.6",
+          "express": "5.3.0",
+          "supertest": "7.3.1",
+          "@types/cors": "2.8.19",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T15:20:56.500Z"
+        }
+      },
+      {
+        "id": "express5-async-error-handling",
+        "title": "express 5 async error handling",
+        "summary": "Use express 5 with supertest to forward rejected async handlers to a JSON error middleware, with router-level params, a JSON 404 handler and offline tests.",
+        "stack": [
+          "express",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 95.68,
+        "pinned": {
+          "express": "5.3.0",
+          "supertest": "7.3.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:58:32.228Z"
+        }
+      },
+      {
+        "id": "passport-local-express-session",
+        "title": "passport-local express session auth",
+        "summary": "Authenticate express requests with passport LocalStrategy against an in-memory store, persist the login with express-session and guard a protected route offline.",
+        "stack": [
+          "express",
+          "passport",
+          "passport-local",
+          "express-session"
+        ],
+        "language": "typescript",
+        "score": 65.87,
+        "pinned": {
+          "express": "5.3.0",
+          "express-session": "1.19.0",
+          "passport": "0.7.0",
+          "passport-local": "1.0.0",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/express-session": "1.19.0",
+          "@types/node": "26.6.5",
+          "@types/passport": "1.0.17",
+          "@types/passport-local": "1.0.38",
+          "@types/supertest": "7.2.1",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T05:58:36.193Z"
+        }
+      },
+      {
+        "id": "koa-router-zod-supertest",
+        "title": "Koa 3 REST API with @koa/router, Zod validation and supertest",
+        "summary": "A Koa 3 JSON API using @koa/router and @koa/bodyparser with Zod 4 body and param validation mapped to 400 responses by a central error middleware, tested offline with supertest.",
+        "stack": [
+          "koa",
+          "@koa/router",
+          "@koa/bodyparser",
+          "zod",
+          "supertest"
+        ],
+        "language": "typescript",
+        "score": 64.05,
+        "pinned": {
+          "koa": "3.2.1",
+          "@koa/router": "15.7.0",
+          "@koa/bodyparser": "6.1.0",
+          "zod": "4.6.7",
+          "supertest": "7.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:31.395Z"
+        }
+      },
+      {
+        "id": "express-zod-validation",
+        "title": "Express 5 + Zod 4 request validation",
+        "summary": "Validate JSON bodies in Express 5 with a reusable Zod middleware that returns 400 with field errors.",
+        "stack": [
+          "express",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 59.67,
+        "pinned": {
+          "express": "5.3.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "supertest": "7.3.1",
+          "@types/express": "5.0.6",
+          "@types/supertest": "7.2.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:01.408Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

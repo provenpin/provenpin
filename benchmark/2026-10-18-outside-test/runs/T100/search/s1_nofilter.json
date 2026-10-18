@@ -1,0 +1,212 @@
+{
+  "args": {
+    "query": "my generic TypeScript function widens literal types to string, how to keep literals with const type parameters"
+  },
+  "t": "2026-10-18T04:33:19Z",
+  "wall_s": 0.98,
+  "ok": true,
+  "ms": 125,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "json-schema-to-typescript-codegen",
+        "title": "Generate TypeScript types from JSON Schema with json-schema-to-typescript",
+        "summary": "Compile JSON Schemas into TypeScript interfaces with json-schema-to-typescript, covering required and optional fields, enums, $ref definitions, descriptions as JSDoc and strict additionalProperties.",
+        "stack": [
+          "json-schema-to-typescript"
+        ],
+        "language": "typescript",
+        "score": 56.19,
+        "pinned": {
+          "json-schema-to-typescript": "16.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:59.591Z"
+        }
+      },
+      {
+        "id": "openapi-typescript-generate-types",
+        "title": "openapi-typescript generate types",
+        "summary": "Generate TypeScript types from an inline OpenAPI 3.1 document with the openapi-typescript programmatic API using openapiTS and astToString, asserting generated interface members and path keys offline.",
+        "stack": [
+          "openapi-typescript"
+        ],
+        "language": "typescript",
+        "score": 49,
+        "pinned": {
+          "openapi-typescript": "7.13.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:47.514Z"
+        }
+      },
+      {
+        "id": "mime-types-lookup",
+        "title": "mime-types lookup",
+        "summary": "Look up content-type from an extension and extension from a type with mime-types, asserting json, html, png and wasm plus the charset helper and graceful unknown handling, offline.",
+        "stack": [
+          "mime-types"
+        ],
+        "language": "typescript",
+        "score": 30.95,
+        "pinned": {
+          "mime-types": "3.0.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T15:20:57.314Z"
+        }
+      },
+      {
+        "id": "file-type-buffer-detect",
+        "title": "file-type buffer detection",
+        "summary": "Detect PNG, PDF, ZIP and GIF from small in-memory magic byte buffers with file-type, asserting ext and mime, and undefined for plain text.",
+        "stack": [
+          "file-type"
+        ],
+        "language": "typescript",
+        "score": 27.59,
+        "pinned": {
+          "file-type": "22.2.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T19:54:48.689Z"
+        }
+      },
+      {
+        "id": "fastify-zod-type-provider",
+        "title": "Fastify 5 + Zod 4 type provider for typed routes",
+        "summary": "Use fastify-type-provider-zod so Zod 4 schemas validate requests, serialize responses and type handlers in Fastify 5.",
+        "stack": [
+          "fastify",
+          "zod",
+          "fastify-type-provider-zod"
+        ],
+        "language": "typescript",
+        "score": 27.34,
+        "pinned": {
+          "fastify": "5.12.7",
+          "zod": "4.6.7",
+          "fastify-type-provider-zod": "7.0.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:53.230Z"
+        }
+      },
+      {
+        "id": "preact-render-to-string-ssr",
+        "title": "preact render to string SSR",
+        "summary": "Server-render preact components with preact-render-to-string, covering props, useState initial values, conditional output, keyed lists and dangerouslySetInnerHTML while asserting exact escaped HTML offline.",
+        "stack": [
+          "preact",
+          "preact-render-to-string"
+        ],
+        "language": "typescript",
+        "score": 26.16,
+        "pinned": {
+          "preact": "11.0.1",
+          "preact-render-to-string": "6.8.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:44.060Z"
+        }
+      },
+      {
+        "id": "ts-morph-codegen-ast-edit",
+        "title": "ts-morph code generation and AST codemods in memory",
+        "summary": "Generate a typed TypeScript client module with ts-morph structures, type-check it with pre-emit diagnostics, and run codemods (cross-file rename, var to const, strip console.log) on an in-memory file system.",
+        "stack": [
+          "ts-morph"
+        ],
+        "language": "typescript",
+        "score": 25.19,
+        "pinned": {
+          "ts-morph": "28.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T20:10:09.454Z"
+        }
+      },
+      {
+        "id": "typeguard-runtime-typecheck",
+        "title": "Runtime type checking with typeguard: @typechecked, check_type and generics",
+        "summary": "Enforce annotations at runtime with typeguard: @typechecked functions, standalone check_type, TypeCheckError messages and bounded TypeVars, plus the FIRST_ITEM container gotcha.",
+        "stack": [
+          "typeguard"
+        ],
+        "language": "python",
+        "score": 22.31,
+        "pinned": {
+          "typeguard": "4.6.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T03:57:41.006Z"
+        }
+      },
+      {
+        "id": "magic-string-sourcemap-edits",
+        "title": "magic-string sourcemap edits",
+        "summary": "Overwrite, prependLeft, append and remove ranges in a source string with magic-string, generate a hires source map and verify positions with source-map-js SourceMapConsumer.originalPositionFor offline.",
+        "stack": [
+          "magic-string",
+          "source-map-js"
+        ],
+        "language": "typescript",
+        "score": 17.05,
+        "pinned": {
+          "magic-string": "1.4.3",
+          "source-map-js": "1.2.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T22:58:28.214Z"
+        }
+      },
+      {
+        "id": "rapidfuzz-fuzzy-match",
+        "title": "rapidfuzz extractOne and scorers for fuzzy string matching",
+        "summary": "Pick the best candidate with process.extractOne, control matching with WRatio, partial and token scorers, and normalize messy input with utils.default_process.",
+        "stack": [
+          "rapidfuzz"
+        ],
+        "language": "python",
+        "score": 17.05,
+        "pinned": {
+          "rapidfuzz": "3.14.6",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:56.733Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

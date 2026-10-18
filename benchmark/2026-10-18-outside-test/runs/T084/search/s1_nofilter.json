@@ -1,0 +1,220 @@
+{
+  "args": {
+    "query": "parse HL7 v2 ADT A01 message in Python with hl7apy and get patient name and MRN"
+  },
+  "t": "2026-10-18T04:34:17Z",
+  "wall_s": 1.02,
+  "ok": true,
+  "ms": 163,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "fastapi-pydantic-v2-models",
+        "title": "FastAPI + Pydantic v2 validators, discriminated unions and serializers",
+        "summary": "Pydantic v2 patterns in FastAPI that agents often get wrong: field_validator, model_validator, discriminated unions, computed_field and response_model filtering.",
+        "stack": [
+          "fastapi",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 28.78,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic": "2.14.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:32.402Z"
+        }
+      },
+      {
+        "id": "python-multipart-starlette-forms",
+        "title": "Starlette multipart form uploads parsed with python-multipart, tested offline",
+        "summary": "Parse multipart text fields and file uploads in Starlette with python-multipart, then exercise the app fully in-process through httpx.ASGITransport with no network.",
+        "stack": [
+          "starlette",
+          "python-multipart",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 23.94,
+        "pinned": {
+          "python-multipart": "0.0.32",
+          "starlette": "1.8.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:19.280Z"
+        }
+      },
+      {
+        "id": "python-json-logger-structured",
+        "title": "Structured JSON logs with python-json-logger, captured in tests",
+        "summary": "Emit one JSON object per log record with python-json-logger 4.x, using extra fields, renamed keys, static fields, timestamp and exception info, and assert the parsed output offline.",
+        "stack": [
+          "python-json-logger"
+        ],
+        "language": "python",
+        "score": 22.51,
+        "pinned": {
+          "python-json-logger": "4.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:33.366Z"
+        }
+      },
+      {
+        "id": "python-docx-table-report",
+        "title": "python-docx report with styled tables and page breaks",
+        "summary": "Generate a Word report with python-docx - a title, headings, a styled table and a page break - then reopen the .docx and verify structure, order and styling.",
+        "stack": [
+          "python-docx"
+        ],
+        "language": "python",
+        "score": 21.08,
+        "pinned": {
+          "python-docx": "1.2.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:35.341Z"
+        }
+      },
+      {
+        "id": "python-dotenv-pydantic-settings-env",
+        "title": "Loading .env files with python-dotenv and pydantic-settings precedence rules",
+        "summary": "Typed app settings from .env files with pydantic-settings, covering source precedence, layered env files, extra-key rules and python-dotenv override behavior, tested offline with tmp_path files.",
+        "stack": [
+          "python-dotenv",
+          "pydantic-settings",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 21.08,
+        "pinned": {
+          "python-dotenv": "1.2.4",
+          "pydantic-settings": "2.16.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:29.190Z"
+        }
+      },
+      {
+        "id": "python-box-dot-access-config",
+        "title": "python-box dot-access config: frozen boxes, defaults and YAML/JSON roundtrip",
+        "summary": "Build dot-access config objects with python-box, deep-merge overrides and defaults, take frozen read-only views, then convert back to plain dicts and round-trip through YAML and JSON.",
+        "stack": [
+          "python-box",
+          "pyyaml"
+        ],
+        "language": "python",
+        "score": 19.64,
+        "pinned": {
+          "python-box": "7.4.1",
+          "PyYAML": "6.0.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T21:57:30.588Z"
+        }
+      },
+      {
+        "id": "python-slugify-unidecode-titles",
+        "title": "python-slugify + text-unidecode multilingual URL slugs",
+        "summary": "Turn accented, Cyrillic and CJK titles into URL slugs with python-slugify, using text-unidecode for ASCII romanization or allow_unicode to keep scripts verbatim, then dedupe collisions.",
+        "stack": [
+          "python-slugify",
+          "text-unidecode"
+        ],
+        "language": "python",
+        "score": 18.22,
+        "pinned": {
+          "python-slugify": "9.1.3",
+          "text-unidecode": "1.3.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:52.810Z"
+        }
+      },
+      {
+        "id": "ulid-pydantic-custom-type",
+        "title": "ULID primary keys as a Pydantic v2 custom type",
+        "summary": "A Pydantic v2 custom type that validates and normalizes ULIDs, keeps them as rich orderable objects, serializes to canonical strings and stores them as sortable sqlite primary keys.",
+        "stack": [
+          "python-ulid",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 18.15,
+        "pinned": {
+          "python-ulid": "4.0.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:28.926Z"
+        }
+      },
+      {
+        "id": "csv-parse-stringify-streams",
+        "title": "Streaming CSV transform with csv-parse + csv-stringify",
+        "summary": "Transform large CSV files without loading them into memory: csv-parse in columns mode, a Node Transform for row logic, csv-stringify output, wired with stream/promises pipeline.",
+        "stack": [
+          "csv-parse",
+          "csv-stringify"
+        ],
+        "language": "typescript",
+        "score": 17.84,
+        "pinned": {
+          "csv-parse": "7.0.3",
+          "csv-stringify": "6.9.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:50.680Z"
+        }
+      },
+      {
+        "id": "deepdiff-pydantic-compare",
+        "title": "DeepDiff diffing of pydantic v2 model dumps with ignore_order",
+        "summary": "Compare pydantic v2 model dumps with DeepDiff, normalizing python vs json dump modes and taming list order, datetime and float gotchas.",
+        "stack": [
+          "deepdiff",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 16.95,
+        "pinned": {
+          "deepdiff": "9.1.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:25.491Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

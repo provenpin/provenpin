@@ -1,0 +1,240 @@
+{
+  "args": {
+    "query": "Bun.serve websocket server with pub/sub topics"
+  },
+  "t": "2026-10-18T04:31:57Z",
+  "wall_s": 0.95,
+  "ok": true,
+  "ms": 143,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "ws-zod-message-protocol",
+        "title": "ws WebSocket server with a Zod-validated message protocol",
+        "summary": "A room chat server on the ws library with token auth on the upgrade URL, a Zod 4 discriminated union for every inbound frame and typed error replies, tested offline with real ws clients on an ephemeral localhost port.",
+        "stack": [
+          "ws",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 21.61,
+        "pinned": {
+          "ws": "8.22.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5",
+          "@types/ws": "8.18.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:40.058Z"
+        }
+      },
+      {
+        "id": "nextjs-server-action-zod",
+        "title": "Next.js 16 server actions + Zod with useActionState-shaped results",
+        "summary": "A 'use server' form action that validates FormData with Zod and returns field errors in the shape useActionState expects, tested by calling the action directly.",
+        "stack": [
+          "next",
+          "zod",
+          "react"
+        ],
+        "language": "typescript",
+        "score": 20.17,
+        "pinned": {
+          "next": "16.4.1",
+          "zod": "4.6.7",
+          "react": "19.3.1",
+          "react-dom": "19.3.1",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:55:33.179Z"
+        }
+      },
+      {
+        "id": "fastapi-websocket-auth",
+        "title": "FastAPI WebSockets with token auth and broadcast, tested with TestClient",
+        "summary": "FastAPI WebSocket endpoint that authenticates via query token, rejects with a close code and broadcasts to connected clients; tested with TestClient.websocket_connect.",
+        "stack": [
+          "fastapi",
+          "starlette"
+        ],
+        "language": "python",
+        "score": 17.83,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:48.087Z"
+        }
+      },
+      {
+        "id": "apollo-server-dataloader-batching",
+        "title": "Apollo Server 5 resolvers with per-request DataLoader batching",
+        "summary": "An Apollo Server 5 schema whose nested resolvers use per-request DataLoader instances to batch and dedupe lookups (no N+1), with GraphQLError extension codes and cache invalidation after a mutation, tested in-process with executeOperation.",
+        "stack": [
+          "@apollo/server",
+          "graphql",
+          "dataloader"
+        ],
+        "language": "typescript",
+        "score": 17.17,
+        "pinned": {
+          "@apollo/server": "5.5.1",
+          "graphql": "16.14.2",
+          "dataloader": "2.2.3",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:21.993Z"
+        }
+      },
+      {
+        "id": "trpc-client-server-superjson",
+        "title": "tRPC 11 client + server over fetch with superjson (Vitest)",
+        "summary": "End-to-end typed tRPC 11: fetch adapter server, createTRPCClient with httpBatchLink and superjson transformer for Dates and Maps, tested in-process with Vitest.",
+        "stack": [
+          "@trpc/server",
+          "@trpc/client",
+          "superjson",
+          "zod",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 17.17,
+        "pinned": {
+          "@trpc/server": "11.19.0",
+          "@trpc/client": "11.19.0",
+          "superjson": "2.2.6",
+          "zod": "4.6.7",
+          "@types/node": "24.19.2",
+          "vitest": "5.0.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:24.382Z"
+        }
+      },
+      {
+        "id": "vue-server-renderer-ssr",
+        "title": "Vue 3 SSR with renderToString",
+        "summary": "Server-render a Vue 3 app built with defineComponent and h(), covering props, computed, list rendering and provide/inject, then assert the HTML output offline.",
+        "stack": [
+          "vue",
+          "@vue/server-renderer"
+        ],
+        "language": "typescript",
+        "score": 17.17,
+        "pinned": {
+          "vue": "3.5.44",
+          "@vue/server-renderer": "3.5.44",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:47.156Z"
+        }
+      },
+      {
+        "id": "flask-marshmallow-webargs",
+        "title": "Flask API args parsed and validated with webargs and marshmallow",
+        "summary": "Flask routes that parse query strings and JSON bodies through marshmallow schemas via webargs, with JSON 422 validation errors, tested offline with the Flask test client.",
+        "stack": [
+          "flask",
+          "webargs",
+          "marshmallow"
+        ],
+        "language": "python",
+        "score": 11.16,
+        "pinned": {
+          "flask": "3.1.3",
+          "webargs": "8.7.1",
+          "marshmallow": "4.3.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:00:20.131Z"
+        }
+      },
+      {
+        "id": "hapi-server-inject-joi",
+        "title": "hapi server with joi validation",
+        "summary": "Build a @hapi/hapi server with joi-validated params, payload and query, a custom failAction and Boom errors, tested via server.inject offline.",
+        "stack": [
+          "@hapi/hapi",
+          "joi",
+          "@hapi/boom"
+        ],
+        "language": "typescript",
+        "score": 11.16,
+        "pinned": {
+          "@hapi/hapi": "21.4.10",
+          "@hapi/boom": "10.0.1",
+          "joi": "18.3.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T20:33:06.889Z"
+        }
+      },
+      {
+        "id": "aiohttp-pytest-plugin-client",
+        "title": "aiohttp routes tested offline with the pytest-aiohttp test client",
+        "summary": "An aiohttp JSON app exercised through the pytest-aiohttp in-process test client, plus a conftest that brings loopback up so the client runs inside a network-isolated sandbox.",
+        "stack": [
+          "aiohttp",
+          "pytest-aiohttp",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 10.44,
+        "pinned": {
+          "aiohttp": "3.14.5",
+          "pytest-aiohttp": "1.1.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:28.730Z"
+        }
+      },
+      {
+        "id": "trpc-zod-router",
+        "title": "tRPC 11 + Zod router with server-side caller",
+        "summary": "A typed tRPC router with Zod inputs, an auth middleware, and tests through createCaller.",
+        "stack": [
+          "trpc",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 8.16,
+        "pinned": {
+          "@trpc/server": "11.19.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:27.189Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

@@ -1,0 +1,222 @@
+{
+  "args": {
+    "query": "BullMQ queue and worker with retries and exponential backoff"
+  },
+  "t": "2026-10-18T04:30:19Z",
+  "wall_s": 1.01,
+  "ok": true,
+  "ms": 178,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "p-queue-concurrency",
+        "title": "p-queue bounded concurrency",
+        "summary": "Enqueue async jobs with p-queue at concurrency 2, assert no more than two run at once, and exercise pause, start and onIdle offline.",
+        "stack": [
+          "p-queue"
+        ],
+        "language": "typescript",
+        "score": 35.46,
+        "pinned": {
+          "p-queue": "10.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T15:21:19.257Z"
+        }
+      },
+      {
+        "id": "p-queue-priority",
+        "title": "p-queue priority async task queue",
+        "summary": "Schedule async tasks with p-queue using concurrency limits and priority ordering, covering pause/start and size helpers offline.",
+        "stack": [
+          "p-queue"
+        ],
+        "language": "typescript",
+        "score": 35.46,
+        "pinned": {
+          "p-queue": "10.0.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:26.259Z"
+        }
+      },
+      {
+        "id": "tenacity-httpx-respx-backoff",
+        "title": "httpx + tenacity async retries honoring Retry-After, tested with respx",
+        "summary": "Wrap async httpx calls in tenacity AsyncRetrying that retries 429 and 5xx, honors Retry-After, and patches the wait to zero in tests with respx mocks.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 33.46,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:06:06.586Z"
+        }
+      },
+      {
+        "id": "axios-retry-nock",
+        "title": "Axios + axios-retry with exponential backoff, tested with nock",
+        "summary": "Configure axios-retry for idempotent requests and 429/5xx responses, tested offline with nock intercepts.",
+        "stack": [
+          "axios",
+          "axios-retry",
+          "nock"
+        ],
+        "language": "typescript",
+        "score": 31.99,
+        "pinned": {
+          "axios": "1.20.0",
+          "axios-retry": "4.5.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "nock": "15.0.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:17.680Z"
+        }
+      },
+      {
+        "id": "effect-schema-vitest",
+        "title": "Effect 4 Schema classes, typed errors and retries, tested with @effect/vitest",
+        "summary": "Effect 4 Schema.Class models with checks, brands, FiniteFromString and fromJsonString for decode and encode, TaggedError failures, and Effect.retry with exponential backoff verified on the TestClock using @effect/vitest.",
+        "stack": [
+          "effect",
+          "@effect/vitest",
+          "vitest"
+        ],
+        "language": "typescript",
+        "score": 31.58,
+        "pinned": {
+          "effect": "4.0.5",
+          "@effect/vitest": "4.0.5",
+          "vitest": "5.0.4",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:52:30.611Z"
+        }
+      },
+      {
+        "id": "httpx-tenacity-retry",
+        "title": "httpx client + tenacity retries with backoff, tested with respx",
+        "summary": "Retry transient HTTP failures (5xx, 429, timeouts) with tenacity around an httpx client, honoring a max attempt count, tested offline with respx.",
+        "stack": [
+          "httpx",
+          "tenacity",
+          "respx"
+        ],
+        "language": "python",
+        "score": 29.11,
+        "pinned": {
+          "httpx": "0.28.1",
+          "tenacity": "9.2.1",
+          "respx": "0.23.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:01:07.041Z"
+        }
+      },
+      {
+        "id": "tenacity-retry-stop-wait",
+        "title": "tenacity Retrying with stop_after_attempt and wait_exponential",
+        "summary": "Build a tenacity Retrying policy that stops after N attempts, backs off exponentially and only retries transient exception types, then prove the behavior offline under pytest.",
+        "stack": [
+          "tenacity"
+        ],
+        "language": "python",
+        "score": 27.55,
+        "pinned": {
+          "tenacity": "9.2.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:58:13.938Z"
+        }
+      },
+      {
+        "id": "undici-mockagent-p-retry",
+        "title": "undici HTTP client with p-retry backoff, tested with MockAgent",
+        "summary": "A JSON client on undici.request wrapped in p-retry that retries 429, 5xx and network errors but aborts on other 4xx, tested offline with undici MockAgent, disableNetConnect and assertNoPendingInterceptors.",
+        "stack": [
+          "undici",
+          "p-retry"
+        ],
+        "language": "typescript",
+        "score": 26.19,
+        "pinned": {
+          "undici": "8.12.1",
+          "p-retry": "8.0.1",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:58:29.968Z"
+        }
+      },
+      {
+        "id": "arq-fakeredis-job-queue",
+        "title": "arq background jobs tested offline against fakeredis",
+        "summary": "Define arq async jobs with retries and follow-up task enqueueing, run them through a burst Worker, and exercise the queue offline on fakeredis.",
+        "stack": [
+          "arq",
+          "fakeredis"
+        ],
+        "language": "python",
+        "score": 22.55,
+        "pinned": {
+          "arq": "0.28.0",
+          "fakeredis": "2.40.0",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:31.867Z"
+        }
+      },
+      {
+        "id": "huey-sqlite-immediate",
+        "title": "Huey sqlite task queue with immediate mode and consumer stubs",
+        "summary": "Define Huey tasks on sqlite storage, run them inline with immediate mode, and drain the queue in tests with stubbed consumer and scheduler helpers.",
+        "stack": [
+          "huey"
+        ],
+        "language": "python",
+        "score": 17.05,
+        "pinned": {
+          "huey": "3.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:45.985Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

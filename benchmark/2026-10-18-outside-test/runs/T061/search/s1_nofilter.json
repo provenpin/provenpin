@@ -1,0 +1,236 @@
+{
+  "args": {
+    "query": "fastapi returning sqlalchemy object gives 'Input should be a valid dictionary' error, orm_mode doesnt work anymore??"
+  },
+  "t": "2026-10-18T04:30:07Z",
+  "wall_s": 1.0,
+  "ok": true,
+  "ms": 133,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "fastapi-sqlalchemy-crud",
+        "title": "FastAPI + SQLAlchemy 2 CRUD with dependency-injected sessions",
+        "summary": "FastAPI routes backed by SQLAlchemy 2.x typed models, a per-request session dependency, and TestClient tests on SQLite.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "sqlite"
+        ],
+        "language": "python",
+        "score": 95.89,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "httpx": "0.28.1",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:39.195Z"
+        }
+      },
+      {
+        "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
+        "title": "FastAPI with async SQLAlchemy 2 on aiosqlite, tested offline with per-test in-memory DBs",
+        "summary": "A FastAPI app using AsyncSession and async_sessionmaker on aiosqlite, tested with httpx.AsyncClient over ASGITransport, overriding the session dependency with a fresh in-memory database for each test.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "aiosqlite",
+          "httpx",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 84.02,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "httpx": "0.28.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1",
+          "greenlet": "3.2.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.420Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-async-aiosqlite",
+        "title": "SQLAlchemy 2 async ORM + aiosqlite with pytest-asyncio",
+        "summary": "SQLAlchemy 2.x typed async ORM (Mapped, mapped_column, async_sessionmaker, selectinload) on aiosqlite, with pytest-asyncio fixtures.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 60.94,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.5.6",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:32.478Z"
+        }
+      },
+      {
+        "id": "sqlalchemy2-pydantic-v2-from-attributes",
+        "title": "SQLAlchemy 2 ORM rows serialized with Pydantic v2 from_attributes",
+        "summary": "Map SQLAlchemy 2 models, expose nested relationships through Pydantic v2 schemas with from_attributes=True and a computed_field, and test them offline against in-memory SQLite.",
+        "stack": [
+          "sqlalchemy",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 59.13,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:50.176Z"
+        }
+      },
+      {
+        "id": "flask-sqlalchemy-app-factory",
+        "title": "Flask 3 app factory + Flask-SQLAlchemy",
+        "summary": "Flask application factory with Flask-SQLAlchemy 3, a JSON API and pytest fixtures using an in-memory database.",
+        "stack": [
+          "flask",
+          "flask-sqlalchemy",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 53.42,
+        "pinned": {
+          "flask": "3.1.3",
+          "flask-sqlalchemy": "3.1.1",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:54:06.156Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-async-repository-pattern",
+        "title": "Async repository pattern with SQLAlchemy 2 AsyncSession on aiosqlite",
+        "summary": "A typed async repository over SQLAlchemy 2 AsyncSession with eager loading, foreign keys enforced on SQLite, and offline pytest-asyncio tests against an in-memory database.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 53.42,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.2.4",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:38.701Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-factory-boy-sqlite",
+        "title": "factory_boy SQLAlchemy ModelFactory on in-memory sqlite",
+        "summary": "Declare SQLAlchemy 2.0 models and factory_boy ModelFactory fixtures bound to a shared in-memory sqlite session, tested fully offline with pytest.",
+        "stack": [
+          "sqlalchemy",
+          "factory-boy"
+        ],
+        "language": "python",
+        "score": 53.42,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "factory-boy": "3.3.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:43.754Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-hybrid-events",
+        "title": "SQLAlchemy 2.0 hybrid properties, column_property and before_flush audit events",
+        "summary": "Map hybrid_property and column_property on SQLAlchemy 2.0 models, stamp audit timestamps with a before_flush listener, and test everything offline on in-memory SQLite.",
+        "stack": [
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 53.42,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:41.891Z"
+        }
+      },
+      {
+        "id": "pytest-factory-boy-sqlalchemy",
+        "title": "pytest fixtures + factory_boy with SQLAlchemy 2 sessions",
+        "summary": "Transactional pytest fixtures that roll back per test, plus factory_boy SQLAlchemy factories with sequences, SubFactory and traits.",
+        "stack": [
+          "pytest",
+          "factory-boy",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 52.38,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "factory-boy": "3.3.3",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:42.604Z"
+        }
+      },
+      {
+        "id": "sqlalchemy-aiosqlite-session-factory",
+        "title": "SQLAlchemy 2 async session factory over aiosqlite",
+        "summary": "An async SQLAlchemy 2.0 engine and session factory over aiosqlite, with StaticPool in-memory wiring and pytest-asyncio tests covering commit, rollback and integrity errors.",
+        "stack": [
+          "sqlalchemy",
+          "aiosqlite",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 52.38,
+        "pinned": {
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "greenlet": "3.5.6",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:24.710Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

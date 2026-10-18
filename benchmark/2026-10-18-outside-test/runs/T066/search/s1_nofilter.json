@@ -1,0 +1,228 @@
+{
+  "args": {
+    "query": "upload big csv to s3 in chunks python without loading whole file into memory"
+  },
+  "t": "2026-10-18T04:32:53Z",
+  "wall_s": 0.98,
+  "ok": true,
+  "ms": 132,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "csv-parse-stringify-streams",
+        "title": "Streaming CSV transform with csv-parse + csv-stringify",
+        "summary": "Transform large CSV files without loading them into memory: csv-parse in columns mode, a Node Transform for row logic, csv-stringify output, wired with stream/promises pipeline.",
+        "stack": [
+          "csv-parse",
+          "csv-stringify"
+        ],
+        "language": "typescript",
+        "score": 51.49,
+        "pinned": {
+          "csv-parse": "7.0.3",
+          "csv-stringify": "6.9.0",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:51:50.680Z"
+        }
+      },
+      {
+        "id": "python-multipart-starlette-forms",
+        "title": "Starlette multipart form uploads parsed with python-multipart, tested offline",
+        "summary": "Parse multipart text fields and file uploads in Starlette with python-multipart, then exercise the app fully in-process through httpx.ASGITransport with no network.",
+        "stack": [
+          "starlette",
+          "python-multipart",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 44.95,
+        "pinned": {
+          "python-multipart": "0.0.32",
+          "starlette": "1.8.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T18:10:19.280Z"
+        }
+      },
+      {
+        "id": "aws-sdk-v3-s3-client-mock",
+        "title": "AWS SDK v3 S3 storage helpers tested with aws-sdk-client-mock",
+        "summary": "S3 helpers on @aws-sdk/client-s3 for JSON put/get with NoSuchKey handling, paginated listing, batched DeleteObjects and locally signed presigned URLs, tested offline with aws-sdk-client-mock and sdkStreamMixin bodies.",
+        "stack": [
+          "@aws-sdk/client-s3",
+          "@aws-sdk/s3-request-presigner",
+          "aws-sdk-client-mock"
+        ],
+        "language": "typescript",
+        "score": 41.81,
+        "pinned": {
+          "@aws-sdk/client-s3": "3.1152.0",
+          "@aws-sdk/s3-request-presigner": "3.1152.0",
+          "aws-sdk-client-mock": "4.1.0",
+          "@smithy/util-stream": "4.8.2",
+          "tsx": "4.23.15",
+          "@types/node": "26.6.5"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:05.457Z"
+        }
+      },
+      {
+        "id": "papaparse-zod-csv-import",
+        "title": "CSV import with PapaParse + Zod row validation",
+        "summary": "Parse CSV uploads with PapaParse (headers, BOM, quoted fields), validate each row with Zod and report row-numbered errors instead of failing the whole file.",
+        "stack": [
+          "papaparse",
+          "zod"
+        ],
+        "language": "typescript",
+        "score": 36.17,
+        "pinned": {
+          "papaparse": "5.7.0",
+          "zod": "4.6.7",
+          "tsx": "4.23.15",
+          "@types/node": "24.19.2",
+          "@types/papaparse": "5.5.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:03.045Z"
+        }
+      },
+      {
+        "id": "boto3-moto-s3-presigned",
+        "title": "boto3 S3 helper with paginated listing and presigned URLs, tested offline with moto",
+        "summary": "A small boto3 S3 helper for upload, paginated listing, presigned GET URLs and batched delete, tested offline with moto's mock_aws and fake credentials.",
+        "stack": [
+          "boto3",
+          "moto"
+        ],
+        "language": "python",
+        "score": 36.07,
+        "pinned": {
+          "boto3": "1.43.114",
+          "moto": "5.2.4",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T15:57:22.570Z"
+        }
+      },
+      {
+        "id": "fastify-multipart-upload",
+        "title": "Fastify 5 file uploads with @fastify/multipart",
+        "summary": "Accept multipart file uploads in Fastify 5 with @fastify/multipart, reading fields and files, hashing content, rejecting oversized files with 413, tested with inject() and a native FormData body.",
+        "stack": [
+          "fastify",
+          "@fastify/multipart"
+        ],
+        "language": "typescript",
+        "score": 34.45,
+        "pinned": {
+          "fastify": "5.12.7",
+          "@fastify/multipart": "10.1.4",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T17:10:55.590Z"
+        }
+      },
+      {
+        "id": "file-type-buffer-detect",
+        "title": "file-type buffer detection",
+        "summary": "Detect PNG, PDF, ZIP and GIF from small in-memory magic byte buffers with file-type, asserting ext and mime, and undefined for plain text.",
+        "stack": [
+          "file-type"
+        ],
+        "language": "typescript",
+        "score": 28.71,
+        "pinned": {
+          "file-type": "22.2.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T19:54:48.689Z"
+        }
+      },
+      {
+        "id": "typer-rich-table-export",
+        "title": "Typer CLI exporting Rich tables and CSV for batch reports",
+        "summary": "A Typer command that aggregates a batch of CSV reports, renders a Rich table with escaped cells and formatted totals, and exports a machine-parseable CSV, tested offline with CliRunner.",
+        "stack": [
+          "typer",
+          "rich"
+        ],
+        "language": "python",
+        "score": 28.31,
+        "pinned": {
+          "typer": "0.27.3",
+          "rich": "15.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T21:56:58.533Z"
+        }
+      },
+      {
+        "id": "python-dotenv-pydantic-settings-env",
+        "title": "Loading .env files with python-dotenv and pydantic-settings precedence rules",
+        "summary": "Typed app settings from .env files with pydantic-settings, covering source precedence, layered env files, extra-key rules and python-dotenv override behavior, tested offline with tmp_path files.",
+        "stack": [
+          "python-dotenv",
+          "pydantic-settings",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 25.87,
+        "pinned": {
+          "python-dotenv": "1.2.4",
+          "pydantic-settings": "2.16.0",
+          "pydantic": "2.14.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:04:29.190Z"
+        }
+      },
+      {
+        "id": "sheetjs-xlsx-workbook",
+        "title": "SheetJS xlsx read and write workbooks in memory",
+        "summary": "Build and parse Excel workbooks with SheetJS community xlsx: JSON sheet roundtrips, header rows, and AOA writes using in-memory buffers only.",
+        "stack": [
+          "xlsx"
+        ],
+        "language": "typescript",
+        "score": 24.82,
+        "pinned": {
+          "xlsx": "0.18.5",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:05:08.507Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

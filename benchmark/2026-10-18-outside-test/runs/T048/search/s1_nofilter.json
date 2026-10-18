@@ -1,0 +1,228 @@
+{
+  "args": {
+    "query": "pandas 3.0 copy-on-write: chained assignment no longer updates the DataFrame, and the new default string dtype"
+  },
+  "t": "2026-10-18T04:31:48Z",
+  "wall_s": 1.04,
+  "ok": true,
+  "ms": 167,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "pandas-sqlalchemy-to-sql",
+        "title": "pandas to_sql and read_sql with a SQLAlchemy 2 engine on sqlite, with dtype handling",
+        "summary": "Write and read DataFrames through a SQLAlchemy 2 engine, control column types with dtype, and handle datetimes and nullable ints, tested offline on in-memory sqlite.",
+        "stack": [
+          "pandas",
+          "sqlalchemy"
+        ],
+        "language": "python",
+        "score": 81.11,
+        "pinned": {
+          "pandas": "3.0.6",
+          "sqlalchemy": "2.1.4",
+          "pytest": "9.1.1",
+          "numpy": "2.3.4",
+          "python-dateutil": "2.9.0.post0",
+          "six": "1.17.0",
+          "typing-extensions": "4.15.0",
+          "iniconfig": "2.1.0",
+          "pluggy": "1.6.0",
+          "pygments": "2.19.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:04.837Z"
+        }
+      },
+      {
+        "id": "pandas-openpyxl-excel-report",
+        "title": "pandas DataFrame to formatted Excel report with openpyxl styles and roundtrip read",
+        "summary": "Write a DataFrame to a styled .xlsx with openpyxl (header styles, number formats, widths, freeze panes, filters), then read it back with pandas and verify, fully offline.",
+        "stack": [
+          "pandas",
+          "openpyxl"
+        ],
+        "language": "python",
+        "score": 77.64,
+        "pinned": {
+          "pandas": "3.0.6",
+          "openpyxl": "3.1.5",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:36.429Z"
+        }
+      },
+      {
+        "id": "pandas-pandera-validation",
+        "title": "pandas + Pandera DataFrame schema validation",
+        "summary": "Validate pandas DataFrames with Pandera DataFrameModel schemas: dtypes, coercion, value checks, custom dataframe checks and lazy error reports.",
+        "stack": [
+          "pandas",
+          "pandera"
+        ],
+        "language": "python",
+        "score": 72.86,
+        "pinned": {
+          "pandas": "3.0.6",
+          "pandera": "0.34.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:25.534Z"
+        }
+      },
+      {
+        "id": "sklearn-columntransformer-pipeline",
+        "title": "scikit-learn Pipeline with ColumnTransformer on pandas, GridSearchCV and joblib",
+        "summary": "A scikit-learn Pipeline that scales numeric columns and one-hot encodes categories inside a ColumnTransformer on a pandas DataFrame, tuned with GridSearchCV, then saved and reloaded with joblib. Tested offline on small in-memory data.",
+        "stack": [
+          "scikit-learn",
+          "pandas",
+          "joblib"
+        ],
+        "language": "python",
+        "score": 71,
+        "pinned": {
+          "scikit-learn": "1.9.1",
+          "pandas": "3.0.6",
+          "joblib": "1.6.0",
+          "pytest": "9.1.1",
+          "numpy": "2.3.3",
+          "scipy": "1.16.2"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:57:15.086Z"
+        }
+      },
+      {
+        "id": "pandas-pyarrow-parquet-roundtrip",
+        "title": "Pandas pyarrow-backed dtypes with partitioned Parquet round trips",
+        "summary": "Write and read partitioned Parquet with pyarrow, enforce a pa.schema on write, and keep nullable ints intact using dtype_backend=pyarrow, tested offline on tmp_path.",
+        "stack": [
+          "pandas",
+          "pyarrow"
+        ],
+        "language": "python",
+        "score": 65.58,
+        "pinned": {
+          "pandas": "3.0.6",
+          "pyarrow": "26.0.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:03:26.973Z"
+        }
+      },
+      {
+        "id": "rapidfuzz-fuzzy-match",
+        "title": "rapidfuzz extractOne and scorers for fuzzy string matching",
+        "summary": "Pick the best candidate with process.extractOne, control matching with WRatio, partial and token scorers, and normalize messy input with utils.default_process.",
+        "stack": [
+          "rapidfuzz"
+        ],
+        "language": "python",
+        "score": 19.9,
+        "pinned": {
+          "rapidfuzz": "3.14.6",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T09:57:56.733Z"
+        }
+      },
+      {
+        "id": "string-width-strip-ansi",
+        "title": "string width and ansi stripping",
+        "summary": "Measure the visual width of ASCII, CJK, and emoji strings and strip ANSI escape codes with string-width and strip-ansi, asserting widths and cleaned output offline.",
+        "stack": [
+          "string-width",
+          "strip-ansi"
+        ],
+        "language": "typescript",
+        "score": 19.9,
+        "pinned": {
+          "string-width": "8.3.0",
+          "strip-ansi": "7.2.0",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T19:54:48.654Z"
+        }
+      },
+      {
+        "id": "fs-extra-json-copy",
+        "title": "fs-extra json roundtrip, copy and move",
+        "summary": "Build a temp tree with fs-extra ensureDir, writeJson/readJson, copy, move, pathExists and remove, asserting JSON roundtrip and updated paths offline.",
+        "stack": [
+          "fs-extra"
+        ],
+        "language": "typescript",
+        "score": 19.02,
+        "pinned": {
+          "fs-extra": "11.4.1",
+          "@types/fs-extra": "11.0.4",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-16T17:50:44.889Z"
+        }
+      },
+      {
+        "id": "magic-string-sourcemap-edits",
+        "title": "magic-string sourcemap edits",
+        "summary": "Overwrite, prependLeft, append and remove ranges in a source string with magic-string, generate a hires source map and verify positions with source-map-js SourceMapConsumer.originalPositionFor offline.",
+        "stack": [
+          "magic-string",
+          "source-map-js"
+        ],
+        "language": "typescript",
+        "score": 17.04,
+        "pinned": {
+          "magic-string": "1.4.3",
+          "source-map-js": "1.2.2",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T22:58:28.214Z"
+        }
+      },
+      {
+        "id": "preact-render-to-string-ssr",
+        "title": "preact render to string SSR",
+        "summary": "Server-render preact components with preact-render-to-string, covering props, useState initial values, conditional output, keyed lists and dangerouslySetInnerHTML while asserting exact escaped HTML offline.",
+        "stack": [
+          "preact",
+          "preact-render-to-string"
+        ],
+        "language": "typescript",
+        "score": 17.04,
+        "pinned": {
+          "preact": "11.0.1",
+          "preact-render-to-string": "6.8.1",
+          "@types/node": "26.6.5",
+          "tsx": "4.23.15"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-17T19:19:44.060Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}

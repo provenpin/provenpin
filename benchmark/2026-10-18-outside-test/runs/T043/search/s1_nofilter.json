@@ -1,0 +1,251 @@
+{
+  "args": {
+    "query": "httpx 0.28 removed the app= argument: test a FastAPI ASGI app with AsyncClient and ASGITransport"
+  },
+  "t": "2026-10-18T04:31:10Z",
+  "wall_s": 0.98,
+  "ok": true,
+  "ms": 142,
+  "status": 200,
+  "data": {
+    "count": 10,
+    "results": [
+      {
+        "id": "fastapi-httpx-asyncclient-lifespan",
+        "title": "FastAPI lifespan state tested with httpx ASGITransport and asgi-lifespan",
+        "summary": "A FastAPI app that opens a SQLite connection in its lifespan, then test it offline through httpx ASGITransport, with asgi-lifespan running startup and shutdown.",
+        "stack": [
+          "fastapi",
+          "httpx",
+          "asgi-lifespan"
+        ],
+        "language": "python",
+        "score": 138.18,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "httpx": "0.28.1",
+          "asgi-lifespan": "2.1.0",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:17.491Z"
+        }
+      },
+      {
+        "id": "fastapi-dependency-overrides-httpx",
+        "title": "FastAPI dependency_overrides tested offline with httpx ASGITransport",
+        "summary": "Override FastAPI dependencies (including nested ones) and drive the app in-process with httpx.ASGITransport, no network and no running server.",
+        "stack": [
+          "fastapi",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 93.48,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:13.224Z"
+        }
+      },
+      {
+        "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
+        "title": "FastAPI with async SQLAlchemy 2 on aiosqlite, tested offline with per-test in-memory DBs",
+        "summary": "A FastAPI app using AsyncSession and async_sessionmaker on aiosqlite, tested with httpx.AsyncClient over ASGITransport, overriding the session dependency with a fresh in-memory database for each test.",
+        "stack": [
+          "fastapi",
+          "sqlalchemy",
+          "aiosqlite",
+          "httpx",
+          "pytest-asyncio"
+        ],
+        "language": "python",
+        "score": 90.67,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "sqlalchemy": "2.1.4",
+          "aiosqlite": "0.22.1",
+          "httpx": "0.28.1",
+          "pytest-asyncio": "1.4.0",
+          "pytest": "9.1.1",
+          "greenlet": "3.2.4"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.420Z"
+        }
+      },
+      {
+        "id": "starlette-httpx-asgi-client",
+        "title": "Starlette routes and middleware tested offline with httpx ASGITransport",
+        "summary": "A Starlette app with BaseHTTPMiddleware and lifespan state, exercised in-process via httpx ASGITransport without a real server.",
+        "stack": [
+          "starlette",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 83.04,
+        "pinned": {
+          "starlette": "1.8.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-15T16:05:41.889Z"
+        }
+      },
+      {
+        "id": "fastapi-cashews-memory-cache",
+        "title": "FastAPI endpoints cached with cashews in-memory backend",
+        "summary": "FastAPI routes backed by a cashews mem:// cache with key templates, TTL and explicit invalidation, tested fully offline through httpx ASGITransport.",
+        "stack": [
+          "fastapi",
+          "cashews",
+          "httpx",
+          "pydantic"
+        ],
+        "language": "python",
+        "score": 82.66,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "cashews": "7.6.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:06.700Z"
+        }
+      },
+      {
+        "id": "fastapi-prometheus-instrumentator",
+        "title": "FastAPI metrics with prometheus-fastapi-instrumentator tested offline",
+        "summary": "Instrument a FastAPI app with the default prometheus-fastapi-instrumentator metrics, scrape /metrics through httpx.ASGITransport, and cover the route-template labels, untemplated grouping, self-scraping and shared-registry gotchas.",
+        "stack": [
+          "fastapi",
+          "prometheus-fastapi-instrumentator",
+          "prometheus-client",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 79.73,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "prometheus-fastapi-instrumentator": "8.1.0",
+          "prometheus-client": "0.26.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:27.400Z"
+        }
+      },
+      {
+        "id": "prometheus-client-fastapi-metrics",
+        "title": "FastAPI metrics with prometheus_client scraped as text",
+        "summary": "Instrument FastAPI with prometheus_client using a per-app registry, label by route template to bound cardinality, and scrape the text exposition format offline through httpx.ASGITransport.",
+        "stack": [
+          "fastapi",
+          "prometheus-client",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 79.73,
+        "pinned": {
+          "prometheus-client": "0.26.0",
+          "fastapi": "0.143.2",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:56:22.152Z"
+        }
+      },
+      {
+        "id": "fastapi-dependency-injector-wiring",
+        "title": "FastAPI routes wired to a dependency-injector DeclarativeContainer, tested offline",
+        "summary": "Build a DeclarativeContainer with Configuration, Singleton and Factory providers, wire it into FastAPI routes with @inject and Depends(Provide[...]), and test it in-process with httpx.ASGITransport.",
+        "stack": [
+          "fastapi",
+          "dependency-injector",
+          "httpx",
+          "pytest"
+        ],
+        "language": "python",
+        "score": 78.14,
+        "pinned": {
+          "fastapi": "0.143.2",
+          "dependency-injector": "4.49.1",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1",
+          "pytest-asyncio": "1.4.0"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:09.162Z"
+        }
+      },
+      {
+        "id": "fastapi-pydantic-settings-dependency",
+        "title": "FastAPI config via pydantic-settings as a cached dependency",
+        "summary": "Load config from env vars with pydantic-settings, inject it into FastAPI routes through a cached dependency, and test it offline with monkeypatch and dependency_overrides.",
+        "stack": [
+          "fastapi",
+          "pydantic-settings",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 78.14,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "pydantic-settings": "2.16.0",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:31.090Z"
+        }
+      },
+      {
+        "id": "fastapi-slowapi-rate-limit",
+        "title": "FastAPI endpoints rate limited with slowapi, tested with TestClient",
+        "summary": "Add per-route and per-API-key rate limits to FastAPI with slowapi, then test 429 behavior offline with TestClient and the in-memory store.",
+        "stack": [
+          "fastapi",
+          "slowapi",
+          "httpx"
+        ],
+        "language": "python",
+        "score": 77.88,
+        "pinned": {
+          "fastapi": "0.143.1",
+          "slowapi": "0.1.10",
+          "httpx": "0.28.1",
+          "pytest": "9.1.1"
+        },
+        "receipt": {
+          "status": "passed",
+          "last_passed_at": "2026-10-18T00:53:40.456Z"
+        }
+      }
+    ],
+    "hint": "Call get_recipe with an id for the full files."
+  }
+}
