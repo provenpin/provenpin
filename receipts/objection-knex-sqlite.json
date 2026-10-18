@@ -1,15 +1,15 @@
 {
   "id": "objection-knex-sqlite",
   "status": "passed",
-  "ran_at": "2026-10-18T06:49:50.595Z",
-  "last_passed_at": "2026-10-18T06:49:50.595Z",
+  "ran_at": "2026-10-18T12:47:18.852Z",
+  "last_passed_at": "2026-10-18T12:47:18.852Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2952,
-    "test": 680
+    "setup": 2598,
+    "test": 696
   },
   "pinned": {
     "objection": "3.9.1",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39105107942"
+    "runner": "github-actions 39128377918"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: insertGraph and eager fetch\nok 1 - insertGraph and eager fetch\n  ---\n  duration_ms: 72.743446\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 527.956031\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: insertGraph and eager fetch\nok 1 - insertGraph and eager fetch\n  ---\n  duration_ms: 71.525106\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 573.484178\n"
 }

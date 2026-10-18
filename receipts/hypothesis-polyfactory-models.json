@@ -1,15 +1,15 @@
 {
   "id": "hypothesis-polyfactory-models",
   "status": "passed",
-  "ran_at": "2026-10-18T06:48:37.435Z",
-  "last_passed_at": "2026-10-18T06:48:37.435Z",
+  "ran_at": "2026-10-18T12:46:04.002Z",
+  "last_passed_at": "2026-10-18T12:46:04.002Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 421,
-    "test": 5243
+    "setup": 475,
+    "test": 3521
   },
   "pinned": {
     "hypothesis": "6.169.4",
@@ -31,8 +31,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39105107942"
+    "runner": "github-actions 39128377918"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 2.20s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.30s\n"
 }

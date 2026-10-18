@@ -1,15 +1,15 @@
 {
   "id": "ky-msw-vitest",
   "status": "passed",
-  "ran_at": "2026-10-18T06:49:01.207Z",
-  "last_passed_at": "2026-10-18T06:49:01.207Z",
+  "ran_at": "2026-10-18T12:46:25.147Z",
+  "last_passed_at": "2026-10-18T12:46:25.147Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5510,
-    "test": 625
+    "setup": 5289,
+    "test": 533
   },
   "pinned": {
     "ky": "2.2.0",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39105107942"
+    "runner": "github-actions 39128377918"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-ky-msw-vitest-VkkEB7\u001b[39m\n\n \u001b[32m✓\u001b[39m test/api.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 73\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:49:07\n\u001b[2m   Duration \u001b[22m 278ms\u001b[2m (import 44%, tests 38%, transform 16%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-ky-msw-vitest-VkkEB7/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-ky-msw-vitest-eU9VSp\u001b[39m\n\n \u001b[32m✓\u001b[39m test/api.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 57\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:46:30\n\u001b[2m   Duration \u001b[22m 215ms\u001b[2m (import 41%, tests 37%, transform 20%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-ky-msw-vitest-eU9VSp/test-report.json\n"
 }

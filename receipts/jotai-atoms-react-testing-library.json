@@ -1,15 +1,15 @@
 {
   "id": "jotai-atoms-react-testing-library",
   "status": "passed",
-  "ran_at": "2026-10-18T06:48:44.464Z",
-  "last_passed_at": "2026-10-18T06:48:44.464Z",
+  "ran_at": "2026-10-18T12:46:16.603Z",
+  "last_passed_at": "2026-10-18T12:46:16.603Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6939,
-    "test": 1420
+    "setup": 7381,
+    "test": 1326
   },
   "pinned": {
     "jotai": "3.0.1",
@@ -35,8 +35,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39105107942"
+    "runner": "github-actions 39128377918"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-jotai-atoms-react-testing-library-GNOya6\u001b[39m\n\n \u001b[32m✓\u001b[39m test/todos.test.tsx \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 187\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:48:51\n\u001b[2m   Duration \u001b[22m 907ms\u001b[2m (environment 40%, import 26%, tests 24%, transform 9%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-jotai-atoms-react-testing-library-GNOya6/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-jotai-atoms-react-testing-library-WUACKR\u001b[39m\n\n \u001b[32m✓\u001b[39m test/todos.test.tsx \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 171\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:46:24\n\u001b[2m   Duration \u001b[22m 783ms\u001b[2m (environment 39%, import 26%, tests 25%, transform 8%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-jotai-atoms-react-testing-library-WUACKR/test-report.json\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "express-session-cookie-e2e",
   "status": "passed",
-  "ran_at": "2026-10-18T06:46:56.934Z",
-  "last_passed_at": "2026-10-18T06:46:56.934Z",
+  "ran_at": "2026-10-18T12:44:27.616Z",
+  "last_passed_at": "2026-10-18T12:44:27.616Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3490,
-    "test": 643
+    "setup": 2990,
+    "test": 699
   },
   "pinned": {
     "express": "5.3.0",
@@ -31,8 +31,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39105107942"
+    "runner": "github-actions 39128377918"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: full browser-like flow: login, dashboard, logout\nok 1 - full browser-like flow: login, dashboard, logout\n  ---\n  duration_ms: 105.840459\n  type: 'test'\n  ...\n# Subtest: bad password is 401 and sets no session\nok 2 - bad password is 401 and sets no session\n  ---\n  duration_ms: 5.83316\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 502.14598\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: full browser-like flow: login, dashboard, logout\nok 1 - full browser-like flow: login, dashboard, logout\n  ---\n  duration_ms: 140.574969\n  type: 'test'\n  ...\n# Subtest: bad password is 401 and sets no session\nok 2 - bad password is 401 and sets no session\n  ---\n  duration_ms: 5.201979\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 553.148533\n"
 }

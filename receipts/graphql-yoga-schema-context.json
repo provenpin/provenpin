@@ -1,15 +1,15 @@
 {
   "id": "graphql-yoga-schema-context",
   "status": "passed",
-  "ran_at": "2026-10-18T06:48:16.819Z",
-  "last_passed_at": "2026-10-18T06:48:16.819Z",
+  "ran_at": "2026-10-18T12:45:43.914Z",
+  "last_passed_at": "2026-10-18T12:45:43.914Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3842,
-    "test": 729
+    "setup": 3898,
+    "test": 749
   },
   "pinned": {
     "graphql-yoga": "5.24.5",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39105107942"
+    "runner": "github-actions 39128377918"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: public query\nok 1 - public query\n  ---\n  duration_ms: 18.548404\n  type: 'test'\n  ...\n# Subtest: auth error carries a code\nok 2 - auth error carries a code\n  ---\n  duration_ms: 6.159982\n  type: 'test'\n  ...\n# Subtest: mutation with variables and context\nok 3 - mutation with variables and context\n  ---\n  duration_ms: 7.151588\n  type: 'test'\n  ...\n# Subtest: validation errors for bad queries\nok 4 - validation errors for bad queries\n  ---\n  duration_ms: 3.063505\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 568.365278\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: public query\nok 1 - public query\n  ---\n  duration_ms: 18.279195\n  type: 'test'\n  ...\n# Subtest: auth error carries a code\nok 2 - auth error carries a code\n  ---\n  duration_ms: 5.634502\n  type: 'test'\n  ...\n# Subtest: mutation with variables and context\nok 3 - mutation with variables and context\n  ---\n  duration_ms: 6.511656\n  type: 'test'\n  ...\n# Subtest: validation errors for bad queries\nok 4 - validation errors for bad queries\n  ---\n  duration_ms: 2.990531\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 595.354484\n"
 }
