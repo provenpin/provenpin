@@ -1,0 +1,18 @@
+id: joserfc-jwt-jwe-roundtrip
+title: "joserfc JWT signing + JWE encryption round-trip"
+summary: "Sign and verify JWTs and encrypt JWE tokens with joserfc using OctKey and RSAKey, including claims validation and expiry, all offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [joserfc]
+tags: [auth, jwt, encryption, security]
+pinned:
+  joserfc: "1.7.5"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - tokens.py
+  - tests/test_tokens.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: isodate-duration-parse
+title: "ISO 8601 durations and datetimes with isodate"
+summary: "Parse and format ISO 8601 durations and datetimes, use month and year Duration arithmetic with calendar clamping, and catch the parsing errors isodate raises."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [isodate]
+tags: [dates, parsing, iso8601]
+pinned:
+  isodate: "0.7.2"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - durations.py
+  - tests/test_durations.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

@@ -1,0 +1,18 @@
+id: pyfakefs-filesystem-tests
+title: "pyfakefs fake filesystem: paths, permissions and seeded files"
+summary: "Exercise file-handling code on an in-memory filesystem with the pyfakefs fs fixture: pathlib reads, missing parent dirs, chmod permission errors and pre-populated files."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pyfakefs, pytest]
+tags: [filesystem, testing, pathlib]
+pinned:
+  pyfakefs: "6.2.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - files.py
+  - tests/test_files.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

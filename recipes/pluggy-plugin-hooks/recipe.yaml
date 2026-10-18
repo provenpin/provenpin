@@ -1,0 +1,20 @@
+id: pluggy-plugin-hooks
+title: "pluggy plugin system with hookspecs, firstresult hooks and wrappers"
+summary: "A pluggy plugin system with hookspecs, LIFO hookimpl ordering, tryfirst/trylast, firstresult scoring and wrapper hooks, all tested offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pluggy]
+tags: [plugins, extension-points, hooks, architecture]
+pinned:
+  pluggy: "1.7.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - hookspecs.py
+  - plugins.py
+  - core.py
+  - tests/test_hooks.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

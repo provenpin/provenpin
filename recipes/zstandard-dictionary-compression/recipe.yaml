@@ -1,0 +1,18 @@
+id: zstandard-dictionary-compression
+title: "zstandard trained dictionaries for many small JSON records"
+summary: "Train a Zstandard dictionary on JSON records, compress single records and newline-delimited streams, and handle frame content size and dictionary mismatch pitfalls."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [zstandard]
+tags: [compression, serialization, performance]
+pinned:
+  zstandard: "0.25.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - codec.py
+  - tests/test_codec.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

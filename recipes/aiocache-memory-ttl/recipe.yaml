@@ -1,0 +1,19 @@
+id: aiocache-memory-ttl
+title: "aiocache SimpleMemoryCache async caching with TTL"
+summary: "Async caching with aiocache Cache(Cache.MEMORY): the @cached decorator, TTL expiry, namespaces, custom key builders and noself."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [aiocache]
+tags: [caching, async, testing]
+pinned:
+  aiocache: "0.12.3"
+  pytest: "9.1.1"
+  pytest-asyncio: "1.4.0"
+files:
+  - requirements.txt
+  - memory_cache.py
+  - tests/test_memory_cache.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

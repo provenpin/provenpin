@@ -1,0 +1,18 @@
+id: jsonpath-ng-query-update
+title: "jsonpath-ng queries, full paths and in-place updates"
+summary: "Query nested JSON with the ext filter parser, resolve the full path of every match, then update or drop nodes in place with jsonpath-ng."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [jsonpath-ng]
+tags: [data-transformation, filtering, json]
+pinned:
+  jsonpath-ng: "1.11.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - catalog.py
+  - tests/test_catalog.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

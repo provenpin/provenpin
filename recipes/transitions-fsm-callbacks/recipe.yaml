@@ -1,0 +1,18 @@
+id: transitions-fsm-callbacks
+title: "transitions order workflow with conditions and callbacks"
+summary: "An order workflow state machine built with transitions, covering states, triggers, guarded conditions, before/after callbacks via EventData and MachineError on invalid moves, tested offline."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [transitions]
+tags: [state-machine, workflow, order-processing]
+pinned:
+  transitions: "0.9.3"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - order.py
+  - tests/test_order.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

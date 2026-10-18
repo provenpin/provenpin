@@ -1,0 +1,18 @@
+id: cbor2-encode-decode-tags
+title: "cbor2 CBOR encode/decode with semantic tags"
+summary: "Round-trip datetimes, exact Decimals and custom CBOR semantic tags with cbor2 6.x, using the encoder-based default hook, the two-argument tag_hook and canonical encoding."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [cbor2]
+tags: [serialization, cbor, binary-encoding]
+pinned:
+  cbor2: "6.1.5"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - cbor_codec.py
+  - tests/test_cbor_codec.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

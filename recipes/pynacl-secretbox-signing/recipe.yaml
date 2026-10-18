@@ -1,0 +1,18 @@
+id: pynacl-secretbox-signing
+title: "PyNaCl SecretBox encryption + Ed25519 signing"
+summary: "Authenticated symmetric encryption with SecretBox and Ed25519 signing with SigningKey/VerifyKey, showing tamper detection, nonce rules and Base64/Hex key encoding round-trips."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pynacl]
+tags: [encryption, cryptography, signing, security]
+pinned:
+  pynacl: "1.6.2"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - crypto.py
+  - tests/test_crypto.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

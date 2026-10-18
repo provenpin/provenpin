@@ -1,0 +1,19 @@
+id: intervaltree-overlap-queries
+title: "intervaltree overlap queries for room booking conflicts"
+summary: "A room booking schedule on intervaltree: point and range overlap queries, merge_overlaps for busy blocks, and chop/slice to carve out blocked and split slots."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [intervaltree]
+tags: [scheduling, intervals, booking]
+pinned:
+  intervaltree: "3.2.1"
+  sortedcontainers: "2.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - bookings.py
+  - tests/test_bookings.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

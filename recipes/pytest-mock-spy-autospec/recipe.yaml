@@ -1,0 +1,18 @@
+id: pytest-mock-spy-autospec
+title: "pytest-mock: patch, autospec, spies and call assertions"
+summary: "Core pytest-mock patterns on a small notification service: loose mocker.patch, autospec signature checks, mocker.spy over real methods, patch.object stubs and assert_called_once_with."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [pytest-mock, pytest]
+tags: [testing, mocking, unit-tests]
+pinned:
+  pytest-mock: "3.17.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - service.py
+  - tests/test_service.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

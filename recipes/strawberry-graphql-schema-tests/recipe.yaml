@@ -1,0 +1,19 @@
+id: strawberry-graphql-schema-tests
+title: "Strawberry code-first GraphQL schema tested offline"
+summary: "Define code-first GraphQL types, queries, mutations and input types, then execute the schema in-process with context using strawberry and pytest."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [strawberry-graphql]
+tags: [graphql, api, testing]
+pinned:
+  strawberry-graphql: "0.336.0"
+  pytest-asyncio: "1.4.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - schema.py
+  - tests/test_schema.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

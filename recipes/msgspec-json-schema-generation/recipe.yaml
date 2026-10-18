@@ -1,0 +1,18 @@
+id: msgspec-json-schema-generation
+title: "msgspec Structs to JSON Schema with constraints and tagged unions"
+summary: "Generate JSON Schema from msgspec Structs using Annotated Meta constraints, tagged unions and optional fields, then decode payloads with the same validation rules."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [msgspec]
+tags: [serialization, json, schemas, validation]
+pinned:
+  msgspec: "0.22.0"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - models.py
+  - tests/test_schema.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q

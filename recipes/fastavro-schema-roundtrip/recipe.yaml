@@ -1,0 +1,18 @@
+id: fastavro-schema-roundtrip
+title: "fastavro in-memory container round-trip with logical types"
+summary: "Serialize records to Avro container bytes with fastavro, decode logical types and evolve a stored schema by reading with a reader schema."
+language: python
+runtime: python
+runtime_version: "3.13"
+stack: [fastavro]
+tags: [serialization, binary, schema-evolution]
+pinned:
+  fastavro: "1.13.1"
+  pytest: "9.1.1"
+files:
+  - requirements.txt
+  - avro_store.py
+  - tests/test_avro_store.py
+  - pytest.ini
+setup: uv venv -q .venv && uv pip install -q --python .venv/bin/python -r requirements.txt
+test: .venv/bin/python -m pytest -q
