@@ -1,15 +1,15 @@
 {
   "id": "ejs-render-partials",
   "status": "passed",
-  "ran_at": "2026-10-16T02:18:14.619Z",
-  "last_passed_at": "2026-10-16T02:18:14.619Z",
+  "ran_at": "2026-10-18T06:46:26.503Z",
+  "last_passed_at": "2026-10-18T06:46:26.503Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1736,
-    "test": 337
+    "setup": 1802,
+    "test": 933
   },
   "pinned": {
     "ejs": "7.0.1",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38839686104"
+    "runner": "github-actions 39105107942"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders a string template with locals\nok 1 - renders a string template with locals\n  ---\n  duration_ms: 1.813692\n  type: 'test'\n  ...\n# Subtest: includes a partial resolved from a temp dir\nok 2 - includes a partial resolved from a temp dir\n  ---\n  duration_ms: 11.504201\n  type: 'test'\n  ...\n# Subtest: throws ReferenceError for a missing local under strict mode\nok 3 - throws ReferenceError for a missing local under strict mode\n  ---\n  duration_ms: 0.91294\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 187.164171\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders a string template with locals\nok 1 - renders a string template with locals\n  ---\n  duration_ms: 1.883706\n  type: 'test'\n  ...\n# Subtest: includes a partial resolved from a temp dir\nok 2 - includes a partial resolved from a temp dir\n  ---\n  duration_ms: 14.019601\n  type: 'test'\n  ...\n# Subtest: throws ReferenceError for a missing local under strict mode\nok 3 - throws ReferenceError for a missing local under strict mode\n  ---\n  duration_ms: 0.82785\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 484.086139\n"
 }

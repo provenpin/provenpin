@@ -1,15 +1,15 @@
 {
   "id": "fastify-jwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-18T00:53:48.017Z",
-  "last_passed_at": "2026-10-18T00:53:48.017Z",
+  "ran_at": "2026-10-18T06:47:56.532Z",
+  "last_passed_at": "2026-10-18T06:47:56.532Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2588,
-    "test": 547
+    "setup": 2773,
+    "test": 474
   },
   "pinned": {
     "fastify": "5.12.7",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39084243715"
+    "runner": "github-actions 39105107942"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login then access /me\nok 1 - login then access /me\n  ---\n  duration_ms: 122.870025\n  type: 'test'\n  ...\n# Subtest: rejects missing or bad tokens\nok 2 - rejects missing or bad tokens\n  ---\n  duration_ms: 17.27478\n  type: 'test'\n  ...\n# Subtest: schema rejects incomplete login body\nok 3 - schema rejects incomplete login body\n  ---\n  duration_ms: 18.480841\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 431.783716\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login then access /me\nok 1 - login then access /me\n  ---\n  duration_ms: 101.88019\n  type: 'test'\n  ...\n# Subtest: rejects missing or bad tokens\nok 2 - rejects missing or bad tokens\n  ---\n  duration_ms: 15.714748\n  type: 'test'\n  ...\n# Subtest: schema rejects incomplete login body\nok 3 - schema rejects incomplete login body\n  ---\n  duration_ms: 20.264257\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 374.333953\n"
 }
