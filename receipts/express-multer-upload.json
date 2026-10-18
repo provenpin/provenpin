@@ -1,15 +1,15 @@
 {
   "id": "express-multer-upload",
   "status": "passed",
-  "ran_at": "2026-10-18T12:44:21.844Z",
-  "last_passed_at": "2026-10-18T12:44:21.844Z",
+  "ran_at": "2026-10-18T18:41:04.501Z",
+  "last_passed_at": "2026-10-18T18:41:04.501Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4365,
-    "test": 555
+    "setup": 5239,
+    "test": 538
   },
   "pinned": {
     "express": "5.3.0",
@@ -32,8 +32,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39128377918"
+    "runner": "github-actions 39155088298"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a small png\nok 1 - accepts a small png\n  ---\n  duration_ms: 43.674562\n  type: 'test'\n  ...\n# Subtest: rejects the wrong type\nok 2 - rejects the wrong type\n  ---\n  duration_ms: 6.92502\n  type: 'test'\n  ...\n# Subtest: rejects files over the limit with 413\nok 3 - rejects files over the limit with 413\n  ---\n  duration_ms: 8.909735\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 410.787415\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a small png\nok 1 - accepts a small png\n  ---\n  duration_ms: 41.150853\n  type: 'test'\n  ...\n# Subtest: rejects the wrong type\nok 2 - rejects the wrong type\n  ---\n  duration_ms: 7.702332\n  type: 'test'\n  ...\n# Subtest: rejects files over the limit with 413\nok 3 - rejects files over the limit with 413\n  ---\n  duration_ms: 7.945948\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 387.468185\n"
 }

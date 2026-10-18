@@ -1,15 +1,15 @@
 {
   "id": "fastapi-stripe-webhook",
   "status": "passed",
-  "ran_at": "2026-10-18T12:45:15.707Z",
-  "last_passed_at": "2026-10-18T12:45:15.707Z",
+  "ran_at": "2026-10-18T18:42:05.997Z",
+  "last_passed_at": "2026-10-18T18:42:05.997Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 847,
-    "test": 3827
+    "setup": 669,
+    "test": 2888
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -30,8 +30,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39128377918"
+    "runner": "github-actions 39155088298"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-stripe-webhook-iU8aHo/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n3 passed, 1 warning in 1.19s\n"
+  "log_tail": "...                                                                      [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-stripe-webhook-8NsZD5/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n3 passed, 1 warning in 1.17s\n"
 }
