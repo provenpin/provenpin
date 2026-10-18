@@ -155,6 +155,6 @@ export function checkCompatibility(pinned: Record<string, string>, parsed: Parse
 /** Search ranking boost: reward recipes that match the caller's installed versions. */
 export function compatBoost(c: Compatibility): number {
   let s = 0;
-  for (const p of c.packages) s += p.verdict === "exact" ? 3 : p.verdict === "compatible" ? 2 : p.verdict === "mismatch" ? -2 : 0;
+  for (const p of c.packages) s += p.verdict === "exact" ? 6 : p.verdict === "compatible" ? 4 : p.verdict === "mismatch" ? -4 : 0;
   return s;
 }
