@@ -1,0 +1,18 @@
+id: sinon-stubs-fake-timers
+title: "sinon stubs and fake timers"
+summary: "Stub object methods with resolves/rejects and onCall sequences, record spy call counts and args, and drive debounce and retry logic with sinon fake timers and clock.tickAsync under node:test, fully offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [sinon]
+tags: [testing, stubs, spies, fake-timers]
+pinned:
+  "sinon": "22.1.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/service.ts
+  - test/service.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

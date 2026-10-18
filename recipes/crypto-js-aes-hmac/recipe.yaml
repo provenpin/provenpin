@@ -1,0 +1,19 @@
+id: crypto-js-aes-hmac
+title: "crypto-js AES and HMAC"
+summary: "Encrypt and decrypt with AES using a passphrase and an explicit key/iv (CBC, Pkcs7), sign with HmacSHA256 in hex and base64, and derive hashes and keys with SHA256 and PBKDF2 offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [crypto-js]
+tags: [crypto, aes, hmac, hashing]
+pinned:
+  "crypto-js": "4.2.0"
+  "@types/crypto-js": "4.2.2"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/crypto.ts
+  - test/crypto.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

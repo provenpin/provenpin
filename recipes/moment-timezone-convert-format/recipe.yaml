@@ -1,0 +1,19 @@
+id: moment-timezone-convert-format
+title: "moment-timezone convert and format"
+summary: "Parse wall times in America/New_York, convert to Asia/Tokyo and UTC, format zone abbreviations, handle the spring forward gap and fall back overlap, and compute business-hour overlap between zones offline."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [moment-timezone]
+tags: [time, timezone, dst, formatting]
+pinned:
+  "moment": "2.31.0"
+  "moment-timezone": "0.6.5"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/timezone.ts
+  - test/timezone.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

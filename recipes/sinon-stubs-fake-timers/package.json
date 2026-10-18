@@ -1,0 +1,13 @@
+{
+  "name": "sinon-stubs-fake-timers",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "devDependencies": {
+    "sinon": "22.1.0",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

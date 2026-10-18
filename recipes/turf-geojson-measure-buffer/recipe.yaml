@@ -1,0 +1,18 @@
+id: turf-geojson-measure-buffer
+title: "turf geojson measurement"
+summary: "Measure GeoJSON offline with turf: distance in kilometres, polygon area, point-in-polygon, bbox, centroid and a point along a line, asserting values with tolerance."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@turf/turf"]
+tags: [geojson, geo, measurement, turf]
+pinned:
+  "@turf/turf": "7.4.0"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/geo.ts
+  - test/geo.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test

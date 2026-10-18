@@ -1,0 +1,16 @@
+{
+  "name": "crypto-js-aes-hmac",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "crypto-js": "4.2.0"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "4.2.2",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+  }
+}

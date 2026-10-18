@@ -1,0 +1,18 @@
+id: ollama-js-mocked-fetch
+title: "ollama.js with a mocked fetch"
+summary: "Drive the ollama npm client with an injected fake fetch to exercise chat, streamed chat over NDJSON, and embed, all offline with no server."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: [ollama]
+tags: [ollama, llm, fetch, mock, streaming]
+pinned:
+  "ollama": "0.6.4"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/client.ts
+  - test/ollama.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
