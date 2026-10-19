@@ -1,15 +1,15 @@
 {
   "id": "graphql-pothos-yoga-schema",
   "status": "passed",
-  "ran_at": "2026-10-19T00:55:24.852Z",
-  "last_passed_at": "2026-10-19T00:55:24.852Z",
+  "ran_at": "2026-10-19T06:56:31.153Z",
+  "last_passed_at": "2026-10-19T06:56:31.153Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4028,
-    "test": 709
+    "setup": 3637,
+    "test": 607
   },
   "pinned": {
     "@pothos/core": "4.15.1",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39182648349"
+    "runner": "github-actions 39212489143"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: create and query posts\nok 1 - create and query posts\n  ---\n  duration_ms: 27.150463\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 559.1617\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: create and query posts\nok 1 - create and query posts\n  ---\n  duration_ms: 20.042889\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 481.837636\n"
 }

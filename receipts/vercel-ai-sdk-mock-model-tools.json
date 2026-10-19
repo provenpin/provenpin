@@ -1,15 +1,15 @@
 {
   "id": "vercel-ai-sdk-mock-model-tools",
   "status": "passed",
-  "ran_at": "2026-10-19T01:00:24.336Z",
-  "last_passed_at": "2026-10-19T01:00:24.336Z",
+  "ran_at": "2026-10-19T07:01:38.768Z",
+  "last_passed_at": "2026-10-19T07:01:38.768Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2607,
-    "test": 623
+    "setup": 2792,
+    "test": 698
   },
   "pinned": {
     "ai": "7.0.141",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39182648349"
+    "runner": "github-actions 39212489143"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: tool loop: model calls checkStock, gets the result, then answers\nok 1 - tool loop: model calls checkStock, gets the result, then answers\n  ---\n  duration_ms: 30.855881\n  type: 'test'\n  ...\n# Subtest: stopWhen caps a model that keeps calling tools\nok 2 - stopWhen caps a model that keeps calling tools\n  ---\n  duration_ms: 4.689734\n  type: 'test'\n  ...\n# Subtest: structured output is parsed and validated with the zod schema\nok 3 - structured output is parsed and validated with the zod schema\n  ---\n  duration_ms: 4.823985\n  type: 'test'\n  ...\n# Subtest: streamText delivers deltas in order\nok 4 - streamText delivers deltas in order\n  ---\n  duration_ms: 76.101603\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 498.234116\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: tool loop: model calls checkStock, gets the result, then answers\nok 1 - tool loop: model calls checkStock, gets the result, then answers\n  ---\n  duration_ms: 34.612578\n  type: 'test'\n  ...\n# Subtest: stopWhen caps a model that keeps calling tools\nok 2 - stopWhen caps a model that keeps calling tools\n  ---\n  duration_ms: 5.172418\n  type: 'test'\n  ...\n# Subtest: structured output is parsed and validated with the zod schema\nok 3 - structured output is parsed and validated with the zod schema\n  ---\n  duration_ms: 5.538288\n  type: 'test'\n  ...\n# Subtest: streamText delivers deltas in order\nok 4 - streamText delivers deltas in order\n  ---\n  duration_ms: 85.105984\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 552.395772\n"
 }
