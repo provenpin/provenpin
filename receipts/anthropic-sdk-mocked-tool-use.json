@@ -1,15 +1,15 @@
 {
   "id": "anthropic-sdk-mocked-tool-use",
   "status": "passed",
-  "ran_at": "2026-10-19T12:50:53.599Z",
-  "last_passed_at": "2026-10-19T12:50:53.599Z",
+  "ran_at": "2026-10-19T18:49:11.774Z",
+  "last_passed_at": "2026-10-19T18:49:11.774Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3685,
-    "test": 739
+    "setup": 2921,
+    "test": 690
   },
   "pinned": {
     "@anthropic-ai/sdk": "0.134.0",
@@ -25,11 +25,11 @@
     "recipes/anthropic-sdk-mocked-tool-use/test/agent.test.ts": "sha256:f4734dda178ea7e5debdfc2bec7e2dddc751d22e4b29872f81f9bcd7e58d9866"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39255134932"
+    "runner": "github-actions 39305568457"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# Subtest: runs the tool and returns the final text\nok 1 - runs the tool and returns the final text\n  ---\n  duration_ms: 44.486457\n  type: 'test'\n  ...\n# Subtest: invalid tool input is returned as is_error\nok 2 - invalid tool input is returned as is_error\n  ---\n  duration_ms: 2.542955\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 586.268613\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# Subtest: runs the tool and returns the final text\nok 1 - runs the tool and returns the final text\n  ---\n  duration_ms: 109.684989\n  type: 'test'\n  ...\n# Subtest: invalid tool input is returned as is_error\nok 2 - invalid tool input is returned as is_error\n  ---\n  duration_ms: 1.996343\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 557.608222\n"
 }

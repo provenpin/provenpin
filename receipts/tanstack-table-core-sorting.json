@@ -1,15 +1,15 @@
 {
   "id": "tanstack-table-core-sorting",
   "status": "passed",
-  "ran_at": "2026-10-19T12:58:59.906Z",
-  "last_passed_at": "2026-10-19T12:58:59.906Z",
+  "ran_at": "2026-10-19T18:57:47.402Z",
+  "last_passed_at": "2026-10-19T18:57:47.402Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1513,
-    "test": 283
+    "setup": 1717,
+    "test": 361
   },
   "pinned": {
     "@tanstack/table-core": "8.21.3",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39255134932"
+    "runner": "github-actions 39305568457"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sorts by score descending\nok 1 - sorts by score descending\n  ---\n  duration_ms: 4.586193\n  type: 'test'\n  ...\n# Subtest: filters by role then paginates\nok 2 - filters by role then paginates\n  ---\n  duration_ms: 1.68121\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 164.012643\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sorts by score descending\nok 1 - sorts by score descending\n  ---\n  duration_ms: 5.891989\n  type: 'test'\n  ...\n# Subtest: filters by role then paginates\nok 2 - filters by role then paginates\n  ---\n  duration_ms: 2.091771\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 208.002272\n"
 }

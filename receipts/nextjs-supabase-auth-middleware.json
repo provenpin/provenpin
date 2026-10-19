@@ -1,15 +1,15 @@
 {
   "id": "nextjs-supabase-auth-middleware",
   "status": "passed",
-  "ran_at": "2026-10-19T12:55:55.853Z",
-  "last_passed_at": "2026-10-19T12:55:55.853Z",
+  "ran_at": "2026-10-19T18:54:32.044Z",
+  "last_passed_at": "2026-10-19T18:54:32.044Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 11737,
-    "test": 618
+    "setup": 9994,
+    "test": 584
   },
   "pinned": {
     "next": "16.4.1",
@@ -29,11 +29,11 @@
     "recipes/nextjs-supabase-auth-middleware/test/middleware.test.ts": "sha256:0f92e4c072561708c6db6dca6874ba474807039424a8ee244a608e13900cce59"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39255134932"
+    "runner": "github-actions 39305568457"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: signed-out user is redirected from /dashboard\nok 1 - signed-out user is redirected from /dashboard\n  ---\n  duration_ms: 11.207283\n  type: 'test'\n  ...\n# Subtest: public pages pass through when signed out\nok 2 - public pages pass through when signed out\n  ---\n  duration_ms: 3.971947\n  type: 'test'\n  ...\n# Subtest: signed-in user reaches /dashboard\nok 3 - signed-in user reaches /dashboard\n  ---\n  duration_ms: 30.751136\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 460.058662\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: signed-out user is redirected from /dashboard\nok 1 - signed-out user is redirected from /dashboard\n  ---\n  duration_ms: 14.152902\n  type: 'test'\n  ...\n# Subtest: public pages pass through when signed out\nok 2 - public pages pass through when signed out\n  ---\n  duration_ms: 1.393223\n  type: 'test'\n  ...\n# Subtest: signed-in user reaches /dashboard\nok 3 - signed-in user reaches /dashboard\n  ---\n  duration_ms: 26.384437\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 434.482361\n"
 }

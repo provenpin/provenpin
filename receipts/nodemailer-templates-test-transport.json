@@ -1,15 +1,15 @@
 {
   "id": "nodemailer-templates-test-transport",
   "status": "passed",
-  "ran_at": "2026-10-19T12:56:05.488Z",
-  "last_passed_at": "2026-10-19T12:56:05.488Z",
+  "ran_at": "2026-10-19T18:54:26.478Z",
+  "last_passed_at": "2026-10-19T18:54:26.478Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1490,
-    "test": 273
+    "setup": 1952,
+    "test": 429
   },
   "pinned": {
     "nodemailer": "10.1.1",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39255134932"
+    "runner": "github-actions 39305568457"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: builds a multipart message with attachment\nok 1 - builds a multipart message with attachment\n  ---\n  duration_ms: 12.408202\n  type: 'test'\n  ...\n# Subtest: envelope has the right sender and recipients\nok 2 - envelope has the right sender and recipients\n  ---\n  duration_ms: 1.353357\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 175.504247\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: builds a multipart message with attachment\nok 1 - builds a multipart message with attachment\n  ---\n  duration_ms: 20.102574\n  type: 'test'\n  ...\n# Subtest: envelope has the right sender and recipients\nok 2 - envelope has the right sender and recipients\n  ---\n  duration_ms: 2.567196\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 283.463876\n"
 }

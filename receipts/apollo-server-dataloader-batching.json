@@ -1,15 +1,15 @@
 {
   "id": "apollo-server-dataloader-batching",
   "status": "passed",
-  "ran_at": "2026-10-19T12:50:51.290Z",
-  "last_passed_at": "2026-10-19T12:50:51.290Z",
+  "ran_at": "2026-10-19T18:49:07.812Z",
+  "last_passed_at": "2026-10-19T18:49:07.812Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5355,
-    "test": 582
+    "setup": 4744,
+    "test": 480
   },
   "pinned": {
     "@apollo/server": "5.5.1",
@@ -26,11 +26,11 @@
     "recipes/apollo-server-dataloader-batching/test/server.test.ts": "sha256:544e2d6fe6029b43f45b49f7dc512c327cfb6a6bf2f87effaffcddb6605f2e9c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39255134932"
+    "runner": "github-actions 39305568457"
   },
   "errors": [],
-  "log_tail": "# Subtest: resolves nested authors with one batched lookup instead of N+1\nok 1 - resolves nested authors with one batched lookup instead of N+1\n  ---\n  duration_ms: 74.33689\n  type: 'test'\n  ...\n# Subtest: author with books, and null for an unknown id\nok 2 - author with books, and null for an unknown id\n  ---\n  duration_ms: 6.566835\n  type: 'test'\n  ...\n# Subtest: mutation requires a user and reports error codes in extensions\nok 3 - mutation requires a user and reports error codes in extensions\n  ---\n  duration_ms: 10.621317\n  type: 'test'\n  ...\n# Subtest: mutation writes and clears the loader cache so reads see the new book\nok 4 - mutation writes and clears the loader cache so reads see the new book\n  ---\n  duration_ms: 6.955329\n  type: 'test'\n  ...\n# Subtest: validation errors come back as GRAPHQL_VALIDATION_FAILED\nok 5 - validation errors come back as GRAPHQL_VALIDATION_FAILED\n  ---\n  duration_ms: 9.702455\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 459.814507\n"
+  "log_tail": "# Subtest: resolves nested authors with one batched lookup instead of N+1\nok 1 - resolves nested authors with one batched lookup instead of N+1\n  ---\n  duration_ms: 57.874451\n  type: 'test'\n  ...\n# Subtest: author with books, and null for an unknown id\nok 2 - author with books, and null for an unknown id\n  ---\n  duration_ms: 6.069416\n  type: 'test'\n  ...\n# Subtest: mutation requires a user and reports error codes in extensions\nok 3 - mutation requires a user and reports error codes in extensions\n  ---\n  duration_ms: 7.931422\n  type: 'test'\n  ...\n# Subtest: mutation writes and clears the loader cache so reads see the new book\nok 4 - mutation writes and clears the loader cache so reads see the new book\n  ---\n  duration_ms: 5.139875\n  type: 'test'\n  ...\n# Subtest: validation errors come back as GRAPHQL_VALIDATION_FAILED\nok 5 - validation errors come back as GRAPHQL_VALIDATION_FAILED\n  ---\n  duration_ms: 6.757668\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 374.678394\n"
 }

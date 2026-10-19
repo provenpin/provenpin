@@ -1,15 +1,15 @@
 {
   "id": "openai-structured-output-respx",
   "status": "passed",
-  "ran_at": "2026-10-19T12:56:19.867Z",
-  "last_passed_at": "2026-10-19T12:56:19.867Z",
+  "ran_at": "2026-10-19T18:54:52.215Z",
+  "last_passed_at": "2026-10-19T18:54:52.215Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 457,
-    "test": 1913
+    "setup": 560,
+    "test": 2184
   },
   "pinned": {
     "openai": "3.31.0",
@@ -30,8 +30,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39255134932"
+    "runner": "github-actions 39305568457"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.76s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.98s\n"
 }
