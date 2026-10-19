@@ -1,15 +1,15 @@
 {
   "id": "hono-jwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-18T18:42:30.934Z",
-  "last_passed_at": "2026-10-18T18:42:30.934Z",
+  "ran_at": "2026-10-19T00:55:32.424Z",
+  "last_passed_at": "2026-10-19T00:55:32.424Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1754,
-    "test": 297
+    "setup": 2943,
+    "test": 871
   },
   "pinned": {
     "hono": "4.13.13",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39155088298"
+    "runner": "github-actions 39182648349"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 24.834989\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 0.812741\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 1.127685\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 1.05139\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 208.22575\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 124.402672\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 70.712479\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 1.867722\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 1.393673\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 739.228629\n"
 }

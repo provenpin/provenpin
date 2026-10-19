@@ -1,15 +1,15 @@
 {
   "id": "diskcache-filelock-jobs",
   "status": "passed",
-  "ran_at": "2026-10-18T18:40:19.800Z",
-  "last_passed_at": "2026-10-18T18:40:19.800Z",
+  "ran_at": "2026-10-19T00:53:15.701Z",
+  "last_passed_at": "2026-10-19T00:53:15.701Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 321,
-    "test": 1595
+    "setup": 294,
+    "test": 1494
   },
   "pinned": {
     "diskcache": "5.6.3",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39155088298"
+    "runner": "github-actions 39182648349"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.55s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.76s\n"
 }
