@@ -1,8 +1,19 @@
-<p align="center"><img src=".github/assets/github-readme-header-dark.png" alt="ProvenPin" width="100%"></p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/readme-banner-dark.png">
+  <img src=".github/assets/readme-banner-light.png" alt="ProvenPin: tested code recipes built to help free and cheap AI models write working code" width="100%">
+</picture>
+
+<p align="center">
+  <a href="https://provenpin.com">Website</a> ·
+  <a href="https://provenpin.com/free-models/">Free models</a> ·
+  <a href="https://provenpin.com/benchmarks/outside-test-2026-10/">Outside test</a> ·
+  <a href="#install">Install</a> ·
+  <a href="#receipts-feed">Receipts feed</a>
+</p>
 
 # ProvenPin
 
-Tested, version-pinned, multi-library code recipes for AI coding agents, served over MCP.
+Tested, version-pinned, multi-library code recipes built to help free and cheap AI models write working code, served over MCP.
 
 Every recipe pins exact versions, runs its own tests in a clean environment, and carries a receipt with the time it last passed. Recipes are re-tested automatically when any of their libraries ships a new release. The MCP server only serves recipes that are currently passing.
 
