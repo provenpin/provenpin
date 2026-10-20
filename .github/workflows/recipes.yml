@@ -22,7 +22,11 @@ jobs:
   plan:
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ steps.pick.outputs.matrix }}
+      total: ${{ steps.pick.outputs.total }}
+      batch1: ${{ steps.pick.outputs.batch1 }}
+      batch2: ${{ steps.pick.outputs.batch2 }}
+      batch3: ${{ steps.pick.outputs.batch3 }}
+      batch4: ${{ steps.pick.outputs.batch4 }}
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 2 }
@@ -45,37 +49,46 @@ jobs:
           else
             ids=$(ls recipes | jq -R . | jq -sc .)
           fi
-          echo "matrix=$ids" >> "$GITHUB_OUTPUT"
-          echo "Testing: $ids"
+          # A matrix can't go over 256 jobs, so split the list into up to 4 batches of 250.
+          total=$(jq length <<<"$ids")
+          if [ "$total" -gt 1000 ]; then
+            echo "::error::$total recipes to test, over the 4 x 250 batch capacity. Add a batch job (test5) to this workflow."
+            exit 1
+          fi
+          {
+            echo "total=$total"
+            for b in 1 2 3 4; do echo "batch$b=$(jq -c ".[$(( (b-1)*250 )):$(( b*250 ))]" <<<"$ids")"; done
+          } >> "$GITHUB_OUTPUT"
+          echo "Testing $total: $ids"
 
-  test:
+  # Batches run one after another, so at most 8 recipe jobs run at once (max-parallel in recipe-batch.yml).
+  test1:
     needs: plan
-    if: needs.plan.outputs.matrix != '[]'
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      max-parallel: 8
-      matrix:
-        recipe: ${{ fromJson(needs.plan.outputs.matrix) }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: "22" }
-      - run: npm install -g npm@11
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.13" }
-      - uses: astral-sh/setup-uv@v6
-      - run: npm ci || npm install
-      - name: Run recipe in isolation
-        run: node runner/run.mjs ${{ matrix.recipe }} || true   # receipt records pass/fail honestly
-      - uses: actions/upload-artifact@v4
-        with:
-          name: receipt-${{ matrix.recipe }}
-          path: receipts/${{ matrix.recipe }}.json
+    if: needs.plan.outputs.batch1 != '[]'
+    uses: ./.github/workflows/recipe-batch.yml
+    with: { recipes: "${{ needs.plan.outputs.batch1 }}" }
+
+  test2:
+    needs: [plan, test1]
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.batch2 != '[]' }}
+    uses: ./.github/workflows/recipe-batch.yml
+    with: { recipes: "${{ needs.plan.outputs.batch2 }}" }
+
+  test3:
+    needs: [plan, test2]
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.batch3 != '[]' }}
+    uses: ./.github/workflows/recipe-batch.yml
+    with: { recipes: "${{ needs.plan.outputs.batch3 }}" }
+
+  test4:
+    needs: [plan, test3]
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.batch4 != '[]' }}
+    uses: ./.github/workflows/recipe-batch.yml
+    with: { recipes: "${{ needs.plan.outputs.batch4 }}" }
 
   publish:
-    needs: test
-    if: always() && needs.test.result != 'skipped'
+    needs: [plan, test1, test2, test3, test4]
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.total != '0' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -89,6 +102,10 @@ jobs:
         run: |
           git config user.name "provenpin-bot"
           git config user.email "bot@users.noreply.github.com"
+          if ! compgen -G "new-receipts/*.json" > /dev/null; then
+            echo "::error::No receipts came back from the test jobs (planned ${{ needs.plan.outputs.total }}). Nothing to publish; check the test jobs above."
+            exit 1
+          fi
           # Another run may push receipts meanwhile. Each attempt starts from the latest main,
           # applies only this run's receipts, rebuilds the index and pushes; retry on rejection.
           for i in 1 2 3 4 5; do
