@@ -1,0 +1,38 @@
+name: recipe-batch
+
+# Tests one batch of recipes, one isolated job per recipe. Called by recipes.yml once per batch,
+# because a single matrix can't go over GitHub's 256-job cap.
+on:
+  workflow_call:
+    inputs:
+      recipes:
+        description: "JSON array of recipe ids (at most 256)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        recipe: ${{ fromJson(inputs.recipes) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "22" }
+      - run: npm install -g npm@11
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.13" }
+      - uses: astral-sh/setup-uv@v6
+      - run: npm ci || npm install
+      - name: Run recipe in isolation
+        run: node runner/run.mjs ${{ matrix.recipe }} || true   # receipt records pass/fail honestly
+      - uses: actions/upload-artifact@v4
+        with:
+          name: receipt-${{ matrix.recipe }}
+          path: receipts/${{ matrix.recipe }}.json
