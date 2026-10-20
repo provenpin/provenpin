@@ -1,15 +1,15 @@
 {
   "id": "react-hook-form-zod-resolver",
   "status": "passed",
-  "ran_at": "2026-10-19T18:56:06.410Z",
-  "last_passed_at": "2026-10-19T18:56:06.410Z",
+  "ran_at": "2026-10-20T00:59:43.735Z",
+  "last_passed_at": "2026-10-20T00:59:43.735Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2482,
-    "test": 409
+    "setup": 2834,
+    "test": 499
   },
   "pinned": {
     "react-hook-form": "7.90.0",
@@ -27,11 +27,11 @@
     "recipes/react-hook-form-zod-resolver/test/schema.test.ts": "sha256:8d0bf7420f9ea3a69f52ee8a4c985136a3770759b9694cb0e0becf7dae17cef2"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39305568457"
+    "runner": "github-actions 39350141463"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid values come back coerced\nok 1 - valid values come back coerced\n  ---\n  duration_ms: 2.126018\n  type: 'test'\n  ...\n# Subtest: field and cross-field errors map to RHF errors\nok 2 - field and cross-field errors map to RHF errors\n  ---\n  duration_ms: 1.206777\n  type: 'test'\n  ...\n# Subtest: refinement error lands on confirm\nok 3 - refinement error lands on confirm\n  ---\n  duration_ms: 0.345408\n  type: 'test'\n  ...\n# Subtest: same schema validates on the server\nok 4 - same schema validates on the server\n  ---\n  duration_ms: 1.725774\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 281.842283\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid values come back coerced\nok 1 - valid values come back coerced\n  ---\n  duration_ms: 2.764031\n  type: 'test'\n  ...\n# Subtest: field and cross-field errors map to RHF errors\nok 2 - field and cross-field errors map to RHF errors\n  ---\n  duration_ms: 1.707647\n  type: 'test'\n  ...\n# Subtest: refinement error lands on confirm\nok 3 - refinement error lands on confirm\n  ---\n  duration_ms: 0.452239\n  type: 'test'\n  ...\n# Subtest: same schema validates on the server\nok 4 - same schema validates on the server\n  ---\n  duration_ms: 1.061945\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 352.187617\n"
 }

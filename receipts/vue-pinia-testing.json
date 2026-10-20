@@ -1,15 +1,15 @@
 {
   "id": "vue-pinia-testing",
   "status": "passed",
-  "ran_at": "2026-10-19T18:58:17.999Z",
-  "last_passed_at": "2026-10-19T18:58:17.999Z",
+  "ran_at": "2026-10-20T01:01:27.485Z",
+  "last_passed_at": "2026-10-20T01:01:27.485Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6079,
-    "test": 885
+    "setup": 9770,
+    "test": 789
   },
   "pinned": {
     "vue": "3.5.44",
@@ -30,11 +30,11 @@
     "recipes/vue-pinia-testing/vitest.config.ts": "sha256:d72bfd3a15ab1ee1c35169e9ae7ae31041e99415d0614bad089b3e20f63d5790"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39305568457"
+    "runner": "github-actions 39350141463"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-vue-pinia-testing-4uuZzA\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 23\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:58:24\n\u001b[2m   Duration \u001b[22m 549ms\u001b[2m (environment 73%, import 15%, transform 6%, tests 5%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-vue-pinia-testing-4uuZzA/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-vue-pinia-testing-gK2UPy\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 21\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 01:01:37\n\u001b[2m   Duration \u001b[22m 505ms\u001b[2m (environment 72%, import 16%, transform 6%, tests 5%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-vue-pinia-testing-gK2UPy/test-report.json\n"
 }

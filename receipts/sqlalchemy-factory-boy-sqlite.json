@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-factory-boy-sqlite",
   "status": "passed",
-  "ran_at": "2026-10-19T18:56:56.523Z",
-  "last_passed_at": "2026-10-19T18:56:56.523Z",
+  "ran_at": "2026-10-20T01:00:27.317Z",
+  "last_passed_at": "2026-10-20T01:00:27.317Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 289,
-    "test": 2958
+    "setup": 270,
+    "test": 3339
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39305568457"
+    "runner": "github-actions 39350141463"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.32s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.50s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "effect-schema-vitest",
   "status": "passed",
-  "ran_at": "2026-10-19T18:50:25.639Z",
-  "last_passed_at": "2026-10-19T18:50:25.639Z",
+  "ran_at": "2026-10-20T00:54:15.626Z",
+  "last_passed_at": "2026-10-20T00:54:15.626Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5620,
-    "test": 631
+    "setup": 6132,
+    "test": 1098
   },
   "pinned": {
     "effect": "4.0.5",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39305568457"
+    "runner": "github-actions 39350141463"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-effect-schema-vitest-fnWt5N\u001b[39m\n\n \u001b[32m✓\u001b[39m test/orders.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 18\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:50:31\n\u001b[2m   Duration \u001b[22m 293ms\u001b[2m (import 77%, transform 14%, tests 8%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-effect-schema-vitest-fnWt5N/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-effect-schema-vitest-a6sxP0\u001b[39m\n\n \u001b[32m✓\u001b[39m test/orders.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 27\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 00:54:22\n\u001b[2m   Duration \u001b[22m 448ms\u001b[2m (import 80%, transform 10%, tests 8%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-effect-schema-vitest-a6sxP0/test-report.json\n"
 }

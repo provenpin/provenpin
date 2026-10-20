@@ -1,15 +1,15 @@
 {
   "id": "hono-zod-openapi",
   "status": "passed",
-  "ran_at": "2026-10-19T18:52:34.899Z",
-  "last_passed_at": "2026-10-19T18:52:34.899Z",
+  "ran_at": "2026-10-20T00:56:20.056Z",
+  "last_passed_at": "2026-10-20T00:56:20.056Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2255,
-    "test": 465
+    "setup": 2651,
+    "test": 559
   },
   "pinned": {
     "hono": "4.13.13",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39305568457"
+    "runner": "github-actions 39350141463"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: typed route works and validates params\nok 1 - typed route works and validates params\n  ---\n  duration_ms: 38.857474\n  type: 'test'\n  ...\n# Subtest: OpenAPI document is generated from the same schemas\nok 2 - OpenAPI document is generated from the same schemas\n  ---\n  duration_ms: 2.89659\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 346.203853\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: typed route works and validates params\nok 1 - typed route works and validates params\n  ---\n  duration_ms: 29.536738\n  type: 'test'\n  ...\n# Subtest: OpenAPI document is generated from the same schemas\nok 2 - OpenAPI document is generated from the same schemas\n  ---\n  duration_ms: 3.789488\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 408.141045\n"
 }
