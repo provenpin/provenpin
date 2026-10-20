@@ -1,15 +1,15 @@
 {
   "id": "express-jwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-20T06:50:35.071Z",
-  "last_passed_at": "2026-10-20T06:50:35.071Z",
+  "ran_at": "2026-10-20T12:52:29.007Z",
+  "last_passed_at": "2026-10-20T12:52:29.007Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4442,
-    "test": 599
+    "setup": 3811,
+    "test": 609
   },
   "pinned": {
     "express": "5.3.0",
@@ -32,8 +32,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39382490878"
+    "runner": "github-actions 39425324365"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login then access protected route\nok 1 - login then access protected route\n  ---\n  duration_ms: 88.951675\n  type: 'test'\n  ...\n# Subtest: rejects missing and forged tokens\nok 2 - rejects missing and forged tokens\n  ---\n  duration_ms: 6.966925\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 442.46571\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login then access protected route\nok 1 - login then access protected route\n  ---\n  duration_ms: 69.879275\n  type: 'test'\n  ...\n# Subtest: rejects missing and forged tokens\nok 2 - rejects missing and forged tokens\n  ---\n  duration_ms: 7.242363\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 452.788105\n"
 }
