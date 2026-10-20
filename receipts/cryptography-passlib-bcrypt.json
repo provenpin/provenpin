@@ -1,15 +1,15 @@
 {
   "id": "cryptography-passlib-bcrypt",
   "status": "passed",
-  "ran_at": "2026-10-20T12:51:23.548Z",
-  "last_passed_at": "2026-10-20T12:51:23.548Z",
+  "ran_at": "2026-10-20T18:46:34.347Z",
+  "last_passed_at": "2026-10-20T18:46:34.347Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 297,
-    "test": 4126
+    "setup": 438,
+    "test": 4320
   },
   "pinned": {
     "passlib": "1.7.4",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39425324365"
+    "runner": "github-actions 39477443811"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 2.83s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 3.25s\n"
 }

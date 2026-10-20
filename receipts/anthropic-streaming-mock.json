@@ -1,15 +1,15 @@
 {
   "id": "anthropic-streaming-mock",
   "status": "passed",
-  "ran_at": "2026-10-20T12:50:36.565Z",
-  "last_passed_at": "2026-10-20T12:50:36.565Z",
+  "ran_at": "2026-10-20T18:45:47.058Z",
+  "last_passed_at": "2026-10-20T18:45:47.058Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3598,
-    "test": 607
+    "setup": 2707,
+    "test": 493
   },
   "pinned": {
     "@anthropic-ai/sdk": "0.134.0",
@@ -24,11 +24,11 @@
     "recipes/anthropic-streaming-mock/test/stream.test.ts": "sha256:7cb48d080d9f43b4dfda55068bfb96b95210b1cbd4ceacd7f4a3491d27f6fb5c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39425324365"
+    "runner": "github-actions 39477443811"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# Subtest: streams text deltas and builds the final message\nok 1 - streams text deltas and builds the final message\n  ---\n  duration_ms: 43.833123\n  type: 'test'\n  ...\n# Subtest: stream error events reject\nok 2 - stream error events reject\n  ---\n  duration_ms: 2.870704\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 451.632379\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# The model 'claude-sonnet-4-5' is deprecated and will reach end-of-life on November 30th, 2026\n# Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.\n# Subtest: streams text deltas and builds the final message\nok 1 - streams text deltas and builds the final message\n  ---\n  duration_ms: 35.999201\n  type: 'test'\n  ...\n# Subtest: stream error events reject\nok 2 - stream error events reject\n  ---\n  duration_ms: 1.905411\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 371.850126\n"
 }

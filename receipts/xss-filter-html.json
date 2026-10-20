@@ -1,15 +1,15 @@
 {
   "id": "xss-filter-html",
   "status": "passed",
-  "ran_at": "2026-10-20T13:00:03.688Z",
-  "last_passed_at": "2026-10-20T13:00:03.688Z",
+  "ran_at": "2026-10-20T18:55:15.943Z",
+  "last_passed_at": "2026-10-20T18:55:15.943Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2095,
-    "test": 359
+    "setup": 1668,
+    "test": 356
   },
   "pinned": {
     "xss": "1.0.15",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39425324365"
+    "runner": "github-actions 39477443811"
   },
   "errors": [],
-  "log_tail": "# Subtest: keeps whitelisted markup intact\nok 1 - keeps whitelisted markup intact\n  ---\n  duration_ms: 1.706437\n  type: 'test'\n  ...\n# Subtest: strips script tags and their contents\nok 2 - strips script tags and their contents\n  ---\n  duration_ms: 0.394121\n  type: 'test'\n  ...\n# Subtest: removes event handler attributes but keeps safe ones\nok 3 - removes event handler attributes but keeps safe ones\n  ---\n  duration_ms: 0.807558\n  type: 'test'\n  ...\n# Subtest: removes javascript: urls\nok 4 - removes javascript: urls\n  ---\n  duration_ms: 0.25032\n  type: 'test'\n  ...\n# Subtest: strips disallowed tags and their handlers\nok 5 - strips disallowed tags and their handlers\n  ---\n  duration_ms: 0.235763\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 209.800056\n"
+  "log_tail": "# Subtest: keeps whitelisted markup intact\nok 1 - keeps whitelisted markup intact\n  ---\n  duration_ms: 1.713273\n  type: 'test'\n  ...\n# Subtest: strips script tags and their contents\nok 2 - strips script tags and their contents\n  ---\n  duration_ms: 0.416066\n  type: 'test'\n  ...\n# Subtest: removes event handler attributes but keeps safe ones\nok 3 - removes event handler attributes but keeps safe ones\n  ---\n  duration_ms: 0.751401\n  type: 'test'\n  ...\n# Subtest: removes javascript: urls\nok 4 - removes javascript: urls\n  ---\n  duration_ms: 0.253041\n  type: 'test'\n  ...\n# Subtest: strips disallowed tags and their handlers\nok 5 - strips disallowed tags and their handlers\n  ---\n  duration_ms: 0.206304\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 207.589708\n"
 }

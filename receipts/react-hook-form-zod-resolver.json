@@ -1,15 +1,15 @@
 {
   "id": "react-hook-form-zod-resolver",
   "status": "passed",
-  "ran_at": "2026-10-20T12:58:06.074Z",
-  "last_passed_at": "2026-10-20T12:58:06.074Z",
+  "ran_at": "2026-10-20T18:53:18.200Z",
+  "last_passed_at": "2026-10-20T18:53:18.200Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2249,
-    "test": 287
+    "setup": 2993,
+    "test": 496
   },
   "pinned": {
     "react-hook-form": "7.90.0",
@@ -30,8 +30,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39425324365"
+    "runner": "github-actions 39477443811"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid values come back coerced\nok 1 - valid values come back coerced\n  ---\n  duration_ms: 1.478632\n  type: 'test'\n  ...\n# Subtest: field and cross-field errors map to RHF errors\nok 2 - field and cross-field errors map to RHF errors\n  ---\n  duration_ms: 0.949771\n  type: 'test'\n  ...\n# Subtest: refinement error lands on confirm\nok 3 - refinement error lands on confirm\n  ---\n  duration_ms: 0.268101\n  type: 'test'\n  ...\n# Subtest: same schema validates on the server\nok 4 - same schema validates on the server\n  ---\n  duration_ms: 0.637874\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 194.812579\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid values come back coerced\nok 1 - valid values come back coerced\n  ---\n  duration_ms: 2.753016\n  type: 'test'\n  ...\n# Subtest: field and cross-field errors map to RHF errors\nok 2 - field and cross-field errors map to RHF errors\n  ---\n  duration_ms: 1.767374\n  type: 'test'\n  ...\n# Subtest: refinement error lands on confirm\nok 3 - refinement error lands on confirm\n  ---\n  duration_ms: 0.426036\n  type: 'test'\n  ...\n# Subtest: same schema validates on the server\nok 4 - same schema validates on the server\n  ---\n  duration_ms: 2.128699\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 344.832739\n"
 }

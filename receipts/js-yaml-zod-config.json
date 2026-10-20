@@ -1,15 +1,15 @@
 {
   "id": "js-yaml-zod-config",
   "status": "passed",
-  "ran_at": "2026-10-20T12:54:56.783Z",
-  "last_passed_at": "2026-10-20T12:54:56.783Z",
+  "ran_at": "2026-10-20T18:50:11.670Z",
+  "last_passed_at": "2026-10-20T18:50:11.670Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1968,
-    "test": 311
+    "setup": 2105,
+    "test": 511
   },
   "pinned": {
     "js-yaml": "5.4.3",
@@ -26,11 +26,11 @@
     "recipes/js-yaml-zod-config/test/config.test.ts": "sha256:53dfd7e87aadd03491a9f5adf950e15a4d40906e1076bdecf999ea6216209229"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39425324365"
+    "runner": "github-actions 39477443811"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loads yaml with defaults\nok 1 - loads yaml with defaults\n  ---\n  duration_ms: 3.308372\n  type: 'test'\n  ...\n# Subtest: rejects missing database\nok 2 - rejects missing database\n  ---\n  duration_ms: 0.671127\n  type: 'test'\n  ...\n# Subtest: rejects bad types\nok 3 - rejects bad types\n  ---\n  duration_ms: 0.352483\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 209.405404\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loads yaml with defaults\nok 1 - loads yaml with defaults\n  ---\n  duration_ms: 3.73617\n  type: 'test'\n  ...\n# Subtest: rejects missing database\nok 2 - rejects missing database\n  ---\n  duration_ms: 0.781359\n  type: 'test'\n  ...\n# Subtest: rejects bad types\nok 3 - rejects bad types\n  ---\n  duration_ms: 0.410334\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 236.360558\n"
 }

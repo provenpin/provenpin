@@ -1,15 +1,15 @@
 {
   "id": "express-jwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-20T12:52:29.007Z",
-  "last_passed_at": "2026-10-20T12:52:29.007Z",
+  "ran_at": "2026-10-20T18:47:41.406Z",
+  "last_passed_at": "2026-10-20T18:47:41.406Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3811,
-    "test": 609
+    "setup": 4025,
+    "test": 633
   },
   "pinned": {
     "express": "5.3.0",
@@ -29,11 +29,11 @@
     "recipes/express-jwt-auth/test/app.test.ts": "sha256:bee739c473f435239eaa985446e5293a8df145078ce30b3e5059879f9560db2d"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39425324365"
+    "runner": "github-actions 39477443811"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login then access protected route\nok 1 - login then access protected route\n  ---\n  duration_ms: 69.879275\n  type: 'test'\n  ...\n# Subtest: rejects missing and forged tokens\nok 2 - rejects missing and forged tokens\n  ---\n  duration_ms: 7.242363\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 452.788105\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login then access protected route\nok 1 - login then access protected route\n  ---\n  duration_ms: 95.923648\n  type: 'test'\n  ...\n# Subtest: rejects missing and forged tokens\nok 2 - rejects missing and forged tokens\n  ---\n  duration_ms: 6.818201\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 476.66468\n"
 }

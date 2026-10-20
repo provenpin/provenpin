@@ -1,15 +1,15 @@
 {
   "id": "drizzle-sqlite-crud",
   "status": "passed",
-  "ran_at": "2026-10-20T12:51:59.706Z",
-  "last_passed_at": "2026-10-20T12:51:59.706Z",
+  "ran_at": "2026-10-20T18:47:06.572Z",
+  "last_passed_at": "2026-10-20T18:47:06.572Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8141,
-    "test": 783
+    "setup": 8753,
+    "test": 642
   },
   "pinned": {
     "drizzle-orm": "0.45.4",
@@ -26,11 +26,11 @@
     "recipes/drizzle-sqlite-crud/test/db.test.ts": "sha256:bbf32a9e06b1b3128996f8529463aea51b517bdd3bf2e42e551b466cff56950e"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39425324365"
+    "runner": "github-actions 39477443811"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: insert, update, list, delete\nok 1 - insert, update, list, delete\n  ---\n  duration_ms: 10.308973\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 622.972771\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: insert, update, list, delete\nok 1 - insert, update, list, delete\n  ---\n  duration_ms: 25.78802\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 518.174992\n"
 }
