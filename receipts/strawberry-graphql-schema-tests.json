@@ -1,15 +1,15 @@
 {
   "id": "strawberry-graphql-schema-tests",
   "status": "passed",
-  "ran_at": "2026-10-18T03:57:34.372Z",
-  "last_passed_at": "2026-10-18T03:57:34.372Z",
+  "ran_at": "2026-10-20T01:24:48.663Z",
+  "last_passed_at": "2026-10-20T01:24:48.663Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 373,
-    "test": 2347
+    "setup": 238,
+    "test": 1282
   },
   "pinned": {
     "strawberry-graphql": "0.336.0",
@@ -25,11 +25,11 @@
     "recipes/strawberry-graphql-schema-tests/tests/test_schema.py": "sha256:0d3906af6e48254362f6c4c7335eb0a61fa0321f40dc80a054c94a16e74c5ab6"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39095370682"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.58s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.37s\n"
 }

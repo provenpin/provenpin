@@ -1,15 +1,15 @@
 {
   "id": "change-case-string-cases",
   "status": "passed",
-  "ran_at": "2026-10-15T20:56:55.552Z",
-  "last_passed_at": "2026-10-15T20:56:55.552Z",
+  "ran_at": "2026-10-20T01:05:22.580Z",
+  "last_passed_at": "2026-10-20T01:05:22.580Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1627,
-    "test": 422
+    "setup": 1420,
+    "test": 341
   },
   "pinned": {
     "change-case": "5.4.4",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38805962781"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: converts mixed identifiers\nok 1 - converts mixed identifiers\n  ---\n  duration_ms: 1.910161\n  type: 'test'\n  ...\n# Subtest: handles already camel input\nok 2 - handles already camel input\n  ---\n  duration_ms: 0.255986\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 297.366367\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: converts mixed identifiers\nok 1 - converts mixed identifiers\n  ---\n  duration_ms: 2.629839\n  type: 'test'\n  ...\n# Subtest: handles already camel input\nok 2 - handles already camel input\n  ---\n  duration_ms: 0.36315\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 188.842156\n"
 }

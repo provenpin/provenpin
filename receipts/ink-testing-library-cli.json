@@ -1,15 +1,15 @@
 {
   "id": "ink-testing-library-cli",
   "status": "passed",
-  "ran_at": "2026-10-15T20:09:00.098Z",
-  "last_passed_at": "2026-10-15T20:09:00.098Z",
+  "ran_at": "2026-10-20T01:12:42.823Z",
+  "last_passed_at": "2026-10-20T01:12:42.823Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8316,
-    "test": 1324
+    "setup": 4715,
+    "test": 1355
   },
   "pinned": {
     "ink": "8.0.0",
@@ -28,11 +28,11 @@
     "recipes/ink-testing-library-cli/tsconfig.json": "sha256:db014426d8fca169f8d10bc0b92aac415d701fb5181e4ae309a4698cdc8cf8cb"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38799498972"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: initial frame\nok 1 - initial frame\n  ---\n  duration_ms: 63.525632\n  type: 'test'\n  ...\n# Subtest: keyboard toggles and moves the cursor\nok 2 - keyboard toggles and moves the cursor\n  ---\n  duration_ms: 189.247907\n  type: 'test'\n  ...\n# Subtest: enter submits selected ids\nok 3 - enter submits selected ids\n  ---\n  duration_ms: 150.530385\n  type: 'test'\n  ...\n# Subtest: effects and timers re-render frames\nok 4 - effects and timers re-render frames\n  ---\n  duration_ms: 90.330585\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1178.386657\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: initial frame\nok 1 - initial frame\n  ---\n  duration_ms: 69.875699\n  type: 'test'\n  ...\n# Subtest: keyboard toggles and moves the cursor\nok 2 - keyboard toggles and moves the cursor\n  ---\n  duration_ms: 195.365131\n  type: 'test'\n  ...\n# Subtest: enter submits selected ids\nok 3 - enter submits selected ids\n  ---\n  duration_ms: 157.21872\n  type: 'test'\n  ...\n# Subtest: effects and timers re-render frames\nok 4 - effects and timers re-render frames\n  ---\n  duration_ms: 103.104589\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1209.226519\n"
 }

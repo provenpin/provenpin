@@ -1,15 +1,15 @@
 {
   "id": "pyyaml-jsonschema-config",
   "status": "passed",
-  "ran_at": "2026-10-16T00:56:47.081Z",
-  "last_passed_at": "2026-10-16T00:56:47.081Z",
+  "ran_at": "2026-10-20T01:22:06.008Z",
+  "last_passed_at": "2026-10-20T01:22:06.008Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1360,
-    "test": 1214
+    "setup": 562,
+    "test": 1281
   },
   "pinned": {
     "pyyaml": "6.0.3",
@@ -25,10 +25,10 @@
     "recipes/pyyaml-jsonschema-config/tests/test_config.py": "sha256:8b7f5d15384c00fce7ba28d956fa2a91e9e9d3de0411889862054098f9424afc"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38832319459"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.20s\n"

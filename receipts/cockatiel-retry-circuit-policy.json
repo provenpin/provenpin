@@ -1,15 +1,15 @@
 {
   "id": "cockatiel-retry-circuit-policy",
   "status": "passed",
-  "ran_at": "2026-10-15T17:10:35.411Z",
-  "last_passed_at": "2026-10-15T17:10:35.411Z",
+  "ran_at": "2026-10-20T01:05:52.410Z",
+  "last_passed_at": "2026-10-20T01:05:52.410Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1677,
-    "test": 526
+    "setup": 1640,
+    "test": 558
   },
   "pinned": {
     "cockatiel": "4.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38775053802"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: retries transient 5xx errors then succeeds\nok 1 - retries transient 5xx errors then succeeds\n  ---\n  duration_ms: 17.134085\n  type: 'test'\n  ...\n# Subtest: 4xx errors are not retried\nok 2 - 4xx errors are not retried\n  ---\n  duration_ms: 1.219874\n  type: 'test'\n  ...\n# Subtest: breaker opens after consecutive failures and half-opens later\nok 3 - breaker opens after consecutive failures and half-opens later\n  ---\n  duration_ms: 62.288014\n  type: 'test'\n  ...\n# Subtest: aggressive timeout cancels slow work\nok 4 - aggressive timeout cancels slow work\n  ---\n  duration_ms: 21.001948\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 380.998965\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: retries transient 5xx errors then succeeds\nok 1 - retries transient 5xx errors then succeeds\n  ---\n  duration_ms: 21.861398\n  type: 'test'\n  ...\n# Subtest: 4xx errors are not retried\nok 2 - 4xx errors are not retried\n  ---\n  duration_ms: 0.988328\n  type: 'test'\n  ...\n# Subtest: breaker opens after consecutive failures and half-opens later\nok 3 - breaker opens after consecutive failures and half-opens later\n  ---\n  duration_ms: 61.658422\n  type: 'test'\n  ...\n# Subtest: aggressive timeout cancels slow work\nok 4 - aggressive timeout cancels slow work\n  ---\n  duration_ms: 20.748997\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 404.540698\n"
 }

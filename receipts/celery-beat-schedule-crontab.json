@@ -1,15 +1,15 @@
 {
   "id": "celery-beat-schedule-crontab",
   "status": "passed",
-  "ran_at": "2026-10-15T15:57:27.860Z",
-  "last_passed_at": "2026-10-15T15:57:27.860Z",
+  "ran_at": "2026-10-20T01:05:07.394Z",
+  "last_passed_at": "2026-10-20T01:05:07.394Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 268,
-    "test": 978
+    "setup": 377,
+    "test": 1038
   },
   "pinned": {
     "celery": "5.6.3",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.45s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.43s\n"
 }

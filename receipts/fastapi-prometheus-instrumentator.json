@@ -1,15 +1,15 @@
 {
   "id": "fastapi-prometheus-instrumentator",
   "status": "passed",
-  "ran_at": "2026-10-20T00:55:16.661Z",
-  "last_passed_at": "2026-10-20T00:55:16.661Z",
+  "ran_at": "2026-10-20T01:09:43.767Z",
+  "last_passed_at": "2026-10-20T01:09:43.767Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 617,
-    "test": 3657
+    "setup": 329,
+    "test": 2840
   },
   "pinned": {
     "fastapi": "0.143.2",
@@ -31,7 +31,7 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350141463"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 1.08s\n"

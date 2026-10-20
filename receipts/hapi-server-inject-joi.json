@@ -1,15 +1,15 @@
 {
   "id": "hapi-server-inject-joi",
   "status": "passed",
-  "ran_at": "2026-10-16T20:33:06.889Z",
-  "last_passed_at": "2026-10-16T20:33:06.889Z",
+  "ran_at": "2026-10-20T01:11:21.239Z",
+  "last_passed_at": "2026-10-20T01:11:21.239Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2422,
-    "test": 633
+    "setup": 2487,
+    "test": 456
   },
   "pinned": {
     "@hapi/hapi": "21.4.10",
@@ -26,11 +26,11 @@
     "recipes/hapi-server-inject-joi/test/server.test.ts": "sha256:8f82e880855653d18a53e5ccebb07d6a2a9537fbbe04b249bc50f7df6a7ec740"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38962988948"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: GET /users/{id} rejects an invalid id with 400\nok 2 - GET /users/{id} rejects an invalid id with 400\n  ---\n  duration_ms: 3.553096\n  type: 'test'\n  ...\n# Subtest: GET /users/{id} returns a Boom 404 for a missing user\nok 3 - GET /users/{id} returns a Boom 404 for a missing user\n  ---\n  duration_ms: 2.147212\n  type: 'test'\n  ...\n# Subtest: POST /users accepts a valid payload with 201\nok 4 - POST /users accepts a valid payload with 201\n  ---\n  duration_ms: 27.550799\n  type: 'test'\n  ...\n# Subtest: POST /users rejects an invalid payload with 400\nok 5 - POST /users rejects an invalid payload with 400\n  ---\n  duration_ms: 6.816609\n  type: 'test'\n  ...\n# Subtest: GET /search validates and coerces the query string\nok 6 - GET /search validates and coerces the query string\n  ---\n  duration_ms: 4.565662\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 476.737214\n"
+  "log_tail": "# Subtest: GET /users/{id} rejects an invalid id with 400\nok 2 - GET /users/{id} rejects an invalid id with 400\n  ---\n  duration_ms: 2.464867\n  type: 'test'\n  ...\n# Subtest: GET /users/{id} returns a Boom 404 for a missing user\nok 3 - GET /users/{id} returns a Boom 404 for a missing user\n  ---\n  duration_ms: 1.194223\n  type: 'test'\n  ...\n# Subtest: POST /users accepts a valid payload with 201\nok 4 - POST /users accepts a valid payload with 201\n  ---\n  duration_ms: 15.106731\n  type: 'test'\n  ...\n# Subtest: POST /users rejects an invalid payload with 400\nok 5 - POST /users rejects an invalid payload with 400\n  ---\n  duration_ms: 3.074077\n  type: 'test'\n  ...\n# Subtest: GET /search validates and coerces the query string\nok 6 - GET /search validates and coerces the query string\n  ---\n  duration_ms: 3.581334\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 339.612371\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "pyparsing-arith-expression-grammar",
   "status": "passed",
-  "ran_at": "2026-10-16T21:57:18.432Z",
-  "last_passed_at": "2026-10-16T21:57:18.432Z",
+  "ran_at": "2026-10-20T01:21:29.417Z",
+  "last_passed_at": "2026-10-20T01:21:29.417Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 230,
-    "test": 1305
+    "setup": 275,
+    "test": 847
   },
   "pinned": {
     "pyparsing": "3.3.3",
@@ -24,11 +24,11 @@
     "recipes/pyparsing-arith-expression-grammar/tests/test_grammar.py": "sha256:2acb08dc749ee56efdf9a9e74c0ff7c129e8411ff9d15731442265577eebe275"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38972656245"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.10s\n"
 }

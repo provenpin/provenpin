@@ -1,15 +1,15 @@
 {
   "id": "typer-rich-table-cli",
   "status": "passed",
-  "ran_at": "2026-10-15T16:06:14.554Z",
-  "last_passed_at": "2026-10-15T16:06:14.554Z",
+  "ran_at": "2026-10-20T01:26:53.578Z",
+  "last_passed_at": "2026-10-20T01:26:53.578Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 303,
-    "test": 1330
+    "setup": 343,
+    "test": 991
   },
   "pinned": {
     "typer": "0.27.3",
@@ -25,11 +25,11 @@
     "recipes/typer-rich-table-cli/tests/test_cli.py": "sha256:56392cf0078dbc244bab9e8c03a2418fd0b0d3178e9a3e9addd18a1c2c7d07f7"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.32s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.37s\n"
 }

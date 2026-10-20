@@ -1,15 +1,15 @@
 {
   "id": "html-entities-encode-decode",
   "status": "passed",
-  "ran_at": "2026-10-15T22:58:31.093Z",
-  "last_passed_at": "2026-10-15T22:58:31.093Z",
+  "ran_at": "2026-10-20T01:11:53.343Z",
+  "last_passed_at": "2026-10-20T01:11:53.343Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1346,
-    "test": 272
+    "setup": 1720,
+    "test": 311
   },
   "pinned": {
     "html-entities": "2.6.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38820570375"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: nonAscii mode escapes non-ASCII characters\nok 3 - nonAscii mode escapes non-ASCII characters\n  ---\n  duration_ms: 0.122435\n  type: 'test'\n  ...\n# Subtest: decodes named entities\nok 4 - decodes named entities\n  ---\n  duration_ms: 0.056986\n  type: 'test'\n  ...\n# Subtest: decodes decimal and hexadecimal numeric entities\nok 5 - decodes decimal and hexadecimal numeric entities\n  ---\n  duration_ms: 0.13926\n  type: 'test'\n  ...\n# Subtest: escapes untrusted user content safely\nok 6 - escapes untrusted user content safely\n  ---\n  duration_ms: 0.108804\n  type: 'test'\n  ...\n# Subtest: escapes values for attribute contexts\nok 7 - escapes values for attribute contexts\n  ---\n  duration_ms: 0.061823\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 167.553349\n"
+  "log_tail": "# Subtest: nonAscii mode escapes non-ASCII characters\nok 3 - nonAscii mode escapes non-ASCII characters\n  ---\n  duration_ms: 0.169632\n  type: 'test'\n  ...\n# Subtest: decodes named entities\nok 4 - decodes named entities\n  ---\n  duration_ms: 0.086539\n  type: 'test'\n  ...\n# Subtest: decodes decimal and hexadecimal numeric entities\nok 5 - decodes decimal and hexadecimal numeric entities\n  ---\n  duration_ms: 0.142162\n  type: 'test'\n  ...\n# Subtest: escapes untrusted user content safely\nok 6 - escapes untrusted user content safely\n  ---\n  duration_ms: 0.186247\n  type: 'test'\n  ...\n# Subtest: escapes values for attribute contexts\nok 7 - escapes values for attribute contexts\n  ---\n  duration_ms: 0.107981\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 183.373586\n"
 }

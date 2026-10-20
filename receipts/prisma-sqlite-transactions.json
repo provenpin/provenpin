@@ -1,15 +1,15 @@
 {
   "id": "prisma-sqlite-transactions",
   "status": "passed",
-  "ran_at": "2026-10-20T00:59:06.482Z",
-  "last_passed_at": "2026-10-20T00:59:06.482Z",
+  "ran_at": "2026-10-20T01:20:33.178Z",
+  "last_passed_at": "2026-10-20T01:20:33.178Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 15898,
-    "test": 437
+    "setup": 18774,
+    "test": 682
   },
   "pinned": {
     "@prisma/client": "7.10.0",
@@ -28,11 +28,11 @@
     "recipes/prisma-sqlite-transactions/test/bank.test.ts": "sha256:39d1a98be4f490966d504457464a704a808b1639cc9a549cb4cec8baaff9528c"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350141463"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: nested create\nok 1 - nested create\n  ---\n  duration_ms: 78.673629\n  type: 'test'\n  ...\n# Subtest: duplicate email maps P2002 to a domain error\nok 2 - duplicate email maps P2002 to a domain error\n  ---\n  duration_ms: 26.707636\n  type: 'test'\n  ...\n# Subtest: transfer commits both sides\nok 3 - transfer commits both sides\n  ---\n  duration_ms: 16.628417\n  type: 'test'\n  ...\n# Subtest: failed transfer rolls back\nok 4 - failed transfer rolls back\n  ---\n  duration_ms: 10.593851\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 343.118262\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: nested create\nok 1 - nested create\n  ---\n  duration_ms: 118.316727\n  type: 'test'\n  ...\n# Subtest: duplicate email maps P2002 to a domain error\nok 2 - duplicate email maps P2002 to a domain error\n  ---\n  duration_ms: 39.07375\n  type: 'test'\n  ...\n# Subtest: transfer commits both sides\nok 3 - transfer commits both sides\n  ---\n  duration_ms: 24.594556\n  type: 'test'\n  ...\n# Subtest: failed transfer rolls back\nok 4 - failed transfer rolls back\n  ---\n  duration_ms: 13.552449\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 528.703381\n"
 }

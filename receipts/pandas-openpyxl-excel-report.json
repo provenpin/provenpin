@@ -1,15 +1,15 @@
 {
   "id": "pandas-openpyxl-excel-report",
   "status": "passed",
-  "ran_at": "2026-10-15T16:03:36.429Z",
-  "last_passed_at": "2026-10-15T16:03:36.429Z",
+  "ran_at": "2026-10-20T01:19:10.841Z",
+  "last_passed_at": "2026-10-20T01:19:10.841Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 685,
-    "test": 3778
+    "setup": 471,
+    "test": 4793
   },
   "pinned": {
     "pandas": "3.0.6",
@@ -25,11 +25,11 @@
     "recipes/pandas-openpyxl-excel-report/tests/test_report.py": "sha256:9077275b8334390789d9cf75eba4b4823c70084a57c037d6943a5f371829d760"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 2.08s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 2.34s\n"
 }

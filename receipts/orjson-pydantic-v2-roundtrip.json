@@ -1,15 +1,15 @@
 {
   "id": "orjson-pydantic-v2-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-15T16:03:10.454Z",
-  "last_passed_at": "2026-10-15T16:03:10.454Z",
+  "ran_at": "2026-10-20T01:18:33.292Z",
+  "last_passed_at": "2026-10-20T01:18:33.292Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 435,
-    "test": 2093
+    "setup": 831,
+    "test": 1480
   },
   "pinned": {
     "orjson": "3.13.0",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.49s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.38s\n"
 }

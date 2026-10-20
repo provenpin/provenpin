@@ -1,15 +1,15 @@
 {
   "id": "cheerio-zod-scrape-fixtures",
   "status": "passed",
-  "ran_at": "2026-10-15T15:57:40.854Z",
-  "last_passed_at": "2026-10-15T15:57:40.854Z",
+  "ran_at": "2026-10-20T01:05:27.516Z",
+  "last_passed_at": "2026-10-20T01:05:27.516Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2955,
-    "test": 696
+    "setup": 2487,
+    "test": 690
   },
   "pinned": {
     "cheerio": "1.2.0",
@@ -30,8 +30,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: parsePrice handles currency symbols, thousands separators and cents\nok 1 - parsePrice handles currency symbols, thousands separators and cents\n  ---\n  duration_ms: 1.043635\n  type: 'test'\n  ...\n# Subtest: scrapes valid cards with absolute URLs, stock and optional rating\nok 2 - scrapes valid cards with absolute URLs, stock and optional rating\n  ---\n  duration_ms: 15.781356\n  type: 'test'\n  ...\n# Subtest: invalid cards are reported with zod issue paths\nok 3 - invalid cards are reported with zod issue paths\n  ---\n  duration_ms: 2.441666\n  type: 'test'\n  ...\n# Subtest: resolves the next page link relative to the page URL\nok 4 - resolves the next page link relative to the page URL\n  ---\n  duration_ms: 2.914553\n  type: 'test'\n  ...\n# Subtest: reads a dl spec table with whitespace normalised\nok 5 - reads a dl spec table with whitespace normalised\n  ---\n  duration_ms: 1.26996\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 548.021772\n"
+  "log_tail": "# Subtest: parsePrice handles currency symbols, thousands separators and cents\nok 1 - parsePrice handles currency symbols, thousands separators and cents\n  ---\n  duration_ms: 0.980762\n  type: 'test'\n  ...\n# Subtest: scrapes valid cards with absolute URLs, stock and optional rating\nok 2 - scrapes valid cards with absolute URLs, stock and optional rating\n  ---\n  duration_ms: 14.164108\n  type: 'test'\n  ...\n# Subtest: invalid cards are reported with zod issue paths\nok 3 - invalid cards are reported with zod issue paths\n  ---\n  duration_ms: 2.191045\n  type: 'test'\n  ...\n# Subtest: resolves the next page link relative to the page URL\nok 4 - resolves the next page link relative to the page URL\n  ---\n  duration_ms: 2.636848\n  type: 'test'\n  ...\n# Subtest: reads a dl spec table with whitespace normalised\nok 5 - reads a dl spec table with whitespace normalised\n  ---\n  duration_ms: 1.191555\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 544.059022\n"
 }

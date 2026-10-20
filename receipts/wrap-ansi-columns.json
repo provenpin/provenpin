@@ -1,15 +1,15 @@
 {
   "id": "wrap-ansi-columns",
   "status": "passed",
-  "ran_at": "2026-10-16T19:55:06.385Z",
-  "last_passed_at": "2026-10-16T19:55:06.385Z",
+  "ran_at": "2026-10-20T01:27:56.771Z",
+  "last_passed_at": "2026-10-20T01:27:56.771Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2342,
-    "test": 380
+    "setup": 1609,
+    "test": 454
   },
   "pinned": {
     "wrap-ansi": "10.0.2",
@@ -24,11 +24,11 @@
     "recipes/wrap-ansi-columns/test/wrap.test.ts": "sha256:d7d1cc965c3919b1a08f006198809b3a07e3375aea1b4b176a1b6d3a6cc8230c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38958328921"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: wraps long text to a column width on word boundaries\nok 1 - wraps long text to a column width on word boundaries\n  ---\n  duration_ms: 1.866391\n  type: 'test'\n  ...\n# Subtest: hard wrap breaks words longer than the column width\nok 2 - hard wrap breaks words longer than the column width\n  ---\n  duration_ms: 0.565885\n  type: 'test'\n  ...\n# Subtest: soft wrap keeps long words intact\nok 3 - soft wrap keeps long words intact\n  ---\n  duration_ms: 0.215652\n  type: 'test'\n  ...\n# Subtest: trim removes whitespace on wrapped line boundaries\nok 4 - trim removes whitespace on wrapped line boundaries\n  ---\n  duration_ms: 0.308695\n  type: 'test'\n  ...\n# Subtest: preserves ANSI escape codes while wrapping\nok 5 - preserves ANSI escape codes while wrapping\n  ---\n  duration_ms: 1.29244\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 232.574831\n"
+  "log_tail": "# Subtest: wraps long text to a column width on word boundaries\nok 1 - wraps long text to a column width on word boundaries\n  ---\n  duration_ms: 1.493685\n  type: 'test'\n  ...\n# Subtest: hard wrap breaks words longer than the column width\nok 2 - hard wrap breaks words longer than the column width\n  ---\n  duration_ms: 0.430999\n  type: 'test'\n  ...\n# Subtest: soft wrap keeps long words intact\nok 3 - soft wrap keeps long words intact\n  ---\n  duration_ms: 0.1552\n  type: 'test'\n  ...\n# Subtest: trim removes whitespace on wrapped line boundaries\nok 4 - trim removes whitespace on wrapped line boundaries\n  ---\n  duration_ms: 0.253496\n  type: 'test'\n  ...\n# Subtest: preserves ANSI escape codes while wrapping\nok 5 - preserves ANSI escape codes while wrapping\n  ---\n  duration_ms: 0.972872\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 314.757611\n"
 }

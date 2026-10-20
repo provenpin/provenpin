@@ -1,15 +1,15 @@
 {
   "id": "io-ts-codec-decode",
   "status": "passed",
-  "ran_at": "2026-10-16T20:33:04.762Z",
-  "last_passed_at": "2026-10-16T20:33:04.762Z",
+  "ran_at": "2026-10-20T01:12:47.101Z",
+  "last_passed_at": "2026-10-20T01:12:47.101Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1786,
-    "test": 282
+    "setup": 1816,
+    "test": 328
   },
   "pinned": {
     "io-ts": "2.2.22",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38962988948"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: treats partial fields as optional\nok 2 - treats partial fields as optional\n  ---\n  duration_ms: 0.731685\n  type: 'test'\n  ...\n# Subtest: rejects an unknown union member and reports the path\nok 3 - rejects an unknown union member and reports the path\n  ---\n  duration_ms: 0.306579\n  type: 'test'\n  ...\n# Subtest: rejects a non-positive branded age\nok 4 - rejects a non-positive branded age\n  ---\n  duration_ms: 0.134321\n  type: 'test'\n  ...\n# Subtest: rejects wrong element type inside an array\nok 5 - rejects wrong element type inside an array\n  ---\n  duration_ms: 0.083826\n  type: 'test'\n  ...\n# Subtest: encodes a valid value back to plain json\nok 6 - encodes a valid value back to plain json\n  ---\n  duration_ms: 0.057937\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 180.578465\n"
+  "log_tail": "# Subtest: treats partial fields as optional\nok 2 - treats partial fields as optional\n  ---\n  duration_ms: 0.325585\n  type: 'test'\n  ...\n# Subtest: rejects an unknown union member and reports the path\nok 3 - rejects an unknown union member and reports the path\n  ---\n  duration_ms: 0.356123\n  type: 'test'\n  ...\n# Subtest: rejects a non-positive branded age\nok 4 - rejects a non-positive branded age\n  ---\n  duration_ms: 0.819766\n  type: 'test'\n  ...\n# Subtest: rejects wrong element type inside an array\nok 5 - rejects wrong element type inside an array\n  ---\n  duration_ms: 0.161756\n  type: 'test'\n  ...\n# Subtest: encodes a valid value back to plain json\nok 6 - encodes a valid value back to plain json\n  ---\n  duration_ms: 0.108802\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 208.207353\n"
 }

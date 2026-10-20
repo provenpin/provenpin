@@ -1,15 +1,15 @@
 {
   "id": "throttle-debounce-fns",
   "status": "passed",
-  "ran_at": "2026-10-16T02:18:56.562Z",
-  "last_passed_at": "2026-10-16T02:18:56.562Z",
+  "ran_at": "2026-10-20T01:26:12.276Z",
+  "last_passed_at": "2026-10-20T01:26:12.276Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1716,
-    "test": 339
+    "setup": 1722,
+    "test": 292
   },
   "pinned": {
     "throttle-debounce": "5.0.2",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38839686104"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# (node:2449) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time\n# (Use `node --trace-warnings ...` to show where the warning was created)\n# Subtest: debounce collapses rapid calls into a single execution\nok 1 - debounce collapses rapid calls into a single execution\n  ---\n  duration_ms: 2.258214\n  type: 'test'\n  ...\n# Subtest: debounce cancel drops the pending execution\nok 2 - debounce cancel drops the pending execution\n  ---\n  duration_ms: 0.2456\n  type: 'test'\n  ...\n# Subtest: throttle limits the rate of calls\nok 3 - throttle limits the rate of calls\n  ---\n  duration_ms: 0.312575\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 193.468835\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# (node:2254) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time\n# (Use `node --trace-warnings ...` to show where the warning was created)\n# Subtest: debounce collapses rapid calls into a single execution\nok 1 - debounce collapses rapid calls into a single execution\n  ---\n  duration_ms: 1.94548\n  type: 'test'\n  ...\n# Subtest: debounce cancel drops the pending execution\nok 2 - debounce cancel drops the pending execution\n  ---\n  duration_ms: 0.179592\n  type: 'test'\n  ...\n# Subtest: throttle limits the rate of calls\nok 3 - throttle limits the rate of calls\n  ---\n  duration_ms: 0.200599\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 178.379476\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "pytest-mock-spy-autospec",
   "status": "passed",
-  "ran_at": "2026-10-18T03:57:24.279Z",
-  "last_passed_at": "2026-10-18T03:57:24.279Z",
+  "ran_at": "2026-10-20T01:21:46.973Z",
+  "last_passed_at": "2026-10-20T01:21:46.973Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 225,
-    "test": 1403
+    "setup": 223,
+    "test": 1686
   },
   "pinned": {
     "pytest-mock": "3.17.0",
@@ -24,11 +24,11 @@
     "recipes/pytest-mock-spy-autospec/tests/test_service.py": "sha256:1f7b062a66973034b811c737373ac3a9503795649bf3b4a2f18efaac0d7d3c66"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39095370682"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.15s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.19s\n"
 }

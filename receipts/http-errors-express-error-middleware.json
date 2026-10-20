@@ -1,15 +1,15 @@
 {
   "id": "http-errors-express-error-middleware",
   "status": "passed",
-  "ran_at": "2026-10-18T03:58:28.422Z",
-  "last_passed_at": "2026-10-18T03:58:28.422Z",
+  "ran_at": "2026-10-20T01:12:04.285Z",
+  "last_passed_at": "2026-10-20T01:12:04.285Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3126,
-    "test": 583
+    "setup": 4029,
+    "test": 803
   },
   "pinned": {
     "express": "5.3.0",
@@ -33,8 +33,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39095442401"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: exposes custom properties on a 422\nok 3 - exposes custom properties on a 422\n  ---\n  duration_ms: 18.149952\n  type: 'test'\n  ...\n# Subtest: forwards async route rejections\nok 4 - forwards async route rejections\n  ---\n  duration_ms: 3.387891\n  type: 'test'\n  ...\n# Subtest: serves an exposed 5xx message when opted in\nok 5 - serves an exposed 5xx message when opted in\n  ---\n  duration_ms: 3.298434\n  type: 'test'\n  ...\n# Subtest: hides the message of an unexposed 500\nok 6 - hides the message of an unexposed 500\n  ---\n  duration_ms: 2.981971\n  type: 'test'\n  ...\n# Subtest: returns problem details for unknown routes\nok 7 - returns problem details for unknown routes\n  ---\n  duration_ms: 2.721764\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 434.897628\n"
+  "log_tail": "# Subtest: exposes custom properties on a 422\nok 3 - exposes custom properties on a 422\n  ---\n  duration_ms: 52.653192\n  type: 'test'\n  ...\n# Subtest: forwards async route rejections\nok 4 - forwards async route rejections\n  ---\n  duration_ms: 3.674893\n  type: 'test'\n  ...\n# Subtest: serves an exposed 5xx message when opted in\nok 5 - serves an exposed 5xx message when opted in\n  ---\n  duration_ms: 3.482854\n  type: 'test'\n  ...\n# Subtest: hides the message of an unexposed 500\nok 6 - hides the message of an unexposed 500\n  ---\n  duration_ms: 3.318176\n  type: 'test'\n  ...\n# Subtest: returns problem details for unknown routes\nok 7 - returns problem details for unknown routes\n  ---\n  duration_ms: 3.53951\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 617.457904\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "gray-matter-zod-frontmatter",
   "status": "passed",
-  "ran_at": "2026-10-15T17:10:57.401Z",
-  "last_passed_at": "2026-10-15T17:10:57.401Z",
+  "ran_at": "2026-10-20T01:11:18.510Z",
+  "last_passed_at": "2026-10-20T01:11:18.510Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2251,
-    "test": 574
+    "setup": 2620,
+    "test": 565
   },
   "pinned": {
     "gray-matter": "4.0.3",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38775053802"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses, coerces dates, defaults and builds a slug\nok 1 - parses, coerces dates, defaults and builds a slug\n  ---\n  duration_ms: 6.570728\n  type: 'test'\n  ...\n# Subtest: filters drafts and sorts newest first\nok 2 - filters drafts and sorts newest first\n  ---\n  duration_ms: 1.158663\n  type: 'test'\n  ...\n# Subtest: invalid front matter throws a readable error\nok 3 - invalid front matter throws a readable error\n  ---\n  duration_ms: 2.29219\n  type: 'test'\n  ...\n# Subtest: writePost round-trips through parsePost\nok 4 - writePost round-trips through parsePost\n  ---\n  duration_ms: 1.788429\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 416.334649\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses, coerces dates, defaults and builds a slug\nok 1 - parses, coerces dates, defaults and builds a slug\n  ---\n  duration_ms: 6.576818\n  type: 'test'\n  ...\n# Subtest: filters drafts and sorts newest first\nok 2 - filters drafts and sorts newest first\n  ---\n  duration_ms: 1.186751\n  type: 'test'\n  ...\n# Subtest: invalid front matter throws a readable error\nok 3 - invalid front matter throws a readable error\n  ---\n  duration_ms: 1.463639\n  type: 'test'\n  ...\n# Subtest: writePost round-trips through parsePost\nok 4 - writePost round-trips through parsePost\n  ---\n  duration_ms: 2.763711\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 398.079567\n"
 }

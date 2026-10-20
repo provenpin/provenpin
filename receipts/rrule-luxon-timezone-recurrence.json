@@ -1,15 +1,15 @@
 {
   "id": "rrule-luxon-timezone-recurrence",
   "status": "passed",
-  "ran_at": "2026-10-15T20:10:20.332Z",
-  "last_passed_at": "2026-10-15T20:10:20.332Z",
+  "ran_at": "2026-10-20T01:23:10.837Z",
+  "last_passed_at": "2026-10-20T01:23:10.837Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 81546,
-    "test": 438
+    "setup": 1807,
+    "test": 428
   },
   "pinned": {
     "rrule": "2.8.1",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38799498972"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: 9am Anchorage stays 9am across the Nov 1 DST change\nok 1 - 9am Anchorage stays 9am across the Nov 1 DST change\n  ---\n  duration_ms: 39.01055\n  type: 'test'\n  ...\n# Subtest: same rule as UTC instants shifts by an hour after DST ends\nok 2 - same rule as UTC instants shifts by an hour after DST ends\n  ---\n  duration_ms: 1.672678\n  type: 'test'\n  ...\n# Subtest: multi-day rule in another zone\nok 3 - multi-day rule in another zone\n  ---\n  duration_ms: 1.00482\n  type: 'test'\n  ...\n# Subtest: human text and RFC 5545 string round trip\nok 4 - human text and RFC 5545 string round trip\n  ---\n  duration_ms: 2.55093\n  type: 'test'\n  ...\n# Subtest: last weekday of month with BYSETPOS\nok 5 - last weekday of month with BYSETPOS\n  ---\n  duration_ms: 0.675643\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 292.291053\n"
+  "log_tail": "# Subtest: 9am Anchorage stays 9am across the Nov 1 DST change\nok 1 - 9am Anchorage stays 9am across the Nov 1 DST change\n  ---\n  duration_ms: 35.797984\n  type: 'test'\n  ...\n# Subtest: same rule as UTC instants shifts by an hour after DST ends\nok 2 - same rule as UTC instants shifts by an hour after DST ends\n  ---\n  duration_ms: 1.677826\n  type: 'test'\n  ...\n# Subtest: multi-day rule in another zone\nok 3 - multi-day rule in another zone\n  ---\n  duration_ms: 0.995211\n  type: 'test'\n  ...\n# Subtest: human text and RFC 5545 string round trip\nok 4 - human text and RFC 5545 string round trip\n  ---\n  duration_ms: 2.476749\n  type: 'test'\n  ...\n# Subtest: last weekday of month with BYSETPOS\nok 5 - last weekday of month with BYSETPOS\n  ---\n  duration_ms: 0.693096\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 283.859303\n"
 }

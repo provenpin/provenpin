@@ -1,15 +1,15 @@
 {
   "id": "openpyxl-styles-named-styles",
   "status": "passed",
-  "ran_at": "2026-10-16T09:57:38.380Z",
-  "last_passed_at": "2026-10-16T09:57:38.380Z",
+  "ran_at": "2026-10-20T01:18:15.085Z",
+  "last_passed_at": "2026-10-20T01:18:15.085Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 312,
-    "test": 904
+    "setup": 909,
+    "test": 3143
   },
   "pinned": {
     "openpyxl": "3.1.5",
@@ -24,11 +24,11 @@
     "recipes/openpyxl-styles-named-styles/tests/test_report.py": "sha256:d37db25c2c9b566bfd8b5d57dbba044e68df8ea3caf032a276c8dc71b62f26a0"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38883899161"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.29s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.49s\n"
 }

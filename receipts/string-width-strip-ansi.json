@@ -1,15 +1,15 @@
 {
   "id": "string-width-strip-ansi",
   "status": "passed",
-  "ran_at": "2026-10-16T19:54:48.654Z",
-  "last_passed_at": "2026-10-16T19:54:48.654Z",
+  "ran_at": "2026-10-20T01:24:51.418Z",
+  "last_passed_at": "2026-10-20T01:24:51.418Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1712,
-    "test": 393
+    "setup": 1771,
+    "test": 416
   },
   "pinned": {
     "string-width": "8.3.0",
@@ -25,11 +25,11 @@
     "recipes/string-width-strip-ansi/test/width.test.ts": "sha256:194f828b8038704130cbd218a8afc67f94632a46471b69fb682ee25f0a3ba500"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38958328921"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: measures CJK wide characters as two columns each\nok 2 - measures CJK wide characters as two columns each\n  ---\n  duration_ms: 19.689691\n  type: 'test'\n  ...\n# Subtest: measures emoji as two columns\nok 3 - measures emoji as two columns\n  ---\n  duration_ms: 1.371894\n  type: 'test'\n  ...\n# Subtest: ignores ANSI escape codes when measuring width\nok 4 - ignores ANSI escape codes when measuring width\n  ---\n  duration_ms: 0.299622\n  type: 'test'\n  ...\n# Subtest: strips ANSI codes to plain text\nok 5 - strips ANSI codes to plain text\n  ---\n  duration_ms: 0.160271\n  type: 'test'\n  ...\n# Subtest: strip keeps wide characters and emoji intact\nok 6 - strip keeps wide characters and emoji intact\n  ---\n  duration_ms: 0.250049\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 246.405734\n"
+  "log_tail": "# Subtest: measures CJK wide characters as two columns each\nok 2 - measures CJK wide characters as two columns each\n  ---\n  duration_ms: 20.452891\n  type: 'test'\n  ...\n# Subtest: measures emoji as two columns\nok 3 - measures emoji as two columns\n  ---\n  duration_ms: 1.391918\n  type: 'test'\n  ...\n# Subtest: ignores ANSI escape codes when measuring width\nok 4 - ignores ANSI escape codes when measuring width\n  ---\n  duration_ms: 0.32705\n  type: 'test'\n  ...\n# Subtest: strips ANSI codes to plain text\nok 5 - strips ANSI codes to plain text\n  ---\n  duration_ms: 0.160059\n  type: 'test'\n  ...\n# Subtest: strip keeps wide characters and emoji intact\nok 6 - strip keeps wide characters and emoji intact\n  ---\n  duration_ms: 0.25187\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 265.905642\n"
 }

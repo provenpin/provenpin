@@ -1,15 +1,15 @@
 {
   "id": "bignumber-js-precise-decimals",
   "status": "passed",
-  "ran_at": "2026-10-15T22:58:11.703Z",
-  "last_passed_at": "2026-10-15T22:58:11.703Z",
+  "ran_at": "2026-10-20T01:04:24.106Z",
+  "last_passed_at": "2026-10-20T01:04:24.106Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1529,
-    "test": 375
+    "setup": 1575,
+    "test": 345
   },
   "pinned": {
     "bignumber.js": "11.1.5",
@@ -24,11 +24,11 @@
     "recipes/bignumber-js-precise-decimals/test/decimals.test.ts": "sha256:75ff014b55c7387f2116e2ebcfc582acf3e4f0e9ae73b28ac5f06412be55d712"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38820570375"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: honours the requested rounding mode\nok 3 - honours the requested rounding mode\n  ---\n  duration_ms: 0.543531\n  type: 'test'\n  ...\n# Subtest: fixed-point formatting\nok 4 - fixed-point formatting\n  ---\n  duration_ms: 0.137834\n  type: 'test'\n  ...\n# Subtest: numeric comparisons ignore formatting\nok 5 - numeric comparisons ignore formatting\n  ---\n  duration_ms: 0.184853\n  type: 'test'\n  ...\n# Subtest: cart total applies tax and rounds to cents\nok 6 - cart total applies tax and rounds to cents\n  ---\n  duration_ms: 0.27806\n  type: 'test'\n  ...\n# Subtest: cart total is exact for values that drift in binary\nok 7 - cart total is exact for values that drift in binary\n  ---\n  duration_ms: 0.216769\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 255.715071\n"
+  "log_tail": "# Subtest: honours the requested rounding mode\nok 3 - honours the requested rounding mode\n  ---\n  duration_ms: 0.69501\n  type: 'test'\n  ...\n# Subtest: fixed-point formatting\nok 4 - fixed-point formatting\n  ---\n  duration_ms: 0.182732\n  type: 'test'\n  ...\n# Subtest: numeric comparisons ignore formatting\nok 5 - numeric comparisons ignore formatting\n  ---\n  duration_ms: 0.255297\n  type: 'test'\n  ...\n# Subtest: cart total applies tax and rounds to cents\nok 6 - cart total applies tax and rounds to cents\n  ---\n  duration_ms: 0.368249\n  type: 'test'\n  ...\n# Subtest: cart total is exact for values that drift in binary\nok 7 - cart total is exact for values that drift in binary\n  ---\n  duration_ms: 0.233316\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 197.319713\n"
 }

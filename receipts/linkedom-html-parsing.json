@@ -1,15 +1,15 @@
 {
   "id": "linkedom-html-parsing",
   "status": "passed",
-  "ran_at": "2026-10-15T17:11:02.732Z",
-  "last_passed_at": "2026-10-15T17:11:02.732Z",
+  "ran_at": "2026-10-20T01:14:49.331Z",
+  "last_passed_at": "2026-10-20T01:14:49.331Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2230,
-    "test": 391
+    "setup": 2489,
+    "test": 563
   },
   "pinned": {
     "linkedom": "0.18.13",
@@ -24,11 +24,11 @@
     "recipes/linkedom-html-parsing/test/page.test.ts": "sha256:150577564ea861a1de0ed9f0946c69e856d4ece376f4d41898d890312467f4d0"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38775053802"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: extracts title, description, Open Graph and unique absolute links\nok 1 - extracts title, description, Open Graph and unique absolute links\n  ---\n  duration_ms: 5.658243\n  type: 'test'\n  ...\n# Subtest: rewrites URLs, lazy-loads images and removes inline scripts\nok 2 - rewrites URLs, lazy-loads images and removes inline scripts\n  ---\n  duration_ms: 1.891679\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 272.086315\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: extracts title, description, Open Graph and unique absolute links\nok 1 - extracts title, description, Open Graph and unique absolute links\n  ---\n  duration_ms: 7.241407\n  type: 'test'\n  ...\n# Subtest: rewrites URLs, lazy-loads images and removes inline scripts\nok 2 - rewrites URLs, lazy-loads images and removes inline scripts\n  ---\n  duration_ms: 3.984251\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 398.43811\n"
 }

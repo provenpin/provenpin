@@ -1,15 +1,15 @@
 {
   "id": "langgraph-js-stategraph",
   "status": "passed",
-  "ran_at": "2026-10-17T19:19:45.845Z",
-  "last_passed_at": "2026-10-17T19:19:45.845Z",
+  "ran_at": "2026-10-20T01:14:43.482Z",
+  "last_passed_at": "2026-10-20T01:14:43.482Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4237,
-    "test": 966
+    "setup": 4923,
+    "test": 1002
   },
   "pinned": {
     "@langchain/langgraph": "1.5.1",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39061946720"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: routes through the conditional edge and accumulates state on one thread\nok 1 - routes through the conditional edge and accumulates state on one thread\n  ---\n  duration_ms: 50.264746\n  type: 'test'\n  ...\n# Subtest: keeps separate state per thread\nok 2 - keeps separate state per thread\n  ---\n  duration_ms: 18.634008\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 817.986689\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: routes through the conditional edge and accumulates state on one thread\nok 1 - routes through the conditional edge and accumulates state on one thread\n  ---\n  duration_ms: 49.643082\n  type: 'test'\n  ...\n# Subtest: keeps separate state per thread\nok 2 - keeps separate state per thread\n  ---\n  duration_ms: 20.043185\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 846.652111\n"
 }

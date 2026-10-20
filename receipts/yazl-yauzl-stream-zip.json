@@ -1,15 +1,15 @@
 {
   "id": "yazl-yauzl-stream-zip",
   "status": "passed",
-  "ran_at": "2026-10-16T02:19:01.578Z",
-  "last_passed_at": "2026-10-16T02:19:01.578Z",
+  "ran_at": "2026-10-20T01:28:23.191Z",
+  "last_passed_at": "2026-10-20T01:28:23.191Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2263,
-    "test": 314
+    "setup": 1637,
+    "test": 403
   },
   "pinned": {
     "yazl": "3.3.1",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38839686104"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips buffers and strings through yazl and yauzl\nok 1 - roundtrips buffers and strings through yazl and yauzl\n  ---\n  duration_ms: 13.976049\n  type: 'test'\n  ...\n# Subtest: reads many lazily listed entries\nok 2 - reads many lazily listed entries\n  ---\n  duration_ms: 3.914644\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 199.911642\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips buffers and strings through yazl and yauzl\nok 1 - roundtrips buffers and strings through yazl and yauzl\n  ---\n  duration_ms: 56.630536\n  type: 'test'\n  ...\n# Subtest: reads many lazily listed entries\nok 2 - reads many lazily listed entries\n  ---\n  duration_ms: 4.071128\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 274.251152\n"
 }

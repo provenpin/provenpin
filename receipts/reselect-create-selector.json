@@ -1,15 +1,15 @@
 {
   "id": "reselect-create-selector",
   "status": "passed",
-  "ran_at": "2026-10-16T02:18:55.085Z",
-  "last_passed_at": "2026-10-16T02:18:55.085Z",
+  "ran_at": "2026-10-20T01:22:52.081Z",
+  "last_passed_at": "2026-10-20T01:22:52.081Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1711,
-    "test": 314
+    "setup": 1355,
+    "test": 240
   },
   "pinned": {
     "reselect": "5.3.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38839686104"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: runs the combiner once for identical inputs\nok 2 - runs the combiner once for identical inputs\n  ---\n  duration_ms: 0.297266\n  type: 'test'\n  ...\n# Subtest: recomputes the combiner when inputs change\nok 3 - recomputes the combiner when inputs change\n  ---\n  duration_ms: 0.200137\n  type: 'test'\n  ...\n# Subtest: weakMapMemoize returns a stable reference for stable inputs\nok 4 - weakMapMemoize returns a stable reference for stable inputs\n  ---\n  duration_ms: 0.154616\n  type: 'test'\n  ...\n# Subtest: parameterized selector resolves per-argument results\nok 5 - parameterized selector resolves per-argument results\n  ---\n  duration_ms: 0.320208\n  type: 'test'\n  ...\n# Subtest: parameterized selector memoizes repeated arguments\nok 6 - parameterized selector memoizes repeated arguments\n  ---\n  duration_ms: 0.162787\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 180.479423\n"
+  "log_tail": "# Subtest: runs the combiner once for identical inputs\nok 2 - runs the combiner once for identical inputs\n  ---\n  duration_ms: 0.221612\n  type: 'test'\n  ...\n# Subtest: recomputes the combiner when inputs change\nok 3 - recomputes the combiner when inputs change\n  ---\n  duration_ms: 0.101912\n  type: 'test'\n  ...\n# Subtest: weakMapMemoize returns a stable reference for stable inputs\nok 4 - weakMapMemoize returns a stable reference for stable inputs\n  ---\n  duration_ms: 0.075102\n  type: 'test'\n  ...\n# Subtest: parameterized selector resolves per-argument results\nok 5 - parameterized selector resolves per-argument results\n  ---\n  duration_ms: 0.165197\n  type: 'test'\n  ...\n# Subtest: parameterized selector memoizes repeated arguments\nok 6 - parameterized selector memoizes repeated arguments\n  ---\n  duration_ms: 0.075473\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 136.907161\n"
 }

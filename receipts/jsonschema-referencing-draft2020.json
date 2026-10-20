@@ -1,15 +1,15 @@
 {
   "id": "jsonschema-referencing-draft2020",
   "status": "passed",
-  "ran_at": "2026-10-15T18:09:53.724Z",
-  "last_passed_at": "2026-10-15T18:09:53.724Z",
+  "ran_at": "2026-10-20T01:13:52.818Z",
+  "last_passed_at": "2026-10-20T01:13:52.818Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 300,
-    "test": 737
+    "setup": 332,
+    "test": 999
   },
   "pinned": {
     "jsonschema": "4.26.0",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38783276983"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.10s\n"
 }

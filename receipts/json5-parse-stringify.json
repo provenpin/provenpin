@@ -1,15 +1,15 @@
 {
   "id": "json5-parse-stringify",
   "status": "passed",
-  "ran_at": "2026-10-16T19:54:46.829Z",
-  "last_passed_at": "2026-10-16T19:54:46.829Z",
+  "ran_at": "2026-10-20T01:13:46.373Z",
+  "last_passed_at": "2026-10-20T01:13:46.373Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1570,
-    "test": 363
+    "setup": 1598,
+    "test": 345
   },
   "pinned": {
     "json5": "2.2.3",
@@ -24,11 +24,11 @@
     "recipes/json5-parse-stringify/test/parse.test.ts": "sha256:7f4a50e12a4b0952adfc528e15a726dc067fffa32c5c05d790527eaad14e5912"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38958328921"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\nok 1 - parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\n  ---\n  duration_ms: 3.262361\n  type: 'test'\n  ...\n# Subtest: stringify with options round-trips through the parser\nok 2 - stringify with options round-trips through the parser\n  ---\n  duration_ms: 1.629148\n  type: 'test'\n  ...\n# Subtest: throws a SyntaxError on invalid input\nok 3 - throws a SyntaxError on invalid input\n  ---\n  duration_ms: 0.587448\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 206.125208\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\nok 1 - parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\n  ---\n  duration_ms: 3.707459\n  type: 'test'\n  ...\n# Subtest: stringify with options round-trips through the parser\nok 2 - stringify with options round-trips through the parser\n  ---\n  duration_ms: 1.924212\n  type: 'test'\n  ...\n# Subtest: throws a SyntaxError on invalid input\nok 3 - throws a SyntaxError on invalid input\n  ---\n  duration_ms: 0.498546\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 196.509433\n"
 }

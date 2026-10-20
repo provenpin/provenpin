@@ -1,15 +1,15 @@
 {
   "id": "limits-moving-window-memory",
   "status": "passed",
-  "ran_at": "2026-10-16T09:57:22.997Z",
-  "last_passed_at": "2026-10-16T09:57:22.997Z",
+  "ran_at": "2026-10-20T01:14:48.041Z",
+  "last_passed_at": "2026-10-20T01:14:48.041Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 314,
-    "test": 858
+    "setup": 367,
+    "test": 2990
   },
   "pinned": {
     "limits": "5.8.0",
@@ -24,11 +24,11 @@
     "recipes/limits-moving-window-memory/tests/test_ratelimit.py": "sha256:5913c14c6085fe5c72d8fec8dea0d6cc6f11357546873d3a55c8ed57a13a090a"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38883899161"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.25s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.91s\n"
 }

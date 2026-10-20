@@ -1,15 +1,15 @@
 {
   "id": "async-mutex-critical-section",
   "status": "passed",
-  "ran_at": "2026-10-15T20:56:46.396Z",
-  "last_passed_at": "2026-10-15T20:56:46.396Z",
+  "ran_at": "2026-10-20T01:03:22.694Z",
+  "last_passed_at": "2026-10-20T01:03:22.694Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1685,
-    "test": 300
+    "setup": 1513,
+    "test": 316
   },
   "pinned": {
     "async-mutex": "0.5.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38805962781"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: mutex serializes concurrent increments\nok 1 - mutex serializes concurrent increments\n  ---\n  duration_ms: 2.965896\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 164.93717\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: mutex serializes concurrent increments\nok 1 - mutex serializes concurrent increments\n  ---\n  duration_ms: 3.246151\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 174.345622\n"
 }

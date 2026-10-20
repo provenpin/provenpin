@@ -1,15 +1,15 @@
 {
   "id": "sqids-encode-decode",
   "status": "passed",
-  "ran_at": "2026-10-16T15:21:19.701Z",
-  "last_passed_at": "2026-10-16T15:21:19.701Z",
+  "ran_at": "2026-10-20T01:24:08.842Z",
+  "last_passed_at": "2026-10-20T01:24:08.842Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1806,
-    "test": 289
+    "setup": 2156,
+    "test": 467
   },
   "pinned": {
     "sqids": "0.3.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38923127324"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips a list of non-negative numbers\nok 1 - roundtrips a list of non-negative numbers\n  ---\n  duration_ms: 2.412882\n  type: 'test'\n  ...\n# Subtest: different number lists produce different ids\nok 2 - different number lists produce different ids\n  ---\n  duration_ms: 1.188586\n  type: 'test'\n  ...\n# Subtest: custom alphabet and minLength are honored\nok 3 - custom alphabet and minLength are honored\n  ---\n  duration_ms: 0.66733\n  type: 'test'\n  ...\n# Subtest: configurations with different alphabets diverge\nok 4 - configurations with different alphabets diverge\n  ---\n  duration_ms: 0.903999\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 160.836484\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips a list of non-negative numbers\nok 1 - roundtrips a list of non-negative numbers\n  ---\n  duration_ms: 2.563394\n  type: 'test'\n  ...\n# Subtest: different number lists produce different ids\nok 2 - different number lists produce different ids\n  ---\n  duration_ms: 1.293215\n  type: 'test'\n  ...\n# Subtest: custom alphabet and minLength are honored\nok 3 - custom alphabet and minLength are honored\n  ---\n  duration_ms: 0.723551\n  type: 'test'\n  ...\n# Subtest: configurations with different alphabets diverge\nok 4 - configurations with different alphabets diverge\n  ---\n  duration_ms: 2.390793\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 330.930394\n"
 }

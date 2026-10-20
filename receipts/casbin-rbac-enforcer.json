@@ -1,15 +1,15 @@
 {
   "id": "casbin-rbac-enforcer",
   "status": "passed",
-  "ran_at": "2026-10-17T05:58:34.689Z",
-  "last_passed_at": "2026-10-17T05:58:34.689Z",
+  "ran_at": "2026-10-20T01:05:03.227Z",
+  "last_passed_at": "2026-10-20T01:05:03.227Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3374,
-    "test": 459
+    "setup": 2650,
+    "test": 396
   },
   "pinned": {
     "casbin": "5.51.1",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39008163431"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: resolves role inheritance for direct and nested roles\nok 3 - resolves role inheritance for direct and nested roles\n  ---\n  duration_ms: 2.251997\n  type: 'test'\n  ...\n# Subtest: applies a deny rule that overrides an inherited allow\nok 4 - applies a deny rule that overrides an inherited allow\n  ---\n  duration_ms: 1.187476\n  type: 'test'\n  ...\n# Subtest: removes a policy at runtime and denies later requests\nok 5 - removes a policy at runtime and denies later requests\n  ---\n  duration_ms: 2.17452\n  type: 'test'\n  ...\n# Subtest: removes a grouping policy at runtime and revokes inherited access\nok 6 - removes a grouping policy at runtime and revokes inherited access\n  ---\n  duration_ms: 1.580076\n  type: 'test'\n  ...\n# Subtest: adds a policy at runtime and grants new access\nok 7 - adds a policy at runtime and grants new access\n  ---\n  duration_ms: 1.133885\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 317.015511\n"
+  "log_tail": "# Subtest: resolves role inheritance for direct and nested roles\nok 3 - resolves role inheritance for direct and nested roles\n  ---\n  duration_ms: 1.693828\n  type: 'test'\n  ...\n# Subtest: applies a deny rule that overrides an inherited allow\nok 4 - applies a deny rule that overrides an inherited allow\n  ---\n  duration_ms: 1.002793\n  type: 'test'\n  ...\n# Subtest: removes a policy at runtime and denies later requests\nok 5 - removes a policy at runtime and denies later requests\n  ---\n  duration_ms: 1.790318\n  type: 'test'\n  ...\n# Subtest: removes a grouping policy at runtime and revokes inherited access\nok 6 - removes a grouping policy at runtime and revokes inherited access\n  ---\n  duration_ms: 1.501107\n  type: 'test'\n  ...\n# Subtest: adds a policy at runtime and grants new access\nok 7 - adds a policy at runtime and grants new access\n  ---\n  duration_ms: 1.057959\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 275.605759\n"
 }

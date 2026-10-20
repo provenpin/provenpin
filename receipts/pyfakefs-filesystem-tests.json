@@ -1,15 +1,15 @@
 {
   "id": "pyfakefs-filesystem-tests",
   "status": "passed",
-  "ran_at": "2026-10-18T03:57:20.456Z",
-  "last_passed_at": "2026-10-18T03:57:20.456Z",
+  "ran_at": "2026-10-20T01:21:17.969Z",
+  "last_passed_at": "2026-10-20T01:21:17.969Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 174,
-    "test": 2178
+    "setup": 235,
+    "test": 2269
   },
   "pinned": {
     "pyfakefs": "6.2.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39095370682"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
 }

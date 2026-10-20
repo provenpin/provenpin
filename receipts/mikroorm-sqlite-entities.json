@@ -1,15 +1,15 @@
 {
   "id": "mikroorm-sqlite-entities",
   "status": "passed",
-  "ran_at": "2026-10-15T16:02:11.351Z",
-  "last_passed_at": "2026-10-15T16:02:11.351Z",
+  "ran_at": "2026-10-20T01:15:52.145Z",
+  "last_passed_at": "2026-10-20T01:15:52.145Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4230,
-    "test": 812
+    "setup": 3255,
+    "test": 888
   },
   "pinned": {
     "@mikro-orm/sqlite": "7.2.5",
@@ -26,11 +26,11 @@
     "recipes/mikroorm-sqlite-entities/test/db.test.ts": "sha256:1142b6593d8bfbd42623a8b4f5e7bfef63bf5d625405e5881616d6a6f30c8877"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: persists author books and populates\nok 1 - persists author books and populates\n  ---\n  duration_ms: 163.021167\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 681.151345\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: persists author books and populates\nok 1 - persists author books and populates\n  ---\n  duration_ms: 88.639061\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 737.230781\n"
 }

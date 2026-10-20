@@ -1,15 +1,15 @@
 {
   "id": "minisearch-fields-boost-serialize",
   "status": "passed",
-  "ran_at": "2026-10-15T20:09:28.483Z",
-  "last_passed_at": "2026-10-15T20:09:28.483Z",
+  "ran_at": "2026-10-20T01:16:08.915Z",
+  "last_passed_at": "2026-10-20T01:16:08.915Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 48891,
-    "test": 362
+    "setup": 1698,
+    "test": 340
   },
   "pinned": {
     "minisearch": "7.2.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38799498972"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: prefix and fuzzy matching\nok 2 - prefix and fuzzy matching\n  ---\n  duration_ms: 0.691484\n  type: 'test'\n  ...\n# Subtest: filter by stored field\nok 3 - filter by stored field\n  ---\n  duration_ms: 0.783958\n  type: 'test'\n  ...\n# Subtest: discard removes a document\nok 4 - discard removes a document\n  ---\n  duration_ms: 0.676506\n  type: 'test'\n  ...\n# Subtest: autoSuggest\nok 5 - autoSuggest\n  ---\n  duration_ms: 0.508489\n  type: 'test'\n  ...\n# Subtest: JSON serialization round-trips\nok 6 - JSON serialization round-trips\n  ---\n  duration_ms: 1.480863\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 215.647884\n"
+  "log_tail": "# Subtest: prefix and fuzzy matching\nok 2 - prefix and fuzzy matching\n  ---\n  duration_ms: 0.691714\n  type: 'test'\n  ...\n# Subtest: filter by stored field\nok 3 - filter by stored field\n  ---\n  duration_ms: 0.761365\n  type: 'test'\n  ...\n# Subtest: discard removes a document\nok 4 - discard removes a document\n  ---\n  duration_ms: 0.706653\n  type: 'test'\n  ...\n# Subtest: autoSuggest\nok 5 - autoSuggest\n  ---\n  duration_ms: 0.498242\n  type: 'test'\n  ...\n# Subtest: JSON serialization round-trips\nok 6 - JSON serialization round-trips\n  ---\n  duration_ms: 1.484739\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 197.272178\n"
 }

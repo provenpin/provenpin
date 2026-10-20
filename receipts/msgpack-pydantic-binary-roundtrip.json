@@ -1,15 +1,15 @@
 {
   "id": "msgpack-pydantic-binary-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-15T18:09:54.696Z",
-  "last_passed_at": "2026-10-15T18:09:54.696Z",
+  "ran_at": "2026-10-20T01:16:15.566Z",
+  "last_passed_at": "2026-10-20T01:16:15.566Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 336,
-    "test": 930
+    "setup": 493,
+    "test": 1270
   },
   "pinned": {
     "msgpack": "1.2.3",
@@ -25,11 +25,11 @@
     "recipes/msgpack-pydantic-binary-roundtrip/tests/test_codec.py": "sha256:4a0d9b36c1e45e658ebdc5081a594671667ed4e926b90111ee2ab212dfaa72d2"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38783276983"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.29s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.30s\n"
 }

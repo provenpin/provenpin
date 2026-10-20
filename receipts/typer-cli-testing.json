@@ -1,15 +1,15 @@
 {
   "id": "typer-cli-testing",
   "status": "passed",
-  "ran_at": "2026-10-15T16:06:21.555Z",
-  "last_passed_at": "2026-10-15T16:06:21.555Z",
+  "ran_at": "2026-10-20T01:26:54.081Z",
+  "last_passed_at": "2026-10-20T01:26:54.081Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 384,
-    "test": 3286
+    "setup": 322,
+    "test": 2210
   },
   "pinned": {
     "typer": "0.27.3",
@@ -24,11 +24,11 @@
     "recipes/typer-cli-testing/tests/test_cli.py": "sha256:e36c582a8f2ad5a6dcab1877d5aba051417373fd868dc3da3c4e13ab5493148e"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 0.56s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 0.41s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "cors-express-preflight",
   "status": "passed",
-  "ran_at": "2026-10-16T15:20:56.500Z",
-  "last_passed_at": "2026-10-16T15:20:56.500Z",
+  "ran_at": "2026-10-20T01:05:58.640Z",
+  "last_passed_at": "2026-10-20T01:05:58.640Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4230,
-    "test": 575
+    "setup": 7202,
+    "test": 532
   },
   "pinned": {
     "cors": "2.8.6",
@@ -32,8 +32,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38923127324"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: reflects an allowed origin on a simple request\nok 1 - reflects an allowed origin on a simple request\n  ---\n  duration_ms: 42.299655\n  type: 'test'\n  ...\n# Subtest: answers OPTIONS preflight with Access-Control-Allow-* headers\nok 2 - answers OPTIONS preflight with Access-Control-Allow-* headers\n  ---\n  duration_ms: 7.287923\n  type: 'test'\n  ...\n# Subtest: denies a disallowed origin by omitting the allow-origin header\nok 3 - denies a disallowed origin by omitting the allow-origin header\n  ---\n  duration_ms: 4.304414\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 423.703096\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: reflects an allowed origin on a simple request\nok 1 - reflects an allowed origin on a simple request\n  ---\n  duration_ms: 41.129086\n  type: 'test'\n  ...\n# Subtest: answers OPTIONS preflight with Access-Control-Allow-* headers\nok 2 - answers OPTIONS preflight with Access-Control-Allow-* headers\n  ---\n  duration_ms: 6.756858\n  type: 'test'\n  ...\n# Subtest: denies a disallowed origin by omitting the allow-origin header\nok 3 - denies a disallowed origin by omitting the allow-origin header\n  ---\n  duration_ms: 3.702008\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 388.11503\n"
 }

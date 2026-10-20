@@ -1,15 +1,15 @@
 {
   "id": "arq-fakeredis-job-queue",
   "status": "passed",
-  "ran_at": "2026-10-15T21:56:31.867Z",
-  "last_passed_at": "2026-10-15T21:56:31.867Z",
+  "ran_at": "2026-10-20T01:03:20.030Z",
+  "last_passed_at": "2026-10-20T01:03:20.030Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 285,
-    "test": 3924
+    "setup": 289,
+    "test": 2523
   },
   "pinned": {
     "arq": "0.28.0",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38813530570"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.81s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.48s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "marshmallow-dataclass-schema",
   "status": "passed",
-  "ran_at": "2026-10-15T16:02:08.822Z",
-  "last_passed_at": "2026-10-15T16:02:08.822Z",
+  "ran_at": "2026-10-20T01:15:28.862Z",
+  "last_passed_at": "2026-10-20T01:15:28.862Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 357,
-    "test": 3034
+    "setup": 355,
+    "test": 1817
   },
   "pinned": {
     "marshmallow-dataclass": "8.7.1",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.11s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
 }

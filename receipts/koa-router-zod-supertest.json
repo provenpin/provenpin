@@ -1,15 +1,15 @@
 {
   "id": "koa-router-zod-supertest",
   "status": "passed",
-  "ran_at": "2026-10-15T16:01:31.395Z",
-  "last_passed_at": "2026-10-15T16:01:31.395Z",
+  "ran_at": "2026-10-20T01:14:25.536Z",
+  "last_passed_at": "2026-10-20T01:14:25.536Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5664,
-    "test": 782
+    "setup": 5330,
+    "test": 694
   },
   "pinned": {
     "koa": "3.2.1",
@@ -28,11 +28,11 @@
     "recipes/koa-router-zod-supertest/test/app.test.ts": "sha256:4012298dd3e3544ab3f875faf0dbff9205cd8e1b21a60ca91d11e60e6b6275e4"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: creates a todo with defaults and a Location header\nok 1 - creates a todo with defaults and a Location header\n  ---\n  duration_ms: 53.755851\n  type: 'test'\n  ...\n# Subtest: rejects an invalid body with 400 and field issues\nok 2 - rejects an invalid body with 400 and field issues\n  ---\n  duration_ms: 9.382151\n  type: 'test'\n  ...\n# Subtest: patches, filters and deletes\nok 3 - patches, filters and deletes\n  ---\n  duration_ms: 21.012124\n  type: 'test'\n  ...\n# Subtest: returns 404 for unknown ids and 400 for bad ids\nok 4 - returns 404 for unknown ids and 400 for bad ids\n  ---\n  duration_ms: 8.120942\n  type: 'test'\n  ...\n# Subtest: answers 405 for unsupported methods via allowedMethods\nok 5 - answers 405 for unsupported methods via allowedMethods\n  ---\n  duration_ms: 4.112526\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 611.710696\n"
+  "log_tail": "# Subtest: creates a todo with defaults and a Location header\nok 1 - creates a todo with defaults and a Location header\n  ---\n  duration_ms: 47.946818\n  type: 'test'\n  ...\n# Subtest: rejects an invalid body with 400 and field issues\nok 2 - rejects an invalid body with 400 and field issues\n  ---\n  duration_ms: 7.368445\n  type: 'test'\n  ...\n# Subtest: patches, filters and deletes\nok 3 - patches, filters and deletes\n  ---\n  duration_ms: 17.640796\n  type: 'test'\n  ...\n# Subtest: returns 404 for unknown ids and 400 for bad ids\nok 4 - returns 404 for unknown ids and 400 for bad ids\n  ---\n  duration_ms: 8.497536\n  type: 'test'\n  ...\n# Subtest: answers 405 for unsupported methods via allowedMethods\nok 5 - answers 405 for unsupported methods via allowedMethods\n  ---\n  duration_ms: 3.204625\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 551.17789\n"
 }

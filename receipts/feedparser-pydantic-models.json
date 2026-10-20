@@ -1,15 +1,15 @@
 {
   "id": "feedparser-pydantic-models",
   "status": "passed",
-  "ran_at": "2026-10-15T16:00:09.687Z",
-  "last_passed_at": "2026-10-15T16:00:09.687Z",
+  "ran_at": "2026-10-20T01:10:15.808Z",
+  "last_passed_at": "2026-10-20T01:10:15.808Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 274,
-    "test": 1172
+    "setup": 543,
+    "test": 2386
   },
   "pinned": {
     "feedparser": "6.0.14",
@@ -25,11 +25,11 @@
     "recipes/feedparser-pydantic-models/tests/test_feed.py": "sha256:a0879e942fc30927d18515f1946e6f283f92d4c2424cb016e7de0afbcdcdf7e2"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.45s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.70s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "ulid-pydantic-custom-type",
   "status": "passed",
-  "ran_at": "2026-10-15T18:10:28.926Z",
-  "last_passed_at": "2026-10-15T18:10:28.926Z",
+  "ran_at": "2026-10-20T01:27:04.414Z",
+  "last_passed_at": "2026-10-20T01:27:04.414Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 946,
-    "test": 2245
+    "setup": 528,
+    "test": 1135
   },
   "pinned": {
     "python-ulid": "4.0.1",
@@ -25,11 +25,11 @@
     "recipes/ulid-pydantic-custom-type/ulids.py": "sha256:05666c4d9fd7f48ce2a06815e8f9fb20fa9b3b74a88e258962eca68660e42739"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38783276983"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.54s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.19s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "charset-normalizer-decode",
   "status": "passed",
-  "ran_at": "2026-10-16T09:57:01.330Z",
-  "last_passed_at": "2026-10-16T09:57:01.330Z",
+  "ran_at": "2026-10-20T01:05:24.726Z",
+  "last_passed_at": "2026-10-20T01:05:24.726Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 232,
-    "test": 2326
+    "setup": 293,
+    "test": 3014
   },
   "pinned": {
     "charset-normalizer": "3.5.2",
@@ -24,11 +24,11 @@
     "recipes/charset-normalizer-decode/tests/test_decode.py": "sha256:c1db2856493117d1cf47d8dfb55c2d4adbce262413cfb4d147286843538eb301"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38883899161"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.16s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 2.06s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "lru-cache-ttl",
   "status": "passed",
-  "ran_at": "2026-10-15T16:01:58.827Z",
-  "last_passed_at": "2026-10-15T16:01:58.827Z",
+  "ran_at": "2026-10-20T01:15:08.566Z",
+  "last_passed_at": "2026-10-20T01:15:08.566Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1636,
-    "test": 242
+    "setup": 1851,
+    "test": 252
   },
   "pinned": {
     "lru-cache": "11.5.3",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# (node:2233) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time\n# (Use `node --trace-warnings ...` to show where the warning was created)\n# Subtest: evicts least recently used when full\nok 1 - evicts least recently used when full\n  ---\n  duration_ms: 1.152246\n  type: 'test'\n  ...\n# Subtest: expires entries after TTL with fake timers\nok 2 - expires entries after TTL with fake timers\n  ---\n  duration_ms: 0.67706\n  type: 'test'\n  ...\n# Subtest: getOrFetch populates once\nok 3 - getOrFetch populates once\n  ---\n  duration_ms: 0.176926\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 127.578862\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# (node:2254) ExperimentalWarning: The MockTimers API is an experimental feature and might change at any time\n# (Use `node --trace-warnings ...` to show where the warning was created)\n# Subtest: evicts least recently used when full\nok 1 - evicts least recently used when full\n  ---\n  duration_ms: 1.112078\n  type: 'test'\n  ...\n# Subtest: expires entries after TTL with fake timers\nok 2 - expires entries after TTL with fake timers\n  ---\n  duration_ms: 0.637722\n  type: 'test'\n  ...\n# Subtest: getOrFetch populates once\nok 3 - getOrFetch populates once\n  ---\n  duration_ms: 0.183176\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 149.995142\n"
 }

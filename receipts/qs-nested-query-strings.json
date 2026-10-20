@@ -1,15 +1,15 @@
 {
   "id": "qs-nested-query-strings",
   "status": "passed",
-  "ran_at": "2026-10-15T22:58:31.652Z",
-  "last_passed_at": "2026-10-15T22:58:31.652Z",
+  "ran_at": "2026-10-20T01:22:07.718Z",
+  "last_passed_at": "2026-10-20T01:22:07.718Z",
   "tests": {
     "passed": 8,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2082,
-    "test": 332
+    "setup": 1899,
+    "test": 257
   },
   "pinned": {
     "qs": "6.16.1",
@@ -25,11 +25,11 @@
     "recipes/qs-nested-query-strings/test/query.test.ts": "sha256:c7d5bc530bcba69087b001694aee481f22b2c689dc6bf800119b95d46126d901"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38820570375"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: stringifies arrays in each format\nok 4 - stringifies arrays in each format\n  ---\n  duration_ms: 0.671464\n  type: 'test'\n  ...\n# Subtest: enforces the depth limit while parsing\nok 5 - enforces the depth limit while parsing\n  ---\n  duration_ms: 0.211967\n  type: 'test'\n  ...\n# Subtest: parses a typed filter\nok 6 - parses a typed filter\n  ---\n  duration_ms: 0.26094\n  type: 'test'\n  ...\n# Subtest: ignores non numeric and non boolean values\nok 7 - ignores non numeric and non boolean values\n  ---\n  duration_ms: 0.152608\n  type: 'test'\n  ...\n# Subtest: round-trips a filter through toQuery and parseFilter\nok 8 - round-trips a filter through toQuery and parseFilter\n  ---\n  duration_ms: 0.281931\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 179.670888\n"
+  "log_tail": "# Subtest: stringifies arrays in each format\nok 4 - stringifies arrays in each format\n  ---\n  duration_ms: 0.594883\n  type: 'test'\n  ...\n# Subtest: enforces the depth limit while parsing\nok 5 - enforces the depth limit while parsing\n  ---\n  duration_ms: 0.156365\n  type: 'test'\n  ...\n# Subtest: parses a typed filter\nok 6 - parses a typed filter\n  ---\n  duration_ms: 0.209524\n  type: 'test'\n  ...\n# Subtest: ignores non numeric and non boolean values\nok 7 - ignores non numeric and non boolean values\n  ---\n  duration_ms: 0.146269\n  type: 'test'\n  ...\n# Subtest: round-trips a filter through toQuery and parseFilter\nok 8 - round-trips a filter through toQuery and parseFilter\n  ---\n  duration_ms: 0.242473\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 158.790362\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "vue-server-renderer-ssr",
   "status": "passed",
-  "ran_at": "2026-10-17T19:19:47.156Z",
-  "last_passed_at": "2026-10-17T19:19:47.156Z",
+  "ran_at": "2026-10-20T01:27:41.976Z",
+  "last_passed_at": "2026-10-20T01:27:41.976Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2576,
-    "test": 526
+    "setup": 2982,
+    "test": 554
   },
   "pinned": {
     "vue": "3.5.44",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39061946720"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders title and v-for style list via h()\nok 1 - renders title and v-for style list via h()\n  ---\n  duration_ms: 7.169963\n  type: 'test'\n  ...\n# Subtest: provide/inject prefix reaches child components\nok 2 - provide/inject prefix reaches child components\n  ---\n  duration_ms: 0.897573\n  type: 'test'\n  ...\n# Subtest: computed remaining count reflects props\nok 3 - computed remaining count reflects props\n  ---\n  duration_ms: 1.256411\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 378.851656\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders title and v-for style list via h()\nok 1 - renders title and v-for style list via h()\n  ---\n  duration_ms: 5.396725\n  type: 'test'\n  ...\n# Subtest: provide/inject prefix reaches child components\nok 2 - provide/inject prefix reaches child components\n  ---\n  duration_ms: 0.649898\n  type: 'test'\n  ...\n# Subtest: computed remaining count reflects props\nok 3 - computed remaining count reflects props\n  ---\n  duration_ms: 0.904812\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 430.909627\n"
 }

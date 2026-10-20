@@ -1,15 +1,15 @@
 {
   "id": "openpgp-encrypt-decrypt",
   "status": "passed",
-  "ran_at": "2026-10-16T20:33:03.753Z",
-  "last_passed_at": "2026-10-16T20:33:03.753Z",
+  "ran_at": "2026-10-20T01:18:11.988Z",
+  "last_passed_at": "2026-10-20T01:18:11.988Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1751,
-    "test": 618
+    "setup": 1786,
+    "test": 604
   },
   "pinned": {
     "openpgp": "6.3.2",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38962988948"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: encrypts, signs, decrypts and verifies a message\nok 1 - encrypts, signs, decrypts and verifies a message\n  ---\n  duration_ms: 154.806663\n  type: 'test'\n  ...\n# Subtest: detached signature verifies against the original message\nok 2 - detached signature verifies against the original message\n  ---\n  duration_ms: 10.835093\n  type: 'test'\n  ...\n# Subtest: detached signature does not verify with the wrong key\nok 3 - detached signature does not verify with the wrong key\n  ---\n  duration_ms: 4.379534\n  type: 'test'\n  ...\n# Subtest: wrong private key cannot decrypt\nok 4 - wrong private key cannot decrypt\n  ---\n  duration_ms: 40.549453\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 462.54436\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: encrypts, signs, decrypts and verifies a message\nok 1 - encrypts, signs, decrypts and verifies a message\n  ---\n  duration_ms: 164.324042\n  type: 'test'\n  ...\n# Subtest: detached signature verifies against the original message\nok 2 - detached signature verifies against the original message\n  ---\n  duration_ms: 10.347676\n  type: 'test'\n  ...\n# Subtest: detached signature does not verify with the wrong key\nok 3 - detached signature does not verify with the wrong key\n  ---\n  duration_ms: 4.179552\n  type: 'test'\n  ...\n# Subtest: wrong private key cannot decrypt\nok 4 - wrong private key cannot decrypt\n  ---\n  duration_ms: 49.050923\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 472.487683\n"
 }

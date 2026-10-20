@@ -1,15 +1,15 @@
 {
   "id": "js-tiktoken-count-encode",
   "status": "passed",
-  "ran_at": "2026-10-18T03:58:30.944Z",
-  "last_passed_at": "2026-10-18T03:58:30.944Z",
+  "ran_at": "2026-10-20T01:13:30.746Z",
+  "last_passed_at": "2026-10-20T01:13:30.746Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1589,
-    "test": 1771
+    "setup": 2799,
+    "test": 2382
   },
   "pinned": {
     "js-tiktoken": "1.0.21",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39095442401"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: encode/decode roundtrip is lossless for bundled ranks\nok 1 - encode/decode roundtrip is lossless for bundled ranks\n  ---\n  duration_ms: 567.508972\n  type: 'test'\n  ...\n# Subtest: token counts are deterministic across instances\nok 2 - token counts are deterministic across instances\n  ---\n  duration_ms: 256.136922\n  type: 'test'\n  ...\n# Subtest: counts chat messages deterministically\nok 3 - counts chat messages deterministically\n  ---\n  duration_ms: 119.51035\n  type: 'test'\n  ...\n# Subtest: truncates text to a token budget at a token boundary\nok 4 - truncates text to a token budget at a token boundary\n  ---\n  duration_ms: 359.055233\n  type: 'test'\n  ...\n# Subtest: keeps text unchanged when it fits the budget\nok 5 - keeps text unchanged when it fits the budget\n  ---\n  duration_ms: 136.068766\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1650.296916\n"
+  "log_tail": "# Subtest: encode/decode roundtrip is lossless for bundled ranks\nok 1 - encode/decode roundtrip is lossless for bundled ranks\n  ---\n  duration_ms: 792.532868\n  type: 'test'\n  ...\n# Subtest: token counts are deterministic across instances\nok 2 - token counts are deterministic across instances\n  ---\n  duration_ms: 360.131636\n  type: 'test'\n  ...\n# Subtest: counts chat messages deterministically\nok 3 - counts chat messages deterministically\n  ---\n  duration_ms: 151.758264\n  type: 'test'\n  ...\n# Subtest: truncates text to a token budget at a token boundary\nok 4 - truncates text to a token budget at a token boundary\n  ---\n  duration_ms: 463.223365\n  type: 'test'\n  ...\n# Subtest: keeps text unchanged when it fits the budget\nok 5 - keeps text unchanged when it fits the budget\n  ---\n  duration_ms: 168.738795\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2225.553564\n"
 }

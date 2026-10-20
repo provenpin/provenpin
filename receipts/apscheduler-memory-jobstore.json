@@ -1,15 +1,15 @@
 {
   "id": "apscheduler-memory-jobstore",
   "status": "passed",
-  "ran_at": "2026-10-16T00:01:21.014Z",
-  "last_passed_at": "2026-10-16T00:01:21.014Z",
+  "ran_at": "2026-10-20T01:02:59.699Z",
+  "last_passed_at": "2026-10-20T01:02:59.699Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 493,
-    "test": 2285
+    "setup": 385,
+    "test": 2252
   },
   "pinned": {
     "apscheduler": "3.11.3",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38826982604"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.04s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.95s\n"
 }

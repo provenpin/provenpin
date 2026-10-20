@@ -1,15 +1,15 @@
 {
   "id": "nunjucks-templates-inheritance",
   "status": "passed",
-  "ran_at": "2026-10-15T22:58:28.014Z",
-  "last_passed_at": "2026-10-15T22:58:28.014Z",
+  "ran_at": "2026-10-20T01:17:37.290Z",
+  "last_passed_at": "2026-10-20T01:17:37.290Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1896,
-    "test": 381
+    "setup": 1763,
+    "test": 445
   },
   "pinned": {
     "nunjucks": "3.2.4",
@@ -25,11 +25,11 @@
     "recipes/nunjucks-templates-inheritance/test/render.test.ts": "sha256:9e6f3b31ddd3622c037e79ee2d97ead5c5c8c04570b823aec0255b9b3439cab8"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38820570375"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: child template extends the base and overrides its blocks\nok 1 - child template extends the base and overrides its blocks\n  ---\n  duration_ms: 10.414086\n  type: 'test'\n  ...\n# Subtest: macro imported from another template renders with its argument\nok 2 - macro imported from another template renders with its argument\n  ---\n  duration_ms: 3.389915\n  type: 'test'\n  ...\n# Subtest: custom filter runs before autoescape\nok 3 - custom filter runs before autoescape\n  ---\n  duration_ms: 2.660404\n  type: 'test'\n  ...\n# Subtest: autoescape escapes html output by default\nok 4 - autoescape escapes html output by default\n  ---\n  duration_ms: 0.581713\n  type: 'test'\n  ...\n# Subtest: safe filter bypasses autoescaping\nok 5 - safe filter bypasses autoescaping\n  ---\n  duration_ms: 0.504989\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 237.767036\n"
+  "log_tail": "# Subtest: child template extends the base and overrides its blocks\nok 1 - child template extends the base and overrides its blocks\n  ---\n  duration_ms: 11.839517\n  type: 'test'\n  ...\n# Subtest: macro imported from another template renders with its argument\nok 2 - macro imported from another template renders with its argument\n  ---\n  duration_ms: 3.556555\n  type: 'test'\n  ...\n# Subtest: custom filter runs before autoescape\nok 3 - custom filter runs before autoescape\n  ---\n  duration_ms: 2.926379\n  type: 'test'\n  ...\n# Subtest: autoescape escapes html output by default\nok 4 - autoescape escapes html output by default\n  ---\n  duration_ms: 0.60091\n  type: 'test'\n  ...\n# Subtest: safe filter bypasses autoescaping\nok 5 - safe filter bypasses autoescaping\n  ---\n  duration_ms: 0.532914\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 286.832744\n"
 }

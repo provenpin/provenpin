@@ -1,15 +1,15 @@
 {
   "id": "esbuild-in-memory-bundle",
   "status": "passed",
-  "ran_at": "2026-10-15T20:08:40.968Z",
-  "last_passed_at": "2026-10-15T20:08:40.968Z",
+  "ran_at": "2026-10-20T01:08:17.506Z",
+  "last_passed_at": "2026-10-20T01:08:17.506Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1358,
-    "test": 364
+    "setup": 1578,
+    "test": 356
   },
   "pinned": {
     "esbuild": "0.28.2",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38799498972"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: bundles virtual TS files in memory and runs them\nok 1 - bundles virtual TS files in memory and runs them\n  ---\n  duration_ms: 27.244817\n  type: 'test'\n  ...\n# Subtest: tree shaking drops unused exports\nok 2 - tree shaking drops unused exports\n  ---\n  duration_ms: 5.895018\n  type: 'test'\n  ...\n# Subtest: minify plus external source map produces two outputs\nok 3 - minify plus external source map produces two outputs\n  ---\n  duration_ms: 5.121046\n  type: 'test'\n  ...\n# Subtest: build errors are reported with location\nok 4 - build errors are reported with location\n  ---\n  duration_ms: 3.918577\n  type: 'test'\n  ...\n# Subtest: transform strips types only\nok 5 - transform strips types only\n  ---\n  duration_ms: 4.514494\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 218.445108\n"
+  "log_tail": "# Subtest: bundles virtual TS files in memory and runs them\nok 1 - bundles virtual TS files in memory and runs them\n  ---\n  duration_ms: 23.88207\n  type: 'test'\n  ...\n# Subtest: tree shaking drops unused exports\nok 2 - tree shaking drops unused exports\n  ---\n  duration_ms: 6.879066\n  type: 'test'\n  ...\n# Subtest: minify plus external source map produces two outputs\nok 3 - minify plus external source map produces two outputs\n  ---\n  duration_ms: 5.779447\n  type: 'test'\n  ...\n# Subtest: build errors are reported with location\nok 4 - build errors are reported with location\n  ---\n  duration_ms: 3.712569\n  type: 'test'\n  ...\n# Subtest: transform strips types only\nok 5 - transform strips types only\n  ---\n  duration_ms: 3.629455\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 216.519988\n"
 }

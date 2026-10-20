@@ -1,15 +1,15 @@
 {
   "id": "octokit-rest-msw-pagination",
   "status": "passed",
-  "ran_at": "2026-10-15T20:09:02.769Z",
-  "last_passed_at": "2026-10-15T20:09:02.769Z",
+  "ran_at": "2026-10-20T01:17:41.321Z",
+  "last_passed_at": "2026-10-20T01:17:41.321Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3419,
-    "test": 628
+    "setup": 4556,
+    "test": 707
   },
   "pinned": {
     "@octokit/rest": "22.0.1",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38799498972"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: paginate follows Link headers across all pages\nok 1 - paginate follows Link headers across all pages\n  ---\n  duration_ms: 72.298481\n  type: 'test'\n  ...\n# Subtest: done() stops paging early\nok 2 - done() stops paging early\n  ---\n  duration_ms: 21.045307\n  type: 'test'\n  ...\n# Subtest: create sends auth and JSON body\nok 3 - create sends auth and JSON body\n  ---\n  duration_ms: 17.332406\n  type: 'test'\n  ...\n# GET /repos/acme/gone - 404 with id UNKNOWN in 7ms\n# Subtest: 404 surfaces as RequestError status\nok 4 - 404 surfaces as RequestError status\n  ---\n  duration_ms: 18.002053\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 483.051326\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: paginate follows Link headers across all pages\nok 1 - paginate follows Link headers across all pages\n  ---\n  duration_ms: 60.598425\n  type: 'test'\n  ...\n# Subtest: done() stops paging early\nok 2 - done() stops paging early\n  ---\n  duration_ms: 11.36007\n  type: 'test'\n  ...\n# Subtest: create sends auth and JSON body\nok 3 - create sends auth and JSON body\n  ---\n  duration_ms: 11.135194\n  type: 'test'\n  ...\n# GET /repos/acme/gone - 404 with id UNKNOWN in 5ms\n# Subtest: 404 surfaces as RequestError status\nok 4 - 404 surfaces as RequestError status\n  ---\n  duration_ms: 11.648296\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 453.553042\n"
 }

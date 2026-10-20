@@ -1,15 +1,15 @@
 {
   "id": "watchdog-events-tmpdir",
   "status": "passed",
-  "ran_at": "2026-10-15T16:06:41.489Z",
-  "last_passed_at": "2026-10-15T16:06:41.489Z",
+  "ran_at": "2026-10-20T01:27:43.981Z",
+  "last_passed_at": "2026-10-20T01:27:43.981Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 246,
-    "test": 1417
+    "setup": 282,
+    "test": 614
   },
   "pinned": {
     "watchdog": "6.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.14s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
 }

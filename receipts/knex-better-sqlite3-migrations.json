@@ -1,15 +1,15 @@
 {
   "id": "knex-better-sqlite3-migrations",
   "status": "passed",
-  "ran_at": "2026-10-15T16:01:30.212Z",
-  "last_passed_at": "2026-10-15T16:01:30.212Z",
+  "ran_at": "2026-10-20T01:14:20.877Z",
+  "last_passed_at": "2026-10-20T01:14:20.877Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3471,
-    "test": 660
+    "setup": 2583,
+    "test": 356
   },
   "pinned": {
     "knex": "3.3.0",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: migrate.latest applies every migration in order and records them\nok 1 - migrate.latest applies every migration in order and records them\n  ---\n  duration_ms: 118.6905\n  type: 'test'\n  ...\n# Subtest: rollback and down undo the schema step by step\nok 2 - rollback and down undo the schema step by step\n  ---\n  duration_ms: 29.627021\n  type: 'test'\n  ...\n# Subtest: seeds in a transaction and queries with joins and aggregates\nok 3 - seeds in a transaction and queries with joins and aggregates\n  ---\n  duration_ms: 10.934075\n  type: 'test'\n  ...\n# Subtest: unique and foreign key constraints are enforced\nok 4 - unique and foreign key constraints are enforced\n  ---\n  duration_ms: 6.701535\n  type: 'test'\n  ...\n# Subtest: a failing transaction leaves no rows behind\nok 5 - a failing transaction leaves no rows behind\n  ---\n  duration_ms: 6.067438\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 504.355893\n"
+  "log_tail": "# Subtest: migrate.latest applies every migration in order and records them\nok 1 - migrate.latest applies every migration in order and records them\n  ---\n  duration_ms: 37.18427\n  type: 'test'\n  ...\n# Subtest: rollback and down undo the schema step by step\nok 2 - rollback and down undo the schema step by step\n  ---\n  duration_ms: 16.801673\n  type: 'test'\n  ...\n# Subtest: seeds in a transaction and queries with joins and aggregates\nok 3 - seeds in a transaction and queries with joins and aggregates\n  ---\n  duration_ms: 5.480269\n  type: 'test'\n  ...\n# Subtest: unique and foreign key constraints are enforced\nok 4 - unique and foreign key constraints are enforced\n  ---\n  duration_ms: 3.622686\n  type: 'test'\n  ...\n# Subtest: a failing transaction leaves no rows behind\nok 5 - a failing transaction leaves no rows behind\n  ---\n  duration_ms: 3.197472\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 262.85432\n"
 }

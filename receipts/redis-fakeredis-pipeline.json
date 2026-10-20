@@ -1,15 +1,15 @@
 {
   "id": "redis-fakeredis-pipeline",
   "status": "passed",
-  "ran_at": "2026-10-15T16:04:35.581Z",
-  "last_passed_at": "2026-10-15T16:04:35.581Z",
+  "ran_at": "2026-10-20T01:22:33.836Z",
+  "last_passed_at": "2026-10-20T01:22:33.836Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 336,
-    "test": 3015
+    "setup": 710,
+    "test": 1906
   },
   "pinned": {
     "redis": "8.1.0",
@@ -25,11 +25,11 @@
     "recipes/redis-fakeredis-pipeline/tests/test_pipeline.py": "sha256:a06db6eb1ced41019f44780344ff0b85058dbdb4c36b89250166c24b4dfa3914"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38764699834"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.21s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.91s\n"
 }

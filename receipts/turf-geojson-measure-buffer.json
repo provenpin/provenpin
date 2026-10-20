@@ -1,15 +1,15 @@
 {
   "id": "turf-geojson-measure-buffer",
   "status": "passed",
-  "ran_at": "2026-10-18T03:58:55.330Z",
-  "last_passed_at": "2026-10-18T03:58:55.330Z",
+  "ran_at": "2026-10-20T01:26:32.314Z",
+  "last_passed_at": "2026-10-20T01:26:32.314Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6872,
-    "test": 686
+    "setup": 6043,
+    "test": 776
   },
   "pinned": {
     "@turf/turf": "7.4.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39095442401"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: polygon area in square kilometers\nok 2 - polygon area in square kilometers\n  ---\n  duration_ms: 0.437301\n  type: 'test'\n  ...\n# Subtest: booleanPointInPolygon for inside and outside points\nok 3 - booleanPointInPolygon for inside and outside points\n  ---\n  duration_ms: 0.426134\n  type: 'test'\n  ...\n# Subtest: bbox returns the min and max corners\nok 4 - bbox returns the min and max corners\n  ---\n  duration_ms: 0.892108\n  type: 'test'\n  ...\n# Subtest: centroid averages multipoint coordinates\nok 5 - centroid averages multipoint coordinates\n  ---\n  duration_ms: 0.225516\n  type: 'test'\n  ...\n# Subtest: along a lineString at a given distance\nok 6 - along a lineString at a given distance\n  ---\n  duration_ms: 0.375048\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 554.339273\n"
+  "log_tail": "# Subtest: polygon area in square kilometers\nok 2 - polygon area in square kilometers\n  ---\n  duration_ms: 0.397983\n  type: 'test'\n  ...\n# Subtest: booleanPointInPolygon for inside and outside points\nok 3 - booleanPointInPolygon for inside and outside points\n  ---\n  duration_ms: 0.399305\n  type: 'test'\n  ...\n# Subtest: bbox returns the min and max corners\nok 4 - bbox returns the min and max corners\n  ---\n  duration_ms: 0.834717\n  type: 'test'\n  ...\n# Subtest: centroid averages multipoint coordinates\nok 5 - centroid averages multipoint coordinates\n  ---\n  duration_ms: 0.230791\n  type: 'test'\n  ...\n# Subtest: along a lineString at a given distance\nok 6 - along a lineString at a given distance\n  ---\n  duration_ms: 0.388075\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 620.321771\n"
 }

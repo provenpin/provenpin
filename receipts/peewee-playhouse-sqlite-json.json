@@ -1,15 +1,15 @@
 {
   "id": "peewee-playhouse-sqlite-json",
   "status": "passed",
-  "ran_at": "2026-10-16T09:57:39.111Z",
-  "last_passed_at": "2026-10-16T09:57:39.111Z",
+  "ran_at": "2026-10-20T01:19:27.037Z",
+  "last_passed_at": "2026-10-20T01:19:27.037Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 229,
-    "test": 570
+    "setup": 355,
+    "test": 838
   },
   "pinned": {
     "peewee": "4.5.3",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 38883899161"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.15s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.16s\n"
 }

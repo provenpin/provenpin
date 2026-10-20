@@ -1,15 +1,15 @@
 {
   "id": "inversify-di-container",
   "status": "passed",
-  "ran_at": "2026-10-16T19:54:48.980Z",
-  "last_passed_at": "2026-10-16T19:54:48.980Z",
+  "ran_at": "2026-10-20T01:12:44.297Z",
+  "last_passed_at": "2026-10-20T01:12:44.297Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2463,
-    "test": 424
+    "setup": 2341,
+    "test": 318
   },
   "pinned": {
     "inversify": "8.2.3",
@@ -29,8 +29,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38958328921"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: singleton bindings resolve to the same instance\nok 1 - singleton bindings resolve to the same instance\n  ---\n  duration_ms: 3.477944\n  type: 'test'\n  ...\n# Subtest: transient bindings resolve to new instances\nok 2 - transient bindings resolve to new instances\n  ---\n  duration_ms: 0.900139\n  type: 'test'\n  ...\n# Subtest: injects dependencies into the resolved service\nok 3 - injects dependencies into the resolved service\n  ---\n  duration_ms: 0.942864\n  type: 'test'\n  ...\n# Subtest: interfaces resolve to their bound implementations\nok 4 - interfaces resolve to their bound implementations\n  ---\n  duration_ms: 0.564256\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 310.140559\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: singleton bindings resolve to the same instance\nok 1 - singleton bindings resolve to the same instance\n  ---\n  duration_ms: 2.153918\n  type: 'test'\n  ...\n# Subtest: transient bindings resolve to new instances\nok 2 - transient bindings resolve to new instances\n  ---\n  duration_ms: 1.191742\n  type: 'test'\n  ...\n# Subtest: injects dependencies into the resolved service\nok 3 - injects dependencies into the resolved service\n  ---\n  duration_ms: 0.795586\n  type: 'test'\n  ...\n# Subtest: interfaces resolve to their bound implementations\nok 4 - interfaces resolve to their bound implementations\n  ---\n  duration_ms: 0.467082\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 221.004997\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "microdiff-object-diff",
   "status": "passed",
-  "ran_at": "2026-10-16T19:54:46.055Z",
-  "last_passed_at": "2026-10-16T19:54:46.055Z",
+  "ran_at": "2026-10-20T01:15:49.589Z",
+  "last_passed_at": "2026-10-20T01:15:49.589Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1424,
-    "test": 200
+    "setup": 1418,
+    "test": 203
   },
   "pinned": {
     "microdiff": "1.6.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 38958328921"
+    "runner": "github-actions 39350710534"
   },
   "errors": [],
-  "log_tail": "# Subtest: emits REMOVE entries with paths for deleted keys\nok 3 - emits REMOVE entries with paths for deleted keys\n  ---\n  duration_ms: 0.069504\n  type: 'test'\n  ...\n# Subtest: emits CHANGE entries with paths for changed values\nok 4 - emits CHANGE entries with paths for changed values\n  ---\n  duration_ms: 0.162053\n  type: 'test'\n  ...\n# Subtest: diffs arrays by index and reports the offending element\nok 5 - diffs arrays by index and reports the offending element\n  ---\n  duration_ms: 0.074231\n  type: 'test'\n  ...\n# Subtest: reports array growth as a CREATE at the appended index\nok 6 - reports array growth as a CREATE at the appended index\n  ---\n  duration_ms: 0.048673\n  type: 'test'\n  ...\n# Subtest: reports array shrink as a REMOVE at the dropped index\nok 7 - reports array shrink as a REMOVE at the dropped index\n  ---\n  duration_ms: 0.090386\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 109.671781\n"
+  "log_tail": "# Subtest: emits REMOVE entries with paths for deleted keys\nok 3 - emits REMOVE entries with paths for deleted keys\n  ---\n  duration_ms: 0.070206\n  type: 'test'\n  ...\n# Subtest: emits CHANGE entries with paths for changed values\nok 4 - emits CHANGE entries with paths for changed values\n  ---\n  duration_ms: 0.150355\n  type: 'test'\n  ...\n# Subtest: diffs arrays by index and reports the offending element\nok 5 - diffs arrays by index and reports the offending element\n  ---\n  duration_ms: 0.100421\n  type: 'test'\n  ...\n# Subtest: reports array growth as a CREATE at the appended index\nok 6 - reports array growth as a CREATE at the appended index\n  ---\n  duration_ms: 0.075453\n  type: 'test'\n  ...\n# Subtest: reports array shrink as a REMOVE at the dropped index\nok 7 - reports array shrink as a REMOVE at the dropped index\n  ---\n  duration_ms: 0.102573\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 110.852712\n"
 }
