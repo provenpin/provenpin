@@ -1,15 +1,15 @@
 {
   "id": "solid-signals-testing-library",
   "status": "passed",
-  "ran_at": "2026-10-20T01:23:52.277Z",
-  "last_passed_at": "2026-10-20T01:23:52.277Z",
+  "ran_at": "2026-10-20T06:56:10.620Z",
+  "last_passed_at": "2026-10-20T06:56:10.620Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 9152,
-    "test": 2020
+    "setup": 8004,
+    "test": 1976
   },
   "pinned": {
     "solid-js": "1.9.17",
@@ -30,11 +30,11 @@
     "recipes/solid-signals-testing-library/vitest.config.ts": "sha256:15908d4f474b6357db197b7af08b790963810afe5d99a45b65674c84abd90512"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39382490878"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-solid-signals-testing-library-53jv69\u001b[39m\n\n \u001b[32m✓\u001b[39m test/Search.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 255\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 01:24:02\n\u001b[2m   Duration \u001b[22m 1.33s\u001b[2m (environment 52%, tests 21%, transform 17%, import 9%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-solid-signals-testing-library-53jv69/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-solid-signals-testing-library-JPN4AS\u001b[39m\n\n \u001b[32m✓\u001b[39m test/Search.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 245\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:56:19\n\u001b[2m   Duration \u001b[22m 1.30s\u001b[2m (environment 52%, tests 21%, transform 17%, import 10%)\u001b[22m\n\nJSON report written to /tmp/pp-solid-signals-testing-library-JPN4AS/test-report.json\n"
 }

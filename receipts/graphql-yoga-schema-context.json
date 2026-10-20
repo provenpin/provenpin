@@ -1,15 +1,15 @@
 {
   "id": "graphql-yoga-schema-context",
   "status": "passed",
-  "ran_at": "2026-10-20T01:11:22.972Z",
-  "last_passed_at": "2026-10-20T01:11:22.972Z",
+  "ran_at": "2026-10-20T06:52:11.888Z",
+  "last_passed_at": "2026-10-20T06:52:11.888Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3347,
-    "test": 425
+    "setup": 4051,
+    "test": 816
   },
   "pinned": {
     "graphql-yoga": "5.24.5",
@@ -25,11 +25,11 @@
     "recipes/graphql-yoga-schema-context/test/yoga.test.ts": "sha256:2e20ddd975c7f53f74762b5f02bca2ec9ca8373caad7051f2cf1165bfb267d90"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39382490878"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: public query\nok 1 - public query\n  ---\n  duration_ms: 10.219467\n  type: 'test'\n  ...\n# Subtest: auth error carries a code\nok 2 - auth error carries a code\n  ---\n  duration_ms: 3.837622\n  type: 'test'\n  ...\n# Subtest: mutation with variables and context\nok 3 - mutation with variables and context\n  ---\n  duration_ms: 4.030322\n  type: 'test'\n  ...\n# Subtest: validation errors for bad queries\nok 4 - validation errors for bad queries\n  ---\n  duration_ms: 1.844659\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 325.033109\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: public query\nok 1 - public query\n  ---\n  duration_ms: 15.797327\n  type: 'test'\n  ...\n# Subtest: auth error carries a code\nok 2 - auth error carries a code\n  ---\n  duration_ms: 5.061936\n  type: 'test'\n  ...\n# Subtest: mutation with variables and context\nok 3 - mutation with variables and context\n  ---\n  duration_ms: 6.161485\n  type: 'test'\n  ...\n# Subtest: validation errors for bad queries\nok 4 - validation errors for bad queries\n  ---\n  duration_ms: 2.708277\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 667.188231\n"
 }

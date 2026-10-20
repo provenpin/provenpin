@@ -1,15 +1,15 @@
 {
   "id": "react-email-render-html-text",
   "status": "passed",
-  "ran_at": "2026-10-20T01:22:24.098Z",
-  "last_passed_at": "2026-10-20T01:22:24.098Z",
+  "ran_at": "2026-10-20T06:55:42.650Z",
+  "last_passed_at": "2026-10-20T06:55:42.650Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4238,
-    "test": 989
+    "setup": 4269,
+    "test": 1047
   },
   "pinned": {
     "@react-email/components": "1.0.12",
@@ -31,8 +31,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39382490878"
   },
   "errors": [],
-  "log_tail": "# Subtest: renders a full HTML email document\nok 1 - renders a full HTML email document\n  ---\n  duration_ms: 94.792949\n  type: 'test'\n  ...\n# Subtest: user input is escaped\nok 2 - user input is escaped\n  ---\n  duration_ms: 10.115034\n  type: 'test'\n  ...\n# Subtest: preview text is a hidden preheader\nok 3 - preview text is a hidden preheader\n  ---\n  duration_ms: 11.965798\n  type: 'test'\n  ...\n# Subtest: table layout for rows and columns\nok 4 - table layout for rows and columns\n  ---\n  duration_ms: 7.662067\n  type: 'test'\n  ...\n# Subtest: plain text version\nok 5 - plain text version\n  ---\n  duration_ms: 9.323163\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 843.081163\n"
+  "log_tail": "# Subtest: renders a full HTML email document\nok 1 - renders a full HTML email document\n  ---\n  duration_ms: 102.978592\n  type: 'test'\n  ...\n# Subtest: user input is escaped\nok 2 - user input is escaped\n  ---\n  duration_ms: 11.360922\n  type: 'test'\n  ...\n# Subtest: preview text is a hidden preheader\nok 3 - preview text is a hidden preheader\n  ---\n  duration_ms: 13.070521\n  type: 'test'\n  ...\n# Subtest: table layout for rows and columns\nok 4 - table layout for rows and columns\n  ---\n  duration_ms: 8.803366\n  type: 'test'\n  ...\n# Subtest: plain text version\nok 5 - plain text version\n  ---\n  duration_ms: 9.450116\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 892.710609\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "litestar-guards-di",
   "status": "passed",
-  "ran_at": "2026-10-20T01:15:02.975Z",
-  "last_passed_at": "2026-10-20T01:15:02.975Z",
+  "ran_at": "2026-10-20T06:53:23.833Z",
+  "last_passed_at": "2026-10-20T06:53:23.833Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 997,
-    "test": 2668
+    "setup": 482,
+    "test": 3158
   },
   "pinned": {
     "litestar": "2.24.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39382490878"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: 2 warnings\ntests/test_app.py: 10 warnings\n  /tmp/pp-litestar-guards-di-WKjt2f/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='get_item'] Inferred dependency field 'repo'. Mark the field explicitly with 'NamedDependency[<class 'app.ItemRepo'>]'. Inferred dependencies will stop working in Litestar 3.0\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: 2 warnings\ntests/test_app.py: 10 warnings\n  /tmp/pp-litestar-guards-di-WKjt2f/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='get_item'] path parameter 'item_id' declared using deprecated inferred style. Use 'FromPath[<type>]' or 'Annotated[<type>, PathParameter(...)]' instead\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577\ntests/test_app.py::test_get_returns_item_without_role\ntests/test_app.py::test_missing_item_uses_exception_handler\ntests/test_app.py::test_delete_without_credentials_is_401\ntests/test_app.py::test_delete_with_wrong_role_is_403\ntests/test_app.py::test_admin_delete_removes_item\n  /tmp/pp-litestar-guards-di-WKjt2f/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='delete_item'] Inferred dependency field 'repo'. Mark the field explicitly with 'NamedDependency[<class 'app.ItemRepo'>]'. Inferred dependencies will stop working in Litestar 3.0\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577\ntests/test_app.py::test_get_returns_item_without_role\ntests/test_app.py::test_missing_item_uses_exception_handler\ntests/test_app.py::test_delete_without_credentials_is_401\ntests/test_app.py::test_delete_with_wrong_role_is_403\ntests/test_app.py::test_admin_delete_removes_item\n  /tmp/pp-litestar-guards-di-WKjt2f/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='delete_item'] path parameter 'item_id' declared using deprecated inferred style. Use 'FromPath[<type>]' or 'Annotated[<type>, PathParameter(...)]' instead\n    return KwargsModel.create_for_signature_model(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 36 warnings in 1.03s\n"
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: 2 warnings\ntests/test_app.py: 10 warnings\n  /tmp/pp-litestar-guards-di-HIIWwu/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='get_item'] Inferred dependency field 'repo'. Mark the field explicitly with 'NamedDependency[<class 'app.ItemRepo'>]'. Inferred dependencies will stop working in Litestar 3.0\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: 2 warnings\ntests/test_app.py: 10 warnings\n  /tmp/pp-litestar-guards-di-HIIWwu/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='get_item'] path parameter 'item_id' declared using deprecated inferred style. Use 'FromPath[<type>]' or 'Annotated[<type>, PathParameter(...)]' instead\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577\ntests/test_app.py::test_get_returns_item_without_role\ntests/test_app.py::test_missing_item_uses_exception_handler\ntests/test_app.py::test_delete_without_credentials_is_401\ntests/test_app.py::test_delete_with_wrong_role_is_403\ntests/test_app.py::test_admin_delete_removes_item\n  /tmp/pp-litestar-guards-di-HIIWwu/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='delete_item'] Inferred dependency field 'repo'. Mark the field explicitly with 'NamedDependency[<class 'app.ItemRepo'>]'. Inferred dependencies will stop working in Litestar 3.0\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577\ntests/test_app.py::test_get_returns_item_without_role\ntests/test_app.py::test_missing_item_uses_exception_handler\ntests/test_app.py::test_delete_without_credentials_is_401\ntests/test_app.py::test_delete_with_wrong_role_is_403\ntests/test_app.py::test_admin_delete_removes_item\n  /tmp/pp-litestar-guards-di-HIIWwu/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='delete_item'] path parameter 'item_id' declared using deprecated inferred style. Use 'FromPath[<type>]' or 'Annotated[<type>, PathParameter(...)]' instead\n    return KwargsModel.create_for_signature_model(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 36 warnings in 1.04s\n"
 }

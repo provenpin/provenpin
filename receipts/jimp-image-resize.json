@@ -1,15 +1,15 @@
 {
   "id": "jimp-image-resize",
   "status": "passed",
-  "ran_at": "2026-10-20T01:13:04.167Z",
-  "last_passed_at": "2026-10-20T01:13:04.167Z",
+  "ran_at": "2026-10-20T06:52:45.215Z",
+  "last_passed_at": "2026-10-20T06:52:45.215Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4496,
-    "test": 881
+    "setup": 4004,
+    "test": 756
   },
   "pinned": {
     "jimp": "1.6.1",
@@ -24,11 +24,11 @@
     "recipes/jimp-image-resize/test/thumbs.test.ts": "sha256:e53e5550d5f786af5937533751c7cc1225677fa939c06bfa5a00bdd4360ce083"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39382490878"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: square thumbnail from a wide image\nok 1 - square thumbnail from a wide image\n  ---\n  duration_ms: 122.040274\n  type: 'test'\n  ...\n# Subtest: fit width keeps aspect ratio and outputs jpeg\nok 2 - fit width keeps aspect ratio and outputs jpeg\n  ---\n  duration_ms: 150.554696\n  type: 'test'\n  ...\n# Subtest: does not upscale small images\nok 3 - does not upscale small images\n  ---\n  duration_ms: 32.071165\n  type: 'test'\n  ...\n# Subtest: rejects non-images\nok 4 - rejects non-images\n  ---\n  duration_ms: 1.554875\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 734.504678\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: square thumbnail from a wide image\nok 1 - square thumbnail from a wide image\n  ---\n  duration_ms: 90.785965\n  type: 'test'\n  ...\n# Subtest: fit width keeps aspect ratio and outputs jpeg\nok 2 - fit width keeps aspect ratio and outputs jpeg\n  ---\n  duration_ms: 120.7753\n  type: 'test'\n  ...\n# Subtest: does not upscale small images\nok 3 - does not upscale small images\n  ---\n  duration_ms: 26.552068\n  type: 'test'\n  ...\n# Subtest: rejects non-images\nok 4 - rejects non-images\n  ---\n  duration_ms: 1.230804\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 632.682584\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "i18next-react-ssr",
   "status": "passed",
-  "ran_at": "2026-10-20T01:12:22.837Z",
-  "last_passed_at": "2026-10-20T01:12:22.837Z",
+  "ran_at": "2026-10-20T06:52:31.657Z",
+  "last_passed_at": "2026-10-20T06:52:31.657Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2938,
-    "test": 492
+    "setup": 2628,
+    "test": 480
   },
   "pinned": {
     "i18next": "26.4.5",
@@ -28,11 +28,11 @@
     "recipes/i18next-react-ssr/test/i18n.test.ts": "sha256:6dc7ababa50b8a7ec4d99ee1494e1b7fff3ac87acf829a225717e1e1cd026331"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39382490878"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: plurals, context and fallback\nok 1 - plurals, context and fallback\n  ---\n  duration_ms: 6.093502\n  type: 'test'\n  ...\n# Subtest: interpolation escapes HTML\nok 2 - interpolation escapes HTML\n  ---\n  duration_ms: 0.476768\n  type: 'test'\n  ...\n# Subtest: SSR render with per-request instances\nok 3 - SSR render with per-request instances\n  ---\n  duration_ms: 9.674234\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 331.517428\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: plurals, context and fallback\nok 1 - plurals, context and fallback\n  ---\n  duration_ms: 5.961178\n  type: 'test'\n  ...\n# Subtest: interpolation escapes HTML\nok 2 - interpolation escapes HTML\n  ---\n  duration_ms: 0.509536\n  type: 'test'\n  ...\n# Subtest: SSR render with per-request instances\nok 3 - SSR render with per-request instances\n  ---\n  duration_ms: 10.68632\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 326.846166\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "ignore-gitignore-filter",
   "status": "passed",
-  "ran_at": "2026-10-20T01:12:23.983Z",
-  "last_passed_at": "2026-10-20T01:12:23.983Z",
+  "ran_at": "2026-10-20T06:52:34.674Z",
+  "last_passed_at": "2026-10-20T06:52:34.674Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1914,
-    "test": 248
+    "setup": 2308,
+    "test": 353
   },
   "pinned": {
     "ignore": "7.0.12",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39382490878"
   },
   "errors": [],
-  "log_tail": "# Subtest: glob pattern matches at any depth\nok 2 - glob pattern matches at any depth\n  ---\n  duration_ms: 0.631526\n  type: 'test'\n  ...\n# Subtest: negation keeps a previously ignored file\nok 3 - negation keeps a previously ignored file\n  ---\n  duration_ms: 0.234942\n  type: 'test'\n  ...\n# Subtest: filter returns only kept paths\nok 4 - filter returns only kept paths\n  ---\n  duration_ms: 0.770394\n  type: 'test'\n  ...\n# Subtest: partitionPaths splits ignored from kept\nok 5 - partitionPaths splits ignored from kept\n  ---\n  duration_ms: 0.312678\n  type: 'test'\n  ...\n# Subtest: createFilter is a reusable boolean predicate\nok 6 - createFilter is a reusable boolean predicate\n  ---\n  duration_ms: 0.277546\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 146.917556\n"
+  "log_tail": "# Subtest: glob pattern matches at any depth\nok 2 - glob pattern matches at any depth\n  ---\n  duration_ms: 0.750327\n  type: 'test'\n  ...\n# Subtest: negation keeps a previously ignored file\nok 3 - negation keeps a previously ignored file\n  ---\n  duration_ms: 0.33307\n  type: 'test'\n  ...\n# Subtest: filter returns only kept paths\nok 4 - filter returns only kept paths\n  ---\n  duration_ms: 0.843031\n  type: 'test'\n  ...\n# Subtest: partitionPaths splits ignored from kept\nok 5 - partitionPaths splits ignored from kept\n  ---\n  duration_ms: 0.308224\n  type: 'test'\n  ...\n# Subtest: createFilter is a reusable boolean predicate\nok 6 - createFilter is a reusable boolean predicate\n  ---\n  duration_ms: 0.333642\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 208.533479\n"
 }

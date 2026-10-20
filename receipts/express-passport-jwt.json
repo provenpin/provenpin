@@ -1,15 +1,15 @@
 {
   "id": "express-passport-jwt",
   "status": "passed",
-  "ran_at": "2026-10-20T01:08:47.252Z",
-  "last_passed_at": "2026-10-20T01:08:47.252Z",
+  "ran_at": "2026-10-20T06:50:33.519Z",
+  "last_passed_at": "2026-10-20T06:50:33.519Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5894,
-    "test": 651
+    "setup": 3972,
+    "test": 578
   },
   "pinned": {
     "express": "5.3.0",
@@ -33,11 +33,11 @@
     "recipes/express-passport-jwt/test/app.test.ts": "sha256:2a9b034c59cb520b5fce38f0e7e923dcf1dc17ee5274fe72646ef98934353300"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39382490878"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: token unlocks /me\nok 1 - token unlocks /me\n  ---\n  duration_ms: 95.282361\n  type: 'test'\n  ...\n# Subtest: role check\nok 2 - role check\n  ---\n  duration_ms: 8.837473\n  type: 'test'\n  ...\n# Subtest: rejects missing, forged and expired tokens\nok 3 - rejects missing, forged and expired tokens\n  ---\n  duration_ms: 6.831356\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 522.140589\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: token unlocks /me\nok 1 - token unlocks /me\n  ---\n  duration_ms: 57.544422\n  type: 'test'\n  ...\n# Subtest: role check\nok 2 - role check\n  ---\n  duration_ms: 12.430957\n  type: 'test'\n  ...\n# Subtest: rejects missing, forged and expired tokens\nok 3 - rejects missing, forged and expired tokens\n  ---\n  duration_ms: 9.878102\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 432.963051\n"
 }
