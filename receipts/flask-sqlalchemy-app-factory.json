@@ -1,15 +1,15 @@
 {
   "id": "flask-sqlalchemy-app-factory",
   "status": "passed",
-  "ran_at": "2026-10-21T06:53:08.068Z",
-  "last_passed_at": "2026-10-21T06:53:08.068Z",
+  "ran_at": "2026-10-21T12:53:44.348Z",
+  "last_passed_at": "2026-10-21T12:53:44.348Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 311,
-    "test": 2124
+    "setup": 291,
+    "test": 2989
   },
   "pinned": {
     "flask": "3.1.3",
@@ -26,11 +26,11 @@
     "recipes/flask-sqlalchemy-app-factory/tests/test_app.py": "sha256:9574e48b2abb305fd74f790cdbbedfb5dff492d8947162a5014ae994e47e8b7a"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39557797398"
+    "runner": "github-actions 39602704203"
   },
   "errors": [],
-  "log_tail": "..                                                                       [100%]\n2 passed in 1.44s\n"
+  "log_tail": "..                                                                       [100%]\n2 passed in 1.82s\n"
 }

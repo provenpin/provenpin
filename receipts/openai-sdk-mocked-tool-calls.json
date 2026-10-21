@@ -1,15 +1,15 @@
 {
   "id": "openai-sdk-mocked-tool-calls",
   "status": "passed",
-  "ran_at": "2026-10-21T06:55:53.328Z",
-  "last_passed_at": "2026-10-21T06:55:53.328Z",
+  "ran_at": "2026-10-21T12:56:31.753Z",
+  "last_passed_at": "2026-10-21T12:56:31.753Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2389,
-    "test": 376
+    "setup": 3260,
+    "test": 619
   },
   "pinned": {
     "openai": "7.34.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39557797398"
+    "runner": "github-actions 39602704203"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: calls the tool then answers\nok 1 - calls the tool then answers\n  ---\n  duration_ms: 8.165673\n  type: 'test'\n  ...\n# Subtest: bad tool arguments are reported back, not thrown\nok 2 - bad tool arguments are reported back, not thrown\n  ---\n  duration_ms: 1.740282\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 281.950802\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: calls the tool then answers\nok 1 - calls the tool then answers\n  ---\n  duration_ms: 13.710288\n  type: 'test'\n  ...\n# Subtest: bad tool arguments are reported back, not thrown\nok 2 - bad tool arguments are reported back, not thrown\n  ---\n  duration_ms: 2.842536\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 471.221949\n"
 }

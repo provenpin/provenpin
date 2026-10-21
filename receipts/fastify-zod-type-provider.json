@@ -1,15 +1,15 @@
 {
   "id": "fastify-zod-type-provider",
   "status": "passed",
-  "ran_at": "2026-10-21T06:52:57.415Z",
-  "last_passed_at": "2026-10-21T06:52:57.415Z",
+  "ran_at": "2026-10-21T12:53:36.419Z",
+  "last_passed_at": "2026-10-21T12:53:36.419Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3377,
-    "test": 581
+    "setup": 3774,
+    "test": 707
   },
   "pinned": {
     "fastify": "5.12.7",
@@ -26,11 +26,11 @@
     "recipes/fastify-zod-type-provider/test/app.test.ts": "sha256:dad87479c5016913cbdf23399f28ca3da6cd88e35096c6f090076ca0cd8d83cb"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39557797398"
+    "runner": "github-actions 39602704203"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid body and response schema strips extra fields\nok 1 - valid body and response schema strips extra fields\n  ---\n  duration_ms: 103.309152\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 2 - invalid body is 400\n  ---\n  duration_ms: 7.218061\n  type: 'test'\n  ...\n# Subtest: querystring coercion and defaults\nok 3 - querystring coercion and defaults\n  ---\n  duration_ms: 5.313212\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 463.192799\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid body and response schema strips extra fields\nok 1 - valid body and response schema strips extra fields\n  ---\n  duration_ms: 129.140102\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 2 - invalid body is 400\n  ---\n  duration_ms: 7.937626\n  type: 'test'\n  ...\n# Subtest: querystring coercion and defaults\nok 3 - querystring coercion and defaults\n  ---\n  duration_ms: 6.046426\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 563.5328\n"
 }

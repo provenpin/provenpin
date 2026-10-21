@@ -1,15 +1,15 @@
 {
   "id": "jotai-atoms-react-testing-library",
   "status": "passed",
-  "ran_at": "2026-10-21T06:54:11.216Z",
-  "last_passed_at": "2026-10-21T06:54:11.216Z",
+  "ran_at": "2026-10-21T12:54:48.590Z",
+  "last_passed_at": "2026-10-21T12:54:48.590Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7051,
-    "test": 1416
+    "setup": 6101,
+    "test": 821
   },
   "pinned": {
     "jotai": "3.0.1",
@@ -32,11 +32,11 @@
     "recipes/jotai-atoms-react-testing-library/vitest.config.ts": "sha256:9cde403d7772fd3c986e746f8a1cde508991f50a02c7851e87fd80a563c305d2"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39557797398"
+    "runner": "github-actions 39602704203"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-jotai-atoms-react-testing-library-52AEgr\u001b[39m\n\n \u001b[32m✓\u001b[39m test/todos.test.tsx \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 172\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:54:18\n\u001b[2m   Duration \u001b[22m 824ms\u001b[2m (environment 39%, import 25%, tests 24%, transform 11%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-jotai-atoms-react-testing-library-52AEgr/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-jotai-atoms-react-testing-library-zSBt7u\u001b[39m\n\n \u001b[32m✓\u001b[39m test/todos.test.tsx \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 124\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:54:55\n\u001b[2m   Duration \u001b[22m 492ms\u001b[2m (environment 36%, tests 29%, import 24%, transform 10%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-jotai-atoms-react-testing-library-zSBt7u/test-report.json\n"
 }

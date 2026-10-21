@@ -1,15 +1,15 @@
 {
   "id": "flask-migrate-sqlite",
   "status": "passed",
-  "ran_at": "2026-10-21T06:52:59.590Z",
-  "last_passed_at": "2026-10-21T06:52:59.590Z",
+  "ran_at": "2026-10-21T12:53:43.254Z",
+  "last_passed_at": "2026-10-21T12:53:43.254Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 277,
-    "test": 3800
+    "setup": 299,
+    "test": 3339
   },
   "pinned": {
     "flask": "3.1.3",
@@ -42,11 +42,11 @@
     "recipes/flask-migrate-sqlite/tests/test_migrations.py": "sha256:917064fd3742191c067f1fea3bdaac8c55980fbc857f4a5e78d9dce679096be5"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39557797398"
+    "runner": "github-actions 39602704203"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 1.91s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 2.23s\n"
 }

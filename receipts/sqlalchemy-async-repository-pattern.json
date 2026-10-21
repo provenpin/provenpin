@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-async-repository-pattern",
   "status": "passed",
-  "ran_at": "2026-10-21T06:57:59.654Z",
-  "last_passed_at": "2026-10-21T06:57:59.654Z",
+  "ran_at": "2026-10-21T12:58:39.245Z",
+  "last_passed_at": "2026-10-21T12:58:39.245Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 385,
-    "test": 2037
+    "setup": 374,
+    "test": 3503
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -27,11 +27,11 @@
     "recipes/sqlalchemy-async-repository-pattern/tests/test_repository.py": "sha256:f7e31b46a2f919466767f544fa808d7c0b44e0d4d25ae860d3aa04d2a0e368f6"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39557797398"
+    "runner": "github-actions 39602704203"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n=============================== warnings summary ===============================\ntests/test_repository.py::test_attributes_readable_after_commit\n  /tmp/pp-sqlalchemy-async-repository-pattern-WYQziT/.venv/lib/python3.13/site-packages/sqlalchemy/sql/compiler.py:4281: RuntimeWarning: coroutine 'Connection.cursor' was never awaited\n    def bindparam_string(\n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 1 warning in 0.69s\n"
+  "log_tail": "......                                                                   [100%]\n=============================== warnings summary ===============================\ntests/test_repository.py::test_attributes_readable_after_commit\n  /tmp/pp-sqlalchemy-async-repository-pattern-F5YER1/.venv/lib/python3.13/site-packages/sqlalchemy/sql/compiler.py:4281: RuntimeWarning: coroutine 'Connection.cursor' was never awaited\n    def bindparam_string(\n  Enable tracemalloc to get traceback where the object was allocated.\n  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 1 warning in 1.19s\n"
 }

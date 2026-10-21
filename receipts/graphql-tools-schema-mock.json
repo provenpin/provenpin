@@ -1,15 +1,15 @@
 {
   "id": "graphql-tools-schema-mock",
   "status": "passed",
-  "ran_at": "2026-10-21T06:53:17.155Z",
-  "last_passed_at": "2026-10-21T06:53:17.155Z",
+  "ran_at": "2026-10-21T12:53:56.042Z",
+  "last_passed_at": "2026-10-21T12:53:56.042Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2389,
-    "test": 357
+    "setup": 2082,
+    "test": 328
   },
   "pinned": {
     "@graphql-tools/schema": "10.1.5",
@@ -26,11 +26,11 @@
     "recipes/graphql-tools-schema-mock/test/schema.test.ts": "sha256:e5666d4ff575c0bbe6a83480e1e11890637430139abd31cfc254c46c3f17ad05"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39557797398"
+    "runner": "github-actions 39602704203"
   },
   "errors": [],
-  "log_tail": "# Subtest: mocked query returns shape-correct data\nok 1 - mocked query returns shape-correct data\n  ---\n  duration_ms: 11.657414\n  type: 'test'\n  ...\n# Subtest: mocks are deterministic for a seed\nok 2 - mocks are deterministic for a seed\n  ---\n  duration_ms: 8.256098\n  type: 'test'\n  ...\n# Subtest: store keeps entities consistent across queries\nok 3 - store keeps entities consistent across queries\n  ---\n  duration_ms: 2.035373\n  type: 'test'\n  ...\n# Subtest: mutation writes to the mock store\nok 4 - mutation writes to the mock store\n  ---\n  duration_ms: 2.503625\n  type: 'test'\n  ...\n# Subtest: custom resolver can return null and validation errors still apply\nok 5 - custom resolver can return null and validation errors still apply\n  ---\n  duration_ms: 3.645492\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 254.702804\n"
+  "log_tail": "# Subtest: mocked query returns shape-correct data\nok 1 - mocked query returns shape-correct data\n  ---\n  duration_ms: 11.816729\n  type: 'test'\n  ...\n# Subtest: mocks are deterministic for a seed\nok 2 - mocks are deterministic for a seed\n  ---\n  duration_ms: 7.012586\n  type: 'test'\n  ...\n# Subtest: store keeps entities consistent across queries\nok 3 - store keeps entities consistent across queries\n  ---\n  duration_ms: 1.931378\n  type: 'test'\n  ...\n# Subtest: mutation writes to the mock store\nok 4 - mutation writes to the mock store\n  ---\n  duration_ms: 2.453774\n  type: 'test'\n  ...\n# Subtest: custom resolver can return null and validation errors still apply\nok 5 - custom resolver can return null and validation errors still apply\n  ---\n  duration_ms: 3.477615\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 238.000145\n"
 }

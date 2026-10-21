@@ -1,15 +1,15 @@
 {
   "id": "flexsearch-document-index",
   "status": "passed",
-  "ran_at": "2026-10-21T06:53:11.441Z",
-  "last_passed_at": "2026-10-21T06:53:11.441Z",
+  "ran_at": "2026-10-21T12:53:45.438Z",
+  "last_passed_at": "2026-10-21T12:53:45.438Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1787,
-    "test": 407
+    "setup": 2278,
+    "test": 398
   },
   "pinned": {
     "flexsearch": "0.8.212",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39557797398"
+    "runner": "github-actions 39602704203"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: indexes documents and returns enriched hits\nok 1 - indexes documents and returns enriched hits\n  ---\n  duration_ms: 3.724457\n  type: 'test'\n  ...\n# Subtest: content field is searchable\nok 2 - content field is searchable\n  ---\n  duration_ms: 0.380387\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 256.277974\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: indexes documents and returns enriched hits\nok 1 - indexes documents and returns enriched hits\n  ---\n  duration_ms: 3.612316\n  type: 'test'\n  ...\n# Subtest: content field is searchable\nok 2 - content field is searchable\n  ---\n  duration_ms: 0.350037\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 259.410497\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "hono-jwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-21T06:53:28.781Z",
-  "last_passed_at": "2026-10-21T06:53:28.781Z",
+  "ran_at": "2026-10-21T12:54:05.775Z",
+  "last_passed_at": "2026-10-21T12:54:05.775Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2230,
-    "test": 525
+    "setup": 2630,
+    "test": 565
   },
   "pinned": {
     "hono": "4.13.13",
@@ -26,11 +26,11 @@
     "recipes/hono-jwt-auth/test/app.test.ts": "sha256:628895d734369b11c36335a25bf5df0fb1513be9efca94e634526eba1900627a"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39557797398"
+    "runner": "github-actions 39602704203"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 44.511279\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 1.396414\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 1.656632\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 1.953216\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 380.617495\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 47.89676\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 1.493666\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 2.158752\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 2.066209\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 411.982303\n"
 }
