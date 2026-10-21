@@ -9,9 +9,8 @@ import {
   multiPoint,
   point,
   polygon,
-  type Feature,
-  type Polygon,
 } from "@turf/turf";
+import type { Feature, Polygon } from "geojson";
 
 export type LatLon = [number, number];
 
