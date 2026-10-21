@@ -1,15 +1,15 @@
 {
   "id": "sklearn-columntransformer-pipeline",
   "status": "passed",
-  "ran_at": "2026-10-20T18:53:39.720Z",
-  "last_passed_at": "2026-10-20T18:53:39.720Z",
+  "ran_at": "2026-10-21T00:59:21.723Z",
+  "last_passed_at": "2026-10-21T00:59:21.723Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 820,
-    "test": 6579
+    "setup": 790,
+    "test": 4856
   },
   "pinned": {
     "scikit-learn": "1.9.1",
@@ -31,8 +31,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 5.17s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 3.55s\n"
 }

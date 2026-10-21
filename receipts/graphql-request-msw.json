@@ -1,14 +1,14 @@
 {
   "id": "graphql-request-msw",
   "status": "passed",
-  "ran_at": "2026-10-20T18:49:15.027Z",
-  "last_passed_at": "2026-10-20T18:49:15.027Z",
+  "ran_at": "2026-10-21T00:55:10.990Z",
+  "last_passed_at": "2026-10-21T00:55:10.990Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3891,
+    "setup": 4172,
     "test": 757
   },
   "pinned": {
@@ -26,11 +26,11 @@
     "recipes/graphql-request-msw/test/api.test.ts": "sha256:e74fe9e483c9517b56677520570416bca48972285c71311cc593572d74fff2ef"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: query with variables\nok 1 - query with variables\n  ---\n  duration_ms: 85.15641\n  type: 'test'\n  ...\n# Subtest: mutation\nok 2 - mutation\n  ---\n  duration_ms: 13.636859\n  type: 'test'\n  ...\n# Subtest: GraphQL errors surface with their code\nok 3 - GraphQL errors surface with their code\n  ---\n  duration_ms: 9.482466\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 606.155313\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: query with variables\nok 1 - query with variables\n  ---\n  duration_ms: 78.278182\n  type: 'test'\n  ...\n# Subtest: mutation\nok 2 - mutation\n  ---\n  duration_ms: 13.416686\n  type: 'test'\n  ...\n# Subtest: GraphQL errors surface with their code\nok 3 - GraphQL errors surface with their code\n  ---\n  duration_ms: 10.980589\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 611.648488\n"
 }

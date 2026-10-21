@@ -1,15 +1,15 @@
 {
   "id": "pypdf-reportlab-merge-split",
   "status": "passed",
-  "ran_at": "2026-10-20T18:52:50.215Z",
-  "last_passed_at": "2026-10-20T18:52:50.215Z",
+  "ran_at": "2026-10-21T00:58:42.693Z",
+  "last_passed_at": "2026-10-21T00:58:42.693Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 380,
-    "test": 2136
+    "setup": 238,
+    "test": 1013
   },
   "pinned": {
     "pypdf": "6.21.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.61s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.50s\n"
 }

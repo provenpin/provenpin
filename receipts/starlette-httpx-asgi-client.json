@@ -1,15 +1,15 @@
 {
   "id": "starlette-httpx-asgi-client",
   "status": "passed",
-  "ran_at": "2026-10-20T18:55:01.145Z",
-  "last_passed_at": "2026-10-20T18:55:01.145Z",
+  "ran_at": "2026-10-21T01:00:08.612Z",
+  "last_passed_at": "2026-10-21T01:00:08.612Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 376,
-    "test": 3207
+    "setup": 542,
+    "test": 1955
   },
   "pinned": {
     "starlette": "1.8.0",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.33s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.18s\n"
 }

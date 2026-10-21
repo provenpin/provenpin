@@ -1,15 +1,15 @@
 {
   "id": "drizzle-pglite-migrations",
   "status": "passed",
-  "ran_at": "2026-10-20T18:47:01.583Z",
-  "last_passed_at": "2026-10-20T18:47:01.583Z",
+  "ran_at": "2026-10-21T00:53:11.432Z",
+  "last_passed_at": "2026-10-21T00:53:11.432Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7563,
-    "test": 15940
+    "setup": 7596,
+    "test": 15916
   },
   "pinned": {
     "drizzle-orm": "0.45.4",
@@ -28,11 +28,11 @@
     "recipes/drizzle-pglite-migrations/test/db.test.ts": "sha256:5943c83770955cfb3b1a94d4a48208100c15f765cbf58389ebc30df750eeb6b0"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: migrations create enum, array and jsonb columns\nok 1 - migrations create enum, array and jsonb columns\n  ---\n  duration_ms: 1968.621947\n  type: 'test'\n  ...\n# Subtest: upsert merges jsonb and updates enum\nok 2 - upsert merges jsonb and updates enum\n  ---\n  duration_ms: 1516.941744\n  type: 'test'\n  ...\n# Subtest: enum rejects unknown values\nok 3 - enum rejects unknown values\n  ---\n  duration_ms: 1520.641397\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 15784.744911\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: migrations create enum, array and jsonb columns\nok 1 - migrations create enum, array and jsonb columns\n  ---\n  duration_ms: 1954.196942\n  type: 'test'\n  ...\n# Subtest: upsert merges jsonb and updates enum\nok 2 - upsert merges jsonb and updates enum\n  ---\n  duration_ms: 1435.984362\n  type: 'test'\n  ...\n# Subtest: enum rejects unknown values\nok 3 - enum rejects unknown values\n  ---\n  duration_ms: 1457.935136\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 15762.230498\n"
 }

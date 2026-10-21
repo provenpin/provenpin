@@ -1,15 +1,15 @@
 {
   "id": "redux-toolkit-rtk-query-msw",
   "status": "passed",
-  "ran_at": "2026-10-20T18:53:21.672Z",
-  "last_passed_at": "2026-10-20T18:53:21.672Z",
+  "ran_at": "2026-10-21T00:59:10.741Z",
+  "last_passed_at": "2026-10-21T00:59:10.741Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6732,
-    "test": 935
+    "setup": 6881,
+    "test": 955
   },
   "pinned": {
     "@reduxjs/toolkit": "2.13.0",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-redux-toolkit-rtk-query-msw-vDlgyo\u001b[39m\n\n \u001b[32m✓\u001b[39m test/store.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 182\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:53:28\n\u001b[2m   Duration \u001b[22m 473ms\u001b[2m (tests 51%, import 34%, transform 13%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-redux-toolkit-rtk-query-msw-vDlgyo/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-redux-toolkit-rtk-query-msw-IPtVdS\u001b[39m\n\n \u001b[32m✓\u001b[39m test/store.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 172\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 00:59:18\n\u001b[2m   Duration \u001b[22m 446ms\u001b[2m (tests 51%, import 35%, transform 13%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-redux-toolkit-rtk-query-msw-IPtVdS/test-report.json\n"
 }

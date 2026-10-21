@@ -1,15 +1,15 @@
 {
   "id": "pillow-piexif-gps",
   "status": "passed",
-  "ran_at": "2026-10-20T18:52:14.173Z",
-  "last_passed_at": "2026-10-20T18:52:14.173Z",
+  "ran_at": "2026-10-21T00:57:58.634Z",
+  "last_passed_at": "2026-10-21T00:57:58.634Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 381,
-    "test": 1155
+    "setup": 431,
+    "test": 642
   },
   "pinned": {
     "pillow": "12.3.0",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.15s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.10s\n"
 }

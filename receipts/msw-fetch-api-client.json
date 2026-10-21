@@ -1,15 +1,15 @@
 {
   "id": "msw-fetch-api-client",
   "status": "passed",
-  "ran_at": "2026-10-20T18:51:03.537Z",
-  "last_passed_at": "2026-10-20T18:51:03.537Z",
+  "ran_at": "2026-10-21T00:56:59.070Z",
+  "last_passed_at": "2026-10-21T00:56:59.070Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3064,
-    "test": 462
+    "setup": 4630,
+    "test": 773
   },
   "pinned": {
     "zod": "4.6.7",
@@ -25,11 +25,11 @@
     "recipes/msw-fetch-api-client/test/client.test.ts": "sha256:bdf3d458c1bb39a34c9f15acbae97b954fc6c215b7297339192ac8296857babd"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: gets and parses a user\nok 1 - gets and parses a user\n  ---\n  duration_ms: 40.161018\n  type: 'test'\n  ...\n# Subtest: posts a user\nok 2 - posts a user\n  ---\n  duration_ms: 13.810461\n  type: 'test'\n  ...\n# Subtest: throws ApiError on 401\nok 3 - throws ApiError on 401\n  ---\n  duration_ms: 6.296624\n  type: 'test'\n  ...\n# Subtest: rejects malformed payloads\nok 4 - rejects malformed payloads\n  ---\n  duration_ms: 13.101883\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 367.247216\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: gets and parses a user\nok 1 - gets and parses a user\n  ---\n  duration_ms: 66.907395\n  type: 'test'\n  ...\n# Subtest: posts a user\nok 2 - posts a user\n  ---\n  duration_ms: 21.388874\n  type: 'test'\n  ...\n# Subtest: throws ApiError on 401\nok 3 - throws ApiError on 401\n  ---\n  duration_ms: 9.278927\n  type: 'test'\n  ...\n# Subtest: rejects malformed payloads\nok 4 - rejects malformed payloads\n  ---\n  duration_ms: 24.78295\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 609.183193\n"
 }

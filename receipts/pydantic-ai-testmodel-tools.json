@@ -1,15 +1,15 @@
 {
   "id": "pydantic-ai-testmodel-tools",
   "status": "passed",
-  "ran_at": "2026-10-20T18:52:31.699Z",
-  "last_passed_at": "2026-10-20T18:52:31.699Z",
+  "ran_at": "2026-10-21T00:58:19.912Z",
+  "last_passed_at": "2026-10-21T00:58:19.912Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 481,
-    "test": 2906
+    "setup": 625,
+    "test": 4015
   },
   "pinned": {
     "pydantic-ai-slim": "2.56.0",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n=============================== warnings summary ===============================\ntests/test_agent.py::test_typed_output_from_tool_using_deps\n  /tmp/pp-pydantic-ai-testmodel-tools-sAW2hX/.venv/lib/python3.13/site-packages/pydantic_graph/_utils.py:67: DeprecationWarning: There is no current event loop\n    event_loop = asyncio.get_event_loop()\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n4 passed, 1 warning in 0.13s\n"
+  "log_tail": "....                                                                     [100%]\n=============================== warnings summary ===============================\ntests/test_agent.py::test_typed_output_from_tool_using_deps\n  /tmp/pp-pydantic-ai-testmodel-tools-lllZJx/.venv/lib/python3.13/site-packages/pydantic_graph/_utils.py:67: DeprecationWarning: There is no current event loop\n    event_loop = asyncio.get_event_loop()\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n4 passed, 1 warning in 0.21s\n"
 }

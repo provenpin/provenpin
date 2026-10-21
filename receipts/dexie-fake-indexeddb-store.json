@@ -1,15 +1,15 @@
 {
   "id": "dexie-fake-indexeddb-store",
   "status": "passed",
-  "ran_at": "2026-10-20T18:46:42.131Z",
-  "last_passed_at": "2026-10-20T18:46:42.131Z",
+  "ran_at": "2026-10-21T00:52:50.652Z",
+  "last_passed_at": "2026-10-21T00:52:50.652Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1842,
-    "test": 516
+    "setup": 2378,
+    "test": 397
   },
   "pinned": {
     "dexie": "4.4.6",
@@ -25,11 +25,11 @@
     "recipes/dexie-fake-indexeddb-store/test/store.test.ts": "sha256:531850f3d2863b71e9f03c0cc51ce288840eb561c196783644fb88d2a347e189"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39477443811"
+    "runner": "github-actions 39523772506"
   },
   "errors": [],
-  "log_tail": "# Subtest: bulkAdd inserts rows and equals query filters by index\nok 1 - bulkAdd inserts rows and equals query filters by index\n  ---\n  duration_ms: 31.414524\n  type: 'test'\n  ...\n# Subtest: between query returns an inclusive price range\nok 2 - between query returns an inclusive price range\n  ---\n  duration_ms: 4.789252\n  type: 'test'\n  ...\n# Subtest: compound index query matches category and price together\nok 3 - compound index query matches category and price together\n  ---\n  duration_ms: 4.130772\n  type: 'test'\n  ...\n# Subtest: update modifies matching rows in place\nok 4 - update modifies matching rows in place\n  ---\n  duration_ms: 6.276703\n  type: 'test'\n  ...\n# Subtest: transaction rolls back when it throws\nok 5 - transaction rolls back when it throws\n  ---\n  duration_ms: 6.12008\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 372.433814\n"
+  "log_tail": "# Subtest: bulkAdd inserts rows and equals query filters by index\nok 1 - bulkAdd inserts rows and equals query filters by index\n  ---\n  duration_ms: 26.856237\n  type: 'test'\n  ...\n# Subtest: between query returns an inclusive price range\nok 2 - between query returns an inclusive price range\n  ---\n  duration_ms: 3.167066\n  type: 'test'\n  ...\n# Subtest: compound index query matches category and price together\nok 3 - compound index query matches category and price together\n  ---\n  duration_ms: 2.716768\n  type: 'test'\n  ...\n# Subtest: update modifies matching rows in place\nok 4 - update modifies matching rows in place\n  ---\n  duration_ms: 3.601342\n  type: 'test'\n  ...\n# Subtest: transaction rolls back when it throws\nok 5 - transaction rolls back when it throws\n  ---\n  duration_ms: 4.29881\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 279.991284\n"
 }
