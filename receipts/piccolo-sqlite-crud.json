@@ -1,15 +1,15 @@
 {
   "id": "piccolo-sqlite-crud",
   "status": "passed",
-  "ran_at": "2026-10-20T01:19:47.235Z",
-  "last_passed_at": "2026-10-20T01:19:47.235Z",
+  "ran_at": "2026-10-21T18:53:36.426Z",
+  "last_passed_at": "2026-10-21T18:53:36.426Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1010,
-    "test": 1315
+    "setup": 723,
+    "test": 1211
   },
   "pinned": {
     "piccolo": "1.36.0",
@@ -26,11 +26,11 @@
     "recipes/piccolo-sqlite-crud/tests/test_crud.py": "sha256:6224e9dfd0afeed7baa2a5f93e61f1c24603e977be93c67a65d730646cdac107"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.64s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.56s\n"
 }

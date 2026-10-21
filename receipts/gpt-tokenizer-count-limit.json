@@ -1,15 +1,15 @@
 {
   "id": "gpt-tokenizer-count-limit",
   "status": "passed",
-  "ran_at": "2026-10-21T12:53:47.404Z",
-  "last_passed_at": "2026-10-21T12:53:47.404Z",
+  "ran_at": "2026-10-21T18:50:21.685Z",
+  "last_passed_at": "2026-10-21T18:50:21.685Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1866,
-    "test": 552
+    "setup": 2374,
+    "test": 412
   },
   "pinned": {
     "gpt-tokenizer": "4.0.3",
@@ -24,11 +24,11 @@
     "recipes/gpt-tokenizer-count-limit/test/tokenizer.test.ts": "sha256:15270afeb3e95788802804bdbf2a84a8dacdab3b659d8f96c2a3d3134a0b3df0"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39602704203"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "# Subtest: encode and decode round trip text\nok 1 - encode and decode round trip text\n  ---\n  duration_ms: 5.576669\n  type: 'test'\n  ...\n# Subtest: token counts are positive and stable\nok 2 - token counts are positive and stable\n  ---\n  duration_ms: 0.245481\n  type: 'test'\n  ...\n# Subtest: isWithinTokenLimit reflects the budget\nok 3 - isWithinTokenLimit reflects the budget\n  ---\n  duration_ms: 0.568806\n  type: 'test'\n  ...\n# Subtest: encodeChat counts tokens for a short chat\nok 4 - encodeChat counts tokens for a short chat\n  ---\n  duration_ms: 0.466767\n  type: 'test'\n  ...\n# Subtest: truncates text to a token budget\nok 5 - truncates text to a token budget\n  ---\n  duration_ms: 0.277508\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 336.991577\n"
+  "log_tail": "# Subtest: encode and decode round trip text\nok 1 - encode and decode round trip text\n  ---\n  duration_ms: 4.006195\n  type: 'test'\n  ...\n# Subtest: token counts are positive and stable\nok 2 - token counts are positive and stable\n  ---\n  duration_ms: 0.258297\n  type: 'test'\n  ...\n# Subtest: isWithinTokenLimit reflects the budget\nok 3 - isWithinTokenLimit reflects the budget\n  ---\n  duration_ms: 0.481851\n  type: 'test'\n  ...\n# Subtest: encodeChat counts tokens for a short chat\nok 4 - encodeChat counts tokens for a short chat\n  ---\n  duration_ms: 0.44147\n  type: 'test'\n  ...\n# Subtest: truncates text to a token budget\nok 5 - truncates text to a token budget\n  ---\n  duration_ms: 0.235332\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 297.683848\n"
 }

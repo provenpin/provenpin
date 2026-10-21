@@ -1,15 +1,15 @@
 {
   "id": "click-pytest-freezegun-scheduler",
   "status": "passed",
-  "ran_at": "2026-10-21T12:51:10.694Z",
-  "last_passed_at": "2026-10-21T12:51:10.694Z",
+  "ran_at": "2026-10-21T18:47:46.557Z",
+  "last_passed_at": "2026-10-21T18:47:46.557Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 203,
-    "test": 1536
+    "setup": 227,
+    "test": 1780
   },
   "pinned": {
     "click": "8.5.0",
@@ -26,11 +26,11 @@
     "recipes/click-pytest-freezegun-scheduler/tests/test_cli.py": "sha256:0ac29b7cd70047f5bf6f22a341c4ac5d776718a2d0e42d6b25215446e1b7c439"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39602704203"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.72s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.75s\n"
 }

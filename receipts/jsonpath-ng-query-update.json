@@ -1,15 +1,15 @@
 {
   "id": "jsonpath-ng-query-update",
   "status": "passed",
-  "ran_at": "2026-10-21T12:54:55.158Z",
-  "last_passed_at": "2026-10-21T12:54:55.158Z",
+  "ran_at": "2026-10-21T18:51:36.063Z",
+  "last_passed_at": "2026-10-21T18:51:36.063Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 447,
-    "test": 1250
+    "setup": 258,
+    "test": 1363
   },
   "pinned": {
     "jsonpath-ng": "1.11.0",
@@ -24,11 +24,11 @@
     "recipes/jsonpath-ng-query-update/tests/test_catalog.py": "sha256:685f6a95e217129f842f7f1f185ac49f950ae0d890972d26442bc0c5a4e46a6c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39602704203"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
 }

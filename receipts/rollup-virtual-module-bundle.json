@@ -1,15 +1,15 @@
 {
   "id": "rollup-virtual-module-bundle",
   "status": "passed",
-  "ran_at": "2026-10-21T12:58:14.405Z",
-  "last_passed_at": "2026-10-21T12:58:14.405Z",
+  "ran_at": "2026-10-21T18:55:01.312Z",
+  "last_passed_at": "2026-10-21T18:55:01.312Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2264,
-    "test": 665
+    "setup": 3998,
+    "test": 499
   },
   "pinned": {
     "rollup": "4.64.7",
@@ -24,11 +24,11 @@
     "recipes/rollup-virtual-module-bundle/test/bundle.test.ts": "sha256:e1b3531dd0d11d8f56311a264e8d971aef9eb40cd2bb032f81525f2fd0ed4dbe"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39602704203"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: bundles virtual modules to esm\nok 1 - bundles virtual modules to esm\n  ---\n  duration_ms: 37.409855\n  type: 'test'\n  ...\n# Subtest: tree-shaking drops unused exports\nok 2 - tree-shaking drops unused exports\n  ---\n  duration_ms: 7.234193\n  type: 'test'\n  ...\n# Subtest: generated bundle runs via a data url import\nok 3 - generated bundle runs via a data url import\n  ---\n  duration_ms: 7.678175\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 528.611047\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: bundles virtual modules to esm\nok 1 - bundles virtual modules to esm\n  ---\n  duration_ms: 21.162302\n  type: 'test'\n  ...\n# Subtest: tree-shaking drops unused exports\nok 2 - tree-shaking drops unused exports\n  ---\n  duration_ms: 6.721051\n  type: 'test'\n  ...\n# Subtest: generated bundle runs via a data url import\nok 3 - generated bundle runs via a data url import\n  ---\n  duration_ms: 6.291677\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 390.082829\n"
 }

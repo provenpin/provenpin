@@ -1,15 +1,15 @@
 {
   "id": "openai-python-respx-mock",
   "status": "passed",
-  "ran_at": "2026-10-21T12:56:27.678Z",
-  "last_passed_at": "2026-10-21T12:56:27.678Z",
+  "ran_at": "2026-10-21T18:53:11.118Z",
+  "last_passed_at": "2026-10-21T18:53:11.118Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 562,
-    "test": 3861
+    "setup": 360,
+    "test": 2829
   },
   "pinned": {
     "openai": "3.31.0",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39602704203"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 1.22s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.84s\n"
 }

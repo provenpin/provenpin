@@ -1,15 +1,15 @@
 {
   "id": "authjs-drizzle-adapter-pglite",
   "status": "passed",
-  "ran_at": "2026-10-21T12:50:27.292Z",
-  "last_passed_at": "2026-10-21T12:50:27.292Z",
+  "ran_at": "2026-10-21T18:46:59.298Z",
+  "last_passed_at": "2026-10-21T18:46:59.298Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6205,
-    "test": 14026
+    "setup": 8135,
+    "test": 15541
   },
   "pinned": {
     "@auth/drizzle-adapter": "1.11.3",
@@ -28,11 +28,11 @@
     "recipes/authjs-drizzle-adapter-pglite/test/adapter.test.ts": "sha256:f21246071d922ac67b16fa5d438eac2d799b95305e69a68b69132d9b8e10870d"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39602704203"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: user + linked OAuth account\nok 1 - user + linked OAuth account\n  ---\n  duration_ms: 1423.603404\n  type: 'test'\n  ...\n# Subtest: database session lifecycle\nok 2 - database session lifecycle\n  ---\n  duration_ms: 880.198017\n  type: 'test'\n  ...\n# Subtest: email verification tokens are single-use\nok 3 - email verification tokens are single-use\n  ---\n  duration_ms: 846.524712\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 13921.717583\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: user + linked OAuth account\nok 1 - user + linked OAuth account\n  ---\n  duration_ms: 1738.776604\n  type: 'test'\n  ...\n# Subtest: database session lifecycle\nok 2 - database session lifecycle\n  ---\n  duration_ms: 1379.920662\n  type: 'test'\n  ...\n# Subtest: email verification tokens are single-use\nok 3 - email verification tokens are single-use\n  ---\n  duration_ms: 1484.693717\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 15436.936362\n"
 }

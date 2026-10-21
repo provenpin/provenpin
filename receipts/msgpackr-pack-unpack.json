@@ -1,15 +1,15 @@
 {
   "id": "msgpackr-pack-unpack",
   "status": "passed",
-  "ran_at": "2026-10-21T12:55:51.483Z",
-  "last_passed_at": "2026-10-21T12:55:51.483Z",
+  "ran_at": "2026-10-21T18:52:21.281Z",
+  "last_passed_at": "2026-10-21T18:52:21.281Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2261,
-    "test": 353
+    "setup": 2237,
+    "test": 225
   },
   "pinned": {
     "msgpackr": "2.1.0",
@@ -24,11 +24,11 @@
     "recipes/msgpackr-pack-unpack/test/codec.test.ts": "sha256:62e12f8c6918d28e3935b710c536fcb5f053e4db39e59eeafd1b25ce3bcd0cff"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39602704203"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips dates, maps and binary\nok 1 - roundtrips dates, maps and binary\n  ---\n  duration_ms: 3.507452\n  type: 'test'\n  ...\n# Subtest: Packr and Unpackr honor options\nok 2 - Packr and Unpackr honor options\n  ---\n  duration_ms: 0.352197\n  type: 'test'\n  ...\n# Subtest: packed repetitive data is smaller than JSON\nok 3 - packed repetitive data is smaller than JSON\n  ---\n  duration_ms: 0.533042\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 214.326924\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips dates, maps and binary\nok 1 - roundtrips dates, maps and binary\n  ---\n  duration_ms: 2.339115\n  type: 'test'\n  ...\n# Subtest: Packr and Unpackr honor options\nok 2 - Packr and Unpackr honor options\n  ---\n  duration_ms: 0.221503\n  type: 'test'\n  ...\n# Subtest: packed repetitive data is smaller than JSON\nok 3 - packed repetitive data is smaller than JSON\n  ---\n  duration_ms: 0.249545\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 130.690805\n"
 }

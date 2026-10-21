@@ -1,15 +1,15 @@
 {
   "id": "mjml-to-html",
   "status": "passed",
-  "ran_at": "2026-10-21T12:55:35.303Z",
-  "last_passed_at": "2026-10-21T12:55:35.303Z",
+  "ran_at": "2026-10-21T18:52:24.779Z",
+  "last_passed_at": "2026-10-21T18:52:24.779Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7471,
-    "test": 766
+    "setup": 7420,
+    "test": 966
   },
   "pinned": {
     "mjml": "5.4.1",
@@ -28,8 +28,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39602704203"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders mjml to html with expected text\nok 1 - renders mjml to html with expected text\n  ---\n  duration_ms: 10.780755\n  type: 'test'\n  ...\n# Subtest: inlines styles derived from mjml attributes\nok 2 - inlines styles derived from mjml attributes\n  ---\n  duration_ms: 2.08387\n  type: 'test'\n  ...\n# Subtest: reports validation errors for broken markup in soft mode\nok 3 - reports validation errors for broken markup in soft mode\n  ---\n  duration_ms: 0.949081\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 643.460238\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders mjml to html with expected text\nok 1 - renders mjml to html with expected text\n  ---\n  duration_ms: 15.005517\n  type: 'test'\n  ...\n# Subtest: inlines styles derived from mjml attributes\nok 2 - inlines styles derived from mjml attributes\n  ---\n  duration_ms: 2.839107\n  type: 'test'\n  ...\n# Subtest: reports validation errors for broken markup in soft mode\nok 3 - reports validation errors for broken markup in soft mode\n  ---\n  duration_ms: 1.306117\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 812.543913\n"
 }

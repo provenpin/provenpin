@@ -1,15 +1,15 @@
 {
   "id": "platformdirs-toml-config-store",
   "status": "passed",
-  "ran_at": "2026-10-21T12:56:59.416Z",
-  "last_passed_at": "2026-10-21T12:56:59.416Z",
+  "ran_at": "2026-10-21T18:53:48.749Z",
+  "last_passed_at": "2026-10-21T18:53:48.749Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 244,
-    "test": 1124
+    "setup": 255,
+    "test": 2048
   },
   "pinned": {
     "platformdirs": "4.13.0",
@@ -25,11 +25,11 @@
     "recipes/platformdirs-toml-config-store/tests/test_config_store.py": "sha256:6438f73e453a8dc9c89e29fc198d9201d3defd51ad7eaf41a6738e338c035ca5"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39602704203"
+    "runner": "github-actions 39655665847"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.11s\n"
 }
