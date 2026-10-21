@@ -39,7 +39,7 @@ Cursor one-click install link (open it on a machine with Cursor installed):
 cursor://anysphere.cursor-deeplink/mcp/install?name=provenpin&config=eyJ1cmwiOiJodHRwczovL21jcC5wcm92ZW5waW4uY29tL21jcCJ9
 ```
 
-**OpenCode** (`opencode.json`)
+**OpenCode** (`opencode.json` in the project root)
 ```json
 { "$schema": "https://opencode.ai/config.json", "mcp": { "provenpin": { "type": "remote", "url": "https://mcp.provenpin.com/mcp", "enabled": true } } }
 ```
