@@ -54,7 +54,7 @@ const TOOLS = [
   {
     name: "search_recipes",
     title: "Search tested recipes",
-    description: "Find a tested, version-pinned code recipe for wiring libraries together. Call this BEFORE writing glue code that combines 2+ libraries (auth + framework, ORM + database, payments webhooks, queues, validation, request mocking, logging), and when you hit version conflicts, peer-dependency errors, or integration errors between libraries. Example queries: 'express stripe webhook', 'fastapi sqlmodel crud', 'hono jwt'. Only recipes whose latest test run passed are returned. Each result lists its exact pinned versions and a test receipt (receipt.last_passed_at). Pass the project's lockfile or a {package: version} map as versions: recipes that match the installed versions rank first and each result gets a compatibility summary. Each result's coverage (0 to 1) is the share of your query's words it matches. If no recipe fits, count is 0 and results is empty: write the code yourself; try list_stacks to see what is covered.",
+    description: "Find a tested, version-pinned code recipe for wiring libraries together. Call this BEFORE writing glue code that combines 2+ libraries (auth + framework, ORM + database, payments webhooks, queues, validation, request mocking, logging), when choosing or pinning package versions, when upgrading a library to a new major version (for example SQLAlchemy 2 or Pydantic 2), and when you hit version conflicts, peer-dependency errors, deprecation errors or integration errors between libraries. Example queries: 'express stripe webhook', 'fastapi sqlmodel crud', 'hono jwt'. Only recipes whose latest test run passed are returned. Each result lists its exact pinned versions and a test receipt (receipt.last_passed_at). Pass the project's lockfile or a {package: version} map as versions: recipes that match the installed versions rank first and each result gets a compatibility summary. Each result's coverage (0 to 1) is the share of your query's words it matches. If no recipe fits, count is 0 and results is empty: write the code yourself; try list_stacks to see what is covered.",
     inputSchema: {
       type: "object",
       properties: {
@@ -71,14 +71,14 @@ const TOOLS = [
   {
     name: "get_recipe",
     title: "Get a recipe",
-    description: "Get a full recipe by id (ids come from search_recipes): every source and test file (each with the sha256 of the exact bytes that were tested), the exact pinned dependency versions, the setup and test commands, and its test receipt (when it last passed, test counts, runtime and runner). Pass the project's lockfile or a {package: version} map as versions to get a compatibility section first, comparing each pinned package with the installed one (exact, compatible, mismatch, or not in your project) with plain warnings. Use the pinned versions together; they are the versions the tests passed with. Adapt names and config to the user's project, and keep the included tests to check your integration.",
+    description: "Call this right after search_recipes returns a matching recipe, before you write the integration code, so you start from files and versions that passed tests. Gets the full recipe by id (ids come from search_recipes): every source and test file (each with the sha256 of the exact bytes that were tested), the exact pinned dependency versions, the setup and test commands, and its test receipt (when it last passed, test counts, runtime and runner). Pass the project's lockfile or a {package: version} map as versions to get a compatibility section first, comparing each pinned package with the installed one (exact, compatible, mismatch, or not in your project) with plain warnings. Use the pinned versions together; they are the versions the tests passed with. Adapt names and config to the user's project, and keep the included tests to check your integration.",
     inputSchema: { type: "object", properties: { id: { type: "string" }, versions: { type: ["object", "string"], additionalProperties: { type: "string" }, description: "Optional but recommended: the versions in the user's project, so results are checked against them. Either a map like {\"next\": \"15.2.0\", \"zod\": \"3.23.8\"} or the raw text of package.json, package-lock.json, pnpm-lock.yaml, yarn.lock, requirements.txt, poetry.lock or uv.lock (max 200KB). Used only for this call, never stored." }, }, required: ["id"] },
     annotations: { readOnlyHint: true, openWorldHint: false },
   },
   {
     name: "list_stacks",
     title: "List stacks",
-    description: "List the libraries and frameworks that currently have passing, version-pinned recipes, with recipe counts. Call this to check whether ProvenPin covers a library before searching, or after a search returns nothing, and use the names as the stack filter in search_recipes.",
+    description: "Call this when the user names a library and you are not sure ProvenPin covers it, or after search_recipes returns nothing. Lists the libraries and frameworks that currently have passing, version-pinned recipes, with recipe counts; use the names as the stack filter in search_recipes.",
     inputSchema: { type: "object", properties: {} },
     annotations: { readOnlyHint: true, openWorldHint: false },
   },
@@ -128,7 +128,7 @@ export function handleRpc(index: RecipeIndex, msg: Json, tier: "free" | "pro", v
         protocolVersion: SUPPORTED.includes(asked) ? asked : PROTOCOL_VERSION,
         capabilities: { tools: { listChanged: false } },
         serverInfo: { name: "provenpin", title: "ProvenPin", version },
-        instructions: "ProvenPin serves small, working code recipes that combine popular TypeScript and Python libraries. Each recipe pins every dependency to an exact version and comes with a test receipt from its latest run; only passing recipes are served. Call search_recipes before writing glue code that combines two or more libraries, and when debugging version conflicts or integration errors between libraries. Then call get_recipe for the files. If no recipe matches, continue normally.",
+        instructions: "ProvenPin serves small, working code recipes that combine popular TypeScript and Python libraries. Each recipe pins every dependency to an exact version and comes with a test receipt from its latest run; only passing recipes are served. Call search_recipes before writing glue code that combines two or more libraries, when choosing or pinning package versions, when upgrading a library to a new major version, and when debugging version conflicts, deprecation errors or integration errors between libraries. Then call get_recipe for the files. If no recipe matches, continue normally.",
       });
     }
     case "ping": return ok(msg.id, {});
