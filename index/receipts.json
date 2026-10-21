@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-21T13:59:47.701Z",
+ "generated_at": "2026-10-21T15:10:49.862Z",
  "staleness_checked_at": "2026-10-21T13:59:47.203Z",
  "count": 555,
  "recipes": [
@@ -14539,18 +14539,19 @@
    "language": "typescript",
    "pinned": {
     "@turf/turf": "7.4.0",
+    "@types/geojson": "7946.0.16",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:26:32.314Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:cbee5e3f5f70121c17e63116d25c4d11954b6d4286df44b02c8ca844637fb9dd",
+   "last_passed_at": "2026-10-21T15:10:26.192Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39623215997",
+   "recipe_hash": "sha256:ac7e2a541bdb3faeb2b0107bf0deb9bbdabbdfa9e29915a5877a925c597884f1",
    "files": {
-    "recipes/turf-geojson-measure-buffer/package.json": "sha256:7bef16b5d44f61a6a841de1c33b1d69d3f0613011a1935cc0ad7acd0a65b658d",
-    "recipes/turf-geojson-measure-buffer/recipe.yaml": "sha256:3bc431cf319c10d4a6369df20b7fe8646b18d502ea22b46973b15c26c1dff9b4",
-    "recipes/turf-geojson-measure-buffer/src/geo.ts": "sha256:d58846f00442935e068d341acfbd6da5a53121b7e8e98ee6d1e33fab40bc57f8",
+    "recipes/turf-geojson-measure-buffer/package.json": "sha256:6a9f19d048822786e5994dfd3eb25f3b7832f91ff23bcd8d7078a7e4af3410d0",
+    "recipes/turf-geojson-measure-buffer/recipe.yaml": "sha256:d4b5dd618753d92e42cb49456f77b05681604fbebf493b12fc19a42bb4705b02",
+    "recipes/turf-geojson-measure-buffer/src/geo.ts": "sha256:e430e74a5d10805c06287d1a95ea875138462328c21148a6359d7440fbb58a8a",
     "recipes/turf-geojson-measure-buffer/test/geo.test.ts": "sha256:5b517383c3aa554dd031c6e413a1d2df1c985e4780498071d2ef6563e591de07"
    },
    "staleness": {

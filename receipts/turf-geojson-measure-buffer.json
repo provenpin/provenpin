@@ -1,34 +1,35 @@
 {
   "id": "turf-geojson-measure-buffer",
   "status": "passed",
-  "ran_at": "2026-10-20T01:26:32.314Z",
-  "last_passed_at": "2026-10-20T01:26:32.314Z",
+  "ran_at": "2026-10-21T15:10:26.192Z",
+  "last_passed_at": "2026-10-21T15:10:26.192Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6043,
-    "test": 776
+    "setup": 5688,
+    "test": 609
   },
   "pinned": {
     "@turf/turf": "7.4.0",
+    "@types/geojson": "7946.0.16",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:cbee5e3f5f70121c17e63116d25c4d11954b6d4286df44b02c8ca844637fb9dd",
+  "recipe_hash": "sha256:ac7e2a541bdb3faeb2b0107bf0deb9bbdabbdfa9e29915a5877a925c597884f1",
   "files": {
-    "recipes/turf-geojson-measure-buffer/package.json": "sha256:7bef16b5d44f61a6a841de1c33b1d69d3f0613011a1935cc0ad7acd0a65b658d",
-    "recipes/turf-geojson-measure-buffer/recipe.yaml": "sha256:3bc431cf319c10d4a6369df20b7fe8646b18d502ea22b46973b15c26c1dff9b4",
-    "recipes/turf-geojson-measure-buffer/src/geo.ts": "sha256:d58846f00442935e068d341acfbd6da5a53121b7e8e98ee6d1e33fab40bc57f8",
+    "recipes/turf-geojson-measure-buffer/package.json": "sha256:6a9f19d048822786e5994dfd3eb25f3b7832f91ff23bcd8d7078a7e4af3410d0",
+    "recipes/turf-geojson-measure-buffer/recipe.yaml": "sha256:d4b5dd618753d92e42cb49456f77b05681604fbebf493b12fc19a42bb4705b02",
+    "recipes/turf-geojson-measure-buffer/src/geo.ts": "sha256:e430e74a5d10805c06287d1a95ea875138462328c21148a6359d7440fbb58a8a",
     "recipes/turf-geojson-measure-buffer/test/geo.test.ts": "sha256:5b517383c3aa554dd031c6e413a1d2df1c985e4780498071d2ef6563e591de07"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39623215997"
   },
   "errors": [],
-  "log_tail": "# Subtest: polygon area in square kilometers\nok 2 - polygon area in square kilometers\n  ---\n  duration_ms: 0.397983\n  type: 'test'\n  ...\n# Subtest: booleanPointInPolygon for inside and outside points\nok 3 - booleanPointInPolygon for inside and outside points\n  ---\n  duration_ms: 0.399305\n  type: 'test'\n  ...\n# Subtest: bbox returns the min and max corners\nok 4 - bbox returns the min and max corners\n  ---\n  duration_ms: 0.834717\n  type: 'test'\n  ...\n# Subtest: centroid averages multipoint coordinates\nok 5 - centroid averages multipoint coordinates\n  ---\n  duration_ms: 0.230791\n  type: 'test'\n  ...\n# Subtest: along a lineString at a given distance\nok 6 - along a lineString at a given distance\n  ---\n  duration_ms: 0.388075\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 620.321771\n"
+  "log_tail": "# Subtest: polygon area in square kilometers\nok 2 - polygon area in square kilometers\n  ---\n  duration_ms: 0.408071\n  type: 'test'\n  ...\n# Subtest: booleanPointInPolygon for inside and outside points\nok 3 - booleanPointInPolygon for inside and outside points\n  ---\n  duration_ms: 0.310868\n  type: 'test'\n  ...\n# Subtest: bbox returns the min and max corners\nok 4 - bbox returns the min and max corners\n  ---\n  duration_ms: 0.653063\n  type: 'test'\n  ...\n# Subtest: centroid averages multipoint coordinates\nok 5 - centroid averages multipoint coordinates\n  ---\n  duration_ms: 0.174327\n  type: 'test'\n  ...\n# Subtest: along a lineString at a given distance\nok 6 - along a lineString at a given distance\n  ---\n  duration_ms: 0.270119\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 484.795063\n"
 }
