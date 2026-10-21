@@ -1,15 +1,15 @@
 {
   "id": "sqlglot-transpile-dialects",
   "status": "passed",
-  "ran_at": "2026-10-21T00:59:54.111Z",
-  "last_passed_at": "2026-10-21T00:59:54.111Z",
+  "ran_at": "2026-10-21T06:58:15.879Z",
+  "last_passed_at": "2026-10-21T06:58:15.879Z",
   "tests": {
     "passed": 9,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 283,
-    "test": 681
+    "setup": 204,
+    "test": 1300
   },
   "pinned": {
     "sqlglot": "30.23.0",
@@ -27,8 +27,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39523772506"
+    "runner": "github-actions 39557797398"
   },
   "errors": [],
-  "log_tail": ".........                                                                [100%]\n9 passed in 0.25s\n"
+  "log_tail": ".........                                                                [100%]\n9 passed in 0.42s\n"
 }

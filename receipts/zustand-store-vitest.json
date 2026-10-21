@@ -1,15 +1,15 @@
 {
   "id": "zustand-store-vitest",
   "status": "passed",
-  "ran_at": "2026-10-21T01:01:06.344Z",
-  "last_passed_at": "2026-10-21T01:01:06.344Z",
+  "ran_at": "2026-10-21T06:59:19.925Z",
+  "last_passed_at": "2026-10-21T06:59:19.925Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4344,
-    "test": 646
+    "setup": 3917,
+    "test": 415
   },
   "pinned": {
     "zustand": "5.0.15",
@@ -24,11 +24,11 @@
     "recipes/zustand-store-vitest/test/cart.test.ts": "sha256:d8bfacd6c1ea7c4295d6165ccede57aad33a6988c386500682feb6ff4de998e3"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39523772506"
+    "runner": "github-actions 39557797398"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-zustand-store-vitest-K5mao0\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 01:01:11\n\u001b[2m   Duration \u001b[22m 158ms\u001b[2m (transform 57%, import 22%, tests 13%, worker 7%)\u001b[22m\n\nJSON report written to /tmp/pp-zustand-store-vitest-K5mao0/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-zustand-store-vitest-glGdX3\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:59:24\n\u001b[2m   Duration \u001b[22m 105ms\u001b[2m (transform 58%, import 23%, tests 12%, worker 7%)\u001b[22m\n\nJSON report written to /tmp/pp-zustand-store-vitest-glGdX3/test-report.json\n"
 }

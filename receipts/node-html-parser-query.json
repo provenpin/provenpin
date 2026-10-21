@@ -1,15 +1,15 @@
 {
   "id": "node-html-parser-query",
   "status": "passed",
-  "ran_at": "2026-10-21T00:57:35.362Z",
-  "last_passed_at": "2026-10-21T00:57:35.362Z",
+  "ran_at": "2026-10-21T06:55:44.983Z",
+  "last_passed_at": "2026-10-21T06:55:44.983Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2144,
-    "test": 360
+    "setup": 1735,
+    "test": 568
   },
   "pinned": {
     "node-html-parser": "9.0.4",
@@ -25,11 +25,11 @@
     "recipes/node-html-parser-query/test/query.test.ts": "sha256:63b7a341482e9aa5ee06eb8bdb76a2093b8f38623a5687971b3a77a3351e3cc2"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39523772506"
+    "runner": "github-actions 39557797398"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: querySelectorAll extracts product data with attributes and text\nok 1 - querySelectorAll extracts product data with attributes and text\n  ---\n  duration_ms: 3.688097\n  type: 'test'\n  ...\n# Subtest: set_content and setAttribute modify nodes\nok 2 - set_content and setAttribute modify nodes\n  ---\n  duration_ms: 0.98315\n  type: 'test'\n  ...\n# Subtest: remove drops discontinued nodes and serializes back\nok 3 - remove drops discontinued nodes and serializes back\n  ---\n  duration_ms: 0.687711\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 213.403713\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: querySelectorAll extracts product data with attributes and text\nok 1 - querySelectorAll extracts product data with attributes and text\n  ---\n  duration_ms: 4.270962\n  type: 'test'\n  ...\n# Subtest: set_content and setAttribute modify nodes\nok 2 - set_content and setAttribute modify nodes\n  ---\n  duration_ms: 1.218499\n  type: 'test'\n  ...\n# Subtest: remove drops discontinued nodes and serializes back\nok 3 - remove drops discontinued nodes and serializes back\n  ---\n  duration_ms: 0.83482\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 449.450408\n"
 }

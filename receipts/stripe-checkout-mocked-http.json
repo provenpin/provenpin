@@ -1,15 +1,15 @@
 {
   "id": "stripe-checkout-mocked-http",
   "status": "passed",
-  "ran_at": "2026-10-21T01:00:11.820Z",
-  "last_passed_at": "2026-10-21T01:00:11.820Z",
+  "ran_at": "2026-10-21T06:58:34.538Z",
+  "last_passed_at": "2026-10-21T06:58:34.538Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2484,
-    "test": 523
+    "setup": 2262,
+    "test": 571
   },
   "pinned": {
     "stripe": "23.0.0",
@@ -24,11 +24,11 @@
     "recipes/stripe-checkout-mocked-http/test/checkout.test.ts": "sha256:566d8ca2c043b8c14ae8d518ed923ce955ce306015f1f4b6311d29378a68cc20"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39523772506"
+    "runner": "github-actions 39557797398"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sends line items, metadata and idempotency key\nok 1 - sends line items, metadata and idempotency key\n  ---\n  duration_ms: 15.612802\n  type: 'test'\n  ...\n# Subtest: Stripe errors become typed exceptions\nok 2 - Stripe errors become typed exceptions\n  ---\n  duration_ms: 4.798848\n  type: 'test'\n  ...\n# Subtest: rejects an empty cart before calling Stripe\nok 3 - rejects an empty cart before calling Stripe\n  ---\n  duration_ms: 0.429174\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 364.321067\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sends line items, metadata and idempotency key\nok 1 - sends line items, metadata and idempotency key\n  ---\n  duration_ms: 16.842188\n  type: 'test'\n  ...\n# Subtest: Stripe errors become typed exceptions\nok 2 - Stripe errors become typed exceptions\n  ---\n  duration_ms: 5.891077\n  type: 'test'\n  ...\n# Subtest: rejects an empty cart before calling Stripe\nok 3 - rejects an empty cart before calling Stripe\n  ---\n  duration_ms: 0.765671\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 404.44605\n"
 }

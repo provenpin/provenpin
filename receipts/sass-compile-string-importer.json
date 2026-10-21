@@ -1,15 +1,15 @@
 {
   "id": "sass-compile-string-importer",
   "status": "passed",
-  "ran_at": "2026-10-21T00:59:18.210Z",
-  "last_passed_at": "2026-10-21T00:59:18.210Z",
+  "ran_at": "2026-10-21T06:57:36.447Z",
+  "last_passed_at": "2026-10-21T06:57:36.447Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2254,
-    "test": 552
+    "setup": 1937,
+    "test": 559
   },
   "pinned": {
     "sass": "1.105.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39523772506"
+    "runner": "github-actions 39557797398"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: compiles variables and mixins from an in-memory @use module\nok 1 - compiles variables and mixins from an in-memory @use module\n  ---\n  duration_ms: 21.500529\n  type: 'test'\n  ...\n# Subtest: throws on an undefined variable\nok 2 - throws on an undefined variable\n  ---\n  duration_ms: 14.68143\n  type: 'test'\n  ...\n# Subtest: canonicalize resolves known modules and rejects unknown ones\nok 3 - canonicalize resolves known modules and rejects unknown ones\n  ---\n  duration_ms: 0.137644\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 434.927096\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: compiles variables and mixins from an in-memory @use module\nok 1 - compiles variables and mixins from an in-memory @use module\n  ---\n  duration_ms: 22.071502\n  type: 'test'\n  ...\n# Subtest: throws on an undefined variable\nok 2 - throws on an undefined variable\n  ---\n  duration_ms: 14.137987\n  type: 'test'\n  ...\n# Subtest: canonicalize resolves known modules and rejects unknown ones\nok 3 - canonicalize resolves known modules and rejects unknown ones\n  ---\n  duration_ms: 0.107785\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 443.990604\n"
 }

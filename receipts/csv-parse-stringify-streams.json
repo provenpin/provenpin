@@ -1,15 +1,15 @@
 {
   "id": "csv-parse-stringify-streams",
   "status": "passed",
-  "ran_at": "2026-10-21T00:52:44.172Z",
-  "last_passed_at": "2026-10-21T00:52:44.172Z",
+  "ran_at": "2026-10-21T06:50:49.408Z",
+  "last_passed_at": "2026-10-21T06:50:49.408Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2236,
-    "test": 697
+    "setup": 1504,
+    "test": 886
   },
   "pinned": {
     "csv-parse": "7.0.3",
@@ -25,11 +25,11 @@
     "recipes/csv-parse-stringify-streams/test/transform.test.ts": "sha256:bc8ab711d22d8df45c7c3593a41f7b9eba505b0ccc6923df5ba0087151126571"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39523772506"
+    "runner": "github-actions 39557797398"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: adds totals and drops bad rows\nok 1 - adds totals and drops bad rows\n  ---\n  duration_ms: 8.021264\n  type: 'test'\n  ...\n# Subtest: handles a large generated file as a stream\nok 2 - handles a large generated file as a stream\n  ---\n  duration_ms: 360.388154\n  type: 'test'\n  ...\n# Subtest: malformed CSV rejects the pipeline\nok 3 - malformed CSV rejects the pipeline\n  ---\n  duration_ms: 8.037844\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 577.289549\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: adds totals and drops bad rows\nok 1 - adds totals and drops bad rows\n  ---\n  duration_ms: 12.067113\n  type: 'test'\n  ...\n# Subtest: handles a large generated file as a stream\nok 2 - handles a large generated file as a stream\n  ---\n  duration_ms: 505.375292\n  type: 'test'\n  ...\n# Subtest: malformed CSV rejects the pipeline\nok 3 - malformed CSV rejects the pipeline\n  ---\n  duration_ms: 4.006708\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 733.106947\n"
 }
