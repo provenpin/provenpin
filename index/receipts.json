@@ -1,8 +1,8 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-22T18:57:25.642Z",
+ "generated_at": "2026-10-22T19:01:16.494Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
- "count": 555,
+ "count": 556,
  "recipes": [
   {
    "id": "adm-zip-roundtrip",
@@ -14934,6 +14934,32 @@
      "@tanstack/table-core": "9.3.1"
     },
     "run_url": "https://github.com/provenpin/provenpin/actions/runs/39702501641"
+   }
+  },
+  {
+   "id": "tanstack-table-core-v9-sorting",
+   "language": "typescript",
+   "pinned": {
+    "@tanstack/table-core": "9.3.1",
+    "@types/node": "26.6.5",
+    "tsx": "4.23.15"
+   },
+   "runtime": "node v22.23.3",
+   "status": "passed",
+   "last_passed_at": "2026-10-22T18:59:53.668Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39836081994",
+   "recipe_hash": "sha256:077c7a8f94e29cf01c72b8acf2c001b8abaf14898118e7131310f3297fe9b6aa",
+   "files": {
+    "recipes/tanstack-table-core-v9-sorting/package.json": "sha256:4d63f1bcbbcd4d07344cf2437f402d0c01a51cb6d147fc47b7985a2a29f5f279",
+    "recipes/tanstack-table-core-v9-sorting/recipe.yaml": "sha256:23ed90314c733e5e69aece8d50174d5f739f219a7f31456c4d9111d6945efe01",
+    "recipes/tanstack-table-core-v9-sorting/src/people.ts": "sha256:157b733614a31f261d2ddfe2e3f7e06322558b0a8011925a98f8bb050ee80f1f",
+    "recipes/tanstack-table-core-v9-sorting/test/people.test.ts": "sha256:f5aadf1cee763936a5804832ad80de6ecfb0f601d6b00e3b48529070b87a2ad0"
+   },
+   "staleness": {
+    "status": "unchecked",
+    "checked_at": null,
+    "latest": {},
+    "run_url": null
    }
   },
   {
