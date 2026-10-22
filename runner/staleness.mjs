@@ -7,7 +7,7 @@ import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { ROOT, listRecipeIds, loadRecipe, validateRecipe, parseCounts, rewriteSetup } from "./lib.mjs";
-import { latest } from "./affected.mjs";
+import { latestInfo, isStable, cmp } from "./affected.mjs";
 
 const TIMEOUT_MS = +(process.env.PROVENPIN_TIMEOUT_MS ?? 15 * 60 * 1000);
 const OUT = path.join(ROOT, "staleness");
@@ -34,6 +34,21 @@ export function breakReason(out, bumped = []) {
   return null;
 }
 
+// Package families released in lock-step: their packages must share one version or they break each other
+// (e.g. @nestjs/core 12.2.0 imports from @nestjs/common/internal, which 12.1.3 lacks).
+const LOCKSTEP = ["@nestjs/"];
+
+/** Adds the lock-step siblings of bumped packages: same family and same pinned version get the same new version. */
+export function lockstepBumps(pinned, bumps) {
+  const out = { ...bumps };
+  for (const [k, v] of Object.entries(bumps)) {
+    const fam = LOCKSTEP.find((p) => k.startsWith(p));
+    if (!fam) continue;
+    for (const [s, sv] of Object.entries(pinned)) if (s !== k && s.startsWith(fam) && sv === pinned[k] && !(s in out)) out[s] = v;
+  }
+  return out;
+}
+
 /** Rewrites dependency manifests in the temp copy so the given packages use new versions. */
 export function bumpManifest(dir, runtime, bumps) {
   if (runtime === "node") {
@@ -49,18 +64,22 @@ export function bumpManifest(dir, runtime, bumps) {
   }
 }
 
-export async function checkRecipe(id, fetchLatest = latest) {
-  const r = loadRecipe(id);
+export async function checkRecipe(id, fetchInfo = latestInfo, r = loadRecipe(id)) {
   const checkedAt = new Date().toISOString();
   const base = { id, checked_at: checkedAt, run_url: process.env.GITHUB_RUN_ID ? `${process.env.GITHUB_SERVER_URL ?? "https://github.com"}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}` : null };
   if (validateRecipe(r).length) return { ...base, status: "error", latest: {}, note: "recipe manifest invalid" };
-  const bumps = {}, latestVers = {};
+  let bumps = {};
+  const latestVers = {};
   for (const k of stackPins(r)) {
-    const l = await fetchLatest(r.runtime, k).catch(() => null);
+    const { version: l, deprecated } = (await fetchInfo(r.runtime, k).catch(() => null)) ?? {};
+    if (!l && deprecated) return { ...base, status: "deprecated_upstream", latest: {}, deprecated: { [k]: deprecated },
+      note: `every stable release of ${k} is deprecated upstream: ${deprecated}` };
     if (!l) return { ...base, status: "error", latest: {}, note: `could not look up latest ${k}` };
     latestVers[k] = l;
-    if (l !== r.pinned[k]) bumps[k] = l;
+    // never bump down: a pin above the dist-tag (e.g. a dev-tagged release) counts as current
+    if (l !== r.pinned[k] && !(isStable(r.pinned[k]) && cmp(l, r.pinned[k]) < 0)) bumps[k] = l;
   }
+  bumps = lockstepBumps(r.pinned, bumps);
   if (Object.keys(bumps).length === 0) return { ...base, status: "current", latest: latestVers, tests: null, note: "stack pins already latest" };
   const work = fs.mkdtempSync(path.join(os.tmpdir(), `pp-stale-${id}-`));
   try {
