@@ -1,15 +1,15 @@
 {
   "id": "jose-jwks-verify",
   "status": "passed",
-  "ran_at": "2026-10-22T12:54:54.803Z",
-  "last_passed_at": "2026-10-22T12:54:54.803Z",
+  "ran_at": "2026-10-22T18:51:02.406Z",
+  "last_passed_at": "2026-10-22T18:51:02.406Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4266,
-    "test": 914
+    "setup": 4616,
+    "test": 787
   },
   "pinned": {
     "jose": "6.2.12",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39834162194"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-jose-jwks-verify-JiSAFC\u001b[39m\n\n \u001b[32m✓\u001b[39m test/verify.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 203\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:54:59\n\u001b[2m   Duration \u001b[22m 386ms\u001b[2m (tests 71%, transform 16%, import 11%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-jose-jwks-verify-JiSAFC/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-jose-jwks-verify-RAHvLl\u001b[39m\n\n \u001b[32m✓\u001b[39m test/verify.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 110\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:51:07\n\u001b[2m   Duration \u001b[22m 320ms\u001b[2m (tests 57%, transform 20%, import 19%, worker 4%)\u001b[22m\n\nJSON report written to /tmp/pp-jose-jwks-verify-RAHvLl/test-report.json\n"
 }

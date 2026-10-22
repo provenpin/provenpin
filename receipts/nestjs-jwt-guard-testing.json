@@ -1,15 +1,15 @@
 {
   "id": "nestjs-jwt-guard-testing",
   "status": "passed",
-  "ran_at": "2026-10-22T12:56:03.873Z",
-  "last_passed_at": "2026-10-22T12:56:03.873Z",
+  "ran_at": "2026-10-22T18:52:09.805Z",
+  "last_passed_at": "2026-10-22T18:52:09.805Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5158,
-    "test": 1187
+    "setup": 5793,
+    "test": 1077
   },
   "pinned": {
     "@nestjs/common": "12.1.3",
@@ -39,8 +39,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39834162194"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: protected route returns 401 without a token\nok 1 - protected route returns 401 without a token\n  ---\n  duration_ms: 129.231144\n  type: 'test'\n  ...\n# Subtest: login issues a JWT and the guard accepts it\nok 2 - login issues a JWT and the guard accepts it\n  ---\n  duration_ms: 47.774792\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1060.329998\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: protected route returns 401 without a token\nok 1 - protected route returns 401 without a token\n  ---\n  duration_ms: 142.186034\n  type: 'test'\n  ...\n# Subtest: login issues a JWT and the guard accepts it\nok 2 - login issues a JWT and the guard accepts it\n  ---\n  duration_ms: 36.138959\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 931.088167\n"
 }

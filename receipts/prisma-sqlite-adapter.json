@@ -1,15 +1,15 @@
 {
   "id": "prisma-sqlite-adapter",
   "status": "passed",
-  "ran_at": "2026-10-22T12:57:30.692Z",
-  "last_passed_at": "2026-10-22T12:57:30.692Z",
+  "ran_at": "2026-10-22T18:53:46.711Z",
+  "last_passed_at": "2026-10-22T18:53:46.711Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 17040,
-    "test": 616
+    "setup": 19133,
+    "test": 610
   },
   "pinned": {
     "@prisma/client": "7.10.0",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39834162194"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: create user with posts and query relation\nok 1 - create user with posts and query relation\n  ---\n  duration_ms: 131.2707\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 469.94707\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: create user with posts and query relation\nok 1 - create user with posts and query relation\n  ---\n  duration_ms: 134.503262\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 461.045331\n"
 }

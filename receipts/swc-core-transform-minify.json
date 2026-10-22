@@ -1,15 +1,15 @@
 {
   "id": "swc-core-transform-minify",
   "status": "passed",
-  "ran_at": "2026-10-22T12:59:58.898Z",
-  "last_passed_at": "2026-10-22T12:59:58.898Z",
+  "ran_at": "2026-10-22T18:56:10.929Z",
+  "last_passed_at": "2026-10-22T18:56:10.929Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3187,
-    "test": 400
+    "setup": 2810,
+    "test": 341
   },
   "pinned": {
     "@swc/core": "1.16.18",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39834162194"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: strips TypeScript types from TSX input\nok 1 - strips TypeScript types from TSX input\n  ---\n  duration_ms: 2.887483\n  type: 'test'\n  ...\n# Subtest: lowers JSX and leaves no TSX syntax\nok 2 - lowers JSX and leaves no TSX syntax\n  ---\n  duration_ms: 0.357177\n  type: 'test'\n  ...\n# Subtest: parseSync returns a module AST\nok 3 - parseSync returns a module AST\n  ---\n  duration_ms: 0.680261\n  type: 'test'\n  ...\n# Subtest: minifySync output is shorter and still evaluates\nok 4 - minifySync output is shorter and still evaluates\n  ---\n  duration_ms: 1.142023\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 240.808402\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: strips TypeScript types from TSX input\nok 1 - strips TypeScript types from TSX input\n  ---\n  duration_ms: 1.912496\n  type: 'test'\n  ...\n# Subtest: lowers JSX and leaves no TSX syntax\nok 2 - lowers JSX and leaves no TSX syntax\n  ---\n  duration_ms: 0.212809\n  type: 'test'\n  ...\n# Subtest: parseSync returns a module AST\nok 3 - parseSync returns a module AST\n  ---\n  duration_ms: 0.362503\n  type: 'test'\n  ...\n# Subtest: minifySync output is shorter and still evaluates\nok 4 - minifySync output is shorter and still evaluates\n  ---\n  duration_ms: 0.798076\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 220.105762\n"
 }

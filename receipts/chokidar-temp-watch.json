@@ -1,15 +1,15 @@
 {
   "id": "chokidar-temp-watch",
   "status": "passed",
-  "ran_at": "2026-10-22T12:50:56.441Z",
-  "last_passed_at": "2026-10-22T12:50:56.441Z",
+  "ran_at": "2026-10-22T18:47:07.788Z",
+  "last_passed_at": "2026-10-22T18:47:07.788Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1536,
-    "test": 531
+    "setup": 1672,
+    "test": 408
   },
   "pinned": {
     "chokidar": "5.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39834162194"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: emits add when a file appears\nok 1 - emits add when a file appears\n  ---\n  duration_ms: 205.004061\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 385.578705\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: emits add when a file appears\nok 1 - emits add when a file appears\n  ---\n  duration_ms: 203.176612\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 316.668151\n"
 }

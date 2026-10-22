@@ -1,15 +1,15 @@
 {
   "id": "hapi-server-inject-joi",
   "status": "passed",
-  "ran_at": "2026-10-22T12:54:00.337Z",
-  "last_passed_at": "2026-10-22T12:54:00.337Z",
+  "ran_at": "2026-10-22T18:50:10.523Z",
+  "last_passed_at": "2026-10-22T18:50:10.523Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2201,
-    "test": 535
+    "setup": 2935,
+    "test": 612
   },
   "pinned": {
     "@hapi/hapi": "21.4.10",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39834162194"
   },
   "errors": [],
-  "log_tail": "# Subtest: GET /users/{id} rejects an invalid id with 400\nok 2 - GET /users/{id} rejects an invalid id with 400\n  ---\n  duration_ms: 2.575983\n  type: 'test'\n  ...\n# Subtest: GET /users/{id} returns a Boom 404 for a missing user\nok 3 - GET /users/{id} returns a Boom 404 for a missing user\n  ---\n  duration_ms: 1.27328\n  type: 'test'\n  ...\n# Subtest: POST /users accepts a valid payload with 201\nok 4 - POST /users accepts a valid payload with 201\n  ---\n  duration_ms: 11.693588\n  type: 'test'\n  ...\n# Subtest: POST /users rejects an invalid payload with 400\nok 5 - POST /users rejects an invalid payload with 400\n  ---\n  duration_ms: 6.521817\n  type: 'test'\n  ...\n# Subtest: GET /search validates and coerces the query string\nok 6 - GET /search validates and coerces the query string\n  ---\n  duration_ms: 3.198147\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 410.947817\n"
+  "log_tail": "# Subtest: GET /users/{id} rejects an invalid id with 400\nok 2 - GET /users/{id} rejects an invalid id with 400\n  ---\n  duration_ms: 3.430987\n  type: 'test'\n  ...\n# Subtest: GET /users/{id} returns a Boom 404 for a missing user\nok 3 - GET /users/{id} returns a Boom 404 for a missing user\n  ---\n  duration_ms: 1.673014\n  type: 'test'\n  ...\n# Subtest: POST /users accepts a valid payload with 201\nok 4 - POST /users accepts a valid payload with 201\n  ---\n  duration_ms: 19.034553\n  type: 'test'\n  ...\n# Subtest: POST /users rejects an invalid payload with 400\nok 5 - POST /users rejects an invalid payload with 400\n  ---\n  duration_ms: 4.206605\n  type: 'test'\n  ...\n# Subtest: GET /search validates and coerces the query string\nok 6 - GET /search validates and coerces the query string\n  ---\n  duration_ms: 4.940976\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 455.64925\n"
 }
