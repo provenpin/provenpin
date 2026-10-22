@@ -71,3 +71,7 @@ test("checkRecipe is current when every stack pin is already latest", async () =
   const res = await checkRecipe("nestjs-typeorm-sqlite", async (_rt, k) => ({ version: { "@nestjs/core": "12.1.3", "@nestjs/typeorm": "12.0.2", typeorm: "1.1.2", "better-sqlite3": "13.0.3" }[k], deprecated: null }));
   assert.equal(res.status, "current");
 });
+test("checkRecipe never bumps a pin down to a lower dist-tag latest", async () => {
+  const res = await checkRecipe("nestjs-typeorm-sqlite", async (_rt, k) => ({ version: { "@nestjs/core": "12.1.2", "@nestjs/typeorm": "12.0.2", typeorm: "1.1.2", "better-sqlite3": "13.0.3" }[k], deprecated: null }));
+  assert.equal(res.status, "current");
+});

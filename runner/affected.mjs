@@ -10,7 +10,7 @@ const cache = new Map();
 /** True for a plain stable version (npm semver or PEP 440); false for rc/beta/alpha/canary/next/dev/nightly etc. */
 export function isStable(v) { return /^\d+(\.\d+)*$/.test(String(v)); }
 
-const cmp = (a, b) => { const x = a.split(".").map(Number), y = b.split(".").map(Number);
+export const cmp = (a, b) => { const x = a.split(".").map(Number), y = b.split(".").map(Number);
   for (let i = 0; i < Math.max(x.length, y.length); i++) if ((x[i] ?? 0) !== (y[i] ?? 0)) return (x[i] ?? 0) - (y[i] ?? 0); return 0; };
 
 /** Highest stable version from a list, ignoring every pre-release. */

@@ -7,7 +7,7 @@ import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { ROOT, listRecipeIds, loadRecipe, validateRecipe, parseCounts, rewriteSetup } from "./lib.mjs";
-import { latestInfo } from "./affected.mjs";
+import { latestInfo, isStable, cmp } from "./affected.mjs";
 
 const TIMEOUT_MS = +(process.env.PROVENPIN_TIMEOUT_MS ?? 15 * 60 * 1000);
 const OUT = path.join(ROOT, "staleness");
@@ -76,7 +76,8 @@ export async function checkRecipe(id, fetchInfo = latestInfo, r = loadRecipe(id)
       note: `every stable release of ${k} is deprecated upstream: ${deprecated}` };
     if (!l) return { ...base, status: "error", latest: {}, note: `could not look up latest ${k}` };
     latestVers[k] = l;
-    if (l !== r.pinned[k]) bumps[k] = l;
+    // never bump down: a pin above the dist-tag (e.g. a dev-tagged release) counts as current
+    if (l !== r.pinned[k] && !(isStable(r.pinned[k]) && cmp(l, r.pinned[k]) < 0)) bumps[k] = l;
   }
   bumps = lockstepBumps(r.pinned, bumps);
   if (Object.keys(bumps).length === 0) return { ...base, status: "current", latest: latestVers, tests: null, note: "stack pins already latest" };
