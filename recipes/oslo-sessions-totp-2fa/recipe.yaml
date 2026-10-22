@@ -1,6 +1,6 @@
 id: oslo-sessions-totp-2fa
 title: "Hashed session tokens and TOTP 2FA with the Oslo libraries"
-summary: "Lucia-guide style sessions with random tokens stored only as sha256 hashes, sliding expiry and per-user revocation, plus TOTP enrolment URIs, grace-window verification and single-use recovery codes using @oslojs/crypto, @oslojs/encoding and @oslojs/otp, tested with node:test mock timers."
+summary: "Lucia-guide style sessions with random tokens stored only as sha256 hashes, sliding expiry and per-user revocation, plus TOTP enrolment URIs, grace-window verification and single-use recovery codes using @oslojs/crypto, @oslojs/encoding and @oslojs/otp, tested with node:test mock timers. npm marks every @oslojs/crypto and @oslojs/otp version as no longer supported, with no reason given; @oslojs/encoding is not affected."
 language: typescript
 runtime: node
 runtime_version: "22"

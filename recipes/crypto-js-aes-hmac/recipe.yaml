@@ -1,6 +1,6 @@
 id: crypto-js-aes-hmac
 title: "crypto-js AES and HMAC"
-summary: "Encrypt and decrypt with AES using a passphrase and an explicit key/iv (CBC, Pkcs7), sign with HmacSHA256 in hex and base64, and derive hashes and keys with SHA256 and PBKDF2 offline."
+summary: "Encrypt and decrypt with AES using a passphrase and an explicit key/iv (CBC, Pkcs7), sign with HmacSHA256 in hex and base64, and derive hashes and keys with SHA256 and PBKDF2 offline. crypto-js is discontinued upstream (npm marks every version deprecated), so this suits maintaining existing code; new code should use node:crypto or Web Crypto."
 language: typescript
 runtime: node
 runtime_version: "22"
