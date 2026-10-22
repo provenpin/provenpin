@@ -1,15 +1,15 @@
 {
   "id": "sass-compile-string-importer",
   "status": "passed",
-  "ran_at": "2026-10-22T07:01:36.936Z",
-  "last_passed_at": "2026-10-22T07:01:36.936Z",
+  "ran_at": "2026-10-22T12:58:55.774Z",
+  "last_passed_at": "2026-10-22T12:58:55.774Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2156,
-    "test": 756
+    "setup": 2394,
+    "test": 844
   },
   "pinned": {
     "sass": "1.105.1",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 39736393633"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 39781513312"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: compiles variables and mixins from an in-memory @use module\nok 1 - compiles variables and mixins from an in-memory @use module\n  ---\n  duration_ms: 32.082461\n  type: 'test'\n  ...\n# Subtest: throws on an undefined variable\nok 2 - throws on an undefined variable\n  ---\n  duration_ms: 18.327284\n  type: 'test'\n  ...\n# Subtest: canonicalize resolves known modules and rejects unknown ones\nok 3 - canonicalize resolves known modules and rejects unknown ones\n  ---\n  duration_ms: 0.15014\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 602.773493\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: compiles variables and mixins from an in-memory @use module\nok 1 - compiles variables and mixins from an in-memory @use module\n  ---\n  duration_ms: 32.726988\n  type: 'test'\n  ...\n# Subtest: throws on an undefined variable\nok 2 - throws on an undefined variable\n  ---\n  duration_ms: 17.619992\n  type: 'test'\n  ...\n# Subtest: canonicalize resolves known modules and rejects unknown ones\nok 3 - canonicalize resolves known modules and rejects unknown ones\n  ---\n  duration_ms: 0.193692\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 652.223012\n"
 }

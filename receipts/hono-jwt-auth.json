@@ -1,15 +1,15 @@
 {
   "id": "hono-jwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-22T06:57:20.251Z",
-  "last_passed_at": "2026-10-22T06:57:20.251Z",
+  "ran_at": "2026-10-22T12:54:01.725Z",
+  "last_passed_at": "2026-10-22T12:54:01.725Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2602,
-    "test": 557
+    "setup": 2171,
+    "test": 423
   },
   "pinned": {
     "hono": "4.13.13",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39736393633"
+    "runner": "github-actions 39781513312"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 41.541607\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 1.357166\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 2.082448\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 2.106453\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 401.667602\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 37.585127\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 0.952749\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 1.232035\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 1.28184\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 295.63785\n"
 }

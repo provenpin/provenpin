@@ -1,15 +1,15 @@
 {
   "id": "rate-limiter-flexible-memory",
   "status": "passed",
-  "ran_at": "2026-10-22T07:01:13.088Z",
-  "last_passed_at": "2026-10-22T07:01:13.088Z",
+  "ran_at": "2026-10-22T12:58:19.567Z",
+  "last_passed_at": "2026-10-22T12:58:19.567Z",
   "tests": {
     "passed": 8,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1463,
-    "test": 473
+    "setup": 1752,
+    "test": 550
   },
   "pinned": {
     "rate-limiter-flexible": "11.2.2",
@@ -28,9 +28,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 39736393633"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 39781513312"
   },
   "errors": [],
-  "log_tail": "# Subtest: blockDuration extends msBeforeNext once exhausted\nok 4 - blockDuration extends msBeforeNext once exhausted\n  ---\n  duration_ms: 0.616331\n  type: 'test'\n  ...\n# Subtest: penalty consumes more points than a normal consume allows\nok 5 - penalty consumes more points than a normal consume allows\n  ---\n  duration_ms: 0.480578\n  type: 'test'\n  ...\n# Subtest: reward restores consumed points\nok 6 - reward restores consumed points\n  ---\n  duration_ms: 0.459368\n  type: 'test'\n  ...\n# Subtest: middleware calls next while under the limit\nok 7 - middleware calls next while under the limit\n  ---\n  duration_ms: 2.278115\n  type: 'test'\n  ...\n# Subtest: middleware responds with 429 when the key is exhausted\nok 8 - middleware responds with 429 when the key is exhausted\n  ---\n  duration_ms: 0.648601\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 324.193287\n"
+  "log_tail": "# Subtest: blockDuration extends msBeforeNext once exhausted\nok 4 - blockDuration extends msBeforeNext once exhausted\n  ---\n  duration_ms: 0.518817\n  type: 'test'\n  ...\n# Subtest: penalty consumes more points than a normal consume allows\nok 5 - penalty consumes more points than a normal consume allows\n  ---\n  duration_ms: 0.45095\n  type: 'test'\n  ...\n# Subtest: reward restores consumed points\nok 6 - reward restores consumed points\n  ---\n  duration_ms: 0.39196\n  type: 'test'\n  ...\n# Subtest: middleware calls next while under the limit\nok 7 - middleware calls next while under the limit\n  ---\n  duration_ms: 1.69141\n  type: 'test'\n  ...\n# Subtest: middleware responds with 429 when the key is exhausted\nok 8 - middleware responds with 429 when the key is exhausted\n  ---\n  duration_ms: 0.435061\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 374.952476\n"
 }
