@@ -36,3 +36,38 @@ test("reason prefers the peer line naming the bumped package", () => {
   const out = 'npm error code ERESOLVE\nnpm error peer typeorm@"^0.3.0 || ^1.0.0-dev" from @nestjs/typeorm@12.0.2\nnpm error peerOptional better-sqlite3@"^12.0.0" from typeorm@1.1.2';
   assert.equal(breakReason(out, ["better-sqlite3"]), "no stable release supports it yet: typeorm@1.1.2 requires better-sqlite3 ^12.0.0");
 });
+import { pickLatest } from "../affected.mjs";
+import { lockstepBumps, checkRecipe } from "../staleness.mjs";
+test("latest follows the npm dist-tag when it is stable and not deprecated", () => {
+  const v = { "1.33.5": {}, "4.0.2": {}, "2.0.0-alpha.2": {} };
+  assert.deepEqual(pickLatest(v, "1.33.5"), { version: "1.33.5", deprecated: null });
+  assert.equal(pickLatest({ "4.4.6": {}, "4.4.7": {} }, "4.4.6").version, "4.4.6");
+  assert.equal(pickLatest({ "7.9.0": {}, "8.0.0-rc.24": {} }, "8.0.0-rc.24").version, "7.9.0");
+  assert.equal(pickLatest({ "2.0.0": {}, "2.1.0": { deprecated: "bad build" } }, "2.1.0").version, "2.0.0");
+  assert.equal(pickLatest({ "2.0.0": {}, "2.1.0": {} }, undefined).version, "2.1.0");
+});
+test("all stable versions deprecated gives no version and npm's message", () => {
+  const v = { "4.1.1": { deprecated: "old" }, "4.2.0": { deprecated: "Active development of CryptoJS has been discontinued" } };
+  assert.deepEqual(pickLatest(v, "4.2.0"), { version: null, deprecated: "Active development of CryptoJS has been discontinued" });
+  assert.deepEqual(pickLatest({}, undefined), { version: null, deprecated: null });
+});
+test("lock-step families bump together, others stay", () => {
+  const pinned = { "@nestjs/core": "12.1.3", "@nestjs/common": "12.1.3", "@nestjs/testing": "12.1.3", "@nestjs/typeorm": "12.0.2", rxjs: "7.8.2", "@tanstack/a": "1.0.0", "@tanstack/b": "1.0.0" };
+  assert.deepEqual(lockstepBumps(pinned, { "@nestjs/core": "12.2.0", "@tanstack/a": "1.1.0" }),
+    { "@nestjs/core": "12.2.0", "@nestjs/common": "12.2.0", "@nestjs/testing": "12.2.0", "@tanstack/a": "1.1.0" });
+  assert.deepEqual(lockstepBumps(pinned, { "@nestjs/typeorm": "12.1.0", "@nestjs/core": "12.2.0" })["@nestjs/typeorm"], "12.1.0");
+  assert.deepEqual(lockstepBumps(pinned, {}), {});
+});
+test("checkRecipe reports deprecated_upstream without installing", async () => {
+  const info = async () => ({ version: null, deprecated: "Active development of CryptoJS has been discontinued" });
+  const res = await checkRecipe("crypto-js-aes-hmac", info);
+  assert.equal(res.status, "deprecated_upstream");
+  assert.deepEqual(res.deprecated, { "crypto-js": "Active development of CryptoJS has been discontinued" });
+  assert.match(res.note, /crypto-js is deprecated upstream: Active development/);
+  const miss = await checkRecipe("crypto-js-aes-hmac", async () => ({ version: null, deprecated: null }));
+  assert.equal(miss.status, "error");
+});
+test("checkRecipe is current when every stack pin is already latest", async () => {
+  const res = await checkRecipe("nestjs-typeorm-sqlite", async (_rt, k) => ({ version: { "@nestjs/core": "12.1.3", "@nestjs/typeorm": "12.0.2", typeorm: "1.1.2", "better-sqlite3": "13.0.3" }[k], deprecated: null }));
+  assert.equal(res.status, "current");
+});

@@ -16,18 +16,35 @@ const cmp = (a, b) => { const x = a.split(".").map(Number), y = b.split(".").map
 /** Highest stable version from a list, ignoring every pre-release. */
 export function highestStable(versions) { return versions.filter(isStable).sort(cmp).at(-1) ?? null; }
 
-export async function latest(runtime, pkg) {
+/**
+ * Picks the version to test against from npm's `versions` map ({ version: { deprecated? } }).
+ * Uses dist-tag `latest` when it is a stable, non-deprecated version (npm's own default; skips stray or dev-tagged
+ * releases), else the highest stable non-deprecated one (e.g. when the tag points at an rc).
+ * If every stable version is deprecated, version is null and `deprecated` carries npm's message.
+ */
+export function pickLatest(versions, distLatest) {
+  const ok = (v) => isStable(v) && versions[v] && !versions[v].deprecated;
+  const version = ok(distLatest) ? distLatest : highestStable(Object.keys(versions).filter(ok));
+  if (version) return { version, deprecated: null };
+  const dep = (isStable(distLatest) && versions[distLatest]?.deprecated) || versions[highestStable(Object.keys(versions))]?.deprecated;
+  return { version: null, deprecated: dep ? String(dep) : null };
+}
+
+/** { version, deprecated } for a package's latest release; version null when none is usable. */
+export async function latestInfo(runtime, pkg) {
   const key = `${runtime}:${pkg}`;
   if (!cache.has(key)) cache.set(key, (async () => {
     const url = runtime === "node" ? `https://registry.npmjs.org/${pkg.replace("/", "%2F")}` : `https://pypi.org/pypi/${pkg}/json`;
     const res = await fetch(url, runtime === "node" ? { headers: { accept: "application/vnd.npm.install-v1+json" } } : undefined);
-    if (!res.ok) return null;
+    if (!res.ok) return { version: null, deprecated: null };
     const j = await res.json();
-    if (runtime === "node") return highestStable(Object.entries(j.versions ?? {}).filter(([, m]) => !m.deprecated).map(([v]) => v));
-    return highestStable(Object.entries(j.releases ?? {}).filter(([, files]) => files.length && !files.every((f) => f.yanked)).map(([v]) => v));
+    if (runtime === "node") return pickLatest(j.versions ?? {}, j["dist-tags"]?.latest);
+    return { version: highestStable(Object.entries(j.releases ?? {}).filter(([, files]) => files.length && !files.every((f) => f.yanked)).map(([v]) => v)), deprecated: null };
   })());
   return cache.get(key);
 }
+
+export async function latest(runtime, pkg) { return (await latestInfo(runtime, pkg)).version; }
 
 export async function findAffected(fetchLatest = latest) {
   const out = [];

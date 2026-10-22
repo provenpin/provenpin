@@ -114,7 +114,7 @@ Pro API keys (groundwork, off by default): the free tier needs no key. When `PRO
 | `status` | `passed`, `failed`, `setup_failed`, `invalid`, `stale` (code changed since the last run) or `untested` |
 | `last_passed_at` | When the tests last passed on the pinned versions (UTC) |
 | `run_url` | GitHub Actions run that produced the current receipt |
-| `staleness` | Weekly re-test with stack libraries bumped to latest: `status` (`current`, `passes_on_latest`, `breaks_on_latest`, `error` or `unchecked`), `checked_at`, `latest` versions tried, `run_url` |
+| `staleness` | Weekly re-test with stack libraries bumped to latest: `status` (`current`, `passes_on_latest`, `breaks_on_latest`, `deprecated_upstream` (every stable release of a stack library is deprecated on npm), `error` or `unchecked`), `checked_at`, `latest` versions tried, `run_url` |
 
 The staleness check (`.github/workflows/staleness.yml`) runs weekly in a temp copy. It never edits a recipe or its receipt, and it lists recipes that break on latest in one GitHub issue.
 
