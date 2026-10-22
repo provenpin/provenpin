@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-22T14:34:57.292Z",
+ "generated_at": "2026-10-22T15:11:20.711Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 555,
  "recipes": [
@@ -9,18 +9,17 @@
    "language": "typescript",
    "pinned": {
     "adm-zip": "0.6.1",
-    "@types/adm-zip": "0.6.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-22T12:50:05.949Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:e601d0ffad2e77c4e2994d1ecd039b8171ab6fc789d12dbdf3339b58472b0fbb",
+   "last_passed_at": "2026-10-22T15:11:00.865Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39802294192",
+   "recipe_hash": "sha256:c4669055ffe231b16555bdce209c8595a78386565ac63a4d43712f7252f8106b",
    "files": {
-    "recipes/adm-zip-roundtrip/package.json": "sha256:ed8d19e98bb23cb52a82f52599bc547bdb731680c4b27fcff3b1cd5b1c691c35",
-    "recipes/adm-zip-roundtrip/recipe.yaml": "sha256:fa76fe9b142dde4def7d738ded0f818c46eb8fcb052d0bf901fc47f183a069d7",
+    "recipes/adm-zip-roundtrip/package.json": "sha256:136c80bbfb17b4cd8bdcc7d6353844e9f45a726f51e25b3f08fe91bba103de5a",
+    "recipes/adm-zip-roundtrip/recipe.yaml": "sha256:f7c41ab2450a5e30c3555ce39273f3316887ca21bdc6235cf9d6a91de4524967",
     "recipes/adm-zip-roundtrip/src/archive.ts": "sha256:a743368d6d79ddbda6af43d55b31cda781f250d4dc0898835f55712a47c1f579",
     "recipes/adm-zip-roundtrip/test/archive.test.ts": "sha256:92ae5748737d0d0495506170088406f0cfe2ccad55fd6459e1996152df06277b"
    },
@@ -2422,12 +2421,12 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:06:13.463Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:07465c6dedcefd25f7d5fec4550f6806d8223516f9bd7d25707bb3654fa44c7b",
+   "last_passed_at": "2026-10-22T15:10:59.655Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39802294192",
+   "recipe_hash": "sha256:91e82a23efc4e6a7455632c73badc4a3d1abe099206d296ee941a30fbaef8501",
    "files": {
     "recipes/crypto-js-aes-hmac/package.json": "sha256:1ad7f3bc576684b7e2ab158fd950ff33fcb90e21b19c151eca11338ec5460fc5",
-    "recipes/crypto-js-aes-hmac/recipe.yaml": "sha256:95f1c5fd526eb0e91e0593eb8987c2dff244f39db295215aae32ce1e15be9ff7",
+    "recipes/crypto-js-aes-hmac/recipe.yaml": "sha256:cb53f1a9a3b8a9483d6c48c267d619f31d2933d684b2b412a89d9956dbd21b72",
     "recipes/crypto-js-aes-hmac/src/crypto.ts": "sha256:2934f9a70c165a9529bad61294a4066d56f9c59ebe8328b8d6a7e5a9cf0ba61c",
     "recipes/crypto-js-aes-hmac/test/crypto.test.ts": "sha256:a7cb928f8643e7838211c6a7adac850c300016de0aa6a22041cefac98c2f67ea"
    },
@@ -5450,18 +5449,17 @@
    "language": "typescript",
    "pinned": {
     "flexsearch": "0.8.212",
-    "@types/flexsearch": "0.7.42",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
    },
-   "runtime": "node v22.23.3",
+   "runtime": "node v22.23.4",
    "status": "passed",
-   "last_passed_at": "2026-10-22T12:53:39.416Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:89a7958d097c482e7f8e5c94505846db0b86d61523d8404347c98fb65dceea94",
+   "last_passed_at": "2026-10-22T15:11:02.105Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39802294192",
+   "recipe_hash": "sha256:80c6959a04a9910ca38da8f433c721323293e92dcacdf8b8325d0ba8e051a7c6",
    "files": {
-    "recipes/flexsearch-document-index/package.json": "sha256:232e63c566352d9ea2c69959f207db7fab6cb89cac727cafe253a0ed51d85257",
-    "recipes/flexsearch-document-index/recipe.yaml": "sha256:949b8dc3bc5fbb44a6963c24143a54420ade4d8effa581a4cd1f67ad6d7fdd8f",
+    "recipes/flexsearch-document-index/package.json": "sha256:369df9383a2ca694dfa8c9886c14ea0a22df3c29169e2a68a84cab6afbf4158b",
+    "recipes/flexsearch-document-index/recipe.yaml": "sha256:6a1df4a9bfd29086ef83cb07806e0bf447725b21a61b0b320d37e48eabf4ffd1",
     "recipes/flexsearch-document-index/src/index-docs.ts": "sha256:6d364df73ff16c1b7a5d34e9e23f964046b17cc13b70ec8c8e80029274a0012c",
     "recipes/flexsearch-document-index/test/index-docs.test.ts": "sha256:81d4298f3615c1f50f9fe2e326ed4649689e9e75b30c86bd863a888aa4af2967"
    },
@@ -10369,12 +10367,12 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:18:34.237Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:54f32c07d9ab5e6d725fb7912a89a21cc5daf5b1d79a99bb8f7b2d41ac638c15",
+   "last_passed_at": "2026-10-22T15:10:57.768Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39802294192",
+   "recipe_hash": "sha256:8dabf05c92aed43fbc950dfefc46b7e6107b187ee5922c88e1ec73bb0c6fca59",
    "files": {
     "recipes/oslo-sessions-totp-2fa/package.json": "sha256:c920d0a81cc1e6a6e6ed04467dad6a4ab4bddd448773d9e8686ff58cfe1b6357",
-    "recipes/oslo-sessions-totp-2fa/recipe.yaml": "sha256:6be7780e7896a30434233d79df8e3eb993d05ca43795793e4f8ad0d0a62aa9f3",
+    "recipes/oslo-sessions-totp-2fa/recipe.yaml": "sha256:f72175c8d752a0b4b0784392e64afb780d4aa6ea475c417fbb5db0344dcbb968",
     "recipes/oslo-sessions-totp-2fa/src/auth.ts": "sha256:88ed93433fd4d1b631345e4dc113014aca1e79fc55bae34acb12a33a3f195091",
     "recipes/oslo-sessions-totp-2fa/test/auth.test.ts": "sha256:2ab28d4a7dd7ca0d63fa2263ed1b3f09b41d18a1e01a0e5149366e8645f9c6e9"
    },

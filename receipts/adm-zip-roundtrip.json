@@ -1,26 +1,25 @@
 {
   "id": "adm-zip-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-22T12:50:05.949Z",
-  "last_passed_at": "2026-10-22T12:50:05.949Z",
+  "ran_at": "2026-10-22T15:11:00.865Z",
+  "last_passed_at": "2026-10-22T15:11:00.865Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1559,
-    "test": 262
+    "setup": 1778,
+    "test": 309
   },
   "pinned": {
     "adm-zip": "0.6.1",
-    "@types/adm-zip": "0.6.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:e601d0ffad2e77c4e2994d1ecd039b8171ab6fc789d12dbdf3339b58472b0fbb",
+  "recipe_hash": "sha256:c4669055ffe231b16555bdce209c8595a78386565ac63a4d43712f7252f8106b",
   "files": {
-    "recipes/adm-zip-roundtrip/package.json": "sha256:ed8d19e98bb23cb52a82f52599bc547bdb731680c4b27fcff3b1cd5b1c691c35",
-    "recipes/adm-zip-roundtrip/recipe.yaml": "sha256:fa76fe9b142dde4def7d738ded0f818c46eb8fcb052d0bf901fc47f183a069d7",
+    "recipes/adm-zip-roundtrip/package.json": "sha256:136c80bbfb17b4cd8bdcc7d6353844e9f45a726f51e25b3f08fe91bba103de5a",
+    "recipes/adm-zip-roundtrip/recipe.yaml": "sha256:f7c41ab2450a5e30c3555ce39273f3316887ca21bdc6235cf9d6a91de4524967",
     "recipes/adm-zip-roundtrip/src/archive.ts": "sha256:a743368d6d79ddbda6af43d55b31cda781f250d4dc0898835f55712a47c1f579",
     "recipes/adm-zip-roundtrip/test/archive.test.ts": "sha256:92ae5748737d0d0495506170088406f0cfe2ccad55fd6459e1996152df06277b"
   },
@@ -28,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39802294192"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips string entries through a buffer\nok 1 - roundtrips string entries through a buffer\n  ---\n  duration_ms: 9.266254\n  type: 'test'\n  ...\n# Subtest: stores folder entries and raw buffers\nok 2 - stores folder entries and raw buffers\n  ---\n  duration_ms: 0.783171\n  type: 'test'\n  ...\n# Subtest: writes a zip to a temp path and reads it back\nok 3 - writes a zip to a temp path and reads it back\n  ---\n  duration_ms: 9.040863\n  type: 'test'\n  ...\n# Subtest: throws for a missing entry\nok 4 - throws for a missing entry\n  ---\n  duration_ms: 0.512673\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 161.92793\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips string entries through a buffer\nok 1 - roundtrips string entries through a buffer\n  ---\n  duration_ms: 9.088266\n  type: 'test'\n  ...\n# Subtest: stores folder entries and raw buffers\nok 2 - stores folder entries and raw buffers\n  ---\n  duration_ms: 0.807163\n  type: 'test'\n  ...\n# Subtest: writes a zip to a temp path and reads it back\nok 3 - writes a zip to a temp path and reads it back\n  ---\n  duration_ms: 20.957505\n  type: 'test'\n  ...\n# Subtest: throws for a missing entry\nok 4 - throws for a missing entry\n  ---\n  duration_ms: 0.526841\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 201.152776\n"
 }

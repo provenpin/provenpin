@@ -1,15 +1,15 @@
 {
   "id": "oslo-sessions-totp-2fa",
   "status": "passed",
-  "ran_at": "2026-10-20T01:18:34.237Z",
-  "last_passed_at": "2026-10-20T01:18:34.237Z",
+  "ran_at": "2026-10-22T15:10:57.768Z",
+  "last_passed_at": "2026-10-22T15:10:57.768Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2202,
-    "test": 326
+    "setup": 2083,
+    "test": 333
   },
   "pinned": {
     "@oslojs/crypto": "1.0.1",
@@ -18,19 +18,19 @@
     "tsx": "4.23.15",
     "@types/node": "26.6.5"
   },
-  "recipe_hash": "sha256:54f32c07d9ab5e6d725fb7912a89a21cc5daf5b1d79a99bb8f7b2d41ac638c15",
+  "recipe_hash": "sha256:8dabf05c92aed43fbc950dfefc46b7e6107b187ee5922c88e1ec73bb0c6fca59",
   "files": {
     "recipes/oslo-sessions-totp-2fa/package.json": "sha256:c920d0a81cc1e6a6e6ed04467dad6a4ab4bddd448773d9e8686ff58cfe1b6357",
-    "recipes/oslo-sessions-totp-2fa/recipe.yaml": "sha256:6be7780e7896a30434233d79df8e3eb993d05ca43795793e4f8ad0d0a62aa9f3",
+    "recipes/oslo-sessions-totp-2fa/recipe.yaml": "sha256:f72175c8d752a0b4b0784392e64afb780d4aa6ea475c417fbb5db0344dcbb968",
     "recipes/oslo-sessions-totp-2fa/src/auth.ts": "sha256:88ed93433fd4d1b631345e4dc113014aca1e79fc55bae34acb12a33a3f195091",
     "recipes/oslo-sessions-totp-2fa/test/auth.test.ts": "sha256:2ab28d4a7dd7ca0d63fa2263ed1b3f09b41d18a1e01a0e5149366e8645f9c6e9"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39802294192"
   },
   "errors": [],
-  "log_tail": "# Subtest: stores only a hash of the session token\nok 1 - stores only a hash of the session token\n  ---\n  duration_ms: 3.692827\n  type: 'test'\n  ...\n# Subtest: sessions slide, expire and can be revoked per user\nok 2 - sessions slide, expire and can be revoked per user\n  ---\n  duration_ms: 1.1732\n  type: 'test'\n  ...\n# Subtest: TOTP enrolment URI and manual key encode the same secret\nok 3 - TOTP enrolment URI and manual key encode the same secret\n  ---\n  duration_ms: 1.207654\n  type: 'test'\n  ...\n# Subtest: TOTP codes verify within the grace window only\nok 4 - TOTP codes verify within the grace window only\n  ---\n  duration_ms: 1.901439\n  type: 'test'\n  ...\n# Subtest: recovery codes are single use and case-insensitive\nok 5 - recovery codes are single use and case-insensitive\n  ---\n  duration_ms: 1.120853\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 196.785375\n"
+  "log_tail": "# Subtest: stores only a hash of the session token\nok 1 - stores only a hash of the session token\n  ---\n  duration_ms: 3.332392\n  type: 'test'\n  ...\n# Subtest: sessions slide, expire and can be revoked per user\nok 2 - sessions slide, expire and can be revoked per user\n  ---\n  duration_ms: 1.211165\n  type: 'test'\n  ...\n# Subtest: TOTP enrolment URI and manual key encode the same secret\nok 3 - TOTP enrolment URI and manual key encode the same secret\n  ---\n  duration_ms: 1.145288\n  type: 'test'\n  ...\n# Subtest: TOTP codes verify within the grace window only\nok 4 - TOTP codes verify within the grace window only\n  ---\n  duration_ms: 1.864834\n  type: 'test'\n  ...\n# Subtest: recovery codes are single use and case-insensitive\nok 5 - recovery codes are single use and case-insensitive\n  ---\n  duration_ms: 1.075993\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 198.276152\n"
 }
