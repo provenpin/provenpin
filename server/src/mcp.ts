@@ -38,6 +38,8 @@ export interface ServerOptions {
   /** Public receipts feed served at /receipts.json. */
   receipts?: unknown;
   version?: string;
+  /** Git commit this build was deployed from (set at deploy time). Shown on /health only when it is 7-40 hex characters. */
+  deployCommit?: string;
   /** Optional rate limiters (Cloudflare Workers Rate Limiting binding shape). Absent = no limit. Free keyed by IP, Pro by key id. */
   freeLimiter?: RateLimiter;
   proLimiter?: RateLimiter;
@@ -175,12 +177,13 @@ export function createHandler(index: RecipeIndex, opts: ServerOptions = {}) {
     try { return (await lim.limit({ key: k })).success; } catch { return true; }
   }
   const version = opts.version ?? "0.1.0";
+  const commit = /^[0-9a-f]{7,40}$/i.test(opts.deployCommit ?? "") ? opts.deployCommit!.toLowerCase() : undefined;
   const counter = createCounter({ enabled: opts.usageCounter, sink: opts.counterSink, sessions: opts.counterSessions, salt: opts.counterSalt });
   return async (req: Request): Promise<Response> => {
     const url = new URL(req.url);
     if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: CORS });
     if (url.pathname === "/" || url.pathname === "/health") {
-      return Response.json({ name: "ProvenPin MCP", ok: true, recipes: index.recipes.filter((r) => r.receipt.status === "passed").length, index_generated_at: index.generated_at, mcp_endpoint: "/mcp" }, { headers: CORS });
+      return Response.json({ name: "ProvenPin MCP", ok: true, recipes: index.recipes.filter((r) => r.receipt.status === "passed").length, index_generated_at: index.generated_at, mcp_endpoint: "/mcp", ...(commit ? { commit } : {}) }, { headers: CORS });
     }
     if (url.pathname === "/receipts.json" && opts.receipts) {
       if (req.method !== "GET" && req.method !== "HEAD") return new Response("Method Not Allowed", { status: 405, headers: { ...CORS, allow: "GET" } });

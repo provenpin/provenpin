@@ -69,6 +69,20 @@ test("health endpoint", async () => {
   const res = await handler(new Request("http://x/health"));
   assert.equal((await res.json() as any).recipes, 2);
 });
+test("health has no commit field unless a deploy commit is set", async () => {
+  const res = await handler(new Request("http://x/health"));
+  assert.equal("commit" in (await res.json() as any), false);
+});
+test("health reports a valid deploy commit, lowercased", async () => {
+  const h = createHandler(index, { deployCommit: "ABCDEF0123456789abcdef0123456789abcdef01" });
+  assert.equal((await (await h(new Request("http://x/health"))).json() as any).commit, "abcdef0123456789abcdef0123456789abcdef01");
+});
+test("health drops a deploy commit that is not 7-40 hex characters", async () => {
+  for (const deployCommit of ["", "abc12", "not-a-sha", "<script>", "a".repeat(41)]) {
+    const h = createHandler(index, { deployCommit });
+    assert.equal("commit" in (await (await h(new Request("http://x/health"))).json() as any), false, deployCommit);
+  }
+});
 
 test("usage events are privacy-safe and carry clientInfo via session id", async () => {
   const points: any[] = [];
