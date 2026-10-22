@@ -1,15 +1,15 @@
 {
   "id": "aws-sdk-v3-dynamodb-sqs-vitest",
   "status": "passed",
-  "ran_at": "2026-10-22T12:50:24.662Z",
-  "last_passed_at": "2026-10-22T12:50:24.662Z",
+  "ran_at": "2026-10-22T14:34:25.315Z",
+  "last_passed_at": "2026-10-22T14:34:25.315Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7122,
-    "test": 742
+    "setup": 7366,
+    "test": 773
   },
   "pinned": {
     "@aws-sdk/client-dynamodb": "3.1152.0",
@@ -17,13 +17,13 @@
     "@aws-sdk/client-sqs": "3.1152.0",
     "aws-sdk-client-mock": "4.1.0",
     "aws-sdk-client-mock-vitest": "8.0.0",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "@types/node": "26.6.5"
   },
-  "recipe_hash": "sha256:602e3a2df5a096dfabaa1372ef6b72792a435775be351b35db4e512a29bab12d",
+  "recipe_hash": "sha256:6994b5d8ae1bdda95a93114e7ce601cea6325f396780717c5667347fdb27a056",
   "files": {
-    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/package.json": "sha256:1cee0dbd1b16dfd15590d5431edbbbdf1b55dfcde36c19e97c8c1262c8297e58",
-    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/recipe.yaml": "sha256:2843c1bc89697240c4ea6c951a669ad22ce5be3eac1c654fde3f64d11518fc71",
+    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/package.json": "sha256:7f06fd8160e75fff6fff13020532f93d8e0f99da6161ff07a09b748fac02dc61",
+    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/recipe.yaml": "sha256:a784e990fb77f8368f236095620f79ef4e5fa1eadfecbbf4b91293f221d271f6",
     "recipes/aws-sdk-v3-dynamodb-sqs-vitest/src/orders.ts": "sha256:a14c3c5c7ec654a1f69f35794a304597743fc81bcb619d50bb0f557861e5571d",
     "recipes/aws-sdk-v3-dynamodb-sqs-vitest/test/orders.test.ts": "sha256:e0f1a8e228104bf875bd27f6b0aef45869f41798f19b312c2b7c391b44bc4f1b"
   },
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39796751967"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-frBsQO\u001b[39m\n\n \u001b[32m✓\u001b[39m test/orders.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 26\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:50:32\n\u001b[2m   Duration \u001b[22m 309ms\u001b[2m (import 62%, transform 23%, tests 13%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-frBsQO/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-VJrFel\u001b[39m\n\n \u001b[32m✓\u001b[39m test/orders.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 26\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:34:33\n\u001b[2m   Duration \u001b[22m 335ms\u001b[2m (import 62%, transform 23%, tests 12%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-VJrFel/test-report.json\n"
 }

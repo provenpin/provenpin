@@ -1,27 +1,27 @@
 {
   "id": "dom-testing-library-happy-dom",
   "status": "passed",
-  "ran_at": "2026-10-22T12:51:29.563Z",
-  "last_passed_at": "2026-10-22T12:51:29.563Z",
+  "ran_at": "2026-10-22T14:34:24.697Z",
+  "last_passed_at": "2026-10-22T14:34:24.697Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6029,
-    "test": 1113
+    "setup": 5451,
+    "test": 690
   },
   "pinned": {
     "@types/node": "24.19.2",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "@testing-library/dom": "10.4.2",
     "@testing-library/user-event": "14.6.8",
     "happy-dom": "21.0.1"
   },
-  "recipe_hash": "sha256:347709385f9ffeae8e16a2511cfca45188eb99541adf353f0aed9786502053cf",
+  "recipe_hash": "sha256:f88734514e43fdfeacd2b33fd41c62322996b27f1579a0a8ce6d1f0decbf3bcd",
   "files": {
-    "recipes/dom-testing-library-happy-dom/package.json": "sha256:4ba4f0173b520ee12a66480dd26ea19555075573c6a8aba6b191d6c94d8f5bc5",
-    "recipes/dom-testing-library-happy-dom/recipe.yaml": "sha256:1eaf1bfe032d9973a53c50c359ed736cdb7be24f0fd0e0db93a0a1c7f56b1bb0",
+    "recipes/dom-testing-library-happy-dom/package.json": "sha256:64fd00572aee83cbae49405e2bc8d3e7a94e0b6d20e68ece001aeafccda6c9a9",
+    "recipes/dom-testing-library-happy-dom/recipe.yaml": "sha256:37ef8a2782ba7fa5d0756d40895b3895d8bc5eb59a972a81e22697e527fdbe83",
     "recipes/dom-testing-library-happy-dom/src/form.ts": "sha256:b98661b770ae98fad5a4f2f6308d01109e6a13c47c32d049dc7dc836bd2c9bb6",
     "recipes/dom-testing-library-happy-dom/test/form.test.ts": "sha256:50c2fc6232f748e732a6e766bd0ff09c770ea295f32081da9696ff7ecff658c4",
     "recipes/dom-testing-library-happy-dom/vitest.config.ts": "sha256:75b971ced65ae38edc6009adc892b70c675bbd6d1f351dd7b48afc2b6fc946b7"
@@ -29,9 +29,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 39796751967"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-dom-testing-library-happy-dom-prDvx6\u001b[39m\n\n \u001b[32m✓\u001b[39m test/form.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 97\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:51:36\n\u001b[2m   Duration \u001b[22m 652ms\u001b[2m (environment 51%, import 24%, tests 18%, transform 6%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-dom-testing-library-happy-dom-prDvx6/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-dom-testing-library-happy-dom-1DqA7K\u001b[39m\n\n \u001b[32m✓\u001b[39m test/form.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 70\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:34:30\n\u001b[2m   Duration \u001b[22m 381ms\u001b[2m (environment 45%, import 23%, tests 22%, transform 9%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-dom-testing-library-happy-dom-1DqA7K/test-report.json\n"
 }

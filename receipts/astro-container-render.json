@@ -1,26 +1,26 @@
 {
   "id": "astro-container-render",
   "status": "passed",
-  "ran_at": "2026-10-22T12:50:26.749Z",
-  "last_passed_at": "2026-10-22T12:50:26.749Z",
+  "ran_at": "2026-10-22T14:34:23.854Z",
+  "last_passed_at": "2026-10-22T14:34:23.854Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 10455,
-    "test": 2131
+    "setup": 10498,
+    "test": 1565
   },
   "pinned": {
     "astro": "7.3.8",
     "@types/node": "24.19.2",
-    "vitest": "5.0.4"
+    "vitest": "5.0.5"
   },
-  "recipe_hash": "sha256:72c2694725ce67be18e70f3a8ce0d86e4f136cc5818be96c453f7746d02b246f",
+  "recipe_hash": "sha256:87237f6f490d2f4561363459cc0d418d13ae72117821620803e0e3075cac3ac2",
   "files": {
     "recipes/astro-container-render/astro.config.mjs": "sha256:e5804d67075e46f5248f30ae1b37690413cb49e6ecb9dfd742778bd12caa8560",
-    "recipes/astro-container-render/package.json": "sha256:a09f94ed6b3b07528435b06fca8d7397119f13a2e4e83905bbb3b407b04edc55",
-    "recipes/astro-container-render/recipe.yaml": "sha256:3b250fcd10d5d9ba4d69340e3491a61c09dd9e22893e9dff16eed1114c737f2c",
+    "recipes/astro-container-render/package.json": "sha256:ae2e5ae5505b1673a643c5e2c459594f09685cb2ad34e89966003eff7e379823",
+    "recipes/astro-container-render/recipe.yaml": "sha256:dfdad37690c7d37aeeec89028b0187c7ba1a06d5f7c4483e745b2c64d352402e",
     "recipes/astro-container-render/src/components/PriceCard.astro": "sha256:8f915d1ab85c104215abf7b801c75a6669648059483d551b2adf68b6fff1e9fe",
     "recipes/astro-container-render/test/PriceCard.test.ts": "sha256:815ae99f9c6d3c906c63d1771ea41c6a2eed53e866cc570cd83007971b0c62e0",
     "recipes/astro-container-render/vitest.config.ts": "sha256:9985c7cc96cb91998eabe244fc5cdd82ca1ba8a3e3fced925c33ce646dce18ac"
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39796751967"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\u001b[33m\u001b[1m12:50:38\u001b[22m [WARN]\u001b[39m Missing pages directory: src/pages\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-astro-container-render-1uGbH1\u001b[39m\n\n \u001b[32m✓\u001b[39m test/PriceCard.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 38\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:50:38\n\u001b[2m   Duration \u001b[22m 1.15s\u001b[2m (transform 77%, import 19%, tests 4%)\u001b[22m\n\nJSON report written to /tmp/pp-astro-container-render-1uGbH1/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\u001b[33m\u001b[1m14:34:35\u001b[22m [WARN]\u001b[39m Missing pages directory: src/pages\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-astro-container-render-ZW9kfk\u001b[39m\n\n \u001b[32m✓\u001b[39m test/PriceCard.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 21\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:34:35\n\u001b[2m   Duration \u001b[22m 842ms\u001b[2m (transform 77%, import 20%, tests 3%)\u001b[22m\n\nJSON report written to /tmp/pp-astro-container-render-ZW9kfk/test-report.json\n"
 }

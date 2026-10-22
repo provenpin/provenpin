@@ -1,15 +1,15 @@
 {
   "id": "preact-signals-testing-library",
   "status": "passed",
-  "ran_at": "2026-10-22T12:57:27.143Z",
-  "last_passed_at": "2026-10-22T12:57:27.143Z",
+  "ran_at": "2026-10-22T14:34:27.107Z",
+  "last_passed_at": "2026-10-22T14:34:27.107Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7533,
-    "test": 2021
+    "setup": 7292,
+    "test": 1707
   },
   "pinned": {
     "preact": "11.0.1",
@@ -17,13 +17,13 @@
     "@testing-library/preact": "3.2.4",
     "@testing-library/user-event": "14.6.8",
     "jsdom": "30.1.3",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "@types/node": "26.6.5"
   },
-  "recipe_hash": "sha256:62ad85464a17f296cdee312cf257b0527674337e12fefbafe8a242393780d0fb",
+  "recipe_hash": "sha256:866236c5c9c0cbc99d878f00b7ff1f5f27dbd4f15fa7328d152c5f86cdefeb25",
   "files": {
-    "recipes/preact-signals-testing-library/package.json": "sha256:a9b2eb2e300513fb3d69d13b9c8b7ee367a6b6c9d88d8ae8eaeb6c047fb67183",
-    "recipes/preact-signals-testing-library/recipe.yaml": "sha256:97ff685d0198a3c28eda347fa2deaa42f57e6dee738fea6d9e4a96d85ebbc426",
+    "recipes/preact-signals-testing-library/package.json": "sha256:0059f1870fc21619232b1de30bce0bb8d125cd481fe3f3830e18f9fe80e31cb3",
+    "recipes/preact-signals-testing-library/recipe.yaml": "sha256:50e4ead942a62da172e08540ff64a9bd2aade0c3d52552fb741a3c743c1b87b1",
     "recipes/preact-signals-testing-library/src/cart.tsx": "sha256:145cdcf2e88c502b437d64b2fca20787b8a6300121d6346bab1bdeeb7ef17e4c",
     "recipes/preact-signals-testing-library/test/cart.test.tsx": "sha256:e8cf909e3413ee8c41e2a80f050e7e0f5ada5d7c5122cc48d5f01cfd98afebcd",
     "recipes/preact-signals-testing-library/tsconfig.json": "sha256:cdc08f11ac81270a888f1c343153a35fd65164f05927cb7300c579e5c58221ed",
@@ -33,8 +33,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39796751967"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-preact-signals-testing-library-tiUYe7\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.tsx \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 215\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:57:35\n\u001b[2m   Duration \u001b[22m 1.48s\u001b[2m (environment 46%, transform 24%, tests 16%, import 13%)\u001b[22m\n\nJSON report written to /tmp/pp-preact-signals-testing-library-tiUYe7/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-preact-signals-testing-library-scR0FS\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.tsx \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 234\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:34:34\n\u001b[2m   Duration \u001b[22m 1.25s\u001b[2m (environment 57%, tests 21%, import 18%, transform 5%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-preact-signals-testing-library-scR0FS/test-report.json\n"
 }

@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-22T13:01:12.296Z",
+ "generated_at": "2026-10-22T14:34:57.292Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 555,
  "recipes": [
@@ -548,17 +548,17 @@
    "pinned": {
     "astro": "7.3.8",
     "@types/node": "24.19.2",
-    "vitest": "5.0.4"
+    "vitest": "5.0.5"
    },
    "runtime": "node v22.23.4",
    "status": "passed",
-   "last_passed_at": "2026-10-22T12:50:26.749Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:72c2694725ce67be18e70f3a8ce0d86e4f136cc5818be96c453f7746d02b246f",
+   "last_passed_at": "2026-10-22T14:34:23.854Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39796751967",
+   "recipe_hash": "sha256:87237f6f490d2f4561363459cc0d418d13ae72117821620803e0e3075cac3ac2",
    "files": {
     "recipes/astro-container-render/astro.config.mjs": "sha256:e5804d67075e46f5248f30ae1b37690413cb49e6ecb9dfd742778bd12caa8560",
-    "recipes/astro-container-render/package.json": "sha256:a09f94ed6b3b07528435b06fca8d7397119f13a2e4e83905bbb3b407b04edc55",
-    "recipes/astro-container-render/recipe.yaml": "sha256:3b250fcd10d5d9ba4d69340e3491a61c09dd9e22893e9dff16eed1114c737f2c",
+    "recipes/astro-container-render/package.json": "sha256:ae2e5ae5505b1673a643c5e2c459594f09685cb2ad34e89966003eff7e379823",
+    "recipes/astro-container-render/recipe.yaml": "sha256:dfdad37690c7d37aeeec89028b0187c7ba1a06d5f7c4483e745b2c64d352402e",
     "recipes/astro-container-render/src/components/PriceCard.astro": "sha256:8f915d1ab85c104215abf7b801c75a6669648059483d551b2adf68b6fff1e9fe",
     "recipes/astro-container-render/test/PriceCard.test.ts": "sha256:815ae99f9c6d3c906c63d1771ea41c6a2eed53e866cc570cd83007971b0c62e0",
     "recipes/astro-container-render/vitest.config.ts": "sha256:9985c7cc96cb91998eabe244fc5cdd82ca1ba8a3e3fced925c33ce646dce18ac"
@@ -762,17 +762,17 @@
     "@aws-sdk/client-sqs": "3.1152.0",
     "aws-sdk-client-mock": "4.1.0",
     "aws-sdk-client-mock-vitest": "8.0.0",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "@types/node": "26.6.5"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-22T12:50:24.662Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:602e3a2df5a096dfabaa1372ef6b72792a435775be351b35db4e512a29bab12d",
+   "last_passed_at": "2026-10-22T14:34:25.315Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39796751967",
+   "recipe_hash": "sha256:6994b5d8ae1bdda95a93114e7ce601cea6325f396780717c5667347fdb27a056",
    "files": {
-    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/package.json": "sha256:1cee0dbd1b16dfd15590d5431edbbbdf1b55dfcde36c19e97c8c1262c8297e58",
-    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/recipe.yaml": "sha256:2843c1bc89697240c4ea6c951a669ad22ce5be3eac1c654fde3f64d11518fc71",
+    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/package.json": "sha256:7f06fd8160e75fff6fff13020532f93d8e0f99da6161ff07a09b748fac02dc61",
+    "recipes/aws-sdk-v3-dynamodb-sqs-vitest/recipe.yaml": "sha256:a784e990fb77f8368f236095620f79ef4e5fa1eadfecbbf4b91293f221d271f6",
     "recipes/aws-sdk-v3-dynamodb-sqs-vitest/src/orders.ts": "sha256:a14c3c5c7ec654a1f69f35794a304597743fc81bcb619d50bb0f557861e5571d",
     "recipes/aws-sdk-v3-dynamodb-sqs-vitest/test/orders.test.ts": "sha256:e0f1a8e228104bf875bd27f6b0aef45869f41798f19b312c2b7c391b44bc4f1b"
    },
@@ -3237,19 +3237,19 @@
    "language": "typescript",
    "pinned": {
     "@types/node": "24.19.2",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "@testing-library/dom": "10.4.2",
     "@testing-library/user-event": "14.6.8",
     "happy-dom": "21.0.1"
    },
-   "runtime": "node v22.23.3",
+   "runtime": "node v22.23.4",
    "status": "passed",
-   "last_passed_at": "2026-10-22T12:51:29.563Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:347709385f9ffeae8e16a2511cfca45188eb99541adf353f0aed9786502053cf",
+   "last_passed_at": "2026-10-22T14:34:24.697Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39796751967",
+   "recipe_hash": "sha256:f88734514e43fdfeacd2b33fd41c62322996b27f1579a0a8ce6d1f0decbf3bcd",
    "files": {
-    "recipes/dom-testing-library-happy-dom/package.json": "sha256:4ba4f0173b520ee12a66480dd26ea19555075573c6a8aba6b191d6c94d8f5bc5",
-    "recipes/dom-testing-library-happy-dom/recipe.yaml": "sha256:1eaf1bfe032d9973a53c50c359ed736cdb7be24f0fd0e0db93a0a1c7f56b1bb0",
+    "recipes/dom-testing-library-happy-dom/package.json": "sha256:64fd00572aee83cbae49405e2bc8d3e7a94e0b6d20e68ece001aeafccda6c9a9",
+    "recipes/dom-testing-library-happy-dom/recipe.yaml": "sha256:37ef8a2782ba7fa5d0756d40895b3895d8bc5eb59a972a81e22697e527fdbe83",
     "recipes/dom-testing-library-happy-dom/src/form.ts": "sha256:b98661b770ae98fad5a4f2f6308d01109e6a13c47c32d049dc7dc836bd2c9bb6",
     "recipes/dom-testing-library-happy-dom/test/form.test.ts": "sha256:50c2fc6232f748e732a6e766bd0ff09c770ea295f32081da9696ff7ecff658c4",
     "recipes/dom-testing-library-happy-dom/vitest.config.ts": "sha256:75b971ced65ae38edc6009adc892b70c675bbd6d1f351dd7b48afc2b6fc946b7"
@@ -3594,17 +3594,17 @@
    "pinned": {
     "effect": "4.0.5",
     "@effect/vitest": "4.0.5",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "@types/node": "26.6.5"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-22T12:51:51.554Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:f539456e3f94183ced03b11aa4af24f78c58f0d7dd173effce24c7819fa730fa",
+   "last_passed_at": "2026-10-22T14:34:28.598Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39796751967",
+   "recipe_hash": "sha256:b45d7a6de9f7d46f2348917bee33fa724966f245a27a8aa4fb599cd3c6dd5eeb",
    "files": {
-    "recipes/effect-schema-vitest/package.json": "sha256:66e5583930bfff4dc1334ba979581a95b154f7426c0aad43fccae153b1ec7a9f",
-    "recipes/effect-schema-vitest/recipe.yaml": "sha256:f0876eaeaa8d585a2a974e178262ac5f146409cdeb585185ba7b0ba0e2b02627",
+    "recipes/effect-schema-vitest/package.json": "sha256:2e587f882afc70e771b45c0bc63655031f510a3753f1fa72064f7cf755a2ae66",
+    "recipes/effect-schema-vitest/recipe.yaml": "sha256:28703bc0f2d99a36a892e905407fca384958689bd21e665bd2f554666ea2d249",
     "recipes/effect-schema-vitest/src/orders.ts": "sha256:0b1274d2660763348bb3e303a275fe48a52b40386aabc4d6b1f84a8819a6de98",
     "recipes/effect-schema-vitest/test/orders.test.ts": "sha256:a876a84f94ee08c327f6cdc316983e0f64db9385a3c5acbfca8817f78b51c23c"
    },
@@ -7734,17 +7734,17 @@
    "pinned": {
     "ky": "2.2.0",
     "@types/node": "24.19.2",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "msw": "3.0.3"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-22T12:55:07.623Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:b2fbbde74ab981a844ea43d97c369764cdb483337c15ad57843e8ce4f8272a40",
+   "last_passed_at": "2026-10-22T14:34:31.570Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39796751967",
+   "recipe_hash": "sha256:ce44f9de48d6fa07e1477befcf85d44d31a94da97a32599ead51560885a74b2d",
    "files": {
-    "recipes/ky-msw-vitest/package.json": "sha256:82341dc6c5f11ac419ee352879f278a225c16c35444e6cfdedd0644eea1adc80",
-    "recipes/ky-msw-vitest/recipe.yaml": "sha256:1479f7ad58f97b04d811c68485dcb1753142270ea4503b6142ba145c5249f287",
+    "recipes/ky-msw-vitest/package.json": "sha256:6cb93a82783691f713e3d525e2bbf4986ba833d9d15aab1c4b5dc385ecfc77e3",
+    "recipes/ky-msw-vitest/recipe.yaml": "sha256:a99c706984146c3603d747f8e6b305b742ebc324ab0bc16e72389cf99b127868",
     "recipes/ky-msw-vitest/src/api.ts": "sha256:b9e7fefba2eedaef0bbac2194da39675c3104f9d8ef0d68453536bf187a47f60",
     "recipes/ky-msw-vitest/test/api.test.ts": "sha256:6ed0ee45f2b273638c89c57677c3efc4de12814ecda55028282002139dd88a36"
    },
@@ -11513,17 +11513,17 @@
     "@testing-library/preact": "3.2.4",
     "@testing-library/user-event": "14.6.8",
     "jsdom": "30.1.3",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "@types/node": "26.6.5"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-22T12:57:27.143Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:62ad85464a17f296cdee312cf257b0527674337e12fefbafe8a242393780d0fb",
+   "last_passed_at": "2026-10-22T14:34:27.107Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39796751967",
+   "recipe_hash": "sha256:866236c5c9c0cbc99d878f00b7ff1f5f27dbd4f15fa7328d152c5f86cdefeb25",
    "files": {
-    "recipes/preact-signals-testing-library/package.json": "sha256:a9b2eb2e300513fb3d69d13b9c8b7ee367a6b6c9d88d8ae8eaeb6c047fb67183",
-    "recipes/preact-signals-testing-library/recipe.yaml": "sha256:97ff685d0198a3c28eda347fa2deaa42f57e6dee738fea6d9e4a96d85ebbc426",
+    "recipes/preact-signals-testing-library/package.json": "sha256:0059f1870fc21619232b1de30bce0bb8d125cd481fe3f3830e18f9fe80e31cb3",
+    "recipes/preact-signals-testing-library/recipe.yaml": "sha256:50e4ead942a62da172e08540ff64a9bd2aade0c3d52552fb741a3c743c1b87b1",
     "recipes/preact-signals-testing-library/src/cart.tsx": "sha256:145cdcf2e88c502b437d64b2fca20787b8a6300121d6346bab1bdeeb7ef17e4c",
     "recipes/preact-signals-testing-library/test/cart.test.tsx": "sha256:e8cf909e3413ee8c41e2a80f050e7e0f5ada5d7c5122cc48d5f01cfd98afebcd",
     "recipes/preact-signals-testing-library/tsconfig.json": "sha256:cdc08f11ac81270a888f1c343153a35fd65164f05927cb7300c579e5c58221ed",
@@ -13868,17 +13868,17 @@
     "@testing-library/user-event": "14.6.8",
     "vite-plugin-solid": "2.11.14",
     "jsdom": "30.1.3",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "@types/node": "26.6.5"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-22T12:58:55.713Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:02e0af368603bdccc4fd97045fb0675555f9d6660320510de7883d97cf2eedb3",
+   "last_passed_at": "2026-10-22T14:34:27.999Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39796751967",
+   "recipe_hash": "sha256:1cb9fa9e44452fc8f934eaab504d88312a3468000661787bb2f65842d59c43a9",
    "files": {
-    "recipes/solid-signals-testing-library/package.json": "sha256:235f2b638bc5d81f8bf4155391e3bf46c78afd319624dea587570ed1accd033f",
-    "recipes/solid-signals-testing-library/recipe.yaml": "sha256:acbcdc728a3ac4545a51b4ad09d3e2999f1e99644862e92387f735bfad91eed7",
+    "recipes/solid-signals-testing-library/package.json": "sha256:1b4733997a89f5dede96872f0394bd9f3d90e744e3cb7f93b87162b4fcd9c056",
+    "recipes/solid-signals-testing-library/recipe.yaml": "sha256:85e0f5461cc8f495e3c2f6bad447773d500a9108365ecb6aa867546d7e3dd3bc",
     "recipes/solid-signals-testing-library/src/Search.tsx": "sha256:b9363a8720784751534a81ab630e1ac4eb3c1cdb45390cb5138a1cd9287e6dcc",
     "recipes/solid-signals-testing-library/test/Search.test.tsx": "sha256:2647d4be5f1792bc01a0dd3196fd45a61ddbb92c66f289cb9b89305cc2624ae0",
     "recipes/solid-signals-testing-library/tsconfig.json": "sha256:ec2db78c36caa300ed94a0fc31f74c7db5d7c319d7b5e31cd80e69b66ca4fa94",
@@ -14656,16 +14656,16 @@
    "pinned": {
     "@supabase/supabase-js": "2.117.3",
     "@types/node": "24.19.2",
-    "vitest": "5.0.4"
+    "vitest": "5.0.5"
    },
    "runtime": "node v22.23.4",
    "status": "passed",
-   "last_passed_at": "2026-10-22T13:00:00.064Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39781513312",
-   "recipe_hash": "sha256:0c7d16337ae4c936ba6a12fdbc57022f49eb0aa1733ff43c73f4d35cf3bb177b",
+   "last_passed_at": "2026-10-22T14:34:34.642Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39796751967",
+   "recipe_hash": "sha256:73b92f6094c10327e1859cdd2a2d0680ac7c697c5b8ef0afa16f74c3d0fc2741",
    "files": {
-    "recipes/supabase-js-mocked-fetch/package.json": "sha256:ccdd759f45c0b8b5f1f3ccc0eb0405791c21bd724b568637f88dac2f3906b204",
-    "recipes/supabase-js-mocked-fetch/recipe.yaml": "sha256:56f408fb31ebb5e426ce1fcdfb2e2481e8c0787ecae003c7418a43ab3b59dcbb",
+    "recipes/supabase-js-mocked-fetch/package.json": "sha256:3513f400fc69605ed58fa7f60c684fb156ff0dbdb68cbc52fe92aa59fa35d42e",
+    "recipes/supabase-js-mocked-fetch/recipe.yaml": "sha256:958aa6ff208583e8d73eb5aaba5d4c514d3c5ea7ac6bc84c3ae91df10aefcb92",
     "recipes/supabase-js-mocked-fetch/src/todos.ts": "sha256:9b6ec234a0a81dcdc73b42d1e9daa07b992500a254a0954b2b72fc76dcaa7210",
     "recipes/supabase-js-mocked-fetch/test/todos.test.ts": "sha256:21722309c6d2a893ae04960770bad87a843a1b9675eed9b30f5f3eda92e08cce"
    },

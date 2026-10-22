@@ -1,15 +1,15 @@
 {
   "id": "solid-signals-testing-library",
   "status": "passed",
-  "ran_at": "2026-10-22T12:58:55.713Z",
-  "last_passed_at": "2026-10-22T12:58:55.713Z",
+  "ran_at": "2026-10-22T14:34:27.999Z",
+  "last_passed_at": "2026-10-22T14:34:27.999Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8162,
-    "test": 1729
+    "setup": 8565,
+    "test": 1983
   },
   "pinned": {
     "solid-js": "1.9.17",
@@ -17,13 +17,13 @@
     "@testing-library/user-event": "14.6.8",
     "vite-plugin-solid": "2.11.14",
     "jsdom": "30.1.3",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "@types/node": "26.6.5"
   },
-  "recipe_hash": "sha256:02e0af368603bdccc4fd97045fb0675555f9d6660320510de7883d97cf2eedb3",
+  "recipe_hash": "sha256:1cb9fa9e44452fc8f934eaab504d88312a3468000661787bb2f65842d59c43a9",
   "files": {
-    "recipes/solid-signals-testing-library/package.json": "sha256:235f2b638bc5d81f8bf4155391e3bf46c78afd319624dea587570ed1accd033f",
-    "recipes/solid-signals-testing-library/recipe.yaml": "sha256:acbcdc728a3ac4545a51b4ad09d3e2999f1e99644862e92387f735bfad91eed7",
+    "recipes/solid-signals-testing-library/package.json": "sha256:1b4733997a89f5dede96872f0394bd9f3d90e744e3cb7f93b87162b4fcd9c056",
+    "recipes/solid-signals-testing-library/recipe.yaml": "sha256:85e0f5461cc8f495e3c2f6bad447773d500a9108365ecb6aa867546d7e3dd3bc",
     "recipes/solid-signals-testing-library/src/Search.tsx": "sha256:b9363a8720784751534a81ab630e1ac4eb3c1cdb45390cb5138a1cd9287e6dcc",
     "recipes/solid-signals-testing-library/test/Search.test.tsx": "sha256:2647d4be5f1792bc01a0dd3196fd45a61ddbb92c66f289cb9b89305cc2624ae0",
     "recipes/solid-signals-testing-library/tsconfig.json": "sha256:ec2db78c36caa300ed94a0fc31f74c7db5d7c319d7b5e31cd80e69b66ca4fa94",
@@ -33,8 +33,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39796751967"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-solid-signals-testing-library-pKc40g\u001b[39m\n\n \u001b[32m✓\u001b[39m test/Search.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 221\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:59:04\n\u001b[2m   Duration \u001b[22m 1.11s\u001b[2m (environment 50%, tests 22%, transform 19%, import 9%)\u001b[22m\n\nJSON report written to /tmp/pp-solid-signals-testing-library-pKc40g/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-solid-signals-testing-library-K0kaV0\u001b[39m\n\n \u001b[32m✓\u001b[39m test/Search.test.tsx \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 246\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:34:37\n\u001b[2m   Duration \u001b[22m 1.31s\u001b[2m (environment 53%, tests 20%, transform 17%, import 9%)\u001b[22m\n\nJSON report written to /tmp/pp-solid-signals-testing-library-K0kaV0/test-report.json\n"
 }

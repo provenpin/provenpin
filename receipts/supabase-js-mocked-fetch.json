@@ -1,25 +1,25 @@
 {
   "id": "supabase-js-mocked-fetch",
   "status": "passed",
-  "ran_at": "2026-10-22T13:00:00.064Z",
-  "last_passed_at": "2026-10-22T13:00:00.064Z",
+  "ran_at": "2026-10-22T14:34:34.642Z",
+  "last_passed_at": "2026-10-22T14:34:34.642Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4011,
-    "test": 637
+    "setup": 5007,
+    "test": 869
   },
   "pinned": {
     "@supabase/supabase-js": "2.117.3",
     "@types/node": "24.19.2",
-    "vitest": "5.0.4"
+    "vitest": "5.0.5"
   },
-  "recipe_hash": "sha256:0c7d16337ae4c936ba6a12fdbc57022f49eb0aa1733ff43c73f4d35cf3bb177b",
+  "recipe_hash": "sha256:73b92f6094c10327e1859cdd2a2d0680ac7c697c5b8ef0afa16f74c3d0fc2741",
   "files": {
-    "recipes/supabase-js-mocked-fetch/package.json": "sha256:ccdd759f45c0b8b5f1f3ccc0eb0405791c21bd724b568637f88dac2f3906b204",
-    "recipes/supabase-js-mocked-fetch/recipe.yaml": "sha256:56f408fb31ebb5e426ce1fcdfb2e2481e8c0787ecae003c7418a43ab3b59dcbb",
+    "recipes/supabase-js-mocked-fetch/package.json": "sha256:3513f400fc69605ed58fa7f60c684fb156ff0dbdb68cbc52fe92aa59fa35d42e",
+    "recipes/supabase-js-mocked-fetch/recipe.yaml": "sha256:958aa6ff208583e8d73eb5aaba5d4c514d3c5ea7ac6bc84c3ae91df10aefcb92",
     "recipes/supabase-js-mocked-fetch/src/todos.ts": "sha256:9b6ec234a0a81dcdc73b42d1e9daa07b992500a254a0954b2b72fc76dcaa7210",
     "recipes/supabase-js-mocked-fetch/test/todos.test.ts": "sha256:21722309c6d2a893ae04960770bad87a843a1b9675eed9b30f5f3eda92e08cce"
   },
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39796751967"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-supabase-js-mocked-fetch-wbL6F9\u001b[39m\n\n \u001b[32m✓\u001b[39m test/todos.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 24\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 13:00:04\n\u001b[2m   Duration \u001b[22m 181ms\u001b[2m (transform 43%, import 31%, tests 23%, worker 3%)\u001b[22m\n\nJSON report written to /tmp/pp-supabase-js-mocked-fetch-wbL6F9/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-supabase-js-mocked-fetch-tLFOAR\u001b[39m\n\n \u001b[32m✓\u001b[39m test/todos.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 24\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:34:40\n\u001b[2m   Duration \u001b[22m 219ms\u001b[2m (transform 59%, import 22%, tests 17%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-supabase-js-mocked-fetch-tLFOAR/test-report.json\n"
 }

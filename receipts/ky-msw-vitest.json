@@ -1,26 +1,26 @@
 {
   "id": "ky-msw-vitest",
   "status": "passed",
-  "ran_at": "2026-10-22T12:55:07.623Z",
-  "last_passed_at": "2026-10-22T12:55:07.623Z",
+  "ran_at": "2026-10-22T14:34:31.570Z",
+  "last_passed_at": "2026-10-22T14:34:31.570Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6244,
-    "test": 834
+    "setup": 5325,
+    "test": 947
   },
   "pinned": {
     "ky": "2.2.0",
     "@types/node": "24.19.2",
-    "vitest": "5.0.4",
+    "vitest": "5.0.5",
     "msw": "3.0.3"
   },
-  "recipe_hash": "sha256:b2fbbde74ab981a844ea43d97c369764cdb483337c15ad57843e8ce4f8272a40",
+  "recipe_hash": "sha256:ce44f9de48d6fa07e1477befcf85d44d31a94da97a32599ead51560885a74b2d",
   "files": {
-    "recipes/ky-msw-vitest/package.json": "sha256:82341dc6c5f11ac419ee352879f278a225c16c35444e6cfdedd0644eea1adc80",
-    "recipes/ky-msw-vitest/recipe.yaml": "sha256:1479f7ad58f97b04d811c68485dcb1753142270ea4503b6142ba145c5249f287",
+    "recipes/ky-msw-vitest/package.json": "sha256:6cb93a82783691f713e3d525e2bbf4986ba833d9d15aab1c4b5dc385ecfc77e3",
+    "recipes/ky-msw-vitest/recipe.yaml": "sha256:a99c706984146c3603d747f8e6b305b742ebc324ab0bc16e72389cf99b127868",
     "recipes/ky-msw-vitest/src/api.ts": "sha256:b9e7fefba2eedaef0bbac2194da39675c3104f9d8ef0d68453536bf187a47f60",
     "recipes/ky-msw-vitest/test/api.test.ts": "sha256:6ed0ee45f2b273638c89c57677c3efc4de12814ecda55028282002139dd88a36"
   },
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39781513312"
+    "runner": "github-actions 39796751967"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-ky-msw-vitest-P1k8tk\u001b[39m\n\n \u001b[32m✓\u001b[39m test/api.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 71\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:55:14\n\u001b[2m   Duration \u001b[22m 272ms\u001b[2m (import 43%, tests 38%, transform 17%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-ky-msw-vitest-P1k8tk/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-ky-msw-vitest-dhJlHU\u001b[39m\n\n \u001b[32m✓\u001b[39m test/api.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 107\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:34:37\n\u001b[2m   Duration \u001b[22m 380ms\u001b[2m (import 40%, tests 39%, transform 19%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-ky-msw-vitest-dhJlHU/test-report.json\n"
 }
