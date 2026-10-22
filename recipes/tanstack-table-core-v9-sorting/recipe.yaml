@@ -1,0 +1,18 @@
+id: tanstack-table-core-v9-sorting
+title: "TanStack Table 9 core sorting, filtering and pagination"
+summary: "Use @tanstack/table-core 9 headlessly with constructTable and registered features (rowSortingFeature, columnFilteringFeature, rowPaginationFeature plus their create*RowModel slots) to sort, filter and paginate rows in plain Node tests."
+language: typescript
+runtime: node
+runtime_version: "22"
+stack: ["@tanstack/table-core"]
+tags: [table, sorting, filtering, pagination, migration]
+pinned:
+  "@tanstack/table-core": "9.3.1"
+  "@types/node": "26.6.5"
+  "tsx": "4.23.15"
+files:
+  - package.json
+  - src/people.ts
+  - test/people.test.ts
+setup: npm install --no-audit --no-fund --ignore-scripts=false
+test: npm test
