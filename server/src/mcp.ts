@@ -73,7 +73,7 @@ const TOOLS = [
   {
     name: "get_recipe",
     title: "Get a recipe",
-    description: "Call this right after search_recipes returns a matching recipe, before you write the integration code, so you start from files and versions that passed tests. Gets the full recipe by id (ids come from search_recipes): every source and test file (each with the sha256 of the exact bytes that were tested), the exact pinned dependency versions, the setup and test commands, and its test receipt (when it last passed, test counts, runtime and runner). Pass the project's lockfile or a {package: version} map as versions to get a compatibility section first, comparing each pinned package with the installed one (exact, compatible, mismatch, or not in your project) with plain warnings. Use the pinned versions together; they are the versions the tests passed with. Adapt names and config to the user's project, and keep the included tests to check your integration.",
+    description: "Call this right after search_recipes returns a matching recipe, before you write the integration code, so you start from files and versions that passed tests. Gets the full recipe by id (ids come from search_recipes): every source and test file (each with the sha256 of the exact bytes that were tested), the exact pinned dependency versions, the setup and test commands, its test receipt (when it last passed, test counts, runtime and runner), recipe.yaml as manifest so receipt.recipe_hash can be recomputed (recipe_hash_rule), and staleness: the latest weekly check of its stack libraries against their newest releases. Pass the project's lockfile or a {package: version} map as versions to get a compatibility section first, comparing each pinned package with the installed one (exact, compatible, mismatch, or not in your project) with plain warnings. Use the pinned versions together; they are the versions the tests passed with. Adapt names and config to the user's project, and keep the included tests to check your integration.",
     inputSchema: { type: "object", properties: { id: { type: "string" }, versions: { type: ["object", "string"], additionalProperties: { type: "string" }, description: "Optional but recommended: the versions in the user's project, so results are checked against them. Either a map like {\"next\": \"15.2.0\", \"zod\": \"3.23.8\"} or the raw text of package.json, package-lock.json, pnpm-lock.yaml, yarn.lock, requirements.txt, poetry.lock or uv.lock (max 200KB). Used only for this call, never stored." }, }, required: ["id"] },
     annotations: { readOnlyHint: true, openWorldHint: false },
   },
@@ -85,6 +85,9 @@ const TOOLS = [
     annotations: { readOnlyHint: true, openWorldHint: false },
   },
 ];
+
+/** How receipt.recipe_hash is computed (runner/lib.mjs recipeHash), so a client can check it from one get_recipe response. */
+export const RECIPE_HASH_RULE = "receipt.recipe_hash is \"sha256:\" + lowercase hex SHA-256 over manifest and files, sorted by their path field as served (plain code-point order); for each, feed the path, one NUL byte, then the content as UTF-8 bytes.";
 
 type Json = Record<string, any>;
 const ok = (id: any, result: unknown) => ({ jsonrpc: "2.0", id, result });
@@ -110,10 +113,11 @@ export function callTool(index: RecipeIndex, name: string, args: Json, tier: "fr
     const r = index.recipes.find((x) => x.id === args.id);
     if (!r) return text(`No recipe with id '${args.id}'. Use search_recipes to find ids.`, true);
     if (r.receipt.status !== "passed") return text(`Recipe '${r.id}' is not currently passing (status: ${r.receipt.status}).`, true);
-    if (args.versions === undefined) return text(r);
+    const out = r.manifest ? { ...r, recipe_hash_rule: RECIPE_HASH_RULE } : r;
+    if (args.versions === undefined) return text(out);
     const pv = parseVersionsInput(args.versions);
     if ("error" in pv) return text(pv.error, true);
-    return text({ compatibility: checkCompatibility(r.pinned, pv), ...r });
+    return text({ compatibility: checkCompatibility(r.pinned, pv), ...out });
   }
   if (name === "list_stacks") return text({ stacks: listStacks(index) });
   return null;
