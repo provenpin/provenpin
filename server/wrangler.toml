@@ -11,6 +11,8 @@ PROVENPIN_PRO_ENABLED = "false"
 PROVENPIN_REQUIRE_KEY = "false"
 # Anonymous real-usage counter (see USAGE-COUNTER.md). Off by default.
 PROVENPIN_USAGE_COUNTER = "true"
+# PROVENPIN_DEPLOY_COMMIT is not set here: pass it at deploy time so /health reports the live commit:
+#   npx wrangler deploy --var PROVENPIN_DEPLOY_COMMIT:$(git rev-parse HEAD)
 
 # KV namespace for Pro keys. Create it with: npx wrangler kv namespace create PRO_KEYS
 # (needs a token with Workers KV Storage Edit), then paste the id here and uncomment.
