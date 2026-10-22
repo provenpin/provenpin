@@ -22,7 +22,11 @@ jobs:
   plan:
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ steps.pick.outputs.matrix }}
+      total: ${{ steps.pick.outputs.total }}
+      batch1: ${{ steps.pick.outputs.batch1 }}
+      batch2: ${{ steps.pick.outputs.batch2 }}
+      batch3: ${{ steps.pick.outputs.batch3 }}
+      batch4: ${{ steps.pick.outputs.batch4 }}
     steps:
       - uses: actions/checkout@v4
       - id: pick
@@ -32,35 +36,50 @@ jobs:
           else
             ids=$(ls recipes | jq -R . | jq -sc .)
           fi
-          echo "matrix=$ids" >> "$GITHUB_OUTPUT"
+          # A matrix can't go over 256 jobs, so split the list into up to 4 batches of 250.
+          total=$(jq length <<<"$ids")
+          if [ "$total" -eq 0 ]; then
+            echo "::error::No recipes to check."
+            exit 1
+          fi
+          if [ "$total" -gt 1000 ]; then
+            echo "::error::$total recipes to check, over the 4 x 250 batch capacity. Add a batch job (check5) to this workflow."
+            exit 1
+          fi
+          {
+            echo "total=$total"
+            for b in 1 2 3 4; do echo "batch$b=$(jq -c ".[$(( (b-1)*250 )):$(( b*250 ))]" <<<"$ids")"; done
+          } >> "$GITHUB_OUTPUT"
+          echo "Checking $total: $ids"
 
-  check:
+  # Batches run one after another, so at most 8 check jobs run at once (max-parallel in staleness-batch.yml).
+  check1:
     needs: plan
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      max-parallel: 8
-      matrix:
-        recipe: ${{ fromJson(needs.plan.outputs.matrix) }}
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: "22" }
-      - run: npm install -g npm@11
-      - uses: actions/setup-python@v5
-        with: { python-version: "3.13" }
-      - uses: astral-sh/setup-uv@v6
-      - run: npm ci || npm install
-      - name: Re-test on latest stack versions (temp copy)
-        run: node runner/staleness.mjs ${{ matrix.recipe }}
-      - uses: actions/upload-artifact@v4
-        with:
-          name: stale-${{ matrix.recipe }}
-          path: staleness/${{ matrix.recipe }}.json
+    if: needs.plan.outputs.batch1 != '[]'
+    uses: ./.github/workflows/staleness-batch.yml
+    with: { recipes: "${{ needs.plan.outputs.batch1 }}" }
+
+  check2:
+    needs: [plan, check1]
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.batch2 != '[]' }}
+    uses: ./.github/workflows/staleness-batch.yml
+    with: { recipes: "${{ needs.plan.outputs.batch2 }}" }
+
+  check3:
+    needs: [plan, check2]
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.batch3 != '[]' }}
+    uses: ./.github/workflows/staleness-batch.yml
+    with: { recipes: "${{ needs.plan.outputs.batch3 }}" }
+
+  check4:
+    needs: [plan, check3]
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.batch4 != '[]' }}
+    uses: ./.github/workflows/staleness-batch.yml
+    with: { recipes: "${{ needs.plan.outputs.batch4 }}" }
 
   publish:
-    needs: check
-    if: always() && needs.check.result != 'skipped'
+    needs: [plan, check1, check2, check3, check4]
+    if: ${{ !cancelled() && needs.plan.result == 'success' && needs.plan.outputs.total != '0' }}
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
@@ -74,6 +93,11 @@ jobs:
       - run: npm ci || npm install
       - name: Commit index/staleness.json
         run: |
+          # No results means nothing was checked: don't re-stamp the old data with a new date.
+          if ! compgen -G "new-staleness/*.json" > /dev/null; then
+            echo "::error::No staleness results came back from the check jobs (planned ${{ needs.plan.outputs.total }}). Nothing to publish; check the jobs above."
+            exit 1
+          fi
           git config user.name "provenpin-bot"
           git config user.email "bot@users.noreply.github.com"
           for i in 1 2 3 4 5; do
