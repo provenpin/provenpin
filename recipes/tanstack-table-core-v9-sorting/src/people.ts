@@ -11,7 +11,6 @@ import {
   filterFn_equalsString,
   rowPaginationFeature,
   rowSortingFeature,
-  sortFn_basic,
   tableFeatures,
   type ColumnFiltersState,
   type PaginationState,
@@ -32,7 +31,7 @@ export const features = tableFeatures({
   sortedRowModel: createSortedRowModel(),
   filteredRowModel: createFilteredRowModel(),
   paginatedRowModel: createPaginatedRowModel(),
-  sortFns: { basic: sortFn_basic },
+  // A column can name only the filterFns registered here (v8 bundled them all).
   filterFns: { equalsString: filterFn_equalsString },
 });
 
@@ -41,7 +40,7 @@ const helper = createColumnHelper<typeof features, Person>();
 export const columns = helper.columns([
   helper.accessor("name", { header: "Name" }),
   helper.accessor("role", { header: "Role", filterFn: "equalsString" }),
-  helper.accessor("score", { header: "Score", sortFn: "basic" }),
+  helper.accessor("score", { header: "Score" }),
 ]);
 
 export function buildTable(opts: {

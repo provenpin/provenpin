@@ -39,6 +39,11 @@ test("filters by role then paginates", () => {
   assert.deepEqual(pageNames(t), ["Cy"]);
 });
 
+test("role filter matches whole values only", () => {
+  const t = buildTable({ data, filters: [{ id: "role", value: "adm" }], pagination: { pageIndex: 0, pageSize: 10 } });
+  assert.equal(t.getFilteredRowModel().rows.length, 0);
+});
+
 test("setters update state on the table", () => {
   const t = buildTable({ data, pagination: { pageIndex: 0, pageSize: 10 } });
   t.setSorting([{ id: "score", desc: false }]);
