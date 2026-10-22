@@ -133,3 +133,26 @@ test("search_recipes says plainly when no recipe fits", async () => {
   assert.match(out.hint, /No tested recipe fits/);
   assert.ok(typeof (await call("search_recipes", { query: "stripe webhook" })).results[0].coverage === "number");
 });
+test("get_recipe serves recipe.yaml and staleness so recipe_hash can be recomputed by the client", async () => {
+  const { createHash } = await import("node:crypto");
+  const files = [{ path: "src/app.ts", content: "export const x = 1;\n" }, { path: "package.json", content: "{\"name\":\"é\"}\n" }];
+  const manifest = { path: "recipe.yaml", content: "id: hashed\n" };
+  const hashOf = (fs: { path: string; content: string }[]) => {
+    const h = createHash("sha256");
+    for (const f of [...fs].sort((a, b) => (a.path < b.path ? -1 : 1))) { h.update(f.path + "\0"); h.update(Buffer.from(f.content, "utf8")); }
+    return "sha256:" + h.digest("hex");
+  };
+  const r: Recipe = { ...mk("hashed", ["zod"]), files, manifest,
+    staleness: { status: "passes_on_latest", checked_at: "2026-10-22T00:00:00Z", latest: { zod: "4.0.0" }, run_url: null } };
+  r.receipt.recipe_hash = hashOf([manifest, ...files]);
+  const h = createHandler({ ...index, recipes: [r, ...index.recipes] });
+  const got = JSON.parse((await (await h(new Request("http://x/mcp", { method: "POST", body: JSON.stringify(
+    { jsonrpc: "2.0", id: 1, method: "tools/call", params: { name: "get_recipe", arguments: { id: "hashed", versions: { zod: "4.0.0" } } } }) }))).json() as any).result.content[0].text);
+  assert.equal(got.manifest.content, "id: hashed\n");
+  assert.equal(got.staleness.status, "passes_on_latest");
+  assert.match(got.recipe_hash_rule, /NUL byte/);
+  assert.ok(got.compatibility);
+  assert.equal(hashOf([got.manifest, ...got.files]), got.receipt.recipe_hash);
+  // an index built before manifests were served gets no rule (nothing to recompute with)
+  assert.equal((await call("get_recipe", { id: "express-zod-validation" })).recipe_hash_rule, undefined);
+});

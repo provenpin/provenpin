@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { ROOT, listRecipeIds, loadRecipe, readReceipt, recipeHash } from "./lib.mjs";
 
-export function buildIndex() {
+export function buildIndex(staleness = readStaleness()) {
   const recipes = listRecipeIds().map((id) => {
     const r = loadRecipe(id);
     const rc = readReceipt(id);
@@ -16,6 +16,12 @@ export function buildIndex() {
         const sha256 = fresh ? rc.files?.[`recipes/${id}/${f}`] : undefined;
         return { path: f, ...(sha256 ? { sha256 } : {}), content: fs.readFileSync(path.join(r.dir, f), "utf8") };
       }),
+      // recipe.yaml is part of recipe_hash, so it is served too: a client can recompute the hash from this entry alone.
+      manifest: (() => {
+        const sha256 = fresh ? rc.files?.[`recipes/${id}/recipe.yaml`] : undefined;
+        return { path: "recipe.yaml", ...(sha256 ? { sha256 } : {}), content: fs.readFileSync(path.join(r.dir, "recipe.yaml"), "utf8") };
+      })(),
+      staleness: stalenessEntry(staleness, id),
       receipt: rc ? {
         status: fresh ? rc.status : "stale", ran_at: rc.ran_at, last_passed_at: rc.last_passed_at,
         tests: rc.tests, environment: rc.environment, recipe_hash: rc.recipe_hash,
@@ -39,13 +45,19 @@ export function readStaleness() {
   return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : { checked_at: null, recipes: {} };
 }
 
+/** A recipe's latest staleness result, or "unchecked" when the weekly check has no entry for it. */
+export function stalenessEntry(staleness, id) {
+  const st = staleness.recipes?.[id];
+  return st ? { status: st.status, checked_at: st.checked_at, latest: st.latest, run_url: st.run_url ?? null }
+    : { status: "unchecked", checked_at: null, latest: {}, run_url: null };
+}
+
 /** Public receipts feed: one small entry per recipe, built from receipts/ and index/staleness.json. */
 export function buildReceipts(idx, staleness = readStaleness()) {
   return {
     schema_version: 1, generated_at: idx.generated_at, staleness_checked_at: staleness.checked_at ?? null, count: idx.count,
     recipes: idx.recipes.map((r) => {
       const rc = readReceipt(r.id);
-      const st = staleness.recipes?.[r.id];
       return {
         id: r.id, language: r.language, pinned: r.pinned,
         runtime: rc?.environment?.runtime ?? r.runtime,
@@ -53,18 +65,18 @@ export function buildReceipts(idx, staleness = readStaleness()) {
         run_url: rc && r.receipt.status !== "stale" ? runUrl(rc) : null,
         recipe_hash: rc?.recipe_hash ?? null,
         files: rc?.files ?? null,
-        staleness: st ? { status: st.status, checked_at: st.checked_at, latest: st.latest, run_url: st.run_url ?? null }
-          : { status: "unchecked", checked_at: null, latest: {}, run_url: null },
+        staleness: stalenessEntry(staleness, r.id),
       };
     }),
   };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const idx = buildIndex();
+  const staleness = readStaleness();
+  const idx = buildIndex(staleness);
   fs.mkdirSync(path.join(ROOT, "index"), { recursive: true });
   fs.writeFileSync(path.join(ROOT, "index", "index.json"), JSON.stringify(idx));
-  fs.writeFileSync(path.join(ROOT, "index", "receipts.json"), JSON.stringify(buildReceipts(idx), null, 1) + "\n");
+  fs.writeFileSync(path.join(ROOT, "index", "receipts.json"), JSON.stringify(buildReceipts(idx, staleness), null, 1) + "\n");
   const servable = idx.recipes.filter((r) => r.receipt.status === "passed").length;
   console.log(`index: ${idx.count} recipes, ${servable} passed`);
   const i = process.argv.indexOf("--export");

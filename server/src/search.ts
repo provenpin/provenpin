@@ -6,10 +6,15 @@ export interface Receipt {
   /** Repo-relative path -> "sha256:<hex>" for every file covered by recipe_hash. */
   files?: Record<string, string>;
 }
+/** Latest weekly staleness check (index/staleness.json); status "unchecked" when the recipe has no entry yet. */
+export interface Staleness { status: string; checked_at: string | null; latest: Record<string, string>; run_url: string | null }
 export interface Recipe {
   id: string; title: string; summary: string; language: string; runtime: string;
   stack: string[]; tags: string[]; pinned: Record<string, string>; setup: string; test: string;
   files: RecipeFile[]; receipt: Receipt;
+  /** recipe.yaml, which recipe_hash covers along with files (absent in indexes built before it was served). */
+  manifest?: RecipeFile;
+  staleness?: Staleness;
 }
 export interface RecipeIndex { schema_version: number; generated_at: string; count: number; recipes: Recipe[] }
 
