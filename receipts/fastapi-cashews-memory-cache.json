@@ -1,15 +1,15 @@
 {
   "id": "fastapi-cashews-memory-cache",
   "status": "passed",
-  "ran_at": "2026-10-22T00:54:11.243Z",
-  "last_passed_at": "2026-10-22T00:54:11.243Z",
+  "ran_at": "2026-10-22T06:56:00.977Z",
+  "last_passed_at": "2026-10-22T06:56:00.977Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 455,
-    "test": 2164
+    "setup": 409,
+    "test": 2946
   },
   "pinned": {
     "fastapi": "0.143.2",
@@ -27,11 +27,11 @@
     "recipes/fastapi-cashews-memory-cache/tests/test_app.py": "sha256:ab88a8795b7da15977eb06edda64de5c47da7b801ad622e6263d565086020e05"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39702153453"
+    "runner": "github-actions 39736393633"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.60s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.96s\n"
 }

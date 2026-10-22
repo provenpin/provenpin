@@ -1,15 +1,15 @@
 {
   "id": "langchainjs-zod-tools",
   "status": "passed",
-  "ran_at": "2026-10-22T00:56:39.853Z",
-  "last_passed_at": "2026-10-22T00:56:39.853Z",
+  "ran_at": "2026-10-22T06:58:24.467Z",
+  "last_passed_at": "2026-10-22T06:58:24.467Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2930,
-    "test": 412
+    "setup": 3454,
+    "test": 702
   },
   "pinned": {
     "@langchain/core": "1.2.17",
@@ -25,11 +25,11 @@
     "recipes/langchainjs-zod-tools/test/agent.test.ts": "sha256:6ddd1d092280ad02c397697bd3565f7564c64d1578a9b9cc4cac03b104285891"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39702153453"
+    "runner": "github-actions 39736393633"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: tool validates and runs directly\nok 1 - tool validates and runs directly\n  ---\n  duration_ms: 4.213048\n  type: 'test'\n  ...\n# Subtest: loop executes tool calls and returns final answer\nok 2 - loop executes tool calls and returns final answer\n  ---\n  duration_ms: 0.598582\n  type: 'test'\n  ...\n# Subtest: bad args are returned to the model as an error\nok 3 - bad args are returned to the model as an error\n  ---\n  duration_ms: 0.379442\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 313.258032\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: tool validates and runs directly\nok 1 - tool validates and runs directly\n  ---\n  duration_ms: 7.418905\n  type: 'test'\n  ...\n# Subtest: loop executes tool calls and returns final answer\nok 2 - loop executes tool calls and returns final answer\n  ---\n  duration_ms: 1.050355\n  type: 'test'\n  ...\n# Subtest: bad args are returned to the model as an error\nok 3 - bad args are returned to the model as an error\n  ---\n  duration_ms: 0.664189\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 548.177591\n"
 }

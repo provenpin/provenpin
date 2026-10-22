@@ -1,15 +1,15 @@
 {
   "id": "axios-retry-nock",
   "status": "passed",
-  "ran_at": "2026-10-22T00:52:10.437Z",
-  "last_passed_at": "2026-10-22T00:52:10.437Z",
+  "ran_at": "2026-10-22T06:50:51.323Z",
+  "last_passed_at": "2026-10-22T06:50:51.323Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2461,
-    "test": 613
+    "setup": 2218,
+    "test": 697
   },
   "pinned": {
     "axios": "1.20.0",
@@ -26,11 +26,11 @@
     "recipes/axios-retry-nock/test/client.test.ts": "sha256:699f53a072bdbd0b57e002ce3b5f46209db7ab53eeac5f7246e3b84ef3112238"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39702153453"
+    "runner": "github-actions 39736393633"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: retries 503 then succeeds\nok 1 - retries 503 then succeeds\n  ---\n  duration_ms: 60.352236\n  type: 'test'\n  ...\n# Subtest: retries 429\nok 2 - retries 429\n  ---\n  duration_ms: 13.99033\n  type: 'test'\n  ...\n# Subtest: does not retry non-idempotent POST on 500\nok 3 - does not retry non-idempotent POST on 500\n  ---\n  duration_ms: 14.826821\n  type: 'test'\n  ...\n# Subtest: gives up after the retry limit\nok 4 - gives up after the retry limit\n  ---\n  duration_ms: 21.362373\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 469.862048\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: retries 503 then succeeds\nok 1 - retries 503 then succeeds\n  ---\n  duration_ms: 78.298597\n  type: 'test'\n  ...\n# Subtest: retries 429\nok 2 - retries 429\n  ---\n  duration_ms: 18.229862\n  type: 'test'\n  ...\n# Subtest: does not retry non-idempotent POST on 500\nok 3 - does not retry non-idempotent POST on 500\n  ---\n  duration_ms: 16.424241\n  type: 'test'\n  ...\n# Subtest: gives up after the retry limit\nok 4 - gives up after the retry limit\n  ---\n  duration_ms: 25.437776\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 548.677646\n"
 }

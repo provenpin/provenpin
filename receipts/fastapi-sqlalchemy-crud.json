@@ -1,15 +1,15 @@
 {
   "id": "fastapi-sqlalchemy-crud",
   "status": "passed",
-  "ran_at": "2026-10-22T00:54:38.379Z",
-  "last_passed_at": "2026-10-22T00:54:38.379Z",
+  "ran_at": "2026-10-22T06:56:37.312Z",
+  "last_passed_at": "2026-10-22T06:56:37.312Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 613,
-    "test": 3049
+    "setup": 696,
+    "test": 3583
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -28,11 +28,11 @@
     "recipes/fastapi-sqlalchemy-crud/tests/test_main.py": "sha256:ed7fa2286380d29adf5667e89cdbbda7f837ddf1bf9b51de10786048d19f6ff7"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39702153453"
+    "runner": "github-actions 39736393633"
   },
   "errors": [],
-  "log_tail": "..                                                                       [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-sqlalchemy-crud-P5kAP8/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 1.83s\n"
+  "log_tail": "..                                                                       [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-sqlalchemy-crud-GKjbwk/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 1.83s\n"
 }

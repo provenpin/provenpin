@@ -1,15 +1,15 @@
 {
   "id": "markdown-pygments-codehilite",
   "status": "passed",
-  "ran_at": "2026-10-22T00:57:01.063Z",
-  "last_passed_at": "2026-10-22T00:57:01.063Z",
+  "ran_at": "2026-10-22T06:58:45.070Z",
+  "last_passed_at": "2026-10-22T06:58:45.070Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 197,
-    "test": 1266
+    "setup": 278,
+    "test": 2790
   },
   "pinned": {
     "markdown": "3.11.1",
@@ -25,11 +25,11 @@
     "recipes/markdown-pygments-codehilite/tests/test_renderer.py": "sha256:58b885c702b26e78caaa29df008970a282464bae49f61431afe73f4cf251b0bc"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39702153453"
+    "runner": "github-actions 39736393633"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.14s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.13s\n"
 }

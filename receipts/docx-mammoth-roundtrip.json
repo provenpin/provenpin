@@ -1,15 +1,15 @@
 {
   "id": "docx-mammoth-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-22T00:52:54.266Z",
-  "last_passed_at": "2026-10-22T00:52:54.266Z",
+  "ran_at": "2026-10-22T06:53:11.683Z",
+  "last_passed_at": "2026-10-22T06:53:11.683Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2637,
-    "test": 505
+    "setup": 2203,
+    "test": 603
   },
   "pinned": {
     "docx": "9.11.0",
@@ -26,11 +26,11 @@
     "recipes/docx-mammoth-roundtrip/test/roundtrip.test.ts": "sha256:b992a99743d780a6651a7ec860354618b7210cb4a3a35c94ec2932aff8d7ec0b"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39702153453"
+    "runner": "github-actions 39736393633"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates a non-empty in-memory docx buffer\nok 1 - generates a non-empty in-memory docx buffer\n  ---\n  duration_ms: 51.622291\n  type: 'test'\n  ...\n# Subtest: convertToHtml renders the heading, paragraph and table\nok 2 - convertToHtml renders the heading, paragraph and table\n  ---\n  duration_ms: 49.125871\n  type: 'test'\n  ...\n# Subtest: extractRawText preserves the document text\nok 3 - extractRawText preserves the document text\n  ---\n  duration_ms: 23.623717\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 398.113115\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates a non-empty in-memory docx buffer\nok 1 - generates a non-empty in-memory docx buffer\n  ---\n  duration_ms: 53.200076\n  type: 'test'\n  ...\n# Subtest: convertToHtml renders the heading, paragraph and table\nok 2 - convertToHtml renders the heading, paragraph and table\n  ---\n  duration_ms: 57.356517\n  type: 'test'\n  ...\n# Subtest: extractRawText preserves the document text\nok 3 - extractRawText preserves the document text\n  ---\n  duration_ms: 26.660753\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 481.019211\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "hypothesis-stateful-rulebasedstatemachine",
   "status": "passed",
-  "ran_at": "2026-10-22T00:55:43.628Z",
-  "last_passed_at": "2026-10-22T00:55:43.628Z",
+  "ran_at": "2026-10-22T06:57:34.337Z",
+  "last_passed_at": "2026-10-22T06:57:34.337Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 270,
-    "test": 4809
+    "setup": 329,
+    "test": 5878
   },
   "pinned": {
     "hypothesis": "6.170.1",
@@ -24,11 +24,11 @@
     "recipes/hypothesis-stateful-rulebasedstatemachine/tests/test_stateful.py": "sha256:99c729b9888504a80a25fdeebd443af74e5669e1a2b906cc42cade3d8a20bb24"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39702153453"
+    "runner": "github-actions 39736393633"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 3.08s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 4.67s\n"
 }

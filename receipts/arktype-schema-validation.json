@@ -1,15 +1,15 @@
 {
   "id": "arktype-schema-validation",
   "status": "passed",
-  "ran_at": "2026-10-22T00:51:52.992Z",
-  "last_passed_at": "2026-10-22T00:51:52.992Z",
+  "ran_at": "2026-10-22T06:50:32.219Z",
+  "last_passed_at": "2026-10-22T06:50:32.219Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1653,
-    "test": 467
+    "setup": 1531,
+    "test": 455
   },
   "pinned": {
     "arktype": "2.2.8",
@@ -24,11 +24,11 @@
     "recipes/arktype-schema-validation/test/user.test.ts": "sha256:4eb9331fa11d85be9407f6d9a5368e0dc03dae6672eead05519a620777e2abd9"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39702153453"
+    "runner": "github-actions 39736393633"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid user\nok 1 - accepts a valid user\n  ---\n  duration_ms: 0.559097\n  type: 'test'\n  ...\n# Subtest: rejects bad email with problems summary\nok 2 - rejects bad email with problems summary\n  ---\n  duration_ms: 0.699888\n  type: 'test'\n  ...\n# Subtest: CreateUser morph fills default age and role\nok 3 - CreateUser morph fills default age and role\n  ---\n  duration_ms: 0.435532\n  type: 'test'\n  ...\n# Subtest: discriminated Event union\nok 4 - discriminated Event union\n  ---\n  duration_ms: 0.285908\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 356.632014\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid user\nok 1 - accepts a valid user\n  ---\n  duration_ms: 0.702674\n  type: 'test'\n  ...\n# Subtest: rejects bad email with problems summary\nok 2 - rejects bad email with problems summary\n  ---\n  duration_ms: 0.745418\n  type: 'test'\n  ...\n# Subtest: CreateUser morph fills default age and role\nok 3 - CreateUser morph fills default age and role\n  ---\n  duration_ms: 0.459319\n  type: 'test'\n  ...\n# Subtest: discriminated Event union\nok 4 - discriminated Event union\n  ---\n  duration_ms: 0.366499\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 338.698462\n"
 }
