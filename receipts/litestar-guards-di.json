@@ -1,15 +1,15 @@
 {
   "id": "litestar-guards-di",
   "status": "passed",
-  "ran_at": "2026-10-21T18:52:06.499Z",
-  "last_passed_at": "2026-10-21T18:52:06.499Z",
+  "ran_at": "2026-10-22T00:56:51.130Z",
+  "last_passed_at": "2026-10-22T00:56:51.130Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 842,
-    "test": 3849
+    "setup": 556,
+    "test": 2523
   },
   "pinned": {
     "litestar": "2.24.0",
@@ -24,11 +24,11 @@
     "recipes/litestar-guards-di/tests/test_app.py": "sha256:03a9f7ce77bc736a75273f6baa909ec0fa3c5bbc4b85e695256d745f61ab58d3"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39655665847"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: 2 warnings\ntests/test_app.py: 10 warnings\n  /tmp/pp-litestar-guards-di-YM20Zl/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='get_item'] Inferred dependency field 'repo'. Mark the field explicitly with 'NamedDependency[<class 'app.ItemRepo'>]'. Inferred dependencies will stop working in Litestar 3.0\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: 2 warnings\ntests/test_app.py: 10 warnings\n  /tmp/pp-litestar-guards-di-YM20Zl/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='get_item'] path parameter 'item_id' declared using deprecated inferred style. Use 'FromPath[<type>]' or 'Annotated[<type>, PathParameter(...)]' instead\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577\ntests/test_app.py::test_get_returns_item_without_role\ntests/test_app.py::test_missing_item_uses_exception_handler\ntests/test_app.py::test_delete_without_credentials_is_401\ntests/test_app.py::test_delete_with_wrong_role_is_403\ntests/test_app.py::test_admin_delete_removes_item\n  /tmp/pp-litestar-guards-di-YM20Zl/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='delete_item'] Inferred dependency field 'repo'. Mark the field explicitly with 'NamedDependency[<class 'app.ItemRepo'>]'. Inferred dependencies will stop working in Litestar 3.0\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577\ntests/test_app.py::test_get_returns_item_without_role\ntests/test_app.py::test_missing_item_uses_exception_handler\ntests/test_app.py::test_delete_without_credentials_is_401\ntests/test_app.py::test_delete_with_wrong_role_is_403\ntests/test_app.py::test_admin_delete_removes_item\n  /tmp/pp-litestar-guards-di-YM20Zl/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='delete_item'] path parameter 'item_id' declared using deprecated inferred style. Use 'FromPath[<type>]' or 'Annotated[<type>, PathParameter(...)]' instead\n    return KwargsModel.create_for_signature_model(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 36 warnings in 1.13s\n"
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: 2 warnings\ntests/test_app.py: 10 warnings\n  /tmp/pp-litestar-guards-di-zINzuj/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='get_item'] Inferred dependency field 'repo'. Mark the field explicitly with 'NamedDependency[<class 'app.ItemRepo'>]'. Inferred dependencies will stop working in Litestar 3.0\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: 2 warnings\ntests/test_app.py: 10 warnings\n  /tmp/pp-litestar-guards-di-zINzuj/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='get_item'] path parameter 'item_id' declared using deprecated inferred style. Use 'FromPath[<type>]' or 'Annotated[<type>, PathParameter(...)]' instead\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577\ntests/test_app.py::test_get_returns_item_without_role\ntests/test_app.py::test_missing_item_uses_exception_handler\ntests/test_app.py::test_delete_without_credentials_is_401\ntests/test_app.py::test_delete_with_wrong_role_is_403\ntests/test_app.py::test_admin_delete_removes_item\n  /tmp/pp-litestar-guards-di-zINzuj/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='delete_item'] Inferred dependency field 'repo'. Mark the field explicitly with 'NamedDependency[<class 'app.ItemRepo'>]'. Inferred dependencies will stop working in Litestar 3.0\n    return KwargsModel.create_for_signature_model(\n\n.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577\ntests/test_app.py::test_get_returns_item_without_role\ntests/test_app.py::test_missing_item_uses_exception_handler\ntests/test_app.py::test_delete_without_credentials_is_401\ntests/test_app.py::test_delete_with_wrong_role_is_403\ntests/test_app.py::test_admin_delete_removes_item\n  /tmp/pp-litestar-guards-di-zINzuj/.venv/lib/python3.13/site-packages/litestar/handlers/base.py:577: LitestarDeprecationWarning: [paths='/items/{item_id:int}', handler='delete_item'] path parameter 'item_id' declared using deprecated inferred style. Use 'FromPath[<type>]' or 'Annotated[<type>, PathParameter(...)]' instead\n    return KwargsModel.create_for_signature_model(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 36 warnings in 0.93s\n"
 }

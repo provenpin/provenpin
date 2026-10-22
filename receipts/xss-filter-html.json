@@ -1,15 +1,15 @@
 {
   "id": "xss-filter-html",
   "status": "passed",
-  "ran_at": "2026-10-21T18:56:47.550Z",
-  "last_passed_at": "2026-10-21T18:56:47.550Z",
+  "ran_at": "2026-10-22T01:01:27.987Z",
+  "last_passed_at": "2026-10-22T01:01:27.987Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2296,
-    "test": 345
+    "setup": 1765,
+    "test": 300
   },
   "pinned": {
     "xss": "1.0.15",
@@ -24,11 +24,11 @@
     "recipes/xss-filter-html/test/sanitize.test.ts": "sha256:5e3b7f053bb60f953f9190ab552ba04757e25a1c7a87a9f0e9d434fec73b9080"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39655665847"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": "# Subtest: keeps whitelisted markup intact\nok 1 - keeps whitelisted markup intact\n  ---\n  duration_ms: 1.667795\n  type: 'test'\n  ...\n# Subtest: strips script tags and their contents\nok 2 - strips script tags and their contents\n  ---\n  duration_ms: 0.425872\n  type: 'test'\n  ...\n# Subtest: removes event handler attributes but keeps safe ones\nok 3 - removes event handler attributes but keeps safe ones\n  ---\n  duration_ms: 0.728626\n  type: 'test'\n  ...\n# Subtest: removes javascript: urls\nok 4 - removes javascript: urls\n  ---\n  duration_ms: 0.244125\n  type: 'test'\n  ...\n# Subtest: strips disallowed tags and their handlers\nok 5 - strips disallowed tags and their handlers\n  ---\n  duration_ms: 0.199111\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 200.878528\n"
+  "log_tail": "# Subtest: keeps whitelisted markup intact\nok 1 - keeps whitelisted markup intact\n  ---\n  duration_ms: 1.077769\n  type: 'test'\n  ...\n# Subtest: strips script tags and their contents\nok 2 - strips script tags and their contents\n  ---\n  duration_ms: 0.230837\n  type: 'test'\n  ...\n# Subtest: removes event handler attributes but keeps safe ones\nok 3 - removes event handler attributes but keeps safe ones\n  ---\n  duration_ms: 0.441643\n  type: 'test'\n  ...\n# Subtest: removes javascript: urls\nok 4 - removes javascript: urls\n  ---\n  duration_ms: 0.161923\n  type: 'test'\n  ...\n# Subtest: strips disallowed tags and their handlers\nok 5 - strips disallowed tags and their handlers\n  ---\n  duration_ms: 0.108032\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 195.580565\n"
 }

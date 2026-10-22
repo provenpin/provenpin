@@ -1,15 +1,15 @@
 {
   "id": "aws-sdk-v3-s3-client-mock",
   "status": "passed",
-  "ran_at": "2026-10-21T18:47:22.031Z",
-  "last_passed_at": "2026-10-21T18:47:22.031Z",
+  "ran_at": "2026-10-22T00:52:04.567Z",
+  "last_passed_at": "2026-10-22T00:52:04.567Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5144,
-    "test": 717
+    "setup": 4554,
+    "test": 405
   },
   "pinned": {
     "@aws-sdk/client-s3": "3.1152.0",
@@ -30,8 +30,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39655665847"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": "# Subtest: putJson sends the right command input\nok 1 - putJson sends the right command input\n  ---\n  duration_ms: 8.762873\n  type: 'test'\n  ...\n# Subtest: getJson reads a streamed body and maps NoSuchKey to null\nok 2 - getJson reads a streamed body and maps NoSuchKey to null\n  ---\n  duration_ms: 5.89068\n  type: 'test'\n  ...\n# Subtest: listKeys follows continuation tokens across pages\nok 3 - listKeys follows continuation tokens across pages\n  ---\n  duration_ms: 1.75844\n  type: 'test'\n  ...\n# Subtest: deleteKeys batches by 1000 and surfaces per-key errors\nok 4 - deleteKeys batches by 1000 and surfaces per-key errors\n  ---\n  duration_ms: 1.854339\n  type: 'test'\n  ...\n# Subtest: presigned URLs are signed locally with SigV4 query params\nok 5 - presigned URLs are signed locally with SigV4 query params\n  ---\n  duration_ms: 26.008627\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 560.177331\n"
+  "log_tail": "# Subtest: putJson sends the right command input\nok 1 - putJson sends the right command input\n  ---\n  duration_ms: 4.500561\n  type: 'test'\n  ...\n# Subtest: getJson reads a streamed body and maps NoSuchKey to null\nok 2 - getJson reads a streamed body and maps NoSuchKey to null\n  ---\n  duration_ms: 3.180152\n  type: 'test'\n  ...\n# Subtest: listKeys follows continuation tokens across pages\nok 3 - listKeys follows continuation tokens across pages\n  ---\n  duration_ms: 0.998595\n  type: 'test'\n  ...\n# Subtest: deleteKeys batches by 1000 and surfaces per-key errors\nok 4 - deleteKeys batches by 1000 and surfaces per-key errors\n  ---\n  duration_ms: 1.085225\n  type: 'test'\n  ...\n# Subtest: presigned URLs are signed locally with SigV4 query params\nok 5 - presigned URLs are signed locally with SigV4 query params\n  ---\n  duration_ms: 12.559445\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 309.580848\n"
 }

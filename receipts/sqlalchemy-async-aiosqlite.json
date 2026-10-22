@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-async-aiosqlite",
   "status": "passed",
-  "ran_at": "2026-10-21T18:55:32.851Z",
-  "last_passed_at": "2026-10-21T18:55:32.851Z",
+  "ran_at": "2026-10-22T01:00:04.042Z",
+  "last_passed_at": "2026-10-22T01:00:04.042Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 214,
-    "test": 2418
+    "setup": 289,
+    "test": 1986
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -27,11 +27,11 @@
     "recipes/sqlalchemy-async-aiosqlite/tests/test_models.py": "sha256:f60d9381a43af4afdbe88c06dc6cc78d394f7b310550f433c3dc2ed036618567"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39655665847"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": "..                                                                       [100%]\n2 passed in 0.90s\n"
+  "log_tail": "..                                                                       [100%]\n2 passed in 1.07s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "inflect-plural-ordinal",
   "status": "passed",
-  "ran_at": "2026-10-21T18:51:11.388Z",
-  "last_passed_at": "2026-10-21T18:51:11.388Z",
+  "ran_at": "2026-10-22T00:55:59.787Z",
+  "last_passed_at": "2026-10-22T00:55:59.787Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 398,
-    "test": 2628
+    "setup": 507,
+    "test": 3554
   },
   "pinned": {
     "inflect": "7.5.0",
@@ -24,11 +24,11 @@
     "recipes/inflect-plural-ordinal/ui.py": "sha256:7b11d17045285fb3504bf7a0ecf2bef56ed92b374c1c737028daf3d05fc65ab8"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39655665847"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.65s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.66s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "luxon-timezones-intervals",
   "status": "passed",
-  "ran_at": "2026-10-21T18:52:08.195Z",
-  "last_passed_at": "2026-10-21T18:52:08.195Z",
+  "ran_at": "2026-10-22T00:56:55.342Z",
+  "last_passed_at": "2026-10-22T00:56:55.342Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1940,
-    "test": 646
+    "setup": 1808,
+    "test": 391
   },
   "pinned": {
     "luxon": "3.7.2",
@@ -25,11 +25,11 @@
     "recipes/luxon-timezones-intervals/test/time.test.ts": "sha256:692f87a09c5c338c26091dd86601868d3abf42d8bcbbb4454577a1a95ff5575e"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39655665847"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": "# Subtest: zone conversion keeps the instant\nok 1 - zone conversion keeps the instant\n  ---\n  duration_ms: 253.574533\n  type: 'test'\n  ...\n# Subtest: business hours in the caller's zone\nok 2 - business hours in the caller's zone\n  ---\n  duration_ms: 1.400346\n  type: 'test'\n  ...\n# Subtest: interval overlap\nok 3 - interval overlap\n  ---\n  duration_ms: 1.468223\n  type: 'test'\n  ...\n# Subtest: month math clamps to month end; durations read well\nok 4 - month math clamps to month end; durations read well\n  ---\n  duration_ms: 28.097939\n  type: 'test'\n  ...\n# Subtest: invalid input throws\nok 5 - invalid input throws\n  ---\n  duration_ms: 0.537814\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 495.940303\n"
+  "log_tail": "# Subtest: zone conversion keeps the instant\nok 1 - zone conversion keeps the instant\n  ---\n  duration_ms: 37.763333\n  type: 'test'\n  ...\n# Subtest: business hours in the caller's zone\nok 2 - business hours in the caller's zone\n  ---\n  duration_ms: 1.231938\n  type: 'test'\n  ...\n# Subtest: interval overlap\nok 3 - interval overlap\n  ---\n  duration_ms: 1.353284\n  type: 'test'\n  ...\n# Subtest: month math clamps to month end; durations read well\nok 4 - month math clamps to month end; durations read well\n  ---\n  duration_ms: 10.938064\n  type: 'test'\n  ...\n# Subtest: invalid input throws\nok 5 - invalid input throws\n  ---\n  duration_ms: 0.447905\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 244.714586\n"
 }

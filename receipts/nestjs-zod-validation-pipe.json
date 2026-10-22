@@ -1,15 +1,15 @@
 {
   "id": "nestjs-zod-validation-pipe",
   "status": "passed",
-  "ran_at": "2026-10-21T18:52:37.658Z",
-  "last_passed_at": "2026-10-21T18:52:37.658Z",
+  "ran_at": "2026-10-22T00:57:17.329Z",
+  "last_passed_at": "2026-10-22T00:57:17.329Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5537,
-    "test": 1024
+    "setup": 4497,
+    "test": 851
   },
   "pinned": {
     "@nestjs/core": "12.1.3",
@@ -38,8 +38,8 @@
     "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39655665847"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid body and coerces age\nok 1 - accepts a valid body and coerces age\n  ---\n  duration_ms: 154.394469\n  type: 'test'\n  ...\n# Subtest: rejects invalid body with field errors\nok 2 - rejects invalid body with field errors\n  ---\n  duration_ms: 15.393523\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 885.932165\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid body and coerces age\nok 1 - accepts a valid body and coerces age\n  ---\n  duration_ms: 124.801215\n  type: 'test'\n  ...\n# Subtest: rejects invalid body with field errors\nok 2 - rejects invalid body with field errors\n  ---\n  duration_ms: 10.965494\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 733.453495\n"
 }

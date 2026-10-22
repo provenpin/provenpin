@@ -1,15 +1,15 @@
 {
   "id": "cachetools-ttl-memoize",
   "status": "passed",
-  "ran_at": "2026-10-21T18:47:43.748Z",
-  "last_passed_at": "2026-10-21T18:47:43.748Z",
+  "ran_at": "2026-10-22T00:52:31.128Z",
+  "last_passed_at": "2026-10-22T00:52:31.128Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 231,
-    "test": 1179
+    "setup": 456,
+    "test": 1316
   },
   "pinned": {
     "cachetools": "7.2.1",
@@ -24,11 +24,11 @@
     "recipes/cachetools-ttl-memoize/tests/test_memoize.py": "sha256:8924a3357d371f3eba0985e6cb7e726a18526f514d7bfa2b9a46148246d73b3c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39655665847"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
 }

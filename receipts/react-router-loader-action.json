@@ -1,15 +1,15 @@
 {
   "id": "react-router-loader-action",
   "status": "passed",
-  "ran_at": "2026-10-21T18:54:52.957Z",
-  "last_passed_at": "2026-10-21T18:54:52.957Z",
+  "ran_at": "2026-10-22T00:59:29.455Z",
+  "last_passed_at": "2026-10-22T00:59:29.455Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3061,
-    "test": 660
+    "setup": 3083,
+    "test": 606
   },
   "pinned": {
     "react-router": "8.4.0",
@@ -27,11 +27,11 @@
     "recipes/react-router-loader-action/test/routes.test.ts": "sha256:07bef8a1e7638a78395d846898d4ecbf8b1419f7e55ce9fa2cf2a68252d52c6c"
   },
   "environment": {
-    "os": "linux 7.0.0-1017-azure",
+    "os": "linux 6.17.0-1022-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39655665847"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loader data for nested route\nok 1 - loader data for nested route\n  ---\n  duration_ms: 39.536516\n  type: 'test'\n  ...\n# Subtest: missing note is a 404 error boundary\nok 2 - missing note is a 404 error boundary\n  ---\n  duration_ms: 2.946175\n  type: 'test'\n  ...\n# Subtest: action redirects on success and returns 400 with errors\nok 3 - action redirects on success and returns 400 with errors\n  ---\n  duration_ms: 9.315941\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 503.724152\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loader data for nested route\nok 1 - loader data for nested route\n  ---\n  duration_ms: 25.680812\n  type: 'test'\n  ...\n# Subtest: missing note is a 404 error boundary\nok 2 - missing note is a 404 error boundary\n  ---\n  duration_ms: 0.815854\n  type: 'test'\n  ...\n# Subtest: action redirects on success and returns 400 with errors\nok 3 - action redirects on success and returns 400 with errors\n  ---\n  duration_ms: 9.19163\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 459.735252\n"
 }

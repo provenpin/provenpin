@@ -1,15 +1,15 @@
 {
   "id": "xlsxwriter-charts-bytesio",
   "status": "passed",
-  "ran_at": "2026-10-20T01:28:03.126Z",
-  "last_passed_at": "2026-10-20T01:28:03.126Z",
+  "ran_at": "2026-10-22T01:01:25.278Z",
+  "last_passed_at": "2026-10-22T01:01:25.278Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 481,
-    "test": 798
+    "setup": 177,
+    "test": 654
   },
   "pinned": {
     "xlsxwriter": "3.2.9",
@@ -24,11 +24,11 @@
     "recipes/xlsxwriter-charts-bytesio/tests/test_report.py": "sha256:346d0679e306b5e2cfc2d03e85d4742371c9ad5d4529ab5400d338007aa4ec2c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39702153453"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.18s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.14s\n"
 }
