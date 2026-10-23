@@ -1,11 +1,11 @@
-import { IntlMessageFormat } from "intl-messageformat";
+import { IntlMessageFormat, type Formats } from "intl-messageformat";
 
 export const locales = ["en", "fr"] as const;
 export type Locale = (typeof locales)[number];
 
 export type MessageValues = Record<string, unknown>;
 
-const overrideFormats = {
+const overrideFormats: Partial<Formats> = {
   date: {
     ymd: {
       year: "numeric",

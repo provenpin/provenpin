@@ -1,10 +1,10 @@
-import { Tiktoken } from "js-tiktoken/lite";
+import { Tiktoken, type TiktokenBPE } from "js-tiktoken/lite";
 import cl100k_base from "js-tiktoken/ranks/cl100k_base";
 import o200k_base from "js-tiktoken/ranks/o200k_base";
 
 export type EncodingName = "cl100k_base" | "o200k_base";
 
-const RANKS: Record<EncodingName, Record<string, number>> = {
+const RANKS: Record<EncodingName, TiktokenBPE> = {
   cl100k_base,
   o200k_base,
 };
