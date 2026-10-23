@@ -85,6 +85,7 @@ npm install
 npm run validate                 # check manifests and pins
 npm run test:recipes             # run every recipe, write receipts
 node runner/run.mjs hono-zod-validator   # run one
+node runner/typecheck.mjs hono-zod-validator   # tsc --noEmit on a TypeScript recipe (CI runs it on touched recipes)
 npm run affected                 # recipes with newer upstream releases
 npm run build:index              # build index/index.json
 npm test                         # runner unit tests
