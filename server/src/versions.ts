@@ -134,7 +134,7 @@ export function verdictFor(tested: string, yours: string | undefined): Verdict {
   return "mismatch";
 }
 
-/** Build tools and type packages do not change the recipe's runtime behavior, so they are not checked. */
+/** Build tools, test tools and type packages do not change the recipe's runtime behavior: they are listed under tooling and never change overall. */
 const TOOLING = /^(@types\/.*|tsx|typescript|ts-node|vitest|jest|supertest|pytest.*|ruff|mypy|black)$/;
 
 export function checkCompatibility(pinned: Record<string, string>, parsed: ParsedVersions): Compatibility {

@@ -119,6 +119,24 @@ const sidx: RecipeIndex = { schema_version: 1, generated_at: "x", count: 2, reci
 const sh = createHandler(sidx);
 const ssearch = async (args: object) => { const r = await sh(new Request("http://x/mcp", { method: "POST", body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "tools/call", params: { name: "search_recipes", arguments: args } }) })); return JSON.parse(((await r.json()) as any).result.content[0].text); };
 
+const T = (id: string, tags: string[], pinned: Record<string, string>) => ({ ...S(id, id, pinned), tags });
+const tidx: RecipeIndex = { schema_version: 1, generated_at: "x", count: 2, recipes: [T("c-wide", ["drizzle", "orm", "sqlite", "crud", "migrations", "schema", "relations"], { "better-sqlite3": "12.11.1" }), T("d-narrow", ["sqlite"], { "better-sqlite3": "13.0.3" })] };
+
+test("search: the mismatch factor, not only the boost, reorders a clearly more relevant mismatching recipe", async () => {
+  const th = createHandler(tidx);
+  const run = async (args: object) => {
+    const r = await th(new Request("http://x/mcp", { method: "POST", body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "tools/call", params: { name: "search_recipes", arguments: args } }) }));
+    return JSON.parse(((await r.json()) as any).result.content[0].text);
+  };
+  const q = "drizzle orm sqlite crud migrations schema relations";
+  const plain = (await run({ query: q })).results;
+  assert.deepEqual(plain.map((r: any) => r.id), ["c-wide", "d-narrow"]);
+  assert.ok(plain[0].score - 4 > plain[1].score + 6, "the boost alone must not flip this order");
+  const s = (await run({ query: q, versions: { "better-sqlite3": "13.0.3" } })).results;
+  assert.deepEqual(s.map((r: any) => r.id), ["d-narrow", "c-wide"]);
+  assert.equal(MISMATCH_FACTOR, 0.75);
+});
+
 test("search: a recipe whose pins conflict with the project ranks below one that fits", async () => {
   const plain = await ssearch({ query: "drizzle orm sqlite" });
   assert.deepEqual(plain.results.map((r: any) => r.id), ["a-sqlite12", "b-sqlite13"]);
