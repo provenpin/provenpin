@@ -22,6 +22,6 @@ export const buttonVariants = cva("inline-flex items-center rounded-md font-medi
 
 export type ButtonVariantProps = VariantProps<typeof buttonVariants>;
 
-export function buttonClass(props: ButtonVariantProps & { className?: string }) {
-  return cn(buttonVariants(props), props.className);
+export function buttonClass({ className, ...variants }: ButtonVariantProps & { className?: string }) {
+  return cn(buttonVariants(variants), className);
 }

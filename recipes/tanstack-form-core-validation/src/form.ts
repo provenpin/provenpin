@@ -3,8 +3,9 @@ import { FormApi } from "@tanstack/form-core";
 export type Signup = { email: string; age: number };
 
 export function createSignupForm(onValid: (v: Signup) => void) {
-  const form = new FormApi<Signup>({
-    defaultValues: { email: "", age: 0 },
+  const defaultValues: Signup = { email: "", age: 0 };
+  const form = new FormApi({
+    defaultValues,
     onSubmit: async ({ value }) => {
       onValid(value);
     },
