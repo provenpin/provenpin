@@ -6,5 +6,5 @@
     "test": "node --import tsx --test test/*.test.ts"
   },
   "dependencies": {"sql.js":"1.15.0"},
-  "devDependencies": {"@types/node":"26.6.5","tsx":"4.23.15"}
+  "devDependencies": {"@types/node":"26.6.5","@types/sql.js":"1.4.11","tsx":"4.23.15"}
 }

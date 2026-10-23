@@ -1,5 +1,5 @@
 import ical, { ICalEventRepeatingFreq, ICalAttendeeRole } from "ical-generator";
-import nodeIcal from "node-ical";
+import nodeIcal, { type VEvent } from "node-ical";
 
 export type Session = { id: string; title: string; start: Date; end: Date; location: string };
 
@@ -24,12 +24,12 @@ export function buildCalendar(sessions: Session[]) {
 export function parseCalendar(ics: string) {
   const data = nodeIcal.sync.parseICS(ics);
   return Object.values(data)
-    .filter((c): c is nodeIcal.VEvent => c.type === "VEVENT")
+    .filter((c): c is VEvent => c?.type === "VEVENT")
     .map((e) => ({
       uid: e.uid,
       summary: String(e.summary),
       start: new Date(e.start).toISOString(),
-      end: new Date(e.end).toISOString(),
+      end: e.end ? new Date(e.end).toISOString() : null,
       location: e.location ? String(e.location) : null,
       rrule: e.rrule ? e.rrule.toString() : null,
       // node-ical keys each EXDATE under more than one lookup key, so de-duplicate

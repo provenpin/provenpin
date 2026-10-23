@@ -3,8 +3,8 @@ import {
   decode,
   encodeChat,
   isWithinTokenLimit,
-  type ChatMessage,
 } from "gpt-tokenizer";
+import type { ChatMessage } from "gpt-tokenizer/GptEncoding";
 
 export function countTokens(text: string): number {
   return encode(text).length;
