@@ -1,7 +1,7 @@
 import openapiTS, { astToString } from "openapi-typescript";
-import type { OpenAPI3_1 } from "openapi-typescript";
+import type { OpenAPI3 } from "openapi-typescript";
 
-export const usersSpec: OpenAPI3_1 = {
+export const usersSpec: OpenAPI3 = {
   openapi: "3.1.0",
   info: { title: "Users API", version: "1.0.0" },
   paths: {
@@ -85,7 +85,7 @@ export const usersSpec: OpenAPI3_1 = {
 };
 
 export async function generateTypes(
-  spec: OpenAPI3_1 = usersSpec,
+  spec: OpenAPI3 = usersSpec,
 ): Promise<string> {
   const ast = await openapiTS(spec);
   return astToString(ast);
