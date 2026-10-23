@@ -7,7 +7,7 @@ import { createApi, getRepo } from "../src/api";
 const BASE = "https://api.example.com";
 let calls = 0;
 const server = setupServer();
-beforeAll(() => server.listen({ onUnhandledRequest: "error" }));
+beforeAll(() => server.listen({ onUnhandledFrame: "error" }));
 afterEach(() => { server.resetHandlers(); calls = 0; });
 afterAll(() => server.close());
 const api = createApi(BASE, () => "tok");

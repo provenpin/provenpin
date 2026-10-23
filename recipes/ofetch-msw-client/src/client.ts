@@ -3,7 +3,7 @@ import { ofetch, type FetchOptions } from "ofetch";
 export type Item = { id: number; name: string };
 
 export function createClient(baseURL: string, fetchImpl?: typeof fetch) {
-  const api = ofetch.create({ baseURL, fetch: fetchImpl as typeof fetch });
+  const api = ofetch.create({ baseURL }, fetchImpl ? { fetch: fetchImpl } : {});
   return {
     list: (q?: string) => api<Item[]>("/items", { query: q ? { q } : undefined }),
     get: (id: number) => api<Item>(`/items/${id}`),

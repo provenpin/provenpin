@@ -23,7 +23,7 @@ const server = setupServer(
   }),
 );
 
-before(() => server.listen({ onUnhandledRequest: "error" }));
+before(() => server.listen({ onUnhandledFrame: "error" }));
 after(() => server.close());
 
 test("lists, filters, creates", async () => {
