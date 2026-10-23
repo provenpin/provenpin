@@ -1,15 +1,15 @@
 {
   "id": "socketio-rooms-auth",
   "status": "passed",
-  "ran_at": "2026-10-22T18:55:09.333Z",
-  "last_passed_at": "2026-10-22T18:55:09.333Z",
+  "ran_at": "2026-10-23T01:02:47.026Z",
+  "last_passed_at": "2026-10-23T01:02:47.026Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2292,
-    "test": 438
+    "setup": 2139,
+    "test": 1361
   },
   "pinned": {
     "socket.io": "4.8.4",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.4",
-    "runner": "github-actions 39834162194"
+    "runtime": "node v22.23.3",
+    "runner": "github-actions 39880776456"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: rejects bad tokens\nok 1 - rejects bad tokens\n  ---\n  duration_ms: 33.430336\n  type: 'test'\n  ...\n# Subtest: broadcasts only to room members\nok 2 - broadcasts only to room members\n  ---\n  duration_ms: 61.647021\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 323.651277\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: rejects bad tokens\nok 1 - rejects bad tokens\n  ---\n  duration_ms: 67.574255\n  type: 'test'\n  ...\n# Subtest: broadcasts only to room members\nok 2 - broadcasts only to room members\n  ---\n  duration_ms: 61.690446\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1244.98645\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "js-yaml-zod-config",
   "status": "passed",
-  "ran_at": "2026-10-22T18:51:19.112Z",
-  "last_passed_at": "2026-10-22T18:51:19.112Z",
+  "ran_at": "2026-10-23T00:58:49.045Z",
+  "last_passed_at": "2026-10-23T00:58:49.045Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2290,
-    "test": 575
+    "setup": 2023,
+    "test": 543
   },
   "pinned": {
     "js-yaml": "5.4.3",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39834162194"
+    "runner": "github-actions 39880776456"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loads yaml with defaults\nok 1 - loads yaml with defaults\n  ---\n  duration_ms: 6.208167\n  type: 'test'\n  ...\n# Subtest: rejects missing database\nok 2 - rejects missing database\n  ---\n  duration_ms: 1.248783\n  type: 'test'\n  ...\n# Subtest: rejects bad types\nok 3 - rejects bad types\n  ---\n  duration_ms: 0.661555\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 401.020541\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loads yaml with defaults\nok 1 - loads yaml with defaults\n  ---\n  duration_ms: 5.827594\n  type: 'test'\n  ...\n# Subtest: rejects missing database\nok 2 - rejects missing database\n  ---\n  duration_ms: 1.167499\n  type: 'test'\n  ...\n# Subtest: rejects bad types\nok 3 - rejects bad types\n  ---\n  duration_ms: 0.613169\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 385.056174\n"
 }

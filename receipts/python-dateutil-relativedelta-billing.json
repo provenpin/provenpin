@@ -1,15 +1,15 @@
 {
   "id": "python-dateutil-relativedelta-billing",
   "status": "passed",
-  "ran_at": "2026-10-22T18:54:19.798Z",
-  "last_passed_at": "2026-10-22T18:54:19.798Z",
+  "ran_at": "2026-10-23T01:01:55.306Z",
+  "last_passed_at": "2026-10-23T01:01:55.306Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 360,
-    "test": 2631
+    "setup": 319,
+    "test": 514
   },
   "pinned": {
     "python-dateutil": "2.9.0.post0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39834162194"
+    "runner": "github-actions 39880776456"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
 }
