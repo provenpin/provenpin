@@ -13,8 +13,9 @@ export function createApi(baseUrl: string) {
       const { data, error, response } = await client.POST("/items", {
         body: { name },
       });
+      const { status } = response;
       if (error) throw error;
-      if (!data) throw new Error(`create failed: ${response.status}`);
+      if (!data) throw new Error(`create failed: ${status}`);
       return data;
     },
     async get(id: number) {

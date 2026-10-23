@@ -11,7 +11,7 @@ const server = setupServer(http.post("https://api.resend.com/emails", async ({ r
   if (request.headers.get("authorization") !== "Bearer re_test") return HttpResponse.json({ statusCode: 401, name: "validation_error", message: "API key is invalid" }, { status: 401 });
   return HttpResponse.json({ id: "email_123" });
 }));
-before(() => server.listen({ onUnhandledRequest: "error" }));
+before(() => server.listen({ onUnhandledFrame: "error" }));
 afterEach(() => server.resetHandlers());
 after(() => server.close());
 

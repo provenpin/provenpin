@@ -34,7 +34,7 @@ const server = setupServer(
   ),
 );
 
-before(() => server.listen({ onUnhandledRequest: "error" }));
+before(() => server.listen({ onUnhandledFrame: "error" }));
 afterEach(() => { server.resetHandlers(); pagesServed.length = 0; });
 after(() => server.close());
 
