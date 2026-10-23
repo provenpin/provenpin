@@ -37,6 +37,6 @@ export const volumeDiscountRule = {
   volume_discount: [{ var: "quantity" }, { var: "unitPrice" }],
 };
 
-export function evaluate(rule: RulesLogic, data: Record<string, unknown>): unknown {
-  return jsonLogic.apply(rule, data);
+export function evaluate(rule: unknown, data: Record<string, unknown>): unknown {
+  return jsonLogic.apply(rule as RulesLogic, data);
 }
