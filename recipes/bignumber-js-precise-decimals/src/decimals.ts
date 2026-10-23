@@ -11,7 +11,7 @@ export type RoundingMode =
   | "half-down"
   | "half-even";
 
-const ROUNDING: Record<RoundingMode, number> = {
+const ROUNDING: Record<RoundingMode, BigNumber.RoundingMode> = {
   up: BigNumber.ROUND_UP,
   down: BigNumber.ROUND_DOWN,
   ceil: BigNumber.ROUND_CEIL,
@@ -43,7 +43,7 @@ export function formatFixed(value: Money, places: number, mode: RoundingMode = "
   return new BigNumber(value).toFixed(places, ROUNDING[mode]);
 }
 
-export function compare(a: Money, b: Money): number {
+export function compare(a: Money, b: Money): number | null {
   return new BigNumber(a).comparedTo(b);
 }
 
