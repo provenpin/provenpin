@@ -98,7 +98,9 @@ export function createApp() {
   });
 
   app.get("/items/:id", (req, res) => {
-    const verbose = req.query.verbose === true || req.query.verbose === "true";
+    // The validator may coerce ?verbose=true to a boolean, so accept both forms.
+    const raw: unknown = req.query.verbose;
+    const verbose = raw === true || raw === "true";
     res.status(200).json({
       id: req.params.id,
       name: verbose ? `Item ${req.params.id}` : "Item",

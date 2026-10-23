@@ -4,7 +4,7 @@ export function createJar(): CookieJar {
   return new CookieJar();
 }
 
-export async function setCookie(jar: CookieJar, rawUrl: string, cookie: string): Promise<Cookie> {
+export async function setCookie(jar: CookieJar, rawUrl: string, cookie: string): Promise<Cookie | undefined> {
   return jar.setCookie(cookie, rawUrl, { http: false });
 }
 
