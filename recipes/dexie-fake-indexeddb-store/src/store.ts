@@ -1,5 +1,5 @@
 import "fake-indexeddb/auto";
-import Dexie, { type Table } from "dexie";
+import { Dexie, type Table } from "dexie";
 
 export interface Item {
   id?: number;
