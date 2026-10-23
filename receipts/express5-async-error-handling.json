@@ -1,26 +1,28 @@
 {
   "id": "express5-async-error-handling",
   "status": "passed",
-  "ran_at": "2026-10-20T01:09:00.514Z",
-  "last_passed_at": "2026-10-20T01:09:00.514Z",
+  "ran_at": "2026-10-23T05:08:46.266Z",
+  "last_passed_at": "2026-10-23T05:08:46.266Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 11579,
-    "test": 524
+    "setup": 2694,
+    "test": 337
   },
   "pinned": {
     "express": "5.3.0",
     "supertest": "7.3.1",
+    "@types/express": "5.0.6",
+    "@types/supertest": "7.2.1",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:24eef231cb7a36f5e205576625e60a33e96f3c061cc4d6fe5d750d28eadb94a6",
+  "recipe_hash": "sha256:555d2373cf941afdebcd3653b0dc75f5aeb05ee78cadf92d2da675c00903fec4",
   "files": {
-    "recipes/express5-async-error-handling/package.json": "sha256:89b7ec0a13066f968ea408c9f44795d30448a204ee40bdcdcadb66335ef6c805",
-    "recipes/express5-async-error-handling/recipe.yaml": "sha256:c9f7b07f6a1ae56cc654662496ae96b3504b300f58acada393dd8e57b076ac7b",
+    "recipes/express5-async-error-handling/package.json": "sha256:b6ea964b9200be715c3298f8152685952a90b0c7e454bb622a46c0fa2bc3f5c2",
+    "recipes/express5-async-error-handling/recipe.yaml": "sha256:b3f9aa3f1747cca9914aa2520b7acfde229bab51f93605c0c86e80183340553d",
     "recipes/express5-async-error-handling/src/app.ts": "sha256:09dd7a02cc9cd7832d5f5eadda7f5140f193400de20d494a4e67c989357cee8c",
     "recipes/express5-async-error-handling/test/app.test.ts": "sha256:2a0d800de56bf74442e72fd02bc45a948f5c35c82c96cb0e436c585411c1727a"
   },
@@ -28,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39904098619"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: resolves async handler with router-level params\nok 1 - resolves async handler with router-level params\n  ---\n  duration_ms: 38.788416\n  type: 'test'\n  ...\n# Subtest: rejected async handler reaches error middleware without try/catch\nok 2 - rejected async handler reaches error middleware without try/catch\n  ---\n  duration_ms: 7.510025\n  type: 'test'\n  ...\n# Subtest: unknown route returns JSON 404\nok 3 - unknown route returns JSON 404\n  ---\n  duration_ms: 3.716827\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 375.679831\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: resolves async handler with router-level params\nok 1 - resolves async handler with router-level params\n  ---\n  duration_ms: 21.366018\n  type: 'test'\n  ...\n# Subtest: rejected async handler reaches error middleware without try/catch\nok 2 - rejected async handler reaches error middleware without try/catch\n  ---\n  duration_ms: 4.164122\n  type: 'test'\n  ...\n# Subtest: unknown route returns JSON 404\nok 3 - unknown route returns JSON 404\n  ---\n  duration_ms: 2.018335\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 230.558689\n"
 }

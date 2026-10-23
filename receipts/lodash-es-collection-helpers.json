@@ -1,34 +1,35 @@
 {
   "id": "lodash-es-collection-helpers",
   "status": "passed",
-  "ran_at": "2026-10-20T01:15:04.966Z",
-  "last_passed_at": "2026-10-20T01:15:04.966Z",
+  "ran_at": "2026-10-23T05:09:01.526Z",
+  "last_passed_at": "2026-10-23T05:09:01.526Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1772,
-    "test": 674
+    "setup": 2054,
+    "test": 633
   },
   "pinned": {
     "lodash-es": "4.18.1",
+    "@types/lodash-es": "4.17.12",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:4677b1e5be3ba993a6c1882766c554174e927917e18983599521fd4ffba61b99",
+  "recipe_hash": "sha256:3621452849cb8bffe3424c58ebef1cb0034dccfb9a820ee0931918d8a6008123",
   "files": {
-    "recipes/lodash-es-collection-helpers/package.json": "sha256:bf35345371fe8f4ac44adb797b42721a8b353cf00be09e2c87a90d7013b69164",
-    "recipes/lodash-es-collection-helpers/recipe.yaml": "sha256:2c39b4d0ad11108e00c20c578dfc104634d4de32f82cb5329955282b9b61a02d",
+    "recipes/lodash-es-collection-helpers/package.json": "sha256:10f590adb97f425a70de69573389d0dde2fac135bee7c4df125db0ad240895e6",
+    "recipes/lodash-es-collection-helpers/recipe.yaml": "sha256:72a71369b8a672b49b990002c021139a2272d631087f2e8bf98e77d8e2412b52",
     "recipes/lodash-es-collection-helpers/src/report.ts": "sha256:9048afb1fcc5a908abffb7757482f65bd5a8facd860638be53c612f2d0968e33",
     "recipes/lodash-es-collection-helpers/test/report.test.ts": "sha256:490194fa3a24127257a643aee61f35e36602d4a9b8f67d587f14819dc179ce92"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39904098619"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: dedupes and totals by region\nok 1 - dedupes and totals by region\n  ---\n  duration_ms: 2.511205\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 507.593881\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: dedupes and totals by region\nok 1 - dedupes and totals by region\n  ---\n  duration_ms: 2.077538\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 460.972878\n"
 }

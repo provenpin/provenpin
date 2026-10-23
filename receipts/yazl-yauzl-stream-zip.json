@@ -1,35 +1,37 @@
 {
   "id": "yazl-yauzl-stream-zip",
   "status": "passed",
-  "ran_at": "2026-10-20T01:28:23.191Z",
-  "last_passed_at": "2026-10-20T01:28:23.191Z",
+  "ran_at": "2026-10-23T05:09:08.079Z",
+  "last_passed_at": "2026-10-23T05:09:08.079Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1637,
-    "test": 403
+    "setup": 2089,
+    "test": 387
   },
   "pinned": {
     "yazl": "3.3.1",
     "yauzl": "3.4.0",
+    "@types/yauzl": "3.4.0",
+    "@types/yazl": "3.3.1",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:4011ad8426fd81f2fe20afea4cb1a9113e180f2e4df1a62ac41c389d090e5f9d",
+  "recipe_hash": "sha256:b832ed64162e19d5cc07e09acabd62da2473319087a4bb9908be0c795f0cc48c",
   "files": {
-    "recipes/yazl-yauzl-stream-zip/package.json": "sha256:b1a210fff2c7f887d9518e29186dcfb2c19b0e8803fecdd5aedf52cdfda2c54f",
-    "recipes/yazl-yauzl-stream-zip/recipe.yaml": "sha256:85ee101845298b1f9ed2008a7d5787a15ea404cb0593f13bf5f18afaabc097bf",
+    "recipes/yazl-yauzl-stream-zip/package.json": "sha256:9c989b32086d6bf974e24c95d10008956475979cc0a97c163ab0b97418341387",
+    "recipes/yazl-yauzl-stream-zip/recipe.yaml": "sha256:ec10fc881a2ef026d3a2ea185d96398fc11e96430badd599121e0ad3c0fa7b6b",
     "recipes/yazl-yauzl-stream-zip/src/zip.ts": "sha256:4ceed9903f477b62ae623371de87f5344153baa39ee305536956039547d65592",
     "recipes/yazl-yauzl-stream-zip/test/zip.test.ts": "sha256:024f10dc6fa836d840a9dc8ab277ec1552586d0a9949b1c60118c7caef5d3568"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39904098619"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips buffers and strings through yazl and yauzl\nok 1 - roundtrips buffers and strings through yazl and yauzl\n  ---\n  duration_ms: 56.630536\n  type: 'test'\n  ...\n# Subtest: reads many lazily listed entries\nok 2 - reads many lazily listed entries\n  ---\n  duration_ms: 4.071128\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 274.251152\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips buffers and strings through yazl and yauzl\nok 1 - roundtrips buffers and strings through yazl and yauzl\n  ---\n  duration_ms: 17.980949\n  type: 'test'\n  ...\n# Subtest: reads many lazily listed entries\nok 2 - reads many lazily listed entries\n  ---\n  duration_ms: 5.613648\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 243.907624\n"
 }

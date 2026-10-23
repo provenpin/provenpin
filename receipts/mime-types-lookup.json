@@ -1,34 +1,35 @@
 {
   "id": "mime-types-lookup",
   "status": "passed",
-  "ran_at": "2026-10-20T01:15:55.039Z",
-  "last_passed_at": "2026-10-20T01:15:55.039Z",
+  "ran_at": "2026-10-23T05:08:48.768Z",
+  "last_passed_at": "2026-10-23T05:08:48.768Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1747,
-    "test": 1011
+    "setup": 1833,
+    "test": 361
   },
   "pinned": {
     "mime-types": "3.0.2",
+    "@types/mime-types": "3.0.1",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:490210cdca532eab457b75104bca7456f2ca8cb2f38e62d6612f688bab7809a3",
+  "recipe_hash": "sha256:22d9b6856d18a8cfba028e08e10ea10e6c866fa98a8f0ba85105faf13d76a1e6",
   "files": {
-    "recipes/mime-types-lookup/package.json": "sha256:217ca080181e4055fabb710f9c7da44c8d77908981e6525919e0990404c691b3",
-    "recipes/mime-types-lookup/recipe.yaml": "sha256:0b6c6f6b23da36701364858fb64565bc2798f204cdef8f6f73d8c36b2f15f047",
+    "recipes/mime-types-lookup/package.json": "sha256:9ce40d7ebdc0c78e922941ca144db5d990e4455f270a10f63552971df125d52d",
+    "recipes/mime-types-lookup/recipe.yaml": "sha256:022f42db540b058ea33f4283a9ba7f63d2225292f89904a82bc0aa362427d087",
     "recipes/mime-types-lookup/src/mime.ts": "sha256:2c41df1b1fbcc360c81ac9e65f5fba8e69a687e17da11fd19c033356188c18d8",
     "recipes/mime-types-lookup/test/mime.test.ts": "sha256:6acb124d9521c0778c3c20890b34aec6299aface292f44c4fc9f71e32cc40ce3"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39904098619"
   },
   "errors": [],
-  "log_tail": "# Subtest: resolves content-type from common extensions\nok 1 - resolves content-type from common extensions\n  ---\n  duration_ms: 1.307864\n  type: 'test'\n  ...\n# Subtest: resolves extension from common types\nok 2 - resolves extension from common types\n  ---\n  duration_ms: 0.27286\n  type: 'test'\n  ...\n# Subtest: builds a full content-type with charset\nok 3 - builds a full content-type with charset\n  ---\n  duration_ms: 0.256579\n  type: 'test'\n  ...\n# Subtest: handles unknown input gracefully\nok 4 - handles unknown input gracefully\n  ---\n  duration_ms: 0.19781\n  type: 'test'\n  ...\n# Subtest: round trips a lookup back to its extension\nok 5 - round trips a lookup back to its extension\n  ---\n  duration_ms: 0.134531\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 710.346745\n"
+  "log_tail": "# Subtest: resolves content-type from common extensions\nok 1 - resolves content-type from common extensions\n  ---\n  duration_ms: 0.971383\n  type: 'test'\n  ...\n# Subtest: resolves extension from common types\nok 2 - resolves extension from common types\n  ---\n  duration_ms: 0.264246\n  type: 'test'\n  ...\n# Subtest: builds a full content-type with charset\nok 3 - builds a full content-type with charset\n  ---\n  duration_ms: 0.300063\n  type: 'test'\n  ...\n# Subtest: handles unknown input gracefully\nok 4 - handles unknown input gracefully\n  ---\n  duration_ms: 0.207721\n  type: 'test'\n  ...\n# Subtest: round trips a lookup back to its extension\nok 5 - round trips a lookup back to its extension\n  ---\n  duration_ms: 0.991761\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 208.030172\n"
 }

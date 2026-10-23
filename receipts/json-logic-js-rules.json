@@ -1,34 +1,35 @@
 {
   "id": "json-logic-js-rules",
   "status": "passed",
-  "ran_at": "2026-10-20T01:13:42.587Z",
-  "last_passed_at": "2026-10-20T01:13:42.587Z",
+  "ran_at": "2026-10-23T05:08:48.533Z",
+  "last_passed_at": "2026-10-23T05:08:48.533Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1370,
-    "test": 273
+    "setup": 1553,
+    "test": 232
   },
   "pinned": {
     "json-logic-js": "2.0.5",
+    "@types/json-logic-js": "2.0.8",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:8cd23e5daf70cbc99929d696a7204d4a319bb6d072b7e01486d21fbc59deb33e",
+  "recipe_hash": "sha256:5420d284f29f4eb13a5e2bdd17a4132e95f52db80031f878a67d5e70c79eccbc",
   "files": {
-    "recipes/json-logic-js-rules/package.json": "sha256:fbe241818b31dca8613ccabaa49a8342d8150c6ec2c93ee15fc67bc13e862e91",
-    "recipes/json-logic-js-rules/recipe.yaml": "sha256:481499265e127bf9f57f70761279f930d72941fd2aa821103799411195dcadd2",
-    "recipes/json-logic-js-rules/src/rules.ts": "sha256:d3d611cc727e8c4b897868e88daf1c5e553f956038de210a1ec5db2e475862d3",
+    "recipes/json-logic-js-rules/package.json": "sha256:d31a26b0c4a7b74ea96aa9c038f90dcc59841b41d951d26235fdb8fd24617da0",
+    "recipes/json-logic-js-rules/recipe.yaml": "sha256:b60782be3c41762b1e990de12e4ce02ba11b359d9645397a324863a8513bd88e",
+    "recipes/json-logic-js-rules/src/rules.ts": "sha256:741e3b04fa05e04d50c9fce378c0df03bef29a5e495948fbb245be23fa53d442",
     "recipes/json-logic-js-rules/test/rules.test.ts": "sha256:cc3ac200646ef474ecd3be8acf7fcd86cb45fd431955111dfaaaf2382f528bc1"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39904098619"
   },
   "errors": [],
-  "log_tail": "# Subtest: or combines predicates and in matches array values\nok 2 - or combines predicates and in matches array values\n  ---\n  duration_ms: 0.16099\n  type: 'test'\n  ...\n# Subtest: var reads nested paths and falls back to a default\nok 3 - var reads nested paths and falls back to a default\n  ---\n  duration_ms: 0.12101\n  type: 'test'\n  ...\n# Subtest: in returns false when the array is absent\nok 4 - in returns false when the array is absent\n  ---\n  duration_ms: 0.117235\n  type: 'test'\n  ...\n# Subtest: if picks the first matching branch\nok 5 - if picks the first matching branch\n  ---\n  duration_ms: 0.101592\n  type: 'test'\n  ...\n# Subtest: custom operation applies tiered volume discount\nok 6 - custom operation applies tiered volume discount\n  ---\n  duration_ms: 0.103364\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 155.889588\n"
+  "log_tail": "# Subtest: or combines predicates and in matches array values\nok 2 - or combines predicates and in matches array values\n  ---\n  duration_ms: 0.165839\n  type: 'test'\n  ...\n# Subtest: var reads nested paths and falls back to a default\nok 3 - var reads nested paths and falls back to a default\n  ---\n  duration_ms: 0.102083\n  type: 'test'\n  ...\n# Subtest: in returns false when the array is absent\nok 4 - in returns false when the array is absent\n  ---\n  duration_ms: 0.103014\n  type: 'test'\n  ...\n# Subtest: if picks the first matching branch\nok 5 - if picks the first matching branch\n  ---\n  duration_ms: 0.101882\n  type: 'test'\n  ...\n# Subtest: custom operation applies tiered volume discount\nok 6 - custom operation applies tiered volume discount\n  ---\n  duration_ms: 0.1206\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 132.730988\n"
 }

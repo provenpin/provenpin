@@ -1,25 +1,26 @@
 {
   "id": "bigjs-decimal-math",
   "status": "passed",
-  "ran_at": "2026-10-20T01:04:24.973Z",
-  "last_passed_at": "2026-10-20T01:04:24.973Z",
+  "ran_at": "2026-10-23T05:08:54.923Z",
+  "last_passed_at": "2026-10-23T05:08:54.923Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1854,
-    "test": 327
+    "setup": 1380,
+    "test": 516
   },
   "pinned": {
     "big.js": "7.0.1",
+    "@types/big.js": "7.0.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:de0bde1972d19ee11f849865bbb68042521bd7bdd0ac1c5aa4710d496588b1a2",
+  "recipe_hash": "sha256:d8a97046e57f86d251754cdadb8709bc0e5fc645b4076f4297f0863f126aac10",
   "files": {
-    "recipes/bigjs-decimal-math/package.json": "sha256:ac51e4505c94feb3518e5b96af1d30890c2bc181f42509083621558c19a9d5dc",
-    "recipes/bigjs-decimal-math/recipe.yaml": "sha256:e79c2e89431ea8413a4672dfde1b489897464d95b9f386eadf409f33f861329e",
+    "recipes/bigjs-decimal-math/package.json": "sha256:4666aa8b101d714fbae4bfc007409fe2049efb25a2fdce0f32d9ae63b9ab76f9",
+    "recipes/bigjs-decimal-math/recipe.yaml": "sha256:426b8fedf7493f160601bc1cdd3a6a8eb10fbca5fea42d299f246c14f764303e",
     "recipes/bigjs-decimal-math/src/decimal.ts": "sha256:d6bde55e3b1ec4da371253c76c83284fc79c305e517bbb33df0af5469cd89418",
     "recipes/bigjs-decimal-math/test/decimal.test.ts": "sha256:b70347f8d6b4405c6720d4ef7f26e4a2a82fc4de9c230829847a50fa657af0b4",
     "recipes/bigjs-decimal-math/tsconfig.json": "sha256:e05cfcaa88301ee1b0bbfa2bb542585503823b40fd68c53bec8c34e23e3036e4"
@@ -28,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39904098619"
   },
   "errors": [],
-  "log_tail": "# Subtest: 0.1 + 0.2 equals 0.3 with big.js\nok 1 - 0.1 + 0.2 equals 0.3 with big.js\n  ---\n  duration_ms: 0.863101\n  type: 'test'\n  ...\n# Subtest: comparisons use eq and gt\nok 2 - comparisons use eq and gt\n  ---\n  duration_ms: 0.1482\n  type: 'test'\n  ...\n# Subtest: division honours DP and rounding mode\nok 3 - division honours DP and rounding mode\n  ---\n  duration_ms: 0.301347\n  type: 'test'\n  ...\n# Subtest: pow raises integer exponents precisely\nok 4 - pow raises integer exponents precisely\n  ---\n  duration_ms: 0.192275\n  type: 'test'\n  ...\n# Subtest: round applies the requested rounding mode\nok 5 - round applies the requested rounding mode\n  ---\n  duration_ms: 0.10776\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 203.296188\n"
+  "log_tail": "# Subtest: 0.1 + 0.2 equals 0.3 with big.js\nok 1 - 0.1 + 0.2 equals 0.3 with big.js\n  ---\n  duration_ms: 1.363636\n  type: 'test'\n  ...\n# Subtest: comparisons use eq and gt\nok 2 - comparisons use eq and gt\n  ---\n  duration_ms: 0.26768\n  type: 'test'\n  ...\n# Subtest: division honours DP and rounding mode\nok 3 - division honours DP and rounding mode\n  ---\n  duration_ms: 0.466511\n  type: 'test'\n  ...\n# Subtest: pow raises integer exponents precisely\nok 4 - pow raises integer exponents precisely\n  ---\n  duration_ms: 0.350965\n  type: 'test'\n  ...\n# Subtest: round applies the requested rounding mode\nok 5 - round applies the requested rounding mode\n  ---\n  duration_ms: 0.215843\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 326.757991\n"
 }
