@@ -1,25 +1,26 @@
 {
   "id": "sqljs-in-memory-queries",
   "status": "passed",
-  "ran_at": "2026-10-23T06:58:09.229Z",
-  "last_passed_at": "2026-10-23T06:58:09.229Z",
+  "ran_at": "2026-10-23T10:01:19.123Z",
+  "last_passed_at": "2026-10-23T10:01:19.123Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2944,
-    "test": 457
+    "setup": 1922,
+    "test": 485
   },
   "pinned": {
     "sql.js": "1.15.0",
     "@types/node": "26.6.5",
+    "@types/sql.js": "1.4.11",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:46a527a631e80b67eab31b27a632031156dfd849fde3de4d3eda198594610fde",
+  "recipe_hash": "sha256:413c51cb99f780dba0327da588ffab78f1d03e56e5d40db3ed568aa1c7bcd0c2",
   "files": {
-    "recipes/sqljs-in-memory-queries/package.json": "sha256:2fb4752070a0a73ac41ed46cb32db1ed4874b6fd8b3e0ecc8d8f31c8fb512e94",
-    "recipes/sqljs-in-memory-queries/recipe.yaml": "sha256:f69ada0c408c34c088c74dc6f62bf9589ddee16e7767c79468ad2a9ebb224580",
+    "recipes/sqljs-in-memory-queries/package.json": "sha256:210e6fabd0e49784beed64312586c4f5469bb42157e4ef1dd55f6fba04b16151",
+    "recipes/sqljs-in-memory-queries/recipe.yaml": "sha256:f5eba3febafa240e61739803831d63ad74651852e5b374d4436dbf2685c3d91f",
     "recipes/sqljs-in-memory-queries/src/db.ts": "sha256:bae4a95e025f5dfc7482f981365ad480fe41c5bc7b0a0871630cf6485f9cc732",
     "recipes/sqljs-in-memory-queries/test/db.test.ts": "sha256:ab55241399ffa01e5e38bc2ee27c86388cb8fb27312490779018992abd95b5c5"
   },
@@ -27,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39913746886"
+    "runner": "github-actions 39936027777"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: crud and roundtrip export\nok 1 - crud and roundtrip export\n  ---\n  duration_ms: 42.161503\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 313.859458\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: crud and roundtrip export\nok 1 - crud and roundtrip export\n  ---\n  duration_ms: 48.00016\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 338.891656\n"
 }

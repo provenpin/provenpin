@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-23T09:02:30.834Z",
+ "generated_at": "2026-10-23T10:01:43.475Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 556,
  "recipes": [
@@ -1476,18 +1476,18 @@
    "language": "typescript",
    "pinned": {
     "cache-manager": "7.2.9",
-    "keyv": "6.1.0",
+    "keyv": "5.6.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:04:49.277Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:4e86751a72aa254e5f398090d00a42cd074ebf12b9f0c320270923e97f53eaa7",
+   "last_passed_at": "2026-10-23T10:01:17.387Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39936027777",
+   "recipe_hash": "sha256:685a4693645b46f2c40c33af45ade9480b3ba6cd7b7e23460bd2256156a68609",
    "files": {
-    "recipes/cache-manager-memory-store/package.json": "sha256:a80ba8f7152feeacad9c4c192224e5ffe578a8dd2480cf0351b88508d9ea27d7",
-    "recipes/cache-manager-memory-store/recipe.yaml": "sha256:91b1b6595534077545ac028c096029ca1cfc4057cd33b3909c71bf50d3b1d5a7",
+    "recipes/cache-manager-memory-store/package.json": "sha256:cb55fe66b4a7ccad6b2a5adc8076f33752b0558f087c64430a7208eb275b624a",
+    "recipes/cache-manager-memory-store/recipe.yaml": "sha256:0c2ffdbd5281d82fd3222e9378ef378128bec4ff1eea397e993bb674086850dc",
     "recipes/cache-manager-memory-store/src/cache.ts": "sha256:ef436738f30743ea98a290950eebc1c376f5f649dd75ebf91c0ada718f0720e5",
     "recipes/cache-manager-memory-store/test/cache.test.ts": "sha256:25eba50893e4a03b7592488c817c7f935281b29ee446ab469de591aaf05c1e7a"
    },
@@ -5654,14 +5654,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-23T06:52:29.745Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39913746886",
-   "recipe_hash": "sha256:bf3566f11744fadb74dec5cf61e4633964511e3d107e6b47664fb2868e142f6a",
+   "last_passed_at": "2026-10-23T10:01:17.693Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39936027777",
+   "recipe_hash": "sha256:4c8118aa0b63dd33f2da004de04b23842d9135f63b4250e02849968d1eaf1e68",
    "files": {
     "recipes/gpt-tokenizer-count-limit/package.json": "sha256:20936a763d043cc2afa8687fa9bde702177c9ac5ec8fd81498562d886de6b21a",
     "recipes/gpt-tokenizer-count-limit/recipe.yaml": "sha256:0371f1a5627071a8792733b2a545ab098a62760cbb2a68d767c4dea5c657cfce",
-    "recipes/gpt-tokenizer-count-limit/src/tokenizer.ts": "sha256:c7804289c1013c94e6c59b47f1595f3a2be1c9da8e8613b246d1b62188c58555",
-    "recipes/gpt-tokenizer-count-limit/test/tokenizer.test.ts": "sha256:15270afeb3e95788802804bdbf2a84a8dacdab3b659d8f96c2a3d3134a0b3df0"
+    "recipes/gpt-tokenizer-count-limit/src/tokenizer.ts": "sha256:6065a0c67c4907a620890dd2f0dec35b15afef2d02b1e5b575f6b901f95913c7",
+    "recipes/gpt-tokenizer-count-limit/test/tokenizer.test.ts": "sha256:595e69c00c9cda8d18b9165ee038de749a17fc443276de66be5561130f75fb40"
    },
    "staleness": {
     "status": "passes_on_latest",
@@ -6530,13 +6530,13 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:12:24.786Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:623449503a679c86f52f42577fef90e3f1782f216f0cbe9cafb7c3d23b7a90aa",
+   "last_passed_at": "2026-10-23T10:01:21.801Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39936027777",
+   "recipe_hash": "sha256:c447a9b4293fdb075ea944467b9853a94c00aeba72a26c0e843de9447251e595",
    "files": {
     "recipes/ical-generator-node-ical-roundtrip/package.json": "sha256:3c6ac0665ab5bdb0a68c7f66598b6d8f68ca99f0a4ee13723a842a1acaf61e11",
     "recipes/ical-generator-node-ical-roundtrip/recipe.yaml": "sha256:4b61cf1aa63de93cb0ed74f2a8733555531a71131eb9b5b016c2ca4ad8e64ddc",
-    "recipes/ical-generator-node-ical-roundtrip/src/calendar.ts": "sha256:54e3ed55a38ec51671c1393f3a370d7d8773993fd45e557cc71cc4d21b439db9",
+    "recipes/ical-generator-node-ical-roundtrip/src/calendar.ts": "sha256:800c09604b5c8604cce4da40a75d9db1d4bb10a52b2229d2a9653999f7ebfa65",
     "recipes/ical-generator-node-ical-roundtrip/test/calendar.test.ts": "sha256:0e903c8bf6f4a50a9ee1dbf266d347104ba411b11b9227cf5bbf9719013dafad"
    },
    "staleness": {
@@ -14304,16 +14304,17 @@
    "pinned": {
     "sql.js": "1.15.0",
     "@types/node": "26.6.5",
+    "@types/sql.js": "1.4.11",
     "tsx": "4.23.15"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-23T06:58:09.229Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39913746886",
-   "recipe_hash": "sha256:46a527a631e80b67eab31b27a632031156dfd849fde3de4d3eda198594610fde",
+   "last_passed_at": "2026-10-23T10:01:19.123Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39936027777",
+   "recipe_hash": "sha256:413c51cb99f780dba0327da588ffab78f1d03e56e5d40db3ed568aa1c7bcd0c2",
    "files": {
-    "recipes/sqljs-in-memory-queries/package.json": "sha256:2fb4752070a0a73ac41ed46cb32db1ed4874b6fd8b3e0ecc8d8f31c8fb512e94",
-    "recipes/sqljs-in-memory-queries/recipe.yaml": "sha256:f69ada0c408c34c088c74dc6f62bf9589ddee16e7767c79468ad2a9ebb224580",
+    "recipes/sqljs-in-memory-queries/package.json": "sha256:210e6fabd0e49784beed64312586c4f5469bb42157e4ef1dd55f6fba04b16151",
+    "recipes/sqljs-in-memory-queries/recipe.yaml": "sha256:f5eba3febafa240e61739803831d63ad74651852e5b374d4436dbf2685c3d91f",
     "recipes/sqljs-in-memory-queries/src/db.ts": "sha256:bae4a95e025f5dfc7482f981365ad480fe41c5bc7b0a0871630cf6485f9cc732",
     "recipes/sqljs-in-memory-queries/test/db.test.ts": "sha256:ab55241399ffa01e5e38bc2ee27c86388cb8fb27312490779018992abd95b5c5"
    },
