@@ -12,8 +12,10 @@ pinned:
   "vitest": "5.0.5"
   "vite": "8.3.4"
   "ioredis-mock": "8.13.1"
+  "@types/ioredis-mock": "8.2.8"
 files:
   - package.json
+  - tsconfig.json
   - src/cache.ts
   - test/cache.test.ts
 setup: npm install --legacy-peer-deps --no-audit --no-fund --ignore-scripts=false

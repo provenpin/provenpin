@@ -12,6 +12,7 @@ pinned:
   "vitest": "5.0.5"
 files:
   - package.json
+  - tsconfig.json
   - src/todos.ts
   - test/todos.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false

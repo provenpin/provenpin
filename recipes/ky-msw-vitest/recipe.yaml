@@ -13,6 +13,7 @@ pinned:
   "msw": "3.0.3"
 files:
   - package.json
+  - tsconfig.json
   - src/api.ts
   - test/api.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false
