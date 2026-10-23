@@ -1,15 +1,15 @@
 {
   "id": "openapi-fetch-msw",
   "status": "passed",
-  "ran_at": "2026-10-20T01:18:04.294Z",
-  "last_passed_at": "2026-10-20T01:18:04.294Z",
+  "ran_at": "2026-10-23T06:10:18.933Z",
+  "last_passed_at": "2026-10-23T06:10:18.933Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2755,
-    "test": 412
+    "setup": 2974,
+    "test": 656
   },
   "pinned": {
     "openapi-fetch": "0.17.0",
@@ -17,20 +17,20 @@
     "tsx": "4.23.15",
     "msw": "3.0.3"
   },
-  "recipe_hash": "sha256:2e85bd77c495e78be414dcc1407f03dd3920f1977e6131a832b01bcc787d8472",
+  "recipe_hash": "sha256:615e4fe570177978a4ff63e7b0056cf4cbb35a453aa1ee373cfaed97ba4c8ca9",
   "files": {
     "recipes/openapi-fetch-msw/package.json": "sha256:4b38d4b89e572239c89e2696f36b19fb75f4878a37919ac39e9b01adc303c79e",
     "recipes/openapi-fetch-msw/recipe.yaml": "sha256:c3d7b3ccf9fe1043445f5326e417a7c40be3a262c37eb7bdf2c7a78da246a4a0",
-    "recipes/openapi-fetch-msw/src/client.ts": "sha256:b88690d23add4fdfb4c8f61d4700d3d98b9bf1d2c7767ddc10b66236ead0d01c",
+    "recipes/openapi-fetch-msw/src/client.ts": "sha256:8b823a0b3c55ecd8dbf3d143ed6d9272e45a5e00e54dbe733c782b6f1d30c839",
     "recipes/openapi-fetch-msw/src/schema.ts": "sha256:3a53bffd2d80fb41f9a211629eb5411974b7c605898e32856217bdd9c2de9e23",
-    "recipes/openapi-fetch-msw/test/client.test.ts": "sha256:cec05ccd45fe4a646b6f7889e497d59a5ac95e91ed0bd2ec8889bd10a1670015"
+    "recipes/openapi-fetch-msw/test/client.test.ts": "sha256:51196a0a9244ce36ec800be93fa0f6c793b6246045ffb6c354a432904f30c9df"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39909839088"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists filters and creates\nok 1 - lists filters and creates\n  ---\n  duration_ms: 51.01556\n  type: 'test'\n  ...\n# Subtest: 404 becomes error\nok 2 - 404 becomes error\n  ---\n  duration_ms: 6.991369\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 312.486318\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists filters and creates\nok 1 - lists filters and creates\n  ---\n  duration_ms: 53.09812\n  type: 'test'\n  ...\n# Subtest: 404 becomes error\nok 2 - 404 becomes error\n  ---\n  duration_ms: 6.874088\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 529.311602\n"
 }

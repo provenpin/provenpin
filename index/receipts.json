@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-23T05:09:35.139Z",
+ "generated_at": "2026-10-23T06:10:39.564Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 556,
  "recipes": [
@@ -7742,14 +7742,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-23T00:58:50.966Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39880776456",
-   "recipe_hash": "sha256:ce44f9de48d6fa07e1477befcf85d44d31a94da97a32599ead51560885a74b2d",
+   "last_passed_at": "2026-10-23T06:10:14.890Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39909839088",
+   "recipe_hash": "sha256:95952a20eca3602bf7defd298e09f1c6e09cb00d61e794f8d2afd091cf76a8d2",
    "files": {
     "recipes/ky-msw-vitest/package.json": "sha256:6cb93a82783691f713e3d525e2bbf4986ba833d9d15aab1c4b5dc385ecfc77e3",
     "recipes/ky-msw-vitest/recipe.yaml": "sha256:a99c706984146c3603d747f8e6b305b742ebc324ab0bc16e72389cf99b127868",
     "recipes/ky-msw-vitest/src/api.ts": "sha256:b9e7fefba2eedaef0bbac2194da39675c3104f9d8ef0d68453536bf187a47f60",
-    "recipes/ky-msw-vitest/test/api.test.ts": "sha256:6ed0ee45f2b273638c89c57677c3efc4de12814ecda55028282002139dd88a36"
+    "recipes/ky-msw-vitest/test/api.test.ts": "sha256:4bf6ac8f1ea815a353eb5114c1d34d06f019de1ea90b9edbda80c1f28ff3e44c"
    },
    "staleness": {
     "status": "passes_on_latest",
@@ -9844,14 +9844,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:17:41.321Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:434ef65fab03bf31cf6db2756c1ff51655c564975e580ddcb0fbcb119085c5fb",
+   "last_passed_at": "2026-10-23T06:10:16.411Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39909839088",
+   "recipe_hash": "sha256:901c80c8218972f4bad716f49bb6203873acbff8b1d3e4ac803b0ae8a07da711",
    "files": {
     "recipes/octokit-rest-msw-pagination/package.json": "sha256:92fb3031788fbba1cbf50110a5ddc23b2139185fa5383ae7d4a8a42ceab9a206",
     "recipes/octokit-rest-msw-pagination/recipe.yaml": "sha256:edb9adf73aae238e659d86e3796cb07efb5dfb09fa337e15a1d3f63343add1ea",
     "recipes/octokit-rest-msw-pagination/src/github.ts": "sha256:b00b6d94ae6c194fdebba6fbe7e1af89e4f0523bd3467c6beac6bf1b870bfb9c",
-    "recipes/octokit-rest-msw-pagination/test/github.test.ts": "sha256:c394eea929b2b65908906c98249fe66d23853cde351938e0f9d04a8714a1c498"
+    "recipes/octokit-rest-msw-pagination/test/github.test.ts": "sha256:51defd0a7b92154a2ca33c60baef1b77f20f1b817de8dfae3b900cee920d409f"
    },
    "staleness": {
     "status": "current",
@@ -9902,14 +9902,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:17:46.207Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:0b3b4d943fb327df00d4e1b4ac7cb417f2ebec02266a6ffd8a20117c7dd4ada6",
+   "last_passed_at": "2026-10-23T06:10:16.980Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39909839088",
+   "recipe_hash": "sha256:1303ce0268ad54099e6a89b18142793b1f903190ab3997442d416bf2c70ec66b",
    "files": {
     "recipes/ofetch-msw-client/package.json": "sha256:a9d114324729b4f26fef33fd9c18955776a5665d748eae5240baf1f11d7eb301",
     "recipes/ofetch-msw-client/recipe.yaml": "sha256:019e1ea3689d8bdb59b33a821352b47ece39cfc340cafe5ef4104847c51efc31",
-    "recipes/ofetch-msw-client/src/client.ts": "sha256:355aa7072354d75269b2a24c2f2e336ac9020315fe50ce50823b1afa0b893e05",
-    "recipes/ofetch-msw-client/test/client.test.ts": "sha256:2c5d9e94b8b8ab78d776344f90910fdbdca8e099b57da8e459eb45a5a4fe5ec9"
+    "recipes/ofetch-msw-client/src/client.ts": "sha256:79ca1884ccde75bdd87facd19138914004ffa42e163bb8a762a77776199e6e05",
+    "recipes/ofetch-msw-client/test/client.test.ts": "sha256:ec6f3700dfd841518663ad55f15541ac632d734f748e2611d242a5b25234461f"
    },
    "staleness": {
     "status": "current",
@@ -10084,15 +10084,15 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:18:04.294Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:2e85bd77c495e78be414dcc1407f03dd3920f1977e6131a832b01bcc787d8472",
+   "last_passed_at": "2026-10-23T06:10:18.933Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39909839088",
+   "recipe_hash": "sha256:615e4fe570177978a4ff63e7b0056cf4cbb35a453aa1ee373cfaed97ba4c8ca9",
    "files": {
     "recipes/openapi-fetch-msw/package.json": "sha256:4b38d4b89e572239c89e2696f36b19fb75f4878a37919ac39e9b01adc303c79e",
     "recipes/openapi-fetch-msw/recipe.yaml": "sha256:c3d7b3ccf9fe1043445f5326e417a7c40be3a262c37eb7bdf2c7a78da246a4a0",
-    "recipes/openapi-fetch-msw/src/client.ts": "sha256:b88690d23add4fdfb4c8f61d4700d3d98b9bf1d2c7767ddc10b66236ead0d01c",
+    "recipes/openapi-fetch-msw/src/client.ts": "sha256:8b823a0b3c55ecd8dbf3d143ed6d9272e45a5e00e54dbe733c782b6f1d30c839",
     "recipes/openapi-fetch-msw/src/schema.ts": "sha256:3a53bffd2d80fb41f9a211629eb5411974b7c605898e32856217bdd9c2de9e23",
-    "recipes/openapi-fetch-msw/test/client.test.ts": "sha256:cec05ccd45fe4a646b6f7889e497d59a5ac95e91ed0bd2ec8889bd10a1670015"
+    "recipes/openapi-fetch-msw/test/client.test.ts": "sha256:51196a0a9244ce36ec800be93fa0f6c793b6246045ffb6c354a432904f30c9df"
    },
    "staleness": {
     "status": "current",
@@ -13207,14 +13207,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-23T01:02:29.099Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39880776456",
-   "recipe_hash": "sha256:b9afc4a4c639d4f5cfb06e6402bc1bd297f090e50845d3260ebaa5fad0d5a099",
+   "last_passed_at": "2026-10-23T06:10:14.371Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39909839088",
+   "recipe_hash": "sha256:954995ea3ac5f5e0f8391c0d0b68b22071a3d32920876a469924ff1af22a6e1f",
    "files": {
     "recipes/resend-email-msw/package.json": "sha256:aec9689bfc9e4e83a4b787a9cd067bef283a4188f075b018ae84131d8704d3de",
     "recipes/resend-email-msw/recipe.yaml": "sha256:2d0e684bb71b929ae56fd249c827e2467a1e76a6c1110240fd37a07b6b430841",
     "recipes/resend-email-msw/src/mailer.ts": "sha256:dd925f824425085410d7e389114502d6b7474a5dcdd92abdc4d47e2efb326fc6",
-    "recipes/resend-email-msw/test/mailer.test.ts": "sha256:78efed775d71cb5bc86609709203d0972b08b6c3670e5ea098ac2f5791b04073"
+    "recipes/resend-email-msw/test/mailer.test.ts": "sha256:dff4e8f2e6e768a92e3fe1adb25ef962dfc189a073c12218041783283b7dab25"
    },
    "staleness": {
     "status": "passes_on_latest",

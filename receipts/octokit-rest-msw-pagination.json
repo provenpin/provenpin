@@ -1,15 +1,15 @@
 {
   "id": "octokit-rest-msw-pagination",
   "status": "passed",
-  "ran_at": "2026-10-20T01:17:41.321Z",
-  "last_passed_at": "2026-10-20T01:17:41.321Z",
+  "ran_at": "2026-10-23T06:10:16.411Z",
+  "last_passed_at": "2026-10-23T06:10:16.411Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4556,
-    "test": 707
+    "setup": 3743,
+    "test": 646
   },
   "pinned": {
     "@octokit/rest": "22.0.1",
@@ -17,19 +17,19 @@
     "tsx": "4.23.15",
     "msw": "3.0.3"
   },
-  "recipe_hash": "sha256:434ef65fab03bf31cf6db2756c1ff51655c564975e580ddcb0fbcb119085c5fb",
+  "recipe_hash": "sha256:901c80c8218972f4bad716f49bb6203873acbff8b1d3e4ac803b0ae8a07da711",
   "files": {
     "recipes/octokit-rest-msw-pagination/package.json": "sha256:92fb3031788fbba1cbf50110a5ddc23b2139185fa5383ae7d4a8a42ceab9a206",
     "recipes/octokit-rest-msw-pagination/recipe.yaml": "sha256:edb9adf73aae238e659d86e3796cb07efb5dfb09fa337e15a1d3f63343add1ea",
     "recipes/octokit-rest-msw-pagination/src/github.ts": "sha256:b00b6d94ae6c194fdebba6fbe7e1af89e4f0523bd3467c6beac6bf1b870bfb9c",
-    "recipes/octokit-rest-msw-pagination/test/github.test.ts": "sha256:c394eea929b2b65908906c98249fe66d23853cde351938e0f9d04a8714a1c498"
+    "recipes/octokit-rest-msw-pagination/test/github.test.ts": "sha256:51defd0a7b92154a2ca33c60baef1b77f20f1b817de8dfae3b900cee920d409f"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39909839088"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: paginate follows Link headers across all pages\nok 1 - paginate follows Link headers across all pages\n  ---\n  duration_ms: 60.598425\n  type: 'test'\n  ...\n# Subtest: done() stops paging early\nok 2 - done() stops paging early\n  ---\n  duration_ms: 11.36007\n  type: 'test'\n  ...\n# Subtest: create sends auth and JSON body\nok 3 - create sends auth and JSON body\n  ---\n  duration_ms: 11.135194\n  type: 'test'\n  ...\n# GET /repos/acme/gone - 404 with id UNKNOWN in 5ms\n# Subtest: 404 surfaces as RequestError status\nok 4 - 404 surfaces as RequestError status\n  ---\n  duration_ms: 11.648296\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 453.553042\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: paginate follows Link headers across all pages\nok 1 - paginate follows Link headers across all pages\n  ---\n  duration_ms: 80.180467\n  type: 'test'\n  ...\n# Subtest: done() stops paging early\nok 2 - done() stops paging early\n  ---\n  duration_ms: 17.618846\n  type: 'test'\n  ...\n# Subtest: create sends auth and JSON body\nok 3 - create sends auth and JSON body\n  ---\n  duration_ms: 15.370558\n  type: 'test'\n  ...\n# GET /repos/acme/gone - 404 with id UNKNOWN in 6ms\n# Subtest: 404 surfaces as RequestError status\nok 4 - 404 surfaces as RequestError status\n  ---\n  duration_ms: 16.384772\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 504.151248\n"
 }

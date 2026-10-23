@@ -1,15 +1,15 @@
 {
   "id": "ofetch-msw-client",
   "status": "passed",
-  "ran_at": "2026-10-20T01:17:46.207Z",
-  "last_passed_at": "2026-10-20T01:17:46.207Z",
+  "ran_at": "2026-10-23T06:10:16.980Z",
+  "last_passed_at": "2026-10-23T06:10:16.980Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4439,
-    "test": 672
+    "setup": 2606,
+    "test": 535
   },
   "pinned": {
     "ofetch": "1.5.1",
@@ -17,19 +17,19 @@
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:0b3b4d943fb327df00d4e1b4ac7cb417f2ebec02266a6ffd8a20117c7dd4ada6",
+  "recipe_hash": "sha256:1303ce0268ad54099e6a89b18142793b1f903190ab3997442d416bf2c70ec66b",
   "files": {
     "recipes/ofetch-msw-client/package.json": "sha256:a9d114324729b4f26fef33fd9c18955776a5665d748eae5240baf1f11d7eb301",
     "recipes/ofetch-msw-client/recipe.yaml": "sha256:019e1ea3689d8bdb59b33a821352b47ece39cfc340cafe5ef4104847c51efc31",
-    "recipes/ofetch-msw-client/src/client.ts": "sha256:355aa7072354d75269b2a24c2f2e336ac9020315fe50ce50823b1afa0b893e05",
-    "recipes/ofetch-msw-client/test/client.test.ts": "sha256:2c5d9e94b8b8ab78d776344f90910fdbdca8e099b57da8e459eb45a5a4fe5ec9"
+    "recipes/ofetch-msw-client/src/client.ts": "sha256:79ca1884ccde75bdd87facd19138914004ffa42e163bb8a762a77776199e6e05",
+    "recipes/ofetch-msw-client/test/client.test.ts": "sha256:ec6f3700dfd841518663ad55f15541ac632d734f748e2611d242a5b25234461f"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39909839088"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists, filters, creates\nok 1 - lists, filters, creates\n  ---\n  duration_ms: 83.057258\n  type: 'test'\n  ...\n# Subtest: maps 404 to FetchError\nok 2 - maps 404 to FetchError\n  ---\n  duration_ms: 10.821087\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 526.851661\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists, filters, creates\nok 1 - lists, filters, creates\n  ---\n  duration_ms: 56.117156\n  type: 'test'\n  ...\n# Subtest: maps 404 to FetchError\nok 2 - maps 404 to FetchError\n  ---\n  duration_ms: 8.566859\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 423.091444\n"
 }
