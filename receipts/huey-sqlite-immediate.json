@@ -1,15 +1,15 @@
 {
   "id": "huey-sqlite-immediate",
   "status": "passed",
-  "ran_at": "2026-10-20T01:12:04.634Z",
-  "last_passed_at": "2026-10-20T01:12:04.634Z",
+  "ran_at": "2026-10-23T18:51:29.263Z",
+  "last_passed_at": "2026-10-23T18:51:29.263Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 163,
-    "test": 1432
+    "setup": 271,
+    "test": 1881
   },
   "pinned": {
     "huey": "3.4.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40005987956"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.89s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.39s\n"
 }

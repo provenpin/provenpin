@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-orjson-json-column",
   "status": "passed",
-  "ran_at": "2026-10-23T12:58:08.724Z",
-  "last_passed_at": "2026-10-23T12:58:08.724Z",
+  "ran_at": "2026-10-23T18:56:51.601Z",
+  "last_passed_at": "2026-10-23T18:56:51.601Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 325,
-    "test": 2128
+    "setup": 438,
+    "test": 3426
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39956071612"
+    "runner": "github-actions 40005987956"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.36s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.64s\n"
 }
