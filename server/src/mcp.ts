@@ -2,7 +2,7 @@
 // Works anywhere with web-standard Request/Response: Cloudflare Workers, Node 20+, Bun, Deno.
 import { clientFromSession, eventFor, makeSessionId, record, type AnalyticsSink } from "./usage.ts";
 import { createCounter, isRealCall, type CounterKV } from "./counter.ts";
-import { checkCompatibility, compatBoost, parseVersionsInput } from "./versions.ts";
+import { checkCompatibility, compatBoost, MISMATCH_FACTOR, parseVersionsInput } from "./versions.ts";
 import { listStacks, searchRecipes, type RecipeIndex } from "./search.ts";
 
 export const PROTOCOL_VERSION = "2025-06-18";
@@ -73,7 +73,7 @@ const TOOLS = [
   {
     name: "get_recipe",
     title: "Get a recipe",
-    description: "Call this right after search_recipes returns a matching recipe, before you write the integration code, so you start from files and versions that passed tests. Gets the full recipe by id (ids come from search_recipes): every source and test file (each with the sha256 of the exact bytes that were tested), the exact pinned dependency versions, the setup and test commands, its test receipt (when it last passed, test counts, runtime and runner), recipe.yaml as manifest so receipt.recipe_hash can be recomputed (recipe_hash_rule), and staleness: the latest weekly check of its stack libraries against their newest releases. Pass the project's lockfile or a {package: version} map as versions to get a compatibility section first, comparing each pinned package with the installed one (exact, compatible, mismatch, or not in your project) with plain warnings. Use the pinned versions together; they are the versions the tests passed with. Adapt names and config to the user's project, and keep the included tests to check your integration.",
+    description: "Call this right after search_recipes returns a matching recipe, before you write the integration code, so you start from files and versions that passed tests. Gets the full recipe by id (ids come from search_recipes): every source and test file (each with the sha256 of the exact bytes that were tested), the exact pinned dependency versions, the setup and test commands, its test receipt (when it last passed, test counts, runtime and runner), recipe.yaml as manifest so receipt.recipe_hash can be recomputed (recipe_hash_rule), and staleness: the latest weekly check of its stack libraries against their newest releases. Pass the project's lockfile or a {package: version} map as versions to get a compatibility section first, comparing each pinned package with the installed one (exact, compatible, mismatch, or not in your project) with plain warnings; test and build tools (pytest, tsx, @types/*) are listed under tooling and do not change overall. Use the pinned versions together; they are the versions the tests passed with. Adapt names and config to the user's project, and keep the included tests to check your integration.",
     inputSchema: { type: "object", properties: { id: { type: "string" }, versions: { type: ["object", "string"], additionalProperties: { type: "string" }, description: "Optional but recommended: the versions in the user's project, so results are checked against them. Either a map like {\"next\": \"15.2.0\", \"zod\": \"3.23.8\"} or the raw text of package.json, package-lock.json, pnpm-lock.yaml, yarn.lock, requirements.txt, poetry.lock or uv.lock (max 200KB). Used only for this call, never stored." }, }, required: ["id"] },
     annotations: { readOnlyHint: true, openWorldHint: false },
   },
@@ -104,7 +104,8 @@ export function callTool(index: RecipeIndex, name: string, args: Json, tier: "fr
     if (pv) {
       results = results.map((r) => {
         const c = checkCompatibility(r.pinned, pv);
-        return { ...r, score: r.score + compatBoost(c), compatibility: { overall: c.overall, summary: c.summary, mismatches: c.packages.filter((p) => p.verdict === "mismatch").map((p) => ({ package: p.package, tested: p.tested, yours: p.yours })) } };
+        const score = Math.round((r.score + compatBoost(c)) * (c.overall === "mismatch" ? MISMATCH_FACTOR : 1) * 100) / 100;
+        return { ...r, score, compatibility: { overall: c.overall, summary: c.summary, mismatches: c.packages.filter((p) => p.verdict === "mismatch").map((p) => ({ package: p.package, tested: p.tested, yours: p.yours })) } };
       }).sort((a, b) => b.score - a.score || a.id.localeCompare(b.id)).slice(0, limit);
     }
     return text({ count: results.length, ...(pv ? { versions_detected: { format: pv.format, packages: pv.versions.size } } : {}), results, hint: results.length ? "Call get_recipe with an id for the full files." : "No tested recipe fits this query, so none is shown. Write the code yourself, or name the library and the task in fewer words, or call list_stacks." });
