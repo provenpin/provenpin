@@ -1,34 +1,34 @@
 {
   "id": "grammy-bot-handle-update",
   "status": "passed",
-  "ran_at": "2026-10-20T01:10:59.590Z",
-  "last_passed_at": "2026-10-20T01:10:59.590Z",
+  "ran_at": "2026-10-23T09:02:07.585Z",
+  "last_passed_at": "2026-10-23T09:02:07.585Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1667,
-    "test": 303
+    "setup": 1764,
+    "test": 465
   },
   "pinned": {
     "grammy": "1.46.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:026f9801b4186fa23a2c46bf185ef25237ee7b825413e1fcaa03466f111f7e42",
+  "recipe_hash": "sha256:7b008bb6580f1c96402cf700c153aaf53e967b2e4ccaca86f841c829852e41d1",
   "files": {
     "recipes/grammy-bot-handle-update/package.json": "sha256:2ee6d9569fb9cab31ad3b2330c55f739c5e88e6dfe2ac937b0c9600fc2befb23",
     "recipes/grammy-bot-handle-update/recipe.yaml": "sha256:457e4cb6c68e278de05b79b6c3eeb6e134194e0a5a905de64449b98d2c2eed0a",
-    "recipes/grammy-bot-handle-update/src/bot.ts": "sha256:888bc641e6e9fa37ba836d7b743eaa0b7656f3c1dad7d523846b35cdcb7326a3",
+    "recipes/grammy-bot-handle-update/src/bot.ts": "sha256:aeb1e8ea9dae900517c5bbff7406ce5f4c78f9492cd8fc70e537bb2808ec9264",
     "recipes/grammy-bot-handle-update/test/bot.test.ts": "sha256:0049e025ecd59cbb44662b28008bbc9c5ac45054fba3e6441d093889a12c6d4e"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39928777288"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: /start replies with name\nok 1 - /start replies with name\n  ---\n  duration_ms: 2.529375\n  type: 'test'\n  ...\n# Subtest: session state persists across updates\nok 2 - session state persists across updates\n  ---\n  duration_ms: 0.430374\n  type: 'test'\n  ...\n# Subtest: plain text gets an inline keyboard\nok 3 - plain text gets an inline keyboard\n  ---\n  duration_ms: 0.368552\n  type: 'test'\n  ...\n# Subtest: callback query answers and edits\nok 4 - callback query answers and edits\n  ---\n  duration_ms: 0.504464\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 193.989321\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: /start replies with name\nok 1 - /start replies with name\n  ---\n  duration_ms: 4.585082\n  type: 'test'\n  ...\n# Subtest: session state persists across updates\nok 2 - session state persists across updates\n  ---\n  duration_ms: 0.732892\n  type: 'test'\n  ...\n# Subtest: plain text gets an inline keyboard\nok 3 - plain text gets an inline keyboard\n  ---\n  duration_ms: 0.64625\n  type: 'test'\n  ...\n# Subtest: callback query answers and edits\nok 4 - callback query answers and edits\n  ---\n  duration_ms: 0.966169\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 302.429136\n"
 }

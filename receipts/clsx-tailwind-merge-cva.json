@@ -1,15 +1,15 @@
 {
   "id": "clsx-tailwind-merge-cva",
   "status": "passed",
-  "ran_at": "2026-10-20T01:05:46.327Z",
-  "last_passed_at": "2026-10-20T01:05:46.327Z",
+  "ran_at": "2026-10-23T09:01:32.066Z",
+  "last_passed_at": "2026-10-23T09:01:32.066Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1810,
-    "test": 341
+    "setup": 1569,
+    "test": 526
   },
   "pinned": {
     "clsx": "2.1.1",
@@ -18,19 +18,19 @@
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:e3ccdcc2c6dff762af85f23f1f4938e9f84211690c28c632545952b0223349cb",
+  "recipe_hash": "sha256:fb3e0104bab279dfa48ca3a8d5ca59238aba8e835de346192678cf687cbe1f4e",
   "files": {
     "recipes/clsx-tailwind-merge-cva/package.json": "sha256:dcaa296c1bd88f1f4dd76f473f7378426b58df40127f9ada6d8888a270ec83d4",
     "recipes/clsx-tailwind-merge-cva/recipe.yaml": "sha256:a9c57c150b8b1075e7c1ddb2898e87c2406a401e9d0ae2dc4314cbed572b5d58",
-    "recipes/clsx-tailwind-merge-cva/src/button.ts": "sha256:a08d78d6eb5b755ca80c0ab34bb3bfdff9423e804d9f372dd0d6c761b8dbc1f2",
+    "recipes/clsx-tailwind-merge-cva/src/button.ts": "sha256:de99437e31f455020c2fb4c2259c1cae32cc24977fff3c97c3a2c7327c82468d",
     "recipes/clsx-tailwind-merge-cva/test/button.test.ts": "sha256:512dec3bc4b10c84d96b1f59bf2e4b577462d8748d6a11538c1f4c7edf8efe73"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39928777288"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: twMerge drops conflicting padding\nok 1 - twMerge drops conflicting padding\n  ---\n  duration_ms: 5.723664\n  type: 'test'\n  ...\n# Subtest: cva applies intent and size\nok 2 - cva applies intent and size\n  ---\n  duration_ms: 0.855571\n  type: 'test'\n  ...\n# Subtest: className merges on top of variants\nok 3 - className merges on top of variants\n  ---\n  duration_ms: 0.264392\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 197.76073\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: twMerge drops conflicting padding\nok 1 - twMerge drops conflicting padding\n  ---\n  duration_ms: 4.454554\n  type: 'test'\n  ...\n# Subtest: cva applies intent and size\nok 2 - cva applies intent and size\n  ---\n  duration_ms: 1.222975\n  type: 'test'\n  ...\n# Subtest: className merges on top of variants\nok 3 - className merges on top of variants\n  ---\n  duration_ms: 0.217044\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 407.473731\n"
 }
