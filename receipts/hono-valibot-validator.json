@@ -1,15 +1,15 @@
 {
   "id": "hono-valibot-validator",
   "status": "passed",
-  "ran_at": "2026-10-23T06:52:56.685Z",
-  "last_passed_at": "2026-10-23T06:52:56.685Z",
+  "ran_at": "2026-10-23T12:53:11.408Z",
+  "last_passed_at": "2026-10-23T12:53:11.408Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4703,
-    "test": 610
+    "setup": 4729,
+    "test": 736
   },
   "pinned": {
     "hono": "4.13.13",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39913746886"
+    "runner": "github-actions 39956071612"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-hono-valibot-validator-dBY7Vg\u001b[39m\n\n \u001b[32m✓\u001b[39m test/app.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 29\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:53:01\n\u001b[2m   Duration \u001b[22m 197ms\u001b[2m (transform 33%, tests 32%, import 30%, worker 4%)\u001b[22m\n\nJSON report written to /tmp/pp-hono-valibot-validator-dBY7Vg/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-hono-valibot-validator-d6pXGV\u001b[39m\n\n \u001b[32m✓\u001b[39m test/app.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 37\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:53:16\n\u001b[2m   Duration \u001b[22m 244ms\u001b[2m (tests 35%, import 31%, transform 30%, worker 4%)\u001b[22m\n\nJSON report written to /tmp/pp-hono-valibot-validator-d6pXGV/test-report.json\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "gpt-tokenizer-count-limit",
   "status": "passed",
-  "ran_at": "2026-10-23T10:01:17.693Z",
-  "last_passed_at": "2026-10-23T10:01:17.693Z",
+  "ran_at": "2026-10-23T12:52:49.227Z",
+  "last_passed_at": "2026-10-23T12:52:49.227Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2059,
-    "test": 561
+    "setup": 2187,
+    "test": 453
   },
   "pinned": {
     "gpt-tokenizer": "4.0.3",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39936027777"
+    "runner": "github-actions 39956071612"
   },
   "errors": [],
-  "log_tail": "# Subtest: encode and decode round trip text\nok 1 - encode and decode round trip text\n  ---\n  duration_ms: 6.419522\n  type: 'test'\n  ...\n# Subtest: token counts are positive and stable\nok 2 - token counts are positive and stable\n  ---\n  duration_ms: 0.328004\n  type: 'test'\n  ...\n# Subtest: isWithinTokenLimit reflects the budget\nok 3 - isWithinTokenLimit reflects the budget\n  ---\n  duration_ms: 0.685614\n  type: 'test'\n  ...\n# Subtest: encodeChat counts tokens for a short chat\nok 4 - encodeChat counts tokens for a short chat\n  ---\n  duration_ms: 0.616384\n  type: 'test'\n  ...\n# Subtest: truncates text to a token budget\nok 5 - truncates text to a token budget\n  ---\n  duration_ms: 0.342762\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 411.536142\n"
+  "log_tail": "# Subtest: encode and decode round trip text\nok 1 - encode and decode round trip text\n  ---\n  duration_ms: 5.44278\n  type: 'test'\n  ...\n# Subtest: token counts are positive and stable\nok 2 - token counts are positive and stable\n  ---\n  duration_ms: 0.260019\n  type: 'test'\n  ...\n# Subtest: isWithinTokenLimit reflects the budget\nok 3 - isWithinTokenLimit reflects the budget\n  ---\n  duration_ms: 0.528289\n  type: 'test'\n  ...\n# Subtest: encodeChat counts tokens for a short chat\nok 4 - encodeChat counts tokens for a short chat\n  ---\n  duration_ms: 0.495711\n  type: 'test'\n  ...\n# Subtest: truncates text to a token budget\nok 5 - truncates text to a token budget\n  ---\n  duration_ms: 0.263524\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 337.202882\n"
 }
