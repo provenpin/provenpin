@@ -64,3 +64,8 @@ jobs:
         if: steps.pick.outputs.ids != ''
         env: { IDS: "${{ steps.pick.outputs.ids }}" }
         run: node runner/run.mjs $IDS
+      # tsx strips types, so passing tests say nothing about type errors.
+      - name: Type-check touched TypeScript recipes
+        if: ${{ !cancelled() && steps.pick.outputs.ids != '' }}
+        env: { IDS: "${{ steps.pick.outputs.ids }}" }
+        run: node runner/typecheck.mjs $IDS

@@ -9,5 +9,6 @@
     "build:index": "node runner/build-index.mjs",
     "test": "node --test runner/test/*.test.mjs"
   },
-  "dependencies": { "yaml": "2.9.1" }
+  "dependencies": { "yaml": "2.9.1" },
+  "devDependencies": { "typescript": "7.0.2" }
 }
