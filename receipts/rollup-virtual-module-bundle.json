@@ -1,15 +1,15 @@
 {
   "id": "rollup-virtual-module-bundle",
   "status": "passed",
-  "ran_at": "2026-10-23T01:02:30.758Z",
-  "last_passed_at": "2026-10-23T01:02:30.758Z",
+  "ran_at": "2026-10-23T06:57:20.562Z",
+  "last_passed_at": "2026-10-23T06:57:20.562Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2647,
-    "test": 722
+    "setup": 2197,
+    "test": 760
   },
   "pinned": {
     "rollup": "4.64.7",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39880776456"
+    "runner": "github-actions 39913746886"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: bundles virtual modules to esm\nok 1 - bundles virtual modules to esm\n  ---\n  duration_ms: 35.049495\n  type: 'test'\n  ...\n# Subtest: tree-shaking drops unused exports\nok 2 - tree-shaking drops unused exports\n  ---\n  duration_ms: 7.04639\n  type: 'test'\n  ...\n# Subtest: generated bundle runs via a data url import\nok 3 - generated bundle runs via a data url import\n  ---\n  duration_ms: 6.736305\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 569.451035\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: bundles virtual modules to esm\nok 1 - bundles virtual modules to esm\n  ---\n  duration_ms: 35.858005\n  type: 'test'\n  ...\n# Subtest: tree-shaking drops unused exports\nok 2 - tree-shaking drops unused exports\n  ---\n  duration_ms: 7.767048\n  type: 'test'\n  ...\n# Subtest: generated bundle runs via a data url import\nok 3 - generated bundle runs via a data url import\n  ---\n  duration_ms: 8.071008\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 601.497802\n"
 }

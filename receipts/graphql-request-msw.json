@@ -1,15 +1,15 @@
 {
   "id": "graphql-request-msw",
   "status": "passed",
-  "ran_at": "2026-10-23T00:57:40.915Z",
-  "last_passed_at": "2026-10-23T00:57:40.915Z",
+  "ran_at": "2026-10-23T06:52:34.927Z",
+  "last_passed_at": "2026-10-23T06:52:34.927Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3360,
-    "test": 1419
+    "setup": 3080,
+    "test": 765
   },
   "pinned": {
     "graphql-request": "7.4.0",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39880776456"
+    "runner": "github-actions 39913746886"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: query with variables\nok 1 - query with variables\n  ---\n  duration_ms: 343.912284\n  type: 'test'\n  ...\n# Subtest: mutation\nok 2 - mutation\n  ---\n  duration_ms: 12.061731\n  type: 'test'\n  ...\n# Subtest: GraphQL errors surface with their code\nok 3 - GraphQL errors surface with their code\n  ---\n  duration_ms: 9.692426\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1276.096383\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: query with variables\nok 1 - query with variables\n  ---\n  duration_ms: 90.704632\n  type: 'test'\n  ...\n# Subtest: mutation\nok 2 - mutation\n  ---\n  duration_ms: 14.146913\n  type: 'test'\n  ...\n# Subtest: GraphQL errors surface with their code\nok 3 - GraphQL errors surface with their code\n  ---\n  duration_ms: 9.569894\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 620.390308\n"
 }
