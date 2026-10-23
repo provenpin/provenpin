@@ -1,15 +1,15 @@
 {
   "id": "dexie-fake-indexeddb-store",
   "status": "passed",
-  "ran_at": "2026-10-23T06:50:11.820Z",
-  "last_passed_at": "2026-10-23T06:50:11.820Z",
+  "ran_at": "2026-10-23T07:01:19.346Z",
+  "last_passed_at": "2026-10-23T07:01:19.346Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1591,
-    "test": 577
+    "setup": 1530,
+    "test": 542
   },
   "pinned": {
     "dexie": "4.4.6",
@@ -17,19 +17,19 @@
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:e62ab6254654e53bd764dab7400671a8437c0e00290c834ed472902f5fe35ac3",
+  "recipe_hash": "sha256:8950500c73b612db43171957c8676faac3064db86dd36abf7cc51f8a79d298a5",
   "files": {
     "recipes/dexie-fake-indexeddb-store/package.json": "sha256:50b8da364e861ff4ccf7d87b685aca0d11b5830924f4162c03790fbdc5e532ca",
     "recipes/dexie-fake-indexeddb-store/recipe.yaml": "sha256:1ab472fc323b58b54162f2d3ff649ef57b2841c7c24b349b45882d732683d641",
-    "recipes/dexie-fake-indexeddb-store/src/store.ts": "sha256:59368948e10adc40e2e46d0787e18f13c28152ccf2d06afb945ac6187ceaf68d",
+    "recipes/dexie-fake-indexeddb-store/src/store.ts": "sha256:e0a6518144f1b87a8bb61fc56baba68da9440eea9bc5f2381995bcd2e3554384",
     "recipes/dexie-fake-indexeddb-store/test/store.test.ts": "sha256:531850f3d2863b71e9f03c0cc51ce288840eb561c196783644fb88d2a347e189"
   },
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39913746886"
+    "runner": "github-actions 39915054218"
   },
   "errors": [],
-  "log_tail": "# Subtest: bulkAdd inserts rows and equals query filters by index\nok 1 - bulkAdd inserts rows and equals query filters by index\n  ---\n  duration_ms: 48.752465\n  type: 'test'\n  ...\n# Subtest: between query returns an inclusive price range\nok 2 - between query returns an inclusive price range\n  ---\n  duration_ms: 4.858438\n  type: 'test'\n  ...\n# Subtest: compound index query matches category and price together\nok 3 - compound index query matches category and price together\n  ---\n  duration_ms: 4.234103\n  type: 'test'\n  ...\n# Subtest: update modifies matching rows in place\nok 4 - update modifies matching rows in place\n  ---\n  duration_ms: 5.410628\n  type: 'test'\n  ...\n# Subtest: transaction rolls back when it throws\nok 5 - transaction rolls back when it throws\n  ---\n  duration_ms: 6.122829\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 416.655296\n"
+  "log_tail": "# Subtest: bulkAdd inserts rows and equals query filters by index\nok 1 - bulkAdd inserts rows and equals query filters by index\n  ---\n  duration_ms: 34.533388\n  type: 'test'\n  ...\n# Subtest: between query returns an inclusive price range\nok 2 - between query returns an inclusive price range\n  ---\n  duration_ms: 5.094661\n  type: 'test'\n  ...\n# Subtest: compound index query matches category and price together\nok 3 - compound index query matches category and price together\n  ---\n  duration_ms: 4.590088\n  type: 'test'\n  ...\n# Subtest: update modifies matching rows in place\nok 4 - update modifies matching rows in place\n  ---\n  duration_ms: 5.598373\n  type: 'test'\n  ...\n# Subtest: transaction rolls back when it throws\nok 5 - transaction rolls back when it throws\n  ---\n  duration_ms: 6.563837\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 384.238242\n"
 }

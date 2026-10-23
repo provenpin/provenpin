@@ -1,34 +1,34 @@
 {
   "id": "decimal-js-money-math",
   "status": "passed",
-  "ran_at": "2026-10-20T01:06:43.411Z",
-  "last_passed_at": "2026-10-20T01:06:43.411Z",
+  "ran_at": "2026-10-23T07:01:21.064Z",
+  "last_passed_at": "2026-10-23T07:01:21.064Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1751,
-    "test": 213
+    "setup": 1432,
+    "test": 337
   },
   "pinned": {
     "decimal.js": "10.6.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:f19e4390b06efaabbdceeca00494557d3c8f390b41354e3b8d9f1fd52c77048f",
+  "recipe_hash": "sha256:1a75eee862c49fb1a0788af0f6d4dc7189ea42628778bcc65a1bcea9da2a6171",
   "files": {
     "recipes/decimal-js-money-math/package.json": "sha256:171d23ae2b7e8212ec761ad1a0574735024cc0b75f75d0aafacbf1107040c881",
     "recipes/decimal-js-money-math/recipe.yaml": "sha256:fe5d4dd4bad6a125f2037054a49adab20aa604958fa5b0acb7cb88f773490de2",
-    "recipes/decimal-js-money-math/src/money.ts": "sha256:5d6bc925d2382cf677fc443e2f54576cf7c181697dd13f8084d4d363ecdf960f",
+    "recipes/decimal-js-money-math/src/money.ts": "sha256:db5a8f969d9d8689009d0e1fcf3aa404818bd4ed7d5a18c0dadd9419ebc113f5",
     "recipes/decimal-js-money-math/test/money.test.ts": "sha256:5e3a21c0da7317b4dff0614237001ce6e19d55e1211e6d092681fc52335382b4"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39915054218"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: avoids float drift on line totals\nok 1 - avoids float drift on line totals\n  ---\n  duration_ms: 0.712533\n  type: 'test'\n  ...\n# Subtest: applies tax and discount\nok 2 - applies tax and discount\n  ---\n  duration_ms: 0.368125\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 117.335153\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: avoids float drift on line totals\nok 1 - avoids float drift on line totals\n  ---\n  duration_ms: 1.26422\n  type: 'test'\n  ...\n# Subtest: applies tax and discount\nok 2 - applies tax and discount\n  ---\n  duration_ms: 0.623223\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 187.412394\n"
 }

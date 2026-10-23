@@ -1,14 +1,14 @@
 {
   "id": "bignumber-js-precise-decimals",
   "status": "passed",
-  "ran_at": "2026-10-20T01:04:24.106Z",
-  "last_passed_at": "2026-10-20T01:04:24.106Z",
+  "ran_at": "2026-10-23T07:01:25.989Z",
+  "last_passed_at": "2026-10-23T07:01:25.989Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1575,
+    "setup": 1584,
     "test": 345
   },
   "pinned": {
@@ -16,19 +16,19 @@
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:bfa3590875613794dd986cb4d09b01be4c5fb550ee79d997150d6ea5584dfa18",
+  "recipe_hash": "sha256:51788173195e948da97bda3e30c221d19ee15ce5b7821ee63d137ff6aefdb4e5",
   "files": {
     "recipes/bignumber-js-precise-decimals/package.json": "sha256:e400d389d2bc70255707703f0d7adaa4f276a8cd33038cf0e89159f34ecfe678",
     "recipes/bignumber-js-precise-decimals/recipe.yaml": "sha256:d72f0c3501e6fb24c9e10a5ec901ab8d10c0fa4e87fe4801471d338af41e5bdd",
-    "recipes/bignumber-js-precise-decimals/src/decimals.ts": "sha256:9f897211f7203948554d55ccf7d8999fb25a712ad0003677e0927d8b2949f87b",
+    "recipes/bignumber-js-precise-decimals/src/decimals.ts": "sha256:5a173a6792e011735fd64a97d1a4c04864601da844a5da86740bb6298f7d48ec",
     "recipes/bignumber-js-precise-decimals/test/decimals.test.ts": "sha256:75ff014b55c7387f2116e2ebcfc582acf3e4f0e9ae73b28ac5f06412be55d712"
   },
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39915054218"
   },
   "errors": [],
-  "log_tail": "# Subtest: honours the requested rounding mode\nok 3 - honours the requested rounding mode\n  ---\n  duration_ms: 0.69501\n  type: 'test'\n  ...\n# Subtest: fixed-point formatting\nok 4 - fixed-point formatting\n  ---\n  duration_ms: 0.182732\n  type: 'test'\n  ...\n# Subtest: numeric comparisons ignore formatting\nok 5 - numeric comparisons ignore formatting\n  ---\n  duration_ms: 0.255297\n  type: 'test'\n  ...\n# Subtest: cart total applies tax and rounds to cents\nok 6 - cart total applies tax and rounds to cents\n  ---\n  duration_ms: 0.368249\n  type: 'test'\n  ...\n# Subtest: cart total is exact for values that drift in binary\nok 7 - cart total is exact for values that drift in binary\n  ---\n  duration_ms: 0.233316\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 197.319713\n"
+  "log_tail": "# Subtest: honours the requested rounding mode\nok 3 - honours the requested rounding mode\n  ---\n  duration_ms: 0.690754\n  type: 'test'\n  ...\n# Subtest: fixed-point formatting\nok 4 - fixed-point formatting\n  ---\n  duration_ms: 0.184993\n  type: 'test'\n  ...\n# Subtest: numeric comparisons ignore formatting\nok 5 - numeric comparisons ignore formatting\n  ---\n  duration_ms: 0.248762\n  type: 'test'\n  ...\n# Subtest: cart total applies tax and rounds to cents\nok 6 - cart total applies tax and rounds to cents\n  ---\n  duration_ms: 0.363816\n  type: 'test'\n  ...\n# Subtest: cart total is exact for values that drift in binary\nok 7 - cart total is exact for values that drift in binary\n  ---\n  duration_ms: 0.241909\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 194.907485\n"
 }
