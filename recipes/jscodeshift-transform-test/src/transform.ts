@@ -43,6 +43,7 @@ export default function transform(
     const declaration = path.node;
     if (declaration.declarations.length !== 1) return;
     const declarator = declaration.declarations[0];
+    if (declarator.type !== "VariableDeclarator") return;
     const init = declarator.init;
     if (init == null || init.type !== "CallExpression") return;
     if (init.callee.type !== "Identifier" || init.callee.name !== "require") return;

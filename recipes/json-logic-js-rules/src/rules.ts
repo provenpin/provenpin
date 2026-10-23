@@ -1,4 +1,4 @@
-import jsonLogic from "json-logic-js";
+import jsonLogic, { type RulesLogic } from "json-logic-js";
 
 jsonLogic.add_operation("volume_discount", (quantity: number, unitPrice: number) => {
   const subtotal = quantity * unitPrice;
@@ -7,7 +7,7 @@ jsonLogic.add_operation("volume_discount", (quantity: number, unitPrice: number)
   return subtotal;
 });
 
-export const rules = {
+export const rules: Record<string, RulesLogic> = {
   freeShipping: {
     and: [
       { ">=": [{ var: "total" }, 100] },
@@ -38,5 +38,5 @@ export const volumeDiscountRule = {
 };
 
 export function evaluate(rule: unknown, data: Record<string, unknown>): unknown {
-  return jsonLogic.apply(rule, data);
+  return jsonLogic.apply(rule as RulesLogic, data);
 }
