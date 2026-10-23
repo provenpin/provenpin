@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { ROOT, listRecipeIds, loadRecipe } from "../lib.mjs";
-import { tsFiles, tsconfigFor, typecheckRecipe, knownFailures } from "../typecheck.mjs";
+import { tsFiles, tsconfigFor, typecheckRecipe, knownFailures, verdict } from "../typecheck.mjs";
 
 test("tsconfig checks only the recipe's TypeScript files, strictly, without emitting", () => {
   const r = { files: ["package.json", "src/a.ts", "src/b.tsx", "src/env.d.ts", "test/a.test.ts", "README.md"] };
@@ -51,4 +51,13 @@ test("known type-check failures are existing TypeScript recipes, sorted, no repe
     assert.ok(ids.has(id), id);
     assert.equal(loadRecipe(id).language, "typescript", id);
   }
+});
+
+test("listed recipes pass only while they still have type errors; tool breakage never passes", () => {
+  assert.deepEqual(verdict("failed", true), { status: "known", ok: true });
+  assert.deepEqual(verdict("passed", true), { status: "now_passes", ok: false });
+  assert.deepEqual(verdict("failed", false), { status: "failed", ok: false });
+  assert.deepEqual(verdict("passed", false), { status: "passed", ok: true });
+  assert.deepEqual(verdict("skipped", false), { status: "skipped", ok: true });
+  for (const s of ["tsc_error", "setup_failed", "invalid"]) assert.equal(verdict(s, true).ok, false, s);
 });

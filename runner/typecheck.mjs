@@ -38,7 +38,7 @@ function sh(cmd, args, cwd) {
   return { code: r.status ?? 124, out: (r.stdout ?? "") + (r.stderr ?? ""), ms: Date.now() - t0 };
 }
 
-// status: skipped (not TypeScript) | invalid | setup_failed | failed (type errors) | passed
+// status: skipped (not TypeScript) | invalid | setup_failed | tsc_error (tsc broke, no TS diagnostics) | failed (type errors) | passed
 export function typecheckRecipe(id) {
   const r = loadRecipe(id);
   if (r.language !== "typescript") return { id, status: "skipped", out: "" };
@@ -52,10 +52,17 @@ export function typecheckRecipe(id) {
     const setup = sh("bash", ["-c", rewriteSetup(r.setup, r.runtime)], work);
     if (setup.code !== 0) return { id, status: "setup_failed", out: setup.out };
     const tsc = sh(process.execPath, [TSC, "-p", "tsconfig.json", "--noEmit", "--allowImportingTsExtensions", "--pretty", "false"], work);
-    return { id, status: tsc.code === 0 ? "passed" : "failed", out: tsc.out };
+    return { id, status: tsc.code === 0 ? "passed" : /error TS\d+/.test(tsc.out) ? "failed" : "tsc_error", out: tsc.out };
   } finally {
     fs.rmSync(work, { recursive: true, force: true });
   }
+}
+
+// Applies the known-failures list: a listed recipe with type errors is "known" (ok); a listed recipe that is clean fails as "now_passes".
+export function verdict(status, isKnown) {
+  if (isKnown && status === "failed") return { status: "known", ok: true };
+  if (isKnown && status === "passed") return { status: "now_passes", ok: false };
+  return { status, ok: status === "passed" || status === "skipped" };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
@@ -64,9 +71,8 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   let bad = 0;
   for (const id of ids) {
     const rc = typecheckRecipe(id);
-    let status = rc.status, ok = status === "passed" || status === "skipped";
-    if (known.has(id) && status === "failed") { status = "known"; ok = true; }
-    else if (known.has(id) && status === "passed") { status = "now_passes"; ok = false; rc.out = "type-checks clean now: remove it from runner/typecheck-known.txt"; }
+    const { status, ok } = verdict(rc.status, known.has(id));
+    if (status === "now_passes") rc.out = "type-checks clean now: remove it from runner/typecheck-known.txt";
     if (!ok) bad++;
     console.log(`${status.padEnd(12)} ${id}`);
     if (status !== "passed" && status !== "skipped") console.log(rc.out.trim().split("\n").slice(-40).map((l) => `  ${l}`).join("\n"));
