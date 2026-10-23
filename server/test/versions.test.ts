@@ -1,6 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { parseVersionsInput, verdictFor, checkCompatibility, line, MAX_VERSIONS_BYTES, type ParsedVersions } from "../src/versions.ts";
+import { MISMATCH_FACTOR } from "../src/versions.ts";
 import { eventFor } from "../src/usage.ts";
 import { createHandler } from "../src/mcp.ts";
 import type { RecipeIndex } from "../src/search.ts";
@@ -91,4 +92,57 @@ test("tools: get_recipe compat on top, search boosts matching versions", async (
   assert.equal(s.results[0].id, "b-express4"); assert.equal(s.results[0].compatibility.overall, "exact"); assert.equal(s.results[1].compatibility.overall, "mismatch");
   assert.equal(JSON.parse((await call("search_recipes", { query: "express" })).body).results[0].id, "a-express5");
   assert.equal((await call("get_recipe", { id: "a-express5", versions: 5 })).err, true);
+});
+
+test("test and build pins are listed under tooling and do not change overall", () => {
+  const c = checkCompatibility({ fastapi: "0.143.1", stripe: "16.0.0", pytest: "9.1.1" }, get({ fastapi: "0.144.0", stripe: "16.0.0" }));
+  assert.equal(c.overall, "mismatch");
+  assert.deepEqual(c.packages.map((p) => p.package), ["fastapi", "stripe"]);
+  assert.deepEqual(c.tooling.map((p) => [p.package, p.verdict, p.yours]), [["pytest", "not_in_project", null]]);
+  assert.match(c.summary, /test and build tools \(pytest 9\.1\.1\), listed under tooling/);
+  const ok = checkCompatibility({ express: "5.3.0", tsx: "4.23.15" }, get({ express: "5.3.0", tsx: "3.0.0" }));
+  assert.equal(ok.overall, "exact"); assert.equal(ok.tooling[0].verdict, "mismatch");
+  assert.deepEqual(checkCompatibility({ express: "5.3.0" }, get({ express: "5.3.0" })).tooling, []);
+  assert.doesNotMatch(checkCompatibility({ express: "5.3.0" }, get({ express: "5.3.0" })).summary, /tooling/);
+});
+test("empty or package-free versions text is an error, not an empty requirements.txt", () => {
+  for (const t of ["", "  \n\t", "﻿", "# only a comment\n", "-r other.txt\n", "{}", JSON.stringify({ name: "x", dependencies: {} })]) {
+    const p = parseVersionsInput(t) as any;
+    assert.ok("error" in p, JSON.stringify(t)); assert.match(p.error, /empty|No package versions were found/);
+  }
+  assert.equal(get({}).versions.size, 0); // an empty map stays accepted (overall "unknown")
+  assert.equal(get("requests\n").versions.get("requests"), "*");
+});
+
+const S = (id: string, title: string, pinned: Record<string, string>) => ({ ...R(id, pinned), title, summary: "sqlite", stack: ["better-sqlite3"] });
+const sidx: RecipeIndex = { schema_version: 1, generated_at: "x", count: 2, recipes: [S("a-sqlite12", "drizzle orm sqlite crud", { "better-sqlite3": "12.11.1" }), S("b-sqlite13", "sqlite api", { "better-sqlite3": "13.0.3" })] };
+const sh = createHandler(sidx);
+const ssearch = async (args: object) => { const r = await sh(new Request("http://x/mcp", { method: "POST", body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "tools/call", params: { name: "search_recipes", arguments: args } }) })); return JSON.parse(((await r.json()) as any).result.content[0].text); };
+
+const T = (id: string, tags: string[], pinned: Record<string, string>) => ({ ...S(id, id, pinned), tags });
+const tidx: RecipeIndex = { schema_version: 1, generated_at: "x", count: 2, recipes: [T("c-wide", ["drizzle", "orm", "sqlite", "crud", "migrations", "schema", "relations"], { "better-sqlite3": "12.11.1" }), T("d-narrow", ["sqlite"], { "better-sqlite3": "13.0.3" })] };
+
+test("search: the mismatch factor, not only the boost, reorders a clearly more relevant mismatching recipe", async () => {
+  const th = createHandler(tidx);
+  const run = async (args: object) => {
+    const r = await th(new Request("http://x/mcp", { method: "POST", body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "tools/call", params: { name: "search_recipes", arguments: args } }) }));
+    return JSON.parse(((await r.json()) as any).result.content[0].text);
+  };
+  const q = "drizzle orm sqlite crud migrations schema relations";
+  const plain = (await run({ query: q })).results;
+  assert.deepEqual(plain.map((r: any) => r.id), ["c-wide", "d-narrow"]);
+  assert.ok(plain[0].score - 4 > plain[1].score + 6, "the boost alone must not flip this order");
+  const s = (await run({ query: q, versions: { "better-sqlite3": "13.0.3" } })).results;
+  assert.deepEqual(s.map((r: any) => r.id), ["d-narrow", "c-wide"]);
+  assert.equal(MISMATCH_FACTOR, 0.75);
+});
+
+test("search: a recipe whose pins conflict with the project ranks below one that fits", async () => {
+  const plain = await ssearch({ query: "drizzle orm sqlite" });
+  assert.deepEqual(plain.results.map((r: any) => r.id), ["a-sqlite12", "b-sqlite13"]);
+  const s = await ssearch({ query: "drizzle orm sqlite", versions: { "better-sqlite3": "13.0.3" } });
+  assert.deepEqual(s.results.map((r: any) => [r.id, r.compatibility.overall]), [["b-sqlite13", "exact"], ["a-sqlite12", "mismatch"]]);
+  assert.equal(s.results[1].score, Math.round((plain.results[0].score - 4) * MISMATCH_FACTOR * 100) / 100);
+  const empty = await sh(new Request("http://x/mcp", { method: "POST", body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "tools/call", params: { name: "search_recipes", arguments: { query: "sqlite", versions: "" } } }) }));
+  assert.equal(((await empty.json()) as any).result.isError, true);
 });

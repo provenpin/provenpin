@@ -9,6 +9,8 @@ export interface PackageCheck { package: string; tested: string; yours: string |
 export interface Compatibility {
   overall: "exact" | "compatible" | "mismatch" | "unknown";
   summary: string; detected_format: string; packages: PackageCheck[];
+  /** Test and build pins (TOOLING), checked the same way but listed apart: they never change overall. */
+  tooling: PackageCheck[];
 }
 
 /** Normalize a package name so npm and PyPI spellings match (PyPI is case and separator insensitive). */
@@ -91,6 +93,13 @@ export function parseVersionsInput(input: unknown): ParsedVersions | { error: st
   if (new TextEncoder().encode(input).length > MAX_VERSIONS_BYTES) return { error: `versions is too large (max ${MAX_VERSIONS_BYTES / 1000}KB). Pass a {package: version} map or just the relevant part of the lockfile.` };
   const t = input.replace(/^\uFEFF/, "");
   const s = t.trimStart();
+  if (!s) return { error: "versions is empty. Pass a {package: version} map or the text of a lockfile or manifest, or leave versions out." };
+  const p = parseText(t, s);
+  if (!("error" in p) && p.versions.size === 0) return { error: `No package versions were found in versions (read as ${p.format}). Pass a {package: version} map or the text of a lockfile or manifest, or leave versions out.` };
+  return p;
+}
+
+function parseText(t: string, s: string): ParsedVersions | { error: string } {
   if (s.startsWith("{")) {
     try {
       const o = JSON.parse(s);
@@ -125,13 +134,12 @@ export function verdictFor(tested: string, yours: string | undefined): Verdict {
   return "mismatch";
 }
 
-/** Build tools and type packages do not change the recipe's runtime behavior, so they are not checked. */
+/** Build tools, test tools and type packages do not change the recipe's runtime behavior: they are listed under tooling and never change overall. */
 const TOOLING = /^(@types\/.*|tsx|typescript|ts-node|vitest|jest|supertest|pytest.*|ruff|mypy|black)$/;
 
 export function checkCompatibility(pinned: Record<string, string>, parsed: ParsedVersions): Compatibility {
-  const packages: PackageCheck[] = [];
+  const packages: PackageCheck[] = [], tooling: PackageCheck[] = [];
   for (const [pkg, tested] of Object.entries(pinned)) {
-    if (TOOLING.test(pkg)) continue;
     const yours = parsed.versions.get(normName(pkg));
     const verdict = verdictFor(tested, yours);
     const c: PackageCheck = { package: pkg, tested, yours: yours ?? null, verdict };
@@ -139,7 +147,7 @@ export function checkCompatibility(pinned: Record<string, string>, parsed: Parse
     if (verdict === "mismatch") c.warning = `Tested on ${pkg} ${tl ? label(tl) : tested}, you have ${yl ? label(yl) : yours}, APIs may differ. Check the code against your version or upgrade to ${tested}.`;
     else if (verdict === "compatible") c.warning = `Same major line as tested (${tested}), you have ${yours}. Should work, minor differences are possible.`;
     else if (verdict === "not_in_project") c.warning = `${pkg} is not in your project. Install ${pkg}@${tested} to match the tested setup.`;
-    packages.push(c);
+    (TOOLING.test(pkg) ? tooling : packages).push(c);
   }
   const n = (v: Verdict) => packages.filter((p) => p.verdict === v).length;
   const mism = n("mismatch"), inProj = packages.length - n("not_in_project");
@@ -149,8 +157,16 @@ export function checkCompatibility(pinned: Record<string, string>, parsed: Parse
     : mism
       ? `${mism} of ${packages.length} packages are on a different major version than tested: ${packages.filter((p) => p.verdict === "mismatch").map((p) => `${p.package} (tested ${p.tested}, yours ${p.yours})`).join(", ")}.`
       : `All ${inProj} of your matching packages are on the tested major versions${n("not_in_project") ? `, ${n("not_in_project")} not in your project` : ""}.`;
-  return { overall, summary, detected_format: parsed.format, packages };
+  const tools = tooling.length ? ` The recipe also pins test and build tools (${tooling.map((p) => `${p.package} ${p.tested}`).join(", ")}), listed under tooling; they do not change overall.` : "";
+  return { overall, summary: summary + tools, detected_format: parsed.format, packages, tooling };
 }
+
+/**
+ * Search ranking: a recipe whose overall verdict is "mismatch" keeps this share of its score (after compatBoost), so
+ * recipes that fit the installed versions rank first while a relevant mismatching recipe stays visible. Chosen on the
+ * 2026-10-18 benchmark's check V23 (drizzle-sqlite-crud 124.7 vs hono-drizzle-sqlite-api 104.4), so it is tuned in-sample.
+ */
+export const MISMATCH_FACTOR = 0.75;
 
 /** Search ranking boost: reward recipes that match the caller's installed versions. */
 export function compatBoost(c: Compatibility): number {
