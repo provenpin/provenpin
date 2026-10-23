@@ -1,34 +1,34 @@
 {
   "id": "tough-cookie-jar",
   "status": "passed",
-  "ran_at": "2026-10-20T01:26:12.064Z",
-  "last_passed_at": "2026-10-20T01:26:12.064Z",
+  "ran_at": "2026-10-23T08:00:02.200Z",
+  "last_passed_at": "2026-10-23T08:00:02.200Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1968,
-    "test": 374
+    "setup": 1473,
+    "test": 297
   },
   "pinned": {
     "tough-cookie": "6.0.2",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:45e41a190d1fb2643696dafe45bf626c83849807520003b2dddb248587c7369a",
+  "recipe_hash": "sha256:35c08286cbdf9ffcfda8d546243755379dcca47c327ab3b6f7e6157812c7c022",
   "files": {
     "recipes/tough-cookie-jar/package.json": "sha256:eea2fe10a2629e97449cb7cf45d01b80f3fd3b60709c55b80aa78fb0178d4117",
     "recipes/tough-cookie-jar/recipe.yaml": "sha256:37a897efee5cbdeb187f9f3d7710120843e2ee24242dd9e2ab59f667b9ca946a",
-    "recipes/tough-cookie-jar/src/jar.ts": "sha256:85aea7866a83faf768b18b24b4ac68b02aac5c9cc2f15be7405293b14b19e9a8",
+    "recipes/tough-cookie-jar/src/jar.ts": "sha256:dbab89c4dc705fb9010ff70e0fb0daa5cc68b26b34b7de34666f787d2abd6d4c",
     "recipes/tough-cookie-jar/test/jar.test.ts": "sha256:4877fe17df4a4bb5b72d108b48cb708013b31c14d58a0e386af9c7a0c80988b5"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 39921496026"
   },
   "errors": [],
-  "log_tail": "# Subtest: does not leak cookies across domains\nok 2 - does not leak cookies across domains\n  ---\n  duration_ms: 0.81281\n  type: 'test'\n  ...\n# Subtest: rejects a cookie whose domain does not match the URL\nok 3 - rejects a cookie whose domain does not match the URL\n  ---\n  duration_ms: 0.493155\n  type: 'test'\n  ...\n# Subtest: domainMatches is case insensitive and covers subdomains\nok 4 - domainMatches is case insensitive and covers subdomains\n  ---\n  duration_ms: 0.116962\n  type: 'test'\n  ...\n# Subtest: round trips a jar through JSON\nok 5 - round trips a jar through JSON\n  ---\n  duration_ms: 1.278062\n  type: 'test'\n  ...\n# Subtest: expiring a cookie removes it from the jar\nok 6 - expiring a cookie removes it from the jar\n  ---\n  duration_ms: 0.943095\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 244.536597\n"
+  "log_tail": "# Subtest: does not leak cookies across domains\nok 2 - does not leak cookies across domains\n  ---\n  duration_ms: 0.614917\n  type: 'test'\n  ...\n# Subtest: rejects a cookie whose domain does not match the URL\nok 3 - rejects a cookie whose domain does not match the URL\n  ---\n  duration_ms: 0.335366\n  type: 'test'\n  ...\n# Subtest: domainMatches is case insensitive and covers subdomains\nok 4 - domainMatches is case insensitive and covers subdomains\n  ---\n  duration_ms: 0.071958\n  type: 'test'\n  ...\n# Subtest: round trips a jar through JSON\nok 5 - round trips a jar through JSON\n  ---\n  duration_ms: 1.00211\n  type: 'test'\n  ...\n# Subtest: expiring a cookie removes it from the jar\nok 6 - expiring a cookie removes it from the jar\n  ---\n  duration_ms: 0.661477\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 189.094607\n"
 }
