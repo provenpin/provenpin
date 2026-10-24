@@ -1,15 +1,15 @@
 {
   "id": "exceljs-read-write",
   "status": "passed",
-  "ran_at": "2026-10-24T12:48:14.300Z",
-  "last_passed_at": "2026-10-24T12:48:14.300Z",
+  "ran_at": "2026-10-24T18:42:29.852Z",
+  "last_passed_at": "2026-10-24T18:42:29.852Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6600,
-    "test": 614
+    "setup": 6034,
+    "test": 896
   },
   "pinned": {
     "exceljs": "4.4.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40095243959"
+    "runner": "github-actions 40121707706"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: round-trips rows\nok 1 - round-trips rows\n  ---\n  duration_ms: 63.965659\n  type: 'test'\n  ...\n# Subtest: formulas, formats and frozen header are written\nok 2 - formulas, formats and frozen header are written\n  ---\n  duration_ms: 16.594532\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 499.160037\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: round-trips rows\nok 1 - round-trips rows\n  ---\n  duration_ms: 122.018206\n  type: 'test'\n  ...\n# Subtest: formulas, formats and frozen header are written\nok 2 - formulas, formats and frozen header are written\n  ---\n  duration_ms: 21.851449\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 741.092305\n"
 }

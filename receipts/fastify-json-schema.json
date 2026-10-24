@@ -1,15 +1,15 @@
 {
   "id": "fastify-json-schema",
   "status": "passed",
-  "ran_at": "2026-10-24T12:49:28.529Z",
-  "last_passed_at": "2026-10-24T12:49:28.529Z",
+  "ran_at": "2026-10-24T18:43:41.696Z",
+  "last_passed_at": "2026-10-24T18:43:41.696Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2424,
-    "test": 505
+    "setup": 2796,
+    "test": 652
   },
   "pinned": {
     "fastify": "5.12.7",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40095243959"
+    "runner": "github-actions 40121707706"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid body, response schema strips extra fields\nok 1 - valid body, response schema strips extra fields\n  ---\n  duration_ms: 121.579567\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 2 - invalid body is 400\n  ---\n  duration_ms: 23.023714\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 379.988329\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid body, response schema strips extra fields\nok 1 - valid body, response schema strips extra fields\n  ---\n  duration_ms: 167.071754\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 2 - invalid body is 400\n  ---\n  duration_ms: 28.923051\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 501.76566\n"
 }

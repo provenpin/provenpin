@@ -1,15 +1,15 @@
 {
   "id": "fastapi-dependency-overrides-httpx",
   "status": "passed",
-  "ran_at": "2026-10-24T12:49:06.295Z",
-  "last_passed_at": "2026-10-24T12:49:06.295Z",
+  "ran_at": "2026-10-24T18:43:05.967Z",
+  "last_passed_at": "2026-10-24T18:43:05.967Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 350,
-    "test": 3319
+    "setup": 658,
+    "test": 2630
   },
   "pinned": {
     "fastapi": "0.143.2",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40095243959"
+    "runner": "github-actions 40121707706"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.12s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.89s\n"
 }

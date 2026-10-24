@@ -1,15 +1,15 @@
 {
   "id": "fastapi-jinja2-htmx-partials",
   "status": "passed",
-  "ran_at": "2026-10-24T12:49:02.810Z",
-  "last_passed_at": "2026-10-24T12:49:02.810Z",
+  "ran_at": "2026-10-24T18:43:20.699Z",
+  "last_passed_at": "2026-10-24T18:43:20.699Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 810,
-    "test": 1878
+    "setup": 397,
+    "test": 3996
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -33,8 +33,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40095243959"
+    "runner": "github-actions 40121707706"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-jinja2-htmx-partials-kdIwsS/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 1 warning in 0.88s\n"
+  "log_tail": "......                                                                   [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-jinja2-htmx-partials-lxsLNW/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 1 warning in 1.26s\n"
 }

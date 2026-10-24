@@ -1,15 +1,15 @@
 {
   "id": "react-router-loader-action",
   "status": "passed",
-  "ran_at": "2026-10-24T12:54:48.980Z",
-  "last_passed_at": "2026-10-24T12:54:48.980Z",
+  "ran_at": "2026-10-24T18:48:35.845Z",
+  "last_passed_at": "2026-10-24T18:48:35.845Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2217,
-    "test": 458
+    "setup": 2679,
+    "test": 470
   },
   "pinned": {
     "react-router": "8.4.0",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40095243959"
+    "runner": "github-actions 40121707706"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loader data for nested route\nok 1 - loader data for nested route\n  ---\n  duration_ms: 18.594791\n  type: 'test'\n  ...\n# Subtest: missing note is a 404 error boundary\nok 2 - missing note is a 404 error boundary\n  ---\n  duration_ms: 2.478875\n  type: 'test'\n  ...\n# Subtest: action redirects on success and returns 400 with errors\nok 3 - action redirects on success and returns 400 with errors\n  ---\n  duration_ms: 6.715276\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 335.990992\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loader data for nested route\nok 1 - loader data for nested route\n  ---\n  duration_ms: 21.894124\n  type: 'test'\n  ...\n# Subtest: missing note is a 404 error boundary\nok 2 - missing note is a 404 error boundary\n  ---\n  duration_ms: 2.915102\n  type: 'test'\n  ...\n# Subtest: action redirects on success and returns 400 with errors\nok 3 - action redirects on success and returns 400 with errors\n  ---\n  duration_ms: 7.456357\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 347.39232\n"
 }

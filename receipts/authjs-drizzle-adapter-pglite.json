@@ -1,15 +1,15 @@
 {
   "id": "authjs-drizzle-adapter-pglite",
   "status": "passed",
-  "ran_at": "2026-10-24T12:46:13.369Z",
-  "last_passed_at": "2026-10-24T12:46:13.369Z",
+  "ran_at": "2026-10-24T18:40:26.784Z",
+  "last_passed_at": "2026-10-24T18:40:26.784Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8235,
-    "test": 17537
+    "setup": 9504,
+    "test": 17211
   },
   "pinned": {
     "@auth/drizzle-adapter": "1.11.3",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40095243959"
+    "runner": "github-actions 40121707706"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: user + linked OAuth account\nok 1 - user + linked OAuth account\n  ---\n  duration_ms: 2474.796486\n  type: 'test'\n  ...\n# Subtest: database session lifecycle\nok 2 - database session lifecycle\n  ---\n  duration_ms: 1864.981872\n  type: 'test'\n  ...\n# Subtest: email verification tokens are single-use\nok 3 - email verification tokens are single-use\n  ---\n  duration_ms: 1756.783745\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 17392.614659\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: user + linked OAuth account\nok 1 - user + linked OAuth account\n  ---\n  duration_ms: 2305.145796\n  type: 'test'\n  ...\n# Subtest: database session lifecycle\nok 2 - database session lifecycle\n  ---\n  duration_ms: 1728.690939\n  type: 'test'\n  ...\n# Subtest: email verification tokens are single-use\nok 3 - email verification tokens are single-use\n  ---\n  duration_ms: 1741.072874\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 17068.262657\n"
 }

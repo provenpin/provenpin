@@ -1,15 +1,15 @@
 {
   "id": "nextjs-supabase-auth-middleware",
   "status": "passed",
-  "ran_at": "2026-10-24T12:52:40.171Z",
-  "last_passed_at": "2026-10-24T12:52:40.171Z",
+  "ran_at": "2026-10-24T18:46:33.689Z",
+  "last_passed_at": "2026-10-24T18:46:33.689Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8285,
-    "test": 371
+    "setup": 10353,
+    "test": 560
   },
   "pinned": {
     "next": "16.4.1",
@@ -32,8 +32,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40095243959"
+    "runner": "github-actions 40121707706"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: signed-out user is redirected from /dashboard\nok 1 - signed-out user is redirected from /dashboard\n  ---\n  duration_ms: 8.715377\n  type: 'test'\n  ...\n# Subtest: public pages pass through when signed out\nok 2 - public pages pass through when signed out\n  ---\n  duration_ms: 1.028439\n  type: 'test'\n  ...\n# Subtest: signed-in user reaches /dashboard\nok 3 - signed-in user reaches /dashboard\n  ---\n  duration_ms: 19.712613\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 267.191754\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: signed-out user is redirected from /dashboard\nok 1 - signed-out user is redirected from /dashboard\n  ---\n  duration_ms: 10.892951\n  type: 'test'\n  ...\n# Subtest: public pages pass through when signed out\nok 2 - public pages pass through when signed out\n  ---\n  duration_ms: 3.279422\n  type: 'test'\n  ...\n# Subtest: signed-in user reaches /dashboard\nok 3 - signed-in user reaches /dashboard\n  ---\n  duration_ms: 30.247574\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 411.401879\n"
 }
