@@ -1,15 +1,15 @@
 {
   "id": "python-multipart-starlette-forms",
   "status": "passed",
-  "ran_at": "2026-10-23T18:55:56.581Z",
-  "last_passed_at": "2026-10-23T18:55:56.581Z",
+  "ran_at": "2026-10-24T01:05:08.052Z",
+  "last_passed_at": "2026-10-24T01:05:08.052Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 288,
-    "test": 4790
+    "setup": 399,
+    "test": 2230
   },
   "pinned": {
     "python-multipart": "0.0.32",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40005987956"
+    "runner": "github-actions 40047402677"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.44s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.25s\n"
 }
