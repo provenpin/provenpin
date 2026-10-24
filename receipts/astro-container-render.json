@@ -1,15 +1,15 @@
 {
   "id": "astro-container-render",
   "status": "passed",
-  "ran_at": "2026-10-24T06:46:06.924Z",
-  "last_passed_at": "2026-10-24T06:46:06.924Z",
+  "ran_at": "2026-10-24T12:46:12.044Z",
+  "last_passed_at": "2026-10-24T12:46:12.044Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7968,
-    "test": 1358
+    "setup": 9954,
+    "test": 2084
   },
   "pinned": {
     "astro": "7.3.8",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40071453807"
+    "runner": "github-actions 40095243959"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\u001b[33m\u001b[1m06:46:15\u001b[22m [WARN]\u001b[39m Missing pages directory: src/pages\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-astro-container-render-Vqa4OZ\u001b[39m\n\n \u001b[32m✓\u001b[39m test/PriceCard.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 20\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:46:15\n\u001b[2m   Duration \u001b[22m 679ms\u001b[2m (transform 75%, import 21%, tests 3%)\u001b[22m\n\nJSON report written to /tmp/pp-astro-container-render-Vqa4OZ/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\u001b[33m\u001b[1m12:46:23\u001b[22m [WARN]\u001b[39m Missing pages directory: src/pages\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-astro-container-render-Mu0jxN\u001b[39m\n\n \u001b[32m✓\u001b[39m test/PriceCard.test.ts \u001b[2m(\u001b[22m\u001b[2m2 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 32\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m2 passed\u001b[39m\u001b[22m\u001b[90m (2)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:46:23\n\u001b[2m   Duration \u001b[22m 1.01s\u001b[2m (transform 75%, import 21%, tests 4%)\u001b[22m\n\nJSON report written to /tmp/pp-astro-container-render-Mu0jxN/test-report.json\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "cache-manager-memory-store",
   "status": "passed",
-  "ran_at": "2026-10-24T06:46:53.209Z",
-  "last_passed_at": "2026-10-24T06:46:53.209Z",
+  "ran_at": "2026-10-24T12:46:54.644Z",
+  "last_passed_at": "2026-10-24T12:46:54.644Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1703,
-    "test": 354
+    "setup": 1984,
+    "test": 343
   },
   "pinned": {
     "cache-manager": "7.2.9",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40071453807"
+    "runner": "github-actions 40095243959"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: set and get roundtrip\nok 1 - set and get roundtrip\n  ---\n  duration_ms: 2.929119\n  type: 'test'\n  ...\n# Subtest: mset and mget roundtrip\nok 2 - mset and mget roundtrip\n  ---\n  duration_ms: 1.205573\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 206.841536\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: set and get roundtrip\nok 1 - set and get roundtrip\n  ---\n  duration_ms: 2.984986\n  type: 'test'\n  ...\n# Subtest: mset and mget roundtrip\nok 2 - mset and mget roundtrip\n  ---\n  duration_ms: 1.260808\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 195.243478\n"
 }
