@@ -1,10 +1,10 @@
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, it, expect, vi, beforeEach, type Mock } from "vitest";
 import { screen } from "@testing-library/dom";
 import userEvent from "@testing-library/user-event";
 import { mountSignup } from "../src/form";
 
-let onSubmit: ReturnType<typeof vi.fn>;
-beforeEach(() => { document.body.innerHTML = ""; onSubmit = vi.fn(); mountSignup(document.body, onSubmit); });
+let onSubmit: Mock<(data: { email: string }) => void>;
+beforeEach(() => { document.body.innerHTML = ""; onSubmit = vi.fn<(data: { email: string }) => void>(); mountSignup(document.body, onSubmit); });
 
 describe("signup form", () => {
   it("button enables once the user types", async () => {
