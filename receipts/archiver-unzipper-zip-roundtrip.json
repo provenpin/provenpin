@@ -1,35 +1,37 @@
 {
   "id": "archiver-unzipper-zip-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-20T01:03:05.630Z",
-  "last_passed_at": "2026-10-20T01:03:05.630Z",
+  "ran_at": "2026-10-25T13:04:09.299Z",
+  "last_passed_at": "2026-10-25T13:04:09.299Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3496,
-    "test": 598
+    "setup": 2536,
+    "test": 582
   },
   "pinned": {
     "archiver": "8.0.0",
     "unzipper": "0.12.5",
+    "@types/archiver": "8.0.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:2398b0e10520c818a35db2fc68552cd8b362e0371fcdb06a4ced156119ffff21",
+  "recipe_hash": "sha256:04f4ca3b65f06db69f7702dc1f868b9c5f101d4c8bd5fb809d3902e717c28473",
   "files": {
-    "recipes/archiver-unzipper-zip-roundtrip/package.json": "sha256:1ec1c87bf54a860460921b9a8ba490ffb52033110b4cba308af2827e7a8cfb45",
-    "recipes/archiver-unzipper-zip-roundtrip/recipe.yaml": "sha256:68febcd23aa01b66f0a383ca3a9bbba9f925d2981680000b33b2fda2ca058143",
+    "recipes/archiver-unzipper-zip-roundtrip/package.json": "sha256:7f5be2f05579614bbaf6599e897933ffa33c32d98b6b9fb5443bcfb64ea16007",
+    "recipes/archiver-unzipper-zip-roundtrip/recipe.yaml": "sha256:4ec513ac3db6e3a909fc96490fa3d8f16b59115a799333b5b1089735938e811e",
+    "recipes/archiver-unzipper-zip-roundtrip/src/unzipper.d.ts": "sha256:092c904aff82fa951ab384237c4e92fe72b636ed96196f1d96507a5290c09688",
     "recipes/archiver-unzipper-zip-roundtrip/src/zip.ts": "sha256:f64450be388fc659d9afc506ec68f0f429593dd66f44f27d458ba53c20258cd6",
     "recipes/archiver-unzipper-zip-roundtrip/test/zip.test.ts": "sha256:733837a289895f1791ba7bcefeb3a39e2bd8243cb0135cdca4508ea0af0a1717"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40195894806"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: zip in memory and list entries\nok 1 - zip in memory and list entries\n  ---\n  duration_ms: 46.465576\n  type: 'test'\n  ...\n# Subtest: random access read of one entry, binary safe\nok 2 - random access read of one entry, binary safe\n  ---\n  duration_ms: 7.658749\n  type: 'test'\n  ...\n# Subtest: streaming parse round-trips text\nok 3 - streaming parse round-trips text\n  ---\n  duration_ms: 10.191969\n  type: 'test'\n  ...\n# Subtest: store mode (level 0) keeps size\nok 4 - store mode (level 0) keeps size\n  ---\n  duration_ms: 4.169355\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 453.359778\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: zip in memory and list entries\nok 1 - zip in memory and list entries\n  ---\n  duration_ms: 37.59732\n  type: 'test'\n  ...\n# Subtest: random access read of one entry, binary safe\nok 2 - random access read of one entry, binary safe\n  ---\n  duration_ms: 8.585132\n  type: 'test'\n  ...\n# Subtest: streaming parse round-trips text\nok 3 - streaming parse round-trips text\n  ---\n  duration_ms: 11.078351\n  type: 'test'\n  ...\n# Subtest: store mode (level 0) keeps size\nok 4 - store mode (level 0) keeps size\n  ---\n  duration_ms: 4.8433\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 434.857971\n"
 }

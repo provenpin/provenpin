@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-25T12:55:56.442Z",
+ "generated_at": "2026-10-25T13:04:32.076Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 556,
  "recipes": [
@@ -400,17 +400,19 @@
    "pinned": {
     "archiver": "8.0.0",
     "unzipper": "0.12.5",
+    "@types/archiver": "8.0.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:03:05.630Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:2398b0e10520c818a35db2fc68552cd8b362e0371fcdb06a4ced156119ffff21",
+   "last_passed_at": "2026-10-25T13:04:09.299Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40195894806",
+   "recipe_hash": "sha256:04f4ca3b65f06db69f7702dc1f868b9c5f101d4c8bd5fb809d3902e717c28473",
    "files": {
-    "recipes/archiver-unzipper-zip-roundtrip/package.json": "sha256:1ec1c87bf54a860460921b9a8ba490ffb52033110b4cba308af2827e7a8cfb45",
-    "recipes/archiver-unzipper-zip-roundtrip/recipe.yaml": "sha256:68febcd23aa01b66f0a383ca3a9bbba9f925d2981680000b33b2fda2ca058143",
+    "recipes/archiver-unzipper-zip-roundtrip/package.json": "sha256:7f5be2f05579614bbaf6599e897933ffa33c32d98b6b9fb5443bcfb64ea16007",
+    "recipes/archiver-unzipper-zip-roundtrip/recipe.yaml": "sha256:4ec513ac3db6e3a909fc96490fa3d8f16b59115a799333b5b1089735938e811e",
+    "recipes/archiver-unzipper-zip-roundtrip/src/unzipper.d.ts": "sha256:092c904aff82fa951ab384237c4e92fe72b636ed96196f1d96507a5290c09688",
     "recipes/archiver-unzipper-zip-roundtrip/src/zip.ts": "sha256:f64450be388fc659d9afc506ec68f0f429593dd66f44f27d458ba53c20258cd6",
     "recipes/archiver-unzipper-zip-roundtrip/test/zip.test.ts": "sha256:733837a289895f1791ba7bcefeb3a39e2bd8243cb0135cdca4508ea0af0a1717"
    },
@@ -10911,13 +10913,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:19:27.105Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:856c277712bd7ef50b6723c9a2ea1fb158956a3cfe9fbe800503f68d9b0e1efc",
+   "last_passed_at": "2026-10-25T13:04:11.687Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40195894806",
+   "recipe_hash": "sha256:c83143856954f81ac72508dac4f17a96fc153285137f309dd83d50b3cd7307cb",
    "files": {
     "recipes/pdfkit-generate-pdf/package.json": "sha256:81497f306e2e7d1de7493afc7a806a5ed4e65eca0351912d6dfe13fe9c065d71",
-    "recipes/pdfkit-generate-pdf/recipe.yaml": "sha256:4abe630d92498ebe286276fb19d409c35fee8fc93c475350f6f93870212848af",
+    "recipes/pdfkit-generate-pdf/recipe.yaml": "sha256:eca19a7e8c9151816310a16f0196fedf4e87fde0c027569842f095256317a0e0",
     "recipes/pdfkit-generate-pdf/src/pdf.ts": "sha256:3fd2eb30d8049b6502138c0e1cc89c7cb649359dc020649dafa4a86b5b91efbf",
+    "recipes/pdfkit-generate-pdf/src/pdfkit.d.ts": "sha256:657a3d7f22c4907e6685facecec842235f14cdadaaf4a5c5c65d65828f0b21ca",
     "recipes/pdfkit-generate-pdf/test/pdf.test.ts": "sha256:4e459a57414d50ba28ce08ab3c2983bbacad4fc70104415ab5f07703240e11a5"
    },
    "staleness": {
