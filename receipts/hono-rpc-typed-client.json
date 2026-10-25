@@ -1,15 +1,15 @@
 {
   "id": "hono-rpc-typed-client",
   "status": "passed",
-  "ran_at": "2026-10-20T01:11:39.052Z",
-  "last_passed_at": "2026-10-20T01:11:39.052Z",
+  "ran_at": "2026-10-25T12:49:02.100Z",
+  "last_passed_at": "2026-10-25T12:49:02.100Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2353,
-    "test": 493
+    "setup": 2488,
+    "test": 531
   },
   "pinned": {
     "hono": "4.13.13",
@@ -27,11 +27,11 @@
     "recipes/hono-rpc-typed-client/test/app.test.ts": "sha256:8f05ab1d2843ae0538228b4c72ddf217bdca9f74fdc9e76e52dea5a90dd78b52"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40194447527"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: rpc client creates and fetches an item\nok 1 - rpc client creates and fetches an item\n  ---\n  duration_ms: 26.601651\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 2 - invalid body is 400\n  ---\n  duration_ms: 3.035257\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 352.703409\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: rpc client creates and fetches an item\nok 1 - rpc client creates and fetches an item\n  ---\n  duration_ms: 28.667347\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 2 - invalid body is 400\n  ---\n  duration_ms: 3.21658\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 377.619554\n"
 }

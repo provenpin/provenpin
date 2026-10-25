@@ -1,15 +1,15 @@
 {
   "id": "fastapi-async-sqlalchemy-aiosqlite-pytest",
   "status": "passed",
-  "ran_at": "2026-10-25T06:49:33.611Z",
-  "last_passed_at": "2026-10-25T06:49:33.611Z",
+  "ran_at": "2026-10-25T12:47:33.596Z",
+  "last_passed_at": "2026-10-25T12:47:33.596Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 484,
-    "test": 2570
+    "setup": 339,
+    "test": 5745
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -32,8 +32,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40170278754"
+    "runner": "github-actions 40194447527"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 1.37s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 1.76s\n"
 }

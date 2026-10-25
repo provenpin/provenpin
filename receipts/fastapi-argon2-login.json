@@ -1,15 +1,15 @@
 {
   "id": "fastapi-argon2-login",
   "status": "passed",
-  "ran_at": "2026-10-25T06:49:33.409Z",
-  "last_passed_at": "2026-10-25T06:49:33.409Z",
+  "ran_at": "2026-10-25T12:47:37.729Z",
+  "last_passed_at": "2026-10-25T12:47:37.729Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 449,
-    "test": 2925
+    "setup": 663,
+    "test": 4896
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40170278754"
+    "runner": "github-actions 40194447527"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-argon2-login-ZEpUqg/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 1 warning in 1.27s\n"
+  "log_tail": "......                                                                   [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-argon2-login-Xqlb7N/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n6 passed, 1 warning in 1.95s\n"
 }

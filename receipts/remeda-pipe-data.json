@@ -1,15 +1,15 @@
 {
   "id": "remeda-pipe-data",
   "status": "passed",
-  "ran_at": "2026-10-25T06:55:32.664Z",
-  "last_passed_at": "2026-10-25T06:55:32.664Z",
+  "ran_at": "2026-10-25T12:53:24.598Z",
+  "last_passed_at": "2026-10-25T12:53:24.598Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1924,
-    "test": 466
+    "setup": 1421,
+    "test": 311
   },
   "pinned": {
     "remeda": "2.52.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40170278754"
+    "runner": "github-actions 40194447527"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: revenue by region ignores zero qty\nok 1 - revenue by region ignores zero qty\n  ---\n  duration_ms: 1.604389\n  type: 'test'\n  ...\n# Subtest: top skus by quantity\nok 2 - top skus by quantity\n  ---\n  duration_ms: 0.550811\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 304.112398\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: revenue by region ignores zero qty\nok 1 - revenue by region ignores zero qty\n  ---\n  duration_ms: 1.200767\n  type: 'test'\n  ...\n# Subtest: top skus by quantity\nok 2 - top skus by quantity\n  ---\n  duration_ms: 0.409955\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 192.817865\n"
 }

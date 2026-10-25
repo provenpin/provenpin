@@ -1,15 +1,15 @@
 {
   "id": "trpc-client-server-superjson",
   "status": "passed",
-  "ran_at": "2026-10-25T06:57:04.570Z",
-  "last_passed_at": "2026-10-25T06:57:04.570Z",
+  "ran_at": "2026-10-25T12:55:06.516Z",
+  "last_passed_at": "2026-10-25T12:55:06.516Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6007,
-    "test": 880
+    "setup": 5300,
+    "test": 659
   },
   "pinned": {
     "@trpc/server": "11.19.0",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40170278754"
+    "runner": "github-actions 40194447527"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-trpc-client-server-superjson-wxtc5L\u001b[39m\n\n \u001b[32m✓\u001b[39m test/trpc.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 45\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 06:57:11\n\u001b[2m   Duration \u001b[22m 299ms\u001b[2m (import 42%, transform 31%, tests 24%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-trpc-client-server-superjson-wxtc5L/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-trpc-client-server-superjson-m8G5IK\u001b[39m\n\n \u001b[32m✓\u001b[39m test/trpc.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 42\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:55:12\n\u001b[2m   Duration \u001b[22m 243ms\u001b[2m (import 41%, tests 29%, transform 28%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-trpc-client-server-superjson-m8G5IK/test-report.json\n"
 }
