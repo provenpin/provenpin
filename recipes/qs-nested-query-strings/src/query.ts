@@ -6,8 +6,12 @@ export function parseNested(input: string, options: IParseOptions = {}): ParsedQ
   return parse(input, { depth: DEFAULT_DEPTH, ...options }) as ParsedQs;
 }
 
-export function stringifyNested(value: Record<string, unknown>, options: IStringifyOptions = {}): string {
-  return stringify(value, { depth: DEFAULT_DEPTH, ...options });
+// qs 6.16 stringify honours `depth` (RangeError past it), but @types/qs 6.15 only lists it for parse.
+export type StringifyOptions = IStringifyOptions & { depth?: number };
+
+export function stringifyNested(value: Record<string, unknown>, options: StringifyOptions = {}): string {
+  const opts: StringifyOptions = { depth: DEFAULT_DEPTH, ...options };
+  return stringify(value, opts);
 }
 
 export type Filter = {
