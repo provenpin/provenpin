@@ -9,11 +9,13 @@ tags: [zip, streams, files, compression]
 pinned:
   "archiver": "8.0.0"
   "unzipper": "0.12.5"
+  "@types/archiver": "8.0.0"
   "@types/node": "26.6.5"
   "tsx": "4.23.15"
 files:
   - package.json
   - src/zip.ts
+  - src/unzipper.d.ts
   - test/zip.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false
 test: npm test
