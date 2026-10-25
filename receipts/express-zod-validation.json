@@ -1,15 +1,15 @@
 {
   "id": "express-zod-validation",
   "status": "passed",
-  "ran_at": "2026-10-23T06:51:25.414Z",
-  "last_passed_at": "2026-10-23T06:51:25.414Z",
+  "ran_at": "2026-10-25T00:50:32.024Z",
+  "last_passed_at": "2026-10-25T00:50:32.024Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3908,
-    "test": 648
+    "setup": 3240,
+    "test": 527
   },
   "pinned": {
     "express": "5.3.0",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39913746886"
+    "runner": "github-actions 40148043574"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid body\nok 1 - accepts a valid body\n  ---\n  duration_ms: 50.741684\n  type: 'test'\n  ...\n# Subtest: rejects an invalid body with field errors\nok 2 - rejects an invalid body with field errors\n  ---\n  duration_ms: 7.886182\n  type: 'test'\n  ...\n# Subtest: strips unknown keys\nok 3 - strips unknown keys\n  ---\n  duration_ms: 4.421096\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 504.059906\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid body\nok 1 - accepts a valid body\n  ---\n  duration_ms: 66.306713\n  type: 'test'\n  ...\n# Subtest: rejects an invalid body with field errors\nok 2 - rejects an invalid body with field errors\n  ---\n  duration_ms: 5.499889\n  type: 'test'\n  ...\n# Subtest: strips unknown keys\nok 3 - strips unknown keys\n  ---\n  duration_ms: 2.998703\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 394.162986\n"
 }

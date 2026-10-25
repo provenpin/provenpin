@@ -1,15 +1,15 @@
 {
   "id": "pandas-sqlalchemy-to-sql",
   "status": "passed",
-  "ran_at": "2026-10-23T06:55:46.820Z",
-  "last_passed_at": "2026-10-23T06:55:46.820Z",
+  "ran_at": "2026-10-25T00:54:43.577Z",
+  "last_passed_at": "2026-10-25T00:54:43.577Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 478,
-    "test": 4295
+    "setup": 721,
+    "test": 3930
   },
   "pinned": {
     "pandas": "3.0.6",
@@ -35,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39913746886"
+    "runner": "github-actions 40148043574"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 2.62s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 2.21s\n"
 }

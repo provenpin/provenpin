@@ -53,13 +53,31 @@ test("size cap and bad input", () => {
 test("verdicts", () => {
   assert.equal(line("0.115.0"), "0.115"); assert.equal(line("^5.2.0"), "5");
   assert.equal(verdictFor("5.3.0", "5.3.0"), "exact");
-  assert.equal(verdictFor("5.3.0", "^5.3.0"), "exact");
+  assert.equal(verdictFor("5.3.0", "^5.3.0"), "compatible"); // a range is not an installed version (was "exact": the test was the bug)
   assert.equal(verdictFor("5.3.0", "5.0.1"), "compatible");
   assert.equal(verdictFor("5.3.0", "4.21.2"), "mismatch");
   assert.equal(verdictFor("0.115.0", "0.110.0"), "mismatch");
   assert.equal(verdictFor("0.115.0", "0.115.4"), "compatible");
   assert.equal(verdictFor("5.3.0", undefined), "not_in_project");
   assert.equal(verdictFor("5.3.0", "*"), "compatible");
+});
+test("declared ranges are compatible, never exact; pins stay exact", () => {
+  for (const r of ["^5.3.0", "~5.3.0", ">=5.3.0", "~=5.3.0", ">=5.3.0 <6", "npm:^5.3.0", "!=5.3.0"]) assert.equal(verdictFor("5.3.0", r), "compatible", r);
+  for (const p of ["5.3.0", "v5.3.0", "=5.3.0", " 5.3.0"]) assert.equal(verdictFor("5.3.0", p), "exact", p);
+  assert.equal(verdictFor("5.3.0", "^4.21.2"), "mismatch");
+  assert.equal(get("express==5.3.0\n").versions.get("express"), "5.3.0");
+  const c = checkCompatibility({ express: "5.3.0", stripe: "23.0.0" }, get({ express: "^5.2.0", stripe: "^23.0.0" }));
+  assert.equal(c.overall, "compatible");
+  const s = c.packages.find((p) => p.package === "stripe")!;
+  assert.equal(s.verdict, "compatible"); assert.match(s.warning!, /declares the range \^23\.0\.0, not an installed version/);
+  assert.match(c.packages.find((p) => p.package === "express")!.warning!, /Same major line as tested/);
+  for (const p of c.packages) assert.ok(!/\u2014|\u2013/.test(p.warning ?? ""));
+  assert.equal(checkCompatibility({ express: "5.3.0" }, get({ express: "5.3.0" })).overall, "exact");
+  for (const r of ["express!=5.3.0\n", "express<5.3.0\n", "express>5.3.0\n"]) {
+    const w = checkCompatibility({ express: "5.3.0" }, get(r)).packages[0].warning!;
+    assert.match(w, /excludes the tested 5\.3\.0/, r); assert.doesNotMatch(w, /includes/, r);
+  }
+  assert.match(checkCompatibility({ express: "5.3.0" }, get("express>=5.3.0\n")).packages[0].warning!, /includes the tested 5\.3\.0/);
 });
 test("checkCompatibility warnings and tooling skip", () => {
   const c = checkCompatibility({ express: "5.3.0", helmet: "8.3.0", zod: "4.6.7", tsx: "4.23.15", "@types/node": "24.0.0" }, get({ express: "4.21.2", helmet: "8.3.0" }));
