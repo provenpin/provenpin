@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-25T09:00:18.659Z",
+ "generated_at": "2026-10-25T10:02:03.866Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 556,
  "recipes": [
@@ -551,14 +551,15 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-25T06:47:08.851Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40170278754",
-   "recipe_hash": "sha256:87237f6f490d2f4561363459cc0d418d13ae72117821620803e0e3075cac3ac2",
+   "last_passed_at": "2026-10-25T10:01:34.440Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40183023740",
+   "recipe_hash": "sha256:5015433fa20fc42f6435c39e2f6f05c978d987e66379fb1dabf9ee572e56dfa4",
    "files": {
     "recipes/astro-container-render/astro.config.mjs": "sha256:e5804d67075e46f5248f30ae1b37690413cb49e6ecb9dfd742778bd12caa8560",
     "recipes/astro-container-render/package.json": "sha256:ae2e5ae5505b1673a643c5e2c459594f09685cb2ad34e89966003eff7e379823",
-    "recipes/astro-container-render/recipe.yaml": "sha256:dfdad37690c7d37aeeec89028b0187c7ba1a06d5f7c4483e745b2c64d352402e",
+    "recipes/astro-container-render/recipe.yaml": "sha256:7da3e51c2b8da477a5b58e207dbc1c0cdd2b60d205968bfb853b842b1c83df65",
     "recipes/astro-container-render/src/components/PriceCard.astro": "sha256:8f915d1ab85c104215abf7b801c75a6669648059483d551b2adf68b6fff1e9fe",
+    "recipes/astro-container-render/src/env.d.ts": "sha256:344d749b70ca340b036f9b004c323a46a99d9d9594314b36fce64fdde8b5b9b6",
     "recipes/astro-container-render/test/PriceCard.test.ts": "sha256:815ae99f9c6d3c906c63d1771ea41c6a2eed53e866cc570cd83007971b0c62e0",
     "recipes/astro-container-render/vitest.config.ts": "sha256:9985c7cc96cb91998eabe244fc5cdd82ca1ba8a3e3fced925c33ce646dce18ac"
    },
