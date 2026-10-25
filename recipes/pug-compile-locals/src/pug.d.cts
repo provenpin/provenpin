@@ -1,5 +1,6 @@
 // pug 3.0.4 ships no types and @types/pug is for pug 2, so this declares only the two
 // calls the recipe makes, as pug 3.0.4 lib/index.js defines them.
+// pug is CommonJS, so this is a .d.cts: `export =` is only valid in a CommonJS-format declaration file.
 declare module "pug" {
   namespace pug {
     interface Options {

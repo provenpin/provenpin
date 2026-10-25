@@ -15,7 +15,7 @@ pinned:
 files:
   - package.json
   - src/zip.ts
-  - src/unzipper.d.ts
+  - src/unzipper.d.cts
   - test/zip.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false
 test: npm test
