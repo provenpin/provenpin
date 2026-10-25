@@ -8,7 +8,6 @@ declare module "unzipper" {
       type: "File" | "Directory";
       uncompressedSize: number;
       compressedSize: number;
-      stream(password?: string): Entry;
       buffer(password?: string): Promise<Buffer>;
     }
     interface CentralDirectory {
@@ -18,7 +17,6 @@ declare module "unzipper" {
     interface Entry extends PassThrough {
       path: string;
       type: "File" | "Directory";
-      autodrain(): unknown;
       buffer(): Promise<Buffer>;
     }
     interface ParseOptions {
