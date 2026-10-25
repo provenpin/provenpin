@@ -1,8 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { generateTOTP, generateHOTP } from "@oslojs/otp";
 import { decodeBase32IgnorePadding } from "@oslojs/encoding";
-import { createSessionStore, enrollTotp, verifyTotp, makeRecoveryCodes } from "../src/auth.ts";
+import { createSessionStore, enrollTotp, verifyTotp, makeRecoveryCodes, generateTotp, generateHotp } from "../src/auth.ts";
 
 const DAY = 86_400_000;
 
@@ -44,12 +43,16 @@ test("TOTP enrolment URI and manual key encode the same secret", () => {
 });
 
 test("TOTP codes verify within the grace window only", (t) => {
-  // RFC 6238 SHA-1 test secret; at T=59s the 8-digit code is 94287082, so 6 digits is 287082.
+  // RFC 6238 Appendix B SHA-1 test secret and vectors; RFC 4226 Appendix D: HOTP count 1 is 287082.
   const key = new TextEncoder().encode("12345678901234567890");
-  t.mock.timers.enable({ apis: ["Date"], now: 59_000 });
-  assert.equal(generateTOTP(key, 30, 8), "94287082");
-  assert.equal(generateHOTP(key, 1n, 6), "287082");
-  const code = generateTOTP(key, 30, 6);
+  t.mock.timers.enable({ apis: ["Date"], now: 1_111_111_109_000 });
+  assert.equal(generateTotp(key, 30, 8), "07081804");
+  t.mock.timers.setTime(1_234_567_890_000);
+  assert.equal(generateTotp(key, 30, 8), "89005924");
+  t.mock.timers.setTime(59_000);
+  assert.equal(generateTotp(key, 30, 8), "94287082");
+  assert.equal(generateHotp(key, 1n, 6), "287082");
+  const code = generateTotp(key, 30, 6);
   assert.equal(verifyTotp(key, code), true);
   t.mock.timers.tick(30_000); // next window: previous code still accepted
   assert.equal(verifyTotp(key, code), true);
