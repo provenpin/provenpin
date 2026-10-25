@@ -1,26 +1,26 @@
 {
   "id": "pug-compile-locals",
   "status": "passed",
-  "ran_at": "2026-10-25T12:00:28.896Z",
-  "last_passed_at": "2026-10-25T12:00:28.896Z",
+  "ran_at": "2026-10-25T14:03:55.573Z",
+  "last_passed_at": "2026-10-25T14:03:55.573Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2527,
-    "test": 649
+    "setup": 2754,
+    "test": 587
   },
   "pinned": {
     "pug": "3.0.4",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:a22cf7fef6bdb3863db97925c870641ddd012ed870b206ac9c2df0449845368e",
+  "recipe_hash": "sha256:a6bd9a9fdebb17a07355a49b1cf256ccee9a1d619c15bb533449c72bbdf2b177",
   "files": {
     "recipes/pug-compile-locals/package.json": "sha256:75f8671604060b305b030d6e7d01a3f759c11c546adf9e6f95add14012a3b578",
-    "recipes/pug-compile-locals/recipe.yaml": "sha256:93ebc0ba50b86959c92879f4256e30b5ec2ecb86961833d15cd06f7f90aeb549",
-    "recipes/pug-compile-locals/src/pug.d.ts": "sha256:2706388185ba55a457a2f8c35e008cd8f9596192c26e21d71bfdbd23c8703273",
+    "recipes/pug-compile-locals/recipe.yaml": "sha256:e4c0cb873ed2f774c45a609515c7ae7c26d8c30dbe3b1ab922a4020070ea3df0",
+    "recipes/pug-compile-locals/src/pug.d.cts": "sha256:4ffcaf4aeb78924c28e02167fb8ca823f503cfe0e1b8f0602019d57cb0a33bee",
     "recipes/pug-compile-locals/src/render.ts": "sha256:3971e79ea72924a80659f95e40b3779e0704a5c63e7ccfb8c5499ac9ae918f81",
     "recipes/pug-compile-locals/test/render.test.ts": "sha256:e911d2b21163222fb088a4f64a06edb21d3c5782a7d259c46e6ac2da0c108724"
   },
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40191198412"
+    "runner": "github-actions 40200446132"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders locals, mixins, conditionals and iteration\nok 1 - renders locals, mixins, conditionals and iteration\n  ---\n  duration_ms: 32.971077\n  type: 'test'\n  ...\n# Subtest: mixin falls through to the else branch when empty\nok 2 - mixin falls through to the else branch when empty\n  ---\n  duration_ms: 7.533841\n  type: 'test'\n  ...\n# Subtest: compiled string escapes (=) but unescaped (!=) buffers raw output\nok 3 - compiled string escapes (=) but unescaped (!=) buffers raw output\n  ---\n  duration_ms: 2.031327\n  type: 'test'\n  ...\n# Subtest: compileFile renders a temp .pug and distinguishes escaped from raw\nok 4 - compileFile renders a temp .pug and distinguishes escaped from raw\n  ---\n  duration_ms: 3.870384\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 483.088443\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders locals, mixins, conditionals and iteration\nok 1 - renders locals, mixins, conditionals and iteration\n  ---\n  duration_ms: 31.348859\n  type: 'test'\n  ...\n# Subtest: mixin falls through to the else branch when empty\nok 2 - mixin falls through to the else branch when empty\n  ---\n  duration_ms: 6.937211\n  type: 'test'\n  ...\n# Subtest: compiled string escapes (=) but unescaped (!=) buffers raw output\nok 3 - compiled string escapes (=) but unescaped (!=) buffers raw output\n  ---\n  duration_ms: 1.997774\n  type: 'test'\n  ...\n# Subtest: compileFile renders a temp .pug and distinguishes escaped from raw\nok 4 - compileFile renders a temp .pug and distinguishes escaped from raw\n  ---\n  duration_ms: 4.042385\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 444.795358\n"
 }
