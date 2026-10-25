@@ -36,6 +36,7 @@ test("with declaration files checked, only errors outside node_modules count", (
   assert.equal(tscStatus(2, "error TS5058: The specified path does not exist.", true), "failed");
   assert.equal(tscStatus(2, lib, false), "failed");
   assert.equal(tscStatus(1, "Killed", true), "tsc_error");
+  assert.equal(tscStatus(124, lib, true), "tsc_error");
   assert.equal(tscStatus(0, "", true), "passed");
 });
 

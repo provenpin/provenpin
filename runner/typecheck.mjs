@@ -21,7 +21,8 @@ export function knownFailures() {
 export function tsFiles(r) { return r.files.filter((f) => TS_FILE.test(f) && !DECL_FILE.test(f)); }
 export function declFiles(r) { return r.files.filter((f) => DECL_FILE.test(f)); }
 
-// skipLibCheck also skips the recipe's own declaration files, so recipes that ship any are checked with it off.
+// skipLibCheck also skips the recipe's own declaration files, so recipes that ship any are checked with it off
+// (this overrides a recipe's own tsconfig too; none of today's recipes has both).
 // Diagnostics inside installed packages then show up too; they are not the recipe's, so they are ignored.
 export function ownErrors(out) { return out.split("\n").filter((l) => /error TS\d+/.test(l) && !/^node_modules[\\/]/.test(l)); }
 
@@ -69,7 +70,8 @@ export function typecheckRecipe(id) {
 export function tscStatus(code, out, checkDecl) {
   if (code === 0) return "passed";
   if (checkDecl ? ownErrors(out).length : /error TS\d+/.test(out)) return "failed";
-  return checkDecl && /error TS\d+/.test(out) ? "passed" : "tsc_error";
+  // Only tsc's own diagnostic exits (1, 2) count: a timed-out or killed run (124) may have cut the output short.
+  return checkDecl && (code === 1 || code === 2) && /error TS\d+/.test(out) ? "passed" : "tsc_error";
 }
 
 // Applies the known-failures list: a listed recipe with type errors is "known" (ok); a listed recipe that is clean fails as "now_passes".
