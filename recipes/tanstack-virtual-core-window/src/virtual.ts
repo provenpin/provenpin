@@ -15,9 +15,12 @@ export function createListVirtualizer(count: number, estimateSize = 40, height =
     scrollLeft: 0,
   };
 
-  const virtualizer = new Virtualizer<FakeEl, Element>({
+  const virtualizer = new Virtualizer<Element, Element>({
     count,
-    getScrollElement: () => el,
+    // Offline stand-in for a DOM element, cast only for the type. On this path virtual-core 3.19.5 only probes it
+    // for ownerDocument, window and addEventListener (all absent: no window, ResizeObserver, rAF or gesture
+    // listener); sizes come from the callbacks below.
+    getScrollElement: () => el as unknown as Element,
     estimateSize: () => estimateSize,
     scrollToFn: () => {},
     observeElementRect: (_instance, cb) => {
@@ -36,7 +39,7 @@ export function createListVirtualizer(count: number, estimateSize = 40, height =
   return virtualizer;
 }
 
-export function visibleIndexes(v: Virtualizer<FakeEl, Element>) {
+export function visibleIndexes(v: Virtualizer<Element, Element>) {
   return v.getVirtualItems().map((i) => i.index);
 }
 
