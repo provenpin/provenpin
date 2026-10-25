@@ -15,7 +15,7 @@ pinned:
 files:
   - package.json
   - src/push.ts
-  - test/http_ece.d.ts
+  - test/http_ece.d.cts
   - test/push.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false
 test: npm test

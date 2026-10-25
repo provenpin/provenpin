@@ -11,13 +11,19 @@ import { ROOT, listRecipeIds, loadRecipe, validateRecipe, rewriteSetup } from ".
 const TIMEOUT_MS = +(process.env.PROVENPIN_TIMEOUT_MS ?? 15 * 60 * 1000);
 const TSC = path.join(ROOT, "node_modules", "typescript", "bin", "tsc");
 const TS_FILE = /\.(ts|tsx|mts|cts)$/;
+const DECL_FILE = /\.d\.(ts|mts|cts)$/;
 export const KNOWN_FILE = path.join(ROOT, "runner", "typecheck-known.txt");
 
 export function knownFailures() {
   return fs.readFileSync(KNOWN_FILE, "utf8").split("\n").map((l) => l.replace(/#.*/, "").trim()).filter(Boolean);
 }
 
-export function tsFiles(r) { return r.files.filter((f) => TS_FILE.test(f) && !f.endsWith(".d.ts")); }
+export function tsFiles(r) { return r.files.filter((f) => TS_FILE.test(f) && !DECL_FILE.test(f)); }
+export function declFiles(r) { return r.files.filter((f) => DECL_FILE.test(f)); }
+
+// skipLibCheck also skips the recipe's own declaration files, so recipes that ship any are checked with it off.
+// Diagnostics inside installed packages then show up too; they are not the recipe's, so they are ignored.
+export function ownErrors(out) { return out.split("\n").filter((l) => /error TS\d+/.test(l) && !/^node_modules[\\/]/.test(l)); }
 
 // A recipe that ships its own tsconfig.json is checked with it (null here); the rest get this strict default.
 export function tsconfigFor(r) {
@@ -28,7 +34,7 @@ export function tsconfigFor(r) {
     skipLibCheck: true, noEmit: true, allowImportingTsExtensions: true, types: ["node"],
   };
   if (files.some((f) => f.endsWith(".tsx"))) compilerOptions.jsx = "react-jsx";
-  return { compilerOptions, files: [...files, ...r.files.filter((f) => f.endsWith(".d.ts"))] };
+  return { compilerOptions, files: [...files, ...declFiles(r)] };
 }
 
 function sh(cmd, args, cwd) {
@@ -51,11 +57,19 @@ export function typecheckRecipe(id) {
     if (tsconfig) fs.writeFileSync(path.join(work, "tsconfig.json"), JSON.stringify(tsconfig, null, 2) + "\n");
     const setup = sh("bash", ["-c", rewriteSetup(r.setup, r.runtime)], work);
     if (setup.code !== 0) return { id, status: "setup_failed", out: setup.out };
-    const tsc = sh(process.execPath, [TSC, "-p", "tsconfig.json", "--noEmit", "--allowImportingTsExtensions", "--pretty", "false"], work);
-    return { id, status: tsc.code === 0 ? "passed" : /error TS\d+/.test(tsc.out) ? "failed" : "tsc_error", out: tsc.out };
+    const checkDecl = declFiles(r).length > 0;
+    const tsc = sh(process.execPath, [TSC, "-p", "tsconfig.json", "--noEmit", "--allowImportingTsExtensions", "--pretty", "false",
+      ...(checkDecl ? ["--skipLibCheck", "false"] : [])], work);
+    return { id, status: tscStatus(tsc.code, tsc.out, checkDecl), out: tsc.out };
   } finally {
     fs.rmSync(work, { recursive: true, force: true });
   }
+}
+
+export function tscStatus(code, out, checkDecl) {
+  if (code === 0) return "passed";
+  if (checkDecl ? ownErrors(out).length : /error TS\d+/.test(out)) return "failed";
+  return checkDecl && /error TS\d+/.test(out) ? "passed" : "tsc_error";
 }
 
 // Applies the known-failures list: a listed recipe with type errors is "known" (ok); a listed recipe that is clean fails as "now_passes".
