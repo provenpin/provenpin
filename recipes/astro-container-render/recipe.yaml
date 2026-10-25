@@ -15,6 +15,7 @@ files:
   - vitest.config.ts
   - astro.config.mjs
   - src/components/PriceCard.astro
+  - src/env.d.ts
   - test/PriceCard.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false
 test: npm test
