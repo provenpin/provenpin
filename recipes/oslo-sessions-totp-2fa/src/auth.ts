@@ -1,15 +1,12 @@
-import { sha256 } from "@oslojs/crypto/sha2";
-import { constantTimeEqual } from "@oslojs/crypto/subtle";
-import { generateRandomString, type RandomReader } from "@oslojs/crypto/random";
-import { encodeBase32LowerCaseNoPadding, encodeHexLowerCase, encodeBase32UpperCaseNoPadding } from "@oslojs/encoding";
-import { createTOTPKeyURI, verifyTOTPWithGracePeriod } from "@oslojs/otp";
+import { createHash, createHmac, randomInt, timingSafeEqual } from "node:crypto";
+import { encodeBase32LowerCaseNoPadding, encodeBase32NoPadding, encodeHexLowerCase, encodeBase32UpperCaseNoPadding } from "@oslojs/encoding";
 
 const DAY = 24 * 60 * 60 * 1000;
 const SESSION_TTL = 30 * DAY;
 
 export type Session = { id: string; userId: string; expiresAt: Date; twoFactorVerified: boolean };
 
-const random: RandomReader = { read: (bytes) => crypto.getRandomValues(bytes) };
+const sha256 = (data: string) => createHash("sha256").update(data).digest();
 
 /**
  * Sessions in the style of the Lucia guide: the client holds a random token, the server stores
@@ -17,7 +14,7 @@ const random: RandomReader = { read: (bytes) => crypto.getRandomValues(bytes) };
  */
 export function createSessionStore() {
   const sessions = new Map<string, Session>();
-  const hashToken = (token: string) => encodeHexLowerCase(sha256(new TextEncoder().encode(token)));
+  const hashToken = (token: string) => encodeHexLowerCase(sha256(token));
 
   return {
     sessions,
@@ -44,25 +41,50 @@ export function createSessionStore() {
   };
 }
 
+/** HOTP (RFC 4226): HMAC-SHA1 over the 8-byte big-endian counter, dynamic truncation, last `digits` digits. */
+export function generateHotp(key: Uint8Array, counter: bigint, digits: number) {
+  if (digits < 6 || digits > 8) throw new TypeError("Digits must be between 6 and 8");
+  const msg = Buffer.alloc(8);
+  msg.writeBigUInt64BE(counter);
+  const hs = createHmac("sha1", key).update(msg).digest();
+  const offset = hs[hs.length - 1] & 0x0f;
+  const n = hs.readUInt32BE(offset) & 0x7fffffff;
+  return (n % 10 ** digits).toString().padStart(digits, "0");
+}
+
+/** TOTP (RFC 6238): HOTP with counter = floor(now / period). */
+export function generateTotp(key: Uint8Array, periodSeconds: number, digits: number) {
+  return generateHotp(key, BigInt(Math.floor(Date.now() / (periodSeconds * 1000))), digits);
+}
+
 /** TOTP enrolment: a 20-byte secret, an otpauth:// URI for the QR code, and a manual entry key. */
 export function enrollTotp(issuer: string, account: string, key = crypto.getRandomValues(new Uint8Array(20))) {
-  return { key, uri: createTOTPKeyURI(issuer, account, key, 30, 6), manualKey: encodeBase32UpperCaseNoPadding(key) };
+  const params = new URLSearchParams({ issuer, algorithm: "SHA1", secret: encodeBase32NoPadding(key), period: "30", digits: "6" });
+  const uri = `otpauth://totp/${encodeURIComponent(issuer)}:${encodeURIComponent(account)}?${params}`;
+  return { key, uri, manualKey: encodeBase32UpperCaseNoPadding(key) };
 }
 
 /** Accepts the current code or one from the previous/next 30s window to allow for clock drift. */
 export function verifyTotp(key: Uint8Array, code: string) {
-  return /^\d{6}$/.test(code) && verifyTOTPWithGracePeriod(key, 30, 6, code, 30);
+  if (!/^\d{6}$/.test(code)) return false;
+  const now = Date.now(), grace = 30_000, period = 30_000;
+  let ok = false;
+  for (let c = BigInt(Math.floor((now - grace) / period)); c <= BigInt(Math.floor((now + grace) / period)); c++) {
+    ok = timingSafeEqual(Buffer.from(generateHotp(key, c, 6)), Buffer.from(code)) || ok;
+  }
+  return ok;
 }
 
 /** Single-use recovery codes, stored hashed and compared in constant time. */
 export function makeRecoveryCodes(n = 8) {
-  const codes = Array.from({ length: n }, () => generateRandomString(random, "ABCDEFGHJKLMNPQRSTUVWXYZ23456789", 10));
-  const hashes = codes.map((c) => sha256(new TextEncoder().encode(c)));
+  const alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+  const codes = Array.from({ length: n }, () => Array.from({ length: 10 }, () => alphabet[randomInt(alphabet.length)]).join(""));
+  const hashes = codes.map((c) => sha256(c));
   return {
     codes,
     use(code: string) {
-      const h = sha256(new TextEncoder().encode(code.toUpperCase()));
-      const i = hashes.findIndex((x) => constantTimeEqual(x, h));
+      const h = sha256(code.toUpperCase());
+      const i = hashes.findIndex((x) => timingSafeEqual(x, h));
       if (i === -1) return false;
       hashes.splice(i, 1);
       return true;

@@ -6,9 +6,7 @@
     "test": "node --import tsx --test test/*.test.ts"
   },
   "dependencies": {
-    "@oslojs/crypto": "1.0.1",
-    "@oslojs/encoding": "1.1.0",
-    "@oslojs/otp": "1.1.0"
+    "@oslojs/encoding": "1.1.0"
   },
   "devDependencies": {
     "tsx": "4.23.15",

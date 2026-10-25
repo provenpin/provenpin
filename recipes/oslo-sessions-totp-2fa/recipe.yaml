@@ -1,15 +1,13 @@
 id: oslo-sessions-totp-2fa
-title: "Hashed session tokens and TOTP 2FA with the Oslo libraries"
-summary: "Lucia-guide style sessions with random tokens stored only as sha256 hashes, sliding expiry and per-user revocation, plus TOTP enrolment URIs, grace-window verification and single-use recovery codes using @oslojs/crypto, @oslojs/encoding and @oslojs/otp, tested with node:test mock timers. npm marks @oslojs/crypto and @oslojs/otp as no longer supported (no reason given)."
+title: "Hashed session tokens and TOTP 2FA with node:crypto and @oslojs/encoding"
+summary: "Lucia-guide style sessions with random tokens stored only as sha256 hashes, sliding expiry and per-user revocation, plus TOTP enrolment URIs, grace-window verification and single-use recovery codes using node:crypto (HMAC-SHA1 HOTP/TOTP per RFC 4226/6238) and @oslojs/encoding, tested against the RFC 6238 test vectors with node:test mock timers. Replaces @oslojs/crypto and @oslojs/otp, which npm marks as no longer supported (no reason given)."
 language: typescript
 runtime: node
 runtime_version: "22"
-stack: ["@oslojs/crypto", "@oslojs/encoding", "@oslojs/otp"]
-tags: [auth, sessions, 2fa, totp, security]
+stack: ["@oslojs/encoding"]
+tags: [auth, sessions, 2fa, totp, hotp, node-crypto, security]
 pinned:
-  "@oslojs/crypto": "1.0.1"
   "@oslojs/encoding": "1.1.0"
-  "@oslojs/otp": "1.1.0"
   "tsx": "4.23.15"
   "@types/node": "26.6.5"
 files:
