@@ -43,6 +43,7 @@ export function createSessionStore() {
 
 /** HOTP (RFC 4226): HMAC-SHA1 over the 8-byte big-endian counter, dynamic truncation, last `digits` digits. */
 export function generateHotp(key: Uint8Array, counter: bigint, digits: number) {
+  if (digits < 6 || digits > 8) throw new TypeError("Digits must be between 6 and 8");
   const msg = Buffer.alloc(8);
   msg.writeBigUInt64BE(counter);
   const hs = createHmac("sha1", key).update(msg).digest();
