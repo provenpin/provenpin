@@ -1,34 +1,34 @@
 {
   "id": "mitt-typed-events",
   "status": "passed",
-  "ran_at": "2026-10-20T01:16:10.957Z",
-  "last_passed_at": "2026-10-20T01:16:10.957Z",
+  "ran_at": "2026-10-25T09:00:02.237Z",
+  "last_passed_at": "2026-10-25T09:00:02.237Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1671,
-    "test": 329
+    "setup": 1360,
+    "test": 249
   },
   "pinned": {
     "mitt": "3.0.1",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:6c1b396cd94ad6e39662f872ca3ac9fbe636f758e2a8854549971b51be4cf664",
+  "recipe_hash": "sha256:59c26b26e117a075afcbff76fef287200b788bbfe795c6fae88ecd0a4ed90f3c",
   "files": {
     "recipes/mitt-typed-events/package.json": "sha256:65d10ad9947e78fbc3ed8eca1f3e71ab662a5dcf0603d9b9c88448a728080e59",
     "recipes/mitt-typed-events/recipe.yaml": "sha256:4de88d0e4a81f527546c6657f93e10e3ae40ef5ed039e8c64fa75243aa71c751",
-    "recipes/mitt-typed-events/src/bus.ts": "sha256:ba1b1ade613c3835b9bab4a8aa542fc3ea6668fb560dc3b494fa3382b822a9d7",
+    "recipes/mitt-typed-events/src/bus.ts": "sha256:27352d09156061c45f1ef11a77df1aa9c87b7c272c2739e3c36d2cf29dee44f6",
     "recipes/mitt-typed-events/test/bus.test.ts": "sha256:e1d11169ce0361c945174ac60109706198f9e308c9c73d84dd2b2313ef6a9131"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40178806875"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: emits typed events to subscribers\nok 1 - emits typed events to subscribers\n  ---\n  duration_ms: 1.389847\n  type: 'test'\n  ...\n# Subtest: once unsubscribes after first event\nok 2 - once unsubscribes after first event\n  ---\n  duration_ms: 0.254105\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 182.008131\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: emits typed events to subscribers\nok 1 - emits typed events to subscribers\n  ---\n  duration_ms: 0.794964\n  type: 'test'\n  ...\n# Subtest: once unsubscribes after first event\nok 2 - once unsubscribes after first event\n  ---\n  duration_ms: 0.137256\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 145.422976\n"
 }
