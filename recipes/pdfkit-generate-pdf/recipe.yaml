@@ -13,6 +13,7 @@ pinned:
 files:
   - package.json
   - src/pdf.ts
+  - src/pdfkit.d.ts
   - test/pdf.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false
 test: npm test
