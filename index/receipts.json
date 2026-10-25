@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-25T00:59:03.875Z",
+ "generated_at": "2026-10-25T05:00:10.579Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 556,
  "recipes": [
@@ -3244,14 +3244,15 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-25T00:49:33.293Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40148043574",
-   "recipe_hash": "sha256:f88734514e43fdfeacd2b33fd41c62322996b27f1579a0a8ce6d1f0decbf3bcd",
+   "last_passed_at": "2026-10-25T04:59:49.642Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40163862974",
+   "recipe_hash": "sha256:0eee673eb6f0e587ff3943ee5d7fc40901f2513abdc319ef35e3fca0a27cf87d",
    "files": {
     "recipes/dom-testing-library-happy-dom/package.json": "sha256:64fd00572aee83cbae49405e2bc8d3e7a94e0b6d20e68ece001aeafccda6c9a9",
-    "recipes/dom-testing-library-happy-dom/recipe.yaml": "sha256:37ef8a2782ba7fa5d0756d40895b3895d8bc5eb59a972a81e22697e527fdbe83",
+    "recipes/dom-testing-library-happy-dom/recipe.yaml": "sha256:fbd6a9c74aee7dbc27fe36e26a186d11b69e0727d3e9afc18f1b96d016368741",
     "recipes/dom-testing-library-happy-dom/src/form.ts": "sha256:b98661b770ae98fad5a4f2f6308d01109e6a13c47c32d049dc7dc836bd2c9bb6",
-    "recipes/dom-testing-library-happy-dom/test/form.test.ts": "sha256:50c2fc6232f748e732a6e766bd0ff09c770ea295f32081da9696ff7ecff658c4",
+    "recipes/dom-testing-library-happy-dom/test/form.test.ts": "sha256:3f46859e56fdb9f56d87c0961ef835b5f915bdaeb1f667854055c09c853f71ad",
+    "recipes/dom-testing-library-happy-dom/tsconfig.json": "sha256:fb4159c1dadceca391510055c747d29927bb32352a346238239f1645adcc7eed",
     "recipes/dom-testing-library-happy-dom/vitest.config.ts": "sha256:75b971ced65ae38edc6009adc892b70c675bbd6d1f351dd7b48afc2b6fc946b7"
    },
    "staleness": {
@@ -6878,18 +6879,20 @@
     "@types/node": "24.19.2",
     "vitest": "5.0.5",
     "vite": "8.3.4",
-    "ioredis-mock": "8.13.1"
+    "ioredis-mock": "8.13.1",
+    "@types/ioredis-mock": "8.2.8"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-25T00:52:26.581Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40148043574",
-   "recipe_hash": "sha256:1b66be19c8414c2e7c54c38e5ed1166783d17d341879cde384e1752211471c75",
+   "last_passed_at": "2026-10-25T04:59:36.815Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40163862974",
+   "recipe_hash": "sha256:13750706f82e63343b8bdb098522ff9ee3ea700db1b0d50d6ac9813fb323b133",
    "files": {
-    "recipes/ioredis-cache-aside-mock/package.json": "sha256:14ff0dd196f9435731f054a98b8a6bb85110c26304fb95facdac0e180495d901",
-    "recipes/ioredis-cache-aside-mock/recipe.yaml": "sha256:46e42cb75b378bbacefb692c052ed34e90348a41fd9dd7f56a2d46514929597b",
+    "recipes/ioredis-cache-aside-mock/package.json": "sha256:1b9952fdd87f6524a838c2b182e74702b7febacde3100144c37012f4d7f6d412",
+    "recipes/ioredis-cache-aside-mock/recipe.yaml": "sha256:7111c755cae20a857314c282e8b9450a284f541d6a2ee285f13feaba06cad786",
     "recipes/ioredis-cache-aside-mock/src/cache.ts": "sha256:995847d2ae92068b6a288f1fb6c0f61243e2f72d034684ac8e4d687c0a4a7f46",
-    "recipes/ioredis-cache-aside-mock/test/cache.test.ts": "sha256:c5ea3747dd7af1427c4eeec6b2ae11017326772aee667862d9da5eafa2cf7d08"
+    "recipes/ioredis-cache-aside-mock/test/cache.test.ts": "sha256:c5ea3747dd7af1427c4eeec6b2ae11017326772aee667862d9da5eafa2cf7d08",
+    "recipes/ioredis-cache-aside-mock/tsconfig.json": "sha256:fb4159c1dadceca391510055c747d29927bb32352a346238239f1645adcc7eed"
    },
    "staleness": {
     "status": "current",
@@ -7742,14 +7745,15 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-25T00:52:58.828Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40148043574",
-   "recipe_hash": "sha256:95952a20eca3602bf7defd298e09f1c6e09cb00d61e794f8d2afd091cf76a8d2",
+   "last_passed_at": "2026-10-25T04:59:40.658Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40163862974",
+   "recipe_hash": "sha256:da7942c8633bf0d9769ff3cfc1aaaef0ad90bbd4442f4b80e06680109db97c88",
    "files": {
     "recipes/ky-msw-vitest/package.json": "sha256:6cb93a82783691f713e3d525e2bbf4986ba833d9d15aab1c4b5dc385ecfc77e3",
-    "recipes/ky-msw-vitest/recipe.yaml": "sha256:a99c706984146c3603d747f8e6b305b742ebc324ab0bc16e72389cf99b127868",
+    "recipes/ky-msw-vitest/recipe.yaml": "sha256:978c8c2fd629fee9c5f176e8a597a5010c4c4aa2fb8c8a98f7ab25a8b7bbac15",
     "recipes/ky-msw-vitest/src/api.ts": "sha256:b9e7fefba2eedaef0bbac2194da39675c3104f9d8ef0d68453536bf187a47f60",
-    "recipes/ky-msw-vitest/test/api.test.ts": "sha256:4bf6ac8f1ea815a353eb5114c1d34d06f019de1ea90b9edbda80c1f28ff3e44c"
+    "recipes/ky-msw-vitest/test/api.test.ts": "sha256:4bf6ac8f1ea815a353eb5114c1d34d06f019de1ea90b9edbda80c1f28ff3e44c",
+    "recipes/ky-msw-vitest/tsconfig.json": "sha256:fb4159c1dadceca391510055c747d29927bb32352a346238239f1645adcc7eed"
    },
    "staleness": {
     "status": "passes_on_latest",
@@ -14667,14 +14671,15 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-25T00:57:35.752Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40148043574",
-   "recipe_hash": "sha256:73b92f6094c10327e1859cdd2a2d0680ac7c697c5b8ef0afa16f74c3d0fc2741",
+   "last_passed_at": "2026-10-25T04:59:38.176Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40163862974",
+   "recipe_hash": "sha256:aee94cfc0e0618a551e5c0fa02e8febcbc088fe42c337cbbcba83fbb3096765e",
    "files": {
     "recipes/supabase-js-mocked-fetch/package.json": "sha256:3513f400fc69605ed58fa7f60c684fb156ff0dbdb68cbc52fe92aa59fa35d42e",
-    "recipes/supabase-js-mocked-fetch/recipe.yaml": "sha256:958aa6ff208583e8d73eb5aaba5d4c514d3c5ea7ac6bc84c3ae91df10aefcb92",
+    "recipes/supabase-js-mocked-fetch/recipe.yaml": "sha256:68a5ed6cdd21ff85f6f7b7b66614fa086caca1bfe45a4e21b1d73ea1a4a9986c",
     "recipes/supabase-js-mocked-fetch/src/todos.ts": "sha256:9b6ec234a0a81dcdc73b42d1e9daa07b992500a254a0954b2b72fc76dcaa7210",
-    "recipes/supabase-js-mocked-fetch/test/todos.test.ts": "sha256:21722309c6d2a893ae04960770bad87a843a1b9675eed9b30f5f3eda92e08cce"
+    "recipes/supabase-js-mocked-fetch/test/todos.test.ts": "sha256:21722309c6d2a893ae04960770bad87a843a1b9675eed9b30f5f3eda92e08cce",
+    "recipes/supabase-js-mocked-fetch/tsconfig.json": "sha256:fb4159c1dadceca391510055c747d29927bb32352a346238239f1645adcc7eed"
    },
    "staleness": {
     "status": "passes_on_latest",
