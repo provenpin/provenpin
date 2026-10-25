@@ -1,15 +1,15 @@
 {
   "id": "undici-mockagent-p-retry",
   "status": "passed",
-  "ran_at": "2026-10-25T00:58:05.312Z",
-  "last_passed_at": "2026-10-25T00:58:05.312Z",
+  "ran_at": "2026-10-25T06:57:05.274Z",
+  "last_passed_at": "2026-10-25T06:57:05.274Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1567,
-    "test": 397
+    "setup": 1795,
+    "test": 563
   },
   "pinned": {
     "undici": "8.12.1",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40148043574"
+    "runner": "github-actions 40170278754"
   },
   "errors": [],
-  "log_tail": "# Subtest: returns parsed JSON on the first try\nok 1 - returns parsed JSON on the first try\n  ---\n  duration_ms: 4.631563\n  type: 'test'\n  ...\n# Subtest: retries 503 and 429 then succeeds\nok 2 - retries 503 and 429 then succeeds\n  ---\n  duration_ms: 47.02864\n  type: 'test'\n  ...\n# Subtest: does not retry a 404\nok 3 - does not retry a 404\n  ---\n  duration_ms: 1.743441\n  type: 'test'\n  ...\n# Subtest: gives up after the retry budget with the last error\nok 4 - gives up after the retry budget with the last error\n  ---\n  duration_ms: 32.567179\n  type: 'test'\n  ...\n# Subtest: retries network errors from replyWithError\nok 5 - retries network errors from replyWithError\n  ---\n  duration_ms: 12.696367\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 299.263434\n"
+  "log_tail": "# Subtest: returns parsed JSON on the first try\nok 1 - returns parsed JSON on the first try\n  ---\n  duration_ms: 8.100703\n  type: 'test'\n  ...\n# Subtest: retries 503 and 429 then succeeds\nok 2 - retries 503 and 429 then succeeds\n  ---\n  duration_ms: 32.87428\n  type: 'test'\n  ...\n# Subtest: does not retry a 404\nok 3 - does not retry a 404\n  ---\n  duration_ms: 2.078128\n  type: 'test'\n  ...\n# Subtest: gives up after the retry budget with the last error\nok 4 - gives up after the retry budget with the last error\n  ---\n  duration_ms: 33.206907\n  type: 'test'\n  ...\n# Subtest: retries network errors from replyWithError\nok 5 - retries network errors from replyWithError\n  ---\n  duration_ms: 13.158246\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 416.002539\n"
 }
