@@ -1,15 +1,15 @@
 {
   "id": "tanstack-query-core-cache",
   "status": "passed",
-  "ran_at": "2026-10-24T18:50:07.164Z",
-  "last_passed_at": "2026-10-24T18:50:07.164Z",
+  "ran_at": "2026-10-25T00:57:43.863Z",
+  "last_passed_at": "2026-10-25T00:57:43.863Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1908,
-    "test": 423
+    "setup": 1583,
+    "test": 282
   },
   "pinned": {
     "@tanstack/query-core": "5.104.3",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40121707706"
+    "runner": "github-actions 40148043574"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: caches fetch results until invalidated\nok 1 - caches fetch results until invalidated\n  ---\n  duration_ms: 3.16431\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 245.963383\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: caches fetch results until invalidated\nok 1 - caches fetch results until invalidated\n  ---\n  duration_ms: 2.182197\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 165.981887\n"
 }

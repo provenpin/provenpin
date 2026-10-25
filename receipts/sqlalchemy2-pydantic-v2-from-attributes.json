@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy2-pydantic-v2-from-attributes",
   "status": "passed",
-  "ran_at": "2026-10-24T18:49:26.759Z",
-  "last_passed_at": "2026-10-24T18:49:26.759Z",
+  "ran_at": "2026-10-25T00:57:24.075Z",
+  "last_passed_at": "2026-10-25T00:57:24.075Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 328,
-    "test": 3047
+    "setup": 416,
+    "test": 2177
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40121707706"
+    "runner": "github-actions 40148043574"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 1.71s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 1.25s\n"
 }
