@@ -9,11 +9,13 @@ tags: [push-notifications, encryption, vapid, pwa]
 pinned:
   "web-push": "3.6.7"
   "@types/node": "26.6.5"
+  "@types/web-push": "3.6.4"
   "tsx": "4.23.15"
   "http_ece": "1.2.1"
 files:
   - package.json
   - src/push.ts
+  - test/http_ece.d.ts
   - test/push.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false
 test: npm test
