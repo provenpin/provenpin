@@ -73,6 +73,11 @@ test("declared ranges are compatible, never exact; pins stay exact", () => {
   assert.match(c.packages.find((p) => p.package === "express")!.warning!, /Same major line as tested/);
   for (const p of c.packages) assert.ok(!/\u2014|\u2013/.test(p.warning ?? ""));
   assert.equal(checkCompatibility({ express: "5.3.0" }, get({ express: "5.3.0" })).overall, "exact");
+  for (const r of ["express!=5.3.0\n", "express<5.3.0\n", "express>5.3.0\n"]) {
+    const w = checkCompatibility({ express: "5.3.0" }, get(r)).packages[0].warning!;
+    assert.match(w, /excludes the tested 5\.3\.0/, r); assert.doesNotMatch(w, /includes/, r);
+  }
+  assert.match(checkCompatibility({ express: "5.3.0" }, get("express>=5.3.0\n")).packages[0].warning!, /includes the tested 5\.3\.0/);
 });
 test("checkCompatibility warnings and tooling skip", () => {
   const c = checkCompatibility({ express: "5.3.0", helmet: "8.3.0", zod: "4.6.7", tsx: "4.23.15", "@types/node": "24.0.0" }, get({ express: "4.21.2", helmet: "8.3.0" }));
