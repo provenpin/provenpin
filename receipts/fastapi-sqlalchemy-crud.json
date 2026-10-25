@@ -1,15 +1,15 @@
 {
   "id": "fastapi-sqlalchemy-crud",
   "status": "passed",
-  "ran_at": "2026-10-25T12:48:12.624Z",
-  "last_passed_at": "2026-10-25T12:48:12.624Z",
+  "ran_at": "2026-10-25T18:44:33.463Z",
+  "last_passed_at": "2026-10-25T18:44:33.463Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 475,
-    "test": 3390
+    "setup": 442,
+    "test": 2435
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40194447527"
+    "runner": "github-actions 40222356766"
   },
   "errors": [],
-  "log_tail": "..                                                                       [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-sqlalchemy-crud-xQeO0s/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 1.24s\n"
+  "log_tail": "..                                                                       [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-sqlalchemy-crud-3yvUlJ/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 1.12s\n"
 }

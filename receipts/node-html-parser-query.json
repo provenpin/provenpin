@@ -1,15 +1,15 @@
 {
   "id": "node-html-parser-query",
   "status": "passed",
-  "ran_at": "2026-10-25T12:51:20.479Z",
-  "last_passed_at": "2026-10-25T12:51:20.479Z",
+  "ran_at": "2026-10-25T18:47:37.995Z",
+  "last_passed_at": "2026-10-25T18:47:37.995Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1395,
-    "test": 244
+    "setup": 1736,
+    "test": 287
   },
   "pinned": {
     "node-html-parser": "9.0.4",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40194447527"
+    "runner": "github-actions 40222356766"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: querySelectorAll extracts product data with attributes and text\nok 1 - querySelectorAll extracts product data with attributes and text\n  ---\n  duration_ms: 3.456463\n  type: 'test'\n  ...\n# Subtest: set_content and setAttribute modify nodes\nok 2 - set_content and setAttribute modify nodes\n  ---\n  duration_ms: 0.967303\n  type: 'test'\n  ...\n# Subtest: remove drops discontinued nodes and serializes back\nok 3 - remove drops discontinued nodes and serializes back\n  ---\n  duration_ms: 0.667372\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 142.794945\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: querySelectorAll extracts product data with attributes and text\nok 1 - querySelectorAll extracts product data with attributes and text\n  ---\n  duration_ms: 4.165603\n  type: 'test'\n  ...\n# Subtest: set_content and setAttribute modify nodes\nok 2 - set_content and setAttribute modify nodes\n  ---\n  duration_ms: 1.18848\n  type: 'test'\n  ...\n# Subtest: remove drops discontinued nodes and serializes back\nok 3 - remove drops discontinued nodes and serializes back\n  ---\n  duration_ms: 0.825068\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 174.644249\n"
 }

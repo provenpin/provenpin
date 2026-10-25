@@ -1,15 +1,15 @@
 {
   "id": "graphql-tools-schema-mock",
   "status": "passed",
-  "ran_at": "2026-10-25T12:48:48.059Z",
-  "last_passed_at": "2026-10-25T12:48:48.059Z",
+  "ran_at": "2026-10-25T18:45:06.451Z",
+  "last_passed_at": "2026-10-25T18:45:06.451Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2754,
-    "test": 624
+    "setup": 3149,
+    "test": 679
   },
   "pinned": {
     "@graphql-tools/schema": "10.1.5",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40194447527"
+    "runner": "github-actions 40222356766"
   },
   "errors": [],
-  "log_tail": "# Subtest: mocked query returns shape-correct data\nok 1 - mocked query returns shape-correct data\n  ---\n  duration_ms: 23.698487\n  type: 'test'\n  ...\n# Subtest: mocks are deterministic for a seed\nok 2 - mocks are deterministic for a seed\n  ---\n  duration_ms: 11.475146\n  type: 'test'\n  ...\n# Subtest: store keeps entities consistent across queries\nok 3 - store keeps entities consistent across queries\n  ---\n  duration_ms: 4.455157\n  type: 'test'\n  ...\n# Subtest: mutation writes to the mock store\nok 4 - mutation writes to the mock store\n  ---\n  duration_ms: 4.500602\n  type: 'test'\n  ...\n# Subtest: custom resolver can return null and validation errors still apply\nok 5 - custom resolver can return null and validation errors still apply\n  ---\n  duration_ms: 4.610577\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 468.77719\n"
+  "log_tail": "# Subtest: mocked query returns shape-correct data\nok 1 - mocked query returns shape-correct data\n  ---\n  duration_ms: 23.583384\n  type: 'test'\n  ...\n# Subtest: mocks are deterministic for a seed\nok 2 - mocks are deterministic for a seed\n  ---\n  duration_ms: 12.238079\n  type: 'test'\n  ...\n# Subtest: store keeps entities consistent across queries\nok 3 - store keeps entities consistent across queries\n  ---\n  duration_ms: 3.586009\n  type: 'test'\n  ...\n# Subtest: mutation writes to the mock store\nok 4 - mutation writes to the mock store\n  ---\n  duration_ms: 4.454526\n  type: 'test'\n  ...\n# Subtest: custom resolver can return null and validation errors still apply\nok 5 - custom resolver can return null and validation errors still apply\n  ---\n  duration_ms: 4.094862\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 516.773185\n"
 }

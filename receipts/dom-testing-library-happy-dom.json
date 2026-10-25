@@ -1,15 +1,15 @@
 {
   "id": "dom-testing-library-happy-dom",
   "status": "passed",
-  "ran_at": "2026-10-25T12:46:37.308Z",
-  "last_passed_at": "2026-10-25T12:46:37.308Z",
+  "ran_at": "2026-10-25T18:42:50.807Z",
+  "last_passed_at": "2026-10-25T18:42:50.807Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5853,
-    "test": 1327
+    "setup": 5711,
+    "test": 1331
   },
   "pinned": {
     "@types/node": "24.19.2",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40194447527"
+    "runner": "github-actions 40222356766"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-dom-testing-library-happy-dom-8JeJYV\u001b[39m\n\n \u001b[32m✓\u001b[39m test/form.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 104\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 12:46:43\n\u001b[2m   Duration \u001b[22m 714ms\u001b[2m (environment 48%, import 23%, tests 17%, transform 11%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-dom-testing-library-happy-dom-8JeJYV/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-dom-testing-library-happy-dom-1xfjTn\u001b[39m\n\n \u001b[32m✓\u001b[39m test/form.test.ts \u001b[2m(\u001b[22m\u001b[2m3 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 91\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m3 passed\u001b[39m\u001b[22m\u001b[90m (3)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:42:57\n\u001b[2m   Duration \u001b[22m 588ms\u001b[2m (environment 47%, import 23%, tests 19%, transform 10%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-dom-testing-library-happy-dom-1xfjTn/test-report.json\n"
 }

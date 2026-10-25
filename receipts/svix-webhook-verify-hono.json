@@ -1,15 +1,15 @@
 {
   "id": "svix-webhook-verify-hono",
   "status": "passed",
-  "ran_at": "2026-10-25T12:54:46.701Z",
-  "last_passed_at": "2026-10-25T12:54:46.701Z",
+  "ran_at": "2026-10-25T18:51:10.780Z",
+  "last_passed_at": "2026-10-25T18:51:10.780Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1657,
-    "test": 323
+    "setup": 1854,
+    "test": 386
   },
   "pinned": {
     "svix": "2.8.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40194447527"
+    "runner": "github-actions 40222356766"
   },
   "errors": [],
-  "log_tail": "# Subtest: tampered body is rejected\nok 2 - tampered body is rejected\n  ---\n  duration_ms: 10.082724\n  type: 'test'\n  ...\n# Subtest: stale timestamp is rejected (replay protection)\nok 3 - stale timestamp is rejected (replay protection)\n  ---\n  duration_ms: 1.341739\n  type: 'test'\n  ...\n# Subtest: missing headers are rejected\nok 4 - missing headers are rejected\n  ---\n  duration_ms: 0.714571\n  type: 'test'\n  ...\n# Subtest: duplicate svix-id is acknowledged once\nok 5 - duplicate svix-id is acknowledged once\n  ---\n  duration_ms: 1.575322\n  type: 'test'\n  ...\n# Subtest: signature from another secret fails\nok 6 - signature from another secret fails\n  ---\n  duration_ms: 0.875944\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 218.903118\n"
+  "log_tail": "# Subtest: tampered body is rejected\nok 2 - tampered body is rejected\n  ---\n  duration_ms: 9.384959\n  type: 'test'\n  ...\n# Subtest: stale timestamp is rejected (replay protection)\nok 3 - stale timestamp is rejected (replay protection)\n  ---\n  duration_ms: 1.034523\n  type: 'test'\n  ...\n# Subtest: missing headers are rejected\nok 4 - missing headers are rejected\n  ---\n  duration_ms: 0.60197\n  type: 'test'\n  ...\n# Subtest: duplicate svix-id is acknowledged once\nok 5 - duplicate svix-id is acknowledged once\n  ---\n  duration_ms: 1.332653\n  type: 'test'\n  ...\n# Subtest: signature from another secret fails\nok 6 - signature from another secret fails\n  ---\n  duration_ms: 0.84759\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 272.971428\n"
 }

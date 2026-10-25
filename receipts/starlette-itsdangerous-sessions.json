@@ -1,15 +1,15 @@
 {
   "id": "starlette-itsdangerous-sessions",
   "status": "passed",
-  "ran_at": "2026-10-25T12:54:27.565Z",
-  "last_passed_at": "2026-10-25T12:54:27.565Z",
+  "ran_at": "2026-10-25T18:50:51.610Z",
+  "last_passed_at": "2026-10-25T18:50:51.610Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 298,
-    "test": 1527
+    "setup": 200,
+    "test": 947
   },
   "pinned": {
     "starlette": "1.8.0",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40194447527"
+    "runner": "github-actions 40222356766"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.17s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.14s\n"
 }
