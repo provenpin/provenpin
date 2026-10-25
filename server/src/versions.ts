@@ -125,9 +125,14 @@ export function line(v: string): string | null {
 }
 const label = (l: string) => (l.startsWith("0.") ? l : `${l}.x`);
 
+/** A declared range (^5.3.0, ~5.3, >=5.3.0, ~=5.3, !=5.3.0) says what the project allows, not what is installed. */
+export const isRange = (v: string) => /^\s*(npm:)?\s*[\^~<>!]/.test(v);
+/** ^X, ~X, ~=X, >=X and <=X allow X itself; >X, <X and !=X do not. */
+const rangeAllowsBase = (v: string) => /^\s*(npm:)?\s*(\^|~|>=|<=)/.test(v);
+
 export function verdictFor(tested: string, yours: string | undefined): Verdict {
   if (yours === undefined) return "not_in_project";
-  if (base(yours) === base(tested)) return "exact";
+  if (base(yours) === base(tested)) return isRange(yours) ? "compatible" : "exact";
   const a = line(tested), b = line(yours);
   if (a && b && a === b) return "compatible";
   if (!b) return "compatible"; // "*", "latest", git urls: treat as unknown but not a known break
@@ -145,6 +150,9 @@ export function checkCompatibility(pinned: Record<string, string>, parsed: Parse
     const c: PackageCheck = { package: pkg, tested, yours: yours ?? null, verdict };
     const tl = line(tested), yl = yours ? line(yours) : null;
     if (verdict === "mismatch") c.warning = `Tested on ${pkg} ${tl ? label(tl) : tested}, you have ${yl ? label(yl) : yours}, APIs may differ. Check the code against your version or upgrade to ${tested}.`;
+    else if (verdict === "compatible" && isRange(yours ?? "") && base(yours ?? "") === base(tested)) c.warning = rangeAllowsBase(yours ?? "")
+      ? `Your project declares the range ${yours}, not an installed version. It includes the tested ${tested}, but the installed version may differ: pass your lockfile for an exact check.`
+      : `Your project declares the range ${yours}, not an installed version, and it excludes the tested ${tested}. Pass your lockfile for an exact check.`;
     else if (verdict === "compatible") c.warning = `Same major line as tested (${tested}), you have ${yours}. Should work, minor differences are possible.`;
     else if (verdict === "not_in_project") c.warning = `${pkg} is not in your project. Install ${pkg}@${tested} to match the tested setup.`;
     (TOOLING.test(pkg) ? tooling : packages).push(c);
