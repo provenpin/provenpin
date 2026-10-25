@@ -1,25 +1,26 @@
 {
   "id": "ejs-render-partials",
   "status": "passed",
-  "ran_at": "2026-10-25T06:48:51.592Z",
-  "last_passed_at": "2026-10-25T06:48:51.592Z",
+  "ran_at": "2026-10-25T12:00:30.955Z",
+  "last_passed_at": "2026-10-25T12:00:30.955Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1447,
-    "test": 340
+    "setup": 1332,
+    "test": 291
   },
   "pinned": {
     "ejs": "7.0.1",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:10de2bc965b575e8776bb0f6471e74e5277aafef6abfd5195c2d89557fcaeddb",
+  "recipe_hash": "sha256:f29d9413d8d667db7dc81c7afc970bff37a518e70ba1988a3fbd64e37c8593ff",
   "files": {
     "recipes/ejs-render-partials/package.json": "sha256:0e15747e55a9c3561f2164541cb41cd7496c8f6db8587122991934f96ff2b74e",
-    "recipes/ejs-render-partials/recipe.yaml": "sha256:a0570e7ad22d0b630a60c4c34bce0c8caa646ee80b0d3193543a6aa9bbfa11bb",
+    "recipes/ejs-render-partials/recipe.yaml": "sha256:a3d424e372b5e0ace024658e7d3157c3088f66960821d4383cf5e9d0c7207cbd",
+    "recipes/ejs-render-partials/src/ejs.d.ts": "sha256:f76213cfbae511d312225fac7cbd68dd6818d3b604ec9bdc477339f57900b5a2",
     "recipes/ejs-render-partials/src/render.ts": "sha256:2559a352ec77649618b66189e99e34ec65ac55963ca35e65bd1acac03a1392b6",
     "recipes/ejs-render-partials/test/render.test.ts": "sha256:262fe57929e4457af9d4ebe1e0dc0787a17e6d30f04a3d374a10e5d5d67957ca"
   },
@@ -27,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40170278754"
+    "runner": "github-actions 40191198412"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders a string template with locals\nok 1 - renders a string template with locals\n  ---\n  duration_ms: 1.857513\n  type: 'test'\n  ...\n# Subtest: includes a partial resolved from a temp dir\nok 2 - includes a partial resolved from a temp dir\n  ---\n  duration_ms: 12.930096\n  type: 'test'\n  ...\n# Subtest: throws ReferenceError for a missing local under strict mode\nok 3 - throws ReferenceError for a missing local under strict mode\n  ---\n  duration_ms: 0.92506\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 190.852538\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders a string template with locals\nok 1 - renders a string template with locals\n  ---\n  duration_ms: 1.458749\n  type: 'test'\n  ...\n# Subtest: includes a partial resolved from a temp dir\nok 2 - includes a partial resolved from a temp dir\n  ---\n  duration_ms: 9.077009\n  type: 'test'\n  ...\n# Subtest: throws ReferenceError for a missing local under strict mode\nok 3 - throws ReferenceError for a missing local under strict mode\n  ---\n  duration_ms: 0.569311\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 164.739205\n"
 }

@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-25T10:02:03.866Z",
+ "generated_at": "2026-10-25T12:00:50.750Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 556,
  "recipes": [
@@ -3631,12 +3631,13 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-25T06:48:51.592Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40170278754",
-   "recipe_hash": "sha256:10de2bc965b575e8776bb0f6471e74e5277aafef6abfd5195c2d89557fcaeddb",
+   "last_passed_at": "2026-10-25T12:00:30.955Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40191198412",
+   "recipe_hash": "sha256:f29d9413d8d667db7dc81c7afc970bff37a518e70ba1988a3fbd64e37c8593ff",
    "files": {
     "recipes/ejs-render-partials/package.json": "sha256:0e15747e55a9c3561f2164541cb41cd7496c8f6db8587122991934f96ff2b74e",
-    "recipes/ejs-render-partials/recipe.yaml": "sha256:a0570e7ad22d0b630a60c4c34bce0c8caa646ee80b0d3193543a6aa9bbfa11bb",
+    "recipes/ejs-render-partials/recipe.yaml": "sha256:a3d424e372b5e0ace024658e7d3157c3088f66960821d4383cf5e9d0c7207cbd",
+    "recipes/ejs-render-partials/src/ejs.d.ts": "sha256:f76213cfbae511d312225fac7cbd68dd6818d3b604ec9bdc477339f57900b5a2",
     "recipes/ejs-render-partials/src/render.ts": "sha256:2559a352ec77649618b66189e99e34ec65ac55963ca35e65bd1acac03a1392b6",
     "recipes/ejs-render-partials/test/render.test.ts": "sha256:262fe57929e4457af9d4ebe1e0dc0787a17e6d30f04a3d374a10e5d5d67957ca"
    },
@@ -11829,12 +11830,13 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:20:46.715Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:5902747c148591d315245e5b64a18e15457e96fc36c2f512cb201b391fab4898",
+   "last_passed_at": "2026-10-25T12:00:28.896Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40191198412",
+   "recipe_hash": "sha256:a22cf7fef6bdb3863db97925c870641ddd012ed870b206ac9c2df0449845368e",
    "files": {
     "recipes/pug-compile-locals/package.json": "sha256:75f8671604060b305b030d6e7d01a3f759c11c546adf9e6f95add14012a3b578",
-    "recipes/pug-compile-locals/recipe.yaml": "sha256:28a94a38374dd83b3494fd6d4488911625b4590a7d8ccae2c62d117768d681d8",
+    "recipes/pug-compile-locals/recipe.yaml": "sha256:93ebc0ba50b86959c92879f4256e30b5ec2ecb86961833d15cd06f7f90aeb549",
+    "recipes/pug-compile-locals/src/pug.d.ts": "sha256:2706388185ba55a457a2f8c35e008cd8f9596192c26e21d71bfdbd23c8703273",
     "recipes/pug-compile-locals/src/render.ts": "sha256:3971e79ea72924a80659f95e40b3779e0704a5c63e7ccfb8c5499ac9ae918f81",
     "recipes/pug-compile-locals/test/render.test.ts": "sha256:e911d2b21163222fb088a4f64a06edb21d3c5782a7d259c46e6ac2da0c108724"
    },
@@ -16227,18 +16229,20 @@
    "pinned": {
     "web-push": "3.6.7",
     "@types/node": "26.6.5",
+    "@types/web-push": "3.6.4",
     "tsx": "4.23.15",
     "http_ece": "1.2.1"
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-20T01:27:46.618Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/39350710534",
-   "recipe_hash": "sha256:de1bd8cbcddc62f37b269a981f16b5e211476fc7be05a861f01d415fc00d5cee",
+   "last_passed_at": "2026-10-25T12:00:31.240Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40191198412",
+   "recipe_hash": "sha256:82adcb5e479aa1f31d3a9cb7ae9e9081d8c81cf1ea109728478e0b664849138b",
    "files": {
-    "recipes/web-push-vapid-payload-encryption/package.json": "sha256:a740cbe2c8a6b83606d20aa0c449e7cb563714343d325acc6cc94a2c83ba160f",
-    "recipes/web-push-vapid-payload-encryption/recipe.yaml": "sha256:c365b7916aad17c14e278cdce5161a1a96f7d7dacc30cf34d8edebe1906a345f",
+    "recipes/web-push-vapid-payload-encryption/package.json": "sha256:55a2f38d710c65b0ef401e9fc4d470f846a54c8b0608cf2de4e64f1dc51bec79",
+    "recipes/web-push-vapid-payload-encryption/recipe.yaml": "sha256:811a0fe7560d6701849f5b7e65d67cf9859b90428b6a080c20ab3e57853d5784",
     "recipes/web-push-vapid-payload-encryption/src/push.ts": "sha256:127682272d1c7c91dba98375b3d89f1ed50c8ef2ce96193a6ea4d4c3eb088c61",
+    "recipes/web-push-vapid-payload-encryption/test/http_ece.d.ts": "sha256:85ddcbfde8506213a0c2b5ffc69b75f130346d2a76e76fc2544460498d711487",
     "recipes/web-push-vapid-payload-encryption/test/push.test.ts": "sha256:e9378ce269ff468ce30d00f946eab65143eca6f71b24be7d94e1895aaa549c58"
    },
    "staleness": {

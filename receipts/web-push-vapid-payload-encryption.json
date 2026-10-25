@@ -1,35 +1,37 @@
 {
   "id": "web-push-vapid-payload-encryption",
   "status": "passed",
-  "ran_at": "2026-10-20T01:27:46.618Z",
-  "last_passed_at": "2026-10-20T01:27:46.618Z",
+  "ran_at": "2026-10-25T12:00:31.240Z",
+  "last_passed_at": "2026-10-25T12:00:31.240Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2584,
-    "test": 438
+    "setup": 1816,
+    "test": 390
   },
   "pinned": {
     "web-push": "3.6.7",
     "@types/node": "26.6.5",
+    "@types/web-push": "3.6.4",
     "tsx": "4.23.15",
     "http_ece": "1.2.1"
   },
-  "recipe_hash": "sha256:de1bd8cbcddc62f37b269a981f16b5e211476fc7be05a861f01d415fc00d5cee",
+  "recipe_hash": "sha256:82adcb5e479aa1f31d3a9cb7ae9e9081d8c81cf1ea109728478e0b664849138b",
   "files": {
-    "recipes/web-push-vapid-payload-encryption/package.json": "sha256:a740cbe2c8a6b83606d20aa0c449e7cb563714343d325acc6cc94a2c83ba160f",
-    "recipes/web-push-vapid-payload-encryption/recipe.yaml": "sha256:c365b7916aad17c14e278cdce5161a1a96f7d7dacc30cf34d8edebe1906a345f",
+    "recipes/web-push-vapid-payload-encryption/package.json": "sha256:55a2f38d710c65b0ef401e9fc4d470f846a54c8b0608cf2de4e64f1dc51bec79",
+    "recipes/web-push-vapid-payload-encryption/recipe.yaml": "sha256:811a0fe7560d6701849f5b7e65d67cf9859b90428b6a080c20ab3e57853d5784",
     "recipes/web-push-vapid-payload-encryption/src/push.ts": "sha256:127682272d1c7c91dba98375b3d89f1ed50c8ef2ce96193a6ea4d4c3eb088c61",
+    "recipes/web-push-vapid-payload-encryption/test/http_ece.d.ts": "sha256:85ddcbfde8506213a0c2b5ffc69b75f130346d2a76e76fc2544460498d711487",
     "recipes/web-push-vapid-payload-encryption/test/push.test.ts": "sha256:e9378ce269ff468ce30d00f946eab65143eca6f71b24be7d94e1895aaa549c58"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40191198412"
   },
   "errors": [],
-  "log_tail": "# Subtest: VAPID keys are P-256 base64url\nok 1 - VAPID keys are P-256 base64url\n  ---\n  duration_ms: 1.792475\n  type: 'test'\n  ...\n# Subtest: request details: endpoint, headers, encrypted body\nok 2 - request details: endpoint, headers, encrypted body\n  ---\n  duration_ms: 6.089596\n  type: 'test'\n  ...\n# Subtest: browser side can decrypt the payload\nok 3 - browser side can decrypt the payload\n  ---\n  duration_ms: 2.831418\n  type: 'test'\n  ...\n# Subtest: a different subscriber cannot decrypt\nok 4 - a different subscriber cannot decrypt\n  ---\n  duration_ms: 1.517299\n  type: 'test'\n  ...\n# Subtest: VAPID JWT verifies with the public key and carries aud/exp/sub\nok 5 - VAPID JWT verifies with the public key and carries aud/exp/sub\n  ---\n  duration_ms: 1.274736\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 286.821538\n"
+  "log_tail": "# Subtest: VAPID keys are P-256 base64url\nok 1 - VAPID keys are P-256 base64url\n  ---\n  duration_ms: 0.946866\n  type: 'test'\n  ...\n# Subtest: request details: endpoint, headers, encrypted body\nok 2 - request details: endpoint, headers, encrypted body\n  ---\n  duration_ms: 4.722033\n  type: 'test'\n  ...\n# Subtest: browser side can decrypt the payload\nok 3 - browser side can decrypt the payload\n  ---\n  duration_ms: 2.216455\n  type: 'test'\n  ...\n# Subtest: a different subscriber cannot decrypt\nok 4 - a different subscriber cannot decrypt\n  ---\n  duration_ms: 1.216881\n  type: 'test'\n  ...\n# Subtest: VAPID JWT verifies with the public key and carries aud/exp/sub\nok 5 - VAPID JWT verifies with the public key and carries aud/exp/sub\n  ---\n  duration_ms: 0.985944\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 261.972045\n"
 }
