@@ -13,6 +13,7 @@ pinned:
 files:
   - package.json
   - src/render.ts
+  - src/ejs.d.ts
   - test/render.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false
 test: npm test
