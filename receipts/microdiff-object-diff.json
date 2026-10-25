@@ -1,34 +1,34 @@
 {
   "id": "microdiff-object-diff",
   "status": "passed",
-  "ran_at": "2026-10-20T01:15:49.589Z",
-  "last_passed_at": "2026-10-20T01:15:49.589Z",
+  "ran_at": "2026-10-25T07:59:13.567Z",
+  "last_passed_at": "2026-10-25T07:59:13.567Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1418,
-    "test": 203
+    "setup": 1494,
+    "test": 385
   },
   "pinned": {
     "microdiff": "1.6.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:e57ef6713eda185e0d4e4cbee36d54bd33d9a158cb154d5e1b86b9c222201c42",
+  "recipe_hash": "sha256:ad3c109627d96ec640a325584fb3011401f5a40b2e31f9a998100de77176df2e",
   "files": {
     "recipes/microdiff-object-diff/package.json": "sha256:c0180780d28b31830f90304e7cfd41729e21ef6998e5c7d3e0b908d87effeef3",
     "recipes/microdiff-object-diff/recipe.yaml": "sha256:90a04a31d733df8c14535a64be9792e4803d2edd749775a8285ed518feeca36a",
-    "recipes/microdiff-object-diff/src/diff.ts": "sha256:c0cfe0e0289ba55d13df6a63fc3fc3bdf1d76c99baaf867da3a50689d310ea0b",
+    "recipes/microdiff-object-diff/src/diff.ts": "sha256:14dcf4c70a7d77e9a5d123a28406f64be29ee403d97d8257dc447c7fd7e99591",
     "recipes/microdiff-object-diff/test/diff.test.ts": "sha256:92c711b61048eb06f6939907a77434ebcb2847d2af34a6d39a73c0828ac683a2"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40174815893"
   },
   "errors": [],
-  "log_tail": "# Subtest: emits REMOVE entries with paths for deleted keys\nok 3 - emits REMOVE entries with paths for deleted keys\n  ---\n  duration_ms: 0.070206\n  type: 'test'\n  ...\n# Subtest: emits CHANGE entries with paths for changed values\nok 4 - emits CHANGE entries with paths for changed values\n  ---\n  duration_ms: 0.150355\n  type: 'test'\n  ...\n# Subtest: diffs arrays by index and reports the offending element\nok 5 - diffs arrays by index and reports the offending element\n  ---\n  duration_ms: 0.100421\n  type: 'test'\n  ...\n# Subtest: reports array growth as a CREATE at the appended index\nok 6 - reports array growth as a CREATE at the appended index\n  ---\n  duration_ms: 0.075453\n  type: 'test'\n  ...\n# Subtest: reports array shrink as a REMOVE at the dropped index\nok 7 - reports array shrink as a REMOVE at the dropped index\n  ---\n  duration_ms: 0.102573\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 110.852712\n"
+  "log_tail": "# Subtest: emits REMOVE entries with paths for deleted keys\nok 3 - emits REMOVE entries with paths for deleted keys\n  ---\n  duration_ms: 0.185619\n  type: 'test'\n  ...\n# Subtest: emits CHANGE entries with paths for changed values\nok 4 - emits CHANGE entries with paths for changed values\n  ---\n  duration_ms: 0.305553\n  type: 'test'\n  ...\n# Subtest: diffs arrays by index and reports the offending element\nok 5 - diffs arrays by index and reports the offending element\n  ---\n  duration_ms: 0.161843\n  type: 'test'\n  ...\n# Subtest: reports array growth as a CREATE at the appended index\nok 6 - reports array growth as a CREATE at the appended index\n  ---\n  duration_ms: 0.140203\n  type: 'test'\n  ...\n# Subtest: reports array shrink as a REMOVE at the dropped index\nok 7 - reports array shrink as a REMOVE at the dropped index\n  ---\n  duration_ms: 0.241062\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 221.382335\n"
 }
