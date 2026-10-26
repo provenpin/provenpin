@@ -1,6 +1,6 @@
 import argon2 from "argon2";
 
-export const opts: argon2.Options = {
+export const opts: argon2.HashOptions = {
   type: argon2.argon2id,
   timeCost: 2,
   memoryCost: 19456,
