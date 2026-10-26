@@ -1,15 +1,15 @@
 {
   "id": "papaparse-zod-csv-import",
   "status": "passed",
-  "ran_at": "2026-10-26T10:35:14.430Z",
-  "last_passed_at": "2026-10-26T10:35:14.430Z",
+  "ran_at": "2026-10-26T15:00:47.318Z",
+  "last_passed_at": "2026-10-26T15:00:47.318Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2101,
-    "test": 511
+    "setup": 2610,
+    "test": 830
   },
   "pinned": {
     "papaparse": "5.7.0",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40343600773"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid rows parsed, quoted commas kept, BOM and blank lines ignored\nok 1 - valid rows parsed, quoted commas kept, BOM and blank lines ignored\n  ---\n  duration_ms: 6.628147\n  type: 'test'\n  ...\n# Subtest: errors carry spreadsheet row numbers\nok 2 - errors carry spreadsheet row numbers\n  ---\n  duration_ms: 0.786071\n  type: 'test'\n  ...\n# Subtest: round-trips through export\nok 3 - round-trips through export\n  ---\n  duration_ms: 1.358472\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 353.782727\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid rows parsed, quoted commas kept, BOM and blank lines ignored\nok 1 - valid rows parsed, quoted commas kept, BOM and blank lines ignored\n  ---\n  duration_ms: 6.503728\n  type: 'test'\n  ...\n# Subtest: errors carry spreadsheet row numbers\nok 2 - errors carry spreadsheet row numbers\n  ---\n  duration_ms: 0.805939\n  type: 'test'\n  ...\n# Subtest: round-trips through export\nok 3 - round-trips through export\n  ---\n  duration_ms: 1.439899\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 629.896594\n"
 }

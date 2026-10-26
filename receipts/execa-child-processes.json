@@ -1,15 +1,15 @@
 {
   "id": "execa-child-processes",
   "status": "passed",
-  "ran_at": "2026-10-26T10:24:49.208Z",
-  "last_passed_at": "2026-10-26T10:24:49.208Z",
+  "ran_at": "2026-10-26T14:55:08.166Z",
+  "last_passed_at": "2026-10-26T14:55:08.166Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1746,
-    "test": 809
+    "setup": 2176,
+    "test": 825
   },
   "pinned": {
     "execa": "10.1.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40343600773"
   },
   "errors": [],
-  "log_tail": "# Subtest: pipes input to stdin\nok 2 - pipes input to stdin\n  ---\n  duration_ms: 37.735479\n  type: 'test'\n  ...\n# Subtest: splits output into lines\nok 3 - splits output into lines\n  ---\n  duration_ms: 38.750426\n  type: 'test'\n  ...\n# Subtest: reject: false returns the exit code instead of throwing\nok 4 - reject: false returns the exit code instead of throwing\n  ---\n  duration_ms: 39.299913\n  type: 'test'\n  ...\n# Subtest: non-zero exits throw ExecaError with details\nok 5 - non-zero exits throw ExecaError with details\n  ---\n  duration_ms: 26.305425\n  type: 'test'\n  ...\n# Subtest: timeouts kill hung commands\nok 6 - timeouts kill hung commands\n  ---\n  duration_ms: 208.533369\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 665.707164\n"
+  "log_tail": "# Subtest: pipes input to stdin\nok 2 - pipes input to stdin\n  ---\n  duration_ms: 42.17541\n  type: 'test'\n  ...\n# Subtest: splits output into lines\nok 3 - splits output into lines\n  ---\n  duration_ms: 33.798497\n  type: 'test'\n  ...\n# Subtest: reject: false returns the exit code instead of throwing\nok 4 - reject: false returns the exit code instead of throwing\n  ---\n  duration_ms: 36.664814\n  type: 'test'\n  ...\n# Subtest: non-zero exits throw ExecaError with details\nok 5 - non-zero exits throw ExecaError with details\n  ---\n  duration_ms: 31.046033\n  type: 'test'\n  ...\n# Subtest: timeouts kill hung commands\nok 6 - timeouts kill hung commands\n  ---\n  duration_ms: 209.918251\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 676.58228\n"
 }

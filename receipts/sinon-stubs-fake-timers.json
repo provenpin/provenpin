@@ -1,15 +1,15 @@
 {
   "id": "sinon-stubs-fake-timers",
   "status": "passed",
-  "ran_at": "2026-10-26T10:39:44.710Z",
-  "last_passed_at": "2026-10-26T10:39:44.710Z",
+  "ran_at": "2026-10-26T15:02:34.332Z",
+  "last_passed_at": "2026-10-26T15:02:34.332Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1710,
-    "test": 393
+    "setup": 2385,
+    "test": 388
   },
   "pinned": {
     "sinon": "22.1.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40343600773"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: test/service.test.ts\nok 1 - test/service.test.ts\n  ---\n  duration_ms: 234.154996\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 242.227814\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: test/service.test.ts\nok 1 - test/service.test.ts\n  ---\n  duration_ms: 231.215357\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 239.098351\n"
 }

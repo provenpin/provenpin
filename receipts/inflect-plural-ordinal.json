@@ -1,15 +1,15 @@
 {
   "id": "inflect-plural-ordinal",
   "status": "passed",
-  "ran_at": "2026-10-26T10:28:48.125Z",
-  "last_passed_at": "2026-10-26T10:28:48.125Z",
+  "ran_at": "2026-10-26T14:57:42.010Z",
+  "last_passed_at": "2026-10-26T14:57:42.010Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 231,
-    "test": 3265
+    "setup": 797,
+    "test": 3990
   },
   "pinned": {
     "inflect": "7.5.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40343600773"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.67s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.49s\n"
 }

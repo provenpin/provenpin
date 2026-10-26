@@ -1,15 +1,15 @@
 {
   "id": "fastapi-pydantic-settings-dependency",
   "status": "passed",
-  "ran_at": "2026-10-26T10:26:07.410Z",
-  "last_passed_at": "2026-10-26T10:26:07.410Z",
+  "ran_at": "2026-10-26T14:56:03.370Z",
+  "last_passed_at": "2026-10-26T14:56:03.370Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 354,
-    "test": 2455
+    "setup": 391,
+    "test": 1422
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40343600773"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-pydantic-settings-dependency-A2JS8f/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.94s\n"
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-pydantic-settings-dependency-gj91jy/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.56s\n"
 }

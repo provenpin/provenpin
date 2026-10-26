@@ -1,15 +1,15 @@
 {
   "id": "drizzle-pglite-migrations",
   "status": "passed",
-  "ran_at": "2026-10-26T10:24:01.698Z",
-  "last_passed_at": "2026-10-26T10:24:01.698Z",
+  "ran_at": "2026-10-26T14:54:33.559Z",
+  "last_passed_at": "2026-10-26T14:54:33.559Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7026,
-    "test": 17244
+    "setup": 7502,
+    "test": 16923
   },
   "pinned": {
     "drizzle-orm": "0.45.4",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40343600773"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: migrations create enum, array and jsonb columns\nok 1 - migrations create enum, array and jsonb columns\n  ---\n  duration_ms: 2408.409294\n  type: 'test'\n  ...\n# Subtest: upsert merges jsonb and updates enum\nok 2 - upsert merges jsonb and updates enum\n  ---\n  duration_ms: 1893.722948\n  type: 'test'\n  ...\n# Subtest: enum rejects unknown values\nok 3 - enum rejects unknown values\n  ---\n  duration_ms: 1841.715469\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 17095.757108\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: migrations create enum, array and jsonb columns\nok 1 - migrations create enum, array and jsonb columns\n  ---\n  duration_ms: 2343.311257\n  type: 'test'\n  ...\n# Subtest: upsert merges jsonb and updates enum\nok 2 - upsert merges jsonb and updates enum\n  ---\n  duration_ms: 1728.172623\n  type: 'test'\n  ...\n# Subtest: enum rejects unknown values\nok 3 - enum rejects unknown values\n  ---\n  duration_ms: 1715.270978\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 16769.163769\n"
 }

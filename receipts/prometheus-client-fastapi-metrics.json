@@ -1,15 +1,15 @@
 {
   "id": "prometheus-client-fastapi-metrics",
   "status": "passed",
-  "ran_at": "2026-10-26T10:36:35.052Z",
-  "last_passed_at": "2026-10-26T10:36:35.052Z",
+  "ran_at": "2026-10-26T15:01:14.099Z",
+  "last_passed_at": "2026-10-26T15:01:14.099Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 331,
-    "test": 2925
+    "setup": 381,
+    "test": 3197
   },
   "pinned": {
     "prometheus-client": "0.26.0",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40343600773"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.05s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.04s\n"
 }
