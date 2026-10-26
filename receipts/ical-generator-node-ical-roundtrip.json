@@ -1,15 +1,15 @@
 {
   "id": "ical-generator-node-ical-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-26T10:28:38.108Z",
-  "last_passed_at": "2026-10-26T10:28:38.108Z",
+  "ran_at": "2026-10-26T16:01:45.403Z",
+  "last_passed_at": "2026-10-26T16:01:45.403Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1811,
-    "test": 470
+    "setup": 1895,
+    "test": 484
   },
   "pinned": {
     "ical-generator": "11.1.2",
@@ -17,19 +17,19 @@
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:c447a9b4293fdb075ea944467b9853a94c00aeba72a26c0e843de9447251e595",
+  "recipe_hash": "sha256:828f61cb0bf3e7ef8a40774a133ad3adee3505f1b98c97907c520630491e763c",
   "files": {
     "recipes/ical-generator-node-ical-roundtrip/package.json": "sha256:3c6ac0665ab5bdb0a68c7f66598b6d8f68ca99f0a4ee13723a842a1acaf61e11",
     "recipes/ical-generator-node-ical-roundtrip/recipe.yaml": "sha256:4b61cf1aa63de93cb0ed74f2a8733555531a71131eb9b5b016c2ca4ad8e64ddc",
-    "recipes/ical-generator-node-ical-roundtrip/src/calendar.ts": "sha256:800c09604b5c8604cce4da40a75d9db1d4bb10a52b2229d2a9653999f7ebfa65",
-    "recipes/ical-generator-node-ical-roundtrip/test/calendar.test.ts": "sha256:0e903c8bf6f4a50a9ee1dbf266d347104ba411b11b9227cf5bbf9719013dafad"
+    "recipes/ical-generator-node-ical-roundtrip/src/calendar.ts": "sha256:3ca86cb984ec79295516a52c97bbdac9be6b772edf17487fb5a706f8154cab7f",
+    "recipes/ical-generator-node-ical-roundtrip/test/calendar.test.ts": "sha256:ccad05d20093090eccfb78ed7125247001aaf1049981cb94c49ba4be171eef81"
   },
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40355030528"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates valid iCalendar text\nok 1 - generates valid iCalendar text\n  ---\n  duration_ms: 3.021833\n  type: 'test'\n  ...\n# Subtest: round trips through node-ical\nok 2 - round trips through node-ical\n  ---\n  duration_ms: 43.620193\n  type: 'test'\n  ...\n# Subtest: recurrence rule and exception dates survive\nok 3 - recurrence rule and exception dates survive\n  ---\n  duration_ms: 2.237319\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 314.11974\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates valid iCalendar text\nok 1 - generates valid iCalendar text\n  ---\n  duration_ms: 2.348999\n  type: 'test'\n  ...\n# Subtest: round trips through node-ical\nok 2 - round trips through node-ical\n  ---\n  duration_ms: 31.691984\n  type: 'test'\n  ...\n# Subtest: recurrence rule and exception dates survive\nok 3 - recurrence rule and exception dates survive\n  ---\n  duration_ms: 1.698389\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 348.480931\n"
 }

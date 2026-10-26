@@ -1,15 +1,15 @@
 {
   "id": "twilio-webhook-signature-express",
   "status": "passed",
-  "ran_at": "2026-10-26T10:42:52.308Z",
-  "last_passed_at": "2026-10-26T10:42:52.308Z",
+  "ran_at": "2026-10-26T16:01:49.343Z",
+  "last_passed_at": "2026-10-26T16:01:49.343Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4010,
-    "test": 547
+    "setup": 5174,
+    "test": 677
   },
   "pinned": {
     "twilio": "6.2.0",
@@ -20,19 +20,19 @@
     "tsx": "4.23.15",
     "supertest": "7.3.1"
   },
-  "recipe_hash": "sha256:2c065cc9d5287ce942952f722399b570f9b5e6472eef36fbf6258f8fc2c83089",
+  "recipe_hash": "sha256:5fe7abdc799180ef773822c588a0f16dd558f6bc35d99ddf21a401c633c0b53e",
   "files": {
     "recipes/twilio-webhook-signature-express/package.json": "sha256:bea030945e55f7955f9f0895b016c7d8f8d16f4f3e9e8fda2a3e18e4724b517b",
     "recipes/twilio-webhook-signature-express/recipe.yaml": "sha256:9dd6d829022a5b1cd9b9967b2249290fd5df83d80e3bb76e337272ada06f22c6",
     "recipes/twilio-webhook-signature-express/src/app.ts": "sha256:533079baaddf95c933dbf08c3c6e2dfa8fe7f79c1eb47ed4894af80fcbbe1bc4",
-    "recipes/twilio-webhook-signature-express/test/app.test.ts": "sha256:a2c86dc3417141c64420454ffa58a76f889289bfcff2bdb5d34b33181cb2faff"
+    "recipes/twilio-webhook-signature-express/test/app.test.ts": "sha256:910bfc44e55b027cde7b5d1f4b07812970a144cac4cba9828e0afd82c442071b"
   },
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40355030528"
   },
   "errors": [],
-  "log_tail": "# Subtest: signature helper matches validateRequest\nok 1 - signature helper matches validateRequest\n  ---\n  duration_ms: 1.252843\n  type: 'test'\n  ...\n# Subtest: valid webhook gets TwiML reply\nok 2 - valid webhook gets TwiML reply\n  ---\n  duration_ms: 33.907086\n  type: 'test'\n  ...\n# Subtest: query string is part of the signed URL\nok 3 - query string is part of the signed URL\n  ---\n  duration_ms: 5.074856\n  type: 'test'\n  ...\n# Subtest: tampered params are rejected\nok 4 - tampered params are rejected\n  ---\n  duration_ms: 3.604637\n  type: 'test'\n  ...\n# Subtest: wrong token or missing header is rejected\nok 5 - wrong token or missing header is rejected\n  ---\n  duration_ms: 5.840097\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 426.17036\n"
+  "log_tail": "# Subtest: signature helper matches validateRequest\nok 1 - signature helper matches validateRequest\n  ---\n  duration_ms: 1.468377\n  type: 'test'\n  ...\n# Subtest: valid webhook gets TwiML reply\nok 2 - valid webhook gets TwiML reply\n  ---\n  duration_ms: 72.843993\n  type: 'test'\n  ...\n# Subtest: query string is part of the signed URL\nok 3 - query string is part of the signed URL\n  ---\n  duration_ms: 6.731528\n  type: 'test'\n  ...\n# Subtest: tampered params are rejected\nok 4 - tampered params are rejected\n  ---\n  duration_ms: 3.686828\n  type: 'test'\n  ...\n# Subtest: wrong token or missing header is rejected\nok 5 - wrong token or missing header is rejected\n  ---\n  duration_ms: 6.164706\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 531.66606\n"
 }
