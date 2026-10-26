@@ -1,15 +1,15 @@
 {
   "id": "boltons-iterutils-remap",
   "status": "passed",
-  "ran_at": "2026-10-20T01:04:34.901Z",
-  "last_passed_at": "2026-10-20T01:04:34.901Z",
+  "ran_at": "2026-10-26T10:20:46.483Z",
+  "last_passed_at": "2026-10-26T10:20:46.483Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 389,
-    "test": 640
+    "setup": 248,
+    "test": 1085
   },
   "pinned": {
     "boltons": "26.2.0",
@@ -24,11 +24,11 @@
     "recipes/boltons-iterutils-remap/transform.py": "sha256:2af4aa7629999f0f68cf1f6b77f13cddb13dd0e74655b57e01754e0afdf4d065"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
 }

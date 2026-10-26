@@ -1,15 +1,15 @@
 {
   "id": "httpx-pydantic-typed-client",
   "status": "passed",
-  "ran_at": "2026-10-20T01:12:03.341Z",
-  "last_passed_at": "2026-10-20T01:12:03.341Z",
+  "ran_at": "2026-10-26T10:28:15.226Z",
+  "last_passed_at": "2026-10-26T10:28:15.226Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 312,
-    "test": 2789
+    "setup": 751,
+    "test": 2476
   },
   "pinned": {
     "httpx": "0.28.1",
@@ -26,11 +26,11 @@
     "recipes/httpx-pydantic-typed-client/tests/test_client.py": "sha256:1b55cc21387664d6b7e57b8d23ad15bb60864cdcc2fc0026fb4224bfb72ef74b"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.42s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.29s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "email-validator-normalize",
   "status": "passed",
-  "ran_at": "2026-10-20T01:08:06.208Z",
-  "last_passed_at": "2026-10-20T01:08:06.208Z",
+  "ran_at": "2026-10-26T10:24:30.673Z",
+  "last_passed_at": "2026-10-26T10:24:30.673Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 422,
-    "test": 887
+    "setup": 340,
+    "test": 1731
   },
   "pinned": {
     "email-validator": "2.3.0",
@@ -24,11 +24,11 @@
     "recipes/email-validator-normalize/tests/test_email.py": "sha256:8d0bba6444e7eb42a2d6e1dee3997a652fe99249f570e0ec63afc2bf6f5e6f54"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.27s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.48s\n"
 }

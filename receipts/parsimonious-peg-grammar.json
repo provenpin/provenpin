@@ -1,15 +1,15 @@
 {
   "id": "parsimonious-peg-grammar",
   "status": "passed",
-  "ran_at": "2026-10-20T01:19:12.560Z",
-  "last_passed_at": "2026-10-20T01:19:12.560Z",
+  "ran_at": "2026-10-26T10:35:21.519Z",
+  "last_passed_at": "2026-10-26T10:35:21.519Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 485,
-    "test": 1207
+    "setup": 286,
+    "test": 1121
   },
   "pinned": {
     "parsimonious": "0.11.0",
@@ -24,11 +24,11 @@
     "recipes/parsimonious-peg-grammar/tests/test_grammar.py": "sha256:1c6fb32743192e90cc0994c98e9553ca50287a21a959569b031826032579957c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
 }

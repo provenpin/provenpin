@@ -1,15 +1,15 @@
 {
   "id": "currency-js-money-math",
   "status": "passed",
-  "ran_at": "2026-10-20T01:06:24.786Z",
-  "last_passed_at": "2026-10-20T01:06:24.786Z",
+  "ran_at": "2026-10-26T10:22:44.421Z",
+  "last_passed_at": "2026-10-26T10:22:44.421Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1647,
-    "test": 344
+    "setup": 1522,
+    "test": 364
   },
   "pinned": {
     "currency.js": "2.0.4",
@@ -24,11 +24,11 @@
     "recipes/currency-js-money-math/test/money.test.ts": "sha256:9caa5dccaf2e1eb0ddc96ecbfa70a4fdef2ee13bd423f499d1453742050f7591"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: adds precise cents with no floating point drift\nok 2 - adds precise cents with no floating point drift\n  ---\n  duration_ms: 0.622726\n  type: 'test'\n  ...\n# Subtest: subtracts precise cents with no floating point drift\nok 3 - subtracts precise cents with no floating point drift\n  ---\n  duration_ms: 0.289592\n  type: 'test'\n  ...\n# Subtest: multiplies to whole cents\nok 4 - multiplies to whole cents\n  ---\n  duration_ms: 0.222527\n  type: 'test'\n  ...\n# Subtest: distributes a total into whole cents with no drift\nok 5 - distributes a total into whole cents with no drift\n  ---\n  duration_ms: 1.151045\n  type: 'test'\n  ...\n# Subtest: formats with symbol and separator options\nok 6 - formats with symbol and separator options\n  ---\n  duration_ms: 0.305661\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 198.298702\n"
+  "log_tail": "# Subtest: adds precise cents with no floating point drift\nok 2 - adds precise cents with no floating point drift\n  ---\n  duration_ms: 0.583905\n  type: 'test'\n  ...\n# Subtest: subtracts precise cents with no floating point drift\nok 3 - subtracts precise cents with no floating point drift\n  ---\n  duration_ms: 0.241854\n  type: 'test'\n  ...\n# Subtest: multiplies to whole cents\nok 4 - multiplies to whole cents\n  ---\n  duration_ms: 0.206123\n  type: 'test'\n  ...\n# Subtest: distributes a total into whole cents with no drift\nok 5 - distributes a total into whole cents with no drift\n  ---\n  duration_ms: 1.097655\n  type: 'test'\n  ...\n# Subtest: formats with symbol and separator options\nok 6 - formats with symbol and separator options\n  ---\n  duration_ms: 0.310052\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 217.923714\n"
 }

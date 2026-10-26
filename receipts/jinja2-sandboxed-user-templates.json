@@ -1,15 +1,15 @@
 {
   "id": "jinja2-sandboxed-user-templates",
   "status": "passed",
-  "ran_at": "2026-10-20T01:13:07.173Z",
-  "last_passed_at": "2026-10-20T01:13:07.173Z",
+  "ran_at": "2026-10-26T10:29:22.680Z",
+  "last_passed_at": "2026-10-26T10:29:22.680Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 177,
-    "test": 712
+    "setup": 200,
+    "test": 902
   },
   "pinned": {
     "jinja2": "3.1.6",
@@ -24,11 +24,11 @@
     "recipes/jinja2-sandboxed-user-templates/tests/test_renderer.py": "sha256:f9775a8fdeb33fff0af73fcdaccbd6d6d61008d05d23229e4a6dc8796750a990"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.16s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "wrap-ansi-columns",
   "status": "passed",
-  "ran_at": "2026-10-20T01:27:56.771Z",
-  "last_passed_at": "2026-10-20T01:27:56.771Z",
+  "ran_at": "2026-10-26T10:44:18.372Z",
+  "last_passed_at": "2026-10-26T10:44:18.372Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1609,
-    "test": 454
+    "setup": 1372,
+    "test": 856
   },
   "pinned": {
     "wrap-ansi": "10.0.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: wraps long text to a column width on word boundaries\nok 1 - wraps long text to a column width on word boundaries\n  ---\n  duration_ms: 1.493685\n  type: 'test'\n  ...\n# Subtest: hard wrap breaks words longer than the column width\nok 2 - hard wrap breaks words longer than the column width\n  ---\n  duration_ms: 0.430999\n  type: 'test'\n  ...\n# Subtest: soft wrap keeps long words intact\nok 3 - soft wrap keeps long words intact\n  ---\n  duration_ms: 0.1552\n  type: 'test'\n  ...\n# Subtest: trim removes whitespace on wrapped line boundaries\nok 4 - trim removes whitespace on wrapped line boundaries\n  ---\n  duration_ms: 0.253496\n  type: 'test'\n  ...\n# Subtest: preserves ANSI escape codes while wrapping\nok 5 - preserves ANSI escape codes while wrapping\n  ---\n  duration_ms: 0.972872\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 314.757611\n"
+  "log_tail": "# Subtest: wraps long text to a column width on word boundaries\nok 1 - wraps long text to a column width on word boundaries\n  ---\n  duration_ms: 1.145148\n  type: 'test'\n  ...\n# Subtest: hard wrap breaks words longer than the column width\nok 2 - hard wrap breaks words longer than the column width\n  ---\n  duration_ms: 0.355153\n  type: 'test'\n  ...\n# Subtest: soft wrap keeps long words intact\nok 3 - soft wrap keeps long words intact\n  ---\n  duration_ms: 0.110265\n  type: 'test'\n  ...\n# Subtest: trim removes whitespace on wrapped line boundaries\nok 4 - trim removes whitespace on wrapped line boundaries\n  ---\n  duration_ms: 0.164346\n  type: 'test'\n  ...\n# Subtest: preserves ANSI escape codes while wrapping\nok 5 - preserves ANSI escape codes while wrapping\n  ---\n  duration_ms: 0.778038\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 682.275622\n"
 }

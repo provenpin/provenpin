@@ -1,15 +1,15 @@
 {
   "id": "phonenumbers-parse-format",
   "status": "passed",
-  "ran_at": "2026-10-20T01:19:35.317Z",
-  "last_passed_at": "2026-10-20T01:19:35.317Z",
+  "ran_at": "2026-10-26T10:35:45.744Z",
+  "last_passed_at": "2026-10-26T10:35:45.744Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 301,
-    "test": 1221
+    "setup": 344,
+    "test": 914
   },
   "pinned": {
     "phonenumbers": "9.0.41",
@@ -24,10 +24,10 @@
     "recipes/phonenumbers-parse-format/tests/test_phone.py": "sha256:bfd44ef7e830fc43fc1edbe688dea73b703578bc47e2351e150e0dca8ef3ced4"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"

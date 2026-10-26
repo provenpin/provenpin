@@ -1,15 +1,15 @@
 {
   "id": "gray-matter-zod-frontmatter",
   "status": "passed",
-  "ran_at": "2026-10-20T01:11:18.510Z",
-  "last_passed_at": "2026-10-20T01:11:18.510Z",
+  "ran_at": "2026-10-26T10:27:34.498Z",
+  "last_passed_at": "2026-10-26T10:27:34.498Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2620,
-    "test": 565
+    "setup": 1663,
+    "test": 418
   },
   "pinned": {
     "gray-matter": "4.0.3",
@@ -25,11 +25,11 @@
     "recipes/gray-matter-zod-frontmatter/test/posts.test.ts": "sha256:8e0ba03d2dda78465d74a42e0fd45ea52e82247551d759f3ac532e7269b2b7e3"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses, coerces dates, defaults and builds a slug\nok 1 - parses, coerces dates, defaults and builds a slug\n  ---\n  duration_ms: 6.576818\n  type: 'test'\n  ...\n# Subtest: filters drafts and sorts newest first\nok 2 - filters drafts and sorts newest first\n  ---\n  duration_ms: 1.186751\n  type: 'test'\n  ...\n# Subtest: invalid front matter throws a readable error\nok 3 - invalid front matter throws a readable error\n  ---\n  duration_ms: 1.463639\n  type: 'test'\n  ...\n# Subtest: writePost round-trips through parsePost\nok 4 - writePost round-trips through parsePost\n  ---\n  duration_ms: 2.763711\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 398.079567\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses, coerces dates, defaults and builds a slug\nok 1 - parses, coerces dates, defaults and builds a slug\n  ---\n  duration_ms: 4.819459\n  type: 'test'\n  ...\n# Subtest: filters drafts and sorts newest first\nok 2 - filters drafts and sorts newest first\n  ---\n  duration_ms: 0.865763\n  type: 'test'\n  ...\n# Subtest: invalid front matter throws a readable error\nok 3 - invalid front matter throws a readable error\n  ---\n  duration_ms: 1.022728\n  type: 'test'\n  ...\n# Subtest: writePost round-trips through parsePost\nok 4 - writePost round-trips through parsePost\n  ---\n  duration_ms: 1.301234\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 299.346812\n"
 }

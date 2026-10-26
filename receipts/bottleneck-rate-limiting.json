@@ -1,15 +1,15 @@
 {
   "id": "bottleneck-rate-limiting",
   "status": "passed",
-  "ran_at": "2026-10-20T01:04:43.467Z",
-  "last_passed_at": "2026-10-20T01:04:43.467Z",
+  "ran_at": "2026-10-26T10:20:53.124Z",
+  "last_passed_at": "2026-10-26T10:20:53.124Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1633,
-    "test": 534
+    "setup": 1373,
+    "test": 530
   },
   "pinned": {
     "bottleneck": "2.19.5",
@@ -24,11 +24,11 @@
     "recipes/bottleneck-rate-limiting/test/limiter.test.ts": "sha256:83fe58c1cfd20330f8e02e582245856b16402691687c20f9935fb8ef97a1bcc1"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: never exceeds maxConcurrent\nok 1 - never exceeds maxConcurrent\n  ---\n  duration_ms: 69.395873\n  type: 'test'\n  ...\n# Subtest: minTime spaces job starts\nok 2 - minTime spaces job starts\n  ---\n  duration_ms: 124.332186\n  type: 'test'\n  ...\n# Subtest: higher priority (lower number) runs first\nok 3 - higher priority (lower number) runs first\n  ---\n  duration_ms: 41.602408\n  type: 'test'\n  ...\n# Subtest: retries 429 responses then succeeds; other errors fail fast\nok 4 - retries 429 responses then succeeds; other errors fail fast\n  ---\n  duration_ms: 24.441617\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 421.08531\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: never exceeds maxConcurrent\nok 1 - never exceeds maxConcurrent\n  ---\n  duration_ms: 69.139612\n  type: 'test'\n  ...\n# Subtest: minTime spaces job starts\nok 2 - minTime spaces job starts\n  ---\n  duration_ms: 124.312572\n  type: 'test'\n  ...\n# Subtest: higher priority (lower number) runs first\nok 3 - higher priority (lower number) runs first\n  ---\n  duration_ms: 39.455733\n  type: 'test'\n  ...\n# Subtest: retries 429 responses then succeeds; other errors fail fast\nok 4 - retries 429 responses then succeeds; other errors fail fast\n  ---\n  duration_ms: 25.297342\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 417.004532\n"
 }

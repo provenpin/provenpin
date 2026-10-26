@@ -1,15 +1,15 @@
 {
   "id": "libphonenumber-js-parse-format",
   "status": "passed",
-  "ran_at": "2026-10-20T01:14:48.697Z",
-  "last_passed_at": "2026-10-20T01:14:48.697Z",
+  "ran_at": "2026-10-26T10:30:59.239Z",
+  "last_passed_at": "2026-10-26T10:30:59.239Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2123,
-    "test": 449
+    "setup": 1513,
+    "test": 305
   },
   "pinned": {
     "libphonenumber-js": "1.13.15",
@@ -24,11 +24,11 @@
     "recipes/libphonenumber-js-parse-format/test/phone.test.ts": "sha256:89514bdab3de8e9871134d5760d804304cb94fe1b360e36f15929ca3008114a7"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: number type from max metadata\nok 3 - number type from max metadata\n  ---\n  duration_ms: 0.970443\n  type: 'test'\n  ...\n# Subtest: extensions are kept\nok 4 - extensions are kept\n  ---\n  duration_ms: 0.462163\n  type: 'test'\n  ...\n# Subtest: invalid numbers are rejected\nok 5 - invalid numbers are rejected\n  ---\n  duration_ms: 1.063065\n  type: 'test'\n  ...\n# Subtest: as-you-type formatting\nok 6 - as-you-type formatting\n  ---\n  duration_ms: 2.205427\n  type: 'test'\n  ...\n# Subtest: finds numbers in free text\nok 7 - finds numbers in free text\n  ---\n  duration_ms: 2.938677\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 299.67826\n"
+  "log_tail": "# Subtest: number type from max metadata\nok 3 - number type from max metadata\n  ---\n  duration_ms: 0.630205\n  type: 'test'\n  ...\n# Subtest: extensions are kept\nok 4 - extensions are kept\n  ---\n  duration_ms: 0.276192\n  type: 'test'\n  ...\n# Subtest: invalid numbers are rejected\nok 5 - invalid numbers are rejected\n  ---\n  duration_ms: 0.660344\n  type: 'test'\n  ...\n# Subtest: as-you-type formatting\nok 6 - as-you-type formatting\n  ---\n  duration_ms: 1.383776\n  type: 'test'\n  ...\n# Subtest: finds numbers in free text\nok 7 - finds numbers in free text\n  ---\n  duration_ms: 2.065722\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 196.3019\n"
 }

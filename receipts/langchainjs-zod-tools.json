@@ -1,15 +1,15 @@
 {
   "id": "langchainjs-zod-tools",
   "status": "passed",
-  "ran_at": "2026-10-26T06:59:00.507Z",
-  "last_passed_at": "2026-10-26T06:59:00.507Z",
+  "ran_at": "2026-10-26T10:30:59.297Z",
+  "last_passed_at": "2026-10-26T10:30:59.297Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2249,
-    "test": 440
+    "setup": 3397,
+    "test": 707
   },
   "pinned": {
     "@langchain/core": "1.2.17",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40282412234"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: tool validates and runs directly\nok 1 - tool validates and runs directly\n  ---\n  duration_ms: 4.465623\n  type: 'test'\n  ...\n# Subtest: loop executes tool calls and returns final answer\nok 2 - loop executes tool calls and returns final answer\n  ---\n  duration_ms: 0.623518\n  type: 'test'\n  ...\n# Subtest: bad args are returned to the model as an error\nok 3 - bad args are returned to the model as an error\n  ---\n  duration_ms: 0.390668\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 337.166654\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: tool validates and runs directly\nok 1 - tool validates and runs directly\n  ---\n  duration_ms: 7.509119\n  type: 'test'\n  ...\n# Subtest: loop executes tool calls and returns final answer\nok 2 - loop executes tool calls and returns final answer\n  ---\n  duration_ms: 1.040172\n  type: 'test'\n  ...\n# Subtest: bad args are returned to the model as an error\nok 3 - bad args are returned to the model as an error\n  ---\n  duration_ms: 0.649903\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 556.629248\n"
 }

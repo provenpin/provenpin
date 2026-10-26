@@ -1,15 +1,15 @@
 {
   "id": "postcss-custom-plugin-autoprefixer",
   "status": "passed",
-  "ran_at": "2026-10-26T07:01:06.414Z",
-  "last_passed_at": "2026-10-26T07:01:06.414Z",
+  "ran_at": "2026-10-26T10:36:14.747Z",
+  "last_passed_at": "2026-10-26T10:36:14.747Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1804,
-    "test": 389
+    "setup": 2030,
+    "test": 557
   },
   "pinned": {
     "postcss": "8.5.30",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40282412234"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: custom plugin resolves tokens and converts px to rem\nok 1 - custom plugin resolves tokens and converts px to rem\n  ---\n  duration_ms: 23.547452\n  type: 'test'\n  ...\n# Subtest: autoprefixer adds prefixes for pinned browsers\nok 2 - autoprefixer adds prefixes for pinned browsers\n  ---\n  duration_ms: 3.309584\n  type: 'test'\n  ...\n# Subtest: removes @debug at-rules and emits a source map\nok 3 - removes @debug at-rules and emits a source map\n  ---\n  duration_ms: 1.469379\n  type: 'test'\n  ...\n# Subtest: unknown token raises a CssSyntaxError with position\nok 4 - unknown token raises a CssSyntaxError with position\n  ---\n  duration_ms: 1.83654\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 278.354212\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: custom plugin resolves tokens and converts px to rem\nok 1 - custom plugin resolves tokens and converts px to rem\n  ---\n  duration_ms: 36.72222\n  type: 'test'\n  ...\n# Subtest: autoprefixer adds prefixes for pinned browsers\nok 2 - autoprefixer adds prefixes for pinned browsers\n  ---\n  duration_ms: 5.11655\n  type: 'test'\n  ...\n# Subtest: removes @debug at-rules and emits a source map\nok 3 - removes @debug at-rules and emits a source map\n  ---\n  duration_ms: 1.776413\n  type: 'test'\n  ...\n# Subtest: unknown token raises a CssSyntaxError with position\nok 4 - unknown token raises a CssSyntaxError with position\n  ---\n  duration_ms: 2.543082\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 407.830587\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "cockatiel-retry-circuit-policy",
   "status": "passed",
-  "ran_at": "2026-10-20T01:05:52.410Z",
-  "last_passed_at": "2026-10-20T01:05:52.410Z",
+  "ran_at": "2026-10-26T10:22:07.433Z",
+  "last_passed_at": "2026-10-26T10:22:07.433Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1640,
-    "test": 558
+    "setup": 1641,
+    "test": 547
   },
   "pinned": {
     "cockatiel": "4.0.0",
@@ -24,11 +24,11 @@
     "recipes/cockatiel-retry-circuit-policy/test/policies.test.ts": "sha256:ac30070d98a6e6e0c8a737cf571449cb76fefe6873feca2fa4870192081e6faa"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: retries transient 5xx errors then succeeds\nok 1 - retries transient 5xx errors then succeeds\n  ---\n  duration_ms: 21.861398\n  type: 'test'\n  ...\n# Subtest: 4xx errors are not retried\nok 2 - 4xx errors are not retried\n  ---\n  duration_ms: 0.988328\n  type: 'test'\n  ...\n# Subtest: breaker opens after consecutive failures and half-opens later\nok 3 - breaker opens after consecutive failures and half-opens later\n  ---\n  duration_ms: 61.658422\n  type: 'test'\n  ...\n# Subtest: aggressive timeout cancels slow work\nok 4 - aggressive timeout cancels slow work\n  ---\n  duration_ms: 20.748997\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 404.540698\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: retries transient 5xx errors then succeeds\nok 1 - retries transient 5xx errors then succeeds\n  ---\n  duration_ms: 10.715217\n  type: 'test'\n  ...\n# Subtest: 4xx errors are not retried\nok 2 - 4xx errors are not retried\n  ---\n  duration_ms: 1.509954\n  type: 'test'\n  ...\n# Subtest: breaker opens after consecutive failures and half-opens later\nok 3 - breaker opens after consecutive failures and half-opens later\n  ---\n  duration_ms: 62.814061\n  type: 'test'\n  ...\n# Subtest: aggressive timeout cancels slow work\nok 4 - aggressive timeout cancels slow work\n  ---\n  duration_ms: 20.789261\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 389.991654\n"
 }

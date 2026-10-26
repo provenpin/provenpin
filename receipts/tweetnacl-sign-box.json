@@ -1,15 +1,15 @@
 {
   "id": "tweetnacl-sign-box",
   "status": "passed",
-  "ran_at": "2026-10-20T01:26:32.868Z",
-  "last_passed_at": "2026-10-20T01:26:32.868Z",
+  "ran_at": "2026-10-26T10:42:46.902Z",
+  "last_passed_at": "2026-10-26T10:42:46.902Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1588,
-    "test": 673
+    "setup": 1464,
+    "test": 546
   },
   "pinned": {
     "tweetnacl": "1.0.3",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: rejects modified ciphertext\nok 3 - rejects modified ciphertext\n  ---\n  duration_ms: 3.749841\n  type: 'test'\n  ...\n# Subtest: detached signature verifies with the matching key\nok 4 - detached signature verifies with the matching key\n  ---\n  duration_ms: 54.430979\n  type: 'test'\n  ...\n# Subtest: tampered message fails verification\nok 5 - tampered message fails verification\n  ---\n  duration_ms: 17.546615\n  type: 'test'\n  ...\n# Subtest: signature from another key fails verification\nok 6 - signature from another key fails verification\n  ---\n  duration_ms: 20.458099\n  type: 'test'\n  ...\n# Subtest: attached signature round-trips\nok 7 - attached signature round-trips\n  ---\n  duration_ms: 14.089991\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 526.672441\n"
+  "log_tail": "# Subtest: rejects modified ciphertext\nok 3 - rejects modified ciphertext\n  ---\n  duration_ms: 3.325045\n  type: 'test'\n  ...\n# Subtest: detached signature verifies with the matching key\nok 4 - detached signature verifies with the matching key\n  ---\n  duration_ms: 55.672908\n  type: 'test'\n  ...\n# Subtest: tampered message fails verification\nok 5 - tampered message fails verification\n  ---\n  duration_ms: 20.085339\n  type: 'test'\n  ...\n# Subtest: signature from another key fails verification\nok 6 - signature from another key fails verification\n  ---\n  duration_ms: 23.073243\n  type: 'test'\n  ...\n# Subtest: attached signature round-trips\nok 7 - attached signature round-trips\n  ---\n  duration_ms: 18.449712\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 393.555303\n"
 }

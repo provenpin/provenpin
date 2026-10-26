@@ -1,15 +1,15 @@
 {
   "id": "ftfy-mojibake-fix",
   "status": "passed",
-  "ran_at": "2026-10-20T01:10:56.737Z",
-  "last_passed_at": "2026-10-20T01:10:56.737Z",
+  "ran_at": "2026-10-26T10:27:10.204Z",
+  "last_passed_at": "2026-10-26T10:27:10.204Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 285,
-    "test": 2701
+    "setup": 284,
+    "test": 1292
   },
   "pinned": {
     "ftfy": "6.3.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.40s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.26s\n"
 }

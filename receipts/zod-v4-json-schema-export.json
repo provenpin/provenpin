@@ -1,15 +1,15 @@
 {
   "id": "zod-v4-json-schema-export",
   "status": "passed",
-  "ran_at": "2026-10-20T01:28:31.315Z",
-  "last_passed_at": "2026-10-20T01:28:31.315Z",
+  "ran_at": "2026-10-26T10:44:20.400Z",
+  "last_passed_at": "2026-10-26T10:44:20.400Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2399,
-    "test": 721
+    "setup": 1561,
+    "test": 385
   },
   "pinned": {
     "zod": "4.6.7",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# unknown format \"uuid\" ignored in schema at path \"\\#/properties/id\"\n# unknown format \"uuid\" ignored in schema at path \"\\#/properties/id\"\n# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# Subtest: exports draft 2020-12 with metadata and shared $defs\nok 1 - exports draft 2020-12 with metadata and shared $defs\n  ---\n  duration_ms: 4.043126\n  type: 'test'\n  ...\n# Subtest: input vs output: defaulted fields are optional on input only\nok 2 - input vs output: defaulted fields are optional on input only\n  ---\n  duration_ms: 1.369545\n  type: 'test'\n  ...\n# Subtest: Ajv and Zod agree on the same data\nok 3 - Ajv and Zod agree on the same data\n  ---\n  duration_ms: 56.859595\n  type: 'test'\n  ...\n# Subtest: parsing applies defaults that the output schema requires\nok 4 - parsing applies defaults that the output schema requires\n  ---\n  duration_ms: 39.14958\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 546.692963\n"
+  "log_tail": "# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# unknown format \"uuid\" ignored in schema at path \"\\#/properties/id\"\n# unknown format \"uuid\" ignored in schema at path \"\\#/properties/id\"\n# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# unknown format \"email\" ignored in schema at path \"\\#/properties/email\"\n# Subtest: exports draft 2020-12 with metadata and shared $defs\nok 1 - exports draft 2020-12 with metadata and shared $defs\n  ---\n  duration_ms: 2.193855\n  type: 'test'\n  ...\n# Subtest: input vs output: defaulted fields are optional on input only\nok 2 - input vs output: defaulted fields are optional on input only\n  ---\n  duration_ms: 0.789062\n  type: 'test'\n  ...\n# Subtest: Ajv and Zod agree on the same data\nok 3 - Ajv and Zod agree on the same data\n  ---\n  duration_ms: 34.112175\n  type: 'test'\n  ...\n# Subtest: parsing applies defaults that the output schema requires\nok 4 - parsing applies defaults that the output schema requires\n  ---\n  duration_ms: 21.264024\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 287.86951\n"
 }

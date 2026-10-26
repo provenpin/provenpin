@@ -1,15 +1,15 @@
 {
   "id": "defu-klona-merge",
   "status": "passed",
-  "ran_at": "2026-10-20T01:06:52.138Z",
-  "last_passed_at": "2026-10-20T01:06:52.138Z",
+  "ran_at": "2026-10-26T10:23:08.176Z",
+  "last_passed_at": "2026-10-26T10:23:08.176Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1921,
-    "test": 209
+    "setup": 1957,
+    "test": 392
   },
   "pinned": {
     "defu": "6.1.7",
@@ -25,11 +25,11 @@
     "recipes/defu-klona-merge/test/config.test.ts": "sha256:2b3757c0709c56ec4e71b4129bbbad882c231f41afc875b111cdad7a749be8cd"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: applies nested defaults\nok 1 - applies nested defaults\n  ---\n  duration_ms: 0.856963\n  type: 'test'\n  ...\n# Subtest: concatenates arrays by default\nok 2 - concatenates arrays by default\n  ---\n  duration_ms: 0.106319\n  type: 'test'\n  ...\n# Subtest: replaces arrays with a custom defu merger\nok 3 - replaces arrays with a custom defu merger\n  ---\n  duration_ms: 0.119018\n  type: 'test'\n  ...\n# Subtest: klona clone is independent from the merged source\nok 4 - klona clone is independent from the merged source\n  ---\n  duration_ms: 0.236754\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 112.018751\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: applies nested defaults\nok 1 - applies nested defaults\n  ---\n  duration_ms: 1.484692\n  type: 'test'\n  ...\n# Subtest: concatenates arrays by default\nok 2 - concatenates arrays by default\n  ---\n  duration_ms: 0.173474\n  type: 'test'\n  ...\n# Subtest: replaces arrays with a custom defu merger\nok 3 - replaces arrays with a custom defu merger\n  ---\n  duration_ms: 0.252221\n  type: 'test'\n  ...\n# Subtest: klona clone is independent from the merged source\nok 4 - klona clone is independent from the merged source\n  ---\n  duration_ms: 0.40686\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 227.024539\n"
 }

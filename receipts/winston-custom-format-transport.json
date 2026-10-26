@@ -1,15 +1,15 @@
 {
   "id": "winston-custom-format-transport",
   "status": "passed",
-  "ran_at": "2026-10-20T01:27:58.034Z",
-  "last_passed_at": "2026-10-20T01:27:58.034Z",
+  "ran_at": "2026-10-26T10:43:51.056Z",
+  "last_passed_at": "2026-10-26T10:43:51.056Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2898,
-    "test": 464
+    "setup": 1504,
+    "test": 259
   },
   "pinned": {
     "winston": "3.19.0",
@@ -25,11 +25,11 @@
     "recipes/winston-custom-format-transport/test/logger.test.ts": "sha256:2edafe34a5e3f237a853465848fedf1260b36af7bb0194a7cc4385ef7b1628be"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: redacts secrets\nok 2 - redacts secrets\n  ---\n  duration_ms: 0.544539\n  type: 'test'\n  ...\n# Subtest: filter format drops debug from noisy module only\nok 3 - filter format drops debug from noisy module only\n  ---\n  duration_ms: 0.72173\n  type: 'test'\n  ...\n# Subtest: errors keep stack and child loggers add meta\nok 4 - errors keep stack and child loggers add meta\n  ---\n  duration_ms: 1.83924\n  type: 'test'\n  ...\n# Subtest: level threshold\nok 5 - level threshold\n  ---\n  duration_ms: 0.544639\n  type: 'test'\n  ...\n# Subtest: printf line format\nok 6 - printf line format\n  ---\n  duration_ms: 0.156042\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 312.229086\n"
+  "log_tail": "# Subtest: redacts secrets\nok 2 - redacts secrets\n  ---\n  duration_ms: 0.318919\n  type: 'test'\n  ...\n# Subtest: filter format drops debug from noisy module only\nok 3 - filter format drops debug from noisy module only\n  ---\n  duration_ms: 0.40602\n  type: 'test'\n  ...\n# Subtest: errors keep stack and child loggers add meta\nok 4 - errors keep stack and child loggers add meta\n  ---\n  duration_ms: 1.024059\n  type: 'test'\n  ...\n# Subtest: level threshold\nok 5 - level threshold\n  ---\n  duration_ms: 0.300241\n  type: 'test'\n  ...\n# Subtest: printf line format\nok 6 - printf line format\n  ---\n  duration_ms: 0.071127\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 165.52507\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "casbin-rbac-enforcer",
   "status": "passed",
-  "ran_at": "2026-10-20T01:05:03.227Z",
-  "last_passed_at": "2026-10-20T01:05:03.227Z",
+  "ran_at": "2026-10-26T10:21:09.974Z",
+  "last_passed_at": "2026-10-26T10:21:09.974Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2650,
-    "test": 396
+    "setup": 1817,
+    "test": 476
   },
   "pinned": {
     "casbin": "5.51.1",
@@ -24,11 +24,11 @@
     "recipes/casbin-rbac-enforcer/test/rbac.test.ts": "sha256:d522d42aad0d5735c71366f180322f6bf69ae2c83cfe840744d1e7337995f4a1"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: resolves role inheritance for direct and nested roles\nok 3 - resolves role inheritance for direct and nested roles\n  ---\n  duration_ms: 1.693828\n  type: 'test'\n  ...\n# Subtest: applies a deny rule that overrides an inherited allow\nok 4 - applies a deny rule that overrides an inherited allow\n  ---\n  duration_ms: 1.002793\n  type: 'test'\n  ...\n# Subtest: removes a policy at runtime and denies later requests\nok 5 - removes a policy at runtime and denies later requests\n  ---\n  duration_ms: 1.790318\n  type: 'test'\n  ...\n# Subtest: removes a grouping policy at runtime and revokes inherited access\nok 6 - removes a grouping policy at runtime and revokes inherited access\n  ---\n  duration_ms: 1.501107\n  type: 'test'\n  ...\n# Subtest: adds a policy at runtime and grants new access\nok 7 - adds a policy at runtime and grants new access\n  ---\n  duration_ms: 1.057959\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 275.605759\n"
+  "log_tail": "# Subtest: resolves role inheritance for direct and nested roles\nok 3 - resolves role inheritance for direct and nested roles\n  ---\n  duration_ms: 2.213511\n  type: 'test'\n  ...\n# Subtest: applies a deny rule that overrides an inherited allow\nok 4 - applies a deny rule that overrides an inherited allow\n  ---\n  duration_ms: 1.358938\n  type: 'test'\n  ...\n# Subtest: removes a policy at runtime and denies later requests\nok 5 - removes a policy at runtime and denies later requests\n  ---\n  duration_ms: 2.41028\n  type: 'test'\n  ...\n# Subtest: removes a grouping policy at runtime and revokes inherited access\nok 6 - removes a grouping policy at runtime and revokes inherited access\n  ---\n  duration_ms: 1.571416\n  type: 'test'\n  ...\n# Subtest: adds a policy at runtime and grants new access\nok 7 - adds a policy at runtime and grants new access\n  ---\n  duration_ms: 1.221902\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 325.510649\n"
 }

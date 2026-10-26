@@ -1,15 +1,15 @@
 {
   "id": "pg-mem-kysely-postgres-tests",
   "status": "passed",
-  "ran_at": "2026-10-26T07:00:52.261Z",
-  "last_passed_at": "2026-10-26T07:00:52.261Z",
+  "ran_at": "2026-10-26T10:35:44.533Z",
+  "last_passed_at": "2026-10-26T10:35:44.533Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2651,
-    "test": 979
+    "setup": 2975,
+    "test": 925
   },
   "pinned": {
     "kysely": "0.29.6",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40282412234"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: constraints: unique and check\nok 2 - constraints: unique and check\n  ---\n  duration_ms: 57.078528\n  type: 'test'\n  ...\n# Subtest: multi-row insert is atomic: a duplicate rejects the whole batch\nok 3 - multi-row insert is atomic: a duplicate rejects the whole batch\n  ---\n  duration_ms: 46.215045\n  type: 'test'\n  ...\n# Subtest: pg-mem gotcha: Kysely transaction errors propagate but earlier statements are not rolled back\nok 4 - pg-mem gotcha: Kysely transaction errors propagate but earlier statements are not rolled back\n  ---\n  duration_ms: 14.181816\n  type: 'test'\n  ...\n# Subtest: foreign keys enforced and left join aggregates\nok 5 - foreign keys enforced and left join aggregates\n  ---\n  duration_ms: 11.074247\n  type: 'test'\n  ...\n# Subtest: backup and restore snapshots for fast test isolation\nok 6 - backup and restore snapshots for fast test isolation\n  ---\n  duration_ms: 6.565972\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 821.655192\n"
+  "log_tail": "# Subtest: constraints: unique and check\nok 2 - constraints: unique and check\n  ---\n  duration_ms: 52.76299\n  type: 'test'\n  ...\n# Subtest: multi-row insert is atomic: a duplicate rejects the whole batch\nok 3 - multi-row insert is atomic: a duplicate rejects the whole batch\n  ---\n  duration_ms: 46.908453\n  type: 'test'\n  ...\n# Subtest: pg-mem gotcha: Kysely transaction errors propagate but earlier statements are not rolled back\nok 4 - pg-mem gotcha: Kysely transaction errors propagate but earlier statements are not rolled back\n  ---\n  duration_ms: 15.41895\n  type: 'test'\n  ...\n# Subtest: foreign keys enforced and left join aggregates\nok 5 - foreign keys enforced and left join aggregates\n  ---\n  duration_ms: 10.716056\n  type: 'test'\n  ...\n# Subtest: backup and restore snapshots for fast test isolation\nok 6 - backup and restore snapshots for fast test isolation\n  ---\n  duration_ms: 6.021058\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 779.111646\n"
 }

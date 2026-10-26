@@ -1,15 +1,15 @@
 {
   "id": "hono-jwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-26T06:57:45.361Z",
-  "last_passed_at": "2026-10-26T06:57:45.361Z",
+  "ran_at": "2026-10-26T10:27:47.013Z",
+  "last_passed_at": "2026-10-26T10:27:47.013Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2268,
-    "test": 511
+    "setup": 2065,
+    "test": 413
   },
   "pinned": {
     "hono": "4.13.13",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40282412234"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 35.768961\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 1.250694\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 2.110439\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 2.087166\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 358.649698\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 33.946005\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 0.83452\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 1.193599\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 1.226608\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 289.733058\n"
 }

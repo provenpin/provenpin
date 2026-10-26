@@ -1,15 +1,15 @@
 {
   "id": "fpdf2-multipage-table",
   "status": "passed",
-  "ran_at": "2026-10-20T01:10:45.076Z",
-  "last_passed_at": "2026-10-20T01:10:45.076Z",
+  "ran_at": "2026-10-26T10:27:04.273Z",
+  "last_passed_at": "2026-10-26T10:27:04.273Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 396,
-    "test": 3604
+    "setup": 400,
+    "test": 3333
   },
   "pinned": {
     "fpdf2": "2.8.9",
@@ -24,11 +24,11 @@
     "recipes/fpdf2-multipage-table/tests/test_report.py": "sha256:f50296835e17b2f3f29f5e1e4fd9833f2fc9831114efda79db84f282db312e57"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 2.17s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 2.04s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "tenacity-retry-stop-wait",
   "status": "passed",
-  "ran_at": "2026-10-20T01:25:51.085Z",
-  "last_passed_at": "2026-10-20T01:25:51.085Z",
+  "ran_at": "2026-10-26T10:42:12.352Z",
+  "last_passed_at": "2026-10-26T10:42:12.352Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 241,
-    "test": 1104
+    "setup": 263,
+    "test": 1300
   },
   "pinned": {
     "tenacity": "9.2.1",
@@ -24,11 +24,11 @@
     "recipes/tenacity-retry-stop-wait/tests/test_retrier.py": "sha256:42be67765226b8efcce5a3e1d20e25230c027a522a034e66d57662cc50892321"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
 }

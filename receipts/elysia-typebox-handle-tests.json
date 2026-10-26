@@ -1,15 +1,15 @@
 {
   "id": "elysia-typebox-handle-tests",
   "status": "passed",
-  "ran_at": "2026-10-20T01:08:09.461Z",
-  "last_passed_at": "2026-10-20T01:08:09.461Z",
+  "ran_at": "2026-10-26T10:24:31.437Z",
+  "last_passed_at": "2026-10-26T10:24:31.437Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3779,
-    "test": 598
+    "setup": 2596,
+    "test": 642
   },
   "pinned": {
     "elysia": "1.4.30",
@@ -28,11 +28,11 @@
     "recipes/elysia-typebox-handle-tests/test/app.test.ts": "sha256:b1901c107cc6adfbbe9ae471549ab90e78905335986fe1cdc1c5a96d3d3c65c0"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: public route works without a key\nok 1 - public route works without a key\n  ---\n  duration_ms: 45.01134\n  type: 'test'\n  ...\n# Subtest: guarded routes reject a missing API key\nok 2 - guarded routes reject a missing API key\n  ---\n  duration_ms: 7.781185\n  type: 'test'\n  ...\n# Subtest: creates a note and coerces path and query params\nok 3 - creates a note and coerces path and query params\n  ---\n  duration_ms: 12.870941\n  type: 'test'\n  ...\n# Subtest: TypeBox validation failures map to 422 with paths\nok 4 - TypeBox validation failures map to 422 with paths\n  ---\n  duration_ms: 13.351716\n  type: 'test'\n  ...\n# Subtest: unknown note ids return 404\nok 5 - unknown note ids return 404\n  ---\n  duration_ms: 1.976621\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 450.675263\n"
+  "log_tail": "# Subtest: public route works without a key\nok 1 - public route works without a key\n  ---\n  duration_ms: 48.746993\n  type: 'test'\n  ...\n# Subtest: guarded routes reject a missing API key\nok 2 - guarded routes reject a missing API key\n  ---\n  duration_ms: 7.362009\n  type: 'test'\n  ...\n# Subtest: creates a note and coerces path and query params\nok 3 - creates a note and coerces path and query params\n  ---\n  duration_ms: 14.805231\n  type: 'test'\n  ...\n# Subtest: TypeBox validation failures map to 422 with paths\nok 4 - TypeBox validation failures map to 422 with paths\n  ---\n  duration_ms: 9.338298\n  type: 'test'\n  ...\n# Subtest: unknown note ids return 404\nok 5 - unknown note ids return 404\n  ---\n  duration_ms: 1.961001\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 487.632342\n"
 }

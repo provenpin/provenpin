@@ -1,15 +1,15 @@
 {
   "id": "yjs-crdt-doc-sync",
   "status": "passed",
-  "ran_at": "2026-10-20T01:28:20.092Z",
-  "last_passed_at": "2026-10-20T01:28:20.092Z",
+  "ran_at": "2026-10-26T10:44:15.456Z",
+  "last_passed_at": "2026-10-26T10:44:15.456Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2117,
-    "test": 438
+    "setup": 1589,
+    "test": 394
   },
   "pinned": {
     "yjs": "13.6.33",
@@ -24,11 +24,11 @@
     "recipes/yjs-crdt-doc-sync/test/sync.test.ts": "sha256:b212edf5e109778a1a9f951b27cbe50a79525288a5b88021dfa18865b2678882"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: concurrent text edits merge identically on both peers\nok 1 - concurrent text edits merge identically on both peers\n  ---\n  duration_ms: 6.839071\n  type: 'test'\n  ...\n# Subtest: concurrent map writes converge to the same winner\nok 2 - concurrent map writes converge to the same winner\n  ---\n  duration_ms: 2.181034\n  type: 'test'\n  ...\n# Subtest: state-vector sync sends only the diff\nok 3 - state-vector sync sends only the diff\n  ---\n  duration_ms: 2.473949\n  type: 'test'\n  ...\n# Subtest: live relay plus undo manager\nok 4 - live relay plus undo manager\n  ---\n  duration_ms: 2.662731\n  type: 'test'\n  ...\n# Subtest: updates can be merged and replayed in any order\nok 5 - updates can be merged and replayed in any order\n  ---\n  duration_ms: 1.785817\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 287.860523\n"
+  "log_tail": "# Subtest: concurrent text edits merge identically on both peers\nok 1 - concurrent text edits merge identically on both peers\n  ---\n  duration_ms: 4.906595\n  type: 'test'\n  ...\n# Subtest: concurrent map writes converge to the same winner\nok 2 - concurrent map writes converge to the same winner\n  ---\n  duration_ms: 1.562678\n  type: 'test'\n  ...\n# Subtest: state-vector sync sends only the diff\nok 3 - state-vector sync sends only the diff\n  ---\n  duration_ms: 1.846727\n  type: 'test'\n  ...\n# Subtest: live relay plus undo manager\nok 4 - live relay plus undo manager\n  ---\n  duration_ms: 1.8215\n  type: 'test'\n  ...\n# Subtest: updates can be merged and replayed in any order\nok 5 - updates can be merged and replayed in any order\n  ---\n  duration_ms: 1.301622\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 273.891421\n"
 }

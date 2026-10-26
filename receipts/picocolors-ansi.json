@@ -1,15 +1,15 @@
 {
   "id": "picocolors-ansi",
   "status": "passed",
-  "ran_at": "2026-10-20T01:19:50.088Z",
-  "last_passed_at": "2026-10-20T01:19:50.088Z",
+  "ran_at": "2026-10-26T10:35:54.756Z",
+  "last_passed_at": "2026-10-26T10:35:54.756Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1485,
-    "test": 334
+    "setup": 1847,
+    "test": 353
   },
   "pinned": {
     "picocolors": "1.1.1",
@@ -24,11 +24,11 @@
     "recipes/picocolors-ansi/test/colors.test.ts": "sha256:cd12417c7a01552698c12b1f33a00f9847e667e5006031246fb27fc91b227c50"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: bold and dim helpers emit expected ANSI codes\nok 2 - bold and dim helpers emit expected ANSI codes\n  ---\n  duration_ms: 0.134692\n  type: 'test'\n  ...\n# Subtest: bgYellow helper emits expected background ANSI code\nok 3 - bgYellow helper emits expected background ANSI code\n  ---\n  duration_ms: 0.150512\n  type: 'test'\n  ...\n# Subtest: composed status line carries nested codes\nok 4 - composed status line carries nested codes\n  ---\n  duration_ms: 0.251401\n  type: 'test'\n  ...\n# Subtest: coloring disabled yields plain output\nok 5 - coloring disabled yields plain output\n  ---\n  duration_ms: 0.178224\n  type: 'test'\n  ...\n# Subtest: coloring enabled reports support\nok 6 - coloring enabled reports support\n  ---\n  duration_ms: 0.127639\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 188.078949\n"
+  "log_tail": "# Subtest: bold and dim helpers emit expected ANSI codes\nok 2 - bold and dim helpers emit expected ANSI codes\n  ---\n  duration_ms: 0.147305\n  type: 'test'\n  ...\n# Subtest: bgYellow helper emits expected background ANSI code\nok 3 - bgYellow helper emits expected background ANSI code\n  ---\n  duration_ms: 0.151343\n  type: 'test'\n  ...\n# Subtest: composed status line carries nested codes\nok 4 - composed status line carries nested codes\n  ---\n  duration_ms: 0.239147\n  type: 'test'\n  ...\n# Subtest: coloring disabled yields plain output\nok 5 - coloring disabled yields plain output\n  ---\n  duration_ms: 0.177382\n  type: 'test'\n  ...\n# Subtest: coloring enabled reports support\nok 6 - coloring enabled reports support\n  ---\n  duration_ms: 0.166491\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 196.183771\n"
 }

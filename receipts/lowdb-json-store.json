@@ -1,15 +1,15 @@
 {
   "id": "lowdb-json-store",
   "status": "passed",
-  "ran_at": "2026-10-20T01:15:05.222Z",
-  "last_passed_at": "2026-10-20T01:15:05.222Z",
+  "ran_at": "2026-10-26T10:31:21.814Z",
+  "last_passed_at": "2026-10-26T10:31:21.814Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1518,
-    "test": 247
+    "setup": 1657,
+    "test": 349
   },
   "pinned": {
     "lowdb": "7.0.1",
@@ -24,11 +24,11 @@
     "recipes/lowdb-json-store/test/store.test.ts": "sha256:40f9f7d26f6b41faa5c63494bc10bdf186d854deca705e5e462e451c2244f44d"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: seeds default data into a missing JSON file\nok 1 - seeds default data into a missing JSON file\n  ---\n  duration_ms: 9.243722\n  type: 'test'\n  ...\n# Subtest: persists nested collections across reopen\nok 2 - persists nested collections across reopen\n  ---\n  duration_ms: 4.735904\n  type: 'test'\n  ...\n# Subtest: supports direct data mutation followed by write()\nok 3 - supports direct data mutation followed by write()\n  ---\n  duration_ms: 3.085796\n  type: 'test'\n  ...\n# Subtest: Memory adapter keeps data in memory only\nok 4 - Memory adapter keeps data in memory only\n  ---\n  duration_ms: 0.357139\n  type: 'test'\n  ...\n# Subtest: rejects writes that violate referential integrity\nok 5 - rejects writes that violate referential integrity\n  ---\n  duration_ms: 0.399353\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 144.83524\n"
+  "log_tail": "# Subtest: seeds default data into a missing JSON file\nok 1 - seeds default data into a missing JSON file\n  ---\n  duration_ms: 12.952298\n  type: 'test'\n  ...\n# Subtest: persists nested collections across reopen\nok 2 - persists nested collections across reopen\n  ---\n  duration_ms: 6.216633\n  type: 'test'\n  ...\n# Subtest: supports direct data mutation followed by write()\nok 3 - supports direct data mutation followed by write()\n  ---\n  duration_ms: 3.367357\n  type: 'test'\n  ...\n# Subtest: Memory adapter keeps data in memory only\nok 4 - Memory adapter keeps data in memory only\n  ---\n  duration_ms: 0.55442\n  type: 'test'\n  ...\n# Subtest: rejects writes that violate referential integrity\nok 5 - rejects writes that violate referential integrity\n  ---\n  duration_ms: 0.794\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 201.696402\n"
 }

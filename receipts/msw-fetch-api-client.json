@@ -1,15 +1,15 @@
 {
   "id": "msw-fetch-api-client",
   "status": "passed",
-  "ran_at": "2026-10-26T06:59:38.241Z",
-  "last_passed_at": "2026-10-26T06:59:38.241Z",
+  "ran_at": "2026-10-26T10:32:45.663Z",
+  "last_passed_at": "2026-10-26T10:32:45.663Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3555,
-    "test": 698
+    "setup": 2474,
+    "test": 447
   },
   "pinned": {
     "zod": "4.6.7",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40282412234"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: gets and parses a user\nok 1 - gets and parses a user\n  ---\n  duration_ms: 62.468307\n  type: 'test'\n  ...\n# Subtest: posts a user\nok 2 - posts a user\n  ---\n  duration_ms: 17.422783\n  type: 'test'\n  ...\n# Subtest: throws ApiError on 401\nok 3 - throws ApiError on 401\n  ---\n  duration_ms: 7.894711\n  type: 'test'\n  ...\n# Subtest: rejects malformed payloads\nok 4 - rejects malformed payloads\n  ---\n  duration_ms: 24.978789\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 552.297424\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: gets and parses a user\nok 1 - gets and parses a user\n  ---\n  duration_ms: 36.589178\n  type: 'test'\n  ...\n# Subtest: posts a user\nok 2 - posts a user\n  ---\n  duration_ms: 9.669473\n  type: 'test'\n  ...\n# Subtest: throws ApiError on 401\nok 3 - throws ApiError on 401\n  ---\n  duration_ms: 4.742342\n  type: 'test'\n  ...\n# Subtest: rejects malformed payloads\nok 4 - rejects malformed payloads\n  ---\n  duration_ms: 12.28318\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 353.268297\n"
 }

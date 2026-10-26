@@ -1,15 +1,15 @@
 {
   "id": "jsonpath-plus-query",
   "status": "passed",
-  "ran_at": "2026-10-20T01:13:53.879Z",
-  "last_passed_at": "2026-10-20T01:13:53.879Z",
+  "ran_at": "2026-10-26T10:30:10.586Z",
+  "last_passed_at": "2026-10-26T10:30:10.586Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1510,
-    "test": 326
+    "setup": 1758,
+    "test": 395
   },
   "pinned": {
     "jsonpath-plus": "11.2.1",
@@ -24,11 +24,11 @@
     "recipes/jsonpath-plus-query/test/query.test.ts": "sha256:b8c558641bb007d5c0790f015811379290a79434207e0c4ee4d446d89d42e500"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: wildcard maps over the book array\nok 3 - wildcard maps over the book array\n  ---\n  duration_ms: 0.192454\n  type: 'test'\n  ...\n# Subtest: resultType value returns matched nodes\nok 4 - resultType value returns matched nodes\n  ---\n  duration_ms: 0.519468\n  type: 'test'\n  ...\n# Subtest: resultType path returns matched locations\nok 5 - resultType path returns matched locations\n  ---\n  duration_ms: 0.475049\n  type: 'test'\n  ...\n# Subtest: returned paths round-trip back to the same values\nok 6 - returned paths round-trip back to the same values\n  ---\n  duration_ms: 0.452346\n  type: 'test'\n  ...\n# Subtest: wildcard over an object collects its values\nok 7 - wildcard over an object collects its values\n  ---\n  duration_ms: 0.173059\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 190.752856\n"
+  "log_tail": "# Subtest: wildcard maps over the book array\nok 3 - wildcard maps over the book array\n  ---\n  duration_ms: 0.208979\n  type: 'test'\n  ...\n# Subtest: resultType value returns matched nodes\nok 4 - resultType value returns matched nodes\n  ---\n  duration_ms: 0.544001\n  type: 'test'\n  ...\n# Subtest: resultType path returns matched locations\nok 5 - resultType path returns matched locations\n  ---\n  duration_ms: 0.533923\n  type: 'test'\n  ...\n# Subtest: returned paths round-trip back to the same values\nok 6 - returned paths round-trip back to the same values\n  ---\n  duration_ms: 0.529615\n  type: 'test'\n  ...\n# Subtest: wildcard over an object collects its values\nok 7 - wildcard over an object collects its values\n  ---\n  duration_ms: 0.215982\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 238.52326\n"
 }

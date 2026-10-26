@@ -1,15 +1,15 @@
 {
   "id": "dequal-object-hash-compare",
   "status": "passed",
-  "ran_at": "2026-10-20T01:06:57.239Z",
-  "last_passed_at": "2026-10-20T01:06:57.239Z",
+  "ran_at": "2026-10-26T10:23:17.565Z",
+  "last_passed_at": "2026-10-26T10:23:17.565Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2664,
-    "test": 341
+    "setup": 1663,
+    "test": 409
   },
   "pinned": {
     "dequal": "2.0.3",
@@ -26,11 +26,11 @@
     "recipes/dequal-object-hash-compare/test/compare.test.ts": "sha256:8e8788eff6c9e1610409a7c5ae4f86533e0b3d54ae616c7ecf24b796e54f2c35"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: dequal reports inequality for different nested values\nok 2 - dequal reports inequality for different nested values\n  ---\n  duration_ms: 0.344867\n  type: 'test'\n  ...\n# Subtest: stableHash matches equivalent objects regardless of key order\nok 3 - stableHash matches equivalent objects regardless of key order\n  ---\n  duration_ms: 1.634396\n  type: 'test'\n  ...\n# Subtest: stableHash differs when a nested value changes\nok 4 - stableHash differs when a nested value changes\n  ---\n  duration_ms: 0.481619\n  type: 'test'\n  ...\n# Subtest: unorderedArrays makes array hashes order independent\nok 5 - unorderedArrays makes array hashes order independent\n  ---\n  duration_ms: 0.681847\n  type: 'test'\n  ...\n# Subtest: excludeKeys ignores volatile fields\nok 6 - excludeKeys ignores volatile fields\n  ---\n  duration_ms: 0.376933\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 212.246863\n"
+  "log_tail": "# Subtest: dequal reports inequality for different nested values\nok 2 - dequal reports inequality for different nested values\n  ---\n  duration_ms: 0.389481\n  type: 'test'\n  ...\n# Subtest: stableHash matches equivalent objects regardless of key order\nok 3 - stableHash matches equivalent objects regardless of key order\n  ---\n  duration_ms: 2.127707\n  type: 'test'\n  ...\n# Subtest: stableHash differs when a nested value changes\nok 4 - stableHash differs when a nested value changes\n  ---\n  duration_ms: 0.934234\n  type: 'test'\n  ...\n# Subtest: unorderedArrays makes array hashes order independent\nok 5 - unorderedArrays makes array hashes order independent\n  ---\n  duration_ms: 1.302045\n  type: 'test'\n  ...\n# Subtest: excludeKeys ignores volatile fields\nok 6 - excludeKeys ignores volatile fields\n  ---\n  duration_ms: 0.520137\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 248.051815\n"
 }

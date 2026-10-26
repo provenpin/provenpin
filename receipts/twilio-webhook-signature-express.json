@@ -1,15 +1,15 @@
 {
   "id": "twilio-webhook-signature-express",
   "status": "passed",
-  "ran_at": "2026-10-23T05:09:07.003Z",
-  "last_passed_at": "2026-10-23T05:09:07.003Z",
+  "ran_at": "2026-10-26T10:42:52.308Z",
+  "last_passed_at": "2026-10-26T10:42:52.308Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4213,
-    "test": 512
+    "setup": 4010,
+    "test": 547
   },
   "pinned": {
     "twilio": "6.2.0",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39904098619"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: signature helper matches validateRequest\nok 1 - signature helper matches validateRequest\n  ---\n  duration_ms: 0.937696\n  type: 'test'\n  ...\n# Subtest: valid webhook gets TwiML reply\nok 2 - valid webhook gets TwiML reply\n  ---\n  duration_ms: 61.730462\n  type: 'test'\n  ...\n# Subtest: query string is part of the signed URL\nok 3 - query string is part of the signed URL\n  ---\n  duration_ms: 4.433936\n  type: 'test'\n  ...\n# Subtest: tampered params are rejected\nok 4 - tampered params are rejected\n  ---\n  duration_ms: 3.577903\n  type: 'test'\n  ...\n# Subtest: wrong token or missing header is rejected\nok 5 - wrong token or missing header is rejected\n  ---\n  duration_ms: 4.80315\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 402.643442\n"
+  "log_tail": "# Subtest: signature helper matches validateRequest\nok 1 - signature helper matches validateRequest\n  ---\n  duration_ms: 1.252843\n  type: 'test'\n  ...\n# Subtest: valid webhook gets TwiML reply\nok 2 - valid webhook gets TwiML reply\n  ---\n  duration_ms: 33.907086\n  type: 'test'\n  ...\n# Subtest: query string is part of the signed URL\nok 3 - query string is part of the signed URL\n  ---\n  duration_ms: 5.074856\n  type: 'test'\n  ...\n# Subtest: tampered params are rejected\nok 4 - tampered params are rejected\n  ---\n  duration_ms: 3.604637\n  type: 'test'\n  ...\n# Subtest: wrong token or missing header is rejected\nok 5 - wrong token or missing header is rejected\n  ---\n  duration_ms: 5.840097\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 426.17036\n"
 }

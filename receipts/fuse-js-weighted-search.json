@@ -1,15 +1,15 @@
 {
   "id": "fuse-js-weighted-search",
   "status": "passed",
-  "ran_at": "2026-10-20T01:10:50.919Z",
-  "last_passed_at": "2026-10-20T01:10:50.919Z",
+  "ran_at": "2026-10-26T10:27:10.857Z",
+  "last_passed_at": "2026-10-26T10:27:10.857Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2082,
-    "test": 226
+    "setup": 1443,
+    "test": 361
   },
   "pinned": {
     "fuse.js": "7.5.0",
@@ -24,11 +24,11 @@
     "recipes/fuse-js-weighted-search/test/search.test.ts": "sha256:f15d2239815b17f2785eecd604f10b2ec11055779b5b37a4e3752a523f277dff"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: tolerates typos\nok 1 - tolerates typos\n  ---\n  duration_ms: 2.132332\n  type: 'test'\n  ...\n# Subtest: title weight beats brand and tag weight\nok 2 - title weight beats brand and tag weight\n  ---\n  duration_ms: 0.399792\n  type: 'test'\n  ...\n# Subtest: matches array tags\nok 3 - matches array tags\n  ---\n  duration_ms: 0.67759\n  type: 'test'\n  ...\n# Subtest: serialized index round-trips with same results\nok 4 - serialized index round-trips with same results\n  ---\n  duration_ms: 0.454701\n  type: 'test'\n  ...\n# Subtest: unrelated query returns nothing\nok 5 - unrelated query returns nothing\n  ---\n  duration_ms: 0.336588\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 127.452177\n"
+  "log_tail": "# Subtest: tolerates typos\nok 1 - tolerates typos\n  ---\n  duration_ms: 3.619464\n  type: 'test'\n  ...\n# Subtest: title weight beats brand and tag weight\nok 2 - title weight beats brand and tag weight\n  ---\n  duration_ms: 0.616759\n  type: 'test'\n  ...\n# Subtest: matches array tags\nok 3 - matches array tags\n  ---\n  duration_ms: 1.004268\n  type: 'test'\n  ...\n# Subtest: serialized index round-trips with same results\nok 4 - serialized index round-trips with same results\n  ---\n  duration_ms: 0.752133\n  type: 'test'\n  ...\n# Subtest: unrelated query returns nothing\nok 5 - unrelated query returns nothing\n  ---\n  duration_ms: 0.486625\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 210.450785\n"
 }

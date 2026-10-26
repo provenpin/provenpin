@@ -1,15 +1,15 @@
 {
   "id": "lunr-search-index",
   "status": "passed",
-  "ran_at": "2026-10-20T01:15:12.972Z",
-  "last_passed_at": "2026-10-20T01:15:12.972Z",
+  "ran_at": "2026-10-26T10:31:25.378Z",
+  "last_passed_at": "2026-10-26T10:31:25.378Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1847,
-    "test": 389
+    "setup": 1789,
+    "test": 398
   },
   "pinned": {
     "lunr": "2.3.9",
@@ -25,11 +25,11 @@
     "recipes/lunr-search-index/test/search.test.ts": "sha256:7e3e6182759b6b480feb43d886c079ed4c78de2dee7b5ed146cee6b14069a8c0"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: finds documents by term\nok 1 - finds documents by term\n  ---\n  duration_ms: 5.309623\n  type: 'test'\n  ...\n# Subtest: returns an empty result set for unknown terms\nok 2 - returns an empty result set for unknown terms\n  ---\n  duration_ms: 1.242936\n  type: 'test'\n  ...\n# Subtest: supports field-scoped queries\nok 3 - supports field-scoped queries\n  ---\n  duration_ms: 0.938997\n  type: 'test'\n  ...\n# Subtest: boosts title matches over body matches\nok 4 - boosts title matches over body matches\n  ---\n  duration_ms: 0.911706\n  type: 'test'\n  ...\n# Subtest: round-trips an index through toJSON and lunr.Index.load\nok 5 - round-trips an index through toJSON and lunr.Index.load\n  ---\n  duration_ms: 1.953915\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 236.88897\n"
+  "log_tail": "# Subtest: finds documents by term\nok 1 - finds documents by term\n  ---\n  duration_ms: 5.307891\n  type: 'test'\n  ...\n# Subtest: returns an empty result set for unknown terms\nok 2 - returns an empty result set for unknown terms\n  ---\n  duration_ms: 1.27308\n  type: 'test'\n  ...\n# Subtest: supports field-scoped queries\nok 3 - supports field-scoped queries\n  ---\n  duration_ms: 0.93766\n  type: 'test'\n  ...\n# Subtest: boosts title matches over body matches\nok 4 - boosts title matches over body matches\n  ---\n  duration_ms: 0.928632\n  type: 'test'\n  ...\n# Subtest: round-trips an index through toJSON and lunr.Index.load\nok 5 - round-trips an index through toJSON and lunr.Index.load\n  ---\n  duration_ms: 1.960539\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 241.543782\n"
 }

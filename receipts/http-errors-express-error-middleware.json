@@ -1,15 +1,15 @@
 {
   "id": "http-errors-express-error-middleware",
   "status": "passed",
-  "ran_at": "2026-10-20T01:12:04.285Z",
-  "last_passed_at": "2026-10-20T01:12:04.285Z",
+  "ran_at": "2026-10-26T10:28:13.599Z",
+  "last_passed_at": "2026-10-26T10:28:13.599Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4029,
-    "test": 803
+    "setup": 2860,
+    "test": 669
   },
   "pinned": {
     "express": "5.3.0",
@@ -30,11 +30,11 @@
     "recipes/http-errors-express-error-middleware/test/app.test.ts": "sha256:f23893f188931e3febdb9e660a8fae0aac528f49ce93869fc6f02d104bc9433e"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: exposes custom properties on a 422\nok 3 - exposes custom properties on a 422\n  ---\n  duration_ms: 52.653192\n  type: 'test'\n  ...\n# Subtest: forwards async route rejections\nok 4 - forwards async route rejections\n  ---\n  duration_ms: 3.674893\n  type: 'test'\n  ...\n# Subtest: serves an exposed 5xx message when opted in\nok 5 - serves an exposed 5xx message when opted in\n  ---\n  duration_ms: 3.482854\n  type: 'test'\n  ...\n# Subtest: hides the message of an unexposed 500\nok 6 - hides the message of an unexposed 500\n  ---\n  duration_ms: 3.318176\n  type: 'test'\n  ...\n# Subtest: returns problem details for unknown routes\nok 7 - returns problem details for unknown routes\n  ---\n  duration_ms: 3.53951\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 617.457904\n"
+  "log_tail": "# Subtest: exposes custom properties on a 422\nok 3 - exposes custom properties on a 422\n  ---\n  duration_ms: 37.822091\n  type: 'test'\n  ...\n# Subtest: forwards async route rejections\nok 4 - forwards async route rejections\n  ---\n  duration_ms: 4.561697\n  type: 'test'\n  ...\n# Subtest: serves an exposed 5xx message when opted in\nok 5 - serves an exposed 5xx message when opted in\n  ---\n  duration_ms: 4.220756\n  type: 'test'\n  ...\n# Subtest: hides the message of an unexposed 500\nok 6 - hides the message of an unexposed 500\n  ---\n  duration_ms: 3.546921\n  type: 'test'\n  ...\n# Subtest: returns problem details for unknown routes\nok 7 - returns problem details for unknown routes\n  ---\n  duration_ms: 3.048205\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 511.447343\n"
 }

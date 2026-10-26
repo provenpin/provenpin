@@ -1,15 +1,15 @@
 {
   "id": "numpy-scipy-optimize-fit",
   "status": "passed",
-  "ran_at": "2026-10-20T01:17:38.117Z",
-  "last_passed_at": "2026-10-20T01:17:38.117Z",
+  "ran_at": "2026-10-26T10:33:54.720Z",
+  "last_passed_at": "2026-10-26T10:33:54.720Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 684,
-    "test": 3683
+    "setup": 617,
+    "test": 2814
   },
   "pinned": {
     "numpy": "2.5.4",
@@ -25,11 +25,11 @@
     "recipes/numpy-scipy-optimize-fit/tests/test_fit.py": "sha256:4427b5b279c109354bbb3d2ca61ee3a571c523ae4c4daf67761c066e61283550"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 2.47s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.75s\n"
 }

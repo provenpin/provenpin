@@ -1,15 +1,15 @@
 {
   "id": "bleach-markupsafe-html",
   "status": "passed",
-  "ran_at": "2026-10-20T01:04:26.943Z",
-  "last_passed_at": "2026-10-20T01:04:26.943Z",
+  "ran_at": "2026-10-26T10:20:36.952Z",
+  "last_passed_at": "2026-10-26T10:20:36.952Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 310,
-    "test": 695
+    "setup": 327,
+    "test": 3331
   },
   "pinned": {
     "bleach": "6.4.0",
@@ -25,11 +25,11 @@
     "recipes/bleach-markupsafe-html/tests/test_sanitizer.py": "sha256:49964600d9c8b6a289f5405b068e52c08687f87e20126b6eab5774121d6b72e7"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.24s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.87s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "simpleeval-safe-expression",
   "status": "passed",
-  "ran_at": "2026-10-20T01:23:42.769Z",
-  "last_passed_at": "2026-10-20T01:23:42.769Z",
+  "ran_at": "2026-10-26T10:39:43.266Z",
+  "last_passed_at": "2026-10-26T10:39:43.266Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 256,
-    "test": 997
+    "setup": 249,
+    "test": 1131
   },
   "pinned": {
     "simpleeval": "1.0.8",
@@ -24,11 +24,11 @@
     "recipes/simpleeval-safe-expression/tests/test_formulas.py": "sha256:905d5e6f54622c689e46eaa6957f9e3116273bdaeff85f180d8b8243cd93434a"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
 }

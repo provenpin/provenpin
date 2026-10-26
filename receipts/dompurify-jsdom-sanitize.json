@@ -1,15 +1,15 @@
 {
   "id": "dompurify-jsdom-sanitize",
   "status": "passed",
-  "ran_at": "2026-10-20T01:07:27.248Z",
-  "last_passed_at": "2026-10-20T01:07:27.248Z",
+  "ran_at": "2026-10-26T10:23:44.345Z",
+  "last_passed_at": "2026-10-26T10:23:44.345Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3113,
-    "test": 1180
+    "setup": 2698,
+    "test": 1015
   },
   "pinned": {
     "dompurify": "3.4.17",
@@ -26,11 +26,11 @@
     "recipes/dompurify-jsdom-sanitize/test/sanitize.test.ts": "sha256:033665683e77ce1a16402d939f0ed91a43e04941f691f5e3b7ba4cb5b09d837b"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: strips scripts, event handlers and javascript: URLs\nok 1 - strips scripts, event handlers and javascript: URLs\n  ---\n  duration_ms: 9.732687\n  type: 'test'\n  ...\n# Subtest: hardens external links via hook\nok 2 - hardens external links via hook\n  ---\n  duration_ms: 1.789772\n  type: 'test'\n  ...\n# Subtest: comment allow-list keeps text but drops disallowed tags\nok 3 - comment allow-list keeps text but drops disallowed tags\n  ---\n  duration_ms: 8.128439\n  type: 'test'\n  ...\n# Subtest: reports how many nodes or attributes were removed\nok 4 - reports how many nodes or attributes were removed\n  ---\n  duration_ms: 1.81524\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1064.263818\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: strips scripts, event handlers and javascript: URLs\nok 1 - strips scripts, event handlers and javascript: URLs\n  ---\n  duration_ms: 7.855281\n  type: 'test'\n  ...\n# Subtest: hardens external links via hook\nok 2 - hardens external links via hook\n  ---\n  duration_ms: 3.581407\n  type: 'test'\n  ...\n# Subtest: comment allow-list keeps text but drops disallowed tags\nok 3 - comment allow-list keeps text but drops disallowed tags\n  ---\n  duration_ms: 6.886345\n  type: 'test'\n  ...\n# Subtest: reports how many nodes or attributes were removed\nok 4 - reports how many nodes or attributes were removed\n  ---\n  duration_ms: 1.430874\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 915.725254\n"
 }

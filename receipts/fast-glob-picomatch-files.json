@@ -1,15 +1,15 @@
 {
   "id": "fast-glob-picomatch-files",
   "status": "passed",
-  "ran_at": "2026-10-20T01:09:07.533Z",
-  "last_passed_at": "2026-10-20T01:09:07.533Z",
+  "ran_at": "2026-10-26T10:25:29.907Z",
+  "last_passed_at": "2026-10-26T10:25:29.907Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2671,
-    "test": 488
+    "setup": 1968,
+    "test": 477
   },
   "pinned": {
     "fast-glob": "3.3.3",
@@ -26,11 +26,11 @@
     "recipes/fast-glob-picomatch-files/test/files.test.ts": "sha256:b8b23de3e0c354a092493a85f7fbba7bb13a5c435434f3cc50db4bb6b3edf1d5"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: finds sources and skips node_modules, dist and dotfiles\nok 1 - finds sources and skips node_modules, dist and dotfiles\n  ---\n  duration_ms: 22.318045\n  type: 'test'\n  ...\n# Subtest: dot and deep options\nok 2 - dot and deep options\n  ---\n  duration_ms: 4.745546\n  type: 'test'\n  ...\n# Subtest: stats and escaped special characters\nok 3 - stats and escaped special characters\n  ---\n  duration_ms: 2.365109\n  type: 'test'\n  ...\n# Subtest: picomatch partitions test files\nok 4 - picomatch partitions test files\n  ---\n  duration_ms: 5.340544\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 330.56659\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: finds sources and skips node_modules, dist and dotfiles\nok 1 - finds sources and skips node_modules, dist and dotfiles\n  ---\n  duration_ms: 29.272846\n  type: 'test'\n  ...\n# Subtest: dot and deep options\nok 2 - dot and deep options\n  ---\n  duration_ms: 4.076105\n  type: 'test'\n  ...\n# Subtest: stats and escaped special characters\nok 3 - stats and escaped special characters\n  ---\n  duration_ms: 2.211393\n  type: 'test'\n  ...\n# Subtest: picomatch partitions test files\nok 4 - picomatch partitions test files\n  ---\n  duration_ms: 4.850199\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 314.036677\n"
 }

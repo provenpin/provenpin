@@ -1,15 +1,15 @@
 {
   "id": "minimist-argv-parse",
   "status": "passed",
-  "ran_at": "2026-10-20T01:16:03.175Z",
-  "last_passed_at": "2026-10-20T01:16:03.175Z",
+  "ran_at": "2026-10-26T10:32:18.823Z",
+  "last_passed_at": "2026-10-26T10:32:18.823Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1539,
-    "test": 271
+    "setup": 1435,
+    "test": 346
   },
   "pinned": {
     "minimist": "1.2.8",
@@ -25,11 +25,11 @@
     "recipes/minimist-argv-parse/test/argv.test.ts": "sha256:3f076560c708607ff7f6af6c2a162408e5d04e2f5c56f7f3b46bc97084bdc3f7"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: honours aliases\nok 2 - honours aliases\n  ---\n  duration_ms: 0.230364\n  type: 'test'\n  ...\n# Subtest: applies defaults when flags are absent\nok 3 - applies defaults when flags are absent\n  ---\n  duration_ms: 0.537861\n  type: 'test'\n  ...\n# Subtest: collects positional arguments into _\nok 4 - collects positional arguments into _\n  ---\n  duration_ms: 0.319295\n  type: 'test'\n  ...\n# Subtest: separates arguments after -- when enabled\nok 5 - separates arguments after -- when enabled\n  ---\n  duration_ms: 0.16091\n  type: 'test'\n  ...\n# Subtest: keeps unknown flags when not restricted\nok 6 - keeps unknown flags when not restricted\n  ---\n  duration_ms: 0.165486\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 154.641831\n"
+  "log_tail": "# Subtest: honours aliases\nok 2 - honours aliases\n  ---\n  duration_ms: 0.324426\n  type: 'test'\n  ...\n# Subtest: applies defaults when flags are absent\nok 3 - applies defaults when flags are absent\n  ---\n  duration_ms: 0.966305\n  type: 'test'\n  ...\n# Subtest: collects positional arguments into _\nok 4 - collects positional arguments into _\n  ---\n  duration_ms: 0.549607\n  type: 'test'\n  ...\n# Subtest: separates arguments after -- when enabled\nok 5 - separates arguments after -- when enabled\n  ---\n  duration_ms: 0.309238\n  type: 'test'\n  ...\n# Subtest: keeps unknown flags when not restricted\nok 6 - keeps unknown flags when not restricted\n  ---\n  duration_ms: 0.303848\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 199.42384\n"
 }

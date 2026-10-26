@@ -1,15 +1,15 @@
 {
   "id": "python-box-dot-access-config",
   "status": "passed",
-  "ran_at": "2026-10-20T01:21:48.721Z",
-  "last_passed_at": "2026-10-20T01:21:48.721Z",
+  "ran_at": "2026-10-26T10:37:51.855Z",
+  "last_passed_at": "2026-10-26T10:37:51.855Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 525,
-    "test": 1169
+    "setup": 203,
+    "test": 650
   },
   "pinned": {
     "python-box": "7.4.1",
@@ -25,11 +25,11 @@
     "recipes/python-box-dot-access-config/tests/test_config.py": "sha256:6e0f18df7ed1e066d712ed964bfbbdd63e92da01947b2fce460efeb6049d574c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "rich-typer-progress-cli",
   "status": "passed",
-  "ran_at": "2026-10-20T01:23:03.389Z",
-  "last_passed_at": "2026-10-20T01:23:03.389Z",
+  "ran_at": "2026-10-26T10:39:04.842Z",
+  "last_passed_at": "2026-10-26T10:39:04.842Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 289,
-    "test": 1028
+    "setup": 359,
+    "test": 1007
   },
   "pinned": {
     "typer": "0.27.3",
@@ -25,11 +25,11 @@
     "recipes/rich-typer-progress-cli/tests/test_app.py": "sha256:cab6b432f619da1da077ea68f72e5eb61dcc6b07d5e856ada130b6d17345b34b"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.39s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.37s\n"
 }

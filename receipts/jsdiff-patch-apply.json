@@ -1,15 +1,15 @@
 {
   "id": "jsdiff-patch-apply",
   "status": "passed",
-  "ran_at": "2026-10-20T01:13:32.001Z",
-  "last_passed_at": "2026-10-20T01:13:32.001Z",
+  "ran_at": "2026-10-26T10:29:48.113Z",
+  "last_passed_at": "2026-10-26T10:29:48.113Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2245,
-    "test": 228
+    "setup": 1783,
+    "test": 452
   },
   "pinned": {
     "diff": "9.0.0",
@@ -24,11 +24,11 @@
     "recipes/jsdiff-patch-apply/test/patch.test.ts": "sha256:b1ffef7e4fdd5824064cc2f916c9cd11e83c65a9dc9630dd22efb9e06642722f"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: unified patch has headers and hunks\nok 1 - unified patch has headers and hunks\n  ---\n  duration_ms: 1.463724\n  type: 'test'\n  ...\n# Subtest: patch applies and reverses\nok 2 - patch applies and reverses\n  ---\n  duration_ms: 1.180066\n  type: 'test'\n  ...\n# Subtest: conflicting source fails without fuzz, succeeds with fuzz\nok 3 - conflicting source fails without fuzz, succeeds with fuzz\n  ---\n  duration_ms: 0.341324\n  type: 'test'\n  ...\n# Subtest: line stats\nok 4 - line stats\n  ---\n  duration_ms: 0.494795\n  type: 'test'\n  ...\n# Subtest: word diff markers\nok 5 - word diff markers\n  ---\n  duration_ms: 0.489858\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 129.873299\n"
+  "log_tail": "# Subtest: unified patch has headers and hunks\nok 1 - unified patch has headers and hunks\n  ---\n  duration_ms: 2.464975\n  type: 'test'\n  ...\n# Subtest: patch applies and reverses\nok 2 - patch applies and reverses\n  ---\n  duration_ms: 2.034861\n  type: 'test'\n  ...\n# Subtest: conflicting source fails without fuzz, succeeds with fuzz\nok 3 - conflicting source fails without fuzz, succeeds with fuzz\n  ---\n  duration_ms: 0.609929\n  type: 'test'\n  ...\n# Subtest: line stats\nok 4 - line stats\n  ---\n  duration_ms: 0.807889\n  type: 'test'\n  ...\n# Subtest: word diff markers\nok 5 - word diff markers\n  ---\n  duration_ms: 0.876286\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 285.418864\n"
 }

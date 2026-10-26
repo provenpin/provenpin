@@ -1,15 +1,15 @@
 {
   "id": "babel-locale-number-date-format",
   "status": "passed",
-  "ran_at": "2026-10-20T01:04:01.200Z",
-  "last_passed_at": "2026-10-20T01:04:01.200Z",
+  "ran_at": "2026-10-26T10:20:07.655Z",
+  "last_passed_at": "2026-10-26T10:20:07.655Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 411,
-    "test": 939
+    "setup": 366,
+    "test": 2150
   },
   "pinned": {
     "babel": "2.18.0",
@@ -24,11 +24,11 @@
     "recipes/babel-locale-number-date-format/tests/test_money.py": "sha256:8dddfa7a8df27262c62d851f3d7cc261768c3789003bd48e96a00550066f2f0b"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.15s\n"
 }

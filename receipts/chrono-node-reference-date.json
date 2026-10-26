@@ -1,15 +1,15 @@
 {
   "id": "chrono-node-reference-date",
   "status": "passed",
-  "ran_at": "2026-10-20T01:05:36.389Z",
-  "last_passed_at": "2026-10-20T01:05:36.389Z",
+  "ran_at": "2026-10-26T10:21:49.455Z",
+  "last_passed_at": "2026-10-26T10:21:49.455Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2654,
-    "test": 478
+    "setup": 2422,
+    "test": 767
   },
   "pinned": {
     "chrono-node": "2.10.3",
@@ -24,11 +24,11 @@
     "recipes/chrono-node-reference-date/test/parse.test.ts": "sha256:344557c4f16dd642e75accbfe3fefad767c66c3c227baada67582e103f9fbded"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: ranges give start and end\nok 3 - ranges give start and end\n  ---\n  duration_ms: 0.896052\n  type: 'test'\n  ...\n# Subtest: finds dates inside a sentence with position and certainty\nok 4 - finds dates inside a sentence with position and certainty\n  ---\n  duration_ms: 0.468016\n  type: 'test'\n  ...\n# Subtest: UTC offset changes the instant\nok 5 - UTC offset changes the instant\n  ---\n  duration_ms: 0.767351\n  type: 'test'\n  ...\n# Subtest: en.GB reads day before month\nok 6 - en.GB reads day before month\n  ---\n  duration_ms: 3.135211\n  type: 'test'\n  ...\n# Subtest: no date returns empty\nok 7 - no date returns empty\n  ---\n  duration_ms: 0.658839\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 371.915256\n"
+  "log_tail": "# Subtest: ranges give start and end\nok 3 - ranges give start and end\n  ---\n  duration_ms: 1.217816\n  type: 'test'\n  ...\n# Subtest: finds dates inside a sentence with position and certainty\nok 4 - finds dates inside a sentence with position and certainty\n  ---\n  duration_ms: 0.681279\n  type: 'test'\n  ...\n# Subtest: UTC offset changes the instant\nok 5 - UTC offset changes the instant\n  ---\n  duration_ms: 1.169376\n  type: 'test'\n  ...\n# Subtest: en.GB reads day before month\nok 6 - en.GB reads day before month\n  ---\n  duration_ms: 4.443444\n  type: 'test'\n  ...\n# Subtest: no date returns empty\nok 7 - no date returns empty\n  ---\n  duration_ms: 0.890031\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 609.292597\n"
 }

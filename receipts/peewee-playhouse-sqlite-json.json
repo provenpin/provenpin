@@ -1,15 +1,15 @@
 {
   "id": "peewee-playhouse-sqlite-json",
   "status": "passed",
-  "ran_at": "2026-10-20T01:19:27.037Z",
-  "last_passed_at": "2026-10-20T01:19:27.037Z",
+  "ran_at": "2026-10-26T10:35:33.234Z",
+  "last_passed_at": "2026-10-26T10:35:33.234Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 355,
-    "test": 838
+    "setup": 208,
+    "test": 1239
   },
   "pinned": {
     "peewee": "4.5.3",
@@ -24,11 +24,11 @@
     "recipes/peewee-playhouse-sqlite-json/tests/test_json.py": "sha256:902e197980f6420d84d922a15481d5d9ad99619a52692ff8ace721f1a346885c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.16s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.22s\n"
 }

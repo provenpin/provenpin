@@ -1,15 +1,15 @@
 {
   "id": "pyotp-totp-freezegun",
   "status": "passed",
-  "ran_at": "2026-10-20T01:21:25.201Z",
-  "last_passed_at": "2026-10-20T01:21:25.201Z",
+  "ran_at": "2026-10-26T10:37:32.354Z",
+  "last_passed_at": "2026-10-26T10:37:32.354Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 178,
-    "test": 2289
+    "setup": 200,
+    "test": 2672
   },
   "pinned": {
     "pyotp": "2.10.0",
@@ -25,11 +25,11 @@
     "recipes/pyotp-totp-freezegun/tests/test_otp.py": "sha256:d101b71a1ea6b4bc25580c4c0971177096f8b45b3bc02442a871a82768bfff7e"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.02s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.31s\n"
 }

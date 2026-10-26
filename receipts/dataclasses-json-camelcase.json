@@ -1,15 +1,15 @@
 {
   "id": "dataclasses-json-camelcase",
   "status": "passed",
-  "ran_at": "2026-10-20T01:06:33.652Z",
-  "last_passed_at": "2026-10-20T01:06:33.652Z",
+  "ran_at": "2026-10-26T10:22:51.107Z",
+  "last_passed_at": "2026-10-26T10:22:51.107Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 527,
-    "test": 2426
+    "setup": 498,
+    "test": 1321
   },
   "pinned": {
     "dataclasses-json": "0.6.7",
@@ -24,11 +24,11 @@
     "recipes/dataclasses-json-camelcase/tests/test_serialization.py": "sha256:4e21dc7333c2e9dd667fab7e865acc86f8e4e39b5b86e4540fe5b0e227852d30"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.23s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.14s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "django-celery-eager-signals",
   "status": "passed",
-  "ran_at": "2026-10-20T01:07:09.384Z",
-  "last_passed_at": "2026-10-20T01:07:09.384Z",
+  "ran_at": "2026-10-26T10:23:31.459Z",
+  "last_passed_at": "2026-10-26T10:23:31.459Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 613,
-    "test": 1845
+    "setup": 1183,
+    "test": 11278
   },
   "pinned": {
     "django": "6.1.2",
@@ -33,11 +33,11 @@
     "recipes/django-celery-eager-signals/tests/test_signals.py": "sha256:262e951f62b13d0fc2eaca2fd4c04468dc80c21b0bc6d1ba270f0be9276e2d8d"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 0.28s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 0.84s\n"
 }

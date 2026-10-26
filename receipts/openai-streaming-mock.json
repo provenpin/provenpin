@@ -1,15 +1,15 @@
 {
   "id": "openai-streaming-mock",
   "status": "passed",
-  "ran_at": "2026-10-26T07:00:26.709Z",
-  "last_passed_at": "2026-10-26T07:00:26.709Z",
+  "ran_at": "2026-10-26T10:34:17.253Z",
+  "last_passed_at": "2026-10-26T10:34:17.253Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3167,
-    "test": 588
+    "setup": 2845,
+    "test": 493
   },
   "pinned": {
     "openai": "7.34.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40282412234"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accumulates deltas and usage\nok 1 - accumulates deltas and usage\n  ---\n  duration_ms: 25.154681\n  type: 'test'\n  ...\n# Subtest: abort rejects\nok 2 - abort rejects\n  ---\n  duration_ms: 1.445843\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 428.946602\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accumulates deltas and usage\nok 1 - accumulates deltas and usage\n  ---\n  duration_ms: 21.689565\n  type: 'test'\n  ...\n# Subtest: abort rejects\nok 2 - abort rejects\n  ---\n  duration_ms: 1.310018\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 356.62908\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "croniter-next-prev",
   "status": "passed",
-  "ran_at": "2026-10-20T01:06:06.534Z",
-  "last_passed_at": "2026-10-20T01:06:06.534Z",
+  "ran_at": "2026-10-26T10:22:21.769Z",
+  "last_passed_at": "2026-10-26T10:22:21.769Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 198,
-    "test": 829
+    "setup": 370,
+    "test": 1592
   },
   "pinned": {
     "croniter": "6.2.4",
@@ -24,11 +24,11 @@
     "recipes/croniter-next-prev/tests/test_schedule.py": "sha256:02d3d610a9bce684ed99f96e7b109db4001276e1f476ce68c33a610f4890f16e"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.18s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.32s\n"
 }

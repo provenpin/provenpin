@@ -1,15 +1,15 @@
 {
   "id": "pretty-bytes-format",
   "status": "passed",
-  "ran_at": "2026-10-20T01:20:25.727Z",
-  "last_passed_at": "2026-10-20T01:20:25.727Z",
+  "ran_at": "2026-10-26T10:36:31.796Z",
+  "last_passed_at": "2026-10-26T10:36:31.796Z",
   "tests": {
     "passed": 8,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1741,
-    "test": 373
+    "setup": 1570,
+    "test": 358
   },
   "pinned": {
     "pretty-bytes": "7.2.0",
@@ -24,11 +24,11 @@
     "recipes/pretty-bytes-format/test/format.test.ts": "sha256:2d52cdcd1aeb893404acf3c8d5bfc771c9009c3c177032be7e53a96a47a20f36"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: formats bits when requested\nok 4 - formats bits when requested\n  ---\n  duration_ms: 0.131305\n  type: 'test'\n  ...\n# Subtest: formats binary units when requested\nok 5 - formats binary units when requested\n  ---\n  duration_ms: 0.238465\n  type: 'test'\n  ...\n# Subtest: adds a sign for positive and negative values\nok 6 - adds a sign for positive and negative values\n  ---\n  duration_ms: 0.142807\n  type: 'test'\n  ...\n# Subtest: honours minimumFractionDigits\nok 7 - honours minimumFractionDigits\n  ---\n  duration_ms: 38.933502\n  type: 'test'\n  ...\n# Subtest: rejects non-finite input\nok 8 - rejects non-finite input\n  ---\n  duration_ms: 0.387253\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 229.054344\n"
+  "log_tail": "# Subtest: formats bits when requested\nok 4 - formats bits when requested\n  ---\n  duration_ms: 0.131608\n  type: 'test'\n  ...\n# Subtest: formats binary units when requested\nok 5 - formats binary units when requested\n  ---\n  duration_ms: 0.221047\n  type: 'test'\n  ...\n# Subtest: adds a sign for positive and negative values\nok 6 - adds a sign for positive and negative values\n  ---\n  duration_ms: 0.168717\n  type: 'test'\n  ...\n# Subtest: honours minimumFractionDigits\nok 7 - honours minimumFractionDigits\n  ---\n  duration_ms: 27.978089\n  type: 'test'\n  ...\n# Subtest: rejects non-finite input\nok 8 - rejects non-finite input\n  ---\n  duration_ms: 0.407649\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 210.952526\n"
 }

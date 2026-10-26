@@ -1,15 +1,15 @@
 {
   "id": "casl-ability-rules",
   "status": "passed",
-  "ran_at": "2026-10-20T01:05:04.549Z",
-  "last_passed_at": "2026-10-20T01:05:04.549Z",
+  "ran_at": "2026-10-26T10:21:14.305Z",
+  "last_passed_at": "2026-10-26T10:21:14.305Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1778,
-    "test": 362
+    "setup": 1756,
+    "test": 379
   },
   "pinned": {
     "@casl/ability": "7.0.2",
@@ -24,11 +24,11 @@
     "recipes/casl-ability-rules/test/abilities.test.ts": "sha256:9fd24bd66332ef3e09563a7e401420f02c544065af5aa5f1d1bff04428384f8c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: admin can manage everything\nok 1 - admin can manage everything\n  ---\n  duration_ms: 1.53086\n  type: 'test'\n  ...\n# Subtest: author updates only own posts\nok 2 - author updates only own posts\n  ---\n  duration_ms: 0.810416\n  type: 'test'\n  ...\n# Subtest: guest reads only published and rules pack\nok 3 - guest reads only published and rules pack\n  ---\n  duration_ms: 0.351851\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 208.834166\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: admin can manage everything\nok 1 - admin can manage everything\n  ---\n  duration_ms: 1.909021\n  type: 'test'\n  ...\n# Subtest: author updates only own posts\nok 2 - author updates only own posts\n  ---\n  duration_ms: 0.848742\n  type: 'test'\n  ...\n# Subtest: guest reads only published and rules pack\nok 3 - guest reads only published and rules pack\n  ---\n  duration_ms: 0.335179\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 221.734169\n"
 }

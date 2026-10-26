@@ -1,15 +1,15 @@
 {
   "id": "ollama-js-mocked-fetch",
   "status": "passed",
-  "ran_at": "2026-10-20T01:17:52.663Z",
-  "last_passed_at": "2026-10-20T01:17:52.663Z",
+  "ran_at": "2026-10-26T10:34:02.062Z",
+  "last_passed_at": "2026-10-26T10:34:02.062Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1914,
-    "test": 447
+    "setup": 1611,
+    "test": 409
   },
   "pinned": {
     "ollama": "0.6.4",
@@ -24,11 +24,11 @@
     "recipes/ollama-js-mocked-fetch/test/ollama.test.ts": "sha256:be0b41c44f67520f38c5f7ecba84fead10c1dca3b1acccd93a82cd5fa570af26"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: chat posts the request body and parses the reply\nok 1 - chat posts the request body and parses the reply\n  ---\n  duration_ms: 43.507558\n  type: 'test'\n  ...\n# Subtest: streamed chat concatenates NDJSON chunks in order\nok 2 - streamed chat concatenates NDJSON chunks in order\n  ---\n  duration_ms: 1.34284\n  type: 'test'\n  ...\n# Subtest: embed posts input and returns vectors\nok 3 - embed posts input and returns vectors\n  ---\n  duration_ms: 0.687629\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 294.625195\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: chat posts the request body and parses the reply\nok 1 - chat posts the request body and parses the reply\n  ---\n  duration_ms: 28.495104\n  type: 'test'\n  ...\n# Subtest: streamed chat concatenates NDJSON chunks in order\nok 2 - streamed chat concatenates NDJSON chunks in order\n  ---\n  duration_ms: 1.58311\n  type: 'test'\n  ...\n# Subtest: embed posts input and returns vectors\nok 3 - embed posts input and returns vectors\n  ---\n  duration_ms: 0.805696\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 255.039971\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "result-ok-err-map",
   "status": "passed",
-  "ran_at": "2026-10-20T01:22:55.098Z",
-  "last_passed_at": "2026-10-20T01:22:55.098Z",
+  "ran_at": "2026-10-26T10:39:02.683Z",
+  "last_passed_at": "2026-10-26T10:39:02.683Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 960,
-    "test": 791
+    "setup": 213,
+    "test": 1195
   },
   "pinned": {
     "result": "0.17.0",
@@ -24,10 +24,10 @@
     "recipes/result-ok-err-map/tests/test_pipeline.py": "sha256:801c6006e766361d10e0d0daf2b5dc2e914b8f51c0cf73d03092604bf1795c66"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"

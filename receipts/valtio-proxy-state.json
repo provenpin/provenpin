@@ -1,15 +1,15 @@
 {
   "id": "valtio-proxy-state",
   "status": "passed",
-  "ran_at": "2026-10-20T01:27:13.329Z",
-  "last_passed_at": "2026-10-20T01:27:13.329Z",
+  "ran_at": "2026-10-26T10:43:20.186Z",
+  "last_passed_at": "2026-10-26T10:43:20.186Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1488,
-    "test": 277
+    "setup": 1186,
+    "test": 228
   },
   "pinned": {
     "valtio": "2.3.2",
@@ -24,11 +24,11 @@
     "recipes/valtio-proxy-state/test/store.test.ts": "sha256:8abc7538cf29fa26e68e3962bcde18d2d613a653718320e8584d4aeaf4582483"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: proxy mutations notify subscribers and snapshot is immutable\nok 1 - proxy mutations notify subscribers and snapshot is immutable\n  ---\n  duration_ms: 1.535235\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 162.092773\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: proxy mutations notify subscribers and snapshot is immutable\nok 1 - proxy mutations notify subscribers and snapshot is immutable\n  ---\n  duration_ms: 1.192978\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 127.882996\n"
 }

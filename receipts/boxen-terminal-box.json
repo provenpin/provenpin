@@ -1,15 +1,15 @@
 {
   "id": "boxen-terminal-box",
   "status": "passed",
-  "ran_at": "2026-10-20T01:04:46.115Z",
-  "last_passed_at": "2026-10-20T01:04:46.115Z",
+  "ran_at": "2026-10-26T10:20:55.633Z",
+  "last_passed_at": "2026-10-26T10:20:55.633Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1904,
-    "test": 343
+    "setup": 1715,
+    "test": 423
   },
   "pinned": {
     "boxen": "9.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: wraps text with box drawing characters\nok 1 - wraps text with box drawing characters\n  ---\n  duration_ms: 21.97234\n  type: 'test'\n  ...\n# Subtest: includes the configured title and dimmed border\nok 2 - includes the configured title and dimmed border\n  ---\n  duration_ms: 0.650748\n  type: 'test'\n  ...\n# Subtest: forces the box to a fixed width\nok 3 - forces the box to a fixed width\n  ---\n  duration_ms: 0.734441\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 218.44845\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: wraps text with box drawing characters\nok 1 - wraps text with box drawing characters\n  ---\n  duration_ms: 26.210756\n  type: 'test'\n  ...\n# Subtest: includes the configured title and dimmed border\nok 2 - includes the configured title and dimmed border\n  ---\n  duration_ms: 0.839558\n  type: 'test'\n  ...\n# Subtest: forces the box to a fixed width\nok 3 - forces the box to a fixed width\n  ---\n  duration_ms: 0.990281\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 274.782035\n"
 }

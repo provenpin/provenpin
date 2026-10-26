@@ -1,15 +1,15 @@
 {
   "id": "seedrandom-deterministic",
   "status": "passed",
-  "ran_at": "2026-10-20T01:23:23.945Z",
-  "last_passed_at": "2026-10-20T01:23:23.945Z",
+  "ran_at": "2026-10-26T10:39:24.356Z",
+  "last_passed_at": "2026-10-26T10:39:24.356Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1859,
-    "test": 330
+    "setup": 1233,
+    "test": 241
   },
   "pinned": {
     "seedrandom": "3.0.5",
@@ -25,11 +25,11 @@
     "recipes/seedrandom-deterministic/test/rng.test.ts": "sha256:37347e4430baee72c1addb8ca634b8ea47a5c12b8a2d368d28269be9f756b5af"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: same seed produces identical sequences\nok 1 - same seed produces identical sequences\n  ---\n  duration_ms: 1.842343\n  type: 'test'\n  ...\n# Subtest: different seeds produce different sequences\nok 2 - different seeds produce different sequences\n  ---\n  duration_ms: 0.240405\n  type: 'test'\n  ...\n# Subtest: alea generator is reproducible\nok 3 - alea generator is reproducible\n  ---\n  duration_ms: 0.258767\n  type: 'test'\n  ...\n# Subtest: withSeededMath patches Math.random then restores it\nok 4 - withSeededMath patches Math.random then restores it\n  ---\n  duration_ms: 0.232114\n  type: 'test'\n  ...\n# Subtest: withSeededMath restores Math.random even on error\nok 5 - withSeededMath restores Math.random even on error\n  ---\n  duration_ms: 0.239656\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 205.076421\n"
+  "log_tail": "# Subtest: same seed produces identical sequences\nok 1 - same seed produces identical sequences\n  ---\n  duration_ms: 1.417601\n  type: 'test'\n  ...\n# Subtest: different seeds produce different sequences\nok 2 - different seeds produce different sequences\n  ---\n  duration_ms: 0.176245\n  type: 'test'\n  ...\n# Subtest: alea generator is reproducible\nok 3 - alea generator is reproducible\n  ---\n  duration_ms: 0.210396\n  type: 'test'\n  ...\n# Subtest: withSeededMath patches Math.random then restores it\nok 4 - withSeededMath patches Math.random then restores it\n  ---\n  duration_ms: 0.152019\n  type: 'test'\n  ...\n# Subtest: withSeededMath restores Math.random even on error\nok 5 - withSeededMath restores Math.random even on error\n  ---\n  duration_ms: 0.185449\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 136.96932\n"
 }

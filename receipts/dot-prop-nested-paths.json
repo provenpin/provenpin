@@ -1,15 +1,15 @@
 {
   "id": "dot-prop-nested-paths",
   "status": "passed",
-  "ran_at": "2026-10-20T01:07:27.649Z",
-  "last_passed_at": "2026-10-20T01:07:27.649Z",
+  "ran_at": "2026-10-26T10:23:52.549Z",
+  "last_passed_at": "2026-10-26T10:23:52.549Z",
   "tests": {
     "passed": 8,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2018,
-    "test": 209
+    "setup": 1356,
+    "test": 267
   },
   "pinned": {
     "dot-prop": "10.2.0",
@@ -24,11 +24,11 @@
     "recipes/dot-prop-nested-paths/test/paths.test.ts": "sha256:2f63412a67d3f5e7e83c92d74788005187a0e1daec48dd19d2aaefe37afe498c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: setProperty creates nested objects\nok 4 - setProperty creates nested objects\n  ---\n  duration_ms: 0.377779\n  type: 'test'\n  ...\n# Subtest: setProperty honours escaped dots\nok 5 - setProperty honours escaped dots\n  ---\n  duration_ms: 0.079339\n  type: 'test'\n  ...\n# Subtest: hasProperty detects nested and escaped paths\nok 6 - hasProperty detects nested and escaped paths\n  ---\n  duration_ms: 0.077978\n  type: 'test'\n  ...\n# Subtest: deleteProperty removes nested and escaped keys\nok 7 - deleteProperty removes nested and escaped keys\n  ---\n  duration_ms: 0.203206\n  type: 'test'\n  ...\n# Subtest: readPath returns a fallback for missing paths\nok 8 - readPath returns a fallback for missing paths\n  ---\n  duration_ms: 0.063727\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 114.35456\n"
+  "log_tail": "# Subtest: setProperty creates nested objects\nok 4 - setProperty creates nested objects\n  ---\n  duration_ms: 0.517287\n  type: 'test'\n  ...\n# Subtest: setProperty honours escaped dots\nok 5 - setProperty honours escaped dots\n  ---\n  duration_ms: 0.087762\n  type: 'test'\n  ...\n# Subtest: hasProperty detects nested and escaped paths\nok 6 - hasProperty detects nested and escaped paths\n  ---\n  duration_ms: 0.085359\n  type: 'test'\n  ...\n# Subtest: deleteProperty removes nested and escaped keys\nok 7 - deleteProperty removes nested and escaped keys\n  ---\n  duration_ms: 0.328624\n  type: 'test'\n  ...\n# Subtest: readPath returns a fallback for missing paths\nok 8 - readPath returns a fallback for missing paths\n  ---\n  duration_ms: 0.083635\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 146.635947\n"
 }

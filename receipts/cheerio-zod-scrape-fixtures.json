@@ -1,15 +1,15 @@
 {
   "id": "cheerio-zod-scrape-fixtures",
   "status": "passed",
-  "ran_at": "2026-10-20T01:05:27.516Z",
-  "last_passed_at": "2026-10-20T01:05:27.516Z",
+  "ran_at": "2026-10-26T10:21:41.484Z",
+  "last_passed_at": "2026-10-26T10:21:41.484Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2487,
-    "test": 690
+    "setup": 2781,
+    "test": 640
   },
   "pinned": {
     "cheerio": "1.2.0",
@@ -27,11 +27,11 @@
     "recipes/cheerio-zod-scrape-fixtures/test/scrape.test.ts": "sha256:6c63ea025df7fa4b52027ee1aa1465098f087cf32a7850eac35a117ecd7c1442"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: parsePrice handles currency symbols, thousands separators and cents\nok 1 - parsePrice handles currency symbols, thousands separators and cents\n  ---\n  duration_ms: 0.980762\n  type: 'test'\n  ...\n# Subtest: scrapes valid cards with absolute URLs, stock and optional rating\nok 2 - scrapes valid cards with absolute URLs, stock and optional rating\n  ---\n  duration_ms: 14.164108\n  type: 'test'\n  ...\n# Subtest: invalid cards are reported with zod issue paths\nok 3 - invalid cards are reported with zod issue paths\n  ---\n  duration_ms: 2.191045\n  type: 'test'\n  ...\n# Subtest: resolves the next page link relative to the page URL\nok 4 - resolves the next page link relative to the page URL\n  ---\n  duration_ms: 2.636848\n  type: 'test'\n  ...\n# Subtest: reads a dl spec table with whitespace normalised\nok 5 - reads a dl spec table with whitespace normalised\n  ---\n  duration_ms: 1.191555\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 544.059022\n"
+  "log_tail": "# Subtest: parsePrice handles currency symbols, thousands separators and cents\nok 1 - parsePrice handles currency symbols, thousands separators and cents\n  ---\n  duration_ms: 0.9426\n  type: 'test'\n  ...\n# Subtest: scrapes valid cards with absolute URLs, stock and optional rating\nok 2 - scrapes valid cards with absolute URLs, stock and optional rating\n  ---\n  duration_ms: 13.394304\n  type: 'test'\n  ...\n# Subtest: invalid cards are reported with zod issue paths\nok 3 - invalid cards are reported with zod issue paths\n  ---\n  duration_ms: 2.304459\n  type: 'test'\n  ...\n# Subtest: resolves the next page link relative to the page URL\nok 4 - resolves the next page link relative to the page URL\n  ---\n  duration_ms: 2.636605\n  type: 'test'\n  ...\n# Subtest: reads a dl spec table with whitespace normalised\nok 5 - reads a dl spec table with whitespace normalised\n  ---\n  duration_ms: 1.247135\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 507.057096\n"
 }

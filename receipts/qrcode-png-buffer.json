@@ -1,15 +1,15 @@
 {
   "id": "qrcode-png-buffer",
   "status": "passed",
-  "ran_at": "2026-10-20T01:22:09.450Z",
-  "last_passed_at": "2026-10-20T01:22:09.450Z",
+  "ran_at": "2026-10-26T10:38:15.902Z",
+  "last_passed_at": "2026-10-26T10:38:15.902Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2271,
-    "test": 404
+    "setup": 1973,
+    "test": 412
   },
   "pinned": {
     "qrcode": "1.5.4",
@@ -25,11 +25,11 @@
     "recipes/qrcode-png-buffer/test/qr.test.ts": "sha256:13a4be7eb09df1e3436cbf3d33094ead9a8aab7e3ec358bf762ee7a041a10b5a"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: png buffer starts with PNG signature\nok 1 - png buffer starts with PNG signature\n  ---\n  duration_ms: 34.870376\n  type: 'test'\n  ...\n# Subtest: data url and ascii output\nok 2 - data url and ascii output\n  ---\n  duration_ms: 8.468656\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 255.486137\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: png buffer starts with PNG signature\nok 1 - png buffer starts with PNG signature\n  ---\n  duration_ms: 32.155756\n  type: 'test'\n  ...\n# Subtest: data url and ascii output\nok 2 - data url and ascii output\n  ---\n  duration_ms: 9.655887\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 263.410441\n"
 }

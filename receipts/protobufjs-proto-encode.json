@@ -1,15 +1,15 @@
 {
   "id": "protobufjs-proto-encode",
   "status": "passed",
-  "ran_at": "2026-10-20T01:20:42.233Z",
-  "last_passed_at": "2026-10-20T01:20:42.233Z",
+  "ran_at": "2026-10-26T10:36:49.410Z",
+  "last_passed_at": "2026-10-26T10:36:49.410Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1588,
-    "test": 323
+    "setup": 1615,
+    "test": 434
   },
   "pinned": {
     "protobufjs": "8.8.1",
@@ -25,11 +25,11 @@
     "recipes/protobufjs-proto-encode/test/codec.test.ts": "sha256:c0646b0bfde595528cda59a4d1260582e4007a53e63df31ad9c159d63a1d8f62"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: encodes and decodes a Person\nok 1 - encodes and decodes a Person\n  ---\n  duration_ms: 11.082652\n  type: 'test'\n  ...\n# Subtest: verify rejects missing required shape via bad types\nok 2 - verify rejects missing required shape via bad types\n  ---\n  duration_ms: 1.801087\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 206.365859\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: encodes and decodes a Person\nok 1 - encodes and decodes a Person\n  ---\n  duration_ms: 15.772001\n  type: 'test'\n  ...\n# Subtest: verify rejects missing required shape via bad types\nok 2 - verify rejects missing required shape via bad types\n  ---\n  duration_ms: 3.341635\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 247.486143\n"
 }

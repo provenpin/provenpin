@@ -1,15 +1,15 @@
 {
   "id": "openpgp-encrypt-decrypt",
   "status": "passed",
-  "ran_at": "2026-10-20T01:18:11.988Z",
-  "last_passed_at": "2026-10-20T01:18:11.988Z",
+  "ran_at": "2026-10-26T10:34:23.073Z",
+  "last_passed_at": "2026-10-26T10:34:23.073Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1786,
-    "test": 604
+    "setup": 1636,
+    "test": 644
   },
   "pinned": {
     "openpgp": "6.3.2",
@@ -24,11 +24,11 @@
     "recipes/openpgp-encrypt-decrypt/test/pgp.test.ts": "sha256:28dcd6d0351baea897485c1f4387741b4e6e527386bcc5bedd45e21d48e765c7"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: encrypts, signs, decrypts and verifies a message\nok 1 - encrypts, signs, decrypts and verifies a message\n  ---\n  duration_ms: 164.324042\n  type: 'test'\n  ...\n# Subtest: detached signature verifies against the original message\nok 2 - detached signature verifies against the original message\n  ---\n  duration_ms: 10.347676\n  type: 'test'\n  ...\n# Subtest: detached signature does not verify with the wrong key\nok 3 - detached signature does not verify with the wrong key\n  ---\n  duration_ms: 4.179552\n  type: 'test'\n  ...\n# Subtest: wrong private key cannot decrypt\nok 4 - wrong private key cannot decrypt\n  ---\n  duration_ms: 49.050923\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 472.487683\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: encrypts, signs, decrypts and verifies a message\nok 1 - encrypts, signs, decrypts and verifies a message\n  ---\n  duration_ms: 179.099051\n  type: 'test'\n  ...\n# Subtest: detached signature verifies against the original message\nok 2 - detached signature verifies against the original message\n  ---\n  duration_ms: 7.888554\n  type: 'test'\n  ...\n# Subtest: detached signature does not verify with the wrong key\nok 3 - detached signature does not verify with the wrong key\n  ---\n  duration_ms: 2.901534\n  type: 'test'\n  ...\n# Subtest: wrong private key cannot decrypt\nok 4 - wrong private key cannot decrypt\n  ---\n  duration_ms: 32.78919\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 508.871451\n"
 }

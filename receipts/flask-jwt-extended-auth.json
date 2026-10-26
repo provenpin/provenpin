@@ -1,15 +1,15 @@
 {
   "id": "flask-jwt-extended-auth",
   "status": "passed",
-  "ran_at": "2026-10-20T01:10:29.698Z",
-  "last_passed_at": "2026-10-20T01:10:29.698Z",
+  "ran_at": "2026-10-26T10:26:48.785Z",
+  "last_passed_at": "2026-10-26T10:26:48.785Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 287,
-    "test": 1284
+    "setup": 319,
+    "test": 1393
   },
   "pinned": {
     "flask": "3.1.3",
@@ -25,10 +25,10 @@
     "recipes/flask-jwt-extended-auth/tests/test_auth.py": "sha256:0ef583dbd1e506c0a20efd25cbeb5ba1629fd6f44c7c8214079a989a8e8ff4fb"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
   "log_tail": "...                                                                      [100%]\n3 passed in 0.49s\n"

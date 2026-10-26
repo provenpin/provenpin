@@ -1,15 +1,15 @@
 {
   "id": "orjson-pydantic-v2-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-20T01:18:33.292Z",
-  "last_passed_at": "2026-10-20T01:18:33.292Z",
+  "ran_at": "2026-10-26T10:34:43.007Z",
+  "last_passed_at": "2026-10-26T10:34:43.007Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 831,
-    "test": 1480
+    "setup": 340,
+    "test": 4137
   },
   "pinned": {
     "orjson": "3.13.0",
@@ -25,11 +25,11 @@
     "recipes/orjson-pydantic-v2-roundtrip/tests/test_codec.py": "sha256:f2bdd294afd8b7f7dbfcaa1542f73ff5742ee73856d77b2b1bb08b1170ae905f"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.38s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.82s\n"
 }

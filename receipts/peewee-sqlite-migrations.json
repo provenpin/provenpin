@@ -1,15 +1,15 @@
 {
   "id": "peewee-sqlite-migrations",
   "status": "passed",
-  "ran_at": "2026-10-20T01:19:33.441Z",
-  "last_passed_at": "2026-10-20T01:19:33.441Z",
+  "ran_at": "2026-10-26T10:35:34.138Z",
+  "last_passed_at": "2026-10-26T10:35:34.138Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 465,
-    "test": 1676
+    "setup": 226,
+    "test": 1364
   },
   "pinned": {
     "peewee": "4.5.3",
@@ -25,11 +25,11 @@
     "recipes/peewee-sqlite-migrations/tests/test_migrations.py": "sha256:90dd6c8e3844f05103ba039ef0a71cb9a4ecce0f33e7582e9694db78856b983f"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.31s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.27s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "pathe-normalize-join",
   "status": "passed",
-  "ran_at": "2026-10-20T01:19:11.424Z",
-  "last_passed_at": "2026-10-20T01:19:11.424Z",
+  "ran_at": "2026-10-26T10:35:23.714Z",
+  "last_passed_at": "2026-10-26T10:35:23.714Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1461,
-    "test": 320
+    "setup": 1256,
+    "test": 245
   },
   "pinned": {
     "pathe": "2.0.3",
@@ -24,11 +24,11 @@
     "recipes/pathe-normalize-join/test/paths.test.ts": "sha256:14452e2385ed8b87edb5f6e88fef42fdb15abe4cbc084ade84e9843804fc470d"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "# Subtest: join returns POSIX-style paths\nok 1 - join returns POSIX-style paths\n  ---\n  duration_ms: 1.236666\n  type: 'test'\n  ...\n# Subtest: mixed slash inputs normalize consistently\nok 2 - mixed slash inputs normalize consistently\n  ---\n  duration_ms: 0.17336\n  type: 'test'\n  ...\n# Subtest: normalize resolves dot segments\nok 3 - normalize resolves dot segments\n  ---\n  duration_ms: 0.109795\n  type: 'test'\n  ...\n# Subtest: basename, extname and dirname operate on POSIX paths\nok 4 - basename, extname and dirname operate on POSIX paths\n  ---\n  duration_ms: 0.262594\n  type: 'test'\n  ...\n# Subtest: relative computes POSIX-style traversals\nok 5 - relative computes POSIX-style traversals\n  ---\n  duration_ms: 0.361673\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 184.108349\n"
+  "log_tail": "# Subtest: join returns POSIX-style paths\nok 1 - join returns POSIX-style paths\n  ---\n  duration_ms: 0.769109\n  type: 'test'\n  ...\n# Subtest: mixed slash inputs normalize consistently\nok 2 - mixed slash inputs normalize consistently\n  ---\n  duration_ms: 0.108384\n  type: 'test'\n  ...\n# Subtest: normalize resolves dot segments\nok 3 - normalize resolves dot segments\n  ---\n  duration_ms: 0.051858\n  type: 'test'\n  ...\n# Subtest: basename, extname and dirname operate on POSIX paths\nok 4 - basename, extname and dirname operate on POSIX paths\n  ---\n  duration_ms: 0.15273\n  type: 'test'\n  ...\n# Subtest: relative computes POSIX-style traversals\nok 5 - relative computes POSIX-style traversals\n  ---\n  duration_ms: 0.184898\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 142.093373\n"
 }

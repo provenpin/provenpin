@@ -1,15 +1,15 @@
 {
   "id": "croniter-pendulum-next-run",
   "status": "passed",
-  "ran_at": "2026-10-20T01:06:10.895Z",
-  "last_passed_at": "2026-10-20T01:06:10.895Z",
+  "ran_at": "2026-10-26T10:22:26.924Z",
+  "last_passed_at": "2026-10-26T10:22:26.924Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 407,
-    "test": 1165
+    "setup": 362,
+    "test": 1627
   },
   "pinned": {
     "croniter": "6.2.4",
@@ -25,11 +25,11 @@
     "recipes/croniter-pendulum-next-run/tests/test_scheduler.py": "sha256:0b5f7c5294a2392375c4f8046eb92b81f889a849e6c918eb033b486638fd0e5c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.20s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.51s\n"
 }

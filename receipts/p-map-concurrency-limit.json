@@ -1,15 +1,15 @@
 {
   "id": "p-map-concurrency-limit",
   "status": "passed",
-  "ran_at": "2026-10-20T01:18:47.590Z",
-  "last_passed_at": "2026-10-20T01:18:47.590Z",
+  "ran_at": "2026-10-26T10:34:55.092Z",
+  "last_passed_at": "2026-10-26T10:34:55.092Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1990,
-    "test": 400
+    "setup": 1250,
+    "test": 365
   },
   "pinned": {
     "p-map": "7.1.1",
@@ -24,11 +24,11 @@
     "recipes/p-map-concurrency-limit/test/map.test.ts": "sha256:c7eba02c85dd2fc0a8fbd3b211df1e524134d4298829bfccf6734e0baedbf975"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40306350059"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: preserves order and respects concurrency\nok 1 - preserves order and respects concurrency\n  ---\n  duration_ms: 64.104988\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 247.237161\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: preserves order and respects concurrency\nok 1 - preserves order and respects concurrency\n  ---\n  duration_ms: 62.28462\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 229.957818\n"
 }
