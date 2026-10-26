@@ -28,8 +28,8 @@ test("valid webhook gets TwiML reply", async () => {
 });
 
 test("query string is part of the signed URL", async () => {
-  const sig = sign(`${BASE}/sms?tenant=aia`, { ...params, Body: "hi" });
-  const ok = await request(makeApp(TOKEN, BASE)).post("/sms?tenant=aia").type("form").set("X-Twilio-Signature", sig).send({ ...params, Body: "hi" });
+  const sig = sign(`${BASE}/sms?tenant=acme`, { ...params, Body: "hi" });
+  const ok = await request(makeApp(TOKEN, BASE)).post("/sms?tenant=acme").type("form").set("X-Twilio-Signature", sig).send({ ...params, Body: "hi" });
   assert.equal(ok.status, 200);
   assert.match(ok.text, /<Message>Got: hi<\/Message>/);
 });
