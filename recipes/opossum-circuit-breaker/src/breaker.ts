@@ -10,7 +10,10 @@ export function createPriceBreaker(fetcher: Fetcher, opts: { resetTimeout?: numb
     resetTimeout: opts.resetTimeout ?? 50,
   });
   const events: string[] = [];
-  for (const ev of ["open", "halfOpen", "close"] as const) breaker.on(ev, () => events.push(ev));
+  // One call per event: on() has an overload per event name, so a union of names matches none.
+  breaker.on("open", () => events.push("open"));
+  breaker.on("halfOpen", () => events.push("halfOpen"));
+  breaker.on("close", () => events.push("close"));
   breaker.fallback((id: string) => ({ id, price: -1, cached: true }));
   return { breaker, events };
 }
