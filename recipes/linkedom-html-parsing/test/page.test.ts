@@ -4,9 +4,9 @@ import { extractInfo, rewrite } from "../src/page.ts";
 
 const html = `<!doctype html>
 <html><head>
-  <title> Kenai Parts </title>
+  <title> Acme Parts </title>
   <meta name="description" content="Parts and tools">
-  <meta property="og:title" content="Kenai Parts">
+  <meta property="og:title" content="Acme Parts">
   <meta property="og:image" content="https://cdn.example.com/og.png">
 </head><body>
   <a href="/catalog">Catalog</a>
@@ -21,9 +21,9 @@ const html = `<!doctype html>
 
 test("extracts title, description, Open Graph and unique absolute links", () => {
   assert.deepEqual(extractInfo(html, "https://example.com/shop/"), {
-    title: "Kenai Parts",
+    title: "Acme Parts",
     description: "Parts and tools",
-    og: { title: "Kenai Parts", image: "https://cdn.example.com/og.png" },
+    og: { title: "Acme Parts", image: "https://cdn.example.com/og.png" },
     links: ["https://example.com/catalog", "https://example.com/shop/about", "https://other.example.org/x"],
   });
 });

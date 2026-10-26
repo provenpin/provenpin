@@ -5,7 +5,7 @@ export type Session = { id: string; title: string; start: Date; end: Date; locat
 
 /** Build an .ics feed: one-off sessions plus a weekly recurring office hour with an exception date. */
 export function buildCalendar(sessions: Session[]) {
-  const cal = ical({ name: "AIA Classes", prodId: { company: "provenpin", product: "recipes" }, timezone: "UTC" });
+  const cal = ical({ name: "Training Classes", prodId: { company: "provenpin", product: "recipes" }, timezone: "UTC" });
   for (const s of sessions) {
     cal.createEvent({
       id: s.id, start: s.start, end: s.end, summary: s.title, location: s.location,

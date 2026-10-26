@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { buildCalendar, parseCalendar } from "../src/calendar.ts";
 
 const sessions = [
-  { id: "cits-1", title: "CITS Orientation, Day 1", start: new Date("2026-11-01T17:00:00Z"), end: new Date("2026-11-02T01:00:00Z"), location: "Kenai, AK" },
+  { id: "safety-1", title: "Safety Orientation, Day 1", start: new Date("2026-11-01T17:00:00Z"), end: new Date("2026-11-02T01:00:00Z"), location: "Springfield" },
   { id: "rig-1", title: "Rigging; slings, hitches", start: new Date("2026-11-05T17:00:00Z"), end: new Date("2026-11-05T21:00:00Z"), location: "Shop 2" },
 ];
 
@@ -19,11 +19,11 @@ test("generates valid iCalendar text", () => {
 test("round trips through node-ical", () => {
   const events = parseCalendar(buildCalendar(sessions));
   const byId = Object.fromEntries(events.map((e) => [e.uid, e]));
-  assert.deepEqual(Object.keys(byId).sort(), ["cits-1", "office-hours", "rig-1"]);
+  assert.deepEqual(Object.keys(byId).sort(), ["office-hours", "rig-1", "safety-1"]);
   assert.equal(byId["rig-1"].summary, "Rigging; slings, hitches");
-  assert.equal(byId["cits-1"].start, "2026-11-01T17:00:00.000Z");
-  assert.equal(byId["cits-1"].end, "2026-11-02T01:00:00.000Z");
-  assert.equal(byId["cits-1"].location, "Kenai, AK");
+  assert.equal(byId["safety-1"].start, "2026-11-01T17:00:00.000Z");
+  assert.equal(byId["safety-1"].end, "2026-11-02T01:00:00.000Z");
+  assert.equal(byId["safety-1"].location, "Springfield");
 });
 
 test("recurrence rule and exception dates survive", () => {
