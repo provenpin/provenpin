@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-26T16:18:53.607Z",
+ "generated_at": "2026-10-26T16:35:57.918Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 556,
  "recipes": [
@@ -1108,13 +1108,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-26T14:53:22.747Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40343600773",
-   "recipe_hash": "sha256:69902db60139af37e301bf6a22f8707251bca0f57631eea26932bd7232fe271d",
+   "last_passed_at": "2026-10-26T16:35:27.183Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40360493982",
+   "recipe_hash": "sha256:b15327cca216e000093bb28d41246b433395f2feb92bb0f4733ca2f7285c0402",
    "files": {
     "recipes/better-auth-sqlite-email-password/package.json": "sha256:b74fa313b5ebfaa0f1502580a79e1c5370c03c752c8f61f0ebcc54d84d6b9810",
-    "recipes/better-auth-sqlite-email-password/recipe.yaml": "sha256:8480fe5126105325c64cc6b29860d461f637a29a6e04dfe9be3e8c821cca7988",
+    "recipes/better-auth-sqlite-email-password/recipe.yaml": "sha256:284f2994baf709d90eafc7a59b4263f22aff2ffaaa7587c71afa7d4837031d65",
     "recipes/better-auth-sqlite-email-password/src/auth.ts": "sha256:71b90f5b5dfb311cc233acfc4a1dbb77e896cf5a1f3cbb0801dd7134cc57e520",
+    "recipes/better-auth-sqlite-email-password/src/better-sqlite3.d.cts": "sha256:cf9684e1504466f8859adeff4dccee3d9cc8229c02eaf5ea675e12aa878c4c9f",
     "recipes/better-auth-sqlite-email-password/test/auth.test.ts": "sha256:48367623842d6527cb79ad660e1ca56fcccca519cd26a60ebac4352c0b7b27d9"
    },
    "staleness": {
