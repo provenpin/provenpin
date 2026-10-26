@@ -1,15 +1,15 @@
 {
   "id": "arq-fakeredis-job-queue",
   "status": "passed",
-  "ran_at": "2026-10-20T01:03:20.030Z",
-  "last_passed_at": "2026-10-20T01:03:20.030Z",
+  "ran_at": "2026-10-26T01:03:13.150Z",
+  "last_passed_at": "2026-10-26T01:03:13.150Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 289,
-    "test": 2523
+    "setup": 828,
+    "test": 2720
   },
   "pinned": {
     "arq": "0.28.0",
@@ -26,11 +26,11 @@
     "recipes/arq-fakeredis-job-queue/tests/test_jobs.py": "sha256:f9a9ee91e3fa4438a779ccf81d492978a7fbf7115b5f6a09f82a78a4473c71df"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40252168716"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.48s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.58s\n"
 }

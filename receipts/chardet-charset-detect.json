@@ -1,15 +1,15 @@
 {
   "id": "chardet-charset-detect",
   "status": "passed",
-  "ran_at": "2026-10-25T18:42:07.761Z",
-  "last_passed_at": "2026-10-25T18:42:07.761Z",
+  "ran_at": "2026-10-26T01:04:01.092Z",
+  "last_passed_at": "2026-10-26T01:04:01.092Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 365,
-    "test": 2505
+    "setup": 1118,
+    "test": 4417
   },
   "pinned": {
     "chardet": "7.6.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40222356766"
+    "runner": "github-actions 40252168716"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.39s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 2.01s\n"
 }

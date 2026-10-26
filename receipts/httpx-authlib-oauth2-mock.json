@@ -1,15 +1,15 @@
 {
   "id": "httpx-authlib-oauth2-mock",
   "status": "passed",
-  "ran_at": "2026-10-20T01:12:00.222Z",
-  "last_passed_at": "2026-10-20T01:12:00.222Z",
+  "ran_at": "2026-10-26T01:07:22.147Z",
+  "last_passed_at": "2026-10-26T01:07:22.147Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 419,
-    "test": 3072
+    "setup": 477,
+    "test": 2149
   },
   "pinned": {
     "authlib": "1.9.1",
@@ -27,11 +27,11 @@
     "recipes/httpx-authlib-oauth2-mock/tests/test_client.py": "sha256:60c25e4b5af59a46fbcfd83130b45ce87c80af12d798c9544b225fff08930c37"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40252168716"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.27s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.24s\n"
 }

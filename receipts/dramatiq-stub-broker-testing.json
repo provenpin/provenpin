@@ -1,15 +1,15 @@
 {
   "id": "dramatiq-stub-broker-testing",
   "status": "passed",
-  "ran_at": "2026-10-20T01:07:27.696Z",
-  "last_passed_at": "2026-10-20T01:07:27.696Z",
+  "ran_at": "2026-10-26T01:04:37.637Z",
+  "last_passed_at": "2026-10-26T01:04:37.637Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 512,
-    "test": 3533
+    "setup": 206,
+    "test": 1583
   },
   "pinned": {
     "dramatiq": "2.2.1",
@@ -25,11 +25,11 @@
     "recipes/dramatiq-stub-broker-testing/tests/test_tasks.py": "sha256:94552d7aed803cfa2da08acbacfcca7d40f72a5b0d498c9739252951deff289c"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40252168716"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 1.13s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 1.05s\n"
 }

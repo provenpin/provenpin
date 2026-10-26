@@ -1,15 +1,15 @@
 {
   "id": "fastify-multipart-upload",
   "status": "passed",
-  "ran_at": "2026-10-25T18:44:45.424Z",
-  "last_passed_at": "2026-10-25T18:44:45.424Z",
+  "ran_at": "2026-10-26T01:06:37.660Z",
+  "last_passed_at": "2026-10-26T01:06:37.660Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2863,
-    "test": 725
+    "setup": 2630,
+    "test": 518
   },
   "pinned": {
     "fastify": "5.12.7",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40222356766"
+    "runner": "github-actions 40252168716"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: uploads a file with fields\nok 1 - uploads a file with fields\n  ---\n  duration_ms: 192.149543\n  type: 'test'\n  ...\n# Subtest: multiple files\nok 2 - multiple files\n  ---\n  duration_ms: 14.382766\n  type: 'test'\n  ...\n# Subtest: oversized files are rejected with 413\nok 3 - oversized files are rejected with 413\n  ---\n  duration_ms: 8.184727\n  type: 'test'\n  ...\n# Subtest: non-multipart requests are refused\nok 4 - non-multipart requests are refused\n  ---\n  duration_ms: 5.11125\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 568.726909\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: uploads a file with fields\nok 1 - uploads a file with fields\n  ---\n  duration_ms: 130.88894\n  type: 'test'\n  ...\n# Subtest: multiple files\nok 2 - multiple files\n  ---\n  duration_ms: 11.356203\n  type: 'test'\n  ...\n# Subtest: oversized files are rejected with 413\nok 3 - oversized files are rejected with 413\n  ---\n  duration_ms: 5.221993\n  type: 'test'\n  ...\n# Subtest: non-multipart requests are refused\nok 4 - non-multipart requests are refused\n  ---\n  duration_ms: 3.548243\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 401.549005\n"
 }

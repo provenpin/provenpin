@@ -1,15 +1,15 @@
 {
   "id": "arrow-time-machine-shift",
   "status": "passed",
-  "ran_at": "2026-10-20T01:03:24.648Z",
-  "last_passed_at": "2026-10-20T01:03:24.648Z",
+  "ran_at": "2026-10-26T01:03:16.678Z",
+  "last_passed_at": "2026-10-26T01:03:16.678Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 328,
-    "test": 1291
+    "setup": 250,
+    "test": 1509
   },
   "pinned": {
     "arrow": "1.4.0",
@@ -25,11 +25,11 @@
     "recipes/arrow-time-machine-shift/tests/test_shifts.py": "sha256:9f0d9aa8506e4a9761cd5726e0daf0c019aae6c404273d4c818989d842d63799"
   },
   "environment": {
-    "os": "linux 6.17.0-1022-azure",
+    "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 39350710534"
+    "runner": "github-actions 40252168716"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.11s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.14s\n"
 }
