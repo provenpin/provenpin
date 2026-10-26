@@ -14,6 +14,7 @@ pinned:
 files:
   - package.json
   - src/auth.ts
+  - src/better-sqlite3.d.cts
   - test/auth.test.ts
 setup: npm install --no-audit --no-fund --ignore-scripts=false
 test: npm test
