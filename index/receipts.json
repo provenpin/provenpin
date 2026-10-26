@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "generated_at": "2026-10-26T15:05:00.117Z",
+ "generated_at": "2026-10-26T16:02:21.516Z",
  "staleness_checked_at": "2026-10-22T01:19:00.956Z",
  "count": 556,
  "recipes": [
@@ -5687,13 +5687,13 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-26T10:27:24.012Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40306350059",
-   "recipe_hash": "sha256:7b008bb6580f1c96402cf700c153aaf53e967b2e4ccaca86f841c829852e41d1",
+   "last_passed_at": "2026-10-26T16:01:44.099Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40355030528",
+   "recipe_hash": "sha256:3b2bde360365a5359ab65cb51220ae7bd8de6f004421b7f13d60dbcbea82e0ea",
    "files": {
     "recipes/grammy-bot-handle-update/package.json": "sha256:2ee6d9569fb9cab31ad3b2330c55f739c5e88e6dfe2ac937b0c9600fc2befb23",
     "recipes/grammy-bot-handle-update/recipe.yaml": "sha256:457e4cb6c68e278de05b79b6c3eeb6e134194e0a5a905de64449b98d2c2eed0a",
-    "recipes/grammy-bot-handle-update/src/bot.ts": "sha256:aeb1e8ea9dae900517c5bbff7406ce5f4c78f9492cd8fc70e537bb2808ec9264",
+    "recipes/grammy-bot-handle-update/src/bot.ts": "sha256:897fdac5e987d86875d0b778dbf1ba35f3c01c559e729860712fdd1a8096039f",
     "recipes/grammy-bot-handle-update/test/bot.test.ts": "sha256:0049e025ecd59cbb44662b28008bbc9c5ac45054fba3e6441d093889a12c6d4e"
    },
    "staleness": {
@@ -6535,14 +6535,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-26T10:28:38.108Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40306350059",
-   "recipe_hash": "sha256:c447a9b4293fdb075ea944467b9853a94c00aeba72a26c0e843de9447251e595",
+   "last_passed_at": "2026-10-26T16:01:45.403Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40355030528",
+   "recipe_hash": "sha256:828f61cb0bf3e7ef8a40774a133ad3adee3505f1b98c97907c520630491e763c",
    "files": {
     "recipes/ical-generator-node-ical-roundtrip/package.json": "sha256:3c6ac0665ab5bdb0a68c7f66598b6d8f68ca99f0a4ee13723a842a1acaf61e11",
     "recipes/ical-generator-node-ical-roundtrip/recipe.yaml": "sha256:4b61cf1aa63de93cb0ed74f2a8733555531a71131eb9b5b016c2ca4ad8e64ddc",
-    "recipes/ical-generator-node-ical-roundtrip/src/calendar.ts": "sha256:800c09604b5c8604cce4da40a75d9db1d4bb10a52b2229d2a9653999f7ebfa65",
-    "recipes/ical-generator-node-ical-roundtrip/test/calendar.test.ts": "sha256:0e903c8bf6f4a50a9ee1dbf266d347104ba411b11b9227cf5bbf9719013dafad"
+    "recipes/ical-generator-node-ical-roundtrip/src/calendar.ts": "sha256:3ca86cb984ec79295516a52c97bbdac9be6b772edf17487fb5a706f8154cab7f",
+    "recipes/ical-generator-node-ical-roundtrip/test/calendar.test.ts": "sha256:ccad05d20093090eccfb78ed7125247001aaf1049981cb94c49ba4be171eef81"
    },
    "staleness": {
     "status": "current",
@@ -8068,14 +8068,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-26T14:58:32.818Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40343600773",
-   "recipe_hash": "sha256:3ba3f45cd7e231f58e4bd480c300e0694b96622465a74d44e03d8b00c8c21575",
+   "last_passed_at": "2026-10-26T16:01:45.058Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40355030528",
+   "recipe_hash": "sha256:a5695eb484390f52b2b02526ccabca2dcf8fe08e6892b4e69d51a321336dfcac",
    "files": {
     "recipes/linkedom-html-parsing/package.json": "sha256:cb7accdb52a774d02cfebc27cb37299824fd7f3a3e27c98f1e0961d5502f8b3c",
     "recipes/linkedom-html-parsing/recipe.yaml": "sha256:4d613c7196a04a9e3fdbaf44d4d0aa81eb9defa2361402d2b39230d7e871b484",
     "recipes/linkedom-html-parsing/src/page.ts": "sha256:46b183967ff57ef15368860827d1297f965e91957b252fc9d05db2368510021c",
-    "recipes/linkedom-html-parsing/test/page.test.ts": "sha256:150577564ea861a1de0ed9f0946c69e856d4ece376f4d41898d890312467f4d0"
+    "recipes/linkedom-html-parsing/test/page.test.ts": "sha256:eacbbbffaa191cc761c288513bd161bb971e4d7ed5b059ed7aab34b799167986"
    },
    "staleness": {
     "status": "passes_on_latest",
@@ -11058,14 +11058,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-26T15:00:35.768Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40343600773",
-   "recipe_hash": "sha256:f614a586d757545f24523da79406865f9c361a34eb98cb8a80fccfc95d90a612",
+   "last_passed_at": "2026-10-26T16:01:45.011Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40355030528",
+   "recipe_hash": "sha256:f836da28f6e46b78916a8ac9a0184b68f916a79d21549526adb5a369e038f368",
    "files": {
     "recipes/pg-mem-kysely-postgres-tests/package.json": "sha256:4ba7eea456925159eb86b6df24b728ed3f632bbc94b764ed16eea087cf5b0251",
     "recipes/pg-mem-kysely-postgres-tests/recipe.yaml": "sha256:e588251a5ea45a4a3bd506b7ad62aad269a413b9074944228f47ba1d700c97e1",
     "recipes/pg-mem-kysely-postgres-tests/src/db.ts": "sha256:01336e8873f93ed0300cf9f057bb6993f508e9112fdf2f7db966e76425bf1d01",
-    "recipes/pg-mem-kysely-postgres-tests/test/db.test.ts": "sha256:3088ef9acb369f23453e16e6102fb1b2f8677b622c281ee5951dff89f20687a6"
+    "recipes/pg-mem-kysely-postgres-tests/test/db.test.ts": "sha256:0bfe5e4363cda46def6ceee2605965921f0990dc2e2d0aa31e795f73f06600ed"
    },
    "staleness": {
     "status": "passes_on_latest",
@@ -15606,14 +15606,14 @@
    },
    "runtime": "node v22.23.3",
    "status": "passed",
-   "last_passed_at": "2026-10-26T10:42:52.308Z",
-   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40306350059",
-   "recipe_hash": "sha256:2c065cc9d5287ce942952f722399b570f9b5e6472eef36fbf6258f8fc2c83089",
+   "last_passed_at": "2026-10-26T16:01:49.343Z",
+   "run_url": "https://github.com/provenpin/provenpin/actions/runs/40355030528",
+   "recipe_hash": "sha256:5fe7abdc799180ef773822c588a0f16dd558f6bc35d99ddf21a401c633c0b53e",
    "files": {
     "recipes/twilio-webhook-signature-express/package.json": "sha256:bea030945e55f7955f9f0895b016c7d8f8d16f4f3e9e8fda2a3e18e4724b517b",
     "recipes/twilio-webhook-signature-express/recipe.yaml": "sha256:9dd6d829022a5b1cd9b9967b2249290fd5df83d80e3bb76e337272ada06f22c6",
     "recipes/twilio-webhook-signature-express/src/app.ts": "sha256:533079baaddf95c933dbf08c3c6e2dfa8fe7f79c1eb47ed4894af80fcbbe1bc4",
-    "recipes/twilio-webhook-signature-express/test/app.test.ts": "sha256:a2c86dc3417141c64420454ffa58a76f889289bfcff2bdb5d34b33181cb2faff"
+    "recipes/twilio-webhook-signature-express/test/app.test.ts": "sha256:910bfc44e55b027cde7b5d1f4b07812970a144cac4cba9828e0afd82c442071b"
    },
    "staleness": {
     "status": "current",

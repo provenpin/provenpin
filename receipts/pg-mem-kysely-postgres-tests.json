@@ -1,15 +1,15 @@
 {
   "id": "pg-mem-kysely-postgres-tests",
   "status": "passed",
-  "ran_at": "2026-10-26T15:00:35.768Z",
-  "last_passed_at": "2026-10-26T15:00:35.768Z",
+  "ran_at": "2026-10-26T16:01:45.011Z",
+  "last_passed_at": "2026-10-26T16:01:45.011Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3098,
-    "test": 1035
+    "setup": 2685,
+    "test": 885
   },
   "pinned": {
     "kysely": "0.29.6",
@@ -17,19 +17,19 @@
     "tsx": "4.23.15",
     "pg-mem": "3.0.14"
   },
-  "recipe_hash": "sha256:f614a586d757545f24523da79406865f9c361a34eb98cb8a80fccfc95d90a612",
+  "recipe_hash": "sha256:f836da28f6e46b78916a8ac9a0184b68f916a79d21549526adb5a369e038f368",
   "files": {
     "recipes/pg-mem-kysely-postgres-tests/package.json": "sha256:4ba7eea456925159eb86b6df24b728ed3f632bbc94b764ed16eea087cf5b0251",
     "recipes/pg-mem-kysely-postgres-tests/recipe.yaml": "sha256:e588251a5ea45a4a3bd506b7ad62aad269a413b9074944228f47ba1d700c97e1",
     "recipes/pg-mem-kysely-postgres-tests/src/db.ts": "sha256:01336e8873f93ed0300cf9f057bb6993f508e9112fdf2f7db966e76425bf1d01",
-    "recipes/pg-mem-kysely-postgres-tests/test/db.test.ts": "sha256:3088ef9acb369f23453e16e6102fb1b2f8677b622c281ee5951dff89f20687a6"
+    "recipes/pg-mem-kysely-postgres-tests/test/db.test.ts": "sha256:0bfe5e4363cda46def6ceee2605965921f0990dc2e2d0aa31e795f73f06600ed"
   },
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40343600773"
+    "runner": "github-actions 40355030528"
   },
   "errors": [],
-  "log_tail": "# Subtest: constraints: unique and check\nok 2 - constraints: unique and check\n  ---\n  duration_ms: 63.638346\n  type: 'test'\n  ...\n# Subtest: multi-row insert is atomic: a duplicate rejects the whole batch\nok 3 - multi-row insert is atomic: a duplicate rejects the whole batch\n  ---\n  duration_ms: 54.176836\n  type: 'test'\n  ...\n# Subtest: pg-mem gotcha: Kysely transaction errors propagate but earlier statements are not rolled back\nok 4 - pg-mem gotcha: Kysely transaction errors propagate but earlier statements are not rolled back\n  ---\n  duration_ms: 14.79881\n  type: 'test'\n  ...\n# Subtest: foreign keys enforced and left join aggregates\nok 5 - foreign keys enforced and left join aggregates\n  ---\n  duration_ms: 13.660954\n  type: 'test'\n  ...\n# Subtest: backup and restore snapshots for fast test isolation\nok 6 - backup and restore snapshots for fast test isolation\n  ---\n  duration_ms: 7.341557\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 867.20025\n"
+  "log_tail": "# Subtest: constraints: unique and check\nok 2 - constraints: unique and check\n  ---\n  duration_ms: 61.937335\n  type: 'test'\n  ...\n# Subtest: multi-row insert is atomic: a duplicate rejects the whole batch\nok 3 - multi-row insert is atomic: a duplicate rejects the whole batch\n  ---\n  duration_ms: 41.361069\n  type: 'test'\n  ...\n# Subtest: pg-mem gotcha: Kysely transaction errors propagate but earlier statements are not rolled back\nok 4 - pg-mem gotcha: Kysely transaction errors propagate but earlier statements are not rolled back\n  ---\n  duration_ms: 12.51793\n  type: 'test'\n  ...\n# Subtest: foreign keys enforced and left join aggregates\nok 5 - foreign keys enforced and left join aggregates\n  ---\n  duration_ms: 10.442897\n  type: 'test'\n  ...\n# Subtest: backup and restore snapshots for fast test isolation\nok 6 - backup and restore snapshots for fast test isolation\n  ---\n  duration_ms: 5.783507\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 740.232045\n"
 }
