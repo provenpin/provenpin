@@ -1,15 +1,15 @@
 {
   "id": "django-pytest-factoryboy",
   "status": "passed",
-  "ran_at": "2026-10-26T01:04:34.364Z",
-  "last_passed_at": "2026-10-26T01:04:34.364Z",
+  "ran_at": "2026-10-26T06:55:13.180Z",
+  "last_passed_at": "2026-10-26T06:55:13.180Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 626,
-    "test": 3095
+    "setup": 713,
+    "test": 2182
   },
   "pinned": {
     "django": "6.1.2",
@@ -33,8 +33,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40252168716"
+    "runner": "github-actions 40282412234"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.47s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.31s\n"
 }

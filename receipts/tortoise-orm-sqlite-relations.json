@@ -1,15 +1,15 @@
 {
   "id": "tortoise-orm-sqlite-relations",
   "status": "passed",
-  "ran_at": "2026-10-26T01:13:47.792Z",
-  "last_passed_at": "2026-10-26T01:13:47.792Z",
+  "ran_at": "2026-10-26T07:03:49.482Z",
+  "last_passed_at": "2026-10-26T07:03:49.482Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 935,
-    "test": 5385
+    "setup": 198,
+    "test": 3611
   },
   "pinned": {
     "tortoise-orm": "1.1.9",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40252168716"
+    "runner": "github-actions 40282412234"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.58s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.36s\n"
 }

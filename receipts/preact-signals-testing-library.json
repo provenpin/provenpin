@@ -1,15 +1,15 @@
 {
   "id": "preact-signals-testing-library",
   "status": "passed",
-  "ran_at": "2026-10-26T01:10:37.966Z",
-  "last_passed_at": "2026-10-26T01:10:37.966Z",
+  "ran_at": "2026-10-26T07:01:10.626Z",
+  "last_passed_at": "2026-10-26T07:01:10.626Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8437,
-    "test": 1858
+    "setup": 6685,
+    "test": 1290
   },
   "pinned": {
     "preact": "11.0.1",
@@ -33,8 +33,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40252168716"
+    "runner": "github-actions 40282412234"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-preact-signals-testing-library-9R27kB\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.tsx \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 257\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 01:10:46\n\u001b[2m   Duration \u001b[22m 1.34s\u001b[2m (environment 55%, tests 21%, import 18%, transform 5%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-preact-signals-testing-library-9R27kB/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-preact-signals-testing-library-zGv3Zc\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.tsx \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 175\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:01:17\n\u001b[2m   Duration \u001b[22m 930ms\u001b[2m (environment 57%, tests 21%, import 17%, transform 5%)\u001b[22m\n\nJSON report written to /tmp/pp-preact-signals-testing-library-zGv3Zc/test-report.json\n"
 }

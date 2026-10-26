@@ -1,15 +1,15 @@
 {
   "id": "katex-render-to-string",
   "status": "passed",
-  "ran_at": "2026-10-26T01:08:13.550Z",
-  "last_passed_at": "2026-10-26T01:08:13.550Z",
+  "ran_at": "2026-10-26T06:58:50.649Z",
+  "last_passed_at": "2026-10-26T06:58:50.649Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1809,
-    "test": 423
+    "setup": 1585,
+    "test": 406
   },
   "pinned": {
     "katex": "0.19.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40252168716"
+    "runner": "github-actions 40282412234"
   },
   "errors": [],
-  "log_tail": "# Subtest: renders inline math with katex classes and MathML\nok 1 - renders inline math with katex classes and MathML\n  ---\n  duration_ms: 5.650476\n  type: 'test'\n  ...\n# Subtest: renders display math with katex-display wrapper\nok 2 - renders display math with katex-display wrapper\n  ---\n  duration_ms: 2.183035\n  type: 'test'\n  ...\n# Subtest: throws a ParseError for invalid TeX when throwOnError is true\nok 3 - throws a ParseError for invalid TeX when throwOnError is true\n  ---\n  duration_ms: 0.946116\n  type: 'test'\n  ...\n# Subtest: renders an error span for invalid TeX when throwOnError is false\nok 4 - renders an error span for invalid TeX when throwOnError is false\n  ---\n  duration_ms: 0.345745\n  type: 'test'\n  ...\n# Subtest: applies custom macros across a render call\nok 5 - applies custom macros across a render call\n  ---\n  duration_ms: 0.770548\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 260.274108\n"
+  "log_tail": "# Subtest: renders inline math with katex classes and MathML\nok 1 - renders inline math with katex classes and MathML\n  ---\n  duration_ms: 6.800147\n  type: 'test'\n  ...\n# Subtest: renders display math with katex-display wrapper\nok 2 - renders display math with katex-display wrapper\n  ---\n  duration_ms: 2.093574\n  type: 'test'\n  ...\n# Subtest: throws a ParseError for invalid TeX when throwOnError is true\nok 3 - throws a ParseError for invalid TeX when throwOnError is true\n  ---\n  duration_ms: 0.90463\n  type: 'test'\n  ...\n# Subtest: renders an error span for invalid TeX when throwOnError is false\nok 4 - renders an error span for invalid TeX when throwOnError is false\n  ---\n  duration_ms: 0.352442\n  type: 'test'\n  ...\n# Subtest: applies custom macros across a render call\nok 5 - applies custom macros across a render call\n  ---\n  duration_ms: 0.782971\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 243.823723\n"
 }
