@@ -1,15 +1,15 @@
 {
   "id": "boto3-moto-dynamodb-sqs",
   "status": "passed",
-  "ran_at": "2026-10-26T14:53:29.477Z",
-  "last_passed_at": "2026-10-26T14:53:29.477Z",
+  "ran_at": "2026-10-26T18:55:18.388Z",
+  "last_passed_at": "2026-10-26T18:55:18.388Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 695,
-    "test": 3212
+    "setup": 699,
+    "test": 4098
   },
   "pinned": {
     "boto3": "1.43.114",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40343600773"
+    "runner": "github-actions 40381766358"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 2.03s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 2.67s\n"
 }

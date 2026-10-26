@@ -1,15 +1,15 @@
 {
   "id": "aws-sdk-v3-dynamodb-sqs-vitest",
   "status": "passed",
-  "ran_at": "2026-10-26T14:52:57.815Z",
-  "last_passed_at": "2026-10-26T14:52:57.815Z",
+  "ran_at": "2026-10-26T18:54:48.661Z",
+  "last_passed_at": "2026-10-26T18:54:48.661Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8332,
-    "test": 801
+    "setup": 7117,
+    "test": 721
   },
   "pinned": {
     "@aws-sdk/client-dynamodb": "3.1152.0",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40343600773"
+    "runner": "github-actions 40381766358"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-BL7RAv\u001b[39m\n\n \u001b[32m✓\u001b[39m test/orders.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 27\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n\u001b[2m   Start at \u001b[22m 14:53:06\n\u001b[2m   Duration \u001b[22m 335ms\u001b[2m (import 63%, transform 23%, tests 12%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-BL7RAv/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-lBOO9z\u001b[39m\n\n \u001b[32m✓\u001b[39m test/orders.test.ts \u001b[2m(\u001b[22m\u001b[2m6 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 25\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[90m (6)\u001b[39m\n\u001b[2m   Start at \u001b[22m 18:54:56\n\u001b[2m   Duration \u001b[22m 299ms\u001b[2m (import 61%, transform 24%, tests 13%, worker 2%)\u001b[22m\n\nJSON report written to /tmp/pp-aws-sdk-v3-dynamodb-sqs-vitest-lBOO9z/test-report.json\n"
 }

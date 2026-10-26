@@ -1,15 +1,15 @@
 {
   "id": "vitest-fake-timers-es-toolkit",
   "status": "passed",
-  "ran_at": "2026-10-26T15:04:20.589Z",
-  "last_passed_at": "2026-10-26T15:04:20.589Z",
+  "ran_at": "2026-10-26T19:06:40.968Z",
+  "last_passed_at": "2026-10-26T19:06:40.968Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5407,
-    "test": 630
+    "setup": 5049,
+    "test": 427
   },
   "pinned": {
     "es-toolkit": "1.52.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40343600773"
+    "runner": "github-actions 40381766358"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-vitest-fake-timers-es-toolkit-zZREZI\u001b[39m\n\n \u001b[32m✓\u001b[39m test/autosave.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 12\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 15:04:26\n\u001b[2m   Duration \u001b[22m 199ms\u001b[2m (import 53%, transform 29%, tests 13%, worker 4%)\u001b[22m\n\nJSON report written to /tmp/pp-vitest-fake-timers-es-toolkit-zZREZI/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-vitest-fake-timers-es-toolkit-kTh8nY\u001b[39m\n\n \u001b[32m✓\u001b[39m test/autosave.test.ts \u001b[2m(\u001b[22m\u001b[2m5 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m5 passed\u001b[39m\u001b[22m\u001b[90m (5)\u001b[39m\n\u001b[2m   Start at \u001b[22m 19:06:46\n\u001b[2m   Duration \u001b[22m 129ms\u001b[2m (import 44%, transform 40%, tests 12%, worker 4%)\u001b[22m\n\nJSON report written to /tmp/pp-vitest-fake-timers-es-toolkit-kTh8nY/test-report.json\n"
 }

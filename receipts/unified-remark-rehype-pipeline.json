@@ -1,15 +1,15 @@
 {
   "id": "unified-remark-rehype-pipeline",
   "status": "passed",
-  "ran_at": "2026-10-26T15:04:05.609Z",
-  "last_passed_at": "2026-10-26T15:04:05.609Z",
+  "ran_at": "2026-10-26T19:06:37.403Z",
+  "last_passed_at": "2026-10-26T19:06:37.403Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5007,
-    "test": 541
+    "setup": 3190,
+    "test": 691
   },
   "pinned": {
     "unified": "11.0.5",
@@ -33,8 +33,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40343600773"
+    "runner": "github-actions 40381766358"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders GFM tables, strikethrough and task lists\nok 1 - renders GFM tables, strikethrough and task lists\n  ---\n  duration_ms: 16.332818\n  type: 'test'\n  ...\n# Subtest: drops raw HTML and javascript: links\nok 2 - drops raw HTML and javascript: links\n  ---\n  duration_ms: 3.485272\n  type: 'test'\n  ...\n# Subtest: collects a table of contents from headings\nok 3 - collects a table of contents from headings\n  ---\n  duration_ms: 2.441933\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 392.642614\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders GFM tables, strikethrough and task lists\nok 1 - renders GFM tables, strikethrough and task lists\n  ---\n  duration_ms: 15.933104\n  type: 'test'\n  ...\n# Subtest: drops raw HTML and javascript: links\nok 2 - drops raw HTML and javascript: links\n  ---\n  duration_ms: 3.456188\n  type: 'test'\n  ...\n# Subtest: collects a table of contents from headings\nok 3 - collects a table of contents from headings\n  ---\n  duration_ms: 2.378437\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 533.476349\n"
 }

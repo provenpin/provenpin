@@ -1,15 +1,15 @@
 {
   "id": "duckdb-polars-analytics",
   "status": "passed",
-  "ran_at": "2026-10-26T14:54:46.837Z",
-  "last_passed_at": "2026-10-26T14:54:46.837Z",
+  "ran_at": "2026-10-26T18:56:38.840Z",
+  "last_passed_at": "2026-10-26T18:56:38.840Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 880,
-    "test": 2428
+    "setup": 904,
+    "test": 5089
   },
   "pinned": {
     "duckdb": "1.5.6",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40343600773"
+    "runner": "github-actions 40381766358"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 1.22s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 2.26s\n"
 }
