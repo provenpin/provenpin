@@ -1,15 +1,15 @@
 {
   "id": "i18next-react-ssr",
   "status": "passed",
-  "ran_at": "2026-10-27T12:56:46.145Z",
-  "last_passed_at": "2026-10-27T12:56:46.145Z",
+  "ran_at": "2026-10-27T18:56:08.377Z",
+  "last_passed_at": "2026-10-27T18:56:08.377Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2693,
-    "test": 509
+    "setup": 2862,
+    "test": 444
   },
   "pinned": {
     "i18next": "26.4.5",
@@ -30,9 +30,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40507015718"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40563621242"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: plurals, context and fallback\nok 1 - plurals, context and fallback\n  ---\n  duration_ms: 11.662307\n  type: 'test'\n  ...\n# Subtest: interpolation escapes HTML\nok 2 - interpolation escapes HTML\n  ---\n  duration_ms: 0.554681\n  type: 'test'\n  ...\n# Subtest: SSR render with per-request instances\nok 3 - SSR render with per-request instances\n  ---\n  duration_ms: 10.950952\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 354.698967\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: plurals, context and fallback\nok 1 - plurals, context and fallback\n  ---\n  duration_ms: 10.436061\n  type: 'test'\n  ...\n# Subtest: interpolation escapes HTML\nok 2 - interpolation escapes HTML\n  ---\n  duration_ms: 0.473715\n  type: 'test'\n  ...\n# Subtest: SSR render with per-request instances\nok 3 - SSR render with per-request instances\n  ---\n  duration_ms: 8.606736\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 303.119901\n"
 }

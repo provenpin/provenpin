@@ -1,15 +1,15 @@
 {
   "id": "fastapi-httpx-asyncclient-lifespan",
   "status": "passed",
-  "ran_at": "2026-10-27T12:55:02.884Z",
-  "last_passed_at": "2026-10-27T12:55:02.884Z",
+  "ran_at": "2026-10-27T18:54:24.822Z",
+  "last_passed_at": "2026-10-27T18:54:24.822Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 350,
-    "test": 2613
+    "setup": 425,
+    "test": 1518
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -29,9 +29,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40507015718"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40563621242"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.88s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.57s\n"
 }

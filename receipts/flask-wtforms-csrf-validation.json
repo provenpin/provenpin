@@ -1,15 +1,15 @@
 {
   "id": "flask-wtforms-csrf-validation",
   "status": "passed",
-  "ran_at": "2026-10-27T12:55:52.931Z",
-  "last_passed_at": "2026-10-27T12:55:52.931Z",
+  "ran_at": "2026-10-27T18:55:09.447Z",
+  "last_passed_at": "2026-10-27T18:55:09.447Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 334,
-    "test": 974
+    "setup": 296,
+    "test": 775
   },
   "pinned": {
     "flask": "3.1.3",
@@ -28,9 +28,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40507015718"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40563621242"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 0.35s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 0.32s\n"
 }
