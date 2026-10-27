@@ -87,6 +87,7 @@ test("a lone upper bound is judged by whether it allows the tested line, not by 
   assert.match(checkCompatibility({ express: "5.3.0" }, get({ express: "<5.0.1" })).packages[0].warning!, /excludes the tested 5\.3\.0/);
   const exc = checkCompatibility({ express: "5.3.0" }, get({ express: "<5.0.0" }));
   assert.equal(exc.overall, "mismatch"); assert.match(exc.packages[0].warning!, /range <5\.0\.0, not an installed version, and it excludes the tested express 5\.x line \(5\.3\.0\)/);
+  for (const r of ["<5.0.0||>=5.2.0", "<5.0.0 || >=5.2.0"]) assert.equal(verdictFor("5.3.0", r), "compatible", r); // an || range is not a lone bound
   for (const c of [inc, exc]) assert.ok(!/\u2014|\u2013/.test(c.packages[0].warning ?? ""));
 });
 test("checkCompatibility warnings and tooling skip", () => {

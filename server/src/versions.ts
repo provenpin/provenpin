@@ -135,7 +135,7 @@ const cmp = (a: string, b: string) => {
   return 0;
 };
 /** A lone upper bound (<X, <=X): its bound is not an installed version, so base() alone would misjudge it. */
-const upperBound = (v: string) => v.match(/^\s*(?:npm:)?\s*(<=?)\s*(\d[^\s,]*)\s*$/);
+const upperBound = (v: string) => v.match(/^\s*(?:npm:)?\s*(<=?)\s*(\d[^\s,|]*)\s*$/);
 const allows = (ub: RegExpMatchArray, v: string) => (ub[1] === "<" ? cmp(v, ub[2]) < 0 : cmp(v, ub[2]) <= 0);
 /** First version of the breaking line: 5.3.0 -> 5.0.0, 0.115.4 -> 0.115.0. */
 const lineStart = (v: string) => { const [a, b] = parts(v); return a === 0 ? `0.${b ?? 0}.0` : `${a}.0.0`; };
@@ -160,7 +160,7 @@ export function checkCompatibility(pinned: Record<string, string>, parsed: Parse
     const yours = parsed.versions.get(normName(pkg));
     const verdict = verdictFor(tested, yours);
     const c: PackageCheck = { package: pkg, tested, yours: yours ?? null, verdict };
-    const tl = line(tested), yl = yours ? line(yours) : null, ub = yours ? upperBound(yours) : null;
+    const tl = line(tested), yl = yours ? line(yours) : null, ub = yours && tl ? upperBound(yours) : null;
     if (verdict === "mismatch" && ub) c.warning = `Your project declares the range ${yours}, not an installed version, and it excludes the tested ${pkg} ${tl ? label(tl) : tested} line (${tested}), APIs may differ. Check the code against your version or pass your lockfile for an exact check.`;
     else if (verdict === "compatible" && ub) c.warning = allows(ub, tested)
       ? `Your project declares the range ${yours}, not an installed version. It includes the tested ${tested}, but the installed version may differ: pass your lockfile for an exact check.`
