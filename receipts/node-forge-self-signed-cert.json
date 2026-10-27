@@ -1,15 +1,15 @@
 {
   "id": "node-forge-self-signed-cert",
   "status": "passed",
-  "ran_at": "2026-10-26T10:33:33.236Z",
-  "last_passed_at": "2026-10-26T10:33:33.236Z",
+  "ran_at": "2026-10-27T06:57:02.449Z",
+  "last_passed_at": "2026-10-27T06:57:02.449Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1345,
-    "test": 381
+    "setup": 1690,
+    "test": 689
   },
   "pinned": {
     "node-forge": "1.4.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40463370863"
   },
   "errors": [],
-  "log_tail": "# Subtest: sets the requested validity window\nok 2 - sets the requested validity window\n  ---\n  duration_ms: 0.107562\n  type: 'test'\n  ...\n# Subtest: includes basicConstraints, keyUsage and subjectAltName extensions\nok 3 - includes basicConstraints, keyUsage and subjectAltName extensions\n  ---\n  duration_ms: 0.396255\n  type: 'test'\n  ...\n# Subtest: round-trips through PEM and verifies the certificate signature\nok 4 - round-trips through PEM and verifies the certificate signature\n  ---\n  duration_ms: 2.120936\n  type: 'test'\n  ...\n# Subtest: signs and verifies data with SHA-256\nok 5 - signs and verifies data with SHA-256\n  ---\n  duration_ms: 18.627022\n  type: 'test'\n  ...\n# Subtest: rejects tampered data\nok 6 - rejects tampered data\n  ---\n  duration_ms: 15.478773\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 287.200378\n"
+  "log_tail": "# Subtest: sets the requested validity window\nok 2 - sets the requested validity window\n  ---\n  duration_ms: 0.21855\n  type: 'test'\n  ...\n# Subtest: includes basicConstraints, keyUsage and subjectAltName extensions\nok 3 - includes basicConstraints, keyUsage and subjectAltName extensions\n  ---\n  duration_ms: 1.456573\n  type: 'test'\n  ...\n# Subtest: round-trips through PEM and verifies the certificate signature\nok 4 - round-trips through PEM and verifies the certificate signature\n  ---\n  duration_ms: 5.654843\n  type: 'test'\n  ...\n# Subtest: signs and verifies data with SHA-256\nok 5 - signs and verifies data with SHA-256\n  ---\n  duration_ms: 47.752113\n  type: 'test'\n  ...\n# Subtest: rejects tampered data\nok 6 - rejects tampered data\n  ---\n  duration_ms: 33.624685\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 528.389421\n"
 }
