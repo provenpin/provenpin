@@ -1,15 +1,15 @@
 {
   "id": "apscheduler-time-machine-jobs",
   "status": "passed",
-  "ran_at": "2026-10-27T06:50:27.846Z",
-  "last_passed_at": "2026-10-27T06:50:27.846Z",
+  "ran_at": "2026-10-27T12:52:09.630Z",
+  "last_passed_at": "2026-10-27T12:52:09.630Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 283,
-    "test": 680
+    "setup": 268,
+    "test": 1705
   },
   "pinned": {
     "apscheduler": "3.11.3",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40463370863"
+    "runner": "github-actions 40507015718"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.15s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.53s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "piccolo-sqlite-crud",
   "status": "passed",
-  "ran_at": "2026-10-27T06:57:45.001Z",
-  "last_passed_at": "2026-10-27T06:57:45.001Z",
+  "ran_at": "2026-10-27T12:59:46.966Z",
+  "last_passed_at": "2026-10-27T12:59:46.966Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 355,
-    "test": 2202
+    "setup": 483,
+    "test": 2746
   },
   "pinned": {
     "piccolo": "1.36.0",
@@ -28,9 +28,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40463370863"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40507015718"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.99s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 2.16s\n"
 }

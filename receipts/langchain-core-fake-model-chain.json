@@ -1,15 +1,15 @@
 {
   "id": "langchain-core-fake-model-chain",
   "status": "passed",
-  "ran_at": "2026-10-27T06:55:36.065Z",
-  "last_passed_at": "2026-10-27T06:55:36.065Z",
+  "ran_at": "2026-10-27T12:57:35.316Z",
+  "last_passed_at": "2026-10-27T12:57:35.316Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2417,
-    "test": 496
+    "setup": 3459,
+    "test": 794
   },
   "pinned": {
     "@langchain/core": "1.2.17",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40463370863"
+    "runner": "github-actions 40507015718"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses plain JSON output\nok 1 - parses plain JSON output\n  ---\n  duration_ms: 3.425618\n  type: 'test'\n  ...\n# Subtest: strips markdown fences\nok 2 - strips markdown fences\n  ---\n  duration_ms: 0.45074\n  type: 'test'\n  ...\n# Subtest: rejects out-of-schema output\nok 3 - rejects out-of-schema output\n  ---\n  duration_ms: 0.916222\n  type: 'test'\n  ...\n# Subtest: prompt escapes literal braces and fills the variable\nok 4 - prompt escapes literal braces and fills the variable\n  ---\n  duration_ms: 0.246662\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 390.600631\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses plain JSON output\nok 1 - parses plain JSON output\n  ---\n  duration_ms: 6.468826\n  type: 'test'\n  ...\n# Subtest: strips markdown fences\nok 2 - strips markdown fences\n  ---\n  duration_ms: 0.83149\n  type: 'test'\n  ...\n# Subtest: rejects out-of-schema output\nok 3 - rejects out-of-schema output\n  ---\n  duration_ms: 1.720027\n  type: 'test'\n  ...\n# Subtest: prompt escapes literal braces and fills the variable\nok 4 - prompt escapes literal braces and fills the variable\n  ---\n  duration_ms: 0.433173\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 635.817271\n"
 }
