@@ -129,9 +129,21 @@ const label = (l: string) => (l.startsWith("0.") ? l : `${l}.x`);
 export const isRange = (v: string) => /^\s*(npm:)?\s*[\^~<>!]/.test(v);
 /** ^X, ~X, ~=X, >=X and <=X allow X itself; >X, <X and !=X do not. */
 const rangeAllowsBase = (v: string) => /^\s*(npm:)?\s*(\^|~|>=|<=)/.test(v);
+const cmp = (a: string, b: string) => {
+  const x = parts(a), y = parts(b);
+  for (let i = 0; i < 3; i++) { const d = (x[i] ?? 0) - (y[i] ?? 0); if (d) return Math.sign(d); }
+  return 0;
+};
+/** A lone upper bound (<X, <=X): its bound is not an installed version, so base() alone would misjudge it. */
+const upperBound = (v: string) => v.match(/^\s*(?:npm:)?\s*(<=?)\s*(\d[^\s,]*)\s*$/);
+const allows = (ub: RegExpMatchArray, v: string) => (ub[1] === "<" ? cmp(v, ub[2]) < 0 : cmp(v, ub[2]) <= 0);
+/** First version of the breaking line: 5.3.0 -> 5.0.0, 0.115.4 -> 0.115.0. */
+const lineStart = (v: string) => { const [a, b] = parts(v); return a === 0 ? `0.${b ?? 0}.0` : `${a}.0.0`; };
 
 export function verdictFor(tested: string, yours: string | undefined): Verdict {
   if (yours === undefined) return "not_in_project";
+  const ub = upperBound(yours);
+  if (ub && line(tested)) return allows(ub, lineStart(tested)) ? "compatible" : "mismatch";
   if (base(yours) === base(tested)) return isRange(yours) ? "compatible" : "exact";
   const a = line(tested), b = line(yours);
   if (a && b && a === b) return "compatible";
@@ -148,8 +160,12 @@ export function checkCompatibility(pinned: Record<string, string>, parsed: Parse
     const yours = parsed.versions.get(normName(pkg));
     const verdict = verdictFor(tested, yours);
     const c: PackageCheck = { package: pkg, tested, yours: yours ?? null, verdict };
-    const tl = line(tested), yl = yours ? line(yours) : null;
-    if (verdict === "mismatch") c.warning = `Tested on ${pkg} ${tl ? label(tl) : tested}, you have ${yl ? label(yl) : yours}, APIs may differ. Check the code against your version or upgrade to ${tested}.`;
+    const tl = line(tested), yl = yours ? line(yours) : null, ub = yours ? upperBound(yours) : null;
+    if (verdict === "mismatch" && ub) c.warning = `Your project declares the range ${yours}, not an installed version, and it excludes the tested ${pkg} ${tl ? label(tl) : tested} line (${tested}), APIs may differ. Check the code against your version or pass your lockfile for an exact check.`;
+    else if (verdict === "compatible" && ub) c.warning = allows(ub, tested)
+      ? `Your project declares the range ${yours}, not an installed version. It includes the tested ${tested}, but the installed version may differ: pass your lockfile for an exact check.`
+      : `Your project declares the range ${yours}, not an installed version, and it excludes the tested ${tested}. Pass your lockfile for an exact check.`;
+    else if (verdict === "mismatch") c.warning = `Tested on ${pkg} ${tl ? label(tl) : tested}, you have ${yl ? label(yl) : yours}, APIs may differ. Check the code against your version or upgrade to ${tested}.`;
     else if (verdict === "compatible" && isRange(yours ?? "") && base(yours ?? "") === base(tested)) c.warning = rangeAllowsBase(yours ?? "")
       ? `Your project declares the range ${yours}, not an installed version. It includes the tested ${tested}, but the installed version may differ: pass your lockfile for an exact check.`
       : `Your project declares the range ${yours}, not an installed version, and it excludes the tested ${tested}. Pass your lockfile for an exact check.`;

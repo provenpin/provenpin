@@ -79,6 +79,16 @@ test("declared ranges are compatible, never exact; pins stay exact", () => {
   }
   assert.match(checkCompatibility({ express: "5.3.0" }, get("express>=5.3.0\n")).packages[0].warning!, /includes the tested 5\.3\.0/);
 });
+test("a lone upper bound is judged by whether it allows the tested line, not by its bound", () => {
+  for (const [t, r] of [["5.3.0", "<6"], ["2.9.2", "<3"], ["5.3.0", "<=5.3.0"], ["5.3.0", "<5.0.1"], ["0.115.4", "<0.116"], ["0.115.4", "<1"], ["5.3.0", "npm:<6"]]) assert.equal(verdictFor(t, r), "compatible", `${t} ${r}`);
+  for (const [t, r] of [["5.3.0", "<5.0.0"], ["5.3.0", "<5"], ["5.3.0", "<=4.99"], ["0.115.4", "<0.115"], ["2.9.2", "< 2.0"]]) assert.equal(verdictFor(t, r), "mismatch", `${t} ${r}`);
+  const inc = checkCompatibility({ pydantic: "2.9.2" }, get("pydantic<3\n"));
+  assert.equal(inc.overall, "compatible"); assert.match(inc.packages[0].warning!, /declares the range <3, not an installed version\. It includes the tested 2\.9\.2/);
+  assert.match(checkCompatibility({ express: "5.3.0" }, get({ express: "<5.0.1" })).packages[0].warning!, /excludes the tested 5\.3\.0/);
+  const exc = checkCompatibility({ express: "5.3.0" }, get({ express: "<5.0.0" }));
+  assert.equal(exc.overall, "mismatch"); assert.match(exc.packages[0].warning!, /range <5\.0\.0, not an installed version, and it excludes the tested express 5\.x line \(5\.3\.0\)/);
+  for (const c of [inc, exc]) assert.ok(!/\u2014|\u2013/.test(c.packages[0].warning ?? ""));
+});
 test("checkCompatibility warnings and tooling skip", () => {
   const c = checkCompatibility({ express: "5.3.0", helmet: "8.3.0", zod: "4.6.7", tsx: "4.23.15", "@types/node": "24.0.0" }, get({ express: "4.21.2", helmet: "8.3.0" }));
   assert.equal(c.overall, "mismatch");
