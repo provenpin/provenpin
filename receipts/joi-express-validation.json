@@ -1,15 +1,15 @@
 {
   "id": "joi-express-validation",
   "status": "passed",
-  "ran_at": "2026-10-26T18:59:50.113Z",
-  "last_passed_at": "2026-10-26T18:59:50.113Z",
+  "ran_at": "2026-10-27T00:59:01.372Z",
+  "last_passed_at": "2026-10-27T00:59:01.372Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3461,
-    "test": 549
+    "setup": 4257,
+    "test": 471
   },
   "pinned": {
     "joi": "18.2.9",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40381766358"
+    "runner": "github-actions 40429172026"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid body gets defaults, trimming, lowercasing and unknown keys stripped\nok 1 - valid body gets defaults, trimming, lowercasing and unknown keys stripped\n  ---\n  duration_ms: 45.58086\n  type: 'test'\n  ...\n# Subtest: invalid body returns every error with its path\nok 2 - invalid body returns every error with its path\n  ---\n  duration_ms: 9.077347\n  type: 'test'\n  ...\n# Subtest: query strings are converted to numbers with defaults\nok 3 - query strings are converted to numbers with defaults\n  ---\n  duration_ms: 5.266522\n  type: 'test'\n  ...\n# Subtest: schema can be used directly outside Express\nok 4 - schema can be used directly outside Express\n  ---\n  duration_ms: 0.387429\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 429.208999\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid body gets defaults, trimming, lowercasing and unknown keys stripped\nok 1 - valid body gets defaults, trimming, lowercasing and unknown keys stripped\n  ---\n  duration_ms: 38.217875\n  type: 'test'\n  ...\n# Subtest: invalid body returns every error with its path\nok 2 - invalid body returns every error with its path\n  ---\n  duration_ms: 9.032751\n  type: 'test'\n  ...\n# Subtest: query strings are converted to numbers with defaults\nok 3 - query strings are converted to numbers with defaults\n  ---\n  duration_ms: 5.383261\n  type: 'test'\n  ...\n# Subtest: schema can be used directly outside Express\nok 4 - schema can be used directly outside Express\n  ---\n  duration_ms: 0.44019\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 352.037016\n"
 }
