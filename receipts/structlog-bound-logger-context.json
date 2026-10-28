@@ -1,15 +1,15 @@
 {
   "id": "structlog-bound-logger-context",
   "status": "passed",
-  "ran_at": "2026-10-26T10:41:06.181Z",
-  "last_passed_at": "2026-10-26T10:41:06.181Z",
+  "ran_at": "2026-10-28T01:19:52.097Z",
+  "last_passed_at": "2026-10-28T01:19:52.097Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 215,
-    "test": 2984
+    "setup": 292,
+    "test": 852
   },
   "pinned": {
     "structlog": "26.1.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.79s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.21s\n"
 }

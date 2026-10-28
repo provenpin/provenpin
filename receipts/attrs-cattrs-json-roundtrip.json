@@ -1,15 +1,15 @@
 {
   "id": "attrs-cattrs-json-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-26T10:19:32.950Z",
-  "last_passed_at": "2026-10-26T10:19:32.950Z",
+  "ran_at": "2026-10-28T01:04:29.409Z",
+  "last_passed_at": "2026-10-28T01:04:29.409Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 224,
-    "test": 1115
+    "setup": 263,
+    "test": 1247
   },
   "pinned": {
     "attrs": "26.1.0",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.14s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.08s\n"
 }

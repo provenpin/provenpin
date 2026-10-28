@@ -1,15 +1,15 @@
 {
   "id": "magic-string-sourcemap-edits",
   "status": "passed",
-  "ran_at": "2026-10-27T18:57:26.637Z",
-  "last_passed_at": "2026-10-27T18:57:26.637Z",
+  "ran_at": "2026-10-28T01:12:59.673Z",
+  "last_passed_at": "2026-10-28T01:12:59.673Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1625,
-    "test": 323
+    "setup": 1637,
+    "test": 402
   },
   "pinned": {
     "magic-string": "1.4.3",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40563621242"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: applies overwrite, prepend, remove and append edits\nok 1 - applies overwrite, prepend, remove and append edits\n  ---\n  duration_ms: 1.831828\n  type: 'test'\n  ...\n# Subtest: hires sourcemap maps generated positions back to the original\nok 2 - hires sourcemap maps generated positions back to the original\n  ---\n  duration_ms: 1.927591\n  type: 'test'\n  ...\n# Subtest: embedded source content is preserved in the map\nok 3 - embedded source content is preserved in the map\n  ---\n  duration_ms: 0.316533\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 189.637178\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: applies overwrite, prepend, remove and append edits\nok 1 - applies overwrite, prepend, remove and append edits\n  ---\n  duration_ms: 2.382922\n  type: 'test'\n  ...\n# Subtest: hires sourcemap maps generated positions back to the original\nok 2 - hires sourcemap maps generated positions back to the original\n  ---\n  duration_ms: 2.409945\n  type: 'test'\n  ...\n# Subtest: embedded source content is preserved in the map\nok 3 - embedded source content is preserved in the map\n  ---\n  duration_ms: 0.391226\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 237.731776\n"
 }

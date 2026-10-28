@@ -1,15 +1,15 @@
 {
   "id": "apollo-server-dataloader-batching",
   "status": "passed",
-  "ran_at": "2026-10-27T18:51:02.295Z",
-  "last_passed_at": "2026-10-27T18:51:02.295Z",
+  "ran_at": "2026-10-28T01:04:07.180Z",
+  "last_passed_at": "2026-10-28T01:04:07.180Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6596,
-    "test": 705
+    "setup": 4152,
+    "test": 444
   },
   "pinned": {
     "@apollo/server": "5.5.1",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40563621242"
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "# Subtest: resolves nested authors with one batched lookup instead of N+1\nok 1 - resolves nested authors with one batched lookup instead of N+1\n  ---\n  duration_ms: 81.416742\n  type: 'test'\n  ...\n# Subtest: author with books, and null for an unknown id\nok 2 - author with books, and null for an unknown id\n  ---\n  duration_ms: 8.093108\n  type: 'test'\n  ...\n# Subtest: mutation requires a user and reports error codes in extensions\nok 3 - mutation requires a user and reports error codes in extensions\n  ---\n  duration_ms: 11.540391\n  type: 'test'\n  ...\n# Subtest: mutation writes and clears the loader cache so reads see the new book\nok 4 - mutation writes and clears the loader cache so reads see the new book\n  ---\n  duration_ms: 7.217364\n  type: 'test'\n  ...\n# Subtest: validation errors come back as GRAPHQL_VALIDATION_FAILED\nok 5 - validation errors come back as GRAPHQL_VALIDATION_FAILED\n  ---\n  duration_ms: 10.787808\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 556.598791\n"
+  "log_tail": "# Subtest: resolves nested authors with one batched lookup instead of N+1\nok 1 - resolves nested authors with one batched lookup instead of N+1\n  ---\n  duration_ms: 46.146677\n  type: 'test'\n  ...\n# Subtest: author with books, and null for an unknown id\nok 2 - author with books, and null for an unknown id\n  ---\n  duration_ms: 4.564463\n  type: 'test'\n  ...\n# Subtest: mutation requires a user and reports error codes in extensions\nok 3 - mutation requires a user and reports error codes in extensions\n  ---\n  duration_ms: 6.567089\n  type: 'test'\n  ...\n# Subtest: mutation writes and clears the loader cache so reads see the new book\nok 4 - mutation writes and clears the loader cache so reads see the new book\n  ---\n  duration_ms: 4.059745\n  type: 'test'\n  ...\n# Subtest: validation errors come back as GRAPHQL_VALIDATION_FAILED\nok 5 - validation errors come back as GRAPHQL_VALIDATION_FAILED\n  ---\n  duration_ms: 6.875942\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 340.118046\n"
 }

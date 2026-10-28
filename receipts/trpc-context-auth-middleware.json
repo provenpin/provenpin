@@ -1,15 +1,15 @@
 {
   "id": "trpc-context-auth-middleware",
   "status": "passed",
-  "ran_at": "2026-10-27T19:03:41.801Z",
-  "last_passed_at": "2026-10-27T19:03:41.801Z",
+  "ran_at": "2026-10-28T01:20:36.756Z",
+  "last_passed_at": "2026-10-28T01:20:36.756Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2840,
-    "test": 351
+    "setup": 3269,
+    "test": 398
   },
   "pinned": {
     "@trpc/server": "11.19.0",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40563621242"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: public works without a user\nok 1 - public works without a user\n  ---\n  duration_ms: 0.909864\n  type: 'test'\n  ...\n# Subtest: protected requires a user\nok 2 - protected requires a user\n  ---\n  duration_ms: 1.516634\n  type: 'test'\n  ...\n# Subtest: zod input errors become BAD_REQUEST\nok 3 - zod input errors become BAD_REQUEST\n  ---\n  duration_ms: 0.677035\n  type: 'test'\n  ...\n# Subtest: admin-only procedure\nok 4 - admin-only procedure\n  ---\n  duration_ms: 0.404406\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 232.712063\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: public works without a user\nok 1 - public works without a user\n  ---\n  duration_ms: 0.858031\n  type: 'test'\n  ...\n# Subtest: protected requires a user\nok 2 - protected requires a user\n  ---\n  duration_ms: 1.50687\n  type: 'test'\n  ...\n# Subtest: zod input errors become BAD_REQUEST\nok 3 - zod input errors become BAD_REQUEST\n  ---\n  duration_ms: 0.638786\n  type: 'test'\n  ...\n# Subtest: admin-only procedure\nok 4 - admin-only procedure\n  ---\n  duration_ms: 0.374262\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 261.486818\n"
 }

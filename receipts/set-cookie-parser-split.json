@@ -1,15 +1,15 @@
 {
   "id": "set-cookie-parser-split",
   "status": "passed",
-  "ran_at": "2026-10-27T19:01:59.446Z",
-  "last_passed_at": "2026-10-27T19:01:59.446Z",
+  "ran_at": "2026-10-28T01:18:41.658Z",
+  "last_passed_at": "2026-10-28T01:18:41.658Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2108,
-    "test": 327
+    "setup": 1392,
+    "test": 378
   },
   "pinned": {
     "set-cookie-parser": "3.1.4",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40563621242"
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses a single Set-Cookie header\nok 1 - parses a single Set-Cookie header\n  ---\n  duration_ms: 1.266114\n  type: 'test'\n  ...\n# Subtest: parses an array of Set-Cookie headers\nok 2 - parses an array of Set-Cookie headers\n  ---\n  duration_ms: 0.263524\n  type: 'test'\n  ...\n# Subtest: splits comma-joined Set-Cookie headers with Expires dates\nok 3 - splits comma-joined Set-Cookie headers with Expires dates\n  ---\n  duration_ms: 0.318858\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 180.74687\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses a single Set-Cookie header\nok 1 - parses a single Set-Cookie header\n  ---\n  duration_ms: 0.957867\n  type: 'test'\n  ...\n# Subtest: parses an array of Set-Cookie headers\nok 2 - parses an array of Set-Cookie headers\n  ---\n  duration_ms: 0.177663\n  type: 'test'\n  ...\n# Subtest: splits comma-joined Set-Cookie headers with Expires dates\nok 3 - splits comma-joined Set-Cookie headers with Expires dates\n  ---\n  duration_ms: 0.243781\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 260.733064\n"
 }

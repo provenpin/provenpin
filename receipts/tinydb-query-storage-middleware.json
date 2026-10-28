@@ -1,15 +1,15 @@
 {
   "id": "tinydb-query-storage-middleware",
   "status": "passed",
-  "ran_at": "2026-10-26T10:42:11.545Z",
-  "last_passed_at": "2026-10-26T10:42:11.545Z",
+  "ran_at": "2026-10-28T01:20:23.217Z",
+  "last_passed_at": "2026-10-28T01:20:23.217Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 290,
-    "test": 721
+    "setup": 573,
+    "test": 1135
   },
   "pinned": {
     "tinydb": "4.9.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
 }

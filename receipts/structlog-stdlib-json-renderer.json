@@ -1,15 +1,15 @@
 {
   "id": "structlog-stdlib-json-renderer",
   "status": "passed",
-  "ran_at": "2026-10-26T10:41:05.570Z",
-  "last_passed_at": "2026-10-26T10:41:05.570Z",
+  "ran_at": "2026-10-28T01:19:49.361Z",
+  "last_passed_at": "2026-10-28T01:19:49.361Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 202,
-    "test": 2004
+    "setup": 304,
+    "test": 1119
   },
   "pinned": {
     "structlog": "26.1.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.67s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.19s\n"
 }

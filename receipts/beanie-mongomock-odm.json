@@ -1,15 +1,15 @@
 {
   "id": "beanie-mongomock-odm",
   "status": "passed",
-  "ran_at": "2026-10-26T10:20:14.854Z",
-  "last_passed_at": "2026-10-26T10:20:14.854Z",
+  "ran_at": "2026-10-28T01:05:12.801Z",
+  "last_passed_at": "2026-10-28T01:05:12.801Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 499,
-    "test": 3004
+    "setup": 698,
+    "test": 2283
   },
   "pinned": {
     "beanie": "2.2.0",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.84s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.41s\n"
 }

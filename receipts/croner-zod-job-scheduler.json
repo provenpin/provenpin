@@ -1,15 +1,15 @@
 {
   "id": "croner-zod-job-scheduler",
   "status": "passed",
-  "ran_at": "2026-10-27T18:52:27.021Z",
-  "last_passed_at": "2026-10-27T18:52:27.021Z",
+  "ran_at": "2026-10-28T01:06:29.220Z",
+  "last_passed_at": "2026-10-28T01:06:29.220Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2255,
-    "test": 3310
+    "setup": 2063,
+    "test": 3551
   },
   "pinned": {
     "croner": "10.0.1",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40563621242"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "# Subtest: rejects duplicate job names\nok 2 - rejects duplicate job names\n  ---\n  duration_ms: 1.842583\n  type: 'test'\n  ...\n# Subtest: previews runs in a timezone across a DST change\nok 3 - previews runs in a timezone across a DST change\n  ---\n  duration_ms: 3.527058\n  type: 'test'\n  ...\n# Subtest: supports last-day-of-month and weekday ranges\nok 4 - supports last-day-of-month and weekday ranges\n  ---\n  duration_ms: 4.059726\n  type: 'test'\n  ...\n# Subtest: runs a per-second job for maxRuns and then stops\nok 5 - runs a per-second job for maxRuns and then stops\n  ---\n  duration_ms: 2603.036363\n  type: 'test'\n  ...\n# Subtest: refuses to start when a handler is missing\nok 6 - refuses to start when a handler is missing\n  ---\n  duration_ms: 0.745378\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2930.315109\n"
+  "log_tail": "# Subtest: rejects duplicate job names\nok 2 - rejects duplicate job names\n  ---\n  duration_ms: 1.458643\n  type: 'test'\n  ...\n# Subtest: previews runs in a timezone across a DST change\nok 3 - previews runs in a timezone across a DST change\n  ---\n  duration_ms: 2.846029\n  type: 'test'\n  ...\n# Subtest: supports last-day-of-month and weekday ranges\nok 4 - supports last-day-of-month and weekday ranges\n  ---\n  duration_ms: 3.132808\n  type: 'test'\n  ...\n# Subtest: runs a per-second job for maxRuns and then stops\nok 5 - runs a per-second job for maxRuns and then stops\n  ---\n  duration_ms: 2602.4302\n  type: 'test'\n  ...\n# Subtest: refuses to start when a handler is missing\nok 6 - refuses to start when a handler is missing\n  ---\n  duration_ms: 0.595822\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3417.397155\n"
 }

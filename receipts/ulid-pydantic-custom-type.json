@@ -1,15 +1,15 @@
 {
   "id": "ulid-pydantic-custom-type",
   "status": "passed",
-  "ran_at": "2026-10-27T19:03:56.660Z",
-  "last_passed_at": "2026-10-27T19:03:56.660Z",
+  "ran_at": "2026-10-28T01:20:56.370Z",
+  "last_passed_at": "2026-10-28T01:20:56.370Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 444,
-    "test": 1504
+    "setup": 357,
+    "test": 923
   },
   "pinned": {
     "python-ulid": "4.0.1",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40563621242"
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.46s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.31s\n"
 }

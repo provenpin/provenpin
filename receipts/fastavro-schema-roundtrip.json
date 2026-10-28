@@ -1,15 +1,15 @@
 {
   "id": "fastavro-schema-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-26T10:26:22.313Z",
-  "last_passed_at": "2026-10-26T10:26:22.313Z",
+  "ran_at": "2026-10-28T01:09:26.435Z",
+  "last_passed_at": "2026-10-28T01:09:26.435Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 262,
-    "test": 984
+    "setup": 790,
+    "test": 1218
   },
   "pinned": {
     "fastavro": "1.13.1",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"
 }

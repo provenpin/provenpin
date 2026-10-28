@@ -1,15 +1,15 @@
 {
   "id": "jimp-image-resize",
   "status": "passed",
-  "ran_at": "2026-10-27T18:56:31.673Z",
-  "last_passed_at": "2026-10-27T18:56:31.673Z",
+  "ran_at": "2026-10-28T01:11:36.375Z",
+  "last_passed_at": "2026-10-28T01:11:36.375Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4849,
-    "test": 726
+    "setup": 4433,
+    "test": 858
   },
   "pinned": {
     "jimp": "1.6.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40563621242"
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: square thumbnail from a wide image\nok 1 - square thumbnail from a wide image\n  ---\n  duration_ms: 72.110861\n  type: 'test'\n  ...\n# Subtest: fit width keeps aspect ratio and outputs jpeg\nok 2 - fit width keeps aspect ratio and outputs jpeg\n  ---\n  duration_ms: 113.39817\n  type: 'test'\n  ...\n# Subtest: does not upscale small images\nok 3 - does not upscale small images\n  ---\n  duration_ms: 14.788105\n  type: 'test'\n  ...\n# Subtest: rejects non-images\nok 4 - rejects non-images\n  ---\n  duration_ms: 1.187253\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 602.740115\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: square thumbnail from a wide image\nok 1 - square thumbnail from a wide image\n  ---\n  duration_ms: 99.112372\n  type: 'test'\n  ...\n# Subtest: fit width keeps aspect ratio and outputs jpeg\nok 2 - fit width keeps aspect ratio and outputs jpeg\n  ---\n  duration_ms: 138.177637\n  type: 'test'\n  ...\n# Subtest: does not upscale small images\nok 3 - does not upscale small images\n  ---\n  duration_ms: 35.22682\n  type: 'test'\n  ...\n# Subtest: rejects non-images\nok 4 - rejects non-images\n  ---\n  duration_ms: 1.144129\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 698.682339\n"
 }

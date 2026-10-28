@@ -1,15 +1,15 @@
 {
   "id": "marshmallow-sqlalchemy-flask-api",
   "status": "passed",
-  "ran_at": "2026-10-27T18:57:37.785Z",
-  "last_passed_at": "2026-10-27T18:57:37.785Z",
+  "ran_at": "2026-10-28T01:13:16.159Z",
+  "last_passed_at": "2026-10-28T01:13:16.159Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 385,
-    "test": 2290
+    "setup": 445,
+    "test": 1631
   },
   "pinned": {
     "flask": "3.1.3",
@@ -30,9 +30,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40563621242"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 1.59s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 1.14s\n"
 }

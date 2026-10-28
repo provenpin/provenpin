@@ -1,15 +1,15 @@
 {
   "id": "glom-nested-transform",
   "status": "passed",
-  "ran_at": "2026-10-26T10:27:19.567Z",
-  "last_passed_at": "2026-10-26T10:27:19.567Z",
+  "ran_at": "2026-10-28T01:10:05.286Z",
+  "last_passed_at": "2026-10-28T01:10:05.286Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 229,
-    "test": 730
+    "setup": 266,
+    "test": 1251
   },
   "pinned": {
     "glom": "25.12.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.22s\n"
 }

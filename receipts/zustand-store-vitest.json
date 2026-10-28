@@ -1,15 +1,15 @@
 {
   "id": "zustand-store-vitest",
   "status": "passed",
-  "ran_at": "2026-10-27T19:04:48.799Z",
-  "last_passed_at": "2026-10-27T19:04:48.799Z",
+  "ran_at": "2026-10-28T01:21:40.136Z",
+  "last_passed_at": "2026-10-28T01:21:40.136Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3506,
-    "test": 435
+    "setup": 4595,
+    "test": 798
   },
   "pinned": {
     "zustand": "5.0.15",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40563621242"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-zustand-store-vitest-0UO2Wh\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 4\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 19:04:52\n\u001b[2m   Duration \u001b[22m 108ms\u001b[2m (transform 57%, import 24%, tests 12%, worker 7%)\u001b[22m\n\nJSON report written to /tmp/pp-zustand-store-vitest-0UO2Wh/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-zustand-store-vitest-t5oM4E\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 5\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 01:21:45\n\u001b[2m   Duration \u001b[22m 120ms\u001b[2m (transform 56%, import 23%, tests 13%, worker 7%)\u001b[22m\n\nJSON report written to /tmp/pp-zustand-store-vitest-t5oM4E/test-report.json\n"
 }

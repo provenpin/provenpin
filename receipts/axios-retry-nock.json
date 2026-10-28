@@ -1,15 +1,15 @@
 {
   "id": "axios-retry-nock",
   "status": "passed",
-  "ran_at": "2026-10-27T18:51:41.761Z",
-  "last_passed_at": "2026-10-27T18:51:41.761Z",
+  "ran_at": "2026-10-28T01:04:54.516Z",
+  "last_passed_at": "2026-10-28T01:04:54.516Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2487,
-    "test": 650
+    "setup": 2462,
+    "test": 653
   },
   "pinned": {
     "axios": "1.20.0",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40563621242"
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: retries 503 then succeeds\nok 1 - retries 503 then succeeds\n  ---\n  duration_ms: 63.741905\n  type: 'test'\n  ...\n# Subtest: retries 429\nok 2 - retries 429\n  ---\n  duration_ms: 16.867971\n  type: 'test'\n  ...\n# Subtest: does not retry non-idempotent POST on 500\nok 3 - does not retry non-idempotent POST on 500\n  ---\n  duration_ms: 12.559297\n  type: 'test'\n  ...\n# Subtest: gives up after the retry limit\nok 4 - gives up after the retry limit\n  ---\n  duration_ms: 20.406536\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 492.333094\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: retries 503 then succeeds\nok 1 - retries 503 then succeeds\n  ---\n  duration_ms: 69.452798\n  type: 'test'\n  ...\n# Subtest: retries 429\nok 2 - retries 429\n  ---\n  duration_ms: 15.175378\n  type: 'test'\n  ...\n# Subtest: does not retry non-idempotent POST on 500\nok 3 - does not retry non-idempotent POST on 500\n  ---\n  duration_ms: 11.979835\n  type: 'test'\n  ...\n# Subtest: gives up after the retry limit\nok 4 - gives up after the retry limit\n  ---\n  duration_ms: 21.402637\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 506.596544\n"
 }

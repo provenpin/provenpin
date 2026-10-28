@@ -1,15 +1,15 @@
 {
   "id": "ruamel-yaml-roundtrip-comments",
   "status": "passed",
-  "ran_at": "2026-10-26T10:39:18.788Z",
-  "last_passed_at": "2026-10-26T10:39:18.788Z",
+  "ran_at": "2026-10-28T01:18:31.698Z",
+  "last_passed_at": "2026-10-28T01:18:31.698Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 188,
-    "test": 1119
+    "setup": 499,
+    "test": 1781
   },
   "pinned": {
     "ruamel.yaml": "0.19.1",
@@ -26,8 +26,8 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40306350059"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40612669167"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
