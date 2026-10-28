@@ -1,15 +1,15 @@
 {
   "id": "clipanion-cli-parser",
   "status": "passed",
-  "ran_at": "2026-10-26T10:22:00.165Z",
-  "last_passed_at": "2026-10-26T10:22:00.165Z",
+  "ran_at": "2026-10-28T18:58:57.658Z",
+  "last_passed_at": "2026-10-28T18:58:57.658Z",
   "tests": {
     "passed": 9,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1883,
-    "test": 445
+    "setup": 1932,
+    "test": 390
   },
   "pinned": {
     "clipanion": "3.2.1",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: prints command help and exits 0\nok 5 - prints command help and exits 0\n  ---\n  duration_ms: 2.600152\n  type: 'test'\n  ...\n# Subtest: prints top-level help listing commands\nok 6 - prints top-level help listing commands\n  ---\n  duration_ms: 12.895256\n  type: 'test'\n  ...\n# Subtest: returns exit code 1 for a usage error\nok 7 - returns exit code 1 for a usage error\n  ---\n  duration_ms: 1.460832\n  type: 'test'\n  ...\n# Subtest: returns exit code 1 for an unknown command\nok 8 - returns exit code 1 for an unknown command\n  ---\n  duration_ms: 1.031409\n  type: 'test'\n  ...\n# Subtest: prints the binary version\nok 9 - prints the binary version\n  ---\n  duration_ms: 1.234058\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 289.361492\n"
+  "log_tail": "# Subtest: prints command help and exits 0\nok 5 - prints command help and exits 0\n  ---\n  duration_ms: 1.83798\n  type: 'test'\n  ...\n# Subtest: prints top-level help listing commands\nok 6 - prints top-level help listing commands\n  ---\n  duration_ms: 8.109967\n  type: 'test'\n  ...\n# Subtest: returns exit code 1 for a usage error\nok 7 - returns exit code 1 for a usage error\n  ---\n  duration_ms: 1.312115\n  type: 'test'\n  ...\n# Subtest: returns exit code 1 for an unknown command\nok 8 - returns exit code 1 for an unknown command\n  ---\n  duration_ms: 1.024459\n  type: 'test'\n  ...\n# Subtest: prints the binary version\nok 9 - prints the binary version\n  ---\n  duration_ms: 0.870903\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 244.419846\n"
 }

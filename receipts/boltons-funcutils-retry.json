@@ -1,15 +1,15 @@
 {
   "id": "boltons-funcutils-retry",
   "status": "passed",
-  "ran_at": "2026-10-28T13:02:22.496Z",
-  "last_passed_at": "2026-10-28T13:02:22.496Z",
+  "ran_at": "2026-10-28T18:57:45.437Z",
+  "last_passed_at": "2026-10-28T18:57:45.437Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 332,
-    "test": 988
+    "setup": 188,
+    "test": 2233
   },
   "pinned": {
     "boltons": "26.2.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40692461744"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
 }

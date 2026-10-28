@@ -1,15 +1,15 @@
 {
   "id": "express-openapi-validator-spec",
   "status": "passed",
-  "ran_at": "2026-10-26T10:24:59.674Z",
-  "last_passed_at": "2026-10-26T10:24:59.674Z",
+  "ran_at": "2026-10-28T19:02:02.328Z",
+  "last_passed_at": "2026-10-28T19:02:02.328Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3135,
-    "test": 809
+    "setup": 4735,
+    "test": 844
   },
   "pinned": {
     "express": "5.3.0",
@@ -30,9 +30,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: GET valid path and query returns 200\nok 1 - GET valid path and query returns 200\n  ---\n  duration_ms: 140.320757\n  type: 'test'\n  ...\n# Subtest: GET invalid path param returns 400 with details\nok 2 - GET invalid path param returns 400 with details\n  ---\n  duration_ms: 73.785126\n  type: 'test'\n  ...\n# Subtest: GET invalid query returns 400 with details\nok 3 - GET invalid query returns 400 with details\n  ---\n  duration_ms: 53.47064\n  type: 'test'\n  ...\n# Subtest: POST valid JSON body returns 201\nok 4 - POST valid JSON body returns 201\n  ---\n  duration_ms: 48.57686\n  type: 'test'\n  ...\n# Subtest: POST invalid JSON body returns 400 with details\nok 5 - POST invalid JSON body returns 400 with details\n  ---\n  duration_ms: 41.741475\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 685.328451\n"
+  "log_tail": "# Subtest: GET valid path and query returns 200\nok 1 - GET valid path and query returns 200\n  ---\n  duration_ms: 143.653568\n  type: 'test'\n  ...\n# Subtest: GET invalid path param returns 400 with details\nok 2 - GET invalid path param returns 400 with details\n  ---\n  duration_ms: 84.589271\n  type: 'test'\n  ...\n# Subtest: GET invalid query returns 400 with details\nok 3 - GET invalid query returns 400 with details\n  ---\n  duration_ms: 54.952363\n  type: 'test'\n  ...\n# Subtest: POST valid JSON body returns 201\nok 4 - POST valid JSON body returns 201\n  ---\n  duration_ms: 56.815294\n  type: 'test'\n  ...\n# Subtest: POST invalid JSON body returns 400 with details\nok 5 - POST invalid JSON body returns 400 with details\n  ---\n  duration_ms: 42.953556\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 720.657147\n"
 }

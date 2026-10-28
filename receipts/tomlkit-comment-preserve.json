@@ -1,15 +1,15 @@
 {
   "id": "tomlkit-comment-preserve",
   "status": "passed",
-  "ran_at": "2026-10-28T13:25:41.356Z",
-  "last_passed_at": "2026-10-28T13:25:41.356Z",
+  "ran_at": "2026-10-28T19:21:02.829Z",
+  "last_passed_at": "2026-10-28T19:21:02.829Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 299,
-    "test": 3758
+    "setup": 311,
+    "test": 1159
   },
   "pinned": {
     "tomlkit": "0.15.1",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.17",
-    "runner": "github-actions 40692461744"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
 }

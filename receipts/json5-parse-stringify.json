@@ -1,15 +1,15 @@
 {
   "id": "json5-parse-stringify",
   "status": "passed",
-  "ran_at": "2026-10-26T10:30:02.959Z",
-  "last_passed_at": "2026-10-26T10:30:02.959Z",
+  "ran_at": "2026-10-28T19:07:38.573Z",
+  "last_passed_at": "2026-10-28T19:07:38.573Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1434,
-    "test": 380
+    "setup": 2013,
+    "test": 355
   },
   "pinned": {
     "json5": "2.2.3",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\nok 1 - parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\n  ---\n  duration_ms: 3.688625\n  type: 'test'\n  ...\n# Subtest: stringify with options round-trips through the parser\nok 2 - stringify with options round-trips through the parser\n  ---\n  duration_ms: 1.860132\n  type: 'test'\n  ...\n# Subtest: throws a SyntaxError on invalid input\nok 3 - throws a SyntaxError on invalid input\n  ---\n  duration_ms: 0.633459\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 220.1418\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\nok 1 - parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\n  ---\n  duration_ms: 3.759048\n  type: 'test'\n  ...\n# Subtest: stringify with options round-trips through the parser\nok 2 - stringify with options round-trips through the parser\n  ---\n  duration_ms: 1.825063\n  type: 'test'\n  ...\n# Subtest: throws a SyntaxError on invalid input\nok 3 - throws a SyntaxError on invalid input\n  ---\n  duration_ms: 0.660445\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 201.894716\n"
 }

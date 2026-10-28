@@ -1,15 +1,15 @@
 {
   "id": "viem-offline-sign-verify",
   "status": "passed",
-  "ran_at": "2026-10-28T13:26:11.818Z",
-  "last_passed_at": "2026-10-28T13:26:11.818Z",
+  "ran_at": "2026-10-28T19:22:17.872Z",
+  "last_passed_at": "2026-10-28T19:22:17.872Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4556,
-    "test": 465
+    "setup": 6932,
+    "test": 745
   },
   "pinned": {
     "viem": "2.57.7",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40692461744"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: signs a message and verifies it offline\nok 2 - signs a message and verifies it offline\n  ---\n  duration_ms: 5.820577\n  type: 'test'\n  ...\n# Subtest: verifyMessage rejects a tampered message\nok 3 - verifyMessage rejects a tampered message\n  ---\n  duration_ms: 4.880656\n  type: 'test'\n  ...\n# Subtest: signs EIP-712 typed data and recovers the signer\nok 4 - signs EIP-712 typed data and recovers the signer\n  ---\n  duration_ms: 4.671723\n  type: 'test'\n  ...\n# Subtest: encodes and decodes an ERC-20 transfer call offline\nok 5 - encodes and decodes an ERC-20 transfer call offline\n  ---\n  duration_ms: 1.18543\n  type: 'test'\n  ...\n# Subtest: parseUnits/formatUnits round-trip for 6 decimals\nok 6 - parseUnits/formatUnits round-trip for 6 decimals\n  ---\n  duration_ms: 0.111958\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 358.577756\n"
+  "log_tail": "# Subtest: signs a message and verifies it offline\nok 2 - signs a message and verifies it offline\n  ---\n  duration_ms: 7.765622\n  type: 'test'\n  ...\n# Subtest: verifyMessage rejects a tampered message\nok 3 - verifyMessage rejects a tampered message\n  ---\n  duration_ms: 7.574002\n  type: 'test'\n  ...\n# Subtest: signs EIP-712 typed data and recovers the signer\nok 4 - signs EIP-712 typed data and recovers the signer\n  ---\n  duration_ms: 7.316519\n  type: 'test'\n  ...\n# Subtest: encodes and decodes an ERC-20 transfer call offline\nok 5 - encodes and decodes an ERC-20 transfer call offline\n  ---\n  duration_ms: 1.988694\n  type: 'test'\n  ...\n# Subtest: parseUnits/formatUnits round-trip for 6 decimals\nok 6 - parseUnits/formatUnits round-trip for 6 decimals\n  ---\n  duration_ms: 0.204584\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 583.618465\n"
 }

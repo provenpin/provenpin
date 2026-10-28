@@ -1,15 +1,15 @@
 {
   "id": "cuid2-collision-resistant-ids",
   "status": "passed",
-  "ran_at": "2026-10-26T10:22:38.770Z",
-  "last_passed_at": "2026-10-26T10:22:38.770Z",
+  "ran_at": "2026-10-28T18:59:39.529Z",
+  "last_passed_at": "2026-10-28T18:59:39.529Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1222,
-    "test": 1529
+    "setup": 2075,
+    "test": 1986
   },
   "pinned": {
     "@paralleldrive/cuid2": "3.3.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: createId returns a 24-character cuid\nok 1 - createId returns a 24-character cuid\n  ---\n  duration_ms: 5.972772\n  type: 'test'\n  ...\n# Subtest: isCuid accepts generated ids\nok 2 - isCuid accepts generated ids\n  ---\n  duration_ms: 21.050033\n  type: 'test'\n  ...\n# Subtest: isCuid rejects malformed strings\nok 3 - isCuid rejects malformed strings\n  ---\n  duration_ms: 0.090046\n  type: 'test'\n  ...\n# Subtest: init generates ids with a custom length\nok 4 - init generates ids with a custom length\n  ---\n  duration_ms: 3.710391\n  type: 'test'\n  ...\n# Subtest: ids are unique across many generations\nok 5 - ids are unique across many generations\n  ---\n  duration_ms: 1264.901167\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1428.304951\n"
+  "log_tail": "# Subtest: createId returns a 24-character cuid\nok 1 - createId returns a 24-character cuid\n  ---\n  duration_ms: 6.040581\n  type: 'test'\n  ...\n# Subtest: isCuid accepts generated ids\nok 2 - isCuid accepts generated ids\n  ---\n  duration_ms: 25.661825\n  type: 'test'\n  ...\n# Subtest: isCuid rejects malformed strings\nok 3 - isCuid rejects malformed strings\n  ---\n  duration_ms: 0.116021\n  type: 'test'\n  ...\n# Subtest: init generates ids with a custom length\nok 4 - init generates ids with a custom length\n  ---\n  duration_ms: 4.949027\n  type: 'test'\n  ...\n# Subtest: ids are unique across many generations\nok 5 - ids are unique across many generations\n  ---\n  duration_ms: 1662.929012\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1859.197177\n"
 }

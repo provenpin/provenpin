@@ -1,15 +1,15 @@
 {
   "id": "scrypt-js-kdf",
   "status": "passed",
-  "ran_at": "2026-10-26T10:39:29.194Z",
-  "last_passed_at": "2026-10-26T10:39:29.194Z",
+  "ran_at": "2026-10-28T19:18:00.898Z",
+  "last_passed_at": "2026-10-28T19:18:00.898Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1457,
-    "test": 928
+    "setup": 1943,
+    "test": 925
   },
   "pinned": {
     "scrypt-js": "3.0.1",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sync and async outputs are identical and deterministic\nok 1 - sync and async outputs are identical and deterministic\n  ---\n  duration_ms: 68.183107\n  type: 'test'\n  ...\n# Subtest: different salts produce different keys\nok 2 - different salts produce different keys\n  ---\n  duration_ms: 31.525061\n  type: 'test'\n  ...\n# Subtest: higher cost params still return a stable hex key\nok 3 - higher cost params still return a stable hex key\n  ---\n  duration_ms: 469.809229\n  type: 'test'\n  ...\n# Subtest: password changes the derived key\nok 4 - password changes the derived key\n  ---\n  duration_ms: 18.913092\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 782.229679\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sync and async outputs are identical and deterministic\nok 1 - sync and async outputs are identical and deterministic\n  ---\n  duration_ms: 62.535983\n  type: 'test'\n  ...\n# Subtest: different salts produce different keys\nok 2 - different salts produce different keys\n  ---\n  duration_ms: 22.405136\n  type: 'test'\n  ...\n# Subtest: higher cost params still return a stable hex key\nok 3 - higher cost params still return a stable hex key\n  ---\n  duration_ms: 455.016126\n  type: 'test'\n  ...\n# Subtest: password changes the derived key\nok 4 - password changes the derived key\n  ---\n  duration_ms: 18.898901\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 761.025574\n"
 }

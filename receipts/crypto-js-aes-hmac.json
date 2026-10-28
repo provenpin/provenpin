@@ -1,15 +1,15 @@
 {
   "id": "crypto-js-aes-hmac",
   "status": "passed",
-  "ran_at": "2026-10-26T10:22:30.022Z",
-  "last_passed_at": "2026-10-26T10:22:30.022Z",
+  "ran_at": "2026-10-28T18:59:31.051Z",
+  "last_passed_at": "2026-10-28T18:59:31.051Z",
   "tests": {
     "passed": 9,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1526,
-    "test": 394
+    "setup": 1904,
+    "test": 377
   },
   "pinned": {
     "crypto-js": "4.2.0",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\nok 5 - AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\n  ---\n  duration_ms: 0.3435\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 known vector (hex)\nok 6 - HmacSHA256 known vector (hex)\n  ---\n  duration_ms: 0.67528\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 base64 encodes the same known vector bytes\nok 7 - HmacSHA256 base64 encodes the same known vector bytes\n  ---\n  duration_ms: 0.45593\n  type: 'test'\n  ...\n# Subtest: SHA256 known vectors\nok 8 - SHA256 known vectors\n  ---\n  duration_ms: 0.237222\n  type: 'test'\n  ...\n# Subtest: PBKDF2-HMAC-SHA256 known vectors\nok 9 - PBKDF2-HMAC-SHA256 known vectors\n  ---\n  duration_ms: 1.062531\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 244.423816\n"
+  "log_tail": "# Subtest: AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\nok 5 - AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\n  ---\n  duration_ms: 0.298496\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 known vector (hex)\nok 6 - HmacSHA256 known vector (hex)\n  ---\n  duration_ms: 0.565773\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 base64 encodes the same known vector bytes\nok 7 - HmacSHA256 base64 encodes the same known vector bytes\n  ---\n  duration_ms: 0.423508\n  type: 'test'\n  ...\n# Subtest: SHA256 known vectors\nok 8 - SHA256 known vectors\n  ---\n  duration_ms: 0.192346\n  type: 'test'\n  ...\n# Subtest: PBKDF2-HMAC-SHA256 known vectors\nok 9 - PBKDF2-HMAC-SHA256 known vectors\n  ---\n  duration_ms: 0.937129\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 228.632367\n"
 }

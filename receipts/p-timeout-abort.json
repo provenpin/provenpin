@@ -1,15 +1,15 @@
 {
   "id": "p-timeout-abort",
   "status": "passed",
-  "ran_at": "2026-10-26T10:35:04.737Z",
-  "last_passed_at": "2026-10-26T10:35:04.737Z",
+  "ran_at": "2026-10-28T19:13:14.844Z",
+  "last_passed_at": "2026-10-28T19:13:14.844Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1427,
-    "test": 397
+    "setup": 1540,
+    "test": 389
   },
   "pinned": {
     "p-timeout": "8.0.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: rejects with TimeoutError when the wrapped promise hangs\nok 1 - rejects with TimeoutError when the wrapped promise hangs\n  ---\n  duration_ms: 22.643199\n  type: 'test'\n  ...\n# Subtest: supports a custom TimeoutError message\nok 2 - supports a custom TimeoutError message\n  ---\n  duration_ms: 21.189085\n  type: 'test'\n  ...\n# Subtest: resolves with the value when the promise settles in time\nok 3 - resolves with the value when the promise settles in time\n  ---\n  duration_ms: 0.387747\n  type: 'test'\n  ...\n# Subtest: clears the timer once the promise resolves\nok 4 - clears the timer once the promise resolves\n  ---\n  duration_ms: 0.378289\n  type: 'test'\n  ...\n# Subtest: falls back to a value instead of throwing\nok 5 - falls back to a value instead of throwing\n  ---\n  duration_ms: 20.944831\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 248.981701\n"
+  "log_tail": "# Subtest: rejects with TimeoutError when the wrapped promise hangs\nok 1 - rejects with TimeoutError when the wrapped promise hangs\n  ---\n  duration_ms: 22.525954\n  type: 'test'\n  ...\n# Subtest: supports a custom TimeoutError message\nok 2 - supports a custom TimeoutError message\n  ---\n  duration_ms: 20.438967\n  type: 'test'\n  ...\n# Subtest: resolves with the value when the promise settles in time\nok 3 - resolves with the value when the promise settles in time\n  ---\n  duration_ms: 0.400025\n  type: 'test'\n  ...\n# Subtest: clears the timer once the promise resolves\nok 4 - clears the timer once the promise resolves\n  ---\n  duration_ms: 0.374758\n  type: 'test'\n  ...\n# Subtest: falls back to a value instead of throwing\nok 5 - falls back to a value instead of throwing\n  ---\n  duration_ms: 20.163614\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 234.077794\n"
 }

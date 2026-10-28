@@ -1,15 +1,15 @@
 {
   "id": "pug-compile-locals",
   "status": "passed",
-  "ran_at": "2026-10-26T10:36:56.791Z",
-  "last_passed_at": "2026-10-26T10:36:56.791Z",
+  "ran_at": "2026-10-28T19:15:18.657Z",
+  "last_passed_at": "2026-10-28T19:15:18.657Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2691,
-    "test": 635
+    "setup": 2629,
+    "test": 614
   },
   "pinned": {
     "pug": "3.0.4",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders locals, mixins, conditionals and iteration\nok 1 - renders locals, mixins, conditionals and iteration\n  ---\n  duration_ms: 32.231704\n  type: 'test'\n  ...\n# Subtest: mixin falls through to the else branch when empty\nok 2 - mixin falls through to the else branch when empty\n  ---\n  duration_ms: 7.483101\n  type: 'test'\n  ...\n# Subtest: compiled string escapes (=) but unescaped (!=) buffers raw output\nok 3 - compiled string escapes (=) but unescaped (!=) buffers raw output\n  ---\n  duration_ms: 2.106518\n  type: 'test'\n  ...\n# Subtest: compileFile renders a temp .pug and distinguishes escaped from raw\nok 4 - compileFile renders a temp .pug and distinguishes escaped from raw\n  ---\n  duration_ms: 4.368277\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 479.010812\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders locals, mixins, conditionals and iteration\nok 1 - renders locals, mixins, conditionals and iteration\n  ---\n  duration_ms: 31.381606\n  type: 'test'\n  ...\n# Subtest: mixin falls through to the else branch when empty\nok 2 - mixin falls through to the else branch when empty\n  ---\n  duration_ms: 7.680414\n  type: 'test'\n  ...\n# Subtest: compiled string escapes (=) but unescaped (!=) buffers raw output\nok 3 - compiled string escapes (=) but unescaped (!=) buffers raw output\n  ---\n  duration_ms: 2.204133\n  type: 'test'\n  ...\n# Subtest: compileFile renders a temp .pug and distinguishes escaped from raw\nok 4 - compileFile renders a temp .pug and distinguishes escaped from raw\n  ---\n  duration_ms: 3.904256\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 455.2358\n"
 }

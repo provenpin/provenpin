@@ -1,15 +1,15 @@
 {
   "id": "transitions-fsm-callbacks",
   "status": "passed",
-  "ran_at": "2026-10-28T13:25:42.580Z",
-  "last_passed_at": "2026-10-28T13:25:42.580Z",
+  "ran_at": "2026-10-28T19:21:15.615Z",
+  "last_passed_at": "2026-10-28T19:21:15.615Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 229,
-    "test": 1816
+    "setup": 326,
+    "test": 1130
   },
   "pinned": {
     "transitions": "0.9.3",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.17",
-    "runner": "github-actions 40692461744"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.03s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.02s\n"
 }

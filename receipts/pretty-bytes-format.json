@@ -1,15 +1,15 @@
 {
   "id": "pretty-bytes-format",
   "status": "passed",
-  "ran_at": "2026-10-26T10:36:31.796Z",
-  "last_passed_at": "2026-10-26T10:36:31.796Z",
+  "ran_at": "2026-10-28T19:14:56.540Z",
+  "last_passed_at": "2026-10-28T19:14:56.540Z",
   "tests": {
     "passed": 8,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1570,
-    "test": 358
+    "setup": 1801,
+    "test": 346
   },
   "pinned": {
     "pretty-bytes": "7.2.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: formats bits when requested\nok 4 - formats bits when requested\n  ---\n  duration_ms: 0.131608\n  type: 'test'\n  ...\n# Subtest: formats binary units when requested\nok 5 - formats binary units when requested\n  ---\n  duration_ms: 0.221047\n  type: 'test'\n  ...\n# Subtest: adds a sign for positive and negative values\nok 6 - adds a sign for positive and negative values\n  ---\n  duration_ms: 0.168717\n  type: 'test'\n  ...\n# Subtest: honours minimumFractionDigits\nok 7 - honours minimumFractionDigits\n  ---\n  duration_ms: 27.978089\n  type: 'test'\n  ...\n# Subtest: rejects non-finite input\nok 8 - rejects non-finite input\n  ---\n  duration_ms: 0.407649\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 210.952526\n"
+  "log_tail": "# Subtest: formats bits when requested\nok 4 - formats bits when requested\n  ---\n  duration_ms: 0.164022\n  type: 'test'\n  ...\n# Subtest: formats binary units when requested\nok 5 - formats binary units when requested\n  ---\n  duration_ms: 0.219841\n  type: 'test'\n  ...\n# Subtest: adds a sign for positive and negative values\nok 6 - adds a sign for positive and negative values\n  ---\n  duration_ms: 0.14035\n  type: 'test'\n  ...\n# Subtest: honours minimumFractionDigits\nok 7 - honours minimumFractionDigits\n  ---\n  duration_ms: 13.692603\n  type: 'test'\n  ...\n# Subtest: rejects non-finite input\nok 8 - rejects non-finite input\n  ---\n  duration_ms: 0.419517\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 193.080602\n"
 }

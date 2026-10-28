@@ -1,15 +1,15 @@
 {
   "id": "prettier-format-api",
   "status": "passed",
-  "ran_at": "2026-10-26T10:36:40.617Z",
-  "last_passed_at": "2026-10-26T10:36:40.617Z",
+  "ran_at": "2026-10-28T19:14:57.298Z",
+  "last_passed_at": "2026-10-28T19:14:57.298Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1914,
-    "test": 842
+    "setup": 2004,
+    "test": 706
   },
   "pinned": {
     "prettier": "3.9.10",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: formats TypeScript with single quotes and no semicolons\nok 1 - formats TypeScript with single quotes and no semicolons\n  ---\n  duration_ms: 135.917062\n  type: 'test'\n  ...\n# Subtest: respects printWidth for TypeScript\nok 2 - respects printWidth for TypeScript\n  ---\n  duration_ms: 6.167227\n  type: 'test'\n  ...\n# Subtest: is idempotent for TypeScript, JSON and Markdown\nok 3 - is idempotent for TypeScript, JSON and Markdown\n  ---\n  duration_ms: 56.466274\n  type: 'test'\n  ...\n# Subtest: check returns true on formatted output and false otherwise\nok 4 - check returns true on formatted output and false otherwise\n  ---\n  duration_ms: 9.957579\n  type: 'test'\n  ...\n# Subtest: formats JSON and Markdown predictably\nok 5 - formats JSON and Markdown predictably\n  ---\n  duration_ms: 3.45696\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 679.929849\n"
+  "log_tail": "# Subtest: formats TypeScript with single quotes and no semicolons\nok 1 - formats TypeScript with single quotes and no semicolons\n  ---\n  duration_ms: 109.34674\n  type: 'test'\n  ...\n# Subtest: respects printWidth for TypeScript\nok 2 - respects printWidth for TypeScript\n  ---\n  duration_ms: 5.186163\n  type: 'test'\n  ...\n# Subtest: is idempotent for TypeScript, JSON and Markdown\nok 3 - is idempotent for TypeScript, JSON and Markdown\n  ---\n  duration_ms: 59.145099\n  type: 'test'\n  ...\n# Subtest: check returns true on formatted output and false otherwise\nok 4 - check returns true on formatted output and false otherwise\n  ---\n  duration_ms: 9.720736\n  type: 'test'\n  ...\n# Subtest: formats JSON and Markdown predictably\nok 5 - formats JSON and Markdown predictably\n  ---\n  duration_ms: 3.234655\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 568.908649\n"
 }

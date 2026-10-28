@@ -1,15 +1,15 @@
 {
   "id": "grammy-bot-handle-update",
   "status": "passed",
-  "ran_at": "2026-10-26T16:01:44.099Z",
-  "last_passed_at": "2026-10-26T16:01:44.099Z",
+  "ran_at": "2026-10-28T19:04:53.265Z",
+  "last_passed_at": "2026-10-28T19:04:53.265Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1675,
-    "test": 441
+    "setup": 2151,
+    "test": 490
   },
   "pinned": {
     "grammy": "1.46.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40355030528"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: /start replies with name\nok 1 - /start replies with name\n  ---\n  duration_ms: 3.905856\n  type: 'test'\n  ...\n# Subtest: session state persists across updates\nok 2 - session state persists across updates\n  ---\n  duration_ms: 0.648317\n  type: 'test'\n  ...\n# Subtest: plain text gets an inline keyboard\nok 3 - plain text gets an inline keyboard\n  ---\n  duration_ms: 0.569706\n  type: 'test'\n  ...\n# Subtest: callback query answers and edits\nok 4 - callback query answers and edits\n  ---\n  duration_ms: 0.810937\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 278.582999\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: /start replies with name\nok 1 - /start replies with name\n  ---\n  duration_ms: 4.658424\n  type: 'test'\n  ...\n# Subtest: session state persists across updates\nok 2 - session state persists across updates\n  ---\n  duration_ms: 0.81683\n  type: 'test'\n  ...\n# Subtest: plain text gets an inline keyboard\nok 3 - plain text gets an inline keyboard\n  ---\n  duration_ms: 0.732803\n  type: 'test'\n  ...\n# Subtest: callback query answers and edits\nok 4 - callback query answers and edits\n  ---\n  duration_ms: 1.022926\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 318.374758\n"
 }

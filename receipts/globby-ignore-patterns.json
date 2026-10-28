@@ -1,15 +1,15 @@
 {
   "id": "globby-ignore-patterns",
   "status": "passed",
-  "ran_at": "2026-10-26T10:27:12.528Z",
-  "last_passed_at": "2026-10-26T10:27:12.528Z",
+  "ran_at": "2026-10-28T19:04:39.274Z",
+  "last_passed_at": "2026-10-28T19:04:39.274Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1758,
-    "test": 344
+    "setup": 2410,
+    "test": 469
   },
   "pinned": {
     "globby": "16.2.4",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: returns sorted relative paths and excludes ignored files\nok 1 - returns sorted relative paths and excludes ignored files\n  ---\n  duration_ms: 24.917938\n  type: 'test'\n  ...\n# Subtest: returns absolute paths when absolute is true\nok 2 - returns absolute paths when absolute is true\n  ---\n  duration_ms: 3.778932\n  type: 'test'\n  ...\n# Subtest: onlyFiles excludes directories from results\nok 3 - onlyFiles excludes directories from results\n  ---\n  duration_ms: 2.866786\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 235.568737\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: returns sorted relative paths and excludes ignored files\nok 1 - returns sorted relative paths and excludes ignored files\n  ---\n  duration_ms: 22.049354\n  type: 'test'\n  ...\n# Subtest: returns absolute paths when absolute is true\nok 2 - returns absolute paths when absolute is true\n  ---\n  duration_ms: 5.665985\n  type: 'test'\n  ...\n# Subtest: onlyFiles excludes directories from results\nok 3 - onlyFiles excludes directories from results\n  ---\n  duration_ms: 4.617316\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 310.882553\n"
 }

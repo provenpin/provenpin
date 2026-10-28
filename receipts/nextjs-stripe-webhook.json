@@ -1,15 +1,15 @@
 {
   "id": "nextjs-stripe-webhook",
   "status": "passed",
-  "ran_at": "2026-10-28T13:11:45.330Z",
-  "last_passed_at": "2026-10-28T13:11:45.330Z",
+  "ran_at": "2026-10-28T19:11:40.669Z",
+  "last_passed_at": "2026-10-28T19:11:40.669Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 11056,
-    "test": 529
+    "setup": 9956,
+    "test": 455
   },
   "pinned": {
     "next": "16.4.1",
@@ -29,9 +29,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40692461744"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: fulfills a correctly signed checkout event\nok 1 - fulfills a correctly signed checkout event\n  ---\n  duration_ms: 5.443484\n  type: 'test'\n  ...\n# Subtest: rejects a bad signature\nok 2 - rejects a bad signature\n  ---\n  duration_ms: 0.923174\n  type: 'test'\n  ...\n# Subtest: rejects a missing signature\nok 3 - rejects a missing signature\n  ---\n  duration_ms: 0.623113\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 362.612657\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: fulfills a correctly signed checkout event\nok 1 - fulfills a correctly signed checkout event\n  ---\n  duration_ms: 4.482796\n  type: 'test'\n  ...\n# Subtest: rejects a bad signature\nok 2 - rejects a bad signature\n  ---\n  duration_ms: 0.804392\n  type: 'test'\n  ...\n# Subtest: rejects a missing signature\nok 3 - rejects a missing signature\n  ---\n  duration_ms: 0.477785\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 305.333369\n"
 }

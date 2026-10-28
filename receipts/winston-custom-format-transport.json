@@ -1,15 +1,15 @@
 {
   "id": "winston-custom-format-transport",
   "status": "passed",
-  "ran_at": "2026-10-26T10:43:51.056Z",
-  "last_passed_at": "2026-10-26T10:43:51.056Z",
+  "ran_at": "2026-10-28T19:22:45.350Z",
+  "last_passed_at": "2026-10-28T19:22:45.350Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1504,
-    "test": 259
+    "setup": 2232,
+    "test": 390
   },
   "pinned": {
     "winston": "3.19.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: redacts secrets\nok 2 - redacts secrets\n  ---\n  duration_ms: 0.318919\n  type: 'test'\n  ...\n# Subtest: filter format drops debug from noisy module only\nok 3 - filter format drops debug from noisy module only\n  ---\n  duration_ms: 0.40602\n  type: 'test'\n  ...\n# Subtest: errors keep stack and child loggers add meta\nok 4 - errors keep stack and child loggers add meta\n  ---\n  duration_ms: 1.024059\n  type: 'test'\n  ...\n# Subtest: level threshold\nok 5 - level threshold\n  ---\n  duration_ms: 0.300241\n  type: 'test'\n  ...\n# Subtest: printf line format\nok 6 - printf line format\n  ---\n  duration_ms: 0.071127\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 165.52507\n"
+  "log_tail": "# Subtest: redacts secrets\nok 2 - redacts secrets\n  ---\n  duration_ms: 0.535028\n  type: 'test'\n  ...\n# Subtest: filter format drops debug from noisy module only\nok 3 - filter format drops debug from noisy module only\n  ---\n  duration_ms: 0.6554\n  type: 'test'\n  ...\n# Subtest: errors keep stack and child loggers add meta\nok 4 - errors keep stack and child loggers add meta\n  ---\n  duration_ms: 1.736687\n  type: 'test'\n  ...\n# Subtest: level threshold\nok 5 - level threshold\n  ---\n  duration_ms: 0.50886\n  type: 'test'\n  ...\n# Subtest: printf line format\nok 6 - printf line format\n  ---\n  duration_ms: 0.128422\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 256.887684\n"
 }

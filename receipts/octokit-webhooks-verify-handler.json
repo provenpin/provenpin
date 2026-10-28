@@ -1,15 +1,15 @@
 {
   "id": "octokit-webhooks-verify-handler",
   "status": "passed",
-  "ran_at": "2026-10-26T10:33:56.459Z",
-  "last_passed_at": "2026-10-26T10:33:56.459Z",
+  "ran_at": "2026-10-28T19:12:04.840Z",
+  "last_passed_at": "2026-10-28T19:12:04.840Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1629,
-    "test": 371
+    "setup": 2023,
+    "test": 361
   },
   "pinned": {
     "@octokit/webhooks": "14.2.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "#       at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n#       at async processWebhook (file:///tmp/pp-octokit-webhooks-verify-handler-S8nkaq/node_modules/@octokit/webhooks/dist-bundle/index.js:673:11)\n#       at async octokitWebhooksMiddleware (file:///tmp/pp-octokit-webhooks-verify-handler-S8nkaq/node_modules/@octokit/webhooks/dist-bundle/index.js:710:14)\n#       at async Server.<anonymous> (/tmp/pp-octokit-webhooks-verify-handler-S8nkaq/src/hooks.ts:22:9) {\n#     event: {\n#       id: 'd-3',\n#       name: 'push',\n#       payload: '{\"ref\":\"refs/heads/main\",\"commits\":[{\"id\":\"a\"},{\"id\":\"b\"}],\"repository\":{\"full_name\":\"acme/app\"},\"sender\":{\"login\":\"jp\"}}',\n#       signature: 'sha256=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'\n#     },\n#     status: 400\n#   },\n#   [errors]: [\n#     Error: [@octokit/webhooks] signature does not match event payload and secret\n#         at verifyAndReceive (file:///tmp/pp-octokit-webhooks-verify-handler-S8nkaq/node_modules/@octokit/webhooks/dist-bundle/index.js:531:19)\n#         at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n#         at async processWebhook (file:///tmp/pp-octokit-webhooks-verify-handler-S8nkaq/node_modules/@octokit/webhooks/dist-bundle/index.js:673:11)\n#         at async octokitWebhooksMiddleware (file:///tmp/pp-octokit-webhooks-verify-handler-S8nkaq/node_modules/@octokit/webhooks/dist-bundle/index.js:710:14)\n#         at async Server.<anonymous> (/tmp/pp-octokit-webhooks-verify-handler-S8nkaq/src/hooks.ts:22:9) {\n#       event: [Object],\n#       status: 400\n#     }\n#   ]\n# }\n# Subtest: node middleware over real HTTP\nok 4 - node middleware over real HTTP\n  ---\n  duration_ms: 35.183847\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 253.482591\n"
+  "log_tail": "#       at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n#       at async processWebhook (file:///tmp/pp-octokit-webhooks-verify-handler-3KLFkS/node_modules/@octokit/webhooks/dist-bundle/index.js:673:11)\n#       at async octokitWebhooksMiddleware (file:///tmp/pp-octokit-webhooks-verify-handler-3KLFkS/node_modules/@octokit/webhooks/dist-bundle/index.js:710:14)\n#       at async Server.<anonymous> (/tmp/pp-octokit-webhooks-verify-handler-3KLFkS/src/hooks.ts:22:9) {\n#     event: {\n#       id: 'd-3',\n#       name: 'push',\n#       payload: '{\"ref\":\"refs/heads/main\",\"commits\":[{\"id\":\"a\"},{\"id\":\"b\"}],\"repository\":{\"full_name\":\"acme/app\"},\"sender\":{\"login\":\"jp\"}}',\n#       signature: 'sha256=ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'\n#     },\n#     status: 400\n#   },\n#   [errors]: [\n#     Error: [@octokit/webhooks] signature does not match event payload and secret\n#         at verifyAndReceive (file:///tmp/pp-octokit-webhooks-verify-handler-3KLFkS/node_modules/@octokit/webhooks/dist-bundle/index.js:531:19)\n#         at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n#         at async processWebhook (file:///tmp/pp-octokit-webhooks-verify-handler-3KLFkS/node_modules/@octokit/webhooks/dist-bundle/index.js:673:11)\n#         at async octokitWebhooksMiddleware (file:///tmp/pp-octokit-webhooks-verify-handler-3KLFkS/node_modules/@octokit/webhooks/dist-bundle/index.js:710:14)\n#         at async Server.<anonymous> (/tmp/pp-octokit-webhooks-verify-handler-3KLFkS/src/hooks.ts:22:9) {\n#       event: [Object],\n#       status: 400\n#     }\n#   ]\n# }\n# Subtest: node middleware over real HTTP\nok 4 - node middleware over real HTTP\n  ---\n  duration_ms: 34.677654\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 240.033448\n"
 }

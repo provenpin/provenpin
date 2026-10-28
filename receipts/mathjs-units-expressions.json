@@ -1,15 +1,15 @@
 {
   "id": "mathjs-units-expressions",
   "status": "passed",
-  "ran_at": "2026-10-26T10:31:57.006Z",
-  "last_passed_at": "2026-10-26T10:31:57.006Z",
+  "ran_at": "2026-10-28T19:09:52.111Z",
+  "last_passed_at": "2026-10-28T19:09:52.111Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2568,
-    "test": 1072
+    "setup": 3339,
+    "test": 1343
   },
   "pinned": {
     "mathjs": "15.2.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: converts units\nok 2 - converts units\n  ---\n  duration_ms: 2.142989\n  type: 'test'\n  ...\n# Subtest: compiled rules run repeatedly\nok 3 - compiled rules run repeatedly\n  ---\n  duration_ms: 1.646701\n  type: 'test'\n  ...\n# Subtest: matrices\nok 4 - matrices\n  ---\n  duration_ms: 1.370822\n  type: 'test'\n  ...\n# Subtest: BigNumber avoids float drift\nok 5 - BigNumber avoids float drift\n  ---\n  duration_ms: 26.660625\n  type: 'test'\n  ...\n# Subtest: import and createUnit are disabled for untrusted input\nok 6 - import and createUnit are disabled for untrusted input\n  ---\n  duration_ms: 0.535416\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 951.440513\n"
+  "log_tail": "# Subtest: converts units\nok 2 - converts units\n  ---\n  duration_ms: 2.974821\n  type: 'test'\n  ...\n# Subtest: compiled rules run repeatedly\nok 3 - compiled rules run repeatedly\n  ---\n  duration_ms: 1.805006\n  type: 'test'\n  ...\n# Subtest: matrices\nok 4 - matrices\n  ---\n  duration_ms: 1.356094\n  type: 'test'\n  ...\n# Subtest: BigNumber avoids float drift\nok 5 - BigNumber avoids float drift\n  ---\n  duration_ms: 30.500694\n  type: 'test'\n  ...\n# Subtest: import and createUnit are disabled for untrusted input\nok 6 - import and createUnit are disabled for untrusted input\n  ---\n  duration_ms: 0.654358\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1180.782829\n"
 }

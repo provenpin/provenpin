@@ -1,15 +1,15 @@
 {
   "id": "bigjs-decimal-math",
   "status": "passed",
-  "ran_at": "2026-10-26T10:20:32.997Z",
-  "last_passed_at": "2026-10-26T10:20:32.997Z",
+  "ran_at": "2026-10-28T18:57:32.089Z",
+  "last_passed_at": "2026-10-28T18:57:32.089Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1476,
-    "test": 375
+    "setup": 2255,
+    "test": 360
   },
   "pinned": {
     "big.js": "7.0.1",
@@ -28,9 +28,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: 0.1 + 0.2 equals 0.3 with big.js\nok 1 - 0.1 + 0.2 equals 0.3 with big.js\n  ---\n  duration_ms: 1.314463\n  type: 'test'\n  ...\n# Subtest: comparisons use eq and gt\nok 2 - comparisons use eq and gt\n  ---\n  duration_ms: 0.267792\n  type: 'test'\n  ...\n# Subtest: division honours DP and rounding mode\nok 3 - division honours DP and rounding mode\n  ---\n  duration_ms: 0.467311\n  type: 'test'\n  ...\n# Subtest: pow raises integer exponents precisely\nok 4 - pow raises integer exponents precisely\n  ---\n  duration_ms: 0.322053\n  type: 'test'\n  ...\n# Subtest: round applies the requested rounding mode\nok 5 - round applies the requested rounding mode\n  ---\n  duration_ms: 0.241452\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 208.827922\n"
+  "log_tail": "# Subtest: 0.1 + 0.2 equals 0.3 with big.js\nok 1 - 0.1 + 0.2 equals 0.3 with big.js\n  ---\n  duration_ms: 1.382752\n  type: 'test'\n  ...\n# Subtest: comparisons use eq and gt\nok 2 - comparisons use eq and gt\n  ---\n  duration_ms: 0.252694\n  type: 'test'\n  ...\n# Subtest: division honours DP and rounding mode\nok 3 - division honours DP and rounding mode\n  ---\n  duration_ms: 0.513512\n  type: 'test'\n  ...\n# Subtest: pow raises integer exponents precisely\nok 4 - pow raises integer exponents precisely\n  ---\n  duration_ms: 0.33062\n  type: 'test'\n  ...\n# Subtest: round applies the requested rounding mode\nok 5 - round applies the requested rounding mode\n  ---\n  duration_ms: 0.220643\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 197.965469\n"
 }

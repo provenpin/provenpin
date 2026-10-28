@@ -1,15 +1,15 @@
 {
   "id": "django-drf-api",
   "status": "passed",
-  "ran_at": "2026-10-28T13:04:03.311Z",
-  "last_passed_at": "2026-10-28T13:04:03.311Z",
+  "ran_at": "2026-10-28T19:00:35.127Z",
+  "last_passed_at": "2026-10-28T19:00:35.127Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 806,
-    "test": 3461
+    "setup": 629,
+    "test": 3485
   },
   "pinned": {
     "django": "6.1.2",
@@ -33,9 +33,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40692461744"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 0.50s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.88s\n"
 }

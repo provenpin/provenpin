@@ -1,15 +1,15 @@
 {
   "id": "hono-jwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-28T13:07:22.577Z",
-  "last_passed_at": "2026-10-28T13:07:22.577Z",
+  "ran_at": "2026-10-28T19:05:24.526Z",
+  "last_passed_at": "2026-10-28T19:05:24.526Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2099,
-    "test": 420
+    "setup": 2822,
+    "test": 399
   },
   "pinned": {
     "hono": "4.13.13",
@@ -28,9 +28,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40692461744"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 29.859525\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 0.98706\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 1.500435\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 1.55744\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 293.267936\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: login returns a token that unlocks /me\nok 1 - login returns a token that unlocks /me\n  ---\n  duration_ms: 29.823305\n  type: 'test'\n  ...\n# Subtest: wrong password is 401\nok 2 - wrong password is 401\n  ---\n  duration_ms: 0.945196\n  type: 'test'\n  ...\n# Subtest: invalid body is 400\nok 3 - invalid body is 400\n  ---\n  duration_ms: 1.414859\n  type: 'test'\n  ...\n# Subtest: no token is 401\nok 4 - no token is 401\n  ---\n  duration_ms: 1.551404\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 273.743081\n"
 }

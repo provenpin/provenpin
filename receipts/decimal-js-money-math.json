@@ -1,15 +1,15 @@
 {
   "id": "decimal-js-money-math",
   "status": "passed",
-  "ran_at": "2026-10-26T10:23:00.213Z",
-  "last_passed_at": "2026-10-26T10:23:00.213Z",
+  "ran_at": "2026-10-28T19:00:05.228Z",
+  "last_passed_at": "2026-10-28T19:00:05.228Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1426,
-    "test": 357
+    "setup": 2072,
+    "test": 355
   },
   "pinned": {
     "decimal.js": "10.6.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: avoids float drift on line totals\nok 1 - avoids float drift on line totals\n  ---\n  duration_ms: 1.287948\n  type: 'test'\n  ...\n# Subtest: applies tax and discount\nok 2 - applies tax and discount\n  ---\n  duration_ms: 0.663521\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 200.54911\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: avoids float drift on line totals\nok 1 - avoids float drift on line totals\n  ---\n  duration_ms: 1.322026\n  type: 'test'\n  ...\n# Subtest: applies tax and discount\nok 2 - applies tax and discount\n  ---\n  duration_ms: 0.66745\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 191.392148\n"
 }

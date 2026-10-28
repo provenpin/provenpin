@@ -1,15 +1,15 @@
 {
   "id": "minisearch-fields-boost-serialize",
   "status": "passed",
-  "ran_at": "2026-10-26T10:32:19.395Z",
-  "last_passed_at": "2026-10-26T10:32:19.395Z",
+  "ran_at": "2026-10-28T19:10:15.104Z",
+  "last_passed_at": "2026-10-28T19:10:15.104Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1498,
-    "test": 346
+    "setup": 1691,
+    "test": 407
   },
   "pinned": {
     "minisearch": "7.2.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: prefix and fuzzy matching\nok 2 - prefix and fuzzy matching\n  ---\n  duration_ms: 0.66355\n  type: 'test'\n  ...\n# Subtest: filter by stored field\nok 3 - filter by stored field\n  ---\n  duration_ms: 0.747186\n  type: 'test'\n  ...\n# Subtest: discard removes a document\nok 4 - discard removes a document\n  ---\n  duration_ms: 0.677706\n  type: 'test'\n  ...\n# Subtest: autoSuggest\nok 5 - autoSuggest\n  ---\n  duration_ms: 0.520973\n  type: 'test'\n  ...\n# Subtest: JSON serialization round-trips\nok 6 - JSON serialization round-trips\n  ---\n  duration_ms: 1.443527\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 201.327233\n"
+  "log_tail": "# Subtest: prefix and fuzzy matching\nok 2 - prefix and fuzzy matching\n  ---\n  duration_ms: 0.519859\n  type: 'test'\n  ...\n# Subtest: filter by stored field\nok 3 - filter by stored field\n  ---\n  duration_ms: 0.541922\n  type: 'test'\n  ...\n# Subtest: discard removes a document\nok 4 - discard removes a document\n  ---\n  duration_ms: 0.522042\n  type: 'test'\n  ...\n# Subtest: autoSuggest\nok 5 - autoSuggest\n  ---\n  duration_ms: 0.372949\n  type: 'test'\n  ...\n# Subtest: JSON serialization round-trips\nok 6 - JSON serialization round-trips\n  ---\n  duration_ms: 1.097815\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 272.737512\n"
 }

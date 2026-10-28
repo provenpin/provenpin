@@ -1,15 +1,15 @@
 {
   "id": "io-ts-codec-decode",
   "status": "passed",
-  "ran_at": "2026-10-26T10:29:01.853Z",
-  "last_passed_at": "2026-10-26T10:29:01.853Z",
+  "ran_at": "2026-10-28T19:06:42.853Z",
+  "last_passed_at": "2026-10-28T19:06:42.853Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1701,
-    "test": 447
+    "setup": 2402,
+    "test": 469
   },
   "pinned": {
     "io-ts": "2.2.22",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: treats partial fields as optional\nok 2 - treats partial fields as optional\n  ---\n  duration_ms: 1.114611\n  type: 'test'\n  ...\n# Subtest: rejects an unknown union member and reports the path\nok 3 - rejects an unknown union member and reports the path\n  ---\n  duration_ms: 0.466867\n  type: 'test'\n  ...\n# Subtest: rejects a non-positive branded age\nok 4 - rejects a non-positive branded age\n  ---\n  duration_ms: 0.200827\n  type: 'test'\n  ...\n# Subtest: rejects wrong element type inside an array\nok 5 - rejects wrong element type inside an array\n  ---\n  duration_ms: 0.194024\n  type: 'test'\n  ...\n# Subtest: encodes a valid value back to plain json\nok 6 - encodes a valid value back to plain json\n  ---\n  duration_ms: 0.128721\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 287.553832\n"
+  "log_tail": "# Subtest: treats partial fields as optional\nok 2 - treats partial fields as optional\n  ---\n  duration_ms: 0.456205\n  type: 'test'\n  ...\n# Subtest: rejects an unknown union member and reports the path\nok 3 - rejects an unknown union member and reports the path\n  ---\n  duration_ms: 0.461807\n  type: 'test'\n  ...\n# Subtest: rejects a non-positive branded age\nok 4 - rejects a non-positive branded age\n  ---\n  duration_ms: 0.993554\n  type: 'test'\n  ...\n# Subtest: rejects wrong element type inside an array\nok 5 - rejects wrong element type inside an array\n  ---\n  duration_ms: 0.206247\n  type: 'test'\n  ...\n# Subtest: encodes a valid value back to plain json\nok 6 - encodes a valid value back to plain json\n  ---\n  duration_ms: 0.137338\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 292.099715\n"
 }

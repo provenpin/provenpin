@@ -1,15 +1,15 @@
 {
   "id": "nextjs-server-action-zod",
   "status": "passed",
-  "ran_at": "2026-10-28T13:11:40.346Z",
-  "last_passed_at": "2026-10-28T13:11:40.346Z",
+  "ran_at": "2026-10-28T19:11:17.627Z",
+  "last_passed_at": "2026-10-28T19:11:17.627Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 10250,
-    "test": 485
+    "setup": 8165,
+    "test": 345
   },
   "pinned": {
     "next": "16.4.1",
@@ -29,9 +29,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40692461744"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid submission\nok 1 - valid submission\n  ---\n  duration_ms: 21.407897\n  type: 'test'\n  ...\n# Subtest: returns field errors and echoes values for the form\nok 2 - returns field errors and echoes values for the form\n  ---\n  duration_ms: 1.069829\n  type: 'test'\n  ...\n# Subtest: unchecked checkbox defaults to false\nok 3 - unchecked checkbox defaults to false\n  ---\n  duration_ms: 0.442497\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 337.335416\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid submission\nok 1 - valid submission\n  ---\n  duration_ms: 12.921122\n  type: 'test'\n  ...\n# Subtest: returns field errors and echoes values for the form\nok 2 - returns field errors and echoes values for the form\n  ---\n  duration_ms: 0.774666\n  type: 'test'\n  ...\n# Subtest: unchecked checkbox defaults to false\nok 3 - unchecked checkbox defaults to false\n  ---\n  duration_ms: 0.307083\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 225.60871\n"
 }

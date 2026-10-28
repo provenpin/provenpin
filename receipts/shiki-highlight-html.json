@@ -1,15 +1,15 @@
 {
   "id": "shiki-highlight-html",
   "status": "passed",
-  "ran_at": "2026-10-26T10:39:44.715Z",
-  "last_passed_at": "2026-10-26T10:39:44.715Z",
+  "ran_at": "2026-10-28T19:18:21.620Z",
+  "last_passed_at": "2026-10-28T19:18:21.620Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2518,
-    "test": 559
+    "setup": 2848,
+    "test": 815
   },
   "pinned": {
     "shiki": "4.5.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: codeToHtml renders a single theme\nok 1 - codeToHtml renders a single theme\n  ---\n  duration_ms: 162.538585\n  type: 'test'\n  ...\n# Subtest: codeToHtml renders dual themes with dark CSS variables\nok 2 - codeToHtml renders dual themes with dark CSS variables\n  ---\n  duration_ms: 2.574176\n  type: 'test'\n  ...\n# Subtest: codeToTokens exposes token content and colors\nok 3 - codeToTokens exposes token content and colors\n  ---\n  duration_ms: 0.547909\n  type: 'test'\n  ...\n# Subtest: codeToTokens highlights json strings\nok 4 - codeToTokens highlights json strings\n  ---\n  duration_ms: 0.906184\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 416.430447\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: codeToHtml renders a single theme\nok 1 - codeToHtml renders a single theme\n  ---\n  duration_ms: 146.733473\n  type: 'test'\n  ...\n# Subtest: codeToHtml renders dual themes with dark CSS variables\nok 2 - codeToHtml renders dual themes with dark CSS variables\n  ---\n  duration_ms: 2.756182\n  type: 'test'\n  ...\n# Subtest: codeToTokens exposes token content and colors\nok 3 - codeToTokens exposes token content and colors\n  ---\n  duration_ms: 0.593698\n  type: 'test'\n  ...\n# Subtest: codeToTokens highlights json strings\nok 4 - codeToTokens highlights json strings\n  ---\n  duration_ms: 0.980026\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 678.195934\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "faker-fishery-seeded-factories",
   "status": "passed",
-  "ran_at": "2026-10-26T10:25:24.812Z",
-  "last_passed_at": "2026-10-26T10:25:24.812Z",
+  "ran_at": "2026-10-28T19:02:25.552Z",
+  "last_passed_at": "2026-10-28T19:02:25.552Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1657,
-    "test": 547
+    "setup": 1655,
+    "test": 517
   },
   "pinned": {
     "fishery": "2.4.0",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: same seed produces identical data\nok 1 - same seed produces identical data\n  ---\n  duration_ms: 4.830088\n  type: 'test'\n  ...\n# Subtest: different seeds produce different data\nok 2 - different seeds produce different data\n  ---\n  duration_ms: 0.548186\n  type: 'test'\n  ...\n# Subtest: params, traits and transient params\nok 3 - params, traits and transient params\n  ---\n  duration_ms: 0.932477\n  type: 'test'\n  ...\n# Subtest: associations reuse a given author\nok 4 - associations reuse a given author\n  ---\n  duration_ms: 1.012256\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 399.160596\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: same seed produces identical data\nok 1 - same seed produces identical data\n  ---\n  duration_ms: 4.375014\n  type: 'test'\n  ...\n# Subtest: different seeds produce different data\nok 2 - different seeds produce different data\n  ---\n  duration_ms: 0.492925\n  type: 'test'\n  ...\n# Subtest: params, traits and transient params\nok 3 - params, traits and transient params\n  ---\n  duration_ms: 0.809707\n  type: 'test'\n  ...\n# Subtest: associations reuse a given author\nok 4 - associations reuse a given author\n  ---\n  duration_ms: 0.903747\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 367.665731\n"
 }

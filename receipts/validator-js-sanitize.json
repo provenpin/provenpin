@@ -1,15 +1,15 @@
 {
   "id": "validator-js-sanitize",
   "status": "passed",
-  "ran_at": "2026-10-26T10:43:18.369Z",
-  "last_passed_at": "2026-10-26T10:43:18.369Z",
+  "ran_at": "2026-10-28T19:22:07.272Z",
+  "last_passed_at": "2026-10-28T19:22:07.272Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1668,
-    "test": 417
+    "setup": 1964,
+    "test": 423
   },
   "pinned": {
     "validator": "13.15.35",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40306350059"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40749493731"
   },
   "errors": [],
-  "log_tail": "# Subtest: flags malformed emails\nok 2 - flags malformed emails\n  ---\n  duration_ms: 1.242498\n  type: 'test'\n  ...\n# Subtest: validates URLs with protocol options\nok 3 - validates URLs with protocol options\n  ---\n  duration_ms: 1.410001\n  type: 'test'\n  ...\n# Subtest: validates UUID v4 values\nok 4 - validates UUID v4 values\n  ---\n  duration_ms: 0.400628\n  type: 'test'\n  ...\n# Subtest: scores strong passwords higher than weak ones\nok 5 - scores strong passwords higher than weak ones\n  ---\n  duration_ms: 0.562279\n  type: 'test'\n  ...\n# Subtest: escapes and trims notes with sanitizers\nok 6 - escapes and trims notes with sanitizers\n  ---\n  duration_ms: 0.281034\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 270.453441\n"
+  "log_tail": "# Subtest: flags malformed emails\nok 2 - flags malformed emails\n  ---\n  duration_ms: 0.246158\n  type: 'test'\n  ...\n# Subtest: validates URLs with protocol options\nok 3 - validates URLs with protocol options\n  ---\n  duration_ms: 1.385222\n  type: 'test'\n  ...\n# Subtest: validates UUID v4 values\nok 4 - validates UUID v4 values\n  ---\n  duration_ms: 1.316739\n  type: 'test'\n  ...\n# Subtest: scores strong passwords higher than weak ones\nok 5 - scores strong passwords higher than weak ones\n  ---\n  duration_ms: 0.550783\n  type: 'test'\n  ...\n# Subtest: escapes and trims notes with sanitizers\nok 6 - escapes and trims notes with sanitizers\n  ---\n  duration_ms: 0.236063\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 261.097564\n"
 }
