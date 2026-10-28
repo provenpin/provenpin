@@ -1,15 +1,15 @@
 {
   "id": "cattrs-preconf-orjson-converter",
   "status": "passed",
-  "ran_at": "2026-10-28T07:01:28.319Z",
-  "last_passed_at": "2026-10-28T07:01:28.319Z",
+  "ran_at": "2026-10-28T13:02:39.939Z",
+  "last_passed_at": "2026-10-28T13:02:39.939Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 299,
-    "test": 2176
+    "setup": 236,
+    "test": 922
   },
   "pinned": {
     "attrs": "26.1.0",
@@ -28,9 +28,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.17",
-    "runner": "github-actions 40647163952"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.12s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.14s\n"
 }

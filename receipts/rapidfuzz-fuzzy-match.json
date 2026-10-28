@@ -1,15 +1,15 @@
 {
   "id": "rapidfuzz-fuzzy-match",
   "status": "passed",
-  "ran_at": "2026-10-28T07:14:54.905Z",
-  "last_passed_at": "2026-10-28T07:14:54.905Z",
+  "ran_at": "2026-10-28T13:22:47.652Z",
+  "last_passed_at": "2026-10-28T13:22:47.652Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 378,
-    "test": 864
+    "setup": 427,
+    "test": 1089
   },
   "pinned": {
     "rapidfuzz": "3.14.6",
@@ -26,8 +26,8 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.17",
-    "runner": "github-actions 40647163952"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"

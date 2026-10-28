@@ -1,15 +1,15 @@
 {
   "id": "resend-email-msw",
   "status": "passed",
-  "ran_at": "2026-10-28T07:15:27.890Z",
-  "last_passed_at": "2026-10-28T07:15:27.890Z",
+  "ran_at": "2026-10-28T13:23:21.244Z",
+  "last_passed_at": "2026-10-28T13:23:21.244Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3111,
-    "test": 700
+    "setup": 3056,
+    "test": 455
   },
   "pinned": {
     "resend": "6.33.0",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40647163952"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sends html, text and tags\nok 1 - sends html, text and tags\n  ---\n  duration_ms: 64.731664\n  type: 'test'\n  ...\n# [Resend API Error]: {\n#   status: 401,\n#   error: {\n#     statusCode: 401,\n#     name: 'validation_error',\n#     message: 'API key is invalid'\n#   },\n#   path: '/emails'\n# }\n# Subtest: API errors are thrown with the message\nok 2 - API errors are thrown with the message\n  ---\n  duration_ms: 15.846692\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 555.089697\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: sends html, text and tags\nok 1 - sends html, text and tags\n  ---\n  duration_ms: 41.153937\n  type: 'test'\n  ...\n# [Resend API Error]: {\n#   status: 401,\n#   error: {\n#     statusCode: 401,\n#     name: 'validation_error',\n#     message: 'API key is invalid'\n#   },\n#   path: '/emails'\n# }\n# Subtest: API errors are thrown with the message\nok 2 - API errors are thrown with the message\n  ---\n  duration_ms: 10.495005\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 345.786297\n"
 }

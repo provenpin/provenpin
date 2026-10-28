@@ -1,15 +1,15 @@
 {
   "id": "sortedcontainers-sorteddict-events",
   "status": "passed",
-  "ran_at": "2026-10-28T07:16:00.957Z",
-  "last_passed_at": "2026-10-28T07:16:00.957Z",
+  "ran_at": "2026-10-28T13:24:16.922Z",
+  "last_passed_at": "2026-10-28T13:24:16.922Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 242,
-    "test": 771
+    "setup": 248,
+    "test": 806
   },
   "pinned": {
     "sortedcontainers": "2.4.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.17",
-    "runner": "github-actions 40647163952"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
 }

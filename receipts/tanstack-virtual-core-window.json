@@ -1,15 +1,15 @@
 {
   "id": "tanstack-virtual-core-window",
   "status": "passed",
-  "ran_at": "2026-10-28T07:17:36.623Z",
-  "last_passed_at": "2026-10-28T07:17:36.623Z",
+  "ran_at": "2026-10-28T13:25:26.838Z",
+  "last_passed_at": "2026-10-28T13:25:26.838Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1235,
-    "test": 237
+    "setup": 2243,
+    "test": 351
   },
   "pinned": {
     "@tanstack/virtual-core": "3.19.5",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40647163952"
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: computes a window of visible indexes near the top\nok 1 - computes a window of visible indexes near the top\n  ---\n  duration_ms: 2.278804\n  type: 'test'\n  ...\n# Subtest: total size scales with count and estimate\nok 2 - total size scales with count and estimate\n  ---\n  duration_ms: 0.344109\n  type: 'test'\n  ...\n# Subtest: defaultRangeExtractor expands overscan\nok 3 - defaultRangeExtractor expands overscan\n  ---\n  duration_ms: 0.386312\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 133.064609\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: computes a window of visible indexes near the top\nok 1 - computes a window of visible indexes near the top\n  ---\n  duration_ms: 4.249508\n  type: 'test'\n  ...\n# Subtest: total size scales with count and estimate\nok 2 - total size scales with count and estimate\n  ---\n  duration_ms: 0.567955\n  type: 'test'\n  ...\n# Subtest: defaultRangeExtractor expands overscan\nok 3 - defaultRangeExtractor expands overscan\n  ---\n  duration_ms: 0.669785\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 192.816651\n"
 }

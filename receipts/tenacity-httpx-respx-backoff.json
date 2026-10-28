@@ -1,15 +1,15 @@
 {
   "id": "tenacity-httpx-respx-backoff",
   "status": "passed",
-  "ran_at": "2026-10-28T07:17:39.970Z",
-  "last_passed_at": "2026-10-28T07:17:39.970Z",
+  "ran_at": "2026-10-28T13:25:26.071Z",
+  "last_passed_at": "2026-10-28T13:25:26.071Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 224,
-    "test": 2298
+    "setup": 284,
+    "test": 825
   },
   "pinned": {
     "httpx": "0.28.1",
@@ -29,9 +29,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40647163952"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.09s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.05s\n"
 }

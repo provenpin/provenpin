@@ -1,15 +1,15 @@
 {
   "id": "icalendar-event-rrule",
   "status": "passed",
-  "ran_at": "2026-10-28T07:06:57.038Z",
-  "last_passed_at": "2026-10-28T07:06:57.038Z",
+  "ran_at": "2026-10-28T13:08:05.492Z",
+  "last_passed_at": "2026-10-28T13:08:05.492Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 284,
-    "test": 1408
+    "setup": 277,
+    "test": 1696
   },
   "pinned": {
     "icalendar": "7.3.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40647163952"
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.28s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.31s\n"
 }

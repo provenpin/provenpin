@@ -1,15 +1,15 @@
 {
   "id": "tenacity-retry-stop-wait",
   "status": "passed",
-  "ran_at": "2026-10-28T07:17:43.591Z",
-  "last_passed_at": "2026-10-28T07:17:43.591Z",
+  "ran_at": "2026-10-28T13:25:26.638Z",
+  "last_passed_at": "2026-10-28T13:25:26.638Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 221,
-    "test": 1095
+    "setup": 176,
+    "test": 537
   },
   "pinned": {
     "tenacity": "9.2.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40647163952"
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
 }

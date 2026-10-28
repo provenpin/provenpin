@@ -1,15 +1,15 @@
 {
   "id": "kysely-sqlite-queries",
   "status": "passed",
-  "ran_at": "2026-10-28T07:08:22.440Z",
-  "last_passed_at": "2026-10-28T07:08:22.440Z",
+  "ran_at": "2026-10-28T13:09:18.590Z",
+  "last_passed_at": "2026-10-28T13:09:18.590Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2923,
-    "test": 430
+    "setup": 3134,
+    "test": 323
   },
   "pinned": {
     "kysely": "0.29.6",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40647163952"
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: transaction insert and join query\nok 1 - transaction insert and join query\n  ---\n  duration_ms: 8.897371\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 297.929554\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: transaction insert and join query\nok 1 - transaction insert and join query\n  ---\n  duration_ms: 7.073712\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 219.438212\n"
 }

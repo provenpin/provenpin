@@ -1,15 +1,15 @@
 {
   "id": "viem-offline-sign-verify",
   "status": "passed",
-  "ran_at": "2026-10-28T07:18:59.040Z",
-  "last_passed_at": "2026-10-28T07:18:59.040Z",
+  "ran_at": "2026-10-28T13:26:11.818Z",
+  "last_passed_at": "2026-10-28T13:26:11.818Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7235,
-    "test": 741
+    "setup": 4556,
+    "test": 465
   },
   "pinned": {
     "viem": "2.57.7",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40647163952"
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": "# Subtest: signs a message and verifies it offline\nok 2 - signs a message and verifies it offline\n  ---\n  duration_ms: 8.215854\n  type: 'test'\n  ...\n# Subtest: verifyMessage rejects a tampered message\nok 3 - verifyMessage rejects a tampered message\n  ---\n  duration_ms: 7.868341\n  type: 'test'\n  ...\n# Subtest: signs EIP-712 typed data and recovers the signer\nok 4 - signs EIP-712 typed data and recovers the signer\n  ---\n  duration_ms: 7.424647\n  type: 'test'\n  ...\n# Subtest: encodes and decodes an ERC-20 transfer call offline\nok 5 - encodes and decodes an ERC-20 transfer call offline\n  ---\n  duration_ms: 1.998529\n  type: 'test'\n  ...\n# Subtest: parseUnits/formatUnits round-trip for 6 decimals\nok 6 - parseUnits/formatUnits round-trip for 6 decimals\n  ---\n  duration_ms: 0.219924\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 586.365252\n"
+  "log_tail": "# Subtest: signs a message and verifies it offline\nok 2 - signs a message and verifies it offline\n  ---\n  duration_ms: 5.820577\n  type: 'test'\n  ...\n# Subtest: verifyMessage rejects a tampered message\nok 3 - verifyMessage rejects a tampered message\n  ---\n  duration_ms: 4.880656\n  type: 'test'\n  ...\n# Subtest: signs EIP-712 typed data and recovers the signer\nok 4 - signs EIP-712 typed data and recovers the signer\n  ---\n  duration_ms: 4.671723\n  type: 'test'\n  ...\n# Subtest: encodes and decodes an ERC-20 transfer call offline\nok 5 - encodes and decodes an ERC-20 transfer call offline\n  ---\n  duration_ms: 1.18543\n  type: 'test'\n  ...\n# Subtest: parseUnits/formatUnits round-trip for 6 decimals\nok 6 - parseUnits/formatUnits round-trip for 6 decimals\n  ---\n  duration_ms: 0.111958\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 358.577756\n"
 }

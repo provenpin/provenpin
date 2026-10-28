@@ -1,15 +1,15 @@
 {
   "id": "requests-cache-sqlite-backend",
   "status": "passed",
-  "ran_at": "2026-10-28T07:15:27.247Z",
-  "last_passed_at": "2026-10-28T07:15:27.247Z",
+  "ran_at": "2026-10-28T13:23:20.158Z",
+  "last_passed_at": "2026-10-28T13:23:20.158Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 261,
-    "test": 3971
+    "setup": 259,
+    "test": 3311
   },
   "pinned": {
     "requests": "2.34.2",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40647163952"
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 2.56s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 2.20s\n"
 }

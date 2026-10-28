@@ -1,15 +1,15 @@
 {
   "id": "axios-mock-adapter-client",
   "status": "passed",
-  "ran_at": "2026-10-28T07:00:33.382Z",
-  "last_passed_at": "2026-10-28T07:00:33.382Z",
+  "ran_at": "2026-10-28T13:01:42.561Z",
+  "last_passed_at": "2026-10-28T13:01:42.561Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2159,
-    "test": 528
+    "setup": 1909,
+    "test": 420
   },
   "pinned": {
     "axios": "1.20.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40647163952"
+    "runner": "github-actions 40692461744"
   },
   "errors": [],
-  "log_tail": "# Subtest: GET parses data and the request carries the auth header\nok 1 - GET parses data and the request carries the auth header\n  ---\n  duration_ms: 4.923735\n  type: 'test'\n  ...\n# Subtest: POST sends the body and parses the created resource\nok 2 - POST sends the body and parses the created resource\n  ---\n  duration_ms: 1.153081\n  type: 'test'\n  ...\n# Subtest: 404 rejects with an ApiError that keeps the status\nok 3 - 404 rejects with an ApiError that keeps the status\n  ---\n  duration_ms: 3.315623\n  type: 'test'\n  ...\n# Subtest: network error rejects with an ApiError\nok 4 - network error rejects with an ApiError\n  ---\n  duration_ms: 1.360783\n  type: 'test'\n  ...\n# Subtest: timeout rejects with a timeout ApiError\nok 5 - timeout rejects with a timeout ApiError\n  ---\n  duration_ms: 1.286623\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 381.036259\n"
+  "log_tail": "# Subtest: GET parses data and the request carries the auth header\nok 1 - GET parses data and the request carries the auth header\n  ---\n  duration_ms: 4.119669\n  type: 'test'\n  ...\n# Subtest: POST sends the body and parses the created resource\nok 2 - POST sends the body and parses the created resource\n  ---\n  duration_ms: 0.989197\n  type: 'test'\n  ...\n# Subtest: 404 rejects with an ApiError that keeps the status\nok 3 - 404 rejects with an ApiError that keeps the status\n  ---\n  duration_ms: 2.676655\n  type: 'test'\n  ...\n# Subtest: network error rejects with an ApiError\nok 4 - network error rejects with an ApiError\n  ---\n  duration_ms: 1.035576\n  type: 'test'\n  ...\n# Subtest: timeout rejects with a timeout ApiError\nok 5 - timeout rejects with a timeout ApiError\n  ---\n  duration_ms: 1.107483\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 300.272254\n"
 }
