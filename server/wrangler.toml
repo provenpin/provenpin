@@ -9,7 +9,7 @@ compatibility_date = "2026-10-01"
 [vars]
 PROVENPIN_PRO_ENABLED = "false"
 PROVENPIN_REQUIRE_KEY = "false"
-# Anonymous real-usage counter (see USAGE-COUNTER.md). Off by default.
+# Anonymous real-usage counter (see USAGE-COUNTER.md). On; set to "false" to turn it off.
 PROVENPIN_USAGE_COUNTER = "true"
 # PROVENPIN_DEPLOY_COMMIT is not set here: pass it at deploy time so /health reports the live commit:
 #   npx wrangler deploy --var PROVENPIN_DEPLOY_COMMIT:$(git rev-parse HEAD)
@@ -36,7 +36,7 @@ PROVENPIN_USAGE_COUNTER = "true"
 binding = "USAGE"
 dataset = "provenpin_usage"
 
-# Anonymous real-usage counter (see USAGE-COUNTER.md). Uncomment to enable, with PROVENPIN_USAGE_COUNTER = "true".
+# Anonymous real-usage counter dataset (see USAGE-COUNTER.md), used while PROVENPIN_USAGE_COUNTER = "true".
 [[analytics_engine_datasets]]
 binding = "USAGE_COUNTER"
 dataset = "provenpin_real_usage"
