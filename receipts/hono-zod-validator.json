@@ -1,15 +1,15 @@
 {
   "id": "hono-zod-validator",
   "status": "passed",
-  "ran_at": "2026-10-28T01:10:48.420Z",
-  "last_passed_at": "2026-10-28T01:10:48.420Z",
+  "ran_at": "2026-10-28T07:06:30.250Z",
+  "last_passed_at": "2026-10-28T07:06:30.250Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1894,
-    "test": 397
+    "setup": 3279,
+    "test": 513
   },
   "pinned": {
     "hono": "4.13.13",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40612669167"
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid json passes\nok 1 - valid json passes\n  ---\n  duration_ms: 32.033583\n  type: 'test'\n  ...\n# Subtest: invalid json is 400\nok 2 - invalid json is 400\n  ---\n  duration_ms: 1.063652\n  type: 'test'\n  ...\n# Subtest: query is coerced\nok 3 - query is coerced\n  ---\n  duration_ms: 1.107929\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 281.586024\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: valid json passes\nok 1 - valid json passes\n  ---\n  duration_ms: 25.29582\n  type: 'test'\n  ...\n# Subtest: invalid json is 400\nok 2 - invalid json is 400\n  ---\n  duration_ms: 1.532542\n  type: 'test'\n  ...\n# Subtest: query is coerced\nok 3 - query is coerced\n  ---\n  duration_ms: 1.720073\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 358.319791\n"
 }

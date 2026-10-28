@@ -1,15 +1,15 @@
 {
   "id": "returns-maybe-ioresult",
   "status": "passed",
-  "ran_at": "2026-10-28T01:18:24.269Z",
-  "last_passed_at": "2026-10-28T01:18:24.269Z",
+  "ran_at": "2026-10-28T07:15:28.773Z",
+  "last_passed_at": "2026-10-28T07:15:28.773Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 282,
-    "test": 1409
+    "setup": 197,
+    "test": 1351
   },
   "pinned": {
     "returns": "0.29.0",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40612669167"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "pytest-factory-boy-sqlalchemy",
   "status": "passed",
-  "ran_at": "2026-10-28T01:17:11.311Z",
-  "last_passed_at": "2026-10-28T01:17:11.311Z",
+  "ran_at": "2026-10-28T07:14:20.229Z",
+  "last_passed_at": "2026-10-28T07:14:20.229Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 387,
-    "test": 3443
+    "setup": 406,
+    "test": 3376
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -30,9 +30,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.17",
-    "runner": "github-actions 40612669167"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 0.19s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.13s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "pako-deflate-gzip",
   "status": "passed",
-  "ran_at": "2026-10-28T01:15:01.119Z",
-  "last_passed_at": "2026-10-28T01:15:01.119Z",
+  "ran_at": "2026-10-28T07:11:26.621Z",
+  "last_passed_at": "2026-10-28T07:11:26.621Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1812,
-    "test": 375
+    "setup": 1349,
+    "test": 256
   },
   "pinned": {
     "pako": "3.0.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40612669167"
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "# Subtest: deflate/inflate roundtrips a Uint8Array\nok 1 - deflate/inflate roundtrips a Uint8Array\n  ---\n  duration_ms: 6.574005\n  type: 'test'\n  ...\n# Subtest: deflate/inflate roundtrips a string\nok 2 - deflate/inflate roundtrips a string\n  ---\n  duration_ms: 2.093148\n  type: 'test'\n  ...\n# Subtest: gzip/ungzip roundtrips a string\nok 3 - gzip/ungzip roundtrips a string\n  ---\n  duration_ms: 1.151881\n  type: 'test'\n  ...\n# Subtest: compressed output is smaller for repetitive input\nok 4 - compressed output is smaller for repetitive input\n  ---\n  duration_ms: 2.205138\n  type: 'test'\n  ...\n# Subtest: deflate honors the level option\nok 5 - deflate honors the level option\n  ---\n  duration_ms: 3.963196\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 227.08824\n"
+  "log_tail": "# Subtest: deflate/inflate roundtrips a Uint8Array\nok 1 - deflate/inflate roundtrips a Uint8Array\n  ---\n  duration_ms: 4.295674\n  type: 'test'\n  ...\n# Subtest: deflate/inflate roundtrips a string\nok 2 - deflate/inflate roundtrips a string\n  ---\n  duration_ms: 1.493215\n  type: 'test'\n  ...\n# Subtest: gzip/ungzip roundtrips a string\nok 3 - gzip/ungzip roundtrips a string\n  ---\n  duration_ms: 0.869797\n  type: 'test'\n  ...\n# Subtest: compressed output is smaller for repetitive input\nok 4 - compressed output is smaller for repetitive input\n  ---\n  duration_ms: 1.539324\n  type: 'test'\n  ...\n# Subtest: deflate honors the level option\nok 5 - deflate honors the level option\n  ---\n  duration_ms: 2.812128\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 152.834985\n"
 }

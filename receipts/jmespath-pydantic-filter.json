@@ -1,15 +1,15 @@
 {
   "id": "jmespath-pydantic-filter",
   "status": "passed",
-  "ran_at": "2026-10-28T01:11:50.469Z",
-  "last_passed_at": "2026-10-28T01:11:50.469Z",
+  "ran_at": "2026-10-28T07:07:45.825Z",
+  "last_passed_at": "2026-10-28T07:07:45.825Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 415,
-    "test": 2985
+    "setup": 371,
+    "test": 1632
   },
   "pinned": {
     "jmespath": "1.1.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.16",
-    "runner": "github-actions 40612669167"
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.97s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.38s\n"
 }

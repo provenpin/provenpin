@@ -1,15 +1,15 @@
 {
   "id": "drf-django-filter-viewset",
   "status": "passed",
-  "ran_at": "2026-10-28T01:07:24.628Z",
-  "last_passed_at": "2026-10-28T01:07:24.628Z",
+  "ran_at": "2026-10-28T07:03:04.688Z",
+  "last_passed_at": "2026-10-28T07:03:04.688Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 618,
-    "test": 3761
+    "setup": 847,
+    "test": 3889
   },
   "pinned": {
     "django": "6.1.2",
@@ -32,9 +32,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.17",
-    "runner": "github-actions 40612669167"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.82s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.61s\n"
 }

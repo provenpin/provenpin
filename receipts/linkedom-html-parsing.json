@@ -1,15 +1,15 @@
 {
   "id": "linkedom-html-parsing",
   "status": "passed",
-  "ran_at": "2026-10-28T01:12:40.681Z",
-  "last_passed_at": "2026-10-28T01:12:40.681Z",
+  "ran_at": "2026-10-28T07:08:47.083Z",
+  "last_passed_at": "2026-10-28T07:08:47.083Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2370,
-    "test": 542
+    "setup": 1562,
+    "test": 329
   },
   "pinned": {
     "linkedom": "0.18.13",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40612669167"
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: extracts title, description, Open Graph and unique absolute links\nok 1 - extracts title, description, Open Graph and unique absolute links\n  ---\n  duration_ms: 7.039598\n  type: 'test'\n  ...\n# Subtest: rewrites URLs, lazy-loads images and removes inline scripts\nok 2 - rewrites URLs, lazy-loads images and removes inline scripts\n  ---\n  duration_ms: 3.811827\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 387.966998\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: extracts title, description, Open Graph and unique absolute links\nok 1 - extracts title, description, Open Graph and unique absolute links\n  ---\n  duration_ms: 4.108934\n  type: 'test'\n  ...\n# Subtest: rewrites URLs, lazy-loads images and removes inline scripts\nok 2 - rewrites URLs, lazy-loads images and removes inline scripts\n  ---\n  duration_ms: 2.442001\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 228.999417\n"
 }

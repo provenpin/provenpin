@@ -1,15 +1,15 @@
 {
   "id": "preact-signals-testing-library",
   "status": "passed",
-  "ran_at": "2026-10-28T01:16:08.166Z",
-  "last_passed_at": "2026-10-28T01:16:08.166Z",
+  "ran_at": "2026-10-28T07:13:36.701Z",
+  "last_passed_at": "2026-10-28T07:13:36.701Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7643,
-    "test": 1764
+    "setup": 15414,
+    "test": 1696
   },
   "pinned": {
     "preact": "11.0.1",
@@ -32,9 +32,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40612669167"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-preact-signals-testing-library-0JqyDK\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.tsx \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 239\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 01:16:16\n\u001b[2m   Duration \u001b[22m 1.29s\u001b[2m (environment 57%, tests 20%, import 18%, transform 5%)\u001b[22m\n\nJSON report written to /tmp/pp-preact-signals-testing-library-0JqyDK/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.5 \u001b[39m\u001b[90m/tmp/pp-preact-signals-testing-library-PMLeuS\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.tsx \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 232\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 07:13:52\n\u001b[2m   Duration \u001b[22m 1.22s\u001b[2m (environment 55%, tests 21%, import 18%, transform 5%, worker 1%)\u001b[22m\n\nJSON report written to /tmp/pp-preact-signals-testing-library-PMLeuS/test-report.json\n"
 }

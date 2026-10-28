@@ -1,15 +1,15 @@
 {
   "id": "pint-unit-conversion-quantities",
   "status": "passed",
-  "ran_at": "2026-10-28T01:15:41.738Z",
-  "last_passed_at": "2026-10-28T01:15:41.738Z",
+  "ran_at": "2026-10-28T07:12:26.130Z",
+  "last_passed_at": "2026-10-28T07:12:26.130Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 575,
-    "test": 1743
+    "setup": 335,
+    "test": 4510
   },
   "pinned": {
     "pint": "0.26.1",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40612669167"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.54s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.75s\n"
 }

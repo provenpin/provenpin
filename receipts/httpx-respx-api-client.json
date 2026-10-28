@@ -1,15 +1,15 @@
 {
   "id": "httpx-respx-api-client",
   "status": "passed",
-  "ran_at": "2026-10-28T01:10:44.717Z",
-  "last_passed_at": "2026-10-28T01:10:44.717Z",
+  "ran_at": "2026-10-28T07:06:38.856Z",
+  "last_passed_at": "2026-10-28T07:06:38.856Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 418,
-    "test": 1931
+    "setup": 334,
+    "test": 1689
   },
   "pinned": {
     "httpx": "0.28.1",
@@ -29,9 +29,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40612669167"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 0.20s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.27s\n"
 }

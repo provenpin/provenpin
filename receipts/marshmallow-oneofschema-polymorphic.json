@@ -1,15 +1,15 @@
 {
   "id": "marshmallow-oneofschema-polymorphic",
   "status": "passed",
-  "ran_at": "2026-10-28T01:13:18.591Z",
-  "last_passed_at": "2026-10-28T01:13:18.591Z",
+  "ran_at": "2026-10-28T07:09:27.457Z",
+  "last_passed_at": "2026-10-28T07:09:27.457Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 303,
-    "test": 700
+    "setup": 250,
+    "test": 1464
   },
   "pinned": {
     "marshmallow": "4.3.1",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40612669167"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
 }

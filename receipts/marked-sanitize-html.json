@@ -1,15 +1,15 @@
 {
   "id": "marked-sanitize-html",
   "status": "passed",
-  "ran_at": "2026-10-28T01:13:15.389Z",
-  "last_passed_at": "2026-10-28T01:13:15.389Z",
+  "ran_at": "2026-10-28T07:09:28.189Z",
+  "last_passed_at": "2026-10-28T07:09:28.189Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2087,
-    "test": 450
+    "setup": 2055,
+    "test": 577
   },
   "pinned": {
     "marked": "18.1.1",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.3",
-    "runner": "github-actions 40612669167"
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders headings and links\nok 1 - renders headings and links\n  ---\n  duration_ms: 16.362218\n  type: 'test'\n  ...\n# Subtest: strips script tags\nok 2 - strips script tags\n  ---\n  duration_ms: 5.248631\n  type: 'test'\n  ...\n# Subtest: keeps code fences\nok 3 - keeps code fences\n  ---\n  duration_ms: 0.456422\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 334.920204\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders headings and links\nok 1 - renders headings and links\n  ---\n  duration_ms: 20.033209\n  type: 'test'\n  ...\n# Subtest: strips script tags\nok 2 - strips script tags\n  ---\n  duration_ms: 6.707612\n  type: 'test'\n  ...\n# Subtest: keeps code fences\nok 3 - keeps code fences\n  ---\n  duration_ms: 0.651091\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 424.301137\n"
 }

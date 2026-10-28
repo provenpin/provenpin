@@ -1,15 +1,15 @@
 {
   "id": "dataclasses-json-camelcase",
   "status": "passed",
-  "ran_at": "2026-10-28T01:06:39.219Z",
-  "last_passed_at": "2026-10-28T01:06:39.219Z",
+  "ran_at": "2026-10-28T07:02:25.809Z",
+  "last_passed_at": "2026-10-28T07:02:25.809Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 349,
-    "test": 484
+    "setup": 264,
+    "test": 1218
   },
   "pinned": {
     "dataclasses-json": "0.6.7",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.17",
-    "runner": "github-actions 40612669167"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.15s\n"
 }

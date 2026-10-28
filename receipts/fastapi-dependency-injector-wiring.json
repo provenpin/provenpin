@@ -1,15 +1,15 @@
 {
   "id": "fastapi-dependency-injector-wiring",
   "status": "passed",
-  "ran_at": "2026-10-28T01:08:39.762Z",
-  "last_passed_at": "2026-10-28T01:08:39.762Z",
+  "ran_at": "2026-10-28T07:04:31.509Z",
+  "last_passed_at": "2026-10-28T07:04:31.509Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2088,
-    "test": 2267
+    "setup": 334,
+    "test": 2788
   },
   "pinned": {
     "fastapi": "0.143.2",
@@ -30,9 +30,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.17",
-    "runner": "github-actions 40612669167"
+    "runtime": "Python 3.13.16",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.75s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.83s\n"
 }

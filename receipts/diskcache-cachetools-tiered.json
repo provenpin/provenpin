@@ -1,15 +1,15 @@
 {
   "id": "diskcache-cachetools-tiered",
   "status": "passed",
-  "ran_at": "2026-10-28T01:06:59.594Z",
-  "last_passed_at": "2026-10-28T01:06:59.594Z",
+  "ran_at": "2026-10-28T07:02:38.776Z",
+  "last_passed_at": "2026-10-28T07:02:38.776Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 726,
-    "test": 2168
+    "setup": 251,
+    "test": 1336
   },
   "pinned": {
     "diskcache": "5.6.3",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40612669167"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40647163952"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.58s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.46s\n"
 }
