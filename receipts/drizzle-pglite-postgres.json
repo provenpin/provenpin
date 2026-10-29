@@ -1,15 +1,15 @@
 {
   "id": "drizzle-pglite-postgres",
   "status": "passed",
-  "ran_at": "2026-10-29T13:07:45.870Z",
-  "last_passed_at": "2026-10-29T13:07:45.870Z",
+  "ran_at": "2026-10-29T16:22:04.761Z",
+  "last_passed_at": "2026-10-29T16:22:04.761Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 7456,
-    "test": 5097
+    "setup": 7931,
+    "test": 4859
   },
   "pinned": {
     "drizzle-orm": "0.45.4",
@@ -17,10 +17,10 @@
     "tsx": "4.23.15",
     "@types/node": "24.19.2"
   },
-  "recipe_hash": "sha256:f15d10d2b2070f24a92ff42cba7591644fc475e9b8b11ee5cb2b4ca3e8e34929",
+  "recipe_hash": "sha256:939bb49bf608cae7db1baec04c2b2922470076d4f2e35edd1f96586f470ee976",
   "files": {
     "recipes/drizzle-pglite-postgres/package.json": "sha256:0ffa5ef79b006cf3bc934ce9f77d59de355ce751f61755cf26c981335cf6cfb3",
-    "recipes/drizzle-pglite-postgres/recipe.yaml": "sha256:9c02e04c8290d5684f4222b41f1db91eda2164a1fd9c6a7ce6324e336b1b1524",
+    "recipes/drizzle-pglite-postgres/recipe.yaml": "sha256:abf6c2c8bdcfc10677a28df8a56cf8f599159c6b74d5f3c93a79a5ba5602f608",
     "recipes/drizzle-pglite-postgres/src/db.ts": "sha256:9ce289a33d33c9b486b161b4fa12e9cb98fa0b130f917111dbda503f6587b076",
     "recipes/drizzle-pglite-postgres/test/db.test.ts": "sha256:a79f56d080849fbbc01bdff7f9f83cff0fa805ca655ebef602faaa7b425fc8f5"
   },
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40910771096"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: insert with returning and join\nok 1 - insert with returning and join\n  ---\n  duration_ms: 2347.324703\n  type: 'test'\n  ...\n# Subtest: unique violation rolls back the transaction\nok 2 - unique violation rolls back the transaction\n  ---\n  duration_ms: 1711.488851\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 4945.524472\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: insert with returning and join\nok 1 - insert with returning and join\n  ---\n  duration_ms: 2177.690982\n  type: 'test'\n  ...\n# Subtest: unique violation rolls back the transaction\nok 2 - unique violation rolls back the transaction\n  ---\n  duration_ms: 1606.008719\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 4697.292198\n"
 }

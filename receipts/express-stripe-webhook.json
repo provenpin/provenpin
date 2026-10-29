@@ -1,15 +1,15 @@
 {
   "id": "express-stripe-webhook",
   "status": "passed",
-  "ran_at": "2026-10-29T13:08:55.795Z",
-  "last_passed_at": "2026-10-29T13:08:55.795Z",
+  "ran_at": "2026-10-29T16:22:05.676Z",
+  "last_passed_at": "2026-10-29T16:22:05.676Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 5403,
-    "test": 722
+    "setup": 4001,
+    "test": 666
   },
   "pinned": {
     "express": "5.3.0",
@@ -20,10 +20,10 @@
     "@types/supertest": "7.2.1",
     "@types/express": "5.0.6"
   },
-  "recipe_hash": "sha256:7538249a783d2f10ccbb31b42a38248f1dac4a6c5a24924c09349accfa22fe99",
+  "recipe_hash": "sha256:2d1c7e62d83ccc7003940f44f41fcfc828410ecbd41cb9d075fd0eefb3c42af3",
   "files": {
     "recipes/express-stripe-webhook/package.json": "sha256:ac4e2c15265323e615c3827ffaf9055925f5783a89309f55a2a0f64142532110",
-    "recipes/express-stripe-webhook/recipe.yaml": "sha256:c3bff076d43cb878517d871a2599bf35e633ff2093f7ab9f242bcaa446e53dee",
+    "recipes/express-stripe-webhook/recipe.yaml": "sha256:e49fb8a6611687d52c86785b10954ccf228ce67acd424902b134fdfb09812de3",
     "recipes/express-stripe-webhook/src/app.ts": "sha256:d2b1d2e1741c5c9f71addb7794d2fadc40343d75f7247ee3da0f8b7e40b180bf",
     "recipes/express-stripe-webhook/test/app.test.ts": "sha256:2167bfe8deb3a33e5096759698f40f4210b864ec74ffe7195c68279d0dd3d329"
   },
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40910771096"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a correctly signed event\nok 1 - accepts a correctly signed event\n  ---\n  duration_ms: 37.152151\n  type: 'test'\n  ...\n# Subtest: rejects a bad signature\nok 2 - rejects a bad signature\n  ---\n  duration_ms: 6.636094\n  type: 'test'\n  ...\n# Subtest: rejects a missing signature\nok 3 - rejects a missing signature\n  ---\n  duration_ms: 4.578626\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 562.630585\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a correctly signed event\nok 1 - accepts a correctly signed event\n  ---\n  duration_ms: 31.887147\n  type: 'test'\n  ...\n# Subtest: rejects a bad signature\nok 2 - rejects a bad signature\n  ---\n  duration_ms: 6.683935\n  type: 'test'\n  ...\n# Subtest: rejects a missing signature\nok 3 - rejects a missing signature\n  ---\n  duration_ms: 4.129414\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 502.857431\n"
 }

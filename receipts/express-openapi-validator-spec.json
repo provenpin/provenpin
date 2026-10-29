@@ -1,15 +1,15 @@
 {
   "id": "express-openapi-validator-spec",
   "status": "passed",
-  "ran_at": "2026-10-29T13:08:46.919Z",
-  "last_passed_at": "2026-10-29T13:08:46.919Z",
+  "ran_at": "2026-10-29T16:22:03.399Z",
+  "last_passed_at": "2026-10-29T16:22:03.399Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4244,
-    "test": 1090
+    "setup": 5343,
+    "test": 695
   },
   "pinned": {
     "express": "5.3.0",
@@ -20,10 +20,10 @@
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:9dc83a5c425812d85baf678bc2b7e08362c9ceb3cf1d450638bcafbbfecbac3e",
+  "recipe_hash": "sha256:c88c99525689f2d78b44bd5e32ce2e4da68d2d583c0d5cc3754e4a0966cf4877",
   "files": {
     "recipes/express-openapi-validator-spec/package.json": "sha256:f14b1ec28530b25a3890d2edb357dd46e25898c2b1042a01c271ef31ccd5c823",
-    "recipes/express-openapi-validator-spec/recipe.yaml": "sha256:72309fa29396f4dcd752c4979b788936cff4280ccaddeb10f105548ff23601b9",
+    "recipes/express-openapi-validator-spec/recipe.yaml": "sha256:2ab3cf88076ca903e422bb56fedfae433e06745b7d0e9673d7ba94c5ce8274b8",
     "recipes/express-openapi-validator-spec/src/app.ts": "sha256:d229c6bad568f0a1cf9f28ce7de585a704357745b911ace1bbe0b4ef2dafa66e",
     "recipes/express-openapi-validator-spec/test/app.test.ts": "sha256:4b865856a2f07178f729ae44894b0f9e90dc09438400fc36ad21fc35ae483da5"
   },
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40910771096"
   },
   "errors": [],
-  "log_tail": "# Subtest: GET valid path and query returns 200\nok 1 - GET valid path and query returns 200\n  ---\n  duration_ms: 191.515883\n  type: 'test'\n  ...\n# Subtest: GET invalid path param returns 400 with details\nok 2 - GET invalid path param returns 400 with details\n  ---\n  duration_ms: 104.833576\n  type: 'test'\n  ...\n# Subtest: GET invalid query returns 400 with details\nok 3 - GET invalid query returns 400 with details\n  ---\n  duration_ms: 68.773667\n  type: 'test'\n  ...\n# Subtest: POST valid JSON body returns 201\nok 4 - POST valid JSON body returns 201\n  ---\n  duration_ms: 70.836807\n  type: 'test'\n  ...\n# Subtest: POST invalid JSON body returns 400 with details\nok 5 - POST invalid JSON body returns 400 with details\n  ---\n  duration_ms: 54.635376\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 934.97481\n"
+  "log_tail": "# Subtest: GET valid path and query returns 200\nok 1 - GET valid path and query returns 200\n  ---\n  duration_ms: 115.848078\n  type: 'test'\n  ...\n# Subtest: GET invalid path param returns 400 with details\nok 2 - GET invalid path param returns 400 with details\n  ---\n  duration_ms: 72.348534\n  type: 'test'\n  ...\n# Subtest: GET invalid query returns 400 with details\nok 3 - GET invalid query returns 400 with details\n  ---\n  duration_ms: 46.365851\n  type: 'test'\n  ...\n# Subtest: POST valid JSON body returns 201\nok 4 - POST valid JSON body returns 201\n  ---\n  duration_ms: 43.872838\n  type: 'test'\n  ...\n# Subtest: POST invalid JSON body returns 400 with details\nok 5 - POST invalid JSON body returns 400 with details\n  ---\n  duration_ms: 35.314299\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 591.154874\n"
 }
