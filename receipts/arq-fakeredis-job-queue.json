@@ -1,21 +1,36 @@
 {
   "id": "arq-fakeredis-job-queue",
   "status": "passed",
-  "ran_at": "2026-10-29T01:02:33.963Z",
-  "last_passed_at": "2026-10-29T01:02:33.963Z",
+  "ran_at": "2026-10-29T07:01:45.432Z",
+  "last_passed_at": "2026-10-29T07:01:45.432Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 455,
-    "test": 3659
+    "setup": 289,
+    "test": 1741
   },
   "pinned": {
     "arq": "0.28.0",
     "fakeredis": "2.40.0",
     "pytest-asyncio": "1.4.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "arq": "0.28.0",
+    "click": "8.5.0",
+    "fakeredis": "2.40.0",
+    "hiredis": "3.5.0",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pyjwt": "2.15.1",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0",
+    "redis": "5.3.1",
+    "sortedcontainers": "2.4.0"
   },
   "recipe_hash": "sha256:d8b39b34113e7ab665b46f461910bb718c4deb7f34346ff3a7583e2a5dd58842",
   "files": {
@@ -29,8 +44,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.79s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.45s\n"
 }

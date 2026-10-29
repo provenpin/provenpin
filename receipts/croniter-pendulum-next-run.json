@@ -1,20 +1,32 @@
 {
   "id": "croniter-pendulum-next-run",
   "status": "passed",
-  "ran_at": "2026-10-29T01:05:28.093Z",
-  "last_passed_at": "2026-10-29T01:05:28.093Z",
+  "ran_at": "2026-10-29T07:04:46.309Z",
+  "last_passed_at": "2026-10-29T07:04:46.309Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 296,
-    "test": 1210
+    "setup": 187,
+    "test": 1655
   },
   "pinned": {
     "croniter": "6.2.4",
     "pendulum": "3.3.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "croniter": "6.2.4",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pendulum": "3.3.0",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "python-dateutil": "3.0.0",
+    "six": "1.17.0",
+    "tzdata": "2026.6"
   },
   "recipe_hash": "sha256:427c8cb1248b9a290703efeab54d2a61d2733303d9c4ca85f7511a287789b3fd",
   "files": {
@@ -28,8 +40,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.17s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.62s\n"
 }

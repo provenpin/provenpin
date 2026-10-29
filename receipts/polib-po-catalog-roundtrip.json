@@ -1,18 +1,26 @@
 {
   "id": "polib-po-catalog-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-29T01:19:40.434Z",
-  "last_passed_at": "2026-10-29T01:19:40.434Z",
+  "ran_at": "2026-10-29T07:18:49.053Z",
+  "last_passed_at": "2026-10-29T07:18:49.053Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 286,
-    "test": 653
+    "setup": 504,
+    "test": 655
   },
   "pinned": {
     "polib": "1.2.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "polib": "1.2.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:8be70725e52a9f9d12af86d11662dfa06eee314ae33c1ab9fb8f6f56769f12d6",
@@ -27,7 +35,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"

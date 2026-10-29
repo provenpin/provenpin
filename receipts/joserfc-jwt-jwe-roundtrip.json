@@ -1,18 +1,29 @@
 {
   "id": "joserfc-jwt-jwe-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-29T01:12:50.409Z",
-  "last_passed_at": "2026-10-29T01:12:50.409Z",
+  "ran_at": "2026-10-29T07:12:03.593Z",
+  "last_passed_at": "2026-10-29T07:12:03.593Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 352,
-    "test": 2206
+    "setup": 268,
+    "test": 1859
   },
   "pinned": {
     "joserfc": "1.7.5",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "cffi": "2.1.1",
+    "cryptography": "50.0.2",
+    "iniconfig": "2.3.1",
+    "joserfc": "1.7.5",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pycparser": "3.12",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:518c2789c6b0304f303c30a6e7ed6053c5dac741ec0570bc78ebd91e4367edd9",
@@ -27,7 +38,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.36s\n"

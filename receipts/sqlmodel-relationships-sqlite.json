@@ -1,19 +1,33 @@
 {
   "id": "sqlmodel-relationships-sqlite",
   "status": "passed",
-  "ran_at": "2026-10-29T01:24:44.744Z",
-  "last_passed_at": "2026-10-29T01:24:44.744Z",
+  "ran_at": "2026-10-29T07:23:30.757Z",
+  "last_passed_at": "2026-10-29T07:23:30.757Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 734,
-    "test": 2729
+    "setup": 339,
+    "test": 3883
   },
   "pinned": {
     "sqlmodel": "0.0.48",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "sqlalchemy": "2.1.6",
+    "sqlmodel": "0.0.48",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:6b7730576c9a9c4b199ccd71bf5d88dd6bc3ebc37c58127e273c983812a9dc05",
   "files": {
@@ -27,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 1.49s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 2.16s\n"
 }

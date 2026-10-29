@@ -1,20 +1,33 @@
 {
   "id": "msgpack-pydantic-binary-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-29T01:15:45.405Z",
-  "last_passed_at": "2026-10-29T01:15:45.405Z",
+  "ran_at": "2026-10-29T07:14:56.600Z",
+  "last_passed_at": "2026-10-29T07:14:56.600Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 411,
-    "test": 2382
+    "setup": 413,
+    "test": 2226
   },
   "pinned": {
     "msgpack": "1.2.3",
     "pydantic": "2.14.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "iniconfig": "2.3.1",
+    "msgpack": "1.2.3",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:06ee45f88674cff279877cdf7530607964189da77901f21ac2ea39e205f70f8e",
   "files": {
@@ -28,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.46s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.44s\n"
 }

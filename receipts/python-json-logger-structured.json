@@ -1,19 +1,27 @@
 {
   "id": "python-json-logger-structured",
   "status": "passed",
-  "ran_at": "2026-10-29T01:21:43.094Z",
-  "last_passed_at": "2026-10-29T01:21:43.094Z",
+  "ran_at": "2026-10-29T07:20:47.974Z",
+  "last_passed_at": "2026-10-29T07:20:47.974Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 326,
-    "test": 1031
+    "setup": 154,
+    "test": 475
   },
   "pinned": {
     "python-json-logger": "4.2.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "python-json-logger": "4.2.0"
   },
   "recipe_hash": "sha256:764c68205887f24c76612f2f2958efc89d9869ed0053bd7ca6a570b0eee4bc0b",
   "files": {
@@ -27,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".......                                                                  [100%]\n7 passed in 0.04s\n"
+  "log_tail": ".......                                                                  [100%]\n7 passed in 0.02s\n"
 }

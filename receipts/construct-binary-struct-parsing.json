@@ -1,18 +1,26 @@
 {
   "id": "construct-binary-struct-parsing",
   "status": "passed",
-  "ran_at": "2026-10-29T01:05:07.011Z",
-  "last_passed_at": "2026-10-29T01:05:07.011Z",
+  "ran_at": "2026-10-29T07:04:31.743Z",
+  "last_passed_at": "2026-10-29T07:04:31.743Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 219,
-    "test": 694
+    "setup": 187,
+    "test": 1292
   },
   "pinned": {
     "construct": "2.10.70",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "construct": "2.10.70",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:fb07c9ca114c5b4ec6903d5797a324f0d31bfc0f695c3c5e76682c88e1e4145b",
@@ -27,7 +35,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"

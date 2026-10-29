@@ -1,21 +1,33 @@
 {
   "id": "django-drf-api",
   "status": "passed",
-  "ran_at": "2026-10-29T01:06:28.873Z",
-  "last_passed_at": "2026-10-29T01:06:28.873Z",
+  "ran_at": "2026-10-29T07:05:47.507Z",
+  "last_passed_at": "2026-10-29T07:05:47.507Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 709,
-    "test": 2923
+    "setup": 616,
+    "test": 1768
   },
   "pinned": {
     "django": "6.1.2",
     "djangorestframework": "3.18.3",
     "pytest-django": "4.14.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "asgiref": "3.13.0",
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "pytest-django": "4.14.0",
+    "sqlparse": "0.6.0"
   },
   "recipe_hash": "sha256:be23abaa13b8435dc91585f797188caa52b2b2009ac1425254a8ae661340ec54",
   "files": {
@@ -34,8 +46,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 0.45s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.42s\n"
 }

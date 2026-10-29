@@ -1,20 +1,42 @@
 {
   "id": "beanie-mongomock-odm",
   "status": "passed",
-  "ran_at": "2026-10-29T01:03:20.374Z",
-  "last_passed_at": "2026-10-29T01:03:20.374Z",
+  "ran_at": "2026-10-29T07:02:37.364Z",
+  "last_passed_at": "2026-10-29T07:02:37.364Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 429,
-    "test": 2102
+    "setup": 430,
+    "test": 1322
   },
   "pinned": {
     "beanie": "2.2.0",
     "mongomock-motor": "0.0.36",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "beanie": "2.2.0",
+    "click": "8.5.0",
+    "dnspython": "2.9.0",
+    "iniconfig": "2.3.1",
+    "lazy-model": "0.4.0",
+    "mongomock": "4.3.0",
+    "mongomock-motor": "0.0.36",
+    "motor": "3.7.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pymongo": "4.19.0",
+    "pytest": "9.1.1",
+    "pytz": "2026.5",
+    "sentinels": "1.1.1",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:e255688c3362371844857f7c4da4b67cf6f30f4fc6ddff981e2d657300883787",
   "files": {
@@ -28,8 +50,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.24s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.78s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "sequelize-sqlite-associations",
   "status": "passed",
-  "ran_at": "2026-10-29T01:23:27.674Z",
-  "last_passed_at": "2026-10-29T01:23:27.674Z",
+  "ran_at": "2026-10-29T07:22:15.027Z",
+  "last_passed_at": "2026-10-29T07:22:15.027Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4171,
-    "test": 563
+    "setup": 3171,
+    "test": 581
   },
   "pinned": {
     "sequelize": "6.37.8",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: transaction creates user and posts with include\nok 1 - transaction creates user and posts with include\n  ---\n  duration_ms: 83.071757\n  type: 'test'\n  ...\n# Subtest: rollback leaves no rows when nested create fails\nok 2 - rollback leaves no rows when nested create fails\n  ---\n  duration_ms: 21.581638\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 439.609545\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: transaction creates user and posts with include\nok 1 - transaction creates user and posts with include\n  ---\n  duration_ms: 89.91686\n  type: 'test'\n  ...\n# Subtest: rollback leaves no rows when nested create fails\nok 2 - rollback leaves no rows when nested create fails\n  ---\n  duration_ms: 24.365045\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 450.484474\n"
 }

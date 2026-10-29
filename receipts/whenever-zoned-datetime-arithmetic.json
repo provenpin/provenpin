@@ -1,19 +1,27 @@
 {
   "id": "whenever-zoned-datetime-arithmetic",
   "status": "passed",
-  "ran_at": "2026-10-29T01:27:46.283Z",
-  "last_passed_at": "2026-10-29T01:27:46.283Z",
+  "ran_at": "2026-10-29T07:26:42.086Z",
+  "last_passed_at": "2026-10-29T07:26:42.086Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 426,
-    "test": 1954
+    "setup": 518,
+    "test": 807
   },
   "pinned": {
     "whenever": "0.11.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "whenever": "0.11.0"
   },
   "recipe_hash": "sha256:57794992a8bc0b7ecb019b2b5f8dc38670eb3aa322e27e96bcb8b4616b1eaa21",
   "files": {
@@ -27,7 +35,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"

@@ -1,21 +1,35 @@
 {
   "id": "faker-polyfactory-seeded",
   "status": "passed",
-  "ran_at": "2026-10-29T01:08:30.027Z",
-  "last_passed_at": "2026-10-29T01:08:30.027Z",
+  "ran_at": "2026-10-29T07:07:45.558Z",
+  "last_passed_at": "2026-10-29T07:07:45.558Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 500,
-    "test": 1172
+    "setup": 424,
+    "test": 1051
   },
   "pinned": {
     "faker": "40.43.0",
     "polyfactory": "3.3.0",
     "pydantic": "2.14.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "faker": "40.43.0",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "polyfactory": "3.3.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:6bc8406486f56f1defafe160121a0df5a79cd7fdba8071b121e6e59fd333cdb4",
   "files": {
@@ -29,7 +43,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.32s\n"

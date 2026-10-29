@@ -1,15 +1,15 @@
 {
   "id": "pandas-sqlalchemy-to-sql",
   "status": "passed",
-  "ran_at": "2026-10-29T01:18:26.463Z",
-  "last_passed_at": "2026-10-29T01:18:26.463Z",
+  "ran_at": "2026-10-29T07:17:45.801Z",
+  "last_passed_at": "2026-10-29T07:17:45.801Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 795,
-    "test": 5250
+    "setup": 577,
+    "test": 5150
   },
   "pinned": {
     "pandas": "3.0.6",
@@ -23,6 +23,19 @@
     "pluggy": "1.6.0",
     "pygments": "2.19.2"
   },
+  "installed": {
+    "iniconfig": "2.1.0",
+    "numpy": "2.3.4",
+    "packaging": "26.3",
+    "pandas": "3.0.6",
+    "pluggy": "1.6.0",
+    "pygments": "2.19.2",
+    "pytest": "9.1.1",
+    "python-dateutil": "2.9.0.post0",
+    "six": "1.17.0",
+    "sqlalchemy": "2.1.4",
+    "typing-extensions": "4.15.0"
+  },
   "recipe_hash": "sha256:cc6a4d62a7066ca53509721b5b3ce45a10708162a3ec2be2c05903032a200513",
   "files": {
     "recipes/pandas-sqlalchemy-to-sql/db.py": "sha256:4fdf689b87f1b669f7b6e15c5a37f5910018aaba599712a3e46ee07879716a52",
@@ -35,8 +48,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 3.23s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 2.52s\n"
 }

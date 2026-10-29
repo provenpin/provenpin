@@ -1,18 +1,28 @@
 {
   "id": "email-validator-normalize",
   "status": "passed",
-  "ran_at": "2026-10-29T01:07:37.404Z",
-  "last_passed_at": "2026-10-29T01:07:37.404Z",
+  "ran_at": "2026-10-29T07:06:53.134Z",
+  "last_passed_at": "2026-10-29T07:06:53.134Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 822,
-    "test": 1933
+    "setup": 272,
+    "test": 1582
   },
   "pinned": {
     "email-validator": "2.3.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "dnspython": "2.9.0",
+    "email-validator": "2.3.0",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:ee90ee83dbb74c164f04b3d01c5a6cb745772b83b45cf6e1d0d65fa3654531e5",
@@ -27,8 +37,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.49s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.37s\n"
 }

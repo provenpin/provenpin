@@ -1,15 +1,15 @@
 {
   "id": "ajv-formats-json-schema",
   "status": "passed",
-  "ran_at": "2026-10-29T01:01:55.836Z",
-  "last_passed_at": "2026-10-29T01:01:55.836Z",
+  "ran_at": "2026-10-29T07:01:10.680Z",
+  "last_passed_at": "2026-10-29T07:01:10.680Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1612,
-    "test": 339
+    "setup": 1550,
+    "test": 321
   },
   "pinned": {
     "ajv": "8.20.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid payload and strips extras\nok 1 - accepts a valid payload and strips extras\n  ---\n  duration_ms: 0.752539\n  type: 'test'\n  ...\n# Subtest: rejects bad email and missing name\nok 2 - rejects bad email and missing name\n  ---\n  duration_ms: 0.234492\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 231.395698\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid payload and strips extras\nok 1 - accepts a valid payload and strips extras\n  ---\n  duration_ms: 0.839868\n  type: 'test'\n  ...\n# Subtest: rejects bad email and missing name\nok 2 - rejects bad email and missing name\n  ---\n  duration_ms: 0.266633\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 206.525912\n"
 }

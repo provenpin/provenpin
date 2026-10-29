@@ -1,19 +1,27 @@
 {
   "id": "pytest-asyncio-taskgroup-timeouts",
   "status": "passed",
-  "ran_at": "2026-10-29T01:21:23.747Z",
-  "last_passed_at": "2026-10-29T01:21:23.747Z",
+  "ran_at": "2026-10-29T07:20:28.274Z",
+  "last_passed_at": "2026-10-29T07:20:28.274Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 247,
-    "test": 1018
+    "setup": 292,
+    "test": 1497
   },
   "pinned": {
     "pytest-asyncio": "1.4.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0"
   },
   "recipe_hash": "sha256:07ea9c1326f39218df6c205b45a011b9543387c45e380fe4c63869cfd84d1f37",
   "files": {
@@ -27,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.21s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.22s\n"
 }

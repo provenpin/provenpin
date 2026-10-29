@@ -1,15 +1,15 @@
 {
   "id": "sharp-blurhash-image-pipeline",
   "status": "passed",
-  "ran_at": "2026-10-29T01:23:31.865Z",
-  "last_passed_at": "2026-10-29T01:23:31.865Z",
+  "ran_at": "2026-10-29T07:22:26.209Z",
+  "last_passed_at": "2026-10-29T07:22:26.209Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3154,
-    "test": 636
+    "setup": 2791,
+    "test": 667
   },
   "pinned": {
     "sharp": "0.35.5",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "# Subtest: fixture really carries EXIF orientation\nok 1 - fixture really carries EXIF orientation\n  ---\n  duration_ms: 45.212582\n  type: 'test'\n  ...\n# Subtest: variants are auto-rotated, never upscaled, and stripped of EXIF\nok 2 - variants are auto-rotated, never upscaled, and stripped of EXIF\n  ---\n  duration_ms: 94.754815\n  type: 'test'\n  ...\n# Subtest: rotated output is portrait and a webp\nok 3 - rotated output is portrait and a webp\n  ---\n  duration_ms: 23.58206\n  type: 'test'\n  ...\n# Subtest: blurhash is stable and decodes back to a placeholder PNG\nok 4 - blurhash is stable and decodes back to a placeholder PNG\n  ---\n  duration_ms: 23.068894\n  type: 'test'\n  ...\n# Subtest: placeholder colours follow the source: top is red, bottom is blue after rotation\nok 5 - placeholder colours follow the source: top is red, bottom is blue after rotation\n  ---\n  duration_ms: 10.12371\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 481.656477\n"
+  "log_tail": "# Subtest: fixture really carries EXIF orientation\nok 1 - fixture really carries EXIF orientation\n  ---\n  duration_ms: 44.996947\n  type: 'test'\n  ...\n# Subtest: variants are auto-rotated, never upscaled, and stripped of EXIF\nok 2 - variants are auto-rotated, never upscaled, and stripped of EXIF\n  ---\n  duration_ms: 95.477116\n  type: 'test'\n  ...\n# Subtest: rotated output is portrait and a webp\nok 3 - rotated output is portrait and a webp\n  ---\n  duration_ms: 23.680799\n  type: 'test'\n  ...\n# Subtest: blurhash is stable and decodes back to a placeholder PNG\nok 4 - blurhash is stable and decodes back to a placeholder PNG\n  ---\n  duration_ms: 20.0285\n  type: 'test'\n  ...\n# Subtest: placeholder colours follow the source: top is red, bottom is blue after rotation\nok 5 - placeholder colours follow the source: top is red, bottom is blue after rotation\n  ---\n  duration_ms: 9.701677\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 502.573884\n"
 }

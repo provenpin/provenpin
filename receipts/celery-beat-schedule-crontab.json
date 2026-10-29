@@ -1,19 +1,42 @@
 {
   "id": "celery-beat-schedule-crontab",
   "status": "passed",
-  "ran_at": "2026-10-29T01:04:24.100Z",
-  "last_passed_at": "2026-10-29T01:04:24.100Z",
+  "ran_at": "2026-10-29T07:03:40.324Z",
+  "last_passed_at": "2026-10-29T07:03:40.324Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1454,
-    "test": 1331
+    "setup": 410,
+    "test": 3184
   },
   "pinned": {
     "celery": "5.6.3",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "amqp": "5.4.1",
+    "billiard": "4.3.1",
+    "celery": "5.6.3",
+    "click": "8.5.0",
+    "click-didyoumean": "0.3.1",
+    "click-plugins": "1.1.1.2",
+    "click-repl": "0.4.1",
+    "iniconfig": "2.3.1",
+    "kombu": "5.6.2",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "prompt-toolkit": "3.0.53",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "python-dateutil": "3.0.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.16.0",
+    "tzdata": "2026.6",
+    "tzlocal": "5.4.5",
+    "vine": "5.1.0",
+    "wcwidth": "0.9.4"
   },
   "recipe_hash": "sha256:04145820b3ee75f945935bb67671afd503e5caba55d944b186b7b9f3675396f0",
   "files": {
@@ -27,8 +50,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.54s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 1.12s\n"
 }

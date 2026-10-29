@@ -1,21 +1,47 @@
 {
   "id": "fastapi-slowapi-rate-limit",
   "status": "passed",
-  "ran_at": "2026-10-29T01:09:15.380Z",
-  "last_passed_at": "2026-10-29T01:09:15.380Z",
+  "ran_at": "2026-10-29T07:08:26.542Z",
+  "last_passed_at": "2026-10-29T07:08:26.542Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 617,
-    "test": 1308
+    "setup": 555,
+    "test": 1242
   },
   "pinned": {
     "fastapi": "0.143.1",
     "slowapi": "0.1.10",
     "httpx": "0.28.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-doc": "0.0.5",
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "certifi": "2026.10.23",
+    "deprecated": "3.0.0",
+    "fastapi": "0.143.1",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "limits": "5.8.0",
+    "opentelemetry-api": "1.45.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "slowapi": "0.1.10",
+    "starlette": "1.10.0",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4",
+    "wrapt": "2.5.1"
   },
   "recipe_hash": "sha256:1313cf855f80be89a1bbaf92588458f2a1ab20fdfef17bc11fdff1ba69039412",
   "files": {
@@ -29,8 +55,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-slowapi-rate-limit-gTeNQ1/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.57s\n"
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-slowapi-rate-limit-gOwZb5/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.54s\n"
 }

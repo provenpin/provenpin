@@ -1,19 +1,30 @@
 {
   "id": "inflect-plural-ordinal",
   "status": "passed",
-  "ran_at": "2026-10-29T01:12:01.739Z",
-  "last_passed_at": "2026-10-29T01:12:01.739Z",
+  "ran_at": "2026-10-29T07:11:16.462Z",
+  "last_passed_at": "2026-10-29T07:11:16.462Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 337,
-    "test": 3777
+    "setup": 277,
+    "test": 2397
   },
   "pinned": {
     "inflect": "7.5.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "inflect": "7.5.0",
+    "iniconfig": "2.3.1",
+    "more-itertools": "11.2.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typeguard": "4.6.0",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:dc3cb41c1dbad213777499f42c9888b99c1a11d4a3353ff30714a180d1b1ee4d",
   "files": {
@@ -27,8 +38,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.14s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.33s\n"
 }

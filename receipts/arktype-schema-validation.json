@@ -1,15 +1,15 @@
 {
   "id": "arktype-schema-validation",
   "status": "passed",
-  "ran_at": "2026-10-29T01:02:22.289Z",
-  "last_passed_at": "2026-10-29T01:02:22.289Z",
+  "ran_at": "2026-10-29T07:01:36.075Z",
+  "last_passed_at": "2026-10-29T07:01:36.075Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1928,
-    "test": 631
+    "setup": 1367,
+    "test": 408
   },
   "pinned": {
     "arktype": "2.2.8",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid user\nok 1 - accepts a valid user\n  ---\n  duration_ms: 1.052345\n  type: 'test'\n  ...\n# Subtest: rejects bad email with problems summary\nok 2 - rejects bad email with problems summary\n  ---\n  duration_ms: 1.09232\n  type: 'test'\n  ...\n# Subtest: CreateUser morph fills default age and role\nok 3 - CreateUser morph fills default age and role\n  ---\n  duration_ms: 0.706496\n  type: 'test'\n  ...\n# Subtest: discriminated Event union\nok 4 - discriminated Event union\n  ---\n  duration_ms: 0.589125\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 469.365659\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts a valid user\nok 1 - accepts a valid user\n  ---\n  duration_ms: 0.651755\n  type: 'test'\n  ...\n# Subtest: rejects bad email with problems summary\nok 2 - rejects bad email with problems summary\n  ---\n  duration_ms: 0.705026\n  type: 'test'\n  ...\n# Subtest: CreateUser morph fills default age and role\nok 3 - CreateUser morph fills default age and role\n  ---\n  duration_ms: 0.407201\n  type: 'test'\n  ...\n# Subtest: discriminated Event union\nok 4 - discriminated Event union\n  ---\n  duration_ms: 0.364286\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 301.951808\n"
 }

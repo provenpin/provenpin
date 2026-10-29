@@ -1,19 +1,31 @@
 {
   "id": "dataclasses-json-camelcase",
   "status": "passed",
-  "ran_at": "2026-10-29T01:05:54.011Z",
-  "last_passed_at": "2026-10-29T01:05:54.011Z",
+  "ran_at": "2026-10-29T07:05:10.002Z",
+  "last_passed_at": "2026-10-29T07:05:10.002Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 293,
-    "test": 1179
+    "setup": 360,
+    "test": 2449
   },
   "pinned": {
     "dataclasses-json": "0.6.7",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "dataclasses-json": "0.6.7",
+    "iniconfig": "2.3.1",
+    "marshmallow": "3.26.2",
+    "mypy-extensions": "1.1.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typing-extensions": "4.16.0",
+    "typing-inspect": "0.9.0"
   },
   "recipe_hash": "sha256:fa354317fd855510ef82e83d2e468ce5f747f3785d23a570472e06e69b784c3e",
   "files": {
@@ -27,8 +39,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.18s\n"
 }

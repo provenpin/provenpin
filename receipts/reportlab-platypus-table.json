@@ -1,19 +1,29 @@
 {
   "id": "reportlab-platypus-table",
   "status": "passed",
-  "ran_at": "2026-10-29T01:22:37.436Z",
-  "last_passed_at": "2026-10-29T01:22:37.436Z",
+  "ran_at": "2026-10-29T07:21:41.737Z",
+  "last_passed_at": "2026-10-29T07:21:41.737Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 452,
-    "test": 2501
+    "setup": 350,
+    "test": 2654
   },
   "pinned": {
     "reportlab": "5.0.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "charset-normalizer": "3.5.2",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pillow": "13.0.0",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "reportlab": "5.0.1"
   },
   "recipe_hash": "sha256:22e953a3d6336e86ca101b3150258d687bcd42d63e0ea0b6c0a6a364a789b969",
   "files": {
@@ -27,8 +37,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.75s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.88s\n"
 }

@@ -1,21 +1,32 @@
 {
   "id": "cattrs-preconf-orjson-converter",
   "status": "passed",
-  "ran_at": "2026-10-29T01:04:22.117Z",
-  "last_passed_at": "2026-10-29T01:04:22.117Z",
+  "ran_at": "2026-10-29T07:03:39.573Z",
+  "last_passed_at": "2026-10-29T07:03:39.573Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 235,
-    "test": 2321
+    "setup": 324,
+    "test": 1166
   },
   "pinned": {
     "attrs": "26.1.0",
     "cattrs": "26.2.1",
     "orjson": "3.13.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "attrs": "26.1.0",
+    "cattrs": "26.2.1",
+    "iniconfig": "2.3.1",
+    "orjson": "3.13.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:a614f3546411f03ab74dc8154bc213067662e4c6d0d4ad85e53d2366521f7d39",
   "files": {
@@ -28,9 +39,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40797764805"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.16s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.11s\n"
 }

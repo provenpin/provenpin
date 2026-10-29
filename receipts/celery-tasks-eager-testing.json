@@ -1,19 +1,42 @@
 {
   "id": "celery-tasks-eager-testing",
   "status": "passed",
-  "ran_at": "2026-10-29T01:04:28.629Z",
-  "last_passed_at": "2026-10-29T01:04:28.629Z",
+  "ran_at": "2026-10-29T07:03:49.722Z",
+  "last_passed_at": "2026-10-29T07:03:49.722Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1126,
-    "test": 1797
+    "setup": 595,
+    "test": 4168
   },
   "pinned": {
     "celery": "5.6.3",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "amqp": "5.4.1",
+    "billiard": "4.3.1",
+    "celery": "5.6.3",
+    "click": "8.5.0",
+    "click-didyoumean": "0.3.1",
+    "click-plugins": "1.1.1.2",
+    "click-repl": "0.4.1",
+    "iniconfig": "2.3.1",
+    "kombu": "5.6.2",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "prompt-toolkit": "3.0.53",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "python-dateutil": "3.0.0",
+    "six": "1.17.0",
+    "typing-extensions": "4.16.0",
+    "tzdata": "2026.6",
+    "tzlocal": "5.4.5",
+    "vine": "5.1.0",
+    "wcwidth": "0.9.4"
   },
   "recipe_hash": "sha256:5668fab37264a9bc0879e6bc7f4ccdfd31daab81220100eba43a2471afdf0bb6",
   "files": {
@@ -27,8 +50,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 0.57s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 1.70s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "langchain-textsplitters-recursive",
   "status": "passed",
-  "ran_at": "2026-10-29T01:14:07.593Z",
-  "last_passed_at": "2026-10-29T01:14:07.593Z",
+  "ran_at": "2026-10-29T07:13:31.143Z",
+  "last_passed_at": "2026-10-29T07:13:31.143Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3655,
-    "test": 706
+    "setup": 2805,
+    "test": 550
   },
   "pinned": {
     "@langchain/textsplitters": "1.0.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: splits markdown into chunks within the size limit\nok 1 - splits markdown into chunks within the size limit\n  ---\n  duration_ms: 3.64255\n  type: 'test'\n  ...\n# Subtest: keeps a chunkOverlap between consecutive chunks\nok 2 - keeps a chunkOverlap between consecutive chunks\n  ---\n  duration_ms: 2.259857\n  type: 'test'\n  ...\n# Subtest: propagates metadata to every chunk\nok 3 - propagates metadata to every chunk\n  ---\n  duration_ms: 2.99322\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 535.672344\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: splits markdown into chunks within the size limit\nok 1 - splits markdown into chunks within the size limit\n  ---\n  duration_ms: 2.621113\n  type: 'test'\n  ...\n# Subtest: keeps a chunkOverlap between consecutive chunks\nok 2 - keeps a chunkOverlap between consecutive chunks\n  ---\n  duration_ms: 1.414347\n  type: 'test'\n  ...\n# Subtest: propagates metadata to every chunk\nok 3 - propagates metadata to every chunk\n  ---\n  duration_ms: 2.19815\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 413.84144\n"
 }

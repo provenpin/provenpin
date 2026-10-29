@@ -1,18 +1,26 @@
 {
   "id": "msgspec-msgpack-tagged-unions",
   "status": "passed",
-  "ran_at": "2026-10-29T01:15:56.169Z",
-  "last_passed_at": "2026-10-29T01:15:56.169Z",
+  "ran_at": "2026-10-29T07:15:14.633Z",
+  "last_passed_at": "2026-10-29T07:15:14.633Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 306,
-    "test": 1132
+    "setup": 170,
+    "test": 1559
   },
   "pinned": {
     "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "msgspec": "0.22.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:c0889374e81ffe1841a742779e50e0db9a3f6d336e61b9959e60cf3098dbcddd",
@@ -27,7 +35,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"

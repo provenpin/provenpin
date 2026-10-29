@@ -1,21 +1,37 @@
 {
   "id": "pydantic-email-phone-validation",
   "status": "passed",
-  "ran_at": "2026-10-29T01:20:39.300Z",
-  "last_passed_at": "2026-10-29T01:20:39.300Z",
+  "ran_at": "2026-10-29T07:19:54.679Z",
+  "last_passed_at": "2026-10-29T07:19:54.679Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 904,
-    "test": 1682
+    "setup": 441,
+    "test": 2905
   },
   "pinned": {
     "pydantic": "2.14.1",
     "email-validator": "2.3.0",
     "phonenumbers": "9.0.41",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "dnspython": "2.9.0",
+    "email-validator": "2.3.0",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "phonenumbers": "9.0.41",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:f7b8219d5d9d32ee6a1e0f2069b922e57ec71a719ec733b5d0f280ca65fbe3f6",
   "files": {
@@ -29,8 +45,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.58s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.91s\n"
 }

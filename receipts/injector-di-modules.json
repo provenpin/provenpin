@@ -1,18 +1,26 @@
 {
   "id": "injector-di-modules",
   "status": "passed",
-  "ran_at": "2026-10-29T01:12:07.775Z",
-  "last_passed_at": "2026-10-29T01:12:07.775Z",
+  "ran_at": "2026-10-29T07:11:20.788Z",
+  "last_passed_at": "2026-10-29T07:11:20.788Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 653,
-    "test": 1423
+    "setup": 189,
+    "test": 2100
   },
   "pinned": {
     "injector": "0.24.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "injector": "0.24.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:de3b52d7fb7995995faeed2fb083bf44d03f618d2faec0305a64a11bc01c07f0",
@@ -27,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.20s\n"
 }

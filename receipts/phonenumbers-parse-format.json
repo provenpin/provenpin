@@ -1,18 +1,26 @@
 {
   "id": "phonenumbers-parse-format",
   "status": "passed",
-  "ran_at": "2026-10-29T01:19:09.772Z",
-  "last_passed_at": "2026-10-29T01:19:09.772Z",
+  "ran_at": "2026-10-29T07:18:21.446Z",
+  "last_passed_at": "2026-10-29T07:18:21.446Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 256,
-    "test": 1992
+    "setup": 295,
+    "test": 1657
   },
   "pinned": {
     "phonenumbers": "9.0.41",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "phonenumbers": "9.0.41",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:3edd20833369bc1dc6b94f487b2a4506c453792ebb7a7881737762d37b9f81fc",
@@ -27,7 +35,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"

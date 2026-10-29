@@ -1,18 +1,26 @@
 {
   "id": "chardet-charset-detect",
   "status": "passed",
-  "ran_at": "2026-10-29T01:04:43.106Z",
-  "last_passed_at": "2026-10-29T01:04:43.106Z",
+  "ran_at": "2026-10-29T07:04:06.505Z",
+  "last_passed_at": "2026-10-29T07:04:06.505Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 195,
-    "test": 1507
+    "setup": 329,
+    "test": 5539
   },
   "pinned": {
     "chardet": "7.6.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "chardet": "7.6.0",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:4be7ca0c5e7b926c9216cc9fd97ce2008002670777e4de78cdacd082d76fd5cf",
@@ -27,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.92s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 2.84s\n"
 }

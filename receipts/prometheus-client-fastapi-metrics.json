@@ -1,15 +1,15 @@
 {
   "id": "prometheus-client-fastapi-metrics",
   "status": "passed",
-  "ran_at": "2026-10-29T01:20:12.345Z",
-  "last_passed_at": "2026-10-29T01:20:12.345Z",
+  "ran_at": "2026-10-29T07:19:14.166Z",
+  "last_passed_at": "2026-10-29T07:19:14.166Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 328,
-    "test": 3343
+    "setup": 505,
+    "test": 2590
   },
   "pinned": {
     "prometheus-client": "0.26.0",
@@ -17,6 +17,30 @@
     "httpx": "0.28.1",
     "pytest": "9.1.1",
     "pytest-asyncio": "1.4.0"
+  },
+  "installed": {
+    "annotated-doc": "0.0.5",
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "certifi": "2026.10.23",
+    "fastapi": "0.143.2",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "opentelemetry-api": "1.45.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "prometheus-client": "0.26.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0",
+    "starlette": "1.10.0",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:ef1caa9ab22da5e11ca32195457187883ff94525e8409faa2c0824fbdf3618b5",
   "files": {
@@ -30,8 +54,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.26s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.01s\n"
 }

@@ -1,18 +1,26 @@
 {
   "id": "msgspec-json-schema-generation",
   "status": "passed",
-  "ran_at": "2026-10-29T01:16:13.993Z",
-  "last_passed_at": "2026-10-29T01:16:13.993Z",
+  "ran_at": "2026-10-29T07:15:13.809Z",
+  "last_passed_at": "2026-10-29T07:15:13.809Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 543,
-    "test": 1733
+    "setup": 238,
+    "test": 1171
   },
   "pinned": {
     "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "msgspec": "0.22.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:f72f6d05d3b0e28ebcc13f6173a81d5930573651a5d1816ce22b3d7f15d4a8ed",
@@ -27,7 +35,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"

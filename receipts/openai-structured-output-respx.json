@@ -1,15 +1,15 @@
 {
   "id": "openai-structured-output-respx",
   "status": "passed",
-  "ran_at": "2026-10-29T01:17:22.008Z",
-  "last_passed_at": "2026-10-29T01:17:22.008Z",
+  "ran_at": "2026-10-29T07:16:38.562Z",
+  "last_passed_at": "2026-10-29T07:16:38.562Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 479,
-    "test": 1443
+    "setup": 331,
+    "test": 2547
   },
   "pinned": {
     "openai": "3.31.0",
@@ -17,6 +17,31 @@
     "pydantic": "2.14.1",
     "pytest": "9.1.1",
     "httpx": "0.28.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "certifi": "2026.10.23",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpcore2": "2.16.0",
+    "httpx": "0.28.1",
+    "httpx2": "2.16.0",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "jiter": "0.18.0",
+    "openai": "3.31.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "respx": "0.23.1",
+    "sniffio": "1.3.1",
+    "truststore": "0.10.5",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:8994758b95592560297b02f2dc7e63bd90e815c3ce34571e74db1f6cbbed5102",
   "files": {
@@ -30,8 +55,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.61s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.80s\n"
 }

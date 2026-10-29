@@ -1,20 +1,33 @@
 {
   "id": "rich-typer-progress-cli",
   "status": "passed",
-  "ran_at": "2026-10-29T01:22:57.542Z",
-  "last_passed_at": "2026-10-29T01:22:57.542Z",
+  "ran_at": "2026-10-29T07:21:50.701Z",
+  "last_passed_at": "2026-10-29T07:21:50.701Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 203,
-    "test": 1031
+    "setup": 492,
+    "test": 1189
   },
   "pinned": {
     "typer": "0.27.3",
     "rich": "15.0.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-doc": "0.0.5",
+    "iniconfig": "2.3.1",
+    "markdown-it-py": "4.2.0",
+    "mdurl": "0.1.2",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "rich": "15.0.0",
+    "shellingham": "1.5.4",
+    "typer": "0.27.3"
   },
   "recipe_hash": "sha256:57a669c078c260271101425e26aaaa516b5553fef32d531329c2e11ba497c1a8",
   "files": {
@@ -28,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.31s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.40s\n"
 }

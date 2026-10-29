@@ -1,20 +1,32 @@
 {
   "id": "arrow-time-machine-shift",
   "status": "passed",
-  "ran_at": "2026-10-29T01:02:34.302Z",
-  "last_passed_at": "2026-10-29T01:02:34.302Z",
+  "ran_at": "2026-10-29T07:01:59.380Z",
+  "last_passed_at": "2026-10-29T07:01:59.380Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1114,
-    "test": 1385
+    "setup": 307,
+    "test": 2669
   },
   "pinned": {
     "arrow": "1.4.0",
     "time-machine": "3.5.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "arrow": "1.4.0",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "python-dateutil": "3.0.0",
+    "six": "1.17.0",
+    "time-machine": "3.5.1",
+    "tzdata": "2026.6"
   },
   "recipe_hash": "sha256:b29cb1c529bdac97987e71475731c090770325900bf457730bf9e67a56c4e910",
   "files": {
@@ -28,8 +40,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.14s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.13s\n"
 }

@@ -1,21 +1,35 @@
 {
   "id": "python-dotenv-pydantic-settings-env",
   "status": "passed",
-  "ran_at": "2026-10-29T01:21:42.067Z",
-  "last_passed_at": "2026-10-29T01:21:42.067Z",
+  "ran_at": "2026-10-29T07:20:42.492Z",
+  "last_passed_at": "2026-10-29T07:20:42.492Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 531,
-    "test": 1008
+    "setup": 414,
+    "test": 3235
   },
   "pinned": {
     "python-dotenv": "1.2.4",
     "pydantic-settings": "2.16.0",
     "pydantic": "2.14.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pydantic-settings": "2.16.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "python-dotenv": "1.2.4",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:dae36257c37fd61d0610a89e21554559589f75e776546f6abbd7e479c72a60b0",
   "files": {
@@ -28,9 +42,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40797764805"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.44s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 1.23s\n"
 }

@@ -1,20 +1,29 @@
 {
   "id": "intervaltree-overlap-queries",
   "status": "passed",
-  "ran_at": "2026-10-29T01:12:12.390Z",
-  "last_passed_at": "2026-10-29T01:12:12.390Z",
+  "ran_at": "2026-10-29T07:11:24.148Z",
+  "last_passed_at": "2026-10-29T07:11:24.148Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 381,
-    "test": 2289
+    "setup": 376,
+    "test": 1160
   },
   "pinned": {
     "intervaltree": "3.2.1",
     "sortedcontainers": "2.4.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "intervaltree": "3.2.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "sortedcontainers": "2.4.0"
   },
   "recipe_hash": "sha256:694376e898f444b886c9bc83e2f9a1f86755488cd0e6cef94f19f74d4f6f1a60",
   "files": {
@@ -28,7 +37,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"

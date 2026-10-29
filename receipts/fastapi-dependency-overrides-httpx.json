@@ -1,21 +1,44 @@
 {
   "id": "fastapi-dependency-overrides-httpx",
   "status": "passed",
-  "ran_at": "2026-10-29T01:08:50.080Z",
-  "last_passed_at": "2026-10-29T01:08:50.080Z",
+  "ran_at": "2026-10-29T07:08:07.330Z",
+  "last_passed_at": "2026-10-29T07:08:07.330Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1225,
-    "test": 1952
+    "setup": 613,
+    "test": 2533
   },
   "pinned": {
     "fastapi": "0.143.2",
     "httpx": "0.28.1",
     "pytest": "9.1.1",
     "pytest-asyncio": "1.4.0"
+  },
+  "installed": {
+    "annotated-doc": "0.0.5",
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "certifi": "2026.10.23",
+    "fastapi": "0.143.2",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "opentelemetry-api": "1.45.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0",
+    "starlette": "1.10.0",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:c04a9465b13d5066b42f3288b345c62d0dfb27ada05bc73896359f02ca784dc9",
   "files": {
@@ -29,8 +52,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.79s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.85s\n"
 }

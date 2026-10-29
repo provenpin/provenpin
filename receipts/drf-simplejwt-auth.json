@@ -1,15 +1,15 @@
 {
   "id": "drf-simplejwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-29T01:07:07.584Z",
-  "last_passed_at": "2026-10-29T01:07:07.584Z",
+  "ran_at": "2026-10-29T07:06:29.112Z",
+  "last_passed_at": "2026-10-29T07:06:29.112Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 474,
-    "test": 8220
+    "setup": 774,
+    "test": 6391
   },
   "pinned": {
     "django": "6.1.2",
@@ -17,6 +17,20 @@
     "djangorestframework-simplejwt": "5.5.1",
     "pytest-django": "4.14.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "asgiref": "3.13.0",
+    "django": "6.1.2",
+    "djangorestframework": "3.18.3",
+    "djangorestframework-simplejwt": "5.5.1",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pyjwt": "2.15.1",
+    "pytest": "9.1.1",
+    "pytest-django": "4.14.0",
+    "sqlparse": "0.6.0"
   },
   "recipe_hash": "sha256:55b2a7e3c4bc80b4b5029ca83d6cf7d4f85bc140c825da2e7e74520b74565290",
   "files": {
@@ -32,8 +46,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 3.03s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 2.24s\n"
 }

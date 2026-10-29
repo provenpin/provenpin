@@ -1,15 +1,15 @@
 {
   "id": "string-width-strip-ansi",
   "status": "passed",
-  "ran_at": "2026-10-29T01:25:08.911Z",
-  "last_passed_at": "2026-10-29T01:25:08.911Z",
+  "ran_at": "2026-10-29T07:23:42.947Z",
+  "last_passed_at": "2026-10-29T07:23:42.947Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1887,
-    "test": 548
+    "setup": 1798,
+    "test": 399
   },
   "pinned": {
     "string-width": "8.3.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "# Subtest: measures CJK wide characters as two columns each\nok 2 - measures CJK wide characters as two columns each\n  ---\n  duration_ms: 17.059658\n  type: 'test'\n  ...\n# Subtest: measures emoji as two columns\nok 3 - measures emoji as two columns\n  ---\n  duration_ms: 1.166165\n  type: 'test'\n  ...\n# Subtest: ignores ANSI escape codes when measuring width\nok 4 - ignores ANSI escape codes when measuring width\n  ---\n  duration_ms: 0.270577\n  type: 'test'\n  ...\n# Subtest: strips ANSI codes to plain text\nok 5 - strips ANSI codes to plain text\n  ---\n  duration_ms: 0.128514\n  type: 'test'\n  ...\n# Subtest: strip keeps wide characters and emoji intact\nok 6 - strip keeps wide characters and emoji intact\n  ---\n  duration_ms: 0.210507\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 395.820092\n"
+  "log_tail": "# Subtest: measures CJK wide characters as two columns each\nok 2 - measures CJK wide characters as two columns each\n  ---\n  duration_ms: 20.426255\n  type: 'test'\n  ...\n# Subtest: measures emoji as two columns\nok 3 - measures emoji as two columns\n  ---\n  duration_ms: 1.377103\n  type: 'test'\n  ...\n# Subtest: ignores ANSI escape codes when measuring width\nok 4 - ignores ANSI escape codes when measuring width\n  ---\n  duration_ms: 0.336206\n  type: 'test'\n  ...\n# Subtest: strips ANSI codes to plain text\nok 5 - strips ANSI codes to plain text\n  ---\n  duration_ms: 0.168102\n  type: 'test'\n  ...\n# Subtest: strip keeps wide characters and emoji intact\nok 6 - strip keeps wide characters and emoji intact\n  ---\n  duration_ms: 0.266196\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 243.350769\n"
 }

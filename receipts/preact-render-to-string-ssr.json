@@ -1,15 +1,15 @@
 {
   "id": "preact-render-to-string-ssr",
   "status": "passed",
-  "ran_at": "2026-10-29T01:19:47.041Z",
-  "last_passed_at": "2026-10-29T01:19:47.041Z",
+  "ran_at": "2026-10-29T07:18:55.387Z",
+  "last_passed_at": "2026-10-29T07:18:55.387Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1935,
-    "test": 350
+    "setup": 1511,
+    "test": 274
   },
   "pinned": {
     "preact": "11.0.1",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "# Subtest: renders useState initial value\nok 2 - renders useState initial value\n  ---\n  duration_ms: 0.626474\n  type: 'test'\n  ...\n# Subtest: escapes text content\nok 3 - escapes text content\n  ---\n  duration_ms: 0.239769\n  type: 'test'\n  ...\n# Subtest: renders keyed lists\nok 4 - renders keyed lists\n  ---\n  duration_ms: 0.443531\n  type: 'test'\n  ...\n# Subtest: renders dangerouslySetInnerHTML without escaping\nok 5 - renders dangerouslySetInnerHTML without escaping\n  ---\n  duration_ms: 0.207299\n  type: 'test'\n  ...\n# Subtest: renders conditional branches\nok 6 - renders conditional branches\n  ---\n  duration_ms: 0.352551\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 192.552954\n"
+  "log_tail": "# Subtest: renders useState initial value\nok 2 - renders useState initial value\n  ---\n  duration_ms: 0.478879\n  type: 'test'\n  ...\n# Subtest: escapes text content\nok 3 - escapes text content\n  ---\n  duration_ms: 0.166159\n  type: 'test'\n  ...\n# Subtest: renders keyed lists\nok 4 - renders keyed lists\n  ---\n  duration_ms: 0.259679\n  type: 'test'\n  ...\n# Subtest: renders dangerouslySetInnerHTML without escaping\nok 5 - renders dangerouslySetInnerHTML without escaping\n  ---\n  duration_ms: 0.128734\n  type: 'test'\n  ...\n# Subtest: renders conditional branches\nok 6 - renders conditional branches\n  ---\n  duration_ms: 0.189475\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 149.670841\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "sqlalchemy-aiosqlite-session-factory",
   "status": "passed",
-  "ran_at": "2026-10-29T01:24:01.514Z",
-  "last_passed_at": "2026-10-29T01:24:01.514Z",
+  "ran_at": "2026-10-29T07:22:57.476Z",
+  "last_passed_at": "2026-10-29T07:22:57.476Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1338,
-    "test": 1877
+    "setup": 337,
+    "test": 2111
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
@@ -17,6 +17,18 @@
     "greenlet": "3.5.6",
     "pytest-asyncio": "1.4.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "aiosqlite": "0.22.1",
+    "greenlet": "3.5.6",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0",
+    "sqlalchemy": "2.1.4",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:60649784a5ab09d594b99690d18cb7cbb4a28e51ba1cb1329d1d2c2129b12637",
   "files": {
@@ -31,8 +43,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.97s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.71s\n"
 }

@@ -1,20 +1,49 @@
 {
   "id": "piccolo-sqlite-crud",
   "status": "passed",
-  "ran_at": "2026-10-29T01:19:15.021Z",
-  "last_passed_at": "2026-10-29T01:19:15.021Z",
+  "ran_at": "2026-10-29T07:18:21.794Z",
+  "last_passed_at": "2026-10-29T07:18:21.794Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 534,
-    "test": 3705
+    "setup": 488,
+    "test": 3435
   },
   "pinned": {
     "piccolo": "1.36.0",
     "aiosqlite": "0.22.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "aiosqlite": "0.22.1",
+    "annotated-types": "0.8.0",
+    "black": "26.10.1",
+    "click": "8.5.0",
+    "colorama": "0.4.6",
+    "dnspython": "2.9.0",
+    "docstring-parser": "0.18.0",
+    "email-validator": "2.3.0",
+    "idna": "3.20",
+    "inflection": "0.5.1",
+    "iniconfig": "2.3.1",
+    "jinja2": "3.1.6",
+    "markupsafe": "3.0.4",
+    "mypy-extensions": "1.1.0",
+    "packaging": "26.3",
+    "pathspec": "1.1.1",
+    "piccolo": "1.36.0",
+    "platformdirs": "4.14.0",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "pytokens": "0.4.1",
+    "targ": "0.7.0",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:cc7d414ac346456714473026741bb29cfa53688243f7418820e80dae54a3dd74",
   "files": {
@@ -29,8 +58,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.57s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.40s\n"
 }

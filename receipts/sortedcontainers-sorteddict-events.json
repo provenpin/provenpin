@@ -1,19 +1,27 @@
 {
   "id": "sortedcontainers-sorteddict-events",
   "status": "passed",
-  "ran_at": "2026-10-29T01:23:58.866Z",
-  "last_passed_at": "2026-10-29T01:23:58.866Z",
+  "ran_at": "2026-10-29T07:22:48.651Z",
+  "last_passed_at": "2026-10-29T07:22:48.651Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 196,
-    "test": 2344
+    "setup": 370,
+    "test": 760
   },
   "pinned": {
     "sortedcontainers": "2.4.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "sortedcontainers": "2.4.0"
   },
   "recipe_hash": "sha256:20dd45a839455ea3f0ca554fe29092ab0a6583f49c8a195152441eeeccffc4ec",
   "files": {
@@ -27,7 +35,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"

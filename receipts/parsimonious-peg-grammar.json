@@ -1,19 +1,28 @@
 {
   "id": "parsimonious-peg-grammar",
   "status": "passed",
-  "ran_at": "2026-10-29T01:18:39.693Z",
-  "last_passed_at": "2026-10-29T01:18:39.693Z",
+  "ran_at": "2026-10-29T07:17:50.898Z",
+  "last_passed_at": "2026-10-29T07:17:50.898Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 363,
-    "test": 1870
+    "setup": 520,
+    "test": 1336
   },
   "pinned": {
     "parsimonious": "0.11.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "parsimonious": "0.11.0",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "regex": "2026.9.29"
   },
   "recipe_hash": "sha256:299def025e3f0a72ae13803bec5ee49d42e9b7e39d9caccce125cf081a2eacf9",
   "files": {
@@ -27,8 +36,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
 }

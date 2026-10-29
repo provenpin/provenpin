@@ -1,15 +1,15 @@
 {
   "id": "p-limit-concurrency",
   "status": "passed",
-  "ran_at": "2026-10-29T01:18:29.943Z",
-  "last_passed_at": "2026-10-29T01:18:29.943Z",
+  "ran_at": "2026-10-29T07:17:24.686Z",
+  "last_passed_at": "2026-10-29T07:17:24.686Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1911,
-    "test": 1045
+    "setup": 1368,
+    "test": 366
   },
   "pinned": {
     "p-limit": "7.3.3",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: never exceeds concurrency\nok 1 - never exceeds concurrency\n  ---\n  duration_ms: 63.017525\n  type: 'test'\n  ...\n# Subtest: tracks active and pending counts\nok 2 - tracks active and pending counts\n  ---\n  duration_ms: 41.391062\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 770.139874\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: never exceeds concurrency\nok 1 - never exceeds concurrency\n  ---\n  duration_ms: 62.322648\n  type: 'test'\n  ...\n# Subtest: tracks active and pending counts\nok 2 - tracks active and pending counts\n  ---\n  duration_ms: 40.510565\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 241.437786\n"
 }

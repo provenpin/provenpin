@@ -1,19 +1,27 @@
 {
   "id": "sqlglot-transpile-dialects",
   "status": "passed",
-  "ran_at": "2026-10-29T01:24:26.402Z",
-  "last_passed_at": "2026-10-29T01:24:26.402Z",
+  "ran_at": "2026-10-29T07:23:17.708Z",
+  "last_passed_at": "2026-10-29T07:23:17.708Z",
   "tests": {
     "passed": 9,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 333,
-    "test": 1117
+    "setup": 225,
+    "test": 1322
   },
   "pinned": {
     "sqlglot": "30.23.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "sqlglot": "30.23.0"
   },
   "recipe_hash": "sha256:7ff06af02e846b4a6a471c54ca72427805f41fea2caf9066d7e6747835aa6d3d",
   "files": {
@@ -27,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".........                                                                [100%]\n9 passed in 0.26s\n"
+  "log_tail": ".........                                                                [100%]\n9 passed in 0.40s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "json-logic-js-rules",
   "status": "passed",
-  "ran_at": "2026-10-29T01:13:05.013Z",
-  "last_passed_at": "2026-10-29T01:13:05.013Z",
+  "ran_at": "2026-10-29T07:12:25.474Z",
+  "last_passed_at": "2026-10-29T07:12:25.474Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1924,
-    "test": 357
+    "setup": 1725,
+    "test": 387
   },
   "pinned": {
     "json-logic-js": "2.0.5",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "# Subtest: or combines predicates and in matches array values\nok 2 - or combines predicates and in matches array values\n  ---\n  duration_ms: 0.292959\n  type: 'test'\n  ...\n# Subtest: var reads nested paths and falls back to a default\nok 3 - var reads nested paths and falls back to a default\n  ---\n  duration_ms: 0.199985\n  type: 'test'\n  ...\n# Subtest: in returns false when the array is absent\nok 4 - in returns false when the array is absent\n  ---\n  duration_ms: 0.358291\n  type: 'test'\n  ...\n# Subtest: if picks the first matching branch\nok 5 - if picks the first matching branch\n  ---\n  duration_ms: 0.217127\n  type: 'test'\n  ...\n# Subtest: custom operation applies tiered volume discount\nok 6 - custom operation applies tiered volume discount\n  ---\n  duration_ms: 0.215243\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 202.949544\n"
+  "log_tail": "# Subtest: or combines predicates and in matches array values\nok 2 - or combines predicates and in matches array values\n  ---\n  duration_ms: 0.35034\n  type: 'test'\n  ...\n# Subtest: var reads nested paths and falls back to a default\nok 3 - var reads nested paths and falls back to a default\n  ---\n  duration_ms: 0.209034\n  type: 'test'\n  ...\n# Subtest: in returns false when the array is absent\nok 4 - in returns false when the array is absent\n  ---\n  duration_ms: 0.310464\n  type: 'test'\n  ...\n# Subtest: if picks the first matching branch\nok 5 - if picks the first matching branch\n  ---\n  duration_ms: 0.226426\n  type: 'test'\n  ...\n# Subtest: custom operation applies tiered volume discount\nok 6 - custom operation applies tiered volume discount\n  ---\n  duration_ms: 0.211789\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 211.258795\n"
 }

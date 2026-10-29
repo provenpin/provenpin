@@ -1,19 +1,58 @@
 {
   "id": "langchain-core-runnable-fallbacks",
   "status": "passed",
-  "ran_at": "2026-10-29T01:13:48.267Z",
-  "last_passed_at": "2026-10-29T01:13:48.267Z",
+  "ran_at": "2026-10-29T07:13:09.694Z",
+  "last_passed_at": "2026-10-29T07:13:09.694Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2041,
-    "test": 4150
+    "setup": 605,
+    "test": 3546
   },
   "pinned": {
     "langchain-core": "1.6.10",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "certifi": "2026.10.23",
+    "charset-normalizer": "3.5.2",
+    "distro": "1.9.0",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpcore2": "2.16.0",
+    "httpx": "0.28.1",
+    "httpx2": "2.16.0",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "jsonpatch": "1.38",
+    "jsonpointer": "3.6",
+    "langchain-core": "1.6.10",
+    "langchain-protocol": "0.0.20",
+    "langsmith": "0.14.14",
+    "orjson": "3.13.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "pyyaml": "6.0.3",
+    "requests": "2.34.2",
+    "requests-toolbelt": "1.0.0",
+    "sniffio": "1.3.1",
+    "tenacity": "9.2.1",
+    "truststore": "0.10.5",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4",
+    "urllib3": "2.8.0",
+    "uuid-utils": "0.19.0",
+    "websockets": "17.3",
+    "xxhash": "4.0.2",
+    "zstandard": "0.25.0"
   },
   "recipe_hash": "sha256:77978b32eb6f632cebe98e9d26a92d851db675fbb642f24412cacf6c666219e8",
   "files": {
@@ -27,8 +66,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.74s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.52s\n"
 }

@@ -1,19 +1,28 @@
 {
   "id": "cachetools-funcy-memoize",
   "status": "passed",
-  "ran_at": "2026-10-29T01:04:07.436Z",
-  "last_passed_at": "2026-10-29T01:04:07.436Z",
+  "ran_at": "2026-10-29T07:03:23.726Z",
+  "last_passed_at": "2026-10-29T07:03:23.726Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 431,
-    "test": 1289
+    "setup": 300,
+    "test": 605
   },
   "pinned": {
     "cachetools": "7.2.2",
     "funcy": "2.1.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "cachetools": "7.2.2",
+    "funcy": "2.1",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:0ca870875fce2e5a91b9b4a302671ac7450e56a4c18b35124ff160a23ddf45f2",
@@ -28,8 +37,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
 }

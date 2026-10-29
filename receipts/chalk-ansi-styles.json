@@ -1,15 +1,15 @@
 {
   "id": "chalk-ansi-styles",
   "status": "passed",
-  "ran_at": "2026-10-29T01:04:42.569Z",
-  "last_passed_at": "2026-10-29T01:04:42.569Z",
+  "ran_at": "2026-10-29T07:03:56.828Z",
+  "last_passed_at": "2026-10-29T07:03:56.828Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2056,
-    "test": 355
+    "setup": 1606,
+    "test": 282
   },
   "pinned": {
     "chalk": "6.0.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "# Subtest: nested modifiers emit bold, red and blue-background escapes\nok 1 - nested modifiers emit bold, red and blue-background escapes\n  ---\n  duration_ms: 1.312739\n  type: 'test'\n  ...\n# Subtest: level 0 disables styling so non-TTY output is deterministic\nok 2 - level 0 disables styling so non-TTY output is deterministic\n  ---\n  duration_ms: 0.265538\n  type: 'test'\n  ...\n# Subtest: nested styles keep inner escapes and outer emphasis\nok 3 - nested styles keep inner escapes and outer emphasis\n  ---\n  duration_ms: 0.287298\n  type: 'test'\n  ...\n# Subtest: status line combines bold red and blue background\nok 4 - status line combines bold red and blue background\n  ---\n  duration_ms: 0.179106\n  type: 'test'\n  ...\n# Subtest: success badge combines background and foreground\nok 5 - success badge combines background and foreground\n  ---\n  duration_ms: 0.265438\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 197.603814\n"
+  "log_tail": "# Subtest: nested modifiers emit bold, red and blue-background escapes\nok 1 - nested modifiers emit bold, red and blue-background escapes\n  ---\n  duration_ms: 0.861743\n  type: 'test'\n  ...\n# Subtest: level 0 disables styling so non-TTY output is deterministic\nok 2 - level 0 disables styling so non-TTY output is deterministic\n  ---\n  duration_ms: 0.213029\n  type: 'test'\n  ...\n# Subtest: nested styles keep inner escapes and outer emphasis\nok 3 - nested styles keep inner escapes and outer emphasis\n  ---\n  duration_ms: 0.178828\n  type: 'test'\n  ...\n# Subtest: status line combines bold red and blue background\nok 4 - status line combines bold red and blue background\n  ---\n  duration_ms: 0.094202\n  type: 'test'\n  ...\n# Subtest: success badge combines background and foreground\nok 5 - success badge combines background and foreground\n  ---\n  duration_ms: 0.13942\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 156.12236\n"
 }

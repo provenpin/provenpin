@@ -1,15 +1,15 @@
 {
   "id": "httpx-respx-api-client",
   "status": "passed",
-  "ran_at": "2026-10-29T01:11:31.151Z",
-  "last_passed_at": "2026-10-29T01:11:31.151Z",
+  "ran_at": "2026-10-29T07:10:44.499Z",
+  "last_passed_at": "2026-10-29T07:10:44.499Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 691,
-    "test": 3051
+    "setup": 435,
+    "test": 1575
   },
   "pinned": {
     "httpx": "0.28.1",
@@ -17,6 +17,26 @@
     "pydantic": "2.14.1",
     "pytest-asyncio": "1.4.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "certifi": "2026.10.23",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0",
+    "respx": "0.23.1",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:6b75d04dbdbc7b956f88b7a0f5db56b41f52569526a42d6ee00c2cdebbbb5f8f",
   "files": {
@@ -30,8 +50,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 0.36s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.29s\n"
 }

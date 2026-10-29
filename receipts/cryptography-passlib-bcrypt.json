@@ -1,20 +1,32 @@
 {
   "id": "cryptography-passlib-bcrypt",
   "status": "passed",
-  "ran_at": "2026-10-29T01:05:40.813Z",
-  "last_passed_at": "2026-10-29T01:05:40.813Z",
+  "ran_at": "2026-10-29T07:05:02.366Z",
+  "last_passed_at": "2026-10-29T07:05:02.366Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 445,
-    "test": 4758
+    "setup": 390,
+    "test": 3820
   },
   "pinned": {
     "passlib": "1.7.4",
     "bcrypt": "4.0.1",
     "cryptography": "50.0.2",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "bcrypt": "4.0.1",
+    "cffi": "2.1.1",
+    "cryptography": "50.0.2",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "passlib": "1.7.4",
+    "pluggy": "1.7.0",
+    "pycparser": "3.12",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:3b61f718f132c24fd8d4d089cf1eabe19aa4250b649bd674e7f579a80e068196",
@@ -29,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 2.93s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 2.50s\n"
 }

@@ -1,18 +1,26 @@
 {
   "id": "msgspec-struct-validation",
   "status": "passed",
-  "ran_at": "2026-10-29T01:15:54.295Z",
-  "last_passed_at": "2026-10-29T01:15:54.295Z",
+  "ran_at": "2026-10-29T07:15:14.022Z",
+  "last_passed_at": "2026-10-29T07:15:14.022Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 310,
-    "test": 504
+    "setup": 207,
+    "test": 1022
   },
   "pinned": {
     "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "msgspec": "0.22.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:f39f4a205ca8fcbb96e4d455ae002447dcc10330137cc44978baaba2d90a1083",
@@ -27,7 +35,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": ".....                                                                    [100%]\n5 passed in 0.02s\n"

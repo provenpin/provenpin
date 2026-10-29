@@ -1,15 +1,15 @@
 {
   "id": "jsonwebtoken-hs256-rs256",
   "status": "passed",
-  "ran_at": "2026-10-29T01:13:23.513Z",
-  "last_passed_at": "2026-10-29T01:13:23.513Z",
+  "ran_at": "2026-10-29T07:12:46.336Z",
+  "last_passed_at": "2026-10-29T07:12:46.336Z",
   "tests": {
     "passed": 8,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1879,
-    "test": 318
+    "setup": 2089,
+    "test": 579
   },
   "pinned": {
     "jsonwebtoken": "9.0.3",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "# Subtest: HS256: detects TokenExpiredError deterministically via clockTimestamp\nok 4 - HS256: detects TokenExpiredError deterministically via clockTimestamp\n  ---\n  duration_ms: 0.526109\n  type: 'test'\n  ...\n# Subtest: HS256: rejects the 'none' algorithm\nok 5 - HS256: rejects the 'none' algorithm\n  ---\n  duration_ms: 0.157417\n  type: 'test'\n  ...\n# Subtest: RS256: signs with the private key and verifies with the public key\nok 6 - RS256: signs with the private key and verifies with the public key\n  ---\n  duration_ms: 2.417328\n  type: 'test'\n  ...\n# Subtest: RS256: rejects an HS256 token presented as RS256\nok 7 - RS256: rejects an HS256 token presented as RS256\n  ---\n  duration_ms: 0.329214\n  type: 'test'\n  ...\n# Subtest: RS256: rejects a token signed by an unrelated key\nok 8 - RS256: rejects a token signed by an unrelated key\n  ---\n  duration_ms: 22.490513\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 209.01231\n"
+  "log_tail": "# Subtest: HS256: detects TokenExpiredError deterministically via clockTimestamp\nok 4 - HS256: detects TokenExpiredError deterministically via clockTimestamp\n  ---\n  duration_ms: 0.985927\n  type: 'test'\n  ...\n# Subtest: HS256: rejects the 'none' algorithm\nok 5 - HS256: rejects the 'none' algorithm\n  ---\n  duration_ms: 0.300032\n  type: 'test'\n  ...\n# Subtest: RS256: signs with the private key and verifies with the public key\nok 6 - RS256: signs with the private key and verifies with the public key\n  ---\n  duration_ms: 3.661018\n  type: 'test'\n  ...\n# Subtest: RS256: rejects an HS256 token presented as RS256\nok 7 - RS256: rejects an HS256 token presented as RS256\n  ---\n  duration_ms: 0.572974\n  type: 'test'\n  ...\n# Subtest: RS256: rejects a token signed by an unrelated key\nok 8 - RS256: rejects a token signed by an unrelated key\n  ---\n  duration_ms: 39.758217\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 408.159086\n"
 }

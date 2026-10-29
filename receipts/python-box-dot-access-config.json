@@ -1,20 +1,29 @@
 {
   "id": "python-box-dot-access-config",
   "status": "passed",
-  "ran_at": "2026-10-29T01:21:35.370Z",
-  "last_passed_at": "2026-10-29T01:21:35.370Z",
+  "ran_at": "2026-10-29T07:20:36.908Z",
+  "last_passed_at": "2026-10-29T07:20:36.908Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 260,
-    "test": 1804
+    "setup": 302,
+    "test": 479
   },
   "pinned": {
     "python-box": "7.4.1",
     "PyYAML": "6.0.3",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "python-box": "7.4.1",
+    "pyyaml": "6.0.3"
   },
   "recipe_hash": "sha256:fae93cd7873ecfff129c14d1a0d2c12a4eb7f6ae6703f96d459bbe774c0c94da",
   "files": {
@@ -28,8 +37,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.10s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
 }

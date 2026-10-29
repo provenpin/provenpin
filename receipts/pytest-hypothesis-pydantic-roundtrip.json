@@ -1,20 +1,34 @@
 {
   "id": "pytest-hypothesis-pydantic-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-29T01:21:29.280Z",
-  "last_passed_at": "2026-10-29T01:21:29.280Z",
+  "ran_at": "2026-10-29T07:20:34.050Z",
+  "last_passed_at": "2026-10-29T07:20:34.050Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 369,
-    "test": 3329
+    "setup": 472,
+    "test": 5347
   },
   "pinned": {
     "hypothesis": "6.169.4",
     "pydantic": "2.14.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "hypothesis": "6.169.4",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "sortedcontainers": "2.4.0",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:1ded3c18407e6461369f7b60f0be6d1264a1478fd227bc23a15960fb05ae4110",
   "files": {
@@ -29,8 +43,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 2.33s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 3.56s\n"
 }

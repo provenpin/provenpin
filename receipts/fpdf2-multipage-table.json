@@ -1,18 +1,29 @@
 {
   "id": "fpdf2-multipage-table",
   "status": "passed",
-  "ran_at": "2026-10-29T01:10:16.858Z",
-  "last_passed_at": "2026-10-29T01:10:16.858Z",
+  "ran_at": "2026-10-29T07:09:29.948Z",
+  "last_passed_at": "2026-10-29T07:09:29.948Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 785,
-    "test": 5427
+    "setup": 370,
+    "test": 1858
   },
   "pinned": {
     "fpdf2": "2.8.9",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "defusedxml": "0.7.1",
+    "fonttools": "4.68.0",
+    "fpdf2": "2.8.9",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pillow": "13.0.0",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:35c0d3664ed9abd2cb360502efae7f9e3881c60e4200a6779dc594a2fc11689c",
@@ -27,8 +38,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 2.94s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.24s\n"
 }

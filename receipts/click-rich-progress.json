@@ -1,20 +1,31 @@
 {
   "id": "click-rich-progress",
   "status": "passed",
-  "ran_at": "2026-10-29T01:05:06.799Z",
-  "last_passed_at": "2026-10-29T01:05:06.799Z",
+  "ran_at": "2026-10-29T07:04:15.481Z",
+  "last_passed_at": "2026-10-29T07:04:15.481Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 215,
-    "test": 1879
+    "setup": 188,
+    "test": 858
   },
   "pinned": {
     "click": "8.5.0",
     "rich": "15.0.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "click": "8.5.0",
+    "iniconfig": "2.3.1",
+    "markdown-it-py": "4.2.0",
+    "mdurl": "0.1.2",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "rich": "15.0.0"
   },
   "recipe_hash": "sha256:4905f7edc12bf1b2d6280a2fc7723253794fa61ff029fabe9efaa2a05c793c1c",
   "files": {
@@ -28,8 +39,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.27s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.21s\n"
 }

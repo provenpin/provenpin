@@ -1,15 +1,15 @@
 {
   "id": "opossum-circuit-breaker",
   "status": "passed",
-  "ran_at": "2026-10-29T01:17:40.542Z",
-  "last_passed_at": "2026-10-29T01:17:40.542Z",
+  "ran_at": "2026-10-29T07:17:06.371Z",
+  "last_passed_at": "2026-10-29T07:17:06.371Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1672,
-    "test": 512
+    "setup": 1726,
+    "test": 667
   },
   "pinned": {
     "opossum": "10.0.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: opens after failures, serves fallback, then recovers\nok 1 - opens after failures, serves fallback, then recovers\n  ---\n  duration_ms: 83.620353\n  type: 'test'\n  ...\n# Subtest: slow calls count as timeouts\nok 2 - slow calls count as timeouts\n  ---\n  duration_ms: 21.327012\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 407.237415\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: opens after failures, serves fallback, then recovers\nok 1 - opens after failures, serves fallback, then recovers\n  ---\n  duration_ms: 85.810447\n  type: 'test'\n  ...\n# Subtest: slow calls count as timeouts\nok 2 - slow calls count as timeouts\n  ---\n  duration_ms: 21.009911\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 506.39694\n"
 }

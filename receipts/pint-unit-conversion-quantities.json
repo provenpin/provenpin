@@ -1,19 +1,31 @@
 {
   "id": "pint-unit-conversion-quantities",
   "status": "passed",
-  "ran_at": "2026-10-29T01:19:27.023Z",
-  "last_passed_at": "2026-10-29T01:19:27.023Z",
+  "ran_at": "2026-10-29T07:18:31.888Z",
+  "last_passed_at": "2026-10-29T07:18:31.888Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 178,
-    "test": 1414
+    "setup": 295,
+    "test": 2249
   },
   "pinned": {
     "pint": "0.26.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "flexcache": "0.3",
+    "flexparser": "0.4",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pint": "0.26.1",
+    "platformdirs": "4.14.0",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:5967484ecb7ced78fb2e9f86793b81c8f74057ac11116c8842560fcc5ebd5039",
   "files": {
@@ -27,8 +39,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.32s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.61s\n"
 }

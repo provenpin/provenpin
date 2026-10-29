@@ -1,18 +1,25 @@
 {
   "id": "pluggy-plugin-hooks",
   "status": "passed",
-  "ran_at": "2026-10-29T01:19:33.542Z",
-  "last_passed_at": "2026-10-29T01:19:33.542Z",
+  "ran_at": "2026-10-29T07:18:40.965Z",
+  "last_passed_at": "2026-10-29T07:18:40.965Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 258,
-    "test": 876
+    "setup": 260,
+    "test": 1490
   },
   "pinned": {
     "pluggy": "1.7.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:2002c097ca4ecb4dbfda109beeac745697c0a8e7ba16bb268984992a6e4dec07",
@@ -29,8 +36,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.01s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
 }

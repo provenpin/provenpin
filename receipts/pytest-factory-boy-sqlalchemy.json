@@ -1,20 +1,31 @@
 {
   "id": "pytest-factory-boy-sqlalchemy",
   "status": "passed",
-  "ran_at": "2026-10-29T01:21:20.242Z",
-  "last_passed_at": "2026-10-29T01:21:20.242Z",
+  "ran_at": "2026-10-29T07:20:30.115Z",
+  "last_passed_at": "2026-10-29T07:20:30.115Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 434,
-    "test": 1609
+    "setup": 272,
+    "test": 2897
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
     "factory-boy": "3.3.3",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "factory-boy": "3.3.3",
+    "faker": "40.44.0",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "sqlalchemy": "2.1.4",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:4331ef11c539d059d77e9f9a0e797ef71ad0b72f5de84131db87fd8818f46d41",
   "files": {
@@ -31,8 +42,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "...                                                                      [100%]\n3 passed in 0.09s\n"
+  "log_tail": "...                                                                      [100%]\n3 passed in 0.13s\n"
 }

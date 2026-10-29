@@ -1,19 +1,28 @@
 {
   "id": "orjson-msgspec-encode-parity",
   "status": "passed",
-  "ran_at": "2026-10-29T01:17:55.806Z",
-  "last_passed_at": "2026-10-29T01:17:55.806Z",
+  "ran_at": "2026-10-29T07:17:04.949Z",
+  "last_passed_at": "2026-10-29T07:17:04.949Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 226,
-    "test": 642
+    "setup": 263,
+    "test": 605
   },
   "pinned": {
     "orjson": "3.13.0",
     "msgspec": "0.22.0",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "msgspec": "0.22.0",
+    "orjson": "3.13.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:2dbf2ee15d4cb32895eab6ccb975d02b3783ca74a075aba1657960a365335d69",
@@ -28,7 +37,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"

@@ -1,20 +1,30 @@
 {
   "id": "beautifulsoup4-soupsieve-select",
   "status": "passed",
-  "ran_at": "2026-10-29T01:03:24.569Z",
-  "last_passed_at": "2026-10-29T01:03:24.569Z",
+  "ran_at": "2026-10-29T07:02:45.077Z",
+  "last_passed_at": "2026-10-29T07:02:45.077Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 973,
-    "test": 789
+    "setup": 210,
+    "test": 1258
   },
   "pinned": {
     "beautifulsoup4": "4.15.0",
     "soupsieve": "3.0.3",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "beautifulsoup4": "4.15.0",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "soupsieve": "3.0.3",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:f4550a632ea62055d8099b6b25f2c575318c51a3da6f3f154a8ca25adbfe9e25",
   "files": {
@@ -28,8 +38,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".......                                                                  [100%]\n7 passed in 0.16s\n"
+  "log_tail": ".......                                                                  [100%]\n7 passed in 0.13s\n"
 }

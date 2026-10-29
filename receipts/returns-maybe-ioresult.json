@@ -1,20 +1,29 @@
 {
   "id": "returns-maybe-ioresult",
   "status": "passed",
-  "ran_at": "2026-10-29T01:22:51.284Z",
-  "last_passed_at": "2026-10-29T01:22:51.284Z",
+  "ran_at": "2026-10-29T07:21:48.491Z",
+  "last_passed_at": "2026-10-29T07:21:48.491Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1051,
-    "test": 1664
+    "setup": 208,
+    "test": 961
   },
   "pinned": {
     "returns": "0.29.0",
     "typing-extensions": "4.16.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "returns": "0.29.0",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:0237f3f9c9abf8ba7bef1d9f148349668aeefcc332350593c4ad5648322455b0",
   "files": {
@@ -28,8 +37,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.10s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
 }

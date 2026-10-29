@@ -1,20 +1,38 @@
 {
   "id": "polars-pandera-validation",
   "status": "passed",
-  "ran_at": "2026-10-29T01:19:38.810Z",
-  "last_passed_at": "2026-10-29T01:19:38.810Z",
+  "ran_at": "2026-10-29T07:18:45.694Z",
+  "last_passed_at": "2026-10-29T07:18:45.694Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1186,
-    "test": 3530
+    "setup": 1050,
+    "test": 2517
   },
   "pinned": {
     "polars": "2.0.0",
     "pandera": "0.34.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "iniconfig": "2.3.1",
+    "mypy-extensions": "1.1.0",
+    "packaging": "26.3",
+    "pandera": "0.34.1",
+    "pluggy": "1.7.0",
+    "polars": "2.0.0",
+    "polars-runtime-32": "2.0.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typeguard": "4.6.0",
+    "typing-extensions": "4.16.0",
+    "typing-inspect": "0.9.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:ce7fb201b1b5233e727ee5cbdac70e23230d60790146226f414f8ca847f6d5e6",
   "files": {
@@ -27,9 +45,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40797764805"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 1.34s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.89s\n"
 }

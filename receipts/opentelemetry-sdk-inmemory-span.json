@@ -1,20 +1,31 @@
 {
   "id": "opentelemetry-sdk-inmemory-span",
   "status": "passed",
-  "ran_at": "2026-10-29T01:17:41.158Z",
-  "last_passed_at": "2026-10-29T01:17:41.158Z",
+  "ran_at": "2026-10-29T07:17:08.250Z",
+  "last_passed_at": "2026-10-29T07:17:08.250Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 502,
-    "test": 1351
+    "setup": 191,
+    "test": 2256
   },
   "pinned": {
     "opentelemetry-sdk": "1.45.1",
     "opentelemetry-api": "1.45.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "opentelemetry-api": "1.45.1",
+    "opentelemetry-sdk": "1.45.1",
+    "opentelemetry-semantic-conventions": "0.66b1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:b525b96356eebe253715e75da1c9c527c99a4b8b94c28d9bb60a50eadac75a4a",
   "files": {
@@ -28,8 +39,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.17s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.38s\n"
 }

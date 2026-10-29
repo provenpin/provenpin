@@ -1,15 +1,15 @@
 {
   "id": "flask-migrate-sqlite",
   "status": "passed",
-  "ran_at": "2026-10-29T01:09:58.422Z",
-  "last_passed_at": "2026-10-29T01:09:58.422Z",
+  "ran_at": "2026-10-29T07:09:21.914Z",
+  "last_passed_at": "2026-10-29T07:09:21.914Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 538,
-    "test": 2346
+    "setup": 324,
+    "test": 3834
   },
   "pinned": {
     "flask": "3.1.3",
@@ -30,6 +30,27 @@
     "pluggy": "1.6.0",
     "pygments": "2.19.2"
   },
+  "installed": {
+    "alembic": "1.16.5",
+    "blinker": "1.9.0",
+    "click": "8.3.0",
+    "flask": "3.1.3",
+    "flask-migrate": "4.1.0",
+    "flask-sqlalchemy": "3.1.1",
+    "greenlet": "3.5.6",
+    "iniconfig": "2.1.0",
+    "itsdangerous": "2.2.0",
+    "jinja2": "3.1.6",
+    "mako": "1.3.10",
+    "markupsafe": "3.0.3",
+    "packaging": "26.3",
+    "pluggy": "1.6.0",
+    "pygments": "2.19.2",
+    "pytest": "9.1.1",
+    "sqlalchemy": "2.0.43",
+    "typing-extensions": "4.15.0",
+    "werkzeug": "3.1.3"
+  },
   "recipe_hash": "sha256:15755a28bf83f8f6a94ef20ac2c2a2ffb24fc6d9ed85de4da52d484e99d2f6ab",
   "files": {
     "recipes/flask-migrate-sqlite/app.py": "sha256:df66f4b93e30caf44d453246cd11c3a662586903f49bd8311a909d70552c2133",
@@ -45,8 +66,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 1.62s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 2.47s\n"
 }

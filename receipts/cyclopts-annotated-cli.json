@@ -1,19 +1,33 @@
 {
   "id": "cyclopts-annotated-cli",
   "status": "passed",
-  "ran_at": "2026-10-29T01:05:48.821Z",
-  "last_passed_at": "2026-10-29T01:05:48.821Z",
+  "ran_at": "2026-10-29T07:05:03.686Z",
+  "last_passed_at": "2026-10-29T07:05:03.686Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 253,
-    "test": 1275
+    "setup": 211,
+    "test": 991
   },
   "pinned": {
     "cyclopts": "5.2.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "attrs": "26.1.0",
+    "cyclopts": "5.2.0",
+    "docstring-parser": "0.18.0",
+    "iniconfig": "2.3.1",
+    "markdown-it-py": "4.2.0",
+    "mdurl": "0.1.2",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "rich": "15.0.0",
+    "rich-rst": "2.2.0"
   },
   "recipe_hash": "sha256:ce6d961f98100dfd10d64d0ba445b790e148fd323b6845508c2e01befa011b51",
   "files": {
@@ -26,9 +40,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40797764805"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.49s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.43s\n"
 }

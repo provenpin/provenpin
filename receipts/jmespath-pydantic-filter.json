@@ -1,20 +1,33 @@
 {
   "id": "jmespath-pydantic-filter",
   "status": "passed",
-  "ran_at": "2026-10-29T01:12:43.755Z",
-  "last_passed_at": "2026-10-29T01:12:43.755Z",
+  "ran_at": "2026-10-29T07:12:09.530Z",
+  "last_passed_at": "2026-10-29T07:12:09.530Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 567,
-    "test": 935
+    "setup": 353,
+    "test": 1024
   },
   "pinned": {
     "jmespath": "1.1.0",
     "pydantic": "2.14.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "annotated-types": "0.8.0",
+    "iniconfig": "2.3.1",
+    "jmespath": "1.1.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic-core": "2.50.1",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typing-extensions": "4.16.0",
+    "typing-inspection": "0.4.4"
   },
   "recipe_hash": "sha256:c7e5b786153ce1efb71ab9d5c5959d7a019282dd1fbf141db8ee4105f584bb3c",
   "files": {
@@ -28,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.30s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.31s\n"
 }

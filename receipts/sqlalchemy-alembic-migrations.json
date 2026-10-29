@@ -1,20 +1,32 @@
 {
   "id": "sqlalchemy-alembic-migrations",
   "status": "passed",
-  "ran_at": "2026-10-29T01:24:17.880Z",
-  "last_passed_at": "2026-10-29T01:24:17.880Z",
+  "ran_at": "2026-10-29T07:22:58.300Z",
+  "last_passed_at": "2026-10-29T07:22:58.300Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 434,
-    "test": 5327
+    "setup": 387,
+    "test": 4169
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
     "alembic": "1.20.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "alembic": "1.20.0",
+    "iniconfig": "2.3.1",
+    "mako": "1.4.3",
+    "markupsafe": "3.0.4",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "sqlalchemy": "2.1.4",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:5f931c8414aaae71b1cdeac3a2c7ad69b261a1826e1aba7133898b1555aca680",
   "files": {
@@ -31,8 +43,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "..                                                                       [100%]\n2 passed in 2.76s\n"
+  "log_tail": "..                                                                       [100%]\n2 passed in 2.31s\n"
 }

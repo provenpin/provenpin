@@ -1,18 +1,26 @@
 {
   "id": "cerberus-schema-normalization",
   "status": "passed",
-  "ran_at": "2026-10-29T01:04:39.159Z",
-  "last_passed_at": "2026-10-29T01:04:39.159Z",
+  "ran_at": "2026-10-29T07:03:54.211Z",
+  "last_passed_at": "2026-10-29T07:03:54.211Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 433,
-    "test": 725
+    "setup": 270,
+    "test": 1681
   },
   "pinned": {
     "cerberus": "1.3.8",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "cerberus": "1.3.8",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:1f25aa8050d93f667a9198e8e11f88deee3c5a91960cfae836c7c09e4e5642d9",
@@ -27,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.04s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.13s\n"
 }

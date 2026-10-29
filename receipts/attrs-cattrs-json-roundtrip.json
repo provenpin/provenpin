@@ -1,20 +1,30 @@
 {
   "id": "attrs-cattrs-json-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-29T01:02:54.239Z",
-  "last_passed_at": "2026-10-29T01:02:54.239Z",
+  "ran_at": "2026-10-29T07:01:55.846Z",
+  "last_passed_at": "2026-10-29T07:01:55.846Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 214,
-    "test": 2132
+    "setup": 321,
+    "test": 1452
   },
   "pinned": {
     "attrs": "26.1.0",
     "cattrs": "26.2.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "attrs": "26.1.0",
+    "cattrs": "26.2.1",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:fdcff96e0088c5e526700f0475860c2dc776fcb9e468d2b06503213c16c7e3cb",
   "files": {
@@ -28,8 +38,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.19s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.13s\n"
 }

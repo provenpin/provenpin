@@ -1,20 +1,35 @@
 {
   "id": "tortoise-orm-sqlite-relations",
   "status": "passed",
-  "ran_at": "2026-10-29T01:26:09.538Z",
-  "last_passed_at": "2026-10-29T01:26:09.538Z",
+  "ran_at": "2026-10-29T07:25:01.212Z",
+  "last_passed_at": "2026-10-29T07:25:01.212Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 722,
-    "test": 2389
+    "setup": 194,
+    "test": 1730
   },
   "pinned": {
     "tortoise-orm": "1.1.9",
     "pytest-asyncio": "1.4.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "aiosqlite": "0.22.1",
+    "anyio": "4.15.1",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "iso8601": "2.1.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pypika-tortoise": "0.6.5",
+    "pytest": "9.1.1",
+    "pytest-asyncio": "1.4.0",
+    "tortoise-orm": "1.1.9",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:ad82860a4b393271cc8e3d245d919b53374181bbaa7698dc9230df4abaaa0a77",
   "files": {
@@ -27,9 +42,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40797764805"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.39s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.45s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "libphonenumber-js-parse-format",
   "status": "passed",
-  "ran_at": "2026-10-29T01:14:12.450Z",
-  "last_passed_at": "2026-10-29T01:14:12.450Z",
+  "ran_at": "2026-10-29T07:13:33.683Z",
+  "last_passed_at": "2026-10-29T07:13:33.683Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2014,
-    "test": 471
+    "setup": 1999,
+    "test": 449
   },
   "pinned": {
     "libphonenumber-js": "1.13.15",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "# Subtest: number type from max metadata\nok 3 - number type from max metadata\n  ---\n  duration_ms: 0.992893\n  type: 'test'\n  ...\n# Subtest: extensions are kept\nok 4 - extensions are kept\n  ---\n  duration_ms: 0.444854\n  type: 'test'\n  ...\n# Subtest: invalid numbers are rejected\nok 5 - invalid numbers are rejected\n  ---\n  duration_ms: 1.069566\n  type: 'test'\n  ...\n# Subtest: as-you-type formatting\nok 6 - as-you-type formatting\n  ---\n  duration_ms: 2.254609\n  type: 'test'\n  ...\n# Subtest: finds numbers in free text\nok 7 - finds numbers in free text\n  ---\n  duration_ms: 2.987854\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 303.557007\n"
+  "log_tail": "# Subtest: number type from max metadata\nok 3 - number type from max metadata\n  ---\n  duration_ms: 0.938159\n  type: 'test'\n  ...\n# Subtest: extensions are kept\nok 4 - extensions are kept\n  ---\n  duration_ms: 0.471003\n  type: 'test'\n  ...\n# Subtest: invalid numbers are rejected\nok 5 - invalid numbers are rejected\n  ---\n  duration_ms: 1.069315\n  type: 'test'\n  ...\n# Subtest: as-you-type formatting\nok 6 - as-you-type formatting\n  ---\n  duration_ms: 2.18108\n  type: 'test'\n  ...\n# Subtest: finds numbers in free text\nok 7 - finds numbers in free text\n  ---\n  duration_ms: 2.897955\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 291.337093\n"
 }

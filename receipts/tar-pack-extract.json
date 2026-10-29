@@ -1,15 +1,15 @@
 {
   "id": "tar-pack-extract",
   "status": "passed",
-  "ran_at": "2026-10-29T01:25:40.353Z",
-  "last_passed_at": "2026-10-29T01:25:40.353Z",
+  "ran_at": "2026-10-29T07:24:31.595Z",
+  "last_passed_at": "2026-10-29T07:24:31.595Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1887,
-    "test": 381
+    "setup": 1850,
+    "test": 377
   },
   "pinned": {
     "tar": "7.5.22",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: creates a gzipped tarball and lists its file entries\nok 1 - creates a gzipped tarball and lists its file entries\n  ---\n  duration_ms: 12.642745\n  type: 'test'\n  ...\n# Subtest: extracts with a filter and strip, preserving contents\nok 2 - extracts with a filter and strip, preserving contents\n  ---\n  duration_ms: 6.01159\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 228.093465\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: creates a gzipped tarball and lists its file entries\nok 1 - creates a gzipped tarball and lists its file entries\n  ---\n  duration_ms: 13.139415\n  type: 'test'\n  ...\n# Subtest: extracts with a filter and strip, preserving contents\nok 2 - extracts with a filter and strip, preserving contents\n  ---\n  duration_ms: 6.296621\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 219.60824\n"
 }

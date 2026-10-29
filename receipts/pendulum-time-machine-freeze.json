@@ -1,20 +1,32 @@
 {
   "id": "pendulum-time-machine-freeze",
   "status": "passed",
-  "ran_at": "2026-10-29T01:19:00.493Z",
-  "last_passed_at": "2026-10-29T01:19:00.493Z",
+  "ran_at": "2026-10-29T07:18:10.769Z",
+  "last_passed_at": "2026-10-29T07:18:10.769Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 303,
-    "test": 615
+    "setup": 249,
+    "test": 902
   },
   "pinned": {
     "pendulum": "3.3.0",
     "time-machine": "3.5.1",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pendulum": "3.3.0",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "python-dateutil": "3.0.0",
+    "six": "1.17.0",
+    "time-machine": "3.5.1",
+    "tzdata": "2026.6"
   },
   "recipe_hash": "sha256:98daada27e6bbf423aa04217c5a00ab6a0a4a3c7a1c2d0879adf6a7742a5dc84",
   "files": {
@@ -28,8 +40,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
 }

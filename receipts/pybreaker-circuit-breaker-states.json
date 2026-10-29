@@ -1,18 +1,26 @@
 {
   "id": "pybreaker-circuit-breaker-states",
   "status": "passed",
-  "ran_at": "2026-10-29T01:20:33.698Z",
-  "last_passed_at": "2026-10-29T01:20:33.698Z",
+  "ran_at": "2026-10-29T07:19:37.683Z",
+  "last_passed_at": "2026-10-29T07:19:37.683Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 948,
-    "test": 1086
+    "setup": 194,
+    "test": 1283
   },
   "pinned": {
     "pybreaker": "1.4.1",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pybreaker": "1.4.1",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:398a31a2643efc01e856cd1c344decc58d9d438eca98e6e98c85e992e2d33958",
@@ -26,8 +34,8 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40797764805"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"

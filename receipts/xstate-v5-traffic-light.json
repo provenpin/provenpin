@@ -1,15 +1,15 @@
 {
   "id": "xstate-v5-traffic-light",
   "status": "passed",
-  "ran_at": "2026-10-29T01:28:00.885Z",
-  "last_passed_at": "2026-10-29T01:28:00.885Z",
+  "ran_at": "2026-10-29T07:27:03.196Z",
+  "last_passed_at": "2026-10-29T07:27:03.196Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2122,
-    "test": 389
+    "setup": 1974,
+    "test": 386
   },
   "pinned": {
     "xstate": "5.33.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: cycles red -> green -> yellow -> red\nok 1 - cycles red -> green -> yellow -> red\n  ---\n  duration_ms: 4.514142\n  type: 'test'\n  ...\n# Subtest: emergency jumps to flashing then recovers\nok 2 - emergency jumps to flashing then recovers\n  ---\n  duration_ms: 1.089321\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 231.855315\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: cycles red -> green -> yellow -> red\nok 1 - cycles red -> green -> yellow -> red\n  ---\n  duration_ms: 4.056111\n  type: 'test'\n  ...\n# Subtest: emergency jumps to flashing then recovers\nok 2 - emergency jumps to flashing then recovers\n  ---\n  duration_ms: 1.048023\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 224.803311\n"
 }

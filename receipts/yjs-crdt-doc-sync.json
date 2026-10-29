@@ -1,15 +1,15 @@
 {
   "id": "yjs-crdt-doc-sync",
   "status": "passed",
-  "ran_at": "2026-10-29T01:28:16.054Z",
-  "last_passed_at": "2026-10-29T01:28:16.054Z",
+  "ran_at": "2026-10-29T07:27:07.928Z",
+  "last_passed_at": "2026-10-29T07:27:07.928Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2286,
-    "test": 421
+    "setup": 1877,
+    "test": 398
   },
   "pinned": {
     "yjs": "13.6.33",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "# Subtest: concurrent text edits merge identically on both peers\nok 1 - concurrent text edits merge identically on both peers\n  ---\n  duration_ms: 6.094966\n  type: 'test'\n  ...\n# Subtest: concurrent map writes converge to the same winner\nok 2 - concurrent map writes converge to the same winner\n  ---\n  duration_ms: 1.912318\n  type: 'test'\n  ...\n# Subtest: state-vector sync sends only the diff\nok 3 - state-vector sync sends only the diff\n  ---\n  duration_ms: 2.381922\n  type: 'test'\n  ...\n# Subtest: live relay plus undo manager\nok 4 - live relay plus undo manager\n  ---\n  duration_ms: 2.214548\n  type: 'test'\n  ...\n# Subtest: updates can be merged and replayed in any order\nok 5 - updates can be merged and replayed in any order\n  ---\n  duration_ms: 1.590438\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 273.356145\n"
+  "log_tail": "# Subtest: concurrent text edits merge identically on both peers\nok 1 - concurrent text edits merge identically on both peers\n  ---\n  duration_ms: 5.728874\n  type: 'test'\n  ...\n# Subtest: concurrent map writes converge to the same winner\nok 2 - concurrent map writes converge to the same winner\n  ---\n  duration_ms: 1.787924\n  type: 'test'\n  ...\n# Subtest: state-vector sync sends only the diff\nok 3 - state-vector sync sends only the diff\n  ---\n  duration_ms: 2.120828\n  type: 'test'\n  ...\n# Subtest: live relay plus undo manager\nok 4 - live relay plus undo manager\n  ---\n  duration_ms: 2.037484\n  type: 'test'\n  ...\n# Subtest: updates can be merged and replayed in any order\nok 5 - updates can be merged and replayed in any order\n  ---\n  duration_ms: 1.455087\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 256.013439\n"
 }

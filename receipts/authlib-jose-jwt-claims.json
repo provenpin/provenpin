@@ -1,18 +1,30 @@
 {
   "id": "authlib-jose-jwt-claims",
   "status": "passed",
-  "ran_at": "2026-10-29T01:02:45.412Z",
-  "last_passed_at": "2026-10-29T01:02:45.412Z",
+  "ran_at": "2026-10-29T07:02:00.206Z",
+  "last_passed_at": "2026-10-29T07:02:00.206Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 655,
-    "test": 1329
+    "setup": 373,
+    "test": 943
   },
   "pinned": {
     "authlib": "1.9.1",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "authlib": "1.9.1",
+    "cffi": "2.1.1",
+    "cryptography": "50.0.2",
+    "iniconfig": "2.3.1",
+    "joserfc": "1.7.7",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pycparser": "3.12",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:fc50f1b1f7f4cc6014fbfd9700bbb0e78b67145471d3919405ec9cfef24d3ce8",
@@ -26,9 +38,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40797764805"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.23s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.17s\n"
 }

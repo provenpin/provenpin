@@ -1,20 +1,30 @@
 {
   "id": "sqlalchemy-orjson-json-column",
   "status": "passed",
-  "ran_at": "2026-10-29T01:24:23.023Z",
-  "last_passed_at": "2026-10-29T01:24:23.023Z",
+  "ran_at": "2026-10-29T07:23:09.085Z",
+  "last_passed_at": "2026-10-29T07:23:09.085Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 646,
-    "test": 1789
+    "setup": 269,
+    "test": 2184
   },
   "pinned": {
     "sqlalchemy": "2.1.4",
     "orjson": "3.13.0",
     "pytest": "9.1.1"
+  },
+  "installed": {
+    "iniconfig": "2.3.1",
+    "orjson": "3.13.0",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
+    "pytest": "9.1.1",
+    "sqlalchemy": "2.1.4",
+    "typing-extensions": "4.16.0"
   },
   "recipe_hash": "sha256:78fb04353afb6118fd568c65169432001dbfe02ddeb2dc090c393f59d54b80ce",
   "files": {
@@ -28,8 +38,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.13s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.40s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "yup-form-schemas",
   "status": "passed",
-  "ran_at": "2026-10-29T01:28:14.179Z",
-  "last_passed_at": "2026-10-29T01:28:14.179Z",
+  "ran_at": "2026-10-29T07:27:11.317Z",
+  "last_passed_at": "2026-10-29T07:27:11.317Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1807,
-    "test": 405
+    "setup": 1294,
+    "test": 340
   },
   "pinned": {
     "yup": "1.7.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: personal signup applies transforms and defaults and strips company\nok 1 - personal signup applies transforms and defaults and strips company\n  ---\n  duration_ms: 3.56369\n  type: 'test'\n  ...\n# Subtest: business accounts require a company\nok 2 - business accounts require a company\n  ---\n  duration_ms: 1.242509\n  type: 'test'\n  ...\n# Subtest: collects all errors per field\nok 3 - collects all errors per field\n  ---\n  duration_ms: 1.367664\n  type: 'test'\n  ...\n# Subtest: isValidSync and cast work without async\nok 4 - isValidSync and cast work without async\n  ---\n  duration_ms: 0.632516\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 242.149236\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: personal signup applies transforms and defaults and strips company\nok 1 - personal signup applies transforms and defaults and strips company\n  ---\n  duration_ms: 3.063522\n  type: 'test'\n  ...\n# Subtest: business accounts require a company\nok 2 - business accounts require a company\n  ---\n  duration_ms: 0.928325\n  type: 'test'\n  ...\n# Subtest: collects all errors per field\nok 3 - collects all errors per field\n  ---\n  duration_ms: 0.924159\n  type: 'test'\n  ...\n# Subtest: isValidSync and cast work without async\nok 4 - isValidSync and cast work without async\n  ---\n  duration_ms: 0.506356\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 203.218974\n"
 }

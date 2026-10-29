@@ -1,19 +1,28 @@
 {
   "id": "diskcache-cachetools-tiered",
   "status": "passed",
-  "ran_at": "2026-10-29T01:06:38.244Z",
-  "last_passed_at": "2026-10-29T01:06:38.244Z",
+  "ran_at": "2026-10-29T07:05:55.099Z",
+  "last_passed_at": "2026-10-29T07:05:55.099Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 342,
-    "test": 2002
+    "setup": 291,
+    "test": 1513
   },
   "pinned": {
     "diskcache": "5.6.3",
     "cachetools": "7.2.2",
+    "pytest": "9.1.1"
+  },
+  "installed": {
+    "cachetools": "7.2.2",
+    "diskcache": "5.6.3",
+    "iniconfig": "2.3.1",
+    "packaging": "26.3",
+    "pluggy": "1.7.0",
+    "pygments": "2.21.0",
     "pytest": "9.1.1"
   },
   "recipe_hash": "sha256:9c54e9b17aafe1f38f19c12183fc5676a50a93153af0e0709fdbe3f92f3741a4",
@@ -28,8 +37,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40797764805"
+    "runner": "github-actions 40832646556"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.53s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.45s\n"
 }
