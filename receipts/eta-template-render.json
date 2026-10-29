@@ -1,15 +1,15 @@
 {
   "id": "eta-template-render",
   "status": "passed",
-  "ran_at": "2026-10-29T13:08:24.382Z",
-  "last_passed_at": "2026-10-29T13:08:24.382Z",
+  "ran_at": "2026-10-29T19:03:44.262Z",
+  "last_passed_at": "2026-10-29T19:03:44.262Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1474,
-    "test": 350
+    "setup": 1730,
+    "test": 363
   },
   "pinned": {
     "eta": "4.6.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders a layout with a partial include\nok 1 - renders a layout with a partial include\n  ---\n  duration_ms: 2.317825\n  type: 'test'\n  ...\n# Subtest: auto-escapes interpolated values in layout and partial\nok 2 - auto-escapes interpolated values in layout and partial\n  ---\n  duration_ms: 0.869751\n  type: 'test'\n  ...\n# Subtest: renderString escapes data\nok 3 - renderString escapes data\n  ---\n  duration_ms: 0.393778\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 192.141101\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders a layout with a partial include\nok 1 - renders a layout with a partial include\n  ---\n  duration_ms: 2.375522\n  type: 'test'\n  ...\n# Subtest: auto-escapes interpolated values in layout and partial\nok 2 - auto-escapes interpolated values in layout and partial\n  ---\n  duration_ms: 0.817592\n  type: 'test'\n  ...\n# Subtest: renderString escapes data\nok 3 - renderString escapes data\n  ---\n  duration_ms: 0.391304\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 199.759106\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "lxml-cssselect-scrape",
   "status": "passed",
-  "ran_at": "2026-10-29T13:15:26.027Z",
-  "last_passed_at": "2026-10-29T13:15:26.027Z",
+  "ran_at": "2026-10-29T19:10:56.687Z",
+  "last_passed_at": "2026-10-29T19:10:56.687Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 251,
-    "test": 1179
+    "setup": 332,
+    "test": 553
   },
   "pinned": {
     "lxml": "6.1.3",
@@ -38,8 +38,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.08s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.05s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "ajv-standalone-validation",
   "status": "passed",
-  "ran_at": "2026-10-29T13:02:36.061Z",
-  "last_passed_at": "2026-10-29T13:02:36.061Z",
+  "ran_at": "2026-10-29T18:57:53.506Z",
+  "last_passed_at": "2026-10-29T18:57:53.506Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2041,
-    "test": 498
+    "setup": 1803,
+    "test": 362
   },
   "pinned": {
     "ajv": "8.20.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generated module is plain ESM without a schema compiler\nok 1 - generated module is plain ESM without a schema compiler\n  ---\n  duration_ms: 0.9394\n  type: 'test'\n  ...\n# Subtest: valid data passes and gets defaults\nok 2 - valid data passes and gets defaults\n  ---\n  duration_ms: 0.446417\n  type: 'test'\n  ...\n# Subtest: allErrors reports every problem\nok 3 - allErrors reports every problem\n  ---\n  duration_ms: 0.770223\n  type: 'test'\n  ...\n# Subtest: coerces query string values\nok 4 - coerces query string values\n  ---\n  duration_ms: 0.266299\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 330.201152\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generated module is plain ESM without a schema compiler\nok 1 - generated module is plain ESM without a schema compiler\n  ---\n  duration_ms: 0.556219\n  type: 'test'\n  ...\n# Subtest: valid data passes and gets defaults\nok 2 - valid data passes and gets defaults\n  ---\n  duration_ms: 0.313183\n  type: 'test'\n  ...\n# Subtest: allErrors reports every problem\nok 3 - allErrors reports every problem\n  ---\n  duration_ms: 0.528708\n  type: 'test'\n  ...\n# Subtest: coerces query string values\nok 4 - coerces query string values\n  ---\n  duration_ms: 0.15906\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 247.042226\n"
 }

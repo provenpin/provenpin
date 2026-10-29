@@ -1,15 +1,15 @@
 {
   "id": "beanie-mongomock-odm",
   "status": "passed",
-  "ran_at": "2026-10-29T13:04:08.491Z",
-  "last_passed_at": "2026-10-29T13:04:08.491Z",
+  "ran_at": "2026-10-29T18:59:22.589Z",
+  "last_passed_at": "2026-10-29T18:59:22.589Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 379,
-    "test": 2697
+    "setup": 418,
+    "test": 1743
   },
   "pinned": {
     "beanie": "2.2.0",
@@ -20,7 +20,7 @@
     "annotated-types": "0.8.0",
     "beanie": "2.2.0",
     "click": "8.5.0",
-    "dnspython": "2.9.0",
+    "dnspython": "2.9.1",
     "iniconfig": "2.3.1",
     "lazy-model": "0.4.0",
     "mongomock": "4.3.0",
@@ -28,8 +28,8 @@
     "motor": "3.7.1",
     "packaging": "26.3",
     "pluggy": "1.7.0",
-    "pydantic": "2.14.1",
-    "pydantic-core": "2.50.1",
+    "pydantic": "2.14.2",
+    "pydantic-core": "2.50.2",
     "pygments": "2.21.0",
     "pymongo": "4.19.0",
     "pytest": "9.1.1",
@@ -50,8 +50,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.53s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.07s\n"
 }

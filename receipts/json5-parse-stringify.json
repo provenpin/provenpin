@@ -1,15 +1,15 @@
 {
   "id": "json5-parse-stringify",
   "status": "passed",
-  "ran_at": "2026-10-29T13:13:50.315Z",
-  "last_passed_at": "2026-10-29T13:13:50.315Z",
+  "ran_at": "2026-10-29T19:09:19.351Z",
+  "last_passed_at": "2026-10-29T19:09:19.351Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1628,
-    "test": 354
+    "setup": 1878,
+    "test": 371
   },
   "pinned": {
     "json5": "2.2.3",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\nok 1 - parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\n  ---\n  duration_ms: 2.538518\n  type: 'test'\n  ...\n# Subtest: stringify with options round-trips through the parser\nok 2 - stringify with options round-trips through the parser\n  ---\n  duration_ms: 1.238727\n  type: 'test'\n  ...\n# Subtest: throws a SyntaxError on invalid input\nok 3 - throws a SyntaxError on invalid input\n  ---\n  duration_ms: 0.445591\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 194.417533\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\nok 1 - parses JSON5 with comments, trailing commas, unquoted keys and hex numbers\n  ---\n  duration_ms: 2.427301\n  type: 'test'\n  ...\n# Subtest: stringify with options round-trips through the parser\nok 2 - stringify with options round-trips through the parser\n  ---\n  duration_ms: 1.351773\n  type: 'test'\n  ...\n# Subtest: throws a SyntaxError on invalid input\nok 3 - throws a SyntaxError on invalid input\n  ---\n  duration_ms: 0.455852\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 204.886673\n"
 }

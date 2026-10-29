@@ -1,15 +1,15 @@
 {
   "id": "awilix-di-container",
   "status": "passed",
-  "ran_at": "2026-10-29T13:04:01.605Z",
-  "last_passed_at": "2026-10-29T13:04:01.605Z",
+  "ran_at": "2026-10-29T18:58:56.936Z",
+  "last_passed_at": "2026-10-29T18:58:56.936Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3119,
-    "test": 451
+    "setup": 2415,
+    "test": 511
   },
   "pinned": {
     "awilix": "13.0.5",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "# Subtest: resolves the dependency graph\nok 1 - resolves the dependency graph\n  ---\n  duration_ms: 2.992809\n  type: 'test'\n  ...\n# Subtest: lifetimes: singletons shared, scoped per scope, transient always new\nok 2 - lifetimes: singletons shared, scoped per scope, transient always new\n  ---\n  duration_ms: 0.564919\n  type: 'test'\n  ...\n# Subtest: overrides for tests replace a registration\nok 3 - overrides for tests replace a registration\n  ---\n  duration_ms: 0.466415\n  type: 'test'\n  ...\n# Subtest: dispose runs disposers for resolved singletons\nok 4 - dispose runs disposers for resolved singletons\n  ---\n  duration_ms: 0.441607\n  type: 'test'\n  ...\n# Subtest: strict mode reports missing registrations\nok 5 - strict mode reports missing registrations\n  ---\n  duration_ms: 0.732072\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 289.823291\n"
+  "log_tail": "# Subtest: resolves the dependency graph\nok 1 - resolves the dependency graph\n  ---\n  duration_ms: 3.126099\n  type: 'test'\n  ...\n# Subtest: lifetimes: singletons shared, scoped per scope, transient always new\nok 2 - lifetimes: singletons shared, scoped per scope, transient always new\n  ---\n  duration_ms: 0.644174\n  type: 'test'\n  ...\n# Subtest: overrides for tests replace a registration\nok 3 - overrides for tests replace a registration\n  ---\n  duration_ms: 0.451544\n  type: 'test'\n  ...\n# Subtest: dispose runs disposers for resolved singletons\nok 4 - dispose runs disposers for resolved singletons\n  ---\n  duration_ms: 0.484334\n  type: 'test'\n  ...\n# Subtest: strict mode reports missing registrations\nok 5 - strict mode reports missing registrations\n  ---\n  duration_ms: 0.750582\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 337.430855\n"
 }

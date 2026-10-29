@@ -1,15 +1,15 @@
 {
   "id": "openapi-fetch-msw",
   "status": "passed",
-  "ran_at": "2026-10-29T13:18:18.898Z",
-  "last_passed_at": "2026-10-29T13:18:18.898Z",
+  "ran_at": "2026-10-29T19:13:38.130Z",
+  "last_passed_at": "2026-10-29T19:13:38.130Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3129,
-    "test": 545
+    "setup": 3015,
+    "test": 613
   },
   "pinned": {
     "openapi-fetch": "0.17.0",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists filters and creates\nok 1 - lists filters and creates\n  ---\n  duration_ms: 62.627156\n  type: 'test'\n  ...\n# Subtest: 404 becomes error\nok 2 - 404 becomes error\n  ---\n  duration_ms: 8.372168\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 408.92756\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists filters and creates\nok 1 - lists filters and creates\n  ---\n  duration_ms: 69.250158\n  type: 'test'\n  ...\n# Subtest: 404 becomes error\nok 2 - 404 becomes error\n  ---\n  duration_ms: 10.400308\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 460.036492\n"
 }

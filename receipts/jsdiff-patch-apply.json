@@ -1,15 +1,15 @@
 {
   "id": "jsdiff-patch-apply",
   "status": "passed",
-  "ran_at": "2026-10-29T13:13:44.810Z",
-  "last_passed_at": "2026-10-29T13:13:44.810Z",
+  "ran_at": "2026-10-29T19:09:14.222Z",
+  "last_passed_at": "2026-10-29T19:09:14.222Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2116,
-    "test": 303
+    "setup": 1631,
+    "test": 367
   },
   "pinned": {
     "diff": "9.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "# Subtest: unified patch has headers and hunks\nok 1 - unified patch has headers and hunks\n  ---\n  duration_ms: 1.815284\n  type: 'test'\n  ...\n# Subtest: patch applies and reverses\nok 2 - patch applies and reverses\n  ---\n  duration_ms: 1.57057\n  type: 'test'\n  ...\n# Subtest: conflicting source fails without fuzz, succeeds with fuzz\nok 3 - conflicting source fails without fuzz, succeeds with fuzz\n  ---\n  duration_ms: 0.472553\n  type: 'test'\n  ...\n# Subtest: line stats\nok 4 - line stats\n  ---\n  duration_ms: 0.64395\n  type: 'test'\n  ...\n# Subtest: word diff markers\nok 5 - word diff markers\n  ---\n  duration_ms: 0.651981\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 171.804305\n"
+  "log_tail": "# Subtest: unified patch has headers and hunks\nok 1 - unified patch has headers and hunks\n  ---\n  duration_ms: 2.363532\n  type: 'test'\n  ...\n# Subtest: patch applies and reverses\nok 2 - patch applies and reverses\n  ---\n  duration_ms: 1.945533\n  type: 'test'\n  ...\n# Subtest: conflicting source fails without fuzz, succeeds with fuzz\nok 3 - conflicting source fails without fuzz, succeeds with fuzz\n  ---\n  duration_ms: 0.595455\n  type: 'test'\n  ...\n# Subtest: line stats\nok 4 - line stats\n  ---\n  duration_ms: 0.795151\n  type: 'test'\n  ...\n# Subtest: word diff markers\nok 5 - word diff markers\n  ---\n  duration_ms: 0.842371\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 211.499248\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "file-type-buffer-detect",
   "status": "passed",
-  "ran_at": "2026-10-29T13:10:36.976Z",
-  "last_passed_at": "2026-10-29T13:10:36.976Z",
+  "ran_at": "2026-10-29T19:05:55.969Z",
+  "last_passed_at": "2026-10-29T19:05:55.969Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2094,
-    "test": 500
+    "setup": 1945,
+    "test": 344
   },
   "pinned": {
     "file-type": "22.2.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "# Subtest: detects png from magic bytes\nok 1 - detects png from magic bytes\n  ---\n  duration_ms: 6.111026\n  type: 'test'\n  ...\n# Subtest: detects pdf from magic bytes\nok 2 - detects pdf from magic bytes\n  ---\n  duration_ms: 0.374252\n  type: 'test'\n  ...\n# Subtest: detects zip from magic bytes\nok 3 - detects zip from magic bytes\n  ---\n  duration_ms: 1.273611\n  type: 'test'\n  ...\n# Subtest: detects gif from magic bytes\nok 4 - detects gif from magic bytes\n  ---\n  duration_ms: 0.325932\n  type: 'test'\n  ...\n# Subtest: returns undefined for plain text\nok 5 - returns undefined for plain text\n  ---\n  duration_ms: 1.234317\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 326.381847\n"
+  "log_tail": "# Subtest: detects png from magic bytes\nok 1 - detects png from magic bytes\n  ---\n  duration_ms: 4.065428\n  type: 'test'\n  ...\n# Subtest: detects pdf from magic bytes\nok 2 - detects pdf from magic bytes\n  ---\n  duration_ms: 0.31509\n  type: 'test'\n  ...\n# Subtest: detects zip from magic bytes\nok 3 - detects zip from magic bytes\n  ---\n  duration_ms: 0.945879\n  type: 'test'\n  ...\n# Subtest: detects gif from magic bytes\nok 4 - detects gif from magic bytes\n  ---\n  duration_ms: 0.270316\n  type: 'test'\n  ...\n# Subtest: returns undefined for plain text\nok 5 - returns undefined for plain text\n  ---\n  duration_ms: 0.909262\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 224.776149\n"
 }

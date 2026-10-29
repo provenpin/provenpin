@@ -1,15 +1,15 @@
 {
   "id": "authlib-jose-jwt-claims",
   "status": "passed",
-  "ran_at": "2026-10-29T13:03:30.756Z",
-  "last_passed_at": "2026-10-29T13:03:30.756Z",
+  "ran_at": "2026-10-29T18:58:47.213Z",
+  "last_passed_at": "2026-10-29T18:58:47.213Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 368,
-    "test": 847
+    "setup": 431,
+    "test": 2126
   },
   "pinned": {
     "authlib": "1.9.1",
@@ -39,8 +39,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.20s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.34s\n"
 }

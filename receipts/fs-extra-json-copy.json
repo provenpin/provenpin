@@ -1,15 +1,15 @@
 {
   "id": "fs-extra-json-copy",
   "status": "passed",
-  "ran_at": "2026-10-29T13:10:55.777Z",
-  "last_passed_at": "2026-10-29T13:10:55.777Z",
+  "ran_at": "2026-10-29T19:06:28.031Z",
+  "last_passed_at": "2026-10-29T19:06:28.031Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1714,
-    "test": 262
+    "setup": 2026,
+    "test": 481
   },
   "pinned": {
     "fs-extra": "11.4.1",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: writeJson/readJson roundtrips a config\nok 1 - writeJson/readJson roundtrips a config\n  ---\n  duration_ms: 8.108678\n  type: 'test'\n  ...\n# Subtest: copy duplicates the tree and move updates paths\nok 2 - copy duplicates the tree and move updates paths\n  ---\n  duration_ms: 4.267279\n  type: 'test'\n  ...\n# Subtest: remove deletes the tree\nok 3 - remove deletes the tree\n  ---\n  duration_ms: 1.386122\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 158.270852\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: writeJson/readJson roundtrips a config\nok 1 - writeJson/readJson roundtrips a config\n  ---\n  duration_ms: 20.023003\n  type: 'test'\n  ...\n# Subtest: copy duplicates the tree and move updates paths\nok 2 - copy duplicates the tree and move updates paths\n  ---\n  duration_ms: 9.70752\n  type: 'test'\n  ...\n# Subtest: remove deletes the tree\nok 3 - remove deletes the tree\n  ---\n  duration_ms: 2.837163\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 299.278984\n"
 }

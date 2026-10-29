@@ -1,15 +1,15 @@
 {
   "id": "toolz-cytoolz-pipeline",
   "status": "passed",
-  "ran_at": "2026-10-29T13:26:45.580Z",
-  "last_passed_at": "2026-10-29T13:26:45.580Z",
+  "ran_at": "2026-10-29T19:21:32.487Z",
+  "last_passed_at": "2026-10-29T19:21:32.487Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 224,
-    "test": 1490
+    "setup": 393,
+    "test": 1025
   },
   "pinned": {
     "toolz": "1.2.0",
@@ -37,8 +37,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
 }

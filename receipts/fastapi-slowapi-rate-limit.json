@@ -1,15 +1,15 @@
 {
   "id": "fastapi-slowapi-rate-limit",
   "status": "passed",
-  "ran_at": "2026-10-29T13:10:02.950Z",
-  "last_passed_at": "2026-10-29T13:10:02.950Z",
+  "ran_at": "2026-10-29T19:05:25.283Z",
+  "last_passed_at": "2026-10-29T19:05:25.283Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 436,
-    "test": 2238
+    "setup": 367,
+    "test": 3381
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -30,11 +30,11 @@
     "idna": "3.20",
     "iniconfig": "2.3.1",
     "limits": "5.8.0",
-    "opentelemetry-api": "1.45.1",
+    "opentelemetry-api": "1.45.2",
     "packaging": "26.3",
     "pluggy": "1.7.0",
-    "pydantic": "2.14.1",
-    "pydantic-core": "2.50.1",
+    "pydantic": "2.14.2",
+    "pydantic-core": "2.50.2",
     "pygments": "2.21.0",
     "pytest": "9.1.1",
     "slowapi": "0.1.10",
@@ -55,8 +55,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-slowapi-rate-limit-jVqABF/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.73s\n"
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-slowapi-rate-limit-uKQKfl/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 1.16s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "fastapi-pydantic-v2-models",
   "status": "passed",
-  "ran_at": "2026-10-29T13:09:54.944Z",
-  "last_passed_at": "2026-10-29T13:09:54.944Z",
+  "ran_at": "2026-10-29T19:05:28.213Z",
+  "last_passed_at": "2026-10-29T19:05:28.213Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 279,
-    "test": 1201
+    "setup": 332,
+    "test": 3239
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -28,7 +28,7 @@
     "httpx": "0.28.1",
     "idna": "3.20",
     "iniconfig": "2.3.1",
-    "opentelemetry-api": "1.45.1",
+    "opentelemetry-api": "1.45.2",
     "packaging": "26.3",
     "pluggy": "1.7.0",
     "pydantic": "2.14.1",
@@ -52,8 +52,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-pydantic-v2-models-gRxlF4/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n4 passed, 1 warning in 0.48s\n"
+  "log_tail": "....                                                                     [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-pydantic-v2-models-zJhKqr/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n4 passed, 1 warning in 0.96s\n"
 }

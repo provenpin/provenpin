@@ -1,15 +1,15 @@
 {
   "id": "hookable-hooks-call",
   "status": "passed",
-  "ran_at": "2026-10-29T13:11:52.612Z",
-  "last_passed_at": "2026-10-29T13:11:52.612Z",
+  "ran_at": "2026-10-29T19:07:28.404Z",
+  "last_passed_at": "2026-10-29T19:07:28.404Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1775,
-    "test": 361
+    "setup": 2342,
+    "test": 347
   },
   "pinned": {
     "hookable": "6.1.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "# Subtest: callHook runs hooks in registration order\nok 1 - callHook runs hooks in registration order\n  ---\n  duration_ms: 2.205523\n  type: 'test'\n  ...\n# Subtest: callHook awaits async hooks serially\nok 2 - callHook awaits async hooks serially\n  ---\n  duration_ms: 20.193827\n  type: 'test'\n  ...\n# Subtest: callHookParallel awaits all hooks\nok 3 - callHookParallel awaits all hooks\n  ---\n  duration_ms: 19.897389\n  type: 'test'\n  ...\n# Subtest: hookOnce fires a single time\nok 4 - hookOnce fires a single time\n  ---\n  duration_ms: 0.410046\n  type: 'test'\n  ...\n# Subtest: removeHook stops a hook from running\nok 5 - removeHook stops a hook from running\n  ---\n  duration_ms: 0.167536\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 205.82146\n"
+  "log_tail": "# Subtest: callHook runs hooks in registration order\nok 1 - callHook runs hooks in registration order\n  ---\n  duration_ms: 1.203977\n  type: 'test'\n  ...\n# Subtest: callHook awaits async hooks serially\nok 2 - callHook awaits async hooks serially\n  ---\n  duration_ms: 20.075597\n  type: 'test'\n  ...\n# Subtest: callHookParallel awaits all hooks\nok 3 - callHookParallel awaits all hooks\n  ---\n  duration_ms: 19.744627\n  type: 'test'\n  ...\n# Subtest: hookOnce fires a single time\nok 4 - hookOnce fires a single time\n  ---\n  duration_ms: 0.333135\n  type: 'test'\n  ...\n# Subtest: removeHook stops a hook from running\nok 5 - removeHook stops a hook from running\n  ---\n  duration_ms: 0.142069\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 210.264083\n"
 }

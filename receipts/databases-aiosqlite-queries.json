@@ -1,15 +1,15 @@
 {
   "id": "databases-aiosqlite-queries",
   "status": "passed",
-  "ran_at": "2026-10-29T13:06:28.266Z",
-  "last_passed_at": "2026-10-29T13:06:28.266Z",
+  "ran_at": "2026-10-29T19:01:56.877Z",
+  "last_passed_at": "2026-10-29T19:01:56.877Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 530,
-    "test": 1443
+    "setup": 274,
+    "test": 2827
   },
   "pinned": {
     "databases": "0.9.0",
@@ -41,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.66s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.76s\n"
 }

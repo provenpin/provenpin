@@ -1,15 +1,15 @@
 {
   "id": "aiocache-memory-ttl",
   "status": "passed",
-  "ran_at": "2026-10-29T13:02:34.420Z",
-  "last_passed_at": "2026-10-29T13:02:34.420Z",
+  "ran_at": "2026-10-29T18:57:55.090Z",
+  "last_passed_at": "2026-10-29T18:57:55.090Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 194,
-    "test": 1687
+    "setup": 260,
+    "test": 1753
   },
   "pinned": {
     "aiocache": "0.12.3",
@@ -37,7 +37,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
   "log_tail": ".......                                                                  [100%]\n7 passed in 0.21s\n"

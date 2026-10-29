@@ -1,15 +1,15 @@
 {
   "id": "sqljs-in-memory-queries",
   "status": "passed",
-  "ran_at": "2026-10-29T13:25:13.697Z",
-  "last_passed_at": "2026-10-29T13:25:13.697Z",
+  "ran_at": "2026-10-29T19:20:02.789Z",
+  "last_passed_at": "2026-10-29T19:20:02.789Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1814,
-    "test": 430
+    "setup": 1960,
+    "test": 477
   },
   "pinned": {
     "sql.js": "1.15.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: crud and roundtrip export\nok 1 - crud and roundtrip export\n  ---\n  duration_ms: 56.629295\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 295.679709\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: crud and roundtrip export\nok 1 - crud and roundtrip export\n  ---\n  duration_ms: 48.84526\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 324.302248\n"
 }

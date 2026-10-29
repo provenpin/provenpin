@@ -1,15 +1,15 @@
 {
   "id": "pydantic-ai-testmodel-tools",
   "status": "passed",
-  "ran_at": "2026-10-29T13:21:30.607Z",
-  "last_passed_at": "2026-10-29T13:21:30.607Z",
+  "ran_at": "2026-10-29T19:16:25.827Z",
+  "last_passed_at": "2026-10-29T19:16:25.827Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 456,
-    "test": 3668
+    "setup": 493,
+    "test": 2982
   },
   "pinned": {
     "pydantic-ai-slim": "2.56.0",
@@ -18,7 +18,7 @@
   "installed": {
     "annotated-types": "0.8.0",
     "anyio": "4.15.1",
-    "genai-prices": "0.1.13",
+    "genai-prices": "0.2.0",
     "griffelib": "2.4.1",
     "h11": "0.16.0",
     "httpcore2": "2.16.0",
@@ -26,12 +26,12 @@
     "idna": "3.20",
     "iniconfig": "2.3.1",
     "logfire-api": "5.4.0",
-    "opentelemetry-api": "1.45.1",
+    "opentelemetry-api": "1.45.2",
     "packaging": "26.3",
     "pluggy": "1.7.0",
-    "pydantic": "2.14.1",
+    "pydantic": "2.14.2",
     "pydantic-ai-slim": "2.56.0",
-    "pydantic-core": "2.50.1",
+    "pydantic-core": "2.50.2",
     "pydantic-graph": "2.56.0",
     "pygments": "2.21.0",
     "pytest": "9.1.1",
@@ -52,8 +52,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n=============================== warnings summary ===============================\ntests/test_agent.py::test_typed_output_from_tool_using_deps\n  /tmp/pp-pydantic-ai-testmodel-tools-sIwGRD/.venv/lib/python3.13/site-packages/pydantic_graph/_utils.py:67: DeprecationWarning: There is no current event loop\n    event_loop = asyncio.get_event_loop()\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n4 passed, 1 warning in 0.14s\n"
+  "log_tail": "....                                                                     [100%]\n=============================== warnings summary ===============================\ntests/test_agent.py::test_typed_output_from_tool_using_deps\n  /tmp/pp-pydantic-ai-testmodel-tools-lKc1DX/.venv/lib/python3.13/site-packages/pydantic_graph/_utils.py:67: DeprecationWarning: There is no current event loop\n    event_loop = asyncio.get_event_loop()\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n4 passed, 1 warning in 0.17s\n"
 }

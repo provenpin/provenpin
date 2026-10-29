@@ -1,15 +1,15 @@
 {
   "id": "sqlmodel-sqlalchemy-core-select",
   "status": "passed",
-  "ran_at": "2026-10-29T13:25:18.482Z",
-  "last_passed_at": "2026-10-29T13:25:18.482Z",
+  "ran_at": "2026-10-29T19:20:14.129Z",
+  "last_passed_at": "2026-10-29T19:20:14.129Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 542,
-    "test": 2870
+    "setup": 341,
+    "test": 2171
   },
   "pinned": {
     "sqlmodel": "0.0.48",
@@ -21,8 +21,8 @@
     "iniconfig": "2.3.1",
     "packaging": "26.3",
     "pluggy": "1.7.0",
-    "pydantic": "2.14.1",
-    "pydantic-core": "2.50.1",
+    "pydantic": "2.14.2",
+    "pydantic-core": "2.50.2",
     "pygments": "2.21.0",
     "pytest": "9.1.1",
     "sqlalchemy": "2.1.4",
@@ -43,8 +43,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.69s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.38s\n"
 }

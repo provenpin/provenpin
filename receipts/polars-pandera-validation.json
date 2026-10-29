@@ -1,15 +1,15 @@
 {
   "id": "polars-pandera-validation",
   "status": "passed",
-  "ran_at": "2026-10-29T13:20:35.724Z",
-  "last_passed_at": "2026-10-29T13:20:35.724Z",
+  "ran_at": "2026-10-29T19:15:39.051Z",
+  "last_passed_at": "2026-10-29T19:15:39.051Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 588,
-    "test": 3065
+    "setup": 760,
+    "test": 1725
   },
   "pinned": {
     "polars": "2.0.0",
@@ -25,8 +25,8 @@
     "pluggy": "1.7.0",
     "polars": "2.0.0",
     "polars-runtime-32": "2.0.0",
-    "pydantic": "2.14.1",
-    "pydantic-core": "2.50.1",
+    "pydantic": "2.14.2",
+    "pydantic-core": "2.50.2",
     "pygments": "2.21.0",
     "pytest": "9.1.1",
     "typeguard": "4.6.0",
@@ -46,8 +46,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.91s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.82s\n"
 }

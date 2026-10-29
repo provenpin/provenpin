@@ -1,15 +1,15 @@
 {
   "id": "aiofiles-anyio-temp-io",
   "status": "passed",
-  "ran_at": "2026-10-29T13:02:50.862Z",
-  "last_passed_at": "2026-10-29T13:02:50.862Z",
+  "ran_at": "2026-10-29T18:57:58.451Z",
+  "last_passed_at": "2026-10-29T18:57:58.451Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 287,
-    "test": 8433
+    "setup": 170,
+    "test": 1705
   },
   "pinned": {
     "aiofiles": "25.1.0",
@@ -41,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.23s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.08s\n"
 }

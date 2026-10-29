@@ -1,15 +1,15 @@
 {
   "id": "beartype-pydantic-runtime-check",
   "status": "passed",
-  "ran_at": "2026-10-29T13:04:08.465Z",
-  "last_passed_at": "2026-10-29T13:04:08.465Z",
+  "ran_at": "2026-10-29T18:59:24.846Z",
+  "last_passed_at": "2026-10-29T18:59:24.846Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 504,
-    "test": 1948
+    "setup": 432,
+    "test": 1727
   },
   "pinned": {
     "beartype": "0.23.1",
@@ -41,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.68s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.64s\n"
 }

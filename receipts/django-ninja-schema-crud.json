@@ -1,15 +1,15 @@
 {
   "id": "django-ninja-schema-crud",
   "status": "passed",
-  "ran_at": "2026-10-29T13:07:13.611Z",
-  "last_passed_at": "2026-10-29T13:07:13.611Z",
+  "ran_at": "2026-10-29T19:02:41.481Z",
+  "last_passed_at": "2026-10-29T19:02:41.481Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 909,
-    "test": 2688
+    "setup": 924,
+    "test": 2447
   },
   "pinned": {
     "django": "6.1.2",
@@ -25,8 +25,8 @@
     "iniconfig": "2.3.1",
     "packaging": "26.3",
     "pluggy": "1.7.0",
-    "pydantic": "2.14.1",
-    "pydantic-core": "2.50.1",
+    "pydantic": "2.14.2",
+    "pydantic-core": "2.50.2",
     "pygments": "2.21.0",
     "pytest": "9.1.1",
     "pytest-django": "4.14.0",
@@ -50,8 +50,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40935577961"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\ntests/test_api.py::test_create_returns_201_and_persists\n  /tmp/pp-django-ninja-schema-crud-29eHIF/.venv/lib/python3.13/site-packages/ninja/operation.py:232: DeprecationWarning: Returning tuple (status_code, response) is deprecated. Use Status(status_code, response) instead.\n    return self._result_to_response(request, result, temporal_response)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.79s\n"
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\ntests/test_api.py::test_create_returns_201_and_persists\n  /tmp/pp-django-ninja-schema-crud-6jBebc/.venv/lib/python3.13/site-packages/ninja/operation.py:232: DeprecationWarning: Returning tuple (status_code, response) is deprecated. Use Status(status_code, response) instead.\n    return self._result_to_response(request, result, temporal_response)\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 0.56s\n"
 }
