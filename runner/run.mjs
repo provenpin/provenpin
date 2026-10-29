@@ -4,7 +4,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
-import { RECEIPTS, listRecipeIds, loadRecipe, validateRecipe, recipeHash, fileHashes, readReceipt, parseCounts, rewriteSetup } from "./lib.mjs";
+import { RECEIPTS, listRecipeIds, loadRecipe, validateRecipe, recipeHash, fileHashes, readReceipt, parseCounts, parseFreeze, rewriteSetup } from "./lib.mjs";
 
 const TIMEOUT_MS = +(process.env.PROVENPIN_TIMEOUT_MS ?? 15 * 60 * 1000);
 
@@ -30,6 +30,12 @@ export function runRecipe(id) {
     setup = sh(rewriteSetup(r.setup, r.runtime), work);
     if (setup.code === 0) test = sh(r.test, work);
   }
+  // Python recipes pin direct deps only; record what was really installed so transitive drift shows in the receipt.
+  let installed;
+  if (r.runtime === "python" && setup.code === 0 && fs.existsSync(path.join(work, ".venv/bin/python"))) {
+    const fz = sh("uv pip freeze --python .venv/bin/python", work);
+    if (fz.code === 0) installed = parseFreeze(fz.out);
+  }
   let report;
   if (r.test_report) { const rp = path.join(work, r.test_report); report = setup.code === 0 && fs.existsSync(rp) ? fs.readFileSync(rp, "utf8") : null; }
   const counts = parseCounts(test.out, r.runtime, report);
@@ -43,6 +49,7 @@ export function runRecipe(id) {
     tests: { passed: counts.passed, failed: counts.failed },
     duration_ms: { setup: setup.ms, test: test.ms },
     pinned: r.pinned,
+    ...(installed ? { installed } : {}),
     recipe_hash: recipeHash(r),
     files: fileHashes(r),
     environment: {
