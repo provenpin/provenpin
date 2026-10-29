@@ -1,15 +1,15 @@
 {
   "id": "protobufjs-proto-encode",
   "status": "passed",
-  "ran_at": "2026-10-28T19:15:15.862Z",
-  "last_passed_at": "2026-10-28T19:15:15.862Z",
+  "ran_at": "2026-10-29T01:20:20.494Z",
+  "last_passed_at": "2026-10-29T01:20:20.494Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1872,
-    "test": 421
+    "setup": 1770,
+    "test": 523
   },
   "pinned": {
     "protobufjs": "8.8.1",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: encodes and decodes a Person\nok 1 - encodes and decodes a Person\n  ---\n  duration_ms: 14.806824\n  type: 'test'\n  ...\n# Subtest: verify rejects missing required shape via bad types\nok 2 - verify rejects missing required shape via bad types\n  ---\n  duration_ms: 2.641709\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 259.784173\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: encodes and decodes a Person\nok 1 - encodes and decodes a Person\n  ---\n  duration_ms: 15.463221\n  type: 'test'\n  ...\n# Subtest: verify rejects missing required shape via bad types\nok 2 - verify rejects missing required shape via bad types\n  ---\n  duration_ms: 2.503693\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 309.51801\n"
 }

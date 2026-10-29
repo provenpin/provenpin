@@ -1,15 +1,15 @@
 {
   "id": "mime-types-lookup",
   "status": "passed",
-  "ran_at": "2026-10-28T19:10:13.717Z",
-  "last_passed_at": "2026-10-28T19:10:13.717Z",
+  "ran_at": "2026-10-29T01:15:29.424Z",
+  "last_passed_at": "2026-10-29T01:15:29.424Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2002,
-    "test": 466
+    "setup": 1605,
+    "test": 348
   },
   "pinned": {
     "mime-types": "3.0.2",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: resolves content-type from common extensions\nok 1 - resolves content-type from common extensions\n  ---\n  duration_ms: 1.005879\n  type: 'test'\n  ...\n# Subtest: resolves extension from common types\nok 2 - resolves extension from common types\n  ---\n  duration_ms: 0.283442\n  type: 'test'\n  ...\n# Subtest: builds a full content-type with charset\nok 3 - builds a full content-type with charset\n  ---\n  duration_ms: 0.267422\n  type: 'test'\n  ...\n# Subtest: handles unknown input gracefully\nok 4 - handles unknown input gracefully\n  ---\n  duration_ms: 0.198413\n  type: 'test'\n  ...\n# Subtest: round trips a lookup back to its extension\nok 5 - round trips a lookup back to its extension\n  ---\n  duration_ms: 0.135524\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 280.255611\n"
+  "log_tail": "# Subtest: resolves content-type from common extensions\nok 1 - resolves content-type from common extensions\n  ---\n  duration_ms: 0.546595\n  type: 'test'\n  ...\n# Subtest: resolves extension from common types\nok 2 - resolves extension from common types\n  ---\n  duration_ms: 0.163328\n  type: 'test'\n  ...\n# Subtest: builds a full content-type with charset\nok 3 - builds a full content-type with charset\n  ---\n  duration_ms: 0.13995\n  type: 'test'\n  ...\n# Subtest: handles unknown input gracefully\nok 4 - handles unknown input gracefully\n  ---\n  duration_ms: 0.114438\n  type: 'test'\n  ...\n# Subtest: round trips a lookup back to its extension\nok 5 - round trips a lookup back to its extension\n  ---\n  duration_ms: 0.066602\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 203.552113\n"
 }

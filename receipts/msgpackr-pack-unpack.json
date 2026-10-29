@@ -1,15 +1,15 @@
 {
   "id": "msgpackr-pack-unpack",
   "status": "passed",
-  "ran_at": "2026-10-28T19:10:37.150Z",
-  "last_passed_at": "2026-10-28T19:10:37.150Z",
+  "ran_at": "2026-10-29T01:15:49.214Z",
+  "last_passed_at": "2026-10-29T01:15:49.214Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2231,
-    "test": 339
+    "setup": 2306,
+    "test": 394
   },
   "pinned": {
     "msgpackr": "2.1.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips dates, maps and binary\nok 1 - roundtrips dates, maps and binary\n  ---\n  duration_ms: 3.235101\n  type: 'test'\n  ...\n# Subtest: Packr and Unpackr honor options\nok 2 - Packr and Unpackr honor options\n  ---\n  duration_ms: 0.327001\n  type: 'test'\n  ...\n# Subtest: packed repetitive data is smaller than JSON\nok 3 - packed repetitive data is smaller than JSON\n  ---\n  duration_ms: 0.438659\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 197.401142\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips dates, maps and binary\nok 1 - roundtrips dates, maps and binary\n  ---\n  duration_ms: 3.861528\n  type: 'test'\n  ...\n# Subtest: Packr and Unpackr honor options\nok 2 - Packr and Unpackr honor options\n  ---\n  duration_ms: 0.424351\n  type: 'test'\n  ...\n# Subtest: packed repetitive data is smaller than JSON\nok 3 - packed repetitive data is smaller than JSON\n  ---\n  duration_ms: 0.489292\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 223.723177\n"
 }

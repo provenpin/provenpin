@@ -1,15 +1,15 @@
 {
   "id": "pino-redaction-custom-transport",
   "status": "passed",
-  "ran_at": "2026-10-28T19:14:16.733Z",
-  "last_passed_at": "2026-10-28T19:14:16.733Z",
+  "ran_at": "2026-10-29T01:19:21.394Z",
+  "last_passed_at": "2026-10-29T01:19:21.394Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1673,
-    "test": 304
+    "setup": 2121,
+    "test": 316
   },
   "pinned": {
     "pino": "10.4.0",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40749493731"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: redacts secrets at top level, nested, and in arrays\nok 1 - redacts secrets at top level, nested, and in arrays\n  ---\n  duration_ms: 3.335062\n  type: 'test'\n  ...\n# Subtest: child loggers add bindings and wildcard redaction still applies\nok 2 - child loggers add bindings and wildcard redaction still applies\n  ---\n  duration_ms: 1.219265\n  type: 'test'\n  ...\n# Subtest: errors are serialised with type, message and stack\nok 3 - errors are serialised with type, message and stack\n  ---\n  duration_ms: 1.492404\n  type: 'test'\n  ...\n# Subtest: mixin stamps the AsyncLocalStorage request context on every line\nok 4 - mixin stamps the AsyncLocalStorage request context on every line\n  ---\n  duration_ms: 3.738646\n  type: 'test'\n  ...\n# Subtest: custom pino-abstract-transport forwards only warn and above\nok 5 - custom pino-abstract-transport forwards only warn and above\n  ---\n  duration_ms: 2.447644\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 188.851121\n"
+  "log_tail": "# Subtest: redacts secrets at top level, nested, and in arrays\nok 1 - redacts secrets at top level, nested, and in arrays\n  ---\n  duration_ms: 3.142186\n  type: 'test'\n  ...\n# Subtest: child loggers add bindings and wildcard redaction still applies\nok 2 - child loggers add bindings and wildcard redaction still applies\n  ---\n  duration_ms: 0.579414\n  type: 'test'\n  ...\n# Subtest: errors are serialised with type, message and stack\nok 3 - errors are serialised with type, message and stack\n  ---\n  duration_ms: 1.811852\n  type: 'test'\n  ...\n# Subtest: mixin stamps the AsyncLocalStorage request context on every line\nok 4 - mixin stamps the AsyncLocalStorage request context on every line\n  ---\n  duration_ms: 2.869088\n  type: 'test'\n  ...\n# Subtest: custom pino-abstract-transport forwards only warn and above\nok 5 - custom pino-abstract-transport forwards only warn and above\n  ---\n  duration_ms: 1.940283\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 195.362672\n"
 }

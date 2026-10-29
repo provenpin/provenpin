@@ -1,15 +1,15 @@
 {
   "id": "immer-patches-history",
   "status": "passed",
-  "ran_at": "2026-10-28T19:06:22.146Z",
-  "last_passed_at": "2026-10-28T19:06:22.146Z",
+  "ran_at": "2026-10-29T01:12:00.186Z",
+  "last_passed_at": "2026-10-29T01:12:00.186Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1592,
-    "test": 277
+    "setup": 1847,
+    "test": 327
   },
   "pinned": {
     "immer": "11.1.21",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: produceWithPatches supports undo and redo\nok 1 - produceWithPatches supports undo and redo\n  ---\n  duration_ms: 1.985325\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 163.441121\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: produceWithPatches supports undo and redo\nok 1 - produceWithPatches supports undo and redo\n  ---\n  duration_ms: 2.914036\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 184.493478\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "aiolimiter-httpx-rate-limit",
   "status": "passed",
-  "ran_at": "2026-10-28T18:55:54.095Z",
-  "last_passed_at": "2026-10-28T18:55:54.095Z",
+  "ran_at": "2026-10-29T01:01:57.945Z",
+  "last_passed_at": "2026-10-29T01:01:57.945Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 451,
-    "test": 4790
+    "setup": 303,
+    "test": 2730
   },
   "pinned": {
     "aiolimiter": "1.3.0",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 1.65s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.53s\n"
 }

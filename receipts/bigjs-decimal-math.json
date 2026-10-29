@@ -1,15 +1,15 @@
 {
   "id": "bigjs-decimal-math",
   "status": "passed",
-  "ran_at": "2026-10-28T18:57:32.089Z",
-  "last_passed_at": "2026-10-28T18:57:32.089Z",
+  "ran_at": "2026-10-29T01:03:39.918Z",
+  "last_passed_at": "2026-10-29T01:03:39.918Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2255,
-    "test": 360
+    "setup": 2038,
+    "test": 342
   },
   "pinned": {
     "big.js": "7.0.1",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: 0.1 + 0.2 equals 0.3 with big.js\nok 1 - 0.1 + 0.2 equals 0.3 with big.js\n  ---\n  duration_ms: 1.382752\n  type: 'test'\n  ...\n# Subtest: comparisons use eq and gt\nok 2 - comparisons use eq and gt\n  ---\n  duration_ms: 0.252694\n  type: 'test'\n  ...\n# Subtest: division honours DP and rounding mode\nok 3 - division honours DP and rounding mode\n  ---\n  duration_ms: 0.513512\n  type: 'test'\n  ...\n# Subtest: pow raises integer exponents precisely\nok 4 - pow raises integer exponents precisely\n  ---\n  duration_ms: 0.33062\n  type: 'test'\n  ...\n# Subtest: round applies the requested rounding mode\nok 5 - round applies the requested rounding mode\n  ---\n  duration_ms: 0.220643\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 197.965469\n"
+  "log_tail": "# Subtest: 0.1 + 0.2 equals 0.3 with big.js\nok 1 - 0.1 + 0.2 equals 0.3 with big.js\n  ---\n  duration_ms: 1.290162\n  type: 'test'\n  ...\n# Subtest: comparisons use eq and gt\nok 2 - comparisons use eq and gt\n  ---\n  duration_ms: 0.26557\n  type: 'test'\n  ...\n# Subtest: division honours DP and rounding mode\nok 3 - division honours DP and rounding mode\n  ---\n  duration_ms: 0.482736\n  type: 'test'\n  ...\n# Subtest: pow raises integer exponents precisely\nok 4 - pow raises integer exponents precisely\n  ---\n  duration_ms: 0.320936\n  type: 'test'\n  ...\n# Subtest: round applies the requested rounding mode\nok 5 - round applies the requested rounding mode\n  ---\n  duration_ms: 0.231237\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 181.332784\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "pretty-ms-format",
   "status": "passed",
-  "ran_at": "2026-10-28T19:14:57.268Z",
-  "last_passed_at": "2026-10-28T19:14:57.268Z",
+  "ran_at": "2026-10-29T01:20:01.202Z",
+  "last_passed_at": "2026-10-29T01:20:01.202Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1876,
-    "test": 349
+    "setup": 2019,
+    "test": 346
   },
   "pinned": {
     "pretty-ms": "10.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: formats zero, sub-second and negative durations\nok 1 - formats zero, sub-second and negative durations\n  ---\n  duration_ms: 2.049925\n  type: 'test'\n  ...\n# Subtest: formats multi-hour durations\nok 2 - formats multi-hour durations\n  ---\n  duration_ms: 0.201937\n  type: 'test'\n  ...\n# Subtest: supports compact and verbose styles\nok 3 - supports compact and verbose styles\n  ---\n  duration_ms: 0.242883\n  type: 'test'\n  ...\n# Subtest: supports colon notation\nok 4 - supports colon notation\n  ---\n  duration_ms: 0.272909\n  type: 'test'\n  ...\n# Subtest: supports separate milliseconds and precision options\nok 5 - supports separate milliseconds and precision options\n  ---\n  duration_ms: 0.351527\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 187.776685\n"
+  "log_tail": "# Subtest: formats zero, sub-second and negative durations\nok 1 - formats zero, sub-second and negative durations\n  ---\n  duration_ms: 1.327348\n  type: 'test'\n  ...\n# Subtest: formats multi-hour durations\nok 2 - formats multi-hour durations\n  ---\n  duration_ms: 0.166332\n  type: 'test'\n  ...\n# Subtest: supports compact and verbose styles\nok 3 - supports compact and verbose styles\n  ---\n  duration_ms: 0.239559\n  type: 'test'\n  ...\n# Subtest: supports colon notation\nok 4 - supports colon notation\n  ---\n  duration_ms: 0.283872\n  type: 'test'\n  ...\n# Subtest: supports separate milliseconds and precision options\nok 5 - supports separate milliseconds and precision options\n  ---\n  duration_ms: 0.320792\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 182.738895\n"
 }

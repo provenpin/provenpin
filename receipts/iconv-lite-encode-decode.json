@@ -1,15 +1,15 @@
 {
   "id": "iconv-lite-encode-decode",
   "status": "passed",
-  "ran_at": "2026-10-28T19:06:31.890Z",
-  "last_passed_at": "2026-10-28T19:06:31.890Z",
+  "ran_at": "2026-10-29T01:11:51.090Z",
+  "last_passed_at": "2026-10-29T01:11:51.090Z",
   "tests": {
     "passed": 8,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1641,
-    "test": 501
+    "setup": 1780,
+    "test": 384
   },
   "pinned": {
     "iconv-lite": "0.7.3",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: encodes shift_jis to exact bytes\nok 4 - encodes shift_jis to exact bytes\n  ---\n  duration_ms: 0.302638\n  type: 'test'\n  ...\n# Subtest: decodes shift_jis bytes back to text\nok 5 - decodes shift_jis bytes back to text\n  ---\n  duration_ms: 0.305261\n  type: 'test'\n  ...\n# Subtest: encodes utf16le to exact bytes\nok 6 - encodes utf16le to exact bytes\n  ---\n  duration_ms: 0.141054\n  type: 'test'\n  ...\n# Subtest: decodes utf16le bytes back to text\nok 7 - decodes utf16le bytes back to text\n  ---\n  duration_ms: 0.280903\n  type: 'test'\n  ...\n# Subtest: round trips each supported encoding\nok 8 - round trips each supported encoding\n  ---\n  duration_ms: 0.239444\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 324.387148\n"
+  "log_tail": "# Subtest: encodes shift_jis to exact bytes\nok 4 - encodes shift_jis to exact bytes\n  ---\n  duration_ms: 0.406222\n  type: 'test'\n  ...\n# Subtest: decodes shift_jis bytes back to text\nok 5 - decodes shift_jis bytes back to text\n  ---\n  duration_ms: 0.337593\n  type: 'test'\n  ...\n# Subtest: encodes utf16le to exact bytes\nok 6 - encodes utf16le to exact bytes\n  ---\n  duration_ms: 0.185869\n  type: 'test'\n  ...\n# Subtest: decodes utf16le bytes back to text\nok 7 - decodes utf16le bytes back to text\n  ---\n  duration_ms: 0.353784\n  type: 'test'\n  ...\n# Subtest: round trips each supported encoding\nok 8 - round trips each supported encoding\n  ---\n  duration_ms: 0.280406\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 228.805763\n"
 }

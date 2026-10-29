@@ -1,15 +1,15 @@
 {
   "id": "ts-pattern-discriminated-unions",
   "status": "passed",
-  "ran_at": "2026-10-28T19:21:20.345Z",
-  "last_passed_at": "2026-10-28T19:21:20.345Z",
+  "ran_at": "2026-10-29T01:26:36.060Z",
+  "last_passed_at": "2026-10-29T01:26:36.060Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1832,
-    "test": 343
+    "setup": 1764,
+    "test": 397
   },
   "pinned": {
     "ts-pattern": "5.9.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: exhaustive descriptions\nok 1 - exhaustive descriptions\n  ---\n  duration_ms: 1.423984\n  type: 'test'\n  ...\n# Subtest: totals usd payments and refunds\nok 2 - totals usd payments and refunds\n  ---\n  duration_ms: 0.219307\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 181.783651\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: exhaustive descriptions\nok 1 - exhaustive descriptions\n  ---\n  duration_ms: 1.157023\n  type: 'test'\n  ...\n# Subtest: totals usd payments and refunds\nok 2 - totals usd payments and refunds\n  ---\n  duration_ms: 0.176156\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 235.481911\n"
 }

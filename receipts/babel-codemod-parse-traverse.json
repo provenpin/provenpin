@@ -1,15 +1,15 @@
 {
   "id": "babel-codemod-parse-traverse",
   "status": "passed",
-  "ran_at": "2026-10-28T18:57:03.931Z",
-  "last_passed_at": "2026-10-28T18:57:03.931Z",
+  "ran_at": "2026-10-29T01:03:20.806Z",
+  "last_passed_at": "2026-10-29T01:03:20.806Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2369,
-    "test": 369
+    "setup": 2126,
+    "test": 400
   },
   "pinned": {
     "@babel/parser": "8.0.7",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: renames a binding and all of its references\nok 1 - renames a binding and all of its references\n  ---\n  duration_ms: 10.617043\n  type: 'test'\n  ...\n# Subtest: renames bindings per scope, including shadowed ones\nok 2 - renames bindings per scope, including shadowed ones\n  ---\n  duration_ms: 2.541958\n  type: 'test'\n  ...\n# Subtest: respects TypeScript types while renaming values\nok 3 - respects TypeScript types while renaming values\n  ---\n  duration_ms: 3.091829\n  type: 'test'\n  ...\n# Subtest: removes console.log calls but keeps other statements\nok 4 - removes console.log calls but keeps other statements\n  ---\n  duration_ms: 1.725997\n  type: 'test'\n  ...\n# Subtest: combined codemod reports counts and generates code\nok 5 - combined codemod reports counts and generates code\n  ---\n  duration_ms: 0.711955\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 251.320743\n"
+  "log_tail": "# Subtest: renames a binding and all of its references\nok 1 - renames a binding and all of its references\n  ---\n  duration_ms: 9.572387\n  type: 'test'\n  ...\n# Subtest: renames bindings per scope, including shadowed ones\nok 2 - renames bindings per scope, including shadowed ones\n  ---\n  duration_ms: 2.101619\n  type: 'test'\n  ...\n# Subtest: respects TypeScript types while renaming values\nok 3 - respects TypeScript types while renaming values\n  ---\n  duration_ms: 3.006555\n  type: 'test'\n  ...\n# Subtest: removes console.log calls but keeps other statements\nok 4 - removes console.log calls but keeps other statements\n  ---\n  duration_ms: 1.570819\n  type: 'test'\n  ...\n# Subtest: combined codemod reports counts and generates code\nok 5 - combined codemod reports counts and generates code\n  ---\n  duration_ms: 0.649189\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 273.708331\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "boltons-iterutils-remap",
   "status": "passed",
-  "ran_at": "2026-10-28T18:57:47.161Z",
-  "last_passed_at": "2026-10-28T18:57:47.161Z",
+  "ran_at": "2026-10-29T01:03:57.486Z",
+  "last_passed_at": "2026-10-29T01:03:57.486Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 702,
-    "test": 705
+    "setup": 255,
+    "test": 1537
   },
   "pinned": {
     "boltons": "26.2.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.16s\n"
 }

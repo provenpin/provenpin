@@ -1,15 +1,15 @@
 {
   "id": "faker-polyfactory-seeded",
   "status": "passed",
-  "ran_at": "2026-10-28T19:02:27.428Z",
-  "last_passed_at": "2026-10-28T19:02:27.428Z",
+  "ran_at": "2026-10-29T01:08:30.027Z",
+  "last_passed_at": "2026-10-29T01:08:30.027Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 616,
-    "test": 2513
+    "setup": 500,
+    "test": 1172
   },
   "pinned": {
     "faker": "40.43.0",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.64s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.32s\n"
 }

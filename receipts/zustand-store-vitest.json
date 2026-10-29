@@ -1,15 +1,15 @@
 {
   "id": "zustand-store-vitest",
   "status": "passed",
-  "ran_at": "2026-10-28T19:23:28.713Z",
-  "last_passed_at": "2026-10-28T19:23:28.713Z",
+  "ran_at": "2026-10-29T01:28:25.471Z",
+  "last_passed_at": "2026-10-29T01:28:25.471Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4281,
-    "test": 828
+    "setup": 4161,
+    "test": 658
   },
   "pinned": {
     "zustand": "5.0.15",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-zustand-store-vitest-fi8XUN\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 7\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 19:23:33\n\u001b[2m   Duration \u001b[22m 194ms\u001b[2m (transform 73%, import 14%, tests 8%, worker 4%)\u001b[22m\n\nJSON report written to /tmp/pp-zustand-store-vitest-fi8XUN/test-report.json\n"
+  "log_tail": "\n> test\n> vitest run --reporter=default --reporter=json --outputFile=test-report.json\n\n\n\u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv5.0.4 \u001b[39m\u001b[90m/tmp/pp-zustand-store-vitest-BOcFCi\u001b[39m\n\n \u001b[32m✓\u001b[39m test/cart.test.ts \u001b[2m(\u001b[22m\u001b[2m4 tests\u001b[22m\u001b[2m)\u001b[22m\u001b[32m 8\u001b[2mms\u001b[22m\u001b[39m\n\n\u001b[2m Test Files \u001b[22m \u001b[1m\u001b[32m1 passed\u001b[39m\u001b[22m\u001b[90m (1)\u001b[39m\n\u001b[2m      Tests \u001b[22m \u001b[1m\u001b[32m4 passed\u001b[39m\u001b[22m\u001b[90m (4)\u001b[39m\n\u001b[2m   Start at \u001b[22m 01:28:30\n\u001b[2m   Duration \u001b[22m 177ms\u001b[2m (transform 54%, import 23%, tests 15%, worker 8%)\u001b[22m\n\nJSON report written to /tmp/pp-zustand-store-vitest-BOcFCi/test-report.json\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "openapi-typescript-generate-types",
   "status": "passed",
-  "ran_at": "2026-10-28T19:12:24.905Z",
-  "last_passed_at": "2026-10-28T19:12:24.905Z",
+  "ran_at": "2026-10-29T01:17:35.037Z",
+  "last_passed_at": "2026-10-29T01:17:35.037Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3280,
-    "test": 1488
+    "setup": 3083,
+    "test": 1507
   },
   "pinned": {
     "openapi-typescript": "7.13.0",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40749493731"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: generates a non-empty module from an inline spec\nok 1 - generates a non-empty module from an inline spec\n  ---\n  duration_ms: 17.291367\n  type: 'test'\n  ...\n# Subtest: includes each path key\nok 2 - includes each path key\n  ---\n  duration_ms: 3.984704\n  type: 'test'\n  ...\n# Subtest: includes operation members for methods and operationIds\nok 3 - includes operation members for methods and operationIds\n  ---\n  duration_ms: 3.987769\n  type: 'test'\n  ...\n# Subtest: includes component schema interface members\nok 4 - includes component schema interface members\n  ---\n  duration_ms: 3.341949\n  type: 'test'\n  ...\n# Subtest: includes path parameters, request body and response content\nok 5 - includes path parameters, request body and response content\n  ---\n  duration_ms: 7.834485\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1368.49603\n"
+  "log_tail": "# Subtest: generates a non-empty module from an inline spec\nok 1 - generates a non-empty module from an inline spec\n  ---\n  duration_ms: 24.48093\n  type: 'test'\n  ...\n# Subtest: includes each path key\nok 2 - includes each path key\n  ---\n  duration_ms: 6.197979\n  type: 'test'\n  ...\n# Subtest: includes operation members for methods and operationIds\nok 3 - includes operation members for methods and operationIds\n  ---\n  duration_ms: 5.949696\n  type: 'test'\n  ...\n# Subtest: includes component schema interface members\nok 4 - includes component schema interface members\n  ---\n  duration_ms: 4.630081\n  type: 'test'\n  ...\n# Subtest: includes path parameters, request body and response content\nok 5 - includes path parameters, request body and response content\n  ---\n  duration_ms: 10.596988\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1336.220622\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "tabulate-markdown-report",
   "status": "passed",
-  "ran_at": "2026-10-28T19:20:09.050Z",
-  "last_passed_at": "2026-10-28T19:20:09.050Z",
+  "ran_at": "2026-10-29T01:25:24.071Z",
+  "last_passed_at": "2026-10-29T01:25:24.071Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 230,
-    "test": 1819
+    "setup": 275,
+    "test": 472
   },
   "pinned": {
     "tabulate": "0.10.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
 }

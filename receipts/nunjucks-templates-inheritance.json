@@ -1,15 +1,15 @@
 {
   "id": "nunjucks-templates-inheritance",
   "status": "passed",
-  "ran_at": "2026-10-28T19:11:48.752Z",
-  "last_passed_at": "2026-10-28T19:11:48.752Z",
+  "ran_at": "2026-10-29T01:17:05.423Z",
+  "last_passed_at": "2026-10-29T01:17:05.423Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2002,
-    "test": 411
+    "setup": 2170,
+    "test": 426
   },
   "pinned": {
     "nunjucks": "3.2.4",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: child template extends the base and overrides its blocks\nok 1 - child template extends the base and overrides its blocks\n  ---\n  duration_ms: 13.219833\n  type: 'test'\n  ...\n# Subtest: macro imported from another template renders with its argument\nok 2 - macro imported from another template renders with its argument\n  ---\n  duration_ms: 3.577208\n  type: 'test'\n  ...\n# Subtest: custom filter runs before autoescape\nok 3 - custom filter runs before autoescape\n  ---\n  duration_ms: 2.898097\n  type: 'test'\n  ...\n# Subtest: autoescape escapes html output by default\nok 4 - autoescape escapes html output by default\n  ---\n  duration_ms: 0.64613\n  type: 'test'\n  ...\n# Subtest: safe filter bypasses autoescaping\nok 5 - safe filter bypasses autoescaping\n  ---\n  duration_ms: 0.572121\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 250.634022\n"
+  "log_tail": "# Subtest: child template extends the base and overrides its blocks\nok 1 - child template extends the base and overrides its blocks\n  ---\n  duration_ms: 12.382177\n  type: 'test'\n  ...\n# Subtest: macro imported from another template renders with its argument\nok 2 - macro imported from another template renders with its argument\n  ---\n  duration_ms: 3.889444\n  type: 'test'\n  ...\n# Subtest: custom filter runs before autoescape\nok 3 - custom filter runs before autoescape\n  ---\n  duration_ms: 3.14305\n  type: 'test'\n  ...\n# Subtest: autoescape escapes html output by default\nok 4 - autoescape escapes html output by default\n  ---\n  duration_ms: 0.7015\n  type: 'test'\n  ...\n# Subtest: safe filter bypasses autoescaping\nok 5 - safe filter bypasses autoescaping\n  ---\n  duration_ms: 0.603106\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 259.38491\n"
 }

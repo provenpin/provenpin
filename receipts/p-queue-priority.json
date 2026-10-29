@@ -1,15 +1,15 @@
 {
   "id": "p-queue-priority",
   "status": "passed",
-  "ran_at": "2026-10-28T19:13:12.746Z",
-  "last_passed_at": "2026-10-28T19:13:12.746Z",
+  "ran_at": "2026-10-29T01:18:16.634Z",
+  "last_passed_at": "2026-10-29T01:18:16.634Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1972,
-    "test": 470
+    "setup": 1852,
+    "test": 327
   },
   "pinned": {
     "p-queue": "10.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: runs higher priority jobs first when concurrency is 1\nok 1 - runs higher priority jobs first when concurrency is 1\n  ---\n  duration_ms: 14.905445\n  type: 'test'\n  ...\n# Subtest: respects concurrency\nok 2 - respects concurrency\n  ---\n  duration_ms: 51.806949\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 294.98278\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: runs higher priority jobs first when concurrency is 1\nok 1 - runs higher priority jobs first when concurrency is 1\n  ---\n  duration_ms: 7.887546\n  type: 'test'\n  ...\n# Subtest: respects concurrency\nok 2 - respects concurrency\n  ---\n  duration_ms: 50.29798\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 204.22994\n"
 }

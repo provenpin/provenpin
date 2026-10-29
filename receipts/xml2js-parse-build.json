@@ -1,15 +1,15 @@
 {
   "id": "xml2js-parse-build",
   "status": "passed",
-  "ran_at": "2026-10-28T19:22:48.620Z",
-  "last_passed_at": "2026-10-28T19:22:48.620Z",
+  "ran_at": "2026-10-29T01:27:59.004Z",
+  "last_passed_at": "2026-10-29T01:27:59.004Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1902,
-    "test": 396
+    "setup": 2279,
+    "test": 401
   },
   "pinned": {
     "xml2js": "0.6.2",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses attributes and repeated elements\nok 1 - parses attributes and repeated elements\n  ---\n  duration_ms: 4.111175\n  type: 'test'\n  ...\n# Subtest: builds XML back from parsed data\nok 2 - builds XML back from parsed data\n  ---\n  duration_ms: 3.555449\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 234.290755\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses attributes and repeated elements\nok 1 - parses attributes and repeated elements\n  ---\n  duration_ms: 4.112173\n  type: 'test'\n  ...\n# Subtest: builds XML back from parsed data\nok 2 - builds XML back from parsed data\n  ---\n  duration_ms: 3.74447\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 237.313988\n"
 }

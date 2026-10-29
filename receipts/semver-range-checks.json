@@ -1,15 +1,15 @@
 {
   "id": "semver-range-checks",
   "status": "passed",
-  "ran_at": "2026-10-28T19:18:07.791Z",
-  "last_passed_at": "2026-10-28T19:18:07.791Z",
+  "ran_at": "2026-10-29T01:23:22.341Z",
+  "last_passed_at": "2026-10-29T01:23:22.341Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1795,
-    "test": 325
+    "setup": 1836,
+    "test": 321
   },
   "pinned": {
     "semver": "7.8.5",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: engine checks coerce loose versions like v22.11\nok 1 - engine checks coerce loose versions like v22.11\n  ---\n  duration_ms: 2.664148\n  type: 'test'\n  ...\n# Subtest: plans patch, minor and major upgrades ignoring prereleases\nok 2 - plans patch, minor and major upgrades ignoring prereleases\n  ---\n  duration_ms: 1.45864\n  type: 'test'\n  ...\n# Subtest: sorts and drops invalid versions\nok 3 - sorts and drops invalid versions\n  ---\n  duration_ms: 0.174073\n  type: 'test'\n  ...\n# Subtest: bumps including prerelease ids\nok 4 - bumps including prerelease ids\n  ---\n  duration_ms: 0.414135\n  type: 'test'\n  ...\n# Subtest: ranges: validity, minimum version and prerelease opt-in\nok 5 - ranges: validity, minimum version and prerelease opt-in\n  ---\n  duration_ms: 0.579013\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 188.991717\n"
+  "log_tail": "# Subtest: engine checks coerce loose versions like v22.11\nok 1 - engine checks coerce loose versions like v22.11\n  ---\n  duration_ms: 2.919433\n  type: 'test'\n  ...\n# Subtest: plans patch, minor and major upgrades ignoring prereleases\nok 2 - plans patch, minor and major upgrades ignoring prereleases\n  ---\n  duration_ms: 1.40441\n  type: 'test'\n  ...\n# Subtest: sorts and drops invalid versions\nok 3 - sorts and drops invalid versions\n  ---\n  duration_ms: 0.170151\n  type: 'test'\n  ...\n# Subtest: bumps including prerelease ids\nok 4 - bumps including prerelease ids\n  ---\n  duration_ms: 0.415227\n  type: 'test'\n  ...\n# Subtest: ranges: validity, minimum version and prerelease opt-in\nok 5 - ranges: validity, minimum version and prerelease opt-in\n  ---\n  duration_ms: 0.613362\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 186.689028\n"
 }

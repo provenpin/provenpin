@@ -1,15 +1,15 @@
 {
   "id": "polib-po-catalog-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-28T19:14:36.405Z",
-  "last_passed_at": "2026-10-28T19:14:36.405Z",
+  "ran_at": "2026-10-29T01:19:40.434Z",
+  "last_passed_at": "2026-10-29T01:19:40.434Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 262,
-    "test": 1246
+    "setup": 286,
+    "test": 653
   },
   "pinned": {
     "polib": "1.2.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.07s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
 }

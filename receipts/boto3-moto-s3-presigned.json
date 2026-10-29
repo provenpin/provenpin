@@ -1,15 +1,15 @@
 {
   "id": "boto3-moto-s3-presigned",
   "status": "passed",
-  "ran_at": "2026-10-28T18:57:54.106Z",
-  "last_passed_at": "2026-10-28T18:57:54.106Z",
+  "ran_at": "2026-10-29T01:04:01.372Z",
+  "last_passed_at": "2026-10-29T01:04:01.372Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 783,
-    "test": 4678
+    "setup": 776,
+    "test": 3383
   },
   "pinned": {
     "boto3": "1.43.114",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 3.17s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 2.48s\n"
 }

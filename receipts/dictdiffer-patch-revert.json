@@ -1,15 +1,15 @@
 {
   "id": "dictdiffer-patch-revert",
   "status": "passed",
-  "ran_at": "2026-10-28T19:00:23.934Z",
-  "last_passed_at": "2026-10-28T19:00:23.934Z",
+  "ran_at": "2026-10-29T01:06:27.902Z",
+  "last_passed_at": "2026-10-29T01:06:27.902Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 438,
-    "test": 633
+    "setup": 276,
+    "test": 1528
   },
   "pinned": {
     "dictdiffer": "0.10.0",
@@ -27,7 +27,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"

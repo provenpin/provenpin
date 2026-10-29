@@ -1,15 +1,15 @@
 {
   "id": "devalue-serialize-cycles",
   "status": "passed",
-  "ran_at": "2026-10-28T19:00:19.157Z",
-  "last_passed_at": "2026-10-28T19:00:19.157Z",
+  "ran_at": "2026-10-29T01:06:24.080Z",
+  "last_passed_at": "2026-10-29T01:06:24.080Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1581,
-    "test": 290
+    "setup": 1830,
+    "test": 378
   },
   "pinned": {
     "devalue": "6.0.3",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40749493731"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: preserves cyclic references as the same object\nok 1 - preserves cyclic references as the same object\n  ---\n  duration_ms: 1.51496\n  type: 'test'\n  ...\n# Subtest: preserves repeated references by identity\nok 2 - preserves repeated references by identity\n  ---\n  duration_ms: 0.124701\n  type: 'test'\n  ...\n# Subtest: preserves Date values\nok 3 - preserves Date values\n  ---\n  duration_ms: 0.124\n  type: 'test'\n  ...\n# Subtest: preserves Map entries\nok 4 - preserves Map entries\n  ---\n  duration_ms: 0.162429\n  type: 'test'\n  ...\n# Subtest: throws when stringifying a function\nok 5 - throws when stringifying a function\n  ---\n  duration_ms: 0.37927\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 178.862412\n"
+  "log_tail": "# Subtest: preserves cyclic references as the same object\nok 1 - preserves cyclic references as the same object\n  ---\n  duration_ms: 2.697628\n  type: 'test'\n  ...\n# Subtest: preserves repeated references by identity\nok 2 - preserves repeated references by identity\n  ---\n  duration_ms: 0.255351\n  type: 'test'\n  ...\n# Subtest: preserves Date values\nok 3 - preserves Date values\n  ---\n  duration_ms: 0.261613\n  type: 'test'\n  ...\n# Subtest: preserves Map entries\nok 4 - preserves Map entries\n  ---\n  duration_ms: 0.267815\n  type: 'test'\n  ...\n# Subtest: throws when stringifying a function\nok 5 - throws when stringifying a function\n  ---\n  duration_ms: 0.641117\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 210.414737\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "mustache-html-escape",
   "status": "passed",
-  "ran_at": "2026-10-28T19:10:55.441Z",
-  "last_passed_at": "2026-10-28T19:10:55.441Z",
+  "ran_at": "2026-10-29T01:16:02.127Z",
+  "last_passed_at": "2026-10-29T01:16:02.127Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1440,
-    "test": 261
+    "setup": 1880,
+    "test": 344
   },
   "pinned": {
     "mustache": "4.2.0",
@@ -27,9 +27,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40749493731"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders nested sections and a partial\nok 1 - renders nested sections and a partial\n  ---\n  duration_ms: 1.757947\n  type: 'test'\n  ...\n# Subtest: inverted sections render for empty collections\nok 2 - inverted sections render for empty collections\n  ---\n  duration_ms: 0.1345\n  type: 'test'\n  ...\n# Subtest: escapes user content by default\nok 3 - escapes user content by default\n  ---\n  duration_ms: 0.204844\n  type: 'test'\n  ...\n# Subtest: triple and ampersand allow unescaped output\nok 4 - triple and ampersand allow unescaped output\n  ---\n  duration_ms: 0.214418\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 143.300165\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renders nested sections and a partial\nok 1 - renders nested sections and a partial\n  ---\n  duration_ms: 2.324212\n  type: 'test'\n  ...\n# Subtest: inverted sections render for empty collections\nok 2 - inverted sections render for empty collections\n  ---\n  duration_ms: 0.203801\n  type: 'test'\n  ...\n# Subtest: escapes user content by default\nok 3 - escapes user content by default\n  ---\n  duration_ms: 0.281638\n  type: 'test'\n  ...\n# Subtest: triple and ampersand allow unescaped output\nok 4 - triple and ampersand allow unescaped output\n  ---\n  duration_ms: 0.301184\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 185.762609\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "intl-messageformat-icu-plural",
   "status": "passed",
-  "ran_at": "2026-10-28T19:06:40.729Z",
-  "last_passed_at": "2026-10-28T19:06:40.729Z",
+  "ran_at": "2026-10-29T01:12:10.552Z",
+  "last_passed_at": "2026-10-29T01:12:10.552Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1740,
-    "test": 596
+    "setup": 1677,
+    "test": 370
   },
   "pinned": {
     "intl-messageformat": "12.1.3",
@@ -26,9 +26,9 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "node v22.23.3",
-    "runner": "github-actions 40749493731"
+    "runtime": "node v22.23.4",
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: select picks a branch by gender and falls back to other\nok 3 - select picks a branch by gender and falls back to other\n  ---\n  duration_ms: 0.683815\n  type: 'test'\n  ...\n# Subtest: number formatting differs between locales\nok 4 - number formatting differs between locales\n  ---\n  duration_ms: 0.458415\n  type: 'test'\n  ...\n# Subtest: date formatting uses locale order with UTC override\nok 5 - date formatting uses locale order with UTC override\n  ---\n  duration_ms: 4.579705\n  type: 'test'\n  ...\n# Subtest: nested select and plural resolve inner arguments\nok 6 - nested select and plural resolve inner arguments\n  ---\n  duration_ms: 1.283984\n  type: 'test'\n  ...\n# Subtest: rich text tags call the matching formatter function\nok 7 - rich text tags call the matching formatter function\n  ---\n  duration_ms: 0.469772\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 467.315135\n"
+  "log_tail": "# Subtest: select picks a branch by gender and falls back to other\nok 3 - select picks a branch by gender and falls back to other\n  ---\n  duration_ms: 0.722806\n  type: 'test'\n  ...\n# Subtest: number formatting differs between locales\nok 4 - number formatting differs between locales\n  ---\n  duration_ms: 0.559546\n  type: 'test'\n  ...\n# Subtest: date formatting uses locale order with UTC override\nok 5 - date formatting uses locale order with UTC override\n  ---\n  duration_ms: 7.707192\n  type: 'test'\n  ...\n# Subtest: nested select and plural resolve inner arguments\nok 6 - nested select and plural resolve inner arguments\n  ---\n  duration_ms: 1.811965\n  type: 'test'\n  ...\n# Subtest: rich text tags call the matching formatter function\nok 7 - rich text tags call the matching formatter function\n  ---\n  duration_ms: 0.607733\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 229.936939\n"
 }

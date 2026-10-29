@@ -1,15 +1,15 @@
 {
   "id": "seedrandom-deterministic",
   "status": "passed",
-  "ran_at": "2026-10-28T19:18:02.796Z",
-  "last_passed_at": "2026-10-28T19:18:02.796Z",
+  "ran_at": "2026-10-29T01:23:22.001Z",
+  "last_passed_at": "2026-10-29T01:23:22.001Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1737,
-    "test": 244
+    "setup": 1640,
+    "test": 371
   },
   "pinned": {
     "seedrandom": "3.0.5",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40749493731"
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
-  "log_tail": "# Subtest: same seed produces identical sequences\nok 1 - same seed produces identical sequences\n  ---\n  duration_ms: 1.400736\n  type: 'test'\n  ...\n# Subtest: different seeds produce different sequences\nok 2 - different seeds produce different sequences\n  ---\n  duration_ms: 0.185221\n  type: 'test'\n  ...\n# Subtest: alea generator is reproducible\nok 3 - alea generator is reproducible\n  ---\n  duration_ms: 0.209621\n  type: 'test'\n  ...\n# Subtest: withSeededMath patches Math.random then restores it\nok 4 - withSeededMath patches Math.random then restores it\n  ---\n  duration_ms: 0.151015\n  type: 'test'\n  ...\n# Subtest: withSeededMath restores Math.random even on error\nok 5 - withSeededMath restores Math.random even on error\n  ---\n  duration_ms: 0.21517\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 132.309083\n"
+  "log_tail": "# Subtest: same seed produces identical sequences\nok 1 - same seed produces identical sequences\n  ---\n  duration_ms: 2.754989\n  type: 'test'\n  ...\n# Subtest: different seeds produce different sequences\nok 2 - different seeds produce different sequences\n  ---\n  duration_ms: 0.440087\n  type: 'test'\n  ...\n# Subtest: alea generator is reproducible\nok 3 - alea generator is reproducible\n  ---\n  duration_ms: 0.516931\n  type: 'test'\n  ...\n# Subtest: withSeededMath patches Math.random then restores it\nok 4 - withSeededMath patches Math.random then restores it\n  ---\n  duration_ms: 0.451524\n  type: 'test'\n  ...\n# Subtest: withSeededMath restores Math.random even on error\nok 5 - withSeededMath restores Math.random even on error\n  ---\n  duration_ms: 0.476992\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 205.082411\n"
 }

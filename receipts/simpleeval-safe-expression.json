@@ -1,15 +1,15 @@
 {
   "id": "simpleeval-safe-expression",
   "status": "passed",
-  "ran_at": "2026-10-28T19:18:23.557Z",
-  "last_passed_at": "2026-10-28T19:18:23.557Z",
+  "ran_at": "2026-10-29T01:23:42.644Z",
+  "last_passed_at": "2026-10-29T01:23:42.644Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 337,
-    "test": 1374
+    "setup": 256,
+    "test": 653
   },
   "pinned": {
     "simpleeval": "1.0.8",
@@ -26,8 +26,8 @@
   "environment": {
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
-    "runtime": "Python 3.13.16",
-    "runner": "github-actions 40749493731"
+    "runtime": "Python 3.13.17",
+    "runner": "github-actions 40797764805"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.02s\n"
