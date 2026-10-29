@@ -1,6 +1,6 @@
 id: express-openapi-validator-spec
-title: "express-openapi-validator request and response validation"
-summary: "Validate an Express app against an inline OpenAPI 3 spec using express-openapi-validator, returning validation errors as JSON and testing valid and invalid requests offline with supertest."
+title: "express-openapi-validator request validation"
+summary: "Validate Express requests (path, query and JSON body) against an inline OpenAPI 3 spec using express-openapi-validator, returning validation errors as JSON and testing valid and invalid requests offline with supertest. Response validation is switched on but not tested."
 language: typescript
 runtime: node
 runtime_version: "22"

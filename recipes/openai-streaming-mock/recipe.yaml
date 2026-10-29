@@ -1,6 +1,6 @@
 id: openai-streaming-mock
 title: "OpenAI Node SDK streaming chat completions, tested with a mocked SSE fetch"
-summary: "Stream chat completion deltas with the OpenAI SDK (for await over chunks), accumulate text and usage, and handle aborts, tested offline with a fake fetch that returns an SSE body."
+summary: "Stream chat completion deltas with the OpenAI SDK (for await over chunks), accumulate text and usage, and pass an AbortSignal through (an already-aborted signal rejects), tested offline with a fake fetch that returns an SSE body."
 language: typescript
 runtime: node
 runtime_version: "22"
