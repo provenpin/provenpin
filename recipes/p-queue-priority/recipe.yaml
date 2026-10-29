@@ -1,6 +1,6 @@
 id: p-queue-priority
 title: "p-queue priority async task queue"
-summary: "Schedule async tasks with p-queue with a concurrency cap and priority ordering, using pause() and start() so queued higher-priority jobs run first. Tested offline."
+summary: "Schedule async tasks with p-queue using a concurrency cap and priority ordering; pause() and start() let queued higher-priority jobs run first. Tested offline."
 language: typescript
 runtime: node
 runtime_version: "22"
