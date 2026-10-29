@@ -1,25 +1,25 @@
 {
   "id": "p-queue-priority",
   "status": "passed",
-  "ran_at": "2026-10-29T13:18:59.688Z",
-  "last_passed_at": "2026-10-29T13:18:59.688Z",
+  "ran_at": "2026-10-29T16:39:39.953Z",
+  "last_passed_at": "2026-10-29T16:39:39.953Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1417,
-    "test": 276
+    "setup": 1862,
+    "test": 390
   },
   "pinned": {
     "p-queue": "10.0.0",
     "@types/node": "26.6.5",
     "tsx": "4.23.15"
   },
-  "recipe_hash": "sha256:a34ab0618c564efdc8cc0a94968a94bc9be5817fdf0d1e415a9c694126b645d3",
+  "recipe_hash": "sha256:563e3cfd9f28c9a819adda8f8a57199379d48513f673b042e08cf5f1160f0d73",
   "files": {
     "recipes/p-queue-priority/package.json": "sha256:ac0f7a6d1c8017a7f3dbd7005d14151a7baa13ae57b06ec59c4de9176adb4098",
-    "recipes/p-queue-priority/recipe.yaml": "sha256:19be6150556da7234a99701f1a1ec5cec2724ec4643b23544acf665899e7674c",
+    "recipes/p-queue-priority/recipe.yaml": "sha256:03bb9710e781f8831ce5e521a43d9db9bc2834573551b7f43f68d23556e7d5e3",
     "recipes/p-queue-priority/src/jobs.ts": "sha256:def3b68295db2af1f8a50e3c32098e3f169d2dc36275058651194b8f76a71c08",
     "recipes/p-queue-priority/test/jobs.test.ts": "sha256:48d6851a940b94c7b77624679af4ec586f0d5afa05c5c70a7f1881b0bf26a816"
   },
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40878186517"
+    "runner": "github-actions 40913669944"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: runs higher priority jobs first when concurrency is 1\nok 1 - runs higher priority jobs first when concurrency is 1\n  ---\n  duration_ms: 6.787545\n  type: 'test'\n  ...\n# Subtest: respects concurrency\nok 2 - respects concurrency\n  ---\n  duration_ms: 51.039784\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 172.832736\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: runs higher priority jobs first when concurrency is 1\nok 1 - runs higher priority jobs first when concurrency is 1\n  ---\n  duration_ms: 9.507069\n  type: 'test'\n  ...\n# Subtest: respects concurrency\nok 2 - respects concurrency\n  ---\n  duration_ms: 51.551158\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 235.693774\n"
 }
