@@ -71,6 +71,16 @@ export function readReceipt(id) {
   return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : null;
 }
 
+/** `uv pip freeze` output -> { name: version }, sorted by name; lines other than `name==version` are skipped. */
+export function parseFreeze(out) {
+  const m = {};
+  for (const line of out.split("\n")) {
+    const x = /^([A-Za-z0-9][A-Za-z0-9._-]*)==(\S+)$/.exec(line.trim());
+    if (x) m[x[1]] = x[2];
+  }
+  return Object.fromEntries(Object.keys(m).sort().map((k) => [k, m[k]]));
+}
+
 /** Counts from a Vitest/Jest-style JSON report ({ numPassedTests, numFailedTests, ... }). */
 export function parseJsonReport(text) {
   const j = JSON.parse(text);

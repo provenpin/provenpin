@@ -36,3 +36,8 @@ test("staleness comes from staleness.json, 'unchecked' when the recipe has no en
   // the receipts feed shows the same entry
   assert.deepEqual(buildReceipts(built, st).recipes.find((r) => r.id === a.id).staleness, ra.staleness);
 });
+
+test("installed versions stay in receipts/ and are not served", () => {
+  for (const r of idx.recipes) assert.equal("installed" in r.receipt, false, r.id);
+  for (const r of buildReceipts(idx, { checked_at: null, recipes: {} }).recipes) assert.equal("installed" in r, false, r.id);
+});

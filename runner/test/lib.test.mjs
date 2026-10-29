@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseJsonReport, parseJunit, parseCounts, listRecipeIds, loadRecipe, validateRecipe } from "../lib.mjs";
+import { parseJsonReport, parseJunit, parseCounts, parseFreeze, listRecipeIds, loadRecipe, validateRecipe } from "../lib.mjs";
 import { findAffected } from "../affected.mjs";
 
 test("parses node and pytest counts", () => {
@@ -43,4 +43,11 @@ test("fileHashes covers the same files as recipeHash with repo-relative paths", 
   const fh = fileHashes(r);
   assert.deepEqual(Object.keys(fh).sort(), ["recipe.yaml", ...r.files].map((f) => `recipes/${id}/${f}`).sort());
   for (const v of Object.values(fh)) assert.match(v, /^sha256:[0-9a-f]{64}$/);
+});
+
+test("parses uv pip freeze into a sorted name -> version map", () => {
+  const out = "pytest==9.1.1\nmultidict==7.2.1\n-e file:///tmp/x\nfoo @ file:///tmp/foo.whl\n\nlitestar==2.24.0\n";
+  assert.deepEqual(parseFreeze(out), { litestar: "2.24.0", multidict: "7.2.1", pytest: "9.1.1" });
+  assert.deepEqual(Object.keys(parseFreeze(out)), ["litestar", "multidict", "pytest"]);
+  assert.deepEqual(parseFreeze(""), {});
 });
