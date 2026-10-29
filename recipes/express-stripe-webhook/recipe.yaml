@@ -1,6 +1,6 @@
 id: express-stripe-webhook
 title: "Express 5 + Stripe webhook signature verification"
-summary: "Verify Stripe webhook signatures in Express 5 using the raw body, then dispatch on event type. Tested offline with generated test headers."
+summary: "Verify Stripe webhook signatures in Express 5 using the raw body, then pass the verified event to a handler callback. Tested offline with generated test headers, including bad and missing signatures."
 language: typescript
 runtime: node
 runtime_version: "22"

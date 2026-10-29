@@ -1,6 +1,6 @@
 id: cache-manager-memory-store
-title: "cache-manager memory store wrap and mset"
-summary: "Create a cache-manager cache backed by Keyv Map storage, wrap loaders, and multi-set values offline."
+title: "cache-manager memory store get, set and mset"
+summary: "Create a cache-manager cache backed by an in-memory Keyv store, then set, get, delete, multi-set and multi-get values offline."
 language: typescript
 runtime: node
 runtime_version: "22"

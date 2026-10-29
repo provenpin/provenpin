@@ -1,6 +1,6 @@
 id: kysely-sqlite-queries
 title: "Kysely + better-sqlite3 typed queries"
-summary: "Type-safe SQL with Kysely on SQLite, including a schema migration, joins and a transaction."
+summary: "Type-safe SQL with Kysely on in-memory SQLite: create tables with the schema builder, insert rows in a transaction and read them back with a join."
 language: typescript
 runtime: node
 runtime_version: "22"

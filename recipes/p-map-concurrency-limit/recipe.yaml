@@ -1,6 +1,6 @@
 id: p-map-concurrency-limit
 title: "p-map concurrency-limited async mapping"
-summary: "Map an async iterator with p-map while capping concurrency and preserving result order."
+summary: "Map an array through an async function with p-map while capping concurrency and preserving result order."
 language: typescript
 runtime: node
 runtime_version: "22"

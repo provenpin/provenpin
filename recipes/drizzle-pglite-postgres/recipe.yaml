@@ -1,6 +1,6 @@
 id: drizzle-pglite-postgres
 title: "Drizzle ORM + PGlite in-memory Postgres"
-summary: "Real Postgres semantics in tests with no server: Drizzle ORM on PGlite (WASM Postgres) with relations, returning() and transactions."
+summary: "Real Postgres semantics in tests with no server: Drizzle ORM on PGlite (WASM Postgres) with a foreign key, a join, returning() and a transaction that rolls back on a unique violation."
 language: typescript
 runtime: node
 runtime_version: "22"
