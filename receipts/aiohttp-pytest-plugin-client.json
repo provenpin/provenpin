@@ -1,15 +1,15 @@
 {
   "id": "aiohttp-pytest-plugin-client",
   "status": "passed",
-  "ran_at": "2026-10-29T07:01:14.653Z",
-  "last_passed_at": "2026-10-29T07:01:14.653Z",
+  "ran_at": "2026-10-29T13:02:33.424Z",
+  "last_passed_at": "2026-10-29T13:02:33.424Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 493,
-    "test": 4624
+    "setup": 374,
+    "test": 1252
   },
   "pinned": {
     "aiohttp": "3.14.5",
@@ -48,8 +48,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.04s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 0.03s\n"
 }

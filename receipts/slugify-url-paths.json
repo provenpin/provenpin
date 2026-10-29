@@ -1,15 +1,15 @@
 {
   "id": "slugify-url-paths",
   "status": "passed",
-  "ran_at": "2026-10-29T07:22:36.181Z",
-  "last_passed_at": "2026-10-29T07:22:36.181Z",
+  "ran_at": "2026-10-29T13:24:28.060Z",
+  "last_passed_at": "2026-10-29T13:24:28.060Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1313,
-    "test": 232
+    "setup": 1794,
+    "test": 409
   },
   "pinned": {
     "slugify": "1.6.9",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: slugifies titles\nok 1 - slugifies titles\n  ---\n  duration_ms: 0.63679\n  type: 'test'\n  ...\n# Subtest: uniqueSlug appends suffix\nok 2 - uniqueSlug appends suffix\n  ---\n  duration_ms: 0.110024\n  type: 'test'\n  ...\n# Subtest: productPath joins segments\nok 3 - productPath joins segments\n  ---\n  duration_ms: 0.068612\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 126.983433\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: slugifies titles\nok 1 - slugifies titles\n  ---\n  duration_ms: 1.110415\n  type: 'test'\n  ...\n# Subtest: uniqueSlug appends suffix\nok 2 - uniqueSlug appends suffix\n  ---\n  duration_ms: 0.192279\n  type: 'test'\n  ...\n# Subtest: productPath joins segments\nok 3 - productPath joins segments\n  ---\n  duration_ms: 0.153136\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 232.895881\n"
 }

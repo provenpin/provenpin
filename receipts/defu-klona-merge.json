@@ -1,15 +1,15 @@
 {
   "id": "defu-klona-merge",
   "status": "passed",
-  "ran_at": "2026-10-29T07:05:25.744Z",
-  "last_passed_at": "2026-10-29T07:05:25.744Z",
+  "ran_at": "2026-10-29T13:06:52.065Z",
+  "last_passed_at": "2026-10-29T13:06:52.065Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1704,
-    "test": 839
+    "setup": 1635,
+    "test": 342
   },
   "pinned": {
     "defu": "6.1.7",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: applies nested defaults\nok 1 - applies nested defaults\n  ---\n  duration_ms: 1.778759\n  type: 'test'\n  ...\n# Subtest: concatenates arrays by default\nok 2 - concatenates arrays by default\n  ---\n  duration_ms: 0.131327\n  type: 'test'\n  ...\n# Subtest: replaces arrays with a custom defu merger\nok 3 - replaces arrays with a custom defu merger\n  ---\n  duration_ms: 0.170136\n  type: 'test'\n  ...\n# Subtest: klona clone is independent from the merged source\nok 4 - klona clone is independent from the merged source\n  ---\n  duration_ms: 0.297316\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 486.828406\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: applies nested defaults\nok 1 - applies nested defaults\n  ---\n  duration_ms: 2.043189\n  type: 'test'\n  ...\n# Subtest: concatenates arrays by default\nok 2 - concatenates arrays by default\n  ---\n  duration_ms: 0.155434\n  type: 'test'\n  ...\n# Subtest: replaces arrays with a custom defu merger\nok 3 - replaces arrays with a custom defu merger\n  ---\n  duration_ms: 0.212469\n  type: 'test'\n  ...\n# Subtest: klona clone is independent from the merged source\nok 4 - klona clone is independent from the merged source\n  ---\n  duration_ms: 0.340071\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 176.728065\n"
 }

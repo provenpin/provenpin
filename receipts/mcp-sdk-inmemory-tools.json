@@ -1,15 +1,15 @@
 {
   "id": "mcp-sdk-inmemory-tools",
   "status": "passed",
-  "ran_at": "2026-10-29T07:14:31.290Z",
-  "last_passed_at": "2026-10-29T07:14:31.290Z",
+  "ran_at": "2026-10-29T13:16:03.285Z",
+  "last_passed_at": "2026-10-29T13:16:03.285Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3093,
-    "test": 404
+    "setup": 4243,
+    "test": 570
   },
   "pinned": {
     "@modelcontextprotocol/sdk": "1.32.1",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists the two registered tools\nok 1 - lists the two registered tools\n  ---\n  duration_ms: 17.076624\n  type: 'test'\n  ...\n# Subtest: callTool returns text content\nok 2 - callTool returns text content\n  ---\n  duration_ms: 2.443208\n  type: 'test'\n  ...\n# Subtest: readResource returns the registered resource\nok 3 - readResource returns the registered resource\n  ---\n  duration_ms: 1.784119\n  type: 'test'\n  ...\n# Subtest: callTool reports an error result for invalid input\nok 4 - callTool reports an error result for invalid input\n  ---\n  duration_ms: 1.235144\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 291.976947\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: lists the two registered tools\nok 1 - lists the two registered tools\n  ---\n  duration_ms: 27.156027\n  type: 'test'\n  ...\n# Subtest: callTool returns text content\nok 2 - callTool returns text content\n  ---\n  duration_ms: 3.737622\n  type: 'test'\n  ...\n# Subtest: readResource returns the registered resource\nok 3 - readResource returns the registered resource\n  ---\n  duration_ms: 2.749551\n  type: 'test'\n  ...\n# Subtest: callTool reports an error result for invalid input\nok 4 - callTool reports an error result for invalid input\n  ---\n  duration_ms: 1.936343\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 428.383737\n"
 }

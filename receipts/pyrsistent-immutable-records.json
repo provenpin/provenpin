@@ -1,15 +1,15 @@
 {
   "id": "pyrsistent-immutable-records",
   "status": "passed",
-  "ran_at": "2026-10-29T07:20:21.106Z",
-  "last_passed_at": "2026-10-29T07:20:21.106Z",
+  "ran_at": "2026-10-29T13:22:04.576Z",
+  "last_passed_at": "2026-10-29T13:22:04.576Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 296,
-    "test": 1189
+    "setup": 295,
+    "test": 437
   },
   "pinned": {
     "pyrsistent": "0.20.0",
@@ -35,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.05s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
 }

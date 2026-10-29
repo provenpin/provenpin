@@ -1,15 +1,15 @@
 {
   "id": "tough-cookie-jar",
   "status": "passed",
-  "ran_at": "2026-10-29T07:25:00.017Z",
-  "last_passed_at": "2026-10-29T07:25:00.017Z",
+  "ran_at": "2026-10-29T13:26:41.793Z",
+  "last_passed_at": "2026-10-29T13:26:41.793Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1779,
-    "test": 473
+    "setup": 1905,
+    "test": 423
   },
   "pinned": {
     "tough-cookie": "6.0.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "# Subtest: does not leak cookies across domains\nok 2 - does not leak cookies across domains\n  ---\n  duration_ms: 0.869977\n  type: 'test'\n  ...\n# Subtest: rejects a cookie whose domain does not match the URL\nok 3 - rejects a cookie whose domain does not match the URL\n  ---\n  duration_ms: 0.509279\n  type: 'test'\n  ...\n# Subtest: domainMatches is case insensitive and covers subdomains\nok 4 - domainMatches is case insensitive and covers subdomains\n  ---\n  duration_ms: 0.151085\n  type: 'test'\n  ...\n# Subtest: round trips a jar through JSON\nok 5 - round trips a jar through JSON\n  ---\n  duration_ms: 1.428679\n  type: 'test'\n  ...\n# Subtest: expiring a cookie removes it from the jar\nok 6 - expiring a cookie removes it from the jar\n  ---\n  duration_ms: 0.987052\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 287.638468\n"
+  "log_tail": "# Subtest: does not leak cookies across domains\nok 2 - does not leak cookies across domains\n  ---\n  duration_ms: 0.882673\n  type: 'test'\n  ...\n# Subtest: rejects a cookie whose domain does not match the URL\nok 3 - rejects a cookie whose domain does not match the URL\n  ---\n  duration_ms: 0.54502\n  type: 'test'\n  ...\n# Subtest: domainMatches is case insensitive and covers subdomains\nok 4 - domainMatches is case insensitive and covers subdomains\n  ---\n  duration_ms: 0.131386\n  type: 'test'\n  ...\n# Subtest: round trips a jar through JSON\nok 5 - round trips a jar through JSON\n  ---\n  duration_ms: 1.472006\n  type: 'test'\n  ...\n# Subtest: expiring a cookie removes it from the jar\nok 6 - expiring a cookie removes it from the jar\n  ---\n  duration_ms: 1.017505\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 271.602749\n"
 }

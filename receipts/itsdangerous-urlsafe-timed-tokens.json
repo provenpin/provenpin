@@ -1,15 +1,15 @@
 {
   "id": "itsdangerous-urlsafe-timed-tokens",
-  "status": "failed",
-  "ran_at": "2026-10-29T07:11:40.717Z",
-  "last_passed_at": "2026-10-29T01:12:28.513Z",
+  "status": "passed",
+  "ran_at": "2026-10-29T13:13:04.378Z",
+  "last_passed_at": "2026-10-29T13:13:04.378Z",
   "tests": {
-    "passed": 5,
-    "failed": 1
+    "passed": 6,
+    "failed": 0
   },
   "duration_ms": {
-    "setup": 261,
-    "test": 1675
+    "setup": 449,
+    "test": 2727
   },
   "pinned": {
     "itsdangerous": "2.2.0",
@@ -40,8 +40,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": ".....F                                                                   [100%]\n=================================== FAILURES ===================================\n_______________________ test_tampered_token_is_rejected ________________________\n\n    def test_tampered_token_is_rejected():\n        token = tokens.make_email_token(42)\n>       with pytest.raises(BadSignature):\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       Failed: DID NOT RAISE BadSignature\n\ntests/test_tokens.py:50: Failed\n=========================== short test summary info ============================\nFAILED tests/test_tokens.py::test_tampered_token_is_rejected - Failed: DID NOT RAISE BadSignature\n1 failed, 5 passed in 0.84s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.91s\n"
 }

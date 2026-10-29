@@ -1,15 +1,15 @@
 {
   "id": "pendulum-period-range",
   "status": "passed",
-  "ran_at": "2026-10-29T07:18:12.116Z",
-  "last_passed_at": "2026-10-29T07:18:12.116Z",
+  "ran_at": "2026-10-29T13:19:46.209Z",
+  "last_passed_at": "2026-10-29T13:19:46.209Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 340,
-    "test": 770
+    "setup": 393,
+    "test": 1027
   },
   "pinned": {
     "pendulum": "3.3.0",
@@ -38,7 +38,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.13s\n"

@@ -1,15 +1,15 @@
 {
   "id": "ts-morph-codegen-ast-edit",
   "status": "passed",
-  "ran_at": "2026-10-29T07:25:21.922Z",
-  "last_passed_at": "2026-10-29T07:25:21.922Z",
+  "ran_at": "2026-10-29T13:27:05.469Z",
+  "last_passed_at": "2026-10-29T13:27:05.469Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1996,
-    "test": 4420
+    "setup": 1995,
+    "test": 3189
   },
   "pinned": {
     "ts-morph": "28.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "# Subtest: generates a typed client module\nok 1 - generates a typed client module\n  ---\n  duration_ms: 61.996007\n  type: 'test'\n  ...\n# Subtest: generated code type-checks, broken code does not\nok 2 - generated code type-checks, broken code does not\n  ---\n  duration_ms: 2816.875543\n  type: 'test'\n  ...\n# Subtest: rename updates call sites and var becomes const\nok 3 - rename updates call sites and var becomes const\n  ---\n  duration_ms: 293.857605\n  type: 'test'\n  ...\n# Subtest: rename crosses files through imports\nok 4 - rename crosses files through imports\n  ---\n  duration_ms: 262.913465\n  type: 'test'\n  ...\n# Subtest: strip console.log statements\nok 5 - strip console.log statements\n  ---\n  duration_ms: 3.691319\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 4240.135825\n"
+  "log_tail": "# Subtest: generates a typed client module\nok 1 - generates a typed client module\n  ---\n  duration_ms: 43.203589\n  type: 'test'\n  ...\n# Subtest: generated code type-checks, broken code does not\nok 2 - generated code type-checks, broken code does not\n  ---\n  duration_ms: 1900.903523\n  type: 'test'\n  ...\n# Subtest: rename updates call sites and var becomes const\nok 3 - rename updates call sites and var becomes const\n  ---\n  duration_ms: 212.358318\n  type: 'test'\n  ...\n# Subtest: rename crosses files through imports\nok 4 - rename crosses files through imports\n  ---\n  duration_ms: 183.330519\n  type: 'test'\n  ...\n# Subtest: strip console.log statements\nok 5 - strip console.log statements\n  ---\n  duration_ms: 2.703382\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3062.006614\n"
 }

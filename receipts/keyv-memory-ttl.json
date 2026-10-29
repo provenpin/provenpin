@@ -1,15 +1,15 @@
 {
   "id": "keyv-memory-ttl",
   "status": "passed",
-  "ran_at": "2026-10-29T07:13:08.078Z",
-  "last_passed_at": "2026-10-29T07:13:08.078Z",
+  "ran_at": "2026-10-29T13:14:34.730Z",
+  "last_passed_at": "2026-10-29T13:14:34.730Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1557,
-    "test": 508
+    "setup": 1755,
+    "test": 503
   },
   "pinned": {
     "keyv": "6.1.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: stores and retrieves values\nok 1 - stores and retrieves values\n  ---\n  duration_ms: 2.813528\n  type: 'test'\n  ...\n# Subtest: ttl expires entries\nok 2 - ttl expires entries\n  ---\n  duration_ms: 151.306949\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 343.463666\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: stores and retrieves values\nok 1 - stores and retrieves values\n  ---\n  duration_ms: 2.983663\n  type: 'test'\n  ...\n# Subtest: ttl expires entries\nok 2 - ttl expires entries\n  ---\n  duration_ms: 150.90482\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 342.079817\n"
 }

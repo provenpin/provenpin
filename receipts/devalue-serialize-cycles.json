@@ -1,15 +1,15 @@
 {
   "id": "devalue-serialize-cycles",
   "status": "passed",
-  "ran_at": "2026-10-29T07:05:37.507Z",
-  "last_passed_at": "2026-10-29T07:05:37.507Z",
+  "ran_at": "2026-10-29T13:06:58.599Z",
+  "last_passed_at": "2026-10-29T13:06:58.599Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1649,
-    "test": 364
+    "setup": 1548,
+    "test": 389
   },
   "pinned": {
     "devalue": "6.0.3",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "# Subtest: preserves cyclic references as the same object\nok 1 - preserves cyclic references as the same object\n  ---\n  duration_ms: 2.507643\n  type: 'test'\n  ...\n# Subtest: preserves repeated references by identity\nok 2 - preserves repeated references by identity\n  ---\n  duration_ms: 0.239219\n  type: 'test'\n  ...\n# Subtest: preserves Date values\nok 3 - preserves Date values\n  ---\n  duration_ms: 0.263344\n  type: 'test'\n  ...\n# Subtest: preserves Map entries\nok 4 - preserves Map entries\n  ---\n  duration_ms: 0.265608\n  type: 'test'\n  ...\n# Subtest: throws when stringifying a function\nok 5 - throws when stringifying a function\n  ---\n  duration_ms: 0.628568\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 209.39977\n"
+  "log_tail": "# Subtest: preserves cyclic references as the same object\nok 1 - preserves cyclic references as the same object\n  ---\n  duration_ms: 2.391478\n  type: 'test'\n  ...\n# Subtest: preserves repeated references by identity\nok 2 - preserves repeated references by identity\n  ---\n  duration_ms: 0.22725\n  type: 'test'\n  ...\n# Subtest: preserves Date values\nok 3 - preserves Date values\n  ---\n  duration_ms: 0.231017\n  type: 'test'\n  ...\n# Subtest: preserves Map entries\nok 4 - preserves Map entries\n  ---\n  duration_ms: 0.22953\n  type: 'test'\n  ...\n# Subtest: throws when stringifying a function\nok 5 - throws when stringifying a function\n  ---\n  duration_ms: 0.606423\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 226.103691\n"
 }

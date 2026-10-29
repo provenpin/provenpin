@@ -1,15 +1,15 @@
 {
   "id": "injector-di-modules",
   "status": "passed",
-  "ran_at": "2026-10-29T07:11:20.788Z",
-  "last_passed_at": "2026-10-29T07:11:20.788Z",
+  "ran_at": "2026-10-29T13:12:42.407Z",
+  "last_passed_at": "2026-10-29T13:12:42.407Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 189,
-    "test": 2100
+    "setup": 252,
+    "test": 1095
   },
   "pinned": {
     "injector": "0.24.0",
@@ -35,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.20s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.06s\n"
 }

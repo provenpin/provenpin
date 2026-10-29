@@ -1,15 +1,15 @@
 {
   "id": "validator-js-sanitize",
   "status": "passed",
-  "ran_at": "2026-10-29T07:26:14.382Z",
-  "last_passed_at": "2026-10-29T07:26:14.382Z",
+  "ran_at": "2026-10-29T13:27:55.406Z",
+  "last_passed_at": "2026-10-29T13:27:55.406Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2061,
-    "test": 434
+    "setup": 1865,
+    "test": 425
   },
   "pinned": {
     "validator": "13.15.35",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "# Subtest: flags malformed emails\nok 2 - flags malformed emails\n  ---\n  duration_ms: 0.229462\n  type: 'test'\n  ...\n# Subtest: validates URLs with protocol options\nok 3 - validates URLs with protocol options\n  ---\n  duration_ms: 1.411797\n  type: 'test'\n  ...\n# Subtest: validates UUID v4 values\nok 4 - validates UUID v4 values\n  ---\n  duration_ms: 1.322992\n  type: 'test'\n  ...\n# Subtest: scores strong passwords higher than weak ones\nok 5 - scores strong passwords higher than weak ones\n  ---\n  duration_ms: 0.513592\n  type: 'test'\n  ...\n# Subtest: escapes and trims notes with sanitizers\nok 6 - escapes and trims notes with sanitizers\n  ---\n  duration_ms: 0.240437\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 283.743632\n"
+  "log_tail": "# Subtest: flags malformed emails\nok 2 - flags malformed emails\n  ---\n  duration_ms: 0.241513\n  type: 'test'\n  ...\n# Subtest: validates URLs with protocol options\nok 3 - validates URLs with protocol options\n  ---\n  duration_ms: 2.271268\n  type: 'test'\n  ...\n# Subtest: validates UUID v4 values\nok 4 - validates UUID v4 values\n  ---\n  duration_ms: 0.359413\n  type: 'test'\n  ...\n# Subtest: scores strong passwords higher than weak ones\nok 5 - scores strong passwords higher than weak ones\n  ---\n  duration_ms: 0.54935\n  type: 'test'\n  ...\n# Subtest: escapes and trims notes with sanitizers\nok 6 - escapes and trims notes with sanitizers\n  ---\n  duration_ms: 0.265478\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 267.637212\n"
 }

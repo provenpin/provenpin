@@ -1,15 +1,15 @@
 {
   "id": "anyio-to-thread-bridge",
   "status": "passed",
-  "ran_at": "2026-10-29T07:01:29.370Z",
-  "last_passed_at": "2026-10-29T07:01:29.370Z",
+  "ran_at": "2026-10-29T13:02:53.027Z",
+  "last_passed_at": "2026-10-29T13:02:53.027Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 176,
-    "test": 1073
+    "setup": 172,
+    "test": 1104
   },
   "pinned": {
     "anyio": "4.15.1",
@@ -39,7 +39,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.13s\n"

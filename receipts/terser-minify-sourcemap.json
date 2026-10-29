@@ -1,15 +1,15 @@
 {
   "id": "terser-minify-sourcemap",
   "status": "passed",
-  "ran_at": "2026-10-29T07:24:59.984Z",
-  "last_passed_at": "2026-10-29T07:24:59.984Z",
+  "ran_at": "2026-10-29T13:26:49.112Z",
+  "last_passed_at": "2026-10-29T13:26:49.112Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2605,
-    "test": 499
+    "setup": 2081,
+    "test": 520
   },
   "pinned": {
     "terser": "5.51.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: minifies to a smaller payload\nok 1 - minifies to a smaller payload\n  ---\n  duration_ms: 25.149111\n  type: 'test'\n  ...\n# Subtest: drops console calls and mangles local names\nok 2 - drops console calls and mangles local names\n  ---\n  duration_ms: 4.644781\n  type: 'test'\n  ...\n# Subtest: emits a usable v3 source map\nok 3 - emits a usable v3 source map\n  ---\n  duration_ms: 4.027206\n  type: 'test'\n  ...\n# Subtest: minified code still runs correctly in node:vm\nok 4 - minified code still runs correctly in node:vm\n  ---\n  duration_ms: 3.544612\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 340.094836\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: minifies to a smaller payload\nok 1 - minifies to a smaller payload\n  ---\n  duration_ms: 22.32932\n  type: 'test'\n  ...\n# Subtest: drops console calls and mangles local names\nok 2 - drops console calls and mangles local names\n  ---\n  duration_ms: 3.66409\n  type: 'test'\n  ...\n# Subtest: emits a usable v3 source map\nok 3 - emits a usable v3 source map\n  ---\n  duration_ms: 5.112975\n  type: 'test'\n  ...\n# Subtest: minified code still runs correctly in node:vm\nok 4 - minified code still runs correctly in node:vm\n  ---\n  duration_ms: 3.372682\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 356.115307\n"
 }

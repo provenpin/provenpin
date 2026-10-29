@@ -1,15 +1,15 @@
 {
   "id": "json-schema-to-typescript-codegen",
   "status": "passed",
-  "ran_at": "2026-10-29T07:12:31.303Z",
-  "last_passed_at": "2026-10-29T07:12:31.303Z",
+  "ran_at": "2026-10-29T13:13:42.679Z",
+  "last_passed_at": "2026-10-29T13:13:42.679Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2408,
-    "test": 922
+    "setup": 2185,
+    "test": 675
   },
   "pinned": {
     "json-schema-to-typescript": "16.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates interfaces with required, optional and enum fields\nok 1 - generates interfaces with required, optional and enum fields\n  ---\n  duration_ms: 147.3241\n  type: 'test'\n  ...\n# Subtest: $ref definitions become their own interfaces\nok 2 - $ref definitions become their own interfaces\n  ---\n  duration_ms: 6.955235\n  type: 'test'\n  ...\n# Subtest: descriptions become JSDoc comments\nok 3 - descriptions become JSDoc comments\n  ---\n  duration_ms: 5.709681\n  type: 'test'\n  ...\n# Subtest: open objects keep an index signature when allowed\nok 4 - open objects keep an index signature when allowed\n  ---\n  duration_ms: 3.718146\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 748.874656\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates interfaces with required, optional and enum fields\nok 1 - generates interfaces with required, optional and enum fields\n  ---\n  duration_ms: 110.678533\n  type: 'test'\n  ...\n# Subtest: $ref definitions become their own interfaces\nok 2 - $ref definitions become their own interfaces\n  ---\n  duration_ms: 5.332507\n  type: 'test'\n  ...\n# Subtest: descriptions become JSDoc comments\nok 3 - descriptions become JSDoc comments\n  ---\n  duration_ms: 4.349362\n  type: 'test'\n  ...\n# Subtest: open objects keep an index signature when allowed\nok 4 - open objects keep an index signature when allowed\n  ---\n  duration_ms: 2.575664\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 545.064535\n"
 }

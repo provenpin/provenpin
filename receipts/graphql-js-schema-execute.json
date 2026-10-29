@@ -1,15 +1,15 @@
 {
   "id": "graphql-js-schema-execute",
   "status": "passed",
-  "ran_at": "2026-10-29T07:09:50.470Z",
-  "last_passed_at": "2026-10-29T07:09:50.470Z",
+  "ran_at": "2026-10-29T13:11:13.211Z",
+  "last_passed_at": "2026-10-29T13:11:13.211Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2214,
-    "test": 522
+    "setup": 1811,
+    "test": 315
   },
   "pinned": {
     "graphql": "17.0.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: executes a query with arguments and variables\nok 1 - executes a query with arguments and variables\n  ---\n  duration_ms: 11.626584\n  type: 'test'\n  ...\n# Subtest: returns validation errors for a bad query\nok 2 - returns validation errors for a bad query\n  ---\n  duration_ms: 1.666463\n  type: 'test'\n  ...\n# Subtest: surfaces resolver errors in result.errors\nok 3 - surfaces resolver errors in result.errors\n  ---\n  duration_ms: 8.17769\n  type: 'test'\n  ...\n# Subtest: custom Date scalar round-trips ISO strings\nok 4 - custom Date scalar round-trips ISO strings\n  ---\n  duration_ms: 0.379118\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 360.526153\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: executes a query with arguments and variables\nok 1 - executes a query with arguments and variables\n  ---\n  duration_ms: 6.034594\n  type: 'test'\n  ...\n# Subtest: returns validation errors for a bad query\nok 2 - returns validation errors for a bad query\n  ---\n  duration_ms: 1.14556\n  type: 'test'\n  ...\n# Subtest: surfaces resolver errors in result.errors\nok 3 - surfaces resolver errors in result.errors\n  ---\n  duration_ms: 4.948652\n  type: 'test'\n  ...\n# Subtest: custom Date scalar round-trips ISO strings\nok 4 - custom Date scalar round-trips ISO strings\n  ---\n  duration_ms: 0.269014\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 210.225398\n"
 }

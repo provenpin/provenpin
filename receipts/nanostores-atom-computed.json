@@ -1,15 +1,15 @@
 {
   "id": "nanostores-atom-computed",
   "status": "passed",
-  "ran_at": "2026-10-29T07:15:24.256Z",
-  "last_passed_at": "2026-10-29T07:15:24.256Z",
+  "ran_at": "2026-10-29T13:17:02.274Z",
+  "last_passed_at": "2026-10-29T13:17:02.274Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1546,
-    "test": 2357
+    "setup": 1607,
+    "test": 2346
   },
   "pinned": {
     "nanostores": "1.5.5",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "# Subtest: atom get and set\nok 1 - atom get and set\n  ---\n  duration_ms: 1.396067\n  type: 'test'\n  ...\n# Subtest: map get and setKey\nok 2 - map get and setKey\n  ---\n  duration_ms: 0.974507\n  type: 'test'\n  ...\n# Subtest: subscribe fires immediately and stops after unsubscribe\nok 3 - subscribe fires immediately and stops after unsubscribe\n  ---\n  duration_ms: 0.244118\n  type: 'test'\n  ...\n# Subtest: listen skips the initial value and stops after unsubscribe\nok 4 - listen skips the initial value and stops after unsubscribe\n  ---\n  duration_ms: 0.36816\n  type: 'test'\n  ...\n# Subtest: computed derives from atom and map stores and freezes when unsubscribed\nok 5 - computed derives from atom and map stores and freezes when unsubscribed\n  ---\n  duration_ms: 1.186615\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2203.594537\n"
+  "log_tail": "# Subtest: atom get and set\nok 1 - atom get and set\n  ---\n  duration_ms: 1.067782\n  type: 'test'\n  ...\n# Subtest: map get and setKey\nok 2 - map get and setKey\n  ---\n  duration_ms: 0.763104\n  type: 'test'\n  ...\n# Subtest: subscribe fires immediately and stops after unsubscribe\nok 3 - subscribe fires immediately and stops after unsubscribe\n  ---\n  duration_ms: 0.198082\n  type: 'test'\n  ...\n# Subtest: listen skips the initial value and stops after unsubscribe\nok 4 - listen skips the initial value and stops after unsubscribe\n  ---\n  duration_ms: 0.267654\n  type: 'test'\n  ...\n# Subtest: computed derives from atom and map stores and freezes when unsubscribed\nok 5 - computed derives from atom and map stores and freezes when unsubscribed\n  ---\n  duration_ms: 0.87577\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 2186.759195\n"
 }

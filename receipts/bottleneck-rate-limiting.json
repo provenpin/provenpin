@@ -1,15 +1,15 @@
 {
   "id": "bottleneck-rate-limiting",
   "status": "passed",
-  "ran_at": "2026-10-29T07:03:21.075Z",
-  "last_passed_at": "2026-10-29T07:03:21.075Z",
+  "ran_at": "2026-10-29T13:04:44.121Z",
+  "last_passed_at": "2026-10-29T13:04:44.121Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1542,
-    "test": 554
+    "setup": 1941,
+    "test": 677
   },
   "pinned": {
     "bottleneck": "2.19.5",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: never exceeds maxConcurrent\nok 1 - never exceeds maxConcurrent\n  ---\n  duration_ms: 71.635233\n  type: 'test'\n  ...\n# Subtest: minTime spaces job starts\nok 2 - minTime spaces job starts\n  ---\n  duration_ms: 124.328833\n  type: 'test'\n  ...\n# Subtest: higher priority (lower number) runs first\nok 3 - higher priority (lower number) runs first\n  ---\n  duration_ms: 40.815999\n  type: 'test'\n  ...\n# Subtest: retries 429 responses then succeeds; other errors fail fast\nok 4 - retries 429 responses then succeeds; other errors fail fast\n  ---\n  duration_ms: 27.342865\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 431.916999\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: never exceeds maxConcurrent\nok 1 - never exceeds maxConcurrent\n  ---\n  duration_ms: 68.748121\n  type: 'test'\n  ...\n# Subtest: minTime spaces job starts\nok 2 - minTime spaces job starts\n  ---\n  duration_ms: 123.619887\n  type: 'test'\n  ...\n# Subtest: higher priority (lower number) runs first\nok 3 - higher priority (lower number) runs first\n  ---\n  duration_ms: 41.459163\n  type: 'test'\n  ...\n# Subtest: retries 429 responses then succeeds; other errors fail fast\nok 4 - retries 429 responses then succeeds; other errors fail fast\n  ---\n  duration_ms: 24.658592\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 550.653442\n"
 }

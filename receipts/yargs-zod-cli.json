@@ -1,15 +1,15 @@
 {
   "id": "yargs-zod-cli",
   "status": "passed",
-  "ran_at": "2026-10-29T07:27:02.774Z",
-  "last_passed_at": "2026-10-29T07:27:02.774Z",
+  "ran_at": "2026-10-29T13:28:46.242Z",
+  "last_passed_at": "2026-10-29T13:28:46.242Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2370,
-    "test": 484
+    "setup": 2641,
+    "test": 576
   },
   "pinned": {
     "yargs": "18.2.0",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses valid deploy argv\nok 1 - parses valid deploy argv\n  ---\n  duration_ms: 9.531611\n  type: 'test'\n  ...\n# Subtest: rejects bad tag\nok 2 - rejects bad tag\n  ---\n  duration_ms: 1.968713\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 346.585474\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: parses valid deploy argv\nok 1 - parses valid deploy argv\n  ---\n  duration_ms: 8.990918\n  type: 'test'\n  ...\n# Subtest: rejects bad tag\nok 2 - rejects bad tag\n  ---\n  duration_ms: 2.032542\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 419.452553\n"
 }

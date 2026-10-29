@@ -1,15 +1,15 @@
 {
   "id": "superstruct-coercion-validation",
   "status": "passed",
-  "ran_at": "2026-10-29T07:24:02.138Z",
-  "last_passed_at": "2026-10-29T07:24:02.138Z",
+  "ran_at": "2026-10-29T13:25:52.485Z",
+  "last_passed_at": "2026-10-29T13:25:52.485Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1839,
-    "test": 370
+    "setup": 1673,
+    "test": 367
   },
   "pinned": {
     "superstruct": "2.0.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: coerces form-style strings and applies defaults\nok 1 - coerces form-style strings and applies defaults\n  ---\n  duration_ms: 3.083276\n  type: 'test'\n  ...\n# Subtest: is() checks without coercion\nok 2 - is() checks without coercion\n  ---\n  duration_ms: 0.775325\n  type: 'test'\n  ...\n# Subtest: failures report path and refinement\nok 3 - failures report path and refinement\n  ---\n  duration_ms: 0.923397\n  type: 'test'\n  ...\n# Subtest: throws StructError for empty items\nok 4 - throws StructError for empty items\n  ---\n  duration_ms: 0.700963\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 206.229728\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: coerces form-style strings and applies defaults\nok 1 - coerces form-style strings and applies defaults\n  ---\n  duration_ms: 3.185147\n  type: 'test'\n  ...\n# Subtest: is() checks without coercion\nok 2 - is() checks without coercion\n  ---\n  duration_ms: 0.812564\n  type: 'test'\n  ...\n# Subtest: failures report path and refinement\nok 3 - failures report path and refinement\n  ---\n  duration_ms: 1.059278\n  type: 'test'\n  ...\n# Subtest: throws StructError for empty items\nok 4 - throws StructError for empty items\n  ---\n  duration_ms: 0.750188\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 207.582706\n"
 }

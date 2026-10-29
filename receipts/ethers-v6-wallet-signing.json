@@ -1,15 +1,15 @@
 {
   "id": "ethers-v6-wallet-signing",
   "status": "passed",
-  "ran_at": "2026-10-29T07:07:01.113Z",
-  "last_passed_at": "2026-10-29T07:07:01.113Z",
+  "ran_at": "2026-10-29T13:08:22.635Z",
+  "last_passed_at": "2026-10-29T13:08:22.635Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1869,
-    "test": 392
+    "setup": 2701,
+    "test": 650
   },
   "pinned": {
     "ethers": "6.17.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "# Subtest: derives a deterministic address from the fixed private key\nok 1 - derives a deterministic address from the fixed private key\n  ---\n  duration_ms: 19.977629\n  type: 'test'\n  ...\n# Subtest: signs and verifies a plain message\nok 2 - signs and verifies a plain message\n  ---\n  duration_ms: 7.499238\n  type: 'test'\n  ...\n# Subtest: signs and verifies EIP-712 typed data\nok 3 - signs and verifies EIP-712 typed data\n  ---\n  duration_ms: 7.18814\n  type: 'test'\n  ...\n# Subtest: encodes and decodes an ERC-20 transfer call\nok 4 - encodes and decodes an ERC-20 transfer call\n  ---\n  duration_ms: 3.476558\n  type: 'test'\n  ...\n# Subtest: parses and formats token units\nok 5 - parses and formats token units\n  ---\n  duration_ms: 0.531999\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 285.470198\n"
+  "log_tail": "# Subtest: derives a deterministic address from the fixed private key\nok 1 - derives a deterministic address from the fixed private key\n  ---\n  duration_ms: 35.238983\n  type: 'test'\n  ...\n# Subtest: signs and verifies a plain message\nok 2 - signs and verifies a plain message\n  ---\n  duration_ms: 13.009366\n  type: 'test'\n  ...\n# Subtest: signs and verifies EIP-712 typed data\nok 3 - signs and verifies EIP-712 typed data\n  ---\n  duration_ms: 12.541119\n  type: 'test'\n  ...\n# Subtest: encodes and decodes an ERC-20 transfer call\nok 4 - encodes and decodes an ERC-20 transfer call\n  ---\n  duration_ms: 6.191251\n  type: 'test'\n  ...\n# Subtest: parses and formats token units\nok 5 - parses and formats token units\n  ---\n  duration_ms: 0.944872\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 488.0209\n"
 }

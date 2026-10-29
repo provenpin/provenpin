@@ -1,15 +1,15 @@
 {
   "id": "sqlmodel-relationships-sqlite",
   "status": "passed",
-  "ran_at": "2026-10-29T07:23:30.757Z",
-  "last_passed_at": "2026-10-29T07:23:30.757Z",
+  "ran_at": "2026-10-29T13:25:11.295Z",
+  "last_passed_at": "2026-10-29T13:25:11.295Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 339,
-    "test": 3883
+    "setup": 469,
+    "test": 2840
   },
   "pinned": {
     "sqlmodel": "0.0.48",
@@ -41,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 2.16s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 1.82s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "fastapi-jwt-auth",
   "status": "passed",
-  "ran_at": "2026-10-29T07:08:22.063Z",
-  "last_passed_at": "2026-10-29T07:08:22.063Z",
+  "ran_at": "2026-10-29T13:09:41.786Z",
+  "last_passed_at": "2026-10-29T13:09:41.786Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 330,
-    "test": 3579
+    "setup": 464,
+    "test": 4818
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -55,8 +55,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "..                                                                       [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-jwt-auth-cqfkzD/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 1.15s\n"
+  "log_tail": "..                                                                       [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-jwt-auth-ioUDJt/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n2 passed, 1 warning in 1.42s\n"
 }

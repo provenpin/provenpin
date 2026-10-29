@@ -1,15 +1,15 @@
 {
   "id": "pdf-lib-invoice",
   "status": "passed",
-  "ran_at": "2026-10-29T07:18:08.221Z",
-  "last_passed_at": "2026-10-29T07:18:08.221Z",
+  "ran_at": "2026-10-29T13:19:27.127Z",
+  "last_passed_at": "2026-10-29T13:19:27.127Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2162,
-    "test": 536
+    "setup": 2143,
+    "test": 439
   },
   "pinned": {
     "pdf-lib": "1.17.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: builds a readable one-page invoice\nok 1 - builds a readable one-page invoice\n  ---\n  duration_ms: 42.936199\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 386.35054\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: builds a readable one-page invoice\nok 1 - builds a readable one-page invoice\n  ---\n  duration_ms: 34.173609\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 311.895812\n"
 }

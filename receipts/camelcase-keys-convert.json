@@ -1,15 +1,15 @@
 {
   "id": "camelcase-keys-convert",
   "status": "passed",
-  "ran_at": "2026-10-29T07:03:35.513Z",
-  "last_passed_at": "2026-10-29T07:03:35.513Z",
+  "ran_at": "2026-10-29T13:04:55.687Z",
+  "last_passed_at": "2026-10-29T13:04:55.687Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1817,
-    "test": 370
+    "setup": 1691,
+    "test": 385
   },
   "pinned": {
     "camelcase": "10.0.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: camelcases a snake_case string\nok 1 - camelcases a snake_case string\n  ---\n  duration_ms: 1.265593\n  type: 'test'\n  ...\n# Subtest: camelcases a string with pascalCase option\nok 2 - camelcases a string with pascalCase option\n  ---\n  duration_ms: 0.235842\n  type: 'test'\n  ...\n# Subtest: deep converts snake_case keys including nested arrays\nok 3 - deep converts snake_case keys including nested arrays\n  ---\n  duration_ms: 2.213381\n  type: 'test'\n  ...\n# Subtest: deep converts a top level array of objects\nok 4 - deep converts a top level array of objects\n  ---\n  duration_ms: 0.2398\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 209.355794\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: camelcases a snake_case string\nok 1 - camelcases a snake_case string\n  ---\n  duration_ms: 1.356322\n  type: 'test'\n  ...\n# Subtest: camelcases a string with pascalCase option\nok 2 - camelcases a string with pascalCase option\n  ---\n  duration_ms: 0.193292\n  type: 'test'\n  ...\n# Subtest: deep converts snake_case keys including nested arrays\nok 3 - deep converts snake_case keys including nested arrays\n  ---\n  duration_ms: 2.323826\n  type: 'test'\n  ...\n# Subtest: deep converts a top level array of objects\nok 4 - deep converts a top level array of objects\n  ---\n  duration_ms: 0.247774\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 212.674103\n"
 }

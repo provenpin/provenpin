@@ -1,15 +1,15 @@
 {
   "id": "web-push-vapid-payload-encryption",
   "status": "passed",
-  "ran_at": "2026-10-29T07:26:37.367Z",
-  "last_passed_at": "2026-10-29T07:26:37.367Z",
+  "ran_at": "2026-10-29T13:28:23.031Z",
+  "last_passed_at": "2026-10-29T13:28:23.031Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3785,
-    "test": 452
+    "setup": 1797,
+    "test": 292
   },
   "pinned": {
     "web-push": "3.6.7",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "# Subtest: VAPID keys are P-256 base64url\nok 1 - VAPID keys are P-256 base64url\n  ---\n  duration_ms: 1.767065\n  type: 'test'\n  ...\n# Subtest: request details: endpoint, headers, encrypted body\nok 2 - request details: endpoint, headers, encrypted body\n  ---\n  duration_ms: 6.250313\n  type: 'test'\n  ...\n# Subtest: browser side can decrypt the payload\nok 3 - browser side can decrypt the payload\n  ---\n  duration_ms: 2.96666\n  type: 'test'\n  ...\n# Subtest: a different subscriber cannot decrypt\nok 4 - a different subscriber cannot decrypt\n  ---\n  duration_ms: 1.575808\n  type: 'test'\n  ...\n# Subtest: VAPID JWT verifies with the public key and carries aud/exp/sub\nok 5 - VAPID JWT verifies with the public key and carries aud/exp/sub\n  ---\n  duration_ms: 1.28844\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 286.518758\n"
+  "log_tail": "# Subtest: VAPID keys are P-256 base64url\nok 1 - VAPID keys are P-256 base64url\n  ---\n  duration_ms: 0.821745\n  type: 'test'\n  ...\n# Subtest: request details: endpoint, headers, encrypted body\nok 2 - request details: endpoint, headers, encrypted body\n  ---\n  duration_ms: 3.739283\n  type: 'test'\n  ...\n# Subtest: browser side can decrypt the payload\nok 3 - browser side can decrypt the payload\n  ---\n  duration_ms: 1.799722\n  type: 'test'\n  ...\n# Subtest: a different subscriber cannot decrypt\nok 4 - a different subscriber cannot decrypt\n  ---\n  duration_ms: 0.958058\n  type: 'test'\n  ...\n# Subtest: VAPID JWT verifies with the public key and carries aud/exp/sub\nok 5 - VAPID JWT verifies with the public key and carries aud/exp/sub\n  ---\n  duration_ms: 0.789006\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 178.452494\n"
 }

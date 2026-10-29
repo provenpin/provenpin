@@ -1,15 +1,15 @@
 {
   "id": "casl-ability-rules",
   "status": "passed",
-  "ran_at": "2026-10-29T07:03:32.542Z",
-  "last_passed_at": "2026-10-29T07:03:32.542Z",
+  "ran_at": "2026-10-29T13:05:06.332Z",
+  "last_passed_at": "2026-10-29T13:05:06.332Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1413,
-    "test": 266
+    "setup": 2058,
+    "test": 278
   },
   "pinned": {
     "@casl/ability": "7.0.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: admin can manage everything\nok 1 - admin can manage everything\n  ---\n  duration_ms: 2.815497\n  type: 'test'\n  ...\n# Subtest: author updates only own posts\nok 2 - author updates only own posts\n  ---\n  duration_ms: 0.75248\n  type: 'test'\n  ...\n# Subtest: guest reads only published and rules pack\nok 3 - guest reads only published and rules pack\n  ---\n  duration_ms: 0.198438\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 154.307424\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: admin can manage everything\nok 1 - admin can manage everything\n  ---\n  duration_ms: 0.993484\n  type: 'test'\n  ...\n# Subtest: author updates only own posts\nok 2 - author updates only own posts\n  ---\n  duration_ms: 0.588159\n  type: 'test'\n  ...\n# Subtest: guest reads only published and rules pack\nok 3 - guest reads only published and rules pack\n  ---\n  duration_ms: 0.234861\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 153.229835\n"
 }

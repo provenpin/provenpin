@@ -1,15 +1,15 @@
 {
   "id": "typebox-value-check",
   "status": "passed",
-  "ran_at": "2026-10-29T07:25:42.047Z",
-  "last_passed_at": "2026-10-29T07:25:42.047Z",
+  "ran_at": "2026-10-29T13:27:29.459Z",
+  "last_passed_at": "2026-10-29T13:27:29.459Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2097,
-    "test": 496
+    "setup": 2430,
+    "test": 527
   },
   "pinned": {
     "@sinclair/typebox": "0.34.52",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts valid user\nok 1 - accepts valid user\n  ---\n  duration_ms: 2.447244\n  type: 'test'\n  ...\n# Subtest: rejects extras and bad email\nok 2 - rejects extras and bad email\n  ---\n  duration_ms: 0.988378\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 335.945302\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: accepts valid user\nok 1 - accepts valid user\n  ---\n  duration_ms: 2.471819\n  type: 'test'\n  ...\n# Subtest: rejects extras and bad email\nok 2 - rejects extras and bad email\n  ---\n  duration_ms: 1.00893\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 356.921995\n"
 }

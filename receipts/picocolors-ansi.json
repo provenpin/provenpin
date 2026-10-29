@@ -1,15 +1,15 @@
 {
   "id": "picocolors-ansi",
   "status": "passed",
-  "ran_at": "2026-10-29T07:18:21.941Z",
-  "last_passed_at": "2026-10-29T07:18:21.941Z",
+  "ran_at": "2026-10-29T13:20:06.393Z",
+  "last_passed_at": "2026-10-29T13:20:06.393Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1489,
-    "test": 333
+    "setup": 1731,
+    "test": 337
   },
   "pinned": {
     "picocolors": "1.1.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "# Subtest: bold and dim helpers emit expected ANSI codes\nok 2 - bold and dim helpers emit expected ANSI codes\n  ---\n  duration_ms: 0.099477\n  type: 'test'\n  ...\n# Subtest: bgYellow helper emits expected background ANSI code\nok 3 - bgYellow helper emits expected background ANSI code\n  ---\n  duration_ms: 0.098396\n  type: 'test'\n  ...\n# Subtest: composed status line carries nested codes\nok 4 - composed status line carries nested codes\n  ---\n  duration_ms: 0.16917\n  type: 'test'\n  ...\n# Subtest: coloring disabled yields plain output\nok 5 - coloring disabled yields plain output\n  ---\n  duration_ms: 0.116822\n  type: 'test'\n  ...\n# Subtest: coloring enabled reports support\nok 6 - coloring enabled reports support\n  ---\n  duration_ms: 0.08138\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 203.504095\n"
+  "log_tail": "# Subtest: bold and dim helpers emit expected ANSI codes\nok 2 - bold and dim helpers emit expected ANSI codes\n  ---\n  duration_ms: 0.200136\n  type: 'test'\n  ...\n# Subtest: bgYellow helper emits expected background ANSI code\nok 3 - bgYellow helper emits expected background ANSI code\n  ---\n  duration_ms: 0.19498\n  type: 'test'\n  ...\n# Subtest: composed status line carries nested codes\nok 4 - composed status line carries nested codes\n  ---\n  duration_ms: 0.321604\n  type: 'test'\n  ...\n# Subtest: coloring disabled yields plain output\nok 5 - coloring disabled yields plain output\n  ---\n  duration_ms: 0.243062\n  type: 'test'\n  ...\n# Subtest: coloring enabled reports support\nok 6 - coloring enabled reports support\n  ---\n  duration_ms: 0.186035\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 189.496088\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "date-fns-tz-scheduling",
   "status": "passed",
-  "ran_at": "2026-10-29T07:05:22.880Z",
-  "last_passed_at": "2026-10-29T07:05:22.880Z",
+  "ran_at": "2026-10-29T13:06:32.571Z",
+  "last_passed_at": "2026-10-29T13:06:32.571Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2715,
-    "test": 1925
+    "setup": 2355,
+    "test": 1079
   },
   "pinned": {
     "date-fns": "4.4.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: 9am New York stays 9am across the November DST change\nok 1 - 9am New York stays 9am across the November DST change\n  ---\n  duration_ms: 801.903079\n  type: 'test'\n  ...\n# Subtest: format in a zone\nok 2 - format in a zone\n  ---\n  duration_ms: 0.75256\n  type: 'test'\n  ...\n# Subtest: start of day for a user zone as UTC\nok 3 - start of day for a user zone as UTC\n  ---\n  duration_ms: 0.344669\n  type: 'test'\n  ...\n# Subtest: DST days are 23 or 25 hours long\nok 4 - DST days are 23 or 25 hours long\n  ---\n  duration_ms: 0.3191\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1717.36947\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: 9am New York stays 9am across the November DST change\nok 1 - 9am New York stays 9am across the November DST change\n  ---\n  duration_ms: 239.527764\n  type: 'test'\n  ...\n# Subtest: format in a zone\nok 2 - format in a zone\n  ---\n  duration_ms: 0.802221\n  type: 'test'\n  ...\n# Subtest: start of day for a user zone as UTC\nok 3 - start of day for a user zone as UTC\n  ---\n  duration_ms: 0.303549\n  type: 'test'\n  ...\n# Subtest: DST days are 23 or 25 hours long\nok 4 - DST days are 23 or 25 hours long\n  ---\n  duration_ms: 0.301525\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 952.113355\n"
 }

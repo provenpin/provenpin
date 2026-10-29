@@ -1,15 +1,15 @@
 {
   "id": "quart-httpx-asgi-client",
   "status": "passed",
-  "ran_at": "2026-10-29T07:20:59.058Z",
-  "last_passed_at": "2026-10-29T07:20:59.058Z",
+  "ran_at": "2026-10-29T13:22:40.488Z",
+  "last_passed_at": "2026-10-29T13:22:40.488Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 319,
-    "test": 1931
+    "setup": 274,
+    "test": 3282
   },
   "pinned": {
     "quart": "0.23.1",
@@ -57,8 +57,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.91s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 1.21s\n"
 }

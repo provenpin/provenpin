@@ -1,15 +1,15 @@
 {
   "id": "neverthrow-async-result",
   "status": "passed",
-  "ran_at": "2026-10-29T07:15:38.243Z",
-  "last_passed_at": "2026-10-29T07:15:38.243Z",
+  "ran_at": "2026-10-29T13:17:18.302Z",
+  "last_passed_at": "2026-10-29T13:17:18.302Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1317,
-    "test": 241
+    "setup": 1955,
+    "test": 357
   },
   "pinned": {
     "neverthrow": "8.2.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: charge success and errors\nok 1 - charge success and errors\n  ---\n  duration_ms: 0.959114\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 132.767067\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: charge success and errors\nok 1 - charge success and errors\n  ---\n  duration_ms: 1.120364\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 194.14995\n"
 }

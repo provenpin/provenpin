@@ -1,15 +1,15 @@
 {
   "id": "ink-testing-library-cli",
   "status": "passed",
-  "ran_at": "2026-10-29T07:11:22.811Z",
-  "last_passed_at": "2026-10-29T07:11:22.811Z",
+  "ran_at": "2026-10-29T13:12:47.273Z",
+  "last_passed_at": "2026-10-29T13:12:47.273Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3695,
-    "test": 1077
+    "setup": 5386,
+    "test": 1444
   },
   "pinned": {
     "ink": "8.0.0",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40832646556"
+    "runner": "github-actions 40878186517"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: initial frame\nok 1 - initial frame\n  ---\n  duration_ms: 50.732198\n  type: 'test'\n  ...\n# Subtest: keyboard toggles and moves the cursor\nok 2 - keyboard toggles and moves the cursor\n  ---\n  duration_ms: 180.188298\n  type: 'test'\n  ...\n# Subtest: enter submits selected ids\nok 3 - enter submits selected ids\n  ---\n  duration_ms: 146.888988\n  type: 'test'\n  ...\n# Subtest: effects and timers re-render frames\nok 4 - effects and timers re-render frames\n  ---\n  duration_ms: 85.579862\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 947.003296\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: initial frame\nok 1 - initial frame\n  ---\n  duration_ms: 78.950082\n  type: 'test'\n  ...\n# Subtest: keyboard toggles and moves the cursor\nok 2 - keyboard toggles and moves the cursor\n  ---\n  duration_ms: 197.585741\n  type: 'test'\n  ...\n# Subtest: enter submits selected ids\nok 3 - enter submits selected ids\n  ---\n  duration_ms: 156.344066\n  type: 'test'\n  ...\n# Subtest: effects and timers re-render frames\nok 4 - effects and timers re-render frames\n  ---\n  duration_ms: 95.58847\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1276.795374\n"
 }
