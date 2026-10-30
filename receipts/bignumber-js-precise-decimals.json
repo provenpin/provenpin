@@ -1,15 +1,15 @@
 {
   "id": "bignumber-js-precise-decimals",
   "status": "passed",
-  "ran_at": "2026-10-29T18:59:44.095Z",
-  "last_passed_at": "2026-10-29T18:59:44.095Z",
+  "ran_at": "2026-10-30T01:05:40.200Z",
+  "last_passed_at": "2026-10-30T01:05:40.200Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1882,
-    "test": 360
+    "setup": 1684,
+    "test": 336
   },
   "pinned": {
     "bignumber.js": "11.1.5",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "# Subtest: honours the requested rounding mode\nok 3 - honours the requested rounding mode\n  ---\n  duration_ms: 0.695284\n  type: 'test'\n  ...\n# Subtest: fixed-point formatting\nok 4 - fixed-point formatting\n  ---\n  duration_ms: 0.201067\n  type: 'test'\n  ...\n# Subtest: numeric comparisons ignore formatting\nok 5 - numeric comparisons ignore formatting\n  ---\n  duration_ms: 0.224661\n  type: 'test'\n  ...\n# Subtest: cart total applies tax and rounds to cents\nok 6 - cart total applies tax and rounds to cents\n  ---\n  duration_ms: 0.374633\n  type: 'test'\n  ...\n# Subtest: cart total is exact for values that drift in binary\nok 7 - cart total is exact for values that drift in binary\n  ---\n  duration_ms: 0.22913\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 190.402089\n"
+  "log_tail": "# Subtest: honours the requested rounding mode\nok 3 - honours the requested rounding mode\n  ---\n  duration_ms: 0.686816\n  type: 'test'\n  ...\n# Subtest: fixed-point formatting\nok 4 - fixed-point formatting\n  ---\n  duration_ms: 0.184094\n  type: 'test'\n  ...\n# Subtest: numeric comparisons ignore formatting\nok 5 - numeric comparisons ignore formatting\n  ---\n  duration_ms: 0.225753\n  type: 'test'\n  ...\n# Subtest: cart total applies tax and rounds to cents\nok 6 - cart total applies tax and rounds to cents\n  ---\n  duration_ms: 0.364944\n  type: 'test'\n  ...\n# Subtest: cart total is exact for values that drift in binary\nok 7 - cart total is exact for values that drift in binary\n  ---\n  duration_ms: 0.221565\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 179.889807\n"
 }

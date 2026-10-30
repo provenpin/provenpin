@@ -1,15 +1,15 @@
 {
   "id": "tanstack-table-core-v9-sorting",
   "status": "passed",
-  "ran_at": "2026-10-29T19:21:06.924Z",
-  "last_passed_at": "2026-10-29T19:21:06.924Z",
+  "ran_at": "2026-10-30T01:26:15.706Z",
+  "last_passed_at": "2026-10-30T01:26:15.706Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1840,
-    "test": 436
+    "setup": 1772,
+    "test": 419
   },
   "pinned": {
     "@tanstack/table-core": "9.3.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "# Subtest: sorts by score descending\nok 2 - sorts by score descending\n  ---\n  duration_ms: 5.153102\n  type: 'test'\n  ...\n# Subtest: paginates with the default page size of 2\nok 3 - paginates with the default page size of 2\n  ---\n  duration_ms: 0.78113\n  type: 'test'\n  ...\n# Subtest: filters by role then paginates\nok 4 - filters by role then paginates\n  ---\n  duration_ms: 1.744881\n  type: 'test'\n  ...\n# Subtest: role filter matches whole values only\nok 5 - role filter matches whole values only\n  ---\n  duration_ms: 0.836905\n  type: 'test'\n  ...\n# Subtest: setters update state on the table\nok 6 - setters update state on the table\n  ---\n  duration_ms: 1.378446\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 277.338415\n"
+  "log_tail": "# Subtest: sorts by score descending\nok 2 - sorts by score descending\n  ---\n  duration_ms: 4.589519\n  type: 'test'\n  ...\n# Subtest: paginates with the default page size of 2\nok 3 - paginates with the default page size of 2\n  ---\n  duration_ms: 0.724009\n  type: 'test'\n  ...\n# Subtest: filters by role then paginates\nok 4 - filters by role then paginates\n  ---\n  duration_ms: 1.65233\n  type: 'test'\n  ...\n# Subtest: role filter matches whole values only\nok 5 - role filter matches whole values only\n  ---\n  duration_ms: 0.78595\n  type: 'test'\n  ...\n# Subtest: setters update state on the table\nok 6 - setters update state on the table\n  ---\n  duration_ms: 1.220733\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 265.094225\n"
 }

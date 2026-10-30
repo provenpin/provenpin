@@ -1,15 +1,15 @@
 {
   "id": "cryptography-fernet-multi-key",
   "status": "passed",
-  "ran_at": "2026-10-29T19:01:41.428Z",
-  "last_passed_at": "2026-10-29T19:01:41.428Z",
+  "ran_at": "2026-10-30T01:07:21.035Z",
+  "last_passed_at": "2026-10-30T01:07:21.035Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 257,
-    "test": 1015
+    "setup": 423,
+    "test": 1126
   },
   "pinned": {
     "cryptography": "50.0.2",
@@ -37,8 +37,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
 }

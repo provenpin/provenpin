@@ -1,15 +1,15 @@
 {
   "id": "msgspec-json-schema-generation",
   "status": "passed",
-  "ran_at": "2026-10-29T19:12:04.014Z",
-  "last_passed_at": "2026-10-29T19:12:04.014Z",
+  "ran_at": "2026-10-30T01:17:19.644Z",
+  "last_passed_at": "2026-10-30T01:17:19.644Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 281,
-    "test": 1655
+    "setup": 1140,
+    "test": 657
   },
   "pinned": {
     "msgspec": "0.22.0",
@@ -35,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
 }

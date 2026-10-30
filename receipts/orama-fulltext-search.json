@@ -1,15 +1,15 @@
 {
   "id": "orama-fulltext-search",
   "status": "passed",
-  "ran_at": "2026-10-29T19:13:59.668Z",
-  "last_passed_at": "2026-10-29T19:13:59.668Z",
+  "ran_at": "2026-10-30T01:19:26.729Z",
+  "last_passed_at": "2026-10-30T01:19:26.729Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1862,
-    "test": 419
+    "setup": 1730,
+    "test": 295
   },
   "pinned": {
     "@orama/orama": "3.1.18",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: indexes and finds by title term\nok 1 - indexes and finds by title term\n  ---\n  duration_ms: 4.493554\n  type: 'test'\n  ...\n# Subtest: finds body matches\nok 2 - finds body matches\n  ---\n  duration_ms: 0.814043\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 255.736905\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: indexes and finds by title term\nok 1 - indexes and finds by title term\n  ---\n  duration_ms: 2.498686\n  type: 'test'\n  ...\n# Subtest: finds body matches\nok 2 - finds body matches\n  ---\n  duration_ms: 0.439044\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 183.919524\n"
 }

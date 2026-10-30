@@ -1,15 +1,15 @@
 {
   "id": "adm-zip-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-29T18:57:53.961Z",
-  "last_passed_at": "2026-10-29T18:57:53.961Z",
+  "ran_at": "2026-10-30T01:03:49.806Z",
+  "last_passed_at": "2026-10-30T01:03:49.806Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1679,
-    "test": 278
+    "setup": 1638,
+    "test": 419
   },
   "pinned": {
     "adm-zip": "0.6.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips string entries through a buffer\nok 1 - roundtrips string entries through a buffer\n  ---\n  duration_ms: 9.120436\n  type: 'test'\n  ...\n# Subtest: stores folder entries and raw buffers\nok 2 - stores folder entries and raw buffers\n  ---\n  duration_ms: 0.863784\n  type: 'test'\n  ...\n# Subtest: writes a zip to a temp path and reads it back\nok 3 - writes a zip to a temp path and reads it back\n  ---\n  duration_ms: 8.251045\n  type: 'test'\n  ...\n# Subtest: throws for a missing entry\nok 4 - throws for a missing entry\n  ---\n  duration_ms: 0.526625\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 168.523309\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: roundtrips string entries through a buffer\nok 1 - roundtrips string entries through a buffer\n  ---\n  duration_ms: 15.293066\n  type: 'test'\n  ...\n# Subtest: stores folder entries and raw buffers\nok 2 - stores folder entries and raw buffers\n  ---\n  duration_ms: 1.340503\n  type: 'test'\n  ...\n# Subtest: writes a zip to a temp path and reads it back\nok 3 - writes a zip to a temp path and reads it back\n  ---\n  duration_ms: 14.6144\n  type: 'test'\n  ...\n# Subtest: throws for a missing entry\nok 4 - throws for a missing entry\n  ---\n  duration_ms: 0.892362\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 255.700772\n"
 }

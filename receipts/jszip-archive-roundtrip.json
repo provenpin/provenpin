@@ -1,15 +1,15 @@
 {
   "id": "jszip-archive-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-29T19:09:37.403Z",
-  "last_passed_at": "2026-10-29T19:09:37.403Z",
+  "ran_at": "2026-10-30T01:14:50.476Z",
+  "last_passed_at": "2026-10-30T01:14:50.476Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1712,
-    "test": 372
+    "setup": 1613,
+    "test": 288
   },
   "pinned": {
     "jszip": "3.10.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: builds a zip and lists its entries\nok 1 - builds a zip and lists its entries\n  ---\n  duration_ms: 17.720345\n  type: 'test'\n  ...\n# Subtest: reads text and binary contents back\nok 2 - reads text and binary contents back\n  ---\n  duration_ms: 6.452572\n  type: 'test'\n  ...\n# Subtest: preserves contents across a second round-trip\nok 3 - preserves contents across a second round-trip\n  ---\n  duration_ms: 3.63703\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 234.804352\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: builds a zip and lists its entries\nok 1 - builds a zip and lists its entries\n  ---\n  duration_ms: 13.265125\n  type: 'test'\n  ...\n# Subtest: reads text and binary contents back\nok 2 - reads text and binary contents back\n  ---\n  duration_ms: 4.374551\n  type: 'test'\n  ...\n# Subtest: preserves contents across a second round-trip\nok 3 - preserves contents across a second round-trip\n  ---\n  duration_ms: 3.875842\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 183.265875\n"
 }

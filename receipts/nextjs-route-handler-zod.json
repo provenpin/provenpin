@@ -1,15 +1,15 @@
 {
   "id": "nextjs-route-handler-zod",
   "status": "passed",
-  "ran_at": "2026-10-29T19:12:50.122Z",
-  "last_passed_at": "2026-10-29T19:12:50.122Z",
+  "ran_at": "2026-10-30T01:18:00.496Z",
+  "last_passed_at": "2026-10-30T01:18:00.496Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 8818,
-    "test": 474
+    "setup": 11153,
+    "test": 568
   },
   "pinned": {
     "next": "16.4.1",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: creates a todo with defaults\nok 1 - creates a todo with defaults\n  ---\n  duration_ms: 5.989824\n  type: 'test'\n  ...\n# Subtest: 400 on bad body and bad JSON\nok 2 - 400 on bad body and bad JSON\n  ---\n  duration_ms: 1.764864\n  type: 'test'\n  ...\n# Subtest: validates and coerces query params\nok 3 - validates and coerces query params\n  ---\n  duration_ms: 1.212071\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 341.811752\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: creates a todo with defaults\nok 1 - creates a todo with defaults\n  ---\n  duration_ms: 8.423466\n  type: 'test'\n  ...\n# Subtest: 400 on bad body and bad JSON\nok 2 - 400 on bad body and bad JSON\n  ---\n  duration_ms: 2.41195\n  type: 'test'\n  ...\n# Subtest: validates and coerces query params\nok 3 - validates and coerces query params\n  ---\n  duration_ms: 1.586303\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 408.170386\n"
 }

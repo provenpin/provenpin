@@ -1,15 +1,15 @@
 {
   "id": "limits-moving-window-memory",
   "status": "passed",
-  "ran_at": "2026-10-29T19:10:24.319Z",
-  "last_passed_at": "2026-10-29T19:10:24.319Z",
+  "ran_at": "2026-10-30T01:15:52.194Z",
+  "last_passed_at": "2026-10-30T01:15:52.194Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 434,
-    "test": 1087
+    "setup": 1075,
+    "test": 5140
   },
   "pinned": {
     "limits": "5.8.0",
@@ -24,7 +24,7 @@
     "pygments": "2.21.0",
     "pytest": "9.1.1",
     "typing-extensions": "4.16.0",
-    "wrapt": "2.5.1"
+    "wrapt": "2.5.2"
   },
   "recipe_hash": "sha256:b3b79644af85aa8402a4ff2e9783533442118a4c671e5e9d27de5d21d24db6d7",
   "files": {
@@ -38,8 +38,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n5 passed in 0.28s\n"
+  "log_tail": ".....                                                                    [100%]\n5 passed in 1.60s\n"
 }

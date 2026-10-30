@@ -1,15 +1,15 @@
 {
   "id": "jinja2-sandboxed-user-templates",
   "status": "passed",
-  "ran_at": "2026-10-29T19:08:47.561Z",
-  "last_passed_at": "2026-10-29T19:08:47.561Z",
+  "ran_at": "2026-10-30T01:14:05.039Z",
+  "last_passed_at": "2026-10-30T01:14:05.039Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 335,
-    "test": 530
+    "setup": 371,
+    "test": 1196
   },
   "pinned": {
     "jinja2": "3.1.6",
@@ -36,8 +36,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.09s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.17s\n"
 }

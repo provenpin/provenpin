@@ -1,15 +1,15 @@
 {
   "id": "fastify-swagger-openapi",
   "status": "passed",
-  "ran_at": "2026-10-29T19:05:51.650Z",
-  "last_passed_at": "2026-10-29T19:05:51.650Z",
+  "ran_at": "2026-10-30T01:11:12.771Z",
+  "last_passed_at": "2026-10-30T01:11:12.771Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4285,
-    "test": 735
+    "setup": 3619,
+    "test": 575
   },
   "pinned": {
     "fastify": "5.12.7",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates an OpenAPI 3.1 document from route schemas\nok 1 - generates an OpenAPI 3.1 document from route schemas\n  ---\n  duration_ms: 186.239181\n  type: 'test'\n  ...\n# Subtest: serves the document and hides the docs route itself\nok 2 - serves the document and hides the docs route itself\n  ---\n  duration_ms: 44.018941\n  type: 'test'\n  ...\n# Subtest: the same schemas validate requests\nok 3 - the same schemas validate requests\n  ---\n  duration_ms: 27.248292\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 566.074329\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: generates an OpenAPI 3.1 document from route schemas\nok 1 - generates an OpenAPI 3.1 document from route schemas\n  ---\n  duration_ms: 143.23442\n  type: 'test'\n  ...\n# Subtest: serves the document and hides the docs route itself\nok 2 - serves the document and hides the docs route itself\n  ---\n  duration_ms: 38.532597\n  type: 'test'\n  ...\n# Subtest: the same schemas validate requests\nok 3 - the same schemas validate requests\n  ---\n  duration_ms: 23.104151\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 450.461776\n"
 }

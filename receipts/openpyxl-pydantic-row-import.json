@@ -1,15 +1,15 @@
 {
   "id": "openpyxl-pydantic-row-import",
   "status": "passed",
-  "ran_at": "2026-10-29T19:13:49.271Z",
-  "last_passed_at": "2026-10-29T19:13:49.271Z",
+  "ran_at": "2026-10-30T01:19:01.778Z",
+  "last_passed_at": "2026-10-30T01:19:01.778Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 262,
-    "test": 1111
+    "setup": 1437,
+    "test": 1188
   },
   "pinned": {
     "openpyxl": "3.1.5",
@@ -42,8 +42,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.52s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.57s\n"
 }

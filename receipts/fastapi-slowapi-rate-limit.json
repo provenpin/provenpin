@@ -1,15 +1,15 @@
 {
   "id": "fastapi-slowapi-rate-limit",
   "status": "passed",
-  "ran_at": "2026-10-29T19:05:25.283Z",
-  "last_passed_at": "2026-10-29T19:05:25.283Z",
+  "ran_at": "2026-10-30T01:10:52.597Z",
+  "last_passed_at": "2026-10-30T01:10:52.597Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 367,
-    "test": 3381
+    "setup": 1069,
+    "test": 2985
   },
   "pinned": {
     "fastapi": "0.143.1",
@@ -41,7 +41,7 @@
     "starlette": "1.10.0",
     "typing-extensions": "4.16.0",
     "typing-inspection": "0.4.4",
-    "wrapt": "2.5.1"
+    "wrapt": "2.5.2"
   },
   "recipe_hash": "sha256:1313cf855f80be89a1bbaf92588458f2a1ab20fdfef17bc11fdff1ba69039412",
   "files": {
@@ -55,8 +55,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-slowapi-rate-limit-uKQKfl/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 1.16s\n"
+  "log_tail": ".....                                                                    [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.13/site-packages/fastapi/testclient.py:1\n  /tmp/pp-fastapi-slowapi-rate-limit-ORjNUc/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n5 passed, 1 warning in 1.08s\n"
 }

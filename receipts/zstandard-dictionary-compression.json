@@ -1,15 +1,15 @@
 {
   "id": "zstandard-dictionary-compression",
   "status": "passed",
-  "ran_at": "2026-10-29T19:23:54.963Z",
-  "last_passed_at": "2026-10-29T19:23:54.963Z",
+  "ran_at": "2026-10-30T01:29:17.087Z",
+  "last_passed_at": "2026-10-30T01:29:17.087Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 310,
-    "test": 1108
+    "setup": 251,
+    "test": 1293
   },
   "pinned": {
     "zstandard": "0.25.0",
@@ -35,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.04s\n"
 }

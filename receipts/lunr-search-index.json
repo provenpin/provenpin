@@ -1,15 +1,15 @@
 {
   "id": "lunr-search-index",
   "status": "passed",
-  "ran_at": "2026-10-29T19:10:52.518Z",
-  "last_passed_at": "2026-10-29T19:10:52.518Z",
+  "ran_at": "2026-10-30T01:16:09.098Z",
+  "last_passed_at": "2026-10-30T01:16:09.098Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1903,
-    "test": 457
+    "setup": 1661,
+    "test": 667
   },
   "pinned": {
     "lunr": "2.3.9",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "# Subtest: finds documents by term\nok 1 - finds documents by term\n  ---\n  duration_ms: 5.487151\n  type: 'test'\n  ...\n# Subtest: returns an empty result set for unknown terms\nok 2 - returns an empty result set for unknown terms\n  ---\n  duration_ms: 1.229949\n  type: 'test'\n  ...\n# Subtest: supports field-scoped queries\nok 3 - supports field-scoped queries\n  ---\n  duration_ms: 0.93759\n  type: 'test'\n  ...\n# Subtest: boosts title matches over body matches\nok 4 - boosts title matches over body matches\n  ---\n  duration_ms: 0.906431\n  type: 'test'\n  ...\n# Subtest: round-trips an index through toJSON and lunr.Index.load\nok 5 - round-trips an index through toJSON and lunr.Index.load\n  ---\n  duration_ms: 1.864129\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 288.568086\n"
+  "log_tail": "# Subtest: finds documents by term\nok 1 - finds documents by term\n  ---\n  duration_ms: 5.438667\n  type: 'test'\n  ...\n# Subtest: returns an empty result set for unknown terms\nok 2 - returns an empty result set for unknown terms\n  ---\n  duration_ms: 1.233142\n  type: 'test'\n  ...\n# Subtest: supports field-scoped queries\nok 3 - supports field-scoped queries\n  ---\n  duration_ms: 0.925605\n  type: 'test'\n  ...\n# Subtest: boosts title matches over body matches\nok 4 - boosts title matches over body matches\n  ---\n  duration_ms: 0.902372\n  type: 'test'\n  ...\n# Subtest: round-trips an index through toJSON and lunr.Index.load\nok 5 - round-trips an index through toJSON and lunr.Index.load\n  ---\n  duration_ms: 1.843196\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 505.781056\n"
 }

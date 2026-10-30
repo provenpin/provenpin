@@ -1,15 +1,15 @@
 {
   "id": "pandas-pyarrow-parquet-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-29T19:14:35.611Z",
-  "last_passed_at": "2026-10-29T19:14:35.611Z",
+  "ran_at": "2026-10-30T01:19:57.051Z",
+  "last_passed_at": "2026-10-30T01:19:57.051Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 795,
-    "test": 3065
+    "setup": 1437,
+    "test": 4112
   },
   "pinned": {
     "pandas": "3.0.6",
@@ -41,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 1.86s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 2.32s\n"
 }

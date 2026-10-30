@@ -1,15 +1,15 @@
 {
   "id": "pydantic-settings-nested-sources",
   "status": "passed",
-  "ran_at": "2026-10-29T19:16:43.995Z",
-  "last_passed_at": "2026-10-29T19:16:43.995Z",
+  "ran_at": "2026-10-30T01:21:57.495Z",
+  "last_passed_at": "2026-10-30T01:21:57.495Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 461,
-    "test": 2417
+    "setup": 391,
+    "test": 1366
   },
   "pinned": {
     "pydantic-settings": "2.16.0",
@@ -41,8 +41,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.92s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.59s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "qs-nested-query-strings",
   "status": "passed",
-  "ran_at": "2026-10-29T19:17:40.843Z",
-  "last_passed_at": "2026-10-29T19:17:40.843Z",
+  "ran_at": "2026-10-30T01:23:00.625Z",
+  "last_passed_at": "2026-10-30T01:23:00.625Z",
   "tests": {
     "passed": 8,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1896,
-    "test": 327
+    "setup": 2351,
+    "test": 482
   },
   "pinned": {
     "qs": "6.16.1",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "# Subtest: stringifies arrays in each format\nok 4 - stringifies arrays in each format\n  ---\n  duration_ms: 0.610015\n  type: 'test'\n  ...\n# Subtest: enforces the depth limit while parsing\nok 5 - enforces the depth limit while parsing\n  ---\n  duration_ms: 0.168743\n  type: 'test'\n  ...\n# Subtest: parses a typed filter\nok 6 - parses a typed filter\n  ---\n  duration_ms: 0.215484\n  type: 'test'\n  ...\n# Subtest: ignores non numeric and non boolean values\nok 7 - ignores non numeric and non boolean values\n  ---\n  duration_ms: 0.195904\n  type: 'test'\n  ...\n# Subtest: round-trips a filter through toQuery and parseFilter\nok 8 - round-trips a filter through toQuery and parseFilter\n  ---\n  duration_ms: 0.222454\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 195.906041\n"
+  "log_tail": "# Subtest: stringifies arrays in each format\nok 4 - stringifies arrays in each format\n  ---\n  duration_ms: 1.032295\n  type: 'test'\n  ...\n# Subtest: enforces the depth limit while parsing\nok 5 - enforces the depth limit while parsing\n  ---\n  duration_ms: 0.341119\n  type: 'test'\n  ...\n# Subtest: parses a typed filter\nok 6 - parses a typed filter\n  ---\n  duration_ms: 0.390862\n  type: 'test'\n  ...\n# Subtest: ignores non numeric and non boolean values\nok 7 - ignores non numeric and non boolean values\n  ---\n  duration_ms: 0.267522\n  type: 'test'\n  ...\n# Subtest: round-trips a filter through toQuery and parseFilter\nok 8 - round-trips a filter through toQuery and parseFilter\n  ---\n  duration_ms: 0.349405\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 302.31949\n"
 }

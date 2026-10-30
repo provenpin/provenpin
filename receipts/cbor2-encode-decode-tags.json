@@ -1,15 +1,15 @@
 {
   "id": "cbor2-encode-decode-tags",
   "status": "passed",
-  "ran_at": "2026-10-29T19:00:29.201Z",
-  "last_passed_at": "2026-10-29T19:00:29.201Z",
+  "ran_at": "2026-10-30T01:06:17.010Z",
+  "last_passed_at": "2026-10-30T01:06:17.010Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 180,
-    "test": 1001
+    "setup": 1146,
+    "test": 1298
   },
   "pinned": {
     "cbor2": "6.1.5",
@@ -35,8 +35,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.12s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.16s\n"
 }

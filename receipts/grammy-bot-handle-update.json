@@ -1,15 +1,15 @@
 {
   "id": "grammy-bot-handle-update",
   "status": "passed",
-  "ran_at": "2026-10-29T19:06:43.055Z",
-  "last_passed_at": "2026-10-29T19:06:43.055Z",
+  "ran_at": "2026-10-30T01:12:07.510Z",
+  "last_passed_at": "2026-10-30T01:12:07.510Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1629,
-    "test": 376
+    "setup": 1922,
+    "test": 477
   },
   "pinned": {
     "grammy": "1.46.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: /start replies with name\nok 1 - /start replies with name\n  ---\n  duration_ms: 3.224761\n  type: 'test'\n  ...\n# Subtest: session state persists across updates\nok 2 - session state persists across updates\n  ---\n  duration_ms: 0.49287\n  type: 'test'\n  ...\n# Subtest: plain text gets an inline keyboard\nok 3 - plain text gets an inline keyboard\n  ---\n  duration_ms: 0.493211\n  type: 'test'\n  ...\n# Subtest: callback query answers and edits\nok 4 - callback query answers and edits\n  ---\n  duration_ms: 0.65447\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 245.562741\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: /start replies with name\nok 1 - /start replies with name\n  ---\n  duration_ms: 4.472372\n  type: 'test'\n  ...\n# Subtest: session state persists across updates\nok 2 - session state persists across updates\n  ---\n  duration_ms: 0.745178\n  type: 'test'\n  ...\n# Subtest: plain text gets an inline keyboard\nok 3 - plain text gets an inline keyboard\n  ---\n  duration_ms: 0.715403\n  type: 'test'\n  ...\n# Subtest: callback query answers and edits\nok 4 - callback query answers and edits\n  ---\n  duration_ms: 0.976102\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 304.836216\n"
 }

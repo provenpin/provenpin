@@ -1,15 +1,15 @@
 {
   "id": "pretty-bytes-format",
   "status": "passed",
-  "ran_at": "2026-10-29T19:15:55.134Z",
-  "last_passed_at": "2026-10-29T19:15:55.134Z",
+  "ran_at": "2026-10-30T01:21:13.482Z",
+  "last_passed_at": "2026-10-30T01:21:13.482Z",
   "tests": {
     "passed": 8,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1500,
-    "test": 616
+    "setup": 1972,
+    "test": 365
   },
   "pinned": {
     "pretty-bytes": "7.2.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "# Subtest: formats bits when requested\nok 4 - formats bits when requested\n  ---\n  duration_ms: 0.05996\n  type: 'test'\n  ...\n# Subtest: formats binary units when requested\nok 5 - formats binary units when requested\n  ---\n  duration_ms: 0.104396\n  type: 'test'\n  ...\n# Subtest: adds a sign for positive and negative values\nok 6 - adds a sign for positive and negative values\n  ---\n  duration_ms: 0.057085\n  type: 'test'\n  ...\n# Subtest: honours minimumFractionDigits\nok 7 - honours minimumFractionDigits\n  ---\n  duration_ms: 338.094525\n  type: 'test'\n  ...\n# Subtest: rejects non-finite input\nok 8 - rejects non-finite input\n  ---\n  duration_ms: 0.410655\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 511.679781\n"
+  "log_tail": "# Subtest: formats bits when requested\nok 4 - formats bits when requested\n  ---\n  duration_ms: 0.11376\n  type: 'test'\n  ...\n# Subtest: formats binary units when requested\nok 5 - formats binary units when requested\n  ---\n  duration_ms: 0.199589\n  type: 'test'\n  ...\n# Subtest: adds a sign for positive and negative values\nok 6 - adds a sign for positive and negative values\n  ---\n  duration_ms: 0.121501\n  type: 'test'\n  ...\n# Subtest: honours minimumFractionDigits\nok 7 - honours minimumFractionDigits\n  ---\n  duration_ms: 28.653133\n  type: 'test'\n  ...\n# Subtest: rejects non-finite input\nok 8 - rejects non-finite input\n  ---\n  duration_ms: 0.419957\n  type: 'test'\n  ...\n1..8\n# tests 8\n# suites 0\n# pass 8\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 210.612403\n"
 }

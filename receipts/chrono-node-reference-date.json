@@ -1,15 +1,15 @@
 {
   "id": "chrono-node-reference-date",
   "status": "passed",
-  "ran_at": "2026-10-29T19:00:55.870Z",
-  "last_passed_at": "2026-10-29T19:00:55.870Z",
+  "ran_at": "2026-10-30T01:06:42.911Z",
+  "last_passed_at": "2026-10-30T01:06:42.911Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2807,
-    "test": 751
+    "setup": 1978,
+    "test": 458
   },
   "pinned": {
     "chrono-node": "2.10.3",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "# Subtest: ranges give start and end\nok 3 - ranges give start and end\n  ---\n  duration_ms: 1.231358\n  type: 'test'\n  ...\n# Subtest: finds dates inside a sentence with position and certainty\nok 4 - finds dates inside a sentence with position and certainty\n  ---\n  duration_ms: 0.650179\n  type: 'test'\n  ...\n# Subtest: UTC offset changes the instant\nok 5 - UTC offset changes the instant\n  ---\n  duration_ms: 1.191514\n  type: 'test'\n  ...\n# Subtest: en.GB reads day before month\nok 6 - en.GB reads day before month\n  ---\n  duration_ms: 4.347529\n  type: 'test'\n  ...\n# Subtest: no date returns empty\nok 7 - no date returns empty\n  ---\n  duration_ms: 0.877305\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 590.324333\n"
+  "log_tail": "# Subtest: ranges give start and end\nok 3 - ranges give start and end\n  ---\n  duration_ms: 0.776851\n  type: 'test'\n  ...\n# Subtest: finds dates inside a sentence with position and certainty\nok 4 - finds dates inside a sentence with position and certainty\n  ---\n  duration_ms: 0.430204\n  type: 'test'\n  ...\n# Subtest: UTC offset changes the instant\nok 5 - UTC offset changes the instant\n  ---\n  duration_ms: 0.697982\n  type: 'test'\n  ...\n# Subtest: en.GB reads day before month\nok 6 - en.GB reads day before month\n  ---\n  duration_ms: 3.0062\n  type: 'test'\n  ...\n# Subtest: no date returns empty\nok 7 - no date returns empty\n  ---\n  duration_ms: 0.581163\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 347.061211\n"
 }

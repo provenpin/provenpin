@@ -1,15 +1,15 @@
 {
   "id": "globby-ignore-patterns",
   "status": "passed",
-  "ran_at": "2026-10-29T19:06:33.755Z",
-  "last_passed_at": "2026-10-29T19:06:33.755Z",
+  "ran_at": "2026-10-30T01:11:56.722Z",
+  "last_passed_at": "2026-10-30T01:11:56.722Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2634,
-    "test": 368
+    "setup": 2151,
+    "test": 433
   },
   "pinned": {
     "globby": "16.2.4",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: returns sorted relative paths and excludes ignored files\nok 1 - returns sorted relative paths and excludes ignored files\n  ---\n  duration_ms: 14.178532\n  type: 'test'\n  ...\n# Subtest: returns absolute paths when absolute is true\nok 2 - returns absolute paths when absolute is true\n  ---\n  duration_ms: 4.360673\n  type: 'test'\n  ...\n# Subtest: onlyFiles excludes directories from results\nok 3 - onlyFiles excludes directories from results\n  ---\n  duration_ms: 3.650803\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 238.014892\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: returns sorted relative paths and excludes ignored files\nok 1 - returns sorted relative paths and excludes ignored files\n  ---\n  duration_ms: 18.804325\n  type: 'test'\n  ...\n# Subtest: returns absolute paths when absolute is true\nok 2 - returns absolute paths when absolute is true\n  ---\n  duration_ms: 5.390645\n  type: 'test'\n  ...\n# Subtest: onlyFiles excludes directories from results\nok 3 - onlyFiles excludes directories from results\n  ---\n  duration_ms: 4.297135\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 283.962434\n"
 }

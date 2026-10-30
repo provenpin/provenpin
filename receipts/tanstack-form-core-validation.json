@@ -1,15 +1,15 @@
 {
   "id": "tanstack-form-core-validation",
   "status": "passed",
-  "ran_at": "2026-10-29T19:21:03.504Z",
-  "last_passed_at": "2026-10-29T19:21:03.504Z",
+  "ran_at": "2026-10-30T01:26:12.191Z",
+  "last_passed_at": "2026-10-30T01:26:12.191Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1635,
-    "test": 5297
+    "setup": 1937,
+    "test": 5236
   },
   "pinned": {
     "@tanstack/form-core": "1.33.5",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: validators catch bad email and age\nok 1 - validators catch bad email and age\n  ---\n  duration_ms: 0.473495\n  type: 'test'\n  ...\n# Subtest: form submits cleaned values\nok 2 - form submits cleaned values\n  ---\n  duration_ms: 3.521193\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 5179.744403\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: validators catch bad email and age\nok 1 - validators catch bad email and age\n  ---\n  duration_ms: 0.464757\n  type: 'test'\n  ...\n# Subtest: form submits cleaned values\nok 2 - form submits cleaned values\n  ---\n  duration_ms: 3.456938\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 5138.451569\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "cosmiconfig-fixture-load",
   "status": "passed",
-  "ran_at": "2026-10-29T19:01:24.726Z",
-  "last_passed_at": "2026-10-29T19:01:24.726Z",
+  "ran_at": "2026-10-30T01:07:04.388Z",
+  "last_passed_at": "2026-10-30T01:07:04.388Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1830,
-    "test": 281
+    "setup": 1953,
+    "test": 248
   },
   "pinned": {
     "cosmiconfig": "10.0.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loads .demoapprc.json from search root\nok 1 - loads .demoapprc.json from search root\n  ---\n  duration_ms: 2.775894\n  type: 'test'\n  ...\n# Subtest: throws when no config exists\nok 2 - throws when no config exists\n  ---\n  duration_ms: 0.825178\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 157.19797\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: loads .demoapprc.json from search root\nok 1 - loads .demoapprc.json from search root\n  ---\n  duration_ms: 2.442904\n  type: 'test'\n  ...\n# Subtest: throws when no config exists\nok 2 - throws when no config exists\n  ---\n  duration_ms: 0.809236\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 143.208098\n"
 }

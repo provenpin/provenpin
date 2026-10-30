@@ -1,15 +1,15 @@
 {
   "id": "crypto-js-aes-hmac",
   "status": "passed",
-  "ran_at": "2026-10-29T19:01:37.697Z",
-  "last_passed_at": "2026-10-29T19:01:37.697Z",
+  "ran_at": "2026-10-30T01:07:20.090Z",
+  "last_passed_at": "2026-10-30T01:07:20.090Z",
   "tests": {
     "passed": 9,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1840,
-    "test": 398
+    "setup": 1855,
+    "test": 384
   },
   "pinned": {
     "crypto-js": "4.2.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40935577961"
+    "runner": "github-actions 40983450543"
   },
   "errors": [],
-  "log_tail": "# Subtest: AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\nok 5 - AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\n  ---\n  duration_ms: 0.329178\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 known vector (hex)\nok 6 - HmacSHA256 known vector (hex)\n  ---\n  duration_ms: 0.657654\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 base64 encodes the same known vector bytes\nok 7 - HmacSHA256 base64 encodes the same known vector bytes\n  ---\n  duration_ms: 0.454904\n  type: 'test'\n  ...\n# Subtest: SHA256 known vectors\nok 8 - SHA256 known vectors\n  ---\n  duration_ms: 0.225713\n  type: 'test'\n  ...\n# Subtest: PBKDF2-HMAC-SHA256 known vectors\nok 9 - PBKDF2-HMAC-SHA256 known vectors\n  ---\n  duration_ms: 0.977434\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 242.115593\n"
+  "log_tail": "# Subtest: AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\nok 5 - AES-128-CBC known vector (NIST SP 800-38A F.2.1, no padding)\n  ---\n  duration_ms: 0.327065\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 known vector (hex)\nok 6 - HmacSHA256 known vector (hex)\n  ---\n  duration_ms: 0.58015\n  type: 'test'\n  ...\n# Subtest: HmacSHA256 base64 encodes the same known vector bytes\nok 7 - HmacSHA256 base64 encodes the same known vector bytes\n  ---\n  duration_ms: 0.391762\n  type: 'test'\n  ...\n# Subtest: SHA256 known vectors\nok 8 - SHA256 known vectors\n  ---\n  duration_ms: 0.198352\n  type: 'test'\n  ...\n# Subtest: PBKDF2-HMAC-SHA256 known vectors\nok 9 - PBKDF2-HMAC-SHA256 known vectors\n  ---\n  duration_ms: 0.977865\n  type: 'test'\n  ...\n1..9\n# tests 9\n# suites 0\n# pass 9\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 234.734926\n"
 }
