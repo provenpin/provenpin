@@ -1,15 +1,15 @@
 {
   "id": "deepdiff-pydantic-compare",
   "status": "passed",
-  "ran_at": "2026-10-30T01:07:52.132Z",
-  "last_passed_at": "2026-10-30T01:07:52.132Z",
+  "ran_at": "2026-10-30T07:06:01.103Z",
+  "last_passed_at": "2026-10-30T07:06:01.103Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 491,
-    "test": 1152
+    "setup": 352,
+    "test": 1762
   },
   "pinned": {
     "deepdiff": "9.1.0",
@@ -43,8 +43,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.54s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.73s\n"
 }

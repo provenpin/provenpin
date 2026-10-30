@@ -1,15 +1,15 @@
 {
   "id": "currency-js-money-math",
   "status": "passed",
-  "ran_at": "2026-10-30T01:07:33.842Z",
-  "last_passed_at": "2026-10-30T01:07:33.842Z",
+  "ran_at": "2026-10-30T07:05:41.234Z",
+  "last_passed_at": "2026-10-30T07:05:41.234Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1429,
-    "test": 218
+    "setup": 1506,
+    "test": 386
   },
   "pinned": {
     "currency.js": "2.0.4",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "# Subtest: adds precise cents with no floating point drift\nok 2 - adds precise cents with no floating point drift\n  ---\n  duration_ms: 0.347596\n  type: 'test'\n  ...\n# Subtest: subtracts precise cents with no floating point drift\nok 3 - subtracts precise cents with no floating point drift\n  ---\n  duration_ms: 0.120102\n  type: 'test'\n  ...\n# Subtest: multiplies to whole cents\nok 4 - multiplies to whole cents\n  ---\n  duration_ms: 0.09258\n  type: 'test'\n  ...\n# Subtest: distributes a total into whole cents with no drift\nok 5 - distributes a total into whole cents with no drift\n  ---\n  duration_ms: 0.613057\n  type: 'test'\n  ...\n# Subtest: formats with symbol and separator options\nok 6 - formats with symbol and separator options\n  ---\n  duration_ms: 0.155745\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 121.447622\n"
+  "log_tail": "# Subtest: adds precise cents with no floating point drift\nok 2 - adds precise cents with no floating point drift\n  ---\n  duration_ms: 0.505776\n  type: 'test'\n  ...\n# Subtest: subtracts precise cents with no floating point drift\nok 3 - subtracts precise cents with no floating point drift\n  ---\n  duration_ms: 0.202749\n  type: 'test'\n  ...\n# Subtest: multiplies to whole cents\nok 4 - multiplies to whole cents\n  ---\n  duration_ms: 0.201527\n  type: 'test'\n  ...\n# Subtest: distributes a total into whole cents with no drift\nok 5 - distributes a total into whole cents with no drift\n  ---\n  duration_ms: 0.861341\n  type: 'test'\n  ...\n# Subtest: formats with symbol and separator options\nok 6 - formats with symbol and separator options\n  ---\n  duration_ms: 0.234078\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 214.994102\n"
 }

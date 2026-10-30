@@ -1,15 +1,15 @@
 {
   "id": "drizzle-pglite-postgres",
   "status": "passed",
-  "ran_at": "2026-10-30T01:08:50.218Z",
-  "last_passed_at": "2026-10-30T01:08:50.218Z",
+  "ran_at": "2026-10-30T07:06:51.091Z",
+  "last_passed_at": "2026-10-30T07:06:51.091Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 6785,
-    "test": 4311
+    "setup": 6227,
+    "test": 3876
   },
   "pinned": {
     "drizzle-orm": "0.45.4",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: insert with returning and join\nok 1 - insert with returning and join\n  ---\n  duration_ms: 1988.014559\n  type: 'test'\n  ...\n# Subtest: unique violation rolls back the transaction\nok 2 - unique violation rolls back the transaction\n  ---\n  duration_ms: 1338.716779\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 4157.161762\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: insert with returning and join\nok 1 - insert with returning and join\n  ---\n  duration_ms: 1751.485437\n  type: 'test'\n  ...\n# Subtest: unique violation rolls back the transaction\nok 2 - unique violation rolls back the transaction\n  ---\n  duration_ms: 1288.09544\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3749.928576\n"
 }

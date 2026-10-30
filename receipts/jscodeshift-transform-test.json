@@ -1,15 +1,15 @@
 {
   "id": "jscodeshift-transform-test",
   "status": "passed",
-  "ran_at": "2026-10-30T01:14:24.125Z",
-  "last_passed_at": "2026-10-30T01:14:24.125Z",
+  "ran_at": "2026-10-30T07:12:29.026Z",
+  "last_passed_at": "2026-10-30T07:12:29.026Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3621,
-    "test": 341
+    "setup": 3514,
+    "test": 324
   },
   "pinned": {
     "jscodeshift": "17.4.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renames an imported identifier and its usages\nok 1 - renames an imported identifier and its usages\n  ---\n  duration_ms: 11.136773\n  type: 'test'\n  ...\n# Subtest: converts a require call to a default import and renames usages\nok 2 - converts a require call to a default import and renames usages\n  ---\n  duration_ms: 2.15255\n  type: 'test'\n  ...\n# Subtest: converts a destructured require to a named import\nok 3 - converts a destructured require to a named import\n  ---\n  duration_ms: 2.297137\n  type: 'test'\n  ...\n# Subtest: leaves non-computed member property names untouched\nok 4 - leaves non-computed member property names untouched\n  ---\n  duration_ms: 1.611058\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 234.146121\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: renames an imported identifier and its usages\nok 1 - renames an imported identifier and its usages\n  ---\n  duration_ms: 10.195103\n  type: 'test'\n  ...\n# Subtest: converts a require call to a default import and renames usages\nok 2 - converts a require call to a default import and renames usages\n  ---\n  duration_ms: 1.957133\n  type: 'test'\n  ...\n# Subtest: converts a destructured require to a named import\nok 3 - converts a destructured require to a named import\n  ---\n  duration_ms: 2.061922\n  type: 'test'\n  ...\n# Subtest: leaves non-computed member property names untouched\nok 4 - leaves non-computed member property names untouched\n  ---\n  duration_ms: 1.506343\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 220.470333\n"
 }

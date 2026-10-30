@@ -1,15 +1,15 @@
 {
   "id": "express-openapi-validator-spec",
   "status": "passed",
-  "ran_at": "2026-10-30T01:09:44.325Z",
-  "last_passed_at": "2026-10-30T01:09:44.325Z",
+  "ran_at": "2026-10-30T07:07:52.220Z",
+  "last_passed_at": "2026-10-30T07:07:52.220Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3773,
-    "test": 721
+    "setup": 4131,
+    "test": 1071
   },
   "pinned": {
     "express": "5.3.0",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "# Subtest: GET valid path and query returns 200\nok 1 - GET valid path and query returns 200\n  ---\n  duration_ms: 112.068424\n  type: 'test'\n  ...\n# Subtest: GET invalid path param returns 400 with details\nok 2 - GET invalid path param returns 400 with details\n  ---\n  duration_ms: 65.378251\n  type: 'test'\n  ...\n# Subtest: GET invalid query returns 400 with details\nok 3 - GET invalid query returns 400 with details\n  ---\n  duration_ms: 46.433206\n  type: 'test'\n  ...\n# Subtest: POST valid JSON body returns 201\nok 4 - POST valid JSON body returns 201\n  ---\n  duration_ms: 58.982425\n  type: 'test'\n  ...\n# Subtest: POST invalid JSON body returns 400 with details\nok 5 - POST invalid JSON body returns 400 with details\n  ---\n  duration_ms: 35.956508\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 611.45712\n"
+  "log_tail": "# Subtest: GET valid path and query returns 200\nok 1 - GET valid path and query returns 200\n  ---\n  duration_ms: 188.004764\n  type: 'test'\n  ...\n# Subtest: GET invalid path param returns 400 with details\nok 2 - GET invalid path param returns 400 with details\n  ---\n  duration_ms: 103.063534\n  type: 'test'\n  ...\n# Subtest: GET invalid query returns 400 with details\nok 3 - GET invalid query returns 400 with details\n  ---\n  duration_ms: 71.491929\n  type: 'test'\n  ...\n# Subtest: POST valid JSON body returns 201\nok 4 - POST valid JSON body returns 201\n  ---\n  duration_ms: 65.655353\n  type: 'test'\n  ...\n# Subtest: POST invalid JSON body returns 400 with details\nok 5 - POST invalid JSON body returns 400 with details\n  ---\n  duration_ms: 55.942084\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 918.925397\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "mathjs-units-expressions",
   "status": "passed",
-  "ran_at": "2026-10-30T01:16:41.321Z",
-  "last_passed_at": "2026-10-30T01:16:41.321Z",
+  "ran_at": "2026-10-30T07:15:30.698Z",
+  "last_passed_at": "2026-10-30T07:15:30.698Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3051,
-    "test": 1499
+    "setup": 2941,
+    "test": 1188
   },
   "pinned": {
     "mathjs": "15.2.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "# Subtest: converts units\nok 2 - converts units\n  ---\n  duration_ms: 2.991547\n  type: 'test'\n  ...\n# Subtest: compiled rules run repeatedly\nok 3 - compiled rules run repeatedly\n  ---\n  duration_ms: 1.900482\n  type: 'test'\n  ...\n# Subtest: matrices\nok 4 - matrices\n  ---\n  duration_ms: 1.403359\n  type: 'test'\n  ...\n# Subtest: BigNumber avoids float drift\nok 5 - BigNumber avoids float drift\n  ---\n  duration_ms: 42.155705\n  type: 'test'\n  ...\n# Subtest: import and createUnit are disabled for untrusted input\nok 6 - import and createUnit are disabled for untrusted input\n  ---\n  duration_ms: 0.980287\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1290.054045\n"
+  "log_tail": "# Subtest: converts units\nok 2 - converts units\n  ---\n  duration_ms: 3.248593\n  type: 'test'\n  ...\n# Subtest: compiled rules run repeatedly\nok 3 - compiled rules run repeatedly\n  ---\n  duration_ms: 2.89756\n  type: 'test'\n  ...\n# Subtest: matrices\nok 4 - matrices\n  ---\n  duration_ms: 1.870032\n  type: 'test'\n  ...\n# Subtest: BigNumber avoids float drift\nok 5 - BigNumber avoids float drift\n  ---\n  duration_ms: 28.954891\n  type: 'test'\n  ...\n# Subtest: import and createUnit are disabled for untrusted input\nok 6 - import and createUnit are disabled for untrusted input\n  ---\n  duration_ms: 0.593691\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1041.505263\n"
 }

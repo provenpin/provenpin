@@ -1,15 +1,15 @@
 {
   "id": "moment-timezone-convert-format",
   "status": "passed",
-  "ran_at": "2026-10-30T01:17:06.159Z",
-  "last_passed_at": "2026-10-30T01:17:06.159Z",
+  "ran_at": "2026-10-30T07:16:00.344Z",
+  "last_passed_at": "2026-10-30T07:16:00.344Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1843,
-    "test": 385
+    "setup": 1671,
+    "test": 329
   },
   "pinned": {
     "moment": "2.31.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: converts a New York morning to Tokyo and UTC with abbreviations\nok 1 - converts a New York morning to Tokyo and UTC with abbreviations\n  ---\n  duration_ms: 6.976835\n  type: 'test'\n  ...\n# Subtest: spring forward gap normalizes 02:30 to 03:30 EDT\nok 2 - spring forward gap normalizes 02:30 to 03:30 EDT\n  ---\n  duration_ms: 0.881261\n  type: 'test'\n  ...\n# Subtest: fall back overlap maps two UTC instants to 01:30 local\nok 3 - fall back overlap maps two UTC instants to 01:30 local\n  ---\n  duration_ms: 1.594588\n  type: 'test'\n  ...\n# Subtest: computes business hour overlap between zones\nok 4 - computes business hour overlap between zones\n  ---\n  duration_ms: 1.335874\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 229.319763\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: converts a New York morning to Tokyo and UTC with abbreviations\nok 1 - converts a New York morning to Tokyo and UTC with abbreviations\n  ---\n  duration_ms: 5.036024\n  type: 'test'\n  ...\n# Subtest: spring forward gap normalizes 02:30 to 03:30 EDT\nok 2 - spring forward gap normalizes 02:30 to 03:30 EDT\n  ---\n  duration_ms: 0.479394\n  type: 'test'\n  ...\n# Subtest: fall back overlap maps two UTC instants to 01:30 local\nok 3 - fall back overlap maps two UTC instants to 01:30 local\n  ---\n  duration_ms: 1.008963\n  type: 'test'\n  ...\n# Subtest: computes business hour overlap between zones\nok 4 - computes business hour overlap between zones\n  ---\n  duration_ms: 0.943826\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 204.857008\n"
 }

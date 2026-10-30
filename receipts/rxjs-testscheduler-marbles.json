@@ -1,15 +1,15 @@
 {
   "id": "rxjs-testscheduler-marbles",
   "status": "passed",
-  "ran_at": "2026-10-30T01:23:59.947Z",
-  "last_passed_at": "2026-10-30T01:23:59.947Z",
+  "ran_at": "2026-10-30T07:22:44.246Z",
+  "last_passed_at": "2026-10-30T07:22:44.246Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2595,
-    "test": 523
+    "setup": 2560,
+    "test": 538
   },
   "pinned": {
     "rxjs": "7.8.2",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: debounces, filters short terms and dedupes\nok 1 - debounces, filters short terms and dedupes\n  ---\n  duration_ms: 5.387242\n  type: 'test'\n  ...\n# Subtest: switchMap cancels a slow in-flight search\nok 2 - switchMap cancels a slow in-flight search\n  ---\n  duration_ms: 0.961605\n  type: 'test'\n  ...\n# Subtest: errors become a fallback value without killing the stream\nok 3 - errors become a fallback value without killing the stream\n  ---\n  duration_ms: 0.681479\n  type: 'test'\n  ...\n# Subtest: retry resubscribes after a delay\nok 4 - retry resubscribes after a delay\n  ---\n  duration_ms: 0.847129\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 358.82778\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: debounces, filters short terms and dedupes\nok 1 - debounces, filters short terms and dedupes\n  ---\n  duration_ms: 5.507136\n  type: 'test'\n  ...\n# Subtest: switchMap cancels a slow in-flight search\nok 2 - switchMap cancels a slow in-flight search\n  ---\n  duration_ms: 0.9394\n  type: 'test'\n  ...\n# Subtest: errors become a fallback value without killing the stream\nok 3 - errors become a fallback value without killing the stream\n  ---\n  duration_ms: 0.713948\n  type: 'test'\n  ...\n# Subtest: retry resubscribes after a delay\nok 4 - retry resubscribes after a delay\n  ---\n  duration_ms: 0.906438\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 374.109381\n"
 }

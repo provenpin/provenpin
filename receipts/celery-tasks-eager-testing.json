@@ -1,15 +1,15 @@
 {
   "id": "celery-tasks-eager-testing",
   "status": "passed",
-  "ran_at": "2026-10-30T01:06:24.070Z",
-  "last_passed_at": "2026-10-30T01:06:24.070Z",
+  "ran_at": "2026-10-30T07:04:25.358Z",
+  "last_passed_at": "2026-10-30T07:04:25.358Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 342,
-    "test": 1800
+    "setup": 408,
+    "test": 1791
   },
   "pinned": {
     "celery": "5.6.3",
@@ -50,8 +50,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "....                                                                     [100%]\n4 passed in 0.65s\n"
+  "log_tail": "....                                                                     [100%]\n4 passed in 0.74s\n"
 }

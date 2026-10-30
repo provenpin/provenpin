@@ -1,15 +1,15 @@
 {
   "id": "superjson-dates-maps",
   "status": "passed",
-  "ran_at": "2026-10-30T01:25:55.860Z",
-  "last_passed_at": "2026-10-30T01:25:55.860Z",
+  "ran_at": "2026-10-30T07:24:36.476Z",
+  "last_passed_at": "2026-10-30T07:24:36.476Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1674,
-    "test": 311
+    "setup": 1618,
+    "test": 353
   },
   "pinned": {
     "superjson": "2.2.6",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: round trips Date, Map, Set, BigInt and undefined\nok 1 - round trips Date, Map, Set, BigInt and undefined\n  ---\n  duration_ms: 2.387501\n  type: 'test'\n  ...\n# Subtest: exposes the json and meta annotations\nok 2 - exposes the json and meta annotations\n  ---\n  duration_ms: 0.396577\n  type: 'test'\n  ...\n# Subtest: stringify and serialize produce equivalent payloads\nok 3 - stringify and serialize produce equivalent payloads\n  ---\n  duration_ms: 0.680882\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 173.610731\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: round trips Date, Map, Set, BigInt and undefined\nok 1 - round trips Date, Map, Set, BigInt and undefined\n  ---\n  duration_ms: 2.998143\n  type: 'test'\n  ...\n# Subtest: exposes the json and meta annotations\nok 2 - exposes the json and meta annotations\n  ---\n  duration_ms: 0.467793\n  type: 'test'\n  ...\n# Subtest: stringify and serialize produce equivalent payloads\nok 3 - stringify and serialize produce equivalent payloads\n  ---\n  duration_ms: 0.798287\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 195.486488\n"
 }

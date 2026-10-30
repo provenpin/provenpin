@@ -1,15 +1,15 @@
 {
   "id": "dequal-object-hash-compare",
   "status": "passed",
-  "ran_at": "2026-10-30T01:07:58.986Z",
-  "last_passed_at": "2026-10-30T01:07:58.986Z",
+  "ran_at": "2026-10-30T07:06:09.932Z",
+  "last_passed_at": "2026-10-30T07:06:09.932Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1636,
-    "test": 292
+    "setup": 1549,
+    "test": 275
   },
   "pinned": {
     "dequal": "2.0.3",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "# Subtest: dequal reports inequality for different nested values\nok 2 - dequal reports inequality for different nested values\n  ---\n  duration_ms: 0.204837\n  type: 'test'\n  ...\n# Subtest: stableHash matches equivalent objects regardless of key order\nok 3 - stableHash matches equivalent objects regardless of key order\n  ---\n  duration_ms: 0.981844\n  type: 'test'\n  ...\n# Subtest: stableHash differs when a nested value changes\nok 4 - stableHash differs when a nested value changes\n  ---\n  duration_ms: 0.295343\n  type: 'test'\n  ...\n# Subtest: unorderedArrays makes array hashes order independent\nok 5 - unorderedArrays makes array hashes order independent\n  ---\n  duration_ms: 0.544166\n  type: 'test'\n  ...\n# Subtest: excludeKeys ignores volatile fields\nok 6 - excludeKeys ignores volatile fields\n  ---\n  duration_ms: 0.274772\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 160.418905\n"
+  "log_tail": "# Subtest: dequal reports inequality for different nested values\nok 2 - dequal reports inequality for different nested values\n  ---\n  duration_ms: 0.266592\n  type: 'test'\n  ...\n# Subtest: stableHash matches equivalent objects regardless of key order\nok 3 - stableHash matches equivalent objects regardless of key order\n  ---\n  duration_ms: 1.51838\n  type: 'test'\n  ...\n# Subtest: stableHash differs when a nested value changes\nok 4 - stableHash differs when a nested value changes\n  ---\n  duration_ms: 0.559617\n  type: 'test'\n  ...\n# Subtest: unorderedArrays makes array hashes order independent\nok 5 - unorderedArrays makes array hashes order independent\n  ---\n  duration_ms: 0.873754\n  type: 'test'\n  ...\n# Subtest: excludeKeys ignores volatile fields\nok 6 - excludeKeys ignores volatile fields\n  ---\n  duration_ms: 0.468592\n  type: 'test'\n  ...\n1..6\n# tests 6\n# suites 0\n# pass 6\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 157.069275\n"
 }

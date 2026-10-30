@@ -1,15 +1,15 @@
 {
   "id": "pathe-normalize-join",
   "status": "passed",
-  "ran_at": "2026-10-30T01:20:15.308Z",
-  "last_passed_at": "2026-10-30T01:20:15.308Z",
+  "ran_at": "2026-10-30T07:18:52.145Z",
+  "last_passed_at": "2026-10-30T07:18:52.145Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1964,
-    "test": 552
+    "setup": 1515,
+    "test": 346
   },
   "pinned": {
     "pathe": "2.0.3",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "# Subtest: join returns POSIX-style paths\nok 1 - join returns POSIX-style paths\n  ---\n  duration_ms: 1.307402\n  type: 'test'\n  ...\n# Subtest: mixed slash inputs normalize consistently\nok 2 - mixed slash inputs normalize consistently\n  ---\n  duration_ms: 0.185545\n  type: 'test'\n  ...\n# Subtest: normalize resolves dot segments\nok 3 - normalize resolves dot segments\n  ---\n  duration_ms: 0.145531\n  type: 'test'\n  ...\n# Subtest: basename, extname and dirname operate on POSIX paths\nok 4 - basename, extname and dirname operate on POSIX paths\n  ---\n  duration_ms: 0.298656\n  type: 'test'\n  ...\n# Subtest: relative computes POSIX-style traversals\nok 5 - relative computes POSIX-style traversals\n  ---\n  duration_ms: 0.342356\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 352.714828\n"
+  "log_tail": "# Subtest: join returns POSIX-style paths\nok 1 - join returns POSIX-style paths\n  ---\n  duration_ms: 1.283317\n  type: 'test'\n  ...\n# Subtest: mixed slash inputs normalize consistently\nok 2 - mixed slash inputs normalize consistently\n  ---\n  duration_ms: 0.182387\n  type: 'test'\n  ...\n# Subtest: normalize resolves dot segments\nok 3 - normalize resolves dot segments\n  ---\n  duration_ms: 0.124195\n  type: 'test'\n  ...\n# Subtest: basename, extname and dirname operate on POSIX paths\nok 4 - basename, extname and dirname operate on POSIX paths\n  ---\n  duration_ms: 0.277777\n  type: 'test'\n  ...\n# Subtest: relative computes POSIX-style traversals\nok 5 - relative computes POSIX-style traversals\n  ---\n  duration_ms: 0.374902\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 187.547027\n"
 }

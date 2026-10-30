@@ -1,15 +1,15 @@
 {
   "id": "express5-async-error-handling",
   "status": "passed",
-  "ran_at": "2026-10-30T01:10:03.463Z",
-  "last_passed_at": "2026-10-30T01:10:03.463Z",
+  "ran_at": "2026-10-30T07:08:17.613Z",
+  "last_passed_at": "2026-10-30T07:08:17.613Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3844,
-    "test": 542
+    "setup": 3603,
+    "test": 528
   },
   "pinned": {
     "express": "5.3.0",
@@ -30,8 +30,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: resolves async handler with router-level params\nok 1 - resolves async handler with router-level params\n  ---\n  duration_ms: 39.793916\n  type: 'test'\n  ...\n# Subtest: rejected async handler reaches error middleware without try/catch\nok 2 - rejected async handler reaches error middleware without try/catch\n  ---\n  duration_ms: 7.031566\n  type: 'test'\n  ...\n# Subtest: unknown route returns JSON 404\nok 3 - unknown route returns JSON 404\n  ---\n  duration_ms: 4.067949\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 378.687492\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: resolves async handler with router-level params\nok 1 - resolves async handler with router-level params\n  ---\n  duration_ms: 37.444554\n  type: 'test'\n  ...\n# Subtest: rejected async handler reaches error middleware without try/catch\nok 2 - rejected async handler reaches error middleware without try/catch\n  ---\n  duration_ms: 7.400619\n  type: 'test'\n  ...\n# Subtest: unknown route returns JSON 404\nok 3 - unknown route returns JSON 404\n  ---\n  duration_ms: 4.122877\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 372.214861\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "dayjs-utc-timezone-plugins",
   "status": "passed",
-  "ran_at": "2026-10-30T01:08:05.446Z",
-  "last_passed_at": "2026-10-30T01:08:05.446Z",
+  "ran_at": "2026-10-30T07:05:59.829Z",
+  "last_passed_at": "2026-10-30T07:05:59.829Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1701,
-    "test": 1853
+    "setup": 1650,
+    "test": 649
   },
   "pinned": {
     "dayjs": "1.11.23",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: converts Anchorage local time to UTC\nok 1 - converts Anchorage local time to UTC\n  ---\n  duration_ms: 1493.377968\n  type: 'test'\n  ...\n# Subtest: duration add and relative time\nok 2 - duration add and relative time\n  ---\n  duration_ms: 0.655485\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1734.797009\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: converts Anchorage local time to UTC\nok 1 - converts Anchorage local time to UTC\n  ---\n  duration_ms: 303.874548\n  type: 'test'\n  ...\n# Subtest: duration add and relative time\nok 2 - duration add and relative time\n  ---\n  duration_ms: 0.834359\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 508.48685\n"
 }

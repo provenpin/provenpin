@@ -1,15 +1,15 @@
 {
   "id": "joserfc-jwt-jwe-roundtrip",
   "status": "passed",
-  "ran_at": "2026-10-30T01:14:16.290Z",
-  "last_passed_at": "2026-10-30T01:14:16.290Z",
+  "ran_at": "2026-10-30T07:12:18.606Z",
+  "last_passed_at": "2026-10-30T07:12:18.606Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 364,
-    "test": 717
+    "setup": 430,
+    "test": 1147
   },
   "pinned": {
     "joserfc": "1.7.5",
@@ -38,8 +38,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "......                                                                   [100%]\n6 passed in 0.21s\n"
+  "log_tail": "......                                                                   [100%]\n6 passed in 0.23s\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "oslo-sessions-totp-2fa",
   "status": "passed",
-  "ran_at": "2026-10-30T01:19:24.057Z",
-  "last_passed_at": "2026-10-30T01:19:24.057Z",
+  "ran_at": "2026-10-30T07:18:13.033Z",
+  "last_passed_at": "2026-10-30T07:18:13.033Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1717,
-    "test": 350
+    "setup": 1557,
+    "test": 401
   },
   "pinned": {
     "@oslojs/encoding": "1.1.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "# Subtest: stores only a hash of the session token\nok 1 - stores only a hash of the session token\n  ---\n  duration_ms: 3.588693\n  type: 'test'\n  ...\n# Subtest: sessions slide, expire and can be revoked per user\nok 2 - sessions slide, expire and can be revoked per user\n  ---\n  duration_ms: 1.182148\n  type: 'test'\n  ...\n# Subtest: TOTP enrolment URI and manual key encode the same secret\nok 3 - TOTP enrolment URI and manual key encode the same secret\n  ---\n  duration_ms: 1.202757\n  type: 'test'\n  ...\n# Subtest: TOTP codes verify within the grace window only\nok 4 - TOTP codes verify within the grace window only\n  ---\n  duration_ms: 1.090927\n  type: 'test'\n  ...\n# Subtest: recovery codes are single use and case-insensitive\nok 5 - recovery codes are single use and case-insensitive\n  ---\n  duration_ms: 0.699933\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 194.700176\n"
+  "log_tail": "# Subtest: stores only a hash of the session token\nok 1 - stores only a hash of the session token\n  ---\n  duration_ms: 2.371177\n  type: 'test'\n  ...\n# Subtest: sessions slide, expire and can be revoked per user\nok 2 - sessions slide, expire and can be revoked per user\n  ---\n  duration_ms: 1.214238\n  type: 'test'\n  ...\n# Subtest: TOTP enrolment URI and manual key encode the same secret\nok 3 - TOTP enrolment URI and manual key encode the same secret\n  ---\n  duration_ms: 1.211071\n  type: 'test'\n  ...\n# Subtest: TOTP codes verify within the grace window only\nok 4 - TOTP codes verify within the grace window only\n  ---\n  duration_ms: 1.090746\n  type: 'test'\n  ...\n# Subtest: recovery codes are single use and case-insensitive\nok 5 - recovery codes are single use and case-insensitive\n  ---\n  duration_ms: 0.659076\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 232.062341\n"
 }

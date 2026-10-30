@@ -1,15 +1,15 @@
 {
   "id": "pluralize-english",
   "status": "passed",
-  "ran_at": "2026-10-30T01:20:57.204Z",
-  "last_passed_at": "2026-10-30T01:20:57.204Z",
+  "ran_at": "2026-10-30T07:19:34.318Z",
+  "last_passed_at": "2026-10-30T07:19:34.318Z",
   "tests": {
     "passed": 7,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1956,
-    "test": 337
+    "setup": 1603,
+    "test": 239
   },
   "pinned": {
     "pluralize": "8.0.0",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "# Subtest: handles irregular nouns\nok 3 - handles irregular nouns\n  ---\n  duration_ms: 0.23922\n  type: 'test'\n  ...\n# Subtest: classifies plural and singular forms\nok 4 - classifies plural and singular forms\n  ---\n  duration_ms: 0.408148\n  type: 'test'\n  ...\n# Subtest: applies a custom irregular rule\nok 5 - applies a custom irregular rule\n  ---\n  duration_ms: 0.096759\n  type: 'test'\n  ...\n# Subtest: applies a custom plural rule\nok 6 - applies a custom plural rule\n  ---\n  duration_ms: 0.066015\n  type: 'test'\n  ...\n# Subtest: pluralizes according to count including 0 and 1\nok 7 - pluralizes according to count including 0 and 1\n  ---\n  duration_ms: 0.154227\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 197.021127\n"
+  "log_tail": "# Subtest: handles irregular nouns\nok 3 - handles irregular nouns\n  ---\n  duration_ms: 0.252241\n  type: 'test'\n  ...\n# Subtest: classifies plural and singular forms\nok 4 - classifies plural and singular forms\n  ---\n  duration_ms: 0.372933\n  type: 'test'\n  ...\n# Subtest: applies a custom irregular rule\nok 5 - applies a custom irregular rule\n  ---\n  duration_ms: 0.088414\n  type: 'test'\n  ...\n# Subtest: applies a custom plural rule\nok 6 - applies a custom plural rule\n  ---\n  duration_ms: 0.063486\n  type: 'test'\n  ...\n# Subtest: pluralizes according to count including 0 and 1\nok 7 - pluralizes according to count including 0 and 1\n  ---\n  duration_ms: 0.160403\n  type: 'test'\n  ...\n1..7\n# tests 7\n# suites 0\n# pass 7\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 135.012881\n"
 }

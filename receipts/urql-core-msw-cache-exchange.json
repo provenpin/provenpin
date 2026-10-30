@@ -1,15 +1,15 @@
 {
   "id": "urql-core-msw-cache-exchange",
   "status": "passed",
-  "ran_at": "2026-10-30T01:27:56.734Z",
-  "last_passed_at": "2026-10-30T01:27:56.734Z",
+  "ran_at": "2026-10-30T07:26:29.391Z",
+  "last_passed_at": "2026-10-30T07:26:29.391Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3827,
-    "test": 927
+    "setup": 3282,
+    "test": 668
   },
   "pinned": {
     "@urql/core": "6.0.3",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "# Subtest: query sends auth header and returns data\nok 1 - query sends auth header and returns data\n  ---\n  duration_ms: 85.883153\n  type: 'test'\n  ...\n# Subtest: cache-first serves the second query from cache, network-only refetches\nok 2 - cache-first serves the second query from cache, network-only refetches\n  ---\n  duration_ms: 25.012064\n  type: 'test'\n  ...\n# Subtest: mutation on a typename invalidates cached queries (document cache)\nok 3 - mutation on a typename invalidates cached queries (document cache)\n  ---\n  duration_ms: 38.819342\n  type: 'test'\n  ...\n# Subtest: GraphQL errors become CombinedError and hit the error hook\nok 4 - GraphQL errors become CombinedError and hit the error hook\n  ---\n  duration_ms: 29.526402\n  type: 'test'\n  ...\n# Subtest: HTTP failures surface as networkError\nok 5 - HTTP failures surface as networkError\n  ---\n  duration_ms: 24.898422\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 766.96782\n"
+  "log_tail": "# Subtest: query sends auth header and returns data\nok 1 - query sends auth header and returns data\n  ---\n  duration_ms: 49.889683\n  type: 'test'\n  ...\n# Subtest: cache-first serves the second query from cache, network-only refetches\nok 2 - cache-first serves the second query from cache, network-only refetches\n  ---\n  duration_ms: 16.434902\n  type: 'test'\n  ...\n# Subtest: mutation on a typename invalidates cached queries (document cache)\nok 3 - mutation on a typename invalidates cached queries (document cache)\n  ---\n  duration_ms: 22.056414\n  type: 'test'\n  ...\n# Subtest: GraphQL errors become CombinedError and hit the error hook\nok 4 - GraphQL errors become CombinedError and hit the error hook\n  ---\n  duration_ms: 17.648372\n  type: 'test'\n  ...\n# Subtest: HTTP failures surface as networkError\nok 5 - HTTP failures surface as networkError\n  ---\n  duration_ms: 17.032027\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 538.650665\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "orjson-msgspec-encode-parity",
   "status": "passed",
-  "ran_at": "2026-10-30T01:19:24.010Z",
-  "last_passed_at": "2026-10-30T01:19:24.010Z",
+  "ran_at": "2026-10-30T07:18:07.961Z",
+  "last_passed_at": "2026-10-30T07:18:07.961Z",
   "tests": {
     "passed": 6,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 394,
-    "test": 1725
+    "setup": 227,
+    "test": 2047
   },
   "pinned": {
     "orjson": "3.13.0",
@@ -37,7 +37,7 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "Python 3.13.17",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
   "log_tail": "......                                                                   [100%]\n6 passed in 0.03s\n"

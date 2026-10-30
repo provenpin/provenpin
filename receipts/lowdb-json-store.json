@@ -1,15 +1,15 @@
 {
   "id": "lowdb-json-store",
   "status": "passed",
-  "ran_at": "2026-10-30T01:16:02.786Z",
-  "last_passed_at": "2026-10-30T01:16:02.786Z",
+  "ran_at": "2026-10-30T07:14:53.513Z",
+  "last_passed_at": "2026-10-30T07:14:53.513Z",
   "tests": {
     "passed": 5,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 1560,
-    "test": 363
+    "setup": 1834,
+    "test": 332
   },
   "pinned": {
     "lowdb": "7.0.1",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "# Subtest: seeds default data into a missing JSON file\nok 1 - seeds default data into a missing JSON file\n  ---\n  duration_ms: 13.613103\n  type: 'test'\n  ...\n# Subtest: persists nested collections across reopen\nok 2 - persists nested collections across reopen\n  ---\n  duration_ms: 7.697566\n  type: 'test'\n  ...\n# Subtest: supports direct data mutation followed by write()\nok 3 - supports direct data mutation followed by write()\n  ---\n  duration_ms: 4.87129\n  type: 'test'\n  ...\n# Subtest: Memory adapter keeps data in memory only\nok 4 - Memory adapter keeps data in memory only\n  ---\n  duration_ms: 0.510978\n  type: 'test'\n  ...\n# Subtest: rejects writes that violate referential integrity\nok 5 - rejects writes that violate referential integrity\n  ---\n  duration_ms: 0.605104\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 203.571017\n"
+  "log_tail": "# Subtest: seeds default data into a missing JSON file\nok 1 - seeds default data into a missing JSON file\n  ---\n  duration_ms: 11.355738\n  type: 'test'\n  ...\n# Subtest: persists nested collections across reopen\nok 2 - persists nested collections across reopen\n  ---\n  duration_ms: 8.937849\n  type: 'test'\n  ...\n# Subtest: supports direct data mutation followed by write()\nok 3 - supports direct data mutation followed by write()\n  ---\n  duration_ms: 4.027433\n  type: 'test'\n  ...\n# Subtest: Memory adapter keeps data in memory only\nok 4 - Memory adapter keeps data in memory only\n  ---\n  duration_ms: 0.457788\n  type: 'test'\n  ...\n# Subtest: rejects writes that violate referential integrity\nok 5 - rejects writes that violate referential integrity\n  ---\n  duration_ms: 0.517338\n  type: 'test'\n  ...\n1..5\n# tests 5\n# suites 0\n# pass 5\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 191.379579\n"
 }

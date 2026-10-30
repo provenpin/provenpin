@@ -1,15 +1,15 @@
 {
   "id": "chokidar-temp-watch",
-  "status": "failed",
-  "ran_at": "2026-10-30T01:06:42.765Z",
-  "last_passed_at": "2026-10-29T19:00:55.632Z",
+  "status": "passed",
+  "ran_at": "2026-10-30T07:04:44.139Z",
+  "last_passed_at": "2026-10-30T07:04:44.139Z",
   "tests": {
-    "passed": 0,
-    "failed": 1
+    "passed": 1,
+    "failed": 0
   },
   "duration_ms": {
-    "setup": 1601,
-    "test": 3490
+    "setup": 1517,
+    "test": 531
   },
   "pinned": {
     "chokidar": "5.0.0",
@@ -27,8 +27,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: emits add when a file appears\nnot ok 1 - emits add when a file appears\n  ---\n  duration_ms: 3129.781873\n  type: 'test'\n  location: '/tmp/pp-chokidar-temp-watch-fm5HLn/test/watch.test.ts:1:270'\n  failureType: 'testCodeFailure'\n  error: |-\n    The expression evaluated to a falsy value:\n    \n      assert.ok(seen.some((p) => p.endsWith(\"hello.txt\")))\n    \n  code: 'ERR_ASSERTION'\n  name: 'AssertionError'\n  expected: true\n  actual: false\n  operator: '=='\n  stack: |-\n    TestContext.<anonymous> (/tmp/pp-chokidar-temp-watch-fm5HLn/test/watch.test.ts:18:12)\n    async Test.run (node:internal/test_runner/test:1054:7)\n    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 0\n# fail 1\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 3335.627293\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: emits add when a file appears\nok 1 - emits add when a file appears\n  ---\n  duration_ms: 203.848976\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 377.518987\n"
 }

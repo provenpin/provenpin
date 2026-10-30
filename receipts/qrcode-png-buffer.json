@@ -1,15 +1,15 @@
 {
   "id": "qrcode-png-buffer",
   "status": "passed",
-  "ran_at": "2026-10-30T01:22:53.096Z",
-  "last_passed_at": "2026-10-30T01:22:53.096Z",
+  "ran_at": "2026-10-30T07:21:43.648Z",
+  "last_passed_at": "2026-10-30T07:21:43.648Z",
   "tests": {
     "passed": 2,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2072,
-    "test": 421
+    "setup": 2281,
+    "test": 446
   },
   "pinned": {
     "qrcode": "1.5.4",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: png buffer starts with PNG signature\nok 1 - png buffer starts with PNG signature\n  ---\n  duration_ms: 34.714289\n  type: 'test'\n  ...\n# Subtest: data url and ascii output\nok 2 - data url and ascii output\n  ---\n  duration_ms: 8.678966\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 262.641829\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: png buffer starts with PNG signature\nok 1 - png buffer starts with PNG signature\n  ---\n  duration_ms: 39.630195\n  type: 'test'\n  ...\n# Subtest: data url and ascii output\nok 2 - data url and ascii output\n  ---\n  duration_ms: 10.20379\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 278.061491\n"
 }

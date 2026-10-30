@@ -1,15 +1,15 @@
 {
   "id": "dompurify-jsdom-sanitize",
   "status": "passed",
-  "ran_at": "2026-10-30T01:08:30.349Z",
-  "last_passed_at": "2026-10-30T01:08:30.349Z",
+  "ran_at": "2026-10-30T07:06:40.961Z",
+  "last_passed_at": "2026-10-30T07:06:40.961Z",
   "tests": {
     "passed": 4,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 3052,
-    "test": 1055
+    "setup": 2519,
+    "test": 1222
   },
   "pinned": {
     "dompurify": "3.4.17",
@@ -29,8 +29,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: strips scripts, event handlers and javascript: URLs\nok 1 - strips scripts, event handlers and javascript: URLs\n  ---\n  duration_ms: 7.940473\n  type: 'test'\n  ...\n# Subtest: hardens external links via hook\nok 2 - hardens external links via hook\n  ---\n  duration_ms: 1.637139\n  type: 'test'\n  ...\n# Subtest: comment allow-list keeps text but drops disallowed tags\nok 3 - comment allow-list keeps text but drops disallowed tags\n  ---\n  duration_ms: 6.771267\n  type: 'test'\n  ...\n# Subtest: reports how many nodes or attributes were removed\nok 4 - reports how many nodes or attributes were removed\n  ---\n  duration_ms: 1.607313\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 942.675533\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: strips scripts, event handlers and javascript: URLs\nok 1 - strips scripts, event handlers and javascript: URLs\n  ---\n  duration_ms: 9.698357\n  type: 'test'\n  ...\n# Subtest: hardens external links via hook\nok 2 - hardens external links via hook\n  ---\n  duration_ms: 1.768484\n  type: 'test'\n  ...\n# Subtest: comment allow-list keeps text but drops disallowed tags\nok 3 - comment allow-list keeps text but drops disallowed tags\n  ---\n  duration_ms: 8.176529\n  type: 'test'\n  ...\n# Subtest: reports how many nodes or attributes were removed\nok 4 - reports how many nodes or attributes were removed\n  ---\n  duration_ms: 1.764839\n  type: 'test'\n  ...\n1..4\n# tests 4\n# suites 0\n# pass 4\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 1096.314194\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "turndown-html-to-markdown",
   "status": "passed",
-  "ran_at": "2026-10-30T01:27:19.853Z",
-  "last_passed_at": "2026-10-30T01:27:19.853Z",
+  "ran_at": "2026-10-30T07:25:53.756Z",
+  "last_passed_at": "2026-10-30T07:25:53.756Z",
   "tests": {
     "passed": 3,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 2628,
-    "test": 364
+    "setup": 2152,
+    "test": 473
   },
   "pinned": {
     "turndown": "7.2.4",
@@ -28,8 +28,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: headings, emphasis, links and lists\nok 1 - headings, emphasis, links and lists\n  ---\n  duration_ms: 6.219959\n  type: 'test'\n  ...\n# Subtest: fenced code keeps the language from class names\nok 2 - fenced code keeps the language from class names\n  ---\n  duration_ms: 0.812025\n  type: 'test'\n  ...\n# Subtest: custom rules: strikethrough and figure; scripts removed\nok 3 - custom rules: strikethrough and figure; scripts removed\n  ---\n  duration_ms: 2.192534\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 219.020878\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: headings, emphasis, links and lists\nok 1 - headings, emphasis, links and lists\n  ---\n  duration_ms: 8.526323\n  type: 'test'\n  ...\n# Subtest: fenced code keeps the language from class names\nok 2 - fenced code keeps the language from class names\n  ---\n  duration_ms: 0.979529\n  type: 'test'\n  ...\n# Subtest: custom rules: strikethrough and figure; scripts removed\nok 3 - custom rules: strikethrough and figure; scripts removed\n  ---\n  duration_ms: 1.691705\n  type: 'test'\n  ...\n1..3\n# tests 3\n# suites 0\n# pass 3\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 305.733768\n"
 }

@@ -1,15 +1,15 @@
 {
   "id": "mdx-compile-evaluate",
   "status": "passed",
-  "ran_at": "2026-10-30T01:16:39.435Z",
-  "last_passed_at": "2026-10-30T01:16:39.435Z",
+  "ran_at": "2026-10-30T07:15:41.984Z",
+  "last_passed_at": "2026-10-30T07:15:41.984Z",
   "tests": {
     "passed": 1,
     "failed": 0
   },
   "duration_ms": {
-    "setup": 4573,
-    "test": 419
+    "setup": 4506,
+    "test": 612
   },
   "pinned": {
     "@mdx-js/mdx": "3.1.1",
@@ -31,8 +31,8 @@
     "os": "linux 7.0.0-1017-azure",
     "arch": "x64",
     "runtime": "node v22.23.4",
-    "runner": "github-actions 40983450543"
+    "runner": "github-actions 41017499568"
   },
   "errors": [],
-  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: evaluates frontmatter-free MDX and renders static HTML\nok 1 - evaluates frontmatter-free MDX and renders static HTML\n  ---\n  duration_ms: 18.02391\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 307.415827\n"
+  "log_tail": "\n> test\n> node --import tsx --test test/*.test.ts\n\nTAP version 13\n# Subtest: evaluates frontmatter-free MDX and renders static HTML\nok 1 - evaluates frontmatter-free MDX and renders static HTML\n  ---\n  duration_ms: 23.96067\n  type: 'test'\n  ...\n1..1\n# tests 1\n# suites 0\n# pass 1\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 465.622902\n"
 }
